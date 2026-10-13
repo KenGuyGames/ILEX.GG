@@ -4,7 +4,15 @@ Desktop Pokémon TCG simulator with deck building, custom cards, historical form
 
 ## Status
 
-This repository preserves the latest development source, including unfinished WOTC implementation work. The source progress notes record 1,501 of 1,793 WOTC scan entries available, with 292 pending. The previously verified Windows package is older (1,363 available, 430 pending). These are recorded snapshot figures, not a new verification of this repository. See `work/rules-research/WOTC-PROGRESS.md` and `FEATURE-BACKLOG.md`.
+**The complete WOTC era is playable in the current Windows build**, from Base Set through Skyridge, including Wizards Black Star Promos, Southern Islands, Legendary Collection, and Best of Game. All **1,793 WOTC scan entries** have rules implementations, with **zero pending** in the verified October 13, 2026 build.
+
+The current build also includes Undo, attack and ability search, visual decklists, audio, and foil effects. Full implementation coverage does not certify every possible card interaction or ruling; Unlimited and interactions with later-era cards remain deferred.
+
+## Download and play
+
+Get the [current Windows x64 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.4.0-build-2026-10-13), including the runtime and offline card scans. Download `ILEX.GG-Windows.zip.001`, `ILEX.GG-Windows.zip.002`, and `Restore-ILEX-ZIP.cmd` into the same folder. Run the script to restore and checksum-verify the ZIP, extract the entire ZIP, then launch `ILEX.GG.exe`. No Node.js or Python installation is required.
+
+The repository source, source archive, and development progress notes still represent the earlier snapshot. Use the Windows release above for the complete WOTC implementation; rebuilding the existing repository snapshot does not reproduce that release.
 
 ## Development
 
