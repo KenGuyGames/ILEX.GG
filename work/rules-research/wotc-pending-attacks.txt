@@ -1,0 +1,349 @@
+These attack clauses have no compiled handler.
+
+gym2-2 Blaine's Charizard / Roaring Flames
+Discard all Fire Energy cards attached to Blaine's Charizard. If all Energy cards attached to Blaine's Charizard provide 2 Fire Energy, discard all of them. This attack does 20 damage plus 20 more damage for each Fire Energy discarded in this way.
+
+bog-4 Rocket's Scizor / Focus
+During your next turn, Rocket's Scizor's Agility attack's damage is doubled.
+
+neo3-4 Crobat / Triggered Poison
+If your opponent attaches an Energy card to the Defending Pokémon during his or her next turn, that Pokémon becomes Poisoned.
+
+gym2-5 Giovanni's Gyarados / Summon Storm
+Flip 2 coins. If both of them are heads, this attack does 20 damage to each other Pokémon (even your own). Don't apply Weakness and Resistance for this attack.
+
+neo4-7 Dark Houndoom / Eerie Howl
+If your opponent's Bench isn't full, look at his or her hand. If your opponent has any Baby Pokémon or Basic Pokémon there, choose 1 of them and put it on his or her Bench. Then, switch it with the Defending Pokémon.
+
+neo4-7 Dark Houndoom / Dark Fire
+If there are any Darkness Energy cards attached to Dark Houndoom, discard 1 of them and this attack does 30 damage plus 20 more damage (plus 10 more damage for the Darkness Energy you discarded). If there aren't any, this attack does 30 damage.
+
+neo2-7 Magnemite / Lock-on, neo2-26 Magnemite / Lock-on
+During your next turn, treat any tails flipped when using Magnemite's Electric Bolt attack as if they were heads. (Benching or evolving either Pokémon ends this effect.)
+
+bog-9 Rocket's Hitmonchan / Crosscounter, gym1-11 Rocket's Hitmonchan / Crosscounter
+If an attack does damage to Rocket's Hitmonchan during your opponent's next turn (even if Rocket's Hitmonchan is Knocked Out), flip a coin. If heads, Rocket's Hitmonchan attacks your opponent's Active Pokémon for double that amount of damage. (If Rocket's Hitmonchan takes 20 damage, it does 40 damage to that Pokémon.)
+
+ecard2-9 Elekid / Energy Kick
+Flip a coin. If heads, choose an Energy card attached to the Defending Pokémon. Your opponent moves that card to 1 of his or her other Pokémon. (If your opponent has no Benched Pokémon, this attack does nothing.)
+
+neo1-9 Lugia / Elemental Blast
+Discard a Fire Energy card, a Water Energy card, and a Lightning Energy card attached to Lugia in order to use this attack.
+
+neo3-9 Jumpluff / Evolutionary Spore
+Choose any number of your Hoppips and Skiplooms. Then, for each Pokémon you chose in this way, you may search your deck for a card that evolves from that Pokémon and attach it to that Pokémon. (This counts as evolving those Pokémon.) Shuffle your deck afterward.
+
+ecard2-10 Entei / Burning Fang, ecard2-H08 Entei / Burning Fang
+You may flip a coin. If heads, discard a Fire Energy card attached to Entei and the Defending Pokémon is now Burned.
+
+gym2-10 Koga's Ditto / Giant Growth
+Flip a coin. If heads, Koga's Ditto's maximum HP is now 80 and Koga's Ditto's Pound attack's base damage is 30 instead of 10. (Benching Koga's Ditto ends this effect.)
+
+neo4-11 Dark Tyranitar / Fling Away
+If your opponent has any Benched Pokémon, this attack does 30 damage instead of 50 and choose 1 of those Benched Pokémon. This attack does 30 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)
+
+neo2-11 Smeargle / Sketch, neo2-30 Smeargle / Sketch
+If the Defending Pokémon attacked last turn, and Smeargle was in play during that attack, Smeargle copies that attack except for its Energy costs and anything else required in order to use that attack.
+
+neo3-11 Misdreavus / Perish Song
+If the Defending Pokémon is Asleep and was attacked with Night Eyes during your last turn, it is Knocked Out.
+
+gym1-12 Rocket's Moltres / Fire Wall
+If an attack does damage to Rocket's Moltres during your opponent's next turn (even if Rocket's Moltres is Knocked Out), Rocket's Moltres attacks your opponent's Active Pokémon for 10 damage. (Apply Weakness and Resistance.)
+
+neo4-13 Light Azumarill / Bubble Jump
+If you have any Benched Pokémon, flip a coin. If heads, take 2 Energy cards attached to Light Azumarill and attach them to 1 of your Benched Pokémon. Then return Light Azumarill and all cards attached to it to your hand.
+
+gym1-13 Rocket's Scyther / Shadow Images
+Whenever Rocket's Scyther is attacked, your opponent flips a coin. If tails, that attack does no damage to Rocket's Scyther. (Any other effects of the attack still happen.) This effect lasts until Rocket's Scyther takes damage (or is Benched or is evolved).
+
+basep-15 Cool Porygon / Texture Magic
+You may change Cool Porygon's Resistance to a type of your choice other than Colorless. If the Defending Pokémon has a Weakness, you may change it to a type of your choice other than Colorless. (Benching either Pokémon ends the effect on that Pokémon.)
+
+neo2-16 Wobbuffet / Counter, neo2-35 Wobbuffet / Counter
+If an attack damages Wobbuffet during your opponent's next turn (even if Wobbuffet is Knocked Out), flip a coin. If heads, Wobbuffet attacks the Defending Pokémon for an equal amount of damage.
+
+neo1-16 Togetic / Super Metronome
+Flip a coin. If heads, choose an attack on 1 of your opponent's Pokémon. Super Metronome copies that attack except for its Energy cost. (You must still do anything else in order to use that attack.) (No matter what type the Defending Pokémon is, Togetic's type is still Colorless.) Togetic performs that attack. (Togetic can make that attack even if it does not have the appropriate number or type of Energy attached to it necessary to make the attack.)
+
+neo4-17 Dark Ariados / Poison Bind
+The Defending Pokémon is now Poisoned. Flip a coin. If heads, the Defending Pokémon can't retreat until the end of your opponent's next turn and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing.
+
+ecard3-18 Magcargo / Crushing Lava, ecard3-H17 Magcargo / Crushing Lava
+You may discard a Fire or Fighting basic Energy card attached to Magcargo. If you discard a Fire Energy card in this way, the Defending Pokémon is now Burned. If you discard a Fighting Energy card in this way, this attack does 40 damage plus 20 more damage.
+
+neo4-19 Dark Omastar / Prehistoric Water
+If your opponent has any evolved Pokémon in play, choose 1 of them and flip a coin. If heads, your opponent takes the highest Stage Evolution card on that Pokémon and shuffles it into his or her deck.
+
+neo4-19 Dark Omastar / Dark Tentacle
+During your opponent's next turn, the Defending Pokémon can't evolve except from effects of attacks or Pokémon Powers. (Benching that Pokémon ends this effect.)
+
+neo3-19 Kingdra / Genetic Memory
+Use any attack from Kingdra's Basic Pokémon card or Evolution card. (Kingdra doesn't have to pay for that attack's Energy cost.)
+
+ecard3-19 Magneton / Electric Blast, ecard3-H18 Magneton / Electric Blast
+You may discard all Lightning Energy cards attached to Magneton when you use this attack. If you do, put damage counters equal to the amount of Energy cards removed in this way on any number of your opponent's Benched Pokémon in the way you like. (For example, if you discard 3 Lightning Energy cards, you can put 1 damage counter on 1 of your opponent's Benched Pokémon and 2 on another.)
+
+ecard3-20 Magneton / Bounce Off, ecard3-H19 Magneton / Bounce Off
+If Magneton and the Defending Pokémon don't have the same number of Energy cards attached to them, the player controlling the Active Pokémon with the fewest number of Energy cards attached to it switches 1 of his or her Benched Pokémon with his or her Active Pokémon.
+
+ecard2-21 Lanturn / Electric Tackle, ecard2-H15 Lanturn / Electric Tackle
+This attack does 20 damage plus 10 damage for each Lightning Energy attached to Lanturn. Flip a coin. If tails, Lanturn does 10 damage to itself for each Lightning Energy attached to it.
+
+basep-21 Moltres / Hyper Flame
+Flip a coin. If heads, discard 1 Fire Energy card attached to Moltres. If tails, discard all Energy cards attached to Moltres. If you can't discard Energy cards, this attack does nothing.
+
+neo4-21 Dark Ursaring / Provoke
+Look at your opponent's hand. If he or she has any Baby Pokémon and/or Basic Pokémon there, you may put any number of them onto your opponent's Bench (as long as there's room). Then, your opponent looks at your hand. If you have any Baby Pokémon and/or Basic Pokémon there, your opponent may put any number of them onto your Bench (as long as there's room).
+
+gym2-22 Brock's Dugtrio / Lie Low
+All damage done to Brock's Dugtrio during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance).
+
+gym2-22 Brock's Dugtrio / Earthdrill
+This attack can't be used unless Brock's Dugtrio used its Lie Low attack last turn.
+
+neo1-23 Magby / Sputter
+All Pokémon Powers stop working until the end of your next turn.
+
+basep-24 _____'s Pikachu / Birthday Surprise
+If it's not your birthday, this attack does 30 damage. If it is your birthday, flip a coin. If heads, this attack does 30 damage plus 50 more damage; if tails, this attack does 30 damage.
+
+neo4-24 Light Ledian / Flash Touch
+If you have any Benched Pokémon, switch 1 of them with Light Ledian. As long as that Pokémon is your Active Pokémon, it can't become Asleep, Confused, Paralyzed, or Poisoned. (All other effects of attacks, Pokémon Powers, and Trainer cards still happen.)
+
+neo3-25 Starmie / Core Stream
+Choose an Energy type other than Colorless. This attack does 20 damage to each of your opponent's Pokémon with any Energy cards of that type attached to it. Don't apply Weakness and Resistance.
+
+ecard3-25 Politoed / Energy Splash, ecard3-H23 Politoed / Energy Splash
+Move 2 Water Energy cards attached to Politoed to 1 or 2 of your Benched Pokémon. (You may put both on the same Pokémon or 1 each on 2 different Pokémon.) If you have no Benched Pokémon, ignore this effect.
+
+neo1-27 Ariados / Poison Bite
+If this attack damages the Defending Pokémon, the Defending Pokémon is now Poisoned and you remove a number of damage counters from Ariados equal to half that damage (rounded up to the nearest 10). If Ariados has fewer damage counters than that, remove all of them.
+
+gym1-27 Lt. Surge's Electabuzz / Electric Current
+Take 1 Lightning Energy card attached to Lt. Surge's Electabuzz and attach it to 1 of your Benched Pokémon. If you have no Benched Pokémon, discard that Energy card.
+
+ecard3-28 Raikou / Lightning Sphere, ecard3-H26 Raikou / Lightning Sphere
+You may flip a coin. If heads, discard all Lightning Energy cards attached to Raikou. This attack does 40 damage plus 20 more damage for each Energy card discarded in this way.
+
+neo1-29 Bayleef / Sweet Scent
+Flip a coin. If heads and if any of your Pokémon have any damage counters on them, then remove 2 damage counters from 1 of them (or 1 if it only has 1). If tails and if any of your opponent's Pokémon have any damage counters on them, choose 1 of them and remove 2 damage counters from it (or 1 if it only has 1).
+
+gym2-29 Sabrina's Gengar / Dark Wave
+All Pokémon Powers stop working until the end of your opponent's next turn.
+
+basep-30 Togepi / Mini-Metronome
+Flip a coin. If heads, choose 1 of the Defending Pokémon's attacks. Mini-Metronome copies that attack except for its Energy cost. (You must still do anything else in order to use that attack.) (No matter what type the Defending Pokémon is, Togepi's type is still Colorless.) Togepi performs that attack.
+
+gym2-30 Sabrina's Golduck / Damage Shift
+Move 1 damage counter from each of your Pokémon that has any on it to the Defending Pokémon. (Don't apply Weakness and Resistance.)
+
+ecard3-30 Starmie / Star Back, ecard3-H28 Starmie / Star Back
+Attach a basic Energy card from your discard pile to 1 of your Pokémon.
+
+neo1-31 Croconaw / Jaw Clamp
+Until the end of your opponent's next turn, as long as Croconaw is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing.
+
+gym2-31 Blaine's Charmeleon / Bonfire
+Flip 3 coins. For each heads, discard 1 Fire Energy card attached to Blaine's Charmeleon. If you can't discard Energy cards, this attack does nothing. This attack does 10 damage times the number of heads to each of your opponent's Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)
+
+ecard2-32 Scizor / Snatch, ecard2-H21 Scizor / Snatch
+Before doing damage, you may choose 1 of your opponent's Benched Pokémon with no damage counters on it and switch the Defending Pokémon with it.
+
+basep-32 Smeargle / Paint
+Flip a coin. If heads, choose a type (other than Colorless) and put a Coloring counter on the Defending Pokémon. That Pokémon is now the type you chose. If it already had a Coloring counter, remove the old one. If tails, this attack does nothing.
+
+neo2-32 Umbreon / Pursuit
+During your opponent's next turn, if the Defending Pokémon tries to retreat, do 10 damage to it. (Don't apply Weakness and Resistance.)
+
+basep-34 Entei / Protective Flame
+During your opponent's next turn, prevent all effects of attacks, including damage, done to your Benched Pokémon.
+
+neo1-34 Flaaffy / Discharge
+Discard all Lightning Energy cards attached to Flaaffy in order to use this attack. Flip a number of coins equal to the number of Lightning Energy cards you discarded. This attack does 30 damage times then number of heads.
+
+neo1-34 Flaaffy / Electric Current
+Take 1 Lightning Energy cards attached to Flaaffy and attach it to 1 of your Benched Pokémon. If you have no Benched Pokémon, discard that Energy card.
+
+neo4-35 Dark Forretress / Armor Up
+Until the end of your next turn, if Dark Forretress would be Knocked Out by damage from an attack, flip a coin. If heads, Dark Forretress is not Knocked Out and its remaining HP become 10 instead.
+
+ecard2-36 Sudowoodo / Copy, ecard2-H24 Sudowoodo / Copy
+Choose 1 of the Defending Pokémon's attacks. Copy copies that attack. This attack does nothing if Sudowoodo doesn't have the Energy necessary to use that attack. (You must still do anything else required in order to use that attack.)
+
+neo4-36 Dark Haunter / Call Back
+Put a Baby Pokémon or Basic Pokémon card from your opponent's discard pile onto his or her Bench. Put 1 damage counter on that Pokémon. (You can't use this attack if your Bench is full.)
+
+neo1-36 Gloom / Sticky Nectar
+Flip a coin. If heads, this attack does 20 damage plus 10 more damage and, until the end of your next turn, as long as Gloom is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing. If tails, this attack does 20 damage.
+
+neo4-37 Dark Omanyte / Water Cannon
+Choose 1 of your opponent's Pokémon. This attack does 10 damage for each Water Energy card attached to Dark Omanyte. Don't apply Weakness and Resistance. You can't do more than 30 damage in this way.
+
+ecard2-39 Togetic / Mini-Metronome, ecard2-H27 Togetic / Mini-Metronome
+Flip a coin. If heads, choose 1 of the Defending Pokémon's attacks. Mini-Metronome copies that attack except for its Energy cost. (You must still do anything else required in order to use that attack.) (No matter what type the Defending Pokémon is, Togetic is still Colorless.) Togetic performs that attack.
+
+neo1-39 Ledian / Baton Pass
+If you have any Grass Pokémon on your Bench, remove all Grass Energy cards from Ledian and attach them to 1 of those Pokémon, then switch Ledian with that Pokémon.
+
+ecard2-40 Tyranitar / Destructive Roar, ecard2-H28 Tyranitar / Destructive Roar
+Flip a coin. If heads, discard 1 Energy card attached to 1 of your opponent's Pokémon.
+
+neo2-41 Kakuna / Secrete Poison
+During your opponent's next turn, whenever your opponent's attack damages Kakuna (even if Kakuna is Knocked Out), your opponent's Active Pokémon is now Poisoned and Kakuna does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)
+
+neo3-41 Aipom / Grab
+Choose a Trainer card attached to 1 of your opponent's Pokémon. Your opponent shuffles that card into his or her deck.
+
+gym1-43 Erika's Exeggcute / Deflector
+During your opponent's next turn, whenever Erika's Exeggcute takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)
+
+neo4-44 Jigglypuff / Expand
+All damage done to Jigglypuff during your opponent's next turn is reduced by 10 (after applying Weakness and Resistance).
+
+neo2-44 Poliwhirl / Belly Drum
+Put 3 damage counters on Poliwhirl. If this doesn't Knock Out Poliwhirl, search your deck for 2 Basic Energy cards and attach them to Poliwhirl. Shuffle your deck afterward.
+
+neo4-45 Light Dewgong / Ice Pillar
+Until the end of your opponent's next turn, as long as Light Dewgong is your Active Pokémon, prevent all damage done by attacks to your Benched Pokémon. (Any other effects of attacks still happen.)
+
+ecard3-45 Wobbuffet / Return Attack
+Flip 2 coins. If either is heads, this attack does 10 damage times the number of damage counters on Wobbuffet.
+
+basep-46 Electabuzz / Lightning Rod
+Choose 1 of your opponent's Pokémon and put a Lightning Rod marker on it. (A Pokémon can have only 1 Lightning Rod marker on it at a time.)
+
+basep-46 Electabuzz / Lightning Bolt
+This attack does 20 damage to any Pokémon with a Lightning Rod marker on it. Apply Weakness and Resistance.
+
+neo4-46 Light Flareon / Burning Flame
+Flip 2 coins. For each heads, discard a Fire Energy card attached to Light Flareon or this attack does nothing. This attack does 30 damage plus 20 damage for each heads.
+
+neo3-46 Murkrow / Flock Attack
+Flip a number of coins equal to the number of Murkrows on your Bench. This attack does 10 damage plus 10 more damage for each heads.
+
+neo4-47 Light Golduck / Flipper Stroke
+Your opponent looks at the top 3 cards of his or her deck. If any of them are basic Energy cards, he or she may show any number of them to you and put them into his or her hand. You do the same. Either way, each player shuffles his or her deck.
+
+neo1-47 Quilava / Char
+If the Defending Pokémon doesn't have a Char counter on it, flip a coin. If heads, put a Char counter on it. A Char counter requires your opponent to flip a coin after every turn. If tails, put 2 damage counters on the Pokémon with that Char counter. (Char counters stay on the Pokémon as long as it's in play.)
+
+neo4-48 Light Jolteon / Pulse Guard
+During your opponent's next turn, whenever 30 or more damage is done to Light Jolteon (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)
+
+neo4-49 Light Machoke / Gentle Kick
+If the Defending Pokémon has no damage counters on it, this attack does 40 damage. If it has any, this attack does 20 damage.
+
+gym2-49 Koga's Pidgey / Messenger
+Put Koga's Pidgey and all cards attached to it on top of your deck. Then search your deck for any Basic Pokémon or Evolution card not named Koga's Pidgey. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward.
+
+neo4-50 Light Ninetales / Guiding Flame
+Put a Baby Pokémon or a Basic Pokémon card from your discard pile onto your Bench. (You can't use this attack if your Bench is full.)
+
+gym2-51 Lt. Surge's Eevee / Surprise
+Look at a random card from your opponent's hand. Your opponent shuffles that card into his or her deck.
+
+neo4-52 Light Vaporeon / Wash Away
+If you have any Benched Pokémon, flip a coin. If heads, remove all damage counters from 1 of your Benched Pokémon and discard all Energy cards attached to it.
+
+neo1-53 Chikorita / Deflector
+During your opponent's next turn, whenever Chikorita takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)
+
+gym2-53 Lt. Surge's Raticate / Focus Energy
+During your next turn, Lt. Surge's Raticate's Double-edge attack's damage (base damage and damage to itself) is doubled.
+
+neo4-54 Light Wigglytuff / Evolution Song
+Your opponent may choose 1 of his or her Pokémon and search his or her deck for a card that evolves from that Pokémon. Your opponent attaches that card to that Pokémon. This counts as evolving that Pokémon. Either way, you may do the same, and then each player who searched shuffles his or her deck.
+
+neo3-54 Smoochum / Psykiss
+Flip a coin. If heads, choose a Special Energy card attached to 1 of your opponent's Pokémon. Your opponent shuffles that card into his or her deck.
+
+gym1-54 Misty's Psyduck / Call for Friend
+Flip a coin. If heads, you may search your deck for a Basic Pokémon with Misty in its name and put it onto your Bench. (You can't use this attack if your Bench is full.) Shuffle your deck afterward.
+
+gym2-56 Sabrina's Hypno / Invigorate
+Choose 1 Basic Pokémon in any player's discard pile. Put it onto that player's Bench. Put a number of damage counters on that Pokémon equal to half its HP (rounded down to the nearest 10). (You can't put a Pokémon on a Bench that's full.)
+
+gym2-57 Sabrina's Jynx / Helping Hand
+Choose 1 of your opponent's Pokémon. Remove any number of damage counters from that Pokémon, then draw that many cards.
+
+gym1-57 Misty's Tentacool / Crystal Beam
+Flip a coin. If heads, your opponent can't attach Energy cards to the Defending Pokémon during his or her next turn.
+
+neo2-61 Pineco / Burst
+Flip a coin. If heads, Pineco does 40 damage to itself and 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Flip a coin. If tails, this attack does nothing (not even damage).
+
+neo4-62 Dark Octillery / Ink Blast
+This attack does 20 damage plus 10 more damage for each Energy attached to Dark Octillery but not used to pay for this attack's Energy cost. You can't add more than 20 damage in this way.
+
+neo1-62 Horsea / Fin Slap
+If an attack damaged Horsea during your opponent's last turn, this attack does 20 damage plus 10 more damage. If not, this attack does 20 damage.
+
+neo3-65 Shining Gyarados / Devastate
+Discard 2 Fire Energy cards attached to Shining Gyarados or this attack does nothing. This attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) Then, flip a coin. If heads, choose 1 Energy card attached to each of your opponent's Pokémon that has any Energy cards attached to it and discard those Energy cards.
+
+gym1-66 Brock's Geodude / Call for Friend
+Flip a coin. If heads, you may search your deck for a Basic Pokémon card with Brock in its name and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)
+
+ecard2-67 Aipom / Skedaddle
+Return Aipom and all basic Energy cards attached to it to your hand. If you have no Benched Pokémon, this attack does nothing.
+
+neo2-71 Wooper / Slime
+If an attack would do damage to Wooper during your opponent's next turn, your opponent flips a coin. If tails, prevent all damage to Wooper from that attack. (Any other effects of that attack happen.)
+
+neo4-72 Light Sunflora / Reflected Sunlight
+Attach up to 2 Grass Energy cards from your hand to 1 of your Grass Pokémon.
+
+gym2-83 Koga's Zubat / Group Attack
+Does 10 damage times the number of Koga's Zubats you have in play. Before doing damage, you may search your deck for any number of Basic Pokémon named Koga's Zubat and put them onto your Bench. (You can't get more cards with this attack than you have room on your Bench.) If you do, shuffle your deck afterward.
+
+gym2-85 Lt. Surge's Rattata / Focus Energy
+During your next turn, Lt. Surge's Rattata's Quick Attack's base damage is doubled.
+
+gym2-90 Misty's Psyduck / ESP
+Flip 3 coins. If exactly 1 is heads, draw a card. If exactly 2 are heads, this attack does 20 damage. If all 3 are heads, choose 1 of the Defending Pokémon's attacks. Misty's Psyduck copies that attack except for its Energy costs. (No matter what type the Defending Pokémon is, Misty's Psyduck's type is still Water.)
+
+gym1-91 Sabrina's Abra / Energy Loop
+Return a Psychic Energy card attached to Sabrina's Abra to your hand in order to use this attack.
+
+gym1-94 Sabrina's Mr. Mime / Sleight of Hand
+Choose up to 3 cards from your hand and put them on top of your deck. Then search your deck for that many basic Energy cards. Show those cards to your opponent, then put them into your hand. Shuffle your deck afterward.
+
+gym2-96 Sabrina's Gastly / Fade Out
+Return Sabrina's Gastly and all Energy cards attached to it to your hand. (Discard all other cards attached to Sabrina's Gastly.)
+
+neo4-106 Shining Celebi / Healing Water
+Remove a number of damage counters from 1 of your Benched Pokémon equal to the number of Water Energy cards attached to Shining Celebi. If the Pokémon has fewer damage counters than that, remove all of them.
+
+neo4-107 Shining Charizard / White-hot Flame
+Discard 1 Fire Energy card and 1 Lightning Energy card attached to Shining Charizard or this attack does nothing. Flip a coin. If tails, Shining Charizard does 30 damage to itself.
+
+ecard2-108 Slowpoke / Fishing Tail
+Search your discard pile for a Baby Pokémon, Basic Pokémon, Evolution card, or basic Energy card, show it to your opponent, and then put it into your hand.
+
+neo4-108 Shining Kabutops / Water Slash
+Does 50 damage plus 10 more damage for each Water Energy attached to Shining Kabutops but not used to pay for this attack's Energy cost. Don't apply Resistance.
+
+neo4-113 Shining Tyranitar / Destructive Fire
+Flip a coin for each Fire Energy card attached to Shining Tyranitar. For each heads, discard a Fire Energy card attached to Shining Tyranitar or this attack does nothing. Then, for each heads, choose an Energy card attached to the Defending Pokémon and discard it. If it has fewer Energy cards than that, remove all of them.
+
+ecard2-121 Fighting Cube 01 / Violent Rage
+Flip a number of coins equal to the number of damage counters on this Pokémon. This attack does 10 damage times the number of heads.
+
+ecard3-129 Miracle Sphere α / Fire Force
+If the Pokémon using this attack has Fire and Lightning basic Energy cards attached to it, the Defending Pokémon is now Confused. If the Pokémon using this attack has Fire and Fighting basic Energy cards attached to it, this attack does 30 damage plus 10 more damage and remove 3 damage counters from the Pokémon that Miracle Plate α is attached to.
+
+ecard3-130 Miracle Sphere β / Freezing Force
+If the Pokémon using this attack has Fire and Water basic Energy cards attached to it, this attack does 30 damage plus 10 more damage and the Defending Pokémon is now Burned. If the Pokémon using this attack has Water and Psychic basic Energy cards attached to it, choose an Energy card attached to the Defending Pokémon, if any, and your opponent shuffles that card into his or her deck.
+
+ecard3-131 Miracle Sphere γ / Thunder Force
+If the Pokémon using this attack has Grass and Lightning basic Energy cards attached to it, the Defending Pokémon is now Asleep and Poisoned. If the Pokémon using this attack has Water and Lightning basic Energy cards attached to it, this attack does 30 damage plus 10 more damage and lets you put 1 damage counter on each of your opponent's Benched Pokémon.
+
+ecard2-140 Water Cube 01 / Splatter
+Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. Don't apply Weakness or Resistance.
+
+ecard3-145 Celebi / Empathic Healing
+Remove 2 damage counters from Celebi and each Pokémon that's the same type (color) as Celebi.
+
+ecard2-150 Nidoking / Rolling Thunder
+Flip a coin, If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness or Resistance for Benched Pokémon.)

@@ -1,0 +1,2873 @@
+[
+  {
+    "id": "ecard1-1",
+    "name": "Alakazam",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Psymimic",
+        "text": "Once during your turn, instead of Alakazam's normal attack, you may choose 1 of your opponent's Pokémon's attacks. Alakazam copies that attack including its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type that Pokémon is, Alakazam's type is still Psychic.) This power can't be used if Alakazam is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-1",
+    "name": "Aerodactyl",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Ancient Wind",
+        "text": "Once during your turn (before your attack), if Aerodactyl is your Active Pokémon, you may ignore all Poké-Bodies until the end of your turn. This power can't be used if Aerodactyl is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-2",
+    "name": "Blaine's Charizard",
+    "attacks": [
+      {
+        "name": "Roaring Flames",
+        "cost": [
+          "Fire"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20+",
+        "text": "Discard all Fire Energy cards attached to Blaine's Charizard. If all Energy cards attached to Blaine's Charizard provide 2 Fire Energy, discard all of them. This attack does 20 damage plus 20 more damage for each Fire Energy discarded in this way."
+      }
+    ]
+  },
+  {
+    "id": "gym1-2",
+    "name": "Brock's Rhydon",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Bench Guard",
+        "text": "As long as Brock's Rhydon is Benched, whenever 1 of your Benched Pokémon is damaged, you may do 10 of that damage to Brock's Rhydon instead. (If more than 1 of your Benched Pokémon is damaged at the same time, you may use this power once for each of them.)",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo3-3",
+    "name": "Celebi",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Time Travel",
+        "text": "If an opponent's attack would Knock Out Celebi, flip a coin. If heads, Celebi isn't Knocked Out and you shuffle it and all cards attached to it into your deck. This power doesn't work if Celebi is already Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "bog-4",
+    "name": "Rocket's Scizor",
+    "attacks": [
+      {
+        "name": "Focus",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, Rocket's Scizor's Agility attack's damage is doubled."
+      }
+    ]
+  },
+  {
+    "id": "neo3-4",
+    "name": "Crobat",
+    "attacks": [
+      {
+        "name": "Triggered Poison",
+        "cost": [
+          "Grass"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": "If your opponent attaches an Energy card to the Defending Pokémon during his or her next turn, that Pokémon becomes Poisoned."
+      }
+    ]
+  },
+  {
+    "id": "neo4-6",
+    "name": "Dark Gengar",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Deep Sleep",
+        "text": "As long as any Dark Gengar are in play, a player flips 2 coins for each of his or her Pokémon that is Asleep at the end of each turn. If either of them is tails, that Pokémon is still Asleep. This power stops working if Dark Gengar is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo1-6",
+    "name": "Heracross",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Final Blow",
+        "text": "If Heracross's remaining HP are 20 or less, you may make its Megahorn attack's base damage 120 instead of 60. This power can't be used if Heracross is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo3-6",
+    "name": "Entei",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Howl",
+        "text": "When you play Entei from your hand, you may discard the top 5 cards of your deck. (If you have fewer cards in your deck than that, discard all of them.) If any of those are Fire Energy cards, attach them to any of your Fire Pokémon of your choice. Using this power ends your turn.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-6",
+    "name": "Giovanni's Machamp",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Fortitude",
+        "text": "If Giovanni's Machamp would be Knocked Out by an opponent's attack, flip a coin. If heads, Giovanni's Machamp is not Knocked Out and its remaining HP become 10 instead. This power can't be used if Giovanni's Machamp is already Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-7",
+    "name": "Dark Houndoom",
+    "attacks": [
+      {
+        "name": "Eerie Howl",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If your opponent's Bench isn't full, look at his or her hand. If your opponent has any Baby Pokémon or Basic Pokémon there, choose 1 of them and put it on his or her Bench. Then, switch it with the Defending Pokémon."
+      },
+      {
+        "name": "Dark Fire",
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30+",
+        "text": "If there are any Darkness Energy cards attached to Dark Houndoom, discard 1 of them and this attack does 30 damage plus 20 more damage (plus 10 more damage for the Darkness Energy you discarded). If there aren't any, this attack does 30 damage."
+      }
+    ]
+  },
+  {
+    "id": "neo2-7",
+    "name": "Magnemite",
+    "attacks": [
+      {
+        "name": "Lock-on",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, treat any tails flipped when using Magnemite's Electric Bolt attack as if they were heads. (Benching or evolving either Pokémon ends this effect.)"
+      }
+    ]
+  },
+  {
+    "id": "neo4-8",
+    "name": "Dark Porygon2",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Spatial Distortion",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, choose a Stadium card from your discard pile and put it into play. (If there's already a Stadium card in play, discard it.) This power can't be used if Dark Porygon2 is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-8",
+    "name": "Politoed",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Frog Song",
+        "text": "Whenever Politoed's attack damages the Defending Pokémon (after applying Weakness and Resistance), if there are more than 3 Poliwags, Poliwhirls, Poliwraths, and/or Politoeds in play (including your opponent's), that attack does 40 more damage (no matter how many heads you get). This power stops working while Politoed is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-8",
+    "name": "Giovanni's Persian",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Call the Boss",
+        "text": "When you play Giovanni's Persian from your hand, you may search your deck for the Trainer card named Giovanni, show it to your opponent, and put it into your hand. Shuffle your deck afterward.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "bog-9",
+    "name": "Rocket's Hitmonchan",
+    "attacks": [
+      {
+        "name": "Crosscounter",
+        "cost": [
+          "Fighting"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If an attack does damage to Rocket's Hitmonchan during your opponent's next turn (even if Rocket's Hitmonchan is Knocked Out), flip a coin. If heads, Rocket's Hitmonchan attacks your opponent's Active Pokémon for double that amount of damage. (If Rocket's Hitmonchan takes 20 damage, it does 40 damage to that Pokémon.)"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-9",
+    "name": "Elekid",
+    "attacks": [
+      {
+        "name": "Energy Kick",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, choose an Energy card attached to the Defending Pokémon. Your opponent moves that card to 1 of his or her other Pokémon. (If your opponent has no Benched Pokémon, this attack does nothing.)"
+      }
+    ],
+    "rules": [
+      "If your Active Pokémon is a Baby Pokémon and your opponent announces an attack, your opponent flips a coin (before doing anything else). If tails, your opponent's turn ends."
+    ]
+  },
+  {
+    "id": "neo1-9",
+    "name": "Lugia",
+    "attacks": [
+      {
+        "name": "Elemental Blast",
+        "cost": [
+          "Fire",
+          "Water",
+          "Lightning"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "90",
+        "text": "Discard a Fire Energy card, a Water Energy card, and a Lightning Energy card attached to Lugia in order to use this attack."
+      }
+    ]
+  },
+  {
+    "id": "gym2-10",
+    "name": "Koga's Ditto",
+    "attacks": [
+      {
+        "name": "Giant Growth",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, Koga's Ditto's maximum HP is now 80 and Koga's Ditto's Pound attack's base damage is 30 instead of 10. (Benching Koga's Ditto ends this effect.)"
+      }
+    ]
+  },
+  {
+    "id": "gym1-10",
+    "name": "Misty's Tentacruel",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Flee",
+        "text": "If an attack does damage to Misty's Tentacruel while it's your Active Pokémon, you may switch it with 1 of your Benched Pokémon, which prevents all other effects of that attack on Misty's Tentacruel. This power can't be used if Misty's Tentacruel is already Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-10",
+    "name": "Gengar",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Manipulate",
+        "text": "When you play Gengar from your hand to evolve your Active Pokémon, you may put a Basic Pokémon (excluding Baby Pokémon) from your discard pile onto your Bench. Then, flip 3 coins. For each heads, choose a basic Energy card from your discard pile and attach it to that Pokémon.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "basep-11",
+    "name": "Eevee",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Chain Reaction",
+        "text": "This power can only be used when a Pokémon evolves. Search your deck for a card that evolves from Eevee and attach it to Eevee. This counts as evolving Eevee. Shuffle your deck afterward. This power can't be used if Eevee is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-11",
+    "name": "Smeargle",
+    "attacks": [
+      {
+        "name": "Sketch",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "If the Defending Pokémon attacked last turn, and Smeargle was in play during that attack, Smeargle copies that attack except for its Energy costs and anything else required in order to use that attack."
+      }
+    ]
+  },
+  {
+    "id": "neo3-11",
+    "name": "Misdreavus",
+    "attacks": [
+      {
+        "name": "Perish Song",
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Psychic"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "If the Defending Pokémon is Asleep and was attacked with Night Eyes during your last turn, it is Knocked Out."
+      }
+    ]
+  },
+  {
+    "id": "gym1-11",
+    "name": "Rocket's Hitmonchan",
+    "attacks": [
+      {
+        "name": "Crosscounter",
+        "cost": [
+          "Fighting"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If an attack does damage to Rocket's Hitmonchan during your opponent's next turn (even if Rocket's Hitmonchan is Knocked Out), flip a coin. If heads, Rocket's Hitmonchan attacks your opponent's Active Pokémon for double that amount of damage. (If Rocket's Hitmonchan takes 20 damage, it does 40 damage to that Pokémon.)"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-11",
+    "name": "Gyarados",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Flame Vapor",
+        "text": "When you play Gyarados from your hand to evolve your Active Pokémon, you may flip 2 coins. For each heads, discard an Energy card attached to the Defending Pokémon.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "gym1-12",
+    "name": "Rocket's Moltres",
+    "attacks": [
+      {
+        "name": "Fire Wall",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": "If an attack does damage to Rocket's Moltres during your opponent's next turn (even if Rocket's Moltres is Knocked Out), Rocket's Moltres attacks your opponent's Active Pokémon for 10 damage. (Apply Weakness and Resistance.)"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Rebirth",
+        "text": "When Rocket's Moltres is Knocked Out, you may return it to your hand after discarding it. This power can't be used if Rocket's Moltres is Asleep, Confused, or Paralyzed when it is Knocked Out.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-13",
+    "name": "Misty's Gyarados",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Rebellion",
+        "text": "Whenever Misty's Gyarados attacks, flip 2 coins. If both of them are tails, that attack does nothing. Instead, shuffle Misty's Gyarados and all cards attached to it into your deck. (This power works even if Misty's Gyarados is Confused.)",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym1-13",
+    "name": "Rocket's Scyther",
+    "attacks": [
+      {
+        "name": "Shadow Images",
+        "cost": [
+          "Grass"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Whenever Rocket's Scyther is attacked, your opponent flips a coin. If tails, that attack does no damage to Rocket's Scyther. (Any other effects of the attack still happen.) This effect lasts until Rocket's Scyther takes damage (or is Benched or is evolved)."
+      }
+    ]
+  },
+  {
+    "id": "neo4-14",
+    "name": "Light Dragonite",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Miraculous Wind",
+        "text": "As long as Light Dragonite is your Active Pokémon, each Special Energy card provides Colorless Energy instead of its usual type and its other effects stop working. This power stops working while Light Dragonite is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-14",
+    "name": "Unown [A]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Anger]",
+        "text": "Whenever 1 of your Pokémon with Unown in its name uses its Hidden Power attack, that attack does 10 more damage for each damage counter on Unown [A]. If you have more than 1 Unown [A] in play, use only 1 [Anger] for each attack.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo1-14",
+    "name": "Slowking",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Mind Games",
+        "text": "Whenever your opponent plays a Trainer card, you may flip a coin. If heads, that card does nothing. Put it on top of your opponent's deck. This power can't be used if Slowking is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-14",
+    "name": "Kabutops",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Primal Aura",
+        "text": "As long as Kabutops is your Active Pokémon, neither player can play Basic Pokémon or Evolution cards from his or her hand to evolve Benched Pokémon.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "basep-15",
+    "name": "Cool Porygon",
+    "attacks": [
+      {
+        "name": "Texture Magic",
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "You may change Cool Porygon's Resistance to a type of your choice other than Colorless. If the Defending Pokémon has a Weakness, you may change it to a type of your choice other than Colorless. (Benching either Pokémon ends the effect on that Pokémon.)"
+      }
+    ]
+  },
+  {
+    "id": "neo4-15",
+    "name": "Light Togetic",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Gift",
+        "text": "When you play Light Togetic from your hand, your opponent may search his or her deck for a Pokémon Tool card, show that card to you, and put it into his or her hand. Either way, you may do the same, and then each player who searched shuffles his or her deck.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo3-15",
+    "name": "Aerodactyl",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Prehistoric Memory",
+        "text": "Whenever an Evolved Pokémon attacks (even if it's your opponent's), it can use any attack from its Basic Pokémon card or any Evolution card attached to it. It still has to pay for that attack's Energy cost. This power stops working while Aerodactyl is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-16",
+    "name": "Miracle Energy",
+    "attacks": [],
+    "rules": [
+      "You can't have more than 1 Miracle Energy in your deck. Attach Miracle Energy to 1 of your Shining or Light Pokémon. At the end of your turn, discard Miracle Energy.\nWhile in play, Miracle Energy counts as every type of Energy but provides only 2 Energy at a time."
+    ]
+  },
+  {
+    "id": "neo2-16",
+    "name": "Wobbuffet",
+    "attacks": [
+      {
+        "name": "Counter",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If an attack damages Wobbuffet during your opponent's next turn (even if Wobbuffet is Knocked Out), flip a coin. If heads, Wobbuffet attacks the Defending Pokémon for an equal amount of damage."
+      }
+    ]
+  },
+  {
+    "id": "gym2-16",
+    "name": "Sabrina's Alakazam",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Psylink",
+        "text": "Sabrina's Alakazam always has a copy of every attack your Psychic Pokémon in play have (including their Energy costs and anything else required in order to use those attacks, such as discarding Energy cards). This power can't be used if Sabrina's Alakazam is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-17",
+    "name": "Jumpluff",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Fluff",
+        "text": "During your opponent's turn, if Jumpluff would be damaged or affected by an opponent's attack and it already has at least 1 damage counter on it, flip a coin. If heads, prevent all effects of that attack (including damage).",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "neo4-17",
+    "name": "Dark Ariados",
+    "attacks": [
+      {
+        "name": "Poison Bind",
+        "cost": [
+          "Grass",
+          "Grass",
+          "Grass"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "The Defending Pokémon is now Poisoned. Flip a coin. If heads, the Defending Pokémon can't retreat until the end of your opponent's next turn and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing."
+      }
+    ]
+  },
+  {
+    "id": "neo3-17",
+    "name": "Entei",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Legendary Body",
+        "text": "As long as Entei is your Active Pokémon, Entei and Energy cards attached to it aren't affected by effects from Trainer cards other than Stadium cards. As long as this Power is active, discard any Trainer cards attached to Entei. (This power works even if Entei is Asleep, Confused, or Paralyzed.)",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-17",
+    "name": "Blaine",
+    "attacks": [],
+    "rules": [
+      "During this turn, instead of attaching your free Energy card, you may instead attach 2 Fire Energy cards to 1 of your Pokémon with Blaine in its name. (Playing additional copies of this card this turn has no effect.)"
+    ]
+  },
+  {
+    "id": "gym1-17",
+    "name": "Lt. Surge",
+    "attacks": [],
+    "rules": [
+      "You can play this card only if you have at least 1 Basic Pokémon card in your hand. Put a Basic Pokémon card from your hand into play as your Active Pokémon. Put your old Active Pokémon onto your Bench. (You can't play this card if your Bench is full.)"
+    ]
+  },
+  {
+    "id": "neo4-18",
+    "name": "Dark Magcargo",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Hot Plate",
+        "text": "As long as Dark Magcargo is your Active Pokémon, whenever a player puts a Baby Pokémon or Basic Pokémon onto his or her Bench from his or her hand, this power does 10 damage to that Pokémon. (Don't apply Weakness and Resistance.) This power stops working if Dark Magcargo is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo1-18",
+    "name": "Typhlosion",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Fire Boost",
+        "text": "When you play Typhlosion from your hand, you may flip a coin. If heads, search your deck for up to 4 Fire Energy cards and attach them to Typhlosion. Shuffle your deck afterward.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-18",
+    "name": "Giovanni",
+    "attacks": [],
+    "rules": [
+      "Choose 1 of your Pokémon in play with Giovanni in its name. For the rest of your turn, you may evolve that Pokémon even if you just played or evolved it this turn or if this is your first turn. This effect also applies to the Pokémon it evolves into."
+    ]
+  },
+  {
+    "id": "gym1-18",
+    "name": "Misty",
+    "attacks": [],
+    "rules": [
+      "Discard 2 of the other cards in your hand in order to play this card. If this turn's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), and if the attacking Pokémon has Misty in its name, the attack does 20 more damage to the Defending Pokémon."
+    ]
+  },
+  {
+    "id": "ecard3-18",
+    "name": "Magcargo",
+    "attacks": [
+      {
+        "name": "Crushing Lava",
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40+",
+        "text": "You may discard a Fire or Fighting basic Energy card attached to Magcargo. If you discard a Fire Energy card in this way, the Defending Pokémon is now Burned. If you discard a Fighting Energy card in this way, this attack does 40 damage plus 20 more damage."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Streaming Mantle",
+        "text": "When you play Magcargo from your hand to evolve your Active Pokémon, you may discard the top 3 cards of your deck and and then shuffle 3 basic Energy cards from your discard pile into your deck. If you do, your opponent does the same.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-19",
+    "name": "Dark Omastar",
+    "attacks": [
+      {
+        "name": "Prehistoric Water",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If your opponent has any evolved Pokémon in play, choose 1 of them and flip a coin. If heads, your opponent takes the highest Stage Evolution card on that Pokémon and shuffles it into his or her deck."
+      },
+      {
+        "name": "Dark Tentacle",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": "During your opponent's next turn, the Defending Pokémon can't evolve except from effects of attacks or Pokémon Powers. (Benching that Pokémon ends this effect.)"
+      }
+    ]
+  },
+  {
+    "id": "gym2-19",
+    "name": "Koga",
+    "attacks": [],
+    "rules": [
+      "If an attack from a Pokémon with Koga in its name does damage to a Defending Pokémon this turn, that Pokémon is then Poisoned."
+    ]
+  },
+  {
+    "id": "gym1-19",
+    "name": "The Rocket's Trap",
+    "attacks": [],
+    "rules": [
+      "Flip a coin. If heads, choose up to 3 cards at random from your opponent's hand (don't look at them). Your opponent shuffles those cards into his or her deck."
+    ]
+  },
+  {
+    "id": "ecard3-19",
+    "name": "Magneton",
+    "attacks": [
+      {
+        "name": "Electric Blast",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": "You may discard all Lightning Energy cards attached to Magneton when you use this attack. If you do, put damage counters equal to the amount of Energy cards removed in this way on any number of your opponent's Benched Pokémon in the way you like. (For example, if you discard 3 Lightning Energy cards, you can put 1 damage counter on 1 of your opponent's Benched Pokémon and 2 on another.)"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Attract Energy",
+        "text": "When you play Magneton from your hand to evolve 1 of your Pokémon, you may move any number of basic Energy cards attached to your other Pokémon to Magneton.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-20",
+    "name": "Sabrina",
+    "attacks": [],
+    "rules": [
+      "Take all Energy cards attached to 1 of your Pokémon with Sabrina in its name and attach them to another 1 of your Pokémon with Sabrina in its name."
+    ]
+  },
+  {
+    "id": "ecard3-20",
+    "name": "Magneton",
+    "attacks": [
+      {
+        "name": "Bounce Off",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "If Magneton and the Defending Pokémon don't have the same number of Energy cards attached to them, the player controlling the Active Pokémon with the fewest number of Energy cards attached to it switches 1 of his or her Benched Pokémon with his or her Active Pokémon."
+      }
+    ]
+  },
+  {
+    "id": "basep-21",
+    "name": "Moltres",
+    "attacks": [
+      {
+        "name": "Hyper Flame",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "60",
+        "text": "Flip a coin. If heads, discard 1 Fire Energy card attached to Moltres. If tails, discard all Energy cards attached to Moltres. If you can't discard Energy cards, this attack does nothing."
+      }
+    ]
+  },
+  {
+    "id": "neo4-21",
+    "name": "Dark Ursaring",
+    "attacks": [
+      {
+        "name": "Provoke",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Look at your opponent's hand. If he or she has any Baby Pokémon and/or Basic Pokémon there, you may put any number of them onto your opponent's Bench (as long as there's room). Then, your opponent looks at your hand. If you have any Baby Pokémon and/or Basic Pokémon there, your opponent may put any number of them onto your Bench (as long as there's room)."
+      }
+    ]
+  },
+  {
+    "id": "ecard2-22",
+    "name": "Magneton",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Magnetic Flow",
+        "text": "Once during your turn (before your attack), if Magneton is your Active Pokémon, you may flip a coin. If heads, choose 2 of your opponent's Pokémon that have Energy cards attached to them. Choose 1 of the Energy cards attached to each of those Pokémon and switch them between the Pokémon. This power can't be used if Magneton is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo1-22",
+    "name": "Elekid",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Playful Punch",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, do 20 damage to your opponent's Active Pokémon. (Apply Weakness and Resistance.) Either way, this ends your turn. This power can't be used if Elekid is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "If this Baby Pokémon is your Active Pokémon and your opponent tries to attack, your opponent flips a coin (before doing anything required in order to use that attack). If tails, your opponent's turn ends without an attack."
+    ]
+  },
+  {
+    "id": "neo3-22",
+    "name": "Raikou",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Legendary Body",
+        "text": "As long as Raikou is your Active Pokémon, Raikou and Energy cards attached to it aren't affected by effects from Trainer cards other than Stadium cards. As long as this Power is active, discard any Trainer cards attached to Raikou. (This power works even if Raikou is Asleep, Confused, or Paralyzed.)",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-22",
+    "name": "Brock's Dugtrio",
+    "attacks": [
+      {
+        "name": "Lie Low",
+        "cost": [
+          "Fighting"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "All damage done to Brock's Dugtrio during your opponent's next turn is reduced by 20 (after applying Weakness and Resistance)."
+      },
+      {
+        "name": "Earthdrill",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "60",
+        "text": "This attack can't be used unless Brock's Dugtrio used its Lie Low attack last turn."
+      }
+    ]
+  },
+  {
+    "id": "ecard3-23",
+    "name": "Omastar",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Primal Stare",
+        "text": "As long as Omastar is your Active Pokémon, your opponent can't play Basic Pokémon or Evolution cards from his or her hand to evolve his or her Active Pokémon.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "neo4-24",
+    "name": "Light Ledian",
+    "attacks": [
+      {
+        "name": "Flash Touch",
+        "cost": [
+          "Grass"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If you have any Benched Pokémon, switch 1 of them with Light Ledian. As long as that Pokémon is your Active Pokémon, it can't become Asleep, Confused, Paralyzed, or Poisoned. (All other effects of attacks, Pokémon Powers, and Trainer cards still happen.)"
+      }
+    ]
+  },
+  {
+    "id": "neo4-25",
+    "name": "Light Machamp",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Tag Team",
+        "text": "When you play Light Machamp from your hand, if it is on your Bench, remove 3 damage counters from your Active Pokémon. If it has fewer damage counters than that, remove all of them. Then, switch Light Machamp with your Active Pokémon.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-26",
+    "name": "Magnemite",
+    "attacks": [
+      {
+        "name": "Lock-on",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, treat any tails flipped when using Magnemite's Electric Bolt attack as if they were heads. (Benching or evolving either Pokémon ends this effect.)"
+      }
+    ]
+  },
+  {
+    "id": "neo3-26",
+    "name": "Sudowoodo",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Mimic",
+        "text": "As long as Sudowoodo is your Active Pokémon, it copies all of the Defending Pokémon's attacks, including their costs. This power can't be used if Sudowoodo is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-27",
+    "name": "Unown [G]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Give]",
+        "text": "Once during your turn (before your attack), if you have Unown [G], Unown [I], Unown [V], and Unown [E] on your Bench, you may flip a coin. If heads, search your deck for a basic Energy card and attach it to 1 of your Pokémon. Shuffle your deck afterward.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo2-27",
+    "name": "Politoed",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Frog Song",
+        "text": "Whenever Politoed's attack damages the Defending Pokémon (after applying Weakness and Resistance), if there are more than 3 Poliwags, Poliwhirls, Poliwraths, and/or Politoeds in play (including your opponent's), that attack does 40 more damage (no matter how many heads you get). This power stops working while Politoed is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo3-27",
+    "name": "Suicune",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Legendary Body",
+        "text": "As long as Suicune is your Active Pokémon, Suicune and Energy cards attached to it aren't affected by effects from Trainer cards other than Stadium cards. As long as this Power is active, discard any Trainer cards attached to Suicune. (This power works even if Suicune is Asleep, Confused, or Paralyzed.)",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard1-28",
+    "name": "Typhlosion",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Heat Up",
+        "text": "Once during your turn (before your attack), you may count the total number of Energy cards attached to all of your Pokémon and all of your opponent's Pokémon. If your opponent has more total Energy cards attached, you may search your deck for 1 Fire Energy card and attach it to 1 of your Benched Pokémon, if any. Shuffle your deck afterward. This power can't be used if Typhlosion is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-28",
+    "name": "Raikou",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Pure Body",
+        "text": "To attach a Lightning Energy card from your hand to Raikou, you must discard an Energy card attached to Raikou. (Attach the Lightning Energy, and then discard an Energy card from Raikou.)",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "neo1-29",
+    "name": "Bayleef",
+    "attacks": [
+      {
+        "name": "Sweet Scent",
+        "cost": [
+          "Grass"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads and if any of your Pokémon have any damage counters on them, then remove 2 damage counters from 1 of them (or 1 if it only has 1). If tails and if any of your opponent's Pokémon have any damage counters on them, choose 1 of them and remove 2 damage counters from it (or 1 if it only has 1)."
+      }
+    ]
+  },
+  {
+    "id": "gym1-29",
+    "name": "Misty's Cloyster",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Shell Armor",
+        "text": "You may reduce all damage done by attacks to Misty's Cloyster by 10 (after applying Weakness and Resistance). (Any other effects of attacks still happen). This power can't be used if Misty's Cloyster is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-30",
+    "name": "Unown [X]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[XXXXX]",
+        "text": "Whenever 1 of your Pokémon with Unown in its name uses its Hidden Power attack, flip a coin until you get tails. That attack does 10 more damage for each heads. If you have more than 1 Unown [X] in play, use only 1 [XXXXX] each turn.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo2-30",
+    "name": "Smeargle",
+    "attacks": [
+      {
+        "name": "Sketch",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "If the Defending Pokémon attacked last turn, and Smeargle was in play during that attack, Smeargle copies that attack except for its Energy costs and anything else required in order to use that attack."
+      }
+    ]
+  },
+  {
+    "id": "neo1-31",
+    "name": "Croconaw",
+    "attacks": [
+      {
+        "name": "Jaw Clamp",
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "Until the end of your opponent's next turn, as long as Croconaw is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing."
+      }
+    ]
+  },
+  {
+    "id": "gym2-31",
+    "name": "Blaine's Charmeleon",
+    "attacks": [
+      {
+        "name": "Bonfire",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "Flip 3 coins. For each heads, discard 1 Fire Energy card attached to Blaine's Charmeleon. If you can't discard Energy cards, this attack does nothing. This attack does 10 damage times the number of heads to each of your opponent's Pokémon. Don't apply Weakness and Resistance for this attack. (Any other effects that would happen after applying Weakness and Resistance still happen.)"
+      }
+    ]
+  },
+  {
+    "id": "basep-32",
+    "name": "Smeargle",
+    "attacks": [
+      {
+        "name": "Paint",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, choose a type (other than Colorless) and put a Coloring counter on the Defending Pokémon. That Pokémon is now the type you chose. If it already had a Coloring counter, remove the old one. If tails, this attack does nothing."
+      }
+    ]
+  },
+  {
+    "id": "neo2-32",
+    "name": "Umbreon",
+    "attacks": [
+      {
+        "name": "Pursuit",
+        "cost": [
+          "Darkness",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "During your opponent's next turn, if the Defending Pokémon tries to retreat, do 10 damage to it. (Don't apply Weakness and Resistance.)"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-32",
+    "name": "Umbreon",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Dark Gaze",
+        "text": "As long as Umbreon is your Active Pokémon, Benched Pokémon (yours and your opponent's) can't use Poké-Powers.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard1-33",
+    "name": "Alakazam",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Psymimic",
+        "text": "Once during your turn, instead of Alakazam's normal attack, you may choose 1 of your opponent's Pokémon's attacks. Alakazam copies that attack including its Energy costs and anything else required in order to use that attack, such as discarding Energy cards. (No matter what type that Pokémon is, Alakazam's type is still Psychic.) This power can't be used if Alakazam is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-33",
+    "name": "Unown [A]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Anger]",
+        "text": "Whenever 1 of your Pokémon with Unown in its name uses its Hidden Power attack, that attack does 10 more damage for each damage counter on Unown [A]. If you have more than 1 Unown [A] in play, use only 1 [Anger] for each attack.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo3-33",
+    "name": "Magcargo",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Magma Pool",
+        "text": "If Magcargo is your Active Pokémon and moves to the Bench, remove 1 Fire Energy card attached to Magcargo, if any, and attach it to the new Active Pokémon. (You can't choose an Energy card that you used to pay the Retreat Cost.)",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "basep-34",
+    "name": "Entei",
+    "attacks": [
+      {
+        "name": "Protective Flame",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50",
+        "text": "During your opponent's next turn, prevent all effects of attacks, including damage, done to your Benched Pokémon."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Bolt",
+        "text": "Whenever your opponent's attack damages Entei, unless that attack Knocks Out Entei, flip a coin. If heads, shuffle Entei and all cards attached to it into your deck. This power can't be used if Entei is already Asleep, Confused, or Paralyzed when it is damaged.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-34",
+    "name": "Wigglytuff",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Good Neighbor",
+        "text": "Once during your turn (before your attack), if Wigglytuff is on your bench, you may flip a coin. If heads, each player removes up to 2 damage counters from his or her Active Pokémon. This power can't be used if you have already used another Wigglytuff's Good Neighbor Poké-Power this turn.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-35",
+    "name": "Dark Forretress",
+    "attacks": [
+      {
+        "name": "Armor Up",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Until the end of your next turn, if Dark Forretress would be Knocked Out by damage from an attack, flip a coin. If heads, Dark Forretress is not Knocked Out and its remaining HP become 10 instead."
+      }
+    ]
+  },
+  {
+    "id": "neo2-35",
+    "name": "Wobbuffet",
+    "attacks": [
+      {
+        "name": "Counter",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If an attack damages Wobbuffet during your opponent's next turn (even if Wobbuffet is Knocked Out), flip a coin. If heads, Wobbuffet attacks the Defending Pokémon for an equal amount of damage."
+      }
+    ]
+  },
+  {
+    "id": "gym2-35",
+    "name": "Brock's Primeape",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Scram",
+        "text": "If Brock's Primeape ever has exactly 10 HP left, shuffle it and all cards attached to it into your deck. This power stops working while Brock's Primeape is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-35",
+    "name": "Xatu",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Synchronicity",
+        "text": "You may attach any Technical Machine to Xatu.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "neo1-36",
+    "name": "Gloom",
+    "attacks": [
+      {
+        "name": "Sticky Nectar",
+        "cost": [
+          "Grass",
+          "Grass",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage and, until the end of your next turn, as long as Gloom is your Active Pokémon, the Defending Pokémon can't retreat, and if the effect of an attack, Pokémon Power, or Trainer card would change that player's Active Pokémon, that part of the effect does nothing. If tails, this attack does 20 damage."
+      }
+    ]
+  },
+  {
+    "id": "ecard2-37",
+    "name": "Suicune",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Pure Body",
+        "text": "To attach a Water Energy card from your hand to Suicune, you must discard an Energy card attached to Suicune. (Attach the Water Energy, and then discard an Energy card from Suicune.)",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-38",
+    "name": "Tentacruel",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Strange Tentacles",
+        "text": "Once during your turn (before your attack), as long as the number of Energy cards attached to the Defending Pokémon is less than the number of Energy cards attached to your Active Pokémon, you may choose an Energy card, if any, in your opponent's discard pile and attach it to the Defending Pokémon. This power can't be used if Tentacruel is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo1-38",
+    "name": "Lanturn",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Hydroelectric Power",
+        "text": "You may make Floodlight do 10 more damage for each Water Energy attached to Lanturn, but not used to pay for Floodlight's Energy cost. This power can't be used if Lanturn is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-39",
+    "name": "Togetic",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Miracle Shift",
+        "text": "Once during your turn (before your attack), discard a basic Energy card attached to 1 of your Pokémon. Then, choose a basic Energy card from your discard pile and attach it to that Pokémon. This power can't be used if Togetic is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo1-39",
+    "name": "Ledian",
+    "attacks": [
+      {
+        "name": "Baton Pass",
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": "If you have any Grass Pokémon on your Bench, remove all Grass Energy cards from Ledian and attach them to 1 of those Pokémon, then switch Ledian with that Pokémon."
+      }
+    ]
+  },
+  {
+    "id": "neo3-39",
+    "name": "Unown [B]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Bear]",
+        "text": "Once during your turn (before your attack), you may move 1 damage counter from 1 of your Pokémon with Unown in its name to Unown [B]. This power can't be used if Unown [B] has 10 HP left. This power can be used even if Unown [B] is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "ecard2-40",
+    "name": "Tyranitar",
+    "attacks": [
+      {
+        "name": "Destructive Roar",
+        "cost": [
+          "Darkness"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, discard 1 Energy card attached to 1 of your opponent's Pokémon."
+      }
+    ]
+  },
+  {
+    "id": "neo3-40",
+    "name": "Unown [Y]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Yield]",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for a Psychic Energy card and attach it to 1 of your Pokémon with Unown in its name. Shuffle your deck afterward. This power can be used even if Unown [Y] is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "ecard3-40",
+    "name": "Noctowl",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Investigate",
+        "text": "Once during your turn (before your attack), you may look at the top 2 cards of any player's deck or at up to 2 of any player's Prizes. Put any cards you looked at back in the same order. This power can't be used if Noctowl is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-41",
+    "name": "Umbreon",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Dark Moon",
+        "text": "As long as Umbreon is your Active Pokémon and has a Darkness Energy attached to it, once during your turn (before your attack), you may look at your opponent's hand. Choose from it a number of cards up to the number of Darkness Energy attached to Umbreon and shuffle them into your opponent's deck. Your opponent then draws the same number of cards from his or her deck. This power can't be used if Umbreon is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-41",
+    "name": "Kakuna",
+    "attacks": [
+      {
+        "name": "Secrete Poison",
+        "cost": [
+          "Grass",
+          "Grass"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "",
+        "text": "During your opponent's next turn, whenever your opponent's attack damages Kakuna (even if Kakuna is Knocked Out), your opponent's Active Pokémon is now Poisoned and Kakuna does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ]
+  },
+  {
+    "id": "neo3-41",
+    "name": "Aipom",
+    "attacks": [
+      {
+        "name": "Grab",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose a Trainer card attached to 1 of your opponent's Pokémon. Your opponent shuffles that card into his or her deck."
+      }
+    ]
+  },
+  {
+    "id": "ecard2-42",
+    "name": "Victreebel",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Fragrance Trap",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, choose 1 of your opponent's Benched Pokémon and switch the Defending Pokémon with it. This Power can't be used if Victreebel is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "gym1-43",
+    "name": "Erika's Exeggcute",
+    "attacks": [
+      {
+        "name": "Deflector",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your opponent's next turn, whenever Erika's Exeggcute takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)"
+      }
+    ]
+  },
+  {
+    "id": "neo4-44",
+    "name": "Jigglypuff",
+    "attacks": [
+      {
+        "name": "Expand",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "All damage done to Jigglypuff during your opponent's next turn is reduced by 10 (after applying Weakness and Resistance)."
+      }
+    ]
+  },
+  {
+    "id": "neo2-44",
+    "name": "Poliwhirl",
+    "attacks": [
+      {
+        "name": "Belly Drum",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Put 3 damage counters on Poliwhirl. If this doesn't Knock Out Poliwhirl, search your deck for 2 Basic Energy cards and attach them to Poliwhirl. Shuffle your deck afterward."
+      }
+    ]
+  },
+  {
+    "id": "neo4-45",
+    "name": "Light Dewgong",
+    "attacks": [
+      {
+        "name": "Ice Pillar",
+        "cost": [
+          "Water",
+          "Water",
+          "Water"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": "Until the end of your opponent's next turn, as long as Light Dewgong is your Active Pokémon, prevent all damage done by attacks to your Benched Pokémon. (Any other effects of attacks still happen.)"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-45",
+    "name": "Wobbuffet",
+    "attacks": [
+      {
+        "name": "Return Attack",
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10×",
+        "text": "Flip 2 coins. If either is heads, this attack does 10 damage times the number of damage counters on Wobbuffet."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Mirror Coat",
+        "text": "If Wobbuffet becomes Poisoned or Burned by the Defending Pokémon's attack during your opponent's turn, the Defending Pokémon becomes affected by the same Special Condition.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "basep-46",
+    "name": "Electabuzz",
+    "attacks": [
+      {
+        "name": "Lightning Rod",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose 1 of your opponent's Pokémon and put a Lightning Rod marker on it. (A Pokémon can have only 1 Lightning Rod marker on it at a time.)"
+      },
+      {
+        "name": "Lightning Bolt",
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10",
+        "text": "This attack does 20 damage to any Pokémon with a Lightning Rod marker on it. Apply Weakness and Resistance."
+      }
+    ]
+  },
+  {
+    "id": "neo4-47",
+    "name": "Light Golduck",
+    "attacks": [
+      {
+        "name": "Flipper Stroke",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Your opponent looks at the top 3 cards of his or her deck. If any of them are basic Energy cards, he or she may show any number of them to you and put them into his or her hand. You do the same. Either way, each player shuffles his or her deck."
+      }
+    ]
+  },
+  {
+    "id": "neo1-47",
+    "name": "Quilava",
+    "attacks": [
+      {
+        "name": "Char",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30",
+        "text": "If the Defending Pokémon doesn't have a Char counter on it, flip a coin. If heads, put a Char counter on it. A Char counter requires your opponent to flip a coin after every turn. If tails, put 2 damage counters on the Pokémon with that Char counter. (Char counters stay on the Pokémon as long as it's in play.)"
+      }
+    ]
+  },
+  {
+    "id": "gym2-47",
+    "name": "Koga's Kakuna",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Emerge",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for an Evolution card named Koga's Beedrill and put it on Koga's Kakuna. (This counts as evolving Koga's Kakuna.) Shuffle your deck afterward. This power can't be used if Koga's Kakuna is Asleep, Confused, or Paralyzed.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo4-48",
+    "name": "Light Jolteon",
+    "attacks": [
+      {
+        "name": "Pulse Guard",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your opponent's next turn, whenever 30 or more damage is done to Light Jolteon (after applying Weakness and Resistance), prevent that damage. (Any other effects of attacks still happen.)"
+      }
+    ]
+  },
+  {
+    "id": "gym2-49",
+    "name": "Koga's Pidgey",
+    "attacks": [
+      {
+        "name": "Messenger",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Put Koga's Pidgey and all cards attached to it on top of your deck. Then search your deck for any Basic Pokémon or Evolution card not named Koga's Pidgey. Show that card to your opponent, then put it into your hand. Shuffle your deck afterward."
+      }
+    ]
+  },
+  {
+    "id": "gym2-51",
+    "name": "Lt. Surge's Eevee",
+    "attacks": [
+      {
+        "name": "Surprise",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Look at a random card from your opponent's hand. Your opponent shuffles that card into his or her deck."
+      }
+    ]
+  },
+  {
+    "id": "neo4-52",
+    "name": "Light Vaporeon",
+    "attacks": [
+      {
+        "name": "Wash Away",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If you have any Benched Pokémon, flip a coin. If heads, remove all damage counters from 1 of your Benched Pokémon and discard all Energy cards attached to it."
+      }
+    ]
+  },
+  {
+    "id": "gym2-52",
+    "name": "Lt. Surge's Electrode",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Shock Blast",
+        "text": "If Lt. Surge's Electrode is your Active Pokémon and gets damaged (even if it's Knocked Out), flip a coin. If tails, this power does 20 damage to each Active Pokémon. This power works even if Lt. Surge's Electrode is already Asleep, Confused, or Paralyzed when it takes damage.",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "basep-53",
+    "name": "Suicune",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Pure Body",
+        "text": "To attach a Water Energy card from your hand to Suicune, you must discard an Energy card attached to Suicune. (Attach the Water Energy, and then discard an Energy card from Suicune.)",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "neo1-53",
+    "name": "Chikorita",
+    "attacks": [
+      {
+        "name": "Deflector",
+        "cost": [
+          "Grass"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your opponent's next turn, whenever Chikorita takes damage, divide that damage in half (rounded down to the nearest 10). (Any other effects still happen.)"
+      }
+    ]
+  },
+  {
+    "id": "gym2-53",
+    "name": "Lt. Surge's Raticate",
+    "attacks": [
+      {
+        "name": "Focus Energy",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, Lt. Surge's Raticate's Double-edge attack's damage (base damage and damage to itself) is doubled."
+      }
+    ]
+  },
+  {
+    "id": "neo3-54",
+    "name": "Smoochum",
+    "attacks": [
+      {
+        "name": "Psykiss",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, choose a Special Energy card attached to 1 of your opponent's Pokémon. Your opponent shuffles that card into his or her deck."
+      }
+    ],
+    "rules": [
+      "If this Baby Pokémon is your Active Pokémon and your opponent announces an attack, your opponent flips a coin (before doing anything else). If tails, your opponent's turn ends."
+    ]
+  },
+  {
+    "id": "gym1-54",
+    "name": "Misty's Psyduck",
+    "attacks": [
+      {
+        "name": "Call for Friend",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, you may search your deck for a Basic Pokémon with Misty in its name and put it onto your Bench. (You can't use this attack if your Bench is full.) Shuffle your deck afterward."
+      }
+    ]
+  },
+  {
+    "id": "neo2-56",
+    "name": "Kabuto",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Revive Friends",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for a card named Kabuto and put it on your Bench. Shuffle your deck afterward. Treat the new Kabuto as a Basic Pokémon. This power can't be used if Kabuto is Asleep, Confused, or Paralyzed (or if your Bench is full).",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "gym2-56",
+    "name": "Sabrina's Hypno",
+    "attacks": [
+      {
+        "name": "Invigorate",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose 1 Basic Pokémon in any player's discard pile. Put it onto that player's Bench. Put a number of damage counters on that Pokémon equal to half its HP (rounded down to the nearest 10). (You can't put a Pokémon on a Bench that's full.)"
+      }
+    ]
+  },
+  {
+    "id": "neo4-57",
+    "name": "Unown [C]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Chase]",
+        "text": "As long as Unown [C] is your Active Pokémon, whenever your opponent's Active Pokémon tries to retreat, flip a coin. If heads, put 1 damage counter on that Pokémon. Apply Weakness and Resistance.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "gym2-57",
+    "name": "Sabrina's Jynx",
+    "attacks": [
+      {
+        "name": "Helping Hand",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose 1 of your opponent's Pokémon. Remove any number of damage counters from that Pokémon, then draw that many cards."
+      }
+    ]
+  },
+  {
+    "id": "gym1-57",
+    "name": "Misty's Tentacool",
+    "attacks": [
+      {
+        "name": "Crystal Beam",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "Flip a coin. If heads, your opponent can't attach Energy cards to the Defending Pokémon during his or her next turn."
+      }
+    ]
+  },
+  {
+    "id": "neo4-58",
+    "name": "Unown [P]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Perform]",
+        "text": "If an attack damaged Unown [P] during your opponent's last turn and Unown [P] was your Active Pokémon, Unown [P]'s Hidden Power attack does that much more damage to the Defending Pokémon. This power can be used even if Unown [P] is Confused.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo3-58",
+    "name": "Unown [K]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Keep]",
+        "text": "Your opponent's attacks, Pokémon Powers, and Trainer cards can't discard Energy cards from your Pokémon with Unown in their names. (Any other effects still happen.)",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo2-60",
+    "name": "Omanyte",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Revive Fossil",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, search your deck for a card that evolves from Mysterious Fossil and put it onto your Bench. Shuffle your deck afterward. Treat that card as a Basic Pokémon. This power can't be used if Omanyte is Asleep, Confused, or Paralyzed (or if your Bench is full).",
+        "type": "Pokémon Power"
+      }
+    ]
+  },
+  {
+    "id": "neo2-61",
+    "name": "Pineco",
+    "attacks": [
+      {
+        "name": "Burst",
+        "cost": [
+          "Grass"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "40",
+        "text": "Flip a coin. If heads, Pineco does 40 damage to itself and 10 damage to each Pokémon on each player's Bench. (Don't apply Weakness and Resistance for Benched Pokémon.) Flip a coin. If tails, this attack does nothing (not even damage)."
+      }
+    ]
+  },
+  {
+    "id": "neo1-62",
+    "name": "Horsea",
+    "attacks": [
+      {
+        "name": "Fin Slap",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20+",
+        "text": "If an attack damaged Horsea during your opponent's last turn, this attack does 20 damage plus 10 more damage. If not, this attack does 20 damage."
+      }
+    ]
+  },
+  {
+    "id": "neo3-62",
+    "name": "Pokémon Breeder Fields",
+    "attacks": [],
+    "rules": [
+      "Flip a coin for 1 or 2 of your non-Baby Pokémon that can evolve. For each heads, search your deck for a later-Stage card that matches that Pokémon. Then put that card into your hand. Shuffle your deck afterward."
+    ]
+  },
+  {
+    "id": "ecard1-65",
+    "name": "Typhlosion",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Heat Up",
+        "text": "Once during your turn (before your attack), you may count the total number of Energy cards attached to all of your Pokémon and all of your opponent's Pokémon. If your opponent has more total Energy cards attached, you may search your deck for 1 Fire Energy card and attach it to 1 of your Benched Pokémon, if any. Shuffle your deck afterward. This power can't be used if Typhlosion is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "neo3-65",
+    "name": "Shining Gyarados",
+    "attacks": [
+      {
+        "name": "Devastate",
+        "cost": [
+          "Water",
+          "Water",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": "Discard 2 Fire Energy cards attached to Shining Gyarados or this attack does nothing. This attack does 10 damage to each of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.) Then, flip a coin. If heads, choose 1 Energy card attached to each of your opponent's Pokémon that has any Energy cards attached to it and discard those Energy cards."
+      }
+    ],
+    "rules": [
+      "You can't have more than 1 Shining Gyarados in your deck."
+    ]
+  },
+  {
+    "id": "gym1-66",
+    "name": "Brock's Geodude",
+    "attacks": [
+      {
+        "name": "Call for Friend",
+        "cost": [
+          "Fighting"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, you may search your deck for a Basic Pokémon card with Brock in its name and put it onto your Bench. Shuffle your deck afterward. (You can't use this attack if your Bench is full.)"
+      }
+    ]
+  },
+  {
+    "id": "neo2-68",
+    "name": "Unown [I]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Increase]",
+        "text": "When you play Unown [I] from your hand, you may search your deck for a card with Unown in its name and put it onto your Bench. Shuffle your deck afterward. You can't use this power if your Bench is full.",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "neo2-71",
+    "name": "Wooper",
+    "attacks": [
+      {
+        "name": "Slime",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "If an attack would do damage to Wooper during your opponent's next turn, your opponent flips a coin. If tails, prevent all damage to Wooper from that attack. (Any other effects of that attack happen.)"
+      }
+    ]
+  },
+  {
+    "id": "neo2-72",
+    "name": "Fossil Egg",
+    "attacks": [],
+    "rules": [
+      "Flip a coin. If heads, search your deck for a card that evolves from Mysterious Fossil and put it onto your Bench or put a card that evolves from Mysterious Fossil from your hand onto your Bench. Either way, treat the new card as a Basic Pokémon. If you searched your deck, shuffle it. (You can't play this card if your Bench is full.)"
+    ]
+  },
+  {
+    "id": "gym2-83",
+    "name": "Koga's Zubat",
+    "attacks": [
+      {
+        "name": "Group Attack",
+        "cost": [
+          "Grass",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10×",
+        "text": "Does 10 damage times the number of Koga's Zubats you have in play. Before doing damage, you may search your deck for any number of Basic Pokémon named Koga's Zubat and put them onto your Bench. (You can't get more cards with this attack than you have room on your Bench.) If you do, shuffle your deck afterward."
+      }
+    ]
+  },
+  {
+    "id": "neo1-84",
+    "name": "Ecogym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "Whenever an attack, Pokémon Power, or Trainer card discards another player's non-Colorless Energy card from a Pokémon, return that Energy card to its owner's hand. (Energy cards that are discarded when that Pokémon is Knocked Out don't count.)"
+    ]
+  },
+  {
+    "id": "gym2-85",
+    "name": "Lt. Surge's Rattata",
+    "attacks": [
+      {
+        "name": "Focus Energy",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your next turn, Lt. Surge's Rattata's Quick Attack's base damage is doubled."
+      }
+    ]
+  },
+  {
+    "id": "neo1-86",
+    "name": "Focus Band",
+    "attacks": [],
+    "rules": [
+      "Attach Focus Band to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+      "If the Pokémon Focus Band is attached to would be Knocked Out by your opponent's attack, flip a coin. If heads, that Pokémon is not Knocked Out and its remaining HP become 10 instead. Then, discard Focus Band."
+    ]
+  },
+  {
+    "id": "neo4-89",
+    "name": "Unown [V]",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "[Vanish]",
+        "text": "When you play Unown [V] from your hand, you may flip a coin. If heads, return 1 of your Pokémon with Unown in its name (other than Unown [V]) to your hand. (Discard all cards attached to that card.)",
+        "type": "Pokémon Power"
+      }
+    ],
+    "rules": [
+      "You may have up to 4 Basic Pokémon cards in your deck with Unown in their names."
+    ]
+  },
+  {
+    "id": "gym2-90",
+    "name": "Misty's Psyduck",
+    "attacks": [
+      {
+        "name": "ESP",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip 3 coins. If exactly 1 is heads, draw a card. If exactly 2 are heads, this attack does 20 damage. If all 3 are heads, choose 1 of the Defending Pokémon's attacks. Misty's Psyduck copies that attack except for its Energy costs. (No matter what type the Defending Pokémon is, Misty's Psyduck's type is still Water.)"
+      }
+    ]
+  },
+  {
+    "id": "gym1-91",
+    "name": "Sabrina's Abra",
+    "attacks": [
+      {
+        "name": "Energy Loop",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": "Return a Psychic Energy card attached to Sabrina's Abra to your hand in order to use this attack."
+      }
+    ]
+  },
+  {
+    "id": "neo4-93",
+    "name": "EXP.ALL",
+    "attacks": [],
+    "rules": [
+      "Attach EXP.ALL to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+      "During your opponent's turn, if your Active Pokémon would be Knocked Out by your opponent's attack, you may take 1 of the basic Energy cards attached to your Active Pokémon and attach it to the Pokémon with EXP.ALL attached to it. If you do, discard EXP.ALL."
+    ]
+  },
+  {
+    "id": "neo1-93",
+    "name": "Gold Berry",
+    "attacks": [],
+    "rules": [
+      "Attach Gold Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+      "At any time between turns, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, you may remove 4 of them and discard Gold Berry. At the start of each turn, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, remove 4 of them and discard Gold Berry."
+    ]
+  },
+  {
+    "id": "neo1-94",
+    "name": "Miracle Berry",
+    "attacks": [],
+    "rules": [
+      "Attach Miracle Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+      "At any time between turns, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, you may remove all those effects from that Pokémon and discard Miracle Berry. At the start of each turn, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, remove all of those effects from that Pokémon and discard Miracle Berry."
+    ]
+  },
+  {
+    "id": "neo4-97",
+    "name": "Counterattack Claws",
+    "attacks": [],
+    "rules": [
+      "Attach Counterattack Claws to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+      "During your opponent's turn, if the Pokémon Counterattack Claws is attached to is your Active Pokémon and an opponent's attack damages it (even if it is Knocked Out), flip a coin. If heads, put 2 damage counters on the Defending Pokémon. Then, discard Counterattack Claws."
+    ]
+  },
+  {
+    "id": "gym1-97",
+    "name": "Blaine's Quiz #1",
+    "attacks": [],
+    "rules": [
+      "Put a Basic Pokémon or Evolution card from your hand face down in front of you and tell your opponent its name. Your opponent guesses the length of that Pokémon. Flip the card over. If your opponent guessed right, he or she draws 2 cards. If your opponent guessed wrong, you draw 2 cards. Either way, return the card to your hand."
+    ]
+  },
+  {
+    "id": "neo1-99",
+    "name": "Berry",
+    "attacks": [],
+    "rules": [
+      "Attach Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.",
+      "At any time between turns, if there are at least 2 damage counters on the Pokémon Berry is attached to, you may remove 2 of them and discard Berry. At the start of each turn, if there are at least 2 damage counters on the Pokémon Berry is attached to, remove 2 of them and discard Berry."
+    ]
+  },
+  {
+    "id": "gym1-99",
+    "name": "Charity",
+    "attacks": [],
+    "rules": [
+      "Attach Charity to your Active Pokémon. Unless that Pokémon gets Knocked Out, return Charity to your hand at the end of your turn. If that Pokémon attacks and does damage to the Defending Pokémon, you may reduce that damage by any amount (rounded to the nearest 10)."
+    ]
+  },
+  {
+    "id": "gym2-100",
+    "name": "Blaine",
+    "attacks": [],
+    "rules": [
+      "During this turn, instead of attaching your free Energy card, you may instead attach 2 Fire Energy cards to 1 of your Pokémon with Blaine in its name. (Playing additional copies of this card this turn has no effect.)"
+    ]
+  },
+  {
+    "id": "neo4-101",
+    "name": "Magnifier",
+    "attacks": [],
+    "rules": [
+      "Attach Magnifier to 1 of your Pokémon. At the end of your turn, discard Magnifier. If the Pokémon Magnifier is attached to attacks, don't apply Resistance for that attack."
+    ]
+  },
+  {
+    "id": "gym2-101",
+    "name": "Brock's Protection",
+    "attacks": [],
+    "rules": [
+      "Attach Brock's Protection to 1 of your Pokémon with Brock in its name. Energy cards attached to that Pokémon can't be removed by your opponent's attacks or Trainer cards. (This doesn't stop the rest of the attack or Trainer card from working normally.)"
+    ]
+  },
+  {
+    "id": "gym1-101",
+    "name": "Lt. Surge",
+    "attacks": [],
+    "rules": [
+      "You can play this card only if you have at least 1 Basic Pokémon card in your hand. Put a Basic Pokémon card from your hand into play as your Active Pokémon. Put your old Active Pokémon onto your Bench. (You can't play this card if your Bench is full.)"
+    ]
+  },
+  {
+    "id": "neo4-102",
+    "name": "Pokémon Personality Test",
+    "attacks": [],
+    "rules": [
+      "Put an Evolution card from your hand face down in front of you. Your opponent guesses whether it is a Pokémon card with Light in its name, a Pokémon card with Dark in its name, or neither one. Flip the card over. If your opponent guessed right, he or she draws 3 cards. If your opponent guessed wrong, you draw 3 cards. Either way, return the card to your hand."
+    ]
+  },
+  {
+    "id": "gym1-102",
+    "name": "Misty",
+    "attacks": [],
+    "rules": [
+      "Discard 2 of the other cards in your hand in order to play this card. If this turn's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), and if the attacking Pokémon has Misty in its name, the attack does 20 more damage to the Defending Pokémon."
+    ]
+  },
+  {
+    "id": "neo4-103",
+    "name": "Team Rocket's Evil Deeds",
+    "attacks": [],
+    "rules": [
+      "Look at your opponent's hand and choose a card there. Your opponent shuffles that card into his or her deck. Then, your opponent may draw up to 2 cards."
+    ]
+  },
+  {
+    "id": "gym1-103",
+    "name": "No Removal Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "A player must discard 2 cards from his or her hand in order to play an Energy Removal or Super Energy Removal card."
+    ]
+  },
+  {
+    "id": "gym2-104",
+    "name": "Giovanni",
+    "attacks": [],
+    "rules": [
+      "Choose 1 of your Pokémon in play with Giovanni in its name. For the rest of your turn, you may evolve that Pokémon even if you just played or evolved it this turn or if this is your first turn. This effect also applies to the Pokémon it evolves into."
+    ]
+  },
+  {
+    "id": "gym2-105",
+    "name": "Giovanni's Last Resort",
+    "attacks": [],
+    "rules": [
+      "Remove all damage counters from 1 of your Pokémon with Giovanni in its name. Then discard your hand."
+    ]
+  },
+  {
+    "id": "gym2-106",
+    "name": "Koga",
+    "attacks": [],
+    "rules": [
+      "If an attack from a Pokémon with Koga in its name does damage to a Defending Pokémon this turn, that Pokémon is then Poisoned."
+    ]
+  },
+  {
+    "id": "neo4-107",
+    "name": "Shining Charizard",
+    "attacks": [
+      {
+        "name": "White-hot Flame",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Fire",
+          "Lightning",
+          "Lightning"
+        ],
+        "convertedEnergyCost": 5,
+        "damage": "100",
+        "text": "Discard 1 Fire Energy card and 1 Lightning Energy card attached to Shining Charizard or this attack does nothing. Flip a coin. If tails, Shining Charizard does 30 damage to itself."
+      }
+    ],
+    "rules": [
+      "You can't have more than 1 Shining Charizard in your deck."
+    ]
+  },
+  {
+    "id": "gym2-107",
+    "name": "Lt. Surge's Secret Plan",
+    "attacks": [],
+    "rules": [
+      "Put 1 card from your hand face down onto your Bench. (You can't play this card if your Bench is full.) Treat that card as a Basic Pokémon as long as it's face down. Flip the card if either player needs to know what it is in order to use an attack, a Pokémon Power, or a Trainer card. Flip the card if it ever uses an attack or Pokémon Power, evolves, retreats, is damaged by an attack, or is otherwise affected by an attack. At any time during your turn, you may flip the card over. When you flip that card over, if it isn't a Basic Pokémon, discard it and all cards attached to it."
+    ]
+  },
+  {
+    "id": "gym1-107",
+    "name": "Celadon City Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "During each player's turn, that player may choose to discard an Energy card attached to 1 of his or her Pokémon with Erika in its name. If that player does so, that Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned."
+    ]
+  },
+  {
+    "id": "gym2-110",
+    "name": "Sabrina",
+    "attacks": [],
+    "rules": [
+      "Take all Energy cards attached to 1 of your Pokémon with Sabrina in its name and attach them to another 1 of your Pokémon with Sabrina in its name."
+    ]
+  },
+  {
+    "id": "gym2-112",
+    "name": "Blaine's Quiz #3",
+    "attacks": [],
+    "rules": [
+      "Put a Basic or Evolution card from your hand face down in front of you and tell your opponent the name of an attack of that card. Your opponent guesses the name of that card. Flip the card over. If your opponent guessed right, he or she draws 3 cards. If your opponent guessed wrong, you draw 3 cards. Either way, return the card to your hand."
+    ]
+  },
+  {
+    "id": "gym1-112",
+    "name": "Lt. Surge's Treaty",
+    "attacks": [],
+    "rules": [
+      "Your opponent chooses 1 of the following: everyone chooses 1 of his or her own Prizes and put it into his or her hand, or you draw a card."
+    ]
+  },
+  {
+    "id": "neo4-113",
+    "name": "Shining Tyranitar",
+    "attacks": [
+      {
+        "name": "Destructive Fire",
+        "cost": [
+          "Darkness",
+          "Fire",
+          "Fire",
+          "Fire"
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": "Flip a coin for each Fire Energy card attached to Shining Tyranitar. For each heads, discard a Fire Energy card attached to Shining Tyranitar or this attack does nothing. Then, for each heads, choose an Energy card attached to the Defending Pokémon and discard it. If it has fewer Energy cards than that, remove all of them."
+      }
+    ],
+    "rules": [
+      "You can't have more than 1 Shining Tyranitar in your deck."
+    ]
+  },
+  {
+    "id": "gym2-114",
+    "name": "Fuchsia City Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play after being played. Discard this card if another Stadium card comes into play.",
+      "Once during each player's turn (before attacking), that player may flip a coin. If heads, that player may shuffle 1 of his or her Pokémon in play with Koga in its name and any cards attached to it into his or her deck."
+    ]
+  },
+  {
+    "id": "gym2-115",
+    "name": "Koga's Ninja Trick",
+    "attacks": [],
+    "rules": [
+      "Attach Koga's Ninja Trick to your Active Pokémon with Koga in its name. If this Pokémon goes to your Bench, discard this card. When your opponent attacks, you may switch this Pokémon with 1 of your Benched Pokémon (before damage or other effects of attacks)."
+    ]
+  },
+  {
+    "id": "gym1-116",
+    "name": "Recall",
+    "attacks": [],
+    "rules": [
+      "For your attack this turn, your Active Pokémon can use any attack from its Basic Pokémon card or any Evolution card attached to it. (You still have to pay for that attack's Energy cost.)"
+    ]
+  },
+  {
+    "id": "gym2-117",
+    "name": "Max Revive",
+    "attacks": [],
+    "rules": [
+      "Discard 2 Energy cards from your hand in order to put 1 Basic Pokémon from your discard pile onto your Bench. (You can't play Max Revive if your Bench is full.)"
+    ]
+  },
+  {
+    "id": "gym1-117",
+    "name": "Sabrina's ESP",
+    "attacks": [],
+    "rules": [
+      "Attach Sabrina's ESP to 1 of your Pokémon with Sabrina in its name. At the end of your turn, discard Sabrina's ESP. If that Pokémon uses and attack that involves flipping coins, Sabrina's ESP lets you re-flip those coins once. If you do, re-flip all the coins."
+    ]
+  },
+  {
+    "id": "gym2-119",
+    "name": "Rocket's Minefield Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play after being played. Discard this card if another Stadium card comes into play.",
+      "Whenever a player puts a Basic Pokémon onto his or her Bench from his or her hand, he or she flips a coin. If tails, put damage counters on that Pokémon."
+    ]
+  },
+  {
+    "id": "gym1-119",
+    "name": "Tickling Machine",
+    "attacks": [],
+    "rules": [
+      "Flip a coin. If heads, your opponent sets aside all the cards in his or her hand face down. Nobody may look at those cards. At the end of your opponent's next turn, your opponent puts those cards back into his or her hand. If tails, your turn ends immediately (you can't attack this turn)."
+    ]
+  },
+  {
+    "id": "gym2-120",
+    "name": "Rocket's Secret Experiment",
+    "attacks": [],
+    "rules": [
+      "Flip a coin. If heads, search your deck for any card and put it into your hand. Shuffle your deck afterward. If tails, you can't play Trainer cards until the end of your next turn."
+    ]
+  },
+  {
+    "id": "gym1-120",
+    "name": "Vermilion City Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "Whenever a player attacks with a Pokémon with Lt. Surge in its name, he or she may flip a coin. If heads, and if that Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), that attack does 10 more damage to the Defending Pokémon. If tails, the attacking Pokémon does 10 damage to itself in addition to whatever its attack usually does."
+    ]
+  },
+  {
+    "id": "gym2-121",
+    "name": "Sabrina's Psychic Control",
+    "attacks": [],
+    "rules": [
+      "Flip a coin. If heads, choose a Trainer card in your opponent's discard pile that isn't put in play (like PlusPower or Mysterious Fossil). You may use that card as if it were in your hand, if you do everything required in order to play that card (like discarding cards). The card stays in your opponent's discard pile."
+    ]
+  },
+  {
+    "id": "gym2-122",
+    "name": "Saffron City Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play after being played. Discard this card if another Stadium card comes into play.",
+      "As often as each player like during his or her turn (before attacking), that player may return 1 basic Energy card attached to 1 of his or her Pokémon with Sabrina in its name to his or her hand."
+    ]
+  },
+  {
+    "id": "gym1-123",
+    "name": "Misty's Duel",
+    "attacks": [],
+    "rules": [
+      "You and your opponent play a game of Rock-Paper-Scissors. The winner shuffles his or her hand into his or her deck and draws a new hand of 5 cards. (If you don't know how to play Rock-Paper-Scissors, flip a coin to decide who's the winner.)"
+    ]
+  },
+  {
+    "id": "gym1-124",
+    "name": "Narrow Gym",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "No player may have more than 4 Pokémon on his or her Bench. When this card is played, if a player has 5 Pokémon on his or her Bench, that player chooses 1 of them and returns it and all cards attached to it to his or her hand. (If both players have to return a Pokémon, your opponent returns a Pokémon first.)"
+    ]
+  },
+  {
+    "id": "ecard2-125",
+    "name": "Healing Berry",
+    "attacks": [],
+    "rules": [
+      "Attach Healing Berry to 1 of your Pokémon that doesn't already have a Pokémon Tool card attached to it. If that Pokémon is Knocked Out, discard this card.",
+      "At the end of any turn, if the Pokémon this card is attached to has 20 HP or less, remove 3 damage counters from that Pokémon and discard this card."
+    ]
+  },
+  {
+    "id": "ecard3-127",
+    "name": "Hyper Potion",
+    "attacks": [],
+    "rules": [
+      "Choose 1 of your Pokémon. Discard 1 or 2 basic Energy cards attached to that Pokémon. If you discarded 1 Energy card, remove up to 3 damage counters from that Pokémon. If you discarded 2 Energy cards, remove up to 5 damage counters from that Pokémon."
+    ]
+  },
+  {
+    "id": "ecard2-128",
+    "name": "Memory Berry",
+    "attacks": [],
+    "rules": [
+      "Attach Memory Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.",
+      "The Pokémon this card is attached to can use any attack from its Basic Pokémon card or any Evolution card from which the Pokémon evolved. (You still have to pay for that attack's Energy cost.) Discard this card at the end of any turn the Pokémon attacks."
+    ]
+  },
+  {
+    "id": "ecard3-129",
+    "name": "Miracle Sphere α",
+    "attacks": [
+      {
+        "name": "Fire Force",
+        "cost": [
+          "Fire",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "If the Pokémon using this attack has Fire and Lightning basic Energy cards attached to it, the Defending Pokémon is now Confused. If the Pokémon using this attack has Fire and Fighting basic Energy cards attached to it, this attack does 30 damage plus 10 more damage and remove 3 damage counters from the Pokémon that Miracle Plate α is attached to."
+      }
+    ],
+    "rules": [
+      "Attach this card to 1 of your Evolved Fire, Lightning, or Fighting Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Miracle Plate α."
+    ]
+  },
+  {
+    "id": "ecard3-130",
+    "name": "Miracle Sphere β",
+    "attacks": [
+      {
+        "name": "Freezing Force",
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "If the Pokémon using this attack has Fire and Water basic Energy cards attached to it, this attack does 30 damage plus 10 more damage and the Defending Pokémon is now Burned. If the Pokémon using this attack has Water and Psychic basic Energy cards attached to it, choose an Energy card attached to the Defending Pokémon, if any, and your opponent shuffles that card into his or her deck."
+      }
+    ],
+    "rules": [
+      "Attach this card to 1 of your Evolved Fire, Water, or Psychic Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Miracle Sphere β."
+    ]
+  },
+  {
+    "id": "ecard2-131",
+    "name": "Pokémon Park",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "Once during each of his or her turns, whenever a player attaches an Energy card from his or her hand to 1 of his or her Benched Pokémon, he or she removes 1 damage counter, if any, from that Pokémon."
+    ]
+  },
+  {
+    "id": "ecard3-131",
+    "name": "Miracle Sphere γ",
+    "attacks": [
+      {
+        "name": "Thunder Force",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "30+",
+        "text": "If the Pokémon using this attack has Grass and Lightning basic Energy cards attached to it, the Defending Pokémon is now Asleep and Poisoned. If the Pokémon using this attack has Water and Lightning basic Energy cards attached to it, this attack does 30 damage plus 10 more damage and lets you put 1 damage counter on each of your opponent's Benched Pokémon."
+      }
+    ],
+    "rules": [
+      "Attach this card to 1 of your Evolved Grass, Water, or Lightning Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Miracle Sphere γ."
+    ]
+  },
+  {
+    "id": "ecard3-132",
+    "name": "Mirage Stadium",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "Whenever a player tries to retreat a Pokémon during his or her turn, that player flips a coin. If heads, that player retreats that Pokémon (and discards Energy normally). If tails, that Pokémon can't retreat this turn (the player doesn't discard any Energy)."
+    ]
+  },
+  {
+    "id": "ecard2-135",
+    "name": "Time Shard",
+    "attacks": [],
+    "rules": [
+      "Attach Time Shard to 1 of your Pokémon that doesn't already have a Pokémon Tool card attached to it. If that Pokémon is Knocked Out, discard this card.",
+      "If the Pokémon this card is attached to is Knocked Out by damage from the Defending Pokémon's attack during your opponent's turn, you may return up to 2 basic Energy cards attached to that Pokémon to your hand."
+    ]
+  },
+  {
+    "id": "ecard2-138",
+    "name": "Undersea Ruins",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "Once during each player's turn (before attacking), that player may flip a coin. If heads, that player chooses 1 of his or her Evolved Pokémon in play and discards the top Evolution card from that Pokémon, devolving it."
+    ]
+  },
+  {
+    "id": "ecard3-139",
+    "name": "Star Piece",
+    "attacks": [],
+    "rules": [
+      "Attach Star Piece to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.",
+      "At any time between turns, if the Pokémon this card is attached to is Benched and has 2 or more damage counters on it, search your deck for an Evolution card that Pokémon evolves into and put it on top of that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward. Then, discard Star Piece."
+    ]
+  },
+  {
+    "id": "ecard2-140",
+    "name": "Water Cube 01",
+    "attacks": [
+      {
+        "name": "Splatter",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. Don't apply Weakness or Resistance."
+      }
+    ],
+    "rules": [
+      "Attach this card to 1 of your Water Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Water Cube 01."
+    ]
+  },
+  {
+    "id": "ecard3-141",
+    "name": "Underground Lake",
+    "attacks": [],
+    "rules": [
+      "This card stays in play when you play it. Discard this card if another Stadium card comes into play.",
+      "Once during each player's turn, that player may put an Omanyte or a Kabuto card from his or her discard pile onto his or her Bench. (Cards put on the Bench this way are considered Basic Pokémon.)"
+    ]
+  },
+  {
+    "id": "ecard3-142",
+    "name": "Bounce Energy",
+    "attacks": [],
+    "rules": [
+      "This card provides ColorlessColorless Energy. You can attach this card to your Pokémon that has basic Energy cards attached to it. When you play this card from your hand and attach it to 1 of your Pokémon, return a basic Energy card attached to that Pokémon to your hand."
+    ]
+  },
+  {
+    "id": "ecard3-143",
+    "name": "Cyclone Energy",
+    "attacks": [],
+    "rules": [
+      "This card provides Colorless Energy. When you play this card from your hand and attach it to your Active Pokémon, your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon."
+    ]
+  },
+  {
+    "id": "ecard3-144",
+    "name": "Retro Energy",
+    "attacks": [],
+    "rules": [
+      "This card provides Colorless Energy. When you play this card from your hand and attach it to 1 of your Evolved Pokémon, you may remove up to 2 damage counters from that Pokémon and discard the top card from it. (This counts as devolving it.)"
+    ]
+  },
+  {
+    "id": "ecard2-150",
+    "name": "Nidoking",
+    "attacks": [
+      {
+        "name": "Rolling Thunder",
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Fighting",
+          "Fighting"
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "50",
+        "text": "Flip a coin, If heads, this attack does 10 damage to each of your opponent's Benched Pokémon. If tails, this attack does 10 damage to each of your Benched Pokémon. (Don't apply Weakness or Resistance for Benched Pokémon.)"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Crystal Type",
+        "text": "Whenever you attach a Grass, Lightning, or Fire basic Energy card from your hand to Nidoking, Nidoking's type (color) becomes the same as that Energy card type until the end of the turn.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H09",
+    "name": "Gengar",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Manipulate",
+        "text": "When you play Gengar from your hand to evolve your Active Pokémon, you may put a Basic Pokémon (excluding Baby Pokémon) from your discard pile onto your Bench. Then, flip 3 coins. For each heads, choose a basic Energy card from your discard pile and attach it to that Pokémon.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H10",
+    "name": "Gyarados",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Flame Vapor",
+        "text": "When you play Gyarados from your hand to evolve your Active Pokémon, you may flip 2 coins. For each heads, discard an Energy card attached to the Defending Pokémon.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H13",
+    "name": "Jumpluff",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Fluff",
+        "text": "During your opponent's turn, if Jumpluff would be damaged or affected by an opponent's attack and it already has at least 1 damage counter on it, flip a coin. If heads, prevent all effects of that attack (including damage).",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H13",
+    "name": "Kabutops",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Primal Aura",
+        "text": "As long as Kabutops is your Active Pokémon, neither player can play Basic Pokémon or Evolution cards from his or her hand to evolve Benched Pokémon.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H16",
+    "name": "Magneton",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Magnetic Flow",
+        "text": "Once during your turn (before your attack), if Magneton is your Active Pokémon, you may flip a coin. If heads, choose 2 of your opponent's Pokémon that have Energy cards attached to them. Choose 1 of the Energy cards attached to each of those Pokémon and switch them between the Pokémon. This power can't be used if Magneton is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H17",
+    "name": "Magcargo",
+    "attacks": [
+      {
+        "name": "Crushing Lava",
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40+",
+        "text": "You may discard a Fire or Fighting basic Energy card attached to Magcargo. If you discard a Fire Energy card in this way, the Defending Pokémon is now Burned. If you discard a Fighting Energy card in this way, this attack does 40 damage plus 20 more damage."
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Streaming Mantle",
+        "text": "When you play Magcargo from your hand to evolve your Active Pokémon, you may discard the top 3 cards of your deck and and then shuffle 3 basic Energy cards from your discard pile into your deck. If you do, your opponent does the same.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H18",
+    "name": "Magneton",
+    "attacks": [
+      {
+        "name": "Electric Blast",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "40",
+        "text": "You may discard all Lightning Energy cards attached to Magneton when you use this attack. If you do, put damage counters equal to the amount of Energy cards removed in this way on any number of your opponent's Benched Pokémon in the way you like. (For example, if you discard 3 Lightning Energy cards, you can put 1 damage counter on 1 of your opponent's Benched Pokémon and 2 on another.)"
+      }
+    ],
+    "abilities": [
+      {
+        "name": "Attract Energy",
+        "text": "When you play Magneton from your hand to evolve 1 of your Pokémon, you may move any number of basic Energy cards attached to your other Pokémon to Magneton.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H19",
+    "name": "Magneton",
+    "attacks": [
+      {
+        "name": "Bounce Off",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "If Magneton and the Defending Pokémon don't have the same number of Energy cards attached to them, the player controlling the Active Pokémon with the fewest number of Energy cards attached to it switches 1 of his or her Benched Pokémon with his or her Active Pokémon."
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H25",
+    "name": "Suicune",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Pure Body",
+        "text": "To attach a Water Energy card from your hand to Suicune, you must discard an Energy card attached to Suicune. (Attach the Water Energy, and then discard an Energy card from Suicune.)",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H26",
+    "name": "Tentacruel",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Strange Tentacles",
+        "text": "Once during your turn (before your attack), as long as the number of Energy cards attached to the Defending Pokémon is less than the number of Energy cards attached to your Active Pokémon, you may choose an Energy card, if any, in your opponent's discard pile and attach it to the Defending Pokémon. This power can't be used if Tentacruel is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H26",
+    "name": "Raikou",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Pure Body",
+        "text": "To attach a Lightning Energy card from your hand to Raikou, you must discard an Energy card attached to Raikou. (Attach the Lightning Energy, and then discard an Energy card from Raikou.)",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H27",
+    "name": "Togetic",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Miracle Shift",
+        "text": "Once during your turn (before your attack), discard a basic Energy card attached to 1 of your Pokémon. Then, choose a basic Energy card from your discard pile and attach it to that Pokémon. This power can't be used if Togetic is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H28",
+    "name": "Tyranitar",
+    "attacks": [
+      {
+        "name": "Destructive Roar",
+        "cost": [
+          "Darkness"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, discard 1 Energy card attached to 1 of your opponent's Pokémon."
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H29",
+    "name": "Umbreon",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Dark Moon",
+        "text": "As long as Umbreon is your Active Pokémon and has a Darkness Energy attached to it, once during your turn (before your attack), you may look at your opponent's hand. Choose from it a number of cards up to the number of Darkness Energy attached to Umbreon and shuffle them into your opponent's deck. Your opponent then draws the same number of cards from his or her deck. This power can't be used if Umbreon is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard2-H30",
+    "name": "Victreebel",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Fragrance Trap",
+        "text": "Once during your turn (before your attack), you may flip a coin. If heads, choose 1 of your opponent's Benched Pokémon and switch the Defending Pokémon with it. This Power can't be used if Victreebel is affected by a Special Condition.",
+        "type": "Poké-Power"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H30",
+    "name": "Umbreon",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Dark Gaze",
+        "text": "As long as Umbreon is your Active Pokémon, Benched Pokémon (yours and your opponent's) can't use Poké-Powers.",
+        "type": "Poké-Body"
+      }
+    ]
+  },
+  {
+    "id": "ecard3-H32",
+    "name": "Xatu",
+    "attacks": [],
+    "abilities": [
+      {
+        "name": "Synchronicity",
+        "text": "You may attach any Technical Machine to Xatu.",
+        "type": "Poké-Body"
+      }
+    ]
+  }
+]

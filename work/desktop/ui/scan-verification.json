@@ -1,0 +1,12 @@
+{
+  "checkedAt": "2026-10-12T04:27:12Z",
+  "filesChecked": 23736,
+  "decodedImages": 23736,
+  "failures": [],
+  "minimumWidth": 253,
+  "checks": [
+    "SHA-256 matches manifest",
+    "Image fully decodes with Pillow",
+    "Card-front dimensions and aspect ratio"
+  ]
+}

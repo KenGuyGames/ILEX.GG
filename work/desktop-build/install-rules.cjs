@@ -1,0 +1,12 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui');
+let html=fs.readFileSync(path.join(ui,'index.html'),'utf8');
+if(!html.includes('rules-engine.js'))html=html.replace('<script src="app.js"></script>','<script src="rules-engine.js"></script><script src="rules-match.js"></script><script src="deck-text.js"></script><script src="app.js"></script><script src="rules-ui.js"></script>');
+html=html.replace('Manual tabletop · Resolve card effects with your opponent','Rules-enforced matches · Historical profiles · Limitless deck import');
+fs.writeFileSync(path.join(ui,'index.html'),html);
+let css=fs.readFileSync(path.join(ui,'style.css'),'utf8');
+if(!css.includes('.rules-board'))css+=`\n.rules-board{display:grid;grid-template-columns:1fr;gap:20px}.rule-slots{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.rule-slot{padding:10px;background:#111918;border:1px solid #41534c;border-radius:8px;font-size:11px;min-width:0}.rule-slot h3{font-size:12px}.rule-slot button{display:block;font-size:11px;margin-top:5px;padding:6px;width:100%;overflow-wrap:anywhere}.rule-pokemon{width:100%;max-width:150px;display:block;margin:0 auto 8px}.rule-slot small{display:block;overflow-wrap:anywhere}.rule-hand{margin-top:20px}.rule-handcard{width:100px;margin:4px;padding:6px;vertical-align:top;font-size:10px}.rule-handcard img{width:86px}.rule-handcard span{display:block}.pending-effect{border-color:var(--lime)}.prompt-options{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.prompt-pick{max-width:150px;font-size:12px}.prompt-pick img{display:block;width:95px;margin:auto auto 8px}.prompt-pick:disabled{opacity:.35;cursor:not-allowed}.pending-effect label{margin-bottom:10px}.rule-status{border-color:#596634}@media(max-width:1050px){.rule-slots{grid-template-columns:repeat(3,1fr)}}\n`;
+fs.writeFileSync(path.join(ui,'style.css'),css);
+fs.cpSync(ui,path.join(root,'outputs/TCG Lab-win32-x64/resources/app/ui'),{recursive:true});
+fs.copyFileSync(path.join(root,'work/desktop/main.cjs'),path.join(root,'outputs/TCG Lab-win32-x64/resources/app/main.cjs'));
+console.log('Rules integration installed');

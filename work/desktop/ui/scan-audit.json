@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-10-12T04:22:29.200Z",
+  "scope": "Every entry in the bundled TCGdex English index, including Pocket entries",
+  "total": 23736,
+  "verifiedDownloads": 23736,
+  "unresolved": 0,
+  "complete": true,
+  "bytes": 2562257463,
+  "sources": {
+    "PkmnCards": 417,
+    "Pokémon TCG API dataset": 765,
+    "TCGdex": 21982,
+    "TCGplayer via TCGCSV": 248,
+    "TCGScreener": 16,
+    "Malie / Pokémon TCG Live": 144,
+    "Limitless Pokémon TCG Pocket": 161,
+    "Dex for TCG Collectors": 2,
+    "PokéBeach / Grand Adventure promotional image": 1
+  },
+  "missing": []
+}

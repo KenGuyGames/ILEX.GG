@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path');
+const esbuild=require('esbuild');
+const root=path.resolve(__dirname,'../..');
+const src=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src');
+const index=path.join(src,'game/index.ts');
+let game=fs.readFileSync(index,'utf8');
+game=game.split('\n').filter(l=>!l.includes('./core/replay')&&!l.includes('./core/player-stats')&&!l.includes('./core/self-play-focus')&&!l.includes('./serializer')).join('\n');
+fs.writeFileSync(index,game);
+const shuffle=path.join(src,'game/store/prompts/shuffle-prompt.ts');
+fs.writeFileSync(shuffle,fs.readFileSync(shuffle,'utf8').replace('s.sort();','s.sort((a,b)=>a-b);'));
+const entry=path.join(src,'tcg-lab-entry.ts');
+fs.writeFileSync(entry,"import './tcg-lab-printed';\nexport * from './game';\nexport * as sets from './sets';\nexport { matchesPromptFilter } from './game/store/prompts/prompt-card-filter';\nexport { AttackEffect } from './game/store/effects/game-effects';\nexport { AddSpecialConditionsEffect } from './game/store/effects/attack-effects';\n");
+fs.appendFileSync(entry,"export { CheckHpEffect, CheckProvidedEnergyEffect, CheckRetreatCostEffect, CheckPokemonTypeEffect, CheckPokemonStatsEffect } from './game/store/effects/check-effects';\n");
+fs.appendFileSync(entry,"import './tcg-lab-wotc';\n");
+fs.appendFileSync(entry,"export { PowerEffect } from './game/store/effects/game-effects';\nexport { CheckPokemonPowersEffect } from './game/store/effects/check-effects';\n");
+esbuild.build({entryPoints:[entry],bundle:true,platform:'browser',format:'iife',globalName:'TCGRules',define:{global:'globalThis'},outfile:path.join(root,'work/desktop/ui/rules-engine.js'),target:'chrome140',logLevel:'warning'}).then(()=>console.log('Rules engine bundled')).catch(()=>process.exitCode=1);

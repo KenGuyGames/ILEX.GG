@@ -1,0 +1,257 @@
+These are all printed rules on blocked cards; a handler may already exist while another interaction is pending.
+
+ecard2-9 Elekid
+If your Active Pokémon is a Baby Pokémon and your opponent announces an attack, your opponent flips a coin (before doing anything else). If tails, your opponent's turn ends.
+
+neo2-14 Unown [A], neo4-27 Unown [G], neo4-30 Unown [X], neo2-33 Unown [A], neo3-39 Unown [B], neo3-40 Unown [Y], neo2-47 Unown [D], neo2-49 Unown [M], neo2-50 Unown [N], neo4-57 Unown [C], neo4-58 Unown [P], neo3-58 Unown [K], neo4-59 Unown [Q], neo4-60 Unown [Z], neo2-68 Unown [I], neo4-87 Unown [S], neo4-89 Unown [V]
+You may have up to 4 Basic Pokémon cards in your deck with Unown in their names.
+
+neo4-16 Miracle Energy
+You can't have more than 1 Miracle Energy in your deck. Attach Miracle Energy to 1 of your Shining or Light Pokémon. At the end of your turn, discard Miracle Energy.
+While in play, Miracle Energy counts as every type of Energy but provides only 2 Energy at a time.
+
+gym2-17 Blaine, gym2-100 Blaine
+During this turn, instead of attaching your free Energy card, you may instead attach 2 Fire Energy cards to 1 of your Pokémon with Blaine in its name. (Playing additional copies of this card this turn has no effect.)
+
+gym1-17 Lt. Surge, gym1-101 Lt. Surge
+You can play this card only if you have at least 1 Basic Pokémon card in your hand. Put a Basic Pokémon card from your hand into play as your Active Pokémon. Put your old Active Pokémon onto your Bench. (You can't play this card if your Bench is full.)
+
+gym2-18 Giovanni, gym2-104 Giovanni
+Choose 1 of your Pokémon in play with Giovanni in its name. For the rest of your turn, you may evolve that Pokémon even if you just played or evolved it this turn or if this is your first turn. This effect also applies to the Pokémon it evolves into.
+
+gym1-18 Misty, gym1-102 Misty
+Discard 2 of the other cards in your hand in order to play this card. If this turn's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), and if the attacking Pokémon has Misty in its name, the attack does 20 more damage to the Defending Pokémon.
+
+gym2-19 Koga, gym2-106 Koga
+If an attack from a Pokémon with Koga in its name does damage to a Defending Pokémon this turn, that Pokémon is then Poisoned.
+
+gym1-19 The Rocket's Trap
+Flip a coin. If heads, choose up to 3 cards at random from your opponent's hand (don't look at them). Your opponent shuffles those cards into his or her deck.
+
+gym2-20 Sabrina, gym2-110 Sabrina
+Take all Energy cards attached to 1 of your Pokémon with Sabrina in its name and attach them to another 1 of your Pokémon with Sabrina in its name.
+
+neo1-22 Elekid, neo1-23 Magby
+If this Baby Pokémon is your Active Pokémon and your opponent tries to attack, your opponent flips a coin (before doing anything required in order to use that attack). If tails, your opponent's turn ends without an attack.
+
+neo2-40 Igglybuff, neo3-54 Smoochum
+If this Baby Pokémon is your Active Pokémon and your opponent announces an attack, your opponent flips a coin (before doing anything else). If tails, your opponent's turn ends.
+
+neo3-62 Pokémon Breeder Fields
+Flip a coin for 1 or 2 of your non-Baby Pokémon that can evolve. For each heads, search your deck for a later-Stage card that matches that Pokémon. Then put that card into your hand. Shuffle your deck afterward.
+
+neo3-65 Shining Gyarados
+You can't have more than 1 Shining Gyarados in your deck.
+
+neo2-72 Fossil Egg
+Flip a coin. If heads, search your deck for a card that evolves from Mysterious Fossil and put it onto your Bench or put a card that evolves from Mysterious Fossil from your hand onto your Bench. Either way, treat the new card as a Basic Pokémon. If you searched your deck, shuffle it. (You can't play this card if your Bench is full.)
+
+neo1-84 Ecogym, gym1-103 No Removal Gym, gym1-107 Celadon City Gym, gym1-120 Vermilion City Gym, gym1-124 Narrow Gym, ecard2-131 Pokémon Park, ecard3-132 Mirage Stadium, ecard2-138 Undersea Ruins, ecard3-141 Underground Lake
+This card stays in play when you play it. Discard this card if another Stadium card comes into play.
+
+neo1-84 Ecogym
+Whenever an attack, Pokémon Power, or Trainer card discards another player's non-Colorless Energy card from a Pokémon, return that Energy card to its owner's hand. (Energy cards that are discarded when that Pokémon is Knocked Out don't count.)
+
+neo1-86 Focus Band
+Attach Focus Band to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.
+
+neo1-86 Focus Band
+If the Pokémon Focus Band is attached to would be Knocked Out by your opponent's attack, flip a coin. If heads, that Pokémon is not Knocked Out and its remaining HP become 10 instead. Then, discard Focus Band.
+
+neo1-92 Card-Flip Game
+Choose 1 of your opponent's face-down Prizes. Guess whether it is an Energy card, a Trainer card, or a Pokémon (Basic or Evolution) card. Flip the card face up (and leave it face up). If you guessed right, draw 2 cards.
+
+neo4-93 EXP.ALL
+Attach EXP.ALL to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.
+
+neo4-93 EXP.ALL
+During your opponent's turn, if your Active Pokémon would be Knocked Out by your opponent's attack, you may take 1 of the basic Energy cards attached to your Active Pokémon and attach it to the Pokémon with EXP.ALL attached to it. If you do, discard EXP.ALL.
+
+neo1-93 Gold Berry
+Attach Gold Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.
+
+neo1-93 Gold Berry
+At any time between turns, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, you may remove 4 of them and discard Gold Berry. At the start of each turn, if there are at least 4 damage counters on the Pokémon Gold Berry is attached to, remove 4 of them and discard Gold Berry.
+
+neo4-94 Impostor Professor Oak's Invention
+Look at your opponent's Prize cards. You may have your opponent shuffle them into his or her deck. If you do, your opponent takes that many cards from the top of his or her deck and sets them aside as his or her new Prize cards (without looking at them).
+
+neo1-94 Miracle Berry
+Attach Miracle Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.
+
+neo1-94 Miracle Berry
+At any time between turns, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, you may remove all those effects from that Pokémon and discard Miracle Berry. At the start of each turn, if the Pokémon Miracle Berry is attached to is Asleep, Confused, Paralyzed, or Poisoned, remove all of those effects from that Pokémon and discard Miracle Berry.
+
+neo4-97 Counterattack Claws
+Attach Counterattack Claws to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.
+
+neo4-97 Counterattack Claws
+During your opponent's turn, if the Pokémon Counterattack Claws is attached to is your Active Pokémon and an opponent's attack damages it (even if it is Knocked Out), flip a coin. If heads, put 2 damage counters on the Defending Pokémon. Then, discard Counterattack Claws.
+
+gym1-97 Blaine's Quiz #1
+Put a Basic Pokémon or Evolution card from your hand face down in front of you and tell your opponent its name. Your opponent guesses the length of that Pokémon. Flip the card over. If your opponent guessed right, he or she draws 2 cards. If your opponent guessed wrong, you draw 2 cards. Either way, return the card to your hand.
+
+neo1-99 Berry
+Attach Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it.
+
+neo1-99 Berry
+At any time between turns, if there are at least 2 damage counters on the Pokémon Berry is attached to, you may remove 2 of them and discard Berry. At the start of each turn, if there are at least 2 damage counters on the Pokémon Berry is attached to, remove 2 of them and discard Berry.
+
+gym1-99 Charity
+Attach Charity to your Active Pokémon. Unless that Pokémon gets Knocked Out, return Charity to your hand at the end of your turn. If that Pokémon attacks and does damage to the Defending Pokémon, you may reduce that damage by any amount (rounded to the nearest 10).
+
+neo4-101 Magnifier
+Attach Magnifier to 1 of your Pokémon. At the end of your turn, discard Magnifier. If the Pokémon Magnifier is attached to attacks, don't apply Resistance for that attack.
+
+gym2-101 Brock's Protection
+Attach Brock's Protection to 1 of your Pokémon with Brock in its name. Energy cards attached to that Pokémon can't be removed by your opponent's attacks or Trainer cards. (This doesn't stop the rest of the attack or Trainer card from working normally.)
+
+neo4-102 Pokémon Personality Test
+Put an Evolution card from your hand face down in front of you. Your opponent guesses whether it is a Pokémon card with Light in its name, a Pokémon card with Dark in its name, or neither one. Flip the card over. If your opponent guessed right, he or she draws 3 cards. If your opponent guessed wrong, you draw 3 cards. Either way, return the card to your hand.
+
+neo4-103 Team Rocket's Evil Deeds
+Look at your opponent's hand and choose a card there. Your opponent shuffles that card into his or her deck. Then, your opponent may draw up to 2 cards.
+
+gym1-103 No Removal Gym
+A player must discard 2 cards from his or her hand in order to play an Energy Removal or Super Energy Removal card.
+
+gym2-105 Giovanni's Last Resort
+Remove all damage counters from 1 of your Pokémon with Giovanni in its name. Then discard your hand.
+
+neo4-106 Shining Celebi
+You can't have more than 1 Shining Celebi in your deck.
+
+neo4-107 Shining Charizard
+You can't have more than 1 Shining Charizard in your deck.
+
+gym2-107 Lt. Surge's Secret Plan
+Put 1 card from your hand face down onto your Bench. (You can't play this card if your Bench is full.) Treat that card as a Basic Pokémon as long as it's face down. Flip the card if either player needs to know what it is in order to use an attack, a Pokémon Power, or a Trainer card. Flip the card if it ever uses an attack or Pokémon Power, evolves, retreats, is damaged by an attack, or is otherwise affected by an attack. At any time during your turn, you may flip the card over. When you flip that card over, if it isn't a Basic Pokémon, discard it and all cards attached to it.
+
+gym1-107 Celadon City Gym
+During each player's turn, that player may choose to discard an Energy card attached to 1 of his or her Pokémon with Erika in its name. If that player does so, that Pokémon is no longer Asleep, Confused, Paralyzed, or Poisoned.
+
+neo4-108 Shining Kabutops
+You can't have more than 1 Shining Kabutops in your deck.
+
+gym2-108 Misty's Wish
+Look at 1 of your Prize cards. Then, ask your opponent if you may switch that card with 1 of the cards in your hand. If your opponent accepts and if you have any other cards in your hand, switch those cards. If your opponent declines, return the Prize card face down and draw a card.
+
+gym2-111 Blaine's Quiz #2
+Put a card from your hand face down in front of you. Your opponent guesses whether it is an Energy card, a Trainer card, or a Pokémon (Basic or Evolution) card. Flip the card over. If your opponent guessed right, he or she draws 2 cards. If your opponent guessed wrong, you draw 2 cards. Either way, return the card to your hand.
+
+gym2-112 Blaine's Quiz #3
+Put a Basic or Evolution card from your hand face down in front of you and tell your opponent the name of an attack of that card. Your opponent guesses the name of that card. Flip the card over. If your opponent guessed right, he or she draws 3 cards. If your opponent guessed wrong, you draw 3 cards. Either way, return the card to your hand.
+
+gym1-112 Lt. Surge's Treaty
+Your opponent chooses 1 of the following: everyone chooses 1 of his or her own Prizes and put it into his or her hand, or you draw a card.
+
+neo4-113 Shining Tyranitar
+You can't have more than 1 Shining Tyranitar in your deck.
+
+gym2-114 Fuchsia City Gym, gym2-119 Rocket's Minefield Gym, gym2-122 Saffron City Gym
+This card stays in play after being played. Discard this card if another Stadium card comes into play.
+
+gym2-114 Fuchsia City Gym
+Once during each player's turn (before attacking), that player may flip a coin. If heads, that player may shuffle 1 of his or her Pokémon in play with Koga in its name and any cards attached to it into his or her deck.
+
+gym2-115 Koga's Ninja Trick
+Attach Koga's Ninja Trick to your Active Pokémon with Koga in its name. If this Pokémon goes to your Bench, discard this card. When your opponent attacks, you may switch this Pokémon with 1 of your Benched Pokémon (before damage or other effects of attacks).
+
+gym1-116 Recall
+For your attack this turn, your Active Pokémon can use any attack from its Basic Pokémon card or any Evolution card attached to it. (You still have to pay for that attack's Energy cost.)
+
+gym2-117 Max Revive
+Discard 2 Energy cards from your hand in order to put 1 Basic Pokémon from your discard pile onto your Bench. (You can't play Max Revive if your Bench is full.)
+
+gym1-117 Sabrina's ESP
+Attach Sabrina's ESP to 1 of your Pokémon with Sabrina in its name. At the end of your turn, discard Sabrina's ESP. If that Pokémon uses and attack that involves flipping coins, Sabrina's ESP lets you re-flip those coins once. If you do, re-flip all the coins.
+
+gym2-119 Rocket's Minefield Gym
+Whenever a player puts a Basic Pokémon onto his or her Bench from his or her hand, he or she flips a coin. If tails, put damage counters on that Pokémon.
+
+gym1-119 Tickling Machine
+Flip a coin. If heads, your opponent sets aside all the cards in his or her hand face down. Nobody may look at those cards. At the end of your opponent's next turn, your opponent puts those cards back into his or her hand. If tails, your turn ends immediately (you can't attack this turn).
+
+gym2-120 Rocket's Secret Experiment
+Flip a coin. If heads, search your deck for any card and put it into your hand. Shuffle your deck afterward. If tails, you can't play Trainer cards until the end of your next turn.
+
+gym1-120 Vermilion City Gym
+Whenever a player attacks with a Pokémon with Lt. Surge in its name, he or she may flip a coin. If heads, and if that Pokémon's attack does damage to the Defending Pokémon (after applying Weakness and Resistance), that attack does 10 more damage to the Defending Pokémon. If tails, the attacking Pokémon does 10 damage to itself in addition to whatever its attack usually does.
+
+ecard2-121 Fighting Cube 01
+Attach this card to 1 of your Fighting Pokémon in play. That Pokémon my use this card's attack instead of its own. At the end of your turn, discard Fighting Cube 01.
+
+gym2-121 Sabrina's Psychic Control
+Flip a coin. If heads, choose a Trainer card in your opponent's discard pile that isn't put in play (like PlusPower or Mysterious Fossil). You may use that card as if it were in your hand, if you do everything required in order to play that card (like discarding cards). The card stays in your opponent's discard pile.
+
+gym2-122 Saffron City Gym
+As often as each player like during his or her turn (before attacking), that player may return 1 basic Energy card attached to 1 of his or her Pokémon with Sabrina in its name to his or her hand.
+
+gym1-123 Misty's Duel
+You and your opponent play a game of Rock-Paper-Scissors. The winner shuffles his or her hand into his or her deck and draws a new hand of 5 cards. (If you don't know how to play Rock-Paper-Scissors, flip a coin to decide who's the winner.)
+
+gym1-124 Narrow Gym
+No player may have more than 4 Pokémon on his or her Bench. When this card is played, if a player has 5 Pokémon on his or her Bench, that player chooses 1 of them and returns it and all cards attached to it to his or her hand. (If both players have to return a Pokémon, your opponent returns a Pokémon first.)
+
+ecard2-125 Healing Berry
+Attach Healing Berry to 1 of your Pokémon that doesn't already have a Pokémon Tool card attached to it. If that Pokémon is Knocked Out, discard this card.
+
+ecard2-125 Healing Berry
+At the end of any turn, if the Pokémon this card is attached to has 20 HP or less, remove 3 damage counters from that Pokémon and discard this card.
+
+ecard3-127 Hyper Potion
+Choose 1 of your Pokémon. Discard 1 or 2 basic Energy cards attached to that Pokémon. If you discarded 1 Energy card, remove up to 3 damage counters from that Pokémon. If you discarded 2 Energy cards, remove up to 5 damage counters from that Pokémon.
+
+ecard2-128 Memory Berry
+Attach Memory Berry to 1 of your Pokémon that doesn't have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.
+
+ecard2-128 Memory Berry
+The Pokémon this card is attached to can use any attack from its Basic Pokémon card or any Evolution card from which the Pokémon evolved. (You still have to pay for that attack's Energy cost.) Discard this card at the end of any turn the Pokémon attacks.
+
+ecard3-129 Miracle Sphere α
+Attach this card to 1 of your Evolved Fire, Lightning, or Fighting Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Miracle Plate α.
+
+ecard3-130 Miracle Sphere β
+Attach this card to 1 of your Evolved Fire, Water, or Psychic Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Miracle Sphere β.
+
+ecard2-131 Pokémon Park
+Once during each of his or her turns, whenever a player attaches an Energy card from his or her hand to 1 of his or her Benched Pokémon, he or she removes 1 damage counter, if any, from that Pokémon.
+
+ecard3-131 Miracle Sphere γ
+Attach this card to 1 of your Evolved Grass, Water, or Lightning Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Miracle Sphere γ.
+
+ecard3-132 Mirage Stadium
+Whenever a player tries to retreat a Pokémon during his or her turn, that player flips a coin. If heads, that player retreats that Pokémon (and discards Energy normally). If tails, that Pokémon can't retreat this turn (the player doesn't discard any Energy).
+
+ecard2-135 Time Shard
+Attach Time Shard to 1 of your Pokémon that doesn't already have a Pokémon Tool card attached to it. If that Pokémon is Knocked Out, discard this card.
+
+ecard2-135 Time Shard
+If the Pokémon this card is attached to is Knocked Out by damage from the Defending Pokémon's attack during your opponent's turn, you may return up to 2 basic Energy cards attached to that Pokémon to your hand.
+
+ecard2-138 Undersea Ruins
+Once during each player's turn (before attacking), that player may flip a coin. If heads, that player chooses 1 of his or her Evolved Pokémon in play and discards the top Evolution card from that Pokémon, devolving it.
+
+ecard3-139 Star Piece
+Attach Star Piece to 1 of your Pokémon that doesn't already have a Pokémon Tool attached to it. If that Pokémon is Knocked Out, discard this card.
+
+ecard3-139 Star Piece
+At any time between turns, if the Pokémon this card is attached to is Benched and has 2 or more damage counters on it, search your deck for an Evolution card that Pokémon evolves into and put it on top of that Pokémon. (This counts as evolving that Pokémon.) Shuffle your deck afterward. Then, discard Star Piece.
+
+ecard2-140 Water Cube 01
+Attach this card to 1 of your Water Pokémon in play. That Pokémon may use this card's attack instead of its own. At the end of your turn, discard Water Cube 01.
+
+ecard3-141 Underground Lake
+Once during each player's turn, that player may put an Omanyte or a Kabuto card from his or her discard pile onto his or her Bench. (Cards put on the Bench this way are considered Basic Pokémon.)
+
+ecard3-142 Bounce Energy
+This card provides ColorlessColorless Energy. You can attach this card to your Pokémon that has basic Energy cards attached to it. When you play this card from your hand and attach it to 1 of your Pokémon, return a basic Energy card attached to that Pokémon to your hand.
+
+ecard3-143 Cyclone Energy
+This card provides Colorless Energy. When you play this card from your hand and attach it to your Active Pokémon, your opponent switches his or her Active Pokémon with 1 of his or her Benched Pokémon.
+
+ecard3-144 Retro Energy
+This card provides Colorless Energy. When you play this card from your hand and attach it to 1 of your Evolved Pokémon, you may remove up to 2 damage counters from that Pokémon and discard the top card from it. (This counts as devolving it.)
+
+ecard2-146 Crystal Energy
+Crystal Energy provides 1 Energy of all types (colors) of basic Energy cards attached to the Pokémon Crystal Energy is attached to. If there are no basic Energy cards attached to the Pokémon Crystal Energy is attached to, Crystal Energy provides Colorless Energy.

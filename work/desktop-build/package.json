@@ -1,0 +1,8 @@
+{
+  "name": "tcg-lab-build-tools",
+  "private": true,
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "esbuild": "^0.28.2"
+  }
+}
