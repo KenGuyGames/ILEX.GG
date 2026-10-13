@@ -1,0 +1,35 @@
+name: Import ILEX.GG source
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/import-source.yml
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Expand source snapshot
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+          root = Path.cwd().resolve()
+          with ZipFile("ILEX.GG-source.zip") as archive:
+              for member in archive.infolist():
+                  target = (root / member.filename).resolve()
+                  if not target.is_relative_to(root) or ".git" in target.relative_to(root).parts:
+                      raise ValueError("Invalid source archive path")
+              archive.extractall(root)
+      - name: Commit imported source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git add .
+          if ! git diff --cached --quiet; then
+            git commit -m "Expand ILEX.GG development source snapshot"
+            git push origin HEAD:main
+          fi
