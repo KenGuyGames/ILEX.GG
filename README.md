@@ -1,6 +1,6 @@
 # ILEX.GG
 
-Desktop Pokémon TCG simulator with deck building, custom cards, historical formats, a local play table, and WOTC rules automation.
+Desktop Pokémon TCG simulator with deck building, custom cards, historical formats, a local play table, and rules automation.
 
 ## Status
 
