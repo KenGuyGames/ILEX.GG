@@ -4,11 +4,12 @@ on:
   push:
     paths:
       - .github/workflows/import-source.yml
+      - ILEX.GG-source.zip
 permissions:
   contents: write
 jobs:
   import:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - name: Expand source snapshot
