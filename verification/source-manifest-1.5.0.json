@@ -11080,11 +11080,14 @@
     "work/rules-research/twinleafgg-main/ptcg-server/tsconfig.dist.json": "05aeddce9e31c9fcefe84501695066d4100dbf8d15b750dcb36800343802e601",
     "work/rules-research/twinleafgg-main/ptcg-server/tsconfig.json": "bb9567bca5c949bdd154a162d46df8f23f66eadd053b460beb7bf2c470262875",
     "work/rules-research/undo-test-report.json": "736b72f2a038ca0510bcf9df72215aaa2b9ab695d7d295e3e20011b228f631d3",
-    "work/rules-research/wotc-automation-pending.json": "dffdb8b8e29bfc4fba33bdb7d574c190b3363921dc6b57697364d8b4117f13b9",
+    "work/rules-research/wotc-automation-pending.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "work/rules-research/wotc-final-focused-test-report.json": "54edbf3ae9951b3c11cabcf03da42024ae19ff756fdcb78a04f5b411f0133d0d",
     "work/rules-research/wotc-final-test-report.json": "330f12956482984295dc484bd4ebc34eed9c8c5301ecf74bccb1d4ccd53678b8",
     "work/rules-research/wotc-focused-test-report.json": "6e4893d4cf94e1a9350b1112c54fec6d9f86aec2b729a9dab3d577f1b9305a66",
-    "work/rules-research/wotc-test-report.json": "19b926374091e0c083d3d9fcbf4af9d3d90726954b91ecf73ccba9bfdb7819d8"
+    "work/rules-research/wotc-test-report.json": "19b926374091e0c083d3d9fcbf4af9d3d90726954b91ecf73ccba9bfdb7819d8",
+    "work/rules-research/base-fossil-audit.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "work/rules-research/wotc-card-lengths.json": "cb1c09222f5f2234eea76cd261666e9ad7b9c72a609d7f6ed768603f263656d6",
+    "work/rules-research/wotc-library-plan.json": "da33a5157c7ef84f585da432d699796ecdb154043f35f33bb1e5f0f1df095fa4"
   },
   "distribution": "single ZIP with downloadable card image cache",
   "releaseZipSha256": "784ebcc894925fa2e23911f04a9ca0749f2bf035a048ba14c82ccf1d079d2949"
