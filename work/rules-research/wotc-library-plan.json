@@ -1,0 +1,141 @@
+{
+  "total": 1793,
+  "available": 1793,
+  "pending": 0,
+  "methods": {
+    "verified-reprint": 250,
+    "compiled-effects": 973,
+    "existing": 439,
+    "compiled-trainer": 122,
+    "compiled-energy": 5,
+    "verified-compiled-reprint": 4
+  },
+  "bySet": [
+    {
+      "id": "base1",
+      "scanSetId": "base1",
+      "name": "Base Set",
+      "total": 102,
+      "available": 102
+    },
+    {
+      "id": "base2",
+      "scanSetId": "base2",
+      "name": "Jungle",
+      "total": 64,
+      "available": 64
+    },
+    {
+      "id": "base3",
+      "scanSetId": "base3",
+      "name": "Fossil",
+      "total": 62,
+      "available": 62
+    },
+    {
+      "id": "base4",
+      "scanSetId": "base4",
+      "name": "Base Set 2",
+      "total": 130,
+      "available": 130
+    },
+    {
+      "id": "base5",
+      "scanSetId": "base5",
+      "name": "Team Rocket",
+      "total": 83,
+      "available": 83
+    },
+    {
+      "id": "gym1",
+      "scanSetId": "gym1",
+      "name": "Gym Heroes",
+      "total": 132,
+      "available": 132
+    },
+    {
+      "id": "gym2",
+      "scanSetId": "gym2",
+      "name": "Gym Challenge",
+      "total": 132,
+      "available": 132
+    },
+    {
+      "id": "neo1",
+      "scanSetId": "neo1",
+      "name": "Neo Genesis",
+      "total": 111,
+      "available": 111
+    },
+    {
+      "id": "neo2",
+      "scanSetId": "neo2",
+      "name": "Neo Discovery",
+      "total": 75,
+      "available": 75
+    },
+    {
+      "id": "neo3",
+      "scanSetId": "neo3",
+      "name": "Neo Revelation",
+      "total": 66,
+      "available": 66
+    },
+    {
+      "id": "neo4",
+      "scanSetId": "neo4",
+      "name": "Neo Destiny",
+      "total": 113,
+      "available": 113
+    },
+    {
+      "id": "si1",
+      "scanSetId": "si1",
+      "name": "Southern Islands",
+      "total": 18,
+      "available": 18
+    },
+    {
+      "id": "base6",
+      "scanSetId": "lc",
+      "name": "Legendary Collection",
+      "total": 110,
+      "available": 110
+    },
+    {
+      "id": "ecard1",
+      "scanSetId": "ecard1",
+      "name": "Expedition Base Set",
+      "total": 165,
+      "available": 165
+    },
+    {
+      "id": "ecard2",
+      "scanSetId": "ecard2",
+      "name": "Aquapolis",
+      "total": 186,
+      "available": 186
+    },
+    {
+      "id": "ecard3",
+      "scanSetId": "ecard3",
+      "name": "Skyridge",
+      "total": 182,
+      "available": 182
+    },
+    {
+      "id": "basep",
+      "scanSetId": "basep",
+      "name": "Wizards Black Star Promos",
+      "total": 53,
+      "available": 53
+    },
+    {
+      "id": "bp",
+      "scanSetId": "bog",
+      "name": "Best of game",
+      "total": 9,
+      "available": 9
+    }
+  ]
+}
