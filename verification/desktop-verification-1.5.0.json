@@ -202,15 +202,20 @@
       "Poison Structure requires Sidneys Stadium and applies Poison as a Power",
       "Burn Away recoil uses actual attack damage including Strength Charm",
       "Holon Circle prevents Burn Down before its five-Fire discard cost",
-      "Volunteer discards evolved-only Protective Orb during its temporary Vulpix stage"
+      "Volunteer discards evolved-only Protective Orb during its temporary Vulpix stage",
+      "Dual Aura ignores Basic Powers without recursion and still blocks evolved non-ex Bodies",
+      "Sol Shade requires its owners Solrock in play before blocking Fire Powers",
+      "Sol Shade alone allows real Wishing Star and Delta Control activations",
+      "Mew ex Versatile exposes copied attacks with Latios alone and with Latias",
+      "Mew ex Versatile still requires the copied attacks Energy cost"
     ],
     "candidate": true,
-    "engineSha256": "fecf2b3c700e238a5873e8a801aebdf48d4154b69f9e0067b179ca4c4582b937"
+    "engineSha256": "6132c2c81941202612951be5a91946fa388faa03ff88c2cbc4e726cc699da37c"
   },
   "exAttackSweep": {
     "candidate": true,
     "passed": true,
-    "engineSha256": "fecf2b3c700e238a5873e8a801aebdf48d4154b69f9e0067b179ca4c4582b937",
+    "engineSha256": "6132c2c81941202612951be5a91946fa388faa03ff88c2cbc4e726cc699da37c",
     "scope": [
       "ex1",
       "ex2",
@@ -438,7 +443,7 @@
     ],
     "unsupported": []
   },
-  "exSourceManifestVerified": 36,
+  "exSourceManifestVerified": 37,
   "dragAndDrop": {
     "passed": true,
     "checks": [
@@ -481,32 +486,32 @@
     "renders": [
       {
         "id": "grove",
-        "rms": 0.02909467038284117,
+        "rms": 0.029094670377566047,
         "peak": 0.13387179374694824,
         "seconds": 8
       },
       {
         "id": "dew",
-        "rms": 0.030753914147761026,
+        "rms": 0.030753914152889028,
         "peak": 0.13774245977401733,
         "seconds": 8
       },
       {
         "id": "duel",
-        "rms": 0.030770482560506917,
+        "rms": 0.030770482552791772,
         "peak": 0.1787453293800354,
         "seconds": 8
       },
       {
         "id": "time",
-        "rms": 0.031128523992722274,
+        "rms": 0.03112852399402715,
         "peak": 0.17453888058662415,
         "seconds": 8
       },
       {
         "id": "gambit",
-        "rms": 0.030854409304151762,
-        "peak": 0.1841491311788559,
+        "rms": 0.030854409309267642,
+        "peak": 0.1841491162776947,
         "seconds": 8
       }
     ],
@@ -601,6 +606,7 @@
       "Hard prioritizes a guaranteed knockout; Easy can choose the weaker attack",
       "Bot uses Rain Dance and assigns multiple Energy cards through the actual prompt",
       "WOTC required attack-cost prompts are assigned to the attacking player",
+      "Bot resolves Jirachi Wishing Star top-five selection and continues its turn",
       "easy completes a full rules-enforced starter game",
       "normal completes a full rules-enforced starter game",
       "hard completes a full rules-enforced starter game"
@@ -635,6 +641,8 @@
       "Bot turns preserve the human seat, hide the bot hand and reject human control of the bot",
       "The bot takes an action automatically; pause and resume work",
       "Bot finishes its turn and hands control back; difficulty persists with the saved match",
+      "Bot automatically selects a real Wishing Star top-five choice through desktop scheduling",
+      "Mew ex Versatile copied attacks render with Latios alone and with Latias; Pokemon-ex exemption holds",
       "Unsupported mandatory effects pause visibly instead of skipping an effect"
     ]
   },
@@ -1475,6 +1483,6 @@
   "bundledScanHashesVerified": 23736,
   "testEnvironment": "Hidden desktop tests used --no-sandbox because the restricted execution environment blocks nested Chromium sandbox processes, with offscreen software rendering for reliable screenshot capture. Normal launches retain GPU rendering and Chromium sandbox settings. Renderer Node integration is disabled and context isolation enabled.",
   "executableSHA256": "892040a7947d5531fa877e44413d889debad495dd87411168938f0bc6f2bea4d",
-  "rulesEngineSHA256": "fecf2b3c700e238a5873e8a801aebdf48d4154b69f9e0067b179ca4c4582b937",
-  "checkedAt": "2026-10-14T17:08:56.225858+00:00"
+  "rulesEngineSHA256": "6132c2c81941202612951be5a91946fa388faa03ff88c2cbc4e726cc699da37c",
+  "checkedAt": "2026-10-14T18:15:20.626080+00:00"
 }

@@ -23,7 +23,10 @@ else{
   app.whenReady().then(async()=>{
     const ui=path.join(__dirname,'ui');
     const scans=app.isPackaged ? path.join(process.resourcesPath,'scans') : path.resolve(__dirname,'../../outputs/Pokemon-TCG-Lab/scans');
-    protocol.handle('tcglab',request=>{
+    const CardCache=require('./card-cache.cjs');
+    const cache=new CardCache({manifest:JSON.parse(fs.readFileSync(path.join(ui,'scan-manifest.json'),'utf8')),directory:path.join(app.getPath('userData'),'card-cache'),bundled:scans,fetch:(url,options)=>net.fetch(url,options),notify:status=>{if(win&&!win.isDestroyed())win.webContents.send('card-cache-progress',status)}});
+    for(const [channel,action] of Object.entries({'card-cache-status':()=>cache.status(),'card-cache-start':()=>cache.start(),'card-cache-pause':()=>cache.pause()}))ipcMain.handle(channel,event=>{if(event.sender!==win?.webContents||!ownURL(event.senderFrame.url))throw Error('Invalid cache request');return action()});
+    protocol.handle('tcglab',async request=>{
       try{
         const u=new URL(request.url);
         if(u.host!=='app' || !['GET','HEAD'].includes(request.method))return new Response('Not found',{status:404});
@@ -33,7 +36,7 @@ else{
         const target=path.resolve(root,isScan?name.slice(6):name);
         const relative=path.relative(root,target);
         if(!relative || relative.startsWith('..') || path.isAbsolute(relative))return new Response('Not found',{status:404});
-        return net.fetch(pathToFileURL(target).toString());
+        return await net.fetch(pathToFileURL(isScan?await cache.resolve(name.slice(6)):target).toString());
       }catch{return new Response('Not found',{status:404})}
     });
     win=new BrowserWindow({width:1440,height:960,minWidth:900,minHeight:640,title:'ILEX.GG',icon:path.join(__dirname,'icon.ico'),backgroundColor:'#0d211b',show:!selfTest,autoHideMenuBar:true,webPreferences:{offscreen:selfTest,backgroundThrottling:!selfTest,preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true}});

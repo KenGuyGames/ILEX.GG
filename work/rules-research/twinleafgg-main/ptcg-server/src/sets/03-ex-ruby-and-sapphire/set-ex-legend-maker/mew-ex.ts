@@ -1,3 +1,5 @@
+import { copyAttacks } from '../../../tcg-lab-wotc-final';
+import { CheckPokemonAttacksEffect } from '../../../game/store/effects/check-effects';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, SuperType, CardTag } from '../../../game/store/card/card-types';
 import {
@@ -56,6 +58,17 @@ export class Mewex extends PokemonCard {
   public setNumber: string = '88';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
+    if (effect instanceof CheckPokemonAttacksEffect && effect.player.active.getPokemonCard() === this) {
+      if (IS_POKEBODY_BLOCKED(store, state, effect.player, this)) return state;
+      for (const owner of state.players) {
+        for (const list of [owner.active, ...owner.bench]) {
+          const donor = list.getPokemonCard();
+          if (donor && donor !== this && !list.isSecret) copyAttacks(effect, donor);
+        }
+      }
+      return state;
+    }
+
     if (WAS_POWER_USED(effect, 0, this)) {
       const player = effect.player;
       if (IS_POKEBODY_BLOCKED(store, state, player, this)) {

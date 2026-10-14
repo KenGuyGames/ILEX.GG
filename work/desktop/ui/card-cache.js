@@ -1,0 +1,8 @@
+(()=>{
+  if(!window.desktop?.cardCacheStatus)return;
+  const button=document.createElement('button');button.textContent='Download card images';button.id='card-cache-option';document.querySelector('.aside-bottom').append(button);
+  let status={};
+  function paint(s){status=s;const box=document.querySelector('#cache-status');if(!box)return;box.textContent=`${s.running?'Downloading':s.checked===s.total?'Finished':'Ready / paused'} · ${(s.checked||0).toLocaleString()} / ${(s.total||0).toLocaleString()} checked · ${s.failed||0} failed`;document.querySelector('#cache-start').disabled=s.running;document.querySelector('#cache-pause').disabled=!s.running;document.querySelector('#cache-progress').value=s.checked||0;document.querySelector('#cache-progress').max=s.total||1;}
+  button.onclick=async()=>{modal('<h2>Card image cache</h2><p>Cards download automatically as you view them. Download the full collection for offline use. Your cached images stay available across app updates.</p><p>First full download requires about 2.5 GB of storage and an internet connection. Pause any time; resume skips verified images. Failed images can be retried by starting again.</p><progress id="cache-progress" style="width:100%"></progress><p id="cache-status" role="status" aria-live="polite"></p><button id="cache-start">Download all / Resume</button> <button id="cache-pause">Pause</button><p>Cached cards remain available offline. Uncached cards need an internet connection.</p>');document.querySelector('#cache-start').onclick=async()=>paint(await desktop.downloadCardCache());document.querySelector('#cache-pause').onclick=async()=>paint(await desktop.pauseCardCache());paint(await desktop.cardCacheStatus())};
+  desktop.onCardCacheProgress(paint);
+})();

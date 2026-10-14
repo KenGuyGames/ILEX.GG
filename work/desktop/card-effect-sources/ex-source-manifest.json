@@ -1,5 +1,5 @@
 {
-  "engineSha256": "fecf2b3c700e238a5873e8a801aebdf48d4154b69f9e0067b179ca4c4582b937",
+  "engineSha256": "6132c2c81941202612951be5a91946fa388faa03ff88c2cbc4e726cc699da37c",
   "files": [
     {
       "path": "tcg-lab-ex-attachments.ts",
@@ -75,7 +75,7 @@
     },
     {
       "path": "tcg-lab-wotc-powers.ts",
-      "sha256": "7a7de66f823b163bb4ed11c5daa80a5b5d79a4009be80f76e63cd9e601505491"
+      "sha256": "b221c5d63964742d8bc19d3f86d28b49f16749ecc28a66d81a912f1cf85705b7"
     },
     {
       "path": "tcg-lab-wotc.ts",
@@ -144,6 +144,10 @@
     {
       "path": "ex-energy-clauses.json",
       "sha256": "2a6b3b8a773fa463784ba81393de42cd378c829abee2fcb6d03f45fe911d8aa6"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-legend-maker/mew-ex.ts",
+      "sha256": "e3056b4dcf6cbb57ab784a0bd32fbb3824fe3789d96c67aed4d43284500dc33b"
     }
   ]
 }

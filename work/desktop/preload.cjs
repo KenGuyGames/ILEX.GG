@@ -1,2 +1,2 @@
 const {contextBridge,ipcRenderer}=require('electron');
-contextBridge.exposeInMainWorld('desktop',Object.freeze({exportJSON:(name,data)=>ipcRenderer.invoke('export-json',name,data)}));
+contextBridge.exposeInMainWorld('desktop',Object.freeze({exportJSON:(name,data)=>ipcRenderer.invoke('export-json',name,data),cardCacheStatus:()=>ipcRenderer.invoke('card-cache-status'),downloadCardCache:()=>ipcRenderer.invoke('card-cache-start'),pauseCardCache:()=>ipcRenderer.invoke('card-cache-pause'),onCardCacheProgress:callback=>{const listener=(_event,status)=>callback(status);ipcRenderer.on('card-cache-progress',listener);return ()=>ipcRenderer.removeListener('card-cache-progress',listener)}}));

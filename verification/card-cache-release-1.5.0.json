@@ -1,0 +1,13 @@
+{
+  "version": "1.5.0",
+  "asset": "ILEX.GG-Windows-Small.zip",
+  "bytes": 188193082,
+  "sha256": "784ebcc894925fa2e23911f04a9ca0749f2bf035a048ba14c82ccf1d079d2949",
+  "scansBundled": 0,
+  "appFilesVerified": 101,
+  "engineSha256": "6132c2c81941202612951be5a91946fa388faa03ff88c2cbc4e726cc699da37c",
+  "cacheTests": "passed: integrity, concurrency, deduplication, offline restart, corruption repair, pause and resume",
+  "cacheNativeUI": "not verified; local Electron launch blocked",
+  "liveProviderDownloads": "not verified",
+  "priorDesktopVerification": "desktop-verification-1.5.0.json"
+}
