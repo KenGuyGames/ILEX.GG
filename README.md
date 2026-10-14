@@ -37,40 +37,87 @@ Cards download automatically when viewed and are cached for offline use. Select 
 
 The source on `main` and the release's automatic source ZIP/tar.gz match this smaller build. The app files come from the release ZIP; rebuilding the synchronized rules source reproduces its engine SHA-256. See `verification/source-manifest-1.5.0.json`, `verification/desktop-verification-1.5.0.json`, and `verification/card-cache-release-1.5.0.json`.
 
-Cache integrity, offline/restart reuse, duplicate downloads, corruption repair, bounded concurrency and pause/resume tests passed. New cache UI and live provider downloads remain unverified because the local Electron launch was blocked. Earlier desktop/engine verification is retained separately.
+A fresh release-source download has now passed a clean Windows build and native startup test, including live artwork loading. See the fresh-install steps and test results below.
 
-## Development
+## Build and run from source
 
-Use Node.js and npm. From the repository root:
+### Requirements
+
+- A 64-bit Windows computer and Node.js 24 with npm. Git is optional if you download the source ZIP.
+- Internet access for dependencies, the first Electron runtime download, and uncached card images.
+- Disk space for the source, dependencies, and any card images you choose to cache.
+
+Fresh-source build and startup verification ran on a clean `windows-2025` GitHub runner. Other operating systems have not been verified.
+
+### Fresh install
+
+Download **Source code (zip)** from the [1.5.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.5.0-build-2026-10-14), extract it, and open PowerShell in the extracted folder containing `package.json`.
+
+Alternatively, clone the release source:
+
+```powershell
+git clone --branch v1.5.0-build-2026-10-14 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+cd ILEX.GG
+```
+
+From that source folder, install and start the app:
 
 ```powershell
 npm install
 npm start
 ```
 
-Card images download and cache automatically. A clean clone does not need a copied scans directory. Existing scans in `outputs/Pokemon-TCG-Lab/scans` are still used when present; select **Download card images** for full offline caching. Scans, Electron runtimes, packaged executables, personal profiles, and generated test output are excluded from Git.
+The first start downloads Electron if it is not already installed. Keep the terminal open while the app runs. No Python installation or copied scans folder is needed. Card images download as they are viewed and remain cached for offline use. Select **Download card images** in the sidebar for full offline caching; uncached images still need internet.
 
-The original source layout is preserved so existing scripts keep their relative paths. Build-tool dependencies:
+Existing scans in `outputs/Pokemon-TCG-Lab/scans` are used when present. Normal source launches use the existing `%APPDATA%\\TCG Lab` workspace, including saved decks and games.
+
+### Rebuild the rules engine
+
+The source includes a ready-to-run engine. To rebuild it from the checked-in TypeScript, install the locked build-tool dependencies and run:
 
 ```powershell
 npm ci --prefix work/desktop-build
-node work/desktop-build/wotc-library.cjs
-node work/desktop-build/build-rules.cjs
-node work/desktop-build/catalog.cjs
+npm run build:rules
+npm start
 ```
 
-`npm run build:rules` bundles the checked-in TypeScript into the release engine. The card compiler and catalog-generation tools are also included for further development. Do not regenerate catalogs merely to launch the checked-in app.
+Run each command after the previous one finishes. The verified rebuild reproduces the engine SHA-256 recorded in `verification/source-manifest-1.5.0.json`. The card compilers and catalog generators are included for further development; they are not prerequisites for launching or rebuilding the checked-in app.
 
-Run dependent commands sequentially. Rules checks:
+### Run the checks
+
+From the source root:
 
 ```powershell
-node work/desktop-build/wotc-tests.cjs
-node work/desktop-build/bot-tests.cjs
+npm run test:rules
+npm run test:ex
+npm run test:bot
+node work/desktop-build/card-cache-tests.cjs
 ```
 
-The latest `package-ex.py` excludes scans by default; `--include-scans` creates an optional offline archive. Cache tests: `node work/desktop-build/card-cache-tests.cjs`.
+The required WOTC audit, card-length, library-plan, and pending-card fixtures are included in the refreshed release source. If an older download reports a missing fixture, download the current release source again.
 
-Legacy packaging/install scripts also expect the original local output folders and test profiles; they are retained as project history and are not a clean-clone release pipeline. Do not run `build.cjs` to update the current UI: it reconstructs an older base app.
+### Fresh-download test results
+
+The [clean Windows verification run](https://github.com/KenGuyGames/ILEX.GG/actions/runs/38618053930) passed on October 14, 2026. It downloaded the published release source into a new folder and installed dependencies without an existing app installation or bundled scans.
+
+| Check | Result |
+| --- | --- |
+| App dependency install and locked build-tool install | Passed |
+| Rules engine rebuild | Exact match to the recorded engine SHA-256 |
+| WOTC regression suite | Passed, including 2,510 seeded attack scenarios |
+| Focused EX suite | 155 checks passed |
+| Bot tests | Passed, including completed games at every difficulty |
+| Image-cache tests | Passed: deduplication, disk reuse, corruption repair, offline/restart reuse, validation, concurrency, and pause/resume |
+| Native Electron startup | Passed with 23,799 library entries and live artwork loading |
+| Main screens | Card library, decks, play table, formats, and custom cards rendered |
+| EX native interactions | Complete coverage, replay restoration, Undo, and early/late rules profiles passed |
+| Captured JavaScript errors during the runtime check | None |
+
+The runtime check used an isolated test profile. This is a build and smoke-test result, not certification of every card interaction. A full live download of the entire artwork collection was not exercised.
+
+### Packaging notes
+
+`package-ex.py` excludes scans by default; `--include-scans` creates an optional offline archive. Legacy packaging/install scripts expect the original output folders and native test profiles and are not a clean-clone release pipeline. Do not run `work/desktop-build/build.cjs` to update the current UI: it reconstructs an older base app.
 
 ## Credits and rights
 
