@@ -2,6 +2,14 @@
 
 Desktop Pokémon TCG simulator with deck building, custom cards, historical formats, a local play table, and rules automation.
 
+## Watch the release trailer
+
+[![Watch the ILEX.GG 1.5.0 EX-era release trailer on YouTube](https://img.youtube.com/vi/qoMEsEkn7J8/hqdefault.jpg)](https://www.youtube.com/watch?v=qoMEsEkn7J8)
+
+[Watch on YouTube](https://www.youtube.com/watch?v=qoMEsEkn7J8) for EX-era gameplay, new features, and a preview of planned features before downloading.
+
+ILEX.GG is still very much a work in progress, with more updates coming soon. Features labeled as planned in the trailer are not available yet.
+
 ## Screenshots
 
 Screenshots from ILEX.GG 1.5.0.
