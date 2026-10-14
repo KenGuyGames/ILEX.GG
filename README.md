@@ -31,9 +31,13 @@ The current build also includes format-first match setup, Limitless collection i
 
 ## Download and play
 
-Get the [current Windows x64 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.5.0-build-2026-10-14), including the runtime and offline card scans. Download `ILEX.GG-Windows.zip.001`, `ILEX.GG-Windows.zip.002`, and `Restore-ILEX-ZIP.cmd` from that release into the same folder. Run the script to restore and checksum-verify the ZIP, extract the entire ZIP, then launch `ILEX.GG.exe`. No Node.js or Python installation is required. Do not mix files from different releases.
+Download [ILEX.GG-Windows-Small.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.5.0-build-2026-10-14/ILEX.GG-Windows-Small.zip): **one ZIP, approximately 188 MB**, reduced from 2.77 GB. Extract the entire ZIP, then launch `ILEX.GG.exe`. The runtime is included; Node.js and Python are not required.
 
-The source on `main` now matches the verified 1.5.0 release, including the complete WOTC and EX implementations. The app files are taken from the release ZIP, and rebuilding the rules engine reproduces its SHA-256 exactly. See `verification/source-manifest-1.5.0.json` and `verification/desktop-verification-1.5.0.json` for the recorded hashes and release checks. GitHub’s **Code → Download ZIP** provides the current source.
+Cards download automatically when viewed and are cached for offline use. Select **Download card images** at the bottom of the sidebar to download the full collection with pause/resume and retry. Allow about 2.5 GB of disk space for the full cache. Uncached cards need internet. The cache persists in `%APPDATA%\\TCG Lab\\card-cache` across app updates. Existing decks and workspace saves remain in use.
+
+The source on `main` and the release's automatic source ZIP/tar.gz match this smaller build. The app files come from the release ZIP; rebuilding the synchronized rules source reproduces its engine SHA-256. See `verification/source-manifest-1.5.0.json`, `verification/desktop-verification-1.5.0.json`, and `verification/card-cache-release-1.5.0.json`.
+
+Cache integrity, offline/restart reuse, duplicate downloads, corruption repair, bounded concurrency and pause/resume tests passed. New cache UI and live provider downloads remain unverified because the local Electron launch was blocked. Earlier desktop/engine verification is retained separately.
 
 ## Development
 
@@ -44,7 +48,7 @@ npm install
 npm start
 ```
 
-The app expects offline scans in `outputs/Pokemon-TCG-Lab/scans`. Copy that directory from the existing local ILEX.GG project before launching for full offline artwork. Scans, Electron runtimes, packaged executables, personal profiles, and generated test output are excluded from Git.
+Card images download and cache automatically. A clean clone does not need a copied scans directory. Existing scans in `outputs/Pokemon-TCG-Lab/scans` are still used when present; select **Download card images** for full offline caching. Scans, Electron runtimes, packaged executables, personal profiles, and generated test output are excluded from Git.
 
 The original source layout is preserved so existing scripts keep their relative paths. Build-tool dependencies:
 
@@ -63,6 +67,8 @@ Run dependent commands sequentially. Rules checks:
 node work/desktop-build/wotc-tests.cjs
 node work/desktop-build/bot-tests.cjs
 ```
+
+The latest `package-ex.py` excludes scans by default; `--include-scans` creates an optional offline archive. Cache tests: `node work/desktop-build/card-cache-tests.cjs`.
 
 Legacy packaging/install scripts also expect the original local output folders and test profiles; they are retained as project history and are not a clean-clone release pipeline. Do not run `build.cjs` to update the current UI: it reconstructs an older base app.
 

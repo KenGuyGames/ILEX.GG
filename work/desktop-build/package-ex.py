@@ -1,4 +1,5 @@
-import pathlib,json,hashlib,zipfile,concurrent.futures,shutil,datetime
+import pathlib,json,hashlib,zipfile,concurrent.futures,shutil,datetime,sys
+include_scans='--include-scans' in sys.argv
 root=pathlib.Path(__file__).resolve().parents[2]
 app=root/'outputs/ILEX.GG-win32-x64'
 ui=app/'resources/app/ui'
@@ -106,7 +107,7 @@ The bot resolves its own setup, turns and supported choices automatically. Pause
 
 ## Complete EX implementation pool
 
-All 1,857 bundled EX-era printings are automated: Ruby & Sapphire through Power Keepers, the Unseen Forces Unown collection, both EX Trainer Kits, Nintendo Black Star Promos and POP Series 1–3. Crystal Guardians is 100/100, Dragon Frontiers 101/101, and Power Keepers 108/108. The release passed 155 focused EX checks and 5,302 seeded attack scenarios, shared WOTC and bot/Undo checks, desktop validation and saved-game restoration. Tested interactions cover EX plus Expedition, Aquapolis and Skyridge; Unlimited and later-era interaction sweeps remain deferred. These bounded checks do not prove every possible card combination.
+All 1,857 bundled EX-era printings are automated: Ruby & Sapphire through Power Keepers, the Unseen Forces Unown collection, both EX Trainer Kits, Nintendo Black Star Promos and POP Series 1–3. Crystal Guardians is 100/100, Dragon Frontiers 101/101, and Power Keepers 108/108. The release passed 160 focused EX checks and 5,302 seeded attack scenarios, shared WOTC and bot/Undo checks, desktop validation and saved-game restoration. Tested interactions cover EX plus Expedition, Aquapolis and Skyridge; Unlimited and later-era interaction sweeps remain deferred. These bounded checks do not prove every possible card combination.
 
 EX late rules forbid a first-turn Supporter while still skipping the first draw and permitting attacks. The early/legacy EX profile remains available; saved matches keep their existing profile. New matches using an EX format containing FireRed & LeafGreen or later select the late profile. You can explicitly select the profile in Match settings. Printing-specific EX errata and sources are recorded in resources/app/ui/RULES-SOURCES.md; source files and hashes are in resources/app/card-effect-sources/ex-source-manifest.json.
 
@@ -168,14 +169,14 @@ Offline card text is bundled for 20,464 entries. Other inspection text can requi
 
 Engine/import checks and desktop UI checks passed, including WOTC profiles and combat cases, import review, export round trip, setup choices, illegal-action rollback, turn advance and exact restoration across launches. Every bundled scan was rechecked against its SHA-256 manifest. See desktop-verification.json for the test count and the restricted test-environment limitation; the distributed launcher retains normal Chromium sandbox settings.
 '''.replace('12,825',format(coverage['mappedPrintings'],',')).replace('20,464',format(len(json.loads((ui/'card-details.json').read_text(encoding='utf-8'))),',')).replace('## WOTC era',f"## WOTC automation coverage\n\nThis pass implements {checks['wotcCoverage']['available']:,} of {checks['wotcCoverage']['total']:,} WOTC scan entries. Every set in the bundled WOTC pool now has full implementation coverage, including Neo Discovery, Neo Revelation, Neo Destiny, Aquapolis and Skyridge. There are no entries awaiting effects. This does not certify every possible interaction or historical ruling. Select **WOTC coverage** on Play table for per-set coverage and the pending-card list. The new effects were exercised in {checks['wotcAutomation']['attackScenarios']:,} seeded attack scenarios, plus targeted Trainer, Power, reprint, copy-limit and historical-rules checks. Metadata coverage is not a certification of every possible interaction.\n\n## WOTC era"),encoding='utf-8')
-target=root/'outputs/ILEX.GG-Windows.zip'
+target=root/('outputs/ILEX.GG-Windows-Offline.zip' if include_scans else 'outputs/ILEX.GG-Windows.zip')
 pending_target=target.with_suffix('.pending.zip')
 print('Building Windows ZIP with verified desktop resources.',flush=True)
 with zipfile.ZipFile(pending_target,'w',allowZip64=True,compression=zipfile.ZIP_DEFLATED,compresslevel=1) as z:
     for p in app.rglob('*'):
-        if p.is_file():z.write(p,p.relative_to(app.parent),compress_type=zipfile.ZIP_STORED if p.parent.name=='scans' else zipfile.ZIP_DEFLATED,compresslevel=1)
+        if p.is_file() and (include_scans or not p.is_relative_to(app/'resources/scans')):z.write(p,p.relative_to(app.parent),compress_type=zipfile.ZIP_STORED if p.parent.name=='scans' else zipfile.ZIP_DEFLATED,compresslevel=1)
 with zipfile.ZipFile(pending_target) as z:
-    assert len([n for n in z.namelist() if '/resources/scans/' in n])==23736
+    assert len([n for n in z.namelist() if '/resources/scans/' in n])==(23736 if include_scans else 0)
     for name in ['ILEX.GG.exe','resources/app/ui/rules-engine.js','resources/app/ui/deck-text.js','resources/app/ui/rules-ui.js','resources/app/ui/bot-ai.js','resources/app/ui/bot-ui.js']:
         assert 'ILEX.GG-win32-x64/'+name in z.namelist()
     assert z.testzip() is None
