@@ -31,10 +31,12 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           $manifest = Get-Content verification/source-manifest-1.5.0.json -Raw | ConvertFrom-Json
           if ((Get-FileHash work/desktop/ui/rules-engine.js -Algorithm SHA256).Hash.ToLower() -ne $manifest.rulesEngineSha256) { throw 'Engine hash mismatch' }
-      - name: EX, bot and cache checks
+      - name: WOTC, EX, bot and cache checks
         working-directory: ${{ runner.temp }}/source
         shell: pwsh
         run: |
+          npm run test:rules
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
           npm run test:ex
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           npm run test:bot
