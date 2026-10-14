@@ -1,11 +1,11 @@
 (async()=>{
  const assert=(v,s)=>{if(!v)throw Error('Bot UI: '+s)},checks=[],pause=ms=>new Promise(r=>setTimeout(r,ms));let preview;
- const previous={spec:rulesMatch.spec,journal:rulesMatch.journal.slice()},previousPaused=state.botPaused,previousError=state.botError;
+ const previous={spec:rulesMatch.spec,journal:rulesMatch.journal.slice(),undoHistory:RulesMatch.undoPoints(rulesMatch)},previousPaused=state.botPaused,previousError=state.botError;
  botSuspended=true;botGeneration++;clearTimeout(botTimer);botTimer=null;
  const tick=()=>{botSuspended=false;runBotStep();botSuspended=true;clearTimeout(botTimer);botTimer=null;assert(!state.botError,state.botError);};
  try{
   rulesMatch=null;tab='play';play();assert($('#opponentmode').value==='bot','Bot is default for new matches');assert($('#botdifficulty').options.length===3,'Three levels');
-  $('#rp1').value='bot-forest';$('#rp1').onchange();$('#rp2').value='bot-fire';$('#botdifficulty').value='normal';await beginRules();
+  $('#matchformat').value='wotc-base-fossil';$('#matchformat').onchange();$('#rp1').value='bot-forest';$('#rp1').onchange();$('#rp2').value='bot-fire';$('#rp2').onchange();$('#botdifficulty').value='normal';await beginRules();
   assert(rulesMatch?.spec.opponent?.type==='bot'&&rulesMatch.spec.opponent.difficulty==='normal','Start a bot match from ready-made decks');checks.push('New-match controls offer three difficulties, local play and starter decks');
   const hp=RulesMatch.pending(rulesMatch).find(p=>p.playerId===1),bp=RulesMatch.pending(rulesMatch).find(p=>p.playerId===2);
   if(hp&&bp&&hp.type==='Choose cards'){

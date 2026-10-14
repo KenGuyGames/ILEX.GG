@@ -9,7 +9,8 @@ var RulesMatch=(()=>{
     xy:{name:'XY (2013–2016)',format:R.Format.XY,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:false,legacyBurn:true},
     bw:{name:'Black & White (2011–2013)',format:R.Format.BW,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,legacyBurn:true},
     dp:{name:'Diamond & Pearl / HGSS (2007–2010)',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:true,firstTurnNoTrainers:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true},
-    ex:{name:'Ruby & Sapphire–Power Keepers (2003–2006)',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true}
+    exlate:{name:'EX: FireRed & LeafGreen–Power Keepers',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:false,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,exEraRules:true},
+    ex:{name:'EX: early / legacy saved-match rules',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,exEraRules:true}
   };
   const manager=R.CardManager.getInstance();
   const prototypes=new Map();
@@ -105,6 +106,15 @@ var RulesMatch=(()=>{
     try{m.store.dispatch(action)}finally{Math.random=originalRandom}
     m.journal.push(JSON.parse(JSON.stringify(a)));return m;
   }
-  function restore(saved,map,custom){const m=create(saved.spec,map,custom);for(const a of saved.journal||[])apply(m,a);return m;}
-  return {R,profiles,prototypes,create,apply,restore,pending,targets};
+  function undoPoints(m){
+    if(Array.isArray(m.undoHistory))return m.undoHistory.filter((n,i,a)=>Number.isInteger(n)&&n>=0&&n<m.journal.length&&(i===0||n>a[i-1]));
+    const bot=m.spec.opponent?.type==='bot'?m.spec.opponent.botPlayer:null;
+    return m.journal.map((a,i)=>a.type!=='prompt'&&a.player!==bot?i:-1).filter(i=>i>=0);
+  }
+  function checkpoint(m,index){const points=undoPoints(m).filter(n=>n<index);if(Number.isInteger(index)&&index>=0&&index<m.journal.length)points.push(index);m.undoHistory=points;}
+  function restore(saved,map,custom){const m=create(saved.spec,map,custom);for(const a of saved.journal||[])apply(m,a);if(Array.isArray(saved.undoHistory))m.undoHistory=undoPoints({journal:m.journal,undoHistory:saved.undoHistory});return m;}
+  function undoAction(m,map,custom){const points=undoPoints(m);if(!points.length)throw Error('No action to undo.');const index=points.pop();return restore({spec:m.spec,journal:m.journal.slice(0,index),undoHistory:points},map,custom);}
+
+  function attacks(m,p){const effect=new R.CheckPokemonAttacksEffect(p);m.store.reduceEffect(m.store.state,effect);return [...new Map([...(p.active.getPokemonCard()?.attacks||[]),...effect.attacks].map(a=>[a.name,a])).values()];}
+  return {R,profiles,prototypes,create,apply,restore,pending,targets,attacks,undoPoints,checkpoint,undoAction};
 })();

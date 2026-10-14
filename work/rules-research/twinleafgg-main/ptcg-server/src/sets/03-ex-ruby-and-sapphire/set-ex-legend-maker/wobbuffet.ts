@@ -41,7 +41,7 @@ export class Wobbuffet extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
-    if (effect instanceof CheckRetreatCostEffect) {
+    if (effect instanceof CheckRetreatCostEffect && effect.target === effect.player.active) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 

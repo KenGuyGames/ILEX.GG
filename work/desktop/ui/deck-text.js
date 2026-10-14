@@ -1,5 +1,5 @@
 var DeckText=(()=>{
-  const norm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[’‘]/g,"'").replace(/[^a-z0-9{}]/gi,'').toLowerCase();
+  const norm=s=>String(s||'').replace(/[★☆]/g,'Star').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[’‘]/g,"'").replace(/[^a-z0-9{}]/gi,'').toLowerCase();
   const number=s=>String(s).toLowerCase().replace(/^0+(?=\d)/,'');
   const nameKey=s=>{s=String(s);const token=s.match(/^(?:Basic\s+)?\{([GRWLPFDMYN])\}\s+Energy$/i);if(token)s=({G:'Grass',R:'Fire',W:'Water',L:'Lightning',P:'Psychic',F:'Fighting',D:'Darkness',M:'Metal',Y:'Fairy',N:'Colorless'})[token[1].toUpperCase()]+' Energy';return norm(s.replace(/^Basic\s+(?=\w+\s+Energy$)/i,''));};
   let cached;
@@ -19,7 +19,7 @@ var DeckText=(()=>{
       const m=line.match(/^\*?\s*(\d+)\s+(.+?)\s*$/);
       if(!m){errors.push({line:i+1,text:line,error:'Expected quantity and card name.'});continue;}
       const qty=+m[1];if(!Number.isInteger(qty)||qty<1||qty>200){errors.push({line:i+1,text:line,error:'Quantity must be between 1 and 200.'});continue;}
-      const tail=m[2].match(/^(.*?)\s+([A-Za-z0-9_-]+)\s+([A-Za-z]*\d+[A-Za-z]*|\d+\/\d+)\s*(?:PH)?$/i);
+      const tail=m[2].match(/^(.*?)\s+([A-Za-z0-9_-]+)\s+([A-Za-z]*\d+[A-Za-z]*|\d+\/\d+|[A-Za-z!?])\s*(?:PH)?$/i);
       let name=m[2],pool=[];
       if(tail){name=tail[1];const code=tail[2].toUpperCase(),num=number(tail[3].split('/')[0]);
         pool=lookup.printings.get(code+'|'+num)||[];

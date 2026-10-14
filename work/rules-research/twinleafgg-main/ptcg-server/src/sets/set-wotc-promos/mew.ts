@@ -119,11 +119,13 @@ export class Mew extends PokemonCard {
           }
         }
       ];
+      const disabled=[opponent,player].map(owner=>![owner.active,...owner.bench].some(list=>list.getPokemonCard()?.stage!==undefined&&list.getPokemonCard()!.stage!==Stage.BASIC));
+      if(disabled.every(Boolean))return state;
       return store.prompt(state, new SelectPrompt(
         player.id,
         GameMessage.CHOOSE_OPTION,
         options.map(opt => opt.message),
-        { allowCancel: false }
+        { allowCancel: false, disabled }
       ), choice => {
         const option = options[choice];
         option.action();

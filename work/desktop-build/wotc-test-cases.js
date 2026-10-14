@@ -277,6 +277,9 @@ test('Each newly compiled Trainer resolves its validated choices on both seeded 
  for(const record of wotcData.filter(x=>x.reason==='compiled-trainer'))for(const seed of [1,7]){
   const m=combat('Charmander BS'),p=m.store.state.players[0];m.randomState=seed;for(const owner of m.store.state.players)for(const list of [owner.active,...owner.bench])if(list.getPokemonCard())list.damage=10;
   for(const t of ['Fire','Water','Grass','Lightning','Psychic','Fighting'])fixtureCard(m,t+' Energy BS','discard');fixtureCard(m,'Ivysaur BS','discard');fixtureCard(m,'Charmander BS','deck');
+  for(const op of record.trainerOps){if(op.op==='technicalMachine'){const pokemon=wotcData.find(x=>x.d.supertype==='Pokémon'&&(op.energies||[op.energy]).some(t=>x.d.types.includes(t))&&(!op.evolved||x.d.subtypes.some(t=>t.startsWith('Stage')))&&map[x.d.id]);if(pokemon){p.active.moveTo(p.discard);put(m,map[pokemon.d.id],p.active);}}if(op.nameIncludes){const pokemon=wotcData.find(x=>x.d.supertype==='Pokémon'&&x.d.name.includes(op.nameIncludes)&&map[x.d.id]);if(pokemon){p.active.moveTo(p.discard);put(m,map[pokemon.d.id],p.active);p.bench[0].moveTo(p.discard);put(m,map[pokemon.d.id],p.bench[0]);}}}attach(m,p.active,'Fire Energy BS',3);fixtureCard(m,'Fire Energy BS');fixtureCard(m,'Bill BS');fixtureCard(m,'Bill BS');fixtureCard(m,'Charmander BS');
+  if(record.trainerOps.some(op=>op.op==='maxRevive')){fixtureCard(m,'Water Energy BS');fixtureCard(m,'Charmander BS','discard');}
+  if(record.trainerOps.some(op=>op.op==='finalClause'&&op.kind==='personalityTest'))fixtureCard(m,'Ivysaur BS');
   const c=fixtureCard(m,map[record.d.id]);if(record.trainerOps.some(o=>o.op==='mailFromBill'))p.hand.moveCardsTo(p.hand.cards.filter(x=>x!==c),p.deck);
   try{M.apply(m,{type:'play',player:1,index:p.hand.cards.indexOf(c),target});settle(m);assert.equal(M.pending(m).length,0);}
   catch(error){throw Error(record.d.id+' '+record.d.name+' seed '+seed+': '+(error.stack||JSON.stringify(error)));}
@@ -322,7 +325,7 @@ test('Final Beam responds to attack knockouts with Water weakness, without firin
 let wotcScenarios=0;
 test('Every newly compiled distinct WOTC attack completes validated prompts under two seeded coin branches',()=>{
  const seen=new Set();
- for(const record of wotcData.filter(x=>x.reason==='compiled-effects'))for(let i=0;i<record.d.attacks.length;i++){
+ for(const record of wotcData.filter(x=>x.reason==='compiled-effects'))for(let i=0;i<(record.d.attacks||[]).length;i++){
   const printed=record.d.attacks[i],key=JSON.stringify(printed);if(seen.has(key))continue;seen.add(key);
   for(const seed of [1,7]){
    const m=combat(map[record.d.id]);m.randomState=seed;const [p,o]=m.store.state.players;
@@ -332,6 +335,7 @@ test('Every newly compiled distinct WOTC attack completes validated prompts unde
    attach(m,p.active,'Darkness Energy N1',4);attach(m,p.active,'Metal Energy N1',4);
    if(record.ops[i].some(op=>op.op==='requireEqualEnergy'))for(const c of p.active.cards.filter(c=>c.superType===R.SuperType.ENERGY))attach(m,o.active,c.fullName);
    for(const op of record.ops[i]){if(op.op==='requireDamage')p.active.damage=Math.max(p.active.damage,op.amount);if(op.requireDamaged)o.active.damage=10;}
+   if(record.ops[i].some(op=>op.op==='requirePreviousAttack')){p.wotcLastTurnEnded=0;p.active.getPokemonCard()._wotcLastUsedAttack={name:'Lie Low',turn:0};}
    try{M.apply(m,{type:'attack',player:1,name:printed.name});settle(m);assert.equal(M.pending(m).length,0);assert.equal(m.store.state.turn,2);wotcScenarios++;}
    catch(error){throw Error(record.d.id+' '+printed.name+' seed '+seed+': '+(error.stack||JSON.stringify(error)));}
   }

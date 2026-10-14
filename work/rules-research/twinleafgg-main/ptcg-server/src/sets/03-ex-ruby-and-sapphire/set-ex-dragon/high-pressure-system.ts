@@ -28,9 +28,9 @@ export class HighPressureSystem extends TrainerCard {
       StateUtils.getStadiumCard(state) === this &&
       state.phase !== GamePhase.ATTACK
     ) {
-      const checkPokemonTypeEffect = new CheckPokemonTypeEffect(effect.player.active);
+      const checkPokemonTypeEffect = new CheckPokemonTypeEffect(effect.target);
 
-      if (IS_STADIUM_EFFECT_BLOCKED(store, state, effect.player, effect.player.active)) {
+      if (IS_STADIUM_EFFECT_BLOCKED(store, state, effect.player, effect.target)) {
         return state;
       }
 

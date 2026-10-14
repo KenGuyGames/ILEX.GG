@@ -1,3 +1,4 @@
+import { withWotcMindGames } from '../prefabs/wotc-trainer-cancellation';
 import {
   AttachPokemonToolEffect, TrainerEffect, PlaySupporterEffect,
   PlayItemEffect, PlayStadiumEffect
@@ -56,11 +57,16 @@ function finalizeTrainerCleanup(
   return state;
 }
 
+function withOptionalCoinFlipCancelTrainer(store:StoreLike,state:State,player:Player,trainerCard:TrainerCard,onContinue:()=>State):State {
+ if((player as any).wotcTrainerLockUntilTurn>=state.turn)throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
+ return withWotcMindGames(store,state,player,trainerCard,()=>withCoinFlipCancelTrainerOnly(store,state,player,trainerCard,onContinue));
+}
+
 /**
  * Dizzying Wind-style: when playing a Trainer, flip a coin; on tails discard
  * with no effect. On heads (or when the flag is inactive), run `onContinue`.
  */
-function withOptionalCoinFlipCancelTrainer(
+function withCoinFlipCancelTrainerOnly(
   store: StoreLike,
   state: State,
   player: Player,
@@ -129,7 +135,7 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
       throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
     }
 
-    return withOptionalCoinFlipCancelTrainer(store, state, player, effect.trainerCard, () => {
+    const applyStadium=() => {
       // Handle player's existing stadium
       if (player.stadium.cards.length > 0) {
         if (stadiumCard && stadiumCard.tags.includes(CardTag.PRISM_STAR)) {
@@ -153,9 +159,10 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
         card: effect.trainerCard.name
       });
       player.stadiumUsedTurn = 0;
-      player.hand.moveCardTo(effect.trainerCard, player.stadium);
+      ((effect as any)._exFromDeck?player.deck:player.hand).moveCardTo(effect.trainerCard, player.stadium);
       return state;
-    });
+    };
+    return (effect as any)._exFromDeck?applyStadium():withOptionalCoinFlipCancelTrainer(store,state,player,effect.trainerCard,applyStadium);
   }
 
   // Play Pokemon Tool card
@@ -176,11 +183,11 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
     if (effect.target.tools.length >= pokemonCard.maxTools) {
       throw new GameError(GameMessage.POKEMON_TOOL_ALREADY_ATTACHED);
     }
-    if (player.cannotPlayToolCards) {
+    if (player.cannotPlayToolCards && !(effect as any)._exFromDeck) {
       throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
     }
 
-    return withOptionalCoinFlipCancelTrainer(store, state, player, trainerCard, () => {
+    const attachTool = () => {
       store.log(state, GameLog.LOG_PLAYER_PLAYS_TOOL, {
         name: player.name,
         card: trainerCard.name,
@@ -194,11 +201,12 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
       }
       target.tools.push(effect.trainerCard);
 
-      const playTrainer = new TrainerEffect(player, trainerCard, target);
-      state = store.reduceEffect(state, playTrainer);
+      if (!(effect as any)._exFromDeck) { const playTrainer = new TrainerEffect(player, trainerCard, target);
+      state = store.reduceEffect(state, playTrainer); }
 
       return state;
-    });
+    };
+    return (effect as any)._exFromDeck ? attachTool() : withOptionalCoinFlipCancelTrainer(store,state,player,trainerCard,attachTool);
   }
 
   // Play item card

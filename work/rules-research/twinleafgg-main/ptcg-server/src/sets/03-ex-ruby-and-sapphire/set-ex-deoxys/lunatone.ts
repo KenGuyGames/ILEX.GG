@@ -46,7 +46,7 @@ export class Lunatone extends PokemonCard {
       const player = effect.player;
       const cardList = StateUtils.findCardList(state, this);
       const owner = StateUtils.findOwner(state, cardList);
-      const active = effect.player.active.getPokemonCard();
+      const active = effect.target.getPokemonCard();
 
       if (owner !== player || active === undefined) {
         return state;

@@ -1,0 +1,149 @@
+{
+  "engineSha256": "fecf2b3c700e238a5873e8a801aebdf48d4154b69f9e0067b179ca4c4582b937",
+  "files": [
+    {
+      "path": "tcg-lab-ex-attachments.ts",
+      "sha256": "76d4a114376cda23178cd81de3d4b895101500e18f9a407ae06b872257905291"
+    },
+    {
+      "path": "tcg-lab-ex-conditions.ts",
+      "sha256": "c1931038ed2bbbf727b1aed280081197cb6d95335c604e8fae2b8118c3067978"
+    },
+    {
+      "path": "tcg-lab-ex-copy-supporter.ts",
+      "sha256": "35c449b5b57355a8eacc7224ff542523c30939d0fe86917daaf3363351bdad1f"
+    },
+    {
+      "path": "tcg-lab-ex-counts.ts",
+      "sha256": "5d2d4af15144939229788f6dcb257defb31c2fb02224917661731936863a6d04"
+    },
+    {
+      "path": "tcg-lab-ex-data.ts",
+      "sha256": "5bcd81a8204f4573533419c6f159c5cd87873700b42fa8b9c3cfcfcdf01ff12b"
+    },
+    {
+      "path": "tcg-lab-ex-energy.ts",
+      "sha256": "f7edd82ff07839dac80ad26aa2bf941d55fefcad658833cbb1f8ba595ce58054"
+    },
+    {
+      "path": "tcg-lab-ex-finish-attacks.ts",
+      "sha256": "6c90ae8860fcd93e523d8345bee5778a846f4c59dffb6b2e83d6e664c7a3e2ab"
+    },
+    {
+      "path": "tcg-lab-ex-finish-powers.ts",
+      "sha256": "0f420c7b122eac2cf1c8f3ae2a0ca2816822900b42746c031353fc37b20a944a"
+    },
+    {
+      "path": "tcg-lab-ex-hand.ts",
+      "sha256": "d9fb6a4fb22772c056318ca6576d957cb9932b6db8f20dfe19bec175ac803c60"
+    },
+    {
+      "path": "tcg-lab-ex-move-group.ts",
+      "sha256": "1fdbde303f0d13773a4344a745ecf71d6f9fccd3ac2a0d62c6a845b4b863f59f"
+    },
+    {
+      "path": "tcg-lab-ex-passives.ts",
+      "sha256": "f628f941df2cba44e179f63fe4d6a2356004a99533af2dd1276c4cbdb3c04829"
+    },
+    {
+      "path": "tcg-lab-ex-power-choices.ts",
+      "sha256": "221c6df3ea93e1c32622cbe6fc25800bed3327fbfce785bb41e88b83de2aa686"
+    },
+    {
+      "path": "tcg-lab-ex-retreat.ts",
+      "sha256": "8688b833a1288e2c0781ed94a43f996fb6aea007dbb8aaed1cf2a67c8b99e065"
+    },
+    {
+      "path": "tcg-lab-ex-tools.ts",
+      "sha256": "bb01595bd0f4938c472e143266c240a64134a245bbf295f55349e4963206dd1e"
+    },
+    {
+      "path": "tcg-lab-ex-trainers.ts",
+      "sha256": "dc591dc66d40a3114cf38af92e6c1a94616a67d2dfb5afce55bf5417c1ffcc06"
+    },
+    {
+      "path": "tcg-lab-ex-wave-powers.ts",
+      "sha256": "3b19daa88d18125017e6f8d1b51719bd2500bbf70730344707bbd0a8f3432fd3"
+    },
+    {
+      "path": "tcg-lab-wotc-data.ts",
+      "sha256": "f8fd15438c5d62da661b604975968c2df9fba1959eaf66c6377b2b0d59d5ec5d"
+    },
+    {
+      "path": "tcg-lab-wotc-final.ts",
+      "sha256": "b2e8d973711f8a1987a43a4b0a5438f2c47087d55af5230d31fce9eb5f2e7bdf"
+    },
+    {
+      "path": "tcg-lab-wotc-powers.ts",
+      "sha256": "7a7de66f823b163bb4ed11c5daa80a5b5d79a4009be80f76e63cd9e601505491"
+    },
+    {
+      "path": "tcg-lab-wotc.ts",
+      "sha256": "1defc28ac0e02dd1192bab7d4d2da497651cdebf12ae5acbff9e11d3e305233c"
+    },
+    {
+      "path": "game/store/store.ts",
+      "sha256": "c78eae05cf6ccd3d18116b003b874930e0a1f99e62f8ffaaf268e560fb7bab71"
+    },
+    {
+      "path": "game/store/effect-reducers/attack-effect.ts",
+      "sha256": "e03051d4f9a0b688b1502329bff09758faf40ea69b1981174663c058122eb520"
+    },
+    {
+      "path": "game/store/effect-reducers/game-effect.ts",
+      "sha256": "955e135d4ca227967b9a41f1c8c1cde2a15faf72417972494cfeb593fb17f960"
+    },
+    {
+      "path": "game/store/effect-reducers/check-effect.ts",
+      "sha256": "25cbf76b5ffccab1ee96b25cfb7171e8b24ff365786fcde636aac572ddf54224"
+    },
+    {
+      "path": "game/store/effect-reducers/game-phase-effect.ts",
+      "sha256": "df6efa4c4e96d9ec09743823683c980493b7fb97e737430b22dc375c2567007f"
+    },
+    {
+      "path": "game/store/prompts/choose-cards-prompt.ts",
+      "sha256": "fa4b2143bce315641f9f9e8f4dd5cb239f211486d25f9d138a8a4930c96b7d80"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-sandstorm/root-fossil.ts",
+      "sha256": "224f174685139b7820405a54bd9f2bb4f8cdfb9f701cc6c27d51d0b177d611eb"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-dragon/balloon-berry.ts",
+      "sha256": "27448f8d050a1a767e0b3a64c4c31721585cf578d11361293dc03a74a130a254"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-hidden-legends/jirachi.ts",
+      "sha256": "b476e5c23eec7870d0d7d256d2517836da0a375f9a0b8ea0c696a3e402f73dfa"
+    },
+    {
+      "path": "ex-library.cjs",
+      "sha256": "b02d8955485b20f67151fc919df02af663aa7160f97cf62f2d3d40526d1bef43"
+    },
+    {
+      "path": "ex-text-corrections.cjs",
+      "sha256": "b366b3e10b6d42a4fbb18e67aa3d945dc442d2d8c7e6d07c0873c5e235d7eb2a"
+    },
+    {
+      "path": "ex-attack-patterns.cjs",
+      "sha256": "b390f720fbee65b16d744de3b6699513d5546a02b5f178a719c7da7cf3157ff3"
+    },
+    {
+      "path": "ex-power-patterns.cjs",
+      "sha256": "5c4e0663a7ddce77a406c211918b88b83893a6182749f9f00a717e735eed901d"
+    },
+    {
+      "path": "ex-trainer-patterns.cjs",
+      "sha256": "2dc441543005ae9150d69680426d3acf32970881463573e37af1638c2b265319"
+    },
+    {
+      "path": "printed-effect-compiler.cjs",
+      "sha256": "6c829a95ecbf45c1a1ce88c15773a181cba3ea406851681b7157ee9fd7765f07"
+    },
+    {
+      "path": "ex-energy-clauses.json",
+      "sha256": "2a6b3b8a773fa463784ba81393de42cd378c829abee2fcb6d03f45fe911d8aa6"
+    }
+  ]
+}

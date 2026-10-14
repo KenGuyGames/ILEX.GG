@@ -33,7 +33,7 @@ The current build also includes format-first match setup, Limitless collection i
 
 Get the [current Windows x64 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.5.0-build-2026-10-14), including the runtime and offline card scans. Download `ILEX.GG-Windows.zip.001`, `ILEX.GG-Windows.zip.002`, and `Restore-ILEX-ZIP.cmd` from that release into the same folder. Run the script to restore and checksum-verify the ZIP, extract the entire ZIP, then launch `ILEX.GG.exe`. No Node.js or Python installation is required. Do not mix files from different releases.
 
-The repository source, source archive, and development progress notes still represent the earlier snapshot. Use the Windows release above for the complete WOTC and EX implementation; rebuilding the existing repository snapshot does not reproduce that release.
+The source on `main` now matches the verified 1.5.0 release, including the complete WOTC and EX implementations. The app files are taken from the release ZIP, and rebuilding the rules engine reproduces its SHA-256 exactly. See `verification/source-manifest-1.5.0.json` and `verification/desktop-verification-1.5.0.json` for the recorded hashes and release checks. GitHub’s **Code → Download ZIP** provides the current source.
 
 ## Development
 
@@ -55,6 +55,8 @@ node work/desktop-build/build-rules.cjs
 node work/desktop-build/catalog.cjs
 ```
 
+`npm run build:rules` bundles the checked-in TypeScript into the release engine. The card compiler and catalog-generation tools are also included for further development. Do not regenerate catalogs merely to launch the checked-in app.
+
 Run dependent commands sequentially. Rules checks:
 
 ```powershell
@@ -67,3 +69,4 @@ Legacy packaging/install scripts also expect the original local output folders a
 ## Credits and rights
 
 Unofficial fan project. Pokémon names, card text and artwork belong to their respective owners. The rules engine includes modified Twinleaf code; its MIT notice is preserved in `work/desktop/ui/rules-engine-LICENSE.txt`. Card metadata originated from pokemon-tcg-data. No new license is granted for the original ILEX.GG code or third-party assets by this upload.
+

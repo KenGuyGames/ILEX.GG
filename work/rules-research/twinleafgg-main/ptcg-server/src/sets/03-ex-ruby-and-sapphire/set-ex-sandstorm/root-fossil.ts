@@ -22,12 +22,15 @@ import {
   KnockOutEffect,
   HealEffect,
 } from '../../../game/store/effects/game-effects';
+import { AddSpecialConditionsPowerEffect } from '../../../game/store/effects/check-effects';
+import { PowerEffect } from '../../../game/store/effects/game-effects';
 import { BetweenTurnsEffect } from '../../../game/store/effects/game-phase-effects';
 import { PlayItemEffect, PlayPokemonEffect } from '../../../game/store/effects/play-card-effects';
 import {
   IS_POKEBODY_BLOCKED,
   WAS_POWER_USED,
   MOVE_CARDS,
+  MOVE_POKEMON_OFF_BOARD,
 } from '../../../game/store/prefabs/prefabs';
 
 export class RootFossil extends TrainerCard {
@@ -84,33 +87,11 @@ export class RootFossil extends TrainerCard {
   //   'Play Root Fossil as if it were a Basic Pokémon. While in play, Root Fossil counts as a Pokémon (instead of a Trainer card). Root Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Root Fossil is Knocked Out, it doesn\'t count as a Knocked Out Pokémon. (Discard it anyway.)';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    if (WAS_POWER_USED(effect, 0, this)) {
-      const cardList = effect.player.active;
-      const player = effect.player;
-
-      store.log(state, GameLog.LOG_PLAYER_PUTS_CARD_IN_HAND, {
-        name: effect.player.name,
-        card: this.name,
-      });
-
-      if (player.bench.every((b) => b.cards.length === 0)) {
-        // technical implementation does not matter exactly because this ends the game
-        MOVE_CARDS(store, state, effect.player.active, player.deck, {
-          cards: effect.player.active.cards,
-          sourceCard: this,
-        });
-      } else {
-        player.switchPokemon(cardList);
-        const mysteriousFossilCardList = StateUtils.findCardList(state, this);
-        MOVE_CARDS(store, state, mysteriousFossilCardList, effect.player.discard, {
-          cards: mysteriousFossilCardList.cards.filter((c) => c === this),
-          sourceCard: this,
-        });
-        MOVE_CARDS(store, state, mysteriousFossilCardList, effect.player.discard, {
-          cards: mysteriousFossilCardList.cards.filter((c) => c !== this),
-          sourceCard: this,
-        });
-      }
+    if (effect instanceof PowerEffect && effect.card===this && effect.power===this.powers[0]) {
+      const list=StateUtils.findCardList(state,this),owner=StateUtils.findOwner(state,list);
+      if(owner!==effect.player||list.getPokemonCard()!==this)throw new GameError(GameMessage.CANNOT_USE_POWER);
+      MOVE_POKEMON_OFF_BOARD(store,state,list,{pokemonDestination:owner.discard,attachedDestination:owner.discard,sourceCard:this,sourceEffect:effect});
+      return state;
     }
 
     if (effect instanceof KnockOutEffect && effect.target.getPokemonCard() === this) {
@@ -129,22 +110,19 @@ export class RootFossil extends TrainerCard {
       store.reduceEffect(state, playPokemonEffect);
     }
 
-    if (effect instanceof AddSpecialConditionsEffect && effect.target.getPokemonCard() === this) {
+    if ((effect instanceof AddSpecialConditionsEffect || effect instanceof AddSpecialConditionsPowerEffect) && effect.target.getPokemonCard() === this) {
       effect.preventDefault = true;
     }
 
-    if (effect instanceof KnockOutEffect && effect.player.active.getPokemonCard() === this) {
-      effect.prizeCount = 0;
-      return state;
-    }
 
     if (effect instanceof RetreatEffect && effect.player.active.getPokemonCard() === this) {
       throw new GameError(GameMessage.CANNOT_RETREAT);
     }
 
     // Spongy Stone
-    if (effect instanceof BetweenTurnsEffect) {
-      const player = effect.player;
+    if ((state.rules as any).exEraRules ? effect.type==='EX_CHECKUP_COMPLETE_EFFECT' : effect instanceof BetweenTurnsEffect) {
+      const list=StateUtils.findCardList(state,this),player=StateUtils.findOwner(state,list);
+      if(!player||list.getPokemonCard()!==this)return state;
 
       if (IS_POKEBODY_BLOCKED(store, state, player, this)) {
         return state;

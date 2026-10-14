@@ -57,7 +57,7 @@ export class Dragonite extends PokemonCard {
     REMOVE_MARKER_AT_END_OF_TURN(effect, this.TAILWIND_MARKER, this);
     REMOVE_MARKER_AT_END_OF_TURN(effect, this.TAILWIND_USED_MARKER, this);
 
-    if (effect instanceof CheckRetreatCostEffect && HAS_MARKER(this.TAILWIND_MARKER, effect.player.active, this)) {
+    if (effect instanceof CheckRetreatCostEffect && HAS_MARKER(this.TAILWIND_MARKER, effect.target, this)) {
       effect.cost = [];
     }
 

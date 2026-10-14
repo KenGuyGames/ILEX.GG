@@ -1,4 +1,6 @@
 import { Action } from '../actions/action';
+import { revealWotcSlot } from '../prefabs/wotc-facedown';
+import { checkState } from '../effect-reducers/check-effect';
 import { PassTurnAction, RetreatAction, RetreatStartAction, AttackAction, UseAbilityAction, UseStadiumAction, UseTrainerAbilityAction, UseEnergyAbilityAction } from '../actions/game-actions';
 import { State, GamePhase } from '../state/state';
 import { StoreLike } from '../store-like';
@@ -61,6 +63,7 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
         throw new GameError(GameMessage.NOT_YOUR_TURN);
       }
 
+      if(player.active.getPokemonCard()?._wotcConcealedCard&&revealWotcSlot(store,state,player.active))return checkState(store,state);
       const pokemonCard = player.active.getPokemonCard();
       let attacks: Attack[] = [];
 
@@ -92,6 +95,7 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
       }
 
       const useAttackEffect = new UseAttackEffect(player, attack);
+      useAttackEffect.delegateFrom=attackEffect.attackSources.get(attack);
       state = store.reduceEffect(state, useAttackEffect);
 
       state.lastAttack = attack;
@@ -120,6 +124,7 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
         case SlotType.BENCH: {
           const target = StateUtils.getTarget(state, player, action.target);
           pokemonCard = target.getPokemonCard();
+          if((pokemonCard as any)?._wotcRevealAction&&action.name==='Reveal face-down card'){revealWotcSlot(store,state,target);return checkState(store,state);}
           break;
         }
         case SlotType.DISCARD: {
@@ -260,7 +265,7 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
         throw new GameError(GameMessage.NOT_YOUR_TURN);
       }
 
-      if (player.stadiumUsedTurn === state.turn) {
+      if (player.stadiumUsedTurn === state.turn && !(StateUtils.getStadiumCard(state) as any)?._wotcUnlimitedStadiumAction) {
         throw new GameError(GameMessage.STADIUM_ALREADY_USED);
       }
 

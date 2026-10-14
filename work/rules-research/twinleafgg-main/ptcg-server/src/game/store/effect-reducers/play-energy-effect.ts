@@ -46,6 +46,7 @@ export function playEnergyReducer(store: StoreLike, state: State, effect: Effect
     }
 
     const fromHand = effect.player.hand.cards.includes(effect.energyCard);
+    if ((effect.target as any).wotcAllEnergyLockUntilTurn === state.turn && effect.target.marker.hasMarker('WOTC_ALL_ENERGY_LOCK')) throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
     if (fromHand && effect.target === effect.player.active
       && (effect.player as any).wotcActiveHandEnergyLockUntilTurn === state.turn) {
       throw new GameError(GameMessage.BLOCKED_BY_EFFECT);

@@ -1,4 +1,5 @@
 import { Effect } from '../effects/effect';
+import { CheckSleepRecoveryEffect } from '../effects/check-effects';
 import { AfterAttackEffect, EndTurnEffect, BetweenTurnsEffect, BeginTurnEffect, DrawCardForTurnEffect, DrewTopdeckEffect } from '../effects/game-phase-effects';
 import { GameError } from '../../game-error';
 import { GameMessage, GameLog } from '../../game-message';
@@ -25,12 +26,15 @@ function runBetweenTurnsEffects(store: StoreLike, state: State, onComplete: () =
     store.reduceEffect(state, new BetweenTurnsEffect(player));
   }
 
-  if (store.hasPrompts()) {
-    return store.waitPrompt(state, () => {
-      checkState(store, state, () => onComplete());
-    });
-  }
-  return checkState(store, state, () => onComplete());
+  // Printed WOTC checkup resolves condition flips before Char, and checks
+  // knockouts after all counters have been placed (including Bench counters).
+  const char=()=>{
+    if((state.rules as any).exEraRules)store.reduceEffect(state,{type:'EX_CHECKUP_COMPLETE_EFFECT',preventDefault:false} as any);
+    const counters=state.players.flatMap(player=>[player.active,...player.bench].filter(list=>list.getPokemonCard()&&list.wotcCounters.char).map(list=>({player,list})));let index=0;
+    const resolve=()=>{if(index>=counters.length){if((state.rules as any).wotcRules)for(const player of state.players)store.reduceEffect(state,{type:'WOTC_CHECKUP_DARKNESS_EFFECT',player,preventDefault:false} as any);checkState(store,state,onComplete);return;}const {player,list}=counters[index++];COIN_FLIP_PROMPT(store,state,player,heads=>{if(!heads)list.damage+=20;resolve();});};resolve();
+  };
+  if(store.hasPrompts())return store.waitPrompt(state,char);
+  char();return state;
 }
 
 export function betweenTurns(store: StoreLike, state: State, onComplete: () => void): State {
@@ -190,9 +194,11 @@ function handleSpecialConditions(store: StoreLike, state: State, effect: Between
           break;
         }
 
-        if (effect.player.active.sleepFlips > 0) {
+        const sleep = new CheckSleepRecoveryEffect(player,player.active,player.active.sleepFlips);
+        store.reduceEffect(state,sleep);
+        if (sleep.flips > 0) {
           store.log(state, GameLog.LOG_FLIP_ASLEEP, { name: player.name });
-          MULTIPLE_COIN_FLIPS_PROMPT(store, state, player, effect.player.active.sleepFlips, results => {
+          MULTIPLE_COIN_FLIPS_PROMPT(store, state, player, sleep.flips, results => {
             if (results.every(r => r)) {
               player.active.removeSpecialCondition(SpecialCondition.ASLEEP);
             }
@@ -217,6 +223,9 @@ export function gamePhaseReducer(store: StoreLike, state: State, effect: Effect)
   }
 
   if (effect instanceof EndTurnEffect) {
+    (effect.player as any).wotcLastTurnEnded=state.turn;
+    (state as any).wotcCurrentAttack=undefined;
+    if(effect.player.wotcSetAsideHandReturnTurn<=state.turn){effect.player.wotcSetAsideHand.moveTo(effect.player.hand);effect.player.wotcSetAsideHandReturnTurn=-1;}
     const player = effect.player;
     const opponent = StateUtils.getOpponent(state, player);
     const lastAttack = state.playerLastAttack?.[player.id];

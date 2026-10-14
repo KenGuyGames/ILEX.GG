@@ -7,6 +7,7 @@ import { State } from '../state/state';
 import { StoreLike } from '../store-like';
 import { CheckPokemonPlayedTurnEffect, CheckSpecialConditionRemovalEffect } from '../effects/check-effects';
 import { EvolveEffect } from '../effects/game-effects';
+import { CheckEvolutionTimingEffect } from '../effects/check-effects';
 import { PowerType } from '../card/pokemon-types';
 
 /**
@@ -86,19 +87,21 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
 
       const playedTurnEffect = new CheckPokemonPlayedTurnEffect(effect.player, effect.target);
       store.reduceEffect(state, playedTurnEffect);
+      const timing = new CheckEvolutionTimingEffect(effect.player, effect.target);
+      store.reduceEffect(state, timing);
 
-      if (state.turn == 0 && player.canEvolve === false) {
+      if (state.turn == 0 && player.canEvolve === false && !timing.allowFirstTurn) {
         throw new GameError(GameMessage.CANNOT_EVOLVE_ON_YOUR_FIRST_TURN);
       }
 
-      if (state.turn == 1 && player.canEvolve === false) {
+      if (state.turn == 1 && player.canEvolve === false && !timing.allowFirstTurn) {
         throw new GameError(GameMessage.CANNOT_EVOLVE_ON_YOUR_FIRST_TURN);
       }
-      if (state.turn == 2 && player.canEvolve === false) {
+      if (state.turn == 2 && player.canEvolve === false && !timing.allowFirstTurn) {
         throw new GameError(GameMessage.CANNOT_EVOLVE_ON_YOUR_FIRST_TURN);
       }
 
-      if (playedTurnEffect.pokemonPlayedTurn >= state.turn && !effect.target.canEvolveThisTurn) {
+      if (playedTurnEffect.pokemonPlayedTurn >= state.turn && !effect.target.canEvolveThisTurn && !timing.ignorePlayedTurn) {
         throw new GameError(GameMessage.POKEMON_CANT_EVOLVE_THIS_TURN);
       }
 

@@ -7,4 +7,4 @@ export { AddSpecialConditionsEffect } from './game/store/effects/attack-effects'
 export { CheckHpEffect, CheckProvidedEnergyEffect, CheckRetreatCostEffect, CheckPokemonTypeEffect, CheckPokemonStatsEffect } from './game/store/effects/check-effects';
 import './tcg-lab-wotc';
 export { PowerEffect } from './game/store/effects/game-effects';
-export { CheckPokemonPowersEffect } from './game/store/effects/check-effects';
+export { CheckPokemonPowersEffect, CheckPokemonAttacksEffect } from './game/store/effects/check-effects';

@@ -27,7 +27,7 @@ var BotAI=(()=>{
  const prizeCount=p=>p.prizes.filter(l=>l.cards.length).length;
  const energyMap=list=>list.cards.filter(c=>c.superType===R.SuperType.ENERGY||c.provides?.length).map(card=>({card,provides:card.provides||card.cardType||[]}));
  const readyDamage=list=>{const c=list.getPokemonCard();if(!c)return 0;return Math.max(0,...c.attacks.filter(a=>R.StateUtils.checkEnoughEnergy(energyMap(list),a.cost)).map(a=>Number(a.damage)||0));};
- const pokemonValue=list=>{const c=list.getPokemonCard();return c?Math.max(0,(c.hp+list.hpBonus-list.damage))*.12+readyDamage(list)*1.7+Math.max(0,...c.attacks.map(a=>Number(a.damage)||0))*.25-list.specialConditions.length*18:0;};
+ const pokemonValue=list=>{const c=list.getPokemonCard();return c?Math.max(0,((Number.isFinite(c.hp)?c.hp:50)+list.hpBonus-list.damage))*.12+readyDamage(list)*1.7+Math.max(0,...c.attacks.map(a=>Number(a.damage)||0))*.25-list.specialConditions.length*18:0;};
  function cardValue(c,p){
   if(c.superType===R.SuperType.ENERGY)return p.hand.cards.filter(x=>x.superType===R.SuperType.ENERGY).length<3?22:6;
   if(c.superType===R.SuperType.POKEMON){const basic=c.stage===R.Stage.BASIC;return 15+(c.hp||0)*.1+(basic&&!p.bench.some(l=>l.getPokemonCard())?25:0)+(!basic&&[p.active,...p.bench].some(l=>l.getPokemonCard()?.name===c.evolvesFrom)?35:0);}
@@ -43,6 +43,7 @@ var BotAI=(()=>{
   for(let i=unseen.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[unseen[i],unseen[j]]=[unseen[j],unseen[i]];}
   let at=p.deck.cards.length;p.deck.cards=unseen.slice(0,at);for(const prize of p.prizes){if(prize.isPublic)continue;const n=prize.cards.length;prize.cards=unseen.slice(at,at+n);at+=n;}
   const opponent=store.state.players.find(x=>x!==p);
+  for(const slot of [opponent.active,...opponent.bench])if(slot.isSecret&&slot.getPokemonCard()?._wotcConcealedCard){const hidden=new R.PokemonCard();hidden.id=slot.getPokemonCard().id;hidden.name='Unknown Pokémon';hidden.fullName='Unknown Pokémon';hidden.hp=60;hidden.stage=R.Stage.BASIC;hidden.cardType=[R.CardType.COLORLESS];slot.getPokemonCard()._wotcConcealedCard=hidden;}
   if(!opponent.hand.isPublic)opponent.hand.cards=opponent.hand.cards.map(unknown);
   if(!opponent.deck.isPublic)opponent.deck.cards=opponent.deck.cards.map(unknown);
   for(const prize of opponent.prizes)if(!prize.isPublic)prize.cards=prize.cards.map(unknown);
@@ -74,7 +75,7 @@ var BotAI=(()=>{
     const score=x=>(x.target.player===R.PlayerType.BOTTOM_PLAYER?1:-1)*(harm?-1:1)*pokemonValue(x.list);return score(b)-score(a);
    });const value=subsets(list.map(x=>x.target),p.options.min??1,p.options.max??1,v=>valid(m,p,v));return value===undefined?(p.options.allowCancel?out(null):null):out(value);
   }
-  if(p.type==='Choose prize'){const prizeOwner=p.options.useOpponentPrizes?g.players.find(x=>x!==owner):owner,indexes=Array.from({length:prizeCount(prizeOwner)},(_,i)=>i).filter(i=>!p.options.blocked.includes(i));const value=subsets(indexes,0,indexes.length,v=>valid(m,p,v));return value===undefined?null:out(value);}
+  if(p.type==='Choose prize'){const prizeOwner=p.options.useOpponentPrizes?g.players.find(x=>x!==owner):owner,indexes=prizeOwner.prizes.map((list,i)=>list.cards.length?i:-1).filter(i=>i>=0&&!p.options.blocked.includes(i));const value=subsets(indexes,0,indexes.length,v=>valid(m,p,v));return value===undefined?null:out(value);}
   if(p.type==='Choose attack'){const choices=p.cards.flatMap((c,index)=>c.attacks.map(a=>({index,attack:a.name,damage:Number(a.damage)||0}))).sort((a,b)=>b.damage-a.damage);for(const c of choices){const a=out({index:c.index,attack:c.attack});if(a)return a;}}
   if(['Select','SelectOption'].includes(p.type)){const indexes=p.values.map((v,i)=>i).filter(i=>!p.options.disabled?.[i]);const types=owner.hand.cards.filter(c=>c.superType===R.SuperType.ENERGY).flatMap(c=>(c.provides||[]).map(t=>R.CardType[t]?.toLowerCase()));indexes.sort((a,b)=>Number(types.includes(String(p.values[b]).toLowerCase()))-Number(types.includes(String(p.values[a]).toLowerCase())));for(const i of indexes){const a=out(i);if(a)return a;}}
   if(p.type==='Order cards')return out(p.cards.cards.map((c,i)=>({c,i})).sort((a,b)=>cardValue(b.c,owner)-cardValue(a.c,owner)).map(x=>x.i));
@@ -105,7 +106,8 @@ var BotAI=(()=>{
  function score(m,id){
   const g=m.store.state,p=actor(m,id),op=g.players.find(x=>x!==p);if(g.phase===R.GamePhase.FINISHED)return g.players[g.winner]?.id===id?100000:-100000;
   let value=(prizeCount(op)-prizeCount(p))*1000+pokemonValue(p.active)+p.bench.reduce((n,l)=>n+(l.getPokemonCard()?7+pokemonValue(l)*.25:0),0);
-  value-=Math.max(0,(op.active.getPokemonCard()?.hp||0)+op.active.hpBonus-op.active.damage)*.45;
+  const opposingHp=op.active.getPokemonCard()?.hp||0;
+  value-=Math.max(0,(Number.isFinite(opposingHp)?opposingHp:60)+op.active.hpBonus-op.active.damage)*.45;
   value+=op.active.specialConditions.length*12+Math.min(p.hand.cards.length,12)*3+Math.min(p.deck.cards.length,15)*.3;
   if(p.deck.cards.length<5)value-=(5-p.deck.cards.length)*30;
   for(const list of [p.active,...p.bench]){const c=list.getPokemonCard();if(!c)continue;const n=energyMap(list).reduce((n,e)=>n+e.provides.length,0),max=Math.max(0,...c.attacks.map(a=>a.cost.length));value+=Math.min(n,max+1)*7-Math.max(0,n-max-1)*5;}
@@ -121,8 +123,8 @@ var BotAI=(()=>{
    else {add({type:'play',player:id,index,target:slots[0].target},/bill|professor|draw|search|ball/i.test(c.name+' '+c.text)?50:30);if(/fossil|doll|substitute/i.test(c.name))for(const s of slots.slice(1).filter(s=>!s.list.getPokemonCard()))add({type:'play',player:id,index,target:s.target},35);}
   });
   for(const s of slots){const c=s.list.getPokemonCard();if(!c)continue;
-   if(s.target.slot===R.SlotType.ACTIVE)for(const a of c.attacks)add({type:'attack',player:id,name:a.name},65+(Number(a.damage)||0)*.1);
-   for(const a of c.powers.filter(a=>a.powerType!==R.PowerType.POKEBODY))if(!history.some(h=>h.type==='ability'&&h.player===id&&h.name===a.name&&JSON.stringify(h.target)===JSON.stringify(s.target)))add({type:'ability',player:id,name:a.name,target:s.target},40);
+   if(s.target.slot===R.SlotType.ACTIVE)for(const a of RulesMatch.attacks(m,p))add({type:'attack',player:id,name:a.name},65+(Number(a.damage)||0)*.1);
+   for(const a of c.powers.filter(a=>a.powerType!==R.PowerType.POKEBODY&&!a._wotcPassive))if(!history.some(h=>h.type==='ability'&&h.player===id&&h.name===a.name&&JSON.stringify(h.target)===JSON.stringify(s.target)))add({type:'ability',player:id,name:a.name,target:s.target},40);
   }
   if(!history.some(h=>h.type==='retreat'&&h.player===id))for(let index=0;index<p.bench.length;index++)if(p.bench[index].getPokemonCard())add({type:'retreat',player:id,index},readyDamage(p.bench[index])>readyDamage(p.active)?45:5);
   if(g.players.some(owner=>owner.stadium.cards.some(c=>c._wotcStadiumAction!==false))&&!history.some(h=>h.type==='stadium'&&h.player===id))add({type:'stadium',player:id},40);

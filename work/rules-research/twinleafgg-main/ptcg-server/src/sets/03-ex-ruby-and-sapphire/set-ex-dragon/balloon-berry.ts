@@ -1,3 +1,4 @@
+import { AfterRetreatEffect } from '../../../game/store/effects/game-effects';
 import { TrainerCard } from '../../../game/store/card/trainer-card';
 import { CardType, TrainerType } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -19,9 +20,14 @@ export class BalloonBerry extends TrainerCard {
     'When the Pokémon Balloon Berry is attached to retreats, discard Balloon Berry instead of discarding Energy cards.';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
+    if((state.rules as any).exEraRules){
+      if(effect instanceof CheckRetreatCostEffect&&effect.target.tools.includes(this)&&!IS_TOOL_BLOCKED(store,state,effect.player,this))effect.cost=[];
+      if(effect instanceof AfterRetreatEffect&&effect.target.tools.includes(this)&&!IS_TOOL_BLOCKED(store,state,effect.player,this))MOVE_CARDS(store,state,effect.target,effect.player.discard,{cards:[this],sourceCard:this,sourceEffect:effect});
+      return state;
+    }
     if (
       effect instanceof CheckRetreatCostEffect &&
-      effect.player.active.tools.includes(this) &&
+      effect.target.tools.includes(this) &&
       state.phase !== GamePhase.ATTACK
     ) {
       const player = effect.player;

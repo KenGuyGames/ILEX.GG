@@ -35,9 +35,9 @@ export class Voltorb extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
-    if (effect instanceof CheckRetreatCostEffect && effect.player.active.cards.includes(this)) {
+    if (effect instanceof CheckRetreatCostEffect && effect.target.cards.includes(this)) {
       const player = effect.player;
-      const pokemonCard = player.active.getPokemonCard();
+      const pokemonCard = effect.target.getPokemonCard();
 
       if (pokemonCard !== this) {
         return state;
@@ -47,7 +47,7 @@ export class Voltorb extends PokemonCard {
         return state;
       }
 
-      const checkProvidedEnergy = new CheckProvidedEnergyEffect(player);
+      const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, effect.target);
       state = store.reduceEffect(state, checkProvidedEnergy);
 
       if (checkProvidedEnergy.energyMap.length !== 0) {

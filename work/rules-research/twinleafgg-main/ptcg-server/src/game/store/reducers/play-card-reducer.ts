@@ -1,9 +1,11 @@
+import { revealWotcSlot } from '../prefabs/wotc-facedown';
 import { Action } from '../actions/action';
 import {
   AttachEnergyEffect, PlayPokemonEffect, PlayStadiumEffect,
   PlaySupporterEffect, AttachPokemonToolEffect, PlayItemEffect
 } from '../effects/play-card-effects';
 import { EnergyCard } from '../card/energy-card';
+import { CardType } from '../card/card-types';
 import { GameError } from '../../game-error';
 import { GameMessage } from '../../game-message';
 import { PlayCardAction, CardTarget, PlayerType, SlotType } from '../actions/play-card-action';
@@ -57,9 +59,14 @@ export function playCardReducer(store: StoreLike, state: State, action: Action):
           return store.reduceEffect(state, effect);
         } else {
 
-          if (player.energyPlayedTurn === state.turn) {
+          if((player as any).wotcBlaineTurn===state.turn&&(handCard.provides.includes(CardType.FIRE)||handCard.provides.includes(CardType.ANY))&&revealWotcSlot(store,state,target))return state;
+          const bla=(player as any).wotcBlaineAttachment,qualified=(player as any).wotcBlaineTurn===state.turn&&target.getPokemonCard()?.name.includes('Blaine')&&(handCard.provides.includes(CardType.FIRE)||handCard.provides.includes(CardType.ANY));
+          const second=qualified&&bla?.turn===state.turn&&bla.target===target&&bla.count===1;
+          if (player.energyPlayedTurn === state.turn&&!second) {
             throw new GameError(GameMessage.ENERGY_ALREADY_ATTACHED);
           }
+          if(second)bla.count=2;
+          else if(qualified)(player as any).wotcBlaineAttachment={turn:state.turn,target,count:1};
           player.energyPlayedTurn = state.turn;
 
           const effect = new AttachEnergyEffect(player, handCard, target);

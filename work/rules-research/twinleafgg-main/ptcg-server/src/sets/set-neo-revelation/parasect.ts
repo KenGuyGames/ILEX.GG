@@ -60,10 +60,10 @@ export class Parasect extends PokemonCard {
         return state;
       }
 
-      if (effect.sourceEffect.powerType === PowerType.POKEMON_POWER ||
-        effect.sourceEffect.powerType === PowerType.POKEPOWER ||
-        effect.sourceEffect.powerType === PowerType.POKEBODY ||
-        effect.sourceCard?.attacks.some(attack => attack.name === effect.sourceEffect.name)) {
+      if (effect.sourceEffect?.powerType === PowerType.POKEMON_POWER ||
+        effect.sourceEffect?.powerType === PowerType.POKEPOWER ||
+        effect.sourceEffect?.powerType === PowerType.POKEBODY ||
+        effect.sourceCard?.attacks.some(attack => attack.name === effect.sourceEffect?.name)) {
         // Check if the source is in the discard pile of any player
         if (state.players.some(player => effect.source === player.discard)) {
           effect.preventDefault = true;

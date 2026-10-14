@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "checks": [
+    "Perform adds final prior-turn Active damage while XXXXX remains nonstacking per turn"
+  ],
+  "attackScenarios": 0
+}

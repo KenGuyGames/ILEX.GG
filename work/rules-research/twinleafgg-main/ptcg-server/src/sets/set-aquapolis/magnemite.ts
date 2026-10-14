@@ -34,7 +34,7 @@ export class Magnemite extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
-    if (effect instanceof CheckRetreatCostEffect && effect.player.active.getPokemonCard() === this) {
+    if (effect instanceof CheckRetreatCostEffect && effect.target.getPokemonCard() === this) {
       const player = effect.player;
 
       let isMagnemiteInPlay = false;
@@ -53,7 +53,7 @@ export class Magnemite extends PokemonCard {
         return state;
       }
 
-      const pokemonCard = player.active.getPokemonCard();
+      const pokemonCard = effect.target.getPokemonCard();
 
       if (pokemonCard) {
         const magnemiteCount = player.bench.reduce((count, benchCard) => {

@@ -45,7 +45,7 @@ export class Kyogreex extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (
       effect instanceof CheckRetreatCostEffect &&
-      effect.player.active.getPokemonCard() === this
+      effect.target.getPokemonCard() === this
     ) {
       const player = effect.player;
 
@@ -53,7 +53,7 @@ export class Kyogreex extends PokemonCard {
         return state;
       }
 
-      const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, player.active);
+      const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, effect.target);
       store.reduceEffect(state, checkProvidedEnergyEffect);
 
       let energyCount = 0;

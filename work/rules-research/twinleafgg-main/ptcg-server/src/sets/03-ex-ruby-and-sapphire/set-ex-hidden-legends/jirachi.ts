@@ -48,7 +48,7 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
     GameMessage.CHOOSE_CARD_TO_EVOLVE,
     player.deck,
     { superType: SuperType.POKEMON },
-    { min: 1, max: 1, allowCancel: true, blocked }
+    { min: 0, max: 1, allowCancel: true, blocked }
   ), selected => {
     cards = selected || [];
     next();

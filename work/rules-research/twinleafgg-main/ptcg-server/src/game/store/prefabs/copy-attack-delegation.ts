@@ -25,6 +25,7 @@ export function cloneAttacks(attacks: Attack[]): Attack[] {
 }
 
 export function findAttackIndex(source: PokemonCard, attack: Attack): number {
+  attack=(attack as any)._wotcOriginalAttack||attack;
   const byRef = source.attacks.indexOf(attack);
   if (byRef >= 0) {
     return byRef;
@@ -96,7 +97,7 @@ function delegateToSource(
     copycatCard,
     sourceCard,
     () => withSourceMarkerConstants(copycatCard, sourceCard, () =>
-      sourceCard.reduceEffect.call(copycatCard, store, state, effect)
+      (sourceCard as any)._wotcCopyAttack?.call(copycatCard,store,state,effect) ?? sourceCard.reduceEffect.call(copycatCard, store, state, effect)
     ),
     clonedAttacks,
   );
@@ -305,6 +306,9 @@ export interface DelegatedCopiedAttackContext {
   skipLog?: boolean;
   /** Skip AfterAttackEffect (e.g. when useAttack will emit it). */
   skipAfterAttack?: boolean;
+  /** Required discards already paid by the normal attack announcement. */
+  energyCostPaid?: boolean;
+  requiredEnergyCount?: number;
 }
 
 /**
@@ -346,6 +350,8 @@ export function runDelegatedCopiedAttack(ctx: DelegatedCopiedAttackContext): Sta
 
   const attackEffect = new AttackEffect(player, opponent, clonedAttack);
   attackEffect.source = sourceSlot ?? player.active;
+  (attackEffect as any).wotcEnergyCostPaid=!!ctx.energyCostPaid;
+  (attackEffect as any).wotcRequiredEnergyCount=ctx.requiredEnergyCount||0;
 
   // Fan-out while copycat still has its printed attacks (no index leak).
   // Session hook after propagateEffect runs source as .call(copycat).
@@ -407,6 +413,8 @@ export function* runDelegatedCopiedAttackGenerator(
 
   const attackEffect = new AttackEffect(player, opponent, clonedAttack);
   attackEffect.source = sourceSlot ?? player.active;
+  (attackEffect as any).wotcEnergyCostPaid=!!ctx.energyCostPaid;
+  (attackEffect as any).wotcRequiredEnergyCount=ctx.requiredEnergyCount||0;
 
   state = store.reduceEffect(state, attackEffect);
 

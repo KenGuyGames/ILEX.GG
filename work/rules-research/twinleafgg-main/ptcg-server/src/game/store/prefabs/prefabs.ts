@@ -1869,7 +1869,12 @@ export function MOVE_CARDS(
  * Slot cleanup (damage, markers, tools array, etc.) is handled by MoveCardsEffect
  * when the slot is vacated — callers should not manually clearEffects/damage=0.
  */
-export function MOVE_POKEMON_OFF_BOARD(
+export function MOVE_POKEMON_OFF_BOARD(store:StoreLike,state:State,slot:PokemonCardList,options:{pokemonDestination:CardList;attachedDestination?:CardList;sourceCard?:Card;sourceEffect?:any}):State {
+ const context=(CardList as any).wotcMovementContext;
+ (CardList as any).wotcMovementContext={...context,wholePokemon:true};
+ try{return movePokemonOffBoardInternal(store,state,slot,options);}finally{(CardList as any).wotcMovementContext=context;}
+}
+function movePokemonOffBoardInternal(
   store: StoreLike,
   state: State,
   slot: PokemonCardList,
@@ -2887,7 +2892,8 @@ export function ADD_SPECIAL_CONDITIONS_TO_PLAYER_ACTIVE(
   // and Barrier/Transparency must see a status inflicted by an attack.
   if ((state.rules as any).wotcRules && [GamePhase.ATTACK,GamePhase.AFTER_ATTACK].includes(state.phase) && source instanceof PokemonCard) {
     const owner = StateUtils.findOwner(state,StateUtils.findCardList(state,source));
-    const base = new AttackEffect(owner,StateUtils.getOpponent(state,owner),source.attacks[0]);
+    const current=(state as any).wotcCurrentAttack;
+    const base = current?.source.getPokemonCard()===source ? current : new AttackEffect(owner,StateUtils.getOpponent(state,owner),source.attacks[0]);
     base.source = StateUtils.findCardList(state,source) as PokemonCardList;
     const condition = new AddSpecialConditionsEffect(base,specialConditions);condition.target=player.active;condition.poisonDamage=poisonDamage;condition.burnDamage=burnDamage;condition.confusionDamage=confusionDamage;
     store.reduceEffect(state,condition);return;

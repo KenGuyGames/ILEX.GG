@@ -13,6 +13,7 @@ import { StateUtils } from "../state-utils";
 import { State, GamePhase } from "../state/state";
 import { StoreLike } from "../store-like";
 import { SwapDamageCountersEffect } from "../effects/attack-effects";
+import { SelectPrompt } from '../prompts/select-prompt';
 
 function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect): State {
   const target = effect.target;
@@ -23,8 +24,18 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
     throw new GameError(GameMessage.ILLEGAL_ACTION);
   }
 
+  if(target.marker.hasMarker('WOTC_SHADOW_IMAGES') && effect.player!==StateUtils.findOwner(state,target) && !(effect.attackEffect as any).wotcBypassDefender){
+    const attack:any=effect.attackEffect;attack._wotcShadowResults??=new Map();
+    if(!attack._wotcShadowResults.has(target))return COIN_FLIP_PROMPT(store,state,effect.player,heads=>{attack._wotcShadowResults.set(target,heads);applyPutDamage(store,state,effect);});
+    if(!attack._wotcShadowResults.get(target))return state;
+  }
+  const guard=(effect.attackEffect as any).wotcBypassDefender?undefined:(effect as any)._wotcBenchGuards?.shift();
+  if(guard&&effect.damage>0)return store.prompt(state,new SelectPrompt(guard.player.id,GameMessage.CHOOSE_OPTION,['Keep damage','Use '+guard.name],{allowCancel:false}),(choice:any)=>{if(choice===1){const redirected=Math.min(10,effect.damage);effect.damage-=redirected;guard.list.damage+=redirected;}applyPutDamage(store,state,effect);});
+  const charity=(effect as any)._wotcCharityPlayer;
+  if(charity&&!(effect as any)._wotcCharityUsed&&effect.damage>0){(effect as any)._wotcCharityUsed=true;return store.prompt(state,new SelectPrompt(charity.id,GameMessage.CHOOSE_OPTION,Array.from({length:Math.floor(effect.damage/10)+1},(_,i)=>'Reduce damage by '+i*10),{allowCancel:false}),(choice:any)=>{effect.damage=Math.max(0,effect.damage-choice*10);applyPutDamage(store,state,effect);});}
   const damage = Math.max(0, effect.damage);
   target.damage += damage;
+  if(damage>0)target.marker.removeMarker('WOTC_SHADOW_IMAGES');
 
   if (damage > 0) {
     store.log(state, GameLog.LOG_PLAYER_DEALS_DAMAGE, {
@@ -48,7 +59,7 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
     if (effect.surviveOnTenHPReason !== undefined) {
       const checkHpEffect = new CheckHpEffect(effect.player, target);
       state = store.reduceEffect(state, checkHpEffect);
-      if (target.damage > checkHpEffect.hp) {
+      if (target.damage >= checkHpEffect.hp) {
         store.log(state, GameLog.LOG_SURVIVES_ON_TEN_HP, {
           pokemon: targetCard.name,
           reason: effect.surviveOnTenHPReason,
@@ -57,6 +68,8 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
       }
     }
 
+    if(effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){if((target as any).wotcLastOpponentAttackDamageTurn!==state.turn)(target as any).wotcLastOpponentAttackDamage=0;(target as any).wotcLastOpponentAttackDamageTurn=state.turn;}
+    if((state.rules as any).exEraRules&&damage>0&&effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn}:undefined;}
     const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
     afterDamageEffect.target = effect.target;
     store.reduceEffect(state, afterDamageEffect);
@@ -129,6 +142,8 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
     if (!bypassDefender && state.phase === GamePhase.ATTACK && shouldPreventAttackDamage(target, effect.source, effect.damage)) {
       return state;
     }
+    const optional=(effect as any)._wotcOptionalReductions?.shift();
+    if(optional && effect.damage>0){effect.weaknessApplied=true;return store.prompt(state,new SelectPrompt(optional.player.id,GameMessage.CHOOSE_OPTION,['Keep damage','Use '+optional.name],{allowCancel:false}),(choice:any)=>{if(choice===1)effect.damage=Math.max(0,effect.damage-optional.amount);attackReducer(store,state,effect);});}
 
     // Stadium reductions apply after weakness, including direct/Bench damage paths.
     if ((effect as any).wotcSproutReduction) {
@@ -154,13 +169,20 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
 
     // Apply extra damage for "during your next turn, the Defending Pokemon takes more damage" effects
     if (!bypassDefender && target.defendingPokemonExtraDamageNextTurn > 0
+      && (!(target as any).exExtraDamageNeedsPositive || effect.damage>0)
       && !target.defendingPokemonExtraDamagePending
       && target.defendingPokemonExtraDamageAttackerId === effect.player.id) {
       effect.damage += target.defendingPokemonExtraDamageNextTurn;
     }
 
+    const bonuses=(effect.player as any).wotcTurnDamageBonuses;
+    if(!(effect as any)._wotcTurnBonusesApplied && effect.damage>0 && effect.target===effect.opponent.active && !(effect.attackEffect as any)._wotcTrainer){
+      (effect as any)._wotcTurnBonusesApplied=true;
+      effect.damage+=(effect.attackEffect as any)._wotcSurgeBonus||0;
+      for(const bonus of bonuses||[])if(bonus.turn===state.turn&&effect.source.getPokemonCard()?.name.includes(bonus.nameIncludes))effect.damage+=bonus.amount;
+    }
     // Survive at 10 HP during opponent's next turn
-    const surviveOpts = bypassDefender ? null : getActiveSurviveOnTenHpOptions(target);
+    const surviveOpts = bypassDefender ? null : (effect as any)._wotcSurviveTenPower ? {coinFlipOnWouldKo:true,requireFullHp:false} : getActiveSurviveOnTenHpOptions(target);
     if (surviveOpts !== null
       && effect.surviveOnTenHPReason === undefined
       && state.phase === GamePhase.ATTACK) {
@@ -342,7 +364,8 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
         GameStatsTracker.trackDamageDealt(effect.player, effect.source, damage);
       }
 
-      const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
+      if((state.rules as any).exEraRules&&damage>0&&effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn}:undefined;}
+    const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
       afterDamageEffect.target = effect.target;
       store.reduceEffect(state, afterDamageEffect);
     }
@@ -409,6 +432,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
 
     const damage = Math.max(0, effect.damage);
     target.damage += damage;
+    if((state.rules as any).exEraRules&&damage>0)delete (target as any)._exLethalAttackDamage;
 
     if (damage > 0) {
       store.log(state, GameLog.LOG_PLAYER_PLACES_DAMAGE_COUNTERS, {
@@ -428,6 +452,12 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
   if (effect instanceof AfterDamageEffect) {
     const targetOwner = StateUtils.findOwner(state, effect.target);
     targetOwner.marker.addMarkerToState(effect.player.DAMAGE_DEALT_MARKER);
+
+    const reaction=(effect.target as any).wotcDamageReaction;
+    if(reaction && reaction.turn===state.turn && effect.target.marker.hasMarker('WOTC_DAMAGE_REACTION') && effect.damage>0 && effect.player!==targetOwner && !(effect.attackEffect as any)._wotcReaction){
+      const respond=()=>{const attack:any=new AttackEffect(targetOwner,effect.player,reaction.attack);attack.source=effect.target;attack._wotcReaction=true;const wr=new ApplyWeaknessEffect(attack,reaction.amount??effect.damage*reaction.multiplier);wr.target=effect.player.active;store.reduceEffect(state,wr);const damage=new PutDamageEffect(attack,wr.damage);damage.target=effect.player.active;damage.weaknessApplied=true;store.reduceEffect(state,damage);};
+      if(reaction.coin)return COIN_FLIP_PROMPT(store,state,targetOwner,heads=>{if(heads)respond();});respond();
+    }
 
     // Revenge trap (Shell Trap / Counter Press) — even if Knocked Out.
     // Must be an EffectOfAttack attributed to the retaliator so Mist Energy blocks it.
@@ -477,7 +507,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
       const target = effect.target;
       const cards = effect.cards;
       const owner = StateUtils.findOwner(state, target);
-      return MOVE_CARDS(store, state, target, owner.discard, { cards, sourceEffect: effect });
+      return MOVE_CARDS(store, state, (effect as any).sourceZone||target, owner.discard, { cards, sourceEffect: effect });
     }
     return state;
   }
@@ -520,7 +550,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
 
   if (effect instanceof MoveOpponentEnergyEffect) {
     if (!effect.preventDefault) {
-      effect.target.moveCardTo(effect.card, effect.destination);
+      ((effect as any).sourceZone||effect.target).moveCardTo(effect.card, effect.destination);
     }
     return state;
   }

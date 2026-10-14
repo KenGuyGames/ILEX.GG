@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    "Three starter decks contain 60 mapped cards and satisfy enforced construction",
+    "Bot resolves setup and historical first-turn choices on every difficulty",
+    "Thinking leaves the live cards, journal and engine randomness unchanged",
+    "A bot waits during the human turn and cannot answer the human prompt",
+    "Bot decisions do not depend on hidden opponent hand or actual own deck/prize order",
+    "Hard prioritizes a guaranteed knockout; Easy can choose the weaker attack",
+    "Bot uses Rain Dance and assigns multiple Energy cards through the actual prompt",
+    "WOTC required attack-cost prompts are assigned to the attacking player",
+    "Bot resolves Jirachi Wishing Star top-five selection and continues its turn",
+    "easy completes a full rules-enforced starter game",
+    "normal completes a full rules-enforced starter game",
+    "hard completes a full rules-enforced starter game"
+  ],
+  "games": [
+    {
+      "level": "easy",
+      "decisions": 159,
+      "turns": 24,
+      "winner": 1
+    },
+    {
+      "level": "normal",
+      "decisions": 133,
+      "turns": 22,
+      "winner": 1
+    },
+    {
+      "level": "hard",
+      "decisions": 94,
+      "turns": 13,
+      "winner": 0
+    }
+  ]
+}

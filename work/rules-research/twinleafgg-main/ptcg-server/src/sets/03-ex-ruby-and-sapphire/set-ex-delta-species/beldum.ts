@@ -44,7 +44,7 @@ export class Beldum extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (
       effect instanceof CheckRetreatCostEffect &&
-      effect.player.active.getPokemonCard() === this
+      effect.target.getPokemonCard() === this
     ) {
       const player = effect.player;
 
@@ -63,7 +63,7 @@ export class Beldum extends PokemonCard {
         return state;
       }
 
-      const pokemonCard = player.active.getPokemonCard();
+      const pokemonCard = effect.target.getPokemonCard();
 
       if (pokemonCard) {
         const BeldumCount = player.bench.reduce((count, benchCard) => {

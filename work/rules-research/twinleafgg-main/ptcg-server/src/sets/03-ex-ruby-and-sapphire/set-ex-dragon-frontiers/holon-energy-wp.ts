@@ -55,15 +55,15 @@ export class HolonEnergyWP extends EnergyCard {
 
     if (
       effect instanceof CheckRetreatCostEffect &&
-      effect.player.active.cards.includes(this) &&
-      !effect.player.active.getPokemonCard()?.hasTag(CardTag.POKEMON_ex) &&
-      effect.player.active.energies.cards.some(
+      effect.target.cards.includes(this) &&
+      !effect.target.getPokemonCard()?.hasTag(CardTag.POKEMON_ex) &&
+      effect.target.energies.cards.some(
         (card: any) => card.energyType === EnergyType.BASIC && card.name === 'Psychic Energy',
       )
     ) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
-      if (!IS_SPECIAL_ENERGY_BLOCKED(store, state, opponent, this, effect.player.active)) {
+      if (!IS_SPECIAL_ENERGY_BLOCKED(store, state, opponent, this, effect.target)) {
         effect.cost = [];
       }
     }

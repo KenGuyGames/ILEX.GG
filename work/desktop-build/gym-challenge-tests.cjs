@@ -1,0 +1,6 @@
+const fs=require('fs'),vm=require('vm'),path=require('path');
+const source=fs.readFileSync(path.join(__dirname,'rules-tests.cjs'),'utf8'),bsf=fs.readFileSync(path.join(__dirname,'bsf-test-cases.js'),'utf8');
+const marker="fs.writeFileSync(path.join(root,'work/rules-research/rules-test-report.json')";
+const helpers=bsf.slice(0,bsf.indexOf("test('Every Base")).replace("else if(q.type==='Order cards')", "else if(q.type==='Attach energy'){const to=M.targets(m,q).find(x=>!q.options.blockedTo.some(t=>JSON.stringify(t)===JSON.stringify(x.target)));value=q.cardList.cards.map((c,i)=>({c,i})).filter(x=>!q.options.blocked.includes(x.i)&&R.matchesPromptFilter(x.c,q.filter)).slice(0,Math.max(q.options.min,Math.min(q.options.max,2))).map(x=>({to:to.target,index:x.i}));}\n else if(q.type==='Order cards')");
+const suite=source.slice(0,source.indexOf(marker))+helpers+"\nvm.runInContext(fs.readFileSync(path.join(ui,'bot-ai.js'),'utf8'),ctx);const GCbot=ctx.BotAI;\n"+fs.readFileSync(path.join(__dirname,'gym-challenge-test-cases.js'),'utf8')+"\nfs.writeFileSync(path.join(root,'work/rules-research/gym-challenge-test-report.json'),JSON.stringify({passed:true,checks:passed,attackScenarios:globalThis.gymChallengeScenarios},null,2));";
+vm.runInNewContext(suite,{require,__dirname,console,setTimeout,clearTimeout},{filename:'gym-challenge-tests.cjs'});

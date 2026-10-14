@@ -20,6 +20,9 @@ export interface ChooseCardsOptions {
   blocked: number[];
   isSecret: boolean;
   differentTypes: boolean;
+  differentNames?: boolean;
+  maxEnergyUnits?: number;
+  energyUnitsByIndex?: number[];
   maxPokemons: number | undefined;
   maxBasicEnergies: number | undefined;
   maxEnergies: number | undefined;
@@ -55,6 +58,8 @@ export function chooseCardsSelectionValid(
   if (result.length < options.min || result.length > options.max) {
     return false;
   }
+  if (options.maxEnergyUnits!==undefined && result.reduce((sum,card)=>sum+(options.energyUnitsByIndex?.[cards.indexOf(card)]??1),0)>options.maxEnergyUnits) return false;
+  if (options.differentNames && new Set(result.map(c => c.name)).size !== result.length) return false;
 
   if (!options.allowDifferentSuperTypes) {
     const set = new Set(result.map(r => r.superType));

@@ -6,8 +6,8 @@ import { CardType } from '../card/card-types';
 import { PokemonCard } from '../card/pokemon-card';
 import { CheckHpEffect, CheckAttackCostEffect, CheckProvidedEnergyEffect, CheckTableStateEffect, CheckRetreatCostEffect, CheckPokemonTypeEffect } from '../effects/check-effects';
 import { Effect } from '../effects/effect';
-import { KnockOutEffect, MovedToActiveEffect } from '../effects/game-effects';
-import { TAKE_SPECIFIC_PRIZES, MOVE_CARDS, COIN_FLIP_PROMPT } from '../prefabs/prefabs';
+import { KnockOutEffect, KnockOutAttackEffect, MovedToActiveEffect } from '../effects/game-effects';
+import { TAKE_SPECIFIC_PRIZES, MOVE_CARDS, MOVE_POKEMON_OFF_BOARD, COIN_FLIP_PROMPT } from '../prefabs/prefabs';
 import { ChoosePokemonPrompt } from '../prompts/choose-pokemon-prompt';
 import { ChoosePrizePrompt } from '../prompts/choose-prize-prompt';
 import { ShuffleDeckPrompt } from '../prompts/shuffle-prompt';
@@ -36,9 +36,11 @@ function findKoPokemons(store: StoreLike, state: State): PokemonItem[] {
     const player = state.players[i];
     player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card, target) => {
       const checkHpEffect = new CheckHpEffect(player, cardList);
+      (checkHpEffect as any)._wotcStateCheck=true;
       store.reduceEffect(state, checkHpEffect);
 
-      if (cardList.damage >= checkHpEffect.hp) {
+      const forced=(cardList as any).exForcedKo;
+      if (cardList.damage >= checkHpEffect.hp || forced?.card===card&&cardList.marker.hasMarker('EX_FORCED_KO',forced.sourceCard)) {
         pokemons.push({ playerNum: i, cardList });
       }
     });
@@ -74,10 +76,23 @@ function findKoPokemons(store: StoreLike, state: State): PokemonItem[] {
 //   return state;
 // }
 
-function handleBenchSizeChange(store: StoreLike, state: State, benchSizes: number[]): State {
+function handleBenchSizeChange(store: StoreLike, state: State, benchSizes: number[], policy?: CheckTableStateEffect): State {
   // Skip if we've already handled bench size changes in this state check
   if (state.benchSizeChangeHandled) {
     return state;
+  }
+  if(policy?.benchOverflowToHand){
+    state.benchSizeChangeHandled=true;
+    const players=policy.benchResizeOrder?.map(id=>state.players.find(p=>p.id===id)!).filter(Boolean)||state.players;
+    const resize=(index:number):void=>{if(index>=players.length)return;const player=players[index],limit=benchSizes[state.players.indexOf(player)];
+      while(player.bench.length<limit){const slot=new PokemonCardList();slot.isPublic=true;player.bench.push(slot);}
+      for(let i=player.bench.length-1;i>=0&&player.bench.length>limit;i--)if(!player.bench[i].cards.length)player.bench.splice(i,1);
+      const extra=player.bench.length-limit;if(extra<=0)return resize(index+1);
+      store.prompt(state,new ChoosePokemonPrompt(player.id,GameMessage.CHOOSE_POKEMON_TO_PICK_UP,PlayerType.BOTTOM_PLAYER,[SlotType.BENCH],{min:extra,max:extra,allowCancel:false}),(chosen:any)=>{
+        for(const list of chosen){MOVE_POKEMON_OFF_BOARD(store,state,list,{pokemonDestination:player.hand,attachedDestination:player.hand});const at=player.bench.indexOf(list);if(at>=0)player.bench.splice(at,1);}
+        resize(index+1);
+      });
+    };resize(0);return state;
   }
 
   state.players.forEach((player, index) => {
@@ -422,7 +437,9 @@ export function* executeCheckState(next: Function, store: StoreLike, state: Stat
   const pokemonsToDiscard = findKoPokemons(store, state);
   for (const pokemonToDiscard of pokemonsToDiscard) {
     const owner = state.players[pokemonToDiscard.playerNum];
-    const knockOutEffect = new KnockOutEffect(owner, pokemonToDiscard.cardList);
+    const list=pokemonToDiscard.cardList,forced=(list as any).exForcedKo;
+    const knockOutEffect = forced?.card===list.getPokemonCard()&&list.marker.hasMarker('EX_FORCED_KO',forced.sourceCard)&&!forced.power?new KnockOutAttackEffect(owner,list,forced.attack):new KnockOutEffect(owner,list);
+    delete (list as any).exForcedKo;
     state = store.reduceEffect(state, knockOutEffect);
 
     if (store.hasPrompts()) {
@@ -453,7 +470,7 @@ export function* executeCheckState(next: Function, store: StoreLike, state: Stat
       }
     });
   });
-  handleBenchSizeChange(store, state, checkTableStateEffect.benchSizes);
+  handleBenchSizeChange(store, state, checkTableStateEffect.benchSizes,checkTableStateEffect);
   if (store.hasPrompts()) {
     yield store.waitPrompt(state, () => next());
   }
@@ -580,7 +597,7 @@ export function checkStateReducer(store: StoreLike, state: State, effect: Effect
   }
 
   if (effect instanceof CheckRetreatCostEffect) {
-    if (effect.player.active.zeroRetreatCostNextTurn) {
+    if (effect.target.zeroRetreatCostNextTurn) {
       effect.cost = [];
     }
     return state;

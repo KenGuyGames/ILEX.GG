@@ -3,6 +3,7 @@ import { Prompt } from './prompt';
 
 export interface SelectOptions {
   allowCancel: boolean;
+  isSecret?: boolean;
   defaultValue: number;
 }
 

@@ -23,13 +23,13 @@ export class FluffyBerry extends TrainerCard {
     "As long as Fluffy Berry is attached to a Pokémon, that Pokémon's Retreat Cost is 0.";
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    if (effect instanceof CheckRetreatCostEffect && effect.player.active.tools.includes(this)) {
+    if (effect instanceof CheckRetreatCostEffect && effect.target.tools.includes(this)) {
       const index = effect.cost.indexOf(CardType.COLORLESS);
       if (IS_TOOL_BLOCKED(store, state, effect.player, this)) {
         return state;
       }
       if (index !== -1) {
-        effect.cost.splice(index, 99);
+        effect.cost = [];
       }
     }
 

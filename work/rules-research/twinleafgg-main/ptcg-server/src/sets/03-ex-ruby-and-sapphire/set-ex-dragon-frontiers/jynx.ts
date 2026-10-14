@@ -44,7 +44,7 @@ export class Jynx extends PokemonCard {
       const player = effect.player;
       const cardList = StateUtils.findCardList(state, this);
       const owner = StateUtils.findOwner(state, cardList);
-      const active = effect.player.active.getPokemonCard();
+      const active = effect.target.getPokemonCard();
 
       if (owner !== player || active === undefined) {
         return state;
@@ -62,7 +62,7 @@ export class Jynx extends PokemonCard {
       }
 
       let cardTypes = [...active.cardType];
-      const checkPokemonType = new CheckPokemonTypeEffect(player.active);
+      const checkPokemonType = new CheckPokemonTypeEffect(effect.target);
       store.reduceEffect(state, checkPokemonType);
       cardTypes = checkPokemonType.cardTypes;
 

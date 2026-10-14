@@ -316,6 +316,11 @@ export function RESOLVE_PENDING_END_OF_OPPONENTS_NEXT_TURN_EFFECTS(
 
   const pending = effect.player.pendingEndOfTurnEffects.splice(0);
   for (const item of pending) {
+    const exItem:any=item;
+    if(exItem.exMarker){
+      if(item.target.getPokemonCard()!==exItem.exTargetCard||!item.target.marker.hasMarker(exItem.exMarker,item.sourceCard))continue;
+      item.target.marker.removeMarker(exItem.exMarker,item.sourceCard);
+    }
     if (!item.target.getPokemonCard()) {
       continue;
     }

@@ -484,7 +484,7 @@ function describePromptResult(state: State, prompt: Prompt<any>): string | undef
     return result?.name;
   }
   if (prompt instanceof SelectOptionPrompt || prompt instanceof SelectPrompt) {
-    return prompt.values?.[result];
+    return (prompt.options as any).isSecret ? 'Secret choice' : prompt.values?.[result];
   }
   if (prompt instanceof ConfirmPrompt) {
     return result ? 'Yes' : 'No';

@@ -1,7 +1,7 @@
 {
   "name": "ilex-gg",
   "productName": "ILEX.GG",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "ILEX.GG — a forest sanctuary for Pokemon TCG across every era",
   "author": "ILEX.GG",
   "main": "main.cjs",

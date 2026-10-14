@@ -1,4 +1,5 @@
 import { GameError } from '../../game-error';
+import { hasActiveSwitchLock } from './active-switch-lock';
 import { GameMessage } from '../../game-message';
 import { CardTarget, PlayerType, SlotType } from '../actions/play-card-action';
 import { CardTag, CardType } from '../card/card-types';
@@ -36,6 +37,9 @@ export class Player {
   deck: CardList = new CardList();
 
   hand: CardList = new CardList();
+
+  wotcSetAsideHand: CardList = new CardList();
+  wotcSetAsideHandReturnTurn: number = -1;
 
   discard: CardList = new CardList();
 
@@ -446,6 +450,7 @@ export class Player {
   }
 
   switchPokemon(target: PokemonCardList, store?: any, state?: any) {
+    if (hasActiveSwitchLock(this, state)) return;
     const benchIndex = this.bench.indexOf(target);
     if (benchIndex !== -1) {
       const benchedOutCard = this.active.getPokemonCard();
@@ -458,7 +463,9 @@ export class Player {
 
       // Remove attack effects from the Pokemon leaving active
       this.active.removeAttackEffects();
+      const counters=this.active.wotcCounters;
       this.active.clearEffects();
+      this.active.wotcCounters=counters;
 
       // remove all special conditions
       this.active.specialConditions = [];

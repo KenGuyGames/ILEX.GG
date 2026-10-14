@@ -60,6 +60,7 @@ function sourceMatchesPreventFilter(
 
 function preventFilterFromOptions(options: PreventDamageOptions): PreventDamageFilter {
   const filter: PreventDamageFilter = {};
+  if (options.minDamage !== undefined) filter.minDamage = options.minDamage;
   if (options.maxDamage !== undefined) {
     filter.maxDamage = options.maxDamage;
   }
@@ -111,6 +112,7 @@ export function shouldPreventAttackDamage(
   if (filter.maxDamage !== undefined && (damage === undefined || damage > filter.maxDamage)) {
     return false;
   }
+  if (filter.minDamage !== undefined && (damage === undefined || damage < filter.minDamage)) return false;
 
   return sourceMatchesPreventFilter(sourceCard, filter, source);
 }
@@ -972,6 +974,7 @@ export class DefendingPokemonTakesMoreDamageDuringAttackerNextTurnEffect extends
 
     target.defendingPokemonExtraDamageNextTurn = this.damageBonus;
     target.defendingPokemonExtraDamageAttackerId = this.player.id;
+    (target as any).exExtraDamageNeedsPositive=!!(this as any)._exRequiresPositive;
 
     if (bonusAlreadyActive) {
       // Attack effects run before damage. Keep the bonus active for this attack,
@@ -1404,6 +1407,14 @@ export class ScheduleDefendingPokemonEndOfTurnEffect extends EffectOfAttackEffec
       attackerPlayerId: this.player.id,
       ...this.pending,
     } as PendingEndOfTurnEffect);
+    // EX delayed clauses belong to the defending Pokémon, not a reusable slot.
+    // Retreat/evolution clears the attack marker and cancels the pending clause.
+    if((this.markerSource as any)?._exId){
+      const item:any=this.opponent.pendingEndOfTurnEffects[this.opponent.pendingEndOfTurnEffects.length-1];
+      item.exTargetCard=this.target.getPokemonCard();
+      item.exMarker='EX_DELAYED_'+this.opponent.pendingEndOfTurnEffects.length+'_'+this.attack.name;
+      this.target.marker.addMarker(item.exMarker,this.markerSource,'attack','pokemon');
+    }
   }
 }
 

@@ -33,6 +33,15 @@ test('Bot uses Rain Dance and assigns multiple Energy cards through the actual p
 test('WOTC required attack-cost prompts are assigned to the attacking player',()=>{
  const m=start(),p=m.store.state.players[m.store.state.activePlayer];p.active.cards=[card('base1-36'),card('base1-98'),card('base1-98'),card('base1-98')];M.apply(m,{type:'attack',player:p.id,name:'Flamethrower'});const pending=M.pending(m)[0];assert.equal(pending.playerId,p.id);if(!B.choose(m,p.id,'normal'))console.log({filter:pending.filter,options:pending.options,cards:pending.cards.cards.map(c=>[c.name,R.matchesPromptFilter(c,pending.filter)]),valid:[1,2,3].map(i=>B.valid(m,pending,[i]))});assert.ok(B.choose(m,p.id,'normal'));M.apply(m,B.choose(m,p.id,'normal'));
 });
+test('Bot resolves Jirachi Wishing Star top-five selection and continues its turn',()=>{
+ for(const level of Object.keys(B.levels)){
+ const m=start(level,'exlate'),p=m.store.state.players[m.store.state.activePlayer];p.active.cards=[card('ex8-9')];p.active.specialConditions=[];p.deck.cards=[card('base1-91'),card('base1-98'),card('base1-44'),card('base1-95'),card('base1-94'),card('base1-98')];
+ M.apply(m,{type:'ability',player:p.id,name:'Wishing Star',target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.ACTIVE,index:0}});
+ for(const wait of M.pending(m).filter(p=>p.type==='WaitPrompt'))M.apply(m,B.prompt(m,wait,level));const pending=M.pending(m)[0];assert.equal(pending.type,'Choose cards');assert.equal(pending.playerId,p.id);const before=p.hand.cards.length;const action=B.choose(m,p.id,level);assert.ok(action,'Wishing Star choice '+level);M.apply(m,action);
+ for(let n=0;n<20&&M.pending(m).length;n++){const wait=M.pending(m)[0];const next=B.prompt(m,wait,level);assert.ok(next);M.apply(m,next);}
+ assert.equal(p.hand.cards.length,before+1);assert.equal(M.pending(m).length,0);assert.ok(B.choose(m,p.id,level));
+ }
+});
 const games=[];
 for(const level of Object.keys(B.levels))test(level+' completes a full rules-enforced starter game',()=>{
  const m=start(level,'wotc',41);let decisions=0;
@@ -45,3 +54,4 @@ for(const level of Object.keys(B.levels))test(level+' completes a full rules-enf
  assert.equal(snapshot(M.restore({spec:m.spec,journal:m.journal},map)),snapshot(m),'Bot match replays exactly');
 });
 fs.writeFileSync(path.join(root,'work/rules-research/bot-test-report.json'),JSON.stringify({passed:true,checks:results,games},null,2));
+

@@ -6,6 +6,33 @@ import { EnergyType, SuperType, TrainerType } from '../card/card-types';
 import { EnergyCard } from '../card/energy-card';
 import { TrainerCard } from '../card/trainer-card';
 import { matchesPromptFilter } from '../prompts/prompt-card-filter';
+import { revealConcealedCard } from '../prefabs/wotc-facedown';
+
+export function restoreTemporaryStage(card: any, destination: CardList) {
+  if(card._exEnergyPokemon){
+    if(!('energies' in destination)){card.superType=SuperType.POKEMON;delete card._exBeingAttached;}
+    else if(card._exBeingAttached){card.superType=SuperType.ENERGY;delete card._exBeingAttached;}
+  }
+  if(!('energies' in destination))revealConcealedCard(card);
+  if(card._wotcTemporaryStage && !('energies' in destination)) {
+    card.stage=card._wotcTemporaryStage.stage;
+    delete card._wotcTemporaryStage;
+  }
+}
+
+export function ecogymDestination(source:CardList,destination:CardList,card:Card):CardList {
+ const context=(CardList as any).wotcMovementContext,ownerId=(destination as any)._wotcDiscardOwnerId;
+ if(context?.state?.rules?.wotcRules&&['attack','power'].includes(context.kind)&&context.state.players.some((p:any)=>p.discard===source)&&context.discardProtected?.())return source;
+ if(context&&!context.knockout&&!context.wholePokemon&&'energies' in source&&card.superType===SuperType.ENERGY&&destination!==source){const owner=context.state.players.find((p:any)=>p.active===source||p.bench.includes(source));if(owner&&owner.id!==context.actorId&&['attack','trainer','power'].includes(context.kind)&&destination===(owner as any).discard&&context.keepProtected?.(owner,source))return source;if(owner&&context.kind==='trainer'&&context.sourceCard?.trainerType!==TrainerType.STADIUM&&context.legendaryProtected?.(owner,source))return source;}
+
+ if(context&&!context.knockout&&!context.wholePokemon&&['attack','trainer'].includes(context.kind)&&'energies' in source&&(source as any).getPokemonCard?.()&&(card.superType===SuperType.ENERGY||(source as any).energies.cards.includes(card))&&destination!==source&&source.cards.some((c:any)=>c._wotcEnergyProtection)){
+  const owner=context.state.players.find((p:any)=>p.active===source||p.bench.includes(source));if(owner&&owner.id!==context.actorId)return source;
+ }
+ if(!context||!('energies' in source)||ownerId===undefined||context.actorId===ownerId||context.knockout)return destination;
+ const state=context.state,stadium=state.players.flatMap((p:any)=>p.stadium.cards).find((c:any)=>c._wotcEcogym);
+ if(!stadium||state.players.some((p:any)=>p.stadiumAndToolHaveNoEffectTurnsRemaining>0)||!context.isNonColorless(source,card))return destination;
+ return state.players.find((p:any)=>p.id===ownerId).hand;
+}
 
 export enum StadiumDirection {
   UP = 'up',
@@ -65,15 +92,19 @@ export class CardList {
     }
 
     count = Math.min(count, this.cards.length);
+    if('energies' in this&&(CardList as any).wotcMovementContext){this.moveCardsTo(this.cards.slice(0,count),destination);return;}
     const cards = this.cards.splice(0, count);
+    cards.forEach(card=>restoreTemporaryStage(card,destination));
     destination.cards.push(...cards);
   }
 
   public moveCardsTo(cards: Card[], destination: CardList): void {
     for (let i = 0; i < cards.length; i++) {
+      const actualDestination=ecogymDestination(this,destination,cards[i]);
       let index = this.cards.indexOf(cards[i]);
       if (index !== -1) {
         const card = this.cards.splice(index, 1);
+        restoreTemporaryStage(card[0],actualDestination);
         // If this is a PokemonCardList with the energies property, remove the card from energies
         if ('energies' in this) {
           const pokemonList = this as any;
@@ -84,10 +115,10 @@ export class CardList {
             }
           }
         }
-        destination.cards.push(card[0]);
-        // If destination is a PokemonCardList and card is an energy card (not a Pokemon), add to energies.cards
-        if ('energies' in destination) {
-          const destPkm = destination as any;
+        actualDestination.cards.push(card[0]);
+        // If actualDestination is a PokemonCardList and card is an energy card (not a Pokemon), add to energies.cards
+        if ('energies' in actualDestination) {
+          const destPkm = actualDestination as any;
           if (destPkm.energies && destPkm.energies.cards) {
             // Only add actual energy cards (superType === ENERGY), not Pokemon cards that can act as energy
             const isEnergyCard = card[0].superType === SuperType.ENERGY;
@@ -101,10 +132,10 @@ export class CardList {
         index = (this as any).tools.indexOf(cards[i]);
         if (index !== -1) {
           const card = (this as any).tools.splice(index, 1);
-          destination.cards.push(card[0]);
-          // If destination is a PokemonCardList and card is an energy card (not a Pokemon), add to energies.cards
-          if ('energies' in destination) {
-            const destPkm = destination as any;
+          actualDestination.cards.push(card[0]);
+          // If actualDestination is a PokemonCardList and card is an energy card (not a Pokemon), add to energies.cards
+          if ('energies' in actualDestination) {
+            const destPkm = actualDestination as any;
             if (destPkm.energies && destPkm.energies.cards) {
               // Only add actual energy cards (superType === ENERGY), not Pokemon cards that can act as energy
               const isEnergyCard = card[0].superType === SuperType.ENERGY;

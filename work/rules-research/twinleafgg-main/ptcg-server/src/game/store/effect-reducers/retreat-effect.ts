@@ -1,3 +1,4 @@
+import { finalRetreat } from '../../../tcg-lab-wotc-final';
 import { COIN_FLIP_PROMPT } from '../prefabs/prefabs';
 import { ChooseEnergyPrompt } from '../prompts/choose-energy-prompt';
 import { ChoosePokemonPrompt } from '../prompts/choose-pokemon-prompt';
@@ -13,6 +14,7 @@ import { SpecialCondition } from '../card/card-types';
 import { Player } from '../state/player';
 import { PlayerType, SlotType } from '../actions/play-card-action';
 import { PokemonCardList } from '../state/pokemon-card-list';
+import { hasActiveSwitchLock } from '../state/active-switch-lock';
 
 function assertCanRetreat(player: Player, state: State): void {
   const active = player.active;
@@ -24,7 +26,7 @@ function assertCanRetreat(player: Player, state: State): void {
     active.cannotRetreatWhileActiveSourceCard = undefined;
   }
 
-  if (active.cannotRetreatNextTurn || active.cannotRetreatWhileActive || active.marker.hasMarker('WOTC_PERSISTENT_RETREAT_LOCK')) {
+  if (hasActiveSwitchLock(player, state) || active.cannotRetreatNextTurn || active.cannotRetreatWhileActive || active.marker.hasMarker('WOTC_PERSISTENT_RETREAT_LOCK') || (active as any).wotcMirageFailedTurn===state.turn) {
     throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
   }
 }
@@ -79,7 +81,7 @@ function promptBenchAndRetreat(store: StoreLike, state: State, player: Player): 
     if (benchIndex < 0) {
       return;
     }
-    retreatPokemon(store, state, new RetreatEffect(player, benchIndex));
+    const follow:any=new RetreatEffect(player,benchIndex);follow._wotcPreRetreatResolved=true;retreatPokemon(store,state,follow);
   });
 }
 
@@ -98,7 +100,7 @@ export function retreatReducer(store: StoreLike, state: State, effect: Effect): 
 
     const sp = player.active.specialConditions;
     if ((state.rules as any).wotcRules && sp.includes(SpecialCondition.CONFUSED) && (player.active as any).wotcFailedRetreatTurn === state.turn) throw new GameError(GameMessage.RETREAT_ALREADY_USED);
-    if (sp.includes(SpecialCondition.PARALYZED) || sp.includes(SpecialCondition.ASLEEP)) {
+    if ((sp.includes(SpecialCondition.PARALYZED) || sp.includes(SpecialCondition.ASLEEP)) && !(effect as any).ignoreStatusConditions) {
       throw new GameError(GameMessage.BLOCKED_BY_SPECIAL_CONDITION);
     }
 
@@ -109,6 +111,11 @@ export function retreatReducer(store: StoreLike, state: State, effect: Effect): 
     const checkRetreatCost = new CheckRetreatCostEffect(player);
     state = store.reduceEffect(state, checkRetreatCost);
 
+    if((state.rules as any).wotcRules&&!(effect as any)._wotcPreRetreatResolved){
+      const provided=new CheckProvidedEnergyEffect(player);store.reduceEffect(state,provided);
+      if(!StateUtils.checkEnoughEnergy(provided.energyMap,checkRetreatCost.cost))throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);
+      finalRetreat(store,state,effect,()=>{(effect as any)._wotcPreRetreatResolved=true;store.reduceEffect(state,effect);});return state;
+    }
     if (checkRetreatCost.cost.length === 0) {
       return promptBenchAndRetreat(store, state, player);
     }
@@ -176,6 +183,11 @@ export function retreatReducer(store: StoreLike, state: State, effect: Effect): 
     const checkRetreatCost = new CheckRetreatCostEffect(effect.player);
     state = store.reduceEffect(state, checkRetreatCost);
 
+    if((state.rules as any).wotcRules&&!(effect as any)._wotcPreRetreatResolved){
+      const provided=new CheckProvidedEnergyEffect(player);store.reduceEffect(state,provided);
+      if(!StateUtils.checkEnoughEnergy(provided.energyMap,checkRetreatCost.cost))throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);
+      finalRetreat(store,state,effect,()=>{(effect as any)._wotcPreRetreatResolved=true;store.reduceEffect(state,effect);});return state;
+    }
     if (checkRetreatCost.cost.length === 0) {
       retreatPokemon(store, state, effect);
       return state;

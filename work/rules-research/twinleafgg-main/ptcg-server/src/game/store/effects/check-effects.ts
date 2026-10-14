@@ -9,6 +9,26 @@ import { Card } from '../card/card';
 import { PokemonCard, getPokemonCardTypes } from '../card/pokemon-card';
 import { CardList } from '../state/card-list';
 
+export class CheckTechnicalMachineAttachmentEffect implements Effect {
+  readonly type = 'CHECK_TECHNICAL_MACHINE_ATTACHMENT_EFFECT';
+  public preventDefault = false;
+  constructor(public player: Player, public target: PokemonCardList, public machine: TrainerCard, public allowed: boolean) { }
+}
+
+export class CheckEvolutionTimingEffect implements Effect {
+  readonly type = 'CHECK_EVOLUTION_TIMING_EFFECT';
+  public preventDefault = false;
+  public allowFirstTurn = false;
+  public ignorePlayedTurn = false;
+  constructor(public player: Player, public target: PokemonCardList) { }
+}
+
+export class CheckSleepRecoveryEffect implements Effect {
+  readonly type = 'CHECK_SLEEP_RECOVERY_EFFECT';
+  public preventDefault = false;
+  constructor(public player: Player, public target: PokemonCardList, public flips: number) { }
+}
+
 export enum CheckEffects {
   CHECK_HP_EFFECT = 'CHECK_HP_EFFECT',
   CHECK_PRIZES_COUNT_EFFECT = 'CHECK_PRIZE_COUNT_EFFECT',
@@ -45,6 +65,7 @@ export class CheckPokemonAttacksEffect implements Effect {
   public preventDefault = false;
   public player: Player;
   public attacks: Attack[];
+  public attackSources = new Map<Attack, PokemonCard>();
 
   constructor(player: Player) {
     this.player = player;
@@ -132,10 +153,12 @@ export class CheckRetreatCostEffect implements Effect {
   public preventDefault = false;
   public player: Player;
   public cost: CardType[];
+  public target: PokemonCardList;
 
-  constructor(player: Player) {
+  constructor(player: Player, target: PokemonCardList = player.active) {
+    this.target = target;
     this.player = player;
-    const pokemonCard = player.active.getPokemonCard();
+    const pokemonCard = target.getPokemonCard();
     this.cost = pokemonCard !== undefined ? [...pokemonCard.retreat] : [];
   }
 }
@@ -185,6 +208,8 @@ export class CheckTableStateEffect implements Effect {
   readonly type: string = CheckEffects.CHECK_TABLE_STATE_EFFECT;
   public preventDefault = false;
   public benchSizes: number[];
+  public benchOverflowToHand = false;
+  public benchResizeOrder?: number[];
   public player!: Player;
 
   constructor(benchSizes: number[]) {

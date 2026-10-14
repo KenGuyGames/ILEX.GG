@@ -12,6 +12,7 @@ function settle(m){for(let steps=0;steps<150;steps++){
  else if(q.type==='Choose pokemon'){value=M.targets(m,q).filter(x=>!q.options.blocked.some(t=>JSON.stringify(t)===JSON.stringify(x.target))).slice(0,q.options.min||1).map(x=>x.target);}
  else if(['Shuffle deck','Shuffle hand'].includes(q.type)){const p=m.store.state.players.find(p=>p.id===q.playerId);value=Array.from({length:(q.type==='Shuffle deck'?p.deck:p.hand).cards.length},(_,i)=>i);}
  else if(q.type==='Order cards')value=q.cards.cards.map((_,i)=>i);
+ else if(q.type==='Select'&&q.options.isSecret)value=q.playerId%q.values.length;
  else if(q.type==='Select')value=q.values.findIndex((_,i)=>!q.options.disabled?.[i]);
  else if(q.type==='Choose attack'){const index=q.cards.findIndex(c=>c.attacks.length);value={index,attack:q.cards[index].attacks[0].name};}
  else if(q.type==='Choose prize')value=Array.from({length:q.options.count},(_,i)=>i);

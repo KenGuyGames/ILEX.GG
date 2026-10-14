@@ -2,7 +2,7 @@ import { Card } from '../card/card';
 import { BoardEffect, CardTag, CardType, SpecialCondition, Stage, SuperType } from '../card/card-types';
 import { PokemonCard } from '../card/pokemon-card';
 import { Power, Attack } from '../card/pokemon-types';
-import { CardList } from './card-list';
+import { CardList, ecogymDestination, restoreTemporaryStage } from './card-list';
 import { Marker } from './card-marker';
 import { PendingEnergyAttachDamageCounters, PendingEnergyAttachFromHandConsequence } from './pending-energy-attach-effects';
 import { State } from './state';
@@ -12,6 +12,8 @@ import { StateUtils } from '../state-utils';
 export interface PreventDamageFilter {
   /** Only prevent damage at or below this amount after Weakness/Resistance. */
   maxDamage?: number;
+  /** Only prevent damage at or above this amount after Weakness/Resistance. */
+  minDamage?: number;
   sourceStage?: Stage;
   /** When true, only Evolution Pokémon (stage !== BASIC) match. */
   sourceIsEvolution?: boolean;
@@ -425,7 +427,9 @@ export class PokemonCardList extends CardList {
     this.discardAttackerEnergyIfKnockedOutNextTurnAttackerId = undefined;
   }
 
+  public wotcCounters:any = {};
   clearEffects(): void {
+    this.wotcCounters={};
     delete (this as any).labMirrorTurn;delete (this as any).labMirrorEffects;
     delete (this as any).labConversionWeakness;delete (this as any).labConversionResistance;
     // Nuclear option: wipe all markers (used by evolution/KO)
@@ -715,32 +719,33 @@ export class PokemonCardList extends CardList {
   }
 
   // Override the parent CardList's moveTo method to properly handle Pokemon acting as energy
-  public moveTo(destination: CardList, count?: number): void {
-    // Move energies CardList to destination before moving cards
-    if (this.energies.cards.length > 0) {
-      this.energies.moveTo(destination);
-    }
-
-    super.moveTo(destination, count);
+  public moveTo(destination:CardList,count?:number):void {
+    const selected=count===undefined?[...new Set([...this.cards,...this.energies.cards,...this.tools])]:this.cards.slice(0,count);
+    this.moveCardsTo(selected,destination);
+    if(!this.getPokemonCard()){this.damage=0;this.clearEffects();this.isSecret=false;}
   }
 
   public moveCardsTo(cards: Card[], destination: CardList): void {
     for (let i = 0; i < cards.length; i++) {
+      const actualDestination=ecogymDestination(this,destination,cards[i]);
+      restoreTemporaryStage(cards[i],actualDestination);
       let index = this.cards.indexOf(cards[i]);
       if (index !== -1) {
         const card = this.cards.splice(index, 1);
+        const toolIndex=this.tools.indexOf(card[0]);
+        if(toolIndex!==-1)this.tools.splice(toolIndex,1);
         // Remove the card from energies if it's there
         const energyIndex = this.energies.cards.indexOf(card[0]);
         if (energyIndex !== -1) {
           this.energies.cards.splice(energyIndex, 1);
         }
-        destination.cards.push(card[0]);
+        actualDestination.cards.push(card[0]);
         // If destination is a PokemonCardList and card is an energy card (not a Pokemon), add to energies.cards
-        if (destination instanceof PokemonCardList) {
+        if (actualDestination instanceof PokemonCardList) {
           // Only add actual energy cards (superType === ENERGY), not Pokemon cards that can act as energy
           const isEnergyCard = card[0].superType === SuperType.ENERGY;
-          if (isEnergyCard && !destination.energies.cards.includes(card[0])) {
-            destination.energies.cards.push(card[0]);
+          if (isEnergyCard && !actualDestination.energies.cards.includes(card[0])) {
+            actualDestination.energies.cards.push(card[0]);
           }
         }
       } else {
@@ -748,12 +753,12 @@ export class PokemonCardList extends CardList {
         index = this.energies.cards.indexOf(cards[i]);
         if (index !== -1) {
           const card = this.energies.cards.splice(index, 1);
-          destination.cards.push(card[0]);
+          actualDestination.cards.push(card[0]);
           // If destination is a PokemonCardList and card came from energies, add to destination energies.cards
           // (This handles both regular energy cards and Pokemon-as-energy cards)
-          if (destination instanceof PokemonCardList) {
-            if (!destination.energies.cards.includes(card[0])) {
-              destination.energies.cards.push(card[0]);
+          if (actualDestination instanceof PokemonCardList) {
+            if (!actualDestination.energies.cards.includes(card[0])) {
+              actualDestination.energies.cards.push(card[0]);
             }
           }
         } else {
@@ -761,13 +766,13 @@ export class PokemonCardList extends CardList {
           index = this.tools.indexOf(cards[i]);
           if (index !== -1) {
             const card = this.tools.splice(index, 1);
-            destination.cards.push(card[0]);
+            actualDestination.cards.push(card[0]);
             // If destination is a PokemonCardList and card is an energy card, add to energies.cards
-            if (destination instanceof PokemonCardList) {
+            if (actualDestination instanceof PokemonCardList) {
               const isEnergyCard =
                 card[0].superType === SuperType.ENERGY || (card[0] as any).energyType !== undefined;
-              if (isEnergyCard && !destination.energies.cards.includes(card[0])) {
-                destination.energies.cards.push(card[0]);
+              if (isEnergyCard && !actualDestination.energies.cards.includes(card[0])) {
+                actualDestination.energies.cards.push(card[0]);
               }
             }
           }

@@ -59,11 +59,12 @@ else{
       if(destination)item.setSavePath(destination);else item.cancel();
     });
     Menu.setApplicationMenu(Menu.buildFromTemplate([
-      {label:'File',submenu:[{label:'Export workspace…',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
+      {label:'File',submenu:[{label:'Export workspaceâ€¦',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
       {label:'View',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]},
-      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.4.0',detail:'Base–Fossil: all 228 printings mapped to automated card implementations. 23,736 bundled scans. Historical rules profiles, custom cards and Limitless-compatible deck text. Unofficial fan-made simulator. See README for tested coverage.'})}]}
+      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.5.0',detail:'Baseâ€“Fossil: all 228 printings mapped to automated card implementations. 23,736 bundled scans. Historical rules profiles, custom cards and Limitless-compatible deck text. Unofficial fan-made simulator. See README for tested coverage.'})}]}
     ]));
     await win.loadURL('tcglab://app/index.html');
+    if(selfTest)win.webContents.setAudioMuted(true);
     if(!selfTest)win.maximize();
     if(selfTest){
       try{

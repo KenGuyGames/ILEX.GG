@@ -12,5 +12,5 @@ const entry=path.join(src,'tcg-lab-entry.ts');
 fs.writeFileSync(entry,"import './tcg-lab-printed';\nexport * from './game';\nexport * as sets from './sets';\nexport { matchesPromptFilter } from './game/store/prompts/prompt-card-filter';\nexport { AttackEffect } from './game/store/effects/game-effects';\nexport { AddSpecialConditionsEffect } from './game/store/effects/attack-effects';\n");
 fs.appendFileSync(entry,"export { CheckHpEffect, CheckProvidedEnergyEffect, CheckRetreatCostEffect, CheckPokemonTypeEffect, CheckPokemonStatsEffect } from './game/store/effects/check-effects';\n");
 fs.appendFileSync(entry,"import './tcg-lab-wotc';\n");
-fs.appendFileSync(entry,"export { PowerEffect } from './game/store/effects/game-effects';\nexport { CheckPokemonPowersEffect } from './game/store/effects/check-effects';\n");
+fs.appendFileSync(entry,"export { PowerEffect } from './game/store/effects/game-effects';\nexport { CheckPokemonPowersEffect, CheckPokemonAttacksEffect } from './game/store/effects/check-effects';\n");
 esbuild.build({entryPoints:[entry],bundle:true,platform:'browser',format:'iife',globalName:'TCGRules',define:{global:'globalThis'},outfile:path.join(root,'work/desktop/ui/rules-engine.js'),target:'chrome140',logLevel:'warning'}).then(()=>console.log('Rules engine bundled')).catch(()=>process.exitCode=1);

@@ -1,4 +1,6 @@
+import { SelectPrompt } from '../prompts/select-prompt';
 import { ChooseCardsPrompt } from '../prompts/choose-cards-prompt';
+import { chooseEnergyCardsForRequirements } from '../prefabs/energy-card-requirements';
 import { GameError } from '../../game-error';
 import { GameLog, GameMessage } from '../../game-message';
 import { CardTag, CardType, SpecialCondition, SuperType } from '../card/card-types';
@@ -153,6 +155,8 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
   }
 
   const attack = effect.attack;
+  const preceding=(attack as any)._wotcRequiredPreviousAttack,last=(player.active.getPokemonCard() as any)?._wotcLastUsedAttack;
+  if(preceding&&(last?.name!==preceding||last.turn!==(player as any).wotcLastTurnEnded))throw new GameError(GameMessage.CANNOT_USE_ATTACK);
   let attackingPokemon = player.active;
 
   // Check for attacks that can be used from bench
@@ -212,7 +216,7 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
 
   if (!(state.rules as any).wotcRules) {
   // Smokescreen / Sand-Attack: flip coin(s); any tails cancels the attack
-  if (attackingPokemon.coinFlipCancelAttackNextTurn > 0 || attackingPokemon.marker.hasMarker('WOTC_PERSISTENT_COIN_LOCK')) {
+  if (!(state.rules.exEraRules&&StateUtils.getStadiumCard(state)?.name==='Holon Circle')&&(attackingPokemon.coinFlipCancelAttackNextTurn > 0 || attackingPokemon.marker.hasMarker('WOTC_PERSISTENT_COIN_LOCK'))) {
     const flips = Math.max(attackingPokemon.coinFlipCancelAttackNextTurn, 1);
     let anyTails = false;
 
@@ -257,8 +261,26 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
     throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);
   }
 
+  if(state.rules.exEraRules&&attackingPokemon===player.active&&StateUtils.getStadiumCard(state)?.name==='Holon Circle'&&!state.players.some(p=>p.stadiumAndToolHaveNoEffectTurnsRemaining>0)){const circle=StateUtils.getStadiumCard(state)!;const circleOwner=state.players.find(p=>p.stadium.cards.includes(circle))!;circleOwner.stadium.moveCardsTo([circle],circleOwner.discard);state=store.reduceEffect(state,new EndTurnEffect(player));return state;}
   let wotcEnergyCostPaid = false;
+  let roaringDamage:number|undefined;
+  const roaring=(attack as any)._wotcRoaringCost;
+  if((state.rules as any).wotcRules&&roaring){const entries=checkProvidedEnergy.energyMap.filter(entry=>StateUtils.providesMatchesType(entry.provides,roaring.energy));const units=entries.reduce((n,entry)=>n+Math.min(StateUtils.getProvidesUnitCount(entry.provides),entry.provides.filter(type=>type===roaring.energy||type===CardType.ANY).length),0);attackingPokemon.moveCardsTo(entries.map(entry=>entry.card),player.discard);roaringDamage=roaring.base+units*roaring.amount;wotcEnergyCostPaid=true;}
   let wotcRequiredEnergyCount = 0;
+  const cardRequirements = (attack as any)._wotcRequiredEnergyCards;
+  const returnRequirements = (attack as any)._wotcRequiredEnergyReturn;
+  if ((state.rules as any).wotcRules && returnRequirements?.length) {
+    yield chooseEnergyCardsForRequirements(store,state,player,attackingPokemon,returnRequirements,(cards: any[])=>{attackingPokemon.moveCardsTo(cards,player.hand);wotcRequiredEnergyCount=cards.length;next();});
+    wotcEnergyCostPaid=true;
+  }
+  if ((state.rules as any).wotcRules && cardRequirements?.length) {
+    yield chooseEnergyCardsForRequirements(store,state,player,attackingPokemon,cardRequirements,(cards: any[]) => {
+      attackingPokemon.moveCardsTo(cards,player.discard);
+      wotcRequiredEnergyCount=cards.length;
+      next();
+    });
+    wotcEnergyCostPaid=true;
+  }
   if ((state.rules as any).wotcRules) {
     const required = attack.text.match(/Discard (all|a|\d+) (?:\[([A-Z])\] )?Energy(?: cards?)? attached to [^.]+? in order to use this attack/i);
     if (required) {
@@ -278,7 +300,7 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
   // WOTC attack cancellation follows required costs.
   if ((state.rules as any).wotcRules) {
   // Smokescreen / Sand-Attack: flip coin(s); any tails cancels the attack
-  if (attackingPokemon.coinFlipCancelAttackNextTurn > 0 || attackingPokemon.marker.hasMarker('WOTC_PERSISTENT_COIN_LOCK')) {
+  if (!(state.rules.exEraRules&&StateUtils.getStadiumCard(state)?.name==='Holon Circle')&&(attackingPokemon.coinFlipCancelAttackNextTurn > 0 || attackingPokemon.marker.hasMarker('WOTC_PERSISTENT_COIN_LOCK'))) {
     const flips = Math.max(attackingPokemon.coinFlipCancelAttackNextTurn, 1);
     let anyTails = false;
 
@@ -303,6 +325,10 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
 
   }
 
+  const preAttack:any={type:'WOTC_BEFORE_ATTACK_EFFECT',player,attack,preventDefault:false,cancelled:false};
+  state=store.reduceEffect(state,preAttack);
+  if(store.hasPrompts())yield store.waitPrompt(state,()=>next());
+  if(preAttack.cancelled)return store.reduceEffect(state,new EndTurnEffect(player));
   if (sp.includes(SpecialCondition.CONFUSED)) {
     let flip = false;
 
@@ -336,7 +362,9 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
   //  (attackingPokemon as any).pendingAttackTargets = [];
 
   const attackEffect = (effect instanceof AttackEffect) ? effect : new AttackEffect(player, opponent, attack);
+  (attackEffect as any)._wotcRoaringDamage=roaringDamage;
   attackEffect.source = attackingPokemon;
+  (state as any).wotcCurrentAttack=attackEffect;
   (attackEffect as any).wotcEnergyCostPaid = wotcEnergyCostPaid;
   (attackEffect as any).wotcRequiredEnergyCount = wotcRequiredEnergyCount;
   if (attackingPokemon === player.active && attackingPokemon.whileActiveAttackDamageBonus > 0) {
@@ -356,6 +384,8 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
       sourceCard: delegateFrom,
       selectedAttack: attack,
       sourceSlot: attackingPokemon,
+      energyCostPaid: wotcEnergyCostPaid,
+      requiredEnergyCount: wotcRequiredEnergyCount,
       skipLog: true,
       skipAfterAttack: false,
     });
@@ -515,6 +545,7 @@ function assertActivatedPowerNotLocked(
   card: PokemonCard,
   power: Power,
 ): void {
+  if((card as any)._wotcRevealAction)return;
   try {
     store.reduceEffect(
       state,
@@ -739,6 +770,8 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
           });
         }
       }
+      const rebirth=(effect as any)._wotcRebirthCard;
+      if(rebirth&&effect.player.discard.cards.includes(rebirth))return store.prompt(state,new SelectPrompt(effect.player.id,GameMessage.CHOOSE_OPTION,['Leave in discard','Use Rebirth'],{allowCancel:false}),(choice:any)=>{if(choice===1)effect.player.discard.moveCardsTo([rebirth],effect.player.hand);});
     }
   }
 

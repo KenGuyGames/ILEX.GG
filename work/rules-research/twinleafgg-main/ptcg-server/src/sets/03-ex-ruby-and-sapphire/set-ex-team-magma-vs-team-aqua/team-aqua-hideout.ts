@@ -20,9 +20,9 @@ export class TeamAquaHideout extends TrainerCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (effect instanceof CheckRetreatCostEffect && StateUtils.getStadiumCard(state) === this) {
       const player = effect.player;
-      const pokemonCard = player.active.getPokemonCard();
+      const pokemonCard = effect.target.getPokemonCard();
 
-      if (IS_STADIUM_EFFECT_BLOCKED(store, state, effect.player, effect.player.active)) {
+      if (IS_STADIUM_EFFECT_BLOCKED(store, state, effect.player, effect.target)) {
         return state;
       }
 

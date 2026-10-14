@@ -7,16 +7,16 @@ const wotcPresets=[
   {id:'wotc-neo-destiny',name:'WOTC · Base–Neo Destiny',sets:'base1,base2,base3,base4,base5,gym1,gym2,neo1,neo2,neo3,neo4,si1',ruleProfile:'wotc2002'},
   {id:'wotc-base-skyridge',name:'WOTC · Base–Skyridge',sets:'base1,base2,base3,base4,base5,gym1,gym2,neo1,neo2,neo3,neo4,si1,lc,ecard1,ecard2,ecard3,basep',ruleProfile:'wotc2002'}
 ];
-if(state.wotcFormatVersion!==1){for(const p of wotcPresets)if(!state.formats.some(f=>f.id===p.id))state.formats.push({...p,size:60,copies:4,prizes:6,banned:'',custom:false});state.wotcFormatVersion=1;save();}
+if(state.wotcFormatVersion!==1){for(const p of wotcPresets)if(!(state.removedFormatIds||[]).includes(p.id)&&!state.formats.some(f=>f.id===p.id))state.formats.push({...p,size:60,copies:4,prizes:6,banned:'',custom:false});state.wotcFormatVersion=1;save();}
 const skyridgePreset=wotcPresets.find(f=>f.id==='wotc-base-skyridge');
 for(const f of state.formats)if(f.id===skyridgePreset.id&&f.sets===skyridgePreset.sets){f.sets+=',bog';save();}
 const manualTable=play;
 let tableMode='rules';
 const friendly=s=>String(s||'').replace(/^(?:LOG_|SETUP_)/,'').replaceAll('_',' ').toLowerCase();
 const rulesAssets=Promise.all(['rules-card-map.json','card-details.json','deck-set-codes.json','wotc-coverage.json'].map(u=>fetch(u).then(r=>r.json()))).then(([m,d,c,w])=>{
-  ruleMap=m;cardMetadata=d;deckCodes=c;wotcCoverage=w;rulesReady=true;
+  Object.assign(d,LimitlessCollection.metadata);for(const [alias,base] of Object.entries(LimitlessCollection.ruleAliases))if(m[base])m[alias]=m[base];ruleMap=m;cardMetadata=d;deckCodes=c;wotcCoverage=w;rulesReady=true;
   if(state.rulesMatch)try{rulesMatch=RulesMatch.restore(state.rulesMatch,ruleMap,state.rulesMatch.spec.custom||state.custom)}catch(e){state.rulesRestoreError=e.message;}
-  if(tab==='play')play();
+  if(tab==='play')play();else if(tab==='decks')decks();else if(tab==='library'&&cards.length)library();
 });
 function openWotcCoverage(){
  if(!wotcCoverage)return;let dialog=document.getElementById('wotccoverage');if(!dialog){dialog=document.createElement('dialog');dialog.id='wotccoverage';dialog.style.cssText='width:min(780px,92vw);max-height:85vh;overflow:auto;border:1px solid #6b9e77;border-radius:18px;background:#102a24;color:#e6f2df;padding:24px';document.body.append(dialog);dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});}
@@ -26,7 +26,7 @@ const oldDetails=details;
 details=async id=>cardMetadata[id]?{...find(id),...cardMetadata[id]}:oldDetails(id);
 function ruleCard(c){return find(c?._labId)||find(Object.keys(ruleMap).find(id=>ruleMap[id]===c?.fullName))||{name:c?.name||'Card'};}
 function ruleArt(c){return image(ruleCard(c));}
-function saveRules(){state.rulesMatch={spec:rulesMatch.spec,journal:rulesMatch.journal};save();}
+function saveRules(){state.rulesMatch={spec:rulesMatch.spec,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch)};save();}
 function autoRules(){
   for(let n=0;n<1000;n++){
     const p=RulesMatch.pending(rulesMatch).find(p=>['Coin flip','Shuffle deck','Shuffle hand','WaitPrompt'].includes(p.type));if(!p)return;
@@ -40,16 +40,23 @@ function autoRules(){
   }throw Error('Effect exceeded the resolution limit.');
 }
 function ruleAction(a){
-  try{const before={spec:rulesMatch.spec,journal:rulesMatch.journal.slice()};
+  try{const audioBefore=typeof IlexAudio!=='undefined'?IlexAudio.before(rulesMatch,a):null;const before={spec:rulesMatch.spec,journal:rulesMatch.journal.slice(),undoHistory:RulesMatch.undoPoints(rulesMatch)};
     try{RulesMatch.apply(rulesMatch,a);autoRules()}catch(e){rulesMatch=RulesMatch.restore(before,ruleMap,before.spec.custom||state.custom);throw e}
-    ruleSelected=null;promptChoice=[];saveRules();play();
+    if(typeof IlexAudio!=='undefined')IlexAudio.after(audioBefore,rulesMatch,a);RulesMatch.checkpoint(rulesMatch,before.journal.length);ruleSelected=null;promptChoice=[];saveRules();play();
   }catch(e){toast(friendly(e.message));play()}
+}
+function undoRuleAction(){
+ if(!rulesMatch||!RulesMatch.undoPoints(rulesMatch).length)return;
+ try{const restored=RulesMatch.undoAction(rulesMatch,ruleMap,rulesMatch.spec.custom||state.custom);if(typeof stopBotForUndo==='function')stopBotForUndo();rulesMatch=restored;ruleSelected=null;promptChoice=[];if(typeof seatFocus!=='undefined')seatFocus=null;state.rulesRestoreError='';saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('undo');play();toast(restored.spec.opponent?.type==='bot'?'Action undone. Bot paused.':'Action undone.');}catch(e){toast('Could not undo: '+e.message);}
 }
 async function beginRules(){
   await rulesAssets;
   const ds=[$('#rp1').value,$('#rp2').value].map(id=>(typeof ruleDeckChoices==='function'?ruleDeckChoices():state.decks).find(d=>d.id===id));
   if(ds.some(d=>!d))return toast('Create two decks first.');
-  const formatsUsed=ds.map(d=>state.formats.find(f=>f.id===d.format)||state.formats[0]);
+  const selectedFormat=state.formats.find(f=>f.id===$('#matchformat')?.value);
+  if(!selectedFormat||ds.some(d=>d.format!==selectedFormat.id))return toast('Choose two decks assigned to the selected match format.');
+  const formatsUsed=ds.map(()=>selectedFormat);
+  if(formatsUsed.some(f=>!f))return toast('Choose a format for each deck before starting a match.');
   const profile=$('#ruleprofile').value;
   if(formatsUsed.some(f=>+f.size!==60||+f.prizes!==6))return toast('Automated matches currently require 60-card decks and 6 prizes.');
   const problems=[];
@@ -61,7 +68,7 @@ async function beginRules(){
       const c=find(id);if(!c){problems.push(`${d.name}: missing ${id}`);continue;}
       if(c.custom&&!f.custom)problems.push(`${d.name}: custom cards disabled`);
       if(!c.custom&&!ruleMap[id])problems.push(`${d.name}: ${c.name} (${id}) has no automated implementation`);
-      if(f.sets&&!c.custom&&!f.sets.split(',').some(s=>s.trim()&&id.startsWith(s.trim())))problems.push(`${d.name}: ${c.name} is outside its format`);
+      if(f.sets&&!c.custom&&!limitlessPrintingAllowed(id,cardMetadata[id]||c,f,f.sets.split(',').map(s=>s.trim()).filter(Boolean)))problems.push(`${d.name}: ${c.name} is outside its format`);
       if(f.banned.split(',').map(s=>s.trim().toLowerCase()).includes(id.toLowerCase())||f.banned.split(',').map(s=>s.trim().toLowerCase()).includes((cardMetadata[id]?.name||c.name).toLowerCase()))problems.push(`${d.name}: ${c.name} is banned`);
     }
   }
@@ -69,12 +76,12 @@ async function beginRules(){
   if(rulesMatch&&!confirm('Replace the current rules match?'))return;
   try{
     const opponent=typeof newOpponentSettings==='function'?newOpponentSettings():{type:'local'};
-    const candidate=RulesMatch.create({version:1,profile,opponent,decks:ds.map(d=>({name:d.name,cards:d.cards})),custom:state.custom},ruleMap,state.custom);
+    const candidate=RulesMatch.create({version:1,profile,opponent,format:{id:selectedFormat.id,name:selectedFormat.name},decks:ds.map(d=>({name:d.name,cards:d.cards})),custom:state.custom},ruleMap,state.custom);
     state.botPaused=false;state.botError='';
-    rulesMatch=candidate;autoRules();saveRules();play();
+    rulesMatch=candidate;autoRules();saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}
 }
-function rulesProfileFor(deck){return state.formats.find(f=>f.id===deck?.format)?.ruleProfile||'modern';}
+function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||'modern';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
 function rulesTable(){
   const R=RulesMatch.R,g=rulesMatch?.store.state;
   $('#app').innerHTML=title('RULES TABLE','Play a rules-enforced match','Setup, card effects, attachments, attacks and checkup are resolved by the game engine.',`<button onclick="tableMode='manual';play()">Manual sandbox</button>`)+
@@ -84,14 +91,17 @@ function rulesTable(){
   if(!g){$('#app').innerHTML+='<div class="empty">Import a deck list or build a deck, then start a match. The engine guides legal setup and card choices.</div>';wireSelectors();return;}
   const prompt=RulesMatch.pending(rulesMatch)[0];
   $('#app').innerHTML+=`<div class="panel rule-status"><div class="row"><span class="pill">${esc(R.GamePhase[g.phase])} · TURN ${g.turn}</span><h2>${g.phase===R.GamePhase.FINISHED?(g.winner>=0&&g.winner<2?esc(g.players[g.winner].name)+' wins':'Match finished'):esc(g.players[g.activePlayer]?.name||'Setup')}</h2><span>${esc(RulesMatch.profiles[rulesMatch.spec.profile].name)}</span>${g.phase===R.GamePhase.PLAYER_TURN&&!prompt?`<button onclick="ruleAction({type:'pass',player:${g.players[g.activePlayer].id}})">End turn</button><button onclick="if(confirm('Concede this match?'))ruleAction({type:'concede',player:${g.players[g.activePlayer].id}})">Concede</button>`:''}</div></div><div id="ruleprompt"></div>`;
+  $('.rule-status .row').insertAdjacentHTML('beforeend','<button id="undoruleaction" onclick="undoRuleAction()" '+(RulesMatch.undoPoints(rulesMatch).length?'':'disabled')+'>Undo Action</button>');
   $('#app').innerHTML+=renderSeatedTable(g,prompt)+`<details class="panel"><summary>Game log</summary><div class="log">${g.logs.slice(-80).reverse().map(l=>esc(friendly(l.message))+' '+esc(Object.entries(l.params||{}).filter(([k])=>k!=='timestamp').map(([k,v])=>k+': '+v).join(' · '))).join('<br>')}</div></details>`;
   const settings=$('#rp1').closest('.panel');const fold=document.createElement('details');fold.className='match-settings';fold.innerHTML='<summary>Match settings · '+esc(RulesMatch.profiles[rulesMatch.spec.profile].name)+'</summary>';settings.before(fold);fold.append(settings);
   wireSelectors();if(prompt)drawRulePrompt(prompt);
 }
+function ruleCounterLabels(list){const counters=list.wotcCounters||{};return [counters.char?'Char counter':'',counters.lightningRod?'Lightning Rod marker':'',counters.color!==undefined?'Color counter: '+RulesMatch.R.CardType[counters.color]:''].filter(Boolean).join(' · ');}
 function ruleSlot(list,p,index,active,enabled){
+  if(list.isSecret)return '<div class="rule-slot"><h3>Face-down card</h3>'+(enabled?'<button onclick="ruleAction({type:\'ability\',player:'+p.id+',name:\'Reveal face-down card\',target:'+esc(JSON.stringify({player:RulesMatch.R.PlayerType.BOTTOM_PLAYER,slot:active?RulesMatch.R.SlotType.ACTIVE:RulesMatch.R.SlotType.BENCH,index:active?0:index}))+'})">Reveal card</button>':'')+'</div>';
   if(list.isSecret&&list.cards.length)return `<div class="rule-slot"><h3>${active?'Active':'Bench '+(index+1)}</h3><div class="rule-pokemon" style="padding:35px 10px;background:#213e61;border:4px solid #dfc744;border-radius:9px;text-align:center">Face-down Pokémon</div></div>`;
   const R=RulesMatch.R,c=list.getPokemonCard(),target={player:R.PlayerType.BOTTOM_PLAYER,slot:active?R.SlotType.ACTIVE:R.SlotType.BENCH,index};
-  return `<div class="rule-slot"><h3>${active?'Active':'Bench '+(index+1)}</h3>${c?`${ruleArt(c)?`<img class="rule-pokemon" src="${esc(ruleArt(c))}" alt="${esc(c.name)}">`:''}<strong>${esc(c.name)}</strong><p>${list.damage} damage · ${list.hp||c.hp} HP</p><p>${list.specialConditions.map(s=>R.SpecialCondition[s]).join(', ')||'Healthy'}</p><small>Stack: ${esc(list.cards.map(c=>c.name).join(', '))}${list.tools?.length?' · Tools: '+esc(list.tools.map(c=>c.name).join(', ')):''}</small>${enabled&&active?c.attacks.map(a=>`<button onclick="ruleAction({type:'attack',player:${p.id},name:${esc(JSON.stringify(a.name))}})">${esc(a.name)} · ${a.damage} · ${a.cost.map(x=>R.CardType[x]).join(' / ')}</button>`).join(''):''}${enabled?c.powers.filter(a=>a.powerType!==R.PowerType?.POKEBODY).map(a=>`<button onclick="ruleAction({type:'ability',player:${p.id},name:${esc(JSON.stringify(a.name))},target:${esc(JSON.stringify(target))}})">${esc(a.name)}</button>`).join(''):''}${enabled&&!active?`<button onclick="ruleAction({type:'retreat',player:${p.id},index:${index}})">Retreat to here</button>`:''}`:'<p>Empty</p>'}</div>`;
+  return `<div class="rule-slot"><h3>${active?'Active':'Bench '+(index+1)}</h3>${c?`${ruleArt(c)?`<img class="rule-pokemon" src="${esc(ruleArt(c))}" alt="${esc(c.name)}">`:''}<strong>${esc(c.name)}</strong><p>${list.damage} damage · ${list.hp||c.hp} HP</p><p>${list.specialConditions.map(s=>R.SpecialCondition[s]).join(', ')||'Healthy'}</p><p>${esc(ruleCounterLabels(list))}</p><small>Stack: ${esc(list.cards.map(c=>c.name).join(', '))}${list.tools?.length?' · Tools: '+esc(list.tools.map(c=>c.name).join(', ')):''}</small>${enabled&&active?RulesMatch.attacks(rulesMatch,p).map(a=>`<button onclick="ruleAction({type:'attack',player:${p.id},name:${esc(JSON.stringify(a.name))}})">${esc(a.name)} · ${a.damage} · ${a.cost.map(x=>R.CardType[x]).join(' / ')}</button>`).join(''):''}${enabled?c.powers.filter(a=>a.powerType!==R.PowerType?.POKEBODY&&!a._wotcPassive).map(a=>`<button onclick="ruleAction({type:'ability',player:${p.id},name:${esc(JSON.stringify(a.name))},target:${esc(JSON.stringify(target))}})">${esc(a.name)}</button>`).join(''):''}${enabled&&!active?`<button onclick="ruleAction({type:'retreat',player:${p.id},index:${index}})">Retreat to here</button>`:''}`:'<p>Empty</p>'}</div>`;
 }
 function pickRuleHand(player,index){
   const R=RulesMatch.R,p=rulesMatch.store.state.players.find(p=>p.id===player),c=p.hand.cards[index];
@@ -105,7 +115,7 @@ function promptRows(p){
   const R=RulesMatch.R,g=rulesMatch.store.state;
   if(p.type==='Choose cards')return p.cards.cards.map((c,i)=>({value:i,label:c.name,card:c,blocked:p.options.blocked.includes(i)||!R.matchesPromptFilter(c,p.filter)}));
   if(p.type==='Choose pokemon')return RulesMatch.targets(rulesMatch,p).map(x=>({value:x.target,label:x.label,blocked:p.options.blocked.some(b=>JSON.stringify(b)===JSON.stringify(x.target))}));
-  if(p.type==='Choose prize'){const owner=g.players.find(x=>p.options.useOpponentPrizes?x.id!==p.getPerspectivePlayerId():x.id===p.getPerspectivePlayerId());return owner.prizes.filter(l=>l.cards.length).map((l,i)=>({value:i,label:'Prize '+(i+1),blocked:p.options.blocked.includes(i)}));}
+  if(p.type==='Choose prize'){const owner=g.players.find(x=>p.options.useOpponentPrizes?x.id!==p.getPerspectivePlayerId():x.id===p.getPerspectivePlayerId());return owner.prizes.map((l,i)=>({value:i,label:'Prize '+(i+1),blocked:p.options.blocked.includes(i),present:!!l.cards.length})).filter(row=>row.present);}
   if(p.type==='Choose energy')return p.energy.map((e,i)=>({value:i,label:e.card.name+' · '+e.provides.map(t=>R.CardType[t]).join('/'),card:e.card}));
   if(p.type==='Choose attack')return p.cards.flatMap((c,i)=>c.attacks.map(a=>({value:{index:i,attack:a.name},label:c.name+' · '+a.name,blocked:p.options.blocked.some(b=>b.index===i&&b.attack===a.name)})));
   if(p.type==='Select'||p.type==='SelectOption')return p.values.map((label,i)=>({value:i,label,blocked:p.options.disabled?.[i]}));
@@ -154,14 +164,14 @@ function damagePrompt(p){return '<p>Assign '+p.damage+' total damage in multiple
 function transferPrompt(p){const opts=targetOptions(p);return `<label>From<select id="transferfrom">${opts}</select></label><label>To<select id="transferto">${opts}</select></label><label>Number of 10-damage counters<input id="transfercount" type="number" min="0" max="1000" value="1"></label><button id="transfersubmit" class="primary">Resolve counters</button>`;}
 
 const originalDecks=decks;
-decks=function(){originalDecks();$('.heading').insertAdjacentHTML('beforeend','<button onclick="importDeckText()">Import Limitless list</button>');const d=state.decks.find(d=>d.id===activeDeck);if(d)$('#app .panel .row').insertAdjacentHTML('beforeend','<button onclick="exportDeckText()">Export Limitless text</button>');};
+decks=function(){originalDecks();$('.heading').insertAdjacentHTML('beforeend','<button onclick="importDeckText()">Import Limitless list</button>');const d=state.decks.find(d=>d.id===activeDeck);if(d&&$('#app .panel .row'))$('#app .panel .row').insertAdjacentHTML('beforeend','<button onclick="exportDeckText()">Export Limitless text</button>');};
 function importDeckText(){
   modal('<h2>Import a Limitless / TCG Live deck list</h2><p>In Limitless Deck Builder, copy the deck as text. Paste it here or open a .txt file.</p><label>Deck name<input id="importdeckname" value="Imported deck"></label><label>Format<select id="importdeckformat">'+state.formats.map(f=>`<option value="${f.id}">${esc(f.name)}</option>`).join('')+'</select></label><input id="decktextfile" type="file" accept=".txt,text/plain"><textarea id="decktext" style="min-height:240px" placeholder="4 Charmander OBF 26\n3 Charizard ex OBF 125"></textarea><button id="parsedeck" class="primary">Review import</button><div id="deckimportreview"></div>');
   $('#decktextfile').onchange=async e=>{if(e.target.files[0])$('#decktext').value=await e.target.files[0].text()};
   $('#parsedeck').onclick=async()=>{
     await rulesAssets;const result=DeckText.parse($('#decktext').value,cards,cardMetadata,deckCodes);
     $('#deckimportreview').innerHTML='<h3>'+result.count+' cards matched</h3>'+result.entries.map(r=>'<p>'+r.qty+' '+esc(r.name)+' · '+esc(r.id)+(ruleMap[r.id]?'':' · automation unavailable')+'</p>').join('')+result.errors.map(e=>'<p class="error">'+(e.line?'Line '+e.line+': ':'')+esc(e.text||'')+' — '+esc(e.error)+'</p>').join('')+(result.errors.length?'':'<button id="confirmdeckimport" class="primary">Save imported deck</button>');
-    if($('#confirmdeckimport'))$('#confirmdeckimport').onclick=()=>{const d={id:crypto.randomUUID(),name:$('#importdeckname').value.trim()||'Imported deck',format:$('#importdeckformat').value,cards:result.cards};state.decks.push(d);activeDeck=d.id;save();$('#modal').close();tab='decks';render();toast('Deck imported with every line matched');};
+    if($('#confirmdeckimport'))$('#confirmdeckimport').onclick=()=>{const d={id:crypto.randomUUID(),name:$('#importdeckname').value.trim()||'Imported deck',format:$('#importdeckformat').value,cards:result.cards};state.decks.push(d);activeDeck=d.id;state.deckFormatFilter='';save();$('#modal').close();tab='decks';render();toast('Deck imported with every line matched');};
   };
 }
 async function exportDeckText(){await rulesAssets;try{const text=DeckText.format(state.decks.find(d=>d.id===activeDeck),cards,cardMetadata,deckCodes);modal('<h2>Limitless-compatible deck text</h2><p>Copy this text into Limitless Deck Builder or TCG Live.</p><textarea id="exportdecktext" style="min-height:300px"></textarea><button id="selectdecktext">Select all</button>');$('#exportdecktext').value=text;$('#selectdecktext').onclick=()=>{$('#exportdecktext').focus();$('#exportdecktext').select()};}catch(e){toast(e.message)}}
