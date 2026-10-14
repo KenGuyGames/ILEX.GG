@@ -4,15 +4,20 @@ Desktop Pokémon TCG simulator with deck building, custom cards, historical form
 
 ## Status
 
-**The complete WOTC era is playable in the current Windows build**, from Base Set through Skyridge, including Wizards Black Star Promos, Southern Islands, Legendary Collection, and Best of Game. All **1,793 WOTC scan entries** have rules implementations, with **zero pending** in the verified October 13, 2026 build.
+**The complete WOTC and EX eras are playable in ILEX.GG 1.5.0**, verified October 14, 2026.
 
-The current build also includes Undo, attack and ability search, visual decklists, audio, and foil effects. Full implementation coverage does not certify every possible card interaction or ruling; Unlimited and interactions with later-era cards remain deferred.
+- **WOTC:** Base Set through Skyridge, including Wizards Black Star Promos, Southern Islands, Legendary Collection, and Best of Game — **1,793/1,793 entries, zero pending**.
+- **EX:** Ruby & Sapphire through Power Keepers, including the Unseen Forces Unown collection, EX Trainer Kits, Nintendo promos, and POP Series 1–3 — **1,857/1,857 entries, zero pending**.
+
+The EX release passed 155 focused checks, 5,302 scoped attack scenarios, shared WOTC/bot/Undo regressions, and fresh/restored native desktop verification. EX interaction validation covers the EX pool plus Expedition, Aquapolis, and Skyridge. Full implementation coverage does not certify every possible interaction or ruling; Unlimited and other-era interaction sweeps remain deferred.
+
+The current build also includes format-first match setup, Limitless collection integration, updated four-track music, Undo, attack and ability search, visual decklists, and foil effects.
 
 ## Download and play
 
-Get the [current Windows x64 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.4.0-build-2026-10-13), including the runtime and offline card scans. Download `ILEX.GG-Windows.zip.001`, `ILEX.GG-Windows.zip.002`, and `Restore-ILEX-ZIP.cmd` into the same folder. Run the script to restore and checksum-verify the ZIP, extract the entire ZIP, then launch `ILEX.GG.exe`. No Node.js or Python installation is required.
+Get the [current Windows x64 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.5.0-build-2026-10-14), including the runtime and offline card scans. Download `ILEX.GG-Windows.zip.001`, `ILEX.GG-Windows.zip.002`, and `Restore-ILEX-ZIP.cmd` from that release into the same folder. Run the script to restore and checksum-verify the ZIP, extract the entire ZIP, then launch `ILEX.GG.exe`. No Node.js or Python installation is required. Do not mix files from different releases.
 
-The repository source, source archive, and development progress notes still represent the earlier snapshot. Use the Windows release above for the complete WOTC implementation; rebuilding the existing repository snapshot does not reproduce that release.
+The repository source, source archive, and development progress notes still represent the earlier snapshot. Use the Windows release above for the complete WOTC and EX implementation; rebuilding the existing repository snapshot does not reproduce that release.
 
 ## Development
 
