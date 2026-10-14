@@ -1,0 +1,35 @@
+name: Align 1.5.0 release source downloads
+on:
+  push:
+    paths:
+      - .github/workflows/align-release-source.yml
+permissions:
+  contents: write
+jobs:
+  align:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+      - name: Update release tag with lease
+        env:
+          SOURCE_COMMIT: b1e007874797cc6c18f41d82c1093681d6ada29c
+          PREVIOUS_COMMIT: b7daebdc1823a578f42651e440b17bd98ce9709f
+          RELEASE_TAG: v1.5.0-build-2026-10-14
+        run: |
+          set -euo pipefail
+          tag_ref="refs/tags/$RELEASE_TAG"
+          old_ref=$(git ls-remote origin "$tag_ref" | cut -f1)
+          test -n "$old_ref"
+          test "$(git rev-parse "$tag_ref^{commit}")" = "$PREVIOUS_COMMIT"
+          test "$(git show "$SOURCE_COMMIT:work/desktop/package.json" | python -c 'import sys,json; print(json.load(sys.stdin)["version"])')" = "1.5.0"
+          git tag --force "$RELEASE_TAG" "$SOURCE_COMMIT"
+          git push --force-with-lease="$tag_ref:$old_ref" origin "$tag_ref"
+      - name: Remove completed maintenance workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/align-release-source.yml
+          git commit -m "Finish aligning 1.5.0 release source downloads"
+          git push origin HEAD:main
