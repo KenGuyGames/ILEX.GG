@@ -2,6 +2,22 @@
 
 Desktop Pokémon TCG simulator with deck building, custom cards, historical formats, a local play table, and rules automation.
 
+## Screenshots
+
+Screenshots from ILEX.GG 1.5.0.
+
+### Main menu and card library
+
+![ILEX.GG main menu and card library](ILEX.GG-desktop-preview.png)
+
+### Play table
+
+![ILEX.GG play table with opposing seats, prize cards and a fanned hand](ILEX.GG-widescreen-preview.png)
+
+### Visual deck builder
+
+![ILEX.GG visual deck builder with card images and quantities](ILEX.GG-visual-deck-preview.png)
+
 ## Status
 
 **The complete WOTC and EX eras are playable in ILEX.GG 1.5.0**, verified October 14, 2026.
