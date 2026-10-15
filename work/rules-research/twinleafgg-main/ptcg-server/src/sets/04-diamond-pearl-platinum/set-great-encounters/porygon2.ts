@@ -1,3 +1,4 @@
+import { copyDpSupporter } from '../../../tcg-lab-dp-supporter-copy';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { CardType, Stage, SuperType, TrainerType } from '../../../game/store/card/card-types';
 import { StoreLike, State, PowerType, StateUtils, PokemonCardList, TrainerCard, ChooseCardsPrompt, GameMessage, GameError } from '../../../game';
@@ -76,20 +77,9 @@ export class Porygon2 extends PokemonCard {
       ), cards => {
         const trainerCard = cards[0] as TrainerCard;
 
-        if (!CAN_PLAY_SUPPORTER_CARD(store, state, player, trainerCard, true)) {
-          return state;
-        }
-
         MOVE_CARDS(store, state, player.hand, player.discard, { cards: [trainerCard], sourceCard: this });
 
-        const originalSupporterTurn = player.supporterTurn;
-        player.supporterTurn = 0;
-        try {
-          const playTrainerEffect = new TrainerEffect(player, trainerCard);
-          store.reduceEffect(state, playTrainerEffect);
-        } finally {
-          player.supporterTurn = originalSupporterTurn;
-        }
+        copyDpSupporter(store,state,player,trainerCard,this);
       });
     }
 

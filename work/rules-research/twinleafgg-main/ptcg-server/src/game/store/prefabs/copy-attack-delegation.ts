@@ -49,21 +49,22 @@ export function withTemporaryDelegatedAttacks<T>(
   }
 }
 
-function withSourceMarkerConstants<T>(
+export function withSourceMarkerConstants<T>(
   copycatCard: PokemonCard,
   sourceCard: PokemonCard,
   fn: () => T,
 ): T {
   const saved: { key: string; hadOwn: boolean; value: unknown }[] = [];
 
-  for (const key of Object.keys(sourceCard)) {
-    if (!/MARKER/i.test(key)) {
-      continue;
-    }
+  const keys = new Set(Object.keys(sourceCard));
+  for (let proto = Object.getPrototypeOf(sourceCard); proto && proto !== PokemonCard.prototype; proto = Object.getPrototypeOf(proto)) {
+    for (const key of Object.getOwnPropertyNames(proto)) if (key !== 'constructor' && key !== 'reduceEffect' && typeof Object.getOwnPropertyDescriptor(proto, key)?.value === 'function') keys.add(key);
+  }
+  for (const key of keys) {
     const value = (sourceCard as any)[key];
-    if (typeof value !== 'string') {
-      continue;
-    }
+    const marker = /MARKER/i.test(key) && typeof value === 'string';
+    const helper = key !== 'reduceEffect' && key !== 'constructor' && typeof value === 'function';
+    if (!marker && !helper) continue;
     saved.push({
       key,
       hadOwn: Object.prototype.hasOwnProperty.call(copycatCard, key),
@@ -93,14 +94,19 @@ function delegateToSource(
   state: State,
   effect: Effect,
 ): State {
-  return withTemporaryDelegatedAttacks(
-    copycatCard,
-    sourceCard,
-    () => withSourceMarkerConstants(copycatCard, sourceCard, () =>
-      (sourceCard as any)._wotcCopyAttack?.call(copycatCard,store,state,effect) ?? sourceCard.reduceEffect.call(copycatCard, store, state, effect)
-    ),
-    clonedAttacks,
+  const context = <T>(fn: () => T): T => withTemporaryDelegatedAttacks(
+    copycatCard, sourceCard,
+    () => withSourceMarkerConstants(copycatCard, sourceCard, () => {
+      const prompt = store.prompt;
+      // Native copied attacks can call donor helpers after a choice resolves.
+      // Re-establish the same temporary donor context around that continuation.
+      store.prompt = (current, prompts, callback) => prompt.call(store, current, prompts,
+        results => context(() => callback(results)));
+      try { return fn(); } finally { store.prompt = prompt; }
+    }), clonedAttacks,
   );
+  return context(() => (sourceCard as any)._wotcCopyAttack?.call(copycatCard, store, state, effect)
+    ?? sourceCard.reduceEffect.call(copycatCard, store, state, effect));
 }
 
 /**
@@ -350,6 +356,7 @@ export function runDelegatedCopiedAttack(ctx: DelegatedCopiedAttackContext): Sta
 
   const attackEffect = new AttackEffect(player, opponent, clonedAttack);
   attackEffect.source = sourceSlot ?? player.active;
+  (attackEffect as any)._dpBorrowBonus=(selectedAttack as any)._dpBorrowBonus||0;
   (attackEffect as any).wotcEnergyCostPaid=!!ctx.energyCostPaid;
   (attackEffect as any).wotcRequiredEnergyCount=ctx.requiredEnergyCount||0;
 
@@ -413,6 +420,7 @@ export function* runDelegatedCopiedAttackGenerator(
 
   const attackEffect = new AttackEffect(player, opponent, clonedAttack);
   attackEffect.source = sourceSlot ?? player.active;
+  (attackEffect as any)._dpBorrowBonus=(selectedAttack as any)._dpBorrowBonus||0;
   (attackEffect as any).wotcEnergyCostPaid=!!ctx.energyCostPaid;
   (attackEffect as any).wotcRequiredEnergyCount=ctx.requiredEnergyCount||0;
 

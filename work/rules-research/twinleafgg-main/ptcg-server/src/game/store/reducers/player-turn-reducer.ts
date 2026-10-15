@@ -11,7 +11,7 @@ import { EndTurnEffect } from '../effects/game-phase-effects';
 import { StateUtils } from '../state-utils';
 import { SlotType } from '../actions/play-card-action';
 import { PokemonCard } from '../card/pokemon-card';
-import { CheckPokemonAttacksEffect, CheckPokemonPowersEffect } from '../effects/check-effects';
+import { CheckAttackCostEffect, CheckProvidedEnergyEffect, CheckPokemonAttacksEffect, CheckPokemonPowersEffect } from '../effects/check-effects';
 import { Attack } from '../card/pokemon-types';
 import { TrainerCard } from '../card/trainer-card';
 import { EnergyCard } from '../card/energy-card';
@@ -92,6 +92,20 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
 
       if (attack === undefined) {
         throw new GameError(GameMessage.UNKNOWN_ATTACK);
+      }
+
+      // Validate payment before attack interception (Baby rule, coin locks, etc.).
+      // A cancelled attack must not make an unaffordable declaration legal.
+      let attackingSlot = player.active;
+      player.bench.forEach(slot => {
+        if (slot.getPokemonCard()?.attacks.some(a => a.name === attack.name && a.useOnBench)) attackingSlot = slot;
+      });
+      const cost = new CheckAttackCostEffect(player, attack);
+      state = store.reduceEffect(state, cost);
+      const energy = new CheckProvidedEnergyEffect(player, attackingSlot);
+      state = store.reduceEffect(state, energy);
+      if (!StateUtils.checkEnoughEnergy(energy.energyMap, cost.cost)) {
+        throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);
       }
 
       const useAttackEffect = new UseAttackEffect(player, attack);

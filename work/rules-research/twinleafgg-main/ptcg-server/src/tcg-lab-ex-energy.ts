@@ -30,7 +30,7 @@ export function installExEnergy(card:any,kind:string){
    const entry=e.energyMap.find((x:any)=>x.card===this);if(entry)entry.provides=provides;else e.energyMap.push({card:this,provides});
   }
   if(e instanceof CheckTableStateEffect&&['boost','doubleRainbow','scramble'].includes(kind)&&!valid(list))MOVE_CARDS(store,state,list,owner.discard,{cards:[this],sourceCard:this,sourceEffect:e});
-  if(e instanceof EndTurnEffect&&e.player===owner&&['boost','rocket'].includes(kind))MOVE_CARDS(store,state,list,owner.discard,{cards:[this],sourceCard:this,sourceEffect:e});
+  if(e instanceof EndTurnEffect&&(e.player===owner||kind==='boost')&&['boost','rocket'].includes(kind))MOVE_CARDS(store,state,list,owner.discard,{cards:[this],sourceCard:this,sourceEffect:e});
   if(kind==='boost'&&e instanceof CheckRetreatCostEffect&&e.player===owner&&owner.active===list&&!(e as any)._exDamageQuery)e.cost=[...Array(100)].map(()=>CardType.COLORLESS);
   if(kind==='rocket'&&e instanceof AttackEffect&&e.source===list)e.damage+=10;
   if(kind==='doubleRainbow'&&e instanceof AttackEffect&&e.source===list)e.damage=Math.max(0,e.damage-10);

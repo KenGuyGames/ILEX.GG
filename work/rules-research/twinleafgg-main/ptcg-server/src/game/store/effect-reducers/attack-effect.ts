@@ -8,7 +8,7 @@ import { Effect } from "../effects/effect";
 import { shouldPreventAttackEffects, shouldPreventAttackDamage, shouldApplyDamageReduction, getActiveSurviveOnTenHpOptions, shouldKnockOutIfDamaged, getActiveRetaliateOnDamage, retaliateDamageEffect, RetaliateDamageEffect, EffectOfAttackEffect } from "../effects/effect-of-attack-effects";
 import { AttackEffect, KnockOutAttackEffect, HealEffect } from "../effects/game-effects";
 import { GameStatsTracker } from "../game-stats-tracker";
-import { TAKE_X_PRIZES, MOVE_CARDS, MOVE_POKEMON_OFF_BOARD, COIN_FLIP_PROMPT } from "../prefabs/prefabs";
+import { TAKE_X_PRIZES, IS_POKEPOWER_BLOCKED, MOVE_CARDS, MOVE_POKEMON_OFF_BOARD, COIN_FLIP_PROMPT } from "../prefabs/prefabs";
 import { StateUtils } from "../state-utils";
 import { State, GamePhase } from "../state/state";
 import { StoreLike } from "../store-like";
@@ -69,7 +69,7 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
     }
 
     if(effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){if((target as any).wotcLastOpponentAttackDamageTurn!==state.turn)(target as any).wotcLastOpponentAttackDamage=0;(target as any).wotcLastOpponentAttackDamageTurn=state.turn;}
-    if((state.rules as any).exEraRules&&damage>0&&effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn}:undefined;}
+    if((state.rules as any).exEraRules&&damage>0&&(effect.player!==StateUtils.findOwner(state,target)||(state.rules as any).dpEraRules)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
     const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
     afterDamageEffect.target = effect.target;
     store.reduceEffect(state, afterDamageEffect);
@@ -364,7 +364,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
         GameStatsTracker.trackDamageDealt(effect.player, effect.source, damage);
       }
 
-      if((state.rules as any).exEraRules&&damage>0&&effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn}:undefined;}
+      if((state.rules as any).exEraRules&&damage>0&&(effect.player!==StateUtils.findOwner(state,target)||(state.rules as any).dpEraRules)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
     const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
       afterDamageEffect.target = effect.target;
       store.reduceEffect(state, afterDamageEffect);
@@ -455,7 +455,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
 
     const reaction=(effect.target as any).wotcDamageReaction;
     if(reaction && reaction.turn===state.turn && effect.target.marker.hasMarker('WOTC_DAMAGE_REACTION') && effect.damage>0 && effect.player!==targetOwner && !(effect.attackEffect as any)._wotcReaction){
-      const respond=()=>{const attack:any=new AttackEffect(targetOwner,effect.player,reaction.attack);attack.source=effect.target;attack._wotcReaction=true;const wr=new ApplyWeaknessEffect(attack,reaction.amount??effect.damage*reaction.multiplier);wr.target=effect.player.active;store.reduceEffect(state,wr);const damage=new PutDamageEffect(attack,wr.damage);damage.target=effect.player.active;damage.weaknessApplied=true;store.reduceEffect(state,damage);};
+      const respond=()=>{const attack:any=new AttackEffect(targetOwner,effect.player,reaction.attack);attack.source=effect.target;attack._wotcReaction=true;if(reaction.counters){const counters=new PutCountersEffect(attack,reaction.amount);counters.target=effect.source;store.reduceEffect(state,counters);return;}const wr=new ApplyWeaknessEffect(attack,reaction.amount??effect.damage*reaction.multiplier);wr.target=effect.player.active;store.reduceEffect(state,wr);const damage=new PutDamageEffect(attack,wr.damage);damage.target=effect.player.active;damage.weaknessApplied=true;store.reduceEffect(state,damage);};
       if(reaction.coin)return COIN_FLIP_PROMPT(store,state,targetOwner,heads=>{if(heads)respond();});respond();
     }
 

@@ -471,6 +471,7 @@ export class Player {
       this.active.specialConditions = [];
 
       this.active = this.bench[benchIndex];
+      if(state?.rules?.dpEraRules){(this.active as any)._dpBenchTurn=state.turn;(temp as any)._dpBenchTurn=state.turn;}
       this.bench[benchIndex] = temp;
 
       const activePokemon = this.active.getPokemonCard();

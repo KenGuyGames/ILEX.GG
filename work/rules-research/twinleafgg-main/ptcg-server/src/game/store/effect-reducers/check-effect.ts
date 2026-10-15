@@ -435,6 +435,8 @@ export function* executeCheckState(next: Function, store: StoreLike, state: Stat
 
   // Handle KOs first
   const pokemonsToDiscard = findKoPokemons(store, state);
+  const koKey=(item:PokemonItem)=>item.playerNum+':'+item.cardList.getPokemonCard()?.id+':'+((item.cardList.getPokemonCard() as any)?._dpEntryId||0);
+  const queuedKoKeys=new Set(pokemonsToDiscard.map(koKey));
   for (const pokemonToDiscard of pokemonsToDiscard) {
     const owner = state.players[pokemonToDiscard.playerNum];
     const list=pokemonToDiscard.cardList,forced=(list as any).exForcedKo;
@@ -458,6 +460,7 @@ export function* executeCheckState(next: Function, store: StoreLike, state: Stat
       }
       group.count += knockOutEffect.prizeCount;
     }
+    if((state.rules as any).dpEraRules)for(const additional of findKoPokemons(store,state)){const key=koKey(additional);if(!queuedKoKeys.has(key)){queuedKoKeys.add(key);pokemonsToDiscard.push(additional);}}
   }
 
   // Check table state and handle bench size after KOs

@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-10-13T19:10:46.250587+00:00",
+  "reviewedCorrections": {
+    "basep-13": "655cad4e0523dac4f57ad71b.webp",
+    "basep-15": "233318e1e8917e008ca5ad88.webp"
+  },
+  "candidates": 1790,
+  "resolved": 1790,
+  "foil": 1000,
+  "nonFoil": 790,
+  "bothFinishes": 107,
+  "unresolved": {},
+  "source": "https://api.tcgdex.net/v2/en/cards/{cardId}"
+}

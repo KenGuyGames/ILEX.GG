@@ -1,3 +1,4 @@
+import { copyDpSupporter } from '../../../tcg-lab-dp-supporter-copy';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, TrainerType, SuperType } from '../../../game/store/card/card-types';
 import { PowerType } from '../../../game/store/card/pokemon-types';
@@ -100,9 +101,7 @@ export class Jirachi extends PokemonCard {
         { allowCancel: false, min: 1, max: 1 }
       ), cards => {
         const trainerCard = cards[0] as TrainerCard;
-        player.supporterTurn -= 1;
-        const playTrainerEffect = new TrainerEffect(player, trainerCard);
-        store.reduceEffect(state, playTrainerEffect);
+        copyDpSupporter(store,state,player,trainerCard,this,effect);
       });
     }
 
@@ -110,14 +109,7 @@ export class Jirachi extends PokemonCard {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 
-      const damage = 20; // Direct damage without weakness
-      effect.damage = 0;
-
-      if (damage > 0) {
-        opponent.active.damage += damage;
-        const afterDamage = new AfterDamageEffect(effect, damage);
-        state = store.reduceEffect(state, afterDamage);
-      }
+      effect.ignoreWeakness=true;effect.ignoreResistance=true;(effect as any).wotcBypassDefender=true;
     }
 
     if (effect instanceof EndTurnEffect) {

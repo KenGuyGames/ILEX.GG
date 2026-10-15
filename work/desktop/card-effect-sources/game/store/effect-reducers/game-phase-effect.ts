@@ -1,5 +1,6 @@
 import { Effect } from '../effects/effect';
 import { CheckSleepRecoveryEffect } from '../effects/check-effects';
+import { KnockOutEffect } from '../effects/game-effects';
 import { AfterAttackEffect, EndTurnEffect, BetweenTurnsEffect, BeginTurnEffect, DrawCardForTurnEffect, DrewTopdeckEffect } from '../effects/game-phase-effects';
 import { GameError } from '../../game-error';
 import { GameMessage, GameLog } from '../../game-message';
@@ -158,6 +159,7 @@ function startNextTurn(store: StoreLike, state: State): State {
   player.active.removeSpecialCondition(SpecialCondition.PARALYZED);
 
   // Move supporter cards to discard
+  for(const card of player.supporter.cards.slice())if((card as any)._dpReturnSupporter)player.supporter.moveCardTo(card,player.hand);
   player.supporter.moveTo(player.discard);
 
   return betweenTurns(store, state, () => {
@@ -199,6 +201,7 @@ function handleSpecialConditions(store: StoreLike, state: State, effect: Between
         if (sleep.flips > 0) {
           store.log(state, GameLog.LOG_FLIP_ASLEEP, { name: player.name });
           MULTIPLE_COIN_FLIPS_PROMPT(store, state, player, sleep.flips, results => {
+            if(player.active.dpSleepKoTails&&results.every(result=>!result)){store.reduceEffect(state,new KnockOutEffect(player,player.active));return;}
             if (results.every(r => r)) {
               player.active.removeSpecialCondition(SpecialCondition.ASLEEP);
             }

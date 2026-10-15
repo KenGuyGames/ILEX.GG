@@ -1,13 +1,13 @@
 {
-  "engineSha256": "6132c2c81941202612951be5a91946fa388faa03ff88c2cbc4e726cc699da37c",
+  "engineSha256": "a84c466555b1dc677b59ad3377c9170f9e75ed0d0ec8fdf1ba6f4f434410963e",
   "files": [
     {
       "path": "tcg-lab-ex-attachments.ts",
-      "sha256": "76d4a114376cda23178cd81de3d4b895101500e18f9a407ae06b872257905291"
+      "sha256": "d54a37994e2b7608bb757ff489af137f98f81789c3b1c9cf986f316605a6d32b"
     },
     {
       "path": "tcg-lab-ex-conditions.ts",
-      "sha256": "c1931038ed2bbbf727b1aed280081197cb6d95335c604e8fae2b8118c3067978"
+      "sha256": "0c1f57fdc586bf282d0e34d2a0a23f184582ff5dee58a9fad7ff144d64491908"
     },
     {
       "path": "tcg-lab-ex-copy-supporter.ts",
@@ -23,7 +23,7 @@
     },
     {
       "path": "tcg-lab-ex-energy.ts",
-      "sha256": "f7edd82ff07839dac80ad26aa2bf941d55fefcad658833cbb1f8ba595ce58054"
+      "sha256": "b4562c6847af930bf96344c84dcfba8c9e16b5813d42c0ae4415d6d2d38e5aa6"
     },
     {
       "path": "tcg-lab-ex-finish-attacks.ts",
@@ -43,11 +43,11 @@
     },
     {
       "path": "tcg-lab-ex-passives.ts",
-      "sha256": "f628f941df2cba44e179f63fe4d6a2356004a99533af2dd1276c4cbdb3c04829"
+      "sha256": "ce6731148bf42cf218754037aacf0dce0ec9119727e2b8a9ebfc93a1aaf7d173"
     },
     {
       "path": "tcg-lab-ex-power-choices.ts",
-      "sha256": "221c6df3ea93e1c32622cbe6fc25800bed3327fbfce785bb41e88b83de2aa686"
+      "sha256": "8e083f21194799364b4ba43800ce6d5c2a10e6e48fdc9878161099e2c2f25c59"
     },
     {
       "path": "tcg-lab-ex-retreat.ts",
@@ -67,39 +67,39 @@
     },
     {
       "path": "tcg-lab-wotc-data.ts",
-      "sha256": "f8fd15438c5d62da661b604975968c2df9fba1959eaf66c6377b2b0d59d5ec5d"
+      "sha256": "994b66cd1f74b9e3b442f90c20057ce061f692c8dd7a0bd2af92831f1016b979"
     },
     {
       "path": "tcg-lab-wotc-final.ts",
-      "sha256": "b2e8d973711f8a1987a43a4b0a5438f2c47087d55af5230d31fce9eb5f2e7bdf"
+      "sha256": "0e0697f0bc442ff916a2117596f1ad499fc0b3cf69cbd68fdb8a677225e3cb4d"
     },
     {
       "path": "tcg-lab-wotc-powers.ts",
-      "sha256": "b221c5d63964742d8bc19d3f86d28b49f16749ecc28a66d81a912f1cf85705b7"
+      "sha256": "921ebb0950249f9a672e14bf5a3aa9db82fdf2ef6e3725d955940f07b0302483"
     },
     {
       "path": "tcg-lab-wotc.ts",
-      "sha256": "1defc28ac0e02dd1192bab7d4d2da497651cdebf12ae5acbff9e11d3e305233c"
+      "sha256": "656652b7a3627dc2bcb8296e35a2850c0c2282163674ab84b3e9e60f5990fea7"
     },
     {
       "path": "game/store/store.ts",
-      "sha256": "c78eae05cf6ccd3d18116b003b874930e0a1f99e62f8ffaaf268e560fb7bab71"
+      "sha256": "9987801a3b84c2031f078eecece1f65a84ced697387516c74d3b70879a280497"
     },
     {
       "path": "game/store/effect-reducers/attack-effect.ts",
-      "sha256": "e03051d4f9a0b688b1502329bff09758faf40ea69b1981174663c058122eb520"
+      "sha256": "7122eddd4334b229eabcd1da42aea8368af1b63c0f1da7a6f9fea8fcf5784b88"
     },
     {
       "path": "game/store/effect-reducers/game-effect.ts",
-      "sha256": "955e135d4ca227967b9a41f1c8c1cde2a15faf72417972494cfeb593fb17f960"
+      "sha256": "71bdf85ed836ca2233fbb205fc29c86c6ffefd74b6f75e28b57dd0512435cb1d"
     },
     {
       "path": "game/store/effect-reducers/check-effect.ts",
-      "sha256": "25cbf76b5ffccab1ee96b25cfb7171e8b24ff365786fcde636aac572ddf54224"
+      "sha256": "c5e7f55c664b261eb571c07a7bae29f8f88effc6373ba29ab1fe82aeb3d327d1"
     },
     {
       "path": "game/store/effect-reducers/game-phase-effect.ts",
-      "sha256": "df6efa4c4e96d9ec09743823683c980493b7fb97e737430b22dc375c2567007f"
+      "sha256": "d02ebcbfe0c86056c24ddf0ad0ba4bcc392a38b538b447b15ca79504bdf91fd1"
     },
     {
       "path": "game/store/prompts/choose-cards-prompt.ts",
@@ -139,7 +139,7 @@
     },
     {
       "path": "printed-effect-compiler.cjs",
-      "sha256": "6c829a95ecbf45c1a1ce88c15773a181cba3ea406851681b7157ee9fd7765f07"
+      "sha256": "00203c46bcb73e12f4e3aac8678fdf6f69ed570ae71158abfe2bb86c30b1a4b0"
     },
     {
       "path": "ex-energy-clauses.json",
@@ -148,6 +148,34 @@
     {
       "path": "sets/03-ex-ruby-and-sapphire/set-ex-legend-maker/mew-ex.ts",
       "sha256": "e3056b4dcf6cbb57ab784a0bd32fbb3824fe3789d96c67aed4d43284500dc33b"
+    },
+    {
+      "path": "game/store/reducers/play-card-reducer.ts",
+      "sha256": "0ac52bd059965be60c89d1520c3d6a0ba13d31a677cc75dd18ccf551344c8ff8"
+    },
+    {
+      "path": "game/store/prefabs/copy-attack-delegation.ts",
+      "sha256": "9aead434f5a606b077c3b4cbc71fb0b6cbb4e29be7341111d0aa9d15ce5b1208"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-unseen-forces/unown-e.ts",
+      "sha256": "d9bb899ae779f3f0ecc8e5870294087ef6296cccf2bd35256855fcf7b8f425bb"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-holon-phantoms/deoxys.ts",
+      "sha256": "31482526d6f0883763f659bbf5a97583c92540abea52ab2414f3f34e5652bae4"
+    },
+    {
+      "path": "sets/03-ex-ruby-and-sapphire/set-ex-delta-species/ditto.ts",
+      "sha256": "de94d7b37582382fde83267321f3076a0ba88a63692f0949f6a2edac95d76823"
+    },
+    {
+      "path": "game/store/prefabs/prefabs.ts",
+      "sha256": "b99a34a32107e4347f420996179fe17410afd62282274d82b188c3c91f79d936"
+    },
+    {
+      "sha256": "4afc4e4fd05b0d9b74933f2c5cb93633bc644584d312c761e2c61866659fc566",
+      "path": "game/store/reducers/player-turn-reducer.ts"
     }
   ]
 }

@@ -81,7 +81,7 @@ export function playEnergyReducer(store: StoreLike, state: State, effect: Effect
       index
     });
 
-    state = store.reduceEffect(state, new AfterEnergyAttachedEffect(effect.player, effect.energyCard, effect.target, fromHand));
+    state = store.reduceEffect(state, new AfterEnergyAttachedEffect(effect.player, effect.energyCard, effect.target, fromHand,effect.origin));
 
     if (fromHand && effect.target.pendingEnergyAttachFromHandConsequence) {
       const consequence = effect.target.pendingEnergyAttachFromHandConsequence;

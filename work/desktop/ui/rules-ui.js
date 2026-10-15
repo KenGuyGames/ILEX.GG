@@ -15,7 +15,10 @@ let tableMode='rules';
 const friendly=s=>String(s||'').replace(/^(?:LOG_|SETUP_)/,'').replaceAll('_',' ').toLowerCase();
 const rulesAssets=Promise.all(['rules-card-map.json','card-details.json','deck-set-codes.json','wotc-coverage.json'].map(u=>fetch(u).then(r=>r.json()))).then(([m,d,c,w])=>{
   Object.assign(d,LimitlessCollection.metadata);for(const [alias,base] of Object.entries(LimitlessCollection.ruleAliases))if(m[base])m[alias]=m[base];ruleMap=m;cardMetadata=d;deckCodes=c;wotcCoverage=w;rulesReady=true;
-  if(state.rulesMatch)try{rulesMatch=RulesMatch.restore(state.rulesMatch,ruleMap,state.rulesMatch.spec.custom||state.custom)}catch(e){state.rulesRestoreError=e.message;}
+  if(state.rulesMatch)try{
+    rulesMatch=RulesMatch.restore(state.rulesMatch,ruleMap,state.rulesMatch.spec.custom||state.custom);
+    if(rulesMatch.recoveredInvalidAttack){state.botPaused=true;state.botError='Recovered the turn before an unfinished attack with insufficient Energy.';saveRules();}
+  }catch(e){state.rulesRestoreError=e.message;}
   if(tab==='play')play();else if(tab==='decks')decks();else if(tab==='library'&&cards.length)library();
 });
 function openWotcCoverage(){
@@ -25,7 +28,7 @@ function openWotcCoverage(){
 const oldDetails=details;
 details=async id=>cardMetadata[id]?{...find(id),...cardMetadata[id]}:oldDetails(id);
 function ruleCard(c){return find(c?._labId)||find(Object.keys(ruleMap).find(id=>ruleMap[id]===c?.fullName))||{name:c?.name||'Card'};}
-function ruleArt(c){return image(ruleCard(c));}
+function ruleArt(c){return c?._dpFaceDownEnergyRole?'ilex-card-back.svg':image(ruleCard(c));}
 function saveRules(){state.rulesMatch={spec:rulesMatch.spec,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch)};save();}
 function autoRules(){
   for(let n=0;n<1000;n++){
@@ -81,11 +84,11 @@ async function beginRules(){
     rulesMatch=candidate;autoRules();saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}
 }
-function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||'modern';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
+function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||'modern';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
 function rulesTable(){
   const R=RulesMatch.R,g=rulesMatch?.store.state;
   $('#app').innerHTML=title('RULES TABLE','Play a rules-enforced match','Setup, card effects, attachments, attacks and checkup are resolved by the game engine.',`<button onclick="tableMode='manual';play()">Manual sandbox</button>`)+
-    `<div class="panel"><div class="toolbar"><select id="rp1" aria-label="Player 1 deck">${state.decks.map(d=>`<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select><select id="rp2" aria-label="Player 2 deck">${state.decks.map(d=>`<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select><select id="ruleprofile" aria-label="Historical rules profile">${Object.entries(RulesMatch.profiles).map(([id,p])=>`<option value="${id}">${esc(p.name)}</option>`).join('')}</select><button class="primary" onclick="beginRules()">${g?'New match':'Start match'}</button></div><p>${Object.keys(ruleMap).length.toLocaleString()} printings mapped to automated implementations. WOTC: ${wotcCoverage?.available?.toLocaleString()||0} / ${wotcCoverage?.total?.toLocaleString()||0} available. <button onclick="openWotcCoverage()">WOTC coverage</button> Cards without implementations are blocked. Rules profile controls this match; format set restrictions and bans still apply.</p>${state.rulesRestoreError?`<p class="error">Saved match could not resume: ${esc(state.rulesRestoreError)}</p>`:''}</div>`;
+    `<div class="panel"><div class="toolbar"><select id="rp1" aria-label="Player 1 deck">${state.decks.map(d=>`<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select><select id="rp2" aria-label="Player 2 deck">${state.decks.map(d=>`<option value="${d.id}">${esc(d.name)}</option>`).join('')}</select><select id="ruleprofile" aria-label="Historical rules profile">${Object.entries(RulesMatch.profiles).map(([id,p])=>`<option value="${id}">${esc(p.name)}</option>`).join('')}</select><button class="primary" onclick="beginRules()">${g?'New match':'Start match'}</button></div>${state.rulesRestoreError?`<p class="error">Saved match could not resume: ${esc(state.rulesRestoreError)}</p>`:''}</div>`;
   if(!rulesReady){$('#app').innerHTML+='<p>Loading automated card catalog…</p>';return;}
   const wireSelectors=()=>{$('#ruleprofile').value=g?rulesMatch.spec.profile:rulesProfileFor(state.decks[0]);$('#rp1').onchange=()=>$('#ruleprofile').value=rulesProfileFor(state.decks.find(d=>d.id===$('#rp1').value));};
   if(!g){$('#app').innerHTML+='<div class="empty">Import a deck list or build a deck, then start a match. The engine guides legal setup and card choices.</div>';wireSelectors();return;}
@@ -101,13 +104,14 @@ function ruleSlot(list,p,index,active,enabled){
   if(list.isSecret)return '<div class="rule-slot"><h3>Face-down card</h3>'+(enabled?'<button onclick="ruleAction({type:\'ability\',player:'+p.id+',name:\'Reveal face-down card\',target:'+esc(JSON.stringify({player:RulesMatch.R.PlayerType.BOTTOM_PLAYER,slot:active?RulesMatch.R.SlotType.ACTIVE:RulesMatch.R.SlotType.BENCH,index:active?0:index}))+'})">Reveal card</button>':'')+'</div>';
   if(list.isSecret&&list.cards.length)return `<div class="rule-slot"><h3>${active?'Active':'Bench '+(index+1)}</h3><div class="rule-pokemon" style="padding:35px 10px;background:#213e61;border:4px solid #dfc744;border-radius:9px;text-align:center">Face-down Pokémon</div></div>`;
   const R=RulesMatch.R,c=list.getPokemonCard(),target={player:R.PlayerType.BOTTOM_PLAYER,slot:active?R.SlotType.ACTIVE:R.SlotType.BENCH,index};
-  return `<div class="rule-slot"><h3>${active?'Active':'Bench '+(index+1)}</h3>${c?`${ruleArt(c)?`<img class="rule-pokemon" src="${esc(ruleArt(c))}" alt="${esc(c.name)}">`:''}<strong>${esc(c.name)}</strong><p>${list.damage} damage · ${list.hp||c.hp} HP</p><p>${list.specialConditions.map(s=>R.SpecialCondition[s]).join(', ')||'Healthy'}</p><p>${esc(ruleCounterLabels(list))}</p><small>Stack: ${esc(list.cards.map(c=>c.name).join(', '))}${list.tools?.length?' · Tools: '+esc(list.tools.map(c=>c.name).join(', ')):''}</small>${enabled&&active?RulesMatch.attacks(rulesMatch,p).map(a=>`<button onclick="ruleAction({type:'attack',player:${p.id},name:${esc(JSON.stringify(a.name))}})">${esc(a.name)} · ${a.damage} · ${a.cost.map(x=>R.CardType[x]).join(' / ')}</button>`).join(''):''}${enabled?c.powers.filter(a=>a.powerType!==R.PowerType?.POKEBODY&&!a._wotcPassive).map(a=>`<button onclick="ruleAction({type:'ability',player:${p.id},name:${esc(JSON.stringify(a.name))},target:${esc(JSON.stringify(target))}})">${esc(a.name)}</button>`).join(''):''}${enabled&&!active?`<button onclick="ruleAction({type:'retreat',player:${p.id},index:${index}})">Retreat to here</button>`:''}`:'<p>Empty</p>'}</div>`;
+  return `<div class="rule-slot"><h3>${active?'Active':'Bench '+(index+1)}</h3>${c?`${ruleArt(c)?`<img class="rule-pokemon" src="${esc(ruleArt(c))}" alt="${esc(c.name)}">`:''}<strong>${esc(c.name)}</strong><p>${list.damage} damage · ${list.hp||c.hp} HP</p><p>${list.specialConditions.map(s=>R.SpecialCondition[s]).join(', ')||'Healthy'}</p><p>${esc(ruleCounterLabels(list))}</p><small>Stack: ${esc(list.cards.map(c=>c.name).join(', '))}${list.tools?.length?' · Tools: '+esc(list.tools.map(c=>c.name).join(', ')):''}</small>${enabled&&active?RulesMatch.attacks(rulesMatch,p).map(a=>`<button onclick="ruleAction({type:'attack',player:${p.id},name:${esc(JSON.stringify(a.name))}})">${esc(a.name)} · ${a.damage} · ${a.cost.map(x=>R.CardType[x]).join(' / ')}</button>`).join(''):''}${enabled?c.powers.filter(a=>a.powerType!==R.PowerType?.POKEBODY&&a.powerType!==R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT&&!a._wotcPassive).map(a=>`<button onclick="ruleAction({type:'ability',player:${p.id},name:${esc(JSON.stringify(a.name))},target:${esc(JSON.stringify(target))}})">${esc(a.name)}</button>`).join(''):''}${enabled&&!active?`<button onclick="ruleAction({type:'retreat',player:${p.id},index:${index}})">Retreat to here</button>`:''}`:'<p>Empty</p>'}</div>`;
 }
 function pickRuleHand(player,index){
   const R=RulesMatch.R,p=rulesMatch.store.state.players.find(p=>p.id===player),c=p.hand.cards[index];
   const options=[{target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.ACTIVE,index:0},label:'Active'},...p.bench.map((l,i)=>({target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.BENCH,index:i},label:'Bench '+(i+1)+(l.getPokemonCard()?' · '+l.getPokemonCard().name:' · empty')}))];
   if(c.superType===R.SuperType.TRAINER&&![R.TrainerType.TOOL].includes(c.trainerType)){ruleAction({type:'play',player,index,target:options[0].target});return;}
-  modal(`<h2>Play ${esc(c.name)}</h2><p>Choose where to play, evolve, or attach. The engine checks legality.</p>${options.map((o,i)=>`<button onclick="$('#modal').close();ruleAction({type:'play',player:${player},index:${index},target:${esc(JSON.stringify(o.target))}})">${esc(o.label)}</button>`).join(' ')}`);
+  const energyAction=RulesMatch.handEnergyAction(p,index);
+  modal(`<h2>Play ${esc(c.name)}</h2>${energyAction?`<button onclick="$('#modal').close();ruleAction(${esc(JSON.stringify(energyAction))})">Attach as Energy</button><p>Uses your Energy attachment for this turn. Follow the target and Energy-return choices. Or play as a Pokémon below.</p>`:''}<p>Choose where to play, evolve, or attach. The engine checks legality.</p>${options.map((o,i)=>`<button onclick="$('#modal').close();ruleAction({type:'play',player:${player},index:${index},target:${esc(JSON.stringify(o.target))}})">${esc(o.label)}</button>`).join(' ')}`);
 }
 function showRuleDiscard(id){const p=rulesMatch.store.state.players.find(p=>p.id===id);modal('<h2>Discard</h2>'+p.discard.cards.map(c=>'<div class="discard-preview" '+previewAttrs(c)+'>'+(ruleArt(c)?'<img src="'+esc(ruleArt(c))+'" alt="'+esc(c.name)+'">':'')+'<span>'+esc(c.name)+'</span></div>').join('')+'<h2>Lost Zone</h2>'+p.lostzone.cards.map(c=>'<div class="discard-preview" '+previewAttrs(c)+'>'+(ruleArt(c)?'<img src="'+esc(ruleArt(c))+'" alt="'+esc(c.name)+'">':'')+'<span>'+esc(c.name)+'</span></div>').join(''));}
 play=function(){if(tableMode==='manual'){manualTable();$('#app').insertAdjacentHTML('afterbegin','<button onclick="tableMode=\'rules\';play()">Rules-enforced matches</button>');}else rulesTable();};
@@ -115,7 +119,7 @@ function promptRows(p){
   const R=RulesMatch.R,g=rulesMatch.store.state;
   if(p.type==='Choose cards')return p.cards.cards.map((c,i)=>({value:i,label:c.name,card:c,blocked:p.options.blocked.includes(i)||!R.matchesPromptFilter(c,p.filter)}));
   if(p.type==='Choose pokemon')return RulesMatch.targets(rulesMatch,p).map(x=>({value:x.target,label:x.label,blocked:p.options.blocked.some(b=>JSON.stringify(b)===JSON.stringify(x.target))}));
-  if(p.type==='Choose prize'){const owner=g.players.find(x=>p.options.useOpponentPrizes?x.id!==p.getPerspectivePlayerId():x.id===p.getPerspectivePlayerId());return owner.prizes.map((l,i)=>({value:i,label:'Prize '+(i+1),blocked:p.options.blocked.includes(i),present:!!l.cards.length})).filter(row=>row.present);}
+  if(p.type==='Choose prize'){const owner=g.players.find(x=>p.options.useOpponentPrizes?x.id!==p.getPerspectivePlayerId():x.id===p.getPerspectivePlayerId());return owner.prizes.map((list,slot)=>({list,slot})).filter(x=>x.list.cards.length).map((x,index)=>({value:index,label:'Prize '+(x.slot+1),blocked:p.options.blocked.includes(index)}));}
   if(p.type==='Choose energy')return p.energy.map((e,i)=>({value:i,label:e.card.name+' · '+e.provides.map(t=>R.CardType[t]).join('/'),card:e.card}));
   if(p.type==='Choose attack')return p.cards.flatMap((c,i)=>c.attacks.map(a=>({value:{index:i,attack:a.name},label:c.name+' · '+a.name,blocked:p.options.blocked.some(b=>b.index===i&&b.attack===a.name)})));
   if(p.type==='Select'||p.type==='SelectOption')return p.values.map((label,i)=>({value:i,label,blocked:p.options.disabled?.[i]}));
@@ -179,6 +183,8 @@ const originalFormatForm=formatForm;
 formatForm=function(f={}){originalFormatForm(f);$('#ff').insertAdjacentHTML('afterbegin',`<label>Historical game rules<select name="ruleProfile">${Object.entries(RulesMatch.profiles).map(([id,p])=>`<option value="${id}" ${id===(f.ruleProfile||'modern')?'selected':''}>${esc(p.name)}</option>`).join('')}</select></label>`);};
 const originalCustom=custom;
 custom=function(){originalCustom();const cf=$('#cf');cf.insertAdjacentHTML('beforeend','<label>Automated attack effect<select name="condition"><option value="">None (numeric damage only)</option>'+['POISONED','BURNED','ASLEEP','CONFUSED','PARALYZED'].map(s=>'<option>'+s+'</option>').join('')+'</select></label><label>Evolves from (for automated evolution)<input name="evolveFrom"></label>');const handler=cf.onsubmit;cf.onsubmit=e=>{const condition=cf.elements.condition.value,evolveFrom=cf.elements.evolveFrom.value.trim();handler(e);const c=state.custom.at(-1);if(condition)c.automation={condition};if(evolveFrom)c.evolveFrom=evolveFrom;save();};};
+
+
 
 
 

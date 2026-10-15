@@ -37,6 +37,7 @@ import {
   AddSpecialConditionsPowerEffect,
   CheckTableStateEffect,
   CheckPokemonPowersEffect,
+  CheckSpecialConditionRemovalEffect,
   CheckPokemonAttacksEffect,
 } from '../effects/check-effects';
 import { Effect } from '../effects/effect';
@@ -1394,6 +1395,8 @@ export function SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(
   const slots = GET_PLAYER_BENCH_SLOTS(player);
   BLOCK_IF_NO_SLOTS(slots);
   filter.superType = SuperType.POKEMON;
+  const max = Math.min(options.max ?? 1, slots.length);
+  if ((options.min ?? 1) > max) throw new GameError(GameMessage.NO_BENCH_SLOTS_AVAILABLE);
 
   return store.prompt(
     state,
@@ -1402,15 +1405,17 @@ export function SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(
       GameMessage.CHOOSE_CARD_TO_PUT_ONTO_BENCH,
       player.deck,
       filter,
-      options,
+      { ...options, max },
     ),
     (selected) => {
       const cards = selected || [];
-      cards.forEach((card, index) => {
+      cards.forEach(card => {
+        const slot = GET_PLAYER_BENCH_SLOTS(player)[0];
+        if (!slot) return;
         const playPokemonFromDeckEffect = new PlayPokemonFromDeckEffect(
           player,
           card as any,
-          slots[index],
+          slot,
         );
         store.reduceEffect(state, playPokemonFromDeckEffect);
       });
@@ -2326,6 +2331,7 @@ export function DEVOLVE_POKEMON(
   target: PokemonCardList,
   destination: CardList,
 ) {
+  const clearDevolutionEffects=()=>{const check=new CheckSpecialConditionRemovalEffect(StateUtils.findOwner(state,target),target);(check as any).dpDevolution=true;store.reduceEffect(state,check);target._preservedConditionsDuringEvolution=check.preservedConditions;target.clearEffects();target._preservedConditionsDuringEvolution=undefined;};
   const pokemons = target.getPokemons();
   const pokemonCard = target.getPokemonCard();
 
@@ -2337,7 +2343,7 @@ export function DEVOLVE_POKEMON(
     } else {
       const cardsToDevolve = pokemons.filter((p) => p.name === pokemonCard.name);
       MOVE_CARDS(store, state, target, destination, { cards: cardsToDevolve });
-      target.clearEffects();
+      clearDevolutionEffects();
       target.pokemonPlayedTurn = state.turn;
     }
     return state;
@@ -2350,7 +2356,7 @@ export function DEVOLVE_POKEMON(
     !pokemonCard?.hasTag(CardTag.LEGEND)
   ) {
     MOVE_CARD_TO(state, pokemonCard as Card, destination);
-    target.clearEffects();
+    clearDevolutionEffects();
     target.pokemonPlayedTurn = state.turn;
   }
 }

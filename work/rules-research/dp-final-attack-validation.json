@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "engineSha256": "a84c466555b1dc677b59ad3377c9170f9e75ed0d0ec8fdf1ba6f4f434410963e",
+  "scope": "All DP/Platinum Pokemon printings; EX13–16 interoperability in focused suite. Unlimited deferred.",
+  "printings": 1384,
+  "printedAttacks": 2361,
+  "allPrintedAttacksCovered": true,
+  "smokeBaselineEngineSha256": "4f61507ce4b7d9ee7b2776c7d537d21ba625358eebe18fa9baa29364a3092c60",
+  "baselineSuccessfulScenarios": 2360,
+  "baselineFailures": [
+    {
+      "id": "dp4-93",
+      "attack": "Call for Family",
+      "seed": 7,
+      "positive": true,
+      "error": "NO_BENCH_SLOTS_AVAILABLE"
+    }
+  ],
+  "finalEngineRepairScenarios": 120,
+  "finalEngineRepairFailures": [],
+  "isolatedDeltaProof": "dp-final-delta-proof.json",
+  "focusedChecks": 109,
+  "discovery": {
+    "scenarios": 9444,
+    "failuresFound": 52,
+    "allFailingCardsRetestedOnFinalEngine": true
+  },
+  "limitation": "Execution and targeted interaction validation, not an exhaustive proof of every possible board state."
+}

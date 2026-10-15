@@ -33,6 +33,7 @@ export enum PlayCardEffects {
 export class AttachEnergyEffect implements Effect {
   readonly type: string = PlayCardEffects.ATTACH_ENERGY_EFFECT;
   public preventDefault = false;
+  public origin?: string;
   public player: Player;
   public energyCard: EnergyCard;
   public target: PokemonCardList;
@@ -47,7 +48,7 @@ export class AttachEnergyEffect implements Effect {
 export class AfterEnergyAttachedEffect implements Effect {
   readonly type = 'AFTER_ENERGY_ATTACHED_EFFECT';
   public preventDefault = false;
-  constructor(public player: Player, public energyCard: EnergyCard, public target: PokemonCardList, public fromHand: boolean) { }
+  constructor(public player: Player, public energyCard: EnergyCard, public target: PokemonCardList, public fromHand: boolean, public origin?: string) { }
 }
 
 export class PlayPokemonEffect implements Effect {

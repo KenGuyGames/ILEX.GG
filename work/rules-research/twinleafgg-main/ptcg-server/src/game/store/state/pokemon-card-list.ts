@@ -2,7 +2,7 @@ import { Card } from '../card/card';
 import { BoardEffect, CardTag, CardType, SpecialCondition, Stage, SuperType } from '../card/card-types';
 import { PokemonCard } from '../card/pokemon-card';
 import { Power, Attack } from '../card/pokemon-types';
-import { CardList, ecogymDestination, restoreTemporaryStage } from './card-list';
+import { CardList, ecogymDestination, restoreTemporaryStage, recordDpEnergyDiscard } from './card-list';
 import { Marker } from './card-marker';
 import { PendingEnergyAttachDamageCounters, PendingEnergyAttachFromHandConsequence } from './pending-energy-attach-effects';
 import { State } from './state';
@@ -85,6 +85,7 @@ export class PokemonCardList extends CardList {
    */
   public abilityLockActivationOrder: number = 0;
   public sleepFlips = 1;
+  public dpSleepKoTails = false;
   public boardEffect: BoardEffect[] = [];
   public hpBonus: number = 0;
   public tools: Card[] = [];
@@ -252,7 +253,7 @@ export class PokemonCardList extends CardList {
     const result: PokemonCard[] = [];
     for (const card of this.cards) {
       if (
-        card.superType === SuperType.POKEMON &&
+        (card.superType === SuperType.POKEMON || (card as any)._dpFossil) &&
         !this.tools.includes(card) &&
         !this.energies.cards.includes(card)
       ) {
@@ -312,7 +313,7 @@ export class PokemonCardList extends CardList {
     const pokemonCard = this.getPokemonCard();
 
     // Single Pokémon (not evolved)
-    if (pokemons.length === 1) {
+    if (pokemons.length <= 1) {
       return false;
     }
 
@@ -326,6 +327,8 @@ export class PokemonCardList extends CardList {
       return false;
     }
 
+    // A level-up retains the evolution stage of the previous level.
+    if ((pokemonCard as any)?._dpLevelUp) return pokemonCard!.stage !== Stage.BASIC;
     // LV_X placed on a Pokémon is not considered evolved
     if (pokemonCard?.stage === Stage.LV_X && pokemons.length === 2) {
       return false;
@@ -429,6 +432,7 @@ export class PokemonCardList extends CardList {
 
   public wotcCounters:any = {};
   clearEffects(): void {
+    this.sleepFlips=1;this.dpSleepKoTails=false;
     this.wotcCounters={};
     delete (this as any).labMirrorTurn;delete (this as any).labMirrorEffects;
     delete (this as any).labConversionWeakness;delete (this as any).labConversionResistance;
@@ -545,6 +549,8 @@ export class PokemonCardList extends CardList {
   }
 
   removeSpecialCondition(sp: SpecialCondition): void {
+    if(sp===SpecialCondition.POISONED){this.marker.removeMarker('DP_POISON_BODY_LOCK');delete (this as any)._dpPoisonBodyLock;}
+    if(sp===SpecialCondition.ASLEEP){this.sleepFlips=1;this.dpSleepKoTails=false;}
     if (sp === SpecialCondition.CONFUSED) delete (this as any).wotcFailedRetreatTurn;
     if (!this.specialConditions.includes(sp)) {
       return;
@@ -553,9 +559,11 @@ export class PokemonCardList extends CardList {
   }
 
   addSpecialCondition(sp: SpecialCondition): void {
+    if(sp===SpecialCondition.POISONED){this.marker.removeMarker('DP_POISON_BODY_LOCK');delete (this as any)._dpPoisonBodyLock;}
     if (this.cannotBeSpecialConditionedNextTurn) {
       return;
     }
+    if(sp===SpecialCondition.ASLEEP){this.sleepFlips=1;this.dpSleepKoTails=false;}
     if (sp === SpecialCondition.POISONED) {
       this.poisonDamage = 10;
     }
@@ -728,6 +736,7 @@ export class PokemonCardList extends CardList {
   public moveCardsTo(cards: Card[], destination: CardList): void {
     for (let i = 0; i < cards.length; i++) {
       const actualDestination=ecogymDestination(this,destination,cards[i]);
+      if(this.cards.includes(cards[i])||this.energies.cards.includes(cards[i]))recordDpEnergyDiscard(this,actualDestination,cards[i]);
       restoreTemporaryStage(cards[i],actualDestination);
       let index = this.cards.indexOf(cards[i]);
       if (index !== -1) {

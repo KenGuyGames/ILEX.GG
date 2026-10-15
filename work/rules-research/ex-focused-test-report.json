@@ -155,8 +155,23 @@
     "Poison Structure requires Sidneys Stadium and applies Poison as a Power",
     "Burn Away recoil uses actual attack damage including Strength Charm",
     "Holon Circle prevents Burn Down before its five-Fire discard cost",
-    "Volunteer discards evolved-only Protective Orb during its temporary Vulpix stage"
+    "Volunteer discards evolved-only Protective Orb during its temporary Vulpix stage",
+    "Dual Aura ignores Basic Powers without recursion and still blocks evolved non-ex Bodies",
+    "Sol Shade requires its owners Solrock in play before blocking Fire Powers",
+    "Sol Shade alone allows real Wishing Star and Delta Control activations",
+    "Mew ex Versatile exposes copied attacks with Latios alone and with Latias",
+    "Mew ex Versatile still requires the copied attacks Energy cost",
+    "Replacement Powers accept cancellation without moving Pokemon or attachments",
+    "Successful replacement Powers preserve damage and Energy and enforce their turn limit",
+    "Both Dual Aura partners require their own partner and exempt Pokemon-ex Bodies",
+    "Top-card Powers resolve every selected index with compiled Powers in the temporary view",
+    "Island Hermit resolves zero, one or two Prize reveals and draws without losing state",
+    "Supporter use stays spent after its display zone empties and resets next turn",
+    "Copied native attacks retain donor helper methods through nested prompts and clean up afterward",
+    "Sleep Pendulum inflicts Sleep without mixing status output with activation restrictions",
+    "Aquapolis Fan Club caps its search at available Bench spaces",
+    "All five Holon Pokemon attach from hand and provide their printed Energy"
   ],
   "candidate": true,
-  "engineSha256": "fecf2b3c700e238a5873e8a801aebdf48d4154b69f9e0067b179ca4c4582b937"
+  "engineSha256": "a84c466555b1dc677b59ad3377c9170f9e75ed0d0ec8fdf1ba6f4f434410963e"
 }

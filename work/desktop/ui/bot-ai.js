@@ -35,7 +35,7 @@ var BotAI=(()=>{
  }
  function visibleSeed(m,id){const p=actor(m,id),op=m.store.state.players.find(x=>x!==p);return hash([m.spec.seed,m.store.state.turn,id,p.hand.cards.map(c=>c.fullName).join(','),[p,op].flatMap(x=>[x.active,...x.bench].map(l=>l.isSecret?'hidden':l.cards.map(c=>c.fullName).join(',')+':'+l.damage)).join('|')].join('|'));}
  function fork(m,id){
-  const store=new R.Store({onStateChange:s=>{store.state=s}});store.state=copy(m.store.state);store.state.prompts=[];store.state.logs=store.state.logs.slice(-15);
+  const store=new R.Store({gameSettings:{format:RulesMatch.profiles[m.spec.profile].format},onStateChange:s=>{store.state=s}});store.state=copy(m.store.state);store.state.prompts=[];store.state.logs=store.state.logs.slice(-15);
   const random=rng(visibleSeed(m,id)^0x6f49ac31);
   /* Own unseen deck and prizes form one unknown pool. Trial draws cannot peek at
      real deck order or prize identities. Opponent hidden identities are never scored. */
@@ -75,9 +75,9 @@ var BotAI=(()=>{
     const score=x=>(x.target.player===R.PlayerType.BOTTOM_PLAYER?1:-1)*(harm?-1:1)*pokemonValue(x.list);return score(b)-score(a);
    });const value=subsets(list.map(x=>x.target),p.options.min??1,p.options.max??1,v=>valid(m,p,v));return value===undefined?(p.options.allowCancel?out(null):null):out(value);
   }
-  if(p.type==='Choose prize'){const prizeOwner=p.options.useOpponentPrizes?g.players.find(x=>x!==owner):owner,indexes=prizeOwner.prizes.map((list,i)=>list.cards.length?i:-1).filter(i=>i>=0&&!p.options.blocked.includes(i));const value=subsets(indexes,0,indexes.length,v=>valid(m,p,v));return value===undefined?null:out(value);}
+  if(p.type==='Choose prize'){const prizeOwner=p.options.useOpponentPrizes?g.players.find(x=>x!==owner):owner,indexes=prizeOwner.prizes.filter(list=>list.cards.length).map((list,i)=>i).filter(i=>!p.options.blocked.includes(i));const value=subsets(indexes,0,indexes.length,v=>valid(m,p,v));return value===undefined?null:out(value);}
   if(p.type==='Choose attack'){const choices=p.cards.flatMap((c,index)=>c.attacks.map(a=>({index,attack:a.name,damage:Number(a.damage)||0}))).sort((a,b)=>b.damage-a.damage);for(const c of choices){const a=out({index:c.index,attack:c.attack});if(a)return a;}}
-  if(['Select','SelectOption'].includes(p.type)){const indexes=p.values.map((v,i)=>i).filter(i=>!p.options.disabled?.[i]);const types=owner.hand.cards.filter(c=>c.superType===R.SuperType.ENERGY).flatMap(c=>(c.provides||[]).map(t=>R.CardType[t]?.toLowerCase()));indexes.sort((a,b)=>Number(types.includes(String(p.values[b]).toLowerCase()))-Number(types.includes(String(p.values[a]).toLowerCase())));for(const i of indexes){const a=out(i);if(a)return a;}}
+  if(['Select','SelectOption'].includes(p.type)){const indexes=p.values.map((v,i)=>i).filter(i=>!p.options.disabled?.[i]);if(p.options.isBlindGuess){indexes.sort((a,b)=>hash(String(m.spec?.seed)+':blind:'+p.id+':'+a)-hash(String(m.spec?.seed)+':blind:'+p.id+':'+b));for(const i of indexes){const action=out(i);if(action)return action;}return null;}const types=owner.hand.cards.filter(c=>c.superType===R.SuperType.ENERGY).flatMap(c=>(c.provides||[]).map(t=>R.CardType[t]?.toLowerCase()));indexes.sort((a,b)=>Number(types.includes(String(p.values[b]).toLowerCase()))-Number(types.includes(String(p.values[a]).toLowerCase())));for(const i of indexes){const a=out(i);if(a)return a;}}
   if(p.type==='Order cards')return out(p.cards.cards.map((c,i)=>({c,i})).sort((a,b)=>cardValue(b.c,owner)-cardValue(a.c,owner)).map(x=>x.i));
   if(['Attach energy','Move energy','Discard energy'].includes(p.type)){
    const ts=targets(m,p),rows=p.type==='Attach energy'?p.cardList.cards.map((card,index)=>({card,index})).filter(x=>x.card.superType===R.SuperType.ENERGY&&!p.options.blocked.includes(x.index)&&R.matchesPromptFilter(x.card,p.filter)):RulesMatch.targets(m,p).flatMap(x=>x.list.cards.map((card,index)=>({card,index,from:x.target}))).filter(x=>x.card.superType===R.SuperType.ENERGY&&R.matchesPromptFilter(x.card,p.filter));
@@ -118,13 +118,15 @@ var BotAI=(()=>{
   const p=actor(m,id),g=m.store.state,history=recent(m),moves=[],add=(action,priority)=>moves.push({action,priority});
   const slots=[{list:p.active,target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.ACTIVE,index:0}},...p.bench.map((list,index)=>({list,target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.BENCH,index}}))];
   p.hand.cards.forEach((c,index)=>{
+   const holon=RulesMatch.handEnergyAction(p,index);if(holon&&p.energyPlayedTurn!==g.turn)add(holon,60);
+   if(c.trainerType===R.TrainerType.SUPPORTER&&(p.supporter.cards.length||p.supporterTurn>0))return;
    if(c.superType===R.SuperType.POKEMON){for(const s of slots)if(c.stage===R.Stage.BASIC?!s.list.getPokemonCard():s.list.getPokemonCard()&&(s.list.getPokemonCard().name===c.evolvesFrom||!c.evolvesFrom))add({type:'play',player:id,index,target:s.target},c.stage===R.Stage.BASIC?35:55);}
    else if(c.superType===R.SuperType.ENERGY||c.trainerType===R.TrainerType.TOOL){for(const s of slots)if(s.list.getPokemonCard())add({type:'play',player:id,index,target:s.target},s.target.slot===R.SlotType.ACTIVE?60:20+readyDamage(s.list)*.1);}
    else {add({type:'play',player:id,index,target:slots[0].target},/bill|professor|draw|search|ball/i.test(c.name+' '+c.text)?50:30);if(/fossil|doll|substitute/i.test(c.name))for(const s of slots.slice(1).filter(s=>!s.list.getPokemonCard()))add({type:'play',player:id,index,target:s.target},35);}
   });
   for(const s of slots){const c=s.list.getPokemonCard();if(!c)continue;
    if(s.target.slot===R.SlotType.ACTIVE)for(const a of RulesMatch.attacks(m,p))add({type:'attack',player:id,name:a.name},65+(Number(a.damage)||0)*.1);
-   for(const a of c.powers.filter(a=>a.powerType!==R.PowerType.POKEBODY&&!a._wotcPassive))if(!history.some(h=>h.type==='ability'&&h.player===id&&h.name===a.name&&JSON.stringify(h.target)===JSON.stringify(s.target)))add({type:'ability',player:id,name:a.name,target:s.target},40);
+   for(const a of RulesMatch.powers(m,p,s.list).filter(a=>a.powerType!==R.PowerType.POKEBODY&&a.powerType!==R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT&&!a._wotcPassive))if(!history.some(h=>h.type==='ability'&&h.player===id&&h.name===a.name&&JSON.stringify(h.target)===JSON.stringify(s.target)))add({type:'ability',player:id,name:a.name,target:s.target},40);
   }
   if(!history.some(h=>h.type==='retreat'&&h.player===id))for(let index=0;index<p.bench.length;index++)if(p.bench[index].getPokemonCard())add({type:'retreat',player:id,index},readyDamage(p.bench[index])>readyDamage(p.active)?45:5);
   if(g.players.some(owner=>owner.stadium.cards.some(c=>c._wotcStadiumAction!==false))&&!history.some(h=>h.type==='stadium'&&h.player===id))add({type:'stadium',player:id},40);
@@ -170,4 +172,5 @@ var BotAI=(()=>{
  }
  return {levels,decks,choose,prompt,valid,copy,score,fork,candidates};
 })();
+
 

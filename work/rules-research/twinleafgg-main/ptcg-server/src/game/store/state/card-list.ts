@@ -9,6 +9,10 @@ import { matchesPromptFilter } from '../prompts/prompt-card-filter';
 import { revealConcealedCard } from '../prefabs/wotc-facedown';
 
 export function restoreTemporaryStage(card: any, destination: CardList) {
+  if(card._dpPokemonEnergyRole&&!('energies' in destination)){const role=card._dpPokemonEnergyRole;card.superType=role.superType;if(role.hadEnergyType)card.energyType=role.energyType;else delete card.energyType;if(role.hadProvides)card.provides=role.provides;else delete card.provides;delete card._dpPokemonEnergyRole;}
+  if(card._dpPokemonStadiumRole&&(destination as any)._dpRoleStadiumOwnerId!==card._dpPokemonStadiumRole.ownerId){const role=card._dpPokemonStadiumRole;card.superType=role.superType;if(role.hadTrainerType)card.trainerType=role.trainerType;else delete card.trainerType;delete card._dpPokemonStadiumRole;}
+  if(card._dpFaceDownEnergyRole&&!('energies' in destination)){const role=card._dpFaceDownEnergyRole;card.superType=role.superType;card.energyType=role.energyType;card.provides=role.provides;delete card._dpFaceDownEnergyRole;}
+  if(card._dpPokemonToolRole&&!('energies' in destination)){const role=card._dpPokemonToolRole;card.superType=role.superType;if(role.hadTrainerType)card.trainerType=role.trainerType;else delete card.trainerType;delete card._dpPokemonToolRole;}
   if(card._exEnergyPokemon){
     if(!('energies' in destination)){card.superType=SuperType.POKEMON;delete card._exBeingAttached;}
     else if(card._exBeingAttached){card.superType=SuperType.ENERGY;delete card._exBeingAttached;}
@@ -21,7 +25,9 @@ export function restoreTemporaryStage(card: any, destination: CardList) {
 }
 
 export function ecogymDestination(source:CardList,destination:CardList,card:Card):CardList {
- const context=(CardList as any).wotcMovementContext,ownerId=(destination as any)._wotcDiscardOwnerId;
+ const context=(CardList as any).wotcMovementContext;
+ if(card._dpPokemonStadiumRole&&context?.state?.players.some((player:any)=>player.discard===destination)){const owner=context.state.players.find((player:any)=>player.id===card._dpPokemonStadiumRole.ownerId);if(owner)return owner.hand;}
+ const ownerId=(destination as any)._wotcDiscardOwnerId;
  if(context?.state?.rules?.wotcRules&&['attack','power'].includes(context.kind)&&context.state.players.some((p:any)=>p.discard===source)&&context.discardProtected?.())return source;
  if(context&&!context.knockout&&!context.wholePokemon&&'energies' in source&&card.superType===SuperType.ENERGY&&destination!==source){const owner=context.state.players.find((p:any)=>p.active===source||p.bench.includes(source));if(owner&&owner.id!==context.actorId&&['attack','trainer','power'].includes(context.kind)&&destination===(owner as any).discard&&context.keepProtected?.(owner,source))return source;if(owner&&context.kind==='trainer'&&context.sourceCard?.trainerType!==TrainerType.STADIUM&&context.legendaryProtected?.(owner,source))return source;}
 
@@ -32,6 +38,11 @@ export function ecogymDestination(source:CardList,destination:CardList,card:Card
  const state=context.state,stadium=state.players.flatMap((p:any)=>p.stadium.cards).find((c:any)=>c._wotcEcogym);
  if(!stadium||state.players.some((p:any)=>p.stadiumAndToolHaveNoEffectTurnsRemaining>0)||!context.isNonColorless(source,card))return destination;
  return state.players.find((p:any)=>p.id===ownerId).hand;
+}
+
+export function recordDpEnergyDiscard(source:any,actualDestination:any,card:any){
+        const context=(CardList as any).wotcMovementContext;
+        if(context?.state?.rules?.dpEraRules&&context.kind==='attack'&&!context.wholePokemon&&!context.knockout&&card.superType===SuperType.ENERGY&&(card as any).energyType===EnergyType.BASIC){const owner=context.state.players.find((player:any)=>player.active===source||player.active.energies===source);if(owner&&owner.id===context.actorId&&actualDestination===owner.discard){owner._dpAttackEnergyDiscards??=[];owner._dpAttackEnergyDiscards=owner._dpAttackEnergyDiscards.filter((entry:any)=>entry.turn===context.state.turn);owner._dpAttackEnergyDiscards.push({turn:context.state.turn,card:card,pokemon:owner.active.getPokemonCard()});}}
 }
 
 export enum StadiumDirection {
@@ -103,6 +114,7 @@ export class CardList {
       const actualDestination=ecogymDestination(this,destination,cards[i]);
       let index = this.cards.indexOf(cards[i]);
       if (index !== -1) {
+        recordDpEnergyDiscard(this,actualDestination,cards[i]);
         const card = this.cards.splice(index, 1);
         restoreTemporaryStage(card[0],actualDestination);
         // If this is a PokemonCardList with the energies property, remove the card from energies

@@ -10,6 +10,11 @@
     "Bot uses Rain Dance and assigns multiple Energy cards through the actual prompt",
     "WOTC required attack-cost prompts are assigned to the attacking player",
     "Bot resolves Jirachi Wishing Star top-five selection and continues its turn",
+    "Prize choices use remaining-card indexes while labels retain table slots",
+    "Bot forecasts preserve EX printing overrides and reject Fan Club on a full Bench",
+    "Saved unfinished unpaid Baby attack recovers the preceding turn exactly",
+    "Unaffordable attacks are rejected before Baby flips on every bot difficulty",
+    "Baby targets still allow attacks paid with Special Energy",
     "easy completes a full rules-enforced starter game",
     "normal completes a full rules-enforced starter game",
     "hard completes a full rules-enforced starter game"
@@ -17,8 +22,8 @@
   "games": [
     {
       "level": "easy",
-      "decisions": 159,
-      "turns": 24,
+      "decisions": 80,
+      "turns": 12,
       "winner": 1
     },
     {
@@ -29,9 +34,9 @@
     },
     {
       "level": "hard",
-      "decisions": 94,
-      "turns": 13,
-      "winner": 0
+      "decisions": 269,
+      "turns": 36,
+      "winner": 1
     }
   ]
 }

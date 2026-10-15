@@ -1,0 +1,521 @@
+{
+  "spec": {
+    "version": 1,
+    "profile": "wotc",
+    "opponent": {
+      "type": "bot",
+      "difficulty": "normal",
+      "humanPlayer": 1,
+      "botPlayer": 2
+    },
+    "format": {
+      "id": "limitless-format-03",
+      "name": "2001 (Base - Neo)"
+    },
+    "decks": [
+      {
+        "name": "Slowking",
+        "cards": {
+          "neo1-25": 2,
+          "neo1-73": 4,
+          "neo1-14": 4,
+          "neo1-20": 3,
+          "neo2-66": 2,
+          "neo1-24": 2,
+          "base1-88": 4,
+          "base1-71": 4,
+          "base1-79": 3,
+          "base1-75": 3,
+          "base1-74": 3,
+          "base1-93": 2,
+          "base1-95": 2,
+          "neo1-96": 2,
+          "neo1-85": 2,
+          "base5-77": 1,
+          "neo1-86": 3,
+          "neo1-97": 2,
+          "neo1-104": 4,
+          "base5-80": 4,
+          "neo1-105": 4
+        }
+      },
+      {
+        "name": "Metal Mewtwo",
+        "cards": {
+          "basep-3": 3,
+          "neo1-20": 4,
+          "neo1-26": 3,
+          "base3-48": 2,
+          "base3-28": 2,
+          "base1-3": 1,
+          "base1-71": 4,
+          "base1-92": 4,
+          "base1-79": 4,
+          "base1-88": 3,
+          "base1-78": 2,
+          "base5-77": 2,
+          "neo1-100": 1,
+          "base3-58": 1,
+          "neo1-93": 4,
+          "neo1-86": 2,
+          "basep-42": 4,
+          "base1-101": 6,
+          "neo1-19": 4,
+          "base1-96": 4
+        }
+      }
+    ],
+    "custom": [],
+    "seed": 2379046380
+  },
+  "journal": [
+    {
+      "type": "prompt",
+      "id": 1,
+      "value": [
+        49,
+        8,
+        47,
+        3,
+        34,
+        11,
+        24,
+        26,
+        33,
+        1,
+        5,
+        56,
+        6,
+        44,
+        52,
+        57,
+        22,
+        37,
+        31,
+        18,
+        59,
+        15,
+        14,
+        16,
+        55,
+        41,
+        29,
+        40,
+        48,
+        2,
+        27,
+        20,
+        43,
+        0,
+        9,
+        51,
+        39,
+        36,
+        21,
+        12,
+        46,
+        17,
+        58,
+        38,
+        54,
+        7,
+        42,
+        13,
+        23,
+        25,
+        19,
+        45,
+        4,
+        35,
+        30,
+        32,
+        53,
+        10,
+        28,
+        50
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 2,
+      "value": [
+        6,
+        15,
+        18,
+        8,
+        44,
+        40,
+        29,
+        4,
+        9,
+        3,
+        33,
+        11,
+        48,
+        54,
+        41,
+        14,
+        27,
+        53,
+        25,
+        39,
+        30,
+        34,
+        55,
+        12,
+        21,
+        36,
+        5,
+        50,
+        46,
+        47,
+        19,
+        13,
+        51,
+        26,
+        28,
+        31,
+        2,
+        58,
+        49,
+        45,
+        38,
+        37,
+        17,
+        0,
+        22,
+        10,
+        20,
+        32,
+        35,
+        23,
+        42,
+        1,
+        7,
+        52,
+        16,
+        24,
+        59,
+        56,
+        57,
+        43
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 3,
+      "value": [
+        5
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 4,
+      "value": [
+        3
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 5,
+      "value": true
+    },
+    {
+      "type": "prompt",
+      "id": 6,
+      "value": true
+    },
+    {
+      "type": "play",
+      "player": 1,
+      "index": 3,
+      "target": {
+        "player": 2,
+        "slot": 2,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 1,
+      "index": 2,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 1,
+      "index": 4,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 1,
+      "index": 3,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "prompt",
+      "id": 7,
+      "value": [
+        2,
+        0
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 8,
+      "value": [
+        43
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 9,
+      "value": [
+        7,
+        43,
+        14,
+        2,
+        3,
+        11,
+        0,
+        10,
+        23,
+        31,
+        37,
+        41,
+        33,
+        16,
+        26,
+        20,
+        35,
+        38,
+        39,
+        15,
+        19,
+        22,
+        29,
+        42,
+        36,
+        4,
+        44,
+        32,
+        6,
+        9,
+        24,
+        18,
+        27,
+        30,
+        17,
+        21,
+        40,
+        1,
+        12,
+        13,
+        8,
+        5,
+        34,
+        28,
+        25
+      ]
+    },
+    {
+      "type": "play",
+      "player": 1,
+      "index": 1,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "attack",
+      "player": 1,
+      "name": "Eeeeeeek"
+    },
+    {
+      "type": "prompt",
+      "id": 10,
+      "value": [
+        16,
+        6,
+        14,
+        7,
+        38,
+        34,
+        11,
+        35,
+        36,
+        3,
+        33,
+        25,
+        37,
+        13,
+        20,
+        8,
+        26,
+        23,
+        22,
+        0,
+        32,
+        29,
+        30,
+        4,
+        24,
+        31,
+        1,
+        12,
+        27,
+        5,
+        2,
+        19,
+        10,
+        18,
+        28,
+        9,
+        17,
+        21,
+        15
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 11,
+      "value": true
+    },
+    {
+      "type": "prompt",
+      "id": 12,
+      "value": true
+    },
+    {
+      "type": "prompt",
+      "id": 13,
+      "value": true
+    },
+    {
+      "type": "prompt",
+      "id": 14,
+      "value": true
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 6,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 0,
+      "target": {
+        "player": 2,
+        "slot": 2,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 4,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 1,
+      "target": {
+        "player": 2,
+        "slot": 2,
+        "index": 1
+      }
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 1,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 5,
+      "target": {
+        "player": 2,
+        "slot": 2,
+        "index": 2
+      }
+    },
+    {
+      "type": "retreat",
+      "player": 2,
+      "index": 1
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 4,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "play",
+      "player": 2,
+      "index": 0,
+      "target": {
+        "player": 2,
+        "slot": 1,
+        "index": 0
+      }
+    },
+    {
+      "type": "prompt",
+      "id": 15,
+      "value": [
+        {
+          "player": 1,
+          "slot": 2,
+          "index": 2
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "id": 16,
+      "value": []
+    },
+    {
+      "type": "attack",
+      "player": 2,
+      "name": "Eeeeeeek"
+    }
+  ]
+}

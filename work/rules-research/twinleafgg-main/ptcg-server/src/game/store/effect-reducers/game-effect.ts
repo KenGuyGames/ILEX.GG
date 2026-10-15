@@ -1,16 +1,17 @@
+import { dpDeclarePower,dpPowerAlreadyUsed } from '../../../tcg-lab-dp-power-window';
 import { SelectPrompt } from '../prompts/select-prompt';
 import { ChooseCardsPrompt } from '../prompts/choose-cards-prompt';
 import { chooseEnergyCardsForRequirements } from '../prefabs/energy-card-requirements';
 import { GameError } from '../../game-error';
 import { GameLog, GameMessage } from '../../game-message';
-import { CardTag, CardType, SpecialCondition, SuperType } from '../card/card-types';
+import { CardTag, CardType, SpecialCondition, SuperType, EnergyType,TrainerType } from '../card/card-types';
 import { PokemonCard, getPrimaryCardType } from '../card/pokemon-card';
 import { Power, PowerType, Resistance, Weakness } from '../card/pokemon-types';
 import { ApplyWeaknessEffect, DealDamageEffect, DiscardCardsEffect } from '../effects/attack-effects';
 import { Player } from '../state/player';
 import {
   AddSpecialConditionsPowerEffect,
-  CheckAttackCostEffect,
+  CheckPokemonAttacksEffect,CheckSpecialConditionRemovalEffect,CheckAttackCostEffect,
   CheckPokemonStatsEffect,
   CheckPokemonTypeEffect,
   CheckProvidedEnergyEffect
@@ -39,7 +40,7 @@ import { MoveCardsEffect } from '../effects/game-effects';
 import { runDelegatedCopiedAttackGenerator } from '../prefabs/copy-attack-delegation';
 import { GameStatsTracker } from '../game-stats-tracker';
 import { PokemonCardList } from '../state/pokemon-card-list';
-import { MOVE_CARDS, COIN_FLIP_PROMPT, IS_ABILITY_BLOCKED } from '../prefabs/prefabs';
+import { MOVE_POKEMON_OFF_BOARD, MOVE_CARDS, COIN_FLIP_PROMPT, IS_ABILITY_BLOCKED } from '../prefabs/prefabs';
 import { OPPONENT_WEAKNESS_AURA_POWER, STAMP_ABILITY_LOCK_ACTIVATION } from '../prefabs/ability-lock';
 import { RESOLVE_COIN_FLIP_EFFECT, RUN_COIN_FLIP_SEQUENCE } from '../prefabs/attack-coin-reflip';
 import { CardList } from '../state/card-list';
@@ -261,6 +262,10 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
     throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);
   }
 
+  if((state.rules as any).dpEraRules){const field=(attack as any)._dpRequiredFieldUnits;if(field?.length){const entries=[player.active,...player.bench].filter(list=>list.getPokemonCard()).flatMap(list=>{const check=new CheckProvidedEnergyEffect(player,list);store.reduceEffect(state,check);return check.energyMap;});if(!StateUtils.checkEnoughEnergy(entries,field))throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);}const hand=(attack as any)._dpRequiredHandCards;if(hand&&player.hand.cards.filter(card=>card.superType===SuperType.ENERGY&&(!hand.energy||(card as any).provides.includes(hand.energy))).length<hand.amount)throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);}
+  const physical=(attack as any)._dpRequiredAttachedCards;
+  if(physical){const eligible=checkProvidedEnergy.energyMap.filter((entry:any)=>(!physical.basic||entry.card.energyType===EnergyType.BASIC)&&(!physical.energy||StateUtils.providesMatchesType(entry.provides,physical.energy)));if(new Set(eligible.map((entry:any)=>entry.card)).size<physical.amount)throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);}
+  if((state.rules as any).dpEraRules)for(const requirements of [(attack as any)._dpRequiredUnits,(attack as any)._wotcRequiredEnergyCards,(attack as any)._wotcRequiredEnergyReturn])if(requirements?.length&&!StateUtils.checkEnoughEnergy(checkProvidedEnergy.energyMap,requirements))throw new GameError(GameMessage.NOT_ENOUGH_ENERGY);
   if(state.rules.exEraRules&&attackingPokemon===player.active&&StateUtils.getStadiumCard(state)?.name==='Holon Circle'&&!state.players.some(p=>p.stadiumAndToolHaveNoEffectTurnsRemaining>0)){const circle=StateUtils.getStadiumCard(state)!;const circleOwner=state.players.find(p=>p.stadium.cards.includes(circle))!;circleOwner.stadium.moveCardsTo([circle],circleOwner.discard);state=store.reduceEffect(state,new EndTurnEffect(player));return state;}
   let wotcEnergyCostPaid = false;
   let roaringDamage:number|undefined;
@@ -468,6 +473,19 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
     }
   }
 
+  if((state.rules as any).dpEraRules&&(state as any)._dpLinkLightning?.turn===state.turn&&(state as any)._dpLinkLightning.playerId===player.id){
+    const link=(state as any)._dpLinkLightning;delete (state as any)._dpLinkLightning;
+    state=checkState(store,state);if(store.hasPrompts())yield store.waitPrompt(state,()=>next());
+    state=checkState(store,state);if(store.hasPrompts())yield store.waitPrompt(state,()=>next());
+    if(player.active.getPokemonCard()!==link.card)return store.reduceEffect(state,new EndTurnEffect(player));
+    const check=new CheckPokemonAttacksEffect(player);store.reduceEffect(state,check);const energy=new CheckProvidedEnergyEffect(player,player.active);store.reduceEffect(state,energy);
+    const attacks=[...link.card.attacks,...check.attacks].filter((candidate:any)=>{const cost=new CheckAttackCostEffect(player,candidate);store.reduceEffect(state,cost);if(!StateUtils.checkEnoughEnergy(energy.energyMap,cost.cost))return false;if(candidate._dpRequiredHandCards){const requirement=candidate._dpRequiredHandCards;if(player.hand.cards.filter((card:any)=>card.superType===SuperType.ENERGY&&(!requirement.energy||card.provides.includes(({Lightning:CardType.LIGHTNING} as any)[requirement.energy]))).length<requirement.amount)return false;}return true;});
+    if(!attacks.length)return store.reduceEffect(state,new EndTurnEffect(player));
+    const view=Object.assign(Object.create(Object.getPrototypeOf(link.card)),link.card);view.attacks=attacks;
+    let selected:any=null;yield store.prompt(state,new ChooseAttackPrompt(player.id,GameMessage.CHOOSE_ATTACK_TO_COPY,[view],{allowCancel:true}),(choice:any)=>{selected=choice;next();});
+    if(!selected)return store.reduceEffect(state,new EndTurnEffect(player));
+    const additional=new UseAttackEffect(player,selected);additional.delegateFrom=check.attackSources.get(selected);return yield* useAttack(next,store,state,additional);
+  }
   if ((attack.barrage || hasBarragePower) && !(effect as any)._barrageUsed) {
     state = checkState(store, state);
     if (store.hasPrompts()) {
@@ -546,6 +564,8 @@ function assertActivatedPowerNotLocked(
   power: Power,
 ): void {
   if((card as any)._wotcRevealAction)return;
+  if((state.rules as any).dpEraRules&&power.powerType===PowerType.POKEPOWER){const list=StateUtils.findPokemonSlot(state,card),text=power.text.replace(/[’‘]/g,"'");if(list?.specialConditions.length&&/can't be used if .+ affected by a Special Condition/i.test(text))throw new GameError(GameMessage.BLOCKED_BY_EFFECT);const normalize=(value:string)=>value.replace(/[^a-z0-9]/gi,'').toLowerCase();let match=text.match(/if (.+?) is your Active Pokémon/i);if(match&&normalize(match[1])===normalize(card.name)&&list!==player.active)throw new GameError(GameMessage.CANNOT_USE_POWER);match=text.match(/if (.+?) is on your Bench/i);if(match&&normalize(match[1])===normalize(card.name)&&!player.bench.includes(list))throw new GameError(GameMessage.CANNOT_USE_POWER);const cost=text.match(/(?:you may discard|\. Discard) (a|an|1|2) (?:(basic )?(Energy|Supporter) )?cards? from your hand/i);if(cost){const amount=cost[1]==='2'?2:1,eligible=player.hand.cards.filter((card:any)=>!cost[3]||cost[3].toLowerCase()==='energy'&&card.superType===SuperType.ENERGY&&(!cost[2]||card.energyType===EnergyType.BASIC)||cost[3].toLowerCase()==='supporter'&&card.superType===SuperType.TRAINER&&card.trainerType===TrainerType.SUPPORTER);if(eligible.length<amount)throw new GameError(GameMessage.CANNOT_USE_POWER);}if((card as any)._wotcFinalPlans?.length){const probe:any=new PowerEffect(player,power,card);probe._dpValidateOnly=true;store.reduceEffect(state,probe);}}
+
   try {
     store.reduceEffect(
       state,
@@ -574,6 +594,7 @@ function* usePower(next: Function, store: StoreLike, state: State, effect: UsePo
   const power = effect.power;
   const card = effect.card;
 
+  if((state.rules as any).dpEraRules&&power.powerType===PowerType.POKEPOWER&&dpPowerAlreadyUsed(state,player,card,power))throw new GameError(GameMessage.POWER_ALREADY_USED);
   // Reject locked powers before animation / owner side effects.
   assertActivatedPowerNotLocked(store, state, player, card, power);
 
@@ -591,6 +612,7 @@ function* usePower(next: Function, store: StoreLike, state: State, effect: UsePo
   // Run after the board animation so ability prompts are not shown on top of the overlay.
   // Validation errors (e.g. POWER_ALREADY_USED) are raised here; store.reducePrompt cleans up
   // any open prompts when those errors propagate.
+  if((state.rules as any).dpEraRules&&power.powerType===PowerType.POKEPOWER){dpDeclarePower(store,state,player,card,power,()=>store.reduceEffect(state,new PowerEffect(player,power,card,effect.benchTarget)));return state;}
   state = store.reduceEffect(state, new PowerEffect(player, power, card, effect.benchTarget));
   return state;
 }
@@ -598,7 +620,7 @@ function* usePower(next: Function, store: StoreLike, state: State, effect: UsePo
 export function gameReducer(store: StoreLike, state: State, effect: Effect): State {
 
   if (effect instanceof KnockOutEffect) {
-    const card = effect.target.getPokemonCard();
+    const card = effect.target.getPokemonCard()||(effect as any)._dpReplacementKoCard;
     if (card !== undefined) {
 
       // Pokemon ex rule
@@ -697,6 +719,9 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
         knockedOutOwner.pokemonKnockedOutByAttackDuringOpponentsLastTurn = true;
       }
 
+      if((state.rules as any).dpEraRules){const history=(knockedOutOwner as any)._dpKoHistory||=(([] as any[]));history.push({turn:state.turn,types:(effect as any)._dpKoTypes||card.cardType,byAttack:!!(effect as any)._dpKoByAttack});knockedOutOwner.pokemonKnockedOutByAttackDuringOpponentsLastTurn=history.some((entry:any)=>entry.turn===state.turn&&entry.byAttack);}
+      if((effect as any)._dpRetainPokemon)return state;
+      if((effect as any)._dpLostZoneKo){MOVE_POKEMON_OFF_BOARD(store,state,effect.target,{pokemonDestination:knockedOutOwner.lostzone,attachedDestination:knockedOutOwner.lostzone,sourceEffect:effect});return state;}
       // Handle Lost City marker or PRISM_STAR cards
       if (effect.target.marker.hasMarker('LOST_CITY_MARKER') || card.tags.includes(CardTag.PRISM_STAR)) {
         const lostZoned = new CardList();
@@ -943,6 +968,8 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
       throw new GameError(GameMessage.INVALID_TARGET);
     }
 
+    const dpEvolutionHistory=(state.rules as any).dpEraRules?{turn:state.turn,from:pokemonCard.name,conditions:effect.target.specialConditions.slice()}:undefined;
+    if(dpEvolutionHistory){const removal=new CheckSpecialConditionRemovalEffect(effect.player,effect.target);store.reduceEffect(state,removal);effect.target._preservedConditionsDuringEvolution=removal.preservedConditions;effect.player.removePokemonEffects(effect.target);effect.target._preservedConditionsDuringEvolution=undefined;(effect.target as any)._dpEvolutionHistory=dpEvolutionHistory;}
     // Track Pokemon evolution for damage continuity
     GameStatsTracker.handlePokemonEvolution(
       effect.player,

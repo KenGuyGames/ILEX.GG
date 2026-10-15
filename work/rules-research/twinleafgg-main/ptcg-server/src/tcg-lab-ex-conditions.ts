@@ -1,9 +1,55 @@
-import { CardTag,CardType,Stage,SuperType,StateUtils,SpecialCondition,EnergyType } from './game';
-import { CheckProvidedEnergyEffect, CheckPokemonTypeEffect,CheckHpEffect } from './game/store/effects/check-effects';
+import { dpPrintedPowers } from './tcg-lab-dp-power-identity';
+import { CardTag,CardType,Stage,SuperType,StateUtils,SpecialCondition,EnergyType,PowerType } from './game';
+import { CheckProvidedEnergyEffect, CheckPokemonTypeEffect,CheckHpEffect,CheckPokemonStatsEffect,CheckRetreatCostEffect } from './game/store/effects/check-effects';
 export function exCondition(store:any,state:any,e:any,op:any){
  const p=e.player,o=e.opponent,source=e.source,defender=o.active.getPokemonCard();
  const units=(owner:any,list:any)=>{const check=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,check);return check.energyMap.reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides),0);};
  switch(op.condition){
+ case 'dpSelfCountersAtLeast':return source.damage>=op.amount*10;
+ case 'dpDefenderPowers':return dpPrintedPowers(o.active).some((power:any)=>[PowerType.POKEPOWER,PowerType.POKEBODY].includes(power.powerType));
+ case 'dpBenchAtMost':return p.bench.filter((list:any)=>list.getPokemonCard()).length<=o.bench.filter((list:any)=>list.getPokemonCard()).length;
+ case 'dpDefenderFreeRetreat':{const check=new CheckRetreatCostEffect(o,o.active);store.reduceEffect(state,check);return !check.cost.length;}
+ case 'dpMoreFieldEnergy':return [p.active,...p.bench].filter((list:any)=>list.getPokemonCard()).reduce((n:number,list:any)=>n+units(p,list),0)>[o.active,...o.bench].filter((list:any)=>list.getPokemonCard()).reduce((n:number,list:any)=>n+units(o,list),0);
+ case 'dpSelfTool':return source.tools.length>0;
+ case 'dpDefenderBasic':return defender?.stage===Stage.BASIC;
+ case 'dpNoSupporterPlayed':return !p.supporterTurn;
+ case 'dpWasBenchedThisTurn':return source._dpBenchTurn===state.turn;
+ case 'dpEvolutionStatus':return source._dpEvolutionHistory?.turn===state.turn&&source._dpEvolutionHistory.from===op.name&&source._dpEvolutionHistory.conditions.includes((SpecialCondition as any)[op.status]);
+ case 'dpAttachedFromHand':return source._dpAttachedFromHand?.turn===state.turn&&source._dpAttachedFromHand.entries.some((entry:any)=>StateUtils.providesMatchesType(entry,({Grass:CardType.GRASS,Fire:CardType.FIRE,Water:CardType.WATER,Lightning:CardType.LIGHTNING,Psychic:CardType.PSYCHIC,Fighting:CardType.FIGHTING,Darkness:CardType.DARK,Metal:CardType.METAL} as any)[op.energy]));
+ case 'dpOwnBench':return p.bench.some((list:any)=>list.getPokemonCard());
+ case 'dpOpponentBench':return o.bench.some((list:any)=>list.getPokemonCard());
+ case 'dpOpponentPrizesExactly':return o.prizes.filter((zone:any)=>zone.cards.length).length===op.amount;
+ case 'dpDefenderCountersAtLeast':return o.active.damage>=op.amount*10;
+ case 'dpLastOpponentAttackKo':return p._dpKoHistory?.some((entry:any)=>entry.turn===p._dpLastOpponentTurn&&entry.byAttack);
+ case 'dpSelfEnergyExactly':return units(p,source)===op.amount;
+ case 'dpSelfHasEnergyType':{const check=new CheckProvidedEnergyEffect(p,source);store.reduceEffect(state,check);return check.energyMap.some((entry:any)=>StateUtils.providesMatchesType(entry.provides,({Grass:CardType.GRASS,Fire:CardType.FIRE,Water:CardType.WATER,Lightning:CardType.LIGHTNING,Psychic:CardType.PSYCHIC,Fighting:CardType.FIGHTING,Darkness:CardType.DARK,Metal:CardType.METAL} as any)[op.energy]));}
+ case 'dpCanMoveSelfEnergy':return units(p,source)>0&&p.bench.some((list:any)=>list.getPokemonCard());
+ case 'dpSelfEnergyAtMost':return units(p,source)<=op.amount;
+ case 'dpSelfBasicTypes':return op.energies.every((name:string)=>[...source.cards,...source.energies.cards].some((card:any)=>card.superType===SuperType.ENERGY&&card.energyType===EnergyType.BASIC&&card.provides.includes(({Grass:CardType.GRASS,Fire:CardType.FIRE,Water:CardType.WATER,Lightning:CardType.LIGHTNING,Psychic:CardType.PSYCHIC,Fighting:CardType.FIGHTING,Darkness:CardType.DARK,Metal:CardType.METAL} as any)[name])));
+ case 'dpDifferentPrizes':return p.prizes.filter((zone:any)=>zone.cards.length).length!==o.prizes.filter((zone:any)=>zone.cards.length).length;
+ case 'dpSelfMachine':return source.tools.some((card:any)=>card.tags.includes(CardTag.TECHNICAL_MACHINE));
+ case 'dpSourceStatus':return source.specialConditions.includes((SpecialCondition as any)[op.status]);
+ case 'dpSelfDamaged':return source.damage>0;
+ case 'dpSelfEnergyAtLeast':return units(p,source)>=op.amount;
+ case 'dpSameHp':case 'dpSelfLessHp':{const own=new CheckHpEffect(p,source),other=new CheckHpEffect(o,o.active);store.reduceEffect(state,own);store.reduceEffect(state,other);return op.condition==='dpSameHp'?own.hp-source.damage===other.hp-o.active.damage:own.hp-source.damage<other.hp-o.active.damage;}
+ case 'dpNoOwnPower':return ![p.active,...p.bench].some((list:any)=>list.getPokemons().some((card:any,index:number,array:any[])=>card.powers.some((power:any)=>power.powerType===PowerType.POKEPOWER)&&(index===array.length-1||array[array.length-1]._dpLevelUp)));
+ case 'dpDefenderTool':return o.active.tools.length>0;
+ case 'dpOpponentName':return [o.active,...o.bench].some((list:any)=>list.getPokemonCard()?.name===op.name);
+ case 'dpOwnStadium':return p.stadium.cards.includes(StateUtils.getStadiumCard(state));
+ case 'dpOpponentStadium':return o.stadium.cards.includes(StateUtils.getStadiumCard(state));
+ case 'dpOwnNames':return op.names.every((name:string)=>[p.active,...p.bench].some((list:any)=>list.getPokemonCard()?.name===name));
+ case 'dpOwnBenchName':return p.bench.some((list:any)=>list.getPokemonCard()?.name===op.name);
+ case 'dpNotUnder':return !source.getPokemons().slice(0,-1).some((card:any)=>card.name===op.name);
+ case 'dpUnder':return source.getPokemons().slice(0,-1).some((card:any)=>card.name===op.name);
+ case 'dpDefenderResistance':{const check=new CheckPokemonStatsEffect(o.active);store.reduceEffect(state,check);return check.resistance.length>0;}
+ case 'dpDefenderName':return defender?.name===op.name;
+ case 'dpEvolvedThisTurn':return source.pokemonPlayedTurn===state.turn&&source.getPokemons().slice(0,-1).some((card:any)=>card.name===op.name);
+ case 'dpOpponentType':return [o.active,...o.bench].filter((list:any)=>list.getPokemonCard()).some((list:any)=>{const check=new CheckPokemonTypeEffect(list);store.reduceEffect(state,check);return check.cardTypes.includes(({Grass:CardType.GRASS,Fire:CardType.FIRE,Water:CardType.WATER,Lightning:CardType.LIGHTNING,Psychic:CardType.PSYCHIC,Fighting:CardType.FIGHTING,Darkness:CardType.DARK,Metal:CardType.METAL} as any)[op.energy]);});
+ case 'dpDamagedLastTurn':return (source.getPokemonCard()?.damageTakenLastTurn||0)>0;
+ case 'dpDefenderRemainingHpAtMost':{const hp=new CheckHpEffect(o,o.active);store.reduceEffect(state,hp);return hp.hp-o.active.damage<=op.amount;}
+ case 'dpDefenderHasEnergy':return units(o,o.active)>0;
+ case 'dpPlayedThisTurn':return source.pokemonPlayedTurn===state.turn;
+ case 'dpSupporterPlayed':return p.supporterTurn>0;
  case 'lessFieldEnergy':return [p.active,...p.bench].filter((l:any)=>l.getPokemonCard()).reduce((n:number,l:any)=>n+units(p,l),0)<[o.active,...o.bench].filter((l:any)=>l.getPokemonCard()).reduce((n:number,l:any)=>n+units(o,l),0);
  case 'defenderLessHp':{const self=new CheckHpEffect(p,source),target=new CheckHpEffect(o,o.active);store.reduceEffect(state,self);store.reduceEffect(state,target);return target.hp-o.active.damage<self.hp-source.damage;}
  case 'selfBasicEnergyTypes':return new Set([...source.cards,...source.energies.cards].filter((c:any)=>c.superType===SuperType.ENERGY&&c.energyType===EnergyType.BASIC).flatMap((c:any)=>c.provides)).size>=op.amount;

@@ -55,13 +55,14 @@ export class Shiftryex extends PokemonCard {
   public fullName: string = 'Shiftry ex CG';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    if (effect instanceof PowerEffect && effect.power.powerType === PowerType.POKEPOWER) {
+    const used:any=effect;
+    if ((state.rules as any).dpEraRules ? used.type==='DP_POWER_USED'&&used.power.powerType===PowerType.POKEPOWER : effect instanceof PowerEffect && effect.power.powerType === PowerType.POKEPOWER) {
       // Ignore synthetic probe effects emitted by IS_POKEPOWER_BLOCKED.
-      if (!effect.card.powers.includes(effect.power)) {
+      if (!used.card.powers.includes(used.power)) {
         return state;
       }
 
-      const player = effect.player;
+      const player = used.player;
       const opponent = StateUtils.getOpponent(state, player);
 
       let isShiftryInPlay = false;
@@ -75,10 +76,10 @@ export class Shiftryex extends PokemonCard {
         return state;
       }
 
-      const target = StateUtils.findCardList(state, effect.card);
+      const target = StateUtils.findPokemonSlot(state, used.card);
 
       player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card) => {
-        if (cardList === target) {
+        if (cardList === target && cardList.getPokemonCard()===used.card) {
           const placeCountersEffect = new PlaceDamageCountersEffect(player, cardList, 20, this);
           state = store.reduceEffect(state, placeCountersEffect);
         }

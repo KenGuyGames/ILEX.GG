@@ -229,7 +229,7 @@ function compilePower(a,name){
  if(a.name==='Heavyweight'&&name==='Muk')op={kind:'retreatSelf',energy:'Grass',amount:2};
  if(a.name==='Wild Growth'&&name==='Meganium')op={kind:'multiplyBasicEnergy',energy:'Grass',amount:2,nonstack:true};
  if(a.name==='Rare Metal'&&name==='Steelix')op={kind:'convertEnergy',energy:'Metal',basic:true};
- if(a.name==='Sleep Pendulum'&&name==='Hypno')op={kind:'activatedStatus',conditions:['ASLEEP'],once:true,active:true};
+ if(a.name==='Sleep Pendulum'&&name==='Hypno')op={kind:'activatedStatus',conditionsApplied:['ASLEEP'],once:true,active:true};
  if(a.name==='Soothing Aroma'&&name==='Meganium')op={kind:'activatedHealAllCoin',amount:10,once:true};
  if(a.name==='Healing Fire'&&name==="Blaine's Ninetales")op={kind:'onAttachHeal',energy:'Fire',amount:10};
  if(a.name==='Self-healing'&&['Jolteon','Vaporeon'].includes(name))op={kind:'onAttachClearConditions',energy:name==='Jolteon'?'Lightning':'Water'};

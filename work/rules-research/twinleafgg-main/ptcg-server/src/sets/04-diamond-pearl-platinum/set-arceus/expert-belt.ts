@@ -61,6 +61,8 @@ export class ExpertBelt extends TrainerCard {
       }
 
       effect.prizeCount += 1;
+      (effect as any)._dpBeltPrizeTools ??= [];
+      (effect as any)._dpBeltPrizeTools.push(this);
     }
 
     return state;

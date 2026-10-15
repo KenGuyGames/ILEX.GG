@@ -1,12 +1,8 @@
 {
   "passed": true,
   "checks": [
-    "Fiery Aura changes EX Burn damage and Eerie Aura only hits Pokemon still Asleep",
-    "Burning Aura places one counter on both Active Pokemon once per checkup",
-    "Crush and Burn counts one Energy card for a two-unit Holon card",
-    "Burn Away bypasses Weakness and deals only excess remaining HP as recoil",
-    "Burn Away recoil uses actual attack damage including Strength Charm"
+    "All five Holon Pokemon attach from hand and provide their printed Energy"
   ],
   "candidate": true,
-  "engineSha256": "886a00644606f5d08259fcab0737cee94390acd2c08d8bba849e3adad6462aeb"
+  "engineSha256": "934c15bdeb6e732993e25e20d9717a89d2e587c206b714ec99016f449a0df67d"
 }

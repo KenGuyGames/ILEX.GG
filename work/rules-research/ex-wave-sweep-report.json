@@ -1,0 +1,15 @@
+{
+  "candidate": true,
+  "passed": true,
+  "engineSha256": "9b6eea7f4ddd7594b939d2bcd47997de8620de809a028a6e4adf24c6b7972bdf",
+  "scope": [
+    "ex10",
+    "ex11",
+    "ex12",
+    "ex13",
+    "pop2",
+    "pop3"
+  ],
+  "scenarios": 1394,
+  "failures": []
+}

@@ -7,7 +7,7 @@ import { GameMessage } from '../../game-message';
 
 export function choosePokemonAsBasicPlacement(store: any, state: any, player: any, zone: any, options: any, done: () => void): any {
   const slots=player.bench.map((list:any,index:number)=>({list,index})).filter((s:any)=>!s.list.cards.length);
-  const eligible=zone.cards.filter((c:any)=>c.superType===SuperType.POKEMON&&(!options.names||options.names.includes(c.name))&&(!options.evolvesFrom||c.evolvesFrom===options.evolvesFrom));
+  const eligible=zone.cards.filter((c:any)=>c.superType===SuperType.POKEMON&&(!options.nameIncludes||c.name.includes(options.nameIncludes))&&(!options.names||options.names.includes(c.name))&&(!options.evolvesFrom||c.evolvesFrom===options.evolvesFrom));
   if(!slots.length||!eligible.length){done();return state;}
   return store.prompt(state,new ChooseCardsPrompt(player,GameMessage.CHOOSE_CARD_TO_HAND,zone,{superType:SuperType.POKEMON},{min:options.optional?0:1,max:1,allowCancel:false,blocked:zone.cards.map((c:any,i:number)=>eligible.includes(c)?-1:i).filter((i:number)=>i>=0)}),(chosen:any)=>{
     if(!chosen?.length)return done();

@@ -10,7 +10,7 @@ export function exAttachedEnergy(store:any,state:any,owner:any,list:any){
 }
 export function exMoveEnergy(store:any,state:any,owner:any,sourceCard:any,sourceEffect:any,op:any,done:(target?:any)=>void){
  const sources=(op.fromBench?owner.bench:op.fromActive?[owner.active]:[owner.active,...owner.bench]).filter((list:any)=>list.getPokemonCard()&&(!op.fromSelf||list.getPokemonCard()===sourceCard)&&(!op.toSelf||list.getPokemonCard()!==sourceCard));
- const entries=sources.flatMap((list:any)=>exAttachedEnergy(store,state,owner,list).filter((entry:any)=>!op.energy||StateUtils.providesMatchesType(entry.provides,op.energy)).map((entry:any)=>({...entry,source:list})));
+ const entries=sources.flatMap((list:any)=>exAttachedEnergy(store,state,owner,list).filter((entry:any)=>(!op.energy||StateUtils.providesMatchesType(entry.provides,op.energy))&&(!op.energies||op.energies.some((type:any)=>StateUtils.providesMatchesType(entry.provides,type)))).map((entry:any)=>({...entry,source:list})));
  if(!entries.length)throw new GameError(GameMessage.CANNOT_USE_POWER);
  const view=new CardList();view.cards=entries.map((entry:any)=>entry.card);
  return store.prompt(state,new ChooseCardsPrompt(owner,GameMessage.CHOOSE_CARD_TO_ATTACH,view,{},{min:1,max:1,allowCancel:false}),(chosen:any)=>{

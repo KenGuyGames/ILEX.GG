@@ -1,0 +1,2186 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "dp7-1",
+      "power": "Shadow Command",
+      "bench": false
+    },
+    {
+      "id": "dp7-1",
+      "power": "Shadow Command",
+      "bench": true
+    },
+    {
+      "id": "dp3-2",
+      "power": "Waterlog",
+      "bench": false
+    },
+    {
+      "id": "dp3-2",
+      "power": "Waterlog",
+      "bench": true
+    },
+    {
+      "id": "dp1-2",
+      "power": "Dark Palm",
+      "bench": false
+    },
+    {
+      "id": "dp1-2",
+      "power": "Dark Palm",
+      "bench": true
+    },
+    {
+      "id": "pl1-2",
+      "power": "Dig Well",
+      "bench": false
+    },
+    {
+      "id": "pl1-2",
+      "power": "Dig Well",
+      "bench": true
+    },
+    {
+      "id": "pl1-3",
+      "power": "Fire Breath",
+      "bench": false
+    },
+    {
+      "id": "pl1-3",
+      "power": "Fire Breath",
+      "bench": true
+    },
+    {
+      "id": "dp7-4",
+      "power": "Fin Luster",
+      "bench": false
+    },
+    {
+      "id": "pl1-4",
+      "power": "Power Circulation",
+      "bench": false
+    },
+    {
+      "id": "pl1-4",
+      "power": "Power Circulation",
+      "bench": true
+    },
+    {
+      "id": "dp7-5",
+      "power": "Magnetic Search",
+      "bench": false
+    },
+    {
+      "id": "dp7-5",
+      "power": "Magnetic Search",
+      "bench": true
+    },
+    {
+      "id": "pop4-5",
+      "power": "Energy Trans",
+      "bench": false
+    },
+    {
+      "id": "pop4-5",
+      "power": "Energy Trans",
+      "bench": true
+    },
+    {
+      "id": "pop9-5",
+      "power": "Type Shift",
+      "bench": false
+    },
+    {
+      "id": "pop9-5",
+      "power": "Type Shift",
+      "bench": true
+    },
+    {
+      "id": "dp2-6",
+      "power": "Miracle Oracle",
+      "bench": false
+    },
+    {
+      "id": "dp2-6",
+      "power": "Miracle Oracle",
+      "bench": true
+    },
+    {
+      "id": "dp6-6",
+      "power": "Flash Fire",
+      "bench": false
+    },
+    {
+      "id": "dp6-6",
+      "power": "Flash Fire",
+      "bench": true
+    },
+    {
+      "id": "dp4-6",
+      "power": "Conversion",
+      "bench": false
+    },
+    {
+      "id": "dp4-6",
+      "power": "Conversion",
+      "bench": true
+    },
+    {
+      "id": "dp7-6",
+      "power": "Super Connectivity",
+      "bench": false
+    },
+    {
+      "id": "dp7-6",
+      "power": "Super Connectivity",
+      "bench": true
+    },
+    {
+      "id": "dp3-7",
+      "power": "Telepass",
+      "bench": false
+    },
+    {
+      "id": "dp3-7",
+      "power": "Telepass",
+      "bench": true
+    },
+    {
+      "id": "pl4-8",
+      "power": "Top Accelerator",
+      "bench": false
+    },
+    {
+      "id": "pl4-8",
+      "power": "Top Accelerator",
+      "bench": true
+    },
+    {
+      "id": "dp6-10",
+      "power": "Magnetic Reversal",
+      "bench": false
+    },
+    {
+      "id": "dp6-10",
+      "power": "Magnetic Reversal",
+      "bench": true
+    },
+    {
+      "id": "dp7-10",
+      "power": "Energy Trans",
+      "bench": false
+    },
+    {
+      "id": "dp7-10",
+      "power": "Energy Trans",
+      "bench": true
+    },
+    {
+      "id": "dp2-11",
+      "power": "Lure Ring",
+      "bench": false
+    },
+    {
+      "id": "pop7-11",
+      "power": "Wear Cloak",
+      "bench": false
+    },
+    {
+      "id": "pop7-12",
+      "power": "Wear Cloak",
+      "bench": false
+    },
+    {
+      "id": "dp7-13",
+      "power": "Cycler",
+      "bench": false
+    },
+    {
+      "id": "dp7-13",
+      "power": "Cycler",
+      "bench": true
+    },
+    {
+      "id": "pl4-13",
+      "power": "Unearth",
+      "bench": false
+    },
+    {
+      "id": "pl4-13",
+      "power": "Unearth",
+      "bench": true
+    },
+    {
+      "id": "dp6-14",
+      "power": "Speed Gain",
+      "bench": false
+    },
+    {
+      "id": "dp6-14",
+      "power": "Speed Gain",
+      "bench": true
+    },
+    {
+      "id": "pl3-14",
+      "power": "Speed Boost",
+      "bench": false
+    },
+    {
+      "id": "dp4-15",
+      "power": "Cosmic Power",
+      "bench": false
+    },
+    {
+      "id": "dp4-15",
+      "power": "Cosmic Power",
+      "bench": true
+    },
+    {
+      "id": "pl2-15",
+      "power": "Flutter Wings",
+      "bench": false
+    },
+    {
+      "id": "pl2-15",
+      "power": "Flutter Wings",
+      "bench": true
+    },
+    {
+      "id": "dp2-16",
+      "power": "Firestarter",
+      "bench": false
+    },
+    {
+      "id": "dp2-16",
+      "power": "Firestarter",
+      "bench": true
+    },
+    {
+      "id": "pl4-16",
+      "power": "Curse",
+      "bench": false
+    },
+    {
+      "id": "pl4-16",
+      "power": "Curse",
+      "bench": true
+    },
+    {
+      "id": "pl1-19",
+      "power": "Temper Tantrum",
+      "bench": false
+    },
+    {
+      "id": "pl1-19",
+      "power": "Temper Tantrum",
+      "bench": true
+    },
+    {
+      "id": "dp3-20",
+      "power": "Miracle Aroma",
+      "bench": false
+    },
+    {
+      "id": "dp3-20",
+      "power": "Miracle Aroma",
+      "bench": true
+    },
+    {
+      "id": "pl4-21",
+      "power": "Relaxing Shower",
+      "bench": false
+    },
+    {
+      "id": "pl4-21",
+      "power": "Relaxing Shower",
+      "bench": true
+    },
+    {
+      "id": "pl1-22",
+      "power": "Nurse Call",
+      "bench": false
+    },
+    {
+      "id": "pl1-22",
+      "power": "Nurse Call",
+      "bench": true
+    },
+    {
+      "id": "dp3-25",
+      "power": "Motor Drive",
+      "bench": false
+    },
+    {
+      "id": "dp3-25",
+      "power": "Motor Drive",
+      "bench": true
+    },
+    {
+      "id": "pl3-25",
+      "power": "Echo Draw",
+      "bench": false
+    },
+    {
+      "id": "pl3-25",
+      "power": "Echo Draw",
+      "bench": true
+    },
+    {
+      "id": "pl3-29",
+      "power": "Darkness Restore",
+      "bench": false
+    },
+    {
+      "id": "dp6-30",
+      "power": "Smelt",
+      "bench": true
+    },
+    {
+      "id": "dp2-32",
+      "power": "Color Shift",
+      "bench": false
+    },
+    {
+      "id": "dp2-32",
+      "power": "Color Shift",
+      "bench": true
+    },
+    {
+      "id": "dp4-32",
+      "power": "Good Night Melody",
+      "bench": false
+    },
+    {
+      "id": "dp4-32",
+      "power": "Good Night Melody",
+      "bench": true
+    },
+    {
+      "id": "dp5-33",
+      "power": "PUT",
+      "bench": true
+    },
+    {
+      "id": "dp2-34",
+      "power": "Energetic Impulse",
+      "bench": false
+    },
+    {
+      "id": "pl1-34",
+      "power": "Cheerful Voice",
+      "bench": false
+    },
+    {
+      "id": "pl1-34",
+      "power": "Cheerful Voice",
+      "bench": true
+    },
+    {
+      "id": "dp6-36",
+      "power": "Regi Move",
+      "bench": false
+    },
+    {
+      "id": "dp6-36",
+      "power": "Regi Move",
+      "bench": true
+    },
+    {
+      "id": "dp3-38",
+      "power": "Grass Whistle",
+      "bench": false
+    },
+    {
+      "id": "dp3-38",
+      "power": "Grass Whistle",
+      "bench": true
+    },
+    {
+      "id": "dp6-38",
+      "power": "Regi Cycle",
+      "bench": false
+    },
+    {
+      "id": "dp6-38",
+      "power": "Regi Cycle",
+      "bench": true
+    },
+    {
+      "id": "dp6-39",
+      "power": "Regi Heal",
+      "bench": false
+    },
+    {
+      "id": "dp6-39",
+      "power": "Regi Heal",
+      "bench": true
+    },
+    {
+      "id": "dp3-40",
+      "power": "Dark Engage",
+      "bench": false
+    },
+    {
+      "id": "dp3-40",
+      "power": "Dark Engage",
+      "bench": true
+    },
+    {
+      "id": "pl1-41",
+      "power": "Galactic Switch",
+      "bench": false
+    },
+    {
+      "id": "pl3-42",
+      "power": "Dig Down",
+      "bench": false
+    },
+    {
+      "id": "pl3-42",
+      "power": "Dig Down",
+      "bench": true
+    },
+    {
+      "id": "dp4-47",
+      "power": "Emerge",
+      "bench": false
+    },
+    {
+      "id": "dp5-49",
+      "power": "QUICK",
+      "bench": true
+    },
+    {
+      "id": "dp4-49",
+      "power": "Download",
+      "bench": false
+    },
+    {
+      "id": "dp4-49",
+      "power": "Download",
+      "bench": true
+    },
+    {
+      "id": "pl2-50",
+      "power": "Aqua Recycle",
+      "bench": false
+    },
+    {
+      "id": "pl2-50",
+      "power": "Aqua Recycle",
+      "bench": true
+    },
+    {
+      "id": "dp4-56",
+      "power": "FAKE",
+      "bench": true
+    },
+    {
+      "id": "dp4-57",
+      "power": "GUARD",
+      "bench": true
+    },
+    {
+      "id": "dp3-60",
+      "power": "Aqua Healing",
+      "bench": false
+    },
+    {
+      "id": "dp4-63",
+      "power": "Pupate",
+      "bench": false
+    },
+    {
+      "id": "dp2-65",
+      "power": "EQUIP",
+      "bench": true
+    },
+    {
+      "id": "dp1-65",
+      "power": "ANALYZE",
+      "bench": true
+    },
+    {
+      "id": "dp2-66",
+      "power": "MAGNET",
+      "bench": false
+    },
+    {
+      "id": "dp1-66",
+      "power": "BOUNCE",
+      "bench": true
+    },
+    {
+      "id": "dp5-67",
+      "power": "Ancient Guidance",
+      "bench": false
+    },
+    {
+      "id": "dp5-67",
+      "power": "Ancient Guidance",
+      "bench": true
+    },
+    {
+      "id": "dp2-67",
+      "power": "THROW",
+      "bench": false
+    },
+    {
+      "id": "dp1-67",
+      "power": "CALL",
+      "bench": true
+    },
+    {
+      "id": "pl3-67",
+      "power": "Plunge",
+      "bench": true
+    },
+    {
+      "id": "dp3-68",
+      "power": "Kind",
+      "bench": false
+    },
+    {
+      "id": "dp3-68",
+      "power": "Kind",
+      "bench": true
+    },
+    {
+      "id": "dp1-68",
+      "power": "DRAW",
+      "bench": true
+    },
+    {
+      "id": "dp5-69",
+      "power": "Call Up",
+      "bench": false
+    },
+    {
+      "id": "dp5-69",
+      "power": "Call Up",
+      "bench": true
+    },
+    {
+      "id": "dp3-71",
+      "power": "X-RAY",
+      "bench": true
+    },
+    {
+      "id": "dp4-71",
+      "power": "Scent Conduct",
+      "bench": false
+    },
+    {
+      "id": "dp4-71",
+      "power": "Scent Conduct",
+      "bench": true
+    },
+    {
+      "id": "dp4-76",
+      "power": "Gravity Change",
+      "bench": false
+    },
+    {
+      "id": "dp4-76",
+      "power": "Gravity Change",
+      "bench": true
+    },
+    {
+      "id": "dp6-77",
+      "power": "RETIRE",
+      "bench": true
+    },
+    {
+      "id": "dp3-78",
+      "power": "Wear Cloak",
+      "bench": false
+    },
+    {
+      "id": "dp3-79",
+      "power": "Wear Cloak",
+      "bench": false
+    },
+    {
+      "id": "dp6-79",
+      "power": "VACATION",
+      "bench": false
+    },
+    {
+      "id": "dp6-79",
+      "power": "VACATION",
+      "bench": true
+    },
+    {
+      "id": "dp3-80",
+      "power": "Wear Cloak",
+      "bench": false
+    },
+    {
+      "id": "dp6-82",
+      "power": "?",
+      "bench": true
+    },
+    {
+      "id": "pl2-84",
+      "power": "Gather Sand",
+      "bench": false
+    },
+    {
+      "id": "dp5-99",
+      "power": "Energy Forcing",
+      "bench": false
+    },
+    {
+      "id": "dp5-99",
+      "power": "Energy Forcing",
+      "bench": true
+    },
+    {
+      "id": "pl4-99",
+      "power": "Healing Growth",
+      "bench": false
+    },
+    {
+      "id": "pl4-99",
+      "power": "Healing Growth",
+      "bench": true
+    },
+    {
+      "id": "dp5-100",
+      "power": "Decode",
+      "bench": false
+    },
+    {
+      "id": "dp5-100",
+      "power": "Decode",
+      "bench": true
+    },
+    {
+      "id": "dp7-100",
+      "power": "Sacrifice",
+      "bench": false
+    },
+    {
+      "id": "dp7-100",
+      "power": "Sacrifice",
+      "bench": true
+    },
+    {
+      "id": "dp4-103",
+      "power": "Full Moon Dance",
+      "bench": false
+    },
+    {
+      "id": "dp4-103",
+      "power": "Full Moon Dance",
+      "bench": true
+    },
+    {
+      "id": "dp4-106",
+      "power": "Restructure",
+      "bench": false
+    },
+    {
+      "id": "dp4-106",
+      "power": "Restructure",
+      "bench": true
+    },
+    {
+      "id": "pl2-107",
+      "power": "Sand Reset",
+      "bench": false
+    },
+    {
+      "id": "pl2-107",
+      "power": "Sand Reset",
+      "bench": true
+    },
+    {
+      "id": "pl2-108",
+      "power": "Intimidating Roar",
+      "bench": false
+    },
+    {
+      "id": "pl2-108",
+      "power": "Intimidating Roar",
+      "bench": true
+    },
+    {
+      "id": "dp1-121",
+      "power": "Burning Head",
+      "bench": false
+    },
+    {
+      "id": "dp1-121",
+      "power": "Burning Head",
+      "bench": true
+    },
+    {
+      "id": "dp2-123",
+      "power": "Torrid Wave",
+      "bench": false
+    },
+    {
+      "id": "pl1-123",
+      "power": "Tri-Poison",
+      "bench": false
+    },
+    {
+      "id": "pl1-123",
+      "power": "Tri-Poison",
+      "bench": true
+    },
+    {
+      "id": "pl1-125",
+      "power": "Lost Cyclone",
+      "bench": false
+    },
+    {
+      "id": "pl1-125",
+      "power": "Lost Cyclone",
+      "bench": true
+    },
+    {
+      "id": "dp3-131",
+      "power": "Teleportation",
+      "bench": false
+    },
+    {
+      "id": "dp3-131",
+      "power": "Teleportation",
+      "bench": true
+    },
+    {
+      "id": "dp6-142",
+      "power": "Electric Trans",
+      "bench": false
+    },
+    {
+      "id": "dp6-142",
+      "power": "Electric Trans",
+      "bench": true
+    },
+    {
+      "id": "pl3-143",
+      "power": "Call for Power",
+      "bench": true
+    },
+    {
+      "id": "pl3-144",
+      "power": "Energy Recycle",
+      "bench": false
+    },
+    {
+      "id": "pl3-144",
+      "power": "Energy Recycle",
+      "bench": true
+    },
+    {
+      "id": "dp6-146",
+      "power": "Trade Off",
+      "bench": false
+    },
+    {
+      "id": "dp6-146",
+      "power": "Trade Off",
+      "bench": true
+    },
+    {
+      "id": "pl3-147",
+      "power": "Fast Call",
+      "bench": false
+    },
+    {
+      "id": "pl3-147",
+      "power": "Fast Call",
+      "bench": true
+    },
+    {
+      "id": "dpp-DP10",
+      "power": "Burning Head",
+      "bench": false
+    },
+    {
+      "id": "dpp-DP10",
+      "power": "Burning Head",
+      "bench": true
+    },
+    {
+      "id": "dpp-DP18",
+      "power": "Restructure",
+      "bench": false
+    },
+    {
+      "id": "dpp-DP18",
+      "power": "Restructure",
+      "bench": true
+    },
+    {
+      "id": "dpp-DP30",
+      "power": "Sacrifice",
+      "bench": false
+    },
+    {
+      "id": "dpp-DP30",
+      "power": "Sacrifice",
+      "bench": true
+    },
+    {
+      "id": "dpp-DP33",
+      "power": "Dark Hide",
+      "bench": false
+    },
+    {
+      "id": "dpp-DP33",
+      "power": "Dark Hide",
+      "bench": true
+    },
+    {
+      "id": "dpp-DP41",
+      "power": "Leap Away",
+      "bench": false
+    },
+    {
+      "id": "dpp-DP45",
+      "power": "Call for Power",
+      "bench": true
+    },
+    {
+      "id": "pl2-RT1",
+      "power": "Fan Shift",
+      "bench": false
+    },
+    {
+      "id": "pl2-RT1",
+      "power": "Fan Shift",
+      "bench": true
+    },
+    {
+      "id": "pl2-RT2",
+      "power": "Frost Shift",
+      "bench": false
+    },
+    {
+      "id": "pl2-RT2",
+      "power": "Frost Shift",
+      "bench": true
+    },
+    {
+      "id": "pl2-RT3",
+      "power": "Heat Shift",
+      "bench": false
+    },
+    {
+      "id": "pl2-RT3",
+      "power": "Heat Shift",
+      "bench": true
+    },
+    {
+      "id": "pl2-RT4",
+      "power": "Mow Shift",
+      "bench": false
+    },
+    {
+      "id": "pl2-RT4",
+      "power": "Mow Shift",
+      "bench": true
+    },
+    {
+      "id": "pl2-RT5",
+      "power": "Wash Shift",
+      "bench": false
+    },
+    {
+      "id": "pl2-RT5",
+      "power": "Wash Shift",
+      "bench": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "dp6-1",
+      "power": "Form Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-1",
+      "power": "Form Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-2",
+      "power": "Power Cancel",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-2",
+      "power": "Power Cancel",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop4-2",
+      "power": "Form Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop4-2",
+      "power": "Form Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-3",
+      "power": "Intense Voltage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-3",
+      "power": "Intense Voltage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp7-4",
+      "power": "Fin Luster",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-5",
+      "power": "Kind Egg",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-5",
+      "power": "Kind Egg",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-8",
+      "power": "Osmotic Pressure",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-8",
+      "power": "Osmotic Pressure",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-8",
+      "power": "Psychic Connect",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-8",
+      "power": "Psychic Connect",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-9",
+      "power": "Wash Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-9",
+      "power": "Wash Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-11",
+      "power": "Lure Ring",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop9-11",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop9-11",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop7-11",
+      "power": "Wear Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop7-12",
+      "power": "Wear Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-14",
+      "power": "Darkness Fan",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-14",
+      "power": "Darkness Fan",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop8-14",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop8-14",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-14",
+      "power": "Speed Boost",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop4-17",
+      "power": "Form Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pop4-17",
+      "power": "Form Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-18",
+      "power": "Memory Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-18",
+      "power": "Memory Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-19",
+      "power": "Undevelop",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-19",
+      "power": "Undevelop",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-24",
+      "power": "Form Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-24",
+      "power": "Form Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-25",
+      "power": "Form Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-25",
+      "power": "Form Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl4-25",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl4-25",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-26",
+      "power": "Form Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-26",
+      "power": "Form Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-26",
+      "power": "Undevelop",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-26",
+      "power": "Undevelop",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-28",
+      "power": "Trump Card",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-28",
+      "power": "Trump Card",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-29",
+      "power": "HEAL",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-29",
+      "power": "HEAL",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-29",
+      "power": "Darkness Restore",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-30",
+      "power": "Smelt",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-32",
+      "power": "Minus Charge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-32",
+      "power": "Minus Charge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp5-33",
+      "power": "PUT",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-33",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-33",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp7-33",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp7-33",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-34",
+      "power": "Energetic Impulse",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-34",
+      "power": "Undevelop",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-34",
+      "power": "Undevelop",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-36",
+      "power": "Plus Charge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-36",
+      "power": "Plus Charge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-37",
+      "power": "ITEM",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-37",
+      "power": "ITEM",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-39",
+      "power": "Set",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-39",
+      "power": "Set",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-41",
+      "power": "Galactic Switch",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-42",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-42",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-42",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-42",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-43",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-43",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-44",
+      "power": "Psychic Shift",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-44",
+      "power": "Psychic Shift",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp7-45",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp7-45",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-45",
+      "power": "Sunshine Fate",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-45",
+      "power": "Sunshine Fate",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-47",
+      "power": "Emerge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-48",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-48",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-48",
+      "power": "Temperament",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-48",
+      "power": "Temperament",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp5-49",
+      "power": "QUICK",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-49",
+      "power": "Temperament",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-49",
+      "power": "Temperament",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-50",
+      "power": "Temperament",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-50",
+      "power": "Temperament",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-51",
+      "power": "Temperament",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-51",
+      "power": "Temperament",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-52",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-52",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-55",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-55",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-56",
+      "power": "FAKE",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-57",
+      "power": "GUARD",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp5-58",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp5-58",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-60",
+      "power": "Aqua Healing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-63",
+      "power": "Pupate",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-65",
+      "power": "EQUIP",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-65",
+      "power": "ANALYZE",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-66",
+      "power": "MAGNET",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-66",
+      "power": "BOUNCE",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-67",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-67",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-67",
+      "power": "THROW",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-67",
+      "power": "CALL",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-67",
+      "power": "Plunge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp5-68",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp5-68",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-68",
+      "power": "DRAW",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-69",
+      "power": "Nod",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-69",
+      "power": "Nod",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-69",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-69",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-69",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-69",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-70",
+      "power": "ONE",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-70",
+      "power": "ONE",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-70",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-70",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-70",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-70",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-71",
+      "power": "X-RAY",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-71",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-71",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-72",
+      "power": "ZERO",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-72",
+      "power": "ZERO",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-76",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-76",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-77",
+      "power": "RETIRE",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-78",
+      "power": "Wear Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-78",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-78",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-79",
+      "power": "Wear Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-80",
+      "power": "Wear Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-81",
+      "power": "YAWN",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-81",
+      "power": "YAWN",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-82",
+      "power": "?",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-84",
+      "power": "Gather Sand",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-88",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-88",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-90",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-90",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-92",
+      "power": "Light Conduct",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp4-92",
+      "power": "Light Conduct",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-93",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-93",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-94",
+      "power": "Electro Recycle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-94",
+      "power": "Electro Recycle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-94",
+      "power": "Poison Structure",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl1-94",
+      "power": "Poison Structure",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl4-97",
+      "power": "Level-Down",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl4-97",
+      "power": "Level-Down",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-98",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-98",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-101",
+      "power": "Balloon Sting",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp3-101",
+      "power": "Balloon Sting",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-103",
+      "power": "Damage Switch",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-103",
+      "power": "Damage Switch",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-110",
+      "power": "Magical Return",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-110",
+      "power": "Magical Return",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-111",
+      "power": "Big Appetite",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl2-111",
+      "power": "Big Appetite",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-115",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-115",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-122",
+      "power": "Forest Murmurs",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp1-122",
+      "power": "Forest Murmurs",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp2-123",
+      "power": "Torrid Wave",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-126",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dp6-126",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "pl3-143",
+      "power": "Call for Power",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP09",
+      "power": "Forest Murmurs",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP09",
+      "power": "Forest Murmurs",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP16",
+      "power": "Electro Recycle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP16",
+      "power": "Electro Recycle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP22",
+      "power": "Baby Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP22",
+      "power": "Baby Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP35",
+      "power": "Install",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP35",
+      "power": "Install",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP41",
+      "power": "Leap Away",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dpp-DP45",
+      "power": "Call for Power",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    }
+  ],
+  "failures": [],
+  "engineSha256": "a84c466555b1dc677b59ad3377c9170f9e75ed0d0ec8fdf1ba6f4f434410963e"
+}

@@ -37,7 +37,8 @@ function finalizeTrainerCleanup(
   trainerCard: TrainerCard,
   keepSupporterUntilEndTurn: boolean
 ): State {
-  if (keepSupporterUntilEndTurn) {
+  if((state.rules as any).dpEraRules&&trainerCard.trainerType===TrainerType.SUPPORTER){const notify=()=>{store.reduceEffect(state,{type:'DP_SUPPORTER_RESOLVED',player,trainerCard,preventDefault:false} as any);};if(store.hasPrompts())store.waitPrompt(state,notify);else notify();}
+  if (keepSupporterUntilEndTurn || (trainerCard as any)._dpReturnSupporter) {
     return state;
   }
 

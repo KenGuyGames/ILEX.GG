@@ -4,6 +4,7 @@ module.exports=async(win,root)=>{
  for(let i=0;i<150;i++){if(await evaluate("typeof rulesReady!=='undefined'&&rulesReady&&cards.length===23736"))break;await pause(100)}
  if(!await evaluate('rulesReady'))throw Error('Rules catalog failed to load');
  const exReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-tests.json'),JSON.stringify(exReport,null,2));
+ const interactionReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-interactions.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-interactions.json'),JSON.stringify(interactionReport,null,2));
  await evaluate("window.audioBootRestored=!!localStorage.getItem('rules-test-marker')");
 
 
@@ -26,8 +27,8 @@ module.exports=async(win,root)=>{
    assert(IlexAudio.play('energy'),'Enabled effect failed');let count=IlexAudio.diagnostics().events.length;
    IlexAudio.update({muted:true});assert(!IlexAudio.play('attack')&&IlexAudio.diagnostics().events.length===count,'Mute did not suppress effects');
    IlexAudio.update({muted:false,effects:false});assert(!IlexAudio.play('attack'),'Effects toggle failed');
-   IlexAudio.update({effects:true,music:true,track:'grove'});IlexAudio.sync();IlexAudio.sync();assert(IlexAudio.diagnostics().loops===1,'Duplicate music loops');
-   IlexAudio.update({track:'duel'});assert(IlexAudio.diagnostics().current==='duel','Track switch failed');
+   IlexAudio.update({effects:true,music:true,track:'guardian'});IlexAudio.sync();IlexAudio.sync();for(let n=0;n<100&&IlexAudio.diagnostics().loops!==1;n++)await new Promise(r=>setTimeout(r,50));assert(IlexAudio.diagnostics().loops===1,'Duplicate music loops');
+   IlexAudio.update({track:'battle'});assert(IlexAudio.diagnostics().current==='battle','Track switch failed');
    if(rulesMatch){const b=IlexAudio.before(rulesMatch,{type:'attack'});assert(b,'Public state capture failed');count=IlexAudio.diagnostics().events.length;IlexAudio.after(b,rulesMatch,{type:'attack'});assert(count===IlexAudio.diagnostics().events.length,'Uncommitted move sounded');ruleAction({type:'attack',player:-123,name:'Invalid audio test'});assert(count===IlexAudio.diagnostics().events.length,'Illegal action sounded');IlexAudio.after(b,{store:rulesMatch.store,journal:[...rulesMatch.journal,{}],spec:rulesMatch.spec},{type:'attack'});assert(IlexAudio.diagnostics().events.includes('attack'),'Committed attack cue failed');}
    assert(JSON.stringify(state.rulesMatch)===previous,'Audio changed saved game');
    const renders=[];for(const id of ['grove','dew','duel','time','gambit']){const buffer=await IlexComposer.render(id,8),data=buffer.getChannelData(0);let sum=0,peak=0;for(const v of data){assert(Number.isFinite(v),'Nonfinite audio');sum+=v*v;peak=Math.max(peak,Math.abs(v));}const rms=Math.sqrt(sum/data.length);assert(rms>.001&&peak<1,'Invalid music level '+id);renders.push({id,rms,peak,seconds:buffer.duration});}
@@ -57,8 +58,8 @@ module.exports=async(win,root)=>{
  };
  const verifyVisualDeckPreview=async()=>{
   await pause(150);
-  await evaluate("(async()=>{tab='decks';render();const images=[...document.querySelectorAll('.deck-card img')];images.forEach(i=>i.loading='eager');await Promise.race([Promise.all(images.map(i=>i.decode())),new Promise(r=>setTimeout(r,3000))]);if(images.some(i=>!i.naturalWidth))throw Error('Deck preview image failed to load');window.scrollTo(0,0);})()");
-  const sizes=[];for(const [width,height] of [[900,960],[1920,1440]]){win.setSize(width,height);await pause(150);const layout=await evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth,cards:document.querySelectorAll('.deck-card').length})");if(layout.scroll>layout.width+1||layout.cards!==7)throw Error('Visual deck layout failed at '+width);sizes.push(layout);}
+  await evaluate("(async()=>{tab='decks';state.deckFormatFilter='';activeDeck=state.decks.find(d=>d.name==='Import test 2')?.id||activeDeck;render();const images=[...document.querySelectorAll('.deck-card img')];images.forEach(i=>i.loading='eager');await Promise.race([Promise.all(images.map(i=>i.decode())),new Promise(r=>setTimeout(r,3000))]);if(images.some(i=>!i.naturalWidth))throw Error('Deck preview image failed to load');window.scrollTo(0,0);})()");
+  const sizes=[];for(const [width,height] of [[900,960],[1920,1440]]){win.setSize(width,height);await pause(150);const layout=await evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth,cards:document.querySelectorAll('.deck-card').length})");if(layout.scroll>layout.width+1||layout.cards!==7)throw Error('Visual deck layout failed at '+width+': '+JSON.stringify(layout));sizes.push(layout);}
   fs.writeFileSync(path.join(root,'visual-deck-layouts.json'),JSON.stringify({passed:true,sizes},null,2));fs.writeFileSync(path.join(root,'visual-deck-preview.png'),(await win.webContents.capturePage()).toPNG());win.setSize(1440,960);
  };
  const verifyDragAndSize=async()=>{
@@ -83,13 +84,18 @@ module.exports=async(win,root)=>{
   }
   fs.writeFileSync(path.join(root,'table-sizes.json'),JSON.stringify({passed:true,sizes},null,2));win.setSize(1440,960);await pause(150);
  };
+ const verifyCardActions=async()=>{
+ const pileCounts=await evaluate('(()=>{try{return '+fs.readFileSync(path.join(__dirname,'pile-count-tests.js'),'utf8')+'}catch(e){return {passed:false,error:e.message,stack:e.stack}}})()');fs.writeFileSync(path.join(root,'pile-count-tests.json'),JSON.stringify(pileCounts,null,2));if(!pileCounts.passed)throw Error(pileCounts.error);
+ const cardActions=await evaluate(' (async()=>{try{return await '+fs.readFileSync(path.join(__dirname,'card-action-tests.js'),'utf8')+'}catch(e){return {passed:false,error:e.message,stack:e.stack}}})()');fs.writeFileSync(path.join(root,'card-action-tests.json'),JSON.stringify(cardActions,null,2));if(!cardActions.passed)throw Error(cardActions.error);
+ await evaluate("(async()=>{cardActionDialog.innerHTML=window.cardActionPreviewHtml;cardActionDialog.showModal();await cardActionDialog.querySelector('img').decode();})()");await pause(200);fs.writeFileSync(path.join(root,'card-actions-preview.png'),(await win.webContents.capturePage()).toPNG());await evaluate("cardActionDialog.close()");
+ };
  if(await evaluate("localStorage.getItem('rules-test-marker')")){
   await evaluate("CardFoil.ready");if(!await evaluate("state.cardFinishPreferences?.['basep-11']==='normal'&&!CardFoil.eligible(find('basep-11'))"))throw Error('Promo finish preference failed to persist');
   if(!await evaluate("!state.formats.some(f=>f.id==='wotc-neo-destiny')&&state.removedFormatIds.includes('wotc-neo-destiny')"))throw Error('Removed preset returned after restart');
   const snapshot=await evaluate("JSON.stringify({turn:rulesMatch.store.state.turn,profile:rulesMatch.spec.profile,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch),deck:rulesMatch.store.state.players.map(p=>p.deck.cards.map(c=>c._labId)),pending:RulesMatch.pending(rulesMatch).map(p=>p.type)})");
   if(snapshot!==fs.readFileSync(path.join(root,'expected-restore.json'),'utf8'))throw Error('Restored rules match changed');
   fs.writeFileSync(path.join(root,'persistence.json'),JSON.stringify({passed:true,exactJournalAndDeckOrder:true}));
-  await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
+  await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();await verifyCardActions();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
   await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
   await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await win.webContents.capturePage()).toPNG());
   await evaluate("tab='library';render();");
@@ -150,10 +156,11 @@ module.exports=async(win,root)=>{
  if(result.nodeIntegration)throw Error('Renderer Node enabled');
  fs.writeFileSync(path.join(root,'desktop-tests.json'),JSON.stringify(result,null,2));
  fs.writeFileSync(path.join(root,'expected-restore.json'),await evaluate("JSON.stringify({turn:rulesMatch.store.state.turn,profile:rulesMatch.spec.profile,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch),deck:rulesMatch.store.state.players.map(p=>p.deck.cards.map(c=>c._labId)),pending:RulesMatch.pending(rulesMatch).map(p=>p.type)})"));
- await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
+ await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();await verifyCardActions();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
  await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
  await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await win.webContents.capturePage()).toPNG());
  await evaluate("(async()=>{tab='library';render();const images=[...document.querySelectorAll('#app img')];images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode()));window.scrollTo(0,0);})()");
  await pause(500);fs.writeFileSync(path.join(root,'desktop-preview.png'),(await win.webContents.capturePage()).toPNG());
 };
+
 

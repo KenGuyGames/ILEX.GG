@@ -3,7 +3,9 @@ module.exports=async(win,root)=>{
  const evaluate=s=>win.webContents.executeJavaScript(s,true),pause=ms=>new Promise(r=>setTimeout(r,ms));
  for(let i=0;i<150;i++){if(await evaluate("typeof rulesReady!=='undefined'&&rulesReady&&cards.length===23736"))break;await pause(100)}
  if(!await evaluate('rulesReady'))throw Error('Rules catalog failed to load');
+ const dpReport=await evaluate(fs.readFileSync(path.join(__dirname,'dp-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'dp-native-tests.json'),JSON.stringify({...dpReport,engineSha256:require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'ui/rules-engine.js'))).digest('hex')},null,2));
  const exReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-tests.json'),JSON.stringify(exReport,null,2));
+ const interactionReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-interactions.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-interactions.json'),JSON.stringify(interactionReport,null,2));
  await evaluate("window.audioBootRestored=!!localStorage.getItem('rules-test-marker')");
 
 
@@ -83,13 +85,18 @@ module.exports=async(win,root)=>{
   }
   fs.writeFileSync(path.join(root,'table-sizes.json'),JSON.stringify({passed:true,sizes},null,2));win.setSize(1440,960);await pause(150);
  };
+ const verifyCardActions=async()=>{
+ const pileCounts=await evaluate('(()=>{try{return '+fs.readFileSync(path.join(__dirname,'pile-count-tests.js'),'utf8')+'}catch(e){return {passed:false,error:e.message,stack:e.stack}}})()');fs.writeFileSync(path.join(root,'pile-count-tests.json'),JSON.stringify(pileCounts,null,2));if(!pileCounts.passed)throw Error(pileCounts.error);
+ const cardActions=await evaluate(' (async()=>{try{return await '+fs.readFileSync(path.join(__dirname,'card-action-tests.js'),'utf8')+'}catch(e){return {passed:false,error:e.message,stack:e.stack}}})()');fs.writeFileSync(path.join(root,'card-action-tests.json'),JSON.stringify(cardActions,null,2));if(!cardActions.passed)throw Error(cardActions.error);
+ await evaluate("(async()=>{cardActionDialog.innerHTML=window.cardActionPreviewHtml;cardActionDialog.showModal();await cardActionDialog.querySelector('img').decode();})()");await pause(200);fs.writeFileSync(path.join(root,'card-actions-preview.png'),(await win.webContents.capturePage()).toPNG());await evaluate("cardActionDialog.close()");
+ };
  if(await evaluate("localStorage.getItem('rules-test-marker')")){
   await evaluate("CardFoil.ready");if(!await evaluate("state.cardFinishPreferences?.['basep-11']==='normal'&&!CardFoil.eligible(find('basep-11'))"))throw Error('Promo finish preference failed to persist');
   if(!await evaluate("!state.formats.some(f=>f.id==='wotc-neo-destiny')&&state.removedFormatIds.includes('wotc-neo-destiny')"))throw Error('Removed preset returned after restart');
   const snapshot=await evaluate("JSON.stringify({turn:rulesMatch.store.state.turn,profile:rulesMatch.spec.profile,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch),deck:rulesMatch.store.state.players.map(p=>p.deck.cards.map(c=>c._labId)),pending:RulesMatch.pending(rulesMatch).map(p=>p.type)})");
   if(snapshot!==fs.readFileSync(path.join(root,'expected-restore.json'),'utf8'))throw Error('Restored rules match changed');
   fs.writeFileSync(path.join(root,'persistence.json'),JSON.stringify({passed:true,exactJournalAndDeckOrder:true}));
-  await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
+  await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();await verifyCardActions();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
   await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
   await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await win.webContents.capturePage()).toPNG());
   await evaluate("tab='library';render();");
@@ -150,10 +157,11 @@ module.exports=async(win,root)=>{
  if(result.nodeIntegration)throw Error('Renderer Node enabled');
  fs.writeFileSync(path.join(root,'desktop-tests.json'),JSON.stringify(result,null,2));
  fs.writeFileSync(path.join(root,'expected-restore.json'),await evaluate("JSON.stringify({turn:rulesMatch.store.state.turn,profile:rulesMatch.spec.profile,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch),deck:rulesMatch.store.state.players.map(p=>p.deck.cards.map(c=>c._labId)),pending:RulesMatch.pending(rulesMatch).map(p=>p.type)})"));
- await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
+ await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();await verifyCardActions();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
  await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
  await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await win.webContents.capturePage()).toPNG());
  await evaluate("(async()=>{tab='library';render();const images=[...document.querySelectorAll('#app img')];images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode()));window.scrollTo(0,0);})()");
  await pause(500);fs.writeFileSync(path.join(root,'desktop-preview.png'),(await win.webContents.capturePage()).toPNG());
 };
+
 

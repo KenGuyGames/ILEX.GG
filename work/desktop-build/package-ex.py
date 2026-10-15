@@ -19,6 +19,15 @@ checks['exNative']=json.loads((tests/'ex-native-tests.json').read_text())
 checks['exAutomation']=json.loads((root/'work/rules-research/ex-focused-test-report.json').read_text())
 checks['exAttackSweep']=json.loads((root/'work/rules-research/ex-full-sweep-report.json').read_text())
 checks['exCoverage']=json.loads((ui/'ex-coverage.json').read_text())
+checks['nativeInteractions']=json.loads((tests/'ex-native-interactions.json').read_text())
+checks['pileCounts']=json.loads((tests/'pile-count-tests.json').read_text())
+assert checks['pileCounts']['passed']
+checks['cardActions']=json.loads((tests/'card-action-tests.json').read_text())
+assert checks['cardActions']['passed']
+assert checks['nativeInteractions']['passed']
+for key,file in [('interactionAudit','ex-interaction-audit.json'),('copyAudit','ex-copy-audit.json'),('matchAudit','ex-match-audit.json')]:
+    checks[key]=json.loads((root/'work/rules-research'/file).read_text())
+    assert checks[key]['passed'] and checks[key]['engineSha256']==checks['exAutomation']['engineSha256']
 assert checks['exNative']['passed'] and checks['exNative']['exReplayAndUndo']
 assert checks['exCoverage']['available']==1857 and checks['exCoverage']['pending']==0
 assert checks['exAutomation']['passed'] and checks['exAttackSweep']['passed'] and checks['exAttackSweep']['scenarios']==5302
@@ -107,7 +116,7 @@ The bot resolves its own setup, turns and supported choices automatically. Pause
 
 ## Complete EX implementation pool
 
-All 1,857 bundled EX-era printings are automated: Ruby & Sapphire through Power Keepers, the Unseen Forces Unown collection, both EX Trainer Kits, Nintendo Black Star Promos and POP Series 1–3. Crystal Guardians is 100/100, Dragon Frontiers 101/101, and Power Keepers 108/108. The release passed 160 focused EX checks and 5,302 seeded attack scenarios, shared WOTC and bot/Undo checks, desktop validation and saved-game restoration. Tested interactions cover EX plus Expedition, Aquapolis and Skyridge; Unlimited and later-era interaction sweeps remain deferred. These bounded checks do not prove every possible card combination.
+All 1,857 bundled EX-era printings are automated: Ruby & Sapphire through Power Keepers, the Unseen Forces Unown collection, both EX Trainer Kits, Nintendo Black Star Promos and POP Series 1–3. Crystal Guardians is 100/100, Dragon Frontiers 101/101, and Power Keepers 108/108. The release passed 170 focused EX checks and 5,302 seeded attack scenarios, shared WOTC and bot/Undo checks, desktop validation and saved-game restoration. Tested interactions cover EX plus Expedition, Aquapolis and Skyridge; Unlimited and later-era interaction sweeps remain deferred. These bounded checks do not prove every possible card combination.
 
 EX late rules forbid a first-turn Supporter while still skipping the first draw and permitting attacks. The early/legacy EX profile remains available; saved matches keep their existing profile. New matches using an EX format containing FireRed & LeafGreen or later select the late profile. You can explicitly select the profile in Match settings. Printing-specific EX errata and sources are recorded in resources/app/ui/RULES-SOURCES.md; source files and hashes are in resources/app/card-effect-sources/ex-source-manifest.json.
 
@@ -182,6 +191,7 @@ with zipfile.ZipFile(pending_target) as z:
     assert z.testzip() is None
 pending_target.replace(target)
 print(json.dumps({'zip':str(target),'bytes':target.stat().st_size,'verifiedScans':len(manifest),'mappedPrintings':coverage['mappedPrintings'],'testsPassed':len(checks['rulesTests']['tests'])}))
+
 
 
 

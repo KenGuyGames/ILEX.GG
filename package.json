@@ -1,1 +1,16 @@
-{"name":"ilex-gg-workspace","version":"1.5.0","private":true,"scripts":{"start":"electron work/desktop","build:rules":"node work/desktop-build/build-rules.cjs","test:rules":"node work/desktop-build/wotc-tests.cjs","test:ex":"node work/desktop-build/ex-tests.cjs --focused","test:bot":"node work/desktop-build/bot-tests.cjs"},"devDependencies":{"electron":"44.7.0"}}
+{
+  "name": "ilex-gg-workspace",
+  "version": "1.6.0",
+  "private": true,
+  "scripts": {
+    "start": "electron work/desktop",
+    "build:rules": "node work/desktop-build/build-rules.cjs",
+    "test:rules": "node work/desktop-build/wotc-tests.cjs",
+    "test:ex": "node work/desktop-build/ex-tests.cjs --focused",
+    "test:dp": "node work/desktop-build/dp-tests.cjs",
+    "test:bot": "node work/desktop-build/bot-tests.cjs"
+  },
+  "devDependencies": {
+    "electron": "44.7.0"
+  }
+}

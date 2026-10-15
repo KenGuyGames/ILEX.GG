@@ -21,6 +21,8 @@ export class DeckAnalyser {
   }
 
   public isValid(format?: Format): boolean {
+    const arceusCards=this.cards.filter(card=>card.name==='Arceus');
+    const unlimitedArceus=arceusCards.length>0&&arceusCards.every(card=>card.tags.includes(CardTag.ARCEUS));
     const countMap: { [name: string]: number } = {};
     const prismStarCards = new Set<string>();
     let hasBasicPokemon = false;
@@ -81,7 +83,7 @@ export class DeckAnalyser {
       if (!(card instanceof EnergyCard) || card.energyType !== EnergyType.BASIC) {
         const copyName = card.name.replace(/^Imposter Professor Oak$/, 'Impostor Professor Oak');
         countMap[copyName] = (countMap[copyName] || 0) + 1;
-        if (countMap[copyName] > ((card as any)._wotcMaxCopies ?? 4) && (!hasArceusRule || arceusCount !== arceusRuleCount)) {
+        if (countMap[copyName] > ((card as any)._wotcMaxCopies ?? 4) && !(copyName==='Arceus'&&unlimitedArceus)) {
           return false;
         }
       }
@@ -121,7 +123,7 @@ export class DeckAnalyser {
     }
 
     // If there is a Arceus Rule Arceus in the deck, all of them have to have the Arceus Rule for the deck to be legal with more than 4 Arceus
-    if (hasArceusRule && arceusCount !== arceusRuleCount){
+    if (hasArceusRule && arceusCount>4 && arceusCount !== arceusRuleCount){
       return false;
     }
 

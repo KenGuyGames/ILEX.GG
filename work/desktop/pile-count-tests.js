@@ -1,0 +1,19 @@
+(()=>{
+ const M=RulesMatch,R=M.R,check=(v,s)=>{if(!v)throw Error('Pile counts: '+s)},old={match:rulesMatch,tab,paused:state.botPaused,focus:seatFocus,mode:tableMode,game:state.game},checks=[];
+ try{
+  const m=M.create({profile:'wotc',seed:7,opponent:{type:'bot',humanPlayer:1,botPlayer:2,difficulty:'normal'},decks:[BotAI.decks[0],BotAI.decks[1]]},ruleMap);
+  for(let n=0;n<180&&M.pending(m).length;n++){const q=M.pending(m)[0];M.apply(m,BotAI.prompt(m,q));}
+  rulesMatch=m;state.botPaused=true;tab='play';play();const opponent=m.store.state.players.find(p=>p.id===2),tip=document.getElementById('table-count-tooltip');
+  const zone=kind=>document.querySelector('[data-count-player="2"][data-count-kind="'+kind+'"]');
+  const hover=(kind,count)=>{const el=zone(kind);check(el,'Zone '+kind);el.dispatchEvent(new PointerEvent('pointerover',{bubbles:true,clientX:innerWidth-2,clientY:innerHeight-2}));check(!tip.hidden&&tip.textContent===`Opponent ${kind}: ${count} ${count===1?'card':'cards'}`,'Exact hover '+kind);const rect=tip.getBoundingClientRect();check(rect.left>=0&&rect.right<=innerWidth&&rect.top>=0&&rect.bottom<=innerHeight,'Tooltip fits viewport');check(getComputedStyle(tip).pointerEvents==='none','Tooltip does not intercept actions');el.dispatchEvent(new PointerEvent('pointerout',{bubbles:true}));check(tip.hidden,'Leave hides');};
+  for(const kind of ['deck','discard','hand'])hover(kind,opponent[kind].cards.length);checks.push('All three opponent zones, upright readable hover and viewport bounds');
+  const hand=zone('hand');check(!hand.querySelector('[data-preview-src]'),'Hidden hand has no face previews');const before=JSON.stringify(m.journal);check(hand.tabIndex===0,'Hand is keyboard focusable');hand.dispatchEvent(new FocusEvent('focusin',{bubbles:true}));check(!tip.hidden&&tip.textContent.includes('Opponent hand:'),'Keyboard focus');document.dispatchEvent(new KeyboardEvent('keydown',{key:'Escape',bubbles:true}));check(tip.hidden,'Escape hides');check(JSON.stringify(m.journal)===before,'Inspection never dispatches actions');checks.push('Keyboard focus, Escape, hidden identities and journal unchanged');
+  opponent.deck.moveCardTo(opponent.deck.cards[0],opponent.hand);play();check(tip.hidden,'Redraw dismisses stale tooltip');hover('hand',opponent.hand.cards.length);hover('deck',opponent.deck.cards.length);checks.push('Counts refresh after draw');
+  opponent.hand.cards=[];opponent.discard.cards=[];opponent.deck.cards=[];play();for(const kind of ['deck','discard','hand'])hover(kind,0);checks.push('Zero-card piles and empty hand');
+  delete m.spec.opponent;m.store.state.activePlayer=0;play();check(document.querySelector('.far-hand').dataset.countPlayer==='2','Local opponent perspective');m.store.state.activePlayer=1;play();check(document.querySelector('.far-hand').dataset.countPlayer==='1','Local turn swaps opponent');checks.push('Local and bot viewpoints');
+  tableMode='manual';state.game={turn:1,player:0,log:[],players:[0,1].map(i=>{const p={name:'Count fixture '+i};for(const kind of zoneNames)p[kind]=[];p.deck=Array.from({length:4},(_,n)=>({id:'base1-45',uid:'deck'+i+n}));p.hand=[{id:'base1-45',uid:'hand'+i}];return p;})};play();
+  for(const kind of ['deck','discard','hand']){const el=document.querySelector('.manual-far .manual-'+kind);check(el?.dataset.countMode==='manual','Manual zone '+kind);el.dispatchEvent(new PointerEvent('pointerover',{bubbles:true,clientX:20,clientY:20}));check(tip.textContent===`Opponent ${kind}: ${state.game.players[1][kind].length} ${state.game.players[1][kind].length===1?'card':'cards'}`,'Manual count '+kind);}
+  checks.push('Manual tabletop deck, discard and hand counts');return {passed:true,checks};
+ }finally{hideTableCount();rulesMatch=old.match;tab=old.tab;state.botPaused=old.paused;seatFocus=old.focus;tableMode=old.mode;state.game=old.game;render();}
+})()
+

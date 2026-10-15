@@ -1,0 +1,170 @@
+{
+  "status": "candidate-source",
+  "total": 1558,
+  "available": 1558,
+  "pending": 0,
+  "interactionScope": [
+    "ex13",
+    "ex14",
+    "ex15",
+    "ex16",
+    "dp1",
+    "dp2",
+    "dp3",
+    "dp4",
+    "dp5",
+    "dp6",
+    "dp7",
+    "pl1",
+    "pl2",
+    "pl3",
+    "pl4",
+    "dpp",
+    "pop4",
+    "pop5",
+    "pop6",
+    "pop7",
+    "pop8",
+    "pop9",
+    "ru1",
+    "tk-dp-l",
+    "tk-dp-m"
+  ],
+  "methods": {
+    "compiled-effects": 1208,
+    "existing-source": 237,
+    "exact-printed-reprint": 27,
+    "compiled-special-energy": 8,
+    "compiled-trainer": 65,
+    "basic-energy": 2,
+    "compiled-fossil": 11
+  },
+  "bySet": [
+    {
+      "id": "dp1",
+      "name": "Diamond & Pearl",
+      "total": 130,
+      "available": 130
+    },
+    {
+      "id": "dp2",
+      "name": "Mysterious Treasures",
+      "total": 124,
+      "available": 124
+    },
+    {
+      "id": "dp3",
+      "name": "Secret Wonders",
+      "total": 132,
+      "available": 132
+    },
+    {
+      "id": "dp4",
+      "name": "Great Encounters",
+      "total": 106,
+      "available": 106
+    },
+    {
+      "id": "dp5",
+      "name": "Majestic Dawn",
+      "total": 100,
+      "available": 100
+    },
+    {
+      "id": "dp6",
+      "name": "Legends Awakened",
+      "total": 146,
+      "available": 146
+    },
+    {
+      "id": "dp7",
+      "name": "Stormfront",
+      "total": 106,
+      "available": 106
+    },
+    {
+      "id": "pl1",
+      "name": "Platinum",
+      "total": 133,
+      "available": 133
+    },
+    {
+      "id": "pl2",
+      "name": "Rising Rivals",
+      "total": 120,
+      "available": 120
+    },
+    {
+      "id": "pl3",
+      "name": "Supreme Victors",
+      "total": 153,
+      "available": 153
+    },
+    {
+      "id": "pl4",
+      "name": "Arceus",
+      "total": 111,
+      "available": 111
+    },
+    {
+      "id": "dpp",
+      "name": "DP Black Star Promos",
+      "total": 56,
+      "available": 56
+    },
+    {
+      "id": "pop4",
+      "name": "POP Series 4",
+      "total": 17,
+      "available": 17
+    },
+    {
+      "id": "pop5",
+      "name": "POP Series 5",
+      "total": 17,
+      "available": 17
+    },
+    {
+      "id": "pop6",
+      "name": "POP Series 6",
+      "total": 17,
+      "available": 17
+    },
+    {
+      "id": "pop7",
+      "name": "POP Series 7",
+      "total": 17,
+      "available": 17
+    },
+    {
+      "id": "pop8",
+      "name": "POP Series 8",
+      "total": 17,
+      "available": 17
+    },
+    {
+      "id": "pop9",
+      "name": "POP Series 9",
+      "total": 17,
+      "available": 17
+    },
+    {
+      "id": "ru1",
+      "name": "Pokémon Rumble",
+      "total": 16,
+      "available": 16
+    },
+    {
+      "id": "tk-dp-l",
+      "name": "DP trainer Kit (Lucario)",
+      "total": 11,
+      "available": 11
+    },
+    {
+      "id": "tk-dp-m",
+      "name": "DP trainer Kit (Manaphy)",
+      "total": 12,
+      "available": 12
+    }
+  ]
+}

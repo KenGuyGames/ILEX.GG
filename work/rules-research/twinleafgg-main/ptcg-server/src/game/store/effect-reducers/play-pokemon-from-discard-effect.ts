@@ -32,6 +32,7 @@ export function playPokemonFromDiscardReducer(store: StoreLike, state: State, ef
       });
       effect.player.discard.moveCardTo(effect.pokemonCard, effect.target);
       effect.target.pokemonPlayedTurn = state.turn;
+      if((state.rules as any).dpEraRules){(effect.pokemonCard as any)._dpEntryId=(state as any)._dpNextEntryId=((state as any)._dpNextEntryId||0)+1;(effect.pokemonCard as any)._wotcPowerTurn={};delete (effect.pokemonCard as any)._wotcLastUsedAttack;delete (effect.pokemonCard as any)._wotcPriorAttack;(effect.target as any)._dpAttachedFromHand=undefined;(effect.target as any)._dpEvolutionHistory=undefined;(effect.target as any)._dpBenchTurn=effect.player.bench.includes(effect.target)?state.turn:undefined;store.reduceEffect(state,{type:'DP_BASIC_ENTERED_PLAY',player:effect.player,target:effect.target,pokemonCard:effect.pokemonCard,fromHand:false,preventDefault:false} as any);}
 
       // Emit basic animation event
       emitAnimationEvent(store, 'playBasicAnimation', {

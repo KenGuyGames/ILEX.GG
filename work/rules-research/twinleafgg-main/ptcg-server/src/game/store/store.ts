@@ -1,4 +1,7 @@
+import { dpNativePowerChoice } from '../../tcg-lab-dp-power-window';
+import { dpPokemonStadiumEffect,dpGuardToolEffect } from '../../tcg-lab-dp-card-roles';
 import { syncHolonVeil } from '../../tcg-lab-ex-finish-powers';
+import { syncDpLevels, reduceDpLevel, playDpLevel } from '../../tcg-lab-dp-level';
 import { prepareExRetreatCost } from '../../tcg-lab-ex-retreat';
 import { finalBefore, finalAfter, specialEnergySuppressed, keepEnergyProtected, finalRetreat, discardPileProtected } from '../../tcg-lab-wotc-final';
 import { CardList } from './state/card-list';
@@ -162,6 +165,7 @@ export class Store implements StoreLike {
   }
 
   public reduceEffect(state: State,effect:Effect):State {
+    syncDpLevels(state);
     syncHolonVeil(this,state);
     const shield:any=(effect as any).target;if(state.rules.exEraRules&&shield?.exAllDamageShield?.turn===state.turn&&shield.exAllDamageShield.card===shield.getPokemonCard()&&shield.marker.hasMarker('EX_ALL_DAMAGE_SHIELD')&&['PUT_DAMAGE_EFFECT','DEAL_DAMAGE_EFFECT','WOTC_POWER_DAMAGE_EFFECT'].includes(effect.type)){effect.preventDefault=true;return state;}
     const previous=(CardList as any).wotcMovementContext,e:any=effect;
@@ -254,7 +258,9 @@ export class Store implements StoreLike {
 
     APPLY_ATTACK_EFFECT_ABILITY_LOCKS(state, effect);
 
-    state = this.propagateEffect(state, effect);
+    if(effect instanceof PlayPokemonEffect&&(effect.pokemonCard as any)._dpLevelUp&&!this.calculatingPlayability)state=playDpLevel(this,state,effect);
+    const dpResumeCore=(effect as any)._dpResumeCore===true;delete (effect as any)._dpResumeCore;
+    if(!dpResumeCore)state = this.propagateEffect(state, effect);
     if(effect.type==='AFTER_DAMAGE_EFFECT'&&gym._wotcKogaCandidate){const poison=()=>{if(gym.target===gym.opponent.active&&gym.target.getPokemonCard()===gym._wotcKogaCandidate&&!gym.attackEffect._wotcFledTargets?.has(gym.target)){const status=new AddSpecialConditionsEffect(gym.attackEffect,[SpecialCondition.POISONED]);status.target=gym.target;this.reduceEffect(state,status);}};if(this.hasPrompts())this.waitPrompt(state,poison);else poison();}
     if(effect.type==='CHECK_POKEMON_TYPE_EFFECT'){const check=effect as any;if(check.target.wotcCounters?.color!==undefined)check.cardTypes=[check.target.wotcCounters.color];}
     if (effect.type === 'CHECK_HP_EFFECT' || effect instanceof AttackEffect) {
@@ -699,7 +705,7 @@ export class Store implements StoreLike {
         cards.sort((a,b) => rank(a) - rank(b));
       } else cards.sort((a, b) => a.superType - b.superType);
     }
-    cards.forEach(c => {
+    [...new Set(cards)].forEach(c => {
       if (playPokemonTargetTools.includes(c)) {
         return;
       }
@@ -710,6 +716,10 @@ export class Store implements StoreLike {
 
   // Utility function to call reduceEffect with override support
   private callReduceEffect(card: Card, store: StoreLike, state: State, effect: Effect): State {
+    if((card as any)._dpPokemonStadiumRole)return dpPokemonStadiumEffect(card,store,state,effect);
+    if((card as any)._dpPokemonEnergyRole)return state;
+    if((card as any)._dpFaceDownEnergyRole)return state;
+    if((card as any)._dpPokemonToolRole)return dpGuardToolEffect(card,store,state,effect);
     if(card.superType===SuperType.ENERGY&&(card as any).energyType===1&&specialEnergySuppressed(store,state))return state;
     const damage = effect as any;
     if (['DEAL_DAMAGE_EFFECT','PUT_DAMAGE_EFFECT','AFTER_WEAKNESS_AND_RESISTANCE_EFFECT'].includes(effect.type)
@@ -753,7 +763,7 @@ export class Store implements StoreLike {
 
     try {
       // Only try override for TrainerCard (for now)
-      if ((card as any).trainerType !== undefined) {
+      if ((card as any).trainerType !== undefined && !(card as any)._dpId) {
         // Import here to avoid circular dependency at module level
         const { getOverriddenReduceEffect } = require('./card/card-effect-overrides');
         const format = (store as any)?.handler?.gameSettings?.format ?? 0;
@@ -762,7 +772,7 @@ export class Store implements StoreLike {
           return override(store, state, effect);
         }
       }
-      return card.reduceEffect(store, state, effect);
+      return reduceDpLevel(card,store,state,effect,()=>dpNativePowerChoice(store,state,card,effect,()=>card.reduceEffect(store, state, effect)));
     } finally {
       (CardList as any).wotcMovementContext=previousMovement;
       stampEffectBlocker(effect, card, alreadyBlocked);

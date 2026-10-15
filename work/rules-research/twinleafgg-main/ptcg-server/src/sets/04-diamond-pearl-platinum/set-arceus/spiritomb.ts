@@ -3,6 +3,7 @@ import { CardType, Stage, SuperType } from '../../../game/store/card/card-types'
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Effect } from '../../../game/store/effects/effect';
 import {IS_POKEBODY_BLOCKED, WAS_ATTACK_USED, MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
+import { EvolveEffect } from '../../../game/store/effects/game-effects';
 import { AttackEffect } from '../../../game/store/effects/game-effects';
 import { PlayItemEffect } from '../../../game/store/effects/play-card-effects';
 
@@ -16,7 +17,7 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
   // Look through all known cards to find out if Pokemon can evolve
   const cm = CardManager.getInstance();
   const evolutions = cm.getAllCards().filter(c => {
-    return c instanceof PokemonCard && c.stage !== Stage.BASIC;
+    return c instanceof PokemonCard && c.stage !== Stage.BASIC && c.stage !== Stage.LV_X;
   }) as PokemonCard[];
 
   // Build possible evolution card names
@@ -32,13 +33,13 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
 
   // There is nothing that can evolve
   if (evolutionNames.length === 0) {
-    throw new GameError(GameMessage.CANNOT_USE_ATTACK);
+    return store.prompt(state,new ShuffleDeckPrompt(player.id),order=>player.deck.applyOrder(order));
   }
 
   // Blocking pokemon cards, that cannot be valid evolutions
   const blocked: number[] = [];
   player.deck.cards.forEach((card, index) => {
-    if (card instanceof PokemonCard && !evolutionNames.includes(card.name)) {
+    if (card instanceof PokemonCard && (card.stage === Stage.LV_X || ![player.active,...player.bench].some(list=>list.getPokemonCard()?.name===card.evolvesFrom))) {
       blocked.push(index);
     }
   });
@@ -90,9 +91,10 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
   }
 
   // Evolve Pokemon
-  MOVE_CARDS(store, state, player.deck, targets[0], { cards: [evolution], sourceCard: effect.source.getPokemonCard()! });
-  targets[0].clearEffects();
-  targets[0].pokemonPlayedTurn = state.turn;
+  MOVE_CARDS(store,state,player.deck,player.hand,{cards:[evolution],sourceCard:effect.source.getPokemonCard()!,sourceEffect:effect});
+  const evolve:any=new EvolveEffect(player,targets[0],evolution);
+  evolve._wotcFromDeck=true;
+  store.reduceEffect(state,evolve);
 
   effect.source.damage += 10;
 

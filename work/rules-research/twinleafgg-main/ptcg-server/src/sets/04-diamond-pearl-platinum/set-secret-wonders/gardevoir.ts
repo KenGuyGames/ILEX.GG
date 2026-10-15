@@ -1,3 +1,4 @@
+import { copyDpSupporter } from '../../../tcg-lab-dp-supporter-copy';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { CardType, Stage, SuperType, TrainerType } from '../../../game/store/card/card-types';
 import { StoreLike, State, PowerType, StateUtils, TrainerCard, ChooseCardsPrompt, GameMessage, GameError } from '../../../game';
@@ -70,10 +71,7 @@ export class Gardevoir extends PokemonCard {
         { allowCancel: false, min: 1, max: 1 }
       ), cards => {
         const trainerCard = cards[0] as TrainerCard;
-        if (!CAN_PLAY_SUPPORTER_CARD(store, state, player, trainerCard, true)) {
-          return state;
-        }
-        return state;
+        return copyDpSupporter(store,state,player,trainerCard,this);
       });
     }
     // Psychic Lock

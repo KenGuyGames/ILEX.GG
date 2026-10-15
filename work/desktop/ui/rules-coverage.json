@@ -1,5 +1,5 @@
 {
-  "mappedPrintings": 15467,
+  "mappedPrintings": 16791,
   "totalScans": 23736,
   "knownIncompleteTemplates": [
     "Ariados LOT",
@@ -70,10 +70,6 @@
       "name": "Glameow"
     },
     {
-      "id": "tk-dp-m-1",
-      "name": "Buizel"
-    },
-    {
       "id": "tk-sm-r-1",
       "name": "Lightning Energy"
     },
@@ -88,10 +84,6 @@
     {
       "id": "tk-xy-w-1",
       "name": "Swirlix"
-    },
-    {
-      "id": "tk-dp-l-1",
-      "name": "Geodude"
     },
     {
       "id": "tk-xy-sy-1",
@@ -222,34 +214,6 @@
       "name": "Snivy"
     },
     {
-      "id": "dp3-1",
-      "name": "Ampharos"
-    },
-    {
-      "id": "dp5-1",
-      "name": "Articuno"
-    },
-    {
-      "id": "dp2-1",
-      "name": "Aggron"
-    },
-    {
-      "id": "dp1-1",
-      "name": "Dialga"
-    },
-    {
-      "id": "dp6-1",
-      "name": "Deoxys Normal Forme"
-    },
-    {
-      "id": "dp4-1",
-      "name": "Blaziken"
-    },
-    {
-      "id": "dp7-1",
-      "name": "Dusknoir"
-    },
-    {
       "id": "me02-001",
       "name": "Oddish"
     },
@@ -268,42 +232,6 @@
     {
       "id": "miscp-001",
       "name": "Ancient Mew"
-    },
-    {
-      "id": "pop6-1",
-      "name": "Bastiodon"
-    },
-    {
-      "id": "pop5-1",
-      "name": "Ho-Oh"
-    },
-    {
-      "id": "pop4-1",
-      "name": "Chimecho δ"
-    },
-    {
-      "id": "pop8-1",
-      "name": "Heatran"
-    },
-    {
-      "id": "pop9-1",
-      "name": "Garchomp"
-    },
-    {
-      "id": "pop7-1",
-      "name": "Ampharos"
-    },
-    {
-      "id": "ru1-1",
-      "name": "Venusaur"
-    },
-    {
-      "id": "pl1-1",
-      "name": "Ampharos"
-    },
-    {
-      "id": "pl2-1",
-      "name": "Arcanine"
     },
     {
       "id": "col1-1",
@@ -362,10 +290,6 @@
       "name": "Sewaddle"
     },
     {
-      "id": "pl3-1",
-      "name": "Absol G"
-    },
-    {
       "id": "hgss4-2",
       "name": "Altaria"
     },
@@ -410,10 +334,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-2",
-      "name": "Floatzel"
-    },
-    {
       "id": "tk-sm-r-2",
       "name": "Lightning Energy"
     },
@@ -424,10 +344,6 @@
     {
       "id": "tk-xy-w-2",
       "name": "Pidgeotto"
-    },
-    {
-      "id": "tk-dp-l-2",
-      "name": "Graveler"
     },
     {
       "id": "tk-xy-sy-2",
@@ -558,30 +474,6 @@
       "name": "Maractus"
     },
     {
-      "id": "dp3-2",
-      "name": "Blastoise"
-    },
-    {
-      "id": "dp5-2",
-      "name": "Cresselia"
-    },
-    {
-      "id": "dp2-2",
-      "name": "Alakazam"
-    },
-    {
-      "id": "dp6-2",
-      "name": "Dragonite"
-    },
-    {
-      "id": "dp4-2",
-      "name": "Cresselia"
-    },
-    {
-      "id": "dp7-2",
-      "name": "Empoleon"
-    },
-    {
       "id": "me02-002",
       "name": "Gloom"
     },
@@ -592,42 +484,6 @@
     {
       "id": "fut2020-2",
       "name": "Eevee on the Ball"
-    },
-    {
-      "id": "pop6-2",
-      "name": "Lucario"
-    },
-    {
-      "id": "pop5-2",
-      "name": "Lugia"
-    },
-    {
-      "id": "pop4-2",
-      "name": "Deoxys δ"
-    },
-    {
-      "id": "pop8-2",
-      "name": "Lucario"
-    },
-    {
-      "id": "pop9-2",
-      "name": "Manaphy"
-    },
-    {
-      "id": "pop7-2",
-      "name": "Gallade"
-    },
-    {
-      "id": "ru1-2",
-      "name": "Cherrim"
-    },
-    {
-      "id": "pl1-2",
-      "name": "Blastoise"
-    },
-    {
-      "id": "pl2-2",
-      "name": "Bastiodon GL"
     },
     {
       "id": "col1-2",
@@ -698,10 +554,6 @@
       "name": "Exeggcute"
     },
     {
-      "id": "pl3-2",
-      "name": "Blaziken FB"
-    },
-    {
       "id": "hgss4-3",
       "name": "Celebi"
     },
@@ -742,10 +594,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-3",
-      "name": "Goldeen"
-    },
-    {
       "id": "tk-sm-r-3",
       "name": "Lightning Energy"
     },
@@ -756,10 +604,6 @@
     {
       "id": "tk-xy-w-3",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-3",
-      "name": "Lucario"
     },
     {
       "id": "tk-xy-sy-3",
@@ -886,30 +730,6 @@
       "name": "Tepig"
     },
     {
-      "id": "dp3-3",
-      "name": "Charizard"
-    },
-    {
-      "id": "dp2-3",
-      "name": "Ambipom"
-    },
-    {
-      "id": "dp1-3",
-      "name": "Electivire"
-    },
-    {
-      "id": "dp6-3",
-      "name": "Froslass"
-    },
-    {
-      "id": "dp4-3",
-      "name": "Darkrai"
-    },
-    {
-      "id": "dp7-3",
-      "name": "Infernape"
-    },
-    {
       "id": "me02-003",
       "name": "Vileplume"
     },
@@ -924,46 +744,6 @@
     {
       "id": "swsh10.5-003",
       "name": "Venusaur"
-    },
-    {
-      "id": "pop6-3",
-      "name": "Manaphy"
-    },
-    {
-      "id": "pop5-3",
-      "name": "Mew δ"
-    },
-    {
-      "id": "pop4-3",
-      "name": "Flygon"
-    },
-    {
-      "id": "pop8-3",
-      "name": "Luxray"
-    },
-    {
-      "id": "pop9-3",
-      "name": "Raichu"
-    },
-    {
-      "id": "pop7-3",
-      "name": "Latias"
-    },
-    {
-      "id": "ru1-3",
-      "name": "Ninetales"
-    },
-    {
-      "id": "pl1-3",
-      "name": "Blaziken"
-    },
-    {
-      "id": "pl2-3",
-      "name": "Darkrai G"
-    },
-    {
-      "id": "pl4-3",
-      "name": "Heatran"
     },
     {
       "id": "col1-3",
@@ -1030,10 +810,6 @@
       "name": "Leavanny"
     },
     {
-      "id": "pl3-3",
-      "name": "Drifblim FB"
-    },
-    {
       "id": "hgss4-4",
       "name": "Drapion"
     },
@@ -1078,10 +854,6 @@
       "name": "Electivire"
     },
     {
-      "id": "tk-dp-m-4",
-      "name": "Manaphy"
-    },
-    {
       "id": "tk-sm-r-4",
       "name": "Stufful"
     },
@@ -1096,10 +868,6 @@
     {
       "id": "tk-xy-w-4",
       "name": "Sentret"
-    },
-    {
-      "id": "tk-dp-l-4",
-      "name": "Machoke"
     },
     {
       "id": "tk-xy-sy-4",
@@ -1226,26 +994,6 @@
       "name": "Oshawott"
     },
     {
-      "id": "dp3-4",
-      "name": "Entei"
-    },
-    {
-      "id": "dp5-4",
-      "name": "Dialga"
-    },
-    {
-      "id": "dp6-4",
-      "name": "Giratina"
-    },
-    {
-      "id": "dp4-4",
-      "name": "Darkrai"
-    },
-    {
-      "id": "dp7-4",
-      "name": "Lumineon"
-    },
-    {
       "id": "me01-004",
       "name": "Exeggcute"
     },
@@ -1256,38 +1004,6 @@
     {
       "id": "fut2020-4",
       "name": "Scorbunny on the Ball"
-    },
-    {
-      "id": "pop6-4",
-      "name": "Pachirisu"
-    },
-    {
-      "id": "pop5-4",
-      "name": "Double Rainbow Energy"
-    },
-    {
-      "id": "pop4-4",
-      "name": "Mew"
-    },
-    {
-      "id": "pop8-4",
-      "name": "Probopass"
-    },
-    {
-      "id": "pop9-4",
-      "name": "Regigigas"
-    },
-    {
-      "id": "pop7-4",
-      "name": "Latios"
-    },
-    {
-      "id": "ru1-4",
-      "name": "Heatran"
-    },
-    {
-      "id": "pl4-4",
-      "name": "Kabutops"
     },
     {
       "id": "col1-4",
@@ -1358,10 +1074,6 @@
       "name": "Pineco"
     },
     {
-      "id": "pl3-4",
-      "name": "Electivire FB"
-    },
-    {
       "id": "hgss4-5",
       "name": "Mamoswine"
     },
@@ -1406,10 +1118,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-5",
-      "name": "Piplup"
-    },
-    {
       "id": "tk-sm-r-5",
       "name": "Lightning Energy"
     },
@@ -1424,10 +1132,6 @@
     {
       "id": "tk-xy-w-5",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-5",
-      "name": "Machop"
     },
     {
       "id": "tk-xy-sy-5",
@@ -1554,30 +1258,6 @@
       "name": "Alomomola"
     },
     {
-      "id": "dp3-5",
-      "name": "Flygon"
-    },
-    {
-      "id": "dp5-5",
-      "name": "Glaceon"
-    },
-    {
-      "id": "dp2-5",
-      "name": "Blissey"
-    },
-    {
-      "id": "dp6-5",
-      "name": "Gliscor"
-    },
-    {
-      "id": "dp4-5",
-      "name": "Pachirisu"
-    },
-    {
-      "id": "dp7-5",
-      "name": "Magnezone"
-    },
-    {
       "id": "me01-005",
       "name": "Exeggutor"
     },
@@ -1596,42 +1276,6 @@
     {
       "id": "swsh10.5-005",
       "name": "Alolan Exeggutor V"
-    },
-    {
-      "id": "pop6-5",
-      "name": "Rampardos"
-    },
-    {
-      "id": "pop5-5",
-      "name": "Charmeleon δ"
-    },
-    {
-      "id": "pop4-5",
-      "name": "Sceptile"
-    },
-    {
-      "id": "pop8-5",
-      "name": "Yanmega"
-    },
-    {
-      "id": "pop9-5",
-      "name": "Rotom"
-    },
-    {
-      "id": "pop7-5",
-      "name": "Mothim"
-    },
-    {
-      "id": "ru1-5",
-      "name": "Starmie"
-    },
-    {
-      "id": "pl2-5",
-      "name": "Flygon"
-    },
-    {
-      "id": "pl4-5",
-      "name": "Luxray"
     },
     {
       "id": "col1-5",
@@ -1706,10 +1350,6 @@
       "name": "Scatterbug"
     },
     {
-      "id": "pl3-5",
-      "name": "Garchomp"
-    },
-    {
       "id": "hgss4-6",
       "name": "Nidoking"
     },
@@ -1754,10 +1394,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-6",
-      "name": "Prinplup"
-    },
-    {
       "id": "tk-sm-r-6",
       "name": "Golbat"
     },
@@ -1768,10 +1404,6 @@
     {
       "id": "tk-xy-w-6",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-6",
-      "name": "Riolu"
     },
     {
       "id": "tk-xy-sy-6",
@@ -1898,26 +1530,6 @@
       "name": "Blitzle"
     },
     {
-      "id": "dp5-6",
-      "name": "Kabutops"
-    },
-    {
-      "id": "dp2-6",
-      "name": "Bronzong"
-    },
-    {
-      "id": "dp1-6",
-      "name": "Lucario"
-    },
-    {
-      "id": "dp4-6",
-      "name": "Porygon-Z"
-    },
-    {
-      "id": "dp7-6",
-      "name": "Magnezone"
-    },
-    {
       "id": "30th-c-006",
       "name": "Dark Tyranitar"
     },
@@ -1928,46 +1540,6 @@
     {
       "id": "swsh10.5-006",
       "name": "Spinarak"
-    },
-    {
-      "id": "pop6-6",
-      "name": "Drifloon"
-    },
-    {
-      "id": "pop5-6",
-      "name": "Bill's Maintenance"
-    },
-    {
-      "id": "pop4-6",
-      "name": "Combusken"
-    },
-    {
-      "id": "pop8-6",
-      "name": "Cherrim"
-    },
-    {
-      "id": "pop9-6",
-      "name": "Buizel"
-    },
-    {
-      "id": "pop7-6",
-      "name": "Delibird"
-    },
-    {
-      "id": "ru1-6",
-      "name": "Gyarados"
-    },
-    {
-      "id": "pl1-6",
-      "name": "Dialga"
-    },
-    {
-      "id": "pl2-6",
-      "name": "Froslass GL"
-    },
-    {
-      "id": "pl4-6",
-      "name": "Mothim"
     },
     {
       "id": "col1-6",
@@ -2034,10 +1606,6 @@
       "name": "Spewpa"
     },
     {
-      "id": "pl3-6",
-      "name": "Magmortar"
-    },
-    {
       "id": "hgss3-7",
       "name": "Scizor"
     },
@@ -2078,10 +1646,6 @@
       "name": "Taillow"
     },
     {
-      "id": "tk-dp-m-7",
-      "name": "Seaking"
-    },
-    {
       "id": "tk-sm-r-7",
       "name": "Lightning Energy"
     },
@@ -2092,10 +1656,6 @@
     {
       "id": "tk-xy-w-7",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-7",
-      "name": "Starly"
     },
     {
       "id": "tk-xy-sy-7",
@@ -2226,64 +1786,12 @@
       "name": "Munna"
     },
     {
-      "id": "dp5-7",
-      "name": "Leafeon"
-    },
-    {
-      "id": "dp2-7",
-      "name": "Celebi"
-    },
-    {
-      "id": "dp1-7",
-      "name": "Luxray"
-    },
-    {
-      "id": "dp4-7",
-      "name": "Rotom"
-    },
-    {
-      "id": "dp7-7",
-      "name": "Mismagius"
-    },
-    {
       "id": "30th-c-007",
       "name": "Sneasel"
     },
     {
       "id": "swsh10.5-007",
       "name": "Ariados"
-    },
-    {
-      "id": "pop6-7",
-      "name": "Gible"
-    },
-    {
-      "id": "pop5-7",
-      "name": "Rare Candy"
-    },
-    {
-      "id": "pop4-7",
-      "name": "Grovyle"
-    },
-    {
-      "id": "pop8-7",
-      "name": "Carnivine"
-    },
-    {
-      "id": "pop9-7",
-      "name": "Croagunk"
-    },
-    {
-      "id": "pop7-7",
-      "name": "Flaaffy"
-    },
-    {
-      "id": "ru1-7",
-      "name": "Pikachu"
-    },
-    {
-      "id": "pl4-7",
-      "name": "Probopass"
     },
     {
       "id": "col1-7",
@@ -2354,10 +1862,6 @@
       "name": "Vivillon"
     },
     {
-      "id": "pl3-7",
-      "name": "Metagross"
-    },
-    {
       "id": "hgss4-8",
       "name": "Rapidash"
     },
@@ -2394,10 +1898,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-8",
-      "name": "Totodile"
-    },
-    {
       "id": "tk-sm-r-8",
       "name": "Lightning Energy"
     },
@@ -2408,10 +1908,6 @@
     {
       "id": "tk-xy-w-8",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-8",
-      "name": "Energy Search"
     },
     {
       "id": "tk-xy-sy-8",
@@ -2538,80 +2034,12 @@
       "name": "Sandile"
     },
     {
-      "id": "dp3-8",
-      "name": "Gastrodon East Sea"
-    },
-    {
-      "id": "dp5-8",
-      "name": "Manaphy"
-    },
-    {
-      "id": "dp2-8",
-      "name": "Feraligatr"
-    },
-    {
-      "id": "dp1-8",
-      "name": "Magnezone"
-    },
-    {
-      "id": "dp6-8",
-      "name": "Luxray"
-    },
-    {
-      "id": "dp4-8",
-      "name": "Sceptile"
-    },
-    {
-      "id": "dp7-8",
-      "name": "Raichu"
-    },
-    {
       "id": "30th-c-008",
       "name": "Pikachu & Zekrom GX"
     },
     {
       "id": "swsh2-8",
       "name": "Lombre"
-    },
-    {
-      "id": "pop6-8",
-      "name": "Riolu"
-    },
-    {
-      "id": "pop5-8",
-      "name": "Boost Energy"
-    },
-    {
-      "id": "pop4-8",
-      "name": "Heal Energy"
-    },
-    {
-      "id": "pop8-8",
-      "name": "Luxio"
-    },
-    {
-      "id": "pop9-8",
-      "name": "Gabite"
-    },
-    {
-      "id": "pop7-8",
-      "name": "Kirlia"
-    },
-    {
-      "id": "ru1-8",
-      "name": "Zapdos"
-    },
-    {
-      "id": "pl1-8",
-      "name": "Gardevoir"
-    },
-    {
-      "id": "pl2-8",
-      "name": "Lucario GL"
-    },
-    {
-      "id": "pl4-8",
-      "name": "Salamence"
     },
     {
       "id": "col1-8",
@@ -2670,10 +2098,6 @@
       "name": "Morelull"
     },
     {
-      "id": "pl3-8",
-      "name": "Rayquaza C"
-    },
-    {
       "id": "hgss4-9",
       "name": "Solrock"
     },
@@ -2714,10 +2138,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-9",
-      "name": "Dusk Ball"
-    },
-    {
       "id": "tk-sm-r-9",
       "name": "Lightning Energy"
     },
@@ -2728,10 +2148,6 @@
     {
       "id": "tk-xy-w-9",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-9",
-      "name": "Potion"
     },
     {
       "id": "tk-xy-sy-9",
@@ -2858,30 +2274,6 @@
       "name": "Zorua"
     },
     {
-      "id": "dp3-9",
-      "name": "Gastrodon West Sea"
-    },
-    {
-      "id": "dp5-9",
-      "name": "Mewtwo"
-    },
-    {
-      "id": "dp1-9",
-      "name": "Manaphy"
-    },
-    {
-      "id": "dp6-9",
-      "name": "Mamoswine"
-    },
-    {
-      "id": "dp4-9",
-      "name": "Swampert"
-    },
-    {
-      "id": "dp7-9",
-      "name": "Regigigas"
-    },
-    {
       "id": "me02-009",
       "name": "Nymble"
     },
@@ -2892,38 +2284,6 @@
     {
       "id": "swsh10.5-009",
       "name": "Charmeleon"
-    },
-    {
-      "id": "pop6-9",
-      "name": "Pikachu"
-    },
-    {
-      "id": "pop5-9",
-      "name": "δ Rainbow Energy"
-    },
-    {
-      "id": "pop4-9",
-      "name": "Pokémon Fan Club"
-    },
-    {
-      "id": "pop8-9",
-      "name": "Night Maintenance"
-    },
-    {
-      "id": "pop9-9",
-      "name": "Lopunny"
-    },
-    {
-      "id": "pop7-9",
-      "name": "Stantler"
-    },
-    {
-      "id": "ru1-9",
-      "name": "Mewtwo"
-    },
-    {
-      "id": "pl4-9",
-      "name": "Swalot"
     },
     {
       "id": "col1-9",
@@ -2990,10 +2350,6 @@
       "name": "Shiinotic"
     },
     {
-      "id": "pl3-9",
-      "name": "Regigigas FB"
-    },
-    {
       "id": "hgss2-10",
       "name": "Torterra"
     },
@@ -3042,10 +2398,6 @@
       "name": "Lightning Energy"
     },
     {
-      "id": "tk-dp-m-10",
-      "name": "Energy Search"
-    },
-    {
       "id": "tk-sm-r-10",
       "name": "Lightning Energy"
     },
@@ -3056,10 +2408,6 @@
     {
       "id": "tk-xy-w-10",
       "name": "Fairy Energy"
-    },
-    {
-      "id": "tk-dp-l-10",
-      "name": "Quick Ball"
     },
     {
       "id": "tk-xy-sy-10",
@@ -3186,76 +2534,12 @@
       "name": "Klink"
     },
     {
-      "id": "dp3-10",
-      "name": "Ho-Oh"
-    },
-    {
-      "id": "dp2-10",
-      "name": "Honchkrow"
-    },
-    {
-      "id": "dp1-10",
-      "name": "Mismagius"
-    },
-    {
-      "id": "dp6-10",
-      "name": "Metagross"
-    },
-    {
-      "id": "dp4-10",
-      "name": "Tangrowth"
-    },
-    {
-      "id": "dp7-10",
-      "name": "Sceptile"
-    },
-    {
       "id": "me02-010",
       "name": "Lokix"
     },
     {
       "id": "30th-c-010",
       "name": "Uxie"
-    },
-    {
-      "id": "pop6-10",
-      "name": "Staravia"
-    },
-    {
-      "id": "pop5-10",
-      "name": "Charmander δ"
-    },
-    {
-      "id": "pop4-10",
-      "name": "Scramble Energy"
-    },
-    {
-      "id": "pop8-10",
-      "name": "Rare Candy"
-    },
-    {
-      "id": "pop9-10",
-      "name": "Pachirisu"
-    },
-    {
-      "id": "pop7-10",
-      "name": "Wormadam Sandy Cloak"
-    },
-    {
-      "id": "ru1-10",
-      "name": "Mew"
-    },
-    {
-      "id": "pl1-10",
-      "name": "Giratina"
-    },
-    {
-      "id": "pl2-10",
-      "name": "Mismagius GL"
-    },
-    {
-      "id": "pl4-10",
-      "name": "Tangrowth"
     },
     {
       "id": "col1-10",
@@ -3322,10 +2606,6 @@
       "name": "Dhelmise"
     },
     {
-      "id": "pl3-10",
-      "name": "Rhyperior"
-    },
-    {
       "id": "hgss3-11",
       "name": "Dodrio"
     },
@@ -3366,10 +2646,6 @@
       "name": "Electrike"
     },
     {
-      "id": "tk-dp-m-11",
-      "name": "Potion"
-    },
-    {
       "id": "tk-sm-r-11",
       "name": "Zubat"
     },
@@ -3384,10 +2660,6 @@
     {
       "id": "tk-xy-w-11",
       "name": "Pidgey"
-    },
-    {
-      "id": "tk-dp-l-11",
-      "name": "Fighting Energy"
     },
     {
       "id": "tk-xy-sy-11",
@@ -3518,76 +2790,8 @@
       "name": "Pidove"
     },
     {
-      "id": "dp3-11",
-      "name": "Jumpluff"
-    },
-    {
-      "id": "dp5-11",
-      "name": "Palkia"
-    },
-    {
-      "id": "dp2-11",
-      "name": "Lumineon"
-    },
-    {
-      "id": "dp1-11",
-      "name": "Palkia"
-    },
-    {
-      "id": "dp6-11",
-      "name": "Mewtwo"
-    },
-    {
-      "id": "dp4-11",
-      "name": "Togekiss"
-    },
-    {
-      "id": "dp7-11",
-      "name": "Torterra"
-    },
-    {
       "id": "30th-c-011",
       "name": "Crobat G"
-    },
-    {
-      "id": "pop6-11",
-      "name": "Bidoof"
-    },
-    {
-      "id": "pop5-11",
-      "name": "Meowth δ"
-    },
-    {
-      "id": "pop4-11",
-      "name": "Mudkip"
-    },
-    {
-      "id": "pop8-11",
-      "name": "Roseanne’s Research"
-    },
-    {
-      "id": "pop9-11",
-      "name": "Pichu"
-    },
-    {
-      "id": "pop7-11",
-      "name": "Burmy Plant Cloak"
-    },
-    {
-      "id": "ru1-11",
-      "name": "Diglett"
-    },
-    {
-      "id": "pl1-11",
-      "name": "Manectric"
-    },
-    {
-      "id": "pl2-11",
-      "name": "Rampardos GL"
-    },
-    {
-      "id": "pl4-11",
-      "name": "Toxicroak"
     },
     {
       "id": "B2a-011",
@@ -3684,10 +2888,6 @@
     {
       "id": "tk-xy-p-12",
       "name": "Blitzle"
-    },
-    {
-      "id": "tk-dp-m-12",
-      "name": "Water Energy"
     },
     {
       "id": "tk-sm-r-12",
@@ -3834,68 +3034,8 @@
       "name": "Audino"
     },
     {
-      "id": "dp3-12",
-      "name": "Lickilicky"
-    },
-    {
-      "id": "dp5-12",
-      "name": "Phione"
-    },
-    {
-      "id": "dp2-12",
-      "name": "Magmortar"
-    },
-    {
-      "id": "dp1-12",
-      "name": "Rhyperior"
-    },
-    {
-      "id": "dp6-12",
-      "name": "Politoed"
-    },
-    {
-      "id": "dp4-12",
-      "name": "Altaria"
-    },
-    {
-      "id": "dp7-12",
-      "name": "Abomasnow"
-    },
-    {
       "id": "30th-c-012",
       "name": "Raikou"
-    },
-    {
-      "id": "pop6-12",
-      "name": "Buneary"
-    },
-    {
-      "id": "pop5-12",
-      "name": "Pikachu"
-    },
-    {
-      "id": "pop4-12",
-      "name": "Pidgey"
-    },
-    {
-      "id": "pop8-12",
-      "name": "Chimchar"
-    },
-    {
-      "id": "pop9-12",
-      "name": "Buneary"
-    },
-    {
-      "id": "pop7-12",
-      "name": "Burmy Sandy Cloak"
-    },
-    {
-      "id": "ru1-12",
-      "name": "Lucario"
-    },
-    {
-      "id": "pl4-12",
-      "name": "Zapdos G"
     },
     {
       "id": "col1-12",
@@ -3948,10 +3088,6 @@
     {
       "id": "sve-012",
       "name": "Lightning Energy"
-    },
-    {
-      "id": "pl3-12",
-      "name": "Swampert"
     },
     {
       "id": "hgss4-13",
@@ -4106,30 +3242,6 @@
       "name": "Eevee"
     },
     {
-      "id": "dp3-13",
-      "name": "Ludicolo"
-    },
-    {
-      "id": "dp5-13",
-      "name": "Rotom"
-    },
-    {
-      "id": "dp2-13",
-      "name": "Meganium"
-    },
-    {
-      "id": "dp1-13",
-      "name": "Roserade"
-    },
-    {
-      "id": "dp6-13",
-      "name": "Probopass"
-    },
-    {
-      "id": "dp7-13",
-      "name": "Bronzong"
-    },
-    {
       "id": "me01-013",
       "name": "Seedot"
     },
@@ -4140,46 +3252,6 @@
     {
       "id": "swsh10.5-013",
       "name": "Numel"
-    },
-    {
-      "id": "pop6-13",
-      "name": "Cherubi"
-    },
-    {
-      "id": "pop5-13",
-      "name": "Pikachu δ"
-    },
-    {
-      "id": "pop4-13",
-      "name": "Pikachu"
-    },
-    {
-      "id": "pop8-13",
-      "name": "Croagunk"
-    },
-    {
-      "id": "pop9-13",
-      "name": "Chimchar"
-    },
-    {
-      "id": "pop7-13",
-      "name": "Corsola"
-    },
-    {
-      "id": "ru1-13",
-      "name": "Skuntank"
-    },
-    {
-      "id": "pl1-13",
-      "name": "Rampardos"
-    },
-    {
-      "id": "pl2-13",
-      "name": "Shiftry"
-    },
-    {
-      "id": "pl4-13",
-      "name": "Aerodactyl"
     },
     {
       "id": "col1-13",
@@ -4240,10 +3312,6 @@
     {
       "id": "sv10-013",
       "name": "Fomantis"
-    },
-    {
-      "id": "pl3-13",
-      "name": "Venusaur"
     },
     {
       "id": "hgss4-14",
@@ -4398,76 +3466,12 @@
       "name": "Rayquaza"
     },
     {
-      "id": "dp3-14",
-      "name": "Lugia"
-    },
-    {
-      "id": "dp5-14",
-      "name": "Zapdos"
-    },
-    {
-      "id": "dp1-14",
-      "name": "Shiftry"
-    },
-    {
-      "id": "dp6-14",
-      "name": "Rayquaza"
-    },
-    {
-      "id": "dp4-14",
-      "name": "Butterfree"
-    },
-    {
-      "id": "dp7-14",
-      "name": "Cherrim"
-    },
-    {
       "id": "me01-014",
       "name": "Nuzleaf"
     },
     {
       "id": "30th-c-014",
       "name": "Pikachu"
-    },
-    {
-      "id": "pop6-14",
-      "name": "Chimchar"
-    },
-    {
-      "id": "pop5-14",
-      "name": "Pelipper δ"
-    },
-    {
-      "id": "pop4-14",
-      "name": "Squirtle"
-    },
-    {
-      "id": "pop8-14",
-      "name": "Happiny"
-    },
-    {
-      "id": "pop9-14",
-      "name": "Gible"
-    },
-    {
-      "id": "pop7-14",
-      "name": "Mareep"
-    },
-    {
-      "id": "ru1-14",
-      "name": "Bastiodon"
-    },
-    {
-      "id": "pl1-14",
-      "name": "Shaymin"
-    },
-    {
-      "id": "pl2-14",
-      "name": "Aggron"
-    },
-    {
-      "id": "pl4-14",
-      "name": "Bronzong"
     },
     {
       "id": "B2a-014",
@@ -4524,10 +3528,6 @@
     {
       "id": "sv10-014",
       "name": "Lurantis"
-    },
-    {
-      "id": "pl3-14",
-      "name": "Yanmega"
     },
     {
       "id": "hgss4-15",
@@ -4674,26 +3674,6 @@
       "name": "Drampa"
     },
     {
-      "id": "dp5-15",
-      "name": "Aerodactyl"
-    },
-    {
-      "id": "dp2-15",
-      "name": "Raichu"
-    },
-    {
-      "id": "dp1-15",
-      "name": "Skuntank"
-    },
-    {
-      "id": "dp6-15",
-      "name": "Regigigas"
-    },
-    {
-      "id": "dp7-15",
-      "name": "Drapion"
-    },
-    {
       "id": "me01-015",
       "name": "Shiftry"
     },
@@ -4704,42 +3684,6 @@
     {
       "id": "swsh10.5-015",
       "name": "Squirtle"
-    },
-    {
-      "id": "pop6-15",
-      "name": "Piplup"
-    },
-    {
-      "id": "pop5-15",
-      "name": "Zangoose δ"
-    },
-    {
-      "id": "pop4-15",
-      "name": "Treecko δ"
-    },
-    {
-      "id": "pop8-15",
-      "name": "Piplup"
-    },
-    {
-      "id": "pop9-15",
-      "name": "Pikachu"
-    },
-    {
-      "id": "pop7-15",
-      "name": "Ralts"
-    },
-    {
-      "id": "ru1-15",
-      "name": "Rattata"
-    },
-    {
-      "id": "pl1-15",
-      "name": "Shaymin"
-    },
-    {
-      "id": "pl4-15",
-      "name": "Cherrim"
     },
     {
       "id": "col1-15",
@@ -4800,10 +3744,6 @@
     {
       "id": "sv10-015",
       "name": "Team Rocket's Blipbug"
-    },
-    {
-      "id": "pl3-15",
-      "name": "Arcanine G"
     },
     {
       "id": "hgss4-16",
@@ -4946,68 +3886,12 @@
       "name": "Scorbunny"
     },
     {
-      "id": "dp3-16",
-      "name": "Raikou"
-    },
-    {
-      "id": "dp1-16",
-      "name": "Staraptor"
-    },
-    {
-      "id": "dp6-16",
-      "name": "Spiritomb"
-    },
-    {
-      "id": "dp4-16",
-      "name": "Dialga"
-    },
-    {
-      "id": "dp7-16",
-      "name": "Drifblim"
-    },
-    {
       "id": "30th-c-016",
       "name": "Rayquaza EX"
     },
     {
       "id": "mep-016",
       "name": "Flygon"
-    },
-    {
-      "id": "pop6-16",
-      "name": "Starly"
-    },
-    {
-      "id": "pop5-16",
-      "name": "Espeon ★"
-    },
-    {
-      "id": "pop4-16",
-      "name": "Wobbuffet"
-    },
-    {
-      "id": "pop8-16",
-      "name": "Riolu"
-    },
-    {
-      "id": "pop9-16",
-      "name": "Piplup"
-    },
-    {
-      "id": "pop7-16",
-      "name": "Sentret"
-    },
-    {
-      "id": "ru1-16",
-      "name": "Bibarel"
-    },
-    {
-      "id": "pl1-16",
-      "name": "Slaking"
-    },
-    {
-      "id": "pl2-16",
-      "name": "Bronzong E4"
     },
     {
       "id": "col1-16",
@@ -5076,10 +3960,6 @@
     {
       "id": "sv10.5w-016",
       "name": "Litwick"
-    },
-    {
-      "id": "pl3-16",
-      "name": "Articuno"
     },
     {
       "id": "hgss2-17",
@@ -5198,72 +4078,12 @@
       "name": "Squirtle"
     },
     {
-      "id": "dp3-17",
-      "name": "Roserade"
-    },
-    {
-      "id": "dp2-17",
-      "name": "Tyranitar"
-    },
-    {
-      "id": "dp1-17",
-      "name": "Torterra"
-    },
-    {
-      "id": "dp6-17",
-      "name": "Yanmega"
-    },
-    {
-      "id": "dp4-17",
-      "name": "Exploud"
-    },
-    {
-      "id": "dp7-17",
-      "name": "Dusknoir"
-    },
-    {
       "id": "30th-c-017",
       "name": "Solgaleo GX"
     },
     {
       "id": "swsh1-17",
       "name": "Blipbug"
-    },
-    {
-      "id": "pop6-17",
-      "name": "Turtwig"
-    },
-    {
-      "id": "pop5-17",
-      "name": "Umbreon ★"
-    },
-    {
-      "id": "pop4-17",
-      "name": "Deoxys ex"
-    },
-    {
-      "id": "pop8-17",
-      "name": "Turtwig"
-    },
-    {
-      "id": "pop9-17",
-      "name": "Turtwig"
-    },
-    {
-      "id": "pop7-17",
-      "name": "Spinda"
-    },
-    {
-      "id": "pl1-17",
-      "name": "Weavile G"
-    },
-    {
-      "id": "pl2-17",
-      "name": "Drapion E4"
-    },
-    {
-      "id": "pl4-17",
-      "name": "Gengar"
     },
     {
       "id": "B2a-017",
@@ -5312,10 +4132,6 @@
     {
       "id": "sv10.5b-017",
       "name": "Panpour"
-    },
-    {
-      "id": "pl3-17",
-      "name": "Butterfree FB"
     },
     {
       "id": "hgss4-18",
@@ -5458,30 +4274,6 @@
       "name": "Totodile"
     },
     {
-      "id": "dp3-18",
-      "name": "Salamence"
-    },
-    {
-      "id": "dp5-18",
-      "name": "Espeon"
-    },
-    {
-      "id": "dp2-18",
-      "name": "Uxie"
-    },
-    {
-      "id": "dp1-18",
-      "name": "Azumarill"
-    },
-    {
-      "id": "dp6-18",
-      "name": "Armaldo"
-    },
-    {
-      "id": "dp4-18",
-      "name": "Houndoom"
-    },
-    {
       "id": "me01-018",
       "name": "Dhelmise"
     },
@@ -5496,18 +4288,6 @@
     {
       "id": "swsh10.5-018",
       "name": "Radiant Blastoise"
-    },
-    {
-      "id": "pl1-18",
-      "name": "Altaria"
-    },
-    {
-      "id": "pl2-18",
-      "name": "Espeon E4"
-    },
-    {
-      "id": "pl4-18",
-      "name": "Glalie"
     },
     {
       "id": "B2a-018",
@@ -5564,10 +4344,6 @@
     {
       "id": "sv10.5b-018",
       "name": "Simipour"
-    },
-    {
-      "id": "pl3-18",
-      "name": "Camerupt"
     },
     {
       "id": "hgss4-19",
@@ -5710,26 +4486,6 @@
       "name": "Mudkip"
     },
     {
-      "id": "dp3-19",
-      "name": "Suicune"
-    },
-    {
-      "id": "dp5-19",
-      "name": "Flareon"
-    },
-    {
-      "id": "dp2-19",
-      "name": "Abomasnow"
-    },
-    {
-      "id": "dp1-19",
-      "name": "Beautifly"
-    },
-    {
-      "id": "dp4-19",
-      "name": "Hypno"
-    },
-    {
       "id": "me01-019",
       "name": "Vulpix"
     },
@@ -5740,18 +4496,6 @@
     {
       "id": "mep-019",
       "name": "Whimsicott"
-    },
-    {
-      "id": "pl1-19",
-      "name": "Banette"
-    },
-    {
-      "id": "pl2-19",
-      "name": "Flareon"
-    },
-    {
-      "id": "pl4-19",
-      "name": "Golem"
     },
     {
       "id": "col1-19",
@@ -5812,10 +4556,6 @@
     {
       "id": "sv10.5w-019",
       "name": "Heatmor"
-    },
-    {
-      "id": "pl3-19",
-      "name": "Camerupt G"
     },
     {
       "id": "hgss4-20",
@@ -5946,30 +4686,6 @@
       "name": "Piplup"
     },
     {
-      "id": "dp3-20",
-      "name": "Venusaur"
-    },
-    {
-      "id": "dp5-20",
-      "name": "Glaceon"
-    },
-    {
-      "id": "dp2-20",
-      "name": "Ariados"
-    },
-    {
-      "id": "dp1-20",
-      "name": "Bibarel"
-    },
-    {
-      "id": "dp6-20",
-      "name": "Bellossom"
-    },
-    {
-      "id": "dp4-20",
-      "name": "Kingler"
-    },
-    {
       "id": "me01-020",
       "name": "Ninetales"
     },
@@ -5984,18 +4700,6 @@
     {
       "id": "swsh2-20",
       "name": "Applin"
-    },
-    {
-      "id": "pl1-20",
-      "name": "Bastiodon"
-    },
-    {
-      "id": "pl2-20",
-      "name": "Gallade E4"
-    },
-    {
-      "id": "pl4-20",
-      "name": "Hariyama"
     },
     {
       "id": "col1-20",
@@ -6048,10 +4752,6 @@
     {
       "id": "sv08-020",
       "name": "Castform Sunny Form"
-    },
-    {
-      "id": "pl3-20",
-      "name": "Charizard G"
     },
     {
       "id": "hgss4-21",
@@ -6190,52 +4890,12 @@
       "name": "Oshawott"
     },
     {
-      "id": "dp3-21",
-      "name": "Absol"
-    },
-    {
-      "id": "dp5-21",
-      "name": "Hippowdon"
-    },
-    {
-      "id": "dp2-21",
-      "name": "Bastiodon"
-    },
-    {
-      "id": "dp1-21",
-      "name": "Carnivine"
-    },
-    {
-      "id": "dp6-21",
-      "name": "Cradily"
-    },
-    {
-      "id": "dp4-21",
-      "name": "Lapras"
-    },
-    {
-      "id": "dp7-21",
-      "name": "Mamoswine"
-    },
-    {
       "id": "me02-021",
       "name": "Seel"
     },
     {
       "id": "30th-c-021",
       "name": "N"
-    },
-    {
-      "id": "pl1-21",
-      "name": "Beautifly"
-    },
-    {
-      "id": "pl2-21",
-      "name": "Gastrodon East Sea"
-    },
-    {
-      "id": "pl4-21",
-      "name": "Lopunny"
     },
     {
       "id": "B2a-021",
@@ -6276,10 +4936,6 @@
     {
       "id": "sv07-021",
       "name": "Pansear"
-    },
-    {
-      "id": "pl3-21",
-      "name": "Chimecho"
     },
     {
       "id": "hgss4-22",
@@ -6418,52 +5074,12 @@
       "name": "Froakie"
     },
     {
-      "id": "dp3-22",
-      "name": "Arcanine"
-    },
-    {
-      "id": "dp5-22",
-      "name": "Infernape"
-    },
-    {
-      "id": "dp2-22",
-      "name": "Chimecho"
-    },
-    {
-      "id": "dp1-22",
-      "name": "Clefable"
-    },
-    {
-      "id": "dp6-22",
-      "name": "Crawdaunt"
-    },
-    {
-      "id": "dp4-22",
-      "name": "Latias"
-    },
-    {
-      "id": "dp7-22",
-      "name": "Rapidash"
-    },
-    {
       "id": "me02-022",
       "name": "Dewgong"
     },
     {
       "id": "30th-c-022",
       "name": "Palkia"
-    },
-    {
-      "id": "pl1-22",
-      "name": "Blissey"
-    },
-    {
-      "id": "pl2-22",
-      "name": "Gastrodon West Sea"
-    },
-    {
-      "id": "pl4-22",
-      "name": "Manectric"
     },
     {
       "id": "B2a-022",
@@ -6504,10 +5120,6 @@
     {
       "id": "sv07-022",
       "name": "Reshiram"
-    },
-    {
-      "id": "pl3-22",
-      "name": "Claydol"
     },
     {
       "id": "hgss4-23",
@@ -6642,34 +5254,6 @@
       "name": "Popplio"
     },
     {
-      "id": "dp3-23",
-      "name": "Banette"
-    },
-    {
-      "id": "dp5-23",
-      "name": "Jolteon"
-    },
-    {
-      "id": "dp2-23",
-      "name": "Crobat"
-    },
-    {
-      "id": "dp1-23",
-      "name": "Drapion"
-    },
-    {
-      "id": "dp6-23",
-      "name": "Delcatty"
-    },
-    {
-      "id": "dp4-23",
-      "name": "Latios"
-    },
-    {
-      "id": "dp7-23",
-      "name": "Roserade"
-    },
-    {
       "id": "me02-023",
       "name": "Swinub"
     },
@@ -6688,18 +5272,6 @@
     {
       "id": "cel25-23",
       "name": "Professor's Research (Professor Oak)"
-    },
-    {
-      "id": "pl1-23",
-      "name": "Dialga"
-    },
-    {
-      "id": "pl2-23",
-      "name": "Golem E4"
-    },
-    {
-      "id": "pl4-23",
-      "name": "Omastar"
     },
     {
       "id": "col1-23",
@@ -6748,10 +5320,6 @@
     {
       "id": "sv08-023",
       "name": "Simisear"
-    },
-    {
-      "id": "pl3-23",
-      "name": "Crawdaunt G"
     },
     {
       "id": "hgss4-24",
@@ -6886,34 +5454,6 @@
       "name": "Sobble"
     },
     {
-      "id": "dp3-24",
-      "name": "Dugtrio"
-    },
-    {
-      "id": "dp5-24",
-      "name": "Leafeon"
-    },
-    {
-      "id": "dp2-24",
-      "name": "Exeggutor"
-    },
-    {
-      "id": "dp1-24",
-      "name": "Drifblim"
-    },
-    {
-      "id": "dp6-24",
-      "name": "Deoxys Attack Forme"
-    },
-    {
-      "id": "dp4-24",
-      "name": "Mawile"
-    },
-    {
-      "id": "dp7-24",
-      "name": "Salamence"
-    },
-    {
       "id": "me02-024",
       "name": "Piloswine"
     },
@@ -6928,18 +5468,6 @@
     {
       "id": "cel25-24",
       "name": "Professor's Research (Professor Oak)"
-    },
-    {
-      "id": "pl1-24",
-      "name": "Dugtrio"
-    },
-    {
-      "id": "pl2-24",
-      "name": "Heracross E4"
-    },
-    {
-      "id": "pl4-24",
-      "name": "Pelipper"
     },
     {
       "id": "B2a-024",
@@ -6992,10 +5520,6 @@
     {
       "id": "sv10.5w-024",
       "name": "Basculin"
-    },
-    {
-      "id": "pl3-24",
-      "name": "Dewgong"
     },
     {
       "id": "hgss4-25",
@@ -7130,30 +5654,6 @@
       "name": "Pikachu"
     },
     {
-      "id": "dp5-25",
-      "name": "Minun"
-    },
-    {
-      "id": "dp2-25",
-      "name": "Glalie"
-    },
-    {
-      "id": "dp1-25",
-      "name": "Dustox"
-    },
-    {
-      "id": "dp6-25",
-      "name": "Deoxys Defense Forme"
-    },
-    {
-      "id": "dp4-25",
-      "name": "Milotic"
-    },
-    {
-      "id": "dp7-25",
-      "name": "Scizor"
-    },
-    {
       "id": "me02-025",
       "name": "Mamoswine"
     },
@@ -7168,18 +5668,6 @@
     {
       "id": "swsh10.5-025",
       "name": "Wimpod"
-    },
-    {
-      "id": "pl1-25",
-      "name": "Dustox"
-    },
-    {
-      "id": "pl2-25",
-      "name": "Hippowdon"
-    },
-    {
-      "id": "pl4-25",
-      "name": "Pichu"
     },
     {
       "id": "col1-25",
@@ -7240,10 +5728,6 @@
     {
       "id": "sv08-025",
       "name": "Volcarona"
-    },
-    {
-      "id": "pl3-25",
-      "name": "Dodrio"
     },
     {
       "id": "hgss4-26",
@@ -7378,34 +5862,6 @@
       "name": "Vulpix"
     },
     {
-      "id": "dp3-26",
-      "name": "Electrode"
-    },
-    {
-      "id": "dp5-26",
-      "name": "Omastar"
-    },
-    {
-      "id": "dp2-26",
-      "name": "Gyarados"
-    },
-    {
-      "id": "dp1-26",
-      "name": "Floatzel"
-    },
-    {
-      "id": "dp6-26",
-      "name": "Deoxys Speed Forme"
-    },
-    {
-      "id": "dp4-26",
-      "name": "Palkia"
-    },
-    {
-      "id": "dp7-26",
-      "name": "Skuntank"
-    },
-    {
       "id": "me02-026",
       "name": "Suicune"
     },
@@ -7420,18 +5876,6 @@
     {
       "id": "swsh10.5-026",
       "name": "Golisopod"
-    },
-    {
-      "id": "pl1-26",
-      "name": "Empoleon"
-    },
-    {
-      "id": "pl2-26",
-      "name": "Jolteon"
-    },
-    {
-      "id": "pl4-26",
-      "name": "Porygon-Z G"
     },
     {
       "id": "col1-26",
@@ -7480,10 +5924,6 @@
     {
       "id": "sv08-026",
       "name": "Oricorio"
-    },
-    {
-      "id": "pl3-26",
-      "name": "Dusknoir FB"
     },
     {
       "id": "hgss2-27",
@@ -7602,52 +6042,12 @@
       "name": "Ninetales"
     },
     {
-      "id": "dp3-27",
-      "name": "Furret"
-    },
-    {
-      "id": "dp5-27",
-      "name": "Phione"
-    },
-    {
-      "id": "dp2-27",
-      "name": "Kricketune"
-    },
-    {
-      "id": "dp1-27",
-      "name": "Gengar"
-    },
-    {
-      "id": "dp6-27",
-      "name": "Ditto"
-    },
-    {
-      "id": "dp4-27",
-      "name": "Primeape"
-    },
-    {
-      "id": "dp7-27",
-      "name": "Staraptor"
-    },
-    {
       "id": "30th-c-027",
       "name": "Arceus VSTAR"
     },
     {
       "id": "swsh10.5-027",
       "name": "Pikachu"
-    },
-    {
-      "id": "pl1-27",
-      "name": "Giratina"
-    },
-    {
-      "id": "pl2-27",
-      "name": "Mamoswine GL"
-    },
-    {
-      "id": "pl4-27",
-      "name": "Raichu"
     },
     {
       "id": "col1-27",
@@ -7700,10 +6100,6 @@
     {
       "id": "sv10-027",
       "name": "Growlithe"
-    },
-    {
-      "id": "pl3-27",
-      "name": "Empoleon FB"
     },
     {
       "id": "hgss4-28",
@@ -7818,34 +6214,6 @@
       "name": "Jolteon-EX"
     },
     {
-      "id": "dp3-28",
-      "name": "Golduck"
-    },
-    {
-      "id": "dp5-28",
-      "name": "Plusle"
-    },
-    {
-      "id": "dp2-28",
-      "name": "Manectric"
-    },
-    {
-      "id": "dp1-28",
-      "name": "Heracross"
-    },
-    {
-      "id": "dp6-28",
-      "name": "Forretress"
-    },
-    {
-      "id": "dp4-28",
-      "name": "Slowking"
-    },
-    {
-      "id": "dp7-28",
-      "name": "Steelix"
-    },
-    {
       "id": "30th-c-028",
       "name": "Zacian V"
     },
@@ -7856,18 +6224,6 @@
     {
       "id": "swsh10.5-028",
       "name": "Pikachu"
-    },
-    {
-      "id": "pl1-28",
-      "name": "Giratina"
-    },
-    {
-      "id": "pl2-28",
-      "name": "Mr. Mime E4"
-    },
-    {
-      "id": "pl4-28",
-      "name": "Rapidash"
     },
     {
       "id": "col1-28",
@@ -7932,10 +6288,6 @@
     {
       "id": "sv10-028",
       "name": "Arcanine"
-    },
-    {
-      "id": "pl3-28",
-      "name": "Exploud"
     },
     {
       "id": "hgss4-29",
@@ -8066,48 +6418,12 @@
       "name": "Fletchinder"
     },
     {
-      "id": "dp3-29",
-      "name": "Golem"
-    },
-    {
-      "id": "dp2-29",
-      "name": "Mantine"
-    },
-    {
-      "id": "dp1-29",
-      "name": "Hippowdon"
-    },
-    {
-      "id": "dp6-29",
-      "name": "Groudon"
-    },
-    {
-      "id": "dp4-29",
-      "name": "Unown H"
-    },
-    {
-      "id": "dp7-29",
-      "name": "Tangrowth"
-    },
-    {
       "id": "me01-029",
       "name": "Sizzlipede"
     },
     {
       "id": "30th-c-029",
       "name": "Lugia"
-    },
-    {
-      "id": "pl1-29",
-      "name": "Golduck"
-    },
-    {
-      "id": "pl2-29",
-      "name": "Nidoking"
-    },
-    {
-      "id": "pl4-29",
-      "name": "Raticate"
     },
     {
       "id": "B2a-029",
@@ -8286,34 +6602,6 @@
       "name": "Torkoal"
     },
     {
-      "id": "dp3-30",
-      "name": "Jynx"
-    },
-    {
-      "id": "dp5-30",
-      "name": "Torterra"
-    },
-    {
-      "id": "dp2-30",
-      "name": "Mr. Mime"
-    },
-    {
-      "id": "dp1-30",
-      "name": "Lopunny"
-    },
-    {
-      "id": "dp6-30",
-      "name": "Heatran"
-    },
-    {
-      "id": "dp4-30",
-      "name": "Wailord"
-    },
-    {
-      "id": "dp7-30",
-      "name": "Tyranitar"
-    },
-    {
       "id": "me02-030",
       "name": "Yamper"
     },
@@ -8328,14 +6616,6 @@
     {
       "id": "swsh10.5-030",
       "name": "Mewtwo V"
-    },
-    {
-      "id": "pl1-30",
-      "name": "Gyarados G"
-    },
-    {
-      "id": "pl4-30",
-      "name": "Sceptile"
     },
     {
       "id": "col1-30",
@@ -8384,10 +6664,6 @@
     {
       "id": "sv04.5-030",
       "name": "Chimecho"
-    },
-    {
-      "id": "pl3-30",
-      "name": "Lickilicky C"
     },
     {
       "id": "hgss4-31",
@@ -8458,30 +6734,6 @@
       "name": "Litleo"
     },
     {
-      "id": "dp3-31",
-      "name": "Magmortar"
-    },
-    {
-      "id": "dp2-31",
-      "name": "Nidoqueen"
-    },
-    {
-      "id": "dp1-31",
-      "name": "Machamp"
-    },
-    {
-      "id": "dp6-31",
-      "name": "Jirachi"
-    },
-    {
-      "id": "dp4-31",
-      "name": "Weezing"
-    },
-    {
-      "id": "dp7-31",
-      "name": "Vespiquen"
-    },
-    {
       "id": "me02-031",
       "name": "Boltund"
     },
@@ -8492,18 +6744,6 @@
     {
       "id": "swsh10.5-031",
       "name": "Mewtwo VSTAR"
-    },
-    {
-      "id": "pl1-31",
-      "name": "Infernape"
-    },
-    {
-      "id": "pl2-31",
-      "name": "Raichu GL"
-    },
-    {
-      "id": "pl4-31",
-      "name": "Sceptile"
     },
     {
       "id": "col1-31",
@@ -8552,10 +6792,6 @@
     {
       "id": "sv10.5w-031",
       "name": "Blitzle"
-    },
-    {
-      "id": "pl3-31",
-      "name": "Lucario C"
     },
     {
       "id": "hgss4-32",
@@ -8626,30 +6862,6 @@
       "name": "Pyroar"
     },
     {
-      "id": "dp5-32",
-      "name": "Umbreon"
-    },
-    {
-      "id": "dp2-32",
-      "name": "Ninetales"
-    },
-    {
-      "id": "dp1-32",
-      "name": "Medicham"
-    },
-    {
-      "id": "dp6-32",
-      "name": "Kyogre"
-    },
-    {
-      "id": "dp4-32",
-      "name": "Wigglytuff"
-    },
-    {
-      "id": "dp7-32",
-      "name": "Bibarel"
-    },
-    {
       "id": "me02-032",
       "name": "Pawmi"
     },
@@ -8660,14 +6872,6 @@
     {
       "id": "swsh10.5-032",
       "name": "Natu"
-    },
-    {
-      "id": "pl1-32",
-      "name": "Kricketune"
-    },
-    {
-      "id": "pl2-32",
-      "name": "Rhyperior E4"
     },
     {
       "id": "col1-32",
@@ -8720,10 +6924,6 @@
     {
       "id": "sv10.5b-032",
       "name": "Eelektross"
-    },
-    {
-      "id": "pl3-32",
-      "name": "Lunatone"
     },
     {
       "id": "hgss4-33",
@@ -8794,48 +6994,12 @@
       "name": "Oricorio"
     },
     {
-      "id": "dp3-33",
-      "name": "Mothim"
-    },
-    {
-      "id": "dp2-33",
-      "name": "Rampardos"
-    },
-    {
-      "id": "dp1-33",
-      "name": "Munchlax"
-    },
-    {
-      "id": "dp6-33",
-      "name": "Lopunny"
-    },
-    {
-      "id": "dp4-33",
-      "name": "Arbok"
-    },
-    {
-      "id": "dp7-33",
-      "name": "Budew"
-    },
-    {
       "id": "me02-033",
       "name": "Pawmo"
     },
     {
       "id": "swsh10.5-033",
       "name": "Xatu"
-    },
-    {
-      "id": "pl1-33",
-      "name": "Lickilicky"
-    },
-    {
-      "id": "pl2-33",
-      "name": "Snorlax"
-    },
-    {
-      "id": "pl4-33",
-      "name": "Bronzong"
     },
     {
       "id": "col1-33",
@@ -8896,10 +7060,6 @@
     {
       "id": "sv10.5b-033",
       "name": "Thundurus"
-    },
-    {
-      "id": "pl3-33",
-      "name": "Mawile"
     },
     {
       "id": "hgss4-34",
@@ -8978,40 +7138,8 @@
       "name": "Darumaka"
     },
     {
-      "id": "dp3-34",
-      "name": "Nidoking"
-    },
-    {
-      "id": "dp5-34",
-      "name": "Vaporeon"
-    },
-    {
-      "id": "dp2-34",
-      "name": "Slaking"
-    },
-    {
-      "id": "dp1-34",
-      "name": "Noctowl"
-    },
-    {
-      "id": "dp4-34",
-      "name": "Cacturne"
-    },
-    {
       "id": "me02-034",
       "name": "Pawmot"
-    },
-    {
-      "id": "pl1-34",
-      "name": "Ludicolo"
-    },
-    {
-      "id": "pl2-34",
-      "name": "Vaporeon"
-    },
-    {
-      "id": "pl4-34",
-      "name": "Bronzor"
     },
     {
       "id": "col1-34",
@@ -9072,10 +7200,6 @@
     {
       "id": "sv10.5w-034",
       "name": "Galvantula"
-    },
-    {
-      "id": "pl3-34",
-      "name": "Medicham"
     },
     {
       "id": "hgss3-35",
@@ -9146,48 +7270,12 @@
       "name": "Darmanitan"
     },
     {
-      "id": "dp3-35",
-      "name": "Pidgeot"
-    },
-    {
-      "id": "dp5-35",
-      "name": "Ambipom"
-    },
-    {
-      "id": "dp2-35",
-      "name": "Sudowoodo"
-    },
-    {
-      "id": "dp1-35",
-      "name": "Pachirisu"
-    },
-    {
-      "id": "dp6-35",
-      "name": "Poliwrath"
-    },
-    {
-      "id": "dp4-35",
-      "name": "Combusken"
-    },
-    {
       "id": "me02-035",
       "name": "Misdreavus"
     },
     {
       "id": "swsh10.5-035",
       "name": "Sylveon"
-    },
-    {
-      "id": "pl1-35",
-      "name": "Luvdisc"
-    },
-    {
-      "id": "pl2-35",
-      "name": "Vespiquen E4"
-    },
-    {
-      "id": "pl4-35",
-      "name": "Charmeleon"
     },
     {
       "id": "col1-35",
@@ -9244,10 +7332,6 @@
     {
       "id": "sv10.5b-035",
       "name": "Munna"
-    },
-    {
-      "id": "pl3-35",
-      "name": "Milotic C"
     },
     {
       "id": "hgss4-36",
@@ -9326,44 +7410,12 @@
       "name": "Litwick"
     },
     {
-      "id": "dp5-36",
-      "name": "Fearow"
-    },
-    {
-      "id": "dp2-36",
-      "name": "Toxicroak"
-    },
-    {
-      "id": "dp1-36",
-      "name": "Purugly"
-    },
-    {
-      "id": "dp4-36",
-      "name": "Delibird"
-    },
-    {
-      "id": "dp7-36",
-      "name": "Electrode"
-    },
-    {
       "id": "me02-036",
       "name": "Mismagius ex"
     },
     {
       "id": "swsh10.5-036",
       "name": "Onix"
-    },
-    {
-      "id": "pl1-36",
-      "name": "Ninetales"
-    },
-    {
-      "id": "pl2-36",
-      "name": "Walrein"
-    },
-    {
-      "id": "pl4-36",
-      "name": "Gastly"
     },
     {
       "id": "B2a-036",
@@ -9416,10 +7468,6 @@
     {
       "id": "sv10.5b-036",
       "name": "Musharna"
-    },
-    {
-      "id": "pl3-36",
-      "name": "Moltres"
     },
     {
       "id": "hgss4-37",
@@ -9490,30 +7538,6 @@
       "name": "Lampent"
     },
     {
-      "id": "dp3-37",
-      "name": "Sharpedo"
-    },
-    {
-      "id": "dp5-37",
-      "name": "Grotle"
-    },
-    {
-      "id": "dp2-37",
-      "name": "Unown I"
-    },
-    {
-      "id": "dp1-37",
-      "name": "Snorlax"
-    },
-    {
-      "id": "dp6-37",
-      "name": "Regigigas"
-    },
-    {
-      "id": "dp7-37",
-      "name": "Electrode"
-    },
-    {
       "id": "me02-037",
       "name": "Snubbull"
     },
@@ -9524,18 +7548,6 @@
     {
       "id": "swsh10.5-037",
       "name": "Larvitar"
-    },
-    {
-      "id": "pl1-37",
-      "name": "Palkia"
-    },
-    {
-      "id": "pl2-37",
-      "name": "Yanmega E4"
-    },
-    {
-      "id": "pl4-37",
-      "name": "Graveler"
     },
     {
       "id": "col1-37",
@@ -9662,30 +7674,6 @@
       "name": "Chandelure"
     },
     {
-      "id": "dp3-38",
-      "name": "Sunflora"
-    },
-    {
-      "id": "dp5-38",
-      "name": "Kangaskhan"
-    },
-    {
-      "id": "dp2-38",
-      "name": "Ursaring"
-    },
-    {
-      "id": "dp1-38",
-      "name": "Steelix"
-    },
-    {
-      "id": "dp4-38",
-      "name": "Gorebyss"
-    },
-    {
-      "id": "dp7-38",
-      "name": "Farfetch'd"
-    },
-    {
       "id": "me02-038",
       "name": "Granbull"
     },
@@ -9700,18 +7688,6 @@
     {
       "id": "swsh10.5-038",
       "name": "Pupitar"
-    },
-    {
-      "id": "pl1-38",
-      "name": "Shaymin"
-    },
-    {
-      "id": "pl2-38",
-      "name": "Alakazam E4"
-    },
-    {
-      "id": "pl4-38",
-      "name": "Grovyle"
     },
     {
       "id": "col1-38",
@@ -9776,10 +7752,6 @@
     {
       "id": "sv10-038",
       "name": "Team Rocket's Houndoom"
-    },
-    {
-      "id": "pl3-38",
-      "name": "Parasect"
     },
     {
       "id": "hgss4-39",
@@ -9854,52 +7826,12 @@
       "name": "Chi-Yu"
     },
     {
-      "id": "dp3-39",
-      "name": "Unown S"
-    },
-    {
-      "id": "dp5-39",
-      "name": "Lickitung"
-    },
-    {
-      "id": "dp2-39",
-      "name": "Walrein"
-    },
-    {
-      "id": "dp1-39",
-      "name": "Vespiquen"
-    },
-    {
-      "id": "dp6-39",
-      "name": "Registeel"
-    },
-    {
-      "id": "dp4-39",
-      "name": "Granbull"
-    },
-    {
-      "id": "dp7-39",
-      "name": "Grovyle"
-    },
-    {
       "id": "me02-039",
       "name": "Cresselia"
     },
     {
       "id": "mep-039",
       "name": "Squirtle"
-    },
-    {
-      "id": "pl1-39",
-      "name": "Torterra"
-    },
-    {
-      "id": "pl2-39",
-      "name": "Electrode G"
-    },
-    {
-      "id": "pl4-39",
-      "name": "Grovyle"
     },
     {
       "id": "col1-39",
@@ -9966,10 +7898,6 @@
       "name": "Paldean Tauros"
     },
     {
-      "id": "pl3-39",
-      "name": "Primeape"
-    },
-    {
       "id": "hgss3-40",
       "name": "Unown"
     },
@@ -10026,48 +7954,12 @@
       "name": "Machop"
     },
     {
-      "id": "dp3-40",
-      "name": "Weavile"
-    },
-    {
-      "id": "dp5-40",
-      "name": "Manectric"
-    },
-    {
-      "id": "dp2-40",
-      "name": "Whiscash"
-    },
-    {
-      "id": "dp1-40",
-      "name": "Weavile"
-    },
-    {
-      "id": "dp6-40",
-      "name": "Shedinja"
-    },
-    {
-      "id": "dp4-40",
-      "name": "Grovyle"
-    },
-    {
       "id": "me02-040",
       "name": "Meloetta"
     },
     {
       "id": "mep-040",
       "name": "Turtwig"
-    },
-    {
-      "id": "pl1-40",
-      "name": "Toxicroak G"
-    },
-    {
-      "id": "pl2-40",
-      "name": "Gengar GL"
-    },
-    {
-      "id": "pl4-40",
-      "name": "Gulpin"
     },
     {
       "id": "col1-40",
@@ -10120,10 +8012,6 @@
     {
       "id": "sv08-040",
       "name": "Mantine"
-    },
-    {
-      "id": "pl3-40",
-      "name": "Roserade C"
     },
     {
       "id": "hgss4-41",
@@ -10194,30 +8082,6 @@
       "name": "Paldean Tauros"
     },
     {
-      "id": "dp3-41",
-      "name": "Wormadam Plant Cloak"
-    },
-    {
-      "id": "dp5-41",
-      "name": "Monferno"
-    },
-    {
-      "id": "dp2-41",
-      "name": "Bayleef"
-    },
-    {
-      "id": "dp1-41",
-      "name": "Wobbuffet"
-    },
-    {
-      "id": "dp6-41",
-      "name": "Torkoal"
-    },
-    {
-      "id": "dp4-41",
-      "name": "Hariyama"
-    },
-    {
       "id": "me01-041",
       "name": "Inteleon"
     },
@@ -10228,14 +8092,6 @@
     {
       "id": "swsh10.5-041",
       "name": "Alolan Rattata"
-    },
-    {
-      "id": "pl2-41",
-      "name": "Glaceon"
-    },
-    {
-      "id": "pl4-41",
-      "name": "Haunter"
     },
     {
       "id": "col1-41",
@@ -10288,10 +8144,6 @@
     {
       "id": "sv08-041",
       "name": "Feebas"
-    },
-    {
-      "id": "pl3-41",
-      "name": "Sableye G"
     },
     {
       "id": "hgss3-42",
@@ -10358,48 +8210,12 @@
       "name": "Magikarp"
     },
     {
-      "id": "dp3-42",
-      "name": "Wormadam Sandy Cloak"
-    },
-    {
-      "id": "dp5-42",
-      "name": "Mothim"
-    },
-    {
-      "id": "dp2-42",
-      "name": "Chingling"
-    },
-    {
-      "id": "dp6-42",
-      "name": "Unown !"
-    },
-    {
-      "id": "dp4-42",
-      "name": "Huntail"
-    },
-    {
-      "id": "dp7-42",
-      "name": "Magneton"
-    },
-    {
       "id": "me02-042",
       "name": "Mimikyu"
     },
     {
       "id": "mep-042",
       "name": "Piplup"
-    },
-    {
-      "id": "pl1-42",
-      "name": "Cacturne"
-    },
-    {
-      "id": "pl2-42",
-      "name": "Hippowdon E4"
-    },
-    {
-      "id": "pl4-42",
-      "name": "Haunter"
     },
     {
       "id": "col1-42",
@@ -10440,10 +8256,6 @@
     {
       "id": "sv04.5-042",
       "name": "Greavard"
-    },
-    {
-      "id": "pl3-42",
-      "name": "Sandslash"
     },
     {
       "id": "hgss3-43",
@@ -10502,30 +8314,6 @@
       "name": "Gyarados"
     },
     {
-      "id": "dp3-43",
-      "name": "Wormadam Trash Cloak"
-    },
-    {
-      "id": "dp5-43",
-      "name": "Pachirisu"
-    },
-    {
-      "id": "dp2-43",
-      "name": "Cranidos"
-    },
-    {
-      "id": "dp1-43",
-      "name": "Budew"
-    },
-    {
-      "id": "dp4-43",
-      "name": "Linoone"
-    },
-    {
-      "id": "dp7-43",
-      "name": "Magneton"
-    },
-    {
       "id": "me02-043",
       "name": "Milcery"
     },
@@ -10536,18 +8324,6 @@
     {
       "id": "swsh10.5-043",
       "name": "Tyranitar"
-    },
-    {
-      "id": "pl1-43",
-      "name": "Carnivine"
-    },
-    {
-      "id": "pl2-43",
-      "name": "Infernape E4"
-    },
-    {
-      "id": "pl4-43",
-      "name": "Luxio"
     },
     {
       "id": "col1-43",
@@ -10596,10 +8372,6 @@
     {
       "id": "sv04.5-043",
       "name": "Houndstone"
-    },
-    {
-      "id": "pl3-43",
-      "name": "Seaking"
     },
     {
       "id": "hgss4-44",
@@ -10666,26 +8438,6 @@
       "name": "Marill"
     },
     {
-      "id": "dp3-44",
-      "name": "Xatu"
-    },
-    {
-      "id": "dp1-44",
-      "name": "Cascoon"
-    },
-    {
-      "id": "dp6-44",
-      "name": "Victreebel"
-    },
-    {
-      "id": "dp4-44",
-      "name": "Loudred"
-    },
-    {
-      "id": "dp7-44",
-      "name": "Miltank"
-    },
-    {
       "id": "me02-044",
       "name": "Alcremie"
     },
@@ -10700,18 +8452,6 @@
     {
       "id": "swsh10.5-044",
       "name": "Steelix"
-    },
-    {
-      "id": "pl1-44",
-      "name": "Cascoon"
-    },
-    {
-      "id": "pl2-44",
-      "name": "Lairon"
-    },
-    {
-      "id": "pl4-44",
-      "name": "Manectric"
     },
     {
       "id": "col1-44",
@@ -10756,10 +8496,6 @@
     {
       "id": "sv04.5-044",
       "name": "Gimmighoul"
-    },
-    {
-      "id": "pl3-44",
-      "name": "Shedinja"
     },
     {
       "id": "hgss4-45",
@@ -10830,52 +8566,12 @@
       "name": "Seaking"
     },
     {
-      "id": "dp3-45",
-      "name": "Breloom"
-    },
-    {
-      "id": "dp5-45",
-      "name": "Raichu"
-    },
-    {
-      "id": "dp2-45",
-      "name": "Dewgong"
-    },
-    {
-      "id": "dp1-45",
-      "name": "Cherrim"
-    },
-    {
-      "id": "dp6-45",
-      "name": "Vileplume"
-    },
-    {
-      "id": "dp4-45",
-      "name": "Magcargo"
-    },
-    {
-      "id": "dp7-45",
-      "name": "Pichu"
-    },
-    {
       "id": "mep-045",
       "name": "Popplio"
     },
     {
       "id": "swsh10.5-045",
       "name": "Meltan"
-    },
-    {
-      "id": "pl1-45",
-      "name": "Combusken"
-    },
-    {
-      "id": "pl2-45",
-      "name": "Leafeon"
-    },
-    {
-      "id": "pl4-45",
-      "name": "Pelipper"
     },
     {
       "id": "col1-45",
@@ -10920,10 +8616,6 @@
     {
       "id": "sv04.5-045",
       "name": "Mankey"
-    },
-    {
-      "id": "pl3-45",
-      "name": "Solrock"
     },
     {
       "id": "hgss4-46",
@@ -10998,26 +8690,6 @@
       "name": "Jynx"
     },
     {
-      "id": "dp2-46",
-      "name": "Dodrio"
-    },
-    {
-      "id": "dp1-46",
-      "name": "Drifloon"
-    },
-    {
-      "id": "dp6-46",
-      "name": "Anorith"
-    },
-    {
-      "id": "dp4-46",
-      "name": "Marshtomp"
-    },
-    {
-      "id": "dp7-46",
-      "name": "Piloswine"
-    },
-    {
       "id": "me02-046",
       "name": "Bramblin"
     },
@@ -11036,18 +8708,6 @@
     {
       "id": "swsh9-046",
       "name": "Electabuzz"
-    },
-    {
-      "id": "pl1-46",
-      "name": "Cranidos"
-    },
-    {
-      "id": "pl2-46",
-      "name": "Machamp GL"
-    },
-    {
-      "id": "pl4-46",
-      "name": "Ponyta"
     },
     {
       "id": "col1-46",
@@ -11104,10 +8764,6 @@
     {
       "id": "sv10.5w-046",
       "name": "Roggenrola"
-    },
-    {
-      "id": "pl3-46",
-      "name": "Spinda"
     },
     {
       "id": "hgss4-47",
@@ -11186,34 +8842,6 @@
       "name": "Corphish"
     },
     {
-      "id": "dp3-47",
-      "name": "Cloyster"
-    },
-    {
-      "id": "dp5-47",
-      "name": "Staravia"
-    },
-    {
-      "id": "dp2-47",
-      "name": "Dunsparce"
-    },
-    {
-      "id": "dp1-47",
-      "name": "Dusclops"
-    },
-    {
-      "id": "dp6-47",
-      "name": "Camerupt"
-    },
-    {
-      "id": "dp4-47",
-      "name": "Metapod"
-    },
-    {
-      "id": "dp7-47",
-      "name": "Pupitar"
-    },
-    {
       "id": "me02-047",
       "name": "Brambleghast"
     },
@@ -11228,14 +8856,6 @@
     {
       "id": "swsh10.5-047",
       "name": "Melmetal V"
-    },
-    {
-      "id": "pl2-47",
-      "name": "Rapidash E4"
-    },
-    {
-      "id": "pl4-47",
-      "name": "Rapidash"
     },
     {
       "id": "B2a-047",
@@ -11298,10 +8918,6 @@
       "name": "Cryogonal"
     },
     {
-      "id": "pl3-47",
-      "name": "Wailord"
-    },
-    {
       "id": "hgss4-48",
       "name": "Piloswine"
     },
@@ -11362,44 +8978,12 @@
       "name": "Crawdaunt"
     },
     {
-      "id": "dp3-48",
-      "name": "Donphan"
-    },
-    {
-      "id": "dp5-48",
-      "name": "Sudowoodo"
-    },
-    {
-      "id": "dp1-48",
-      "name": "Elekid"
-    },
-    {
-      "id": "dp6-48",
-      "name": "Castform"
-    },
-    {
-      "id": "dp4-48",
-      "name": "Pelipper"
-    },
-    {
       "id": "mep-048",
       "name": "Totodile"
     },
     {
       "id": "swsh10.5-048",
       "name": "Melmetal VMAX"
-    },
-    {
-      "id": "pl1-48",
-      "name": "Flaaffy"
-    },
-    {
-      "id": "pl2-48",
-      "name": "Scizor E4"
-    },
-    {
-      "id": "pl4-48",
-      "name": "Shelgon"
     },
     {
       "id": "col1-48",
@@ -11462,10 +9046,6 @@
       "name": "Gurdurr"
     },
     {
-      "id": "pl3-48",
-      "name": "Zapdos"
-    },
-    {
       "id": "hgss3-49",
       "name": "Gligar"
     },
@@ -11518,44 +9098,12 @@
       "name": "Quaxly"
     },
     {
-      "id": "dp3-49",
-      "name": "Farfetch'd"
-    },
-    {
-      "id": "dp2-49",
-      "name": "Girafarig"
-    },
-    {
-      "id": "dp1-49",
-      "name": "Grotle"
-    },
-    {
-      "id": "dp6-49",
-      "name": "Castform Rain Form"
-    },
-    {
-      "id": "dp7-49",
-      "name": "Scyther"
-    },
-    {
       "id": "mep-049",
       "name": "Snivy"
     },
     {
       "id": "swsh10.5-049",
       "name": "Dragonite V"
-    },
-    {
-      "id": "pl1-49",
-      "name": "Grotle"
-    },
-    {
-      "id": "pl2-49",
-      "name": "Sharpedo"
-    },
-    {
-      "id": "pl4-49",
-      "name": "Wormadam Plant Cloak"
     },
     {
       "id": "B2a-049",
@@ -11612,10 +9160,6 @@
     {
       "id": "sv08-049",
       "name": "Bruxish"
-    },
-    {
-      "id": "pl3-49",
-      "name": "Altaria C"
     },
     {
       "id": "hgss4-50",
@@ -11686,44 +9230,12 @@
       "name": "Milotic"
     },
     {
-      "id": "dp5-50",
-      "name": "Aipom"
-    },
-    {
-      "id": "dp2-50",
-      "name": "Golbat"
-    },
-    {
-      "id": "dp6-50",
-      "name": "Castform Snow-cloud Form"
-    },
-    {
-      "id": "dp4-50",
-      "name": "Purugly"
-    },
-    {
-      "id": "dp7-50",
-      "name": "Shelgon"
-    },
-    {
       "id": "mep-050",
       "name": "Tepig"
     },
     {
       "id": "swsh10.5-050",
       "name": "Dragonite VSTAR"
-    },
-    {
-      "id": "pl1-50",
-      "name": "Houndoom G"
-    },
-    {
-      "id": "pl2-50",
-      "name": "Starmie"
-    },
-    {
-      "id": "pl4-50",
-      "name": "Wormadam Sandy Cloak"
     },
     {
       "id": "col1-50",
@@ -11772,10 +9284,6 @@
     {
       "id": "sv10.5b-050",
       "name": "Throh"
-    },
-    {
-      "id": "pl3-50",
-      "name": "Arcanine"
     },
     {
       "id": "hgss3-51",
@@ -11846,48 +9354,12 @@
       "name": "Quaxwell"
     },
     {
-      "id": "dp3-51",
-      "name": "Ivysaur"
-    },
-    {
-      "id": "dp5-51",
-      "name": "Aipom"
-    },
-    {
-      "id": "dp2-51",
-      "name": "Graveler"
-    },
-    {
-      "id": "dp1-51",
-      "name": "Hippopotas"
-    },
-    {
-      "id": "dp6-51",
-      "name": "Castform Sunny Form"
-    },
-    {
-      "id": "dp4-51",
-      "name": "Relicanth"
-    },
-    {
-      "id": "dp7-51",
-      "name": "Skarmory"
-    },
-    {
       "id": "mep-051",
       "name": "Oshawott"
     },
     {
       "id": "swsh10.5-051",
       "name": "Chansey"
-    },
-    {
-      "id": "pl2-51",
-      "name": "Steelix GL"
-    },
-    {
-      "id": "pl4-51",
-      "name": "Wormadam Trash Cloak"
     },
     {
       "id": "col1-51",
@@ -11940,10 +9412,6 @@
     {
       "id": "sv10.5b-051",
       "name": "Dwebble"
-    },
-    {
-      "id": "pl3-51",
-      "name": "Bibarel"
     },
     {
       "id": "hgss4-52",
@@ -12014,30 +9482,6 @@
       "name": "Glalie"
     },
     {
-      "id": "dp3-52",
-      "name": "Kecleon"
-    },
-    {
-      "id": "dp2-52",
-      "name": "Happiny"
-    },
-    {
-      "id": "dp1-52",
-      "name": "Luxio"
-    },
-    {
-      "id": "dp6-52",
-      "name": "Dragonair"
-    },
-    {
-      "id": "dp4-52",
-      "name": "Seviper"
-    },
-    {
-      "id": "dp7-52",
-      "name": "Staravia"
-    },
-    {
       "id": "me01-052",
       "name": "Helioptile"
     },
@@ -12048,18 +9492,6 @@
     {
       "id": "swsh10.5-052",
       "name": "Blissey"
-    },
-    {
-      "id": "pl1-52",
-      "name": "Lombre"
-    },
-    {
-      "id": "pl2-52",
-      "name": "Tropius"
-    },
-    {
-      "id": "pl4-52",
-      "name": "Bagon"
     },
     {
       "id": "col1-52",
@@ -12116,10 +9548,6 @@
     {
       "id": "sv10.5b-052",
       "name": "Crustle"
-    },
-    {
-      "id": "pl3-52",
-      "name": "Breloom"
     },
     {
       "id": "hgss4-53",
@@ -12186,26 +9614,6 @@
       "name": "Meowth"
     },
     {
-      "id": "dp2-53",
-      "name": "Lairon"
-    },
-    {
-      "id": "dp1-53",
-      "name": "Machoke"
-    },
-    {
-      "id": "dp6-53",
-      "name": "Drifblim"
-    },
-    {
-      "id": "dp4-53",
-      "name": "Skarmory"
-    },
-    {
-      "id": "dp7-53",
-      "name": "Bagon"
-    },
-    {
       "id": "me01-053",
       "name": "Heliolisk"
     },
@@ -12216,18 +9624,6 @@
     {
       "id": "mep-053",
       "name": "Scorbunny"
-    },
-    {
-      "id": "pl1-53",
-      "name": "Lucario"
-    },
-    {
-      "id": "pl2-53",
-      "name": "Vibrava"
-    },
-    {
-      "id": "pl4-53",
-      "name": "Beedrill G"
     },
     {
       "id": "col1-53",
@@ -12288,10 +9684,6 @@
     {
       "id": "sv10.5b-053",
       "name": "Landorus"
-    },
-    {
-      "id": "pl3-53",
-      "name": "Carnivine"
     },
     {
       "id": "hgss4-54",
@@ -12358,34 +9750,6 @@
       "name": "Glaceon"
     },
     {
-      "id": "dp3-54",
-      "name": "Lombre"
-    },
-    {
-      "id": "dp5-54",
-      "name": "Burmy Sandy Cloak"
-    },
-    {
-      "id": "dp2-54",
-      "name": "Magmar"
-    },
-    {
-      "id": "dp1-54",
-      "name": "Magneton"
-    },
-    {
-      "id": "dp6-54",
-      "name": "Exeggutor"
-    },
-    {
-      "id": "dp4-54",
-      "name": "Slowbro"
-    },
-    {
-      "id": "dp7-54",
-      "name": "Bidoof"
-    },
-    {
       "id": "30th-054",
       "name": "Pikachu ex"
     },
@@ -12396,18 +9760,6 @@
     {
       "id": "swsh10.5-054",
       "name": "Eevee"
-    },
-    {
-      "id": "pl1-54",
-      "name": "Mightyena"
-    },
-    {
-      "id": "pl2-54",
-      "name": "Whiscash E4"
-    },
-    {
-      "id": "pl4-54",
-      "name": "Bronzor"
     },
     {
       "id": "col1-54",
@@ -12456,10 +9808,6 @@
     {
       "id": "sv07-054",
       "name": "Togedemaru"
-    },
-    {
-      "id": "pl3-54",
-      "name": "Chatot G"
     },
     {
       "id": "hgss4-55",
@@ -12530,44 +9878,8 @@
       "name": "M Lucario-EX"
     },
     {
-      "id": "dp3-55",
-      "name": "Miltank"
-    },
-    {
-      "id": "dp2-55",
-      "name": "Masquerain"
-    },
-    {
-      "id": "dp1-55",
-      "name": "Mantyke"
-    },
-    {
-      "id": "dp6-55",
-      "name": "Gliscor"
-    },
-    {
-      "id": "dp4-55",
-      "name": "Togetic"
-    },
-    {
-      "id": "dp7-55",
-      "name": "Bronzor"
-    },
-    {
       "id": "mep-055",
       "name": "Treecko"
-    },
-    {
-      "id": "pl1-55",
-      "name": "Mismagius"
-    },
-    {
-      "id": "pl2-55",
-      "name": "Aerodactyl GL"
-    },
-    {
-      "id": "pl4-55",
-      "name": "Buneary"
     },
     {
       "id": "col1-55",
@@ -12612,10 +9924,6 @@
     {
       "id": "sv08-055",
       "name": "Iron Bundle"
-    },
-    {
-      "id": "pl3-55",
-      "name": "Cherrim"
     },
     {
       "id": "hgss4-56",
@@ -12682,44 +9990,8 @@
       "name": "Veluza"
     },
     {
-      "id": "dp3-56",
-      "name": "Muk"
-    },
-    {
-      "id": "dp5-56",
-      "name": "Chimchar"
-    },
-    {
-      "id": "dp1-56",
-      "name": "Monferno"
-    },
-    {
-      "id": "dp6-56",
-      "name": "Grumpig"
-    },
-    {
-      "id": "dp4-56",
-      "name": "Unown F"
-    },
-    {
-      "id": "dp7-56",
-      "name": "Cherubi"
-    },
-    {
       "id": "mep-056",
       "name": "Torchic"
-    },
-    {
-      "id": "pl1-56",
-      "name": "Monferno"
-    },
-    {
-      "id": "pl2-56",
-      "name": "Ambipom G"
-    },
-    {
-      "id": "pl4-56",
-      "name": "Burmy Plant Cloak"
     },
     {
       "id": "col1-56",
@@ -12826,26 +10098,6 @@
       "name": "Tauros"
     },
     {
-      "id": "dp3-57",
-      "name": "Nidorino"
-    },
-    {
-      "id": "dp5-57",
-      "name": "Chimchar"
-    },
-    {
-      "id": "dp2-57",
-      "name": "Octillery"
-    },
-    {
-      "id": "dp1-57",
-      "name": "Nuzleaf"
-    },
-    {
-      "id": "dp6-57",
-      "name": "Houndoom"
-    },
-    {
       "id": "me02-057",
       "name": "Murkrow"
     },
@@ -12856,18 +10108,6 @@
     {
       "id": "mep-057",
       "name": "Mudkip"
-    },
-    {
-      "id": "pl1-57",
-      "name": "Muk"
-    },
-    {
-      "id": "pl2-57",
-      "name": "Aron"
-    },
-    {
-      "id": "pl4-57",
-      "name": "Burmy Sandy Cloak"
     },
     {
       "id": "col1-57",
@@ -12920,10 +10160,6 @@
     {
       "id": "sv10-057",
       "name": "Buizel"
-    },
-    {
-      "id": "pl3-57",
-      "name": "Drifblim"
     },
     {
       "id": "hgss4-58",
@@ -12990,44 +10226,12 @@
       "name": "Cramorant"
     },
     {
-      "id": "dp5-58",
-      "name": "Chingling"
-    },
-    {
-      "id": "dp2-58",
-      "name": "Parasect"
-    },
-    {
-      "id": "dp6-58",
-      "name": "Lanturn"
-    },
-    {
-      "id": "dp4-58",
-      "name": "Wailmer"
-    },
-    {
-      "id": "dp7-58",
-      "name": "Drifloon"
-    },
-    {
       "id": "me02-058",
       "name": "Honchkrow"
     },
     {
       "id": "mep-058",
       "name": "Chespin"
-    },
-    {
-      "id": "pl1-58",
-      "name": "Octillery"
-    },
-    {
-      "id": "pl2-58",
-      "name": "Carvanha"
-    },
-    {
-      "id": "pl4-58",
-      "name": "Burmy Trash Cloak"
     },
     {
       "id": "col1-58",
@@ -13091,10 +10295,6 @@
     },
     {
       "id": "sv10-058",
-      "name": "Floatzel"
-    },
-    {
-      "id": "pl3-58",
       "name": "Floatzel"
     },
     {
@@ -13162,48 +10362,12 @@
       "name": "Timburr"
     },
     {
-      "id": "dp3-59",
-      "name": "Pinsir"
-    },
-    {
-      "id": "dp5-59",
-      "name": "Combee"
-    },
-    {
-      "id": "dp2-59",
-      "name": "Pupitar"
-    },
-    {
-      "id": "dp1-59",
-      "name": "Rapidash"
-    },
-    {
-      "id": "dp6-59",
-      "name": "Lanturn"
-    },
-    {
-      "id": "dp4-59",
-      "name": "Zangoose"
-    },
-    {
-      "id": "dp7-59",
-      "name": "Duskull"
-    },
-    {
       "id": "mep-059",
       "name": "Fennekin"
     },
     {
       "id": "swsh10.5-059",
       "name": "Bidoof"
-    },
-    {
-      "id": "pl1-59",
-      "name": "Prinplup"
-    },
-    {
-      "id": "pl2-59",
-      "name": "Eevee"
     },
     {
       "id": "col1-59",
@@ -13274,10 +10438,6 @@
       "name": "Snover"
     },
     {
-      "id": "pl3-59",
-      "name": "Gabite"
-    },
-    {
       "id": "hgss4-60",
       "name": "Cubone"
     },
@@ -13334,40 +10494,12 @@
       "name": "Rayquaza EX"
     },
     {
-      "id": "dp3-60",
-      "name": "Quagsire"
-    },
-    {
-      "id": "dp1-60",
-      "name": "Rhydon"
-    },
-    {
-      "id": "dp6-60",
-      "name": "Ledian"
-    },
-    {
-      "id": "dp7-60",
-      "name": "Duskull"
-    },
-    {
       "id": "mep-060",
       "name": "Froakie"
     },
     {
       "id": "swsh10.5-060",
       "name": "Bibarel"
-    },
-    {
-      "id": "pl1-60",
-      "name": "Probopass"
-    },
-    {
-      "id": "pl2-60",
-      "name": "Flareon E4"
-    },
-    {
-      "id": "pl4-60",
-      "name": "Cherubi"
     },
     {
       "id": "col1-60",
@@ -13478,30 +10610,6 @@
       "name": "Giratina"
     },
     {
-      "id": "dp3-61",
-      "name": "Raticate"
-    },
-    {
-      "id": "dp5-61",
-      "name": "Drifloon"
-    },
-    {
-      "id": "dp2-61",
-      "name": "Sandslash"
-    },
-    {
-      "id": "dp1-61",
-      "name": "Riolu"
-    },
-    {
-      "id": "dp6-61",
-      "name": "Lucario"
-    },
-    {
-      "id": "dp7-61",
-      "name": "Finneon"
-    },
-    {
       "id": "me01-061",
       "name": "Shedinja"
     },
@@ -13512,18 +10620,6 @@
     {
       "id": "swsh10.5-061",
       "name": "Pidove"
-    },
-    {
-      "id": "pl1-61",
-      "name": "Seviper"
-    },
-    {
-      "id": "pl2-61",
-      "name": "Forretress G"
-    },
-    {
-      "id": "pl4-61",
-      "name": "Croagunk"
     },
     {
       "id": "col1-61",
@@ -13568,10 +10664,6 @@
     {
       "id": "sv10.5b-061",
       "name": "Klink"
-    },
-    {
-      "id": "pl3-61",
-      "name": "Hippopotas"
     },
     {
       "id": "hgss4-62",
@@ -13642,26 +10734,6 @@
       "name": "Iron Bundle"
     },
     {
-      "id": "dp3-62",
-      "name": "Roselia"
-    },
-    {
-      "id": "dp2-62",
-      "name": "Sealeo"
-    },
-    {
-      "id": "dp1-62",
-      "name": "Seaking"
-    },
-    {
-      "id": "dp6-62",
-      "name": "Luxio"
-    },
-    {
-      "id": "dp4-62",
-      "name": "Cacnea"
-    },
-    {
       "id": "me01-062",
       "name": "Spoink"
     },
@@ -13676,18 +10748,6 @@
     {
       "id": "swsh10.5-062",
       "name": "Tranquill"
-    },
-    {
-      "id": "pl1-62",
-      "name": "Shieldon"
-    },
-    {
-      "id": "pl2-62",
-      "name": "Gliscor E4"
-    },
-    {
-      "id": "pl4-62",
-      "name": "Electrike"
     },
     {
       "id": "col1-62",
@@ -13806,34 +10866,6 @@
       "name": "Pikachu ex"
     },
     {
-      "id": "dp3-63",
-      "name": "Sableye"
-    },
-    {
-      "id": "dp5-63",
-      "name": "Eevee"
-    },
-    {
-      "id": "dp2-63",
-      "name": "Shieldon"
-    },
-    {
-      "id": "dp1-63",
-      "name": "Silcoon"
-    },
-    {
-      "id": "dp6-63",
-      "name": "Marowak"
-    },
-    {
-      "id": "dp4-63",
-      "name": "Caterpie"
-    },
-    {
-      "id": "dp7-63",
-      "name": "Larvitar"
-    },
-    {
       "id": "me02-063",
       "name": "Absol"
     },
@@ -13852,18 +10884,6 @@
     {
       "id": "swsh10.5-063",
       "name": "Unfezant"
-    },
-    {
-      "id": "pl1-63",
-      "name": "Silcoon"
-    },
-    {
-      "id": "pl2-63",
-      "name": "Growlithe"
-    },
-    {
-      "id": "pl4-63",
-      "name": "Electrike"
     },
     {
       "id": "col1-63",
@@ -13920,10 +10940,6 @@
     {
       "id": "sv08-063",
       "name": "Zebstrika"
-    },
-    {
-      "id": "pl3-63",
-      "name": "Lopunny"
     },
     {
       "id": "hgss4-64",
@@ -13990,30 +11006,6 @@
       "name": "Raichu"
     },
     {
-      "id": "dp3-64",
-      "name": "Shelgon"
-    },
-    {
-      "id": "dp5-64",
-      "name": "Electrike"
-    },
-    {
-      "id": "dp2-64",
-      "name": "Tropius"
-    },
-    {
-      "id": "dp1-64",
-      "name": "Staravia"
-    },
-    {
-      "id": "dp6-64",
-      "name": "Metang"
-    },
-    {
-      "id": "dp4-64",
-      "name": "Clamperl"
-    },
-    {
       "id": "me02-064",
       "name": "Sandile"
     },
@@ -14024,18 +11016,6 @@
     {
       "id": "swsh10.5-064",
       "name": "Blanche"
-    },
-    {
-      "id": "pl1-64",
-      "name": "Vigoroth"
-    },
-    {
-      "id": "pl2-64",
-      "name": "Hippopotas"
-    },
-    {
-      "id": "pl4-64",
-      "name": "Gastly"
     },
     {
       "id": "col1-64",
@@ -14094,10 +11074,6 @@
       "name": "Stunfisk"
     },
     {
-      "id": "pl3-64",
-      "name": "Loudred"
-    },
-    {
       "id": "hgss4-65",
       "name": "Kricketot"
     },
@@ -14154,40 +11130,12 @@
       "name": "Galvantula"
     },
     {
-      "id": "dp5-65",
-      "name": "Glameow"
-    },
-    {
-      "id": "dp1-65",
-      "name": "Unown A"
-    },
-    {
-      "id": "dp6-65",
-      "name": "Metang"
-    },
-    {
-      "id": "dp4-65",
-      "name": "Drowzee"
-    },
-    {
       "id": "me02-065",
       "name": "Krokorok"
     },
     {
       "id": "swsh10.5-065",
       "name": "Candela"
-    },
-    {
-      "id": "pl1-65",
-      "name": "Wartortle"
-    },
-    {
-      "id": "pl2-65",
-      "name": "Houndoom E4"
-    },
-    {
-      "id": "pl4-65",
-      "name": "Geodude"
     },
     {
       "id": "col1-65",
@@ -14240,10 +11188,6 @@
     {
       "id": "sv10.5b-065",
       "name": "Bisharp"
-    },
-    {
-      "id": "pl3-65",
-      "name": "Magmar"
     },
     {
       "id": "hgss4-66",
@@ -14310,34 +11254,6 @@
       "name": "Shinx"
     },
     {
-      "id": "dp3-66",
-      "name": "Smeargle"
-    },
-    {
-      "id": "dp5-66",
-      "name": "Hippopotas"
-    },
-    {
-      "id": "dp2-66",
-      "name": "Unown M"
-    },
-    {
-      "id": "dp1-66",
-      "name": "Unown B"
-    },
-    {
-      "id": "dp6-66",
-      "name": "Mightyena"
-    },
-    {
-      "id": "dp4-66",
-      "name": "Ekans"
-    },
-    {
-      "id": "dp7-66",
-      "name": "Magnemite"
-    },
-    {
       "id": "me02-066",
       "name": "Krookodile"
     },
@@ -14348,14 +11264,6 @@
     {
       "id": "swsh10.5-066",
       "name": "Egg Incubator"
-    },
-    {
-      "id": "pl1-66",
-      "name": "Zangoose"
-    },
-    {
-      "id": "pl4-66",
-      "name": "Gulpin"
     },
     {
       "id": "col1-66",
@@ -14396,10 +11304,6 @@
     {
       "id": "sv08-066",
       "name": "Wattrel"
-    },
-    {
-      "id": "pl3-66",
-      "name": "Manectric G"
     },
     {
       "id": "hgss2-67",
@@ -14454,42 +11358,6 @@
       "name": "Electrode"
     },
     {
-      "id": "dp3-67",
-      "name": "Smoochum"
-    },
-    {
-      "id": "dp5-67",
-      "name": "Kabuto"
-    },
-    {
-      "id": "dp2-67",
-      "name": "Unown T"
-    },
-    {
-      "id": "dp1-67",
-      "name": "Unown C"
-    },
-    {
-      "id": "dp6-67",
-      "name": "Ninjask"
-    },
-    {
-      "id": "dp4-67",
-      "name": "Feebas"
-    },
-    {
-      "id": "dp7-67",
-      "name": "Magnemite"
-    },
-    {
-      "id": "pl1-67",
-      "name": "Cacnea"
-    },
-    {
-      "id": "pl4-67",
-      "name": "Kabuto"
-    },
-    {
       "id": "col1-67",
       "name": "Pidgey"
     },
@@ -14542,10 +11410,6 @@
       "name": "Kilowattrel"
     },
     {
-      "id": "pl3-67",
-      "name": "Marshtomp"
-    },
-    {
       "id": "hgss1-68",
       "name": "Jigglypuff"
     },
@@ -14594,52 +11458,12 @@
       "name": "Pokémon Center Lady"
     },
     {
-      "id": "dp3-68",
-      "name": "Unown K"
-    },
-    {
-      "id": "dp5-68",
-      "name": "Munchlax"
-    },
-    {
-      "id": "dp2-68",
-      "name": "Vigoroth"
-    },
-    {
-      "id": "dp1-68",
-      "name": "Unown D"
-    },
-    {
-      "id": "dp6-68",
-      "name": "Persian"
-    },
-    {
-      "id": "dp4-68",
-      "name": "Glameow"
-    },
-    {
-      "id": "dp7-68",
-      "name": "Misdreavus"
-    },
-    {
       "id": "me01-068",
       "name": "Sandshrew"
     },
     {
       "id": "me02.5-068",
       "name": "Hop's Pincurchin ex"
-    },
-    {
-      "id": "pl1-68",
-      "name": "Carnivine"
-    },
-    {
-      "id": "pl2-68",
-      "name": "Koffing"
-    },
-    {
-      "id": "pl4-68",
-      "name": "Makuhita"
     },
     {
       "id": "col1-68",
@@ -14696,10 +11520,6 @@
     {
       "id": "sv08-068",
       "name": "Kilowattrel ex"
-    },
-    {
-      "id": "pl3-68",
-      "name": "Masquerain"
     },
     {
       "id": "hgss4-69",
@@ -14762,52 +11582,12 @@
       "name": "Shinx"
     },
     {
-      "id": "dp3-69",
-      "name": "Unown N"
-    },
-    {
-      "id": "dp5-69",
-      "name": "Omanyte"
-    },
-    {
-      "id": "dp2-69",
-      "name": "Abra"
-    },
-    {
-      "id": "dp1-69",
-      "name": "Azurill"
-    },
-    {
-      "id": "dp6-69",
-      "name": "Piloswine"
-    },
-    {
-      "id": "dp4-69",
-      "name": "Houndour"
-    },
-    {
-      "id": "dp7-69",
-      "name": "Onix"
-    },
-    {
       "id": "me02-069",
       "name": "Eternatus"
     },
     {
       "id": "me01-069",
       "name": "Sandslash"
-    },
-    {
-      "id": "pl1-69",
-      "name": "Chansey"
-    },
-    {
-      "id": "pl2-69",
-      "name": "Munchlax"
-    },
-    {
-      "id": "pl4-69",
-      "name": "Nosepass"
     },
     {
       "id": "B2a-069",
@@ -14860,10 +11640,6 @@
     {
       "id": "sv08-069",
       "name": "Miraidon"
-    },
-    {
-      "id": "pl3-69",
-      "name": "Metang"
     },
     {
       "id": "hgss4-70",
@@ -14926,44 +11702,8 @@
       "name": "Helioptile"
     },
     {
-      "id": "dp3-70",
-      "name": "Unown O"
-    },
-    {
-      "id": "dp5-70",
-      "name": "Pikachu"
-    },
-    {
-      "id": "dp2-70",
-      "name": "Aipom"
-    },
-    {
-      "id": "dp1-70",
-      "name": "Bidoof"
-    },
-    {
-      "id": "dp4-70",
-      "name": "Igglybuff"
-    },
-    {
-      "id": "dp7-70",
-      "name": "Pikachu"
-    },
-    {
       "id": "swsh10.5-070",
       "name": "Spark"
-    },
-    {
-      "id": "pl1-70",
-      "name": "Chimchar"
-    },
-    {
-      "id": "pl2-70",
-      "name": "Munchlax"
-    },
-    {
-      "id": "pl4-70",
-      "name": "Omanyte"
     },
     {
       "id": "col1-70",
@@ -15008,10 +11748,6 @@
     {
       "id": "sv07-070",
       "name": "Greavard"
-    },
-    {
-      "id": "pl3-70",
-      "name": "Milotic"
     },
     {
       "id": "hgss4-71",
@@ -15070,30 +11806,6 @@
       "name": "Heliolisk"
     },
     {
-      "id": "dp3-71",
-      "name": "Unown X"
-    },
-    {
-      "id": "dp5-71",
-      "name": "Piplup"
-    },
-    {
-      "id": "dp2-71",
-      "name": "Aron"
-    },
-    {
-      "id": "dp1-71",
-      "name": "Bonsly"
-    },
-    {
-      "id": "dp6-71",
-      "name": "Starmie"
-    },
-    {
-      "id": "dp7-71",
-      "name": "Ponyta"
-    },
-    {
       "id": "me01-071",
       "name": "Tyrogue"
     },
@@ -15104,14 +11816,6 @@
     {
       "id": "swsh10.5-071",
       "name": "Alolan Exeggutor V"
-    },
-    {
-      "id": "pl1-71",
-      "name": "Combee"
-    },
-    {
-      "id": "pl4-71",
-      "name": "Pikachu"
     },
     {
       "id": "col1-71",
@@ -15160,10 +11864,6 @@
     {
       "id": "sv10.5w-071",
       "name": "Druddigon"
-    },
-    {
-      "id": "pl3-71",
-      "name": "Minun"
     },
     {
       "id": "hgss4-72",
@@ -15222,52 +11922,12 @@
       "name": "Pincurchin"
     },
     {
-      "id": "dp3-72",
-      "name": "Unown Z"
-    },
-    {
-      "id": "dp5-72",
-      "name": "Piplup"
-    },
-    {
-      "id": "dp2-72",
-      "name": "Barboach"
-    },
-    {
-      "id": "dp1-72",
-      "name": "Buizel"
-    },
-    {
-      "id": "dp6-72",
-      "name": "Swalot"
-    },
-    {
-      "id": "dp4-72",
-      "name": "Jigglypuff"
-    },
-    {
-      "id": "dp7-72",
-      "name": "Roselia"
-    },
-    {
       "id": "mep-072",
       "name": "Mega Clefable ex"
     },
     {
       "id": "swsh10.5-072",
       "name": "Mewtwo V"
-    },
-    {
-      "id": "pl1-72",
-      "name": "Diglett"
-    },
-    {
-      "id": "pl2-72",
-      "name": "Nidoran ♂"
-    },
-    {
-      "id": "pl4-72",
-      "name": "Ponyta"
     },
     {
       "id": "col1-72",
@@ -15320,10 +11980,6 @@
     {
       "id": "sv10.5w-072",
       "name": "Patrat"
-    },
-    {
-      "id": "pl3-72",
-      "name": "Murkrow"
     },
     {
       "id": "hgss2-73",
@@ -15382,52 +12038,12 @@
       "name": "Tadbulb"
     },
     {
-      "id": "dp3-73",
-      "name": "Venomoth"
-    },
-    {
-      "id": "dp5-73",
-      "name": "Shellos East Sea"
-    },
-    {
-      "id": "dp2-73",
-      "name": "Bidoof"
-    },
-    {
-      "id": "dp1-73",
-      "name": "Buneary"
-    },
-    {
-      "id": "dp6-73",
-      "name": "Swellow"
-    },
-    {
-      "id": "dp4-73",
-      "name": "Kakuna"
-    },
-    {
-      "id": "dp7-73",
-      "name": "Skorupi"
-    },
-    {
       "id": "me02-073",
       "name": "Togedemaru"
     },
     {
       "id": "mep-073",
       "name": "Mega Gengar ex"
-    },
-    {
-      "id": "pl1-73",
-      "name": "Dunsparce"
-    },
-    {
-      "id": "pl2-73",
-      "name": "Nidorina"
-    },
-    {
-      "id": "pl4-73",
-      "name": "Rattata"
     },
     {
       "id": "col1-73",
@@ -15484,10 +12100,6 @@
     {
       "id": "sv10.5w-073",
       "name": "Watchog"
-    },
-    {
-      "id": "pl3-73",
-      "name": "Ninjask"
     },
     {
       "id": "hgss4-74",
@@ -15550,48 +12162,8 @@
       "name": "Bellibolt"
     },
     {
-      "id": "dp3-74",
-      "name": "Vibrava"
-    },
-    {
-      "id": "dp5-74",
-      "name": "Spearow"
-    },
-    {
-      "id": "dp2-74",
-      "name": "Bronzor"
-    },
-    {
-      "id": "dp1-74",
-      "name": "Chatot"
-    },
-    {
-      "id": "dp6-74",
-      "name": "Tauros"
-    },
-    {
-      "id": "dp4-74",
-      "name": "Koffing"
-    },
-    {
-      "id": "dp7-74",
-      "name": "Snover"
-    },
-    {
       "id": "swsh2-74",
       "name": "Clefairy"
-    },
-    {
-      "id": "pl1-74",
-      "name": "Electrike"
-    },
-    {
-      "id": "pl2-74",
-      "name": "Nidorino"
-    },
-    {
-      "id": "pl4-74",
-      "name": "Shinx"
     },
     {
       "id": "col1-74",
@@ -15648,10 +12220,6 @@
     {
       "id": "sv10.5b-074",
       "name": "Audino"
-    },
-    {
-      "id": "pl3-74",
-      "name": "Numel"
     },
     {
       "id": "hgss3-75",
@@ -15714,52 +12282,12 @@
       "name": "Wattrel"
     },
     {
-      "id": "dp3-75",
-      "name": "Wartortle"
-    },
-    {
-      "id": "dp5-75",
-      "name": "Starly"
-    },
-    {
-      "id": "dp2-75",
-      "name": "Buizel"
-    },
-    {
-      "id": "dp1-75",
-      "name": "Cherubi"
-    },
-    {
-      "id": "dp6-75",
-      "name": "Tentacruel"
-    },
-    {
-      "id": "dp4-75",
-      "name": "Krabby"
-    },
-    {
-      "id": "dp7-75",
-      "name": "Starly"
-    },
-    {
       "id": "mep-075",
       "name": "Ampharos"
     },
     {
       "id": "swsh10.5-075",
       "name": "Melmetal V"
-    },
-    {
-      "id": "pl1-75",
-      "name": "Grimer"
-    },
-    {
-      "id": "pl2-75",
-      "name": "Nuzleaf"
-    },
-    {
-      "id": "pl4-75",
-      "name": "Snorunt"
     },
     {
       "id": "B2a-075",
@@ -15808,10 +12336,6 @@
     {
       "id": "sv10-075",
       "name": "Electrike"
-    },
-    {
-      "id": "pl3-75",
-      "name": "Pinsir"
     },
     {
       "id": "hgss4-76",
@@ -15878,40 +12402,8 @@
       "name": "Kilowattrel"
     },
     {
-      "id": "dp3-76",
-      "name": "Bagon"
-    },
-    {
-      "id": "dp5-76",
-      "name": "Stunky"
-    },
-    {
-      "id": "dp6-76",
-      "name": "Unown J"
-    },
-    {
-      "id": "dp4-76",
-      "name": "Lunatone"
-    },
-    {
-      "id": "dp7-76",
-      "name": "Stunky"
-    },
-    {
       "id": "swsh10.5-076",
       "name": "Dragonite V"
-    },
-    {
-      "id": "pl1-76",
-      "name": "Happiny"
-    },
-    {
-      "id": "pl2-76",
-      "name": "Quagsire GL"
-    },
-    {
-      "id": "pl4-76",
-      "name": "Tangela"
     },
     {
       "id": "B2a-076",
@@ -15970,10 +12462,6 @@
       "name": "Manectric"
     },
     {
-      "id": "pl3-76",
-      "name": "Plusle"
-    },
-    {
       "id": "hgss4-77",
       "name": "Spoink"
     },
@@ -16026,40 +12514,8 @@
       "name": "Pumpkaboo"
     },
     {
-      "id": "dp5-77",
-      "name": "Turtwig"
-    },
-    {
-      "id": "dp2-77",
-      "name": "Chikorita"
-    },
-    {
-      "id": "dp1-77",
-      "name": "Clefairy"
-    },
-    {
-      "id": "dp4-77",
-      "name": "Luvdisc"
-    },
-    {
-      "id": "dp7-77",
-      "name": "Swinub"
-    },
-    {
       "id": "me02.5-077",
       "name": "Team Rocket's Exeggcute"
-    },
-    {
-      "id": "pl1-77",
-      "name": "Honchkrow G"
-    },
-    {
-      "id": "pl2-77",
-      "name": "Sealeo"
-    },
-    {
-      "id": "pl4-77",
-      "name": "Tangela"
     },
     {
       "id": "B2a-077",
@@ -16108,10 +12564,6 @@
     {
       "id": "sv08-077",
       "name": "Latios"
-    },
-    {
-      "id": "pl3-77",
-      "name": "Raichu"
     },
     {
       "id": "hgss4-78",
@@ -16174,48 +12626,12 @@
       "name": "Tadbulb"
     },
     {
-      "id": "dp3-78",
-      "name": "Burmy Plant Cloak"
-    },
-    {
-      "id": "dp5-78",
-      "name": "Turtwig"
-    },
-    {
-      "id": "dp2-78",
-      "name": "Croagunk"
-    },
-    {
-      "id": "dp6-78",
-      "name": "Unown U"
-    },
-    {
-      "id": "dp4-78",
-      "name": "Makuhita"
-    },
-    {
-      "id": "dp7-78",
-      "name": "Tangela"
-    },
-    {
       "id": "me01-078",
       "name": "Croagunk"
     },
     {
       "id": "me02.5-078",
       "name": "Team Rocket's Exeggutor"
-    },
-    {
-      "id": "pl1-78",
-      "name": "Kricketot"
-    },
-    {
-      "id": "pl2-78",
-      "name": "Seedot"
-    },
-    {
-      "id": "pl4-78",
-      "name": "Treecko"
     },
     {
       "id": "B2a-078",
@@ -16260,10 +12676,6 @@
     {
       "id": "sv10.5b-078",
       "name": "Braviary"
-    },
-    {
-      "id": "pl3-78",
-      "name": "Raticate G"
     },
     {
       "id": "hgss4-79",
@@ -16322,52 +12734,12 @@
       "name": "Flittle"
     },
     {
-      "id": "dp3-79",
-      "name": "Burmy Sandy Cloak"
-    },
-    {
-      "id": "dp5-79",
-      "name": "Dawn Stadium"
-    },
-    {
-      "id": "dp2-79",
-      "name": "Cyndaquil"
-    },
-    {
-      "id": "dp1-79",
-      "name": "Combee"
-    },
-    {
-      "id": "dp6-79",
-      "name": "Unown V"
-    },
-    {
-      "id": "dp4-79",
-      "name": "Mankey"
-    },
-    {
-      "id": "dp7-79",
-      "name": "Treecko"
-    },
-    {
       "id": "me01-079",
       "name": "Toxicroak"
     },
     {
       "id": "swsh10.5-079",
       "name": "Mewtwo VSTAR"
-    },
-    {
-      "id": "pl1-79",
-      "name": "Lapras"
-    },
-    {
-      "id": "pl2-79",
-      "name": "Shellos East Sea"
-    },
-    {
-      "id": "pl4-79",
-      "name": "Treecko"
     },
     {
       "id": "col1-79",
@@ -16474,48 +12846,12 @@
       "name": "Medicham"
     },
     {
-      "id": "dp3-80",
-      "name": "Burmy Trash Cloak"
-    },
-    {
-      "id": "dp2-80",
-      "name": "Doduo"
-    },
-    {
-      "id": "dp1-80",
-      "name": "Duskull"
-    },
-    {
-      "id": "dp6-80",
-      "name": "Unown W"
-    },
-    {
-      "id": "dp4-80",
-      "name": "Mudkip"
-    },
-    {
-      "id": "dp7-80",
-      "name": "Voltorb"
-    },
-    {
       "id": "me02-080",
       "name": "Smeargle"
     },
     {
       "id": "swsh10.5-080",
       "name": "Melmetal VMAX"
-    },
-    {
-      "id": "pl1-80",
-      "name": "Lickitung"
-    },
-    {
-      "id": "pl2-80",
-      "name": "Shellos West Sea"
-    },
-    {
-      "id": "pl4-80",
-      "name": "Wingull"
     },
     {
       "id": "B2a-080",
@@ -16556,10 +12892,6 @@
     {
       "id": "sv10.5b-080",
       "name": "Antique Cover Fossil"
-    },
-    {
-      "id": "pl3-80",
-      "name": "Rhydon"
     },
     {
       "id": "hgss1-81",
@@ -16614,30 +12946,6 @@
       "name": "Wattrel"
     },
     {
-      "id": "dp3-81",
-      "name": "Carvanha"
-    },
-    {
-      "id": "dp5-81",
-      "name": "Energy Restore"
-    },
-    {
-      "id": "dp2-81",
-      "name": "Electrike"
-    },
-    {
-      "id": "dp1-81",
-      "name": "Electabuzz"
-    },
-    {
-      "id": "dp6-81",
-      "name": "Unown Y"
-    },
-    {
-      "id": "dp7-81",
-      "name": "Voltorb"
-    },
-    {
       "id": "me02-081",
       "name": "Zigzagoon"
     },
@@ -16656,18 +12964,6 @@
     {
       "id": "swsh10.5-081",
       "name": "Dragonite VSTAR"
-    },
-    {
-      "id": "pl1-81",
-      "name": "Lotad"
-    },
-    {
-      "id": "pl2-81",
-      "name": "Snorlax"
-    },
-    {
-      "id": "pl4-81",
-      "name": "Wingull"
     },
     {
       "id": "B2a-081",
@@ -16712,10 +13008,6 @@
     {
       "id": "sv08-081",
       "name": "Sigilyph"
-    },
-    {
-      "id": "pl3-81",
-      "name": "Roserade"
     },
     {
       "id": "hgss4-82",
@@ -16774,34 +13066,6 @@
       "name": "Kilowattrel"
     },
     {
-      "id": "dp3-82",
-      "name": "Charmander"
-    },
-    {
-      "id": "dp5-82",
-      "name": "Fossil Excavator"
-    },
-    {
-      "id": "dp2-82",
-      "name": "Exeggcute"
-    },
-    {
-      "id": "dp1-82",
-      "name": "Gastly"
-    },
-    {
-      "id": "dp6-82",
-      "name": "Unown ?"
-    },
-    {
-      "id": "dp4-82",
-      "name": "Slowpoke"
-    },
-    {
-      "id": "dp7-82",
-      "name": "Conductive Quarry"
-    },
-    {
       "id": "me02-082",
       "name": "Linoone"
     },
@@ -16812,10 +13076,6 @@
     {
       "id": "swsh10.5-082",
       "name": "Blanche"
-    },
-    {
-      "id": "pl2-82",
-      "name": "Spheal"
     },
     {
       "id": "B2a-082",
@@ -16870,10 +13130,6 @@
       "name": "Yamask"
     },
     {
-      "id": "pl3-82",
-      "name": "Rotom"
-    },
-    {
       "id": "hgss3-83",
       "name": "Raichu"
     },
@@ -16926,52 +13182,12 @@
       "name": "Jigglypuff"
     },
     {
-      "id": "dp3-83",
-      "name": "Clefairy"
-    },
-    {
-      "id": "dp5-83",
-      "name": "Mom's Kindness"
-    },
-    {
-      "id": "dp2-83",
-      "name": "Finneon"
-    },
-    {
-      "id": "dp1-83",
-      "name": "Glameow"
-    },
-    {
-      "id": "dp6-83",
-      "name": "Beldum"
-    },
-    {
-      "id": "dp4-83",
-      "name": "Slugma"
-    },
-    {
-      "id": "dp7-83",
-      "name": "Energy Link"
-    },
-    {
       "id": "mep-083",
       "name": "Slowbro"
     },
     {
       "id": "swsh10.5-083",
       "name": "Candela"
-    },
-    {
-      "id": "pl1-83",
-      "name": "Misdreavus"
-    },
-    {
-      "id": "pl2-83",
-      "name": "Staryu"
-    },
-    {
-      "id": "pl4-83",
-      "name": "Bench Shield"
     },
     {
       "id": "col1-83",
@@ -17030,10 +13246,6 @@
       "name": "Mienfoo"
     },
     {
-      "id": "pl3-83",
-      "name": "Skarmory FB"
-    },
-    {
       "id": "hgss1-84",
       "name": "Staryu"
     },
@@ -17082,48 +13294,12 @@
       "name": "Wigglytuff"
     },
     {
-      "id": "dp3-84",
-      "name": "Corsola"
-    },
-    {
-      "id": "dp5-84",
-      "name": "Old Amber"
-    },
-    {
-      "id": "dp2-84",
-      "name": "Geodude"
-    },
-    {
-      "id": "dp1-84",
-      "name": "Goldeen"
-    },
-    {
-      "id": "dp6-84",
-      "name": "Beldum"
-    },
-    {
-      "id": "dp4-84",
-      "name": "Snubbull"
-    },
-    {
       "id": "me05-084",
       "name": "Voltaic Lightning Energy"
     },
     {
       "id": "mep-084",
       "name": "Dhelmise"
-    },
-    {
-      "id": "pl1-84",
-      "name": "Nosepass"
-    },
-    {
-      "id": "pl2-84",
-      "name": "Trapinch"
-    },
-    {
-      "id": "pl4-84",
-      "name": "Buffer Piece"
     },
     {
       "id": "col1-84",
@@ -17160,10 +13336,6 @@
     {
       "id": "sv07-084",
       "name": "Mienshao"
-    },
-    {
-      "id": "pl3-84",
-      "name": "Spiritomb C"
     },
     {
       "id": "hgss3-85",
@@ -17226,44 +13398,12 @@
       "name": "Chimecho"
     },
     {
-      "id": "dp3-85",
-      "name": "Diglett"
-    },
-    {
-      "id": "dp2-85",
-      "name": "Gible"
-    },
-    {
-      "id": "dp1-85",
-      "name": "Hoothoot"
-    },
-    {
-      "id": "dp6-85",
-      "name": "Bellsprout"
-    },
-    {
-      "id": "dp4-85",
-      "name": "Solrock"
-    },
-    {
       "id": "mep-085",
       "name": "Bastiodon"
     },
     {
       "id": "swsh10.5-085",
       "name": "Spark"
-    },
-    {
-      "id": "pl1-85",
-      "name": "Piplup"
-    },
-    {
-      "id": "pl2-85",
-      "name": "Turtwig GL"
-    },
-    {
-      "id": "pl4-85",
-      "name": "Department Store Girl"
     },
     {
       "id": "B2a-085",
@@ -17292,10 +13432,6 @@
     {
       "id": "sv07-085",
       "name": "Pancham"
-    },
-    {
-      "id": "pl3-85",
-      "name": "Staravia"
     },
     {
       "id": "hgss4-86",
@@ -17354,40 +13490,12 @@
       "name": "Flabébé"
     },
     {
-      "id": "dp2-86",
-      "name": "Kricketot"
-    },
-    {
-      "id": "dp1-86",
-      "name": "Machop"
-    },
-    {
-      "id": "dp6-86",
-      "name": "Buneary"
-    },
-    {
-      "id": "dp4-86",
-      "name": "Swablu"
-    },
-    {
       "id": "me03-086",
       "name": "Growing Grass Energy"
     },
     {
       "id": "swsh10.5-086",
       "name": "Mewtwo VSTAR"
-    },
-    {
-      "id": "pl1-86",
-      "name": "Poochyena"
-    },
-    {
-      "id": "pl2-86",
-      "name": "Weedle"
-    },
-    {
-      "id": "pl4-86",
-      "name": "Energy Restore"
     },
     {
       "id": "col1-86",
@@ -17432,10 +13540,6 @@
     {
       "id": "sv04.5-086",
       "name": "Paldean Student"
-    },
-    {
-      "id": "pl3-86",
-      "name": "Togekiss C"
     },
     {
       "id": "hgss2-87",
@@ -17486,22 +13590,6 @@
       "name": "Floette"
     },
     {
-      "id": "dp2-87",
-      "name": "Larvitar"
-    },
-    {
-      "id": "dp1-87",
-      "name": "Magnemite"
-    },
-    {
-      "id": "dp6-87",
-      "name": "Chinchou"
-    },
-    {
-      "id": "dp4-87",
-      "name": "Tangela"
-    },
-    {
       "id": "me01-087",
       "name": "Spiritomb"
     },
@@ -17512,14 +13600,6 @@
     {
       "id": "swsh10.5-087",
       "name": "Egg Incubator"
-    },
-    {
-      "id": "pl1-87",
-      "name": "Psyduck"
-    },
-    {
-      "id": "pl2-87",
-      "name": "Weezing"
     },
     {
       "id": "col1-87",
@@ -17560,10 +13640,6 @@
     {
       "id": "sv10.5w-087",
       "name": "Sewaddle"
-    },
-    {
-      "id": "pl3-87",
-      "name": "Wailmer"
     },
     {
       "id": "hgss2-88",
@@ -17622,26 +13698,6 @@
       "name": "Florges"
     },
     {
-      "id": "dp3-88",
-      "name": "Grimer"
-    },
-    {
-      "id": "dp2-88",
-      "name": "Magby"
-    },
-    {
-      "id": "dp1-88",
-      "name": "Marill"
-    },
-    {
-      "id": "dp6-88",
-      "name": "Chinchou"
-    },
-    {
-      "id": "dp4-88",
-      "name": "Togepi"
-    },
-    {
       "id": "me02-088",
       "name": "Dizzying Valley"
     },
@@ -17652,10 +13708,6 @@
     {
       "id": "swsh9-088",
       "name": "Honchkrow V"
-    },
-    {
-      "id": "pl1-88",
-      "name": "Purugly G"
     },
     {
       "id": "B2a-088",
@@ -17708,10 +13760,6 @@
     {
       "id": "sv08-088",
       "name": "Xerneas"
-    },
-    {
-      "id": "pl3-88",
-      "name": "Yanma"
     },
     {
       "id": "hgss2-89",
@@ -17770,32 +13818,8 @@
       "name": "Swirlix"
     },
     {
-      "id": "dp3-89",
-      "name": "Growlithe"
-    },
-    {
-      "id": "dp5-89",
-      "name": "Dome Fossil"
-    },
-    {
-      "id": "dp2-89",
-      "name": "Magikarp"
-    },
-    {
-      "id": "dp6-89",
-      "name": "Corphish"
-    },
-    {
-      "id": "dp4-89",
-      "name": "Torchic"
-    },
-    {
       "id": "me01-089",
       "name": "Nickit"
-    },
-    {
-      "id": "pl4-89",
-      "name": "Old Amber"
     },
     {
       "id": "B2a-089",
@@ -17902,40 +13926,8 @@
       "name": "Slurpuff"
     },
     {
-      "id": "dp2-90",
-      "name": "Murkrow"
-    },
-    {
-      "id": "dp1-90",
-      "name": "Mime Jr."
-    },
-    {
-      "id": "dp6-90",
-      "name": "Cubone"
-    },
-    {
-      "id": "dp4-90",
-      "name": "Treecko"
-    },
-    {
-      "id": "dp7-90",
-      "name": "Poké Healer +"
-    },
-    {
       "id": "me01-090",
       "name": "Thievul"
-    },
-    {
-      "id": "pl1-90",
-      "name": "Remoraid"
-    },
-    {
-      "id": "pl2-90",
-      "name": "Bertha's Warmth"
-    },
-    {
-      "id": "pl4-90",
-      "name": "Professor Oak's Visit"
     },
     {
       "id": "B2a-090",
@@ -17990,10 +13982,6 @@
       "name": "Simisage"
     },
     {
-      "id": "pl3-90",
-      "name": "Beldum"
-    },
-    {
       "id": "hgss4-91",
       "name": "Absol"
     },
@@ -18046,40 +14034,8 @@
       "name": "Sandygast"
     },
     {
-      "id": "dp3-91",
-      "name": "Lickitung"
-    },
-    {
-      "id": "dp5-91",
-      "name": "Helix Fossil"
-    },
-    {
-      "id": "dp2-91",
-      "name": "Nidoran♀"
-    },
-    {
-      "id": "dp1-91",
-      "name": "Misdreavus"
-    },
-    {
-      "id": "dp6-91",
-      "name": "Dratini"
-    },
-    {
-      "id": "dp4-91",
-      "name": "Unown L"
-    },
-    {
       "id": "me01-091",
       "name": "Shroodle"
-    },
-    {
-      "id": "pl1-91",
-      "name": "Riolu"
-    },
-    {
-      "id": "pl2-91",
-      "name": "Flint's Willpower"
     },
     {
       "id": "B2a-091",
@@ -18128,10 +14084,6 @@
     {
       "id": "sv10.5b-091",
       "name": "Petilil"
-    },
-    {
-      "id": "pl3-91",
-      "name": "Bidoof"
     },
     {
       "id": "hgss2-92",
@@ -18194,36 +14146,8 @@
       "name": "Palossand"
     },
     {
-      "id": "dp3-92",
-      "name": "Lotad"
-    },
-    {
-      "id": "dp2-92",
-      "name": "Paras"
-    },
-    {
-      "id": "dp1-92",
-      "name": "Onix"
-    },
-    {
-      "id": "dp6-92",
-      "name": "Drifloon"
-    },
-    {
       "id": "me01-092",
       "name": "Grafaiai"
-    },
-    {
-      "id": "pl1-92",
-      "name": "Shuppet"
-    },
-    {
-      "id": "pl2-92",
-      "name": "Lucian's Assignment"
-    },
-    {
-      "id": "pl4-92",
-      "name": "Dome Fossil"
     },
     {
       "id": "B2a-092",
@@ -18270,10 +14194,6 @@
       "name": "Tapu Lele"
     },
     {
-      "id": "pl3-92",
-      "name": "Buizel"
-    },
-    {
       "id": "hgss2-93",
       "name": "Raikou & Suicune LEGEND"
     },
@@ -18316,22 +14236,6 @@
     {
       "id": "A2a-093",
       "name": "Garchomp ex"
-    },
-    {
-      "id": "dp3-93",
-      "name": "Magmar"
-    },
-    {
-      "id": "dp2-93",
-      "name": "Pichu"
-    },
-    {
-      "id": "dp6-93",
-      "name": "Exeggcute"
-    },
-    {
-      "id": "pl4-93",
-      "name": "Helix Fossil"
     },
     {
       "id": "B2a-093",
@@ -18438,38 +14342,6 @@
       "name": "Oranguru"
     },
     {
-      "id": "dp3-94",
-      "name": "Mareep"
-    },
-    {
-      "id": "dp5-94",
-      "name": "Health Energy"
-    },
-    {
-      "id": "dp2-94",
-      "name": "Pikachu"
-    },
-    {
-      "id": "dp1-94",
-      "name": "Ponyta"
-    },
-    {
-      "id": "dp6-94",
-      "name": "Gligar"
-    },
-    {
-      "id": "dp4-94",
-      "name": "Whismur"
-    },
-    {
-      "id": "pl2-94",
-      "name": "Sunyshore City Gym"
-    },
-    {
-      "id": "pl4-94",
-      "name": "Arceus LV.X"
-    },
-    {
       "id": "B2a-094",
       "name": "Fuecoco"
     },
@@ -18518,10 +14390,6 @@
       "name": "Karrablast"
     },
     {
-      "id": "pl3-94",
-      "name": "Buneary"
-    },
-    {
       "id": "A1-095",
       "name": "Raichu"
     },
@@ -18566,36 +14434,8 @@
       "name": "Sandygast"
     },
     {
-      "id": "dp2-95",
-      "name": "Remoraid"
-    },
-    {
-      "id": "dp1-95",
-      "name": "Rhyhorn"
-    },
-    {
-      "id": "dp6-95",
-      "name": "Gligar"
-    },
-    {
-      "id": "dp4-95",
-      "name": "Wingull"
-    },
-    {
       "id": "me02.5-095",
       "name": "Hop's Phantump"
-    },
-    {
-      "id": "pl1-95",
-      "name": "Slakoth"
-    },
-    {
-      "id": "pl2-95",
-      "name": "Team Galactic's Invention G-107 Technical Machine G"
-    },
-    {
-      "id": "pl4-95",
-      "name": "Arceus LV.X"
     },
     {
       "id": "B2a-095",
@@ -18644,10 +14484,6 @@
     {
       "id": "sv08-095",
       "name": "Espathra"
-    },
-    {
-      "id": "pl3-95",
-      "name": "Chatot"
     },
     {
       "id": "A1-096",
@@ -18702,48 +14538,12 @@
       "name": "Palossand"
     },
     {
-      "id": "dp3-96",
-      "name": "Natu"
-    },
-    {
-      "id": "dp5-96",
-      "name": "Recover Energy"
-    },
-    {
-      "id": "dp2-96",
-      "name": "Sandshrew"
-    },
-    {
-      "id": "dp1-96",
-      "name": "Roselia"
-    },
-    {
-      "id": "dp6-96",
-      "name": "Gloom"
-    },
-    {
-      "id": "dp4-96",
-      "name": "Zigzagoon"
-    },
-    {
-      "id": "dp7-96",
-      "name": "Dusknoir"
-    },
-    {
       "id": "me02-096",
       "name": "Nymble"
     },
     {
       "id": "me02.5-096",
       "name": "Hop's Trevenant"
-    },
-    {
-      "id": "pl1-96",
-      "name": "Squirtle"
-    },
-    {
-      "id": "pl4-96",
-      "name": "Arceus LV.X"
     },
     {
       "id": "B2a-096",
@@ -18784,10 +14584,6 @@
     {
       "id": "sv08-096",
       "name": "Flutter Mane"
-    },
-    {
-      "id": "pl3-96",
-      "name": "Cherubi"
     },
     {
       "id": "sm7-97",
@@ -18846,48 +14642,8 @@
       "name": "Sandshrew"
     },
     {
-      "id": "dp3-97",
-      "name": "Nidoran♂"
-    },
-    {
-      "id": "dp5-97",
-      "name": "Garchomp"
-    },
-    {
-      "id": "dp2-97",
-      "name": "Seel"
-    },
-    {
-      "id": "dp1-97",
-      "name": "Seedot"
-    },
-    {
-      "id": "dp6-97",
-      "name": "Gloom"
-    },
-    {
-      "id": "dp4-97",
-      "name": "Amulet Coin"
-    },
-    {
-      "id": "dp7-97",
-      "name": "Heatran"
-    },
-    {
       "id": "me02-097",
       "name": "Dewgong"
-    },
-    {
-      "id": "pl1-97",
-      "name": "Swablu"
-    },
-    {
-      "id": "pl2-97",
-      "name": "Underground Expedition"
-    },
-    {
-      "id": "pl4-97",
-      "name": "Gengar LV.X"
     },
     {
       "id": "B2a-097",
@@ -18942,10 +14698,6 @@
       "name": "Nosepass"
     },
     {
-      "id": "pl3-97",
-      "name": "Chimchar"
-    },
-    {
       "id": "A1-098",
       "name": "Magneton"
     },
@@ -18998,44 +14750,8 @@
       "name": "Sandslash"
     },
     {
-      "id": "dp3-98",
-      "name": "Phanpy"
-    },
-    {
-      "id": "dp5-98",
-      "name": "Glaceon"
-    },
-    {
-      "id": "dp2-98",
-      "name": "Shinx"
-    },
-    {
-      "id": "dp1-98",
-      "name": "Shinx"
-    },
-    {
-      "id": "dp6-98",
-      "name": "Gulpin"
-    },
-    {
-      "id": "dp7-98",
-      "name": "Machamp"
-    },
-    {
       "id": "me02-098",
       "name": "Piplup"
-    },
-    {
-      "id": "pl1-98",
-      "name": "Tauros"
-    },
-    {
-      "id": "pl2-98",
-      "name": "Volkner's Philosophy"
-    },
-    {
-      "id": "pl4-98",
-      "name": "Salamence LV.X"
     },
     {
       "id": "B2a-098",
@@ -19098,10 +14814,6 @@
       "name": "Mankey"
     },
     {
-      "id": "pl3-98",
-      "name": "Chingling"
-    },
-    {
       "id": "hgss4-99",
       "name": "Darkrai & Cresselia LEGEND"
     },
@@ -19146,40 +14858,12 @@
       "name": "Rabsca"
     },
     {
-      "id": "dp5-99",
-      "name": "Leafeon"
-    },
-    {
-      "id": "dp2-99",
-      "name": "Slakoth"
-    },
-    {
-      "id": "dp1-99",
-      "name": "Skorupi"
-    },
-    {
-      "id": "dp6-99",
-      "name": "Hitmonchan"
-    },
-    {
-      "id": "dp7-99",
-      "name": "Raichu"
-    },
-    {
       "id": "me02-099",
       "name": "Yamper"
     },
     {
       "id": "me01-099",
       "name": "Gholdengo"
-    },
-    {
-      "id": "pl1-99",
-      "name": "Torchic"
-    },
-    {
-      "id": "pl4-99",
-      "name": "Tangrowth LV.X"
     },
     {
       "id": "B2a-099",
@@ -19246,10 +14930,6 @@
       "name": "Primeape"
     },
     {
-      "id": "pl3-99",
-      "name": "Combee"
-    },
-    {
       "id": "hgss4-100",
       "name": "Darkrai & Cresselia LEGEND"
     },
@@ -19294,36 +14974,8 @@
       "name": "Tinkatink"
     },
     {
-      "id": "dp3-100",
-      "name": "Psyduck"
-    },
-    {
-      "id": "dp5-100",
-      "name": "Porygon-Z"
-    },
-    {
-      "id": "dp2-100",
-      "name": "Snorunt"
-    },
-    {
-      "id": "dp1-100",
-      "name": "Sneasel"
-    },
-    {
-      "id": "dp6-100",
-      "name": "Hitmonlee"
-    },
-    {
-      "id": "dp7-100",
-      "name": "Regigigas"
-    },
-    {
       "id": "me02.5-100",
       "name": "Team Rocket's Diglett"
-    },
-    {
-      "id": "pl1-100",
-      "name": "Torkoal"
     },
     {
       "id": "B2a-100",
@@ -19374,10 +15026,6 @@
       "name": "Medicham"
     },
     {
-      "id": "pl3-100",
-      "name": "Corphish"
-    },
-    {
       "id": "hgss4-101",
       "name": "Palkia & Dialga LEGEND"
     },
@@ -19422,32 +15070,8 @@
       "name": "Nosepass"
     },
     {
-      "id": "dp3-101",
-      "name": "Qwilfish"
-    },
-    {
-      "id": "dp2-101",
-      "name": "Snover"
-    },
-    {
-      "id": "dp1-101",
-      "name": "Starly"
-    },
-    {
-      "id": "dp6-101",
-      "name": "Hitmontop"
-    },
-    {
       "id": "me02.5-101",
       "name": "Team Rocket's Dugtrio"
-    },
-    {
-      "id": "pl1-101",
-      "name": "Turtwig"
-    },
-    {
-      "id": "pl2-101",
-      "name": "SP Energy"
     },
     {
       "id": "B2a-101",
@@ -19502,10 +15126,6 @@
       "name": "Paldean Tauros"
     },
     {
-      "id": "pl3-101",
-      "name": "Croagunk"
-    },
-    {
       "id": "hgss4-102",
       "name": "Palkia & Dialga LEGEND"
     },
@@ -19552,14 +15172,6 @@
     {
       "id": "sv06-102",
       "name": "Probopass"
-    },
-    {
-      "id": "dp2-102",
-      "name": "Spheal"
-    },
-    {
-      "id": "dp1-102",
-      "name": "Stunky"
     },
     {
       "id": "me02-102",
@@ -19618,10 +15230,6 @@
       "name": "Phanpy"
     },
     {
-      "id": "pl3-102",
-      "name": "Doduo"
-    },
-    {
       "id": "A1-103",
       "name": "Zapdos"
     },
@@ -19654,36 +15262,8 @@
       "name": "Nihilego"
     },
     {
-      "id": "dp3-103",
-      "name": "Rattata"
-    },
-    {
-      "id": "dp2-103",
-      "name": "Spinarak"
-    },
-    {
-      "id": "dp1-103",
-      "name": "Turtwig"
-    },
-    {
-      "id": "dp6-103",
-      "name": "Houndour"
-    },
-    {
-      "id": "dp4-103",
-      "name": "Cresselia"
-    },
-    {
       "id": "me01-103",
       "name": "Fearow"
-    },
-    {
-      "id": "pl1-103",
-      "name": "Wurmple"
-    },
-    {
-      "id": "pl2-103",
-      "name": "Alakazam E4 LV.X"
     },
     {
       "id": "B2a-103",
@@ -19726,10 +15306,6 @@
       "name": "Donphan"
     },
     {
-      "id": "pl3-103",
-      "name": "Drifloon"
-    },
-    {
       "id": "A1-104",
       "name": "Zapdos ex"
     },
@@ -19754,28 +15330,8 @@
       "name": "Spiritomb"
     },
     {
-      "id": "dp2-104",
-      "name": "Surskit"
-    },
-    {
-      "id": "dp1-104",
-      "name": "Wurmple"
-    },
-    {
-      "id": "dp6-104",
-      "name": "Ledyba"
-    },
-    {
-      "id": "dp4-104",
-      "name": "Darkrai"
-    },
-    {
       "id": "me02-104",
       "name": "Togedemaru"
-    },
-    {
-      "id": "pl2-104",
-      "name": "Floatzel GL LV.X"
     },
     {
       "id": "B2a-104",
@@ -19814,10 +15370,6 @@
       "name": "Heatmor"
     },
     {
-      "id": "pl3-104",
-      "name": "Feebas"
-    },
-    {
       "id": "hgss1-105",
       "name": "Ampharos"
     },
@@ -19846,36 +15398,8 @@
       "name": "Skorupi"
     },
     {
-      "id": "dp3-105",
-      "name": "Shellder"
-    },
-    {
-      "id": "dp2-105",
-      "name": "Teddiursa"
-    },
-    {
-      "id": "dp1-105",
-      "name": "Double Full Heal"
-    },
-    {
-      "id": "dp6-105",
-      "name": "Lileep"
-    },
-    {
-      "id": "dp4-105",
-      "name": "Dialga"
-    },
-    {
       "id": "me01-105",
       "name": "Delibird"
-    },
-    {
-      "id": "pl1-105",
-      "name": "Cyrus's Conspiracy"
-    },
-    {
-      "id": "pl2-105",
-      "name": "Flygon LV.X"
     },
     {
       "id": "B2a-105",
@@ -19922,10 +15446,6 @@
       "name": "Hippopotas"
     },
     {
-      "id": "pl3-105",
-      "name": "Geodude"
-    },
-    {
       "id": "sm10-106",
       "name": "Stakataka"
     },
@@ -19962,32 +15482,12 @@
       "name": "Mankey"
     },
     {
-      "id": "dp3-106",
-      "name": "Shellos East Sea"
-    },
-    {
-      "id": "dp1-106",
-      "name": "Energy Restore"
-    },
-    {
-      "id": "dp6-106",
-      "name": "Meowth"
-    },
-    {
-      "id": "dp4-106",
-      "name": "Palkia"
-    },
-    {
       "id": "me02-106",
       "name": "Meowth"
     },
     {
       "id": "me01-106",
       "name": "Miltank"
-    },
-    {
-      "id": "pl2-106",
-      "name": "Gallade E4 LV.X"
     },
     {
       "id": "B2a-106",
@@ -20054,28 +15554,12 @@
       "name": "Primeape"
     },
     {
-      "id": "dp3-107",
-      "name": "Shellos West Sea"
-    },
-    {
-      "id": "dp2-107",
-      "name": "Vulpix"
-    },
-    {
-      "id": "dp6-107",
-      "name": "Misdreavus"
-    },
-    {
       "id": "me05-107",
       "name": "Energy Switch"
     },
     {
       "id": "me01-107",
       "name": "Buneary"
-    },
-    {
-      "id": "pl2-107",
-      "name": "Hippowdon LV.X"
     },
     {
       "id": "B2a-107",
@@ -20104,10 +15588,6 @@
     {
       "id": "sv10-107",
       "name": "Mudbray"
-    },
-    {
-      "id": "pl3-107",
-      "name": "Goldeen"
     },
     {
       "id": "sm7-108",
@@ -20142,36 +15622,12 @@
       "name": "Glimmet"
     },
     {
-      "id": "dp3-108",
-      "name": "Shroomish"
-    },
-    {
-      "id": "dp2-108",
-      "name": "Zubat"
-    },
-    {
-      "id": "dp1-108",
-      "name": "Night Pokémon Center"
-    },
-    {
-      "id": "dp6-108",
-      "name": "Nincada"
-    },
-    {
       "id": "me02-108",
       "name": "Mega Heracross ex"
     },
     {
       "id": "me01-108",
       "name": "Lopunny"
-    },
-    {
-      "id": "pl1-108",
-      "name": "Life Herb"
-    },
-    {
-      "id": "pl2-108",
-      "name": "Infernape E4 LV.X"
     },
     {
       "id": "B2a-108",
@@ -20214,10 +15670,6 @@
       "name": "Drilbur"
     },
     {
-      "id": "pl3-108",
-      "name": "Growlithe"
-    },
-    {
       "id": "A1-109",
       "name": "Eelektross"
     },
@@ -20250,20 +15702,8 @@
       "name": "Glimmora"
     },
     {
-      "id": "dp3-109",
-      "name": "Shuckle"
-    },
-    {
-      "id": "dp6-109",
-      "name": "Nosepass"
-    },
-    {
       "id": "swsh8-109",
       "name": "Morpeko"
-    },
-    {
-      "id": "pl2-109",
-      "name": "Luxray GL LV.X"
     },
     {
       "id": "B2a-109",
@@ -20306,10 +15746,6 @@
       "name": "Excadrill"
     },
     {
-      "id": "pl3-109",
-      "name": "Kricketot"
-    },
-    {
       "id": "A1-110",
       "name": "Helioptile"
     },
@@ -20336,22 +15772,6 @@
     {
       "id": "sv04-110",
       "name": "Zubat"
-    },
-    {
-      "id": "dp3-110",
-      "name": "Shuppet"
-    },
-    {
-      "id": "dp6-110",
-      "name": "Numel"
-    },
-    {
-      "id": "pl1-110",
-      "name": "Memory Berry"
-    },
-    {
-      "id": "pl2-110",
-      "name": "Mismagius GL LV.X"
     },
     {
       "id": "B2a-110",
@@ -20398,10 +15818,6 @@
       "name": "Landorus"
     },
     {
-      "id": "pl3-110",
-      "name": "Magikarp"
-    },
-    {
       "id": "hgss1-111",
       "name": "Ho-Oh LEGEND"
     },
@@ -20430,28 +15846,8 @@
       "name": "Golbat"
     },
     {
-      "id": "dp3-111",
-      "name": "Spinda"
-    },
-    {
-      "id": "dp2-111",
-      "name": "Fossil Excavator"
-    },
-    {
-      "id": "dp6-111",
-      "name": "Oddish"
-    },
-    {
       "id": "swsh1-111",
       "name": "Clobbopus"
-    },
-    {
-      "id": "pl1-111",
-      "name": "Miasma Valley"
-    },
-    {
-      "id": "pl2-111",
-      "name": "Snorlax LV.X"
     },
     {
       "id": "B2a-111",
@@ -20498,10 +15894,6 @@
       "name": "Passimian"
     },
     {
-      "id": "pl3-111",
-      "name": "Magnemite"
-    },
-    {
       "id": "hgss1-112",
       "name": "Ho-Oh LEGEND"
     },
@@ -20532,18 +15924,6 @@
     {
       "id": "sv02-112",
       "name": "Makuhita"
-    },
-    {
-      "id": "dp3-112",
-      "name": "Squirtle"
-    },
-    {
-      "id": "dp2-112",
-      "name": "Lake Boundary"
-    },
-    {
-      "id": "dp1-112",
-      "name": "Professor Rowan"
     },
     {
       "id": "me02-112",
@@ -20586,10 +15966,6 @@
       "name": "Vanillish"
     },
     {
-      "id": "pl3-112",
-      "name": "Mankey"
-    },
-    {
       "id": "hgss1-113",
       "name": "Lugia LEGEND"
     },
@@ -20622,24 +15998,8 @@
       "name": "Hariyama"
     },
     {
-      "id": "dp3-113",
-      "name": "Stantler"
-    },
-    {
-      "id": "dp1-113",
-      "name": "Rival"
-    },
-    {
-      "id": "dp6-113",
-      "name": "Pineco"
-    },
-    {
       "id": "swsh4-113",
       "name": "Galarian Perrserker"
-    },
-    {
-      "id": "pl2-113",
-      "name": "Flying Pikachu"
     },
     {
       "id": "B2a-113",
@@ -20664,10 +16024,6 @@
     {
       "id": "sv10.5w-113",
       "name": "Vanilluxe"
-    },
-    {
-      "id": "pl3-113",
-      "name": "Meditite"
     },
     {
       "id": "hgss1-114",
@@ -20702,20 +16058,8 @@
       "name": "Croagunk"
     },
     {
-      "id": "dp3-114",
-      "name": "Sunkern"
-    },
-    {
-      "id": "dp6-114",
-      "name": "Poliwag"
-    },
-    {
       "id": "me02-114",
       "name": "Empoleon ex"
-    },
-    {
-      "id": "pl2-114",
-      "name": "Surfing Pikachu"
     },
     {
       "id": "B2a-114",
@@ -20750,10 +16094,6 @@
       "name": "Glimmet"
     },
     {
-      "id": "pl3-114",
-      "name": "Meowth"
-    },
-    {
       "id": "A1-115",
       "name": "Abra"
     },
@@ -20784,10 +16124,6 @@
     {
       "id": "sv06-115",
       "name": "Venipede"
-    },
-    {
-      "id": "dp6-115",
-      "name": "Poliwhirl"
     },
     {
       "id": "B2a-115",
@@ -20826,10 +16162,6 @@
       "name": "Glimmora"
     },
     {
-      "id": "pl3-115",
-      "name": "Mime Jr."
-    },
-    {
       "id": "sm9-116",
       "name": "Dratini"
     },
@@ -20856,18 +16188,6 @@
     {
       "id": "sv02-116",
       "name": "Rockruff"
-    },
-    {
-      "id": "dp3-116",
-      "name": "Venonat"
-    },
-    {
-      "id": "dp2-116",
-      "name": "Armor Fossil"
-    },
-    {
-      "id": "dp6-116",
-      "name": "Poochyena"
     },
     {
       "id": "B2a-116",
@@ -20906,10 +16226,6 @@
       "name": "Munna"
     },
     {
-      "id": "pl3-116",
-      "name": "Mudkip"
-    },
-    {
       "id": "A1-117",
       "name": "Alakazam"
     },
@@ -20942,24 +16258,8 @@
       "name": "Lycanroc ex"
     },
     {
-      "id": "dp3-117",
-      "name": "Voltorb"
-    },
-    {
-      "id": "dp2-117",
-      "name": "Skull Fossil"
-    },
-    {
-      "id": "dp6-117",
-      "name": "Riolu"
-    },
-    {
       "id": "me02.5-117",
       "name": "Carbink"
-    },
-    {
-      "id": "pl1-117",
-      "name": "Team Galactic's Invention G-103 Power Spray"
     },
     {
       "id": "B2a-117",
@@ -21002,10 +16302,6 @@
       "name": "Musharna"
     },
     {
-      "id": "pl3-117",
-      "name": "Nincada"
-    },
-    {
       "id": "A1-118",
       "name": "Slowpoke"
     },
@@ -21040,14 +16336,6 @@
     {
       "id": "sv02-118",
       "name": "Passimian"
-    },
-    {
-      "id": "dp3-118",
-      "name": "Wooper"
-    },
-    {
-      "id": "dp6-118",
-      "name": "Shinx"
     },
     {
       "id": "B2a-118",
@@ -21090,10 +16378,6 @@
       "name": "Solosis"
     },
     {
-      "id": "pl3-118",
-      "name": "Pachirisu"
-    },
-    {
       "id": "sm10-119",
       "name": "Malamar"
     },
@@ -21130,14 +16414,6 @@
       "name": "Skarmory"
     },
     {
-      "id": "dp6-119",
-      "name": "Skitty"
-    },
-    {
-      "id": "pl1-119",
-      "name": "Armor Fossil"
-    },
-    {
       "id": "B2a-119",
       "name": "Pawmi"
     },
@@ -21168,10 +16444,6 @@
     {
       "id": "sv10.5b-119",
       "name": "Duosion"
-    },
-    {
-      "id": "pl3-119",
-      "name": "Paras"
     },
     {
       "id": "sm5-120",
@@ -21210,20 +16482,8 @@
       "name": "Nacli"
     },
     {
-      "id": "dp1-120",
-      "name": "Empoleon"
-    },
-    {
-      "id": "dp6-120",
-      "name": "Sneasel"
-    },
-    {
       "id": "me01-120",
       "name": "Lt. Surge's Bargain"
-    },
-    {
-      "id": "pl1-120",
-      "name": "Skull Fossil"
     },
     {
       "id": "B2a-120",
@@ -21262,10 +16522,6 @@
       "name": "Elgyem"
     },
     {
-      "id": "pl3-120",
-      "name": "Pikachu"
-    },
-    {
       "id": "A1-121",
       "name": "Haunter"
     },
@@ -21284,18 +16540,6 @@
     {
       "id": "A2-121",
       "name": "Gible"
-    },
-    {
-      "id": "dp2-121",
-      "name": "Electivire"
-    },
-    {
-      "id": "dp1-121",
-      "name": "Infernape"
-    },
-    {
-      "id": "dp6-121",
-      "name": "Spoink"
     },
     {
       "id": "me02-121",
@@ -21342,10 +16586,6 @@
       "name": "Grafaiai"
     },
     {
-      "id": "pl3-121",
-      "name": "Piplup"
-    },
-    {
       "id": "A1-122",
       "name": "Gengar"
     },
@@ -21370,28 +16610,8 @@
       "name": "Lokix"
     },
     {
-      "id": "dp3-122",
-      "name": "Professor Oak's Visit"
-    },
-    {
-      "id": "dp2-122",
-      "name": "Lucario"
-    },
-    {
-      "id": "dp1-122",
-      "name": "Torterra"
-    },
-    {
-      "id": "dp6-122",
-      "name": "Staryu"
-    },
-    {
       "id": "me02.5-122",
       "name": "Okidogi"
-    },
-    {
-      "id": "pl1-122",
-      "name": "Dialga G LV.X"
     },
     {
       "id": "B2a-122",
@@ -21430,10 +16650,6 @@
       "name": "Yamask"
     },
     {
-      "id": "pl3-122",
-      "name": "Rhyhorn"
-    },
-    {
       "id": "hgss1-123",
       "name": "Gyarados"
     },
@@ -21458,24 +16674,8 @@
       "name": "Garchomp"
     },
     {
-      "id": "dp3-123",
-      "name": "Professor Rowan"
-    },
-    {
-      "id": "dp2-123",
-      "name": "Magmortar"
-    },
-    {
-      "id": "dp6-123",
-      "name": "Swinub"
-    },
-    {
       "id": "me01-123",
       "name": "Pokémon Center Lady"
-    },
-    {
-      "id": "pl1-123",
-      "name": "Drapion LV.X"
     },
     {
       "id": "B2a-123",
@@ -21510,10 +16710,6 @@
       "name": "Team Rocket's Grimer"
     },
     {
-      "id": "pl3-123",
-      "name": "Roselia"
-    },
-    {
       "id": "A1-124",
       "name": "Drowzee"
     },
@@ -21532,18 +16728,6 @@
     {
       "id": "A2-124",
       "name": "Lickitung"
-    },
-    {
-      "id": "dp3-124",
-      "name": "Rival"
-    },
-    {
-      "id": "dp6-124",
-      "name": "Taillow"
-    },
-    {
-      "id": "pl1-124",
-      "name": "Giratina LV.X"
     },
     {
       "id": "B2a-124",
@@ -21590,10 +16774,6 @@
       "name": "Skarmory"
     },
     {
-      "id": "pl3-124",
-      "name": "Sandshrew"
-    },
-    {
       "id": "A1-125",
       "name": "Hypno"
     },
@@ -21620,14 +16800,6 @@
     {
       "id": "sv06-125",
       "name": "Revavroom"
-    },
-    {
-      "id": "dp6-125",
-      "name": "Tentacool"
-    },
-    {
-      "id": "pl1-125",
-      "name": "Palkia G LV.X"
     },
     {
       "id": "B2a-125",
@@ -21670,10 +16842,6 @@
       "name": "Registeel"
     },
     {
-      "id": "pl3-125",
-      "name": "Seel"
-    },
-    {
       "id": "A1-126",
       "name": "Mr. Mime"
     },
@@ -21692,18 +16860,6 @@
     {
       "id": "A2-126",
       "name": "Eevee"
-    },
-    {
-      "id": "dp3-126",
-      "name": "Team Galactic's Mars"
-    },
-    {
-      "id": "dp6-126",
-      "name": "Tyrogue"
-    },
-    {
-      "id": "pl1-126",
-      "name": "Shaymin LV.X"
     },
     {
       "id": "B2a-126",
@@ -21746,10 +16902,6 @@
       "name": "Bronzor"
     },
     {
-      "id": "pl3-126",
-      "name": "Shinx"
-    },
-    {
       "id": "A1-127",
       "name": "Jynx"
     },
@@ -21776,14 +16928,6 @@
     {
       "id": "sv06-127",
       "name": "Dipplin"
-    },
-    {
-      "id": "dp6-127",
-      "name": "Weepinbell"
-    },
-    {
-      "id": "pl1-127",
-      "name": "Shaymin LV.X"
     },
     {
       "id": "B2a-127",
@@ -21838,10 +16982,6 @@
       "name": "Bronzong"
     },
     {
-      "id": "pl3-127",
-      "name": "Shroomish"
-    },
-    {
       "id": "A1-128",
       "name": "Mewtwo"
     },
@@ -21868,10 +17008,6 @@
     {
       "id": "sv02-128",
       "name": "Paldean Wooper"
-    },
-    {
-      "id": "dp6-128",
-      "name": "Yanma"
     },
     {
       "id": "me02.5-128",
@@ -21914,10 +17050,6 @@
       "name": "Throh"
     },
     {
-      "id": "pl3-128",
-      "name": "Skorupi"
-    },
-    {
       "id": "sm5-129",
       "name": "Missing Clover"
     },
@@ -21944,10 +17076,6 @@
     {
       "id": "sv02-129",
       "name": "Paldean Wooper"
-    },
-    {
-      "id": "dp6-129",
-      "name": "Bubble Coat"
     },
     {
       "id": "me02.5-129",
@@ -21994,10 +17122,6 @@
       "name": "Dwebble"
     },
     {
-      "id": "pl3-129",
-      "name": "Starly"
-    },
-    {
       "id": "A1-130",
       "name": "Ralts"
     },
@@ -22024,10 +17148,6 @@
     {
       "id": "sv02-130",
       "name": "Paldean Clodsire ex"
-    },
-    {
-      "id": "dp6-130",
-      "name": "Buck's Training"
     },
     {
       "id": "me02.5-130",
@@ -22070,10 +17190,6 @@
       "name": "Crustle"
     },
     {
-      "id": "pl3-130",
-      "name": "Surskit"
-    },
-    {
       "id": "A1-131",
       "name": "Kirlia"
     },
@@ -22096,10 +17212,6 @@
     {
       "id": "sv04-131",
       "name": "Honedge"
-    },
-    {
-      "id": "dp3-131",
-      "name": "Gardevoir"
     },
     {
       "id": "me02.5-131",
@@ -22154,10 +17266,6 @@
       "name": "Landorus"
     },
     {
-      "id": "pl3-131",
-      "name": "Turtwig"
-    },
-    {
       "id": "A1-132",
       "name": "Gardevoir"
     },
@@ -22179,10 +17287,6 @@
     },
     {
       "id": "sv02-132",
-      "name": "Honchkrow"
-    },
-    {
-      "id": "dp3-132",
       "name": "Honchkrow"
     },
     {
@@ -22214,10 +17318,6 @@
       "name": "Raichu"
     },
     {
-      "id": "pl3-132",
-      "name": "Whismur"
-    },
-    {
       "id": "A1-133",
       "name": "Woobat"
     },
@@ -22246,10 +17346,6 @@
       "name": "Sneasel"
     },
     {
-      "id": "dp6-133",
-      "name": "Poké Radar"
-    },
-    {
       "id": "30th-133",
       "name": "Zapdos"
     },
@@ -22272,10 +17368,6 @@
     {
       "id": "sv10.5w-133",
       "name": "Mienfoo"
-    },
-    {
-      "id": "pl3-133",
-      "name": "Zubat"
     },
     {
       "id": "sm9-134",
@@ -22342,10 +17434,6 @@
       "name": "Altaria"
     },
     {
-      "id": "pl3-134",
-      "name": "Battle Tower"
-    },
-    {
       "id": "A1-135",
       "name": "Golett"
     },
@@ -22402,10 +17490,6 @@
       "name": "Sandile"
     },
     {
-      "id": "pl3-135",
-      "name": "Champion's Room"
-    },
-    {
       "id": "sm5-136",
       "name": "Super Boost Energy ◇"
     },
@@ -22436,10 +17520,6 @@
     {
       "id": "sv06-136",
       "name": "Snorlax"
-    },
-    {
-      "id": "dp6-136",
-      "name": "Technical Machine TS-1"
     },
     {
       "id": "30th-136",
@@ -22482,10 +17562,6 @@
       "name": "Krokorok"
     },
     {
-      "id": "pl3-136",
-      "name": "Cynthia's Guidance"
-    },
-    {
       "id": "sm5-137",
       "name": "Unit Energy GrassFireWater"
     },
@@ -22512,10 +17588,6 @@
     {
       "id": "sv02-137",
       "name": "Seviper"
-    },
-    {
-      "id": "dp6-137",
-      "name": "Technical Machine TS-2"
     },
     {
       "id": "30th-137",
@@ -22556,10 +17628,6 @@
     {
       "id": "sv10.5b-137",
       "name": "Krookodile"
-    },
-    {
-      "id": "pl3-137",
-      "name": "Cyrus's Initiative"
     },
     {
       "id": "sm5-138",
@@ -22642,10 +17710,6 @@
       "name": "Applin"
     },
     {
-      "id": "pl3-138",
-      "name": "Night Teleporter"
-    },
-    {
       "id": "A1-139",
       "name": "Diglett"
     },
@@ -22668,10 +17732,6 @@
     {
       "id": "sv06-139",
       "name": "Ducklett"
-    },
-    {
-      "id": "dp6-139",
-      "name": "Root Fossil"
     },
     {
       "id": "me01-139",
@@ -22748,10 +17808,6 @@
     {
       "id": "sv06-140",
       "name": "Swanna"
-    },
-    {
-      "id": "dp6-140",
-      "name": "Azelf"
     },
     {
       "id": "me02.5-140",
@@ -22838,10 +17894,6 @@
       "name": "Maschiff"
     },
     {
-      "id": "dp6-141",
-      "name": "Gliscor"
-    },
-    {
       "id": "me01-141",
       "name": "Clawitzer"
     },
@@ -22894,10 +17946,6 @@
       "name": "Skarmory"
     },
     {
-      "id": "pl3-141",
-      "name": "Absol G LV.X"
-    },
-    {
       "id": "A1-142",
       "name": "Primeape"
     },
@@ -22920,10 +17968,6 @@
     {
       "id": "sv02-142",
       "name": "Maschiff"
-    },
-    {
-      "id": "dp6-142",
-      "name": "Magnezone"
     },
     {
       "id": "30th-142",
@@ -22958,10 +18002,6 @@
       "name": "Pawniard"
     },
     {
-      "id": "pl3-142",
-      "name": "Blaziken FB LV.X"
-    },
-    {
       "id": "A1-143",
       "name": "Machop"
     },
@@ -22984,10 +18024,6 @@
     {
       "id": "sv02-143",
       "name": "Mabosstiff"
-    },
-    {
-      "id": "dp6-143",
-      "name": "Mesprit"
     },
     {
       "id": "me01-143",
@@ -23030,10 +18066,6 @@
       "name": "Bisharp"
     },
     {
-      "id": "pl3-143",
-      "name": "Charizard G LV.X"
-    },
-    {
       "id": "A1-144",
       "name": "Machoke"
     },
@@ -23064,10 +18096,6 @@
     {
       "id": "sv02-144",
       "name": "Shroodle"
-    },
-    {
-      "id": "dp6-144",
-      "name": "Mewtwo"
     },
     {
       "id": "me01-144",
@@ -23106,10 +18134,6 @@
       "name": "Snorlax"
     },
     {
-      "id": "pl3-144",
-      "name": "Electivire FB LV.X"
-    },
-    {
       "id": "A1-145",
       "name": "Machamp"
     },
@@ -23138,10 +18162,6 @@
       "name": "Shroodle"
     },
     {
-      "id": "dp6-145",
-      "name": "Rhyperior"
-    },
-    {
       "id": "30th-145",
       "name": "Hisuian Zorua"
     },
@@ -23168,10 +18188,6 @@
     {
       "id": "sv10.5w-145",
       "name": "Mandibuzz"
-    },
-    {
-      "id": "pl3-145",
-      "name": "Garchomp C LV.X"
     },
     {
       "id": "A1-146",
@@ -23204,10 +18220,6 @@
     {
       "id": "sv02-146",
       "name": "Grafaiai"
-    },
-    {
-      "id": "dp6-146",
-      "name": "Uxie"
     },
     {
       "id": "me01-146",
@@ -23244,10 +18256,6 @@
     {
       "id": "sv10-146",
       "name": "Zamazenta"
-    },
-    {
-      "id": "pl3-146",
-      "name": "Rayquaza C LV.X"
     },
     {
       "id": "A1-147",
@@ -23398,10 +18406,6 @@
       "name": "Swablu"
     },
     {
-      "id": "pl3-148",
-      "name": "Articuno"
-    },
-    {
       "id": "A1-149",
       "name": "Golem"
     },
@@ -23474,10 +18478,6 @@
       "name": "Zangoose"
     },
     {
-      "id": "pl3-149",
-      "name": "Moltres"
-    },
-    {
       "id": "A1-150",
       "name": "Onix"
     },
@@ -23536,10 +18536,6 @@
     {
       "id": "sv08-150",
       "name": "Kecleon"
-    },
-    {
-      "id": "pl3-150",
-      "name": "Zapdos"
     },
     {
       "id": "A1-151",
@@ -28726,230 +23722,6 @@
       "name": "Tapu Lele GX"
     },
     {
-      "id": "dpp-DP01",
-      "name": "Turtwig"
-    },
-    {
-      "id": "dpp-DP02",
-      "name": "Chimchar"
-    },
-    {
-      "id": "dpp-DP03",
-      "name": "Piplup"
-    },
-    {
-      "id": "dpp-DP04",
-      "name": "Pachirisu"
-    },
-    {
-      "id": "dpp-DP05",
-      "name": "Tropical Wind"
-    },
-    {
-      "id": "dpp-DP06",
-      "name": "Buneary"
-    },
-    {
-      "id": "dpp-DP07",
-      "name": "Cranidos"
-    },
-    {
-      "id": "dpp-DP08",
-      "name": "Shieldon"
-    },
-    {
-      "id": "dpp-DP09",
-      "name": "Torterra"
-    },
-    {
-      "id": "dpp-DP10",
-      "name": "Infernape"
-    },
-    {
-      "id": "dpp-DP11",
-      "name": "Empoleon"
-    },
-    {
-      "id": "dpp-DP12",
-      "name": "Lucario"
-    },
-    {
-      "id": "dpp-DP13",
-      "name": "Buizel"
-    },
-    {
-      "id": "dpp-DP14",
-      "name": "Chatot"
-    },
-    {
-      "id": "dpp-DP15",
-      "name": "Shinx"
-    },
-    {
-      "id": "dpp-DP16",
-      "name": "Pikachu"
-    },
-    {
-      "id": "dpp-DP17",
-      "name": "Dialga"
-    },
-    {
-      "id": "dpp-DP18",
-      "name": "Palkia"
-    },
-    {
-      "id": "dpp-DP19",
-      "name": "Darkrai"
-    },
-    {
-      "id": "dpp-DP20",
-      "name": "Magmortar"
-    },
-    {
-      "id": "dpp-DP21",
-      "name": "Raichu"
-    },
-    {
-      "id": "dpp-DP22",
-      "name": "Mime Jr."
-    },
-    {
-      "id": "dpp-DP23",
-      "name": "Glameow"
-    },
-    {
-      "id": "dpp-DP24",
-      "name": "Darkrai"
-    },
-    {
-      "id": "dpp-DP25",
-      "name": "Tropical Wind"
-    },
-    {
-      "id": "dpp-DP26",
-      "name": "Dialga"
-    },
-    {
-      "id": "dpp-DP27",
-      "name": "Palkia"
-    },
-    {
-      "id": "dpp-DP28",
-      "name": "Mewtwo"
-    },
-    {
-      "id": "dpp-DP29",
-      "name": "Rhyperior"
-    },
-    {
-      "id": "dpp-DP30",
-      "name": "Regigigas"
-    },
-    {
-      "id": "dpp-DP31",
-      "name": "Heatran"
-    },
-    {
-      "id": "dpp-DP32",
-      "name": "Magnezone"
-    },
-    {
-      "id": "dpp-DP33",
-      "name": "Dusknoir"
-    },
-    {
-      "id": "dpp-DP34",
-      "name": "Drifblim"
-    },
-    {
-      "id": "dpp-DP35",
-      "name": "Porygon-Z"
-    },
-    {
-      "id": "dpp-DP36",
-      "name": "Gliscor"
-    },
-    {
-      "id": "dpp-DP37",
-      "name": "Dialga"
-    },
-    {
-      "id": "dpp-DP38",
-      "name": "Giratina"
-    },
-    {
-      "id": "dpp-DP39",
-      "name": "Shaymin"
-    },
-    {
-      "id": "dpp-DP40",
-      "name": "Regigigas"
-    },
-    {
-      "id": "dpp-DP41",
-      "name": "Toxicroak G"
-    },
-    {
-      "id": "dpp-DP42",
-      "name": "Carnivine G"
-    },
-    {
-      "id": "dpp-DP43",
-      "name": "Probopass G"
-    },
-    {
-      "id": "dpp-DP44",
-      "name": "Magnezone"
-    },
-    {
-      "id": "dpp-DP45",
-      "name": "Charizard G"
-    },
-    {
-      "id": "dpp-DP46",
-      "name": "Garchomp C"
-    },
-    {
-      "id": "dpp-DP47",
-      "name": "Rayquaza C"
-    },
-    {
-      "id": "dpp-DP48",
-      "name": "Tropical Wind"
-    },
-    {
-      "id": "dpp-DP49",
-      "name": "Dialga"
-    },
-    {
-      "id": "dpp-DP50",
-      "name": "Arceus"
-    },
-    {
-      "id": "dpp-DP51",
-      "name": "Cresselia"
-    },
-    {
-      "id": "dpp-DP52",
-      "name": "Darkrai"
-    },
-    {
-      "id": "dpp-DP53",
-      "name": "Arceus"
-    },
-    {
-      "id": "dpp-DP54",
-      "name": "Beginning Door"
-    },
-    {
-      "id": "dpp-DP55",
-      "name": "Ultimate Zone"
-    },
-    {
-      "id": "dpp-DP56",
-      "name": "Arceus"
-    },
-    {
       "id": "swsh12.5gg-GG01",
       "name": "Hisuian Voltorb"
     },
@@ -29236,74 +24008,6 @@
     {
       "id": "g1-RC8",
       "name": "Froslass"
-    },
-    {
-      "id": "pl2-RT1",
-      "name": "Fan Rotom"
-    },
-    {
-      "id": "pl2-RT2",
-      "name": "Frost Rotom"
-    },
-    {
-      "id": "pl2-RT3",
-      "name": "Heat Rotom"
-    },
-    {
-      "id": "pl2-RT4",
-      "name": "Mow Rotom"
-    },
-    {
-      "id": "pl2-RT5",
-      "name": "Wash Rotom"
-    },
-    {
-      "id": "pl2-RT6",
-      "name": "Charon's Choice"
-    },
-    {
-      "id": "dp7-SH1",
-      "name": "Drifloon"
-    },
-    {
-      "id": "pl4-SH10",
-      "name": "Bagon"
-    },
-    {
-      "id": "pl4-SH11",
-      "name": "Ponyta"
-    },
-    {
-      "id": "pl4-SH12",
-      "name": "Shinx"
-    },
-    {
-      "id": "dp7-SH3",
-      "name": "Voltorb"
-    },
-    {
-      "id": "pl1-SH4",
-      "name": "Lotad"
-    },
-    {
-      "id": "pl1-SH5",
-      "name": "Swablu"
-    },
-    {
-      "id": "pl1-SH6",
-      "name": "Vulpix"
-    },
-    {
-      "id": "pl3-SH7",
-      "name": "Milotic"
-    },
-    {
-      "id": "pl3-SH8",
-      "name": "Relicanth"
-    },
-    {
-      "id": "pl3-SH9",
-      "name": "Yanma"
     },
     {
       "id": "col1-SL1",

@@ -1,4 +1,5 @@
 import { PlayPokemonEffect } from '../effects/play-card-effects';
+import { playDpLevel } from '../../../tcg-lab-dp-level';
 import { GameError } from '../../game-error';
 import { GameMessage, GameLog } from '../../game-message';
 import { Effect } from '../effects/effect';
@@ -43,6 +44,7 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
       && effect.pokemonCard.powers.some(power => power.powerType === PowerType.ABILITY)) {
       throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
     }
+    if((effect.pokemonCard as any)._dpLevelUp)return playDpLevel(store,state,effect);
     const stage = effect.pokemonCard.stage;
     const sandboxAllBasic = Boolean(state.gameSettings?.sandboxMode && state.gameSettings?.sandboxAllPokemonBasic);
     const isBasic = stage === Stage.BASIC || sandboxAllBasic;
@@ -53,8 +55,11 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
         name: effect.player.name,
         card: effect.pokemonCard.name
       });
+      const dpFromHand=effect.player.hand.cards.includes(effect.pokemonCard);
       effect.player.hand.moveCardTo(effect.pokemonCard, effect.target);
       effect.target.pokemonPlayedTurn = state.turn;
+      if((state.rules as any).dpEraRules)(effect.pokemonCard as any)._dpEntryId=(state as any)._dpNextEntryId=((state as any)._dpNextEntryId||0)+1;
+      if((state.rules as any).dpEraRules){(effect.pokemonCard as any)._wotcPowerTurn={};delete (effect.pokemonCard as any)._wotcLastUsedAttack;delete (effect.pokemonCard as any)._wotcPriorAttack;(effect.target as any)._dpAttachedFromHand=undefined;(effect.target as any)._dpEvolutionHistory=undefined;(effect.target as any)._dpBenchTurn=effect.player.bench.includes(effect.target)?state.turn:undefined;store.reduceEffect(state,{type:'DP_BASIC_ENTERED_PLAY',player:effect.player,target:effect.target,pokemonCard:effect.pokemonCard,fromHand:dpFromHand,preventDefault:false} as any);}
 
       // Emit basic animation event
       emitAnimationEvent(store, 'playBasicAnimation', {
@@ -106,10 +111,13 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
       }
 
       const evolveEffect = new EvolveEffect(effect.player, effect.target, effect.pokemonCard);
+      (evolveEffect as any)._dpHandEvolution=true;
       store.reduceEffect(state, evolveEffect);
+      if((state.rules as any).dpEraRules)return state;
       clearUntilLeavesPlay(effect.pokemonCard);
       effect.pokemonCard.marker.markers = [];
 
+      if((state.rules as any).dpEraRules)(effect.target as any)._dpEvolutionHistory={turn:state.turn,from:effect.target.getPokemonCard()?.name,conditions:effect.target.specialConditions.slice()};
       // Check which special conditions should be preserved during evolution
       const checkRemovalEffect = new CheckSpecialConditionRemovalEffect(effect.player, effect.target);
       store.reduceEffect(state, checkRemovalEffect);

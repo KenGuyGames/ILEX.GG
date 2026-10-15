@@ -30,6 +30,7 @@ function sandboxAllPokemonBasicEnabled(state: State): boolean {
 }
 
 function isStartingPokemonCandidate(state: State, c: Card): boolean {
+  if ((state.rules as any).dpEraRules && (c as any)._dpFossil) return true;
   if (c.tags.includes(CardTag.PLAY_DURING_SETUP)) {
     return true;
   }
@@ -71,7 +72,7 @@ function handHasStartingPokemon(state: State, player: Player): boolean {
   const hasSandboxPokemon =
     sandboxAllPokemonBasicEnabled(state) && player.hand.cards.some(card => card instanceof PokemonCard);
   const hasSetupTag = player.hand.cards.some(c => c.tags.includes(CardTag.PLAY_DURING_SETUP));
-  return hasVanillaBasic || hasSandboxPokemon || hasSetupTag;
+  return hasVanillaBasic || hasSandboxPokemon || hasSetupTag || Boolean((state.rules as any).dpEraRules && player.hand.cards.some((card:any)=>card._dpFossil));
 }
 
 function putStartingPokemonsAndPrizes(player: Player, cards: Card[], state: State): void {

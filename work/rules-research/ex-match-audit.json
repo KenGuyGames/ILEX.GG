@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "engineSha256": "934c15bdeb6e732993e25e20d9717a89d2e587c206b714ec99016f449a0df67d",
+  "scope": "EX + Expedition/Aquapolis/Skyridge only; 150 decisions per match",
+  "games": [
+    {
+      "decks": [
+        "Alakazam",
+        "Beedrill"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Charizard Venusaur",
+        "Gengar Dragonite"
+      ],
+      "level": "easy",
+      "decisions": 150,
+      "turn": 21,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Kingdra Espeon",
+        "Machamp"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 17,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Scizor",
+        "Typhlosion Ninetales"
+      ],
+      "level": "easy",
+      "decisions": 150,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Delcatty Electrode",
+        "Medicham ex"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 25,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Metagross",
+        "Moltres Zapdos"
+      ],
+      "level": "easy",
+      "decisions": 150,
+      "turn": 26,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "PowTar",
+        "Queendom"
+      ],
+      "level": "normal",
+      "decisions": 34,
+      "turn": 4,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rock Lock",
+        "Vileplume ex"
+      ],
+      "level": "easy",
+      "decisions": 150,
+      "turn": 20,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dragtrode",
+        "Eeveelutions"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 15,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Flariados",
+        "LBS"
+      ],
+      "level": "easy",
+      "decisions": 17,
+      "turn": 2,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Meta Nite",
+        "MewTric"
+      ],
+      "level": "normal",
+      "decisions": 49,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rock Lock",
+        "RaiEggs"
+      ],
+      "level": "easy",
+      "decisions": 115,
+      "turn": 12,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rayquaza",
+        "Alakazam"
+      ],
+      "level": "normal",
+      "decisions": 30,
+      "turn": 4,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

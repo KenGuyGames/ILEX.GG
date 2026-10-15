@@ -9,6 +9,7 @@ var RulesMatch=(()=>{
     xy:{name:'XY (2013–2016)',format:R.Format.XY,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:false,legacyBurn:true},
     bw:{name:'Black & White (2011–2013)',format:R.Format.BW,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,legacyBurn:true},
     dp:{name:'Diamond & Pearl / HGSS (2007–2010)',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:true,firstTurnNoTrainers:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true},
+    dppl:{name:'Diamond & Pearl–Platinum Arceus (2007–2009)',format:R.Format.RSPK,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:true,firstTurnNoTrainers:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,dpEraRules:true,exEraRules:true},
     exlate:{name:'EX: FireRed & LeafGreen–Power Keepers',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:false,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,exEraRules:true},
     ex:{name:'EX: early / legacy saved-match rules',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,exEraRules:true}
   };
@@ -88,6 +89,7 @@ var RulesMatch=(()=>{
       if(s.phase!==R.GamePhase.PLAYER_TURN)throw Error('Finish the pending setup or effect first.');
       if(pending(m).length)throw Error('Resolve the pending effect first.');
       const player=s.players[s.activePlayer];if(a.player!==player.id)throw Error('It is not that player’s turn.');
+      if(a.type==='play'&&player.hand.cards[a.index]?.trainerType===R.TrainerType.SUPPORTER&&(player.supporter.cards.length||player.supporterTurn>0))throw Error('SUPPORTER_ALREADY_PLAYED');
       if(a.type==='play'){
         const card=player.hand.cards[a.index];if(!card)throw Error('Card not in hand.');
         if(s.turn===1&&s.rules.firstTurnNoTrainers&&card.superType===R.SuperType.TRAINER)throw Error('The first player cannot play Trainers under the Diamond & Pearl rules.');
@@ -106,15 +108,33 @@ var RulesMatch=(()=>{
     try{m.store.dispatch(action)}finally{Math.random=originalRandom}
     m.journal.push(JSON.parse(JSON.stringify(a)));return m;
   }
+  function handEnergyAction(player,index){
+    const card=player.hand.cards[index],power=card?.powers?.find(p=>p.useFromHand&&p.powerType===R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT);
+    return power?{type:'ability',player:player.id,name:power.name,target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.HAND,index}}:null;
+  }
   function undoPoints(m){
     if(Array.isArray(m.undoHistory))return m.undoHistory.filter((n,i,a)=>Number.isInteger(n)&&n>=0&&n<m.journal.length&&(i===0||n>a[i-1]));
     const bot=m.spec.opponent?.type==='bot'?m.spec.opponent.botPlayer:null;
     return m.journal.map((a,i)=>a.type!=='prompt'&&a.player!==bot?i:-1).filter(i=>i>=0);
   }
   function checkpoint(m,index){const points=undoPoints(m).filter(n=>n<index);if(Number.isInteger(index)&&index>=0&&index<m.journal.length)points.push(index);m.undoHistory=points;}
-  function restore(saved,map,custom){const m=create(saved.spec,map,custom);for(const a of saved.journal||[])apply(m,a);if(Array.isArray(saved.undoHistory))m.undoHistory=undoPoints({journal:m.journal,undoHistory:saved.undoHistory});return m;}
+  function restore(saved,map,custom){
+    const m=create(saved.spec,map,custom),journal=saved.journal||[];
+    for(let i=0;i<journal.length;i++){
+      try{apply(m,journal[i]);}catch(error){
+        // Older builds could journal an unpaid attack before the Baby-rule flip.
+        // Recover only an unfinished terminal attempt; other replay errors remain errors.
+        if(error.message!=='NOT_ENOUGH_ENERGY'||journal[i].type!=='attack'||journal.slice(i+1).some(a=>a.type!=='prompt'))throw error;
+        const recovered=restore({...saved,journal:journal.slice(0,i)},map,custom);
+        recovered.recoveredInvalidAttack=true;return recovered;
+      }
+    }
+    if(Array.isArray(saved.undoHistory))m.undoHistory=undoPoints({journal:m.journal,undoHistory:saved.undoHistory});return m;
+  }
   function undoAction(m,map,custom){const points=undoPoints(m);if(!points.length)throw Error('No action to undo.');const index=points.pop();return restore({spec:m.spec,journal:m.journal.slice(0,index),undoHistory:points},map,custom);}
 
   function attacks(m,p){const effect=new R.CheckPokemonAttacksEffect(p);m.store.reduceEffect(m.store.state,effect);return [...new Map([...(p.active.getPokemonCard()?.attacks||[]),...effect.attacks].map(a=>[a.name,a])).values()];}
-  return {R,profiles,prototypes,create,apply,restore,pending,targets,attacks,undoPoints,checkpoint,undoAction};
+  function powers(m,p,list){const card=list.getPokemonCard();if(!card)return [];const effect=new R.CheckPokemonPowersEffect(p,card);m.store.reduceEffect(m.store.state,effect);return [...new Map([...card.powers,...effect.powers].map(power=>[power.name,power])).values()];}
+  return {R,profiles,prototypes,create,apply,restore,pending,targets,attacks,powers,handEnergyAction,undoPoints,checkpoint,undoAction};
 })();
+

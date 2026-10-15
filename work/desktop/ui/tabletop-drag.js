@@ -70,6 +70,11 @@ function dragIntent(d,z){
  if(g.phase!==R.GamePhase.PLAYER_TURN||d.player!==g.players[g.activePlayer].id)return null;
  if(d.kind==='hand'){
   const card=dragCard(d);if(!card)return null;
+  const holon=RulesMatch.handEnergyAction(owner,d.index);
+  if(holon&&z.kind==='slot'&&z.player===owner.id&&(z.active?owner.active:owner.bench[z.index])?.getPokemonCard()){
+   if(owner.energyPlayedTurn===g.turn)return null;
+   return {action:holon};
+  }
   if(card.superType===R.SuperType.ENERGY&&owner.energyPlayedTurn===g.turn&&!owner.usedDragonsWish&&!g.rules.unlimitedEnergyAttachments)return null;
   const trainer=card.superType===R.SuperType.TRAINER&&card.trainerType!==R.TrainerType.TOOL;
   if(trainer&&(z.kind==='trainer'||z.kind==='slot'&&z.player===owner.id))return {action:{type:'play',player:d.player,index:d.index,target:z.kind==='slot'?dragTarget(z.player,z.active,z.index):dragTarget(owner.id,true,0)}};

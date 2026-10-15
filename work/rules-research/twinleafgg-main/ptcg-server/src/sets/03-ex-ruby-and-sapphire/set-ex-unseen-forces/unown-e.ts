@@ -71,7 +71,7 @@ export class UnownE extends PokemonCard {
         { superType: SuperType.POKEMON },
         { min: 1, max: 1, allowCancel: true, blocked },
       ), (selection) => {
-        if (selection.length <= 0) {
+        if (!selection?.length) {
           return state;
         }
 
