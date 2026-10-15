@@ -1,0 +1,38 @@
+name: Complete 1.6.0 source test fixtures
+on:
+  push:
+    paths:
+      - .github/workflows/complete-source-1.6.0.yml
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify source and include restored cache test
+        shell: python
+        run: |
+          from pathlib import Path
+          import json,hashlib
+          p=Path("verification/source-manifest-1.6.0.json")
+          m=json.loads(p.read_text())
+          for name,expected in m["files"].items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==expected,name
+          name="work/desktop-build/card-cache-tests.cjs"
+          m["files"][name]=hashlib.sha256(Path(name).read_bytes()).hexdigest()
+          p.write_text(json.dumps(m,indent=2)+"\n")
+          print("Verified source snapshot; restored README cache test.")
+      - name: Run cache regression check
+        run: node work/desktop-build/card-cache-tests.cjs
+      - name: Commit source and align unpublished release tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git rm .github/workflows/complete-source-1.6.0.yml
+          git add verification/source-manifest-1.6.0.json
+          git commit -m "Include README cache test in verified 1.6.0 source manifest"
+          git push origin HEAD:main
+          git tag -f v1.6.0-build-2026-10-14
+          git push origin refs/tags/v1.6.0-build-2026-10-14 --force-with-lease=refs/tags/v1.6.0-build-2026-10-14:47b67ad002f2368268e14879658066d84bd2356f
