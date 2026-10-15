@@ -11707,6 +11707,7 @@
     "work/card-sources/pokemon-tcg-data-master/cards/en/xy8.json": "e71a761e7dbc581ca176081061b8888ac9c2e4d1ecd21d616a0ed1e80c0f2097",
     "work/card-sources/pokemon-tcg-data-master/cards/en/xy9.json": "8bdc87b5fe1b9de068ceea537d04d64353da6aaaa2c539dcced667d41eb7213f",
     "work/card-sources/pokemon-tcg-data-master/cards/en/xyp.json": "bed52292a6f8e6c9fa2c2aef17dfb9d7daaaaa8f894142d578a86b9e2bae4060",
-    "work/card-sources/pokemon-tcg-data-master/cards/en/zsv10pt5.json": "d48d7e78b0435d98c7cc7e25e1c3312ffd8437c1c4918b564748ce0320526813"
+    "work/card-sources/pokemon-tcg-data-master/cards/en/zsv10pt5.json": "d48d7e78b0435d98c7cc7e25e1c3312ffd8437c1c4918b564748ce0320526813",
+    "work/desktop-build/card-cache-tests.cjs": "56a8daf3291ab9035aca064dc25a7f01f5137fc26ea176041a6c8d61e86e739b"
   }
 }
