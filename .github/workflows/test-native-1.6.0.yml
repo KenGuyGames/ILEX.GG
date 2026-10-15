@@ -1,0 +1,80 @@
+name: Verify 1.6.0 cache and native UI from fresh source
+on:
+  push:
+    paths:
+      - .github/workflows/test-native-1.6.0.yml
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: windows-2025
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Fresh source ZIP from the release
+        shell: pwsh
+        run: |
+          Invoke-WebRequest 'https://github.com/KenGuyGames/ILEX.GG/archive/refs/tags/v1.6.0-build-2026-10-14.zip' -OutFile "$env:RUNNER_TEMP/source.zip"
+          Expand-Archive "$env:RUNNER_TEMP/source.zip" "$env:RUNNER_TEMP/extracted"
+          $download = Get-ChildItem "$env:RUNNER_TEMP/extracted" -Directory | Select-Object -First 1
+          Move-Item -LiteralPath $download.FullName -Destination "$env:RUNNER_TEMP/source"
+          node --version
+          npm --version
+          if (Test-Path "$env:RUNNER_TEMP/source/node_modules") { throw 'Download contains dependencies' }
+          if (Test-Path "$env:RUNNER_TEMP/source/outputs/Pokemon-TCG-Lab/scans") { throw 'Download contains scans' }
+          if (Test-Path "$env:APPDATA/TCG Lab") { throw 'Test profile is not fresh' }
+      - name: README npm install
+        working-directory: ${{ runner.temp }}/source
+        run: npm install
+      - name: Restored README cache test
+        working-directory: ${{ runner.temp }}/source
+        run: node work/desktop-build/card-cache-tests.cjs
+      - name: Write isolated runtime smoke test
+        shell: pwsh
+        run: |
+          @'
+          const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+          const source=path.join(__dirname,'source/work/desktop'),report=path.join(__dirname,'runtime-smoke');fs.mkdirSync(report,{recursive:true});
+          process.argv.push('--self-test',report);
+          const self=path.join(source,'self-test.cjs');
+          require.cache[self]={id:self,filename:self,loaded:true,exports:async(win)=>{
+           const ev=s=>win.webContents.executeJavaScript(s,true); const delay=ms=>new Promise(r=>setTimeout(r,ms));
+           const errors=[];win.webContents.on('console-message',(_e,_l,message)=>{if(/Uncaught|ReferenceError|TypeError/.test(message||''))errors.push(message)});
+           for(let i=0;i<300;i++){if(await ev("typeof rulesReady!=='undefined'&&rulesReady&&cards.length>23000"))break;await delay(100)}
+           const status=await ev(`(async()=>({ready:rulesReady,cards:cards.length,title:document.title,version:'1.6.0',wotc:await fetch('wotc-coverage.json').then(r=>r.json()),ex:await fetch('ex-coverage.json').then(r=>r.json()),dp:await fetch('dp-coverage.json').then(r=>r.json())}))()`);
+           assert(status.ready);assert.equal(status.wotc.available,1793);assert.equal(status.ex.available,1857);assert.equal(status.ex.pending,0);assert.equal(status.dp.available,1558);assert.equal(status.dp.pending,0);
+           const screens=[];
+           for(const tab of ['library','decks','play','formats','custom']){
+             const text=await ev(`document.querySelector('nav button[data-tab="${tab}"]').click(); document.querySelector('#app').innerText`);
+             assert(text.length>20,tab+' did not render');screens.push({tab,rendered:true});
+           }
+           await ev("document.querySelector('nav button[data-tab=library]').click()");
+           await delay(3000);
+           const artwork=await ev("Array.from(document.querySelectorAll('#app img')).map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0}))");
+           fs.writeFileSync(path.join(report,'menu.png'),(await win.webContents.capturePage()).toPNG());
+           const native=await ev(fs.readFileSync(path.join(source,'ex-native-tests.js'),'utf8'));
+           assert(native.passed,'EX native checks failed');
+           const dpNative=await ev(fs.readFileSync(path.join(source,'dp-native-tests.js'),'utf8'));
+           assert(dpNative.passed,'DP native checks failed');
+           assert.equal(errors.length,0,JSON.stringify(errors));
+           fs.writeFileSync(path.join(report,'report.json'),JSON.stringify({passed:true,ready:status.ready,cards:status.cards,wotc:status.wotc.available,ex:status.ex.available,dp:status.dp.available,dpNative,screens,artwork,native,errors},null,2));
+           console.log('PASS fresh-source Electron startup, five screens, and EX/DP native interaction/replay/Undo checks.');
+          }};
+          require(path.join(source,'main.cjs'));
+          '@ | Set-Content "$env:RUNNER_TEMP/smoke.cjs" -Encoding utf8
+      - name: Launch app and test native interactions
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          $electron = node -e "console.log(require('electron'))" | Select-Object -Last 1
+          $env:ELECTRON_RUN_AS_NODE = $null
+          $process = Start-Process -FilePath $electron -ArgumentList @("$env:RUNNER_TEMP/smoke.cjs",'--enable-logging=stderr') -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput "$env:RUNNER_TEMP/electron-out.txt" -RedirectStandardError "$env:RUNNER_TEMP/electron-error.txt"
+          Get-Content "$env:RUNNER_TEMP/electron-out.txt"
+          Get-Content "$env:RUNNER_TEMP/electron-error.txt"
+          if (Test-Path "$env:RUNNER_TEMP/runtime-smoke/failure.txt") { Get-Content "$env:RUNNER_TEMP/runtime-smoke/failure.txt" }
+          if ($process.ExitCode -ne 0) { throw "Electron exit $($process.ExitCode)" }
+          $report = Get-Content "$env:RUNNER_TEMP/runtime-smoke/report.json" -Raw | ConvertFrom-Json
+          if (!$report.passed) { throw 'Runtime smoke test failed' }
+          $report | ConvertTo-Json -Depth 8
