@@ -15,8 +15,10 @@ const dataSets=JSON.parse(fs.readFileSync(path.join(source,'sets/en.json')));
 const norm=s=>String(s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
 const aliases={'sm7.5':'sm75','sm3.5':'sm35','swsh3.5':'swsh35','swsh4.5':'swsh45','swsh12.5':'swsh12pt5','sv03.5':'sv3pt5','sv04.5':'sv4pt5','sv08.5':'sv8pt5','cel25':'cel25',lc:'base6',bog:'bp',exu:'ex10','tk-ex-latia':'tk1a','tk-ex-latio':'tk1b','tk-ex-p':'tk2a','tk-ex-m':'tk2b'};
 const setMap={};for(const s of sets){const ds=dataSets.find(x=>x.id===s.id)||dataSets.find(x=>norm(x.name)===norm(s.name));setMap[s.id]=aliases[s.id]||ds?.id||s.id;}
-const records={};for(const file of fs.readdirSync(path.join(source,'cards/en'))){for(const c of JSON.parse(fs.readFileSync(path.join(source,'cards/en',file))))records[c.id]=correctExText(c);}
+const records={};for(const file of fs.readdirSync(path.join(source,'cards/en'))){for(const c of JSON.parse(fs.readFileSync(path.join(source,'cards/en',file))))records[c.id]=require('./hgss-text-corrections.cjs')(correctExText(c));}
 const dpKits=path.join(root,'work/card-sources/dp-trainer-kits.json');if(fs.existsSync(dpKits))for(const c of JSON.parse(fs.readFileSync(dpKits,'utf8')))records[c.id]=c;
+const hgssKits=path.join(root,'work/card-sources/hgss-trainer-kits.json');if(fs.existsSync(hgssKits))for(const c of JSON.parse(fs.readFileSync(hgssKits,'utf8')))records[c.id]=c;
+const bwDataFile=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-bw-data.ts');if(fs.existsSync(bwDataFile)){const data=JSON.parse(fs.readFileSync(bwDataFile,'utf8').match(/^export const bwData:any = (.*);$/m)[1]);for(const record of data)records[record.d.id]=record.d;}
 const codes={};const metadata={};const mapping={};
 const variants={};for(const c of unique){const key=norm(c.set)+'|'+String(c.setNumber).toLowerCase().replace(/^0+(?=\d)/,'');(variants[key]??=[]).push(c);}
 for(const c of cards){
@@ -35,6 +37,8 @@ const indexIds=new Set(cards.map(c=>c.id));for(const c of upstream)if(c._wotcId&
 // The EX compiler owns availability during this pass. A legacy catalog match
 // must not re-enable a printing whose full clauses remain explicitly pending.
 const exCoverageFile=path.join(ui,'ex-coverage.json');if(fs.existsSync(exCoverageFile))for(const pending of JSON.parse(fs.readFileSync(exCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
+const bwCoverageFile=path.join(ui,'bw-coverage.json');if(fs.existsSync(bwCoverageFile))for(const pending of JSON.parse(fs.readFileSync(bwCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
+const hgssCoverageFile=path.join(ui,'hgss-coverage.json');if(fs.existsSync(hgssCoverageFile))for(const pending of JSON.parse(fs.readFileSync(hgssCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
 const dpCoverageFile=path.join(ui,'dp-coverage.json');if(fs.existsSync(dpCoverageFile))for(const pending of JSON.parse(fs.readFileSync(dpCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
 fs.writeFileSync(path.join(ui,'card-details.json'),JSON.stringify(metadata));
 fs.writeFileSync(path.join(ui,'deck-set-codes.json'),JSON.stringify(codes));

@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -102,7 +103,7 @@ export class Reuniclus extends PokemonCard {
       const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, checkProvidedEnergyEffect);
       const energyCount = checkProvidedEnergyEffect.energyMap
-        .reduce((left, p) => left + p.provides.length, 0);
+        .reduce((left, p) => left + BwEnergyUnits.getProvidesUnitCount(p.provides), 0);
 
       effect.damage += energyCount * 10;
     }

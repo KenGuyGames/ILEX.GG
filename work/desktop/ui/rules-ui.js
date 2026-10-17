@@ -39,16 +39,21 @@ function autoRules(){
       const player=rulesMatch.store.state.players.find(x=>x.id===p.getPerspectivePlayerId());
       value=shuffle(Array.from({length:p.type==='Shuffle hand'?player.hand.cards.length:player.deck.cards.length},(_,i)=>i));
     }
+    if(typeof IlexPresentation!=='undefined')IlexPresentation.noteCoin(p,value);
     RulesMatch.apply(rulesMatch,{type:'prompt',id:p.id,value});
   }throw Error('Effect exceeded the resolution limit.');
 }
 function ruleAction(a){
+  if(typeof IlexPresentation!=='undefined'&&IlexPresentation.busy())return;
+  const visualBefore=typeof IlexPresentation!=='undefined'?IlexPresentation.before(rulesMatch,a):null;
   try{const audioBefore=typeof IlexAudio!=='undefined'?IlexAudio.before(rulesMatch,a):null;const before={spec:rulesMatch.spec,journal:rulesMatch.journal.slice(),undoHistory:RulesMatch.undoPoints(rulesMatch)};
     try{RulesMatch.apply(rulesMatch,a);autoRules()}catch(e){rulesMatch=RulesMatch.restore(before,ruleMap,before.spec.custom||state.custom);throw e}
+    if(typeof IlexPresentation!=='undefined')IlexPresentation.after(visualBefore,rulesMatch,a);
     if(typeof IlexAudio!=='undefined')IlexAudio.after(audioBefore,rulesMatch,a);RulesMatch.checkpoint(rulesMatch,before.journal.length);ruleSelected=null;promptChoice=[];saveRules();play();
-  }catch(e){toast(friendly(e.message));play()}
+  }catch(e){if(typeof IlexPresentation!=='undefined')IlexPresentation.abort(visualBefore);toast(friendly(e.message));play()}
 }
 function undoRuleAction(){
+ if(typeof IlexPresentation!=='undefined')IlexPresentation.cancel();
  if(!rulesMatch||!RulesMatch.undoPoints(rulesMatch).length)return;
  try{const restored=RulesMatch.undoAction(rulesMatch,ruleMap,rulesMatch.spec.custom||state.custom);if(typeof stopBotForUndo==='function')stopBotForUndo();rulesMatch=restored;ruleSelected=null;promptChoice=[];if(typeof seatFocus!=='undefined')seatFocus=null;state.rulesRestoreError='';saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('undo');play();toast(restored.spec.opponent?.type==='bot'?'Action undone. Bot paused.':'Action undone.');}catch(e){toast('Could not undo: '+e.message);}
 }
@@ -81,10 +86,10 @@ async function beginRules(){
     const opponent=typeof newOpponentSettings==='function'?newOpponentSettings():{type:'local'};
     const candidate=RulesMatch.create({version:1,profile,opponent,format:{id:selectedFormat.id,name:selectedFormat.name},decks:ds.map(d=>({name:d.name,cards:d.cards})),custom:state.custom},ruleMap,state.custom);
     state.botPaused=false;state.botError='';
-    rulesMatch=candidate;autoRules();saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
+    if(typeof IlexPresentation!=='undefined')IlexPresentation.cancel();rulesMatch=candidate;const setupVisual=typeof IlexPresentation!=='undefined'?IlexPresentation.before(candidate,{type:'setup'}):null;autoRules();if(typeof IlexPresentation!=='undefined')IlexPresentation.after(setupVisual,candidate,{type:'setup'});saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}
 }
-function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||'modern';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
+function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||'modern';if(['dp','dppl'].includes(profile)&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:hgss[1-4p]?|col1)$/.test(id.trim().replace(/-$/,''))))return 'hgss';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
 function rulesTable(){
   const R=RulesMatch.R,g=rulesMatch?.store.state;
   $('#app').innerHTML=title('RULES TABLE','Play a rules-enforced match','Setup, card effects, attachments, attacks and checkup are resolved by the game engine.',`<button onclick="tableMode='manual';play()">Manual sandbox</button>`)+
@@ -111,9 +116,11 @@ function pickRuleHand(player,index){
   const options=[{target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.ACTIVE,index:0},label:'Active'},...p.bench.map((l,i)=>({target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.BENCH,index:i},label:'Bench '+(i+1)+(l.getPokemonCard()?' · '+l.getPokemonCard().name:' · empty')}))];
   if(c.superType===R.SuperType.TRAINER&&![R.TrainerType.TOOL].includes(c.trainerType)){ruleAction({type:'play',player,index,target:options[0].target});return;}
   const energyAction=RulesMatch.handEnergyAction(p,index);
-  modal(`<h2>Play ${esc(c.name)}</h2>${energyAction?`<button onclick="$('#modal').close();ruleAction(${esc(JSON.stringify(energyAction))})">Attach as Energy</button><p>Uses your Energy attachment for this turn. Follow the target and Energy-return choices. Or play as a Pokémon below.</p>`:''}<p>Choose where to play, evolve, or attach. The engine checks legality.</p>${options.map((o,i)=>`<button onclick="$('#modal').close();ruleAction({type:'play',player:${player},index:${index},target:${esc(JSON.stringify(o.target))}})">${esc(o.label)}</button>`).join(' ')}`);
+  modal(`<h2>Play ${esc(c.name)}</h2>${ruleZoneAbilityButtons(p,R.SlotType.HAND,index)}${energyAction?`<button onclick="$('#modal').close();ruleAction(${esc(JSON.stringify(energyAction))})">Attach as Energy</button><p>Uses your Energy attachment for this turn. Follow the target and Energy-return choices. Or play as a Pokémon below.</p>`:''}<p>Choose where to play, evolve, or attach. The engine checks legality.</p>${options.map((o,i)=>`<button onclick="$('#modal').close();ruleAction({type:'play',player:${player},index:${index},target:${esc(JSON.stringify(o.target))}})">${esc(o.label)}</button>`).join(' ')}`);
 }
-function showRuleDiscard(id){const p=rulesMatch.store.state.players.find(p=>p.id===id);modal('<h2>Discard</h2>'+p.discard.cards.map(c=>'<div class="discard-preview" '+previewAttrs(c)+'>'+(ruleArt(c)?'<img src="'+esc(ruleArt(c))+'" alt="'+esc(c.name)+'">':'')+'<span>'+esc(c.name)+'</span></div>').join('')+'<h2>Lost Zone</h2>'+p.lostzone.cards.map(c=>'<div class="discard-preview" '+previewAttrs(c)+'>'+(ruleArt(c)?'<img src="'+esc(ruleArt(c))+'" alt="'+esc(c.name)+'">':'')+'<span>'+esc(c.name)+'</span></div>').join(''));}
+function ruleZoneAbilityButtons(p,slot,index){const m=rulesMatch,c=(slot===RulesMatch.R.SlotType.HAND?p.hand:p.discard).cards[index],bot=m.spec.opponent;if(bot?.type==='bot'&&p.id!==bot.humanPlayer)return '';return RulesMatch.zoneAbilities(m,p,slot,index).map(action=>{let reason='';if(m.store.state.players[m.store.state.activePlayer]!==p||RulesMatch.pending(m).length)reason='Available on your turn after pending effects resolve.';else try{RulesMatch.apply(BotAI.fork(m,p.id),action);}catch(e){reason=friendly(e.message);}return `<button data-zone-ability="${esc(action.name)}" ${reason?'disabled':''} title="${esc(reason)}" onclick="useRuleZoneAbility(${p.id},${slot},${index},${c.id},${m.journal.length},${esc(JSON.stringify(action.name))})">${esc(action.name)}</button>`;}).join('');}
+function useRuleZoneAbility(playerId,slot,index,cardId,journal,name){const m=rulesMatch,p=m?.store.state.players.find(p=>p.id===playerId),zone=slot===RulesMatch.R.SlotType.HAND?p?.hand:p?.discard;if(!m||m.journal.length!==journal||zone?.cards[index]?.id!==cardId){$('#modal').close();toast('The game changed. Select the card again.');return;}$('#modal').close();ruleAction({type:'ability',player:playerId,name,target:{player:RulesMatch.R.PlayerType.BOTTOM_PLAYER,slot,index}});}
+function showRuleDiscard(id){const p=rulesMatch.store.state.players.find(p=>p.id===id);modal('<h2>Discard</h2>'+p.discard.cards.map((c,i)=>'<div class="discard-preview" '+previewAttrs(c)+'>'+(ruleArt(c)?'<img src="'+esc(ruleArt(c))+'" alt="'+esc(c.name)+'">':'')+'<span>'+esc(c.name)+'</span>'+ruleZoneAbilityButtons(p,RulesMatch.R.SlotType.DISCARD,i)+'</div>').join('')+'<h2>Lost Zone</h2>'+p.lostzone.cards.map(c=>'<div class="discard-preview" '+previewAttrs(c)+'>'+(ruleArt(c)?'<img src="'+esc(ruleArt(c))+'" alt="'+esc(c.name)+'">':'')+'<span>'+esc(c.name)+'</span></div>').join(''));}
 play=function(){if(tableMode==='manual'){manualTable();$('#app').insertAdjacentHTML('afterbegin','<button onclick="tableMode=\'rules\';play()">Rules-enforced matches</button>');}else rulesTable();};
 function promptRows(p){
   const R=RulesMatch.R,g=rulesMatch.store.state;

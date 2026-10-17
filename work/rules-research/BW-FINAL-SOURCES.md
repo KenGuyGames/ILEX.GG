@@ -1,0 +1,7 @@
+# BW final source notes
+
+Official final expansion: https://www.pokemon.com/uk/pokemon-tcg/black-white-legendary-treasures (November2013). BW promo inventory through BW101: https://bulbapedia.bulbagarden.net/wiki/BW_Black_Star_Promos_(TCG) . Inventory includes every catalog entry already available in the app. Source canonical text is bundled pokemon-tcg-data; Trainer Kit text supplements are retained.
+
+Cedric height data: locally cached scan metadata bars determine printed-height eligibility; OCR output and narrow reviewed crops are retained in work/rules-research/bw-height-* . Species/forme heights come from https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/pokemon.csv (height in decimetres, converted to whole inches), cross-checked with existing scan-reviewed WOTC species lengths where applicable. API field definition: https://pokeapi.co/docs/v2#pokemon . Full-art/LEGEND/Prime/Trainer Kit printings without a detected height line are not inferred eligible from species alone. Named Kyurem formes and scan-reviewed Sky Forme Shaymin use their own heights. Lookup table is bundled for offline play.
+
+Existing historical BW profile remains the pre-XY-errata profile. Unlimited and XY interactions are deferred. Card text and effect execution are validated within HGSS/Call of Legends plus the implemented BW era; shared earlier regression tests preserve baseline behavior. Numerical execution counts reflect finite fixtures, not exhaustive game-state proof.

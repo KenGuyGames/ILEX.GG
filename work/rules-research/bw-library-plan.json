@@ -1,0 +1,143 @@
+{
+  "status": "candidate-source",
+  "total": 1521,
+  "available": 1521,
+  "pending": 0,
+  "methods": {
+    "native-source": 1394,
+    "compiled-effects": 108,
+    "compiled-trainer": 19
+  },
+  "bySet": [
+    {
+      "id": "bw1",
+      "name": "Black & White",
+      "total": 115,
+      "available": 115
+    },
+    {
+      "id": "bw2",
+      "name": "Emerging Powers",
+      "total": 98,
+      "available": 98
+    },
+    {
+      "id": "bw3",
+      "name": "Noble Victories",
+      "total": 102,
+      "available": 102
+    },
+    {
+      "id": "bw4",
+      "name": "Next Destinies",
+      "total": 103,
+      "available": 103
+    },
+    {
+      "id": "bw5",
+      "name": "Dark Explorers",
+      "total": 111,
+      "available": 111
+    },
+    {
+      "id": "bw6",
+      "name": "Dragons Exalted",
+      "total": 128,
+      "available": 128
+    },
+    {
+      "id": "dv1",
+      "name": "Dragon Vault",
+      "total": 21,
+      "available": 21
+    },
+    {
+      "id": "bw7",
+      "name": "Boundaries Crossed",
+      "total": 153,
+      "available": 153
+    },
+    {
+      "id": "bw8",
+      "name": "Plasma Storm",
+      "total": 138,
+      "available": 138
+    },
+    {
+      "id": "bw9",
+      "name": "Plasma Freeze",
+      "total": 122,
+      "available": 122
+    },
+    {
+      "id": "bw10",
+      "name": "Plasma Blast",
+      "total": 105,
+      "available": 105
+    },
+    {
+      "id": "bw11",
+      "name": "Legendary Treasures",
+      "total": 140,
+      "available": 140
+    },
+    {
+      "id": "2011bw",
+      "name": "McDonald's Collection 2011",
+      "total": 12,
+      "available": 12
+    },
+    {
+      "id": "2012bw",
+      "name": "McDonald's Collection 2012",
+      "total": 12,
+      "available": 12
+    },
+    {
+      "id": "bwp",
+      "name": "BW Black Star Promos",
+      "total": 101,
+      "available": 101
+    },
+    {
+      "id": "tk-bw-e",
+      "name": "BW trainer Kit (Excadrill)",
+      "total": 30,
+      "available": 30
+    },
+    {
+      "id": "tk-bw-z",
+      "name": "BW trainer Kit (Zoroark)",
+      "total": 30,
+      "available": 30
+    }
+  ],
+  "interactionScope": [
+    "hgss1",
+    "hgss2",
+    "hgss3",
+    "hgss4",
+    "col1",
+    "hgssp",
+    "tk-hs-r",
+    "tk-hs-g",
+    "bw1",
+    "bw2",
+    "bw3",
+    "bw4",
+    "bw5",
+    "bw6",
+    "dv1",
+    "bw7",
+    "bw8",
+    "bw9",
+    "bw10",
+    "bw11",
+    "2011bw",
+    "2012bw",
+    "bwp",
+    "tk-bw-e",
+    "tk-bw-z"
+  ],
+  "promoCutoff": "BW01–BW101; complete BW promo series through December2013"
+}

@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, PlayerType, StateUtils, ChoosePokemonPrompt, SlotType } from '../../../game';
@@ -57,7 +58,7 @@ export class Gallade extends PokemonCard {
         const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkProvidedEnergyEffect);
         checkProvidedEnergyEffect.energyMap.forEach(energy => {
-          energies += energy.provides.length;
+          energies += BwEnergyUnits.getProvidesUnitCount(energy.provides);
         });
       });
 

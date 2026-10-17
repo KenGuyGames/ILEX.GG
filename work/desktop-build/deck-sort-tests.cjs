@@ -1,0 +1,18 @@
+const assert=require('assert/strict'),fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'../..'),D=require('../desktop/ui/deck-sort.js'),metadata=require('../desktop/ui/card-details.json');
+const entry=(id,n)=>({id,n,card:metadata[id]});
+const order=(ids,category)=>D.sort(ids,category,metadata).map(x=>x.id);
+const cards=[entry('base1-1',2),entry('base1-58',3),entry('base1-32',3),entry('base1-43',4)];
+assert.deepEqual(order(cards,'Pokemon'),['base1-43','base1-32','base1-1','base1-58']);
+assert.deepEqual(order([entry('base1-1',2),entry('base1-58',3),entry('base1-43',4)],'Pokemon'),['base1-43','base1-1','base1-58']);
+assert.deepEqual(order([entry('base1-1',4),entry('base1-43',2)],'Pokemon'),['base1-1','base1-43']);
+assert.deepEqual(order([entry('base1-1',2),entry('base1-43',2),entry('base1-32',2)],'Pokemon'),['base1-43','base1-32','base1-1']);
+const custom=[{category:'Trainer',subtypes:['Stadium']},{category:'Trainer',subtypes:['Item','Pokémon Tool']},{category:'Trainer',subtypes:['Item']},{category:'Trainer',subtypes:['Supporter']},{category:'Trainer',subtypes:['Supporter']}].map((card,i)=>({id:String(i),n:[4,4,4,1,3][i],card:{...card,name:String(i)}}));
+assert.deepEqual(D.sort(custom,'Trainer').map(x=>x.id),['4','3','2','1','0']);
+assert.deepEqual(D.sort([{id:'special',n:4,card:{energyType:'Special'}},{id:'basic1',n:1,card:{energyType:'Normal'}},{id:'basic3',n:3,card:{subtypes:['Basic']}}],'Energy').map(x=>x.id),['basic3','basic1','special']);
+const before=JSON.stringify(cards);D.sort(cards,'Pokemon',metadata);assert.equal(JSON.stringify(cards),before);
+const fake=[{id:'a',n:2,card:{category:'Pokemon',name:'Custom A'}},{id:'b',n:1,card:{category:'Pokemon',name:'Custom B',evolveFrom:'Custom A'}}];
+assert.deepEqual(D.sort(fake,'Pokemon',{},fake.map(x=>x.card)).map(x=>x.id),['a','b']);
+const cycle=[{id:'a',n:1,card:{category:'Pokemon',name:'A',evolveFrom:'B'}},{id:'b',n:2,card:{category:'Pokemon',name:'B',evolveFrom:'A'}}];assert.equal(D.sort(cycle,'Pokemon').length,2);
+const report={passed:true,checks:9,scope:'Evolution adjacency and missing intermediates, count precedence, stage ties, Trainer/Energy order, custom/cyclic metadata, immutability'};
+fs.writeFileSync(path.join(root,'work/deck-sort-test-report.json'),JSON.stringify(report,null,2));console.log(report);

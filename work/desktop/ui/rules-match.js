@@ -7,8 +7,9 @@ var RulesMatch=(()=>{
     modern:{name:'Sword & Shield onward',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false},
     sm:{name:'Sun & Moon (2017–2019)',format:R.Format.SM,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:false,legacyBurn:false},
     xy:{name:'XY (2013–2016)',format:R.Format.XY,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:false,legacyBurn:true},
-    bw:{name:'Black & White (2011–2013)',format:R.Format.BW,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,legacyBurn:true},
+    bw:{name:'Black & White (2011–2013)',format:R.Format.BW,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,dpEraRules:true,exEraRules:true,hgssEraRules:true,bwEraRules:true},
     dp:{name:'Diamond & Pearl / HGSS (2007–2010)',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:true,firstTurnNoTrainers:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true},
+    hgss:{name:'HeartGold & SoulSilver–Call of Legends (2010–2011)',format:R.Format.RSPK,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:true,firstTurnNoTrainers:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,dpEraRules:true,exEraRules:true,hgssEraRules:true},
     dppl:{name:'Diamond & Pearl–Platinum Arceus (2007–2009)',format:R.Format.RSPK,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:true,firstTurnNoTrainers:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,dpEraRules:true,exEraRules:true},
     exlate:{name:'EX: FireRed & LeafGreen–Power Keepers',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:false,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,exEraRules:true},
     ex:{name:'EX: early / legacy saved-match rules',format:R.Format.RSPK,firstTurnDrawCard:false,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,exEraRules:true}
@@ -135,6 +136,7 @@ var RulesMatch=(()=>{
 
   function attacks(m,p){const effect=new R.CheckPokemonAttacksEffect(p);m.store.reduceEffect(m.store.state,effect);return [...new Map([...(p.active.getPokemonCard()?.attacks||[]),...effect.attacks].map(a=>[a.name,a])).values()];}
   function powers(m,p,list){const card=list.getPokemonCard();if(!card)return [];const effect=new R.CheckPokemonPowersEffect(p,card);m.store.reduceEffect(m.store.state,effect);return [...new Map([...card.powers,...effect.powers].map(power=>[power.name,power])).values()];}
-  return {R,profiles,prototypes,create,apply,restore,pending,targets,attacks,powers,handEnergyAction,undoPoints,checkpoint,undoAction};
+  function zoneAbilities(m,p,slot,index){const zone=slot===R.SlotType.HAND?p.hand:slot===R.SlotType.DISCARD?p.discard:null,card=zone?.cards[index],flag=slot===R.SlotType.HAND?'useFromHand':'useFromDiscard';return (card?.powers||[]).filter(power=>power[flag]&&!power._wotcPassive&&power.powerType!==R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT).map(power=>({type:'ability',player:p.id,name:power.name,target:{player:R.PlayerType.BOTTOM_PLAYER,slot,index}}));}
+  return {R,profiles,prototypes,create,apply,restore,pending,targets,attacks,powers,handEnergyAction,zoneAbilities,undoPoints,checkpoint,undoAction};
 })();
 

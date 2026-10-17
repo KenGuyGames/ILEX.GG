@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "version": "1.12.0",
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59",
+  "newPrintings": 888,
+  "totalBwPrintings": 1521,
+  "pending": 0,
+  "focusedChecks": 66,
+  "printedPokemonAttackSmoke": 2206,
+  "trainerToolAttacks": 2,
+  "newAttackBranchCases": 5196,
+  "rollouts": 18,
+  "decisions": 1596,
+  "nativeProfile": "work/desktop-bw-tests-v58",
+  "nativeFreshAndRestored": true,
+  "nativeBwChecks": 47,
+  "verifiedScans": 23736,
+  "verifiedSourceFiles": 1940,
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 209186721,
+      "crcAndEngineVerified": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2776324870,
+      "crcAndEngineVerified": true
+    }
+  ],
+  "scope": "Black & White, Emerging Powers, Noble Victories, Next Destinies, Dark Explorers, Dragons Exalted, Dragon Vault, Boundaries Crossed, Plasma Storm, Plasma Freeze, Plasma Blast, Legendary Treasures, McDonalds2011/2012, BW01\u2013BW101 promos and both BW Trainer Kits: 1,521 printings. Interactions with HGSS through Call of Legends. Unlimited deferred.",
+  "limits": "Coverage and finite execution/regression checks are not exhaustive proof of all board states. The final engine passes all 2,206 printed BW Pokemon attacks plus both Tool attacks, focused interactions, Power/Trainer audits and bounded real-deck rollouts with replay/Undo; Unlimited is deferred.",
+  "verifiedUtc": "2026-10-16T13:40:01.222482+00:00",
+  "githubPublished": false
+}

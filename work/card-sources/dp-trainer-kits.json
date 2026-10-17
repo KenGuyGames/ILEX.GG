@@ -1,0 +1,934 @@
+[
+  {
+    "id": "tk-dp-l-1",
+    "name": "Geodude",
+    "number": "1",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Stone Throw",
+        "cost": [
+          "Fighting"
+        ],
+        "damage": "",
+        "text": "Choose 2 of your opponent's Benched Pokémon. This attack does 10 damage to each of them. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+10"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Lightning",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-1",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-10",
+    "name": "Quick Ball",
+    "number": "10",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Reveal cards from your deck until you reveal a Pokémon. Show that Pokémon to your opponent and put it into your hand. Shuffle the other revealed cards back into your deck. (If you don't reveal a Pokémon, shuffle all the revealed cards back into your deck.)"
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-10",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-11",
+    "name": "Fighting Energy",
+    "number": "11",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-11",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-2",
+    "name": "Graveler",
+    "number": "2",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Geodude",
+    "attacks": [
+      {
+        "name": "Rock Cannon",
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+        "damage": "30×",
+        "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads."
+      },
+      {
+        "name": "Rock Slide",
+        "cost": [
+          "Fighting",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "40",
+        "text": "Does 10 damage to 2 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "+20"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Lightning",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-2",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-3",
+    "name": "Lucario",
+    "number": "3",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Riolu",
+    "attacks": [
+      {
+        "name": "Feint",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": "This attack's damage isn't affected by Resistance."
+      },
+      {
+        "name": "Aura Sphere",
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+        "damage": "40",
+        "text": "Does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-3",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-4",
+    "name": "Machoke",
+    "number": "4",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Machop",
+    "attacks": [
+      {
+        "name": "Karate Chop",
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+        "damage": "40-",
+        "text": "Does 40 damage minus 10 damage for each damage counter on Machoke."
+      },
+      {
+        "name": "Seismic Toss",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "damage": "60",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-4",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-5",
+    "name": "Machop",
+    "number": "5",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Low Kick",
+        "cost": [
+          "Fighting"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+10"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-5",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-6",
+    "name": "Riolu",
+    "number": "6",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Wild Kick",
+        "cost": [
+          "Fighting"
+        ],
+        "damage": "30",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "+10"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-6",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-7",
+    "name": "Starly",
+    "number": "7",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Gust",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 20 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+10"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-7",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-8",
+    "name": "Energy Search",
+    "number": "8",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Search your deck for a basic Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-8",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-l-9",
+    "name": "Potion",
+    "number": "9",
+    "set": {
+      "id": "tk-dp-l"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Remove 2 damage counters from 1 of your Pokémon (remove 1 damage counter if that Pokémon has only 1)."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-l-9",
+      "updated": "2026-07-26T10:09:48+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-1",
+    "name": "Buizel",
+    "number": "1",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Splash About",
+        "cost": [
+          "Water"
+        ],
+        "damage": "10+",
+        "text": "If Buizel has less Energy attached to it than the Defending Pokémon, this attack does 10 damage plus 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+10"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-1",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-10",
+    "name": "Energy Search",
+    "number": "10",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Search your deck for a basic Energy card, show it to your opponent, and put it into your hand. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-10",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-11",
+    "name": "Potion",
+    "number": "11",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Remove 2 damage counters from 1 of your Pokémon (remove 1 damage counter if that Pokémon has only 1)."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-11",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-12",
+    "name": "Water Energy",
+    "number": "12",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-12",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-2",
+    "name": "Floatzel",
+    "number": "2",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Buizel",
+    "attacks": [
+      {
+        "name": "Screw Tail",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": "Flip a coin. If heads, discard an Energy attached to the Defending Pokémon."
+      },
+      {
+        "name": "Water Gun",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "damage": "40",
+        "text": "Does 40 damage plus 20 more damage for each Water Energy attached to Floatzel but not used to pay for this attack's Energy cost. You can't add more than 40 damage in this way."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-2",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-3",
+    "name": "Goldeen",
+    "number": "3",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Horn Attack",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Take Down",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": "Goldeen does 10 damage to itself."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+10"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-3",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-4",
+    "name": "Manaphy",
+    "number": "4",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Call for Family",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Shuffle your deck afterward."
+      },
+      {
+        "name": "Aqua Ring",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "damage": "30",
+        "text": "Switch Manaphy with 1 of your Benched Pokémon."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-4",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-5",
+    "name": "Piplup",
+    "number": "5",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Peck",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Water Splash",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 20 more damage plus 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+10"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-5",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-6",
+    "name": "Prinplup",
+    "number": "6",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Piplup",
+    "attacks": [
+      {
+        "name": "Aqua Shower",
+        "cost": [
+          "Water"
+        ],
+        "damage": "",
+        "text": "Does 10 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Brine",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "damage": "",
+        "text": "Choose 1 of your opponent's Pokémon that has any damage counters on it. This attack does 40 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-6",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-7",
+    "name": "Seaking",
+    "number": "7",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Goldeen",
+    "attacks": [
+      {
+        "name": "Flail",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "10×",
+        "text": "Does 10 damage times the number of damage counters on Seaking."
+      },
+      {
+        "name": "Horn Drill",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-7",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-8",
+    "name": "Totodile",
+    "number": "8",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Shining Fang",
+        "cost": [
+          "Water"
+        ],
+        "damage": "10+",
+        "text": "If the Defending Pokémon already has any damage counters on it, this attack does 10 damage plus 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "+10"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-8",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  },
+  {
+    "id": "tk-dp-m-9",
+    "name": "Dusk Ball",
+    "number": "9",
+    "set": {
+      "id": "tk-dp-m"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Look at the 7 cards from the bottom of your deck. Choose 1 Pokémon you find there, show it to your opponent, and put it into your hand. Put the remaining cards back on top of your deck. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-dp-m-9",
+      "updated": "2026-07-26T10:14:40+01:00"
+    }
+  }
+]

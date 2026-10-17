@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5",
+  "scope": "HGSS/Call of Legends with Holon Phantoms onward only; 150 decisions per match",
+  "games": [
+    {
+      "decks": [
+        "LostGar",
+        "Magnezone Pachirisu"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 20,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "PrimeTime",
+        "RDL Typhlosion"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 20,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "TurnFeral",
+        "Gardevoir"
+      ],
+      "level": "normal",
+      "decisions": 49,
+      "turn": 8,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gyarados",
+        "Healix"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 20,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Luxchomp",
+        "Palkia Lock"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 18,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

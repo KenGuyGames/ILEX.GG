@@ -1,3 +1,5 @@
+import {exAttachedEnergy} from '../../../tcg-lab-ex-attachments';
+import {CardList,ChooseCardsPrompt} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, SuperType } from '../../../game/store/card/card-types';
 import {
@@ -93,39 +95,15 @@ export class Magnezone extends PokemonCard {
     if (WAS_ATTACK_USED(effect, 0, this)) {
       const player = effect.player;
 
-      let totalEnergy = 0;
-      player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList) => {
-        const energyCount = cardList.cards.filter((card) => card instanceof EnergyCard).length;
-        totalEnergy += energyCount;
+      const entries=[player.active,...player.bench].flatMap(list=>exAttachedEnergy(store,state,player,list));
+      const view=new CardList();view.cards=entries.map(entry=>entry.card);
+      effect.damage=0;if(!entries.length)return state;
+      return store.prompt(state,new ChooseCardsPrompt(player,GameMessage.CHOOSE_ENERGIES_TO_DISCARD,view,{}, {min:0,max:entries.length,allowCancel:false}),chosen=>{
+        for(const card of chosen||[]){const entry=entries.find(item=>item.card===card)!;MOVE_CARDS(store,state,entry.zone,player.lostzone,{cards:[card],sourceCard:this,sourceEffect:effect});}
+        effect.damage=(chosen||[]).length*50;
       });
-
-      return store.prompt(
-        state,
-        new DiscardEnergyPrompt(
-          player.id,
-          GameMessage.CHOOSE_ENERGIES_TO_DISCARD,
-          PlayerType.BOTTOM_PLAYER,
-          [SlotType.ACTIVE, SlotType.BENCH],
-          { superType: SuperType.ENERGY },
-          { min: 1, max: totalEnergy, allowCancel: false },
-        ),
-        (transfers) => {
-          if (transfers === null) {
-            return state;
-          }
-
-          // Move all selected energies to lost zone
-          transfers.forEach((transfer) => {
-            const source = StateUtils.getTarget(state, player, transfer.from);
-            MOVE_CARDS(store, state, source, player.lostzone, { cards: [transfer.card], sourceCard: this });
-          });
-
-          // Set damage based on number of discarded cards
-          effect.damage = transfers.length * 50;
-          return state;
-        },
-      );
     }
+
     return state;
   }
 }

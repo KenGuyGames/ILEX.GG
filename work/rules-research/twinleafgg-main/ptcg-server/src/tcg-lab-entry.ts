@@ -9,3 +9,8 @@ import './tcg-lab-wotc';
 export { PowerEffect } from './game/store/effects/game-effects';
 export { CheckPokemonPowersEffect, CheckPokemonAttacksEffect } from './game/store/effects/check-effects';
 export { AttachEnergyEffect, AfterEnergyAttachedEffect } from './game/store/effects/play-card-effects';
+export { KnockOutEffect, HealEffect } from './game/store/effects/game-effects';
+export { PutDamageEffect, PutCountersEffect, HealTargetEffect, ApplyWeaknessEffect } from './game/store/effects/attack-effects';
+export { CheckAttackCostEffect } from './game/store/effects/check-effects';
+export { CoinFlipEffect,CoinFlipSequenceEffect } from './game/store/effects/play-card-effects';
+export { PlayPokemonEffect } from './game/store/effects/play-card-effects';

@@ -1,8 +1,10 @@
 const fs=require('node:fs'),path=require('node:path');
 module.exports=async(win,root)=>{
  const evaluate=s=>win.webContents.executeJavaScript(s,true),pause=ms=>new Promise(r=>setTimeout(r,ms));
+ const capture=async()=>{for(let n=0;n<3;n++){try{return await win.webContents.capturePage();}catch(e){if(n===2)throw e;await pause(350);}}};
  for(let i=0;i<150;i++){if(await evaluate("typeof rulesReady!=='undefined'&&rulesReady&&cards.length===23736"))break;await pause(100)}
  if(!await evaluate('rulesReady'))throw Error('Rules catalog failed to load');
+ const dpReport=await evaluate(fs.readFileSync(path.join(__dirname,'dp-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'dp-native-tests.json'),JSON.stringify({...dpReport,engineSha256:require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'ui/rules-engine.js'))).digest('hex')},null,2));
  const exReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-tests.json'),JSON.stringify(exReport,null,2));
  const interactionReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-interactions.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-interactions.json'),JSON.stringify(interactionReport,null,2));
  await evaluate("window.audioBootRestored=!!localStorage.getItem('rules-test-marker')");
@@ -36,7 +38,7 @@ module.exports=async(win,root)=>{
    return {passed:true,renders,controls:true,muting:true,noDuplicateLoops:true,noGameMutation:true,uncommittedActionsSilent:true,preferences:IlexAudio.preferences()};
   })()`);
   fs.writeFileSync(path.join(root,'audio-tests.json'),JSON.stringify(report,null,2));
-  await pause(180);fs.writeFileSync(path.join(root,'audio-preview.png'),(await win.webContents.capturePage()).toPNG());
+  await pause(180);fs.writeFileSync(path.join(root,'audio-preview.png'),(await capture()).toPNG());
   await evaluate("document.getElementById('audioSettings').close()");
   for(const [id,name] of [['grove','menu'],['duel','battle']]){
    const base64=await evaluate(`(async()=>{const b=await IlexComposer.render('${id}',12),samples=b.getChannelData(0),bytes=new Uint8Array(44+samples.length*2),v=new DataView(bytes.buffer);const text=(p,s)=>[...s].forEach((c,i)=>bytes[p+i]=c.charCodeAt(0));text(0,'RIFF');v.setUint32(4,bytes.length-8,true);text(8,'WAVEfmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,b.sampleRate,true);v.setUint32(28,b.sampleRate*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);text(36,'data');v.setUint32(40,samples.length*2,true);for(let i=0;i<samples.length;i++)v.setInt16(44+i*2,Math.max(-1,Math.min(1,samples[i]))*32767,true);let s='';for(let i=0;i<bytes.length;i+=8192)s+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(s)})()`);
@@ -46,7 +48,7 @@ module.exports=async(win,root)=>{
  const verifyFoilPreview=async()=>{
   const previous=await evaluate('({query,searchScope,setFilter,customOnly,page})');win.setSize(1440,960);await pause(150);
   await evaluate("(async()=>{query='basep-13';searchScope='name';setFilter='basep';customOnly=false;page=0;tab='library';render();const images=[...document.querySelectorAll('.card img')];images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode()));CardFoil.refresh();document.querySelector('.foil-layer[data-foil-card=\"basep-13\"]').parentElement.querySelector('img').dispatchEvent(new MouseEvent('contextmenu',{bubbles:true,cancelable:true}));await document.querySelector('#magnify-image').decode();CardFoil.refresh();const img=document.querySelector('#magnify-image'),r=img.getBoundingClientRect();img.dispatchEvent(new PointerEvent('pointermove',{bubbles:true,clientX:r.left+r.width*.25,clientY:r.top+r.height*.3}));})()");
-  await pause(180);fs.writeFileSync(path.join(root,'foil-preview.png'),(await win.webContents.capturePage()).toPNG());
+  await pause(180);fs.writeFileSync(path.join(root,'foil-preview.png'),(await capture()).toPNG());
   const before=await evaluate("document.querySelector('#cardmagnifier .foil-layer').style.getPropertyValue('--foil-x')");
   win.webContents.debugger.attach('1.3');try{await win.webContents.debugger.sendCommand('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-motion',value:'reduce'}]});await pause(150);const reduced=await evaluate("(()=>{const img=document.querySelector('#magnify-image'),r=img.getBoundingClientRect();img.dispatchEvent(new PointerEvent('pointermove',{bubbles:true,clientX:r.left+r.width*.9,clientY:r.top+r.height*.8}));const layer=document.querySelector('#cardmagnifier .foil-layer');return {x:layer.style.getPropertyValue('--foil-x'),transition:getComputedStyle(layer).transitionDuration,reduced:matchMedia('(prefers-reduced-motion: reduce)').matches};})()");if(!reduced.reduced||reduced.x!==before||reduced.transition!=='0s')throw Error('Foil reduced-motion behavior failed');}finally{await win.webContents.debugger.sendCommand('Emulation.setEmulatedMedia',{features:[]});win.webContents.debugger.detach();}
   fs.writeFileSync(path.join(root,'foil-tests.json'),JSON.stringify({passed:true,pointerReactive:true,printingRarity:true,hiddenCardsExcluded:true,reducedMotion:true},null,2));await evaluate("document.querySelector('.magnify-close').click();");await evaluate('({query,searchScope,setFilter,customOnly,page}='+JSON.stringify(previous)+');');
@@ -54,13 +56,13 @@ module.exports=async(win,root)=>{
  const verifySearchPreview=async()=>{
   const previous=await evaluate('({query,searchScope,setFilter,customOnly,page})');await evaluate("query='Damage Swap';searchScope='ability';setFilter='';customOnly=false;page=0;tab='library';render();");
   const layouts=[];for(const [width,height] of [[900,960],[1920,1080]]){win.setSize(width,height);await pause(150);const layout=await evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth,matches:document.querySelectorAll('.card').length})");if(layout.scroll>layout.width+1||!layout.matches)throw Error('Attack search layout failed at '+width);layouts.push(layout);}
-  await evaluate("(async()=>{await Promise.all([...document.querySelectorAll('.card img')].map(i=>{i.loading='eager';return i.decode()}));window.scrollTo(0,0);})()");fs.writeFileSync(path.join(root,'attack-search-preview.png'),(await win.webContents.capturePage()).toPNG());fs.writeFileSync(path.join(root,'attack-search-layouts.json'),JSON.stringify({passed:true,layouts},null,2));await evaluate('({query,searchScope,setFilter,customOnly,page}='+JSON.stringify(previous)+');');win.setSize(1440,960);
+  await evaluate("(async()=>{await Promise.all([...document.querySelectorAll('.card img')].map(i=>{i.loading='eager';return i.decode()}));window.scrollTo(0,0);})()");fs.writeFileSync(path.join(root,'attack-search-preview.png'),(await capture()).toPNG());fs.writeFileSync(path.join(root,'attack-search-layouts.json'),JSON.stringify({passed:true,layouts},null,2));await evaluate('({query,searchScope,setFilter,customOnly,page}='+JSON.stringify(previous)+');');win.setSize(1440,960);
  };
  const verifyVisualDeckPreview=async()=>{
   await pause(150);
   await evaluate("(async()=>{tab='decks';state.deckFormatFilter='';activeDeck=state.decks.find(d=>d.name==='Import test 2')?.id||activeDeck;render();const images=[...document.querySelectorAll('.deck-card img')];images.forEach(i=>i.loading='eager');await Promise.race([Promise.all(images.map(i=>i.decode())),new Promise(r=>setTimeout(r,3000))]);if(images.some(i=>!i.naturalWidth))throw Error('Deck preview image failed to load');window.scrollTo(0,0);})()");
   const sizes=[];for(const [width,height] of [[900,960],[1920,1440]]){win.setSize(width,height);await pause(150);const layout=await evaluate("({width:innerWidth,scroll:document.documentElement.scrollWidth,cards:document.querySelectorAll('.deck-card').length})");if(layout.scroll>layout.width+1||layout.cards!==7)throw Error('Visual deck layout failed at '+width+': '+JSON.stringify(layout));sizes.push(layout);}
-  fs.writeFileSync(path.join(root,'visual-deck-layouts.json'),JSON.stringify({passed:true,sizes},null,2));fs.writeFileSync(path.join(root,'visual-deck-preview.png'),(await win.webContents.capturePage()).toPNG());win.setSize(1440,960);
+  fs.writeFileSync(path.join(root,'visual-deck-layouts.json'),JSON.stringify({passed:true,sizes},null,2));fs.writeFileSync(path.join(root,'visual-deck-preview.png'),(await capture()).toPNG());win.setSize(1440,960);
  };
  const verifyDragAndSize=async()=>{
   const botReport=await evaluate(fs.readFileSync(path.join(__dirname,'bot-ui-tests.js'),'utf8'));
@@ -68,8 +70,8 @@ module.exports=async(win,root)=>{
   fs.writeFileSync(path.join(root,'bot-ui-tests.json'),JSON.stringify(botReport,null,2));
   win.setSize(1920,1080);await pause(150);
   await evaluate("window.previewPrevious={spec:rulesMatch.spec,journal:rulesMatch.journal.slice(),undoHistory:RulesMatch.undoPoints(rulesMatch)};botSuspended=true;rulesMatch=RulesMatch.restore("+JSON.stringify(botPreview)+",ruleMap,state.custom);seatFocus=null;tab='play';render();");
-  await evaluate("(async()=>{await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);document.querySelector('#toast').style.display='none';})()");
-  await pause(250);fs.writeFileSync(path.join(root,'bot-preview.png'),(await win.webContents.capturePage()).toPNG());
+  await evaluate("(async()=>{await Promise.all([...document.querySelectorAll('#app img')].map(async i=>{i.loading='eager';await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,4000))]);if(i.getAttribute('src')?.startsWith('scans/')&&(!i.complete||!i.naturalWidth))throw Error('Bundled table image did not load: '+i.getAttribute('src'));}));window.scrollTo(0,0);document.querySelector('#toast').style.display='none';})()");
+  await pause(250);fs.writeFileSync(path.join(root,'bot-preview.png'),(await capture()).toPNG());
   await evaluate("rulesMatch=RulesMatch.restore(window.previewPrevious,ruleMap,state.custom);delete window.previewPrevious;seatFocus=null;botSuspended=false;saveRules();render();");
   const report=await evaluate(fs.readFileSync(path.join(__dirname,'tabletop-drag-tests.js'),'utf8'));
   fs.writeFileSync(path.join(root,'drag-tests.json'),JSON.stringify(report,null,2));
@@ -77,17 +79,17 @@ module.exports=async(win,root)=>{
   const sizes=[];
   for(const [width,height] of [[900,960],[1920,1080],[2560,1440]]){
    win.setSize(width,height);await pause(150);
-   await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
+   await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(async i=>{i.loading='eager';await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,4000))]);if(i.getAttribute('src')?.startsWith('scans/')&&(!i.complete||!i.naturalWidth))throw Error('Bundled table image did not load: '+i.getAttribute('src'));}));window.scrollTo(0,0);})()");
    const layout=await evaluate("JSON.stringify({width:innerWidth,height:innerHeight,scroll:document.documentElement.scrollWidth,table:document.querySelector('.seated-experience').getBoundingClientRect().width,card:document.querySelector('.near-seat .seat-active').getBoundingClientRect().width,handBottom:document.querySelector('.near-hand').getBoundingClientRect().bottom})");
    const metrics=JSON.parse(layout);if(metrics.scroll>metrics.width+1)throw Error('Table overflows at '+width);sizes.push(metrics);
-   if(width===1920)fs.writeFileSync(path.join(root,'tabletop-widescreen-preview.png'),(await win.webContents.capturePage()).toPNG());
+   if(width===1920)fs.writeFileSync(path.join(root,'tabletop-widescreen-preview.png'),(await capture()).toPNG());
   }
   fs.writeFileSync(path.join(root,'table-sizes.json'),JSON.stringify({passed:true,sizes},null,2));win.setSize(1440,960);await pause(150);
  };
  const verifyCardActions=async()=>{
  const pileCounts=await evaluate('(()=>{try{return '+fs.readFileSync(path.join(__dirname,'pile-count-tests.js'),'utf8')+'}catch(e){return {passed:false,error:e.message,stack:e.stack}}})()');fs.writeFileSync(path.join(root,'pile-count-tests.json'),JSON.stringify(pileCounts,null,2));if(!pileCounts.passed)throw Error(pileCounts.error);
  const cardActions=await evaluate(' (async()=>{try{return await '+fs.readFileSync(path.join(__dirname,'card-action-tests.js'),'utf8')+'}catch(e){return {passed:false,error:e.message,stack:e.stack}}})()');fs.writeFileSync(path.join(root,'card-action-tests.json'),JSON.stringify(cardActions,null,2));if(!cardActions.passed)throw Error(cardActions.error);
- await evaluate("(async()=>{cardActionDialog.innerHTML=window.cardActionPreviewHtml;cardActionDialog.showModal();await cardActionDialog.querySelector('img').decode();})()");await pause(200);fs.writeFileSync(path.join(root,'card-actions-preview.png'),(await win.webContents.capturePage()).toPNG());await evaluate("cardActionDialog.close()");
+ await evaluate("(async()=>{cardActionDialog.innerHTML=window.cardActionPreviewHtml;cardActionDialog.showModal();await cardActionDialog.querySelector('img').decode();})()");await pause(200);fs.writeFileSync(path.join(root,'card-actions-preview.png'),(await capture()).toPNG());await evaluate("cardActionDialog.close()");
  };
  if(await evaluate("localStorage.getItem('rules-test-marker')")){
   await evaluate("CardFoil.ready");if(!await evaluate("state.cardFinishPreferences?.['basep-11']==='normal'&&!CardFoil.eligible(find('basep-11'))"))throw Error('Promo finish preference failed to persist');
@@ -96,16 +98,16 @@ module.exports=async(win,root)=>{
   if(snapshot!==fs.readFileSync(path.join(root,'expected-restore.json'),'utf8'))throw Error('Restored rules match changed');
   fs.writeFileSync(path.join(root,'persistence.json'),JSON.stringify({passed:true,exactJournalAndDeckOrder:true}));
   await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();await verifyCardActions();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
-  await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
-  await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await win.webContents.capturePage()).toPNG());
+  await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(async i=>{i.loading='eager';await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,4000))]);if(i.getAttribute('src')?.startsWith('scans/')&&(!i.complete||!i.naturalWidth))throw Error('Bundled table image did not load: '+i.getAttribute('src'));}));window.scrollTo(0,0);})()");
+  await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await capture()).toPNG());
   await evaluate("tab='library';render();");
   await evaluate("(async()=>{const images=[...document.querySelectorAll('#app img')];images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode()));})()");
-  await pause(300);fs.writeFileSync(path.join(root,'desktop-preview.png'),(await win.webContents.capturePage()).toPNG());return;
+  await pause(300);fs.writeFileSync(path.join(root,'desktop-preview.png'),(await capture()).toPNG());return;
  }
  const result=await evaluate(`(async()=>{
   const check=(v,msg)=>{if(!v)throw Error(msg)},checks=[];
   check(document.title.startsWith('ILEX.GG')&&document.querySelector('.brand').textContent==='ILEX.GG','ILEX.GG branding');
-  check(getComputedStyle(document.body).backgroundColor==='rgb(13, 33, 27)','Forest palette');
+  check(getComputedStyle(document.body).backgroundColor==='rgb(8, 15, 19)','Forest palette');
   await document.querySelector('.hero-icon img').decode();await document.querySelector('.brand img').decode();
   check(document.querySelector('.hero-icon img').naturalWidth>0&&document.querySelector('.hero-icon img').getAttribute('src')==='scans/c1122ffa3645e338fa0fce57.webp','Celebi Prime scan');checks.push('ILEX.GG title, forest theme, leaf emblem and Celebi Prime scan render');
   const searchDefaults={query,searchScope,setFilter,customOnly,page},customBefore=state.custom.slice();query=' dÁmAgE SWAp ';searchScope='ability';library();check(all().filter(c=>matchesCardSearch(c)).some(c=>c.id==='base1-1'),'Historical Power name search');check(document.querySelector('.card-search-hint')?.textContent.includes('Damage Swap'),'Search match hint');searchScope='attack';query='confuse ray';library();check(all().filter(c=>matchesCardSearch(c)).some(c=>c.id==='base1-1'),'Attack name search');check(!matchesCardSearch(find('base1-1'),'Damage Swap','attack')&&!matchesCardSearch(find('base1-1'),'Confuse Ray','ability'),'Search scopes separated');setFilter='base1';library();check([...document.querySelectorAll('.card>small:first-of-type')].every(el=>el.textContent.startsWith('base1-')),'Set filter combines with attack search');page=3;$('#search').value='Quick Attack';$('#search').oninput({target:$('#search')});check(page===0&&document.activeElement===$('#search'),'Search resets pagination and preserves focus');setFilter='';customOnly=true;const searchCustom={id:'custom-search-fixture',custom:true,name:'Forest visitor',category:'Pokemon',attacks:[{name:'Forest Echo'}],abilities:[{name:'Time Gift'}]};state.custom.push(searchCustom);query='Forest Echo';searchScope='attack';library();check(document.querySelectorAll('.card').length===1&&document.querySelector('.card h3').textContent==='Forest visitor','Custom attack search');query='Time Gift';searchScope='ability';library();check(document.querySelectorAll('.card').length===1,'Custom ability search');state.custom[state.custom.length-1]={...searchCustom,abilities:[{name:'New Time Gift'}]};check(matchesCardSearch(state.custom[state.custom.length-1],'New Time Gift','ability'),'Search cache refreshes for imported custom card');state.custom=customBefore;({query,searchScope,setFilter,customOnly,page}=searchDefaults);library();check(matchesCardSearch(find('base1-1'),'base1-1','name')&&matchesCardSearch(find('base1-1'),'Alakazam','all'),'Existing name and ID searches preserved');checks.push('Offline attack and ability search supports historical Powers, scopes, set/custom filters, match hints, focus and pagination');
@@ -157,10 +159,10 @@ module.exports=async(win,root)=>{
  fs.writeFileSync(path.join(root,'desktop-tests.json'),JSON.stringify(result,null,2));
  fs.writeFileSync(path.join(root,'expected-restore.json'),await evaluate("JSON.stringify({turn:rulesMatch.store.state.turn,profile:rulesMatch.spec.profile,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch),deck:rulesMatch.store.state.players.map(p=>p.deck.cards.map(c=>c._labId)),pending:RulesMatch.pending(rulesMatch).map(p=>p.type)})"));
  await verifyDeckFilter();await verifyAudio();fs.writeFileSync(path.join(root,'verification-stage.txt'),'foil');await verifyFoilPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'search');await verifySearchPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'decks');await verifyVisualDeckPreview();fs.writeFileSync(path.join(root,'verification-stage.txt'),'table');await verifyDragAndSize();await verifyCardActions();fs.writeFileSync(path.join(root,'verification-stage.txt'),'complete');
- await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(i=>i.decode()));window.scrollTo(0,0);})()");
- await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await win.webContents.capturePage()).toPNG());
+ await evaluate("(async()=>{tab='play';render();await Promise.all([...document.querySelectorAll('#app img')].map(async i=>{i.loading='eager';await Promise.race([i.decode().catch(()=>{}),new Promise(r=>setTimeout(r,4000))]);if(i.getAttribute('src')?.startsWith('scans/')&&(!i.complete||!i.naturalWidth))throw Error('Bundled table image did not load: '+i.getAttribute('src'));}));window.scrollTo(0,0);})()");
+ await pause(400);fs.writeFileSync(path.join(root,'tabletop-preview.png'),(await capture()).toPNG());
  await evaluate("(async()=>{tab='library';render();const images=[...document.querySelectorAll('#app img')];images.forEach(i=>i.loading='eager');await Promise.all(images.map(i=>i.decode()));window.scrollTo(0,0);})()");
- await pause(500);fs.writeFileSync(path.join(root,'desktop-preview.png'),(await win.webContents.capturePage()).toPNG());
+ await pause(500);fs.writeFileSync(path.join(root,'desktop-preview.png'),(await capture()).toPNG());
 };
 
 

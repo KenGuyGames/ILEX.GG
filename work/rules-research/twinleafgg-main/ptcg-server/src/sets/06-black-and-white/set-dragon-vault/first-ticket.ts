@@ -5,6 +5,8 @@
 import { TrainerCard } from '../../../game/store/card/trainer-card';
 import { TrainerType } from '../../../game/store/card/card-types';
 import { StoreLike, State } from '../../../game';
+import { TrainerEffect } from '../../../game/store/effects/play-card-effects';
+import { GameError, GameMessage } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
 
 export class FirstTicket extends TrainerCard {
@@ -18,9 +20,7 @@ export class FirstTicket extends TrainerCard {
     "Before you flip a coin to decide who goes first in a game, you may play this card. Don't flip that coin, and you go first. If both players play First Ticket, flip the coin as normal. (You may play only 1 First Ticket before you flip that coin.)";
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    // TODO: Implement trainer effect
-    // Before you flip a coin to decide who goes first in a game, you may play this card. Don't flip that coin, and you go first. If both players play First Ticket, flip the coin as normal. (You may play only 1 First Ticket before you flip that coin.)
-
+    if (effect instanceof TrainerEffect && effect.trainerCard === this) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
     return state;
   }
 }

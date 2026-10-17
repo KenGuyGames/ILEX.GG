@@ -6,7 +6,7 @@ import { StoreLike } from '../../../game/store/store-like';
 import { State, GamePhase } from '../../../game/store/state/state';
 import { Effect } from '../../../game/store/effects/effect';
 import { KnockOutEffect } from '../../../game/store/effects/game-effects';
-import { MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
+import { IS_SPECIAL_ENERGY_BLOCKED, MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
 
 export class RescueEnergy extends EnergyCard {
 
@@ -34,34 +34,9 @@ export class RescueEnergy extends EnergyCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
     if (effect instanceof KnockOutEffect && effect.target.cards.includes(this)) {
-      const player = effect.player;
-
-      // Do not activate between turns, or when it's not opponents turn.
-      if (state.phase !== GamePhase.ATTACK) {
-        return state;
-      }
-
-      const target = effect.target;
-      const cards = target.getPokemons();
-      cards.forEach(card => {
-        player.marker.addMarker(this.RESCUE_ENERGY_MAREKER, card);
-      });
-    }
-
-    if (effect instanceof BetweenTurnsEffect && effect.player.discard.cards.includes(this)) {
-      state.players.forEach(player => {
-
-        if (!player.marker.hasMarker(this.RESCUE_ENERGY_MAREKER)) {
-          return;
-        }
-
-        const rescued: Card[] = player.marker.markers
-          .filter(m => m.name === this.RESCUE_ENERGY_MAREKER && m.source !== undefined)
-          .map(m => m.source!);
-
-        MOVE_CARDS(store, state, player.discard, player.hand, { cards: rescued, sourceCard: this });
-        player.marker.removeMarker(this.RESCUE_ENERGY_MAREKER);
-      });
+      const lethal=(effect.target as any)._exLethalAttackDamage;
+      if (state.phase===GamePhase.ATTACK && lethal?.turn===state.turn && lethal.card===effect.target.getPokemonCard()
+        && !IS_SPECIAL_ENERGY_BLOCKED(store,state,effect.player,this,effect.target)) (effect as any)._hgssRescue=true;
     }
 
     return state;

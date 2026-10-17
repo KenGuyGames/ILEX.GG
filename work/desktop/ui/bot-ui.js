@@ -32,18 +32,20 @@ function setBotPaused(value){state.botPaused=value;state.botError='';botGenerati
 function setBotDifficulty(value){const b=botSettings();if(!b||!BotAI.levels[value])return;b.difficulty=value;saveRules();play();}
 function botNeedsAction(){const b=botSettings();if(!b||!rulesMatch)return false;const g=rulesMatch.store.state,p=RulesMatch.pending(rulesMatch),botTurn=g.players[g.activePlayer]?.id===b.botPlayer;return p.some(p=>p.playerId===b.botPlayer||p.playerId==null&&botTurn)||!p.length&&g.phase===RulesMatch.R.GamePhase.PLAYER_TURN&&botTurn;}
 function scheduleBot(){
- if(botTimer||botThinking||botSuspended||state.botPaused||tab!=='play'||!botNeedsAction())return;
+ if((typeof IlexPresentation!=='undefined'&&IlexPresentation.busy())||botTimer||botThinking||botSuspended||state.botPaused||tab!=='play'||!botNeedsAction())return;
  const match=rulesMatch,generation=botGeneration;
  botTimer=setTimeout(()=>{botTimer=null;if(generation!==botGeneration||state.botPaused||tab!=='play'||botSuspended)return;if(rulesMatch!==match){scheduleBot();return;}runBotStep();},450);
 }
 function runBotStep(){
- if(!botNeedsAction()||botSuspended||state.botPaused)return;
+ if((typeof IlexPresentation!=='undefined'&&IlexPresentation.busy())||!botNeedsAction()||botSuspended||state.botPaused)return;
  botThinking=true;const b=botSettings(),before={spec:rulesMatch.spec,journal:rulesMatch.journal.slice(),undoHistory:RulesMatch.undoPoints(rulesMatch)};
  const humanPrompt=RulesMatch.pending(rulesMatch).find(p=>p.playerId===b.humanPlayer),humanChoices=promptChoice.slice();
  try{
   const action=BotAI.choose(rulesMatch,b.botPlayer,b.difficulty);
   if(!action)throw Error('This card effect needs a choice the bot cannot resolve yet.');
-  const audioBefore=typeof IlexAudio!=='undefined'?IlexAudio.before(rulesMatch,action):null;try{RulesMatch.apply(rulesMatch,action);autoRules();}catch(e){rulesMatch=RulesMatch.restore(before,ruleMap,before.spec.custom||state.custom);throw e;}
+  const visualBefore=typeof IlexPresentation!=='undefined'?IlexPresentation.before(rulesMatch,action):null;
+  const audioBefore=typeof IlexAudio!=='undefined'?IlexAudio.before(rulesMatch,action):null;try{RulesMatch.apply(rulesMatch,action);autoRules();}catch(e){if(typeof IlexPresentation!=='undefined')IlexPresentation.abort(visualBefore);rulesMatch=RulesMatch.restore(before,ruleMap,before.spec.custom||state.custom);throw e;}
+  if(typeof IlexPresentation!=='undefined')IlexPresentation.after(visualBefore,rulesMatch,action);
   if(typeof IlexAudio!=='undefined')IlexAudio.after(audioBefore,rulesMatch,action);state.botError='';promptChoice=humanPrompt&&RulesMatch.pending(rulesMatch).some(p=>p.id===humanPrompt.id)?humanChoices:[];ruleSelected=null;saveRules();
  }catch(e){state.botPaused=true;state.botError=e.message||'The bot could not complete its action.';save();}
  finally{botThinking=false;}

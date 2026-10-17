@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5",
+  "scope": "HGSS/Call of Legends with Holon Phantoms onward only; 150 decisions per match",
+  "games": [
+    {
+      "decks": [
+        "Magnezone Pachirisu",
+        "Meganium Blissey"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 15,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "RDL Typhlosion",
+        "RoseDoom"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gardevoir",
+        "Gengar C"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 18,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Healix",
+        "Jumpluff"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Palkia Lock",
+        "Shuppet Donk"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 18,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

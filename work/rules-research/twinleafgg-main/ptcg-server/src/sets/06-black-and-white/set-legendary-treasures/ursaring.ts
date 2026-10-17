@@ -49,7 +49,7 @@ export class Ursaring extends PokemonCard {
       const slot = player.bench.find(b => b.cards.length === 0);
 
       if (!hasTeddiursa || !slot) {
-        throw new GameError(GameMessage.CANNOT_USE_ATTACK);
+        return state;
       }
 
       const blocked: number[] = [];

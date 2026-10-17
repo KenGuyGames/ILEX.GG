@@ -99,6 +99,7 @@ function* alternativeSetupGame(next: Function, store: StoreLike, state: State): 
   const player = state.players[0];
   const opponent = state.players[1];
   const chooseCardsOptions = { min: 1, max: 6, allowCancel: false };
+  const bwFirstTicketSetup = Boolean((state.rules as any).bwEraRules && state.players.some(p => p.deck.cards.some(c => c.name === 'First Ticket')));
 
   // 1. Decide who goes first
   const whoBeginsEffect = new WhoBeginsEffect();
@@ -376,8 +377,9 @@ export function* setupGame(next: Function, store: StoreLike, state: State): Iter
   const player = state.players[0];
   const opponent = state.players[1];
   const chooseCardsOptions = { min: 1, max: 6, allowCancel: false };
+  const bwFirstTicketSetup = Boolean((state.rules as any).bwEraRules && state.players.some(p => p.deck.cards.some(c => c.name === 'First Ticket')));
 
-  if (!(state.rules as any).wotcRules) {
+  if (!(state.rules as any).wotcRules && !bwFirstTicketSetup) {
   // 1. Decide who goes first
   const whoBeginsEffect = new WhoBeginsEffect();
   store.reduceEffect(state, whoBeginsEffect);
@@ -565,6 +567,16 @@ export function* setupGame(next: Function, store: StoreLike, state: State): Iter
     }
   }
 
+  // First Ticket choices are committed together, before the deciding coin.
+  if (bwFirstTicketSetup) {
+    const eligible = state.players.filter(p => p.hand.cards.some(c => c.name === 'First Ticket'));
+    let choices: boolean[] = [];
+    if (eligible.length) yield store.prompt(state, eligible.map(p => new ConfirmPrompt(p.id, 'Play First Ticket to go first?' as GameMessage)), (results: any) => { choices = Array.isArray(results) ? results : [results]; next(); });
+    const users = eligible.filter((p, i) => choices[i] === true);
+    for (const p of users) p.hand.moveCardTo(p.hand.cards.find(c => c.name === 'First Ticket')!, p.discard);
+    if (users.length === 1) state.activePlayer = state.players.indexOf(users[0]);
+    else yield store.prompt(state, new CoinFlipPrompt(player.id, GameMessage.SETUP_WHO_BEGINS_FLIP), heads => { state.activePlayer = heads ? 0 : 1; next(); });
+  }
   // WOTC decides the first player after setup, before revealing Pokemon.
   if ((state.rules as any).wotcRules) {
     yield store.prompt(state, new CoinFlipPrompt(player.id, GameMessage.SETUP_WHO_BEGINS_FLIP), heads => { state.activePlayer = heads ? 0 : 1; next(); });

@@ -64,7 +64,7 @@ else{
     Menu.setApplicationMenu(Menu.buildFromTemplate([
       {label:'File',submenu:[{label:'Export workspaceâ€¦',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
       {label:'View',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]},
-      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.6.0',detail:'Automated historical card pools through Platinum Arceus. Historical rules profiles, custom cards and Limitless-compatible deck lists. Card images are available through the persistent cache. Unofficial fan-made simulator. See README for tested coverage.'})}]}
+      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.12.0',detail:'Automated historical card pools through Black & White / Legendary Treasures. Historical rules profiles, custom cards and Limitless-compatible deck lists. Card images are available through the persistent cache. Unofficial fan-made simulator. See README for tested coverage.'})}]}
     ]));
     await win.loadURL('tcglab://app/index.html');
     if(selfTest)win.webContents.setAudioMuted(true);

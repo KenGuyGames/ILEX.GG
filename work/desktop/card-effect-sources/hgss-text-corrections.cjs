@@ -1,0 +1,3 @@
+// Compared directly with the bundled English scans on October 15, 2026.
+const hs=require('../card-sources/pokemon-tcg-data-master/cards/en/hgss1.json');
+module.exports=function(d){if(d.id?.startsWith('tk-hs-')&&d.supertype==='Trainer'&&!d.rules?.length){const original=hs.find(c=>c.name===d.name&&c.rules?.length);if(!original)throw Error('Missing kit Trainer text '+d.id);d={...d,rules:original.rules};}if(d.id==='col1-43'||d.id==='hgss1-123'){const name=d.id==='col1-43'?'Thundershock':'Thrash';d={...d,attacks:d.attacks.map(a=>a.name===name&&a.text.startsWith('If heads,')?{...a,text:'Flip a coin. '+a.text}:a),_hgssTextCorrection:'Bundled English scan includes the initial coin flip omitted by the text dataset.'};}return d;};

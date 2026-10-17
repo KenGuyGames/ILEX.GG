@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "version": "1.10.0",
+  "engineSha256": "8879fb5ad511d3e1ffaedcba1f8a6e54bc0ad2c6ee6938cf37a4bd6639cc2aad",
+  "printings": 407,
+  "focusedChecks": 22,
+  "printedAttackSmoke": 559,
+  "rollouts": 11,
+  "decisions": 1430,
+  "nativeProfile": "work/desktop-bw-tests-v54",
+  "nativeBwChecks": 23,
+  "verifiedScans": 23736,
+  "verifiedSourceFiles": 1075,
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 207500464,
+      "crcAndEngineVerified": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2774628209,
+      "crcAndEngineVerified": true
+    }
+  ],
+  "scope": "Black & White, Emerging Powers, Noble Victories, BW01\u2013BW32 promos and both BW Trainer Kits: 407 printings. Interactions with HGSS through Call of Legends. Unlimited and later BW sets deferred.",
+  "limits": "Coverage and finite execution/regression checks are not exhaustive proof of all board states. The final engine passes all 559 printed BW attacks, focused interactions, Power/Trainer audits and bounded real-deck rollouts with replay/Undo; Unlimited is deferred.",
+  "verifiedUtc": "2026-10-16T05:38:23.527463+00:00"
+}

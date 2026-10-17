@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59",
+  "rejectedDecks": [
+    {
+      "name": "Fluffychomp",
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    },
+    {
+      "name": "Flareon",
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    }
+  ],
+  "scope": "Complete BW era/promos/supplements and HGSS/Call of Legends only; 100 decisions per match",
+  "games": [
+    {
+      "decks": [
+        "Mime Jr Lock",
+        "PrimeTime"
+      ],
+      "level": "normal",
+      "decisions": 100,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "CMT",
+        "Darkrai Garbodor"
+      ],
+      "level": "normal",
+      "decisions": 33,
+      "turn": 4,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Empoleon",
+        "GothGor"
+      ],
+      "level": "normal",
+      "decisions": 100,
+      "turn": 18,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Ho-oh EX",
+        "RayEels"
+      ],
+      "level": "normal",
+      "decisions": 100,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Blastoise Keldeo",
+        "Blocklax"
+      ],
+      "level": "normal",
+      "decisions": 100,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gothgor",
+        "Rayeels"
+      ],
+      "level": "normal",
+      "decisions": 100,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

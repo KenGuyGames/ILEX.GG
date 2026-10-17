@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "version": "1.11.0",
+  "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4",
+  "newPrintings": 226,
+  "totalBwPrintings": 633,
+  "newSets": {
+    "Next Destinies": 103,
+    "Dark Explorers": 111,
+    "BW33\u2013BW44 promos": 12
+  },
+  "focusedChecks": 36,
+  "printedAttackSmoke": 907,
+  "newAttackBranchCases": 1392,
+  "rollouts": 19,
+  "decisions": 1786,
+  "nativeProfile": "work/desktop-bw-tests-v56",
+  "nativeBwChecks": 29,
+  "verifiedScans": 23736,
+  "verifiedSourceFiles": 1265,
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 207815927,
+      "crcAndEngineVerified": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2774945964,
+      "crcAndEngineVerified": true
+    }
+  ],
+  "scope": "Black & White, Emerging Powers, Noble Victories, Next Destinies, Dark Explorers, BW01\u2013BW44 promos and both BW Trainer Kits: 633 printings. Interactions with HGSS through Call of Legends. Unlimited and later BW sets deferred.",
+  "limits": "Coverage and finite execution/regression checks are not exhaustive proof of all board states. The final engine passes all 907 printed BW attacks, focused interactions, Power/Trainer audits and bounded real-deck rollouts with replay/Undo; Unlimited is deferred.",
+  "verifiedUtc": "2026-10-16T05:56:09.800075+00:00"
+}

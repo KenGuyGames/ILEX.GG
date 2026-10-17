@@ -1,3 +1,4 @@
+import { playHgssLegend } from '../../../tcg-lab-hgss-legend';
 import { PlayPokemonEffect } from '../effects/play-card-effects';
 import { playDpLevel } from '../../../tcg-lab-dp-level';
 import { GameError } from '../../game-error';
@@ -44,6 +45,7 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
       && effect.pokemonCard.powers.some(power => power.powerType === PowerType.ABILITY)) {
       throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
     }
+    if((effect.pokemonCard as any)._hgssLegend)return playHgssLegend(store,state,effect);
     if((effect.pokemonCard as any)._dpLevelUp)return playDpLevel(store,state,effect);
     const stage = effect.pokemonCard.stage;
     const sandboxAllBasic = Boolean(state.gameSettings?.sandboxMode && state.gameSettings?.sandboxAllPokemonBasic);

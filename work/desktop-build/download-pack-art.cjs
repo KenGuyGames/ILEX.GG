@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),P=require('../desktop/ui/pack-model.js');
+const read=n=>JSON.parse(fs.readFileSync(path.join(ui,n))),profiles=P.build(read('cards.json'),read('sets.json'),read('card-details.json'));
+const tree=JSON.parse(fs.readFileSync(path.join(root,'work/card-sources/pack-art-tree.json'))).tree;
+const aliases={lc:'base6','sm3.5':'sm35','sm7.5':'sm75','swsh3.5':'swsh35','swsh4.5':'swsh45','swsh10.5':'pgo','swsh12.5':'swsh12pt5','sv03.5':'sv3pt5','sv04.5':'sv4pt5','sv06.5':'sv6pt5','sv08.5':'sv8pt5','sv10.5b':'zsv10pt5','sv10.5w':'rsv10pt5',me01:'me1',me02:'me2','me02.5':'me2pt5',me03:'me3',me04:'me4',me05:'me5','30th':'me6pt5'};
+for(let i=1;i<=10;i++)aliases['sv'+String(i).padStart(2,'0')]='sv'+i;
+const jobs=profiles.map(p=>{const dir=aliases[p.id]||p.id;const found=tree.find(x=>x.type==='blob'&&x.path.startsWith(dir+'/packshots/')&&/\.(webp|png|jpg|jpeg)$/i.test(x.path));if(!found)throw Error('No pack art '+p.id);return {id:p.id,path:found.path};});
+fs.mkdirSync(path.join(ui,'pack-art'),{recursive:true});
+(async()=>{const manifest={};let next=0;await Promise.all(Array.from({length:5},async()=>{while(next<jobs.length){const job=jobs[next++],ext=path.extname(job.path),file='pack-art/'+job.id+ext,target=path.join(ui,file),url='https://raw.githubusercontent.com/1niceroli/ptcg-assets/main/'+job.path.split('/').map(encodeURIComponent).join('/');let bytes;
+ if(fs.existsSync(target))bytes=fs.readFileSync(target);else{for(let attempt=0;attempt<3;attempt++){try{const r=await fetch(url,{signal:AbortSignal.timeout(60000)});if(!r.ok)throw Error('HTTP '+r.status);bytes=Buffer.from(await r.arrayBuffer());if(bytes.length<1000)throw Error('Invalid image');fs.writeFileSync(target,bytes);break;}catch(e){if(attempt===2)throw e;}}}
+ manifest[job.id]={file,source:url,bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};console.log('Art '+job.id+' '+bytes.length);
+ }}));const sorted=Object.fromEntries(Object.entries(manifest).sort(([a],[b])=>a.localeCompare(b)));fs.writeFileSync(path.join(ui,'pack-art.js'),'var PackArt='+JSON.stringify(sorted)+';\n');fs.writeFileSync(path.join(root,'work/rules-research/pack-art-manifest.json'),JSON.stringify(sorted,null,2));console.log('Verified artwork for '+jobs.length+' packs');})().catch(e=>{console.error(e);process.exitCode=1;});

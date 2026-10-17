@@ -96,7 +96,14 @@ var BotAI=(()=>{
    for(const x of ts){const a=out([{target:x.target,damage:p.damage}]);if(a)return a;}
    const step=p.options.damageMultiple||10,assigned=[];let left=p.damage;for(const x of ts){const damage=Math.min(left,Math.max(step,Math.ceil(((x.list.hp||0)-x.list.damage)/step)*step));assigned.push({target:x.target,damage});left-=damage;if(left<=0)break;}if(left===0){const a=out(assigned);if(a)return a;}
   }
-  if(['Move damage','Remove damage'].includes(p.type)){
+  if(p.type==='Move damage'){
+   const ts=RulesMatch.targets(m,p),key=t=>JSON.stringify(t),blocked=(target,rows)=>(rows||[]).some(t=>key(t)===key(target)),damage=new Map(ts.map(x=>[key(x.target),x.list.damage])),caps=new Map((p.maxAllowedDamage||[]).map(x=>[key(x.target),x.damage]));
+   const sources=ts.filter(x=>x.list.damage>0&&!blocked(x.target,p.options.blockedFrom)).sort((a,b)=>b.list.damage-a.list.damage),destinations=ts.filter(x=>!blocked(x.target,p.options.blockedTo)).sort((a,b)=>Number(b.target.player===R.PlayerType.TOP_PLAYER)-Number(a.target.player===R.PlayerType.TOP_PLAYER));
+   const moves=[],max=p.options.max??sources.reduce((n,x)=>n+Math.floor(x.list.damage/10),0);let chosenSource,chosenDestination;
+   for(const from of sources){if(p.options.singleSourceTarget&&chosenSource&&chosenSource!==key(from.target))continue;while(damage.get(key(from.target))>=10&&moves.length<max){const to=destinations.find(x=>key(x.target)!==key(from.target)&&(!p.options.singleDestinationTarget||!chosenDestination||chosenDestination===key(x.target))&&(!caps.has(key(x.target))||damage.get(key(x.target))+10<=caps.get(key(x.target))));if(!to)break;moves.push({from:from.target,to:to.target});chosenSource=key(from.target);chosenDestination=key(to.target);damage.set(chosenSource,damage.get(chosenSource)-10);damage.set(chosenDestination,damage.get(chosenDestination)+10);}}
+   const full=out(moves);if(full)return full;for(let n=p.options.min??0;n<moves.length;n++){const a=out(moves.slice(0,n));if(a)return a;}return p.options.allowCancel?out(null):null;
+  }
+  if(p.type==='Remove damage'){
    const ts=RulesMatch.targets(m,p),moves=[];for(const from of ts.filter(x=>x.list.damage>0)){const to=ts.find(x=>JSON.stringify(x.target)!==JSON.stringify(from.target));if(!to)continue;for(let i=0;i<from.list.damage/10;i++)moves.push({from:from.target,to:to.target});}
    const full=out(moves);if(full)return full;
    const value=subsets(moves,0,Math.min(moves.length,p.options?.max??moves.length),v=>valid(m,p,v),200);if(value!==undefined)return out(value);
@@ -110,17 +117,18 @@ var BotAI=(()=>{
   value-=Math.max(0,(Number.isFinite(opposingHp)?opposingHp:60)+op.active.hpBonus-op.active.damage)*.45;
   value+=op.active.specialConditions.length*12+Math.min(p.hand.cards.length,12)*3+Math.min(p.deck.cards.length,15)*.3;
   if(p.deck.cards.length<5)value-=(5-p.deck.cards.length)*30;
-  for(const list of [p.active,...p.bench]){const c=list.getPokemonCard();if(!c)continue;const n=energyMap(list).reduce((n,e)=>n+e.provides.length,0),max=Math.max(0,...c.attacks.map(a=>a.cost.length));value+=Math.min(n,max+1)*7-Math.max(0,n-max-1)*5;}
+  for(const list of [p.active,...p.bench]){const c=list.getPokemonCard();if(!c)continue;const n=energyMap(list).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides),0),max=Math.max(0,...c.attacks.map(a=>a.cost.length));value+=Math.min(n,max+1)*7-Math.max(0,n-max-1)*5;}
   return value;
  }
  function recent(m){let at=m.journal.length-1;for(;at>=0;at--)if(['attack','pass'].includes(m.journal[at].type))break;return m.journal.slice(at+1);}
  function candidates(m,id){
   const p=actor(m,id),g=m.store.state,history=recent(m),moves=[],add=(action,priority)=>moves.push({action,priority});
   const slots=[{list:p.active,target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.ACTIVE,index:0}},...p.bench.map((list,index)=>({list,target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.BENCH,index}}))];
+  for(const slot of [R.SlotType.HAND,R.SlotType.DISCARD]){const zone=slot===R.SlotType.HAND?p.hand:p.discard;zone.cards.forEach((c,index)=>{for(const action of RulesMatch.zoneAbilities(m,p,slot,index))add(action,45);});}
   p.hand.cards.forEach((c,index)=>{
    const holon=RulesMatch.handEnergyAction(p,index);if(holon&&p.energyPlayedTurn!==g.turn)add(holon,60);
    if(c.trainerType===R.TrainerType.SUPPORTER&&(p.supporter.cards.length||p.supporterTurn>0))return;
-   if(c.superType===R.SuperType.POKEMON){for(const s of slots)if(c.stage===R.Stage.BASIC?!s.list.getPokemonCard():s.list.getPokemonCard()&&(s.list.getPokemonCard().name===c.evolvesFrom||!c.evolvesFrom))add({type:'play',player:id,index,target:s.target},c.stage===R.Stage.BASIC?35:55);}
+   if(c.superType===R.SuperType.POKEMON){for(const s of slots)if(c.stage===R.Stage.BASIC||c._hgssLegend?!s.list.getPokemonCard()&&(!c._hgssLegend||s.target.slot===R.SlotType.BENCH):s.list.getPokemonCard()&&(s.list.getPokemonCard().name===c.evolvesFrom||!c.evolvesFrom))add({type:'play',player:id,index,target:s.target},c.stage===R.Stage.BASIC?35:55);}
    else if(c.superType===R.SuperType.ENERGY||c.trainerType===R.TrainerType.TOOL){for(const s of slots)if(s.list.getPokemonCard())add({type:'play',player:id,index,target:s.target},s.target.slot===R.SlotType.ACTIVE?60:20+readyDamage(s.list)*.1);}
    else {add({type:'play',player:id,index,target:slots[0].target},/bill|professor|draw|search|ball/i.test(c.name+' '+c.text)?50:30);if(/fossil|doll|substitute/i.test(c.name))for(const s of slots.slice(1).filter(s=>!s.list.getPokemonCard()))add({type:'play',player:id,index,target:s.target},35);}
   });

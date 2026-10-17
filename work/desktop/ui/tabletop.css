@@ -34,3 +34,6 @@
 #cardactions .card-action-hotspot{z-index:3}
 #cardactions .named-action{min-height:25px;background:#10352ee8;border-color:#bbdda3;text-align:center}#cardactions .named-action span{opacity:1;background:transparent}
 .table-layout{display:block}.card-retreat-actions{display:flex;flex-direction:column;gap:6px;margin-top:12px}.card-retreat-actions h3{font-size:13px;margin:4px}.card-retreat-actions .card-action-hotspot{position:static;width:100%;background:#254534;text-align:center}.card-retreat-actions .card-action-hotspot span{opacity:1}
+
+/* The two sideways scans become one upright, full-height LEGEND. */
+.seat-pokemon.complete-legend,#cardactions .card-action-scan.complete-legend{aspect-ratio:825/1200}.legend-composite-image:not([data-legend-ready]){opacity:0}.legend-composite-image[data-legend-ready]{opacity:1}

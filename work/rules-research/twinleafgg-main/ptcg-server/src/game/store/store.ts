@@ -1,3 +1,6 @@
+import {bwFinish} from '../../tcg-lab-bw-cards';
+import {bwEnvironment,syncBwBadges} from '../../tcg-lab-bw-actions';
+import { hgssEnvironment,hgssFinish } from '../../tcg-lab-hgss-legend';
 import { dpNativePowerChoice } from '../../tcg-lab-dp-power-window';
 import { dpPokemonStadiumEffect,dpGuardToolEffect } from '../../tcg-lab-dp-card-roles';
 import { syncHolonVeil } from '../../tcg-lab-ex-finish-powers';
@@ -165,6 +168,8 @@ export class Store implements StoreLike {
   }
 
   public reduceEffect(state: State,effect:Effect):State {
+    if(effect instanceof AttackEffect && effect.attack.shredAttack)(effect as any).wotcBypassDefender=true;
+    syncBwBadges(this,state);
     syncDpLevels(state);
     syncHolonVeil(this,state);
     const shield:any=(effect as any).target;if(state.rules.exEraRules&&shield?.exAllDamageShield?.turn===state.turn&&shield.exAllDamageShield.card===shield.getPokemonCard()&&shield.marker.hasMarker('EX_ALL_DAMAGE_SHIELD')&&['PUT_DAMAGE_EFFECT','DEAL_DAMAGE_EFFECT','WOTC_POWER_DAMAGE_EFFECT'].includes(effect.type)){effect.preventDefault=true;return state;}
@@ -326,6 +331,7 @@ export class Store implements StoreLike {
       return state;
     }
 
+    state = bwEnvironment(this,state,hgssEnvironment(this,state,effect));
     state = gamePhaseReducer(this, state, effect);
     state = playEnergyReducer(this, state, effect);
     state = playPokemonReducer(this, state, effect);
@@ -336,6 +342,8 @@ export class Store implements StoreLike {
     state = gameReducer(this, state, effect);
     state = attackReducer(this, state, effect);
     state = checkStateReducer(this, state, effect);
+    state = hgssFinish(this,state,effect);
+    state = bwFinish(this,state,effect);
     // TCG Lab final Energy Burn, including a converted Buzzap card.
     if(effect.type === 'CHECK_ENOUGH_ENERGY_EFFECT') {
       const energy=effect as any, card=energy.source.getPokemonCard();
@@ -350,6 +358,7 @@ export class Store implements StoreLike {
     }
 
     finalAfter(this,state,effect);
+    syncBwBadges(this,state);
     // Calculate playability after all effects are processed
     // The calculatingPlayability flag prevents nested calls during playability checks
     state = this.calculatePlayability(state);
@@ -722,7 +731,7 @@ export class Store implements StoreLike {
     if((card as any)._dpPokemonToolRole)return dpGuardToolEffect(card,store,state,effect);
     if(card.superType===SuperType.ENERGY&&(card as any).energyType===1&&specialEnergySuppressed(store,state))return state;
     const damage = effect as any;
-    if (['DEAL_DAMAGE_EFFECT','PUT_DAMAGE_EFFECT','AFTER_WEAKNESS_AND_RESISTANCE_EFFECT'].includes(effect.type)
+    if (['APPLY_WEAKNESS_EFFECT','DEAL_DAMAGE_EFFECT','PUT_DAMAGE_EFFECT','AFTER_WEAKNESS_AND_RESISTANCE_EFFECT'].includes(effect.type)
       && damage.attackEffect?.wotcBypassDefender && damage.opponent) {
       const defendingSlots = [damage.opponent.active, ...damage.opponent.bench];
       if (defendingSlots.includes(damage.target)

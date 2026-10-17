@@ -52,12 +52,12 @@ export class Xatu extends PokemonCard {
         new SelectPrompt(
           player.id, GameMessage.CHOOSE_OPTION,
           options.map(c => c.message),
-          { allowCancel: false }
+          { allowCancel: false, isSecret: true, isBlindGuess: true } as any
         ),
         new SelectPrompt(
           opponent.id, GameMessage.CHOOSE_OPTION,
           options.map(c => c.message),
-          { allowCancel: false }
+          { allowCancel: false, isSecret: true, isBlindGuess: true } as any
         ),
       ], results => {
         const playerChoice = results[0];

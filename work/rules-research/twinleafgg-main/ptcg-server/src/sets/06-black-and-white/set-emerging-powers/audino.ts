@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, GameMessage, PlayerType, SlotType } from '../../../game';
@@ -42,7 +43,7 @@ export class Audino extends PokemonCard {
 
       let energyCount = 0;
       checkEnergy.energyMap.forEach(em => {
-        energyCount += em.provides.length;
+        energyCount += BwEnergyUnits.getProvidesUnitCount(em.provides);
       });
 
       if (energyCount === 0) {

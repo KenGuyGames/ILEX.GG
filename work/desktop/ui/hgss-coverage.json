@@ -1,0 +1,82 @@
+{
+  "status": "candidate-source",
+  "total": 605,
+  "available": 605,
+  "pending": 0,
+  "methods": {
+    "compiled-effects": 426,
+    "native-source": 77,
+    "compiled-trainer": 42,
+    "basic-energy": 40,
+    "special-energy": 2,
+    "compiled-legend": 18
+  },
+  "bySet": [
+    {
+      "id": "hgss1",
+      "name": "HeartGold SoulSilver",
+      "total": 124,
+      "available": 124
+    },
+    {
+      "id": "hgss2",
+      "name": "Unleashed",
+      "total": 96,
+      "available": 96
+    },
+    {
+      "id": "hgss3",
+      "name": "Undaunted",
+      "total": 91,
+      "available": 91
+    },
+    {
+      "id": "hgss4",
+      "name": "Triumphant",
+      "total": 103,
+      "available": 103
+    },
+    {
+      "id": "col1",
+      "name": "Call of Legends",
+      "total": 106,
+      "available": 106
+    },
+    {
+      "id": "hgssp",
+      "name": "HGSS Black Star Promos",
+      "total": 25,
+      "available": 25
+    },
+    {
+      "id": "tk-hs-r",
+      "name": "HS trainer Kit (Raichu)",
+      "total": 30,
+      "available": 30
+    },
+    {
+      "id": "tk-hs-g",
+      "name": "HS trainer Kit (Gyarados)",
+      "total": 30,
+      "available": 30
+    }
+  ],
+  "interactionScope": [
+    "ex13",
+    "ex14",
+    "ex15",
+    "ex16",
+    "dp1–7",
+    "pl1–4",
+    "DP promos/POP/kits/Rumble",
+    "hgss1",
+    "hgss2",
+    "hgss3",
+    "hgss4",
+    "col1",
+    "hgssp",
+    "tk-hs-r",
+    "tk-hs-g"
+  ],
+  "unsupported": []
+}

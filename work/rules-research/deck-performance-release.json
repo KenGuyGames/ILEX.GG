@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59",
+  "engineUnchanged": true,
+  "nativeProfile": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-bw-tests-v62",
+  "freshAndRestored": true,
+  "before": {
+    "timings": {
+      "lookup5000Ms": 570.3000000119209,
+      "firstOpenMs": 31.899999976158142,
+      "switch10Ms": 120.2000000178814,
+      "filterColdMs": 13443,
+      "filterWarmMs": 10303,
+      "filteredSwitch3Ms": 31263.40000000596
+    },
+    "format": "2004 Worlds (EX-HL)",
+    "deckCount": 306,
+    "visible": 15,
+    "entries": 23799
+  },
+  "after": {
+    "timings": {
+      "lookup5000Ms": 11.199999988079071,
+      "firstOpenMs": 30.700000017881393,
+      "switch10Ms": 35,
+      "filterColdMs": 37.900000005960464,
+      "filterWarmMs": 0.3999999761581421,
+      "filteredSwitch3Ms": 4
+    },
+    "format": "2004 Worlds (EX-HL)",
+    "deckCount": 306,
+    "visible": 15,
+    "entries": 23799
+  },
+  "native": {
+    "passed": true,
+    "checks": [
+      "Cached format results match fresh legality: 1999 (Base - Fossil)",
+      "Warm cache returns identical decks: 1999 (Base - Fossil)",
+      "Cached format results match fresh legality: 2000 (Base-Gym)",
+      "Warm cache returns identical decks: 2000 (Base-Gym)",
+      "Cached format results match fresh legality: 2001 (Base - Neo)",
+      "Warm cache returns identical decks: 2001 (Base - Neo)",
+      "Valid deck survives repeated cached queries",
+      "Quantity edit invalidates compatibility",
+      "Restoring quantity restores compatibility",
+      "Ban edit invalidates compatibility",
+      "Removing ban restores compatibility",
+      "Set-pool edit invalidates compatibility",
+      "Custom Basic deck can be cached",
+      "In-place custom-card edit invalidates compatibility",
+      "Custom card restoration is reflected",
+      "Deleting custom card removes stale compatibility",
+      "Unresolved details are initially rejected",
+      "Newly loaded details are not trapped in a stale negative cache",
+      "Baseline deck restored",
+      "Replacement metadata invalidates compatibility",
+      "Card lookup indexes appended catalog cards",
+      "Card lookup removes deleted catalog cards",
+      "Equivalent-printing signature is cached",
+      "In-place allowed-printing edits refresh equivalent signatures"
+    ],
+    "timings": {
+      "1999 (Base - Fossil)": 23.799999982118607,
+      "2000 (Base-Gym)": 24.700000017881393,
+      "2001 (Base - Neo)": 20.5
+    }
+  },
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 209195007,
+      "crcAndEmbeddedFilesVerified": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2776333180,
+      "crcAndEmbeddedFilesVerified": true
+    }
+  ],
+  "verifiedUtc": "2026-10-16T14:38:05.606246+00:00",
+  "limits": "Native renderer timings on isolated imported306-deck collection; image provider/network latency is separate."
+}

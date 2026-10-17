@@ -19,3 +19,4 @@ const Cache=require('../desktop/card-cache.cjs');
  await new Promise(resolve=>{paused.notify=s=>{if(!s.running)resolve()};paused.start()});assert.equal(paused.status().checked,12);assert.equal(paused.status().failed,0);
  console.log('PASS: deduplicated downloads, disk reuse, corruption repair, offline/restart, path and source validation, hash rejection, bulk completion, bounded concurrency, pause/resume.');
 })().catch(e=>{console.error(e);process.exitCode=1});
+

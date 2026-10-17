@@ -1,0 +1,3382 @@
+{
+  "passed": true,
+  "version": "1.11.0",
+  "verifiedUtc": "2026-10-16T05:53:13.240788+00:00",
+  "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4",
+  "presentation": "Modern studio UI, elemental attacks, actual-result coin flips, larger piles, saved Visuals preferences",
+  "bwCoverage": {
+    "status": "candidate-source",
+    "total": 633,
+    "available": 633,
+    "pending": 0,
+    "methods": {
+      "native-source": 559,
+      "compiled-effects": 70,
+      "compiled-trainer": 4
+    },
+    "bySet": [
+      {
+        "id": "bw1",
+        "name": "Black & White",
+        "total": 115,
+        "available": 115
+      },
+      {
+        "id": "bw2",
+        "name": "Emerging Powers",
+        "total": 98,
+        "available": 98
+      },
+      {
+        "id": "bw3",
+        "name": "Noble Victories",
+        "total": 102,
+        "available": 102
+      },
+      {
+        "id": "bw4",
+        "name": "Next Destinies",
+        "total": 103,
+        "available": 103
+      },
+      {
+        "id": "bw5",
+        "name": "Dark Explorers",
+        "total": 111,
+        "available": 111
+      },
+      {
+        "id": "bwp",
+        "name": "BW Black Star Promos",
+        "total": 44,
+        "available": 44
+      },
+      {
+        "id": "tk-bw-e",
+        "name": "BW trainer Kit (Excadrill)",
+        "total": 30,
+        "available": 30
+      },
+      {
+        "id": "tk-bw-z",
+        "name": "BW trainer Kit (Zoroark)",
+        "total": 30,
+        "available": 30
+      }
+    ],
+    "interactionScope": [
+      "hgss1",
+      "hgss2",
+      "hgss3",
+      "hgss4",
+      "col1",
+      "hgssp",
+      "tk-hs-r",
+      "tk-hs-g",
+      "bw1",
+      "bw2",
+      "bw3",
+      "bw4",
+      "bw5",
+      "bwp",
+      "tk-bw-e",
+      "tk-bw-z"
+    ],
+    "promoCutoff": "BW01\u2013BW44; through Dark Explorers product period, before Dragons Exalted",
+    "unsupported": []
+  },
+  "reports": {
+    "bw45-branch-report": {
+      "passed": true,
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4",
+      "scenarios": 1392,
+      "shards": 3,
+      "failures": [],
+      "scope": "New BW4/BW5 and BW33\u2013BW44 attacks, two seeds and positive/negative choices; HGSS/BW fixtures only"
+    },
+    "bw-focused-test-report": {
+      "passed": true,
+      "checks": [
+        "BW inventory covers 633 scoped printings and excludes later promos",
+        "Early BW profile allows first-turn Trainers, Supporters and attacks with HGSS cards",
+        "All BW printed Abilities retain the Ability type instead of Pokemon Powers",
+        "Inferno Fandango works under Special Conditions and preserves normal Energy attachment",
+        "Shift Gear moves attached Metal Energy under Special Conditions",
+        "Victory Star rerolls the whole two-coin attack sequence and uses only the new results",
+        "Victory Star may decline and retains the original coin results",
+        "Victory Star does not reroll Trainer card coins",
+        "Solid Rock flips once and reduces actual attack damage by fifty",
+        "Cursed Body confuses the attacker after Active attack damage",
+        "BW Trainer Kit Gurdurr has the printed Bulk Up damage, not missing dataset damage",
+        "Restored Pokemon are not starting Basics and retain their stage",
+        "N draws according to each player actual remaining Prize count",
+        "Pokemon Catcher in BW switches without a coin flip",
+        "HGSS Smeargle Portrait copies every early BW Supporter without spending Supporter use",
+        "Dynamotor attaches from discard to the Bench and preserves normal attachment",
+        "Magic Room blocks opponent Items but permits own Items and opponent Supporters",
+        "Craftsmanship grants twenty HP per attached Fighting Energy",
+        "Leaf Tailor removes Weakness with any Energy and restores it without Energy",
+        "Ancient Power blocks HGSS evolution from hand for either player",
+        "Solid Rock defensive flip cannot be rerolled with Victory Star",
+        "Victory Star supports flip-until-tails attacks and finishes the sequence",
+        "BW Pokemon-EX are distinct from old lowercase Pokemon-ex",
+        "X Ball counts Double Colorless units on both Active Pokemon",
+        "Psychic Mirage doubles basic Psychic Energy and does not double Double Colorless",
+        "Dark Cloak gives HGSS Pokemon free retreat with Darkness-providing Rainbow Energy",
+        "Diving Draw discards one and draws two, then rejects repeat use",
+        "Dark Patch attaches only to a Benched Darkness Pokemon without normal attachment use",
+        "Bronzong Heal Block suppresses healing without requiring Lunatone",
+        "Battle City resolves a real coin result and can be used once by each player per turn",
+        "All BW Supporters through Dark Explorers have Portrait copy handlers",
+        "Slurp Shakedown switches before damaging the new Active",
+        "Slurp Shakedown has no target damage when the opponent has no Bench",
+        "Suction Heal uses actual damage after Weakness",
+        "Old Amber puts a bottom-seven Restored Aerodactyl onto the Bench",
+        "Airhead blocks even Prize counts and permits odd Prize counts"
+      ],
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "bw-final-smoke-report": {
+      "passed": true,
+      "scenarios": 907,
+      "failures": [],
+      "testedPrintings": [
+        "tk-bw-z-1",
+        "bw3-1",
+        "bw1-1",
+        "bw3-2",
+        "bw1-2",
+        "bw5-3",
+        "tk-bw-z-4",
+        "bw5-4",
+        "bw2-5",
+        "bw4-5",
+        "bw3-6",
+        "bw1-6",
+        "bw5-7",
+        "bw2-8",
+        "bw4-8",
+        "bw3-9",
+        "bw1-9",
+        "bw5-10",
+        "tk-bw-e-11",
+        "bw5-11",
+        "tk-bw-z-12",
+        "bw3-12",
+        "bw1-12",
+        "bw2-13",
+        "bw4-13",
+        "tk-bw-e-14",
+        "bw5-14",
+        "tk-bw-z-15",
+        "bw5-15",
+        "bw2-16",
+        "bw4-16",
+        "tk-bw-e-17",
+        "bw5-17",
+        "tk-bw-e-18",
+        "bw5-18",
+        "tk-bw-z-19",
+        "bw3-19",
+        "bw1-19",
+        "bw5-20",
+        "tk-bw-z-21",
+        "bw5-21",
+        "bw2-22",
+        "bw4-22",
+        "bw2-23",
+        "bw4-23",
+        "bw3-24",
+        "bw1-24",
+        "bw2-25",
+        "bw4-25",
+        "bw3-26",
+        "bw1-26",
+        "bw3-27",
+        "bw1-27",
+        "bw5-28",
+        "tk-bw-z-29",
+        "bw3-29",
+        "bw1-29",
+        "bw2-30",
+        "bw4-30",
+        "bw3-31",
+        "bw1-31",
+        "bw5-32",
+        "bw2-33",
+        "bw4-33",
+        "bw3-34",
+        "bw1-34",
+        "bw5-35",
+        "bw2-36",
+        "bw4-36",
+        "bw3-37",
+        "bw1-37",
+        "bw5-38",
+        "bw2-39",
+        "bw4-39",
+        "bw3-40",
+        "bw1-40",
+        "bw5-41",
+        "bw2-42",
+        "bw4-42",
+        "bw3-43",
+        "bw1-43",
+        "bw5-44",
+        "bw2-45",
+        "bw4-45",
+        "bw3-46",
+        "bw1-46",
+        "bw5-47",
+        "bw2-48",
+        "bw4-48",
+        "bw3-49",
+        "bw1-49",
+        "bw5-50",
+        "bw2-51",
+        "bw4-51",
+        "bw3-52",
+        "bw1-52",
+        "bw5-53",
+        "bw2-54",
+        "bw4-54",
+        "bw3-55",
+        "bw1-55",
+        "bw5-56",
+        "bw2-57",
+        "bw4-57",
+        "bw3-58",
+        "bw1-58",
+        "bw5-59",
+        "bw2-60",
+        "bw4-60",
+        "bw3-61",
+        "bw1-61",
+        "bw5-62",
+        "bw2-63",
+        "bw4-63",
+        "bw3-64",
+        "bw1-64",
+        "bw5-65",
+        "bw2-66",
+        "bw4-66",
+        "bw3-67",
+        "bw1-67",
+        "bw5-68",
+        "bw2-69",
+        "bw4-69",
+        "bw3-70",
+        "bw1-70",
+        "bw5-71",
+        "bw2-72",
+        "bw4-72",
+        "bw3-73",
+        "bw1-73",
+        "bw5-74",
+        "bw2-75",
+        "bw4-75",
+        "bw3-76",
+        "bw1-76",
+        "bw5-77",
+        "bw2-78",
+        "bw4-78",
+        "bw3-79",
+        "bw1-79",
+        "bw5-80",
+        "bw2-81",
+        "bw4-81",
+        "bw3-82",
+        "bw1-82",
+        "bw5-83",
+        "bw2-84",
+        "bw4-84",
+        "bw3-85",
+        "bw1-85",
+        "bw5-86",
+        "bw3-87",
+        "bw2-88",
+        "bw1-88",
+        "bw5-89",
+        "bw1-90",
+        "bw4-95",
+        "bw3-97",
+        "bw3-98",
+        "bw4-99",
+        "bw4-101",
+        "bw5-103",
+        "bw5-105",
+        "bw5-108",
+        "bw1-113",
+        "bwp-BW01",
+        "bwp-BW04",
+        "bwp-BW07",
+        "bwp-BW10",
+        "bwp-BW13",
+        "bwp-BW16",
+        "bwp-BW19",
+        "bwp-BW22",
+        "bwp-BW25",
+        "bwp-BW32",
+        "bwp-BW35",
+        "bwp-BW38",
+        "bwp-BW42",
+        "tk-bw-e-1",
+        "bw5-1",
+        "tk-bw-z-2",
+        "bw5-2",
+        "bw2-3",
+        "bw4-3",
+        "bw2-4",
+        "bw4-4",
+        "bw3-5",
+        "bw1-5",
+        "bw5-6",
+        "bw2-7",
+        "bw4-7",
+        "bw3-8",
+        "bw1-8",
+        "bw5-9",
+        "bw2-10",
+        "bw4-10",
+        "bw2-11",
+        "bw4-11",
+        "tk-bw-e-12",
+        "bw5-12",
+        "tk-bw-z-13",
+        "bw3-13",
+        "bw1-13",
+        "bw2-14",
+        "bw4-14",
+        "bw2-15",
+        "bw4-15",
+        "bw3-16",
+        "bw1-16",
+        "bw2-17",
+        "bw4-17",
+        "bw2-18",
+        "bw4-18",
+        "tk-bw-e-19",
+        "bw5-19",
+        "bw2-20",
+        "bw4-20",
+        "bw2-21",
+        "bw4-21",
+        "bw3-22",
+        "bw1-22",
+        "bw3-23",
+        "bw1-23",
+        "bw5-24",
+        "tk-bw-z-25",
+        "bw3-25",
+        "bw1-25",
+        "bw5-26",
+        "tk-bw-e-27",
+        "bw5-27",
+        "bw2-28",
+        "bw4-28",
+        "tk-bw-e-29",
+        "bw5-29",
+        "tk-bw-z-30",
+        "bw3-30",
+        "bw1-30",
+        "bw5-31",
+        "bw2-32",
+        "bw4-32",
+        "bw3-33",
+        "bw1-33",
+        "bw5-34",
+        "bw2-35",
+        "bw4-35",
+        "bw3-36",
+        "bw1-36",
+        "bw5-37",
+        "bw2-38",
+        "bw4-38",
+        "bw3-39",
+        "bw1-39",
+        "bw5-40",
+        "bw2-41",
+        "bw4-41",
+        "bw3-42",
+        "bw1-42",
+        "bw5-43",
+        "bw2-44",
+        "bw4-44",
+        "bw3-45",
+        "bw1-45",
+        "bw5-46",
+        "bw2-47",
+        "bw4-47",
+        "bw3-48",
+        "bw1-48",
+        "bw5-49",
+        "bw2-50",
+        "bw4-50",
+        "bw3-51",
+        "bw1-51",
+        "bw5-52",
+        "bw2-53",
+        "bw4-53",
+        "bw3-54",
+        "bw1-54",
+        "bw5-55",
+        "bw2-56",
+        "bw4-56",
+        "bw3-57",
+        "bw1-57",
+        "bw5-58",
+        "bw2-59",
+        "bw4-59",
+        "bw3-60",
+        "bw1-60",
+        "bw5-61",
+        "bw2-62",
+        "bw4-62",
+        "bw3-63",
+        "bw1-63",
+        "bw5-64",
+        "bw2-65",
+        "bw4-65",
+        "bw3-66",
+        "bw1-66",
+        "bw5-67",
+        "bw2-68",
+        "bw4-68",
+        "bw3-69",
+        "bw1-69",
+        "bw5-70",
+        "bw2-71",
+        "bw4-71",
+        "bw3-72",
+        "bw1-72",
+        "bw5-73",
+        "bw2-74",
+        "bw4-74",
+        "bw3-75",
+        "bw1-75",
+        "bw5-76",
+        "bw2-77",
+        "bw4-77",
+        "bw3-78",
+        "bw1-78",
+        "bw5-79",
+        "bw2-80",
+        "bw4-80",
+        "bw3-81",
+        "bw1-81",
+        "bw5-82",
+        "bw2-83",
+        "bw4-83",
+        "bw3-84",
+        "bw1-84",
+        "bw5-85",
+        "bw2-86",
+        "bw1-86",
+        "bw5-87",
+        "bw3-88",
+        "bw2-89",
+        "bw1-89",
+        "bw1-91",
+        "bw4-96",
+        "bw4-97",
+        "bw4-98",
+        "bw3-100",
+        "bw3-102",
+        "bw4-103",
+        "bw5-106",
+        "bw5-109",
+        "bw1-114",
+        "bwp-BW02",
+        "bwp-BW05",
+        "bwp-BW08",
+        "bwp-BW11",
+        "bwp-BW14",
+        "bwp-BW17",
+        "bwp-BW20",
+        "bwp-BW23",
+        "bwp-BW26",
+        "bwp-BW33",
+        "bwp-BW36",
+        "bwp-BW40",
+        "bwp-BW43",
+        "bw2-1",
+        "bw4-1",
+        "bw2-2",
+        "bw4-2",
+        "bw3-3",
+        "bw1-3",
+        "bw3-4",
+        "bw1-4",
+        "bw5-5",
+        "bw2-6",
+        "bw4-6",
+        "bw3-7",
+        "bw1-7",
+        "bw5-8",
+        "bw2-9",
+        "bw4-9",
+        "bw3-10",
+        "bw1-10",
+        "bw3-11",
+        "bw1-11",
+        "bw2-12",
+        "bw4-12",
+        "tk-bw-e-13",
+        "bw5-13",
+        "tk-bw-z-14",
+        "bw3-14",
+        "bw1-14",
+        "bw3-15",
+        "bw1-15",
+        "bw5-16",
+        "tk-bw-z-17",
+        "bw3-17",
+        "bw1-17",
+        "bw3-18",
+        "bw1-18",
+        "bw2-19",
+        "bw4-19",
+        "bw3-20",
+        "bw1-20",
+        "bw3-21",
+        "bw1-21",
+        "bw5-22",
+        "tk-bw-z-23",
+        "bw5-23",
+        "bw2-24",
+        "bw4-24",
+        "tk-bw-e-25",
+        "bw5-25",
+        "bw2-26",
+        "bw4-26",
+        "bw2-27",
+        "bw4-27",
+        "bw3-28",
+        "bw1-28",
+        "bw2-29",
+        "bw4-29",
+        "tk-bw-e-30",
+        "bw5-30",
+        "bw2-31",
+        "bw4-31",
+        "bw3-32",
+        "bw1-32",
+        "bw5-33",
+        "bw2-34",
+        "bw4-34",
+        "bw3-35",
+        "bw1-35",
+        "bw5-36",
+        "bw2-37",
+        "bw4-37",
+        "bw3-38",
+        "bw1-38",
+        "bw5-39",
+        "bw2-40",
+        "bw4-40",
+        "bw3-41",
+        "bw1-41",
+        "bw5-42",
+        "bw2-43",
+        "bw4-43",
+        "bw3-44",
+        "bw1-44",
+        "bw5-45",
+        "bw2-46",
+        "bw4-46",
+        "bw3-47",
+        "bw1-47",
+        "bw5-48",
+        "bw2-49",
+        "bw4-49",
+        "bw3-50",
+        "bw1-50",
+        "bw5-51",
+        "bw2-52",
+        "bw4-52",
+        "bw3-53",
+        "bw1-53",
+        "bw5-54",
+        "bw2-55",
+        "bw4-55",
+        "bw3-56",
+        "bw1-56",
+        "bw5-57",
+        "bw2-58",
+        "bw4-58",
+        "bw3-59",
+        "bw1-59",
+        "bw5-60",
+        "bw2-61",
+        "bw4-61",
+        "bw3-62",
+        "bw1-62",
+        "bw5-63",
+        "bw2-64",
+        "bw4-64",
+        "bw3-65",
+        "bw1-65",
+        "bw5-66",
+        "bw2-67",
+        "bw4-67",
+        "bw3-68",
+        "bw1-68",
+        "bw5-69",
+        "bw2-70",
+        "bw4-70",
+        "bw3-71",
+        "bw1-71",
+        "bw5-72",
+        "bw2-73",
+        "bw4-73",
+        "bw3-74",
+        "bw1-74",
+        "bw5-75",
+        "bw2-76",
+        "bw4-76",
+        "bw3-77",
+        "bw1-77",
+        "bw5-78",
+        "bw2-79",
+        "bw4-79",
+        "bw3-80",
+        "bw1-80",
+        "bw5-81",
+        "bw2-82",
+        "bw4-82",
+        "bw3-83",
+        "bw1-83",
+        "bw5-84",
+        "bw2-85",
+        "bw4-85",
+        "bw3-86",
+        "bw2-87",
+        "bw1-87",
+        "bw5-88",
+        "bw3-89",
+        "bw5-90",
+        "bw4-94",
+        "bw2-97",
+        "bw2-98",
+        "bw3-99",
+        "bw4-100",
+        "bw4-102",
+        "bw5-104",
+        "bw5-107",
+        "bw5-110",
+        "bw1-115",
+        "bwp-BW03",
+        "bwp-BW06",
+        "bwp-BW09",
+        "bwp-BW12",
+        "bwp-BW15",
+        "bwp-BW18",
+        "bwp-BW21",
+        "bwp-BW24",
+        "bwp-BW27",
+        "bwp-BW34",
+        "bwp-BW37",
+        "bwp-BW41",
+        "bwp-BW44"
+      ],
+      "scope": "BW1\u20133, BW01\u2013BW32 and BW Trainer Kits; HGSS/Call of Legends fixtures only; Unlimited deferred",
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4",
+      "shards": 3
+    },
+    "bw-power-audit": {
+      "candidate": true,
+      "passed": true,
+      "resolved": [
+        {
+          "id": "bw5-3",
+          "power": "Floral Fragrance",
+          "bench": false
+        },
+        {
+          "id": "bw5-3",
+          "power": "Floral Fragrance",
+          "bench": true
+        },
+        {
+          "id": "bw1-20",
+          "power": "Inferno Fandango",
+          "bench": false
+        },
+        {
+          "id": "bw1-20",
+          "power": "Inferno Fandango",
+          "bench": true
+        },
+        {
+          "id": "bw5-29",
+          "power": "Diving Draw",
+          "bench": false
+        },
+        {
+          "id": "bw5-29",
+          "power": "Diving Draw",
+          "bench": true
+        },
+        {
+          "id": "bw4-33",
+          "power": "Slippery Soles",
+          "bench": false
+        },
+        {
+          "id": "bw4-33",
+          "power": "Slippery Soles",
+          "bench": true
+        },
+        {
+          "id": "bw3-40",
+          "power": "Dynamotor",
+          "bench": false
+        },
+        {
+          "id": "bw3-40",
+          "power": "Dynamotor",
+          "bench": true
+        },
+        {
+          "id": "bw1-57",
+          "power": "Damage Swap",
+          "bench": false
+        },
+        {
+          "id": "bw1-57",
+          "power": "Damage Swap",
+          "bench": true
+        },
+        {
+          "id": "bw4-59",
+          "power": "Forewarn",
+          "bench": false
+        },
+        {
+          "id": "bw4-59",
+          "power": "Forewarn",
+          "bench": true
+        },
+        {
+          "id": "bw3-60",
+          "power": "Cursed Shadow",
+          "bench": false
+        },
+        {
+          "id": "bw1-76",
+          "power": "Shift Gear",
+          "bench": false
+        },
+        {
+          "id": "bw1-76",
+          "power": "Shift Gear",
+          "bench": true
+        },
+        {
+          "id": "bw5-82",
+          "power": "Softboiled",
+          "bench": false
+        },
+        {
+          "id": "bw5-82",
+          "power": "Softboiled",
+          "bench": true
+        },
+        {
+          "id": "bw4-100",
+          "power": "Inferno Fandango",
+          "bench": false
+        },
+        {
+          "id": "bw4-100",
+          "power": "Inferno Fandango",
+          "bench": true
+        },
+        {
+          "id": "bw4-101",
+          "power": "Cursed Shadow",
+          "bench": false
+        },
+        {
+          "id": "bwp-BW21",
+          "power": "Inferno Fandango",
+          "bench": false
+        },
+        {
+          "id": "bwp-BW21",
+          "power": "Inferno Fandango",
+          "bench": true
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "bw3-3",
+          "power": "Leaf Tailor",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-3",
+          "power": "Leaf Tailor",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw1-6",
+          "power": "Royal Heal",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw1-6",
+          "power": "Royal Heal",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-12",
+          "power": "Blazing Mane",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-12",
+          "power": "Blazing Mane",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-14",
+          "power": "Victory Star",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-14",
+          "power": "Victory Star",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-22",
+          "power": "Scorching Scales",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-22",
+          "power": "Scorching Scales",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-24",
+          "power": "Airhead",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-24",
+          "power": "Airhead",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-26",
+          "power": "Solid Rock",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-26",
+          "power": "Solid Rock",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-31",
+          "power": "Cursed Body",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-31",
+          "power": "Cursed Body",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw1-32",
+          "power": "Shell Armor",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw1-32",
+          "power": "Shell Armor",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw2-47",
+          "power": "Magic Room",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw2-47",
+          "power": "Magic Room",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-48",
+          "power": "Solar Revelation",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-48",
+          "power": "Solar Revelation",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-53",
+          "power": "Ancient Scream",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-53",
+          "power": "Ancient Scream",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-57",
+          "power": "Psychic Mirage",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-57",
+          "power": "Psychic Mirage",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-60",
+          "power": "Cursed Shadow",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw2-62",
+          "power": "Black Eyes",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw2-62",
+          "power": "Black Eyes",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-63",
+          "power": "Dark Cloak",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-63",
+          "power": "Dark Cloak",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-64",
+          "power": "Craftsmanship",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-64",
+          "power": "Craftsmanship",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-64",
+          "power": "Reflexive Retaliation",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-64",
+          "power": "Reflexive Retaliation",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-67",
+          "power": "Ancient Power",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-67",
+          "power": "Ancient Power",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-76",
+          "power": "Heal Block",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-76",
+          "power": "Heal Block",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-79",
+          "power": "Dark Aura",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-79",
+          "power": "Dark Aura",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-85",
+          "power": "Smooth Coat",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-85",
+          "power": "Smooth Coat",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-89",
+          "power": "Rough Skin",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-89",
+          "power": "Rough Skin",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-98",
+          "power": "Victory Star",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw3-98",
+          "power": "Victory Star",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-101",
+          "power": "Cursed Shadow",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-103",
+          "power": "Dark Aura",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw4-103",
+          "power": "Dark Aura",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-107",
+          "power": "Dark Cloak",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-107",
+          "power": "Dark Cloak",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-109",
+          "power": "Psychic Mirage",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-109",
+          "power": "Psychic Mirage",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-110",
+          "power": "Ancient Power",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bw5-110",
+          "power": "Ancient Power",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW20",
+          "power": "Royal Heal",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW20",
+          "power": "Royal Heal",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW22",
+          "power": "Shell Armor",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW22",
+          "power": "Shell Armor",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW32",
+          "power": "Victory Star",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW32",
+          "power": "Victory Star",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW40",
+          "power": "Scorching Scales",
+          "bench": false,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        },
+        {
+          "id": "bwp-BW40",
+          "power": "Scorching Scales",
+          "bench": true,
+          "error": "CANNOT_USE_POWER",
+          "pending": []
+        }
+      ],
+      "failures": [],
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "bw-trainer-audit": {
+      "candidate": true,
+      "passed": true,
+      "resolved": [
+        {
+          "id": "tk-bw-e-4",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-e-4",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-z-11",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-z-11",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-e-15",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-e-15",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-z-16",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-z-16",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-e-16",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-e-16",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-z-18",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-z-18",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-e-21",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-e-21",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-e-23",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-e-23",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-e-24",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-e-24",
+          "positive": true
+        },
+        {
+          "id": "tk-bw-z-27",
+          "positive": false
+        },
+        {
+          "id": "tk-bw-z-27",
+          "positive": true
+        },
+        {
+          "id": "bw4-86",
+          "positive": false
+        },
+        {
+          "id": "bw4-86",
+          "positive": true
+        },
+        {
+          "id": "bw4-87",
+          "positive": false
+        },
+        {
+          "id": "bw4-87",
+          "positive": true
+        },
+        {
+          "id": "bw4-88",
+          "positive": false
+        },
+        {
+          "id": "bw4-88",
+          "positive": true
+        },
+        {
+          "id": "bw4-89",
+          "positive": false
+        },
+        {
+          "id": "bw4-89",
+          "positive": true
+        },
+        {
+          "id": "bw3-90",
+          "positive": false
+        },
+        {
+          "id": "bw3-90",
+          "positive": true
+        },
+        {
+          "id": "bw4-90",
+          "positive": false
+        },
+        {
+          "id": "bw4-90",
+          "positive": true
+        },
+        {
+          "id": "bw2-91",
+          "positive": false
+        },
+        {
+          "id": "bw2-91",
+          "positive": true
+        },
+        {
+          "id": "bw3-91",
+          "positive": false
+        },
+        {
+          "id": "bw3-91",
+          "positive": true
+        },
+        {
+          "id": "bw5-91",
+          "positive": false
+        },
+        {
+          "id": "bw5-91",
+          "positive": true
+        },
+        {
+          "id": "bw4-91",
+          "positive": false
+        },
+        {
+          "id": "bw4-91",
+          "positive": true
+        },
+        {
+          "id": "bw3-92",
+          "positive": false
+        },
+        {
+          "id": "bw3-92",
+          "positive": true
+        },
+        {
+          "id": "bw5-92",
+          "positive": false
+        },
+        {
+          "id": "bw5-92",
+          "positive": true
+        },
+        {
+          "id": "bw1-92",
+          "positive": false
+        },
+        {
+          "id": "bw1-92",
+          "positive": true
+        },
+        {
+          "id": "bw2-93",
+          "positive": false
+        },
+        {
+          "id": "bw2-93",
+          "positive": true
+        },
+        {
+          "id": "bw3-93",
+          "positive": false
+        },
+        {
+          "id": "bw3-93",
+          "positive": true
+        },
+        {
+          "id": "bw1-93",
+          "positive": false
+        },
+        {
+          "id": "bw1-93",
+          "positive": true
+        },
+        {
+          "id": "bw2-94",
+          "positive": false
+        },
+        {
+          "id": "bw2-94",
+          "positive": true
+        },
+        {
+          "id": "bw3-94",
+          "positive": false
+        },
+        {
+          "id": "bw3-94",
+          "positive": true
+        },
+        {
+          "id": "bw1-94",
+          "positive": false
+        },
+        {
+          "id": "bw1-94",
+          "positive": true
+        },
+        {
+          "id": "bw2-95",
+          "positive": false
+        },
+        {
+          "id": "bw2-95",
+          "positive": true
+        },
+        {
+          "id": "bw3-95",
+          "positive": false
+        },
+        {
+          "id": "bw3-95",
+          "positive": true
+        },
+        {
+          "id": "bw5-95",
+          "positive": false
+        },
+        {
+          "id": "bw5-95",
+          "positive": true
+        },
+        {
+          "id": "bw2-96",
+          "positive": false
+        },
+        {
+          "id": "bw2-96",
+          "positive": true
+        },
+        {
+          "id": "bw3-96",
+          "positive": false
+        },
+        {
+          "id": "bw3-96",
+          "positive": true
+        },
+        {
+          "id": "bw5-96",
+          "positive": false
+        },
+        {
+          "id": "bw5-96",
+          "positive": true
+        },
+        {
+          "id": "bw1-96",
+          "positive": false
+        },
+        {
+          "id": "bw1-96",
+          "positive": true
+        },
+        {
+          "id": "bw5-97",
+          "positive": false
+        },
+        {
+          "id": "bw5-97",
+          "positive": true
+        },
+        {
+          "id": "bw1-97",
+          "positive": false
+        },
+        {
+          "id": "bw1-97",
+          "positive": true
+        },
+        {
+          "id": "bw5-98",
+          "positive": false
+        },
+        {
+          "id": "bw5-98",
+          "positive": true
+        },
+        {
+          "id": "bw1-98",
+          "positive": false
+        },
+        {
+          "id": "bw1-98",
+          "positive": true
+        },
+        {
+          "id": "bw5-99",
+          "positive": false
+        },
+        {
+          "id": "bw5-99",
+          "positive": true
+        },
+        {
+          "id": "bw1-99",
+          "positive": false
+        },
+        {
+          "id": "bw1-99",
+          "positive": true
+        },
+        {
+          "id": "bw1-100",
+          "positive": false
+        },
+        {
+          "id": "bw1-100",
+          "positive": true
+        },
+        {
+          "id": "bw3-101",
+          "positive": false
+        },
+        {
+          "id": "bw3-101",
+          "positive": true
+        },
+        {
+          "id": "bw5-101",
+          "positive": false
+        },
+        {
+          "id": "bw5-101",
+          "positive": true
+        },
+        {
+          "id": "bw1-101",
+          "positive": false
+        },
+        {
+          "id": "bw1-101",
+          "positive": true
+        },
+        {
+          "id": "bw5-102",
+          "positive": false
+        },
+        {
+          "id": "bw5-102",
+          "positive": true
+        },
+        {
+          "id": "bw1-102",
+          "positive": false
+        },
+        {
+          "id": "bw1-102",
+          "positive": true
+        },
+        {
+          "id": "bw1-103",
+          "positive": false
+        },
+        {
+          "id": "bw1-103",
+          "positive": true
+        },
+        {
+          "id": "bw1-104",
+          "positive": false
+        },
+        {
+          "id": "bw1-104",
+          "positive": true
+        },
+        {
+          "id": "bw5-111",
+          "positive": false
+        },
+        {
+          "id": "bw5-111",
+          "positive": true
+        },
+        {
+          "id": "bwp-BW28",
+          "positive": false
+        },
+        {
+          "id": "bwp-BW28",
+          "positive": true
+        },
+        {
+          "id": "bwp-BW29",
+          "positive": false
+        },
+        {
+          "id": "bwp-BW29",
+          "positive": true
+        },
+        {
+          "id": "bwp-BW30",
+          "positive": false
+        },
+        {
+          "id": "bwp-BW30",
+          "positive": true
+        },
+        {
+          "id": "bwp-BW31",
+          "positive": false
+        },
+        {
+          "id": "bwp-BW31",
+          "positive": true
+        },
+        {
+          "id": "bwp-BW39",
+          "positive": false
+        },
+        {
+          "id": "bwp-BW39",
+          "positive": true
+        }
+      ],
+      "unavailable": [
+        {
+          "id": "bw2-90",
+          "positive": false,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw2-90",
+          "positive": true,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw2-92",
+          "positive": false,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw2-92",
+          "positive": true,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw5-93",
+          "positive": false,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw5-93",
+          "positive": true,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw5-94",
+          "positive": false,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw5-94",
+          "positive": true,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw1-95",
+          "positive": false,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw1-95",
+          "positive": true,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw5-100",
+          "positive": false,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        },
+        {
+          "id": "bw5-100",
+          "positive": true,
+          "error": "CANNOT_PLAY_THIS_CARD"
+        }
+      ],
+      "failures": [],
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "bw-match-audit": {
+      "passed": true,
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4",
+      "scope": "BW1\u20135/period promos/kits and HGSS/Call of Legends only; 100 decisions per match",
+      "games": [
+        {
+          "decks": [
+            "6 Corners",
+            "Chandyplume"
+          ],
+          "level": "easy",
+          "decisions": 100,
+          "turn": 17,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "DonChamp",
+            "Magnezone Eels"
+          ],
+          "level": "easy",
+          "decisions": 100,
+          "turn": 10,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Reshiboar",
+            "Reshiphlosion"
+          ],
+          "level": "easy",
+          "decisions": 54,
+          "turn": 5,
+          "finished": true,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "The Truth",
+            "VVV"
+          ],
+          "level": "easy",
+          "decisions": 32,
+          "turn": 4,
+          "finished": true,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Chandygor",
+            "DMT"
+          ],
+          "level": "easy",
+          "decisions": 100,
+          "turn": 10,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Hammertime",
+            "Klinklang"
+          ],
+          "level": "easy",
+          "decisions": 100,
+          "turn": 7,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "ZekEels",
+            "6 Corners"
+          ],
+          "level": "easy",
+          "decisions": 100,
+          "turn": 15,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Chandyplume",
+            "CoKE"
+          ],
+          "level": "normal",
+          "decisions": 100,
+          "turn": 8,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Magnezone Eels",
+            "Mew Box"
+          ],
+          "level": "normal",
+          "decisions": 100,
+          "turn": 9,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Reshiphlosion",
+            "Sharpedo"
+          ],
+          "level": "normal",
+          "decisions": 100,
+          "turn": 13,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "VVV",
+            "Magmortar Mill"
+          ],
+          "level": "normal",
+          "decisions": 100,
+          "turn": 13,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "DMT",
+            "Entei EX"
+          ],
+          "level": "normal",
+          "decisions": 100,
+          "turn": 11,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Klinklang",
+            "Mewtwo Darkrai"
+          ],
+          "level": "normal",
+          "decisions": 100,
+          "turn": 12,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "CoKE",
+            "DonChamp"
+          ],
+          "level": "hard",
+          "decisions": 100,
+          "turn": 11,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Mew Box",
+            "Reshiboar"
+          ],
+          "level": "hard",
+          "decisions": 100,
+          "turn": 9,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Sharpedo",
+            "The Truth"
+          ],
+          "level": "hard",
+          "decisions": 100,
+          "turn": 9,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Magmortar Mill",
+            "Chandygor"
+          ],
+          "level": "hard",
+          "decisions": 100,
+          "turn": 13,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Entei EX",
+            "Hammertime"
+          ],
+          "level": "hard",
+          "decisions": 100,
+          "turn": 9,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        },
+        {
+          "decks": [
+            "Mewtwo Darkrai",
+            "ZekEels"
+          ],
+          "level": "hard",
+          "decisions": 100,
+          "turn": 8,
+          "finished": false,
+          "replay": true,
+          "undo": true
+        }
+      ],
+      "failures": [],
+      "shards": 3
+    },
+    "hgss-focused-test-report": {
+      "passed": true,
+      "checks": [
+        "HGSS coverage tracks all 605 expansion, promo and Trainer Kit printings without pending aliases",
+        "HGSS historical profile draws and can attack first, but blocks first-turn Trainer/Supporter/Stadium play",
+        "All nine LEGENDs assemble both distinct halves into the selected Bench slot, once",
+        "LEGEND rejects a lone half, duplicate half, occupied slot, or Active placement",
+        "LEGEND is not a starting Basic and its name shares the four-card deck limit across halves",
+        "Single LEGEND gives one Prize; paired species LEGEND gives two; both halves leave together",
+        "Sacred Rainbow preserves Double Colorless units while converting every attached Energy to Fire",
+        "Sleep shield prevents attack damage only while Asleep",
+        "Heal Block requires Lunatone and stops healing rather than counter movement",
+        "Luster Float requires Latias and recovers when the partner leaves play",
+        "Rain Dance attaches to a Water Pokemon and neither consumes normal attachment nor works under conditions",
+        "Leaf Trans moves existing Energy without emitting a new hand attachment",
+        "Red Armor checks the attacker actual Special Energy and not Basic Energy",
+        "Dimension Transfer recovers only a Trainer onto top and once per turn",
+        "Opponent Choice is decided by the opponent and places the unchosen card on the bottom",
+        "Power locking after Psychic Lock reaches next-turn activated Powers",
+        "Scan-corrected coin attacks really flip once",
+        "HGSS Trainer Kit duplicate printings retain proper effects and Basic Energy identities",
+        "Lost Link borrows ordinary and Lv.X attacks but excludes both LEGEND halves",
+        "Rescue Energy returns all evolution cards immediately after attack damage but not effect KOs",
+        "Rescue Energy lets the owner choose against Lost Crisis and keeps attachments in Lost Zone",
+        "All HGSS Supporters including Trainer Kit duplicates have compiled copy effects",
+        "Trainer Kit Bill draws two cards and Moomoo Milk retains its healing effect",
+        "Portrait copies a Supporter after the normal Supporter has already been used",
+        "Lost Burn counts physical Energy cards rather than Double Colorless units",
+        "Lost Burn may choose zero Energy and deal zero damage",
+        "Flower Shop Lady requires the available public discard cards with three-of-each caps",
+        "Vileplume blocks its owner Trainer cards and resumes when it leaves play",
+        "Insight overrides a surviving Headwind attack-cost increase with equal hands",
+        "Lost World counts each LEGEND half in Lost Zone and works for either Stadium owner",
+        "Lost Burn selects and moves an attached Holon Pokemon from auxiliary Energy",
+        "Zero Retreat effects override Tangled Vines regardless of player propagation order"
+      ],
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "dp-focused-test-report": {
+      "passed": true,
+      "candidate": true,
+      "checks": [
+        "DP coverage excludes every explicitly pending printing, including Lv.X",
+        "DP additive Weakness is preserved instead of becoming double damage",
+        "DP kit basic Energy and printed searchable fields have reviewed data",
+        "DP historical first turn draws, permits attack and blocks Trainers",
+        "Level-up preserves damage and attachments, clears status, and retains the earlier stage and attacks",
+        "Level-up rejects Bench placement and a Pokemon played this turn",
+        "Inherited Powers activate through the level-up Pokemon without mutating earlier text",
+        "Inherited Body reacts once through the top card and leaving the field restores printed level-up stage",
+        "Real Uxie Lv.X levels up and inherits its previous attack with a proper donor",
+        "Arceus rule permits Arceus copies without lifting unrelated Pokemon copy limits",
+        "Star Barrier removes Weakness only while an Energy is actually attached",
+        "Two-target Bench attack damages both selected Pokemon without hitting the Active",
+        "Form Change accepts another Deoxys forme and preserves the occupied slot",
+        "Cloak Evolution changes the played-turn restriction without changing first-turn rules",
+        "Professor Oaks Visit draws three and puts the selected card at the bottom",
+        "Rival gives the opponent the top-five selection and shuffles only afterward",
+        "Flints Willpower restricts attachment to Pokemon SP and does not spend the turn attachment",
+        "Rejected draw Supporters remain in hand without changing the journal or deck",
+        "DP Fossils remain Trainers outside play, become field Pokemon, and can be discarded",
+        "The DP setup profile permits an opening Fossil without treating it as a Pokemon in the deck",
+        "Fossil coin sequences resolve damage prevention and knockout retaliation before cleanup",
+        "Miasma Valley applies only after a non-Grass non-Psychic Basic enters the Bench",
+        "Battle Tower heals a legal level-up after the new level is placed",
+        "DP Memory Berry provides earlier-stage attacks and remains attached after the turn",
+        "Energy Link exposes a Tool action and moves an attached Energy without reattaching it",
+        "Dish Out draws distinct top and bottom cards without drawing the intervening card",
+        "Force Palm places counters on the selected Bench without applying weakness",
+        "Hard Crush counts actual milled Energy cards and keeps cards below the top five",
+        "Burning Head makes a private top-three choice then discards the unchosen cards",
+        "Close Combat increases incoming damage after Weakness rather than before it",
+        "Gravitation affects both players but multiple copies do not stack",
+        "Two Poke Healer Plus heal eighty and clear every condition while consuming both cards",
+        "Jamming waits for Supporter resolution and multiple copies place counters only once",
+        "Corrected Waterlog accepts non-Water basic Energy and ends the turn even when none attach",
+        "Sleep recovery modifiers reset when sleep is removed or reapplied",
+        "Damage Switch restricts both counter endpoints to Pokemon SP",
+        "Lucky Egg draws only after an attack knockout actually puts its Pokemon in discard",
+        "Magical Return detaches a persistent Technical Machine while preserving its Pokemon",
+        "Flame Bluster requires two physical Fire Energy cards even when one attachment supplies four units",
+        "Primal Shell blocks Items and Tools before either card leaves hand",
+        "DP Trainer searches include Items and Tools while excluding Supporters and Stadiums",
+        "Moon Skip adds its Prize only to the Defending Pokemon knockout caused by that attack",
+        "Enigma Berry heals at turn end only after damage from a Fighting attacker",
+        "An Energy-unit discard can use one multi-unit card while a physical-card cost cannot",
+        "Doom Desire resolves at the opponent turn end and is removed when its target retreats",
+        "A DP attack can discard Holons Castform from its real auxiliary Energy zone",
+        "Rock Reaction distinguishes manual and Trainer attachments from attacks and Powers",
+        "Shoot Poison offers its Power after the real level-up card enters play",
+        "Scan-corrected Trainer Kit Piplup uses twenty base damage and ten extra on heads",
+        "Fire Spin does nothing when its conditional two-basic-card discard cannot be paid",
+        "Lunar Dance pays Energy units optionally after damage and heals the chosen Bench",
+        "Sleep Hole adds damage only to a sleeping defender and otherwise applies Sleep",
+        "Shadow Ball targets only the Bench and applies its printed Weakness",
+        "Wild Guard blocks Pokemon SP while allowing other attackers",
+        "Moonlight Veil removes Weakness only from Pokemon that evolve from Eevee",
+        "Cold Fat reduces damage only while Dewgong is Asleep",
+        "Dig Well privately selects top-three Water Energy and discards only the other top cards",
+        "Night Spin checks provided Energy units on the actual attacking Pokemon",
+        "Conversion discards a basic Energy and expires after the current turn",
+        "Trash Burst counts discarded Energy cards rather than their provided units",
+        "Scissor Blow applies self damage only when its damage actually knocks out the defender",
+        "Emperor Aura activates from a hand evolution and blocks the next turn hand attachment",
+        "Iron Skull bypasses Resistance and defender Bodies during Rampardos attacks",
+        "Unlucky Wind treats the opponents heads as tails during that opponents turn",
+        "Sunlight Veil adds twenty HP once to Eevee evolutions and excludes other Pokemon",
+        "Ferment Poison suppresses the actual Body and curing or replacing Poison releases it",
+        "Poison Sacs preserves Poison through level-up only while the opposing Body is present",
+        "Outbreak Power allows distinct targets up to attached Energy units and applies Active Weakness once",
+        "Ancient Guidance places a real Trainer Fossil from the deck without treating it as hand entry",
+        "Disrupting Spy privately reorders the opponents actual top four after hand placement",
+        "Burst Ball pays Energy units across real own field zones and rejects an insufficient field",
+        "Toss and Turn remains usable while Asleep when inherited by Snorlax Level-Up",
+        "Fainting Spell queues the actual attacker with the original knockout before Prizes",
+        "Airy Wall counts physical attachments and Mime Jr adds protection from attack effects",
+        "Phoenix Turn keeps Ho-Oh and its Energy while discarding Tools and awarding the knockout Prize",
+        "Memory Out locks that attack on the attackers next turn and retreat clears its Pokemon marker",
+        "Unown GUARD becomes a Tool, blocks attack effects, and returns to a Pokemon in hand",
+        "Decode keeps selected cards private and orders them above the shuffled remainder",
+        "Osmotic Pressure moves only the chosen counters from East Sea to West Sea",
+        "Fin Luster places the chosen Basic from the opponent hand then makes it Active",
+        "Toxic Virus adds checkup poison counters without changing the stored poison strength",
+        "Energy Reaction responds to a real hand attachment once and uses the attached type",
+        "Dragon DNA borrows the real Basic attack and adds thirty damage before weakness",
+        "Supreme Command removes hidden cards from hand and returns them after the opponents turn",
+        "Energetic Impulse heads changes Lazy Blow base damage for this turn",
+        "Effect evolution clears conditions, keeps damage, and records the previous Pokemon once",
+        "Heat Wave recovers only basic Energy actually discarded by the active attackers attack",
+        "Ectoplasm replaces the knocked out Pokemon with a Stadium and restores it when discarded",
+        "Energy Shift turns a self-knocked-out Electrode into one rainbow Energy and preserves the Prize",
+        "Power Spray cancels effects before a draw, consumes the card, retains use and triggers Primal Claw",
+        "Power Cancel pays its own two-card discard and stops the opponents Power",
+        "A native hand-entry Set Up Power can be sprayed before drawing",
+        "Cancelled Vacation still ends the turn without healing",
+        "Darkness Drive reacts to a cancelled opponent Power as a Body attachment",
+        "Link Lightning resolves Voltage Shoot then offers an affordable inherited second attack",
+        "Empty Bench slots are never evolved targets",
+        "Unown QUICK and EQUIP become working Tools and restore Pokemon identity on discard",
+        "Unown RETIRE discards itself and attachments, draws one and gives no Prize",
+        "Invalid conditioned Power is rejected before offering Power Spray",
+        "Phoenix Turn discards Expert Belt before awarding the single Knock Out Prize",
+        "Darkness Grace excludes Lv.X cards and evolves only a matching field Pokemon",
+        "Telepass and Download copy the Supporter effect without consuming the normal Supporter allowance",
+        "Detour copies the played Supporter without moving it or altering the allowance",
+        "DP targeted attacks finish harmlessly when no Pokemon meets their printed target condition",
+        "Lovely Kiss moves the available counters once without Weakness damage or invalid state",
+        "Premier Ball recovers a selected Lv.X from either zone and cleans up the played Item",
+        "Call for Family resolves with a full Bench instead of rejecting the attack",
+        "Crystal Guardians Dark Eyes reacts cumulatively after a cancelled DP Power",
+        "Cessation Crystal blocks both DP Powers and Bodies only while its holder is Active"
+      ],
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "ex-focused-test-report": {
+      "passed": true,
+      "checks": [
+        "EX inventory explicitly separates candidates and pending printings",
+        "Pending EX printings stay unavailable even when an older catalog source matches",
+        "Unseen Forces Unown collection has offline text and decodes its question mark printing",
+        "EX tags preserve two-prize, Star and Delta identities",
+        "EX Unown uses the ordinary printed-name limit rather than legacy family tagging",
+        "EX scope preserves all completed WOTC printings",
+        "Pok\u00e9mon-ex conditional attack distinguishes an e-card opponent from an EX opponent",
+        "Holon GL prevents an e-card attack status on a non-ex Pokemon with basic Grass Energy",
+        "Holon WP gives free retreat with basic Psychic but excludes Pokemon-ex",
+        "Terraforming orders only the top five cards through a validated prompt",
+        "Baby Evolution heals and produces an evolved Basic Pokemon in the same stack",
+        "Holon Research Tower supplies one choosable unit rather than two units",
+        "Holon Legacy removes Delta Weakness and blocks its Poke-Power",
+        "Form Change keeps damage, Energy and Special Conditions on the replacement",
+        "Linear Attack applies source reduction before Weakness only on the Active target",
+        "EX visual deck validation combines Delta names and enforces a deck-wide Star limit",
+        "Hard Cocoon waits for the coin before applying damage and reduces after Weakness",
+        "Intimidating Fang reduces before Weakness on a targeted attack",
+        "Rough Skin places counters on the attacker without applying its Weakness",
+        "Natural Remedy heals on legal Water attachment and rejected attachment stays quiet",
+        "Drakes Stadium reduces targeted damage after Weakness",
+        "Intimidating Fang also protects the Bench while ignoring Bench Weakness",
+        "Water Cyclone moves a whole two-unit Holon Pokemon Energy across attached lists",
+        "Attaching Holons Magneton never replaces the damaged Pokemon or causes a false KO",
+        "Dual Armor follows supplied Energy and removal without changing printed types",
+        "Pinsirs Armor is conditional on opponent hand size and reduces after Weakness",
+        "Tonnage extra damage is a recorded choice with recoil only when accepted",
+        "Own-target attack damage keeps normal damage separate from counters",
+        "Single-unit choices do not inflate basic Energy type counts",
+        "An EX Star attack uses the printed Star name for self switching",
+        "Aqua Trance resolves at the end of the opponent turn and retreat cancels it",
+        "Rock Blast combines repeated selections before a defending damage reduction",
+        "Firestarter attaches from discard to the Bench without consuming the hand attachment",
+        "Shining Horn stops opposing Basic attacks only while its owner has one Pokemon",
+        "EX Darkness adds before Weakness on Dark attackers and causes no off-type checkup penalty",
+        "EX Metal protects only Metal Pokemon and imposes no outgoing off-type penalty",
+        "Psychic Shield prevents ex damage and status but allows non-ex status attacks",
+        "Empty Shell yields no Prize when Shedinja is Knocked Out",
+        "Both EX Trainer Kits expose every printing with matching offline card text",
+        "Trainer Kit Latias heals a chosen friendly Pokemon after Dragon Dew",
+        "Trainer Kit Plusle recovers Energy through a recorded discard choice",
+        "Quick Charge permits different basic Energy types and rejects duplicate types",
+        "Scattered Shower records the number drawn after shuffling the hand",
+        "Steel Wave damages only Benched Pokemon sharing a defender type",
+        "Bad News selects unseen cards until five remain without a reveal prompt",
+        "Call for Power moves an attached Energy to Dragonite without using a hand attachment",
+        "Fast Feet permits retreat while Asleep or Paralyzed and still pays Energy",
+        "Loose Shell places Shedinja as a Basic without marking it evolved",
+        "Pull Down removes only top evolution cards and preserves attachments",
+        "Selected EX sets have no pending source printings",
+        "Breaking Impact queries the selected Bench cost without promoting it or applying Weakness",
+        "Breaking Impact honors Balloon Berry zero-cost erratum without consuming the Tool",
+        "Forecast plays a chosen deck Stadium and replaces the previous Stadium",
+        "Copied Supporter leaves the original card and does not consume another Supporter",
+        "Mass Destruction knocks out both Pokemon and Special Energy prevents it",
+        "Aqua and Magma Belts evolve the Active between turns and discard afterward",
+        "Aqua Belt rejects a Pokemon without the Aqua name",
+        "Dragon Dance boosts the next attack before Weakness",
+        "Silver Wind adds its bonus after Weakness on the next turn",
+        "Steel Technical Machine grants Steel Generator and moves basic Energy from the Bench",
+        "Retreat queries keep absolute zero ahead of Stadium taxes on a Benched Pokemon",
+        "Typed EX searches exclude Pokemon-ex and retain printed Energy-type matching",
+        "Swalot records both independent Special Condition choices",
+        "Aqua Reverse only offers Team Magma Bench targets and damages the new Active",
+        "Requested FRLG TRR Deoxys POP1 and Nintendo promos have every source printing mapped",
+        "Nintendo and POP Pokemon-ex retain their EX identity and two-Prize tags",
+        "Toss and Turn can attack while Asleep and adds only the printed sleep bonus",
+        "Strange Behavior repeatedly transfers counters but forbids a lethal transfer",
+        "Fiery Aura changes EX Burn damage and Eerie Aura only hits Pokemon still Asleep",
+        "Burning Aura places one counter on both Active Pokemon once per checkup",
+        "Frenzy follows opponent named Pokemon and adds forty before Weakness",
+        "Dark Scale and Knockout Gas react to an attack KO before their Pokemon leaves play",
+        "Mirror Coat reflects committed Poison from an attack without requiring damage",
+        "Fluff protects an already damaged Pokemon on heads but cannot trigger from the same attack first damaging it",
+        "Strength Charm adds damage before Weakness and is discarded after the attack turn",
+        "Rotating Claws excludes the Energy it just discarded and attaches a different Energy",
+        "Meteor Falls grants a lower-stage attack with its normal cost and no ex permission",
+        "Tricky Gym grants Feint Attack to a Dark Pokemon and bypasses defender Resistance",
+        "Legendary Ascent switches the new bird Active and moves basic Water Energy without a hand attachment",
+        "Extra Energy Bomb awards two Prizes and redistributes five Energy to non-ex Pokemon",
+        "Crush and Burn counts one Energy card for a two-unit Holon card",
+        "Energy Flip moves Energy from the chosen Bench target after damage",
+        "Hoard attaches deck Tools to separate eligible Pokemon and leaves the normal hand action intact",
+        "Tropical Wind heals both Active Pokemon on heads and sleeps both on tails",
+        "Detour copies the in-play Supporter without playing or moving it",
+        "Tunneling permits zero Bench targets and still records its next-turn attack lock",
+        "Deck Tool attachments bypass a hand-play lock while retaining attachment limits",
+        "Tropical Tidal Wave removes attached Tools and the selected players Stadium and Supporter",
+        "A zero-damage attack with no defender effect does not trigger Fluff",
+        "Snatch and Run recognizes Rocket Secret Machine printings and only offers a switch after finding one",
+        "Litter counts both Tools and Rocket Secret Machines discarded from hand",
+        "EX EXP.ALL can preserve basic Energy after an attack KO that places no damage",
+        "Pure Body requires an existing Energy and discards one after a Water hand attachment",
+        "Requested UF DS LM HP POP2 and POP3 have every source printing mapped",
+        "Heavy Blow restores its base with React Energy and otherwise subtracts counters",
+        "Green Dance only searches Grass Pokemon and offers a switch after finding one",
+        "Bouncy Move adds only counters chosen by its owner",
+        "Cursed Reaction distributes four counters with React Energy through validated choices",
+        "Return Wave returns the selected opposing Energy to hand rather than discard",
+        "Final Sting awards its Prize and applies twenty-damage Poison without attack damage",
+        "Type Change copies all defending types and expires at the end of its turn",
+        "Crush Draw reveals and attaches a top basic Energy without the hand allowance",
+        "Prize Shift keeps the chosen replacement face up and never reveals the face-down selection first",
+        "Power Circulation recovers basic Energy to the top and places one self counter",
+        "Makeover excludes the discarded Energy and keeps the replacement on the same Pokemon",
+        "Energy Evolution evolves from a hand attachment without consuming a second attachment",
+        "Holon Lake grants Delta Call only to Delta Pokemon and only finds Delta cards",
+        "POP High Pressure lowers only the actual Fire or Water retreat target",
+        "POP Pokemon Park heals the first hand attachment to a Bench once per turn",
+        "Root Fossil heals once per checkup and its discard Power removes the selected Bench Fossil",
+        "Root Fossil discard Power affects its actual Bench stack and awards no Prize",
+        "Reactive Booster supplies two unrestricted Energy units only to Huntail and Gorebyss",
+        "Fellowship grants named plant attacks without copying unrelated Pokemon",
+        "Delta Moon hits only the first Special Energy hand attachment each turn",
+        "Delta Storm and Icy Aura apply one checkup counter with their printed target filters",
+        "Binding Aura rejects a hand attachment to an Asleep Pokemon",
+        "Pattern Distraction on tails cancels a Basic attack and ends its turn",
+        "Sitrus Berry heals thirty once during checkup then is discarded",
+        "Vital Drain heals seventy and clears Conditions only after an opposing Active KO",
+        "Golden Wing moves selected Energy before the knockout and still awards two Prizes",
+        "Golden Wing validates two Energy units rather than two physical multi-unit cards",
+        "Shadow Curse places counters on a chosen opponent before Gengar leaves play",
+        "Multi Technical Machine grants Paralyzing Gaze and discards after the attack",
+        "Protective Orb requires an evolved non-ex stack and removes its Weakness",
+        "Curse Powder fires once when Shadow Curse pauses and resumes the same knockout",
+        "Low Pressure adds ten HP only to Grass and Lightning Pokemon",
+        "Shadow Curse does not trigger from an attack that knocks Gengar out with damage counters",
+        "Final EX inventory has all 1857 printings and zero pending",
+        "Holon Veil adds runtime Delta identity in printed zones and removes it when Ampharos leaves",
+        "Holon Veil does not retag a Pokemon when it moves to a Prize",
+        "Dual Stream records a smaller Active amount and separately damages the Bench",
+        "Shock-wave markers follow their target and cause a real knockout and Prize",
+        "Time Travel heads discards attachments and puts Celebi on the deck bottom without a Prize",
+        "Psychic Protector resolves after Weakness and can discard more than incoming damage",
+        "Hard Rock protects any friendly Groudon ex and uses supplied Energy units",
+        "Burn Away bypasses Weakness and deals only excess remaining HP as recoil",
+        "Even Game benches at most the opposing field count and respects available space",
+        "Holon Circle ends the declared attack before discard costs and any damage",
+        "Holon Circle stops Spinda and Smokescreen before either coin prompt",
+        "Holon Circle is not consumed by an attack without enough Energy",
+        "Crystal Shard changes the host type and expires after its attack",
+        "Memory Berry grants a lower-stage attack with its original cost and expires",
+        "Shady Move transfers one counter between either player without attack damage",
+        "Delta Transport requires a Delta Active and switches from a Benched Pelipper",
+        "Peal of Thunder attaches selected top-five Energy to one target and discards the rest",
+        "Blue Ray heals thirty and clears both Active Special Conditions on hand entry",
+        "Late EX profile blocks a first-turn Supporter while legacy saved profiles retain their rules",
+        "Volunteer heals, discards only Ninetales and evolves the retained Vulpix from the deck",
+        "Bedhead places counters only if Snorlax remains Asleep after recovery",
+        "Chilling Breath blocks Trainers for the opposing turn after evolution from hand",
+        "Metal Gravity damages the Pokemon that successfully retreated rather than the new Active",
+        "Poison Structure requires Sidneys Stadium and applies Poison as a Power",
+        "Burn Away recoil uses actual attack damage including Strength Charm",
+        "Holon Circle prevents Burn Down before its five-Fire discard cost",
+        "Volunteer discards evolved-only Protective Orb during its temporary Vulpix stage",
+        "Dual Aura ignores Basic Powers without recursion and still blocks evolved non-ex Bodies",
+        "Sol Shade requires its owners Solrock in play before blocking Fire Powers",
+        "Sol Shade alone allows real Wishing Star and Delta Control activations",
+        "Mew ex Versatile exposes copied attacks with Latios alone and with Latias",
+        "Mew ex Versatile still requires the copied attacks Energy cost",
+        "Replacement Powers accept cancellation without moving Pokemon or attachments",
+        "Successful replacement Powers preserve damage and Energy and enforce their turn limit",
+        "Both Dual Aura partners require their own partner and exempt Pokemon-ex Bodies",
+        "Top-card Powers resolve every selected index with compiled Powers in the temporary view",
+        "Island Hermit resolves zero, one or two Prize reveals and draws without losing state",
+        "Supporter use stays spent after its display zone empties and resets next turn",
+        "Copied native attacks retain donor helper methods through nested prompts and clean up afterward",
+        "Sleep Pendulum inflicts Sleep without mixing status output with activation restrictions",
+        "Aquapolis Fan Club caps its search at available Bench spaces",
+        "All five Holon Pokemon attach from hand and provide their printed Energy"
+      ],
+      "candidate": true,
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "wotc-focused-test-report": {
+      "passed": true,
+      "coverage": {
+        "total": 1793,
+        "available": 1793,
+        "pending": 0,
+        "methods": {
+          "verified-reprint": 250,
+          "compiled-effects": 973,
+          "existing": 439,
+          "compiled-trainer": 122,
+          "compiled-energy": 5,
+          "verified-compiled-reprint": 4
+        },
+        "bySet": [
+          {
+            "id": "base1",
+            "scanSetId": "base1",
+            "name": "Base Set",
+            "total": 102,
+            "available": 102
+          },
+          {
+            "id": "base2",
+            "scanSetId": "base2",
+            "name": "Jungle",
+            "total": 64,
+            "available": 64
+          },
+          {
+            "id": "base3",
+            "scanSetId": "base3",
+            "name": "Fossil",
+            "total": 62,
+            "available": 62
+          },
+          {
+            "id": "base4",
+            "scanSetId": "base4",
+            "name": "Base Set 2",
+            "total": 130,
+            "available": 130
+          },
+          {
+            "id": "base5",
+            "scanSetId": "base5",
+            "name": "Team Rocket",
+            "total": 83,
+            "available": 83
+          },
+          {
+            "id": "gym1",
+            "scanSetId": "gym1",
+            "name": "Gym Heroes",
+            "total": 132,
+            "available": 132
+          },
+          {
+            "id": "gym2",
+            "scanSetId": "gym2",
+            "name": "Gym Challenge",
+            "total": 132,
+            "available": 132
+          },
+          {
+            "id": "neo1",
+            "scanSetId": "neo1",
+            "name": "Neo Genesis",
+            "total": 111,
+            "available": 111
+          },
+          {
+            "id": "neo2",
+            "scanSetId": "neo2",
+            "name": "Neo Discovery",
+            "total": 75,
+            "available": 75
+          },
+          {
+            "id": "neo3",
+            "scanSetId": "neo3",
+            "name": "Neo Revelation",
+            "total": 66,
+            "available": 66
+          },
+          {
+            "id": "neo4",
+            "scanSetId": "neo4",
+            "name": "Neo Destiny",
+            "total": 113,
+            "available": 113
+          },
+          {
+            "id": "si1",
+            "scanSetId": "si1",
+            "name": "Southern Islands",
+            "total": 18,
+            "available": 18
+          },
+          {
+            "id": "base6",
+            "scanSetId": "lc",
+            "name": "Legendary Collection",
+            "total": 110,
+            "available": 110
+          },
+          {
+            "id": "ecard1",
+            "scanSetId": "ecard1",
+            "name": "Expedition Base Set",
+            "total": 165,
+            "available": 165
+          },
+          {
+            "id": "ecard2",
+            "scanSetId": "ecard2",
+            "name": "Aquapolis",
+            "total": 186,
+            "available": 186
+          },
+          {
+            "id": "ecard3",
+            "scanSetId": "ecard3",
+            "name": "Skyridge",
+            "total": 182,
+            "available": 182
+          },
+          {
+            "id": "basep",
+            "scanSetId": "basep",
+            "name": "Wizards Black Star Promos",
+            "total": 53,
+            "available": 53
+          },
+          {
+            "id": "bp",
+            "scanSetId": "bog",
+            "name": "Best of game",
+            "total": 9,
+            "available": 9
+          }
+        ]
+      },
+      "printingDifferences": [],
+      "attackScenarios": 0,
+      "tests": [
+        "Limitless import: exact printings, headers, repeated quantities, CRLF",
+        "Limitless import refuses mismatched names, unknown cards and totals",
+        "Limitless export round trips without changing printings",
+        "Setup draws hands, enforces Basics, places six prizes, automatically draws first turn",
+        "Modern attack restriction and opponent turn rejection",
+        "One Energy attachment per turn; opponent attachment and early evolution refused",
+        "Black & White permits first-turn attack and automatically ends it",
+        "ex profile skips the first draw; Diamond & Pearl disallows first-turn Trainers",
+        "Bill draws two and moves to discard through its implemented effect",
+        "Evolving on a subsequent turn preserves damage and attachments and clears conditions",
+        "Invalid and duplicate setup choices are rejected before mutation",
+        "Saved action journal restores exact setup, turn, deck order and pending choices",
+        "Weakness doubles attack damage before damage counters are placed",
+        "Knockouts discard the stack, award a prize, and require a legal replacement",
+        "No Pok\u00e9mon remaining is an automatic loss",
+        "Deck-out is checked on mandatory turn draw",
+        "Historical Burn: XY heads causes no damage and remains; SM heads deals 20 then clears",
+        "Poison checkup applies automatically and Sleep prevents attacking",
+        "TCG Live symbolic Basic Energy, name-only Trainers, and padded collector numbers import",
+        "An engine-generated coin flip replays identically across saved matches",
+        "Path to the Peak suppresses Crobat V on-play draw while it is in the environment",
+        "WOTC starts with a mandatory first draw and permits Trainers and attacks",
+        "WOTC Confusion tails deals 20 self-damage and ends the turn",
+        "WOTC Confusion applies self-Weakness and PlusPower after Weakness",
+        "WOTC Defender attaches, reduces Confusion damage, and expires after the opposing turn",
+        "WOTC required Energy discards are paid before the Confusion flip, including on tails",
+        "WOTC permits multiple paid normal retreats in a turn; modern permits one",
+        "WOTC Confusion retreat pays first, tails retains conditions and blocks retry, recovery permits retry",
+        "WOTC Confusion retreat heads switches and clears conditions after paying",
+        "WOTC 2002 Power erratum shuts down poisoned powers; early WOTC permits them",
+        "WOTC flips for first player after concealed setup and offers two cards per opposing mulligan",
+        "Neo Baby Rule still applies under Poison and precedes attack discard costs",
+        "WOTC Fire Spin charges two Energy cards even without Confusion",
+        "WOTC pays required discards before a Smokescreen tails cancels the attack",
+        "Every Base/Jungle/Fossil printing has a real implementation: 102 + 64 + 62",
+        "Energy Burn converts all Energy units, including Double Colorless, and can be used repeatedly",
+        "Gastly Destiny Bond pays Psychic cost and awards both simultaneous knockout prizes",
+        "Mr Mime uses final damage after Weakness and PlusPower",
+        "Damage Swap rejects lethal transfers and unavailable counters",
+        "Strange Behavior only moves counters onto Slowbro",
+        "Curse moves exactly one counter and resets its per-card limit next turn",
+        "Toxic Gas suppresses Rain Dance and resumes it when Muk is Asleep",
+        "Snorlax blocks Poison and other conditions, but Toxic Gas disables its protection",
+        "Transparency protects from damage-free status attacks with one flip",
+        "Ditto copies the defender, preserves Double Colorless units and reverts under Confusion",
+        "Original Devolution Spray discards chosen evolution stages and keeps Energy and damage",
+        "Pok\u00e9dex puts ordered cards back on top, not at the bottom",
+        "Gambler shuffles first and draws precisely eight or one",
+        "Mysterious Fossil is 10 HP and its discard power works from Bench",
+        "Drain attacks deal damage once and heal the attacker from final damage",
+        "Water Gun counts surplus Water after mixed costs and caps the bonus at twenty",
+        "Gigashock damages exactly three selected occupied Bench slots",
+        "Quick Attack tails keeps printed damage and Big Eggsplosion uses twenty per head",
+        "Damage prevention resolves before the attack applies Paralysis",
+        "Hurricane returns a surviving defender and attachments, while lethal damage awards a prize",
+        "Scavenge pays its Psychic discard once and recovers an Item Trainer",
+        "Mirror Move reflects the final damage once without rerunning the original attack",
+        "Two opposing Ditto stay at printed HP without recursive copying",
+        "Buzzap awards its knockout prize and Energy Burn converts its two Energy units",
+        "Thunderstorm flips only for occupied Bench slots, deals twenty per head and applies tails recoil",
+        "Energy Flow permits independent zero-or-many choices and returns Special Energy without moving Pokemon",
+        "PokeGear selects a Trainer from the top seven and locks only the rest of its users turn",
+        "Time Capsule permits declining opponent recovery, excludes Special Energy, and locks only its user",
+        "Power Plant exchanges only basic Energy, reveals recovery and supports either player once per turn",
+        "Warp Point lets each owner choose a replacement and ignores attack-only protection",
+        "Tusk Toss returns the complete defending stack or lets its owner switch, without a prize",
+        "Star Boomerang does damage before returning its source and attachments to hand",
+        "Blindside rejects an undamaged board and targets only a damaged Pokemon without Weakness",
+        "Triple Spin switches Hitmontop only with at least two heads and deals damage before switching",
+        "Threaten privately reveals the opposing hand and shuffles only its selected Trainer",
+        "Shuffle Attack orders only the opposing deck prefix and counts Energy cards rather than units",
+        "Major Tsunami lets the opponent choose first and then switches the source without ending the turn",
+        "Crystal Body prevents an attack Power lock without preventing its damage or Trainer switching",
+        "Amnesia disables only the selected attack and expires after one opponent turn",
+        "Scary Face blocks both attack and retreat for exactly one opposing turn",
+        "Special Delivery returns the selected card to the deck top and enforces once per turn",
+        "Cunning reveals only the top opposing card to its owner and permits leaving deck order unchanged",
+        "Dragon Tornado switches a surviving defender and awards a prize only on a knockout",
+        "Psychic Leaf heals damage actually dealt and counts Double Colorless as two Energy",
+        "Poke-Power locks preserve Bodies and Pokemon Powers and expire after the opposing turn",
+        "Swift bypasses a coin-based damage guard without adding a defensive coin prompt",
+        "Mean Look blocks retreat, ends when Murkrow switches, and does not return when it switches back",
+        "Swift bypasses defensive Powers, attached Metal Energy and attack prevention, retaining PlusPower",
+        "Feint Attack targets a protected Bench Pokemon without applying defensive damage effects",
+        "Discharge counts Energy paid before the attack and does not discard twice",
+        "Dark Drain heals the total actual damage across the opposing field",
+        "Riptide counts discard Water Energy and shuffles it back without moving other cards",
+        "Stadium actions work for either player once per turn and replacement removes the old Stadium",
+        "Broken Ground Gym changes Basic retreat costs and Sprout Tower reduces damage after Weakness",
+        "Light Screen halves damage after Weakness and Resistance, rounds down, and expires",
+        "Juxtapose swaps damage simultaneously, bypasses damage modifiers, and respects effect protection",
+        "Beedrill Venom Spray applies both conditions only when evolving the Active Pokemon",
+        "Forretress coin branches spread only to Bench and switch only on two heads",
+        "Primeape subtracts its damage counters and resolves recoil before switching the defender",
+        "Sweet Nectar heals a chosen Pokemon completely on heads and leaves it unchanged on tails",
+        "Typed Energy movement uses the Energy actually provided under conversion Powers",
+        "Crystal Kingdra applies the explicit no-Weakness exception to Aquabomb recoil",
+        "Previously completed WOTC expansion pools remain complete",
+        "Discard-powered attacks count cards, retain other Energy, and work with no matching Energy",
+        "Damage resolves before Poison disables a defending Pokemon Power",
+        "Crystal Type changes on a permitted hand attachment, persists for the turn and expires",
+        "Energy HP and Energy Barrier count eligible cards without repeated-check stacking",
+        "Defensive Powers use damage after Weakness and preserve the damage threshold",
+        "Juggler pays the selected Energy cost and draws five for two cards",
+        "Baby protection checks the attack before discards and survives Special Conditions",
+        "Damage counters bypass Weakness and attack bonuses, and half-HP damage rounds down",
+        "Energy movement Powers preserve attachments and distinguish unlimited and once-per-turn use",
+        "Wild Growth doubles only basic Grass Energy on Grass Pokemon and does not stack",
+        "Leech healing uses actual damage after defensive effects",
+        "Every newly available WOTC printing has exact printed stats, costs and evolution requirements",
+        "All 130 Base Set 2 cards reuse their original implemented effects",
+        "Original and reprinted Trainers share their four-copy limit, and Neo Shining Pokemon are limited to one",
+        "Team Rocket Trainer number corrections preserve prize visibility and hand targeting",
+        "New multi-coin damage resolves per head and its state replays exactly",
+        "Unknown clauses and Powers stay out of rules mode rather than using vanilla damage",
+        "Every Southern Islands printing is available, including split healing and Energy-type spread",
+        "Gather Fire moves one eligible Energy without using the free attachment and enforces once per turn",
+        "Sticky Goo modifies the opponent retreat cost and respects the selected Power-condition era",
+        "WOTC Darkness Energy adds damage after weakness and damages non-Dark holders at every turn end",
+        "WOTC Metal Energy reduces incoming damage after weakness and non-Metal outgoing damage",
+        "Each newly compiled Trainer resolves its validated choices on both seeded branches",
+        "Historical first-turn Supporters follow the selected profile and retain their once-per-turn limit",
+        "Fling and Vanish return the correct cards without awarding a knockout prize",
+        "Magnetic Lines moves one basic Energy and Energy Bomb transfers every attached Energy card",
+        "Stare disables a targeted Pokemon Power through the opponent turn and clears when switching",
+        "Sinkhole damages only a successful opposing retreat and respects Power conditions",
+        "Final Beam responds to attack knockouts with Water weakness, without firing on Poison knockouts"
+      ]
+    },
+    "bot-test-report": {
+      "passed": true,
+      "checks": [
+        "Three starter decks contain 60 mapped cards and satisfy enforced construction",
+        "Bot resolves setup and historical first-turn choices on every difficulty",
+        "Thinking leaves the live cards, journal and engine randomness unchanged",
+        "A bot waits during the human turn and cannot answer the human prompt",
+        "Bot decisions do not depend on hidden opponent hand or actual own deck/prize order",
+        "Hard prioritizes a guaranteed knockout; Easy can choose the weaker attack",
+        "Bot uses Rain Dance and assigns multiple Energy cards through the actual prompt",
+        "WOTC required attack-cost prompts are assigned to the attacking player",
+        "Bot resolves Jirachi Wishing Star top-five selection and continues its turn",
+        "Prize choices use remaining-card indexes while labels retain table slots",
+        "Bot forecasts preserve EX printing overrides and reject Fan Club on a full Bench",
+        "Saved unfinished unpaid Baby attack recovers the preceding turn exactly",
+        "Unaffordable attacks are rejected before Baby flips on every bot difficulty",
+        "Baby targets still allow attacks paid with Special Energy",
+        "easy completes a full rules-enforced starter game",
+        "normal completes a full rules-enforced starter game",
+        "hard completes a full rules-enforced starter game"
+      ],
+      "games": [
+        {
+          "level": "easy",
+          "decisions": 80,
+          "turns": 12,
+          "winner": 1
+        },
+        {
+          "level": "normal",
+          "decisions": 133,
+          "turns": 22,
+          "winner": 1
+        },
+        {
+          "level": "hard",
+          "decisions": 271,
+          "turns": 36,
+          "winner": 1
+        }
+      ]
+    },
+    "undo-test-report": {
+      "passed": true,
+      "checks": [
+        "Undo restores attachment, card order and randomness exactly across save/load",
+        "Undo can reopen a paid Trainer choice and undo its original play without retaining costs",
+        "Undo reverses attack damage, automatic checkup and turn draw as one action",
+        "Undo restores a knockout, awarded Prize and mandatory Active promotion",
+        "Undo restores a finished conceded game to its previous playable state",
+        "Bot undo rewinds the last human decision and subsequent bot responses without approval",
+        "Legacy saved games gain undo at their last player action with completed prompts grouped"
+      ]
+    }
+  },
+  "native": {
+    "desktop-tests": {
+      "passed": true,
+      "checks": [
+        "ILEX.GG title, forest theme, leaf emblem and Celebi Prime scan render",
+        "Offline attack and ability search supports historical Powers, scopes, set/custom filters, match hints, focus and pagination",
+        "Foil follows printing rarity and pointer movement, covers previews, excludes nonholos and hidden cards, and never mutates game state",
+        "Promo holo, reverse-holo and nonholo finishes are supported; mixed finishes can be selected without changing decks or actions",
+        "All 228 Base\u2013Fossil printings are available in desktop automation",
+        "Char, Lightning Rod and Color counters have visible tabletop labels",
+        "Passive WOTC Powers are excluded from manual action buttons",
+        "Secret Plan renders concealed identity and an owner-only reveal control",
+        "WOTC coverage dialog lists every set and pending cards; Base Set 2, Team Rocket, Southern Islands and Legendary Collection are complete",
+        "36 library scans render with rules engine loaded",
+        "Six WOTC format presets added without overwriting existing formats",
+        "Limitless text imports through review and saves both decks",
+        "Visual deck scans group by category, show copy counts, edit quantities, preview safely and preserve Limitless exports",
+        "Limitless text export round trips",
+        "Unresolved import blocks save",
+        "Match format is required before decks; same-name decks with identical cards stay distinct by assigned format and switching clears stale selections",
+        "WOTC profile selected automatically from deck format",
+        "Right-click magnifies a prompt card without changing its selection or journal",
+        "WOTC setup resolves into opposing Active/Bench rows on the seated table",
+        "Hand and board previews preserve game state, left-click selects, and opponent hands stay hidden",
+        "Illegal action rolls back without adding to saved journal",
+        "Attached Energy stays visible and can be magnified independently",
+        "Turn and checkup advance through rules engine",
+        "Undo Action reverses a turn, remains available during bot turns, pauses bot scheduling without approval and saves replay boundaries",
+        "Formats can be removed, cancelled, replaced for saved decks, or all removed before creating new ones; cards and match rules are preserved"
+      ],
+      "mappedPrintings": 17371,
+      "cardScans": 23799,
+      "nodeIntegration": false,
+      "profile": "wotc"
+    },
+    "persistence": {
+      "passed": true,
+      "exactJournalAndDeckOrder": true
+    },
+    "dp-native-tests": {
+      "passed": true,
+      "total": 1558,
+      "available": 1558,
+      "pending": 0,
+      "allSetsComplete": true,
+      "dpPrintingMapCount": 1558,
+      "dpReplayAndUndo": true,
+      "inheritedEnlargedCardActions": true,
+      "hiddenEnergyPresentation": true,
+      "earlyAndLateProfiles": true,
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "ex-native-tests": {
+      "passed": true,
+      "total": 1857,
+      "available": 1857,
+      "pending": 0,
+      "allSetsComplete": true,
+      "exPrintingMapCount": 1857,
+      "exReplayAndUndo": true,
+      "earlyAndLateProfiles": true
+    },
+    "ex-native-interactions": {
+      "passed": true,
+      "checks": [
+        "Shuffle cancellation",
+        "Form Change cancellation",
+        "Duplicate cancellation",
+        "Island Hermit 0 reveals",
+        "Island Hermit 1 reveals",
+        "Island Hermit 2 reveals",
+        "ex11-21 hand/drag Energy",
+        "ex11-22 hand/drag Energy",
+        "ex13-44 hand/drag Energy",
+        "ex11-70 hand/drag Energy",
+        "ex11-71 hand/drag Energy"
+      ]
+    },
+    "pile-count-tests": {
+      "passed": true,
+      "checks": [
+        "All three opponent zones, upright readable hover and viewport bounds",
+        "Keyboard focus, Escape, hidden identities and journal unchanged",
+        "Counts refresh after draw",
+        "Zero-card piles and empty hand",
+        "Local and bot viewpoints",
+        "Manual tabletop deck, discard and hand counts"
+      ]
+    },
+    "card-action-tests": {
+      "passed": true,
+      "checks": [
+        "Damage Swap on scan, read-only right click, pending prompts and Undo boundary",
+        "Energy validation disables unaffordable attacks",
+        "Passive Bodies and copied attacks",
+        "Bench Power and opponent inspection",
+        "Stale action rejection",
+        "Missing-art fallback",
+        "Enlarged Retreat, Energy selection prompt, correct destination and discard",
+        "Retreat Energy, status and field-position restrictions",
+        "Face-down reveal retained without exposing hidden identity"
+      ]
+    },
+    "deck-filter-tests": {
+      "passed": true,
+      "legalPool": true,
+      "cardCount": true,
+      "copyLimits": true,
+      "bans": true,
+      "customCards": true,
+      "emptyResults": true,
+      "noDeckDeletion": true
+    },
+    "audio-tests": {
+      "passed": true,
+      "renders": [
+        {
+          "id": "grove",
+          "rms": 0.02909467038038681,
+          "peak": 0.13387179374694824,
+          "seconds": 8
+        },
+        {
+          "id": "dew",
+          "rms": 0.030753914146975682,
+          "peak": 0.13774245977401733,
+          "seconds": 8
+        },
+        {
+          "id": "duel",
+          "rms": 0.03077048256192911,
+          "peak": 0.1787453293800354,
+          "seconds": 8
+        },
+        {
+          "id": "time",
+          "rms": 0.031128523978705476,
+          "peak": 0.17453888058662415,
+          "seconds": 8
+        },
+        {
+          "id": "gambit",
+          "rms": 0.03085440929816709,
+          "peak": 0.1841491311788559,
+          "seconds": 8
+        }
+      ],
+      "controls": true,
+      "muting": true,
+      "noDuplicateLoops": true,
+      "noGameMutation": true,
+      "uncommittedActionsSilent": true,
+      "preferences": {
+        "music": true,
+        "effects": true,
+        "musicVolume": 0.23,
+        "effectsVolume": 0.47,
+        "muted": true,
+        "track": "auto"
+      }
+    },
+    "foil-tests": {
+      "passed": true,
+      "pointerReactive": true,
+      "printingRarity": true,
+      "hiddenCardsExcluded": true,
+      "reducedMotion": true
+    },
+    "bot-ui-tests": {
+      "passed": true,
+      "checks": [
+        "New-match controls offer three difficulties, local play and starter decks",
+        "Bot resolves its own setup choices while the human resolves theirs",
+        "Concurrent bot choices preserve the human\u2019s selected cards",
+        "Bot turns preserve the human seat, hide the bot hand and reject human control of the bot",
+        "The bot takes an action automatically; pause and resume work",
+        "Bot finishes its turn and hands control back; difficulty persists with the saved match",
+        "Bot automatically selects a real Wishing Star top-five choice through desktop scheduling",
+        "Mew ex Versatile copied attacks render with Latios alone and with Latias; Pokemon-ex exemption holds",
+        "Human Prize buttons preserve table labels while submitting compact remaining-card indexes across empty slots",
+        "Unsupported mandatory effects pause visibly instead of skipping an effect"
+      ]
+    },
+    "hgss-native-tests": {
+      "passed": true,
+      "checks": [
+        "605 HGSS printings available",
+        "All expansions, promos and two Trainer Kits complete",
+        "HGSS format selects historical rules even without HGSS cards in deck",
+        "Historical HGSS rules available",
+        "HGSS saved-game replay",
+        "HGSS Undo boundary",
+        "LEGEND played from hand to Bench",
+        "Both LEGEND halves form one enlarged card",
+        "LEGEND attack visible"
+      ],
+      "profile": "hgss",
+      "coverage": 605,
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "legend-native-tests": {
+      "passed": true,
+      "checks": [
+        "Kyogre & Groudon LEGEND combines into upright portrait",
+        "Kyogre & Groudon LEGEND reuses its composite",
+        "Rayquaza & Deoxys LEGEND combines into upright portrait",
+        "Rayquaza & Deoxys LEGEND reuses its composite",
+        "Entei & Raikou LEGEND combines into upright portrait",
+        "Entei & Raikou LEGEND reuses its composite",
+        "Raikou & Suicune LEGEND combines into upright portrait",
+        "Raikou & Suicune LEGEND reuses its composite",
+        "Suicune & Entei LEGEND combines into upright portrait",
+        "Suicune & Entei LEGEND reuses its composite",
+        "Darkrai & Cresselia LEGEND combines into upright portrait",
+        "Darkrai & Cresselia LEGEND reuses its composite",
+        "Palkia & Dialga LEGEND combines into upright portrait",
+        "Palkia & Dialga LEGEND reuses its composite",
+        "Ho-Oh LEGEND combines into upright portrait",
+        "Ho-Oh LEGEND reuses its composite",
+        "Lugia LEGEND combines into upright portrait",
+        "Lugia LEGEND reuses its composite",
+        "Table uses one complete LEGEND",
+        "Second half is not shown as attached Energy",
+        "Right-click magnifies the complete upright card",
+        "Magnification leaves journal unchanged",
+        "Ordinary preview clears previous LEGEND composition",
+        "Reopening the same LEGEND still composes correctly",
+        "A lone half remains an individual card",
+        "Hidden cards never expose a LEGEND pair",
+        "Enlarged actions show one composite instead of half thumbnails",
+        "Composite preserves foil decoration"
+      ],
+      "pairs": 9,
+      "engineUnchanged": true
+    },
+    "bw-native-tests": {
+      "passed": true,
+      "checks": [
+        "633 early BW printings available",
+        "Five expansions, period promos and both Trainer Kits complete",
+        "Historical BW profile enabled",
+        "bw1-20 mapped",
+        "bw1-20 scan available",
+        "bw2-47 mapped",
+        "bw2-47 scan available",
+        "bw3-14 mapped",
+        "bw3-14 scan available",
+        "bwp-BW32 mapped",
+        "bwp-BW32 scan available",
+        "tk-bw-e-14 mapped",
+        "tk-bw-e-14 scan available",
+        "tk-bw-z-30 mapped",
+        "tk-bw-z-30 scan available",
+        "bw4-54 mapped",
+        "bw4-54 scan available",
+        "bw5-63 mapped",
+        "bw5-63 scan available",
+        "bwp-BW44 mapped",
+        "bwp-BW44 scan available",
+        "Prompts resolved",
+        "BW exact saved-game replay",
+        "Prompts resolved",
+        "BW Undo boundary",
+        "BW Ability retains type",
+        "Enlarged Pokemon offers BW Ability",
+        "bw3-25 retains Restored stage",
+        "bw3-66 retains Restored stage"
+      ],
+      "coverage": 633,
+      "profile": "bw",
+      "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4"
+    },
+    "studio-native-tests": {
+      "passed": true,
+      "checks": [
+        "Human attack starts presentation after committing the action",
+        "Committed action opens the cinematic layer",
+        "Visible single coin matches the actual engine result",
+        "Coin face and label match the resolved result",
+        "Inputs and bot dispatch cannot advance the match during presentation",
+        "Animation leaves game state, RNG, choices and journal untouched",
+        "Saved-game replay remains exact with presentation enabled",
+        "Undo restores the whole action after a cinematic",
+        "Undo leaves no lingering animation or input lock",
+        "Committed action opens the cinematic layer",
+        "Multi-flip attack shows every engine result in order",
+        "Multi-flip display contains all three visible coins",
+        "Skip immediately releases the layer and queued effects",
+        "Skipping cannot reroll coins or alter damage",
+        "Rejected unpaid attacks do not produce animations",
+        "Rejected moves retain normal rollback behavior",
+        "Bot forecasting remains silent and does not mutate live state",
+        "Committed bot attacks use the same cinematic pipeline",
+        "Committed action opens the cinematic layer",
+        "Manual tabletop flips also display the recorded side",
+        "Escape cancellation is presentation-only",
+        "Committed action opens the cinematic layer",
+        "Navigating away cancels effects without changing the match",
+        "Effects can be disabled without removing game functionality",
+        "Visual preferences are persisted independently of audio",
+        "Opponent hand identities stay concealed",
+        "Both players have persistent Deck, Discard and Prize count badges",
+        "Committed action opens the cinematic layer",
+        "WATER renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "GRASS renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "FIGHTING renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "PSYCHIC renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "DARK renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "COLORLESS renderer follows the committed card attack",
+        "Cinematic renderers complete without errors"
+      ],
+      "singleFlip": [
+        true
+      ],
+      "multiFlip": [
+        true,
+        true,
+        false
+      ],
+      "renderErrors": [],
+      "preferencesRestored": true
+    },
+    "studio-layouts": {
+      "passed": true,
+      "sizes": [
+        {
+          "width": 1920,
+          "height": 1080,
+          "scroll": 1905,
+          "arena": {
+            "x": 98,
+            "y": 203,
+            "width": 1783,
+            "height": 860,
+            "bottom": 1063,
+            "right": 1881
+          },
+          "hand": {
+            "x": 123,
+            "y": 860.34375,
+            "width": 1733,
+            "height": 164.65625,
+            "bottom": 1025,
+            "right": 1856
+          },
+          "deck": {
+            "x": 1299.24951171875,
+            "y": 669.13525390625,
+            "width": 139.6302490234375,
+            "height": 138.9501953125,
+            "bottom": 808.08544921875,
+            "right": 1438.8797607421875
+          },
+          "discard": {
+            "x": 1426.498046875,
+            "y": 669.13525390625,
+            "width": 146.314453125,
+            "height": 138.9501953125,
+            "bottom": 808.08544921875,
+            "right": 1572.8125
+          },
+          "prizes": {
+            "x": 408.4375915527344,
+            "y": 670.171630859375,
+            "width": 154.61306762695312,
+            "height": 130.52960205078125,
+            "bottom": 800.7012329101562,
+            "right": 563.0506591796875
+          },
+          "table": {
+            "x": 367.13287353515625,
+            "y": 335.3108825683594,
+            "width": 1244.734130859375,
+            "height": 558.601806640625,
+            "bottom": 893.9126892089844,
+            "right": 1611.8670043945312
+          }
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "scroll": 1425,
+          "arena": {
+            "x": 98,
+            "y": 203,
+            "width": 1303,
+            "height": 740,
+            "bottom": 943,
+            "right": 1401
+          },
+          "hand": {
+            "x": 123,
+            "y": 757,
+            "width": 1253,
+            "height": 148,
+            "bottom": 905,
+            "right": 1376
+          },
+          "deck": {
+            "x": 880.1312866210938,
+            "y": 597.964111328125,
+            "width": 113.4212646484375,
+            "height": 120.330078125,
+            "bottom": 718.294189453125,
+            "right": 993.5525512695312
+          },
+          "discard": {
+            "x": 991.6815795898438,
+            "y": 597.964111328125,
+            "width": 118.52496337890625,
+            "height": 120.330078125,
+            "bottom": 718.294189453125,
+            "right": 1110.20654296875
+          },
+          "prizes": {
+            "x": 390.58538818359375,
+            "y": 596.4387817382812,
+            "width": 126.26177978515625,
+            "height": 112.85797119140625,
+            "bottom": 709.2967529296875,
+            "right": 516.84716796875
+          },
+          "table": {
+            "x": 363.92449951171875,
+            "y": 325.5935974121094,
+            "width": 771.1509399414062,
+            "height": 444.0274963378906,
+            "bottom": 769.62109375,
+            "right": 1135.075439453125
+          }
+        },
+        {
+          "width": 1000,
+          "height": 780,
+          "scroll": 985,
+          "arena": {
+            "x": 86,
+            "y": 199,
+            "width": 887,
+            "height": 570,
+            "bottom": 769,
+            "right": 973
+          },
+          "hand": {
+            "x": 99,
+            "y": 610.78125,
+            "width": 861,
+            "height": 120.21875,
+            "bottom": 731,
+            "right": 960
+          },
+          "deck": {
+            "x": 698.5563354492188,
+            "y": 473.5611572265625,
+            "width": 47.869873046875,
+            "height": 51.149169921875,
+            "bottom": 524.7103271484375,
+            "right": 746.4262084960938
+          },
+          "discard": {
+            "x": 703.2757568359375,
+            "y": 545.7410888671875,
+            "width": 49.32940673828125,
+            "height": 54.07470703125,
+            "bottom": 599.8157958984375,
+            "right": 752.6051635742188
+          },
+          "prizes": {
+            "x": 304.8335876464844,
+            "y": 461.3082580566406,
+            "width": 53.761505126953125,
+            "height": 123.72891235351562,
+            "bottom": 585.0371704101562,
+            "right": 358.5950927734375
+          },
+          "table": {
+            "x": 292.2342529296875,
+            "y": 291.140869140625,
+            "width": 474.531494140625,
+            "height": 336.76983642578125,
+            "bottom": 627.9107055664062,
+            "right": 766.7657470703125
+          }
+        }
+      ]
+    },
+    "studio-reduced-motion": {
+      "passed": true,
+      "reduced": true,
+      "animation": "none",
+      "result": "tails"
+    },
+    "pack-native-tests": {
+      "passed": true,
+      "checks": [
+        "Pack navigation and breadcrumb work",
+        "Pack screen restores the full navigation after leaving a match",
+        "Native profile inventory matches validated 103 expansions",
+        "Opening commits exactly one complete Base pack",
+        "Unrevealed DOM contains only card backs and no identity labels",
+        "Hidden pulls do not expose magnifier identities",
+        "Reveal next changes one reveal flag",
+        "Rerendering cannot reroll or add collection duplicates",
+        "Reveal all shows the guaranteed rare with shine decoration",
+        "Rare reveal uses actual shine animation",
+        "Revealed card right-click magnification works",
+        "Collection shows persisted counts and finishes",
+        "Failed save rolls back the whole pack and inventory",
+        "EX pack opens with nine cards",
+        "EX pack has a distinct simulated reverse finish",
+        "Modern pack uses two parallel slots and Basic Energy",
+        "Pack opening never modifies decks or saved matches",
+        "Partly revealed pack is saved for restart"
+      ],
+      "saved": {
+        "total": 6,
+        "collection": {
+          "base1-68|normal": 1,
+          "base1-64|normal": 1,
+          "base1-52|normal": 1,
+          "base1-91|normal": 1,
+          "base1-53|normal": 1,
+          "base1-36|normal": 1,
+          "base1-90|normal": 1,
+          "base1-40|normal": 1,
+          "base1-100|normal": 2,
+          "base1-98|normal": 1,
+          "base1-71|normal": 1,
+          "ex16-63|normal": 1,
+          "ex16-54|normal": 2,
+          "ex16-69|normal": 1,
+          "ex16-65|normal": 1,
+          "ex16-64|normal": 1,
+          "ex16-72|normal": 1,
+          "ex16-33|normal": 1,
+          "ex16-1|reverse": 1,
+          "ex16-87|normal": 1,
+          "sv01-151|normal": 1,
+          "sv01-044|normal": 1,
+          "sv01-085|normal": 1,
+          "sv01-040|normal": 1,
+          "sv01-029|normal": 1,
+          "sv01-195|normal": 1,
+          "sv01-060|normal": 1,
+          "sve-005|normal": 1,
+          "sv01-068|reverse": 1,
+          "sv01-132|reverse": 1,
+          "sv01-106|holo": 1,
+          "base1-62|normal": 1,
+          "base1-94|normal": 1,
+          "base1-46|normal": 1,
+          "base1-58|normal": 1,
+          "base1-54|normal": 1,
+          "base1-88|normal": 1,
+          "base1-30|normal": 1,
+          "base1-24|normal": 1,
+          "base1-97|normal": 1,
+          "base1-16|holo": 1,
+          "ex16-86|normal": 1,
+          "ex16-59|normal": 1,
+          "ex16-62|normal": 1,
+          "ex16-67|normal": 1,
+          "ex16-78|normal": 1,
+          "ex16-38|normal": 1,
+          "ex16-6|reverse": 1,
+          "ex16-16|normal": 1,
+          "sv01-156|normal": 1,
+          "sv01-013|normal": 1,
+          "sv01-027|normal": 1,
+          "sv01-095|normal": 1,
+          "sv01-004|normal": 1,
+          "sv01-035|normal": 1,
+          "sv01-175|normal": 1,
+          "sve-007|normal": 1,
+          "sv01-137|reverse": 1,
+          "sv01-108|reverse": 1,
+          "sv01-054|holo": 1
+        },
+        "pack": {
+          "id": "9dad0f1a-0706-40e8-a3c4-fd052a2c499a",
+          "set": "sv01",
+          "name": "Scarlet & Violet",
+          "openedAt": "2026-10-16T05:51:43.213Z",
+          "cards": [
+            {
+              "id": "sv01-156",
+              "slot": "Common",
+              "finish": "normal",
+              "tier": "common",
+              "revealed": true
+            },
+            {
+              "id": "sv01-013",
+              "slot": "Common",
+              "finish": "normal",
+              "tier": "common",
+              "revealed": false
+            },
+            {
+              "id": "sv01-027",
+              "slot": "Common",
+              "finish": "normal",
+              "tier": "common",
+              "revealed": false
+            },
+            {
+              "id": "sv01-095",
+              "slot": "Common",
+              "finish": "normal",
+              "tier": "common",
+              "revealed": false
+            },
+            {
+              "id": "sv01-004",
+              "slot": "Uncommon",
+              "finish": "normal",
+              "tier": "uncommon",
+              "revealed": false
+            },
+            {
+              "id": "sv01-035",
+              "slot": "Uncommon",
+              "finish": "normal",
+              "tier": "uncommon",
+              "revealed": false
+            },
+            {
+              "id": "sv01-175",
+              "slot": "Uncommon",
+              "finish": "normal",
+              "tier": "uncommon",
+              "revealed": false
+            },
+            {
+              "id": "sve-007",
+              "slot": "Basic Energy",
+              "finish": "normal",
+              "tier": "energy",
+              "revealed": false
+            },
+            {
+              "id": "sv01-137",
+              "slot": "Reverse foil",
+              "finish": "reverse",
+              "tier": "reverse",
+              "revealed": false
+            },
+            {
+              "id": "sv01-108",
+              "slot": "Reverse foil",
+              "finish": "reverse",
+              "tier": "reverse",
+              "revealed": false
+            },
+            {
+              "id": "sv01-054",
+              "slot": "Rare slot",
+              "finish": "holo",
+              "tier": "rare",
+              "revealed": false
+            }
+          ]
+        }
+      },
+      "profiles": 103,
+      "restored": true
+    },
+    "pack-layouts": {
+      "passed": true,
+      "layouts": [
+        {
+          "width": 1440,
+          "scroll": 1425,
+          "pulls": 11
+        },
+        {
+          "width": 1920,
+          "scroll": 1905,
+          "pulls": 11
+        },
+        {
+          "width": 1000,
+          "scroll": 985,
+          "pulls": 11
+        }
+      ]
+    },
+    "pack-reduced-motion": {
+      "passed": true,
+      "animation": "none"
+    }
+  },
+  "verifiedScans": 23736,
+  "verifiedSourceFiles": 1265,
+  "nativeTestEnvironment": "Isolated profile; --no-sandbox and --disable-gpu were needed in the execution environment. Distributed launcher retains its normal Chromium sandbox.",
+  "scope": "Black & White, Emerging Powers, Noble Victories, Next Destinies, Dark Explorers, BW01\u2013BW44 promos and both BW Trainer Kits: 633 printings. Interactions with HGSS through Call of Legends. Unlimited and later BW sets deferred.",
+  "limits": "Coverage and finite execution/regression checks are not exhaustive proof of all board states. The final engine passes all 907 printed BW attacks, focused interactions, Power/Trainer audits and bounded real-deck rollouts with replay/Undo; Unlimited is deferred."
+}

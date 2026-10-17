@@ -1,3 +1,4 @@
+import {CoinFlipEffect} from '../effects/play-card-effects';
 import { getCardTarget } from "../../../simple-bot/simple-tactics/simple-tactics";
 import { GameError } from "../../game-error";
 import { GameMessage, GameLog } from "../../game-message";
@@ -33,6 +34,7 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
   if(guard&&effect.damage>0)return store.prompt(state,new SelectPrompt(guard.player.id,GameMessage.CHOOSE_OPTION,['Keep damage','Use '+guard.name],{allowCancel:false}),(choice:any)=>{if(choice===1){const redirected=Math.min(10,effect.damage);effect.damage-=redirected;guard.list.damage+=redirected;}applyPutDamage(store,state,effect);});
   const charity=(effect as any)._wotcCharityPlayer;
   if(charity&&!(effect as any)._wotcCharityUsed&&effect.damage>0){(effect as any)._wotcCharityUsed=true;return store.prompt(state,new SelectPrompt(charity.id,GameMessage.CHOOSE_OPTION,Array.from({length:Math.floor(effect.damage/10)+1},(_,i)=>'Reduce damage by '+i*10),{allowCancel:false}),(choice:any)=>{effect.damage=Math.max(0,effect.damage-choice*10);applyPutDamage(store,state,effect);});}
+  const rock=(effect as any)._bwSolidRock;if(rock&&!(effect as any)._bwRockDone&&effect.damage>0){(effect as any)._bwRockDone=true;const coin=new CoinFlipEffect(rock.player,heads=>{if(heads)effect.damage=Math.max(0,effect.damage-rock.amount);applyPutDamage(store,state,effect);});coin.skipReflipTool=true;return store.reduceEffect(state,coin);}
   const damage = Math.max(0, effect.damage);
   target.damage += damage;
   if(damage>0)target.marker.removeMarker('WOTC_SHADOW_IMAGES');

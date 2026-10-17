@@ -8,6 +8,16 @@ dist/
 .env
 .env.*
 !.env.example
+*.jks
+*.keystore
 work/electron-cache/
 work/electron-downloads/
 work/desktop-*-tests*/
+work/android-build/toolchain/
+work/android-build/build/
+work/android-build/signing/
+work/android-build/preview-runtime/
+work/android-build/preview-profile/
+work/android-build/preview-profiles/
+work/android-build/.android/
+work/android-build/android-user/

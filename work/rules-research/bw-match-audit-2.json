@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59",
+  "rejectedDecks": [
+    {
+      "name": "Fluffychomp",
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    },
+    {
+      "name": "Flareon",
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    }
+  ],
+  "scope": "Complete BW era/promos/supplements and HGSS/Call of Legends only; 100 decisions per match",
+  "games": [
+    {
+      "decks": [
+        "PrimeTime",
+        "ZPST"
+      ],
+      "level": "hard",
+      "decisions": 100,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Darkrai Garbodor",
+        "Darkrai Hydreigon"
+      ],
+      "level": "hard",
+      "decisions": 100,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "GothGor",
+        "Hammertime"
+      ],
+      "level": "hard",
+      "decisions": 100,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "RayEels",
+        "Big Basics"
+      ],
+      "level": "hard",
+      "decisions": 20,
+      "turn": 1,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Blocklax",
+        "Darkrai Garb"
+      ],
+      "level": "hard",
+      "decisions": 100,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rayeels",
+        "Durant"
+      ],
+      "level": "hard",
+      "decisions": 100,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

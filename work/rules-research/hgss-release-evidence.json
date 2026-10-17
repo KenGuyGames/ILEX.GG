@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5",
+  "hgssPrintings": 605,
+  "printedAttacks": 809,
+  "focusedInteractions": 32,
+  "boundedRollouts": 16,
+  "decisions": 2014,
+  "completedWithinLimit": 4,
+  "scope": "Holon Phantoms onward through Call of Legends; Unlimited deferred",
+  "reports": {
+    "hgss-focused-test-report": {
+      "reportSha256": "522964bd40f97752dac37413d91bb6261b641ff151bca6862f33c5fec2a6b629",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "hgss-final-smoke-report": {
+      "reportSha256": "317d363a155c3211cba71aa30d80af984217f11aace537b347ccc43240d58f55",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "hgss-power-audit": {
+      "reportSha256": "949383a031374a7a6baf68977f84c63513038eb11d5eda5b074aec8e491e4693",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "hgss-trainer-audit": {
+      "reportSha256": "19f07f2afd30e3192e828695e356d5974dcc3be3bd5a85414d3e337d44c0b313",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "hgss-match-audit": {
+      "reportSha256": "7b4ae7d1b523b03f9df5cb22edb7ee0e6dfc11726b30bd641746dd66a99b5aef",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "dp-focused-test-report": {
+      "reportSha256": "07fe4293b751821c96e2d865e6ad952f09a32d0070d276af3eed65418e0d6e0c",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "ex-focused-test-report": {
+      "reportSha256": "1f060b0a7148b06dc3712b721df993bf5bdce3fb161ea3fab900e02dca2ba749",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "wotc-focused-test-report": {
+      "reportSha256": "6e4893d4cf94e1a9350b1112c54fec6d9f86aec2b729a9dab3d577f1b9305a66",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "bot-test-report": {
+      "reportSha256": "0554237f0e297017eccd768fef375f60e92f34088cac8889fe0132b1dd49f704",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    },
+    "undo-test-report": {
+      "reportSha256": "736b72f2a038ca0510bcf9df72215aaa2b9ab695d7d295e3e20011b228f631d3",
+      "engineSha256": "38d3544b122a9bf860ac991c80010b5c21eb2b2d014c76db0499665c529c5fd5"
+    }
+  },
+  "limits": "Finite tests do not prove all board states. Rollouts are capped at 150 decisions. WOTC uses focused regressions; older full-era sweeps remain baseline evidence.",
+  "release": {
+    "version": "1.9.0",
+    "passed": true,
+    "nativeProfile": "v51 fresh/restored",
+    "compactBytes": 206897699,
+    "offlineBytes": 2774020824,
+    "verifiedScans": 23736,
+    "verifiedSourceFiles": 710,
+    "archivesCrcPassed": true
+  }
+}

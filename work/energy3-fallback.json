@@ -1,0 +1,14 @@
+{
+  "tk-sm-r-3": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-3.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-3",
+    "verifiedIdentity": {
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-3",
+      "name": "Lightning Energy",
+      "set": "SM Trainer Kit Alolan Raichu",
+      "number": "3/30",
+      "visualCheck": "Downloaded scan visibly displays 3/30; 253x359 PNG verified by Pillow."
+    }
+  }
+}

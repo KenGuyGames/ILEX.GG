@@ -14,14 +14,14 @@ function limitlessPrintingAllowed(id,card,format,pool){
   if(format.allowBasicEnergy&&card.category==='Energy'&&card.energyType==='Normal'&&(format.allowedBasicEnergyTypes||[]).some(type=>card.name.replace(/^Basic /,'')===type+' Energy'))return true;
   if(pool.some(x=>id.startsWith(x))||(format.allowedPrintingIds||[]).includes(id))return true;
   if(card.equivalentCardId&&pool.some(x=>card.equivalentCardId.startsWith(x)))return true;
-  if(typeof cardMetadata==='undefined'||!Object.keys(cardMetadata).length)return false;
+  if(typeof cardMetadata==='undefined')return false;
   const clean=value=>String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase();
   const trainerName=c=>clean(String(c.name).replace(/^(Professor.s Research)\s*\(.*\)$/,'$1').replace(/^Prof\. Oak/,"Professor Oak"));
   const signature=c=>c.category==='Trainer'?JSON.stringify([trainerName(c),c.category,/ACE SPEC/i.test(c.effect||'')]):c.category==='Energy'?JSON.stringify([clean(c.name),c.category,c.energyType]):JSON.stringify([clean(c.name),c.category,c.stage,c.hp,c.types,(c.attacks||[]).map(a=>[clean(a.name),a.cost]),(c.abilities||[]).map(a=>clean(a.name))]);
-  let cache=limitlessPoolCache.get(format);
-  if(!cache||cache.sets!==format.sets){
+  const allowedKey=JSON.stringify(format.allowedPrintingIds||[]);let cache=limitlessPoolCache.get(format);
+  if(!cache||cache.sets!==format.sets||cache.metadata!==cardMetadata||cache.allowedKey!==allowedKey){
     const allowed=Object.entries(cardMetadata).filter(([key])=>pool.some(x=>key.startsWith(x))||(format.allowedPrintingIds||[]).includes(key)).map(([,c])=>c);
-    cache={sets:format.sets,signatures:new Set(allowed.map(signature)),basic:new Set(allowed.filter(c=>c.category==='Energy'&&c.energyType==='Normal').map(c=>clean(c.name)))};
+    cache={sets:format.sets,metadata:cardMetadata,allowedKey,signatures:new Set(allowed.map(signature)),basic:new Set(allowed.filter(c=>c.category==='Energy'&&c.energyType==='Normal').map(c=>clean(c.name)))};
     limitlessPoolCache.set(format,cache);
   }
   if(format.allowBasicEnergy&&card.category==='Energy'&&card.energyType==='Normal'&&cache.basic.has(clean(card.name)))return true;

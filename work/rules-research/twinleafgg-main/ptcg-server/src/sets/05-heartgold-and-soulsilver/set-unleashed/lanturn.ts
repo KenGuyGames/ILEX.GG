@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { GameError, GameMessage, PlayerType, PowerType, State, StateUtils, StoreLike } from '../../../game';
 import { CardType, Stage } from '../../../game/store/card/card-types';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -66,7 +67,7 @@ export class Lanturn extends PokemonCard {
         const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkProvidedEnergyEffect);
         checkProvidedEnergyEffect.energyMap.forEach(energy => {
-          energies += energy.provides.length;
+          energies += BwEnergyUnits.getProvidesUnitCount(energy.provides);
         });
       });
 

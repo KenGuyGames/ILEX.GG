@@ -627,7 +627,7 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
       if (card.tags.includes(CardTag.POKEMON_EX) || card.tags.includes(CardTag.POKEMON_V) || card.tags.includes(CardTag.POKEMON_VSTAR) || card.tags.includes(CardTag.POKEMON_ex) || card.tags.includes(CardTag.POKEMON_GX)) {
         effect.prizeCount += 1;
       }
-      if (card.tags.includes(CardTag.POKEMON_SV_MEGA) || card.tags.includes(CardTag.TAG_TEAM) || card.tags.includes(CardTag.DUAL_LEGEND)) {
+      if (card.tags.includes(CardTag.POKEMON_SV_MEGA) || card.tags.includes(CardTag.TAG_TEAM) || card.tags.includes(CardTag.DUAL_LEGEND) || (card as any)._hgssLegendPrizes===2) {
         effect.prizeCount += 1;
       }
 
@@ -721,6 +721,12 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
 
       if((state.rules as any).dpEraRules){const history=(knockedOutOwner as any)._dpKoHistory||=(([] as any[]));history.push({turn:state.turn,types:(effect as any)._dpKoTypes||card.cardType,byAttack:!!(effect as any)._dpKoByAttack});knockedOutOwner.pokemonKnockedOutByAttackDuringOpponentsLastTurn=history.some((entry:any)=>entry.turn===state.turn&&entry.byAttack);}
       if((effect as any)._dpRetainPokemon)return state;
+      if((effect as any)._hgssRescue){
+        const lost=(effect as any)._dpLostZoneKo||effect.target.marker.hasMarker('LOST_CITY_MARKER');
+        const rescue=()=>MOVE_POKEMON_OFF_BOARD(store,state,effect.target,{pokemonDestination:knockedOutOwner.hand,attachedDestination:(effect as any)._dpLostZoneKo?knockedOutOwner.lostzone:knockedOutOwner.discard,sourceEffect:effect});
+        if(lost)return store.prompt(state,new SelectPrompt(knockedOutOwner.id,GameMessage.CHOOSE_OPTION,['Return Pokemon to hand','Put Pokemon in Lost Zone'],{allowCancel:false}),(choice:number)=>{if(choice===0)rescue();else MOVE_POKEMON_OFF_BOARD(store,state,effect.target,{pokemonDestination:knockedOutOwner.lostzone,attachedDestination:(effect as any)._dpLostZoneKo?knockedOutOwner.lostzone:knockedOutOwner.discard,sourceEffect:effect});});
+        rescue();return state;
+      }
       if((effect as any)._dpLostZoneKo){MOVE_POKEMON_OFF_BOARD(store,state,effect.target,{pokemonDestination:knockedOutOwner.lostzone,attachedDestination:knockedOutOwner.lostzone,sourceEffect:effect});return state;}
       // Handle Lost City marker or PRISM_STAR cards
       if (effect.target.marker.hasMarker('LOST_CITY_MARKER') || card.tags.includes(CardTag.PRISM_STAR)) {
@@ -983,6 +989,7 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
       pokemon: pokemonCard.name,
       card: effect.pokemonCard.name
     });
+    (effect as any)._bwFromHand=effect.player.hand.cards.includes(effect.pokemonCard);
     effect.player.hand.moveCardTo(effect.pokemonCard, effect.target);
     effect.target.pokemonPlayedTurn = state.turn;
     effect.target.marker.markers = [];

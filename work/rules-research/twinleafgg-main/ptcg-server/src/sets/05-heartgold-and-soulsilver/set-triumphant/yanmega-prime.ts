@@ -58,7 +58,7 @@ export class Yanmega extends PokemonCard {
       }
 
       if (player.hand.cards.length === opponent.hand.cards.length) {
-        effect.cost = [];
+        effect.cost = []; (effect as any)._hgssNoAttackCost=true;
       }
       return state;
     }

@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "checks": 9,
+  "scope": "Evolution adjacency and missing intermediates, count precedence, stage ties, Trainer/Energy order, custom/cyclic metadata, immutability"
+}

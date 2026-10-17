@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');module.exports=async(win,root)=>{await require('./hgss-self-test.cjs')(win,root);await require('./legend-screenshot-test.cjs')(win,root);};

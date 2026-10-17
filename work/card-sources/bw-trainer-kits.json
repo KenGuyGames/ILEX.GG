@@ -1,0 +1,2063 @@
+[
+  {
+    "id": "tk-bw-e-1",
+    "name": "Lillipup",
+    "number": "1",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Pickup",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "Put an Item card from your discard pile into your hand."
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-1",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-10",
+    "name": "Fighting Energy",
+    "number": "10",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-10",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-11",
+    "name": "Timburr",
+    "number": "11",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Pound",
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-11",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-12",
+    "name": "Audino",
+    "number": "12",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "80",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Doubleslap",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "30x",
+        "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-12",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-13",
+    "name": "Drilbur",
+    "number": "13",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Hone Claws",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "During your next turn, each of this Pokémon's attacks does 30 more damage (before applying Weakness and Ressistance)."
+      },
+      {
+        "name": "Scratch",
+        "cost": [
+          "Fighting"
+        ],
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Lightning",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-13",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-14",
+    "name": "Gurdurr",
+    "number": "14",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Timburr",
+    "attacks": [
+      {
+        "name": "Bulk Up",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "During your next turn, each of this Pokémon's attacks does 20 more damage (before applying Weakness and Resistance)."
+      },
+      {
+        "name": "Pound",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "damage": "60",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-14",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-15",
+    "name": "Potion",
+    "number": "15",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Heal 30 damage from 1 of your Pokémon."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-15",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-16",
+    "name": "PlusPower",
+    "number": "16",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "During this turn, your Pokémon's attacks do 10 more damage to the Active Pokémon (before applying Weakness and Resistance)."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-16",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-17",
+    "name": "Excadrill",
+    "number": "17",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "110",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Drilbur",
+    "attacks": [
+      {
+        "name": "Metal Claw",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Drill Run",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+        "damage": "80",
+        "text": "Discard an Energy attached to the Defending Pokémon."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Lightning",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-17",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-18",
+    "name": "Audino",
+    "number": "18",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "80",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Doubleslap",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "30x",
+        "text": "Flip 2 coins. This attack does 30 damage times the number of heads."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-18",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-19",
+    "name": "Herdier",
+    "number": "19",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Lillipup",
+    "attacks": [
+      {
+        "name": "Collect",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "Draw 3 cards."
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "50",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-19",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-2",
+    "name": "Fighting Energy",
+    "number": "2",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-2",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-20",
+    "name": "Fighting Energy",
+    "number": "20",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-20",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-21",
+    "name": "Energy Search",
+    "number": "21",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Search your deck for a basic Energy card, reveal it, and put it into your hand. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-21",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-22",
+    "name": "Fighting Energy",
+    "number": "22",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-22",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-23",
+    "name": "Potion",
+    "number": "23",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Heal 30 damage from 1 of your Pokémon."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-23",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-24",
+    "name": "Pokémon Communication",
+    "number": "24",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Reveal a Pokémon in your hand and put it on top of your deck. If you do, search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-24",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-25",
+    "name": "Drilbur",
+    "number": "25",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Hone Claws",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "During your next turn, each of this Pokémon's attacks does 30 more damage (before applying Weakness and Ressistance)."
+      },
+      {
+        "name": "Scratch",
+        "cost": [
+          "Fighting"
+        ],
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Lightning",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-25",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-26",
+    "name": "Fighting Energy",
+    "number": "26",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-26",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-27",
+    "name": "Lillipup",
+    "number": "27",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Pickup",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "Put an Item card from your discard pile into your hand."
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-27",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-28",
+    "name": "Fighting Energy",
+    "number": "28",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-28",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-29",
+    "name": "Timburr",
+    "number": "29",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "attacks": [
+      {
+        "name": "Pound",
+        "cost": [
+          "Fighting",
+          "Fighting"
+        ],
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-29",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-3",
+    "name": "Fighting Energy",
+    "number": "3",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-3",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-30",
+    "name": "Excadrill",
+    "number": "30",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "110",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Drilbur",
+    "attacks": [
+      {
+        "name": "Metal Claw",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Drill Run",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Fighting"
+        ],
+        "damage": "80",
+        "text": "Discard an Energy attached to the Defending Pokémon."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Lightning",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-30",
+      "updated": "2026-08-15T23:28:40+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-4",
+    "name": "Energy Switch",
+    "number": "4",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Move a basic Energy from 1 of your Pokémon to another of your Pokémon."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-4",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-5",
+    "name": "Fighting Energy",
+    "number": "5",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-5",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-6",
+    "name": "Fighting Energy",
+    "number": "6",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-6",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-7",
+    "name": "Fighting Energy",
+    "number": "7",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-7",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-8",
+    "name": "Fighting Energy",
+    "number": "8",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-8",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-e-9",
+    "name": "Fighting Energy",
+    "number": "9",
+    "set": {
+      "id": "tk-bw-e"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-e-9",
+      "updated": "2026-08-03T19:19:05+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-1",
+    "name": "Purrloin",
+    "number": "1",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [
+      {
+        "name": "Scratch",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Slash",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-1",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-10",
+    "name": "Darkness Energy",
+    "number": "10",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-10",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-11",
+    "name": "PlusPower",
+    "number": "11",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "During this turn, your Pokémon's attacks do 10 more damage to the Active Pokémon (before applying Weakness and Resistance)."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-11",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-12",
+    "name": "Patrat",
+    "number": "12",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-12",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-13",
+    "name": "Zorua",
+    "number": "13",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [
+      {
+        "name": "Lunge",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-13",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-14",
+    "name": "Pidove",
+    "number": "14",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-14",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-15",
+    "name": "Tranquill",
+    "number": "15",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "70",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Pidove",
+    "attacks": [
+      {
+        "name": "Gust",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 30 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-15",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-16",
+    "name": "Energy Retrieval",
+    "number": "16",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Put 2 basic Energy cards from your discard pile into your hand."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-16",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-17",
+    "name": "Zoroark",
+    "number": "17",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "100",
+    "types": [
+      "Darkness"
+    ],
+    "evolvesFrom": "Zorua",
+    "attacks": [
+      {
+        "name": "Fury Swipes",
+        "cost": [
+          "Darkness"
+        ],
+        "damage": "20×",
+        "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+      },
+      {
+        "name": "Night Daze",
+        "cost": [
+          "Darkness",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "80",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-17",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-18",
+    "name": "Pokémon Communication",
+    "number": "18",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Reveal a Pokémon in your hand and put it on top of your deck. If you do, search your deck for a Pokémon, reveal it, and put it into your hand. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-18",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-19",
+    "name": "Minccino",
+    "number": "19",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Tail Slap",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10x",
+        "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-19",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-2",
+    "name": "Watchog",
+    "number": "2",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Patrat",
+    "attacks": [
+      {
+        "name": "Confuse Ray",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "The Defending Pokémon is now Confused."
+      },
+      {
+        "name": "Hyper Fang",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "60",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-2",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-20",
+    "name": "Darkness Energy",
+    "number": "20",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-20",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-21",
+    "name": "Pidove",
+    "number": "21",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-21",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-22",
+    "name": "Darkness Energy",
+    "number": "22",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-22",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-23",
+    "name": "Zorua",
+    "number": "23",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [
+      {
+        "name": "Lunge",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-23",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-24",
+    "name": "Darkness Energy",
+    "number": "24",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-24",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-25",
+    "name": "Purrloin",
+    "number": "25",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [
+      {
+        "name": "Scratch",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Slash",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-25",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-26",
+    "name": "Darkness Energy",
+    "number": "26",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-26",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-27",
+    "name": "Energy Search",
+    "number": "27",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "rules": [
+      "Search your deck for a basic Energy card, reveal it, and put it into your hand. Shuffle your deck afterward."
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-27",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-28",
+    "name": "Darkness Energy",
+    "number": "28",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-28",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-29",
+    "name": "Patrat",
+    "number": "29",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-29",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-3",
+    "name": "Darkness Energy",
+    "number": "3",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-3",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-30",
+    "name": "Zoroark",
+    "number": "30",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "100",
+    "types": [
+      "Darkness"
+    ],
+    "evolvesFrom": "Zorua",
+    "attacks": [
+      {
+        "name": "Fury Swipes",
+        "cost": [
+          "Darkness"
+        ],
+        "damage": "20×",
+        "text": "Flip 3 coins. This attack does 20 damage times the number of heads."
+      },
+      {
+        "name": "Night Daze",
+        "cost": [
+          "Darkness",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "80",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Psychic",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-30",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-4",
+    "name": "Minccino",
+    "number": "4",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Tail Slap",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10x",
+        "text": "Flip 2 coins. This attack does 10 damage times the number of heads."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-4",
+      "updated": "2026-08-14T19:27:26+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-5",
+    "name": "Darkness Energy",
+    "number": "5",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-5",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-6",
+    "name": "Darkness Energy",
+    "number": "6",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-6",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-7",
+    "name": "Darkness Energy",
+    "number": "7",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-7",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-8",
+    "name": "Darkness Energy",
+    "number": "8",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-8",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  },
+  {
+    "id": "tk-bw-z-9",
+    "name": "Darkness Energy",
+    "number": "9",
+    "set": {
+      "id": "tk-bw-z"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Darkness"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-bw-z-9",
+      "updated": "2026-08-03T19:22:28+01:00"
+    }
+  }
+]

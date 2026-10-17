@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59",
+  "engineUnchanged": true,
+  "nativeProfile": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-bw-tests-v60",
+  "freshAndRestored": true,
+  "focused": {
+    "passed": true,
+    "checks": 9,
+    "scope": "Evolution adjacency and missing intermediates, count precedence, stage ties, Trainer/Energy order, custom/cyclic metadata, immutability"
+  },
+  "native": {
+    "passed": true,
+    "checks": [
+      "Rendered evolution lines remain together in copy-count order",
+      "Rendered Trainers use Supporter Item Tool Stadium order",
+      "Rendered Basic Energy precedes Special Energy",
+      "Rendering leaves deck contents and saved insertion order unchanged",
+      "Sorted printings retain quantity controls and copy badges"
+    ]
+  },
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 209192408,
+      "crcAndEmbeddedFilesVerified": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2776330581,
+      "crcAndEmbeddedFilesVerified": true
+    }
+  ],
+  "verifiedUtc": "2026-10-16T14:13:58.775289+00:00"
+}

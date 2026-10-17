@@ -35,6 +35,7 @@ export class Minccino extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     // Call for Family - search for a Basic Pokémon and put onto bench
     if (WAS_ATTACK_USED(effect, 0, this)) {
+      if (!effect.player.bench.some(slot => slot.cards.length === 0)) return state;
       const player = effect.player;
 
       SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(

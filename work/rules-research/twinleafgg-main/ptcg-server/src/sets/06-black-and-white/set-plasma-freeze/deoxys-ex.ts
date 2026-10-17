@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import {
   Attack,
   CardTag,
@@ -73,7 +74,7 @@ export class DeoxysEX extends PokemonCard {
       if (hasPlasmaEnergy) {
         store.reduceEffect(state, checkOpponentEnergy);
         const opponentEnergyCount = checkOpponentEnergy.energyMap.reduce(
-          (left, p) => left + p.provides.length,
+          (left, p) => left + BwEnergyUnits.getProvidesUnitCount(p.provides),
           0,
         );
         effect.damage += opponentEnergyCount * 30;

@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { State, StoreLike } from '../../../game';
@@ -37,6 +38,7 @@ export class Cradily extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
     if (WAS_ATTACK_USED(effect, 0, this)) {
+      if (!effect.player.bench.some(slot => slot.cards.length === 0)) return state;
       const player = effect.player;
 
       // Check attached energy
@@ -44,7 +46,7 @@ export class Cradily extends PokemonCard {
       state = store.reduceEffect(state, checkEnergy);
 
       const totalEnergy = checkEnergy.energyMap.reduce((sum, energy) => {
-        return sum + energy.provides.length;
+        return sum + BwEnergyUnits.getProvidesUnitCount(energy.provides);
       }, 0);
 
       SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(store, state, effect.player, { stage: Stage.STAGE_2 }, { min: 0, max: totalEnergy });

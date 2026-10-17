@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils } from '../../../game';
@@ -44,7 +45,7 @@ export class Kirlia extends PokemonCard {
       const opponentProvidedEnergy = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, opponentProvidedEnergy);
       const opponentEnergyCount = opponentProvidedEnergy.energyMap
-        .reduce((left, p) => left + p.provides.length, 0);
+        .reduce((left, p) => left + BwEnergyUnits.getProvidesUnitCount(p.provides), 0);
 
       effect.damage += opponentEnergyCount * 10;
     }

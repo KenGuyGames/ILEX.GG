@@ -1,3 +1,4 @@
+import {StateUtils as BwEnergyUnits} from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { PowerType, StoreLike, State, StateUtils, PokemonCardList, GameError, GameMessage, ChoosePrizePrompt, ChoosePokemonPrompt, PlayerType, SlotType, EnergyCard } from '../../../game';
@@ -102,7 +103,7 @@ export class Rotom extends PokemonCard {
         let damage = 0;
         targets[0].cards.forEach(c => {
           if (c instanceof EnergyCard) {
-            damage += 20 * c.provides.length;
+            damage += 20 * BwEnergyUnits.getProvidesUnitCount(c.provides);
           }
         });
         DAMAGE_OPPONENT_POKEMON(store, state, effect, damage, targets);

@@ -37,6 +37,7 @@ export class Shaymin extends PokemonCard {
     // Attack 1: Call for Family
     // Ref: set-noble-victories/elgyem-2.ts (Round Up)
     if (WAS_ATTACK_USED(effect, 0, this)) {
+      if (!effect.player.bench.some(slot => slot.cards.length === 0)) return state;
       return SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(
         store,
         state,

@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "version": "1.12.0",
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59",
+  "engineUnchanged": true,
+  "nativeProfile": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-bw-tests-v59",
+  "freshAndRestored": true,
+  "checks": [
+    "Pack navigation and breadcrumb work",
+    "Pack screen restores the full navigation after leaving a match",
+    "Native profile inventory matches validated 103 expansions",
+    "Opening commits exactly one complete Base pack",
+    "Unrevealed DOM contains only card backs and no identity labels",
+    "Hidden pulls do not expose magnifier identities",
+    "Reveal next changes one reveal flag",
+    "Rerendering cannot reroll or add collection duplicates",
+    "Reveal all shows the guaranteed rare with shine decoration",
+    "Rare reveal uses actual shine animation",
+    "Revealed card right-click magnification works",
+    "Collection shows persisted counts and finishes",
+    "Failed save rolls back the whole pack and inventory",
+    "Pack screen omits increased-rate messaging and comparisons",
+    "Automatic reveal preserves card order 0",
+    "Automatic reveal preserves card order 1",
+    "Automatic reveal preserves card order 2",
+    "Automatic reveal turns over exactly one card per interval",
+    "Space opens a new pack",
+    "Holding Space does not open repeated packs",
+    "Space preserves dropdown interaction",
+    "Modal pauses reveals and suppresses pack shortcut",
+    "Leaving pack screen stops pending automatic reveals",
+    "Returning resumes the same saved pack",
+    "EX pack opens with nine cards",
+    "EX pack has a distinct simulated reverse finish",
+    "Modern pack uses two parallel slots and Basic Energy",
+    "Pack opening never modifies decks or saved matches",
+    "Partly revealed pack is saved for restart"
+  ],
+  "packModelChecks": 225,
+  "verifiedScans": 23736,
+  "verifiedSourceFiles": 1941,
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 209190056,
+      "crcAndEmbeddedFilesVerified": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2776328217,
+      "crcAndEmbeddedFilesVerified": true
+    }
+  ],
+  "verifiedUtc": "2026-10-16T14:02:34.042967+00:00"
+}

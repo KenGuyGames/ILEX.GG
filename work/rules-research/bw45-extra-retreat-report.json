@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "engineSha256": "19391308c88b37817c58fe57e856640457cfc1e36765862a87f1ef3dcb64c0a4",
+  "check": "Dark Cloak overrides HGSS Tangled Vines for both player propagation orders",
+  "evidence": "bw45-dark-cloak-check.log",
+  "supplemental": true
+}

@@ -1,0 +1,1880 @@
+[
+  {
+    "id": "tk-hs-g-1",
+    "name": "Totodile",
+    "number": "1",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Gnaw",
+        "cost": [
+          "Water"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Wave Splash",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-1",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-10",
+    "name": "Water Energy",
+    "number": "10",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-10",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-11",
+    "name": "Water Energy",
+    "number": "11",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-11",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-12",
+    "name": "Magikarp",
+    "number": "12",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "30",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Splash",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-12",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-13",
+    "name": "Croconaw",
+    "number": "13",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Totodile",
+    "attacks": [
+      {
+        "name": "Wave Splash",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Big Bite",
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "50",
+        "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-13",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-14",
+    "name": "Totodile",
+    "number": "14",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Gnaw",
+        "cost": [
+          "Water"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Wave Splash",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-14",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-15",
+    "name": "Marill",
+    "number": "15",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Water Splash",
+        "cost": [
+          "Water"
+        ],
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage."
+      },
+      {
+        "name": "Tail Slap",
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-15",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-16",
+    "name": "Water Energy",
+    "number": "16",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-16",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-17",
+    "name": "Croconaw",
+    "number": "17",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Totodile",
+    "attacks": [
+      {
+        "name": "Wave Splash",
+        "cost": [
+          "Water",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": ""
+      },
+      {
+        "name": "Big Bite",
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "50",
+        "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-17",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-18",
+    "name": "Bill",
+    "number": "18",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-18",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-19",
+    "name": "Magikarp",
+    "number": "19",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "30",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Splash",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-19",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-2",
+    "name": "Water Energy",
+    "number": "2",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-2",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-20",
+    "name": "Gyarados",
+    "number": "20",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "130",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Hydro Splash",
+        "cost": [],
+        "damage": "50",
+        "text": ""
+      },
+      {
+        "name": "Hyper Beam",
+        "cost": [],
+        "damage": "80",
+        "text": "Discard an Energy card attached to the Defending Pokémon."
+      }
+    ],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-20",
+      "updated": "2026-07-26T10:18:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-21",
+    "name": "Energy Switch",
+    "number": "21",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-21",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-22",
+    "name": "Pokémon Communication",
+    "number": "22",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-22",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-23",
+    "name": "Poké Ball",
+    "number": "23",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-23",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-24",
+    "name": "Marill",
+    "number": "24",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Water"
+    ],
+    "attacks": [
+      {
+        "name": "Water Splash",
+        "cost": [
+          "Water"
+        ],
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 damage plus 10 more damage."
+      },
+      {
+        "name": "Tail Slap",
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-24",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-25",
+    "name": "Professor Elm's Training Method",
+    "number": "25",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-25",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-26",
+    "name": "Water Energy",
+    "number": "26",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-26",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-27",
+    "name": "Pokémon Communication",
+    "number": "27",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-27",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-28",
+    "name": "Switch",
+    "number": "28",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-28",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-29",
+    "name": "Water Energy",
+    "number": "29",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-29",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-3",
+    "name": "Water Energy",
+    "number": "3",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-3",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-30",
+    "name": "Gyarados",
+    "number": "30",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "130",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Magikarp",
+    "attacks": [
+      {
+        "name": "Hydro Splash",
+        "cost": [
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "50",
+        "text": ""
+      },
+      {
+        "name": "Hyper Beam",
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "80",
+        "text": "Discard an Energy card attached to the Defending Pokémon."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless",
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-30",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-4",
+    "name": "Water Energy",
+    "number": "4",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-4",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-5",
+    "name": "Bill",
+    "number": "5",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-5",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-6",
+    "name": "Water Energy",
+    "number": "6",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-6",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-7",
+    "name": "Water Energy",
+    "number": "7",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-7",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-8",
+    "name": "Water Energy",
+    "number": "8",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-8",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-g-9",
+    "name": "Water Energy",
+    "number": "9",
+    "set": {
+      "id": "tk-hs-g"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "types": [
+      "Water"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-g-9",
+      "updated": "2026-08-27T17:16:12+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-1",
+    "name": "Moomoo Milk",
+    "number": "1",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-1",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-10",
+    "name": "Lightning Energy",
+    "number": "10",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-10",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-11",
+    "name": "Lightning Energy",
+    "number": "11",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-11",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-12",
+    "name": "Meowth",
+    "number": "12",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Pay Day",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": "Draw a card."
+      },
+      {
+        "name": "Dig Claws",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-12",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-13",
+    "name": "Mareep",
+    "number": "13",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "40",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Static Electricity",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "Search your deck for a number of Lightning Energy cards up to the number of Mareep in play (both yours and your opponent's) and attach them to Mareep. Shuffle your deck afterward."
+      },
+      {
+        "name": "Ram",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-13",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-14",
+    "name": "Lightning Energy",
+    "number": "14",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-14",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-15",
+    "name": "Lightning Energy",
+    "number": "15",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-15",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-16",
+    "name": "Pikachu",
+    "number": "16",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Tail Slap",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ],
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-16",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-17",
+    "name": "Flaaffy",
+    "number": "17",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesFrom": "Mareep",
+    "attacks": [
+      {
+        "name": "Thunder Spear",
+        "cost": [
+          "Lightning"
+        ],
+        "damage": "",
+        "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Thundershock",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "40",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-17",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-18",
+    "name": "Lightning Energy",
+    "number": "18",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-18",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-19",
+    "name": "Raichu",
+    "number": "19",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesFrom": "Pikachu",
+    "attacks": [
+      {
+        "name": "Iron Tail",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "30×",
+        "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+        "damage": "100",
+        "text": "Discard all Energy attached to Raichu."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-19",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-2",
+    "name": "Pikachu",
+    "number": "2",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Tail Slap",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ],
+        "damage": "20+",
+        "text": "Flip a coin. If heads, this attack does 20 damage plus 10 more damage."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-2",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-20",
+    "name": "Mareep",
+    "number": "20",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "40",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Static Electricity",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "",
+        "text": "Search your deck for a number of Lightning Energy cards up to the number of Mareep in play (both yours and your opponent's) and attach them to Mareep. Shuffle your deck afterward."
+      },
+      {
+        "name": "Ram",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-20",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-21",
+    "name": "Copycat",
+    "number": "21",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-21",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-22",
+    "name": "Pokémon Collector",
+    "number": "22",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-22",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-23",
+    "name": "Lightning Energy",
+    "number": "23",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-23",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-24",
+    "name": "Switch",
+    "number": "24",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-24",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-25",
+    "name": "Poké Ball",
+    "number": "25",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-25",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-26",
+    "name": "Moomoo Milk",
+    "number": "26",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-26",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-27",
+    "name": "Pokémon Collector",
+    "number": "27",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-27",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-28",
+    "name": "Lightning Energy",
+    "number": "28",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-28",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-29",
+    "name": "Energy Switch",
+    "number": "29",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-29",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-3",
+    "name": "Flaaffy",
+    "number": "3",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesFrom": "Mareep",
+    "attacks": [
+      {
+        "name": "Thunder Spear",
+        "cost": [
+          "Lightning"
+        ],
+        "damage": "",
+        "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Thundershock",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "40",
+        "text": "Flip a coin. If heads, the Defending Pokémon is now Paralyzed."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-3",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-30",
+    "name": "Raichu",
+    "number": "30",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesFrom": "Pikachu",
+    "attacks": [
+      {
+        "name": "Iron Tail",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "30×",
+        "text": "Flip a coin until you get tails. This attack does 30 damage times the number of heads."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          "Lightning",
+          "Lightning"
+        ],
+        "damage": "100",
+        "text": "Discard all Energy attached to Raichu."
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-30",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-4",
+    "name": "Meowth",
+    "number": "4",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Pay Day",
+        "cost": [
+          "Colorless"
+        ],
+        "damage": "10",
+        "text": "Draw a card."
+      },
+      {
+        "name": "Dig Claws",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "abilities": [],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-4",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-5",
+    "name": "Lightning Energy",
+    "number": "5",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-5",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-6",
+    "name": "Lightning Energy",
+    "number": "6",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-6",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-7",
+    "name": "Lightning Energy",
+    "number": "7",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-7",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-8",
+    "name": "Lightning Energy",
+    "number": "8",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-8",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  },
+  {
+    "id": "tk-hs-r-9",
+    "name": "Lightning Energy",
+    "number": "9",
+    "set": {
+      "id": "tk-hs-r"
+    },
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "attacks": [],
+    "abilities": [],
+    "retreatCost": [],
+    "rarity": "None",
+    "_source": {
+      "url": "https://api.tcgdex.net/v2/en/cards/tk-hs-r-9",
+      "updated": "2026-08-27T17:17:00+01:00"
+    }
+  }
+]

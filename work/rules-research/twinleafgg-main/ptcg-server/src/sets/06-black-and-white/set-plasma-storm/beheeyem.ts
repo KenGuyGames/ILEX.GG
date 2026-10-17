@@ -99,7 +99,7 @@ export class Beheeyem extends PokemonCard {
       }
 
       const maxAllowedDamage: DamageMap[] = [
-        { target: opponentActiveTarget, damage: countersToMove * 10 },
+        { target: opponentActiveTarget, damage: opponent.active.damage + countersToMove * 10 },
       ];
       return store.prompt(
         state,

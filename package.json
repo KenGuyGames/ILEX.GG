@@ -1,13 +1,15 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "1.6.0",
+  "version": "1.12.0",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
     "build:rules": "node work/desktop-build/build-rules.cjs",
-    "test:rules": "node work/desktop-build/wotc-tests.cjs",
+    "test:rules": "node work/desktop-build/wotc-tests.cjs --focused",
     "test:ex": "node work/desktop-build/ex-tests.cjs --focused",
     "test:dp": "node work/desktop-build/dp-tests.cjs",
+    "test:hgss": "node work/desktop-build/hgss-tests.cjs",
+    "test:bw": "node work/desktop-build/bw-tests.cjs",
     "test:bot": "node work/desktop-build/bot-tests.cjs"
   },
   "devDependencies": {

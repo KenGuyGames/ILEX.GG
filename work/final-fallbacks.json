@@ -1,0 +1,276 @@
+{
+  "tk-hs-g-22": {
+    "url": "https://img.tcgscreener.com/cards/tk4b-22.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk4b-22.png",
+    "verifiedIdentity": {
+      "name": "PokÃ©mon Communication",
+      "number": "22/30",
+      "page": "https://tcgscreener.com/pokemon/hgss-trainer-kit-gyarados/pok-mon-communication-22",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        598,
+        823
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-hs-g-22.png"
+  },
+  "tk-hs-g-27": {
+    "url": "https://img.tcgscreener.com/cards/tk4b-27.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk4b-27.png",
+    "verifiedIdentity": {
+      "name": "PokÃ©mon Communication",
+      "number": "27/30",
+      "page": "https://tcgscreener.com/pokemon/hgss-trainer-kit-gyarados/pok-mon-communication-27",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        598,
+        823
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-hs-g-27.png"
+  },
+  "tk-sm-l-5": {
+    "url": "https://img.tcgscreener.com/cards/tk10a-5.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10a-5.png",
+    "verifiedIdentity": {
+      "name": "Fighting Energy",
+      "number": "5/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-lycanroc/fighting-energy-5",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-l-5.png"
+  },
+  "tk-sm-r-1": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-1.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-1.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "1/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-1",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-1.png"
+  },
+  "tk-sm-r-10": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-10.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-10.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "10/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-10-2",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        320,
+        448
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-10.png"
+  },
+  "tk-sm-r-12": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-12.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-12.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "12/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-12-2",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-12.png"
+  },
+  "tk-sm-r-2": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-2.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-2.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "2/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-2",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-2.png"
+  },
+  "tk-sm-r-20": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-20.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-20.png",
+    "verifiedIdentity": {
+      "name": "Psychic Energy",
+      "number": "20/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/psychic-energy-20",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-20.png"
+  },
+  "tk-sm-r-24": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-24.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-24.png",
+    "verifiedIdentity": {
+      "name": "Psychic Energy",
+      "number": "24/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/psychic-energy-24",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-24.png"
+  },
+  "tk-sm-r-27": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-27.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-27.png",
+    "verifiedIdentity": {
+      "name": "Psychic Energy",
+      "number": "27/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/psychic-energy-27",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-27.png"
+  },
+  "tk-sm-r-28": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-28.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-28.png",
+    "verifiedIdentity": {
+      "name": "Psychic Energy",
+      "number": "28/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/psychic-energy-28",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-28.png"
+  },
+  "tk-sm-r-3": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-3.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-3.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "3/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-3",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-3.png"
+  },
+  "tk-sm-r-5": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-5.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-5.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "5/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-5",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-5.png"
+  },
+  "tk-sm-r-7": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-7.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-7.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "7/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-7",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-7.png"
+  },
+  "tk-sm-r-8": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-8.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-8.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "8/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-8",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-8.png"
+  },
+  "tk-sm-r-9": {
+    "url": "https://img.tcgscreener.com/cards/tk10b-9.png",
+    "source": "TCGScreener",
+    "sourceCardId": "tk10b-9.png",
+    "verifiedIdentity": {
+      "name": "Lightning Energy",
+      "number": "9/30",
+      "page": "https://tcgscreener.com/pokemon/sm-trainer-kit-alolan-raichu/lightning-energy-9",
+      "visualVerification": "Downloaded image visibly matches exact card name, kit symbol, and printed collector number.",
+      "imageSize": [
+        253,
+        359
+      ]
+    },
+    "localPath": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\final-kit\\tk-sm-r-9.png"
+  },
+  "mfb-33": {
+    "url": "https://static.dextcg.com/cards/mfbb%2F10.png",
+    "source": "Dex for TCG Collectors",
+    "sourceCardId": "mfbb-10",
+    "verifiedIdentity": "My First Battle Bulbasaur Potion, set-specific Bulbasaur mark; synthetic aggregate #33"
+  },
+  "mfb-34": {
+    "url": "https://static.dextcg.com/cards/mfbb%2F11.png",
+    "source": "Dex for TCG Collectors",
+    "sourceCardId": "mfbb-11",
+    "verifiedIdentity": "My First Battle Bulbasaur Switch, set-specific Bulbasaur mark; synthetic aggregate #34"
+  },
+  "svp-500": {
+    "url": "https://www.pokebeach.com/news/2024/08/Terapagos-and-Friends-Promo.jpg",
+    "source": "PokéBeach / Grand Adventure promotional image",
+    "sourceCardId": "Terapagos-and-Friends-Promo",
+    "verifiedIdentity": "Visually verified English unnumbered Terapagos & Friends jumbo, HP90, attack100x, illustrator Yamazaki Rei"
+  }
+}
