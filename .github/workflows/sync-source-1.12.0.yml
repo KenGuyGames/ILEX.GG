@@ -1,0 +1,79 @@
+name: Sync verified ILEX.GG 1.12.0 source
+on:
+  push:
+    paths:
+      - .github/workflows/sync-source-1.12.0.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify and unpack source
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib, json, subprocess
+          root = Path.cwd().resolve()
+          archives = {
+            "ILEX.GG-source-1.12.0-part1.zip": "7f642ba21c8acf881ab636d58fee91c462790cfcdce6ae082c5cfd0103a71966",
+            "ILEX.GG-source-1.12.0-part2.zip": "32562fd7d9a985472db89577e874e9998d5ee0f62b8a1d014a8507a7664a3ee2",
+            "ILEX.GG-source-1.12.0-part3.zip": "555728ed823f809b72a63821ca9ac73b22a6f38338227d61e09a7ccdc2eaf1b0",
+            "ILEX.GG-source-1.12.0-part4.zip": "d2a84ee0a90685c3a6755d824f7a7b70c29f577c3a46164c70f1246b567a0e52",
+            "ILEX.GG-source-1.12.0-part5.zip": "4834e1d3ee8789eef5ea13b85cf1d8a6ac1619d7f1008923be576238509b8369",
+            "ILEX.GG-source-1.12.0-part6.zip": "1c3b5757f8f630e34075d875c353126640558f99e75c9e68585d28cb768bc3bd",
+            "ILEX.GG-source-1.12.0-part7.zip": "88a25229b9372ad0a2a00696cc112b99804a7843d25444ea041c86d276b4efb8",
+          }
+          for name, expected in archives.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+              with ZipFile(name) as archive:
+                  for member in archive.infolist():
+                      target = (root / member.filename).resolve()
+                      assert target.is_relative_to(root) and ".git" not in target.relative_to(root).parts
+                  archive.extractall(root)
+          manifest = json.loads(Path("verification/source-manifest-1.12.0.json").read_text())
+          files = manifest["files"]
+          managed = ("work/desktop/", "work/desktop-build/", "work/android-build/", "docs/screenshots/", "work/rules-research/twinleafgg-main/ptcg-server/", "work/card-sources/pokemon-tcg-data-master/")
+          for name in subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0"):
+              if name and name.startswith(managed) and name not in files:
+                  Path(name).unlink(missing_ok=True)
+          for name in Path("work/rules-research").glob("wotc-pending-*.txt"):
+              if name.as_posix() not in files:
+                  name.unlink()
+          for name, expected in files.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+          assert json.loads(Path("work/desktop/package.json").read_text())["version"] == "1.12.0"
+          for era, count in [("wotc",1793),("ex",1857),("dp",1558),("hgss",605),("bw",1521)]:
+              c = json.loads(Path(f"work/desktop/ui/{era}-coverage.json").read_text())
+              assert c["available"] == count and c["pending"] == 0
+          print(f"Verified {len(files)} source files against the release snapshot.")
+      - name: Install locked build tools
+        run: npm ci --prefix work/desktop-build
+      - name: Rebuild release rules engine
+        run: npm run build:rules
+      - name: Verify rebuilt engine and source
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib, json
+          m = json.loads(Path("verification/source-manifest-1.12.0.json").read_text())
+          for name, expected in m["files"].items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+          print("Rebuilt engine and all source files match verified ILEX.GG 1.12.0.")
+      - name: Commit synchronized source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git rm --ignore-unmatch ILEX.GG-source.zip ILEX.GG-source-1.12.0-*.zip
+          git rm .github/workflows/sync-source-1.12.0.yml
+          git add -A
+          git commit -m "Synchronize source with verified ILEX.GG 1.12.0 complete Windows and Android release with complete BW era"
+          git push origin HEAD:main
+
+          git tag v1.12.0-build-2026-10-17
+          git push origin v1.12.0-build-2026-10-17
+
+
