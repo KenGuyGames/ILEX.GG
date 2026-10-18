@@ -1,0 +1,30 @@
+name: Verify published 1.15.0 downloads
+on:
+  push:
+    paths:
+      - .github/workflows/verify-downloads-1.15.0.yml
+permissions:
+  contents: read
+jobs:
+  downloads:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Verify release metadata and fresh asset download hashes
+        shell: python
+        run: |
+          import urllib.request,json,hashlib
+          expected={"ILEX.GG-Windows.zip":"8f48f852b639e92e246e78c43aa0393c1a20e33418482e62c380dbd07c293640","ILEX.GG-Android.apk":"06e91a75991cfa07a7b064291ca6c3a271dfc8deae6fb0a1fa253b6510691256","Android-mobile-verification.json":"7657193f714179febf1bd036798736c4128984a448f4a57ed671e334c990b84e","desktop-verification-1.15.0.json":"92def5d86165f809c3bd9fdc7f36808b484363069c6cfc465c20ba763d54a7eb","ILEX.GG-Android-build.json":"052ed70ffb24774968c496b90c5e1ba8749178bb0df696c462446bb0b3f20071","ILEX.GG-Android-Install.md":"1b2fa9fc0471f23e8eb173e60ca2226fcd462e21da57f889d253e7798d2ec2e6","ILEX.GG-Android-verification.json":"dc05e1b5d348155b6904a0a57e641b5a8b21ee2b2330d313b367f22e1239f1be","SHA256SUMS.txt":"0884cb554a1aa7353a9e72512ed1ef88a779c0b9fdc6cd177266f2b9274cedea"}
+          request=urllib.request.Request("https://api.github.com/repos/KenGuyGames/ILEX.GG/releases/tags/v1.15.0-build-2026-10-18",headers={"User-Agent":"ILEX-release-verification"})
+          release=json.load(urllib.request.urlopen(request))
+          assert not release["draft"] and not release["prerelease"]
+          assert len(release["assets"])==len(expected)
+          for a in release["assets"]:
+              name=a["name"]
+              assert a["digest"]=="sha256:"+expected[name],name+" GitHub digest"
+              digest=hashlib.sha256()
+              with urllib.request.urlopen(a["browser_download_url"]) as response:
+                  while chunk:=response.read(1024*1024):digest.update(chunk)
+              assert digest.hexdigest()==expected[name],name+" download hash"
+              print("PASS uploaded and freshly downloaded "+name,flush=True)
+          print("PASS all "+str(len(expected))+" published assets")
