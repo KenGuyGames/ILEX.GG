@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "reason": "Exclude between-turn recovery flips from during-turn force-tails effects; repeat complete scoped validation",
+  "results": [
+    {
+      "name": "branch-0",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "smoke-1",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "smoke-0",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "smoke-2",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "power",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "focused",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "trainer",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "team-smoke",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "branch-1",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "match-0",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "match-1",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "branch-2",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "shared",
+      "passed": true,
+      "code": 0
+    },
+    {
+      "name": "match-2",
+      "passed": true,
+      "code": 0
+    }
+  ]
+}

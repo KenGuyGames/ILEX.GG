@@ -155,6 +155,7 @@ export function MEGA_EVOLUTION_END_TURN(
   effect: Effect,
   card: PokemonCard,
 ): void {
+  if((state.rules as any).xyEraRules)return; // Commit and validate evolution first.
   if (effect instanceof PlayPokemonEffect && effect.pokemonCard === card
     && !effect.skipMegaEvolutionEndTurn) {
     store.reduceEffect(state, new EndTurnEffect(effect.player));

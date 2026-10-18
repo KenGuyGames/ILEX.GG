@@ -1,0 +1,6524 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "sm1-12",
+      "power": "Feather Arrow",
+      "bench": false
+    },
+    {
+      "id": "sm1-12",
+      "power": "Feather Arrow",
+      "bench": true
+    },
+    {
+      "id": "sm1-17",
+      "power": "Illuminate",
+      "bench": false
+    },
+    {
+      "id": "sm1-17",
+      "power": "Illuminate",
+      "bench": true
+    },
+    {
+      "id": "sm1-44",
+      "power": "Cowardice",
+      "bench": false
+    },
+    {
+      "id": "sm1-44",
+      "power": "Cowardice",
+      "bench": true
+    },
+    {
+      "id": "sm1-52",
+      "power": "Strong Charge",
+      "bench": false
+    },
+    {
+      "id": "sm1-52",
+      "power": "Strong Charge",
+      "bench": true
+    },
+    {
+      "id": "sm1-66",
+      "power": "Psychic Transfer",
+      "bench": false
+    },
+    {
+      "id": "sm1-66",
+      "power": "Psychic Transfer",
+      "bench": true
+    },
+    {
+      "id": "sm1-89",
+      "power": "Ultra Road",
+      "bench": false
+    },
+    {
+      "id": "sm1-89",
+      "power": "Ultra Road",
+      "bench": true
+    },
+    {
+      "id": "sm1-93",
+      "power": "Curative Pollen",
+      "bench": false
+    },
+    {
+      "id": "sm1-93",
+      "power": "Curative Pollen",
+      "bench": true
+    },
+    {
+      "id": "sm1-110",
+      "power": "Search the Premises",
+      "bench": false
+    },
+    {
+      "id": "sm1-110",
+      "power": "Search the Premises",
+      "bench": true
+    },
+    {
+      "id": "sm1-113",
+      "power": "Instruct",
+      "bench": false
+    },
+    {
+      "id": "sm1-113",
+      "power": "Instruct",
+      "bench": true
+    },
+    {
+      "id": "sm1-141",
+      "power": "Psychic Transfer",
+      "bench": false
+    },
+    {
+      "id": "sm1-141",
+      "power": "Psychic Transfer",
+      "bench": true
+    },
+    {
+      "id": "sm1-143",
+      "power": "Ultra Road",
+      "bench": false
+    },
+    {
+      "id": "sm1-143",
+      "power": "Ultra Road",
+      "bench": true
+    },
+    {
+      "id": "sm1-145",
+      "power": "Search the Premises",
+      "bench": false
+    },
+    {
+      "id": "sm1-145",
+      "power": "Search the Premises",
+      "bench": true
+    },
+    {
+      "id": "sm1-153",
+      "power": "Psychic Transfer",
+      "bench": false
+    },
+    {
+      "id": "sm1-153",
+      "power": "Psychic Transfer",
+      "bench": true
+    },
+    {
+      "id": "sm1-155",
+      "power": "Ultra Road",
+      "bench": false
+    },
+    {
+      "id": "sm1-155",
+      "power": "Ultra Road",
+      "bench": true
+    },
+    {
+      "id": "sm1-157",
+      "power": "Search the Premises",
+      "bench": false
+    },
+    {
+      "id": "sm1-157",
+      "power": "Search the Premises",
+      "bench": true
+    },
+    {
+      "id": "smp-SM10",
+      "power": "Illuminate",
+      "bench": false
+    },
+    {
+      "id": "smp-SM10",
+      "power": "Illuminate",
+      "bench": true
+    },
+    {
+      "id": "smp-SM101",
+      "power": "Invasion",
+      "bench": true
+    },
+    {
+      "id": "smp-SM117",
+      "power": "Psychic Recharge",
+      "bench": false
+    },
+    {
+      "id": "smp-SM117",
+      "power": "Psychic Recharge",
+      "bench": true
+    },
+    {
+      "id": "smp-SM13",
+      "power": "Instruct",
+      "bench": false
+    },
+    {
+      "id": "smp-SM13",
+      "power": "Instruct",
+      "bench": true
+    },
+    {
+      "id": "smp-SM140",
+      "power": "Dragon Wind",
+      "bench": false
+    },
+    {
+      "id": "smp-SM146",
+      "power": "Breath of the Leaves",
+      "bench": false
+    },
+    {
+      "id": "smp-SM149",
+      "power": "Frozen Current",
+      "bench": false
+    },
+    {
+      "id": "smp-SM158",
+      "power": "Roaring Resolve",
+      "bench": false
+    },
+    {
+      "id": "smp-SM158",
+      "power": "Roaring Resolve",
+      "bench": true
+    },
+    {
+      "id": "smp-SM16",
+      "power": "Ultra Road",
+      "bench": false
+    },
+    {
+      "id": "smp-SM16",
+      "power": "Ultra Road",
+      "bench": true
+    },
+    {
+      "id": "smp-SM160",
+      "power": "Queen's Call",
+      "bench": false
+    },
+    {
+      "id": "smp-SM160",
+      "power": "Queen's Call",
+      "bench": true
+    },
+    {
+      "id": "smp-SM161",
+      "power": "Stellar Wish",
+      "bench": false
+    },
+    {
+      "id": "smp-SM161",
+      "power": "Stellar Wish",
+      "bench": true
+    },
+    {
+      "id": "smp-SM164",
+      "power": "Power Suction",
+      "bench": true
+    },
+    {
+      "id": "smp-SM17",
+      "power": "Psychic Transfer",
+      "bench": false
+    },
+    {
+      "id": "smp-SM17",
+      "power": "Psychic Transfer",
+      "bench": true
+    },
+    {
+      "id": "smp-SM172",
+      "power": "Hydrating Drops",
+      "bench": false
+    },
+    {
+      "id": "smp-SM18",
+      "power": "Slush Rush",
+      "bench": false
+    },
+    {
+      "id": "smp-SM18",
+      "power": "Slush Rush",
+      "bench": true
+    },
+    {
+      "id": "smp-SM216",
+      "power": "Troubleshooting",
+      "bench": false
+    },
+    {
+      "id": "smp-SM220",
+      "power": "Whirlpool Suction",
+      "bench": true
+    },
+    {
+      "id": "smp-SM226",
+      "power": "Roaring Resolve",
+      "bench": false
+    },
+    {
+      "id": "smp-SM226",
+      "power": "Roaring Resolve",
+      "bench": true
+    },
+    {
+      "id": "smp-SM28",
+      "power": "Strong Charge",
+      "bench": false
+    },
+    {
+      "id": "smp-SM28",
+      "power": "Strong Charge",
+      "bench": true
+    },
+    {
+      "id": "smp-SM37",
+      "power": "Feather Arrow",
+      "bench": false
+    },
+    {
+      "id": "smp-SM37",
+      "power": "Feather Arrow",
+      "bench": true
+    },
+    {
+      "id": "smp-SM59",
+      "power": "Shadow Hunt",
+      "bench": false
+    },
+    {
+      "id": "smp-SM84",
+      "power": "Trade",
+      "bench": false
+    },
+    {
+      "id": "smp-SM84",
+      "power": "Trade",
+      "bench": true
+    },
+    {
+      "id": "sm2-13",
+      "power": "Shady Move",
+      "bench": false
+    },
+    {
+      "id": "sm2-13",
+      "power": "Shady Move",
+      "bench": true
+    },
+    {
+      "id": "sm2-20",
+      "power": "Slush Rush",
+      "bench": false
+    },
+    {
+      "id": "sm2-20",
+      "power": "Slush Rush",
+      "bench": true
+    },
+    {
+      "id": "sm2-85",
+      "power": "Geotech System",
+      "bench": false
+    },
+    {
+      "id": "sm2-85",
+      "power": "Geotech System",
+      "bench": true
+    },
+    {
+      "id": "sm2-139",
+      "power": "Geotech System",
+      "bench": false
+    },
+    {
+      "id": "sm2-139",
+      "power": "Geotech System",
+      "bench": true
+    },
+    {
+      "id": "sm2-146",
+      "power": "Feather Arrow",
+      "bench": false
+    },
+    {
+      "id": "sm2-146",
+      "power": "Feather Arrow",
+      "bench": true
+    },
+    {
+      "id": "sm2-157",
+      "power": "Geotech System",
+      "bench": false
+    },
+    {
+      "id": "sm2-157",
+      "power": "Geotech System",
+      "bench": true
+    },
+    {
+      "id": "sm2-157a",
+      "power": "Geotech System",
+      "bench": false
+    },
+    {
+      "id": "sm2-157a",
+      "power": "Geotech System",
+      "bench": true
+    },
+    {
+      "id": "sm3-53",
+      "power": "Dark Invitation",
+      "bench": false
+    },
+    {
+      "id": "sm3-53",
+      "power": "Dark Invitation",
+      "bench": true
+    },
+    {
+      "id": "sm3-80",
+      "power": "Shadow Hunt",
+      "bench": false
+    },
+    {
+      "id": "sm3-93",
+      "power": "Secret Spring",
+      "bench": false
+    },
+    {
+      "id": "sm3-93",
+      "power": "Secret Spring",
+      "bench": true
+    },
+    {
+      "id": "sm3-96",
+      "power": "Honey Gather",
+      "bench": false
+    },
+    {
+      "id": "sm3-96",
+      "power": "Honey Gather",
+      "bench": true
+    },
+    {
+      "id": "sm3-137",
+      "power": "Shadow Hunt",
+      "bench": false
+    },
+    {
+      "id": "sm3-140",
+      "power": "Secret Spring",
+      "bench": false
+    },
+    {
+      "id": "sm3-140",
+      "power": "Secret Spring",
+      "bench": true
+    },
+    {
+      "id": "sm3-156",
+      "power": "Shadow Hunt",
+      "bench": false
+    },
+    {
+      "id": "sm3-159",
+      "power": "Secret Spring",
+      "bench": false
+    },
+    {
+      "id": "sm3-159",
+      "power": "Secret Spring",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-9",
+      "power": "Energy Reload",
+      "bench": false
+    },
+    {
+      "id": "sm3.5-9",
+      "power": "Energy Reload",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-13",
+      "power": "Heat Cyclone",
+      "bench": false
+    },
+    {
+      "id": "sm3.5-13",
+      "power": "Heat Cyclone",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-19",
+      "power": "Plunge",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-25",
+      "power": "Blessings of the Deep",
+      "bench": false
+    },
+    {
+      "id": "sm3.5-25",
+      "power": "Blessings of the Deep",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-53",
+      "power": "Trade",
+      "bench": false
+    },
+    {
+      "id": "sm3.5-53",
+      "power": "Trade",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-77",
+      "power": "Trade",
+      "bench": false
+    },
+    {
+      "id": "sm3.5-77",
+      "power": "Trade",
+      "bench": true
+    },
+    {
+      "id": "sm3.5-77a",
+      "power": "Trade",
+      "bench": false
+    },
+    {
+      "id": "sm3.5-77a",
+      "power": "Trade",
+      "bench": true
+    },
+    {
+      "id": "sm4-16",
+      "power": "Escape",
+      "bench": false
+    },
+    {
+      "id": "sm4-16",
+      "power": "Escape",
+      "bench": true
+    },
+    {
+      "id": "sm4-62",
+      "power": "Weed Out",
+      "bench": false
+    },
+    {
+      "id": "sm4-62",
+      "power": "Weed Out",
+      "bench": true
+    },
+    {
+      "id": "sm5-13",
+      "power": "Breath of the Leaves",
+      "bench": false
+    },
+    {
+      "id": "sm5-63",
+      "power": "Invasion",
+      "bench": true
+    },
+    {
+      "id": "sm5-83",
+      "power": "Magnetic Circuit",
+      "bench": false
+    },
+    {
+      "id": "sm5-83",
+      "power": "Magnetic Circuit",
+      "bench": true
+    },
+    {
+      "id": "sm5-93",
+      "power": "Illuminate",
+      "bench": false
+    },
+    {
+      "id": "sm5-93",
+      "power": "Illuminate",
+      "bench": true
+    },
+    {
+      "id": "sm5-139",
+      "power": "Breath of the Leaves",
+      "bench": false
+    },
+    {
+      "id": "sm5-143",
+      "power": "Invasion",
+      "bench": true
+    },
+    {
+      "id": "sm5-157",
+      "power": "Breath of the Leaves",
+      "bench": false
+    },
+    {
+      "id": "sm5-161",
+      "power": "Invasion",
+      "bench": true
+    },
+    {
+      "id": "sm5-172",
+      "power": "Psychic Transfer",
+      "bench": false
+    },
+    {
+      "id": "sm5-172",
+      "power": "Psychic Transfer",
+      "bench": true
+    },
+    {
+      "id": "sm5-173",
+      "power": "Ultra Road",
+      "bench": false
+    },
+    {
+      "id": "sm5-173",
+      "power": "Ultra Road",
+      "bench": true
+    },
+    {
+      "id": "sm6-17",
+      "power": "Mystical Torch",
+      "bench": false
+    },
+    {
+      "id": "sm6-17",
+      "power": "Mystical Torch",
+      "bench": true
+    },
+    {
+      "id": "sm6-31",
+      "power": "Jet Geyser",
+      "bench": false
+    },
+    {
+      "id": "sm6-31",
+      "power": "Jet Geyser",
+      "bench": true
+    },
+    {
+      "id": "sm6-36",
+      "power": "Magnetic Circuit",
+      "bench": false
+    },
+    {
+      "id": "sm6-36",
+      "power": "Magnetic Circuit",
+      "bench": true
+    },
+    {
+      "id": "sm6-51",
+      "power": "Psychic Recharge",
+      "bench": false
+    },
+    {
+      "id": "sm6-51",
+      "power": "Psychic Recharge",
+      "bench": true
+    },
+    {
+      "id": "sm6-86",
+      "power": "Wondrous Gift",
+      "bench": false
+    },
+    {
+      "id": "sm6-86",
+      "power": "Wondrous Gift",
+      "bench": true
+    },
+    {
+      "id": "sm7-3",
+      "power": "Fragrance Trap",
+      "bench": false
+    },
+    {
+      "id": "sm7-3",
+      "power": "Fragrance Trap",
+      "bench": true
+    },
+    {
+      "id": "sm7-10",
+      "power": "Power of Nature",
+      "bench": false
+    },
+    {
+      "id": "sm7-10",
+      "power": "Power of Nature",
+      "bench": true
+    },
+    {
+      "id": "sm7-24",
+      "power": "Smooth Over",
+      "bench": false
+    },
+    {
+      "id": "sm7-24",
+      "power": "Smooth Over",
+      "bench": true
+    },
+    {
+      "id": "sm7-35",
+      "power": "Power Draw",
+      "bench": false
+    },
+    {
+      "id": "sm7-35",
+      "power": "Power Draw",
+      "bench": true
+    },
+    {
+      "id": "sm7-38",
+      "power": "Swing Dance",
+      "bench": false
+    },
+    {
+      "id": "sm7-38",
+      "power": "Swing Dance",
+      "bench": true
+    },
+    {
+      "id": "sm7-48",
+      "power": "Extra Energy Bomb",
+      "bench": false
+    },
+    {
+      "id": "sm7-48",
+      "power": "Extra Energy Bomb",
+      "bench": true
+    },
+    {
+      "id": "sm7-66",
+      "power": "Shady Move",
+      "bench": false
+    },
+    {
+      "id": "sm7-88",
+      "power": "Excavate",
+      "bench": false
+    },
+    {
+      "id": "sm7-88",
+      "power": "Excavate",
+      "bench": true
+    },
+    {
+      "id": "sm7-106",
+      "power": "Dragon Wind",
+      "bench": false
+    },
+    {
+      "id": "sm7-155",
+      "power": "Extra Energy Bomb",
+      "bench": false
+    },
+    {
+      "id": "sm7-155",
+      "power": "Extra Energy Bomb",
+      "bench": true
+    },
+    {
+      "id": "sm7-157",
+      "power": "Shady Move",
+      "bench": false
+    },
+    {
+      "id": "sm7-172",
+      "power": "Extra Energy Bomb",
+      "bench": false
+    },
+    {
+      "id": "sm7-172",
+      "power": "Extra Energy Bomb",
+      "bench": true
+    },
+    {
+      "id": "sm7-174",
+      "power": "Shady Move",
+      "bench": false
+    },
+    {
+      "id": "sm7-10a",
+      "power": "Power of Nature",
+      "bench": false
+    },
+    {
+      "id": "sm7-10a",
+      "power": "Power of Nature",
+      "bench": true
+    },
+    {
+      "id": "sm7.5-6",
+      "power": "Firestarter",
+      "bench": false
+    },
+    {
+      "id": "sm7.5-6",
+      "power": "Firestarter",
+      "bench": true
+    },
+    {
+      "id": "sm7.5-24",
+      "power": "Downpour",
+      "bench": false
+    },
+    {
+      "id": "sm7.5-24",
+      "power": "Downpour",
+      "bench": true
+    },
+    {
+      "id": "sm7.5-26",
+      "power": "Wash Out",
+      "bench": false
+    },
+    {
+      "id": "sm7.5-26",
+      "power": "Wash Out",
+      "bench": true
+    },
+    {
+      "id": "sm7.5-33",
+      "power": "Weed Out",
+      "bench": false
+    },
+    {
+      "id": "sm7.5-33",
+      "power": "Weed Out",
+      "bench": true
+    },
+    {
+      "id": "sm8-13",
+      "power": "Floral Path to the Sky",
+      "bench": false
+    },
+    {
+      "id": "sm8-13",
+      "power": "Floral Path to the Sky",
+      "bench": true
+    },
+    {
+      "id": "sm8-21",
+      "power": "Sunshine Grace",
+      "bench": false
+    },
+    {
+      "id": "sm8-21",
+      "power": "Sunshine Grace",
+      "bench": true
+    },
+    {
+      "id": "sm8-33",
+      "power": "Floral Heal",
+      "bench": false
+    },
+    {
+      "id": "sm8-33",
+      "power": "Floral Heal",
+      "bench": true
+    },
+    {
+      "id": "sm8-42",
+      "power": "Blazing Energy",
+      "bench": false
+    },
+    {
+      "id": "sm8-42",
+      "power": "Blazing Energy",
+      "bench": true
+    },
+    {
+      "id": "sm8-44",
+      "power": "Crushing Charge",
+      "bench": false
+    },
+    {
+      "id": "sm8-44",
+      "power": "Crushing Charge",
+      "bench": true
+    },
+    {
+      "id": "sm8-56",
+      "power": "Go for a Swim",
+      "bench": false
+    },
+    {
+      "id": "sm8-56",
+      "power": "Go for a Swim",
+      "bench": true
+    },
+    {
+      "id": "sm8-59",
+      "power": "Frozen Flow",
+      "bench": false
+    },
+    {
+      "id": "sm8-60",
+      "power": "Phantom Winds",
+      "bench": true
+    },
+    {
+      "id": "sm8-75",
+      "power": "Fluffy Pillow",
+      "bench": false
+    },
+    {
+      "id": "sm8-78",
+      "power": "Unseen Flash",
+      "bench": false
+    },
+    {
+      "id": "sm8-78",
+      "power": "Unseen Flash",
+      "bench": true
+    },
+    {
+      "id": "sm8-82",
+      "power": "Sprint",
+      "bench": false
+    },
+    {
+      "id": "sm8-82",
+      "power": "Sprint",
+      "bench": true
+    },
+    {
+      "id": "sm8-95",
+      "power": "Vessel of Life",
+      "bench": true
+    },
+    {
+      "id": "sm8-108",
+      "power": "Charging Up",
+      "bench": false
+    },
+    {
+      "id": "sm8-108",
+      "power": "Charging Up",
+      "bench": true
+    },
+    {
+      "id": "sm8-198",
+      "power": "Crushing Charge",
+      "bench": false
+    },
+    {
+      "id": "sm8-198",
+      "power": "Crushing Charge",
+      "bench": true
+    },
+    {
+      "id": "sm8-200",
+      "power": "Phantom Winds",
+      "bench": true
+    },
+    {
+      "id": "sm8-218",
+      "power": "Crushing Charge",
+      "bench": false
+    },
+    {
+      "id": "sm8-218",
+      "power": "Crushing Charge",
+      "bench": true
+    },
+    {
+      "id": "sm8-220",
+      "power": "Phantom Winds",
+      "bench": true
+    },
+    {
+      "id": "sm9-14",
+      "power": "Roaring Resolve",
+      "bench": false
+    },
+    {
+      "id": "sm9-14",
+      "power": "Roaring Resolve",
+      "bench": true
+    },
+    {
+      "id": "sm9-16",
+      "power": "Nine Temptations",
+      "bench": false
+    },
+    {
+      "id": "sm9-16",
+      "power": "Nine Temptations",
+      "bench": true
+    },
+    {
+      "id": "sm9-25",
+      "power": "Powerful Squall",
+      "bench": false
+    },
+    {
+      "id": "sm9-25",
+      "power": "Powerful Squall",
+      "bench": true
+    },
+    {
+      "id": "sm9-46",
+      "power": "Nuzzly Gathering",
+      "bench": false
+    },
+    {
+      "id": "sm9-46",
+      "power": "Nuzzly Gathering",
+      "bench": true
+    },
+    {
+      "id": "sm9-51",
+      "power": "Dance of the Ancients",
+      "bench": true
+    },
+    {
+      "id": "sm9-56",
+      "power": "Queen's Call",
+      "bench": false
+    },
+    {
+      "id": "sm9-56",
+      "power": "Queen's Call",
+      "bench": true
+    },
+    {
+      "id": "sm9-97",
+      "power": "Scar Charge",
+      "bench": false
+    },
+    {
+      "id": "sm9-97",
+      "power": "Scar Charge",
+      "bench": true
+    },
+    {
+      "id": "sm9-99",
+      "power": "Stellar Wish",
+      "bench": false
+    },
+    {
+      "id": "sm9-99",
+      "power": "Stellar Wish",
+      "bench": true
+    },
+    {
+      "id": "sm9-119",
+      "power": "Fast Call",
+      "bench": false
+    },
+    {
+      "id": "sm9-119",
+      "power": "Fast Call",
+      "bench": true
+    },
+    {
+      "id": "sm9-123",
+      "power": "Air Mail",
+      "bench": false
+    },
+    {
+      "id": "sm9-123",
+      "power": "Air Mail",
+      "bench": true
+    },
+    {
+      "id": "sm9-167",
+      "power": "Scar Charge",
+      "bench": false
+    },
+    {
+      "id": "sm9-167",
+      "power": "Scar Charge",
+      "bench": true
+    },
+    {
+      "id": "sm9-188",
+      "power": "Scar Charge",
+      "bench": false
+    },
+    {
+      "id": "sm9-188",
+      "power": "Scar Charge",
+      "bench": true
+    },
+    {
+      "id": "det1-2",
+      "power": "Table Service",
+      "bench": false
+    },
+    {
+      "id": "det1-2",
+      "power": "Table Service",
+      "bench": true
+    },
+    {
+      "id": "sm10-2",
+      "power": "Pupate",
+      "bench": false
+    },
+    {
+      "id": "sm10-2",
+      "power": "Pupate",
+      "bench": true
+    },
+    {
+      "id": "sm10-3",
+      "power": "Emerge",
+      "bench": false
+    },
+    {
+      "id": "sm10-3",
+      "power": "Emerge",
+      "bench": true
+    },
+    {
+      "id": "sm10-7",
+      "power": "Irresistible Aroma",
+      "bench": false
+    },
+    {
+      "id": "sm10-7",
+      "power": "Irresistible Aroma",
+      "bench": true
+    },
+    {
+      "id": "sm10-8",
+      "power": "Varied Pollen",
+      "bench": false
+    },
+    {
+      "id": "sm10-8",
+      "power": "Varied Pollen",
+      "bench": true
+    },
+    {
+      "id": "sm10-31",
+      "power": "Roast Reveal",
+      "bench": false
+    },
+    {
+      "id": "sm10-31",
+      "power": "Roast Reveal",
+      "bench": true
+    },
+    {
+      "id": "sm10-100",
+      "power": "Bratty Kick",
+      "bench": false
+    },
+    {
+      "id": "sm10-100",
+      "power": "Bratty Kick",
+      "bench": true
+    },
+    {
+      "id": "sm10-112",
+      "power": "Building Spite",
+      "bench": false
+    },
+    {
+      "id": "sm10-112",
+      "power": "Building Spite",
+      "bench": true
+    },
+    {
+      "id": "sm10-131",
+      "power": "Excitable Draw",
+      "bench": false
+    },
+    {
+      "id": "sm10-131",
+      "power": "Excitable Draw",
+      "bench": true
+    },
+    {
+      "id": "sm10-138",
+      "power": "Fairy Feast",
+      "bench": false
+    },
+    {
+      "id": "sm10-138",
+      "power": "Fairy Feast",
+      "bench": true
+    },
+    {
+      "id": "sm10-161",
+      "power": "Playhouse Heal",
+      "bench": false
+    },
+    {
+      "id": "sm10-161",
+      "power": "Playhouse Heal",
+      "bench": true
+    },
+    {
+      "id": "sm11-19",
+      "power": "Queenly Reward",
+      "bench": false
+    },
+    {
+      "id": "sm11-19",
+      "power": "Queenly Reward",
+      "bench": true
+    },
+    {
+      "id": "sm11-76",
+      "power": "Ominous Posture",
+      "bench": false
+    },
+    {
+      "id": "sm11-76",
+      "power": "Ominous Posture",
+      "bench": true
+    },
+    {
+      "id": "sm11-77",
+      "power": "Peppy Pick",
+      "bench": false
+    },
+    {
+      "id": "sm11-77",
+      "power": "Peppy Pick",
+      "bench": true
+    },
+    {
+      "id": "sm11-132",
+      "power": "Shadow Connection",
+      "bench": false
+    },
+    {
+      "id": "sm11-132",
+      "power": "Shadow Connection",
+      "bench": true
+    },
+    {
+      "id": "sm11-151",
+      "power": "Hurricane Charge",
+      "bench": false
+    },
+    {
+      "id": "sm11-151",
+      "power": "Hurricane Charge",
+      "bench": true
+    },
+    {
+      "id": "sm11-173",
+      "power": "Snack Search",
+      "bench": false
+    },
+    {
+      "id": "sm11-173",
+      "power": "Snack Search",
+      "bench": true
+    },
+    {
+      "id": "sm11-177",
+      "power": "Hearing",
+      "bench": false
+    },
+    {
+      "id": "sma-SV10",
+      "power": "Wash Out",
+      "bench": false
+    },
+    {
+      "id": "sma-SV10",
+      "power": "Wash Out",
+      "bench": true
+    },
+    {
+      "id": "sma-SV18",
+      "power": "Psychic Recharge",
+      "bench": false
+    },
+    {
+      "id": "sma-SV18",
+      "power": "Psychic Recharge",
+      "bench": true
+    },
+    {
+      "id": "sma-SV29",
+      "power": "Magnetic Circuit",
+      "bench": false
+    },
+    {
+      "id": "sma-SV29",
+      "power": "Magnetic Circuit",
+      "bench": true
+    },
+    {
+      "id": "sma-SV44",
+      "power": "Instruct",
+      "bench": false
+    },
+    {
+      "id": "sma-SV44",
+      "power": "Instruct",
+      "bench": true
+    },
+    {
+      "id": "sma-SV46",
+      "power": "Breath of the Leaves",
+      "bench": false
+    },
+    {
+      "id": "sma-SV47",
+      "power": "Feather Arrow",
+      "bench": false
+    },
+    {
+      "id": "sma-SV47",
+      "power": "Feather Arrow",
+      "bench": true
+    },
+    {
+      "id": "sma-SV57",
+      "power": "Extra Energy Bomb",
+      "bench": false
+    },
+    {
+      "id": "sma-SV57",
+      "power": "Extra Energy Bomb",
+      "bench": true
+    },
+    {
+      "id": "sma-SV61",
+      "power": "Shady Move",
+      "bench": false
+    },
+    {
+      "id": "sma-SV75",
+      "power": "Secret Spring",
+      "bench": false
+    },
+    {
+      "id": "sma-SV75",
+      "power": "Secret Spring",
+      "bench": true
+    },
+    {
+      "id": "sm12-4",
+      "power": "Fragrant Flower Garden",
+      "bench": false
+    },
+    {
+      "id": "sm12-4",
+      "power": "Fragrant Flower Garden",
+      "bench": true
+    },
+    {
+      "id": "sm12-16",
+      "power": "Seasonal Blessings",
+      "bench": false
+    },
+    {
+      "id": "sm12-16",
+      "power": "Seasonal Blessings",
+      "bench": true
+    },
+    {
+      "id": "sm12-30",
+      "power": "Victory Heal",
+      "bench": false
+    },
+    {
+      "id": "sm12-30",
+      "power": "Victory Heal",
+      "bench": true
+    },
+    {
+      "id": "sm12-35",
+      "power": "Flaming Shot",
+      "bench": false
+    },
+    {
+      "id": "sm12-35",
+      "power": "Flaming Shot",
+      "bench": true
+    },
+    {
+      "id": "sm12-57",
+      "power": "Whirlpool Suction",
+      "bench": true
+    },
+    {
+      "id": "sm12-69",
+      "power": "Call Signal",
+      "bench": false
+    },
+    {
+      "id": "sm12-69",
+      "power": "Call Signal",
+      "bench": true
+    },
+    {
+      "id": "sm12-72",
+      "power": "Blinking Lights",
+      "bench": false
+    },
+    {
+      "id": "sm12-72",
+      "power": "Blinking Lights",
+      "bench": true
+    },
+    {
+      "id": "sm12-83",
+      "power": "Spiritborne Evolution",
+      "bench": false
+    },
+    {
+      "id": "sm12-83",
+      "power": "Spiritborne Evolution",
+      "bench": true
+    },
+    {
+      "id": "sm12-117",
+      "power": "Bulldoze",
+      "bench": false
+    },
+    {
+      "id": "sm12-117",
+      "power": "Bulldoze",
+      "bench": true
+    },
+    {
+      "id": "sm12-146",
+      "power": "Growing Up",
+      "bench": false
+    },
+    {
+      "id": "sm12-146",
+      "power": "Growing Up",
+      "bench": true
+    },
+    {
+      "id": "sm12-158",
+      "power": "Violent Appetite",
+      "bench": false
+    },
+    {
+      "id": "sm12-158",
+      "power": "Violent Appetite",
+      "bench": true
+    },
+    {
+      "id": "sm12-168",
+      "power": "Sleepy Voice",
+      "bench": false
+    },
+    {
+      "id": "sm12-168",
+      "power": "Sleepy Voice",
+      "bench": true
+    },
+    {
+      "id": "sm12-169",
+      "power": "Scampering Tail",
+      "bench": false
+    },
+    {
+      "id": "sm12-169",
+      "power": "Scampering Tail",
+      "bench": true
+    },
+    {
+      "id": "sm12-211",
+      "power": "Fragrant Flower Garden",
+      "bench": false
+    },
+    {
+      "id": "sm12-211",
+      "power": "Fragrant Flower Garden",
+      "bench": true
+    },
+    {
+      "id": "sm12-213",
+      "power": "Flaming Shot",
+      "bench": false
+    },
+    {
+      "id": "sm12-213",
+      "power": "Flaming Shot",
+      "bench": true
+    },
+    {
+      "id": "sm12-223",
+      "power": "Violent Appetite",
+      "bench": false
+    },
+    {
+      "id": "sm12-223",
+      "power": "Violent Appetite",
+      "bench": true
+    },
+    {
+      "id": "sm12-224",
+      "power": "Violent Appetite",
+      "bench": false
+    },
+    {
+      "id": "sm12-224",
+      "power": "Violent Appetite",
+      "bench": true
+    },
+    {
+      "id": "sm12-250",
+      "power": "Fragrant Flower Garden",
+      "bench": false
+    },
+    {
+      "id": "sm12-250",
+      "power": "Fragrant Flower Garden",
+      "bench": true
+    },
+    {
+      "id": "sm12-252",
+      "power": "Flaming Shot",
+      "bench": false
+    },
+    {
+      "id": "sm12-252",
+      "power": "Flaming Shot",
+      "bench": true
+    },
+    {
+      "id": "sm12-260",
+      "power": "Violent Appetite",
+      "bench": false
+    },
+    {
+      "id": "sm12-260",
+      "power": "Violent Appetite",
+      "bench": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "sm1-46",
+      "power": "Water Bubble",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-46",
+      "power": "Water Bubble",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-47",
+      "power": "Innards Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-47",
+      "power": "Innards Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-58",
+      "power": "Power of Alchemy",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-58",
+      "power": "Power of Alchemy",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-75",
+      "power": "Wall of Sand",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-75",
+      "power": "Wall of Sand",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-82",
+      "power": "Rough Skin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-82",
+      "power": "Rough Skin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-87",
+      "power": "Tangling Hair",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm1-87",
+      "power": "Tangling Hair",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM101",
+      "power": "Invasion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM104",
+      "power": "Shining Mane",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM104",
+      "power": "Shining Mane",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM130",
+      "power": "Electric Start",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM130",
+      "power": "Electric Start",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM139",
+      "power": "Dragon Lift",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM139",
+      "power": "Dragon Lift",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM140",
+      "power": "Dragon Wind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM146",
+      "power": "Breath of the Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM147",
+      "power": "Freezing Gaze",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM147",
+      "power": "Freezing Gaze",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM149",
+      "power": "Frozen Current",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM151",
+      "power": "Distortion Door",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM151",
+      "power": "Distortion Door",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM157",
+      "power": "Pika Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM157",
+      "power": "Pika Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM164",
+      "power": "Power Suction",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM172",
+      "power": "Hydrating Drops",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM174",
+      "power": "Ascension DNA",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM174",
+      "power": "Ascension DNA",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM175",
+      "power": "Ascension DNA",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM175",
+      "power": "Ascension DNA",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM176",
+      "power": "Ascension DNA",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM176",
+      "power": "Ascension DNA",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM178",
+      "power": "Hard Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM178",
+      "power": "Hard Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM180",
+      "power": "Wall of Stone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM180",
+      "power": "Wall of Stone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM181",
+      "power": "Metal Eater",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM181",
+      "power": "Metal Eater",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM182",
+      "power": "Gathering of Cats",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM182",
+      "power": "Gathering of Cats",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM187",
+      "power": "Cursed Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM187",
+      "power": "Cursed Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM189",
+      "power": "Solid Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM189",
+      "power": "Solid Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM191",
+      "power": "Perfection",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM191",
+      "power": "Perfection",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM197",
+      "power": "Elusive Master",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM197",
+      "power": "Elusive Master",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM208",
+      "power": "Stealthy Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM208",
+      "power": "Stealthy Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM209",
+      "power": "Wall of Stone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM209",
+      "power": "Wall of Stone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM215",
+      "power": "Bench Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM215",
+      "power": "Bench Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM216",
+      "power": "Troubleshooting",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM218",
+      "power": "Beast Boost",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM218",
+      "power": "Beast Boost",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM220",
+      "power": "Whirlpool Suction",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM233",
+      "power": "Ascension DNA",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM233",
+      "power": "Ascension DNA",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM236",
+      "power": "Spiky Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM236",
+      "power": "Spiky Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM239",
+      "power": "High Density Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM239",
+      "power": "High Density Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM242",
+      "power": "Ascension DNA",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM242",
+      "power": "Ascension DNA",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM25",
+      "power": "Sunny Day",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM25",
+      "power": "Sunny Day",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM46",
+      "power": "More Poison",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM46",
+      "power": "More Poison",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM52",
+      "power": "Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM52",
+      "power": "Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM53",
+      "power": "Steelworker",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM53",
+      "power": "Steelworker",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM58",
+      "power": "Light's End",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM58",
+      "power": "Light's End",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM59",
+      "power": "Shadow Hunt",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM68",
+      "power": "Flashing Head",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM68",
+      "power": "Flashing Head",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM70",
+      "power": "Golden Wing",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM70",
+      "power": "Golden Wing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM72",
+      "power": "Surge Surfer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM72",
+      "power": "Surge Surfer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM74",
+      "power": "Rock Peak Growl",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM74",
+      "power": "Rock Peak Growl",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM77",
+      "power": "Pressure",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM77",
+      "power": "Pressure",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM79",
+      "power": "Time Recall",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM79",
+      "power": "Time Recall",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM87",
+      "power": "Flight Support",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM87",
+      "power": "Flight Support",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM91",
+      "power": "Gyro Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM91",
+      "power": "Gyro Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM94",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM94",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM95",
+      "power": "Precognitive Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM95",
+      "power": "Precognitive Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM104a",
+      "power": "Shining Mane",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "smp-SM104a",
+      "power": "Shining Mane",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-9",
+      "power": "Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-9",
+      "power": "Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-10",
+      "power": "Victory Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-10",
+      "power": "Victory Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-37",
+      "power": "Schooling",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-37",
+      "power": "Schooling",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-59",
+      "power": "Steelworker",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-59",
+      "power": "Steelworker",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-64",
+      "power": "Daunting Pose",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-64",
+      "power": "Daunting Pose",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-66",
+      "power": "Roadblock",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-66",
+      "power": "Roadblock",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-93",
+      "power": "Flower Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-93",
+      "power": "Flower Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-98",
+      "power": "Bulletproof",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm2-98",
+      "power": "Bulletproof",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-6",
+      "power": "Disgusting Pollen",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-6",
+      "power": "Disgusting Pollen",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-16",
+      "power": "Wimp Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-16",
+      "power": "Wimp Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-28",
+      "power": "Luminous Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-28",
+      "power": "Luminous Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-35",
+      "power": "Thick Fat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-35",
+      "power": "Thick Fat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-50",
+      "power": "More Poison",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-50",
+      "power": "More Poison",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-63",
+      "power": "Light's End",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-63",
+      "power": "Light's End",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-68",
+      "power": "Heal Block",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-68",
+      "power": "Heal Block",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-80",
+      "power": "Shadow Hunt",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-88",
+      "power": "Restoration",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-88",
+      "power": "Restoration",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-134",
+      "power": "Light's End",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-134",
+      "power": "Light's End",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-137",
+      "power": "Shadow Hunt",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-139",
+      "power": "Restoration",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-139",
+      "power": "Restoration",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-153",
+      "power": "Light's End",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-153",
+      "power": "Light's End",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-156",
+      "power": "Shadow Hunt",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-158",
+      "power": "Restoration",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-158",
+      "power": "Restoration",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-88a",
+      "power": "Restoration",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3-88a",
+      "power": "Restoration",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-3",
+      "power": "Jungle Totem",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-3",
+      "power": "Jungle Totem",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-19",
+      "power": "Plunge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-37",
+      "power": "Intimidating Pattern",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-37",
+      "power": "Intimidating Pattern",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-47",
+      "power": "Cursed Whirlpool",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-47",
+      "power": "Cursed Whirlpool",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-55",
+      "power": "Scoundrel Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-55",
+      "power": "Scoundrel Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-57",
+      "power": "Fabled Defense",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm3.5-57",
+      "power": "Fabled Defense",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-7",
+      "power": "Shell On",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-7",
+      "power": "Shell On",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-11",
+      "power": "Sap Sipper",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-11",
+      "power": "Sap Sipper",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-17",
+      "power": "Submerge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-17",
+      "power": "Submerge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-28",
+      "power": "Iceberg Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-28",
+      "power": "Iceberg Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-31",
+      "power": "Surge Surfer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-31",
+      "power": "Surge Surfer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-42",
+      "power": "Own Tempo",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-42",
+      "power": "Own Tempo",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-53",
+      "power": "Rock Peak Growl",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-53",
+      "power": "Rock Peak Growl",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-56",
+      "power": "Fluffy",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-56",
+      "power": "Fluffy",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-84",
+      "power": "Seal of Antiquity",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-84",
+      "power": "Seal of Antiquity",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-90",
+      "power": "Gyro Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-90",
+      "power": "Gyro Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-108",
+      "power": "Gyro Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-108",
+      "power": "Gyro Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-119",
+      "power": "Gyro Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-119",
+      "power": "Gyro Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-84a",
+      "power": "Seal of Antiquity",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm4-84a",
+      "power": "Seal of Antiquity",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-11",
+      "power": "Weather Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-11",
+      "power": "Weather Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-13",
+      "power": "Breath of the Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-14",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-14",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-17",
+      "power": "Water Bubble",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-17",
+      "power": "Water Bubble",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-19",
+      "power": "Incandescent Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-19",
+      "power": "Incandescent Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-23",
+      "power": "Flaming Fighter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-23",
+      "power": "Flaming Fighter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-24",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-24",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-39",
+      "power": "Freezing Gaze",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-39",
+      "power": "Freezing Gaze",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-40",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-40",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-41",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-41",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-45",
+      "power": "Evolutionary Advantage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-45",
+      "power": "Evolutionary Advantage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-48",
+      "power": "Intimidating Fang",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-48",
+      "power": "Intimidating Fang",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-50",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-50",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-63",
+      "power": "Invasion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-67",
+      "power": "Precognitive Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-67",
+      "power": "Precognitive Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-70",
+      "power": "Power Huddle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-70",
+      "power": "Power Huddle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-81",
+      "power": "Solid Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-81",
+      "power": "Solid Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-85",
+      "power": "Earthen Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-85",
+      "power": "Earthen Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-91",
+      "power": "Change Clothes",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-91",
+      "power": "Change Clothes",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-97",
+      "power": "Rock Hiding",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-97",
+      "power": "Rock Hiding",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-110",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-110",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-116",
+      "power": "Gyro Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-116",
+      "power": "Gyro Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-139",
+      "power": "Breath of the Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-141",
+      "power": "Freezing Gaze",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-141",
+      "power": "Freezing Gaze",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-142",
+      "power": "Flashing Head",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-142",
+      "power": "Flashing Head",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-143",
+      "power": "Invasion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-157",
+      "power": "Breath of the Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-159",
+      "power": "Freezing Gaze",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-159",
+      "power": "Freezing Gaze",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-160",
+      "power": "Flashing Head",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-160",
+      "power": "Flashing Head",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm5-161",
+      "power": "Invasion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-5",
+      "power": "Abnormal Outbreak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-5",
+      "power": "Abnormal Outbreak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-21",
+      "power": "Frubbles",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-21",
+      "power": "Frubbles",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-40",
+      "power": "Roto Motor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-40",
+      "power": "Roto Motor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-42",
+      "power": "Silent Waves",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-42",
+      "power": "Silent Waves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-46",
+      "power": "Final Hour",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-46",
+      "power": "Final Hour",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-53",
+      "power": "Poison Point",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-53",
+      "power": "Poison Point",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-59",
+      "power": "Flaming Fighter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-59",
+      "power": "Flaming Fighter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-69",
+      "power": "Tyrannical Heart",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-69",
+      "power": "Tyrannical Heart",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-71",
+      "power": "Earthen Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-71",
+      "power": "Earthen Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-74",
+      "power": "Princess's Cheers",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-74",
+      "power": "Princess's Cheers",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-83",
+      "power": "Evolutionary Advantage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-83",
+      "power": "Evolutionary Advantage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-91",
+      "power": "Sticky Membrane",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-91",
+      "power": "Sticky Membrane",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-96",
+      "power": "First Law",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm6-96",
+      "power": "First Law",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-19",
+      "power": "Poison Payback",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-19",
+      "power": "Poison Payback",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-20",
+      "power": "Poison Payback",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-20",
+      "power": "Poison Payback",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-37",
+      "power": "Aqua Lift",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-37",
+      "power": "Aqua Lift",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-41",
+      "power": "Evolutionary Advantage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-41",
+      "power": "Evolutionary Advantage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-45",
+      "power": "Icy Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-45",
+      "power": "Icy Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-47",
+      "power": "Floating Electrons",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-47",
+      "power": "Floating Electrons",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-50",
+      "power": "Energy Grounding",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-50",
+      "power": "Energy Grounding",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-52",
+      "power": "Electric Start",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-52",
+      "power": "Electric Start",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-56",
+      "power": "Magic Evens",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-56",
+      "power": "Magic Evens",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-61",
+      "power": "Sol Shade",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-61",
+      "power": "Sol Shade",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-62",
+      "power": "Sunbeam",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-62",
+      "power": "Sunbeam",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-66",
+      "power": "Shady Move",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-70",
+      "power": "Shadow Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-70",
+      "power": "Shadow Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-83",
+      "power": "Falling Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-83",
+      "power": "Falling Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-90",
+      "power": "Danger Perception",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-90",
+      "power": "Danger Perception",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-92",
+      "power": "Conductive Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-92",
+      "power": "Conductive Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-96",
+      "power": "Exoskeleton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-96",
+      "power": "Exoskeleton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-97",
+      "power": "Wish Upon a Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-97",
+      "power": "Wish Upon a Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-99",
+      "power": "Full Metal Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-99",
+      "power": "Full Metal Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-102",
+      "power": "Ultra Wall",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-102",
+      "power": "Ultra Wall",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-106",
+      "power": "Dragon Wind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-115",
+      "power": "Lazy",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-115",
+      "power": "Lazy",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-122",
+      "power": "Unit Color 2",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-122",
+      "power": "Unit Color 2",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-156",
+      "power": "Magic Evens",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-156",
+      "power": "Magic Evens",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-157",
+      "power": "Shady Move",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-158",
+      "power": "Danger Perception",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-158",
+      "power": "Danger Perception",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-159",
+      "power": "Ultra Wall",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-159",
+      "power": "Ultra Wall",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-173",
+      "power": "Magic Evens",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-173",
+      "power": "Magic Evens",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-174",
+      "power": "Shady Move",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-175",
+      "power": "Danger Perception",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-175",
+      "power": "Danger Perception",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-176",
+      "power": "Ultra Wall",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7-176",
+      "power": "Ultra Wall",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-3",
+      "power": "Resolute Flame",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-3",
+      "power": "Resolute Flame",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-20",
+      "power": "Commotion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-20",
+      "power": "Commotion",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-28",
+      "power": "Submerge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-28",
+      "power": "Submerge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-30",
+      "power": "Murmurs of the Sea",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-30",
+      "power": "Murmurs of the Sea",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-31",
+      "power": "Meet Up",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-31",
+      "power": "Meet Up",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-39",
+      "power": "Dragon Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-39",
+      "power": "Dragon Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-40",
+      "power": "Fight Song",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-40",
+      "power": "Fight Song",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-43",
+      "power": "Energy Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-43",
+      "power": "Energy Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-44",
+      "power": "Dragon Lift",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-44",
+      "power": "Dragon Lift",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-45",
+      "power": "Rough Skin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-45",
+      "power": "Rough Skin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-73",
+      "power": "Dragon Lift",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-73",
+      "power": "Dragon Lift",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-40a",
+      "power": "Fight Song",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm7.5-40a",
+      "power": "Fight Song",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-8",
+      "power": "Quick-Ripening Herb",
+      "bench": false,
+      "error": "CANNOT_PLAY_THIS_CARD",
+      "pending": []
+    },
+    {
+      "id": "sm8-8",
+      "power": "Quick-Ripening Herb",
+      "bench": true,
+      "error": "CANNOT_PLAY_THIS_CARD",
+      "pending": []
+    },
+    {
+      "id": "sm8-17",
+      "power": "Protective Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-17",
+      "power": "Protective Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-50",
+      "power": "Wild Dash",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-50",
+      "power": "Wild Dash",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-53",
+      "power": "Secret Alleyway",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-53",
+      "power": "Secret Alleyway",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-58",
+      "power": "Mantine Surf",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-58",
+      "power": "Mantine Surf",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-59",
+      "power": "Frozen Flow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-60",
+      "power": "Phantom Winds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-75",
+      "power": "Fluffy Pillow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-86",
+      "power": "Thunderclap Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-86",
+      "power": "Thunderclap Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-90",
+      "power": "DAMAGE",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-90",
+      "power": "DAMAGE",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-91",
+      "power": "HAND",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-91",
+      "power": "HAND",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-92",
+      "power": "MISSING",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-92",
+      "power": "MISSING",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-93",
+      "power": "Shady Tail",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-93",
+      "power": "Shady Tail",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-95",
+      "power": "Vessel of Life",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-97",
+      "power": "Distortion Door",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-97",
+      "power": "Distortion Door",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-98",
+      "power": "Mirror Counter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-98",
+      "power": "Mirror Counter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-114",
+      "power": "Submerge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-114",
+      "power": "Submerge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-121",
+      "power": "Lost Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-121",
+      "power": "Lost Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-126",
+      "power": "Exoskeleton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-126",
+      "power": "Exoskeleton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-130",
+      "power": "Double Drive",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-130",
+      "power": "Double Drive",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-144",
+      "power": "Path of Life",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-144",
+      "power": "Path of Life",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-148",
+      "power": "Effect Spore",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-148",
+      "power": "Effect Spore",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-153",
+      "power": "Happiness Supplement",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-153",
+      "power": "Happiness Supplement",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-154",
+      "power": "Almighty Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-154",
+      "power": "Almighty Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-161",
+      "power": "Unit Color 1",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-161",
+      "power": "Unit Color 1",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-162",
+      "power": "Unit Color 3",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-162",
+      "power": "Unit Color 3",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-165",
+      "power": "Mountain Pass",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-165",
+      "power": "Mountain Pass",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-195",
+      "power": "Protective Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-195",
+      "power": "Protective Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-200",
+      "power": "Phantom Winds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-201",
+      "power": "Thunderclap Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-201",
+      "power": "Thunderclap Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-202",
+      "power": "Mirror Counter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-202",
+      "power": "Mirror Counter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-203",
+      "power": "Lost Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-203",
+      "power": "Lost Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-204",
+      "power": "Double Drive",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-204",
+      "power": "Double Drive",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-215",
+      "power": "Protective Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-215",
+      "power": "Protective Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-220",
+      "power": "Phantom Winds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-221",
+      "power": "Thunderclap Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-221",
+      "power": "Thunderclap Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-222",
+      "power": "Mirror Counter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-222",
+      "power": "Mirror Counter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-223",
+      "power": "Lost Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-223",
+      "power": "Lost Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-224",
+      "power": "Double Drive",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm8-224",
+      "power": "Double Drive",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-4",
+      "power": "Grass Cushion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-4",
+      "power": "Grass Cushion",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-7",
+      "power": "Panic Spores",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-7",
+      "power": "Panic Spores",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-22",
+      "power": "Floating Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-22",
+      "power": "Floating Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-51",
+      "power": "Dance of the Ancients",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-63",
+      "power": "Poison Sacs",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-63",
+      "power": "Poison Sacs",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-66",
+      "power": "Scoop-Up Block",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-66",
+      "power": "Scoop-Up Block",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-67",
+      "power": "Magic Odds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-67",
+      "power": "Magic Odds",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-69",
+      "power": "Cosmic Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-69",
+      "power": "Cosmic Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-76",
+      "power": "Fossil Bind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-76",
+      "power": "Fossil Bind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-78",
+      "power": "Fossilized Memories",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-78",
+      "power": "Fossilized Memories",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-88",
+      "power": "Dark Ambition",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-88",
+      "power": "Dark Ambition",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-100",
+      "power": "Evolutionary Advantage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-100",
+      "power": "Evolutionary Advantage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-101",
+      "power": "Heatproof",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-101",
+      "power": "Heatproof",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-106",
+      "power": "Metal Symbol",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-106",
+      "power": "Metal Symbol",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-109",
+      "power": "Royal Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-109",
+      "power": "Royal Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-110",
+      "power": "Key of Secrets",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-110",
+      "power": "Key of Secrets",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-111",
+      "power": "Luminous Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-111",
+      "power": "Luminous Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-117",
+      "power": "Defensive Scales",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-117",
+      "power": "Defensive Scales",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-168",
+      "power": "Metal Symbol",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-168",
+      "power": "Metal Symbol",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-189",
+      "power": "Metal Symbol",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm9-189",
+      "power": "Metal Symbol",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "det1-6",
+      "power": "Security Guard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "det1-6",
+      "power": "Security Guard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "det1-9",
+      "power": "Evasion Jutsu",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "det1-9",
+      "power": "Evasion Jutsu",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-29",
+      "power": "Strong Cheer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-29",
+      "power": "Strong Cheer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-34",
+      "power": "Solid Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-34",
+      "power": "Solid Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-35",
+      "power": "Solid Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-35",
+      "power": "Solid Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-36",
+      "power": "Round ‘n' Round",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-36",
+      "power": "Round ‘n' Round",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-58",
+      "power": "Battery",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-58",
+      "power": "Battery",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-59",
+      "power": "Stealthy Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-59",
+      "power": "Stealthy Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-67",
+      "power": "Swelling Spite",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-67",
+      "power": "Swelling Spite",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-72",
+      "power": "Hypnotic Pendulum",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-72",
+      "power": "Hypnotic Pendulum",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-74",
+      "power": "Detention Gas",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-74",
+      "power": "Detention Gas",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-76",
+      "power": "Bench Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-76",
+      "power": "Bench Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-78",
+      "power": "Mysterious Message",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-78",
+      "power": "Mysterious Message",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-81",
+      "power": "Resetting Hole",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-81",
+      "power": "Resetting Hole",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-85",
+      "power": "Underground Work",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-85",
+      "power": "Underground Work",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-98",
+      "power": "Free Flight",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-98",
+      "power": "Free Flight",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-106",
+      "power": "Wall of Stone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-106",
+      "power": "Wall of Stone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-109",
+      "power": "Ruler of the Night",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-109",
+      "power": "Ruler of the Night",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-113",
+      "power": "Intimidating Fang",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-113",
+      "power": "Intimidating Fang",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-122",
+      "power": "Hair Wall",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-122",
+      "power": "Hair Wall",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-127",
+      "power": "Fast-Flight Configuration",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-127",
+      "power": "Fast-Flight Configuration",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-129",
+      "power": "Metal Eater",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-129",
+      "power": "Metal Eater",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-140",
+      "power": "Fluffy Cotton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-140",
+      "power": "Fluffy Cotton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-148",
+      "power": "Gathering of Cats",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-148",
+      "power": "Gathering of Cats",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-149",
+      "power": "Cat Walk",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-149",
+      "power": "Cat Walk",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-157",
+      "power": "Crazy Code",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-157",
+      "power": "Crazy Code",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-158",
+      "power": "Lazy Eating",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-158",
+      "power": "Lazy Eating",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-163",
+      "power": "Force Canceler",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-163",
+      "power": "Force Canceler",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-202",
+      "power": "Ruler of the Night",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-202",
+      "power": "Ruler of the Night",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-206",
+      "power": "Fluffy Cotton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-206",
+      "power": "Fluffy Cotton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-207",
+      "power": "Cat Walk",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-207",
+      "power": "Cat Walk",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-208",
+      "power": "Force Canceler",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-208",
+      "power": "Force Canceler",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-218",
+      "power": "Solid Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-218",
+      "power": "Solid Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-223",
+      "power": "Ruler of the Night",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-223",
+      "power": "Ruler of the Night",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-226",
+      "power": "Fluffy Cotton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-226",
+      "power": "Fluffy Cotton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-227",
+      "power": "Cat Walk",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-227",
+      "power": "Cat Walk",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-228",
+      "power": "Force Canceler",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm10-228",
+      "power": "Force Canceler",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-7",
+      "power": "Swaddling Leaves",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-7",
+      "power": "Swaddling Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-8",
+      "power": "Swaddling Leaves",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-8",
+      "power": "Swaddling Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-9",
+      "power": "Blanket Weaver",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-9",
+      "power": "Blanket Weaver",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-11",
+      "power": "Shell Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-11",
+      "power": "Shell Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-25",
+      "power": "Burning Road",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-25",
+      "power": "Burning Road",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-36",
+      "power": "Mermaid's Call",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-36",
+      "power": "Mermaid's Call",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-45",
+      "power": "Ancient Custom",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-45",
+      "power": "Ancient Custom",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-47",
+      "power": "Pure Heart",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-47",
+      "power": "Pure Heart",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-51",
+      "power": "Emergency Exit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-51",
+      "power": "Emergency Exit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-60",
+      "power": "Double Type",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-60",
+      "power": "Double Type",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-66",
+      "power": "Electric Swamp",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-66",
+      "power": "Electric Swamp",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-71",
+      "power": "Perfection",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-71",
+      "power": "Perfection",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-78",
+      "power": "Power Bind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-78",
+      "power": "Power Bind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-79",
+      "power": "Psychic Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-79",
+      "power": "Psychic Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-81",
+      "power": "Tag Transport",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-81",
+      "power": "Tag Transport",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-83",
+      "power": "Secret Territory",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-83",
+      "power": "Secret Territory",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-95",
+      "power": "Durable Blade",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-95",
+      "power": "Durable Blade",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-106",
+      "power": "Primal Winds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-106",
+      "power": "Primal Winds",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-114",
+      "power": "Avenging Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-114",
+      "power": "Avenging Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-117",
+      "power": "Tag Coach",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-117",
+      "power": "Tag Coach",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-124",
+      "power": "Cellular Companions",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-124",
+      "power": "Cellular Companions",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-148",
+      "power": "Aqua Lift",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-148",
+      "power": "Aqua Lift",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-156",
+      "power": "Grind Up",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-156",
+      "power": "Grind Up",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-160",
+      "power": "Ultra Conversion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-160",
+      "power": "Ultra Conversion",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-170",
+      "power": "Counterattack",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-170",
+      "power": "Counterattack",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-172",
+      "power": "Unaware",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-172",
+      "power": "Unaware",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-177",
+      "power": "Hearing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-185",
+      "power": "Drowsing",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-185",
+      "power": "Drowsing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-216",
+      "power": "Burning Road",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-216",
+      "power": "Burning Road",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-219",
+      "power": "Pure Heart",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-219",
+      "power": "Pure Heart",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-222",
+      "power": "Perfection",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-222",
+      "power": "Perfection",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-223",
+      "power": "Power Bind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-223",
+      "power": "Power Bind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-224",
+      "power": "Primal Winds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-224",
+      "power": "Primal Winds",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-230",
+      "power": "Ultra Conversion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-230",
+      "power": "Ultra Conversion",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-238",
+      "power": "Burning Road",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-238",
+      "power": "Burning Road",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-240",
+      "power": "Pure Heart",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-240",
+      "power": "Pure Heart",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-242",
+      "power": "Perfection",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-242",
+      "power": "Perfection",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-243",
+      "power": "Power Bind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-243",
+      "power": "Power Bind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-244",
+      "power": "Primal Winds",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-244",
+      "power": "Primal Winds",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-249",
+      "power": "Ultra Conversion",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-249",
+      "power": "Ultra Conversion",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-79a",
+      "power": "Psychic Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm11-79a",
+      "power": "Psychic Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV11",
+      "power": "Frubbles",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV11",
+      "power": "Frubbles",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV13",
+      "power": "Floating Electrons",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV13",
+      "power": "Floating Electrons",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV15",
+      "power": "More Poison",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV15",
+      "power": "More Poison",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV20",
+      "power": "Roadblock",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV20",
+      "power": "Roadblock",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV22",
+      "power": "Precognitive Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV22",
+      "power": "Precognitive Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV37",
+      "power": "Fight Song",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV37",
+      "power": "Fight Song",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV4",
+      "power": "Wimp Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV4",
+      "power": "Wimp Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV46",
+      "power": "Breath of the Leaves",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV55",
+      "power": "Freezing Gaze",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV55",
+      "power": "Freezing Gaze",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV58",
+      "power": "Flashing Head",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV58",
+      "power": "Flashing Head",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV61",
+      "power": "Shady Move",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV70",
+      "power": "Restoration",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV70",
+      "power": "Restoration",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV72",
+      "power": "Danger Perception",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV72",
+      "power": "Danger Perception",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV74",
+      "power": "Ultra Wall",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV74",
+      "power": "Ultra Wall",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV79",
+      "power": "Gyro Unit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sma-SV79",
+      "power": "Gyro Unit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm115-27",
+      "power": "Last Pattern",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm115-27",
+      "power": "Last Pattern",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm115-29",
+      "power": "Surrender Now",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm115-29",
+      "power": "Surrender Now",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-11",
+      "power": "Swaying Strangle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-11",
+      "power": "Swaying Strangle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-21",
+      "power": "Beast Boost",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-21",
+      "power": "Beast Boost",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-25",
+      "power": "Power Cheer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-25",
+      "power": "Power Cheer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-39",
+      "power": "Snowed In",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-39",
+      "power": "Snowed In",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-42",
+      "power": "Vitality Cheer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-42",
+      "power": "Vitality Cheer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-57",
+      "power": "Whirlpool Suction",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-70",
+      "power": "Speed Cheer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-70",
+      "power": "Speed Cheer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-76",
+      "power": "Blow-Away Bomb",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-76",
+      "power": "Blow-Away Bomb",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-77",
+      "power": "Blow-Away Bomb",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-77",
+      "power": "Blow-Away Bomb",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-82",
+      "power": "Double Type",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-82",
+      "power": "Double Type",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-85",
+      "power": "Grim Marking",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-85",
+      "power": "Grim Marking",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-95",
+      "power": "Dance of Tribute",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-95",
+      "power": "Dance of Tribute",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-97",
+      "power": "Shadow Box",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-97",
+      "power": "Shadow Box",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-100",
+      "power": "Unaware",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-100",
+      "power": "Unaware",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-102",
+      "power": "Blessing of the Moone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-102",
+      "power": "Blessing of the Moone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-110",
+      "power": "Dusty Defense",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-110",
+      "power": "Dusty Defense",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-122",
+      "power": "Solid Shell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-122",
+      "power": "Solid Shell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-124",
+      "power": "Boiling Blood",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-124",
+      "power": "Boiling Blood",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-129",
+      "power": "Smug Face",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-129",
+      "power": "Smug Face",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-142",
+      "power": "Armor of the Sunne",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-142",
+      "power": "Armor of the Sunne",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-162",
+      "power": "Fighter's Roar",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-162",
+      "power": "Fighter's Roar",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-164",
+      "power": "Ultra Burst",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-164",
+      "power": "Ultra Burst",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-182",
+      "power": "Carry and Run",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-182",
+      "power": "Carry and Run",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-184",
+      "power": "Disk Reload",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-184",
+      "power": "Disk Reload",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-217",
+      "power": "Dance of Tribute",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-217",
+      "power": "Dance of Tribute",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-218",
+      "power": "Dusty Defense",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-218",
+      "power": "Dusty Defense",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-219",
+      "power": "Smug Face",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-219",
+      "power": "Smug Face",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-227",
+      "power": "Disk Reload",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-227",
+      "power": "Disk Reload",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-243",
+      "power": "Blow-Away Bomb",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-243",
+      "power": "Blow-Away Bomb",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-244",
+      "power": "Double Type",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-244",
+      "power": "Double Type",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-255",
+      "power": "Dance of Tribute",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-255",
+      "power": "Dance of Tribute",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-256",
+      "power": "Dusty Defense",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-256",
+      "power": "Dusty Defense",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-257",
+      "power": "Smug Face",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-257",
+      "power": "Smug Face",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-262",
+      "power": "Disk Reload",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sm12-262",
+      "power": "Disk Reload",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    }
+  ],
+  "failures": [],
+  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5"
+}

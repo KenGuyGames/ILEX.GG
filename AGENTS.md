@@ -1,3 +1,124 @@
+# Latest completed scope — complete Sun & Moon era (October 18, 2026)
+
+ILEX.GG **1.15.0** is complete and verified locally: **3,069/3,069 SM-era printings, zero pending**, across all 23 catalogs. Includes SM through Cosmic Eclipse, Shining Legends, Dragon Majesty, Hidden Fates/Shiny Vault, Detective Pikachu, SM1–SM248 promos plus SM30a/103a/104a, McDonald's 2017–19, both complete 30-position Trainer Kits and omitted alternate printings. Interactions remain **BW onward through implemented SM**; Unlimited deferred. Preserve historical formats and all prior UI/cache/pack/audio/bot/Undo/Android features. No subagents or GitHub publication.
+
+Final engine `7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5`. 82 expected-result checks, 4387 printed Pokémon attacks plus all 3 Z-Move Tool attacks, 1168 branch cases, Ability/Trainer and identity audits, 24 bounded deck games (2774 decisions) with exact replay/Undo, 13 shared suites and native **v8 fresh/restored** pass. Shared repairs include attack continuations, empty-slot checks, scoped GX permissions, Tool dispatch, KO timing/history and once-per-turn limits, Energy choices, named/conditional powers and copying eligibility. These are finite checks, not an exhaustive proof.
+
+Windows EXE and compact/offline ZIPs are updated and integrity verified; **23,804 scans** and **5269 provenance files** pass. Added 68 scans; twelve numbered Kit Energy originals are 253×359 and explicitly limited. Android **1.15.0-android.14 / code 14** retains the original signing certificate, with **65 mobile checks**, SM tests at three landscape sizes, **30 APK/static checks**, SDK signature/alignment and image review. Install over the current APK to retain data. **Physical Android/emulator acceptance remains pending**; do not claim device certification or Play Store publication.
+
+Read `work/rules-research/sm-final-release-evidence.json`, `sm-source-validation.json`, `SM-PROGRESS.md` and `SM-RULES-SOURCES.md`. Current release scripts: `sm-record-validation.cjs`, `stage-sm.py`, `package-sm.py`, `publish-android-sm.py`. Do not run initial inventory/checkpoint generators over the completed release. Older scope/release notes below are historical.
+
+---
+
+# Latest completed feature — Realistic Player bot (October 18, 2026)
+
+ILEX.GG **1.14.0** adds a separate **Realistic Player** difficulty in new/live match selectors; Easy/Normal/Hard retained. Local deterministic bounded search plans up to three actions, rechecks leading actions against a second concealed forecast, uses contextual search/discard/gust/acceleration decisions, retains current-turn usage history, and weighs follow-up attackers, prize exposure, excess Energy, Bench liabilities and deck-out. Discard-damage roles/optional setup choices support Night March/Vengeance/Bee Revenge. Research is first-person tournament reporting and official competitive analysis, not imitation training or proof of pro-level strength.
+
+Planning runs in an offline worker. Pause/Undo/difficulty changes/background pause cancel it; stale match/journal/table results cannot commit. Every actual action still uses RulesMatch; forecast audio/animations remain quiet. Structured custom-card restoration supported. Eighteen tactical/privacy checks, eighteen shared bot groups with four completed starter games, eight bounded BW/XY deck games (822 decisions) with exact gameplay replay/Undo, complete native fresh/restored suites plus twelve new worker checks per launch, thirteen Android worker checks, 59 mobile checks and 30 APK/static checks pass. Mixed games are finite and do not establish a win-rate advantage over Hard. See work/rules-research/realistic-bot-release.json and REALISTIC-BOT-RESEARCH.md.
+
+Windows EXE and both ZIPs updated/integrity verified, 23,736 scans preserved. Android **1.14.0-android.13 / versionCode 13** uses the original signing certificate; physical Android acceptance remains pending. Engine unchanged (0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68); complete XY coverage 2,208/2,208 preserved. Unlimited deferred. No subagents or GitHub publication. Current release scripts: package-realistic-bot.py, brand-realistic.cjs and Android build.py/verify.py. Failed v1/v2 native attempts were inherited text-assertion and fixture-cleanup defects; v3 is final.
+
+---
+
+# Latest UI update — transparent enlarged-card action regions (October 18, 2026)
+
+Printed attacks and Powers use full-height outlined regions with no visible overlay text, fill or backdrop blur. Accessible names/tooltips remain. Reviewed Alakazam/Jirachi boundaries retained; generic regions remain text-weighted; LEGEND regions bounded within joined scan. Copied actions, Retreat and no-scan fallbacks retain named buttons; choices/Undo/validation unchanged. Ten focused native action groups pass fresh/restored, including transparency, geometry, dispatch, Energy prompts and stale/hidden-card guards. Screenshot reviewed; Android touch/layout and APK checks pass. Windows app and both ZIPs updated/integrity verified; Android 1.13.3-android.12 / versionCode 12 preserves original key. Physical Android acceptance pending; engine unchanged. Evidence: work/rules-research/transparent-actions-release.json.
+
+---
+
+# Latest coin update — reversed Celebi tails (October 18, 2026)
+
+Both coin faces now use the sleeve Celebi silhouette. Heads is cream on green; tails is green on cream. Gold rim, outcome labels, engine results and flip geometry retained. Forty-two native presentation checks pass fresh and restored, including exact matching silhouette paths and reversed computed colors. Windows app and ZIPs updated and integrity verified; Android 1.13.3-android.11 / versionCode 11 retains original signing key and passes APK checks. Prior mobile layout evidence inherited for this presentation-only change; physical Android acceptance pending. Engine unchanged. Evidence: work/rules-research/reverse-coin-release.json.
+
+---
+
+# Latest presentation update — shared Celebi coin and icons (October 18, 2026)
+
+The sleeve silhouette is now shared by coin heads, Windows EXE/window ICO (seven sizes, 16–256), PNG icon, SVG/favicon and Android launcher vector. Coin tails remains ILEX for a clear opposite face; actual engine results/timing unchanged. Native fresh/restored presentation/gameplay suites pass, visual icon/coin review and exact embedded Windows resource payload checks pass. Android touch preview and 28 APK/static/signature checks pass; compiled launcher path matches sleeve exactly. Windows app and both ZIPs updated/verified; Android 1.13.3-android.10 / versionCode 10 retains original signing key. Physical Android acceptance remains pending. Engine unchanged. Evidence: work/rules-research/celebi-brand-release.json; preview outputs/celebi-brand-preview/celebi-brand.png.
+
+---
+
+# Latest cosmetic update — Triumphant prerelease sleeves (October 18, 2026)
+
+Shared ilex-card-back.svg is now a clean flat vector recreation of the green Celebi HS—Triumphant prerelease sleeve: solid green and ivory, no photo, shadows, gradients or texture. Logo lettering/emblem are simplified approximations. Used by hidden hands, decks, prizes, secret Pokémon/Energy and pack backs. Source attribution in ui/CARD-BACK-SOURCE.md. Four native size/rotation decodes and screenshot review pass; prior mobile preview retained and fresh signed APK checks pass. Windows app and both ZIPs updated and integrity verified; Android versionCode 9 / 1.13.3-android.9 retains original key. Physical Android acceptance remains pending. Engine/game code unchanged; prior pack-speed gameplay evidence inherited. Evidence: work/rules-research/flat-sleeve-release.json.
+
+---
+
+# Latest cosmetic update — Triumphant prerelease sleeves (October 18, 2026)
+
+Shared ilex-card-back.svg now embeds the original green Celebi HS—Triumphant prerelease sleeve image unchanged, offline. Used by hidden hands, decks, prizes, secret Pokémon/Energy and pack backs. Source attribution in ui/CARD-BACK-SOURCE.md. Four native size/rotation decodes and screenshot review pass; mobile preview and signed APK checks pass. Windows app and both ZIPs updated and integrity verified; Android versionCode 8 / 1.13.3-android.8 retains original key. Physical Android acceptance remains pending. Engine/game code unchanged; prior pack-speed gameplay evidence inherited. Evidence: work/rules-research/triumphant-sleeve-release.json.
+
+---
+
+# Latest UI update — faster pack reveals (October 18, 2026)
+
+Automatic pack reveals now use 450 ms intervals (previously 600 ms). Sequential reveal, pause, Space, persistence and privacy behavior retained. Focused timer checks, real native fresh/restored pack suites, all five pack model/subset/finish/special audits and mobile preview pass. Windows EXE and both ZIPs updated and verified. Android 1.13.3-android.7 / versionCode 7 retains the original signing key; APK static/signature checks pass. Physical Android acceptance remains pending. Engine and card automation unchanged. Evidence: work/rules-research/pack-speed-release.json.
+
+---
+
+# Latest completed audit — XY interactions (October 17, 2026)
+
+ILEX.GG **1.13.3** completes the deeper XY interaction audit with repairs across printing identity, Ancient Traits, temporary types, named conditions, attack protection, Energy movements and native attack timing.
+
+1. Pyroar Flare Command pays from its own slot on the Bench or Active, accepts attached Fire-providing Energy, and rejects missing costs or targets before payment.
+2. XY Venipede uses its printed 70 HP, 20 Poison Sting damage and three-Energy retreat, independently of the BW source constructor.
+3. Delta Evolution permission belongs only to the actual trait evolution card being played from hand, not unrelated copies on either field or in hand.
+4. Dry Skin queries the current attacker type and respects damage that ignores defender effects.
+5. Light of Life recognizes both Yveltal and Yveltal-EX through shared named-condition parsing, including BW copied attacks.
+6. Cross Slicer and Time Freeze use attack-effect events, respecting protection and normal switch/turn cleanup.
+7. Burning Energy records actual eligible discards before native reducers move cards and returns to the same in-play Pokemon, with negative controls for other attackers and Trainers.
+8. A shared attached-Energy view covers regular attachments and Pokemon-as-Energy zones for Enhanced Hammer, Shuppet, Xerosic, Jirachi, Groudon-EX and Dragonite-EX.
+9. Energy discards route through attack prevention and the correct physical zone; Xerosic puts each card in its owner discard pile.
+10. Stardust grants its shield only after a successful discard from the opponent Active; Bench-only Special Energy and blocked discards do not grant it.
+11. Dragonite-EX, Greninja and Pyroar native attack indexes match their printing; Mist Slash uses the normal damage/KO pipeline with correct bypass flags and attacker bonuses; Inferno Onrush applies recoil.
+12. Hyper Beam, Rip Claw and Stardust resolve defensive-Energy discards after damage, so Shield Energy still reduces that attack.
+
+Final engine `0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68`. **56 new expected-result cases**, complete printed HP/type/retreat/cost/damage audit of **2,208 XY printings** and static native attack-index audit of **1,499 native-backed Pokemon printings** pass. Repeated all 52 original XY focused checks, 2,787 printed Pokemon attacks and both Tool attacks, 1,604 branch cases, Power/Trainer audits, 16 bounded scoped deck games (1200 decisions) with exact replay/Undo, 44 Basic Energy checks and shared historical/bot/Undo regressions. Native **v87 fresh/restored** suites pass, including Town Map and animation recovery. Earlier interrupted candidate runs predate the final Shield Energy timing repair and are historical, not release passes.
+
+Windows EXE and compact/offline ZIPs are updated and integrity verified; all 23,736 scans and 3339 provenance files pass. Android **1.13.3-android.6 / versionCode 6** preserves the original signing certificate, with 59 touch/landscape, 54 presentation checks over three sizes and 28 APK checks passing. Install over the existing APK. Physical Android/emulator acceptance remains pending.
+
+Scope remains BW onward through implemented XY, with Unlimited deferred and older rule profiles retained. No new cardpool, banlist, networking, subagents or GitHub publication. Finite tests do not prove every board state. See `work/rules-research/xy-interaction-release.json`, `package-xy-interactions.py` and `publish-android-xy-interactions.py`.
+
+---
+
+# Latest repair — Basic Darkness / Metal Energy (October 17, 2026)
+
+ILEX.GG **1.13.2** corrects Basic Darkness Energy receiving the older Special Darkness self-damage and attack bonus. The shared name-based reducer also affected Basic Metal Energy; it is now restricted to printings explicitly labeled Special Energy. Forty-two mapped Basic Darkness/Metal printings, including era Trainer Kits, pass expected-result checks for Energy type/provision, outgoing and incoming damage, and no extra holder damage at end of turn. Two Special Darkness controls (Neo Genesis and EX Ruby/Sapphire) retain their printed behavior, for 44 targeted checks total.
+
+Final engine `6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c`. All 52 XY focused checks, 2,787 printed Pokemon attacks, both Tool attacks, 1,604 branch cases, Power/Trainer audits, 16 bounded scoped deck games with replay/Undo and shared historical/bot/Undo regressions pass again. Native v84 fresh/restored suites pass, retaining the Town Map/animation regressions. Prior XY 2,208/2,208 inventory and BW-onward scope remain unchanged; Unlimited remains deferred.
+
+EXE and both Windows ZIPs are updated and integrity verified, preserving all 23,736 scans and source provenance. Android **1.13.2-android.5 / versionCode 5** preserves the original signing certificate; all 59 touch/landscape, 54 additional presentation checks over three sizes, and 28 APK checks pass. Install over the existing APK. Physical Android/emulator acceptance remains pending. Evidence: `work/rules-research/basic-energy-release.json`. Current repair scripts: `package-basic-energy.py` and `publish-android-basic-energy.py`. No subagents or GitHub publication.
+
+---
+
+# Latest repair — Town Map Prizes and animation completion (October 17, 2026)
+
+ILEX.GG **1.13.1** repairs Town Map's revealed holo Prize layout and attack animation stalls. The inner Prize grid is positioned relative to its own pile without inheriting outer pile offsets; Android's foil host is also explicitly positioned. Grass impact progress is clamped to [0,1], preventing negative ellipse radii. Canvas callback exceptions finish the effect, and a completion timer releases gameplay if animation frames stop. These are presentation changes; engine `16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769` and the complete 2,208-printing XY coverage remain unchanged. Unlimited remains deferred.
+
+Native v83 fresh/restored suites pass, including 18 focused checks each for both Town Map printings with all six holo Prizes, Grass damage continuation, deliberate canvas failure, lost frames and Skip. The same 18 checks pass at Android 800×360, 640×312 and 360×800, alongside all 59 touch/landscape and 28 APK checks. An initial fixture omitted the required Trainer play target; a portrait assertion was corrected to measure pile-relative position rather than page scrolling. Those earlier failed runs are retained as historical evidence.
+
+EXE and both Windows ZIPs are updated and integrity verified, preserving all 23,736 scans and prior provenance. Android **1.13.1-android.4 / versionCode 4** preserves the original signing certificate; install over the existing app. Physical Android/emulator acceptance remains pending. See `work/rules-research/table-repair-release.json`, `package-table-repair.py` and `publish-android-table-repair.py`. No subagents or GitHub publication.
+
+---
+
+# Latest completed scope — complete XY era (October 17, 2026)
+
+ILEX.GG 1.13.0 is complete and verified locally: **2,208/2,208 XY-era printings, zero pending**. Includes Kalos Starter, XY through Evolutions, all 216 catalog XY promos, six Yellow A alternates, Double Crisis, Generations/Radiant Collection, eight 30-card Trainer Kit decks and McDonald’s 2014–16. Interaction scope is **Black & White onward through implemented XY**, also the standing baseline for future implementation work; Unlimited remains deferred. Preserve all earlier historical rule profiles and UI/cache/pack/audio/Android landscape features. No subagents were used and no GitHub publication occurred.
+
+Final engine: `16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769`. Fifty-two expected-result checks, all 2,787 printed Pokémon attacks plus both Trainer Tool attacks, 1,604 branch cases, Ability/Trainer audits, 16 bounded mixed-deck games (1199 decisions) with exact replay/Undo, shared historical/bot/Undo regressions and native v81 fresh/restored checks pass. Two cached 59-card lists were completed only in cloned rollout fixtures and are identified in the reports; user decks were not changed. Native v79’s restart failure was an inherited screenshot-harness preference cleanup defect, repaired before v80. Raw failing reports remain historical evidence, not final passes.
+
+Windows EXE, compact ZIP and full Offline ZIP are updated and integrity verified; all 23,736 scan hashes and 3333 provenance files pass. Android **1.13.0-android.3 / versionCode 3** uses the exact previous signing certificate, with 59 touch/landscape checks and 28 APK/static checks plus SDK signature/alignment verification. Install over the existing APK to retain local state. **Physical Android/emulator acceptance remains pending**; do not claim device certification or Play Store publication.
+
+Read `work/rules-research/xy-final-release-evidence.json`, `xy-source-validation.json` and `XY-FULL-PROGRESS.md` for exact evidence and finite-test limitations. `stage-xy.py`, `package-xy.py` and `publish-android-xy.py` are the current release scripts. Do not run the old first-wave inventory/checkpoint scripts over the complete XY release. Expanded mechanics now have their own profile; format card pools/bans are separate and no new official banlist is supplied.
+
+---
+
+# Latest authorization — XY era / standing Expanded interaction baseline (October 17, 2026)
+
+Kenneth requested starting XY automation and explicitly set Black & White onward as the interaction scope for this and all future implementation batches, for Expanded groundwork. This supersedes earlier HGSS/Call of Legends baseline notes for new work. Preserve historical formats/saved games and existing older regression suites; Unlimited remains deferred. Do not infer a complete current Expanded banlist or implementation of later eras from this scope instruction. See work/rules-research/INTERACTION-SCOPE.json.
+
+First source batch: Kalos Starter 39/39 and XY base 146/146 (185); later XY sets/promos/supplements remain unreviewed. Final engine 63fae0b21180762f1b784323c443d15efe498fa73ee76773d49b8ae184bc73c4; 15 focused checks, all 253 printed attacks, 8 repair scenarios, Power/Trainer audits, three 35-decision scoped replay/Undo rollouts and shared BW66/HGSS32/DP109/EX170/Undo7 pass. Candidate source only. Read work/rules-research/XY-PROGRESS.md and xy-first-checkpoint.json for final source hashes and finite checks. Shared changes include Fairy compilation, historical XY/BW framework flags, Catcher erratum gating, Tree Slam target count, source-aware Evosoda/Mega evolution and Energy attachment, and bot distinct-target Energy distribution. Released EXE/Windows archives/Android APK remain the prior builds; this is a source checkpoint, not a packaged release. Preserve Android v2 signing/layout assets and all current UI/cache/pack features. No subagent authorization.
+
 # Android landscape follow-up — October 17, 2026
 
 Kenneth requested the whole match fit on one landscape screen. Android versionCode 2 (1.12.0-android.2), signed with the original key, replaces the APK. Dedicated viewport layout shows both fields/Benches, all piles and hand; controls/new-match settings/log and effect prompts overlay the field. Ordinary Energy choices and Confirm fit without vertical scroll. Horizontal hand swipe, diagonal touch drag, full Bench/20-card hand and portrait restoration pass. 59 mobile checks plus 28 APK/static checks, SDK signature/alignment and screenshot review pass. Five landscape sizes tested down to 640×312. Physical Android/emulator verification remains pending. Install over the original app to retain local state; do not uninstall. See ANDROID-PROGRESS.md and final APK reports. Desktop release/engine and deferred Unlimited/networking unchanged. Prior Android v1 notes below are historical.

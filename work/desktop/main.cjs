@@ -64,7 +64,7 @@ else{
     Menu.setApplicationMenu(Menu.buildFromTemplate([
       {label:'File',submenu:[{label:'Export workspaceâ€¦',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
       {label:'View',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]},
-      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.12.0',detail:'Automated historical card pools through Black & White / Legendary Treasures. Historical rules profiles, custom cards and Limitless-compatible deck lists. Card images are available through the persistent cache. Unofficial fan-made simulator. See README for tested coverage.'})}]}
+      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.15.0',detail:'Automated historical card pools through the complete Sun & Moon era, including promos and supplements. New interactions cover Black & White onward; Unlimited remains deferred. Historical rules profiles, custom cards and Limitless-compatible deck lists. Card images are available through the persistent cache. Unofficial fan-made simulator. See README for tested coverage.'})}]}
     ]));
     await win.loadURL('tcglab://app/index.html');
     if(selfTest)win.webContents.setAudioMuted(true);
@@ -73,9 +73,9 @@ else{
       try{
         await require('./self-test.cjs')(win,testRoot);
         app.exit(0);
-      }catch(e){fs.writeFileSync(path.join(testRoot,'failure.txt'),e.stack);app.exit(1)}
+      }catch(e){fs.writeFileSync(path.join(testRoot,'failure.txt'),e?.stack||String(e));app.exit(1)}
     }
-  }).catch(e=>{if(selfTest)fs.writeFileSync(path.join(testRoot,'failure.txt'),e.stack);else dialog.showErrorBox('ILEX.GG could not start',e.message);app.exit(1)});
+  }).catch(e=>{if(selfTest)fs.writeFileSync(path.join(testRoot,'failure.txt'),e?.stack||String(e));else dialog.showErrorBox('ILEX.GG could not start',e.message);app.exit(1)});
   app.on('window-all-closed',()=>app.quit());
 }
 

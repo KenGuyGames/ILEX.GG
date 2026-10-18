@@ -5,3 +5,9 @@
 @media(max-width:850px){.coin-slot{flex-basis:94px}.coin-slot .coin{width:94px;height:94px}.coin-stage{gap:18px}.cinema-heading{top:12%}.cinema-heading h2{font-size:30px}.coin-summary{bottom:17%}.cinema-skip{right:15px;bottom:15px}.cinema-ribbon{padding:22px 35px}.cinema-ribbon h2{font-size:29px}}
 
 .coin-slot .coin{animation-duration:calc(1050ms * var(--motion-rate,1));animation-delay:calc(var(--delay,0ms) * var(--motion-rate,1))}.coin-outcome{animation-delay:calc((950ms + var(--delay,0ms)) * var(--motion-rate,1))}
+
+/* Celebi sleeve mark: heads stays distinct from the ILEX tails face. */
+.coin-face:not(.back){background:#18733e;color:#efeccf}.coin-face:not(.back) svg{width:76%;height:76%;filter:none}
+
+/* Reverse the sleeve palette on tails while preserving the flip geometry. */
+.coin-face.back{background:#efeccf;color:#18733e}.coin-face.back svg{width:76%;height:76%;filter:none}

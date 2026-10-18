@@ -17,7 +17,7 @@ export class TsareenaGX extends PokemonCard {
 
   public attacks = [
     {
-      name: 'G Side Eye',
+      name: 'Side Eye',
       cost: [G],
       damage: 0,
       text: "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon. The new Active Pokémon is now Confused.",

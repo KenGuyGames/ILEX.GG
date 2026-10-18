@@ -1,0 +1,6 @@
+const fs=require('fs'),path=require('path'),vm=require('vm'),root=path.resolve(__dirname,'../..'),research=path.join(root,'work/rules-research');
+for(const name of ['deep-identity','native-guard-audit','identity-audit']){const s=fs.readFileSync(path.join(__dirname,'xy-'+name+'.cjs'),'utf8').replaceAll('xy-full-wave-data','sm-wave-data').replaceAll('xy-deep-identity','sm-deep-identity').replaceAll('xy-native-guard-audit','sm-native-guard-audit').replaceAll('xy-identity-mismatches','sm-identity-mismatches');fs.writeFileSync(path.join(__dirname,'sm-'+name+'.cjs'),s);}
+const ctx={};vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'work/desktop/ui/limitless-collection.js'),'utf8')+';this.collection=LimitlessCollection;',ctx);const C=ctx.collection;
+console.log(C.formats.filter(f=>/201[7-9]/.test(f.name)).map(f=>({id:f.id,name:f.name})));
+const decks=C.decks.filter(d=>Object.keys(d.cards).some(id=>/^(sm|sma|det1)/.test(id))&&!Object.keys(d.cards).some(id=>/^(swsh|sv|me)/.test(id)));
+fs.writeFileSync(path.join(research,'sm-cached-decks.json'),JSON.stringify(decks,null,2));console.log('Cached SM decks '+decks.length);console.log(decks.map((d,i)=>[i,d.name,Object.values(d.cards).reduce((a,b)=>a+b,0)]));

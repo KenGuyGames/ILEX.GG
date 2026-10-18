@@ -16,7 +16,7 @@ export class Suicune extends PokemonCard {
   public retreat = [C];
 
   public powers = [{
-    name: 'Frozen Flow',
+    name: 'Frozen Current',
     useWhenInPlay: true,
     powerType: PowerType.ABILITY,
     text: 'Once during your turn (before your attack), if this Pokémon is your Active Pokémon, you may have your opponent switch their Active Pokémon with 1 of their Benched Pokémon.'
@@ -40,7 +40,7 @@ export class Suicune extends PokemonCard {
   public readonly FROZEN_FLOW_MARKER = 'FROZEN_FLOW_MARKER';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    // Ability: Frozen Flow
+    // Ability: Frozen Current
     // Ref: set-breakthrough/gallade.ts (once per turn ability)
     if (WAS_POWER_USED(effect, 0, this)) {
       const player = effect.player;

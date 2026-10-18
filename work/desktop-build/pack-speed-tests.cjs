@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const root=path.resolve(__dirname,'../..'),source=fs.readFileSync(path.join(root,'work/desktop/ui/packs.js'),'utf8');
+const fn=source.slice(source.indexOf(' function scheduleReveal(){'),source.indexOf('\n function ',source.indexOf(' function scheduleReveal(){')+10));
+let pending,delay,selected=[];const pack={id:'test',cards:[{revealed:true},{revealed:false},{revealed:false}]};
+const ctx={tab:'packs',collectionView:false,revealTimer:null,current:()=>pack,stopReveal:()=>{pending=null;},setTimeout:(f,ms)=>{pending=f;delay=ms;return 1;},document:{hidden:false,querySelector:()=>null},reveal:i=>selected.push(i)};
+vm.createContext(ctx);vm.runInContext(fn+';scheduleReveal();',ctx);assert.equal(delay,450);pending();assert.deepEqual(selected,[1]);
+selected=[];vm.runInContext('scheduleReveal()',ctx);ctx.tab='library';pending();assert.deepEqual(selected,[]);
+ctx.tab='packs';ctx.document.hidden=true;vm.runInContext('scheduleReveal()',ctx);pending();assert.deepEqual(selected,[]);assert.equal(delay,450);
+ctx.document.hidden=false;ctx.document.querySelector=()=>({open:true});pending();assert.deepEqual(selected,[]);
+console.log('450 ms interval, next-card order, navigation cancellation, hidden-page and modal pause checks passed.');

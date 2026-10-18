@@ -9,6 +9,7 @@ import { State } from '../state/state';
 import { StoreLike } from '../store-like';
 import { CheckPokemonPlayedTurnEffect, CheckSpecialConditionRemovalEffect } from '../effects/check-effects';
 import { EvolveEffect } from '../effects/game-effects';
+import { EndTurnEffect } from '../effects/game-phase-effects';
 import { CheckEvolutionTimingEffect } from '../effects/check-effects';
 import { PowerType } from '../card/pokemon-types';
 
@@ -95,6 +96,7 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
       const playedTurnEffect = new CheckPokemonPlayedTurnEffect(effect.player, effect.target);
       store.reduceEffect(state, playedTurnEffect);
       const timing = new CheckEvolutionTimingEffect(effect.player, effect.target);
+      (timing as any).evolutionCard=effect.pokemonCard;
       store.reduceEffect(state, timing);
 
       if (state.turn == 0 && player.canEvolve === false && !timing.allowFirstTurn) {
@@ -115,7 +117,10 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
       const evolveEffect = new EvolveEffect(effect.player, effect.target, effect.pokemonCard);
       (evolveEffect as any)._dpHandEvolution=true;
       store.reduceEffect(state, evolveEffect);
-      if((state.rules as any).dpEraRules)return state;
+      if((state.rules as any).dpEraRules){
+        if((state.rules as any).xyEraRules&&effect.pokemonCard.stage===Stage.MEGA&&!effect.skipMegaEvolutionEndTurn)store.reduceEffect(state,new EndTurnEffect(effect.player));
+        return state;
+      }
       clearUntilLeavesPlay(effect.pokemonCard);
       effect.pokemonCard.marker.markers = [];
 

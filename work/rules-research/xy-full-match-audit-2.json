@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [
+    {
+      "name": "Greninja BREAK",
+      "originalTotal": 59,
+      "added": "bw1-107",
+      "amount": 1,
+      "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+    },
+    {
+      "name": "Volcanion EX",
+      "originalTotal": 59,
+      "added": "bw1-106",
+      "amount": 1,
+      "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+    }
+  ],
+  "scope": "BW onward through XY; sixteen cached deck pairings, bounded 80 decisions each; historical XY/current Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Archiestoise",
+        "M Rayquaza EX"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 6,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Seismitoad Shaymin",
+        "Greninja BREAK"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Night March",
+        "VespiPlume"
+      ],
+      "level": "easy",
+      "decisions": 80,
+      "turn": 6,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gyarados",
+        "M Gardevoir EX"
+      ],
+      "level": "hard",
+      "decisions": 80,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Vespiquen",
+        "Yveltal Garb"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

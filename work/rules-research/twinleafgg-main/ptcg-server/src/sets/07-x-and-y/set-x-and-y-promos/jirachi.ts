@@ -1,3 +1,4 @@
+import {xyEnergyCards,xyEnergyView,xyDiscardEnergy,xyAfterAttack} from '../../../tcg-lab-xy-energy';
 import { Attack, Card, CardTarget, CardType, ChooseCardsPrompt, EnergyType, GameMessage, PlayerType, PokemonCard, SpecialCondition, Stage, State, StateUtils, StoreLike, SuperType } from "../../../game";
 import { DiscardCardsEffect } from "../../../game/store/effects/attack-effects";
 import { CheckProvidedEnergyEffect } from "../../../game/store/effects/check-effects";
@@ -35,42 +36,30 @@ export class Jirachi extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     // Stardust
-    if (WAS_ATTACK_USED(effect, 0, this)) {
+    const completed=xyAfterAttack(effect,0,this);
+    if(completed){effect=completed;
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 
       const checkProvidedEnergy = new CheckProvidedEnergyEffect(opponent);
       state = store.reduceEffect(state, checkProvidedEnergy);
 
-      let hasPokemonWithEnergy = false;
-      const blocked: CardTarget[] = [];
-      opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList, card, target) => {
-        if (cardList.energies.cards.some((c) => c.energyType === EnergyType.SPECIAL)) {
-          hasPokemonWithEnergy = true;
-        } else {
-          blocked.push(target);
-        }
-      });
-
-      if (!hasPokemonWithEnergy) {
-        return state;
-      }
+      if (!xyEnergyCards(opponent.active).some(c=>c.energyType===EnergyType.SPECIAL)) return state;
 
       state = store.prompt(
         state,
         new ChooseCardsPrompt(
           player,
           GameMessage.CHOOSE_CARD_TO_DISCARD,
-          opponent.active,
+          xyEnergyView(opponent.active),
           { superType: SuperType.ENERGY, energyType: EnergyType.SPECIAL },
-          { min: 1, max: 1, allowCancel: true },
+          { min: 1, max: 1, allowCancel: false },
         ),
         (energy) => {
           const cards: Card[] = energy || [];
-          const discardEnergy = new DiscardCardsEffect(effect, cards);
-          discardEnergy.target = opponent.active;
-          store.reduceEffect(state, discardEnergy);
+          xyDiscardEnergy(store,state,opponent.active,cards,this,effect);
 
+          if(!cards.some(card=>opponent.discard.cards.includes(card)))return state;
           PREVENT_DAMAGE(store, state, effect, this);
           PREVENT_EFFECTS_OF_ATTACKS(store, state, effect, this);
         },

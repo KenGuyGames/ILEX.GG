@@ -61,7 +61,7 @@ var IlexPresentation=(()=>{
   try{
    if(event.kind==='coin'){
     const results=event.results,heads=results.filter(Boolean).length;
-    shell('coin',heading('Engine result',event.name,results.length===1?'One flip. One outcome.':results.length+' coin flips')+`<div class="coin-stage ${results.length>4?'many':''}">${results.map((heads,index)=>`<div class="coin-slot" data-result="${heads?'heads':'tails'}" style="--delay:${Math.min(index,7)*65}ms;--landing:${heads?1440:1620}deg"><div class="coin" aria-hidden="true"><div class="coin-face"><svg viewBox="0 0 100 100"><path fill="currentColor" d="M80 14C38 10 10 41 24 70c10 22 48 16 57-14 5-16 1-32-1-42Z"/><path d="M22 82 68 31M45 59l-4-24M45 59l23-3" stroke="#f3df99" stroke-width="4" fill="none" stroke-linecap="round"/></svg></div><div class="coin-face back"><strong>ILEX</strong></div></div><span class="coin-outcome">${heads?'HEADS':'TAILS'}</span>${results.length>1?`<span class="coin-index">FLIP ${index+1}</span>`:''}</div>`).join('')}</div>`+(results.length>1?`<div class="coin-summary"><span><b>${heads}</b> HEADS</span><span><b>${results.length-heads}</b> TAILS</span></div>`:''));
+    shell('coin',heading('Engine result',event.name,results.length===1?'One flip. One outcome.':results.length+' coin flips')+`<div class="coin-stage ${results.length>4?'many':''}">${results.map((heads,index)=>`<div class="coin-slot" data-result="${heads?'heads':'tails'}" style="--delay:${Math.min(index,7)*65}ms;--landing:${heads?1440:1620}deg"><div class="coin" aria-hidden="true"><div class="coin-face"><svg viewBox="40 80 310 280"><path fill="currentColor" d="M86 209C70 176 78 144 103 123C113 115 122 111 131 112C100 136 83 164 92 197C112 178 146 168 177 153C204 141 216 121 219 96C242 121 248 158 241 193L236 226C254 216 273 210 289 213C305 219 279 243 260 254C248 261 238 265 227 268C256 268 282 273 308 271L317 267L316 275L326 276C337 277 326 288 313 291C288 297 259 299 233 295C233 310 237 324 231 334C226 343 215 340 210 331L203 311C189 320 171 318 160 307C129 309 102 298 88 279C80 268 76 256 74 248L52 235L61 230L61 218L70 223L73 215L80 223Z"/></svg></div><div class="coin-face back"><svg viewBox="40 80 310 280"><path fill="currentColor" d="M86 209C70 176 78 144 103 123C113 115 122 111 131 112C100 136 83 164 92 197C112 178 146 168 177 153C204 141 216 121 219 96C242 121 248 158 241 193L236 226C254 216 273 210 289 213C305 219 279 243 260 254C248 261 238 265 227 268C256 268 282 273 308 271L317 267L316 275L326 276C337 277 326 288 313 291C288 297 259 299 233 295C233 310 237 324 231 334C226 343 215 340 210 331L203 311C189 320 171 318 160 307C129 309 102 298 88 279C80 268 76 256 74 248L52 235L61 230L61 218L70 223L73 215L80 223Z"/></svg></div></div><span class="coin-outcome">${heads?'HEADS':'TAILS'}</span>${results.length>1?`<span class="coin-index">FLIP ${index+1}</span>`:''}</div>`).join('')}</div>`+(results.length>1?`<div class="coin-summary"><span><b>${heads}</b> HEADS</span><span><b>${results.length-heads}</b> TAILS</span></div>`:''));
     dialog.setAttribute('aria-label','Coin flip: '+results.map(result=>result?'heads':'tails').join(', '));
     if(typeof IlexAudio!=='undefined')IlexAudio.play('coin');await wait(1600+Math.min(results.length,8)*65,token);
    }else if(event.kind==='attack'||event.kind==='impact'){
@@ -86,10 +86,14 @@ var IlexPresentation=(()=>{
   const circle=(x,y,r,color,width=1)=>{glow(color);ctx.lineWidth=width;ctx.beginPath();ctx.arc(x,y,Math.max(0,r),0,Math.PI*2);ctx.stroke();};
   const line=(points,color,width)=>{glow(color);ctx.lineWidth=width;ctx.lineCap='round';ctx.beginPath();points.forEach((point,i)=>i?ctx.lineTo(point.x,point.y):ctx.moveTo(point.x,point.y));ctx.stroke();};
   const impact=()=>{if(impacted)return;impacted=true;for(const hit of event.hits){const rect=locate(hit),point=center(rect);const el=document.createElement('span');el.className='impact-number'+(hit.amount<0?' heal':'');el.textContent=(hit.amount<0?'+':'')+Math.abs(hit.amount);el.style.left=point.x+'px';el.style.top=point.y+'px';dialog.append(el);if(!reduced()&&prefs().shake){const card=document.querySelector(`[data-slot-player="${hit.player}"][data-slot-kind="${hit.active?'active':'bench'}"][data-slot-index="${hit.index}"] .seat-pokemon`);card?.animate([{translate:'0 0'},{translate:'-4px 1px'},{translate:'4px -1px'},{translate:'-2px 0'},{translate:'0 0'}],{duration:250});}}};
-  finishCurrent=resolve;
-  if(reduced()){impact();circle(target.x,target.y,55,primary,2);timer=setTimeout(()=>{finishCurrent=null;resolve();},ms);return;}
+  let finished=false;
+  const finish=()=>{if(finished)return;finished=true;cancelAnimationFrame(frame);clearTimeout(timer);finishCurrent=null;resolve();};
+  finishCurrent=finish;
+  // Frames can stop (or a renderer can fail) without blocking committed gameplay.
+  timer=setTimeout(finish,ms+500);
+  if(reduced()){impact();circle(target.x,target.y,55,primary,2);clearTimeout(timer);timer=setTimeout(finish,ms);return;}
   const draw=now=>{
-   if(token!==epoch){resolve();return;}const t=Math.min(1,(now-start)/ms);ctx.clearRect(0,0,w,h);ctx.globalCompositeOperation='lighter';ctx.globalAlpha=1;
+   if(token!==epoch){finish();return;}const t=Math.min(1,(now-start)/ms);ctx.clearRect(0,0,w,h);ctx.globalCompositeOperation='lighter';ctx.globalAlpha=1;
    const travel=Math.min(1,Math.max(0,(t-.12)/.45)),x=source.x+(target.x-source.x)*travel,y=source.y+(target.y-source.y)*travel;
    if(event.kind==='attack'&&t<.7){
     circle(source.x,source.y,18+Math.sin(t*8)*12,secondary,2);circle(source.x,source.y,40+t*28,primary,1);
@@ -100,7 +104,7 @@ var IlexPresentation=(()=>{
      const orb=ctx.createRadialGradient(x,y,1,x,y,28);orb.addColorStop(0,white);orb.addColorStop(.2,primary);orb.addColorStop(1,'transparent');ctx.fillStyle=orb;ctx.shadowBlur=0;ctx.fillRect(x-28,y-28,56,56);
     }
    }
-   const burst=Math.max(0,(t-(event.kind==='impact'?.12:.53))/.47);
+   const burst=Math.min(1,Math.max(0,(t-(event.kind==='impact'?.12:.53))/.47));
    if(burst>0){impact();ctx.globalAlpha=Math.max(0,1-burst);circle(target.x,target.y,12+burst*100,primary,3);circle(target.x,target.y,burst*150,secondary,1);if(energy==='PSYCHIC'||energy==='DRAGON')for(let ring=0;ring<3;ring++){ctx.save();ctx.translate(target.x,target.y);ctx.rotate(t*4+ring);ctx.scale(1,.42);circle(0,0,35+burst*80+ring*13,ring%2?secondary:primary,2);ctx.restore();}
     const count=energy==='FIRE'?90:65;for(let i=0;i<count;i++){const a=i*2.39996,seed=(Math.sin(i*127.1)*43758.5453)%1,r=burst*(45+Math.abs(seed)*140),px=target.x+Math.cos(a)*r,py=target.y+Math.sin(a)*r+(energy==='FIRE'?-burst*70:energy==='WATER'?burst*60:0),size=(1-burst)*(2+Math.abs(seed)*5);glow(i%3?primary:white,9);ctx.globalAlpha=Math.max(0,1-burst)*(i%4?.7:1);
      if(energy==='GRASS'){ctx.save();ctx.translate(px,py);ctx.rotate(a+burst*3);ctx.beginPath();ctx.ellipse(0,0,size*2,size*.65,0,0,Math.PI*2);ctx.fill();ctx.restore();}
@@ -109,8 +113,10 @@ var IlexPresentation=(()=>{
      else{ctx.beginPath();ctx.arc(px,py,Math.max(.1,size),0,Math.PI*2);ctx.fill();}
     }
    }
-   ctx.globalAlpha=1;ctx.shadowBlur=0;if(t<1)frame=requestAnimationFrame(draw);else{finishCurrent=null;resolve();}
-  };frame=requestAnimationFrame(draw);
+   ctx.globalAlpha=1;ctx.shadowBlur=0;if(t<1)frame=requestAnimationFrame(safeDraw);else finish();
+  };
+  const safeDraw=now=>{try{draw(now);}catch(error){errors.push(error.message);if(errors.length>20)errors.shift();console.warn('Presentation skipped:',error.message);finish();}};
+  frame=requestAnimationFrame(safeDraw);
  });}
  function manualCoin(result){const event={kind:'coin',results:[!!result],name:'Coin flip'};record(event);if(!prefs().effects||tab!=='play')return;lockedMatch=null;lockedViewer=null;queue.push(event);if(!running){running=true;document.body.classList.add('presentation-busy');const launchEpoch=epoch;requestAnimationFrame(()=>pump(launchEpoch));}}
  function update(value){state.presentationPreferences={...prefs(),...value};save();if(!prefs().effects)cancel();}

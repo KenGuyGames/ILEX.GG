@@ -1,0 +1,15 @@
+const fs=require('fs'),path=require('path'),vm=require('vm');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),research=path.join(root,'work/rules-research'),read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const sets=read(path.join(ui,'sets.json')).filter(s=>/^sm/.test(s.id)||['det1','2017sm','2018sm','2019sm'].includes(s.id)||s.id.startsWith('tk-sm'));
+const cards=read(path.join(ui,'cards.json')),ctx={console,setTimeout,clearTimeout};vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(ui,'rules-engine.js'),'utf8'),ctx);
+const native=Object.values(ctx.TCGRules.sets).filter(Array.isArray).flat().filter(c=>!c.fullName.startsWith('ILEX ')),unsafe=new Set(read(path.join(ui,'rules-coverage.json')).knownIncompleteTemplates);
+const norm=s=>String(s||'').replace(/Prism Star/g,'◇').replace(/GrassFireWater/g,'GRW').replace(/LightningPsychicMetal/g,'LPM').replace(/FightingDarknessFairy/g,'FDY').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/gi,'').toLowerCase(),names=a=>(a||[]).map(a=>norm(a.name)).join('|');
+const byName=new Map();for(const c of native){const k=norm(c.name);if(!byName.has(k))byName.set(k,[]);byName.get(k).push(c);}
+const alias={'sm3.5':'sm35','sm7.5':'sm75','sma':'sma','2017sm':'mcd17','2018sm':'mcd18','2019sm':'mcd19'};
+const rows=[];for(const set of sets){const file=path.join(root,'work/card-sources/pokemon-tcg-data-master/cards/en',(alias[set.id]||set.id)+'.json'),raw=fs.existsSync(file)?read(file):[];
+ const supplement=path.join(root,'work/card-sources/sm-supplements.json');if(fs.existsSync(supplement))raw.push(...read(supplement).filter(d=>d.set.id===set.id));
+ for(const scan of cards.filter(c=>c.id.startsWith(set.id+'-'))){const number=decodeURIComponent(scan.id.slice(set.id.length+1)),d=raw.find(d=>norm(d.number)===norm(number));
+ const matches=d?(byName.get(norm(d.name))||[]).filter(c=>!unsafe.has(c.fullName)&&(d.supertype!=='Pokémon'||String(c.hp)===String(d.hp)&&names(c.attacks)===names(d.attacks)&&names(c.powers)===names(d.abilities))):[];
+ rows.push({id:scan.id,set:set.id,name:scan.name,number,sourceFile:fs.existsSync(file)?path.relative(root,file):null,reason:!d?'missing-printed-text':!matches.length?'needs-implementation':'native-candidate-unvalidated',native:matches.map(c=>c.fullName),d:d?{...d,id:scan.id,set:{id:set.id}}:undefined});}}
+const report={status:'inventory-only-not-automation',scope:'Black & White onward through Sun & Moon; Unlimited deferred',total:rows.length,bySet:sets.map(s=>({id:s.id,name:s.name,total:rows.filter(r=>r.set===s.id).length,missingText:rows.filter(r=>r.set===s.id&&!r.d).length,nativeCandidates:rows.filter(r=>r.set===s.id&&r.native.length).length})),rows};
+fs.writeFileSync(path.join(research,'sm-inventory.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({...report,rows:undefined},null,2));

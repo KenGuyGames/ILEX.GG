@@ -1,0 +1,170 @@
+[
+  {
+    "id": "smp-SM174",
+    "name": "Eevee-GX",
+    "power": "Ascension DNA",
+    "text": "Once during your turn (before your attack), if you have a Pokémon in your hand that evolves from Eevee, you may put that card onto this Pokémon to evolve it. Before evolving, heal all damage from this Pokémon. You can't use this Ability during your first turn or on the turn this Pokémon was put into play."
+  },
+  {
+    "id": "smp-SM181",
+    "name": "Melmetal",
+    "power": "Metal Eater",
+    "text": "Once during your turn (before your attack), you may discard a Metal Pokémon from your hand. If you do, heal 100 damage from this Pokémon."
+  },
+  {
+    "id": "smp-SM191",
+    "name": "Mewtwo & Mew-GX",
+    "power": "Perfection",
+    "text": "This Pokémon can use the attacks of any Pokémon-GX or Pokémon-EX on your Bench or in your discard pile. (You still need the necessary Energy to use each attack.)"
+  },
+  {
+    "id": "smp-SM79",
+    "name": "Shining Celebi",
+    "power": "Time Recall",
+    "text": "Each of your evolved Pokémon can use any attack from its previous Evolutions. (You still need the necessary Energy to use each attack.)"
+  },
+  {
+    "id": "smp-SM95",
+    "name": "Lucario",
+    "power": "Precognitive Aura",
+    "text": "Once during your turn (before your attack), if you have Garchomp in play, you may search your deck for a card and put it into your hand. Then, shuffle your deck."
+  },
+  {
+    "id": "sm2-37",
+    "name": "Wishiwashi",
+    "power": "Schooling",
+    "text": "Once during your turn (before your attack), you may switch this Pokémon with a Wishiwashi-GX in your hand. Any attached cards, damage counters, Special Conditions, turns in play, and any other effects remain on the new Pokémon."
+  },
+  {
+    "id": "sm4-7",
+    "name": "Karrablast",
+    "power": "Shell On",
+    "text": "Once during your turn (before your attack), you may discard a Shelmet from your hand. If you do, search your deck for a card that evolves from this Pokémon and put it onto this Pokémon to evolve it. Then, shuffle your deck."
+  },
+  {
+    "id": "sm5-91",
+    "name": "Magearna",
+    "power": "Change Clothes",
+    "text": "Once during your turn (before your attack), you may put a Pokémon Tool card attached to 1 of your Pokémon into your hand."
+  },
+  {
+    "id": "sm5-134",
+    "name": "Unidentified Fossil",
+    "power": "Unidentified Fossil",
+    "text": "Play this card as if it were a 60-HP [C] Basic Pokémon. At any time during your turn (before your attack), you may discard this card from play.\n\nThis card can't retreat."
+  },
+  {
+    "id": "sm6-5",
+    "name": "Scatterbug",
+    "power": "Abnormal Outbreak",
+    "text": "You can use this Ability only if you go second. Once during your first turn (before your attack), you may search your deck for a Spewpa and a Vivillon, reveal them, and put them into your hand. Then, shuffle your deck."
+  },
+  {
+    "id": "sm8-8",
+    "name": "Meganium",
+    "power": "Quick-Ripening Herb",
+    "text": "Once during your turn (before your attack), you may use this Ability. Choose 1 of your Basic Pokémon in play. If you have a Stage 2 card in your hand that evolves from that Pokémon, put that card onto the Basic Pokémon to evolve it. You can use this Ability during your first turn or on a Pokémon that was put into play this turn."
+  },
+  {
+    "id": "sm8-90",
+    "name": "Unown",
+    "power": "DAMAGE",
+    "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, and if there are 66 or more damage counters on your Benched Pokémon, you may use this Ability. If you do, you win this game."
+  },
+  {
+    "id": "sm8-91",
+    "name": "Unown",
+    "power": "HAND",
+    "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, and if you have 35 or more cards in your hand, you may use this Ability. If you do, you win this game."
+  },
+  {
+    "id": "sm8-92",
+    "name": "Unown",
+    "power": "MISSING",
+    "text": "Once during your turn (before your attack), if this Pokémon is your Active Pokémon, and if your opponent has 12 or more Supporter cards in the Lost Zone, you may use this Ability. If you do, you win this game."
+  },
+  {
+    "id": "sm8-153",
+    "name": "Blissey",
+    "power": "Happiness Supplement",
+    "text": "Once during your turn (before your attack), you may remove a Special Condition from your Active Pokémon."
+  },
+  {
+    "id": "sm10-36",
+    "name": "Poliwag",
+    "power": "Round ‘n' Round",
+    "text": "You can use this Ability only if you go second. Once during your first turn (before your attack), you may leave your opponent's Active Pokémon Confused."
+  },
+  {
+    "id": "sm10-78",
+    "name": "Mismagius",
+    "power": "Mysterious Message",
+    "text": "Once during your turn (before your attack), you may draw cards until you have 7 cards in your hand. If you drew any cards in this way, this Pokémon is Knocked Out."
+  },
+  {
+    "id": "sm10-81",
+    "name": "Marshadow",
+    "power": "Resetting Hole",
+    "text": "Once during your turn (before your attack), if this Pokémon is on your Bench, you may discard any Stadium card in play. If you do, discard this Pokémon and all cards attached to it."
+  },
+  {
+    "id": "sm10-149",
+    "name": "Persian-GX",
+    "power": "Cat Walk",
+    "text": "Once during your turn (before your attack), if 1 of your Pokémon-GX or Pokémon-EX was Knocked Out during your opponent's last turn, you may search your deck for up to 2 cards and put them into your hand. Then, shuffle your deck. You can't use more than 1 Cat Walk Ability each turn."
+  },
+  {
+    "id": "sm10-157",
+    "name": "Porygon-Z",
+    "power": "Crazy Code",
+    "text": "As often as you like during your turn (before your attack), you may attach a Special Energy card from your hand to 1 of your Pokémon."
+  },
+  {
+    "id": "sm11-36",
+    "name": "Lapras",
+    "power": "Mermaid's Call",
+    "text": "Once during your turn (before your attack), you may put a Misty's Favor card from your discard pile into your hand."
+  },
+  {
+    "id": "sm11-81",
+    "name": "Drifblim",
+    "power": "Tag Transport",
+    "text": "Once during your turn (before your attack), you may switch your Active TAG TEAM Pokémon with 1 of your Benched Pokémon."
+  },
+  {
+    "id": "sm11-156",
+    "name": "Haxorus",
+    "power": "Grind Up",
+    "text": "Once during your turn (before your attack), you may discard any Stadium card in play. If you do, attach up to 3 in any combination of Fire and Metal Energy cards from your hand to this Pokémon."
+  },
+  {
+    "id": "sm11-160",
+    "name": "Naganadel-GX",
+    "power": "Ultra Conversion",
+    "text": "Once during your turn (before your attack), you may discard an Ultra Beast card from your hand. If you do, draw 3 cards."
+  },
+  {
+    "id": "sm12-95",
+    "name": "Oricorio-GX",
+    "power": "Dance of Tribute",
+    "text": "Once during your turn (before your attack), if any of your Pokémon were Knocked Out during your opponent's last turn, you may draw 3 cards. You can't use more than 1 Dance of Tribute Ability each turn."
+  },
+  {
+    "id": "sm12-102",
+    "name": "Lunala",
+    "power": "Blessing of the Moone",
+    "text": "Once during your turn (before your attack), if you have Solgaleo in play, you may search your deck for up to 2 Energy cards and attach them to your Solgaleo or Lunala in any way you like. Then, shuffle your deck."
+  },
+  {
+    "id": "sm12-184",
+    "name": "Silvally-GX",
+    "power": "Disk Reload",
+    "text": "Once during your turn (before your attack), you may draw cards until you have 5 cards in your hand."
+  },
+  {
+    "id": "sm12-197",
+    "name": "Lillie's Poké Doll",
+    "power": "Lillie's Poké Doll",
+    "text": "Play this card as if it were a 30-HP [C] Basic Pokémon. At any time during your turn (before your attack), if this Pokémon is your Active Pokémon, you may discard all cards from it and put it on the bottom of your deck.\n\nThis card can't retreat. If this card is Knocked Out, your opponent can't take any Prize cards for it."
+  }
+]

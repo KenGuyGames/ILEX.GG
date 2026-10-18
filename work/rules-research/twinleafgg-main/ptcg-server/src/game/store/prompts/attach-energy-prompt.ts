@@ -98,6 +98,7 @@ export class AttachEnergyPrompt extends Prompt<CardAssign[]> {
     if (result.length < this.options.min || result.length > this.options.max) {
       return false;
     }
+    if(new Set(result.map(r=>r.card)).size!==result.length)return false;
     if (result.some(r => this.options.blocked.includes(this.cardList.cards.indexOf(r.card)))) {
       return false;
     }
@@ -138,7 +139,7 @@ export class AttachEnergyPrompt extends Prompt<CardAssign[]> {
         }
       }
 
-      return onlyValidTypes;
+      if(!onlyValidTypes)return false;
     }
 
     // Check if 'different types' restriction is valid

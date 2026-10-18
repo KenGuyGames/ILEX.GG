@@ -34,7 +34,7 @@ function* playCard(
   effect.preventDefault = true;
 
   // If player has less than 2 cards in hand (excluding this card), only allow stadium search
-  if (player.hand.cards.length < 2) {
+  if ((self as any)._smCopiedSupporter || player.hand.cards.length < 2) {
     // Search for stadium only
     const blocked: number[] = [];
     player.deck.cards.forEach((card, index) => {

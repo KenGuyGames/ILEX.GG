@@ -34,7 +34,7 @@ export function exCondition(store:any,state:any,e:any,op:any){
  case 'dpSameHp':case 'dpSelfLessHp':{const own=new CheckHpEffect(p,source),other=new CheckHpEffect(o,o.active);store.reduceEffect(state,own);store.reduceEffect(state,other);return op.condition==='dpSameHp'?own.hp-source.damage===other.hp-o.active.damage:own.hp-source.damage<other.hp-o.active.damage;}
  case 'dpNoOwnPower':return ![p.active,...p.bench].some((list:any)=>list.getPokemons().some((card:any,index:number,array:any[])=>card.powers.some((power:any)=>power.powerType===PowerType.POKEPOWER)&&(index===array.length-1||array[array.length-1]._dpLevelUp)));
  case 'dpDefenderTool':return o.active.tools.length>0;
- case 'dpOpponentName':return [o.active,...o.bench].some((list:any)=>list.getPokemonCard()?.name===op.name);
+ case 'dpOpponentName':{const named=op.name?.match(/^(.*?) \(including (.*?)\)$/),names=op.names||(named?[named[1],named[2]]:[op.name]);return [o.active,...o.bench].some((list:any)=>names.includes(list.getPokemonCard()?.name));}
  case 'dpOwnStadium':return p.stadium.cards.includes(StateUtils.getStadiumCard(state));
  case 'dpOpponentStadium':return o.stadium.cards.includes(StateUtils.getStadiumCard(state));
  case 'dpOwnNames':return op.names.every((name:string)=>[p.active,...p.bench].some((list:any)=>list.getPokemonCard()?.name===name));

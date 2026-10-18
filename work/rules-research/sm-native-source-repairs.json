@@ -1,0 +1,50 @@
+{
+  "status": "candidate-unvalidated",
+  "applied": [
+    {
+      "file": "set-cosmic-eclipse/mega-lopuny-and-jigglypuff-gx.ts",
+      "from": "hp: number = 300",
+      "to": "hp: number = 240"
+    },
+    {
+      "file": "set-burning-shadows/tapu-bulu-gx.ts",
+      "from": "Nature's Judgement",
+      "to": "Nature's Judgment"
+    },
+    {
+      "file": "set-celestial-storm/electrode-gx.ts",
+      "from": "Crash and Burn-GX",
+      "to": "Crush and Burn-GX"
+    },
+    {
+      "file": "set-celestial-storm/mr-mime-gx.ts",
+      "from": "Magic Odds",
+      "to": "Magic Evens"
+    },
+    {
+      "file": "set-celestial-storm/mr-mime-gx.ts",
+      "from": "exactly 10, 30, 50, 70, 90, 110, 130, 150, 170, 190, 210, 230, or 250",
+      "to": "exactly 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, or 260"
+    },
+    {
+      "file": "set-lost-thunder/mimikyu-gx.ts",
+      "from": "Let's Snuggle and Fall",
+      "to": "Let's Snuggle & Fall"
+    },
+    {
+      "file": "set-crimson-invasion/registeel.ts",
+      "from": "Iron Hand",
+      "to": "Iron Fist"
+    },
+    {
+      "file": "set-sun-and-moon-promos/tsareena-gx.ts",
+      "from": "G Side Eye",
+      "to": "Side Eye"
+    },
+    {
+      "file": "set-team-up/muk.ts",
+      "from": "Stench",
+      "to": "Poison Sacs"
+    }
+  ]
+}

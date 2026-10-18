@@ -1,3 +1,4 @@
+import {xyEnergyCards,xyEnergyView,xyDiscardEnergy} from '../../../tcg-lab-xy-energy';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, EnergyType } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -20,7 +21,7 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
   let hasPokemonWithEnergy = false;
   const blocked: CardTarget[] = [];
   opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList, card, target) => {
-    if (cardList.energies.cards.some(c => c.energyType === EnergyType.SPECIAL)) {
+    if (xyEnergyCards(cardList).some(c => c.energyType === EnergyType.SPECIAL)) {
       hasPokemonWithEnergy = true;
     } else {
       blocked.push(target);
@@ -52,7 +53,7 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
   yield store.prompt(state, new ChooseCardsPrompt(
     player,
     GameMessage.CHOOSE_CARD_TO_DISCARD,
-    target.energies,
+    xyEnergyView(target),
     { energyType: EnergyType.SPECIAL },
     { min: 1, max: 1, allowCancel: false }
   ), selected => {
@@ -62,7 +63,7 @@ function* playCard(next: Function, store: StoreLike, state: State, effect: Attac
 
   if (cards.length > 0) {
     // Discard selected special energy card
-    MOVE_CARDS(store, state, target, opponent.discard, { cards: cards, sourceCard: effect.source.getPokemonCard()! });
+    xyDiscardEnergy(store,state,target,cards,effect.source.getPokemonCard(),effect);
   }
 
   return state;

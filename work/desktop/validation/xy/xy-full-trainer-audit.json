@@ -1,0 +1,2678 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "xyp-XY105",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY105",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY159",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY159",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY169",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY169",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY172",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY172",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY176",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY176",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY177",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY177",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY177a",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY177a",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY199",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY199",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY201",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY201",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY203",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY203",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY204",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY204",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY205",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY205",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY206",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY206",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY207",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY207",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY208",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY208",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY209",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY209",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY210",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY210",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY211",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY211",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY27",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY27",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY33",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY33",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY91",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY91",
+      "positive": true
+    },
+    {
+      "id": "xyp-XY99",
+      "positive": false
+    },
+    {
+      "id": "xyp-XY99",
+      "positive": true
+    },
+    {
+      "id": "xy0-35",
+      "positive": false
+    },
+    {
+      "id": "xy0-35",
+      "positive": true
+    },
+    {
+      "id": "xy0-36",
+      "positive": false
+    },
+    {
+      "id": "xy0-36",
+      "positive": true
+    },
+    {
+      "id": "xy0-37",
+      "positive": false
+    },
+    {
+      "id": "xy0-37",
+      "positive": true
+    },
+    {
+      "id": "xy0-38",
+      "positive": false
+    },
+    {
+      "id": "xy0-38",
+      "positive": true
+    },
+    {
+      "id": "xy0-39",
+      "positive": false
+    },
+    {
+      "id": "xy0-39",
+      "positive": true
+    },
+    {
+      "id": "xy1-115",
+      "positive": false
+    },
+    {
+      "id": "xy1-115",
+      "positive": true
+    },
+    {
+      "id": "xy1-116",
+      "positive": false
+    },
+    {
+      "id": "xy1-116",
+      "positive": true
+    },
+    {
+      "id": "xy1-117",
+      "positive": false
+    },
+    {
+      "id": "xy1-117",
+      "positive": true
+    },
+    {
+      "id": "xy1-118",
+      "positive": false
+    },
+    {
+      "id": "xy1-118",
+      "positive": true
+    },
+    {
+      "id": "xy1-119",
+      "positive": false
+    },
+    {
+      "id": "xy1-119",
+      "positive": true
+    },
+    {
+      "id": "xy1-120",
+      "positive": false
+    },
+    {
+      "id": "xy1-120",
+      "positive": true
+    },
+    {
+      "id": "xy1-121",
+      "positive": false
+    },
+    {
+      "id": "xy1-121",
+      "positive": true
+    },
+    {
+      "id": "xy1-122",
+      "positive": false
+    },
+    {
+      "id": "xy1-122",
+      "positive": true
+    },
+    {
+      "id": "xy1-123",
+      "positive": false
+    },
+    {
+      "id": "xy1-123",
+      "positive": true
+    },
+    {
+      "id": "xy1-124",
+      "positive": false
+    },
+    {
+      "id": "xy1-124",
+      "positive": true
+    },
+    {
+      "id": "xy1-125",
+      "positive": false
+    },
+    {
+      "id": "xy1-125",
+      "positive": true
+    },
+    {
+      "id": "xy1-126",
+      "positive": false
+    },
+    {
+      "id": "xy1-126",
+      "positive": true
+    },
+    {
+      "id": "xy1-127",
+      "positive": false
+    },
+    {
+      "id": "xy1-127",
+      "positive": true
+    },
+    {
+      "id": "xy1-128",
+      "positive": false
+    },
+    {
+      "id": "xy1-128",
+      "positive": true
+    },
+    {
+      "id": "xy1-129",
+      "positive": false
+    },
+    {
+      "id": "xy1-129",
+      "positive": true
+    },
+    {
+      "id": "xya-92a",
+      "positive": false
+    },
+    {
+      "id": "xya-92a",
+      "positive": true
+    },
+    {
+      "id": "xya-107a",
+      "positive": false
+    },
+    {
+      "id": "xya-107a",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-n-14",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-n-14",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-n-15",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-n-15",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-n-21",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-n-21",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-n-24",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-n-24",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-n-27",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-n-27",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-n-29",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-n-29",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-sy-4",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-sy-4",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-sy-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-sy-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-sy-23",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-sy-23",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-sy-24",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-sy-24",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-sy-26",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-sy-26",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-sy-28",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-sy-28",
+      "positive": true
+    },
+    {
+      "id": "xy2-89",
+      "positive": false
+    },
+    {
+      "id": "xy2-89",
+      "positive": true
+    },
+    {
+      "id": "xy2-90",
+      "positive": false
+    },
+    {
+      "id": "xy2-90",
+      "positive": true
+    },
+    {
+      "id": "xy2-91",
+      "positive": false
+    },
+    {
+      "id": "xy2-91",
+      "positive": true
+    },
+    {
+      "id": "xy2-92",
+      "positive": false
+    },
+    {
+      "id": "xy2-92",
+      "positive": true
+    },
+    {
+      "id": "xy2-93",
+      "positive": false
+    },
+    {
+      "id": "xy2-93",
+      "positive": true
+    },
+    {
+      "id": "xy2-94",
+      "positive": false
+    },
+    {
+      "id": "xy2-94",
+      "positive": true
+    },
+    {
+      "id": "xy2-95",
+      "positive": false
+    },
+    {
+      "id": "xy2-95",
+      "positive": true
+    },
+    {
+      "id": "xy2-96",
+      "positive": false
+    },
+    {
+      "id": "xy2-96",
+      "positive": true
+    },
+    {
+      "id": "xy2-98",
+      "positive": false
+    },
+    {
+      "id": "xy2-98",
+      "positive": true
+    },
+    {
+      "id": "xy2-99",
+      "positive": false
+    },
+    {
+      "id": "xy2-99",
+      "positive": true
+    },
+    {
+      "id": "xy2-104",
+      "positive": false
+    },
+    {
+      "id": "xy2-104",
+      "positive": true
+    },
+    {
+      "id": "xy2-105",
+      "positive": false
+    },
+    {
+      "id": "xy2-105",
+      "positive": true
+    },
+    {
+      "id": "xy2-106",
+      "positive": false
+    },
+    {
+      "id": "xy2-106",
+      "positive": true
+    },
+    {
+      "id": "xy3-88",
+      "positive": false
+    },
+    {
+      "id": "xy3-88",
+      "positive": true
+    },
+    {
+      "id": "xy3-89",
+      "positive": false
+    },
+    {
+      "id": "xy3-89",
+      "positive": true
+    },
+    {
+      "id": "xy3-90",
+      "positive": false
+    },
+    {
+      "id": "xy3-90",
+      "positive": true
+    },
+    {
+      "id": "xy3-91",
+      "positive": false
+    },
+    {
+      "id": "xy3-91",
+      "positive": true
+    },
+    {
+      "id": "xy3-92",
+      "positive": false
+    },
+    {
+      "id": "xy3-92",
+      "positive": true
+    },
+    {
+      "id": "xy3-94",
+      "positive": false
+    },
+    {
+      "id": "xy3-94",
+      "positive": true
+    },
+    {
+      "id": "xy3-95",
+      "positive": false
+    },
+    {
+      "id": "xy3-95",
+      "positive": true
+    },
+    {
+      "id": "xy3-96",
+      "positive": false
+    },
+    {
+      "id": "xy3-96",
+      "positive": true
+    },
+    {
+      "id": "xy3-97",
+      "positive": false
+    },
+    {
+      "id": "xy3-97",
+      "positive": true
+    },
+    {
+      "id": "xy3-98",
+      "positive": false
+    },
+    {
+      "id": "xy3-98",
+      "positive": true
+    },
+    {
+      "id": "xy3-99",
+      "positive": false
+    },
+    {
+      "id": "xy3-99",
+      "positive": true
+    },
+    {
+      "id": "xy3-100",
+      "positive": false
+    },
+    {
+      "id": "xy3-100",
+      "positive": true
+    },
+    {
+      "id": "xy3-102",
+      "positive": false
+    },
+    {
+      "id": "xy3-102",
+      "positive": true
+    },
+    {
+      "id": "xy3-109",
+      "positive": false
+    },
+    {
+      "id": "xy3-109",
+      "positive": true
+    },
+    {
+      "id": "xy3-110",
+      "positive": false
+    },
+    {
+      "id": "xy3-110",
+      "positive": true
+    },
+    {
+      "id": "xy3-111",
+      "positive": false
+    },
+    {
+      "id": "xy3-111",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-b-19",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-b-19",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-b-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-b-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-b-25",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-b-25",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-b-29",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-b-29",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-w-15",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-w-15",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-w-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-w-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-w-24",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-w-24",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-w-26",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-w-26",
+      "positive": true
+    },
+    {
+      "id": "xy4-91",
+      "positive": false
+    },
+    {
+      "id": "xy4-91",
+      "positive": true
+    },
+    {
+      "id": "xy4-92",
+      "positive": false
+    },
+    {
+      "id": "xy4-92",
+      "positive": true
+    },
+    {
+      "id": "xy4-93",
+      "positive": false
+    },
+    {
+      "id": "xy4-93",
+      "positive": true
+    },
+    {
+      "id": "xy4-95",
+      "positive": false
+    },
+    {
+      "id": "xy4-95",
+      "positive": true
+    },
+    {
+      "id": "xy4-96",
+      "positive": false
+    },
+    {
+      "id": "xy4-96",
+      "positive": true
+    },
+    {
+      "id": "xy4-99",
+      "positive": false
+    },
+    {
+      "id": "xy4-99",
+      "positive": true
+    },
+    {
+      "id": "xy4-100",
+      "positive": false
+    },
+    {
+      "id": "xy4-100",
+      "positive": true
+    },
+    {
+      "id": "xy4-101",
+      "positive": false
+    },
+    {
+      "id": "xy4-101",
+      "positive": true
+    },
+    {
+      "id": "xy4-102",
+      "positive": false
+    },
+    {
+      "id": "xy4-102",
+      "positive": true
+    },
+    {
+      "id": "xy4-103",
+      "positive": false
+    },
+    {
+      "id": "xy4-103",
+      "positive": true
+    },
+    {
+      "id": "xy4-104",
+      "positive": false
+    },
+    {
+      "id": "xy4-104",
+      "positive": true
+    },
+    {
+      "id": "xy4-105",
+      "positive": false
+    },
+    {
+      "id": "xy4-105",
+      "positive": true
+    },
+    {
+      "id": "xy4-107",
+      "positive": false
+    },
+    {
+      "id": "xy4-107",
+      "positive": true
+    },
+    {
+      "id": "xy4-108",
+      "positive": false
+    },
+    {
+      "id": "xy4-108",
+      "positive": true
+    },
+    {
+      "id": "xy4-109",
+      "positive": false
+    },
+    {
+      "id": "xy4-109",
+      "positive": true
+    },
+    {
+      "id": "xy4-110",
+      "positive": false
+    },
+    {
+      "id": "xy4-110",
+      "positive": true
+    },
+    {
+      "id": "xy4-117",
+      "positive": false
+    },
+    {
+      "id": "xy4-117",
+      "positive": true
+    },
+    {
+      "id": "xy4-118",
+      "positive": false
+    },
+    {
+      "id": "xy4-118",
+      "positive": true
+    },
+    {
+      "id": "xy4-119",
+      "positive": false
+    },
+    {
+      "id": "xy4-119",
+      "positive": true
+    },
+    {
+      "id": "xy5-122",
+      "positive": false
+    },
+    {
+      "id": "xy5-122",
+      "positive": true
+    },
+    {
+      "id": "xy5-123",
+      "positive": false
+    },
+    {
+      "id": "xy5-123",
+      "positive": true
+    },
+    {
+      "id": "xy5-125",
+      "positive": false
+    },
+    {
+      "id": "xy5-125",
+      "positive": true
+    },
+    {
+      "id": "xy5-126",
+      "positive": false
+    },
+    {
+      "id": "xy5-126",
+      "positive": true
+    },
+    {
+      "id": "xy5-127",
+      "positive": false
+    },
+    {
+      "id": "xy5-127",
+      "positive": true
+    },
+    {
+      "id": "xy5-128",
+      "positive": false
+    },
+    {
+      "id": "xy5-128",
+      "positive": true
+    },
+    {
+      "id": "xy5-129",
+      "positive": false
+    },
+    {
+      "id": "xy5-129",
+      "positive": true
+    },
+    {
+      "id": "xy5-130",
+      "positive": false
+    },
+    {
+      "id": "xy5-130",
+      "positive": true
+    },
+    {
+      "id": "xy5-131",
+      "positive": false
+    },
+    {
+      "id": "xy5-131",
+      "positive": true
+    },
+    {
+      "id": "xy5-132",
+      "positive": false
+    },
+    {
+      "id": "xy5-132",
+      "positive": true
+    },
+    {
+      "id": "xy5-134",
+      "positive": false
+    },
+    {
+      "id": "xy5-134",
+      "positive": true
+    },
+    {
+      "id": "xy5-136",
+      "positive": false
+    },
+    {
+      "id": "xy5-136",
+      "positive": true
+    },
+    {
+      "id": "xy5-137",
+      "positive": false
+    },
+    {
+      "id": "xy5-137",
+      "positive": true
+    },
+    {
+      "id": "xy5-138",
+      "positive": false
+    },
+    {
+      "id": "xy5-138",
+      "positive": true
+    },
+    {
+      "id": "xy5-139",
+      "positive": false
+    },
+    {
+      "id": "xy5-139",
+      "positive": true
+    },
+    {
+      "id": "xy5-140",
+      "positive": false
+    },
+    {
+      "id": "xy5-140",
+      "positive": true
+    },
+    {
+      "id": "xy5-142",
+      "positive": false
+    },
+    {
+      "id": "xy5-142",
+      "positive": true
+    },
+    {
+      "id": "xy5-159",
+      "positive": false
+    },
+    {
+      "id": "xy5-159",
+      "positive": true
+    },
+    {
+      "id": "xy5-161",
+      "positive": false
+    },
+    {
+      "id": "xy5-161",
+      "positive": true
+    },
+    {
+      "id": "xy5-163",
+      "positive": false
+    },
+    {
+      "id": "xy5-163",
+      "positive": true
+    },
+    {
+      "id": "xy5-164",
+      "positive": false
+    },
+    {
+      "id": "xy5-164",
+      "positive": true
+    },
+    {
+      "id": "dc1-23",
+      "positive": false
+    },
+    {
+      "id": "dc1-23",
+      "positive": true
+    },
+    {
+      "id": "dc1-24",
+      "positive": false
+    },
+    {
+      "id": "dc1-24",
+      "positive": true
+    },
+    {
+      "id": "dc1-26",
+      "positive": false
+    },
+    {
+      "id": "dc1-26",
+      "positive": true
+    },
+    {
+      "id": "dc1-27",
+      "positive": false
+    },
+    {
+      "id": "dc1-27",
+      "positive": true
+    },
+    {
+      "id": "dc1-28",
+      "positive": false
+    },
+    {
+      "id": "dc1-28",
+      "positive": true
+    },
+    {
+      "id": "dc1-29",
+      "positive": false
+    },
+    {
+      "id": "dc1-29",
+      "positive": true
+    },
+    {
+      "id": "dc1-30",
+      "positive": false
+    },
+    {
+      "id": "dc1-30",
+      "positive": true
+    },
+    {
+      "id": "dc1-31",
+      "positive": false
+    },
+    {
+      "id": "dc1-31",
+      "positive": true
+    },
+    {
+      "id": "dc1-32",
+      "positive": false
+    },
+    {
+      "id": "dc1-32",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-latio-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-latio-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-latio-21",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-latio-21",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-latia-15",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-latia-15",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-latia-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-latia-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-latia-29",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-latia-29",
+      "positive": true
+    },
+    {
+      "id": "xy6-83",
+      "positive": false
+    },
+    {
+      "id": "xy6-83",
+      "positive": true
+    },
+    {
+      "id": "xy6-84",
+      "positive": false
+    },
+    {
+      "id": "xy6-84",
+      "positive": true
+    },
+    {
+      "id": "xy6-85",
+      "positive": false
+    },
+    {
+      "id": "xy6-85",
+      "positive": true
+    },
+    {
+      "id": "xy6-87",
+      "positive": false
+    },
+    {
+      "id": "xy6-87",
+      "positive": true
+    },
+    {
+      "id": "xy6-88",
+      "positive": false
+    },
+    {
+      "id": "xy6-88",
+      "positive": true
+    },
+    {
+      "id": "xy6-89",
+      "positive": false
+    },
+    {
+      "id": "xy6-89",
+      "positive": true
+    },
+    {
+      "id": "xy6-90",
+      "positive": false
+    },
+    {
+      "id": "xy6-90",
+      "positive": true
+    },
+    {
+      "id": "xy6-91",
+      "positive": false
+    },
+    {
+      "id": "xy6-91",
+      "positive": true
+    },
+    {
+      "id": "xy6-92a",
+      "positive": false
+    },
+    {
+      "id": "xy6-92a",
+      "positive": true
+    },
+    {
+      "id": "xy6-92",
+      "positive": false
+    },
+    {
+      "id": "xy6-92",
+      "positive": true
+    },
+    {
+      "id": "xy6-93",
+      "positive": false
+    },
+    {
+      "id": "xy6-93",
+      "positive": true
+    },
+    {
+      "id": "xy6-94",
+      "positive": false
+    },
+    {
+      "id": "xy6-94",
+      "positive": true
+    },
+    {
+      "id": "xy6-95",
+      "positive": false
+    },
+    {
+      "id": "xy6-95",
+      "positive": true
+    },
+    {
+      "id": "xy6-96",
+      "positive": false
+    },
+    {
+      "id": "xy6-96",
+      "positive": true
+    },
+    {
+      "id": "xy6-107",
+      "positive": false
+    },
+    {
+      "id": "xy6-107",
+      "positive": true
+    },
+    {
+      "id": "xy6-108",
+      "positive": false
+    },
+    {
+      "id": "xy6-108",
+      "positive": true
+    },
+    {
+      "id": "xy6-109",
+      "positive": false
+    },
+    {
+      "id": "xy6-109",
+      "positive": true
+    },
+    {
+      "id": "xy6-110",
+      "positive": false
+    },
+    {
+      "id": "xy6-110",
+      "positive": true
+    },
+    {
+      "id": "xy7-70",
+      "positive": false
+    },
+    {
+      "id": "xy7-70",
+      "positive": true
+    },
+    {
+      "id": "xy7-72",
+      "positive": false
+    },
+    {
+      "id": "xy7-72",
+      "positive": true
+    },
+    {
+      "id": "xy7-73",
+      "positive": false
+    },
+    {
+      "id": "xy7-73",
+      "positive": true
+    },
+    {
+      "id": "xy7-74",
+      "positive": false
+    },
+    {
+      "id": "xy7-74",
+      "positive": true
+    },
+    {
+      "id": "xy7-75",
+      "positive": false
+    },
+    {
+      "id": "xy7-75",
+      "positive": true
+    },
+    {
+      "id": "xy7-75a",
+      "positive": false
+    },
+    {
+      "id": "xy7-75a",
+      "positive": true
+    },
+    {
+      "id": "xy7-76",
+      "positive": false
+    },
+    {
+      "id": "xy7-76",
+      "positive": true
+    },
+    {
+      "id": "xy7-77",
+      "positive": false
+    },
+    {
+      "id": "xy7-77",
+      "positive": true
+    },
+    {
+      "id": "xy7-78",
+      "positive": false
+    },
+    {
+      "id": "xy7-78",
+      "positive": true
+    },
+    {
+      "id": "xy7-79",
+      "positive": false
+    },
+    {
+      "id": "xy7-79",
+      "positive": true
+    },
+    {
+      "id": "xy7-80",
+      "positive": false
+    },
+    {
+      "id": "xy7-80",
+      "positive": true
+    },
+    {
+      "id": "xy7-81",
+      "positive": false
+    },
+    {
+      "id": "xy7-81",
+      "positive": true
+    },
+    {
+      "id": "xy7-95",
+      "positive": false
+    },
+    {
+      "id": "xy7-95",
+      "positive": true
+    },
+    {
+      "id": "xy7-99",
+      "positive": false
+    },
+    {
+      "id": "xy7-99",
+      "positive": true
+    },
+    {
+      "id": "xy7-100",
+      "positive": false
+    },
+    {
+      "id": "xy7-100",
+      "positive": true
+    },
+    {
+      "id": "xy8-133",
+      "positive": false
+    },
+    {
+      "id": "xy8-133",
+      "positive": true
+    },
+    {
+      "id": "xy8-134",
+      "positive": false
+    },
+    {
+      "id": "xy8-134",
+      "positive": true
+    },
+    {
+      "id": "xy8-135",
+      "positive": false
+    },
+    {
+      "id": "xy8-135",
+      "positive": true
+    },
+    {
+      "id": "xy8-136",
+      "positive": false
+    },
+    {
+      "id": "xy8-136",
+      "positive": true
+    },
+    {
+      "id": "xy8-137",
+      "positive": false
+    },
+    {
+      "id": "xy8-137",
+      "positive": true
+    },
+    {
+      "id": "xy8-138",
+      "positive": false
+    },
+    {
+      "id": "xy8-138",
+      "positive": true
+    },
+    {
+      "id": "xy8-139",
+      "positive": false
+    },
+    {
+      "id": "xy8-139",
+      "positive": true
+    },
+    {
+      "id": "xy8-140",
+      "positive": false
+    },
+    {
+      "id": "xy8-140",
+      "positive": true
+    },
+    {
+      "id": "xy8-141",
+      "positive": false
+    },
+    {
+      "id": "xy8-141",
+      "positive": true
+    },
+    {
+      "id": "xy8-142",
+      "positive": false
+    },
+    {
+      "id": "xy8-142",
+      "positive": true
+    },
+    {
+      "id": "xy8-143",
+      "positive": false
+    },
+    {
+      "id": "xy8-143",
+      "positive": true
+    },
+    {
+      "id": "xy8-144",
+      "positive": false
+    },
+    {
+      "id": "xy8-144",
+      "positive": true
+    },
+    {
+      "id": "xy8-145",
+      "positive": false
+    },
+    {
+      "id": "xy8-145",
+      "positive": true
+    },
+    {
+      "id": "xy8-146a",
+      "positive": false
+    },
+    {
+      "id": "xy8-146a",
+      "positive": true
+    },
+    {
+      "id": "xy8-146",
+      "positive": false
+    },
+    {
+      "id": "xy8-146",
+      "positive": true
+    },
+    {
+      "id": "xy8-147",
+      "positive": false
+    },
+    {
+      "id": "xy8-147",
+      "positive": true
+    },
+    {
+      "id": "xy8-148",
+      "positive": false
+    },
+    {
+      "id": "xy8-148",
+      "positive": true
+    },
+    {
+      "id": "xy8-149",
+      "positive": false
+    },
+    {
+      "id": "xy8-149",
+      "positive": true
+    },
+    {
+      "id": "xy8-150",
+      "positive": false
+    },
+    {
+      "id": "xy8-150",
+      "positive": true
+    },
+    {
+      "id": "xy8-161",
+      "positive": false
+    },
+    {
+      "id": "xy8-161",
+      "positive": true
+    },
+    {
+      "id": "xy8-162",
+      "positive": false
+    },
+    {
+      "id": "xy8-162",
+      "positive": true
+    },
+    {
+      "id": "xy9-96",
+      "positive": false
+    },
+    {
+      "id": "xy9-96",
+      "positive": true
+    },
+    {
+      "id": "xy9-97",
+      "positive": false
+    },
+    {
+      "id": "xy9-97",
+      "positive": true
+    },
+    {
+      "id": "xy9-99",
+      "positive": false
+    },
+    {
+      "id": "xy9-99",
+      "positive": true
+    },
+    {
+      "id": "xy9-100",
+      "positive": false
+    },
+    {
+      "id": "xy9-100",
+      "positive": true
+    },
+    {
+      "id": "xy9-101",
+      "positive": false
+    },
+    {
+      "id": "xy9-101",
+      "positive": true
+    },
+    {
+      "id": "xy9-102",
+      "positive": false
+    },
+    {
+      "id": "xy9-102",
+      "positive": true
+    },
+    {
+      "id": "xy9-103",
+      "positive": false
+    },
+    {
+      "id": "xy9-103",
+      "positive": true
+    },
+    {
+      "id": "xy9-104",
+      "positive": false
+    },
+    {
+      "id": "xy9-104",
+      "positive": true
+    },
+    {
+      "id": "xy9-105",
+      "positive": false
+    },
+    {
+      "id": "xy9-105",
+      "positive": true
+    },
+    {
+      "id": "xy9-106",
+      "positive": false
+    },
+    {
+      "id": "xy9-106",
+      "positive": true
+    },
+    {
+      "id": "xy9-107",
+      "positive": false
+    },
+    {
+      "id": "xy9-107",
+      "positive": true
+    },
+    {
+      "id": "xy9-107a",
+      "positive": false
+    },
+    {
+      "id": "xy9-107a",
+      "positive": true
+    },
+    {
+      "id": "xy9-108",
+      "positive": false
+    },
+    {
+      "id": "xy9-108",
+      "positive": true
+    },
+    {
+      "id": "xy9-109",
+      "positive": false
+    },
+    {
+      "id": "xy9-109",
+      "positive": true
+    },
+    {
+      "id": "xy9-110",
+      "positive": false
+    },
+    {
+      "id": "xy9-110",
+      "positive": true
+    },
+    {
+      "id": "xy9-111",
+      "positive": false
+    },
+    {
+      "id": "xy9-111",
+      "positive": true
+    },
+    {
+      "id": "xy9-112",
+      "positive": false
+    },
+    {
+      "id": "xy9-112",
+      "positive": true
+    },
+    {
+      "id": "xy9-122",
+      "positive": false
+    },
+    {
+      "id": "xy9-122",
+      "positive": true
+    },
+    {
+      "id": "g1-59",
+      "positive": false
+    },
+    {
+      "id": "g1-59",
+      "positive": true
+    },
+    {
+      "id": "g1-61",
+      "positive": false
+    },
+    {
+      "id": "g1-61",
+      "positive": true
+    },
+    {
+      "id": "g1-62",
+      "positive": false
+    },
+    {
+      "id": "g1-62",
+      "positive": true
+    },
+    {
+      "id": "g1-63",
+      "positive": false
+    },
+    {
+      "id": "g1-63",
+      "positive": true
+    },
+    {
+      "id": "g1-64",
+      "positive": false
+    },
+    {
+      "id": "g1-64",
+      "positive": true
+    },
+    {
+      "id": "g1-65",
+      "positive": false
+    },
+    {
+      "id": "g1-65",
+      "positive": true
+    },
+    {
+      "id": "g1-66",
+      "positive": false
+    },
+    {
+      "id": "g1-66",
+      "positive": true
+    },
+    {
+      "id": "g1-67",
+      "positive": false
+    },
+    {
+      "id": "g1-67",
+      "positive": true
+    },
+    {
+      "id": "g1-68",
+      "positive": false
+    },
+    {
+      "id": "g1-68",
+      "positive": true
+    },
+    {
+      "id": "g1-69",
+      "positive": false
+    },
+    {
+      "id": "g1-69",
+      "positive": true
+    },
+    {
+      "id": "g1-70",
+      "positive": false
+    },
+    {
+      "id": "g1-70",
+      "positive": true
+    },
+    {
+      "id": "g1-71",
+      "positive": false
+    },
+    {
+      "id": "g1-71",
+      "positive": true
+    },
+    {
+      "id": "g1-72",
+      "positive": false
+    },
+    {
+      "id": "g1-72",
+      "positive": true
+    },
+    {
+      "id": "g1-73",
+      "positive": false
+    },
+    {
+      "id": "g1-73",
+      "positive": true
+    },
+    {
+      "id": "g1-73a",
+      "positive": false
+    },
+    {
+      "id": "g1-73a",
+      "positive": true
+    },
+    {
+      "id": "g1-RC26",
+      "positive": false
+    },
+    {
+      "id": "g1-RC26",
+      "positive": true
+    },
+    {
+      "id": "g1-RC27",
+      "positive": false
+    },
+    {
+      "id": "g1-RC27",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-p-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-p-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-p-21",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-p-21",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-su-15",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-su-15",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-su-20",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-su-20",
+      "positive": true
+    },
+    {
+      "id": "tk-xy-su-29",
+      "positive": false
+    },
+    {
+      "id": "tk-xy-su-29",
+      "positive": true
+    },
+    {
+      "id": "xy10-90",
+      "positive": false
+    },
+    {
+      "id": "xy10-90",
+      "positive": true
+    },
+    {
+      "id": "xy10-91",
+      "positive": false
+    },
+    {
+      "id": "xy10-91",
+      "positive": true
+    },
+    {
+      "id": "xy10-92",
+      "positive": false
+    },
+    {
+      "id": "xy10-92",
+      "positive": true
+    },
+    {
+      "id": "xy10-93",
+      "positive": false
+    },
+    {
+      "id": "xy10-93",
+      "positive": true
+    },
+    {
+      "id": "xy10-94",
+      "positive": false
+    },
+    {
+      "id": "xy10-94",
+      "positive": true
+    },
+    {
+      "id": "xy10-96",
+      "positive": false
+    },
+    {
+      "id": "xy10-96",
+      "positive": true
+    },
+    {
+      "id": "xy10-97",
+      "positive": false
+    },
+    {
+      "id": "xy10-97",
+      "positive": true
+    },
+    {
+      "id": "xy10-98",
+      "positive": false
+    },
+    {
+      "id": "xy10-98",
+      "positive": true
+    },
+    {
+      "id": "xy10-99",
+      "positive": false
+    },
+    {
+      "id": "xy10-99",
+      "positive": true
+    },
+    {
+      "id": "xy10-100",
+      "positive": false
+    },
+    {
+      "id": "xy10-100",
+      "positive": true
+    },
+    {
+      "id": "xy10-102",
+      "positive": false
+    },
+    {
+      "id": "xy10-102",
+      "positive": true
+    },
+    {
+      "id": "xy10-103",
+      "positive": false
+    },
+    {
+      "id": "xy10-103",
+      "positive": true
+    },
+    {
+      "id": "xy10-105",
+      "positive": false
+    },
+    {
+      "id": "xy10-105",
+      "positive": true
+    },
+    {
+      "id": "xy10-105a",
+      "positive": false
+    },
+    {
+      "id": "xy10-105a",
+      "positive": true
+    },
+    {
+      "id": "xy10-106",
+      "positive": false
+    },
+    {
+      "id": "xy10-106",
+      "positive": true
+    },
+    {
+      "id": "xy10-107",
+      "positive": false
+    },
+    {
+      "id": "xy10-107",
+      "positive": true
+    },
+    {
+      "id": "xy10-108",
+      "positive": false
+    },
+    {
+      "id": "xy10-108",
+      "positive": true
+    },
+    {
+      "id": "xy10-109",
+      "positive": false
+    },
+    {
+      "id": "xy10-109",
+      "positive": true
+    },
+    {
+      "id": "xy10-110",
+      "positive": false
+    },
+    {
+      "id": "xy10-110",
+      "positive": true
+    },
+    {
+      "id": "xy10-111a",
+      "positive": false
+    },
+    {
+      "id": "xy10-111a",
+      "positive": true
+    },
+    {
+      "id": "xy10-111",
+      "positive": false
+    },
+    {
+      "id": "xy10-111",
+      "positive": true
+    },
+    {
+      "id": "xy10-112",
+      "positive": false
+    },
+    {
+      "id": "xy10-112",
+      "positive": true
+    },
+    {
+      "id": "xy10-113",
+      "positive": false
+    },
+    {
+      "id": "xy10-113",
+      "positive": true
+    },
+    {
+      "id": "xy10-124",
+      "positive": false
+    },
+    {
+      "id": "xy10-124",
+      "positive": true
+    },
+    {
+      "id": "xy11-98",
+      "positive": false
+    },
+    {
+      "id": "xy11-98",
+      "positive": true
+    },
+    {
+      "id": "xy11-100",
+      "positive": false
+    },
+    {
+      "id": "xy11-100",
+      "positive": true
+    },
+    {
+      "id": "xy11-101",
+      "positive": false
+    },
+    {
+      "id": "xy11-101",
+      "positive": true
+    },
+    {
+      "id": "xy11-103",
+      "positive": false
+    },
+    {
+      "id": "xy11-103",
+      "positive": true
+    },
+    {
+      "id": "xy11-104",
+      "positive": false
+    },
+    {
+      "id": "xy11-104",
+      "positive": true
+    },
+    {
+      "id": "xy11-106",
+      "positive": false
+    },
+    {
+      "id": "xy11-106",
+      "positive": true
+    },
+    {
+      "id": "xy11-113",
+      "positive": false
+    },
+    {
+      "id": "xy11-113",
+      "positive": true
+    },
+    {
+      "id": "xy11-114",
+      "positive": false
+    },
+    {
+      "id": "xy11-114",
+      "positive": true
+    },
+    {
+      "id": "xy12-73",
+      "positive": false
+    },
+    {
+      "id": "xy12-73",
+      "positive": true
+    },
+    {
+      "id": "xy12-74",
+      "positive": false
+    },
+    {
+      "id": "xy12-74",
+      "positive": true
+    },
+    {
+      "id": "xy12-75",
+      "positive": false
+    },
+    {
+      "id": "xy12-75",
+      "positive": true
+    },
+    {
+      "id": "xy12-77",
+      "positive": false
+    },
+    {
+      "id": "xy12-77",
+      "positive": true
+    },
+    {
+      "id": "xy12-79",
+      "positive": false
+    },
+    {
+      "id": "xy12-79",
+      "positive": true
+    },
+    {
+      "id": "xy12-80",
+      "positive": false
+    },
+    {
+      "id": "xy12-80",
+      "positive": true
+    },
+    {
+      "id": "xy12-81",
+      "positive": false
+    },
+    {
+      "id": "xy12-81",
+      "positive": true
+    },
+    {
+      "id": "xy12-82",
+      "positive": false
+    },
+    {
+      "id": "xy12-82",
+      "positive": true
+    },
+    {
+      "id": "xy12-83",
+      "positive": false
+    },
+    {
+      "id": "xy12-83",
+      "positive": true
+    },
+    {
+      "id": "xy12-84",
+      "positive": false
+    },
+    {
+      "id": "xy12-84",
+      "positive": true
+    },
+    {
+      "id": "xy12-85",
+      "positive": false
+    },
+    {
+      "id": "xy12-85",
+      "positive": true
+    },
+    {
+      "id": "xy12-86",
+      "positive": false
+    },
+    {
+      "id": "xy12-86",
+      "positive": true
+    },
+    {
+      "id": "xy12-87",
+      "positive": false
+    },
+    {
+      "id": "xy12-87",
+      "positive": true
+    },
+    {
+      "id": "xy12-88",
+      "positive": false
+    },
+    {
+      "id": "xy12-88",
+      "positive": true
+    },
+    {
+      "id": "xy12-89",
+      "positive": false
+    },
+    {
+      "id": "xy12-89",
+      "positive": true
+    },
+    {
+      "id": "xy12-107",
+      "positive": false
+    },
+    {
+      "id": "xy12-107",
+      "positive": true
+    },
+    {
+      "id": "xy12-108",
+      "positive": false
+    },
+    {
+      "id": "xy12-108",
+      "positive": true
+    },
+    {
+      "id": "xy12-113",
+      "positive": false
+    },
+    {
+      "id": "xy12-113",
+      "positive": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "xy0-34",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy0-34",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy2-88a",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy2-88a",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy2-88",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy2-88",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy2-97",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy2-97",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy3-93",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy3-93",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy3-101",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy3-101",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy4-94",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy4-94",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy4-97",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy4-97",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy4-98",
+      "positive": false,
+      "error": "INVALID_TARGET"
+    },
+    {
+      "id": "xy4-98",
+      "positive": true,
+      "error": "INVALID_TARGET"
+    },
+    {
+      "id": "xy4-106",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy4-106",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-124",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-124",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-133",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-133",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-135",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-135",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-141",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-141",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-157",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-157",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-158",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-158",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-160",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-160",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-162",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy5-162",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "dc1-25",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "dc1-25",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy6-86",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy6-86",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy7-69",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy7-69",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy7-71",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy7-71",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy9-98b",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy9-98b",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy9-98a",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy9-98a",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy9-98",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy9-98",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "g1-60",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "g1-60",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy10-95",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy10-95",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy10-101",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy10-101",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy10-104",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy10-104",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy11-99",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy11-99",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy11-102",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy11-102",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy11-105",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy11-105",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy12-76",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy12-76",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy12-78",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy12-78",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    }
+  ],
+  "failures": [],
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+}

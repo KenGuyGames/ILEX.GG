@@ -1,0 +1,2347 @@
+{
+  "passed": false,
+  "games": [],
+  "failures": [
+    {
+      "pair": 0,
+      "leg": 0,
+      "decision": 53,
+      "message": "AssertionError [ERR_ASSERTION]: Exact replay\n+ actual - expected\n\n+ `{\"state\":{\"cardNames\":[\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy10-29\",\"ILEX DP xy10-29\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy7-75\",\"ILEX DP xy7-75\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy4-91\",\"ILEX DP xy11-104\",\"ILEX DP xy10-105\",\"ILEX DP xy5-141\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy11-105\",\"ILEX DP xy5-127\",\"ILEX DP xy2-97\",\"ILEX DP xy4-106\",\"ILEX DP xy9-99\",\"ILEX DP xy9-99\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy7-89\",\"ILEX DP xy11-110\",\"ILEX DP xy11-74\",\"ILEX DP xy6-40\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy10-105\",\"ILEX DP xy10-105\",\"ILEX DP xy4-91\",\"ILEX DP xy4-91\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy7-75\",\"ILEX DP xy4-110\",\"ILEX DP xy2-93\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-86\",\"ILEX DP xy5-127\",\"ILEX DP xy8-149\",\"ILEX DP xy2-97\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy8-137\",\"ILEX DP xy8-137\",\"ILEX DP xy8-145\",\"ILEX DP xy8-145\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\"],\"logs\":[{\"id\":1,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Yes\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":2,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":3,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Audino-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":4,\"message\":\"LOG_TURN\",\"params\":{\"turn\":1,\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":5,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":6,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Audino-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":7,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Magearna-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":8,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":9,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Professor Sycamore\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":10,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Trainers' Mail\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":11,\"message\":\"LOG_PLAYER_PUTS_CARD_IN_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"N\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":12,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino Spirit Link\",\"pokemon\":\"Audino-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":13,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Float Stone\",\"pokemon\":\"Magearna-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":14,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":15,\"message\":\"LOG_TURN\",\"params\":{\"turn\":2,\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":16,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":17,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":18,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":19,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Puzzle of Time\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":20,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"play 1 card, look at the top 3 cards of your deck and put them back in any order.\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":21,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Battle Compressor Team Flare Gear\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":22,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":23,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"Night March\",\"active\":\"Pumpkaboo\",\"benched\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":24,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Special Charge\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":25,\"message\":\"LOG_PLAYER_RETURNS_TO_DECK_FROM_DISCARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":26,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":27,\"message\":\"LOG_TURN\",\"params\":{\"turn\":3,\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":28,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":29,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Metal Energy\",\"pokemon\":\"Audino-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":30,\"message\":\"LOG_PLAYER_EVOLVES_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"pokemon\":\"Audino-EX\",\"card\":\"M Audino-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":31,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Magical Symphony\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":32,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":110,\"target\":\"Pumpkaboo\",\"effect\":\"Magical Symphony\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":33,\"message\":\"LOG_POKEMON_KO\",\"params\":{\"name\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":34,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"a Prize card\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":35,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo (Bench)\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":36,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":37,\"message\":\"LOG_TURN\",\"params\":{\"turn\":4,\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":38,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":39,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"Hex Maniac\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":40,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"VS Seeker\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":41,\"message\":\"LOG_PLAYER_PUTS_CARD_IN_HAND\",\"params\":{\"name\":\"Night March\",\"card\":\"Hex Maniac\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":42,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":43,\"message\":\"LOG_TURN\",\"params\":{\"turn\":5,\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":44,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":45,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Magical Symphony\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":46,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":110,\"target\":\"Pumpkaboo\",\"effect\":\"Magical Symphony\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":47,\"message\":\"LOG_POKEMON_KO\",\"params\":{\"name\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":48,\"message\":\"LOG_PLAYER_NO_ACTIVE_POKEMON\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":49,\"message\":\"LOG_GAME_FINISHED_WINNER\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0}],\"rules\":{\"firstTurnDrawCard\":true,\"firstTurnUseSupporter\":true,\"attackFirstTurn\":false,\"supporterCleanupAtEndTurn\":false,\"unlimitedEnergyAttachments\":false,\"alternativeSetup\":false,\"name\":\"XY (2013–2016)\",\"format\":11,\"forceFirst\":true,\"legacyBurn\":true,\"dpEraRules\":true,\"exEraRules\":true,\"bwEraRules\":true,\"pokemonCatcherErrata\":true,\"xyEraRules\":true},\"prompts\":[{\"playerId\":1,\"id\":1,\"message\":\"SETUP_WHO_BEGINS_FLIP\",\"type\":\"Coin flip\",\"result\":false},{\"playerId\":2,\"id\":2,\"message\":\"GO_FIRST\",\"type\":\"Confirm\",\"result\":true},{\"playerId\":1,\"id\":3,\"type\":\"Shuffle deck\",\"result\":[38,28,10,47,43,59,8,11,22,30,3,50,35,29,33,56,45,15,57,4,42,41,34,53,5,24,49,21,31,16,44,32,58,39,23,6,13,20,0,9,27,54,18,2,48,55,36,17,51,7,1,14,26,46,52,37,19,12,25,40]},{\"playerId\":2,\"id\":4,\"type\":\"Shuffle deck\",\"result\":[24,47,10,15,3,57,1,48,27,38,32,28,13,21,42,50,16,36,5,46,41,18,19,37,33,12,31,8,44,55,49,20,59,6,23,39,53,43,2,34,4,52,9,56,14,26,30,29,25,17,35,40,54,7,51,58,11,22,0,45]},{\"playerId\":1,\"id\":5,\"message\":\"CHOOSE_STARTING_POKEMONS\",\"cards\":{\"cards\":[{\"id\":29,\"regulationMark\":\"\",\"_tags\":[],\"_runtimeTags\":[],\"setNumber\":\"109\",\"cardImage\":\"assets/cardback.png\",\"retreat\":[],\"attacks\":[],\"powers\":[],\"cards\":{\"cards\":[],\"isPublic\":false,\"isSecret\":false,\"faceUpPrize\":false,\"stadiumDirection\":\"up\",\"markedAsNotS`... 760414 more characters\n- `{\"state\":{\"cardNames\":[\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy10-29\",\"ILEX DP xy10-29\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy7-75\",\"ILEX DP xy7-75\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy4-91\",\"ILEX DP xy11-104\",\"ILEX DP xy10-105\",\"ILEX DP xy5-141\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy11-105\",\"ILEX DP xy5-127\",\"ILEX DP xy2-97\",\"ILEX DP xy4-106\",\"ILEX DP xy9-99\",\"ILEX DP xy9-99\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy7-89\",\"ILEX DP xy11-110\",\"ILEX DP xy11-74\",\"ILEX DP xy6-40\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy10-105\",\"ILEX DP xy10-105\",\"ILEX DP xy4-91\",\"ILEX DP xy4-91\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy7-75\",\"ILEX DP xy4-110\",\"ILEX DP xy2-93\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-86\",\"ILEX DP xy5-127\",\"ILEX DP xy8-149\",\"ILEX DP xy2-97\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy8-137\",\"ILEX DP xy8-137\",\"ILEX DP xy8-145\",\"ILEX DP xy8-145\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\"],\"logs\":[{\"id\":1,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Yes\",\"timestamp\":\"01:11:37 AM\"},\"client\":0},{\"id\":2,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo\",\"timestamp\":\"01:11:37 AM\"},\"client\":0},{\"id\":3,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Audino-EX\",\"timestamp\":\"01:11:37 AM\"},\"client\":0},{\"id\":4,\"message\":\"LOG_TURN\",\"params\":{\"turn\":1,\"timestamp\":\"01:11:37 AM\"},\"client\":0},{\"id\":5,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:37 AM\"},\"client\":0},{\"id\":6,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Audino-EX\",\"timestamp\":\"01:11:37 AM\"},\"client\":0},{\"id\":7,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Magearna-EX\",\"timestamp\":\"01:11:38 AM\"},\"client\":0},{\"id\":8,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino-EX\",\"timestamp\":\"01:11:38 AM\"},\"client\":0},{\"id\":9,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Professor Sycamore\",\"timestamp\":\"01:11:39 AM\"},\"client\":0},{\"id\":10,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Trainers' Mail\",\"timestamp\":\"01:11:39 AM\"},\"client\":0},{\"id\":11,\"message\":\"LOG_PLAYER_PUTS_CARD_IN_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"N\",\"timestamp\":\"01:11:39 AM\"},\"client\":0},{\"id\":12,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino Spirit Link\",\"pokemon\":\"Audino-EX\",\"timestamp\":\"01:11:39 AM\"},\"client\":0},{\"id\":13,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Float Stone\",\"pokemon\":\"Magearna-EX\",\"timestamp\":\"01:11:40 AM\"},\"client\":0},{\"id\":14,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:40 AM\"},\"client\":0},{\"id\":15,\"message\":\"LOG_TURN\",\"params\":{\"turn\":2,\"timestamp\":\"01:11:40 AM\"},\"client\":0},{\"id\":16,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:40 AM\"},\"client\":0},{\"id\":17,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Pumpkaboo\",\"timestamp\":\"01:11:42 AM\"},\"client\":0},{\"id\":18,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Pumpkaboo\",\"timestamp\":\"01:11:43 AM\"},\"client\":0},{\"id\":19,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Puzzle of Time\",\"timestamp\":\"01:11:44 AM\"},\"client\":0},{\"id\":20,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"play 1 card, look at the top 3 cards of your deck and put them back in any order.\",\"timestamp\":\"01:11:44 AM\"},\"client\":0},{\"id\":21,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Battle Compressor Team Flare Gear\",\"timestamp\":\"01:11:45 AM\"},\"client\":0},{\"id\":22,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo\",\"timestamp\":\"01:11:45 AM\"},\"client\":0},{\"id\":23,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"Night March\",\"active\":\"Pumpkaboo\",\"benched\":\"Pumpkaboo\",\"timestamp\":\"01:11:46 AM\"},\"client\":0},{\"id\":24,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Special Charge\",\"timestamp\":\"01:11:46 AM\"},\"client\":0},{\"id\":25,\"message\":\"LOG_PLAYER_RETURNS_TO_DECK_FROM_DISCARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"timestamp\":\"01:11:46 AM\"},\"client\":0},{\"id\":26,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:46 AM\"},\"client\":0},{\"id\":27,\"message\":\"LOG_TURN\",\"params\":{\"turn\":3,\"timestamp\":\"01:11:46 AM\"},\"client\":0},{\"id\":28,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:46 AM\"},\"client\":0},{\"id\":29,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Metal Energy\",\"pokemon\":\"Audino-EX\",\"timestamp\":\"01:11:47 AM\"},\"client\":0},{\"id\":30,\"message\":\"LOG_PLAYER_EVOLVES_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"pokemon\":\"Audino-EX\",\"card\":\"M Audino-EX\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":31,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Magical Symphony\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":32,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":110,\"target\":\"Pumpkaboo\",\"effect\":\"Magical Symphony\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":33,\"message\":\"LOG_POKEMON_KO\",\"params\":{\"name\":\"Pumpkaboo\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":34,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"a Prize card\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":35,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo (Bench)\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":36,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":37,\"message\":\"LOG_TURN\",\"params\":{\"turn\":4,\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":38,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":39,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"Hex Maniac\",\"timestamp\":\"01:11:48 AM\"},\"client\":0},{\"id\":40,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"VS Seeker\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":41,\"message\":\"LOG_PLAYER_PUTS_CARD_IN_HAND\",\"params\":{\"name\":\"Night March\",\"card\":\"Hex Maniac\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":42,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":43,\"message\":\"LOG_TURN\",\"params\":{\"turn\":5,\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":44,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":45,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Magical Symphony\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":46,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":110,\"target\":\"Pumpkaboo\",\"effect\":\"Magical Symphony\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":47,\"message\":\"LOG_POKEMON_KO\",\"params\":{\"name\":\"Pumpkaboo\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":48,\"message\":\"LOG_PLAYER_NO_ACTIVE_POKEMON\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":49,\"message\":\"LOG_GAME_FINISHED_WINNER\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0}],\"rules\":{\"firstTurnDrawCard\":true,\"firstTurnUseSupporter\":true,\"attackFirstTurn\":false,\"supporterCleanupAtEndTurn\":false,\"unlimitedEnergyAttachments\":false,\"alternativeSetup\":false,\"name\":\"XY (2013–2016)\",\"format\":11,\"forceFirst\":true,\"legacyBurn\":true,\"dpEraRules\":true,\"exEraRules\":true,\"bwEraRules\":true,\"pokemonCatcherErrata\":true,\"xyEraRules\":true},\"prompts\":[{\"playerId\":1,\"id\":1,\"message\":\"SETUP_WHO_BEGINS_FLIP\",\"type\":\"Coin flip\",\"result\":false},{\"playerId\":2,\"id\":2,\"message\":\"GO_FIRST\",\"type\":\"Confirm\",\"result\":true},{\"playerId\":1,\"id\":3,\"type\":\"Shuffle deck\",\"result\":[38,28,10,47,43,59,8,11,22,30,3,50,35,29,33,56,45,15,57,4,42,41,34,53,5,24,49,21,31,16,44,32,58,39,23,6,13,20,0,9,27,54,18,2,48,55,36,17,51,7,1,14,26,46,52,37,19,12,25,40]},{\"playerId\":2,\"id\":4,\"type\":\"Shuffle deck\",\"result\":[24,47,10,15,3,57,1,48,27,38,32,28,13,21,42,50,16,36,5,46,41,18,19,37,33,12,31,8,44,55,49,20,59,6,23,39,53,43,2,34,4,52,9,56,14,26,30,29,25,17,35,40,54,7,51,58,11,22,0,45]},{\"playerId\":1,\"id\":5,\"message\":\"CHOOSE_STARTING_POKEMONS\",\"cards\":{\"cards\":[{\"id\":29,\"regulationMark\":\"\",\"_tags\":[],\"_runtimeTags\":[],\"setNumber\":\"109\",\"cardImage\":\"assets/cardback.png\",\"retreat\":[],\"attacks\":[],\"powers\":[],\"cards\":{\"cards\":[],\"isPublic\":false,\"isSecret\":false,\"faceUpPrize\":false,\"stadiumDirection\":\"up\",\"markedAsNotS`... 760414 more characters\n\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\realistic-bot-matches.cjs:7:83)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47",
+      "saved": {
+        "spec": {
+          "profile": "xy",
+          "seed": 71,
+          "decks": [
+            {
+              "id": "limitless-deck-696ed6bda8f7f2f145f3",
+              "name": "Night March",
+              "format": "limitless-format-21",
+              "cards": {
+                "xy4-26": 4,
+                "xy4-42": 4,
+                "xy4-44": 4,
+                "xy6-106": 3,
+                "xy10-29": 2,
+                "xy1-122": 3,
+                "xy7-75": 2,
+                "xy2-90": 2,
+                "xy4-91": 1,
+                "xy11-104": 1,
+                "xy10-105": 1,
+                "xy5-141": 1,
+                "xy4-109": 4,
+                "xy2-99": 4,
+                "xy9-109": 4,
+                "xy4-92": 4,
+                "xy6-92": 3,
+                "xy11-105": 1,
+                "xy5-127": 1,
+                "xy2-97": 1,
+                "xy4-106": 1,
+                "xy9-99": 2,
+                "xy4-93": 3,
+                "xy10-114": 4
+              },
+              "source": "Limitless",
+              "sourceFolder": "2016 Worlds (XY-STS)",
+              "sourceFolderUrl": "https://my.limitlesstcg.com/68e42342c5ab7e7eaa61ed23",
+              "sourceCards": [
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_026_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_042_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_044_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_106_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_029_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/XY/XY_122_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_075_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_090_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_091_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_104_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_141_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_127_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_097_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_106_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_093_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_114_R_EN_XS.png"
+                }
+              ]
+            },
+            {
+              "id": "limitless-deck-dca072b06de814835a09",
+              "name": "M Audino EX",
+              "format": "limitless-format-21",
+              "cards": {
+                "xy10-84": 4,
+                "xy10-85": 3,
+                "xy6-106": 2,
+                "xy7-89": 1,
+                "xy11-110": 1,
+                "xy11-74": 1,
+                "xy6-40": 1,
+                "xy1-122": 4,
+                "xy10-105": 2,
+                "xy4-91": 2,
+                "xy2-90": 2,
+                "xy7-75": 1,
+                "xy4-110": 1,
+                "xy2-93": 1,
+                "xy4-109": 4,
+                "xy2-99": 4,
+                "xy6-92": 4,
+                "xy6-86": 1,
+                "xy5-127": 1,
+                "xy8-149": 1,
+                "xy2-97": 1,
+                "xy10-92": 4,
+                "xy8-137": 2,
+                "xy8-145": 2,
+                "g1-82": 6,
+                "xy10-114": 4
+              },
+              "source": "Limitless",
+              "sourceFolder": "2016 Worlds (XY-STS)",
+              "sourceFolderUrl": "https://my.limitlesstcg.com/68e42342c5ab7e7eaa61ed23",
+              "sourceCards": [
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_084_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_085_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_106_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_089_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_110_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_074_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_040_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/XY/XY_122_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_091_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_090_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_075_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_110_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_093_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_086_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_127_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_149_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_097_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_137_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_145_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 6,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GEN/GEN_082_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_114_R_EN_XS.png"
+                }
+              ]
+            }
+          ],
+          "opponent": {
+            "type": "bot",
+            "difficulty": "realistic",
+            "botPlayer": 1,
+            "humanPlayer": 2
+          }
+        },
+        "journal": [
+          {
+            "type": "prompt",
+            "id": 1,
+            "value": false
+          },
+          {
+            "type": "prompt",
+            "id": 2,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 3,
+            "value": [
+              38,
+              28,
+              10,
+              47,
+              43,
+              59,
+              8,
+              11,
+              22,
+              30,
+              3,
+              50,
+              35,
+              29,
+              33,
+              56,
+              45,
+              15,
+              57,
+              4,
+              42,
+              41,
+              34,
+              53,
+              5,
+              24,
+              49,
+              21,
+              31,
+              16,
+              44,
+              32,
+              58,
+              39,
+              23,
+              6,
+              13,
+              20,
+              0,
+              9,
+              27,
+              54,
+              18,
+              2,
+              48,
+              55,
+              36,
+              17,
+              51,
+              7,
+              1,
+              14,
+              26,
+              46,
+              52,
+              37,
+              19,
+              12,
+              25,
+              40
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 4,
+            "value": [
+              24,
+              47,
+              10,
+              15,
+              3,
+              57,
+              1,
+              48,
+              27,
+              38,
+              32,
+              28,
+              13,
+              21,
+              42,
+              50,
+              16,
+              36,
+              5,
+              46,
+              41,
+              18,
+              19,
+              37,
+              33,
+              12,
+              31,
+              8,
+              44,
+              55,
+              49,
+              20,
+              59,
+              6,
+              23,
+              39,
+              53,
+              43,
+              2,
+              34,
+              4,
+              52,
+              9,
+              56,
+              14,
+              26,
+              30,
+              29,
+              25,
+              17,
+              35,
+              40,
+              54,
+              7,
+              51,
+              58,
+              11,
+              22,
+              0,
+              45
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 5,
+            "value": [
+              2
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 6,
+            "value": [
+              4
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 7,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 8,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 9,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 10,
+            "value": [
+              17,
+              3,
+              1,
+              14,
+              8,
+              4,
+              20,
+              37,
+              2,
+              29,
+              10,
+              21,
+              11,
+              15,
+              23,
+              31,
+              7,
+              12,
+              9,
+              19,
+              5,
+              28,
+              27,
+              35,
+              16,
+              0,
+              34,
+              25,
+              32,
+              26,
+              18,
+              36,
+              33,
+              13,
+              24,
+              6,
+              22,
+              30
+            ]
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 11,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 12,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 5,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 13,
+            "value": 0
+          },
+          {
+            "type": "prompt",
+            "id": 14,
+            "value": [
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 15,
+            "value": [
+              9
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 16,
+            "value": [
+              29,
+              42,
+              23,
+              5,
+              14,
+              0,
+              6,
+              11,
+              31,
+              22,
+              9,
+              32,
+              39,
+              26,
+              30,
+              20,
+              44,
+              12,
+              33,
+              15,
+              4,
+              7,
+              37,
+              28,
+              21,
+              25,
+              27,
+              18,
+              13,
+              43,
+              2,
+              19,
+              10,
+              16,
+              36,
+              35,
+              41,
+              17,
+              38,
+              1,
+              34,
+              8,
+              3,
+              24,
+              40
+            ]
+          },
+          {
+            "type": "retreat",
+            "player": 1,
+            "index": 0
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 17,
+            "value": [
+              3
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 18,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 19,
+            "value": [
+              28,
+              30,
+              13,
+              37,
+              0,
+              24,
+              4,
+              43,
+              1,
+              39,
+              5,
+              16,
+              32,
+              33,
+              12,
+              3,
+              25,
+              27,
+              35,
+              11,
+              41,
+              22,
+              10,
+              7,
+              19,
+              9,
+              6,
+              26,
+              31,
+              36,
+              21,
+              38,
+              45,
+              17,
+              40,
+              34,
+              29,
+              2,
+              20,
+              23,
+              14,
+              42,
+              44,
+              18,
+              8,
+              15
+            ]
+          },
+          {
+            "type": "pass",
+            "player": 1
+          },
+          {
+            "type": "prompt",
+            "id": 20,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 21,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "attack",
+            "player": 2,
+            "name": "Magical Symphony"
+          },
+          {
+            "type": "prompt",
+            "id": 22,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 23,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 24,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 25,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 26,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 27,
+            "value": [
+              2
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 28,
+            "value": true
+          },
+          {
+            "type": "pass",
+            "player": 1
+          },
+          {
+            "type": "prompt",
+            "id": 29,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 30,
+            "value": true
+          },
+          {
+            "type": "attack",
+            "player": 2,
+            "name": "Magical Symphony"
+          },
+          {
+            "type": "prompt",
+            "id": 31,
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "pair": 0,
+      "leg": 1,
+      "decision": 92,
+      "message": "AssertionError [ERR_ASSERTION]: Exact replay\n+ actual - expected\n\n+ '{\"state\":{\"cardNames\":[\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy7-89\",\"ILEX DP xy11-110\",\"ILEX DP xy11-74\",\"ILEX DP xy6-40\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy10-105\",\"ILEX DP xy10-105\",\"ILEX DP xy4-91\",\"ILEX DP xy4-91\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy7-75\",\"ILEX DP xy4-110\",\"ILEX DP xy2-93\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-86\",\"ILEX DP xy5-127\",\"ILEX DP xy8-149\",\"ILEX DP xy2-97\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy8-137\",\"ILEX DP xy8-137\",\"ILEX DP xy8-145\",\"ILEX DP xy8-145\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy10-29\",\"ILEX DP xy10-29\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy7-75\",\"ILEX DP xy7-75\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy4-91\",\"ILEX DP xy11-104\",\"ILEX DP xy10-105\",\"ILEX DP xy5-141\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy11-105\",\"ILEX DP xy5-127\",\"ILEX DP xy2-97\",\"ILEX DP xy4-106\",\"ILEX DP xy9-99\",\"ILEX DP xy9-99\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\"],\"logs\":[{\"id\":1,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Yes\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":2,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Magearna-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":3,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Mew\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":4,\"message\":\"LOG_TURN\",\"params\":{\"turn\":1,\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":5,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":6,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Pumpkaboo\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":7,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Joltik\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":8,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Joltik\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":9,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Joltik\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":10,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"Night March\",\"active\":\"Mew\",\"benched\":\"Joltik\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":11,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"Hex Maniac\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":12,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":13,\"message\":\"LOG_TURN\",\"params\":{\"turn\":2,\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":14,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":15,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":16,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":17,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Float Stone\",\"pokemon\":\"Magearna-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":18,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"M Audino EX\",\"active\":\"Magearna-EX\",\"benched\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":19,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino Spirit Link\",\"pokemon\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":20,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Sky Return\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":21,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":30,\"target\":\"Joltik\",\"effect\":\"Sky Return\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":22,\"message\":\"LOG_POKEMON_KO\",\"params\":{\"name\":\"Joltik\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":23,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"a Prize card\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":24,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Magearna-EX (Bench)\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":25,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo (Bench)\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":26,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":27,\"message\":\"LOG_TURN\",\"params\":{\"turn\":3,\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":28,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":29,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Special Charge\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":30,\"message\":\"LOG_PLAYER_RETURNS_TO_DECK_FROM_DISCARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":31,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"AZ\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":32,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo (Active)\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":33,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Joltik (Bench)\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":34,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Pumpkaboo\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":35,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Battle Compressor Team Flare Gear\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":36,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Joltik\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":37,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":38,\"message\":\"LOG_TURN\",\"params\":{\"turn\":4,\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":39,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":40,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Magearna-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":41,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Cobalion\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":42,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":43,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Yes\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":44,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino Spirit Link\",\"pokemon\":\"Cobalion\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":45,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Ultra Ball\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":46,\"message\":\"LOG_PLAYER_DISCARDS_CARD_FROM_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Mega Turbo\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":47,\"message\":\"LOG_PLAYER_DISCARDS_CARD_FROM_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"VS Seeker\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":48,\"message\":\"LOG_PLAYER_PUTS_CARD_IN_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"M Audino-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":49,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":50,\"message\":\"LOG_TURN\",\"params\":{\"turn\":5,\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":51,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":52,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"Pokémon Ranger\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":53,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":54,\"message\":\"LOG_TURN\",\"params\":{\"turn\":6,\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":55,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":56,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":57,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"M Audino EX\",\"active\":\"Magearna-EX\",\"benched\":\"Shaymin-EX\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":58,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Sky Return\",\"timestamp\":\"01:12:14 AM\"},\"client\":0},{\"id\":59,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":30,\"target\":\"Joltik\",\"effect\":\"Sky Return\",\"timestamp\":\"01:12:14 A'... 1024229 more characters\n- '{\"state\":{\"cardNames\":[\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-84\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy10-85\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy7-89\",\"ILEX DP xy11-110\",\"ILEX DP xy11-74\",\"ILEX DP xy6-40\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy10-105\",\"ILEX DP xy10-105\",\"ILEX DP xy4-91\",\"ILEX DP xy4-91\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy7-75\",\"ILEX DP xy4-110\",\"ILEX DP xy2-93\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-86\",\"ILEX DP xy5-127\",\"ILEX DP xy8-149\",\"ILEX DP xy2-97\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy10-92\",\"ILEX DP xy8-137\",\"ILEX DP xy8-137\",\"ILEX DP xy8-145\",\"ILEX DP xy8-145\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP g1-82\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-26\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-42\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy4-44\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy6-106\",\"ILEX DP xy10-29\",\"ILEX DP xy10-29\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"Professor Sycamore XY\",\"ILEX DP xy7-75\",\"ILEX DP xy7-75\",\"ILEX DP xy2-90\",\"ILEX DP xy2-90\",\"ILEX DP xy4-91\",\"ILEX DP xy11-104\",\"ILEX DP xy10-105\",\"ILEX DP xy5-141\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy4-109\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy2-99\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy9-109\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy4-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy6-92\",\"ILEX DP xy11-105\",\"ILEX DP xy5-127\",\"ILEX DP xy2-97\",\"ILEX DP xy4-106\",\"ILEX DP xy9-99\",\"ILEX DP xy9-99\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy4-93\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\",\"ILEX DP xy10-114\"],\"logs\":[{\"id\":1,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Yes\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":2,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Magearna-EX\",\"timestamp\":\"01:11:49 AM\"},\"client\":0},{\"id\":3,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Mew\",\"timestamp\":\"01:11:50 AM\"},\"client\":0},{\"id\":4,\"message\":\"LOG_TURN\",\"params\":{\"turn\":1,\"timestamp\":\"01:11:50 AM\"},\"client\":0},{\"id\":5,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:11:50 AM\"},\"client\":0},{\"id\":6,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Pumpkaboo\",\"timestamp\":\"01:11:51 AM\"},\"client\":0},{\"id\":7,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Joltik\",\"timestamp\":\"01:11:53 AM\"},\"client\":0},{\"id\":8,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Joltik\",\"timestamp\":\"01:11:55 AM\"},\"client\":0},{\"id\":9,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Joltik\",\"timestamp\":\"01:11:57 AM\"},\"client\":0},{\"id\":10,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"Night March\",\"active\":\"Mew\",\"benched\":\"Joltik\",\"timestamp\":\"01:11:58 AM\"},\"client\":0},{\"id\":11,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"Hex Maniac\",\"timestamp\":\"01:11:59 AM\"},\"client\":0},{\"id\":12,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:00 AM\"},\"client\":0},{\"id\":13,\"message\":\"LOG_TURN\",\"params\":{\"turn\":2,\"timestamp\":\"01:12:00 AM\"},\"client\":0},{\"id\":14,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:00 AM\"},\"client\":0},{\"id\":15,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Shaymin-EX\",\"timestamp\":\"01:12:00 AM\"},\"client\":0},{\"id\":16,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Shaymin-EX\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":17,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Float Stone\",\"pokemon\":\"Magearna-EX\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":18,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"M Audino EX\",\"active\":\"Magearna-EX\",\"benched\":\"Shaymin-EX\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":19,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino Spirit Link\",\"pokemon\":\"Shaymin-EX\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":20,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Sky Return\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":21,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":30,\"target\":\"Joltik\",\"effect\":\"Sky Return\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":22,\"message\":\"LOG_POKEMON_KO\",\"params\":{\"name\":\"Joltik\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":23,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"a Prize card\",\"timestamp\":\"01:12:01 AM\"},\"client\":0},{\"id\":24,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Magearna-EX (Bench)\",\"timestamp\":\"01:12:02 AM\"},\"client\":0},{\"id\":25,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo (Bench)\",\"timestamp\":\"01:12:02 AM\"},\"client\":0},{\"id\":26,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:02 AM\"},\"client\":0},{\"id\":27,\"message\":\"LOG_TURN\",\"params\":{\"turn\":3,\"timestamp\":\"01:12:02 AM\"},\"client\":0},{\"id\":28,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:02 AM\"},\"client\":0},{\"id\":29,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Special Charge\",\"timestamp\":\"01:12:03 AM\"},\"client\":0},{\"id\":30,\"message\":\"LOG_PLAYER_RETURNS_TO_DECK_FROM_DISCARD\",\"params\":{\"name\":\"Night March\",\"card\":\"Double Colorless Energy\",\"timestamp\":\"01:12:03 AM\"},\"client\":0},{\"id\":31,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"AZ\",\"timestamp\":\"01:12:04 AM\"},\"client\":0},{\"id\":32,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Pumpkaboo (Active)\",\"timestamp\":\"01:12:04 AM\"},\"client\":0},{\"id\":33,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Joltik (Bench)\",\"timestamp\":\"01:12:04 AM\"},\"client\":0},{\"id\":34,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"Night March\",\"card\":\"Pumpkaboo\",\"timestamp\":\"01:12:05 AM\"},\"client\":0},{\"id\":35,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"Night March\",\"card\":\"Battle Compressor Team Flare Gear\",\"timestamp\":\"01:12:06 AM\"},\"client\":0},{\"id\":36,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"Night March\",\"string\":\"Joltik\",\"timestamp\":\"01:12:06 AM\"},\"client\":0},{\"id\":37,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:06 AM\"},\"client\":0},{\"id\":38,\"message\":\"LOG_TURN\",\"params\":{\"turn\":4,\"timestamp\":\"01:12:06 AM\"},\"client\":0},{\"id\":39,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:06 AM\"},\"client\":0},{\"id\":40,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Magearna-EX\",\"timestamp\":\"01:12:07 AM\"},\"client\":0},{\"id\":41,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Cobalion\",\"timestamp\":\"01:12:07 AM\"},\"client\":0},{\"id\":42,\"message\":\"LOG_PLAYER_PLAYS_BASIC_POKEMON\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Shaymin-EX\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":43,\"message\":\"LOG_PLAYER_CHOOSES\",\"params\":{\"name\":\"M Audino EX\",\"string\":\"Yes\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":44,\"message\":\"LOG_PLAYER_PLAYS_TOOL\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Audino Spirit Link\",\"pokemon\":\"Cobalion\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":45,\"message\":\"LOG_PLAYER_PLAYS_ITEM\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Ultra Ball\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":46,\"message\":\"LOG_PLAYER_DISCARDS_CARD_FROM_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Mega Turbo\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":47,\"message\":\"LOG_PLAYER_DISCARDS_CARD_FROM_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"VS Seeker\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":48,\"message\":\"LOG_PLAYER_PUTS_CARD_IN_HAND\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"M Audino-EX\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":49,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":50,\"message\":\"LOG_TURN\",\"params\":{\"turn\":5,\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":51,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:08 AM\"},\"client\":0},{\"id\":52,\"message\":\"LOG_PLAYER_PLAYS_SUPPORTER\",\"params\":{\"name\":\"Night March\",\"card\":\"Pokémon Ranger\",\"timestamp\":\"01:12:09 AM\"},\"client\":0},{\"id\":53,\"message\":\"LOG_PLAYER_ENDS_TURN\",\"params\":{\"name\":\"Night March\",\"timestamp\":\"01:12:09 AM\"},\"client\":0},{\"id\":54,\"message\":\"LOG_TURN\",\"params\":{\"turn\":6,\"timestamp\":\"01:12:09 AM\"},\"client\":0},{\"id\":55,\"message\":\"LOG_PLAYER_DRAWS_CARD\",\"params\":{\"name\":\"M Audino EX\",\"timestamp\":\"01:12:09 AM\"},\"client\":0},{\"id\":56,\"message\":\"LOG_PLAYER_ATTACHES_CARD\",\"params\":{\"name\":\"M Audino EX\",\"card\":\"Double Colorless Energy\",\"pokemon\":\"Shaymin-EX\",\"timestamp\":\"01:12:09 AM\"},\"client\":0},{\"id\":57,\"message\":\"LOG_PLAYER_RETREATS\",\"params\":{\"name\":\"M Audino EX\",\"active\":\"Magearna-EX\",\"benched\":\"Shaymin-EX\",\"timestamp\":\"01:12:10 AM\"},\"client\":0},{\"id\":58,\"message\":\"LOG_PLAYER_USES_ATTACK\",\"params\":{\"name\":\"M Audino EX\",\"attack\":\"Sky Return\",\"timestamp\":\"01:12:10 AM\"},\"client\":0},{\"id\":59,\"message\":\"LOG_PLAYER_DEALS_DAMAGE\",\"params\":{\"name\":\"M Audino EX\",\"damage\":30,\"target\":\"Joltik\",\"effect\":\"Sky Return\",\"timestamp\":\"01:12:10 A'... 1024229 more characters\n\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\realistic-bot-matches.cjs:7:83)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47",
+      "saved": {
+        "spec": {
+          "profile": "xy",
+          "seed": 71,
+          "decks": [
+            {
+              "id": "limitless-deck-dca072b06de814835a09",
+              "name": "M Audino EX",
+              "format": "limitless-format-21",
+              "cards": {
+                "xy10-84": 4,
+                "xy10-85": 3,
+                "xy6-106": 2,
+                "xy7-89": 1,
+                "xy11-110": 1,
+                "xy11-74": 1,
+                "xy6-40": 1,
+                "xy1-122": 4,
+                "xy10-105": 2,
+                "xy4-91": 2,
+                "xy2-90": 2,
+                "xy7-75": 1,
+                "xy4-110": 1,
+                "xy2-93": 1,
+                "xy4-109": 4,
+                "xy2-99": 4,
+                "xy6-92": 4,
+                "xy6-86": 1,
+                "xy5-127": 1,
+                "xy8-149": 1,
+                "xy2-97": 1,
+                "xy10-92": 4,
+                "xy8-137": 2,
+                "xy8-145": 2,
+                "g1-82": 6,
+                "xy10-114": 4
+              },
+              "source": "Limitless",
+              "sourceFolder": "2016 Worlds (XY-STS)",
+              "sourceFolderUrl": "https://my.limitlesstcg.com/68e42342c5ab7e7eaa61ed23",
+              "sourceCards": [
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_084_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_085_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_106_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_089_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_110_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_074_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_040_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/XY/XY_122_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_091_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_090_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_075_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_110_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_093_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_086_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_127_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_149_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_097_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_137_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_145_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 6,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GEN/GEN_082_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_114_R_EN_XS.png"
+                }
+              ]
+            },
+            {
+              "id": "limitless-deck-696ed6bda8f7f2f145f3",
+              "name": "Night March",
+              "format": "limitless-format-21",
+              "cards": {
+                "xy4-26": 4,
+                "xy4-42": 4,
+                "xy4-44": 4,
+                "xy6-106": 3,
+                "xy10-29": 2,
+                "xy1-122": 3,
+                "xy7-75": 2,
+                "xy2-90": 2,
+                "xy4-91": 1,
+                "xy11-104": 1,
+                "xy10-105": 1,
+                "xy5-141": 1,
+                "xy4-109": 4,
+                "xy2-99": 4,
+                "xy9-109": 4,
+                "xy4-92": 4,
+                "xy6-92": 3,
+                "xy11-105": 1,
+                "xy5-127": 1,
+                "xy2-97": 1,
+                "xy4-106": 1,
+                "xy9-99": 2,
+                "xy4-93": 3,
+                "xy10-114": 4
+              },
+              "source": "Limitless",
+              "sourceFolder": "2016 Worlds (XY-STS)",
+              "sourceFolderUrl": "https://my.limitlesstcg.com/68e42342c5ab7e7eaa61ed23",
+              "sourceCards": [
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_026_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_042_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_044_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_106_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_029_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/XY/XY_122_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_075_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_090_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_091_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_104_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_141_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/ROS/ROS_092_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/STS/STS_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_127_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FLF/FLF_097_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_106_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_093_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_114_R_EN_XS.png"
+                }
+              ]
+            }
+          ],
+          "opponent": {
+            "type": "bot",
+            "difficulty": "realistic",
+            "botPlayer": 2,
+            "humanPlayer": 1
+          }
+        },
+        "journal": [
+          {
+            "type": "prompt",
+            "id": 1,
+            "value": false
+          },
+          {
+            "type": "prompt",
+            "id": 2,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 3,
+            "value": [
+              38,
+              28,
+              10,
+              47,
+              43,
+              59,
+              8,
+              11,
+              22,
+              30,
+              3,
+              50,
+              35,
+              29,
+              33,
+              56,
+              45,
+              15,
+              57,
+              4,
+              42,
+              41,
+              34,
+              53,
+              5,
+              24,
+              49,
+              21,
+              31,
+              16,
+              44,
+              32,
+              58,
+              39,
+              23,
+              6,
+              13,
+              20,
+              0,
+              9,
+              27,
+              54,
+              18,
+              2,
+              48,
+              55,
+              36,
+              17,
+              51,
+              7,
+              1,
+              14,
+              26,
+              46,
+              52,
+              37,
+              19,
+              12,
+              25,
+              40
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 4,
+            "value": [
+              24,
+              47,
+              10,
+              15,
+              3,
+              57,
+              1,
+              48,
+              27,
+              38,
+              32,
+              28,
+              13,
+              21,
+              42,
+              50,
+              16,
+              36,
+              5,
+              46,
+              41,
+              18,
+              19,
+              37,
+              33,
+              12,
+              31,
+              8,
+              44,
+              55,
+              49,
+              20,
+              59,
+              6,
+              23,
+              39,
+              53,
+              43,
+              2,
+              34,
+              4,
+              52,
+              9,
+              56,
+              14,
+              26,
+              30,
+              29,
+              25,
+              17,
+              35,
+              40,
+              54,
+              7,
+              51,
+              58,
+              11,
+              22,
+              0,
+              45
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 5,
+            "value": [
+              2
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 6,
+            "value": [
+              3
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 7,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 2
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 2
+            }
+          },
+          {
+            "type": "retreat",
+            "player": 2,
+            "index": 2
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 8,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 9,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 5,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "retreat",
+            "player": 1,
+            "index": 0
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Sky Return"
+          },
+          {
+            "type": "prompt",
+            "id": 10,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 11,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 12,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 13,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 14,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 15,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 16,
+            "value": [
+              2
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 17,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 18,
+            "value": [
+              25,
+              17,
+              36,
+              16,
+              0,
+              11,
+              5,
+              44,
+              38,
+              14,
+              22,
+              23,
+              41,
+              32,
+              21,
+              26,
+              10,
+              20,
+              33,
+              9,
+              7,
+              3,
+              45,
+              15,
+              12,
+              37,
+              30,
+              18,
+              6,
+              27,
+              31,
+              19,
+              35,
+              34,
+              29,
+              43,
+              39,
+              8,
+              42,
+              13,
+              40,
+              1,
+              24,
+              28,
+              4,
+              2
+            ]
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 19,
+            "value": [
+              {
+                "player": 2,
+                "slot": 1,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 20,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 1
+              }
+            ]
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 21,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 22,
+            "value": [
+              15,
+              20,
+              16,
+              27,
+              21,
+              1,
+              30,
+              13,
+              36,
+              18,
+              25,
+              35,
+              12,
+              31,
+              6,
+              10,
+              32,
+              41,
+              11,
+              9,
+              40,
+              2,
+              44,
+              17,
+              0,
+              7,
+              3,
+              33,
+              34,
+              8,
+              22,
+              39,
+              19,
+              26,
+              24,
+              14,
+              29,
+              38,
+              4,
+              43,
+              23,
+              5,
+              42,
+              37,
+              28
+            ]
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 23,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 24,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 5,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 5,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 25,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 26,
+            "value": [
+              0,
+              1
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 27,
+            "value": [
+              5
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 28,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 29,
+            "value": [
+              22,
+              40,
+              42,
+              11,
+              17,
+              16,
+              28,
+              8,
+              20,
+              15,
+              13,
+              27,
+              14,
+              31,
+              37,
+              0,
+              3,
+              24,
+              18,
+              36,
+              25,
+              1,
+              35,
+              4,
+              29,
+              21,
+              38,
+              33,
+              12,
+              26,
+              39,
+              30,
+              34,
+              5,
+              6,
+              9,
+              23,
+              19,
+              41,
+              7,
+              2,
+              32,
+              10
+            ]
+          },
+          {
+            "type": "pass",
+            "player": 1
+          },
+          {
+            "type": "prompt",
+            "id": 30,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 31,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 32,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 33,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "retreat",
+            "player": 1,
+            "index": 1
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Sky Return"
+          },
+          {
+            "type": "prompt",
+            "id": 34,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 35,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 36,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 1
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 37,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 38,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 39,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 40,
+            "value": [
+              6
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 41,
+            "value": [
+              37,
+              30,
+              11,
+              7,
+              35,
+              1,
+              38,
+              13,
+              26,
+              28,
+              12,
+              15,
+              4,
+              8,
+              22,
+              29,
+              0,
+              41,
+              20,
+              6,
+              40,
+              33,
+              32,
+              21,
+              23,
+              3,
+              24,
+              25,
+              14,
+              31,
+              2,
+              5,
+              19,
+              17,
+              16,
+              36,
+              10,
+              9,
+              27,
+              18,
+              39,
+              34
+            ]
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 42,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 43,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 6,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 44,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 45,
+            "value": [
+              {
+                "player": 1,
+                "slot": 2,
+                "index": 2
+              }
+            ]
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Soul Blaster"
+          },
+          {
+            "type": "prompt",
+            "id": 46,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 47,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 48,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 2
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 49,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 50,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 51,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 52,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Soul Blaster"
+          },
+          {
+            "type": "prompt",
+            "id": 53,
+            "value": true
+          }
+        ]
+      }
+    }
+  ],
+  "timingsMs": [
+    12.019700000000057,
+    4.362599999999929,
+    3.7916999999999916,
+    2.625500000000102,
+    2.779700000000048,
+    1850.2731000000003,
+    1425.5401999999995,
+    1306.8323,
+    2.6996999999992113,
+    5.609099999999671,
+    998.3513000000003,
+    7.10950000000048,
+    3.3443000000006577,
+    468.8698999999997,
+    343.46580000000176,
+    2.7302999999992608,
+    2.6962000000003172,
+    163.94460000000072,
+    2.9944999999988795,
+    3.1913000000004104,
+    2.918099999998958,
+    376.1851000000006,
+    305.8731000000007,
+    3.097800000001371,
+    147.2518,
+    2.8891999999996187,
+    2.5195000000003347,
+    2.4750999999996566,
+    2.612699999999677,
+    2.5878999999986263,
+    1801.5057000000015,
+    1974.0223999999998,
+    2121.3568000000014,
+    1858.2703999999976,
+    1165.6991000000016,
+    963.6156999999985,
+    158.23199999999997,
+    2.651900000000751,
+    10.209499999997206,
+    4.1732000000010885,
+    1616.9507000000012,
+    2.8977000000013504,
+    2.845499999999447,
+    1099.3835999999974,
+    11.669200000000274,
+    8.654999999998836,
+    1073.6290999999983,
+    331.48439999999755,
+    6.860200000002806,
+    2.861000000000786,
+    160.90279999999984,
+    3.262299999998504,
+    3.091599999999744,
+    2.924800000000687,
+    389.2531999999992,
+    246.9974000000002,
+    3.2995999999984633,
+    8.310800000006566,
+    3.1512999999977183,
+    342.2520000000004,
+    7.170799999999872,
+    3.1777000000001863,
+    161.53490000000602,
+    3.11699999999837,
+    3.1093999999939115,
+    5.588600000002771,
+    290.9741999999969,
+    170.78779999999824,
+    3.031700000006822
+  ],
+  "maxDecisionMs": 2121.3568000000014,
+  "botSha256": "301039fdd787b8646c4aa372e95eebc89ac6b9f6991f1dbd4eaf924acde90236",
+  "limits": "Bounded 110 decisions per game. Swapped seats/decks on matching seeds; unfinished games are not wins. No claim of tournament strength."
+}

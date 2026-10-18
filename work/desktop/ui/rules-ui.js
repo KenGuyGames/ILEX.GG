@@ -14,7 +14,7 @@ const manualTable=play;
 let tableMode='rules';
 const friendly=s=>String(s||'').replace(/^(?:LOG_|SETUP_)/,'').replaceAll('_',' ').toLowerCase();
 const rulesAssets=Promise.all(['rules-card-map.json','card-details.json','deck-set-codes.json','wotc-coverage.json'].map(u=>fetch(u).then(r=>r.json()))).then(([m,d,c,w])=>{
-  Object.assign(d,LimitlessCollection.metadata);for(const [alias,base] of Object.entries(LimitlessCollection.ruleAliases))if(m[base])m[alias]=m[base];ruleMap=m;cardMetadata=d;deckCodes=c;wotcCoverage=w;rulesReady=true;
+  Object.assign(d,LimitlessCollection.metadata);ruleMap=RulesMatch.withAliases(m,LimitlessCollection);cardMetadata=d;deckCodes=c;wotcCoverage=w;rulesReady=true;
   if(state.rulesMatch)try{
     rulesMatch=RulesMatch.restore(state.rulesMatch,ruleMap,state.rulesMatch.spec.custom||state.custom);
     if(rulesMatch.recoveredInvalidAttack){state.botPaused=true;state.botError='Recovered the turn before an unfinished attack with insufficient Energy.';saveRules();}
@@ -89,7 +89,7 @@ async function beginRules(){
     if(typeof IlexPresentation!=='undefined')IlexPresentation.cancel();rulesMatch=candidate;const setupVisual=typeof IlexPresentation!=='undefined'?IlexPresentation.before(candidate,{type:'setup'}):null;autoRules();if(typeof IlexPresentation!=='undefined')IlexPresentation.after(setupVisual,candidate,{type:'setup'});saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}
 }
-function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||'modern';if(['dp','dppl'].includes(profile)&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:hgss[1-4p]?|col1)$/.test(id.trim().replace(/-$/,''))))return 'hgss';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
+function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||(f?.id==='expanded'?'expanded':'modern');if(['dp','dppl'].includes(profile)&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:hgss[1-4p]?|col1)$/.test(id.trim().replace(/-$/,''))))return 'hgss';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
 function rulesTable(){
   const R=RulesMatch.R,g=rulesMatch?.store.state;
   $('#app').innerHTML=title('RULES TABLE','Play a rules-enforced match','Setup, card effects, attachments, attacks and checkup are resolved by the game engine.',`<button onclick="tableMode='manual';play()">Manual sandbox</button>`)+

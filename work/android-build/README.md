@@ -2,7 +2,7 @@
 
 Install `outputs/ILEX.GG-Android.apk` on Android 8.0 or newer with a current Android System WebView. This is a signed, universal APK with no CPU-specific libraries. It opens as an installed app and bundles the same rules engine, card index, formats, bot, deck builder, custom-card tools, audio and pack simulator as the current Windows release. Online multiplayer and Unlimited interaction validation remain deferred.
 
-Version `1.12.0-android.2` (versionCode 2) is an in-place update signed with the original key. Install over the existing app; do not uninstall if you want to keep its local workspace and image cache.
+Version `1.15.0-android.14` (versionCode 14) is an in-place update signed with the original key. Install over the existing app; do not uninstall if you want to keep its local workspace and image cache.
 
 ## Install and transfer a workspace
 
@@ -10,7 +10,7 @@ Version `1.12.0-android.2` (versionCode 2) is an in-place update signed with the
 2. Open ILEX.GG from your launcher. Update Android System WebView/Chrome through the Play Store if prompted by the compatibility screen.
 3. To bring over your Windows decks and saves, choose **Export workspace** in Windows, transfer the JSON to Android, and choose **Import workspace** on the Android main menu. Import replaces that device's current workspace; use Export first if you want to retain it. There is no cloud synchronization.
 
-The app includes 236 verified scans: Base–Fossil and the eight rotating Celebi menu cards. Other images download as viewed, with expected file size and SHA-256 checks before caching in private app storage. Use **Download card images** on the main menu to cache the complete collection (about 2.5 GB). Pause/resume is available; bulk downloading pauses when leaving the app. Rules, bundled card text, decks, formats and already-cached images work offline. Uncached images need a connection. Android handles the export/import file picker without broad storage permissions.
+The app includes 246 verified startup scans: Base–Fossil, the eight rotating Celebi menu cards and ten SM demonstration cards. Other images download as viewed, with expected file size and SHA-256 checks before caching in private app storage. Use **Download card images** on the main menu to cache the complete collection (about 2.5 GB). Pause/resume is available; bulk downloading pauses when leaving the app. Rules, bundled card text, decks, formats and already-cached images work offline. Uncached images need a connection. Android handles the export/import file picker without broad storage permissions.
 
 ## Touch controls
 

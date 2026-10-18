@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "engineSha256": "63fae0b21180762f1b784323c443d15efe498fa73ee76773d49b8ae184bc73c4",
+  "rejectedDecks": [],
+  "scope": "BW/XY first wave only; three 35-decision bounded fixtures; replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Kalos Chespin line",
+        "XY Fairy with BW Items"
+      ],
+      "level": "easy",
+      "decisions": 35,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "XY Fairy with BW Items",
+        "BW attackers with Kalos support"
+      ],
+      "level": "normal",
+      "decisions": 35,
+      "turn": 4,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "BW attackers with Kalos support",
+        "Kalos Chespin line"
+      ],
+      "level": "hard",
+      "decisions": 35,
+      "turn": 6,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

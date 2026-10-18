@@ -340,7 +340,7 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
     store.log(state, GameLog.LOG_FLIP_CONFUSION, { name: player.name });
     state = COIN_FLIP_PROMPT(store, state, player, result => {
       flip = result;
-    });
+    }, {system:true});
     if (store.hasPrompts()) {
       yield store.waitPrompt(state, () => next());
     }
@@ -465,7 +465,7 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
     const statuses = (state as any).labPendingStatus || [];(state as any).labPendingStatus = [];
     for (const status of statuses) state = store.reduceEffect(state,status);
     if (store.hasPrompts()) yield store.waitPrompt(state, () => next());
-    const afterAttackEffect = new AfterAttackEffect(effect.player, opponent, attack);
+    const afterAttackEffect = new AfterAttackEffect(effect.player, opponent, attack, attackEffect);
     state = store.reduceEffect(state, afterAttackEffect);
 
     if (store.hasPrompts()) {
@@ -990,7 +990,8 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
       card: effect.pokemonCard.name
     });
     (effect as any)._bwFromHand=effect.player.hand.cards.includes(effect.pokemonCard);
-    effect.player.hand.moveCardTo(effect.pokemonCard, effect.target);
+    const evolutionSource=(effect as any)._xyEvolutionSource||effect.player.hand;
+    evolutionSource.moveCardTo(effect.pokemonCard, effect.target);
     effect.target.pokemonPlayedTurn = state.turn;
     effect.target.marker.markers = [];
 

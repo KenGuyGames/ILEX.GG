@@ -56,14 +56,14 @@ export class Regigigas extends PokemonCard {
       let hasRegisteel = false;
 
       player.forEachPokemon(PlayerType.BOTTOM_PLAYER, cardList => {
-        if (cardList.getPokemonCard() === this) {
-          if (this.name.includes('Regirock')) {
+        if (player.bench.includes(cardList)) {
+          if (cardList.getPokemonCard()?.name === 'Regirock') {
             hasRegirock = true;
           }
-          if (this.name.includes('Regice')) {
+          if (cardList.getPokemonCard()?.name === 'Regice') {
             hasRegice = true;
           }
-          if (this.name.includes('Registeel')) {
+          if (cardList.getPokemonCard()?.name === 'Registeel') {
             hasRegisteel = true;
           }
         }

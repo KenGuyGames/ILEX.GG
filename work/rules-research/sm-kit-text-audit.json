@@ -1,0 +1,198 @@
+{
+  "status": "candidate-unvalidated",
+  "choices": [
+    {
+      "id": "tk-sm-r-1",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-l-1",
+      "equivalent": "sm1-1"
+    },
+    {
+      "id": "tk-sm-r-2",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-r-3",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-r-4",
+      "equivalent": "sm1-111"
+    },
+    {
+      "id": "tk-sm-l-4",
+      "equivalent": "sm1-107"
+    },
+    {
+      "id": "tk-sm-r-5",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-l-5",
+      "equivalent": "bw1-110"
+    },
+    {
+      "id": "tk-sm-r-6",
+      "equivalent": "sm1-55"
+    },
+    {
+      "id": "tk-sm-r-7",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-r-8",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-r-9",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-r-10",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-r-11",
+      "equivalent": "sm1-54"
+    },
+    {
+      "id": "tk-sm-l-11",
+      "equivalent": "sm2-109"
+    },
+    {
+      "id": "tk-sm-r-12",
+      "equivalent": "bw1-108"
+    },
+    {
+      "id": "tk-sm-l-12",
+      "equivalent": "sm1-109"
+    },
+    {
+      "id": "tk-sm-r-13",
+      "equivalent": "sm1-97"
+    },
+    {
+      "id": "tk-sm-l-13",
+      "equivalent": "sm2-110"
+    },
+    {
+      "id": "tk-sm-r-14",
+      "equivalent": "smp-SM86"
+    },
+    {
+      "id": "tk-sm-l-14",
+      "equivalent": "smp-SM06"
+    },
+    {
+      "id": "tk-sm-r-15",
+      "equivalent": "bw1-100"
+    },
+    {
+      "id": "tk-sm-l-15",
+      "equivalent": "sm1-106"
+    },
+    {
+      "id": "tk-sm-r-16",
+      "equivalent": "sm1-13"
+    },
+    {
+      "id": "tk-sm-l-16",
+      "equivalent": "scan-transcription:tk-sm-l-16"
+    },
+    {
+      "id": "tk-sm-r-17",
+      "equivalent": "smp-SM65"
+    },
+    {
+      "id": "tk-sm-r-18",
+      "equivalent": "sm1-112"
+    },
+    {
+      "id": "tk-sm-l-18",
+      "equivalent": "sm1-67"
+    },
+    {
+      "id": "tk-sm-r-19",
+      "equivalent": "sm1-120"
+    },
+    {
+      "id": "tk-sm-l-19",
+      "equivalent": "sm1-120"
+    },
+    {
+      "id": "tk-sm-r-20",
+      "equivalent": "bw1-109"
+    },
+    {
+      "id": "tk-sm-r-21",
+      "equivalent": "bw2-93"
+    },
+    {
+      "id": "tk-sm-l-21",
+      "equivalent": "bw2-93"
+    },
+    {
+      "id": "tk-sm-r-22",
+      "equivalent": "sm1-59"
+    },
+    {
+      "id": "tk-sm-l-22",
+      "equivalent": "sm1-108"
+    },
+    {
+      "id": "tk-sm-r-23",
+      "equivalent": "sm1-120"
+    },
+    {
+      "id": "tk-sm-l-23",
+      "equivalent": "sm1-120"
+    },
+    {
+      "id": "tk-sm-r-24",
+      "equivalent": "bw1-109"
+    },
+    {
+      "id": "tk-sm-r-25",
+      "equivalent": "bw2-93"
+    },
+    {
+      "id": "tk-sm-l-25",
+      "equivalent": "bw2-93"
+    },
+    {
+      "id": "tk-sm-r-26",
+      "equivalent": "sm1-53"
+    },
+    {
+      "id": "tk-sm-r-27",
+      "equivalent": "bw1-109"
+    },
+    {
+      "id": "tk-sm-l-27",
+      "equivalent": "sm1-114"
+    },
+    {
+      "id": "tk-sm-r-28",
+      "equivalent": "bw1-109"
+    },
+    {
+      "id": "tk-sm-r-29",
+      "equivalent": "smp-SM86"
+    },
+    {
+      "id": "tk-sm-l-29",
+      "equivalent": "smp-SM06"
+    },
+    {
+      "id": "tk-sm-r-30",
+      "equivalent": "smp-SM65"
+    },
+    {
+      "id": "tk-sm-l-30",
+      "equivalent": "scan-transcription:tk-sm-l-30"
+    }
+  ],
+  "pending": []
+}

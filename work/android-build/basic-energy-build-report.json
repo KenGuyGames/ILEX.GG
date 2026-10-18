@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\android-build\\ILEX.GG-Android-basic-energy-candidate.apk",
+  "bytes": 78542774,
+  "sha256": "a9f050ca899dab17aab0851e8bac004f6b012485fab655d33d68a43b6ee0703f",
+  "bundledScans": 236,
+  "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

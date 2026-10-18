@@ -1,0 +1,12 @@
+{
+  "authorizedBy": "Kenneth",
+  "effectiveDate": "2026-10-17",
+  "lowerBound": "Black & White",
+  "purpose": "Build the shared framework for Expanded format",
+  "appliesTo": "XY automation and all future implementation batches unless Kenneth changes the scope",
+  "interactionPool": "Black & White onward, through the sets actually implemented at each checkpoint",
+  "historicalProfiles": "Preserve existing historical formats and saved matches",
+  "olderEraWork": "Retain shared regression tests; do not expand intentional pre-BW interaction sweeps",
+  "unlimited": "Deferred until explicitly authorized",
+  "legality": "Interaction scope is separate from individual format set pools, bans and historical rules"
+}

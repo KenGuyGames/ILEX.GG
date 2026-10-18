@@ -14,6 +14,7 @@ import { CardManager } from '../../../game/cards/card-manager';
 import { PokemonCardList } from '../../../game/store/state/pokemon-card-list';
 import { ChooseCardsPrompt } from '../../../game/store/prompts/choose-cards-prompt';
 import {SHUFFLE_DECK, MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
+import {evolveFromZone,finishMegaEvolution} from '../../../tcg-lab-xy-evolution';
 
 function* playCard(
   next: Function,
@@ -22,6 +23,7 @@ function* playCard(
   effect: TrainerEffect,
 ): IterableIterator<State> {
   const player = effect.player;
+  if ((state.rules as any).xyEraRules && !player.canEvolve)throw new GameError(GameMessage.CANNOT_EVOLVE_ON_YOUR_FIRST_TURN);
 
   if (player.deck.cards.length === 0) {
     throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
@@ -36,7 +38,7 @@ function* playCard(
   // Build possible evolution card names
   const evolutionNames: string[] = [];
   player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (list, card, target) => {
-    if (list.pokemonPlayedTurn >= state.turn) {
+    if (list.pokemonPlayedTurn >= state.turn || list.cannotEvolveNextTurn || player.cannotEvolvePokemonCards) {
       return;
     }
     const valid = evolutions.filter((e) => e.evolvesFrom === card.name);
@@ -115,6 +117,12 @@ function* playCard(
   }
 
   // Evolve Pokemon
+  if((state.rules as any).xyEraRules){
+    const evolved=evolveFromZone(store,state,player,targets[0],evolution,player.deck);
+    SHUFFLE_DECK(store,state,player);
+    finishMegaEvolution(store,state,evolved);
+    return state;
+  }
   MOVE_CARDS(store, state, player.deck, targets[0], { cards: [evolution], sourceCard: effect.trainerCard });
   targets[0].clearEffects();
   targets[0].pokemonPlayedTurn = state.turn;

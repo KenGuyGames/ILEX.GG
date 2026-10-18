@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "date": "2026-10-18",
+  "previousIntervalMs": 600,
+  "revealIntervalMs": 450,
+  "packsSha256": "da44c595b47139392be3d3c2e5e7279d8df70bb641d3fe84dd64d3aaff15dd9d",
+  "desktop": {
+    "passed": true,
+    "version": "1.13.3",
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3339,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246432977,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813590170,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "b4bff0223caece61f1d0cf59b5609c9a09ad3049bb7963ba71d6a0b52e861f4b"
+  },
+  "android": {
+    "passed": true,
+    "checks": [
+      "All APK entries pass CRC integrity checks",
+      "Compiled Android Activity and host bridge included",
+      "Private signing material excluded",
+      "rules-engine.js matches verified desktop source",
+      "rules-match.js matches verified desktop source",
+      "bot-ai.js matches verified desktop source",
+      "cards.json matches verified desktop source",
+      "sets.json matches verified desktop source",
+      "card-details.json matches verified desktop source",
+      "rules-card-map.json matches verified desktop source",
+      "pack-model.js matches verified desktop source",
+      "pack-specials.js matches verified desktop source",
+      "pack-finishes.js matches verified desktop source",
+      "mobile.js matches final Android source",
+      "mobile-host.js matches final Android source",
+      "mobile-compat.js matches final Android source",
+      "mobile.css matches final Android source",
+      "mobile-landscape.css matches final Android source",
+      "236 startup and Base–Fossil scans bundled",
+      "Every bundled card scan matches manifest SHA-256",
+      "Compiled resource table is uncompressed for Android 11+",
+      "All stored ZIP entries aligned to four bytes",
+      "Universal APK has no CPU-specific native libraries",
+      "Android 8 minimum and SDK 36 target encoded in APK",
+      "Internet is the only requested Android permission",
+      "Launcher Activity registered",
+      "XY interaction update uses higher versionCode for in-place installation",
+      "Mobile Chromium touch and responsive checks passed"
+    ],
+    "mobileChecks": 59,
+    "sha256": "640dfd319fbb52c764aa774e3c0296557941e143949b4b7b1e8b172a2b5a3c92",
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "androidVersion": "1.13.3-android.7",
+  "physicalAndroidAcceptancePending": true,
+  "engineUnchanged": true
+}

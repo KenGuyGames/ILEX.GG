@@ -73,18 +73,9 @@ export class Dragonite extends PokemonCard {
       }
 
       const blocked: number[] = [];
-      player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card, target) => {
-        const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, cardList);
-        store.reduceEffect(state, checkProvidedEnergy);
-
-        checkProvidedEnergy.energyMap.forEach((em, index) => {
-          if (!(em.provides.includes(CardType.WATER) || em.provides.includes(CardType.LIGHTNING))) {
-            const globalIndex = cardList.cards.indexOf(em.card);
-            if (globalIndex !== -1 && !blocked.includes(globalIndex)) {
-              blocked.push(globalIndex);
-            }
-          }
-        });
+      player.hand.cards.forEach((card,index)=>{
+        if (!(card instanceof EnergyCard) || card.energyType!==EnergyType.BASIC ||
+          !card.provides.some(type=>type===CardType.WATER||type===CardType.LIGHTNING)) blocked.push(index);
       });
 
       state = store.prompt(state, new AttachEnergyPrompt(

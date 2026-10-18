@@ -804,6 +804,7 @@ export interface PlayLockOptions {
 
 export class PlayLockEffect extends EffectOfAttackEffect {
   readonly type: string = 'PLAY_LOCK_EFFECT';
+  public _xyOpponentProtected=false;
 
   constructor(base: AttackEffect, public readonly options: PlayLockOptions) {
     super(base);
@@ -825,7 +826,7 @@ export class PlayLockEffect extends EffectOfAttackEffect {
       evolve: this.options.evolve === true,
     };
     const opponentTurns = this.options.turnsRemaining ?? 1;
-    this.opponent.applyPlayLocks(locks, opponentTurns);
+    if(!this._xyOpponentProtected)this.opponent.applyPlayLocks(locks, opponentTurns);
 
     if (this.options.bothPlayers) {
       this.player.applyPlayLocks(locks, this.options.attackerTurnsRemaining ?? 2);

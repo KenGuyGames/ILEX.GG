@@ -42,7 +42,7 @@ export class Xerneas extends PokemonCard {
         {
           destinationSlots: [SlotType.BENCH],
           energyFilter: { energyType: EnergyType.BASIC },
-          min: 2,
+          min: 0, // A search of a hidden zone for a specified type may fail.
           allowCancel: false,
           differentTargets: true,
           validCardTypes: [CardType.FAIRY],

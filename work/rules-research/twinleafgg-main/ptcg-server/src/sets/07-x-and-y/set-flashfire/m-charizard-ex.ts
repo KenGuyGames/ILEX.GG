@@ -49,7 +49,7 @@ export class MCharizardEX extends PokemonCard {
       const opponent = StateUtils.getOpponent(state, player);
 
       // Discard 2 cards from opponent's deck
-      MOVE_CARDS(store, state, opponent.deck, opponent.discard, { count: 5, sourceCard: this });
+      MOVE_CARDS(store, state, player.deck, player.discard, { count: 5, sourceCard: this });
     }
     return state;
   }

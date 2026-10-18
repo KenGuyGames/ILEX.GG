@@ -1,0 +1,96 @@
+{
+  "candidate": true,
+  "passed": false,
+  "scenarios": 112,
+  "failures": [
+    {
+      "id": "xy11-88",
+      "attack": "Stall",
+      "seed": 1,
+      "positive": false,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Stall",
+      "seed": 1,
+      "positive": true,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Stall",
+      "seed": 7,
+      "positive": false,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Stall",
+      "seed": 7,
+      "positive": true,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Scratch",
+      "seed": 1,
+      "positive": false,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Scratch",
+      "seed": 1,
+      "positive": true,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Scratch",
+      "seed": 7,
+      "positive": false,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    },
+    {
+      "id": "xy11-88",
+      "attack": "Scratch",
+      "seed": 7,
+      "positive": true,
+      "error": "Attack did not finish turn",
+      "stack": "AssertionError [ERR_ASSERTION]: Attack did not finish turn\n    at bw-full-sweep.cjs:49:124\n    at Script.runInContext (node:vm:149:12)\n    at Script.runInNewContext (node:vm:154:17)\n    at Object.runInNewContext (node:vm:310:38)\n    at Object.<anonymous> (C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\desktop-build\\xy-full-sweep.cjs:30:4)\n    at Module._compile (node:internal/modules/cjs/loader:1929:14)\n    at Object..js (node:internal/modules/cjs/loader:2060:10)\n    at Module.load (node:internal/modules/cjs/loader:1651:32)\n    at Module._load (node:internal/modules/cjs/loader:1443:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)"
+    }
+  ],
+  "rejected": [],
+  "testedPrintings": [
+    "xyp-XY130",
+    "xy2-5",
+    "xy2-52",
+    "xy4-30",
+    "xy4-66",
+    "xy5-29",
+    "xy5-38",
+    "xy5-146",
+    "xy5-147",
+    "xy6-10",
+    "xy6-69",
+    "xy8-122",
+    "xy9-39",
+    "xy9-90",
+    "xy10-27",
+    "xy10-56",
+    "xy11-43",
+    "xy11-86",
+    "xy11-88"
+  ],
+  "shard": null,
+  "scope": "Kalos Starter/XY with BW-onward fixtures; Unlimited deferred",
+  "engineSha256": "bac9fc0abdf9382136c39d4d475e5794f159a4d58ff3719129d963270140d4b3"
+}

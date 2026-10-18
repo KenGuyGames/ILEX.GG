@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "version": "1.13.1-android.4",
+  "versionCode": 4,
+  "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+  "sha256": "3dcadeb4edf24deaab58fa5761c6fde468c18180b014aa187ed0ca4768aa712f",
+  "sameSigningCertificateAsPrevious": true,
+  "mobileChecks": 59,
+  "apkChecks": 28,
+  "physicalAndroidDeviceTested": false,
+  "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+}

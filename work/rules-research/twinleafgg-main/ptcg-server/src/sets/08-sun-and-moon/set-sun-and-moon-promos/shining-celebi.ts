@@ -46,14 +46,12 @@ export class ShiningCelebi extends PokemonCard {
       }
 
       const pokemons = player.active.getPokemons();
-      const extraCards: PokemonCard[] = [pokemons[0]];
-      if (pokemonCard?.stage === Stage.STAGE_2 && pokemons[1]?.stage !== Stage.STAGE_2) {
-        extraCards.push(pokemons[1]);
-      }
+      const extraCards: PokemonCard[] = pokemons.filter(card => card !== pokemonCard);
 
       return COPY_ATTACK_VIA_ABILITY(store, state, effect, {
         copycatCard: this,
         requireActiveCopycat: false,
+        filter: () => false,
         extraCards,
       });
     }

@@ -1,3 +1,4 @@
+import {smToolCapacity} from '../../../tcg-lab-sm-environment';
 import { GameError } from '../../game-error';
 import { GameMessage } from '../../game-message';
 import { Card } from '../card/card';
@@ -244,7 +245,7 @@ export function CAN_PLAY_TRAINER_CARD(
         if (!trainerCard.canPlay) {
           let canAttachTool = false;
           player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, pokemonCard, target) => {
-            if (Array.isArray(cardList.tools) && cardList.tools.length < pokemonCard.maxTools) {
+            if (Array.isArray(cardList.tools) && cardList.tools.length < smToolCapacity(store,state,player,cardList)) {
               canAttachTool = true;
             }
           });

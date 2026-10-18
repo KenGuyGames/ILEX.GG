@@ -1,0 +1,626 @@
+{
+  "passed": true,
+  "version": "1.15.0",
+  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5",
+  "ruleAdapterSha256": "ad39e7b69bdcadf144cd62185cf2f41082cdcbf66b89466db207668e214ecada",
+  "botSha256": "d51b9f328f86be729053db8f130d6cd9894f11fb6aa5817a3b213daca484dd64",
+  "printedDataSha256": "8de6101eda859591d402ed82d4a6dd09e6471ff10debeff6af8a4794b5f6617e",
+  "printings": 3069,
+  "pending": 0,
+  "bySet": [
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "total": 173,
+      "missingText": 0,
+      "nativeCandidates": 172,
+      "available": 173,
+      "validated": 173
+    },
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "total": 251,
+      "missingText": 0,
+      "nativeCandidates": 148,
+      "available": 251,
+      "validated": 251
+    },
+    {
+      "id": "tk-sm-r",
+      "name": "SM trainer Kit (Alolan Raichu)",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 28,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "tk-sm-l",
+      "name": "SM trainer Kit (Lycanroc)",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 28,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "sm2",
+      "name": "Guardians Rising",
+      "total": 180,
+      "missingText": 0,
+      "nativeCandidates": 176,
+      "available": 180,
+      "validated": 180
+    },
+    {
+      "id": "2017sm",
+      "name": "McDonald's Collection 2017",
+      "total": 12,
+      "missingText": 0,
+      "nativeCandidates": 11,
+      "available": 12,
+      "validated": 12
+    },
+    {
+      "id": "sm3",
+      "name": "Burning Shadows",
+      "total": 177,
+      "missingText": 0,
+      "nativeCandidates": 177,
+      "available": 177,
+      "validated": 177
+    },
+    {
+      "id": "sm3.5",
+      "name": "Shining Legends",
+      "total": 81,
+      "missingText": 0,
+      "nativeCandidates": 81,
+      "available": 81,
+      "validated": 81
+    },
+    {
+      "id": "sm4",
+      "name": "Crimson Invasion",
+      "total": 126,
+      "missingText": 0,
+      "nativeCandidates": 125,
+      "available": 126,
+      "validated": 126
+    },
+    {
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "total": 178,
+      "missingText": 0,
+      "nativeCandidates": 175,
+      "available": 178,
+      "validated": 178
+    },
+    {
+      "id": "sm6",
+      "name": "Forbidden Light",
+      "total": 150,
+      "missingText": 0,
+      "nativeCandidates": 149,
+      "available": 150,
+      "validated": 150
+    },
+    {
+      "id": "sm7",
+      "name": "Celestial Storm",
+      "total": 187,
+      "missingText": 0,
+      "nativeCandidates": 186,
+      "available": 187,
+      "validated": 187
+    },
+    {
+      "id": "sm7.5",
+      "name": "Dragon Majesty",
+      "total": 80,
+      "missingText": 0,
+      "nativeCandidates": 78,
+      "available": 80,
+      "validated": 80
+    },
+    {
+      "id": "2018sm",
+      "name": "McDonald's Collection 2018",
+      "total": 12,
+      "missingText": 0,
+      "nativeCandidates": 12,
+      "available": 12,
+      "validated": 12
+    },
+    {
+      "id": "sm8",
+      "name": "Lost Thunder",
+      "total": 240,
+      "missingText": 0,
+      "nativeCandidates": 229,
+      "available": 240,
+      "validated": 240
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "total": 198,
+      "missingText": 0,
+      "nativeCandidates": 195,
+      "available": 198,
+      "validated": 198
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "total": 18,
+      "missingText": 0,
+      "nativeCandidates": 3,
+      "available": 18,
+      "validated": 18
+    },
+    {
+      "id": "sm10",
+      "name": "Unbroken Bonds",
+      "total": 238,
+      "missingText": 0,
+      "nativeCandidates": 231,
+      "available": 238,
+      "validated": 238
+    },
+    {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "total": 261,
+      "missingText": 0,
+      "nativeCandidates": 255,
+      "available": 261,
+      "validated": 261
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "total": 94,
+      "missingText": 0,
+      "nativeCandidates": 93,
+      "available": 94,
+      "validated": 94
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "total": 69,
+      "missingText": 0,
+      "nativeCandidates": 67,
+      "available": 69,
+      "validated": 69
+    },
+    {
+      "id": "2019sm",
+      "name": "McDonald's Collection 2019",
+      "total": 12,
+      "missingText": 0,
+      "nativeCandidates": 12,
+      "available": 12,
+      "validated": 12
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "total": 272,
+      "missingText": 0,
+      "nativeCandidates": 270,
+      "available": 272,
+      "validated": 272
+    }
+  ],
+  "printedPokemonAttacks": 4387,
+  "trainerToolAttacks": 3,
+  "branchCases": 1168,
+  "focusedChecks": 82,
+  "powerAudit": {
+    "resolved": 306,
+    "unavailable": 712
+  },
+  "trainerAudit": {
+    "resolved": 790,
+    "unavailable": 188
+  },
+  "nativeGuardPrintings": 2345,
+  "sharedSuites": [
+    {
+      "name": "xy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-tests.log"
+    },
+    {
+      "name": "sm-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-sm-tests.log"
+    },
+    {
+      "name": "xy-full-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-full-tests.log"
+    },
+    {
+      "name": "xy-interaction-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-interaction-tests.log"
+    },
+    {
+      "name": "basic-energy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-basic-energy-tests.log"
+    },
+    {
+      "name": "realistic-bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-realistic-bot-tests.log"
+    },
+    {
+      "name": "bw-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-bw-tests.log"
+    },
+    {
+      "name": "hgss-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-hgss-tests.log"
+    },
+    {
+      "name": "dp-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-dp-tests.log"
+    },
+    {
+      "name": "ex-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-ex-tests.log"
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-wotc-tests.log"
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-undo-tests.log"
+    },
+    {
+      "name": "bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-bot-tests.log"
+    }
+  ],
+  "games": [
+    {
+      "decks": [
+        "Decidueye Ninetales",
+        "Espeon Garb"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 17,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Sylveon GX",
+        "Bulu Gang"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "DeciPlume",
+        "Gardevoir GX"
+      ],
+      "level": "normal",
+      "decisions": 109,
+      "turn": 13,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Buzzroc",
+        "RayVolt"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "ZoroControl",
+        "My Friend Malamar"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Pikarom",
+        "Reshizard"
+      ],
+      "level": "hard",
+      "decisions": 112,
+      "turn": 14,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dark Box",
+        "Gardevoir & Sylveon"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Oranguru Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Espeon Garb",
+        "M Rayquaza"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Bulu Gang",
+        "Darkrai GX"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gardevoir GX",
+        "Metagross GX"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "RayVolt",
+        "Ultra Necrozma"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "My Friend Malamar",
+        "Granbull"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Reshizard",
+        "Zoroark Checkmate"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gardevoir & Sylveon",
+        "LucMetal"
+      ],
+      "level": "hard",
+      "decisions": 74,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Oranguru Control",
+        "ReshiZard"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "M Rayquaza",
+        "Sylveon GX"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Darkrai GX",
+        "DeciPlume"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Metagross GX",
+        "Buzzroc"
+      ],
+      "level": "easy",
+      "decisions": 79,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Ultra Necrozma",
+        "ZoroControl"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Granbull",
+        "Pikarom"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Zoroark Checkmate",
+        "Dark Box"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "LucMetal",
+        "MewtwoMew"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "ReshiZard",
+        "Decidueye Ninetales"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "decisions": 2774,
+  "scope": "Black & White onward through complete Sun & Moon; historical profiles preserved; Unlimited deferred",
+  "limits": "Finite expected-result, smoke, branch and bounded-game checks do not prove every possible interaction. Unavailable Ability/Trainer fixtures include passive and conditional effects; focused tests cover selected positive conditions. No new official Expanded banlist is supplied. Desktop/mobile packaging and Android device acceptance are separate.",
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23804,
+  "additionalScansVerified": 68,
+  "limitedKitEnergyOriginals": 12,
+  "sourceFilesVerified": 5269,
+  "unsignedWindowsExecutable": true,
+  "archives": [
+    {
+      "name": "ILEX.GG-Windows.zip",
+      "bytes": 251040532,
+      "sha256": "8f48f852b639e92e246e78c43aa0393c1a20e33418482e62c380dbd07c293640",
+      "crcPassed": true
+    },
+    {
+      "name": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2866042493,
+      "sha256": "93e95b8f40f4becf7b206bda79076290b00f33540ccf768acd7745b19851b372",
+      "crcPassed": true
+    }
+  ],
+  "executableSha256": "788cb5f3f888e64686e0ef5f3badfd21699bebacbf9f7f62ed6e705d212f6faf"
+}

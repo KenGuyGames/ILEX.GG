@@ -1,0 +1,2053 @@
+{
+  "passed": false,
+  "engineSha256": "4e77da98ba766358de1458facfae0091171dbd825f54e5a9e78d4110720ed58c",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [
+    {
+      "deck": "Decidueye Ninetales",
+      "from": "limitlessGRI-21A",
+      "to": "sm2-21",
+      "quantity": 2,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Decidueye Ninetales",
+      "from": "limitlessSMP-30A",
+      "to": "smp-SM30",
+      "quantity": 2,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Decidueye Ninetales",
+      "from": "limitlessSUM-G",
+      "to": "sm1-164",
+      "quantity": 3,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Espeon Garb",
+      "from": "limitlessFCO-105A",
+      "to": "xy10-105a",
+      "quantity": 3,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Espeon Garb",
+      "from": "limitlessAOR-75A",
+      "to": "xy7-75a",
+      "quantity": 1,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "M Rayquaza",
+      "from": "limitlessSMP-30A",
+      "to": "smp-SM30",
+      "quantity": 1,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "M Rayquaza",
+      "from": "limitlessSUM-M",
+      "to": "sm1-163",
+      "quantity": 4,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Sylveon GX",
+      "from": "limitlessSUM-Y",
+      "to": "sm1-172",
+      "quantity": 12,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Bulu Gang",
+      "from": "limitlessSUM-G",
+      "to": "sm1-164",
+      "quantity": 7,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Bulu Gang",
+      "from": "limitlessSUM-L",
+      "to": "sm1-167",
+      "quantity": 5,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Darkrai GX",
+      "from": "limitlessSUM-D",
+      "to": "sm1-170",
+      "quantity": 14,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "DeciPlume",
+      "from": "limitlessSUM-G",
+      "to": "sm1-164",
+      "quantity": 3,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Gardevoir GX",
+      "from": "limitlessSUM-Y",
+      "to": "sm1-172",
+      "quantity": 7,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Metagross GX",
+      "from": "limitlessSUM-M",
+      "to": "sm1-163",
+      "quantity": 6,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Metagross GX",
+      "from": "limitlessSUM-P",
+      "to": "sm1-162",
+      "quantity": 4,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Buzzroc",
+      "from": "limitlessSUM-F",
+      "to": "sm1-169",
+      "quantity": 7,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "RayVolt",
+      "from": "limitlessSUM-G",
+      "to": "sm1-164",
+      "quantity": 7,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "RayVolt",
+      "from": "limitlessSUM-L",
+      "to": "sm1-167",
+      "quantity": 7,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Ultra Necrozma",
+      "from": "limitlessSUM-P",
+      "to": "sm1-162",
+      "quantity": 8,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "My Friend Malamar",
+      "from": "limitlessSLG-68A",
+      "to": "sm3.5-68",
+      "quantity": 4,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Granbull",
+      "from": "limitlessUNB-182A",
+      "to": "sm10-182",
+      "quantity": 2,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Granbull",
+      "from": "limitlessGRI-130A",
+      "to": "sm2-130",
+      "quantity": 2,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Granbull",
+      "from": "limitlessTEU-Y",
+      "to": "g1-83",
+      "quantity": 7,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Pikarom",
+      "from": "limitlessLOT-172A",
+      "to": "sm8-172",
+      "quantity": 4,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Pikarom",
+      "from": "limitlessTEU-L",
+      "to": "tk-ex-latio-10",
+      "quantity": 11,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Reshizard",
+      "from": "limitlessTEU-R",
+      "to": "tk-ex-latia-10",
+      "quantity": 11,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Gardevoir & Sylveon",
+      "from": "limitlessTEU-Y",
+      "to": "g1-83",
+      "quantity": 9,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "LucMetal",
+      "from": "limitlessTEU-R",
+      "to": "tk-ex-latia-10",
+      "quantity": 6,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "LucMetal",
+      "from": "limitlessTEU-M",
+      "to": "neo1-19",
+      "quantity": 5,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "MewtwoMew",
+      "from": "limitlessUNM-79A",
+      "to": "sm11-79",
+      "quantity": 1,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "MewtwoMew",
+      "from": "limitlessTEU-R",
+      "to": "tk-ex-latia-10",
+      "quantity": 8,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "MewtwoMew",
+      "from": "limitlessTEU-P",
+      "to": "tk-ex-p-12",
+      "quantity": 3,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "Oranguru Control",
+      "from": "limitlessTEU-W",
+      "to": "g1-77",
+      "quantity": 3,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    },
+    {
+      "deck": "ReshiZard",
+      "from": "limitlessTEU-R",
+      "to": "tk-ex-latia-10",
+      "quantity": 18,
+      "reason": "Existing imported alias resolved in cloned fixture"
+    }
+  ],
+  "scope": "BW onward through SM; twenty-four cached SM deck pairings, bounded 120 decisions each; historical SM/Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Decidueye Ninetales",
+        "Espeon Garb"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Espeon Garb",
+        "M Rayquaza"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "M Rayquaza",
+        "Sylveon GX"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Bulu Gang",
+        "Darkrai GX"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Darkrai GX",
+        "DeciPlume"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "DeciPlume",
+        "Gardevoir GX"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gardevoir GX",
+        "Metagross GX"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Metagross GX",
+        "Buzzroc"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Buzzroc",
+        "RayVolt"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "RayVolt",
+        "Ultra Necrozma"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Ultra Necrozma",
+        "ZoroControl"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "ZoroControl",
+        "My Friend Malamar"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "My Friend Malamar",
+        "Granbull"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Granbull",
+        "Pikarom"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 17,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Pikarom",
+        "Reshizard"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 15,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Reshizard",
+        "Zoroark Checkmate"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Zoroark Checkmate",
+        "Dark Box"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dark Box",
+        "Gardevoir & Sylveon"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Oranguru Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Oranguru Control",
+        "ReshiZard"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "ReshiZard",
+        "Decidueye Ninetales"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": [
+    {
+      "decks": [
+        "Sylveon GX",
+        "Bulu Gang"
+      ],
+      "decisions": 98,
+      "reason": "CAN_ONLY_SELECT_TWO_DIFFERENT_ENERGY_TYPES",
+      "attempted": {
+        "type": "prompt",
+        "id": 57,
+        "value": [
+          {
+            "to": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            },
+            "index": 3
+          },
+          {
+            "to": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            },
+            "index": 4
+          }
+        ]
+      },
+      "saved": {
+        "spec": {
+          "profile": "expanded",
+          "seed": 40,
+          "decks": [
+            {
+              "id": "limitless-deck-09e8d9ce0f608bd97dac",
+              "name": "Sylveon GX",
+              "format": "limitless-format-23",
+              "cards": {
+                "sm1-101": 4,
+                "sm2-140": 3,
+                "xy1-129": 4,
+                "xy9-98": 4,
+                "xy10-105": 2,
+                "xy10-112": 2,
+                "xy7-78": 2,
+                "xy4-109": 4,
+                "sm2-128": 4,
+                "xy9-109": 4,
+                "sm1-115": 4,
+                "sm2-124": 2,
+                "sm2-123": 1,
+                "sm2-125": 1,
+                "sm2-121": 1,
+                "xy5-140": 4,
+                "sm3.5-69": 2,
+                "sm1-172": 12
+              },
+              "source": "Limitless",
+              "sourceFolder": "2017 (PRC-GRI)",
+              "sourceFolderUrl": "https://my.limitlesstcg.com/69648e279f541d2f2805c0c0",
+              "sourceCards": [
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_101_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_140_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/XY/XY_129_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_098_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_112_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/AOR/AOR_078_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_128_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_115_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_124_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_123_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_125_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_121_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PRC/PRC_140_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 12,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_Y_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SLG/SLG_069_R_EN_XS.png"
+                }
+              ]
+            },
+            {
+              "id": "limitless-deck-80f39d3813badf119d57",
+              "name": "Bulu Gang",
+              "format": "limitless-format-24",
+              "cards": {
+                "sm1-13": 3,
+                "sm1-51": 1,
+                "sm1-52": 3,
+                "sm3-130": 3,
+                "sm2-137": 3,
+                "smp-SM30": 1,
+                "xy1-122": 4,
+                "xy10-105": 3,
+                "sm3-115": 3,
+                "sm1-128": 1,
+                "xy8-148": 1,
+                "xy8-134": 1,
+                "sm1-135": 4,
+                "xy4-109": 3,
+                "sm1-129": 3,
+                "sm2-123": 2,
+                "sm2-125": 2,
+                "xy8-140": 1,
+                "sm2-121": 2,
+                "xy9-99": 2,
+                "xy8-137": 2,
+                "sm1-164": 7,
+                "sm1-167": 5
+              },
+              "source": "Limitless",
+              "sourceFolder": "2017 Worlds (PRC-BUS)",
+              "sourceFolderUrl": "https://my.limitlesstcg.com/68e4253bc5ab7e7eaa61ed40",
+              "sourceCards": [
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_013_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_051_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_052_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BUS/BUS_130_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_137_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SMP/SMP_030_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/XY/XY_122_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/FCO/FCO_105_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BUS/BUS_115_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_128_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_148_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_134_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 4,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_135_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/PHF/PHF_109_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 3,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_129_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_123_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_125_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 1,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_140_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/GRI/GRI_121_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKP/BKP_099_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 2,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BKT/BKT_137_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 7,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_G_R_EN_XS.png"
+                },
+                {
+                  "name": "",
+                  "quantity": 5,
+                  "src": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SUM/SUM_L_R_EN_XS.png"
+                }
+              ]
+            }
+          ]
+        },
+        "journal": [
+          {
+            "type": "prompt",
+            "id": 1,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 2,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 3,
+            "value": [
+              19,
+              53,
+              25,
+              38,
+              9,
+              37,
+              54,
+              58,
+              56,
+              42,
+              16,
+              50,
+              41,
+              12,
+              52,
+              51,
+              36,
+              29,
+              1,
+              4,
+              23,
+              11,
+              0,
+              18,
+              13,
+              7,
+              21,
+              26,
+              43,
+              22,
+              28,
+              10,
+              55,
+              35,
+              45,
+              15,
+              8,
+              31,
+              47,
+              2,
+              57,
+              14,
+              30,
+              59,
+              27,
+              39,
+              6,
+              32,
+              24,
+              3,
+              33,
+              48,
+              40,
+              34,
+              17,
+              44,
+              20,
+              49,
+              46,
+              5
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 4,
+            "value": [
+              35,
+              37,
+              19,
+              45,
+              43,
+              13,
+              6,
+              2,
+              32,
+              10,
+              33,
+              48,
+              47,
+              54,
+              58,
+              16,
+              7,
+              12,
+              50,
+              8,
+              9,
+              34,
+              23,
+              20,
+              38,
+              56,
+              24,
+              44,
+              15,
+              22,
+              52,
+              49,
+              4,
+              18,
+              31,
+              39,
+              21,
+              57,
+              42,
+              41,
+              0,
+              5,
+              51,
+              25,
+              29,
+              30,
+              40,
+              53,
+              17,
+              14,
+              11,
+              1,
+              59,
+              27,
+              55,
+              46,
+              36,
+              3,
+              26,
+              28
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 5,
+            "value": [
+              5
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 6,
+            "value": [
+              19,
+              32,
+              47,
+              27,
+              1,
+              21,
+              35,
+              8,
+              54,
+              9,
+              41,
+              5,
+              42,
+              13,
+              10,
+              28,
+              26,
+              29,
+              30,
+              50,
+              31,
+              23,
+              7,
+              43,
+              44,
+              12,
+              2,
+              14,
+              53,
+              3,
+              46,
+              22,
+              56,
+              25,
+              34,
+              16,
+              59,
+              39,
+              6,
+              45,
+              52,
+              20,
+              33,
+              0,
+              48,
+              37,
+              58,
+              55,
+              51,
+              24,
+              38,
+              49,
+              40,
+              15,
+              18,
+              57,
+              36,
+              4,
+              11,
+              17
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 7,
+            "value": [
+              1
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 8,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 9,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 10,
+            "value": 0
+          },
+          {
+            "type": "prompt",
+            "id": 11,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 12,
+            "value": []
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 13,
+            "value": 0
+          },
+          {
+            "type": "prompt",
+            "id": 14,
+            "value": [
+              2,
+              0,
+              1
+            ]
+          },
+          {
+            "type": "pass",
+            "player": 1
+          },
+          {
+            "type": "prompt",
+            "id": 15,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 16,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 5,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 17,
+            "value": [
+              24,
+              40,
+              39,
+              37,
+              15,
+              19,
+              1,
+              2,
+              8,
+              17,
+              29,
+              30,
+              14,
+              7,
+              12,
+              3,
+              22,
+              10,
+              34,
+              11,
+              9,
+              6,
+              0,
+              18,
+              35,
+              36,
+              20,
+              38,
+              5,
+              27,
+              4,
+              32,
+              13,
+              26,
+              25,
+              23,
+              21,
+              16,
+              28,
+              42,
+              31,
+              33,
+              41,
+              43
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 18,
+            "value": [
+              10,
+              18,
+              22,
+              41,
+              12,
+              4,
+              9,
+              35,
+              26,
+              0,
+              24,
+              16,
+              37,
+              40,
+              29,
+              8,
+              17,
+              2,
+              33,
+              32,
+              15,
+              1,
+              21,
+              7,
+              14,
+              6,
+              43,
+              28,
+              27,
+              5,
+              13,
+              42,
+              20,
+              11,
+              31,
+              39,
+              34,
+              36,
+              30,
+              38,
+              25,
+              23,
+              3,
+              19
+            ]
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 3
+            }
+          },
+          {
+            "type": "retreat",
+            "player": 2,
+            "index": 0
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 2
+            }
+          },
+          {
+            "type": "pass",
+            "player": 2
+          },
+          {
+            "type": "prompt",
+            "id": 19,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 20,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 21,
+            "value": 0
+          },
+          {
+            "type": "prompt",
+            "id": 22,
+            "value": [
+              1,
+              2,
+              0
+            ]
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Magical Ribbon"
+          },
+          {
+            "type": "prompt",
+            "id": 23,
+            "value": [
+              5,
+              6,
+              32
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 24,
+            "value": [
+              12,
+              35,
+              27,
+              4,
+              21,
+              29,
+              14,
+              39,
+              0,
+              25,
+              20,
+              26,
+              37,
+              18,
+              32,
+              9,
+              6,
+              34,
+              19,
+              1,
+              24,
+              3,
+              36,
+              5,
+              17,
+              8,
+              31,
+              16,
+              38,
+              15,
+              33,
+              7,
+              13,
+              30,
+              28,
+              10,
+              23,
+              2,
+              11,
+              22
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 25,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 26,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 27,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "attack",
+            "player": 2,
+            "name": "Horn Attack"
+          },
+          {
+            "type": "prompt",
+            "id": 28,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 29,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 30,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 1
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 31,
+            "value": [
+              36,
+              33,
+              32,
+              5,
+              21,
+              3,
+              4,
+              2,
+              13,
+              27,
+              7,
+              26,
+              25,
+              18,
+              24,
+              14,
+              28,
+              9,
+              10,
+              31,
+              23,
+              19,
+              30,
+              16,
+              1,
+              8,
+              35,
+              22,
+              34,
+              11,
+              17,
+              15,
+              6,
+              12,
+              29,
+              20,
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 32,
+            "value": [
+              4,
+              9,
+              21,
+              0,
+              29,
+              12,
+              6,
+              15,
+              8,
+              27,
+              10,
+              16,
+              22,
+              23,
+              5,
+              7,
+              17,
+              18,
+              28,
+              3,
+              1,
+              32,
+              2,
+              11,
+              19,
+              33,
+              26,
+              20,
+              13,
+              35,
+              14,
+              30,
+              31,
+              24,
+              34,
+              25
+            ]
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Magical Ribbon"
+          },
+          {
+            "type": "prompt",
+            "id": 33,
+            "value": [
+              4,
+              26,
+              27
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 34,
+            "value": [
+              26,
+              32,
+              31,
+              15,
+              12,
+              10,
+              8,
+              14,
+              21,
+              7,
+              19,
+              11,
+              3,
+              4,
+              16,
+              0,
+              5,
+              17,
+              28,
+              6,
+              9,
+              23,
+              29,
+              27,
+              24,
+              22,
+              2,
+              1,
+              18,
+              25,
+              20,
+              13,
+              30
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 35,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 36,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 37,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 6,
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 4
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 3,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 38,
+            "value": [
+              13,
+              33,
+              28,
+              17,
+              3,
+              27,
+              25,
+              8,
+              12,
+              21,
+              5,
+              15,
+              7,
+              19,
+              4,
+              16,
+              32,
+              6,
+              9,
+              1,
+              18,
+              14,
+              22,
+              20,
+              11,
+              2,
+              31,
+              23,
+              10,
+              26,
+              24,
+              30,
+              29,
+              0
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 39,
+            "value": [
+              14,
+              27,
+              7,
+              31,
+              33,
+              0,
+              4,
+              9,
+              3,
+              20,
+              32,
+              17,
+              24,
+              22,
+              15,
+              23,
+              6,
+              30,
+              11,
+              2,
+              28,
+              10,
+              21,
+              19,
+              12,
+              8,
+              1,
+              13,
+              5,
+              18,
+              16,
+              29,
+              25,
+              26
+            ]
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 0,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 40,
+            "value": 0
+          },
+          {
+            "type": "prompt",
+            "id": 41,
+            "value": []
+          },
+          {
+            "type": "attack",
+            "player": 2,
+            "name": "Horn Attack"
+          },
+          {
+            "type": "prompt",
+            "id": 42,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 43,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 44,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 1,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 45,
+            "value": []
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 46,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 47,
+            "value": [
+              {
+                "player": 1,
+                "slot": 1,
+                "index": 0
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 48,
+            "value": [
+              0
+            ]
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 49,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 1,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 50,
+            "value": [
+              1
+            ]
+          },
+          {
+            "type": "attack",
+            "player": 1,
+            "name": "Fairy Wind"
+          },
+          {
+            "type": "prompt",
+            "id": 51,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 52,
+            "value": true
+          },
+          {
+            "type": "prompt",
+            "id": 53,
+            "value": true
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 2,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "play",
+            "player": 2,
+            "index": 4,
+            "target": {
+              "player": 2,
+              "slot": 1,
+              "index": 0
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 54,
+            "value": [
+              {
+                "player": 2,
+                "slot": 2,
+                "index": 4
+              }
+            ]
+          },
+          {
+            "type": "prompt",
+            "id": 55,
+            "value": [
+              1
+            ]
+          },
+          {
+            "type": "ability",
+            "player": 2,
+            "name": "Strong Charge",
+            "target": {
+              "player": 2,
+              "slot": 2,
+              "index": 4
+            }
+          },
+          {
+            "type": "prompt",
+            "id": 56,
+            "value": true
+          }
+        ]
+      },
+      "last": [
+        {
+          "type": "prompt",
+          "id": 54,
+          "value": [
+            {
+              "player": 2,
+              "slot": 2,
+              "index": 4
+            }
+          ]
+        },
+        {
+          "type": "prompt",
+          "id": 55,
+          "value": [
+            1
+          ]
+        },
+        {
+          "type": "ability",
+          "player": 2,
+          "name": "Strong Charge",
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 4
+          }
+        },
+        {
+          "type": "prompt",
+          "id": 56,
+          "value": true
+        }
+      ],
+      "pending": []
+    },
+    {
+      "decks": [
+        "Gardevoir & Sylveon",
+        "LucMetal"
+      ],
+      "decisions": 0,
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    },
+    {
+      "decks": [
+        "LucMetal",
+        "MewtwoMew"
+      ],
+      "decisions": 0,
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    }
+  ]
+}

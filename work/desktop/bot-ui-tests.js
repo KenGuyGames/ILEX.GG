@@ -4,9 +4,9 @@
  botSuspended=true;botGeneration++;clearTimeout(botTimer);botTimer=null;
  const tick=()=>{botSuspended=false;runBotStep();botSuspended=true;clearTimeout(botTimer);botTimer=null;assert(!state.botError,state.botError);};
  try{
-  rulesMatch=null;tab='play';play();assert($('#opponentmode').value==='bot','Bot is default for new matches');assert($('#botdifficulty').options.length===3,'Three levels');
+  rulesMatch=null;tab='play';play();assert($('#opponentmode').value==='bot','Bot is default for new matches');assert($('#botdifficulty').options.length===4&&[...$('#botdifficulty').options].some(o=>o.value==='realistic'),'Four levels including Realistic Player');
   $('#matchformat').value='wotc-base-fossil';$('#matchformat').onchange();$('#rp1').value='bot-forest';$('#rp1').onchange();$('#rp2').value='bot-fire';$('#rp2').onchange();$('#botdifficulty').value='normal';await beginRules();
-  assert(rulesMatch?.spec.opponent?.type==='bot'&&rulesMatch.spec.opponent.difficulty==='normal','Start a bot match from ready-made decks');checks.push('New-match controls offer three difficulties, local play and starter decks');
+  assert(rulesMatch?.spec.opponent?.type==='bot'&&rulesMatch.spec.opponent.difficulty==='normal','Start a bot match from ready-made decks');checks.push('New-match controls offer four difficulties including Realistic Player, local play and starter decks');
   const hp=RulesMatch.pending(rulesMatch).find(p=>p.playerId===1),bp=RulesMatch.pending(rulesMatch).find(p=>p.playerId===2);
   if(hp&&bp&&hp.type==='Choose cards'){
    const value=BotAI.prompt(rulesMatch,hp,'normal').value;promptChoice=value.slice();const chosen=JSON.stringify(promptChoice);tick();assert(JSON.stringify(promptChoice)===chosen,'Bot setup does not clear human selection');checks.push('Simultaneous bot setup preserves the human’s pending selections');

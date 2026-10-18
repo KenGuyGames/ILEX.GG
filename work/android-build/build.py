@@ -29,13 +29,17 @@ presentation=(UI/'presentation.js').read_text(encoding='utf-8').replace('functio
 (UI/'presentation.js').write_text(presentation,encoding='utf-8')
 manifest=json.loads((UI/'scan-manifest.json').read_text(encoding='utf-8'))
 ids=[k for k in manifest if k.startswith(('base1-','base2-','base3-'))]+['hgss4-92','neo3-3','neo4-106','ex10-117','bw7-9','bw7-141','swsh8-245','smp-SM79']
+ids+=['sm10-107','sm10-54','sm1-12','smp-SM30a','sm8-130','sma-SV94','sm11-151','sm5-129','sm10-182a','tk-sm-l-28']
+wanted_scans={Path(manifest[card]['file']).name for card in ids}
+for stale in (UI/'scans').glob('*'):
+    if stale.is_file() and stale.name not in wanted_scans:stale.unlink()
 for card in ids:
     entry=manifest[card]; target=UI/entry['file']; target.parent.mkdir(parents=True,exist_ok=True)
-    source=ROOT/'outputs/ILEX.GG-win32-x64/resources'/entry['file']
+    source=ROOT/'work/dp-desktop-candidate/resources'/entry['file']
     assert hashlib.sha256(source.read_bytes()).hexdigest()==entry['sha256'],card
     shutil.copy2(source,target)
 res=OUT/'res/drawable';res.mkdir(parents=True,exist_ok=True)
-(res/'icon.xml').write_text('''<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108"><path android:fillColor="#123A2B" android:pathData="M0,0h108v108h-108z"/><path android:fillColor="#C6EB9F" android:pathData="M54,14C18,29 16,63 50,91C86,65 92,30 54,14M54,27L75,48L54,82L33,48z"/><path android:fillColor="#E9E9BA" android:pathData="M50,35h8v36h-8z"/></vector>''',encoding='utf-8')
+shutil.copy2(HERE/'launcher-icon.xml',res/'icon.xml')
 compiled=OUT/'flat';compiled.mkdir(exist_ok=True)
 run(TOOLS/'aapt2.exe','compile','--dir',OUT/'res','-o',compiled)
 unsigned=OUT/'unsigned.apk'
@@ -67,12 +71,13 @@ with zipfile.ZipFile(unsigned) as source,zipfile.ZipFile(aligned,'w',compression
 sign=HERE/'signing';sign.mkdir(exist_ok=True)
 password=sign/'password.txt';key=sign/'ilex-android.jks'
 if not key.exists():
+    if 'android:versionCode="1"' not in (HERE/'AndroidManifest.xml').read_text(encoding='utf-8'):raise FileNotFoundError('The original Android signing key is required for updates')
     password.write_text(secrets.token_urlsafe(36),encoding='ascii')
     run(JAVA/'keytool.exe','-genkeypair','-keystore',key,'-alias','ilex','-keyalg','RSA','-keysize','3072','-validity','10000','-storepass:file',password,'-keypass:file',password,'-dname','CN=ILEX.GG Local Android Release, O=ILEX.GG, C=US')
-apk=ROOT/'outputs/ILEX.GG-Android.apk'
+apk=Path(os.environ.get('ILEX_ANDROID_OUTPUT',str(ROOT/'outputs/ILEX.GG-Android.apk')))
 run(JAVA/'java.exe','-jar',TOOLS/'lib/apksigner.jar','sign','--ks',key,'--ks-key-alias','ilex','--ks-pass','file:'+str(password),'--out',apk,aligned)
 run(JAVA/'java.exe','-jar',TOOLS/'lib/apksigner.jar','verify','--verbose','--print-certs',apk)
 run(TOOLS/'zipalign.exe','-c','4',apk)
 report={'apk':str(apk),'bytes':apk.stat().st_size,'sha256':hashlib.sha256(apk.read_bytes()).hexdigest(),'bundledScans':len(ids),'engineSha256':hashlib.sha256((UI/'rules-engine.js').read_bytes()).hexdigest(),'minAndroid':'8.0','targetSdk':36,'physicalDeviceTested':False}
-(ROOT/'outputs/ILEX.GG-Android-build.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+Path(os.environ.get('ILEX_ANDROID_REPORT',str(ROOT/'outputs/ILEX.GG-Android-build.json'))).write_text(json.dumps(report,indent=2),encoding='utf-8')
 print(json.dumps(report,indent=2))

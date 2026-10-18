@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-<rect width="128" height="128" rx="32" fill="#102c24"/>
-<circle cx="64" cy="64" r="45" fill="none" stroke="#91b99a" stroke-width="2" stroke-dasharray="2 9"/>
-<path d="M36 91C27 54 48 30 94 28C95 72 77 99 36 91Z" fill="#c4ee94"/>
-<path d="M35 94L78 49" fill="none" stroke="#1b5844" stroke-width="5" stroke-linecap="round"/>
-<path d="M53 76L51 54M64 65L84 63" fill="none" stroke="#1b5844" stroke-width="3" stroke-linecap="round"/>
-<path d="M99 83L103 91L111 95L103 99L99 107L95 99L87 95L95 91Z" fill="#edb7d0"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ILEX.GG Celebi</title><rect width="512" height="512" rx="100" fill="#18733e"/><path transform="translate(-2 -38) scale(1.35)" fill="#efeccf" d="M86 209C70 176 78 144 103 123C113 115 122 111 131 112C100 136 83 164 92 197C112 178 146 168 177 153C204 141 216 121 219 96C242 121 248 158 241 193L236 226C254 216 273 210 289 213C305 219 279 243 260 254C248 261 238 265 227 268C256 268 282 273 308 271L317 267L316 275L326 276C337 277 326 288 313 291C288 297 259 299 233 295C233 310 237 324 231 334C226 343 215 340 210 331L203 311C189 320 171 318 160 307C129 309 102 298 88 279C80 268 76 256 74 248L52 235L61 230L61 218L70 223L73 215L80 223Z"/></svg>

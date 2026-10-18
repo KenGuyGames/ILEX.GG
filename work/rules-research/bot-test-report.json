@@ -17,7 +17,8 @@
     "Baby targets still allow attacks paid with Special Energy",
     "easy completes a full rules-enforced starter game",
     "normal completes a full rules-enforced starter game",
-    "hard completes a full rules-enforced starter game"
+    "hard completes a full rules-enforced starter game",
+    "realistic completes a full rules-enforced starter game"
   ],
   "games": [
     {
@@ -34,9 +35,15 @@
     },
     {
       "level": "hard",
-      "decisions": 177,
-      "turns": 25,
-      "winner": 0
+      "decisions": 269,
+      "turns": 36,
+      "winner": 1
+    },
+    {
+      "level": "realistic",
+      "decisions": 152,
+      "turns": 24,
+      "winner": 1
     }
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\android-build\\ILEX.GG-Android-table-repair-candidate.apk",
+  "bytes": 78542784,
+  "sha256": "3dcadeb4edf24deaab58fa5761c6fde468c18180b014aa187ed0ca4768aa712f",
+  "bundledScans": 236,
+  "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

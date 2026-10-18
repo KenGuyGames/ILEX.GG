@@ -59,7 +59,13 @@
     "Audio has independent native lifecycle pause",
     "Lifecycle pause does not change saved music preference",
     "Native background hook suspends bot scheduling",
-    "Foreground restores previous bot scheduling policy"
+    "Foreground restores previous bot scheduling policy",
+    "SM TAG TEAM match fits 1280×720 landscape",
+    "SM GX attack accessible in enlarged touch view at 1280×720",
+    "SM TAG TEAM match fits 800×360 landscape",
+    "SM GX attack accessible in enlarged touch view at 800×360",
+    "SM TAG TEAM match fits 640×312 landscape",
+    "SM GX attack accessible in enlarged touch view at 640×312"
   ],
   "errors": [],
   "physicalAndroidDevice": false

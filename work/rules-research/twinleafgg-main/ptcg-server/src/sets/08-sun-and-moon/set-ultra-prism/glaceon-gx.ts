@@ -42,7 +42,7 @@ export class GlaceonGX extends PokemonCard {
 
   public attacks = [
     {
-      name: 'Frost Spear',
+      name: 'Frost Bullet',
       cost: [W, C, C],
       damage: 90,
       text: "This attack does 30 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)",
@@ -95,7 +95,7 @@ export class GlaceonGX extends PokemonCard {
       },
     );
 
-    // Frost Spear
+    // Frost Bullet
     if (WAS_ATTACK_USED(effect, 0, this)) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);

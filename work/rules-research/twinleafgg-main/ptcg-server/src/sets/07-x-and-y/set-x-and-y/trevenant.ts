@@ -66,13 +66,13 @@ export class Trevenant extends PokemonCard {
         return state;
       }
 
-      const max = Math.min(2);
+      const max = Math.min(2,opponent.bench.filter(b=>b.getPokemonCard()).length);
       return store.prompt(state, new ChoosePokemonPrompt(
         player.id,
         GameMessage.CHOOSE_POKEMON_TO_DAMAGE,
         PlayerType.TOP_PLAYER,
         [SlotType.BENCH],
-        { min: 1, max: max, allowCancel: false }
+        { min: max, max: max, allowCancel: false }
       ), selected => {
         const targets = selected || [];
         targets.forEach(target => {

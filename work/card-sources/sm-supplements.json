@@ -1,0 +1,2661 @@
+[
+  {
+    "id": "tk-sm-r-1",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "1",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/410651f2e38c250ad31ddcf7.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-l-1",
+    "name": "Caterpie",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Grass"
+    ],
+    "evolvesTo": [
+      "Metapod"
+    ],
+    "attacks": [
+      {
+        "name": "Nap",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Heal 20 damage from this Pokémon."
+      },
+      {
+        "name": "Gnaw",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "1",
+    "artist": "Kanako Eo",
+    "rarity": "Common",
+    "flavorText": "When attacked by bird Pokémon, it resists by releasing a terrifically strong odor from its antennae, but it often becomes their prey.",
+    "nationalPokedexNumbers": [
+      10
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/1.png",
+      "large": "https://images.pokemontcg.io/sm1/1_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/e89ff61dca5ee9a03b32ef4f.jpg",
+      "printedEquivalent": "sm1-1"
+    }
+  },
+  {
+    "id": "tk-sm-r-2",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "2",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/3edcda6b07520f45ea1ed391.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-3",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "3",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/9f02a053ec5c0d788f7549df.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-4",
+    "name": "Stufful",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesTo": [
+      "Bewear"
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "4",
+    "artist": "Sanosuke Sakuma",
+    "rarity": "Common",
+    "flavorText": "Despite its adorable appearance, when it gets angry and flails about, its arms and legs could knock a pro wrestler sprawling.",
+    "nationalPokedexNumbers": [
+      759
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/111.png",
+      "large": "https://images.pokemontcg.io/sm1/111_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/c8eb0511fbe605b60ea61d20.jpg",
+      "printedEquivalent": "sm1-111"
+    }
+  },
+  {
+    "id": "tk-sm-l-4",
+    "name": "Trumbeak",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Pikipek",
+    "evolvesTo": [
+      "Toucannon"
+    ],
+    "attacks": [
+      {
+        "name": "Bullet Seed",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20×",
+        "text": "Flip 4 coins. This attack does 20 damage for each heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "4",
+    "artist": "Kouki Saitou",
+    "rarity": "Uncommon",
+    "flavorText": "By bending its beak, it can produce a variety of call and brand itself a noisy nuisance for its neighbors.",
+    "nationalPokedexNumbers": [
+      732
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/107.png",
+      "large": "https://images.pokemontcg.io/sm1/107_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/c15bbfc1eb356556bf95cd38.jpg",
+      "printedEquivalent": "sm1-107"
+    }
+  },
+  {
+    "id": "tk-sm-r-5",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "5",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/8189398597bcbedea89fae6c.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-l-5",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "5",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/8b8b8b81818f89863a97b226.png",
+      "printedEquivalent": "bw1-110"
+    }
+  },
+  {
+    "id": "tk-sm-r-6",
+    "name": "Golbat",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "80",
+    "types": [
+      "Psychic"
+    ],
+    "evolvesFrom": "Zubat",
+    "evolvesTo": [
+      "Crobat"
+    ],
+    "attacks": [
+      {
+        "name": "Super Poison Breath",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Your opponent's Active Pokémon is now Poisoned."
+      },
+      {
+        "name": "Acrobatics",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "Flip 2 coins. This attack does 20 more damage for each heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "number": "6",
+    "artist": "Masakazu Fukuda",
+    "rarity": "Uncommon",
+    "flavorText": "Its thick fangs are hollow like straws, making them unexpectedly fragile. These fangs are specialized for sucking blood.",
+    "nationalPokedexNumbers": [
+      42
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/55.png",
+      "large": "https://images.pokemontcg.io/sm1/55_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/9c0717cb979e9bc19d5f3d8d.jpg",
+      "printedEquivalent": "sm1-55"
+    }
+  },
+  {
+    "id": "tk-sm-r-7",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "7",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/4b877b299da1f128aa7192f1.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-8",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "8",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/65f1a9f0025eb274e56300c3.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-9",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "9",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/aaa534d427f1808cd8b00c94.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-10",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "10",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/49f2c9ee18dfde220090d0b8.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-11",
+    "name": "Zubat",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Psychic"
+    ],
+    "evolvesTo": [
+      "Golbat"
+    ],
+    "attacks": [
+      {
+        "name": "Astonish",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Choose a random card from your opponent's hand. Your opponent reveals that card and shuffles it into their deck."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "11",
+    "artist": "Satoshi Shirai",
+    "rarity": "Common",
+    "flavorText": "It sleeps in caves during the day. It has no eyes, so to check its surroundings while flying, it emits ultrasonic waves.",
+    "nationalPokedexNumbers": [
+      41
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/54.png",
+      "large": "https://images.pokemontcg.io/sm1/54_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/2d885da31407ea365229c5dd.jpg",
+      "printedEquivalent": "sm1-54"
+    }
+  },
+  {
+    "id": "tk-sm-l-11",
+    "name": "Fletchling",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesTo": [
+      "Fletchinder"
+    ],
+    "attacks": [
+      {
+        "name": "Growl",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "During your opponent's next turn, the Defending Pokémon's attacks do 20 less damage (before applying Weakness and Resistance)."
+      },
+      {
+        "name": "Flap",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "11",
+    "artist": "You Iribi",
+    "rarity": "Common",
+    "flavorText": "This amiable Pokémon is easy to train. But when battle is joined, it shows its ferocious side.",
+    "nationalPokedexNumbers": [
+      661
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm2/109.png",
+      "large": "https://images.pokemontcg.io/sm2/109_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/595d7bddb5dc2c3c655d80c6.jpg",
+      "printedEquivalent": "sm2-109"
+    }
+  },
+  {
+    "id": "tk-sm-r-12",
+    "name": "Lightning Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "12",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/108.png",
+      "large": "https://images.pokemontcg.io/bw1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/101d5e351a0eb7d46c084385.png",
+      "printedEquivalent": "bw1-108"
+    }
+  },
+  {
+    "id": "tk-sm-l-12",
+    "name": "Yungoos",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesTo": [
+      "Gumshoos"
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "12",
+    "artist": "match",
+    "rarity": "Common",
+    "flavorText": "With its sharp fangs, it will bite anything. It did not originally live in Alola but was imported from another region.",
+    "nationalPokedexNumbers": [
+      734
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/109.png",
+      "large": "https://images.pokemontcg.io/sm1/109_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/d1b81a1e3738d5b5efae406b.jpg",
+      "printedEquivalent": "sm1-109"
+    }
+  },
+  {
+    "id": "tk-sm-r-13",
+    "name": "Spearow",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesTo": [
+      "Fearow"
+    ],
+    "attacks": [
+      {
+        "name": "Peck Bugs",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10+",
+        "text": "If your opponent's Active Pokémon is a Grass Pokémon, this attack does 30 more damage."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "13",
+    "artist": "Yukiko Baba",
+    "rarity": "Common",
+    "flavorText": "Farmers whose fields are troubled by bug Pokémon appreciate Spearow for its vigorous appetite and look after it.",
+    "nationalPokedexNumbers": [
+      21
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/97.png",
+      "large": "https://images.pokemontcg.io/sm1/97_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/50a874b94aaabc39dcf1fd27.jpg",
+      "printedEquivalent": "sm1-97"
+    }
+  },
+  {
+    "id": "tk-sm-l-13",
+    "name": "Fletchinder",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "70",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Fletchling",
+    "evolvesTo": [
+      "Talonflame"
+    ],
+    "attacks": [
+      {
+        "name": "Flap",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Razor Wind",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "40",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "13",
+    "artist": "kawayoo",
+    "rarity": "Uncommon",
+    "flavorText": "From its beak, it fires embers at its prey. Once it has caught them, it grills them at high heat before feasting upon them.",
+    "nationalPokedexNumbers": [
+      662
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm2/110.png",
+      "large": "https://images.pokemontcg.io/sm2/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/639393ee31cfee09a04075c1.jpg",
+      "printedEquivalent": "sm2-110"
+    }
+  },
+  {
+    "id": "tk-sm-r-14",
+    "name": "Pikachu",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesTo": [
+      "Raichu"
+    ],
+    "attacks": [
+      {
+        "name": "Tail Whap",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Spark",
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "This attack does 10 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "14",
+    "artist": "kodama",
+    "rarity": "Promo",
+    "flavorText": "A plan was recently announced to gather many Pikachu and make an electric power plant.",
+    "nationalPokedexNumbers": [
+      25
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM86.png",
+      "large": "https://images.pokemontcg.io/smp/SM86_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/e9b61ef0afd1b2a953781f2d.jpg",
+      "printedEquivalent": "smp-SM86"
+    }
+  },
+  {
+    "id": "tk-sm-l-14",
+    "name": "Rockruff",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesTo": [
+      "Lycanroc"
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Rock Throw",
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "14",
+    "artist": "match",
+    "rarity": "Promo",
+    "flavorText": "It's considered to be a good Pokémon for beginners because of its friendliness, but its disposition grows rougher as it grows up.",
+    "nationalPokedexNumbers": [
+      744
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM06.png",
+      "large": "https://images.pokemontcg.io/smp/SM06_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/42595464b27a4b909ceb730b.jpg",
+      "printedEquivalent": "smp-SM06"
+    }
+  },
+  {
+    "id": "tk-sm-r-15",
+    "name": "Potion",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "rules": [
+      "Heal 30 damage from 1 of your Pokémon.",
+      "You may play as many Item cards as you like during your turn (before your attack)."
+    ],
+    "number": "15",
+    "artist": "Ayaka Yoshida",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/100.png",
+      "large": "https://images.pokemontcg.io/bw1/100_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/91ee53ad9994215d16932fa4.jpg",
+      "printedEquivalent": "bw1-100"
+    }
+  },
+  {
+    "id": "tk-sm-l-15",
+    "name": "Pikipek",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "50",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesTo": [
+      "Trumbeak"
+    ],
+    "attacks": [
+      {
+        "name": "Rock Smash",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 10 more damage."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "15",
+    "artist": "Shin Nagasawa",
+    "rarity": "Common",
+    "flavorText": "This Pokémon feeds on berries, whose leftover seeds become the ammunition for the attacks it fires off from its mouth.",
+    "nationalPokedexNumbers": [
+      731
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/106.png",
+      "large": "https://images.pokemontcg.io/sm1/106_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/bdc6c2a74e792690c5060a1e.jpg",
+      "printedEquivalent": "sm1-106"
+    }
+  },
+  {
+    "id": "tk-sm-r-16",
+    "name": "Grubbin",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Grass"
+    ],
+    "evolvesTo": [
+      "Charjabug"
+    ],
+    "attacks": [
+      {
+        "name": "Vice Grip",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "16",
+    "artist": "Akira Komayama",
+    "rarity": "Common",
+    "flavorText": "They often gather near places frequented by electric Pokémon in order to avoid being attacked by bird Pokémon.",
+    "nationalPokedexNumbers": [
+      736
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/13.png",
+      "large": "https://images.pokemontcg.io/sm1/13_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/6a9376749fc9bb974bda7b24.jpg",
+      "printedEquivalent": "sm1-13"
+    }
+  },
+  {
+    "id": "tk-sm-l-16",
+    "name": "Lycanroc",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "110",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Rockruff",
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Claw Slash",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "damage": "80",
+        "text": ""
+      }
+    ],
+    "number": "16",
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/2f2507eafc2e9bd343a40a41.jpg",
+      "printedEquivalent": "scan-transcription:tk-sm-l-16"
+    }
+  },
+  {
+    "id": "tk-sm-r-17",
+    "name": "Alolan Raichu",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "110",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesFrom": "Pikachu",
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 30 more damage."
+      },
+      {
+        "name": "Electric Surfer",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "70",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "17",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "flavorText": "It only evolves to this form in the Alola region. According to researchers, its diet is one of the causes of this change.",
+    "nationalPokedexNumbers": [
+      26
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM65.png",
+      "large": "https://images.pokemontcg.io/smp/SM65_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/110ab3df58ac7fa7e26ec3cf.jpg",
+      "printedEquivalent": "smp-SM65"
+    }
+  },
+  {
+    "id": "tk-sm-r-18",
+    "name": "Bewear",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "130",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Stufful",
+    "attacks": [
+      {
+        "name": "Bear Hug",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "40",
+        "text": "The Defending Pokémon can't retreat during your opponent's next turn."
+      },
+      {
+        "name": "Superpower",
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "80+",
+        "text": "You may do 40 more damage. If you do, this Pokémon does 20 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 3,
+    "number": "18",
+    "artist": "kirisAki",
+    "rarity": "Rare",
+    "flavorText": "This immensely dangerous Pokémon possesses overwhelming physical strength. Its habitat is generally off-limits.",
+    "nationalPokedexNumbers": [
+      760
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/112.png",
+      "large": "https://images.pokemontcg.io/sm1/112_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/f6acd6d47b6d48519057b798.jpg",
+      "printedEquivalent": "sm1-112"
+    }
+  },
+  {
+    "id": "tk-sm-l-18",
+    "name": "Makuhita",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "80",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesTo": [
+      "Hariyama"
+    ],
+    "attacks": [
+      {
+        "name": "Surprise Attack",
+        "cost": [
+          "Fighting"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": "Flip a coin. If tails, this attack does nothing."
+      },
+      {
+        "name": "Strength",
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "40",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "18",
+    "artist": "Mina Nakai",
+    "rarity": "Common",
+    "flavorText": "It was originally brought in from another region, but now Makuhita from Alola are more famous.",
+    "nationalPokedexNumbers": [
+      296
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/67.png",
+      "large": "https://images.pokemontcg.io/sm1/67_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/5840ad73959d1a359a981445.jpg",
+      "printedEquivalent": "sm1-67"
+    }
+  },
+  {
+    "id": "tk-sm-r-19",
+    "name": "Hau",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "rules": [
+      "Draw 3 cards.",
+      "You may play only 1 Supporter card during your turn (before your attack)."
+    ],
+    "number": "19",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/120.png",
+      "large": "https://images.pokemontcg.io/sm1/120_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/a49954e2e91003bbcd9f84d5.jpg",
+      "printedEquivalent": "sm1-120"
+    }
+  },
+  {
+    "id": "tk-sm-l-19",
+    "name": "Hau",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "rules": [
+      "Draw 3 cards.",
+      "You may play only 1 Supporter card during your turn (before your attack)."
+    ],
+    "number": "19",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/120.png",
+      "large": "https://images.pokemontcg.io/sm1/120_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/4382b9e09a984819915f156c.jpg",
+      "printedEquivalent": "sm1-120"
+    }
+  },
+  {
+    "id": "tk-sm-r-20",
+    "name": "Psychic Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "20",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/109.png",
+      "large": "https://images.pokemontcg.io/bw1/109_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/76b6ee33fc510162ff5ace60.png",
+      "printedEquivalent": "bw1-109"
+    }
+  },
+  {
+    "id": "tk-sm-r-21",
+    "name": "Great Ball",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "rules": [
+      "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+      "You may play as many Item cards as you like during your turn (before your attack)."
+    ],
+    "number": "21",
+    "artist": "5ban Graphics",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw2/93.png",
+      "large": "https://images.pokemontcg.io/bw2/93_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/86b51a131ba2fd5d29d50118.jpg",
+      "printedEquivalent": "bw2-93"
+    }
+  },
+  {
+    "id": "tk-sm-l-21",
+    "name": "Great Ball",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "rules": [
+      "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+      "You may play as many Item cards as you like during your turn (before your attack)."
+    ],
+    "number": "21",
+    "artist": "5ban Graphics",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw2/93.png",
+      "large": "https://images.pokemontcg.io/bw2/93_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/56e5f975f89ad1f274504426.jpg",
+      "printedEquivalent": "bw2-93"
+    }
+  },
+  {
+    "id": "tk-sm-r-22",
+    "name": "Drowzee",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Psychic"
+    ],
+    "evolvesTo": [
+      "Hypno"
+    ],
+    "attacks": [
+      {
+        "name": "Psychic Boom",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10×",
+        "text": "This attack does 10 damage times the amount of Energy attached to your opponent's Active Pokémon."
+      },
+      {
+        "name": "Headbutt",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "22",
+    "artist": "Suwama Chiaki",
+    "rarity": "Common",
+    "flavorText": "It finds really fun dreams tasty. When it makes friends with people, it may show them the most delicious dreams it's ever eaten.",
+    "nationalPokedexNumbers": [
+      96
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/59.png",
+      "large": "https://images.pokemontcg.io/sm1/59_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/9c7471c0da25b677f7659137.jpg",
+      "printedEquivalent": "sm1-59"
+    }
+  },
+  {
+    "id": "tk-sm-l-22",
+    "name": "Toucannon",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 2"
+    ],
+    "hp": "140",
+    "types": [
+      "Colorless"
+    ],
+    "evolvesFrom": "Trumbeak",
+    "attacks": [
+      {
+        "name": "Echoed Voice",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "60",
+        "text": "During your next turn, this Pokémon's Echoed Voice attack does 60 more damage (before applying Weakness and Resistance)."
+      },
+      {
+        "name": "Beak Blast",
+        "cost": [
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "100",
+        "text": "Flip a coin. If heads, your opponent's Active Pokémon is now Burned."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "22",
+    "artist": "Megumi Mizutani",
+    "rarity": "Rare",
+    "flavorText": "Within its beak, its internal gas ignites, explosively launching seeds with enough power to pulverize boulders.",
+    "nationalPokedexNumbers": [
+      733
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/108.png",
+      "large": "https://images.pokemontcg.io/sm1/108_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/a72253c342e525fec3c4b300.jpg",
+      "printedEquivalent": "sm1-108"
+    }
+  },
+  {
+    "id": "tk-sm-r-23",
+    "name": "Hau",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "rules": [
+      "Draw 3 cards.",
+      "You may play only 1 Supporter card during your turn (before your attack)."
+    ],
+    "number": "23",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/120.png",
+      "large": "https://images.pokemontcg.io/sm1/120_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/b168c74eb751187470600752.jpg",
+      "printedEquivalent": "sm1-120"
+    }
+  },
+  {
+    "id": "tk-sm-l-23",
+    "name": "Hau",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Supporter"
+    ],
+    "rules": [
+      "Draw 3 cards.",
+      "You may play only 1 Supporter card during your turn (before your attack)."
+    ],
+    "number": "23",
+    "artist": "Ken Sugimori",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/120.png",
+      "large": "https://images.pokemontcg.io/sm1/120_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/86c53a710eb9e5d4b2fbe072.jpg",
+      "printedEquivalent": "sm1-120"
+    }
+  },
+  {
+    "id": "tk-sm-r-24",
+    "name": "Psychic Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "24",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/109.png",
+      "large": "https://images.pokemontcg.io/bw1/109_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/1a3a962e0bac951197785411.png",
+      "printedEquivalent": "bw1-109"
+    }
+  },
+  {
+    "id": "tk-sm-r-25",
+    "name": "Great Ball",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "rules": [
+      "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+      "You may play as many Item cards as you like during your turn (before your attack)."
+    ],
+    "number": "25",
+    "artist": "5ban Graphics",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw2/93.png",
+      "large": "https://images.pokemontcg.io/bw2/93_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/7f378de9350129c35f7ce65a.jpg",
+      "printedEquivalent": "bw2-93"
+    }
+  },
+  {
+    "id": "tk-sm-l-25",
+    "name": "Great Ball",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "rules": [
+      "Look at the top 7 cards of your deck. You may reveal a Pokémon you find there and put it into your hand. Shuffle the other cards back into your deck.",
+      "You may play as many Item cards as you like during your turn (before your attack)."
+    ],
+    "number": "25",
+    "artist": "5ban Graphics",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw2/93.png",
+      "large": "https://images.pokemontcg.io/bw2/93_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/fcb17a345946fff815e9e6ee.jpg",
+      "printedEquivalent": "bw2-93"
+    }
+  },
+  {
+    "id": "tk-sm-r-26",
+    "name": "Togedemaru",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Defense Curl",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "",
+        "text": "Flip a coin. If heads, prevent all damage done to this Pokémon by attacks during your opponent's next turn."
+      },
+      {
+        "name": "Discharge",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "30×",
+        "text": "Discard all Lightning Energy from this Pokémon. This attack does 30 damage for each card you discarded in this way."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "26",
+    "artist": "Megumi Mizutani",
+    "rarity": "Common",
+    "flavorText": "The long hairs on its back act as lightning rods. The bolts of lightning it attracts are stored as energy in its electric sac.",
+    "nationalPokedexNumbers": [
+      777
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/53.png",
+      "large": "https://images.pokemontcg.io/sm1/53_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/a1839cc359d3d32e1b014fba.jpg",
+      "printedEquivalent": "sm1-53"
+    }
+  },
+  {
+    "id": "tk-sm-r-27",
+    "name": "Psychic Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "27",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/109.png",
+      "large": "https://images.pokemontcg.io/bw1/109_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/5f9349c3e54a4c7769b75156.png",
+      "printedEquivalent": "bw1-109"
+    }
+  },
+  {
+    "id": "tk-sm-l-27",
+    "name": "Big Malasada",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Item"
+    ],
+    "rules": [
+      "Heal 20 damage and remove a Special Condition from your Active Pokémon.",
+      "You may play as many Item cards as you like during your turn (before your attack)."
+    ],
+    "number": "27",
+    "artist": "5ban Graphics",
+    "rarity": "Uncommon",
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/sm1/114.png",
+      "large": "https://images.pokemontcg.io/sm1/114_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/4e9cf9374691ee94f085bbd9.jpg",
+      "printedEquivalent": "sm1-114"
+    }
+  },
+  {
+    "id": "tk-sm-r-28",
+    "name": "Psychic Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "28",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/109.png",
+      "large": "https://images.pokemontcg.io/bw1/109_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/b3faeb54309f507ced62a746.png",
+      "printedEquivalent": "bw1-109"
+    }
+  },
+  {
+    "id": "tk-sm-r-29",
+    "name": "Pikachu",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesTo": [
+      "Raichu"
+    ],
+    "attacks": [
+      {
+        "name": "Tail Whap",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Spark",
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": "This attack does 10 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "29",
+    "artist": "kodama",
+    "rarity": "Promo",
+    "flavorText": "A plan was recently announced to gather many Pikachu and make an electric power plant.",
+    "nationalPokedexNumbers": [
+      25
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM86.png",
+      "large": "https://images.pokemontcg.io/smp/SM86_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/84319f623158208cb4dad852.jpg",
+      "printedEquivalent": "smp-SM86"
+    }
+  },
+  {
+    "id": "tk-sm-l-29",
+    "name": "Rockruff",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesTo": [
+      "Lycanroc"
+    ],
+    "attacks": [
+      {
+        "name": "Tackle",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10",
+        "text": ""
+      },
+      {
+        "name": "Rock Throw",
+        "cost": [
+          "Fighting",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "20",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "29",
+    "artist": "match",
+    "rarity": "Promo",
+    "flavorText": "It's considered to be a good Pokémon for beginners because of its friendliness, but its disposition grows rougher as it grows up.",
+    "nationalPokedexNumbers": [
+      744
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM06.png",
+      "large": "https://images.pokemontcg.io/smp/SM06_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/cc72a3780d15daf25b4e1390.jpg",
+      "printedEquivalent": "smp-SM06"
+    }
+  },
+  {
+    "id": "tk-sm-r-30",
+    "name": "Alolan Raichu",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "110",
+    "types": [
+      "Lightning"
+    ],
+    "evolvesFrom": "Pikachu",
+    "attacks": [
+      {
+        "name": "Quick Attack",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "10+",
+        "text": "Flip a coin. If heads, this attack does 30 more damage."
+      },
+      {
+        "name": "Electric Surfer",
+        "cost": [
+          "Lightning",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "70",
+        "text": ""
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Metal",
+        "value": "-20"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "30",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "flavorText": "It only evolves to this form in the Alola region. According to researchers, its diet is one of the causes of this change.",
+    "nationalPokedexNumbers": [
+      26
+    ],
+    "legalities": {
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/smp/SM65.png",
+      "large": "https://images.pokemontcg.io/smp/SM65_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-r"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/6a42c5cbd96bcd5848c280e1.jpg",
+      "printedEquivalent": "smp-SM65"
+    }
+  },
+  {
+    "id": "tk-sm-l-30",
+    "name": "Lycanroc",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "110",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Rockruff",
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "damage": "20",
+        "text": ""
+      },
+      {
+        "name": "Claw Slash",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "damage": "80",
+        "text": ""
+      }
+    ],
+    "number": "30",
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "bundled-scan-reviewed-reprint",
+      "scan": "scans/a84ca412d0ef99f828117ed9.jpg",
+      "printedEquivalent": "scan-transcription:tk-sm-l-30"
+    }
+  },
+  {
+    "id": "tk-sm-l-2",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "2",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-2.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-3",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "3",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-3.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-6",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "6",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-6.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-7",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "7",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-7.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-8",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "8",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-8.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-9",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "9",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-9.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-10",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "10",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-10.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-17",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "17",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-17.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-20",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "20",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-20.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-24",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "24",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-24.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-26",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "26",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-26.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  },
+  {
+    "id": "tk-sm-l-28",
+    "name": "Fighting Energy",
+    "supertype": "Energy",
+    "subtypes": [
+      "Basic"
+    ],
+    "number": "28",
+    "rarity": "Common",
+    "legalities": {
+      "unlimited": "Legal",
+      "standard": "Legal",
+      "expanded": "Legal"
+    },
+    "images": {
+      "small": "https://images.pokemontcg.io/bw1/110.png",
+      "large": "https://images.pokemontcg.io/bw1/110_hires.png"
+    },
+    "set": {
+      "id": "tk-sm-l"
+    },
+    "_source": {
+      "kind": "numbered-kit-basic-energy",
+      "url": "https://img.tcgscreener.com/cards/tk10a-28.png",
+      "equivalent": "tk-sm-l-5"
+    }
+  }
+]

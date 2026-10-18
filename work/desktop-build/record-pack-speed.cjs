@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=require('assert');
+const root=path.resolve(__dirname,'../..'),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8')),hash=p=>crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex');
+const desktop=read('work/rules-research/pack-speed-desktop-release.json'),android=read('outputs/ILEX.GG-Android-verification.json');
+assert(desktop.passed&&android.passed);
+const sha=hash('work/desktop/ui/packs.js');assert.equal(sha,hash('outputs/ILEX.GG-win32-x64/resources/app/ui/packs.js'));
+const native='work/desktop-pack-speed-tests-v3/';for(const name of ['pack-native-tests.json','pack-native-tests-fresh.json'])assert(read(native+name).passed);
+const report={passed:true,date:'2026-10-18',previousIntervalMs:600,revealIntervalMs:450,packsSha256:sha,desktop,android,androidVersion:'1.13.3-android.7',physicalAndroidAcceptancePending:true,engineUnchanged:true};
+fs.writeFileSync(path.join(root,'work/rules-research/pack-speed-release.json'),JSON.stringify(report,null,2));
+const agents=path.join(root,'AGENTS.md');fs.writeFileSync(agents,'# Latest UI update — faster pack reveals (October 18, 2026)\n\nAutomatic pack reveals now use 450 ms intervals (previously 600 ms). Sequential reveal, pause, Space, persistence and privacy behavior retained. Focused timer checks, real native fresh/restored pack suites, all five pack model/subset/finish/special audits and mobile preview pass. Windows EXE and both ZIPs updated and verified. Android 1.13.3-android.7 / versionCode 7 retains the original signing key; APK static/signature checks pass. Physical Android acceptance remains pending. Engine and card automation unchanged. Evidence: work/rules-research/pack-speed-release.json.\n\n---\n\n'+fs.readFileSync(agents,'utf8'));
+console.log('Pack speed release recorded.');

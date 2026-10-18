@@ -5,7 +5,7 @@
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { ChoosePokemonPrompt, GameMessage, PlayerType, SlotType, StoreLike, State, StateUtils } from '../../../game';
-import { DealDamageEffect } from '../../../game/store/effects/attack-effects';
+import { DealDamageEffect,GustOpponentBenchEffect } from '../../../game/store/effects/attack-effects';
 import { Effect } from '../../../game/store/effects/effect';
 import { AttackEffect } from '../../../game/store/effects/game-effects';
 import { AfterAttackEffect, EndTurnEffect } from '../../../game/store/effects/game-phase-effects';
@@ -44,6 +44,11 @@ export class Ursaring extends PokemonCard {
     // Attack 1: Drag Off
     // Ref: set-destined-rivals/primeape.ts (Drag Off)
     if (WAS_ATTACK_USED(effect, 0, this)) {
+      if((state.rules as any).xyEraRules){
+        const opponent=StateUtils.getOpponent(state,effect.player);effect.damage=0;
+        if(!opponent.bench.some(l=>l.getPokemonCard()))return state;
+        return store.prompt(state,new ChoosePokemonPrompt(effect.player.id,GameMessage.CHOOSE_POKEMON_TO_SWITCH,PlayerType.TOP_PLAYER,[SlotType.BENCH],{min:1,max:1,allowCancel:false}),(targets:any)=>{store.reduceEffect(state,new GustOpponentBenchEffect(effect,targets[0]));effect.damage=50;});
+      }
       this.usedDragOff = true;
     }
 

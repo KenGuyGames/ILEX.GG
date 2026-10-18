@@ -1,0 +1,213 @@
+{
+  "status": "source-validated-finite-scope",
+  "total": 2208,
+  "available": 2208,
+  "pending": 0,
+  "interactionScope": "Black & White onward through implemented XY; Unlimited deferred",
+  "bySet": [
+    {
+      "id": "xyp",
+      "name": "XY Black Star Promos",
+      "total": 216,
+      "available": 216,
+      "validated": 216
+    },
+    {
+      "id": "xy0",
+      "name": "Kalos Starter Set",
+      "total": 39,
+      "available": 39,
+      "validated": 39
+    },
+    {
+      "id": "xy1",
+      "name": "XY",
+      "total": 146,
+      "available": 146,
+      "validated": 146
+    },
+    {
+      "id": "xya",
+      "name": "Yellow A Alternate",
+      "total": 6,
+      "available": 6,
+      "validated": 6
+    },
+    {
+      "id": "tk-xy-n",
+      "name": "XY trainer Kit (Noivern)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "tk-xy-sy",
+      "name": "XY trainer Kit (Sylveon)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "xy2",
+      "name": "Flashfire",
+      "total": 110,
+      "available": 110,
+      "validated": 110
+    },
+    {
+      "id": "2014xy",
+      "name": "McDonald's Collection 2014",
+      "total": 12,
+      "available": 12,
+      "validated": 12
+    },
+    {
+      "id": "xy3",
+      "name": "Furious Fists",
+      "total": 114,
+      "available": 114,
+      "validated": 114
+    },
+    {
+      "id": "tk-xy-b",
+      "name": "XY trainer Kit (Bisharp)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "tk-xy-w",
+      "name": "XY trainer Kit (Wigglytuff)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "xy4",
+      "name": "Phantom Forces",
+      "total": 124,
+      "available": 124,
+      "validated": 124
+    },
+    {
+      "id": "xy5",
+      "name": "Primal Clash",
+      "total": 164,
+      "available": 164,
+      "validated": 164
+    },
+    {
+      "id": "dc1",
+      "name": "Double Crisis",
+      "total": 34,
+      "available": 34,
+      "validated": 34
+    },
+    {
+      "id": "tk-xy-latio",
+      "name": "XY trainer Kit (Latios)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "tk-xy-latia",
+      "name": "XY trainer Kit (Latias)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "xy6",
+      "name": "Roaring Skies",
+      "total": 112,
+      "available": 112,
+      "validated": 112
+    },
+    {
+      "id": "xy7",
+      "name": "Ancient Origins",
+      "total": 101,
+      "available": 101,
+      "validated": 101
+    },
+    {
+      "id": "xy8",
+      "name": "BREAKthrough",
+      "total": 165,
+      "available": 165,
+      "validated": 165
+    },
+    {
+      "id": "2015xy",
+      "name": "McDonald's Collection 2015",
+      "total": 12,
+      "available": 12,
+      "validated": 12
+    },
+    {
+      "id": "xy9",
+      "name": "BREAKpoint",
+      "total": 126,
+      "available": 126,
+      "validated": 126
+    },
+    {
+      "id": "g1",
+      "name": "Generations",
+      "total": 117,
+      "available": 117,
+      "validated": 117
+    },
+    {
+      "id": "tk-xy-p",
+      "name": "XY trainer Kit (Pikachu Libre)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "tk-xy-su",
+      "name": "XY trainer Kit (Suicune)",
+      "total": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "xy10",
+      "name": "Fates Collide",
+      "total": 129,
+      "available": 129,
+      "validated": 129
+    },
+    {
+      "id": "xy11",
+      "name": "Steam Siege",
+      "total": 116,
+      "available": 116,
+      "validated": 116
+    },
+    {
+      "id": "2016xy",
+      "name": "McDonald's Collection 2016",
+      "total": 12,
+      "available": 12,
+      "validated": 12
+    },
+    {
+      "id": "xy12",
+      "name": "Evolutions",
+      "total": 113,
+      "available": 113,
+      "validated": 113
+    }
+  ],
+  "unsupported": [],
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "validation": {
+    "printedAttacks": 2787,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16
+  }
+}

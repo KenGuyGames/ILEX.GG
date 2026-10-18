@@ -25,7 +25,7 @@ export class Registeel extends PokemonCard {
       text: 'Attach a basic Energy card from your discard pile to 1 of your Benched Pokémon.'
     },
     {
-      name: 'Iron Hand',
+      name: 'Iron Fist',
       cost: [M, M, C],
       damage: 90,
       text: 'If Regice is on your Bench, heal 30 damage from this Pokémon.'
@@ -69,7 +69,7 @@ export class Registeel extends PokemonCard {
       });
     }
 
-    // Attack 2: Iron Hand
+    // Attack 2: Iron Fist
     // Ref: set-breakthrough/cresselia.ts (Moonlight Gain - heal self)
     if (WAS_ATTACK_USED(effect, 1, this)) {
       const player = effect.player;

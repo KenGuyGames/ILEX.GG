@@ -149,7 +149,7 @@ export class RedAndBlue extends TrainerCard {
 
               // Step 3: Optional - discard 2 cards to attach up to 2 basic energy
               const handCards = player.hand.cards.filter((c) => c !== this);
-              if (handCards.length < 2) {
+              if ((this as any)._smCopiedSupporter || handCards.length < 2) {
                 return;
               }
 

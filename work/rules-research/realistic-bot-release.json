@@ -1,0 +1,413 @@
+{
+  "passed": true,
+  "date": "2026-10-18",
+  "version": "1.14.0",
+  "botSha256": "3d68866c52d9ba633c792ba480e12517f07089303d2001b55bca96af2e78aa49",
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "engineUnchanged": true,
+  "interactionScope": "BW onward through implemented XY, plus preserved historical profiles. Unlimited remains deferred.",
+  "research": "REALISTIC-BOT-RESEARCH.md",
+  "training": "Local researched heuristic/search policy; not trained on match recordings.",
+  "focused": {
+    "passed": true,
+    "checks": [
+      "Separate Realistic Player option preserves all three existing levels",
+      "A paid immediate knockout takes priority over passing",
+      "An attachment that enables an attack is preferred to ending the turn",
+      "A mismatched Energy is not dumped on the Active when it helps a backup attacker",
+      "An unaffordable attack never reaches a coin or cost prompt",
+      "Repeated decisions are deterministic and bounded without consuming live randomness",
+      "Concealed opponent identities, own deck/prize order and live RNG cannot change the decision",
+      "Contextual search values a playable evolution above an unrelated basic",
+      "Useful gust resources gain value as the bot approaches its last prizes",
+      "Excess Energy lowers position value instead of encouraging overcommitment",
+      "Thinking waits for the other player and pending choices",
+      "Remaining prize indexes stay compressed after earlier prizes are taken",
+      "Gust choice takes a knockout on an exposed support Pokémon rather than a healthy attacker",
+      "Optional Energy acceleration builds a backup instead of overloading a ready Active",
+      "Used abilities remain used in the search history",
+      "A low-HP combo attacker is valued above an unnecessary two-prize support Pokémon",
+      "Discard-based damage setup improves a ready attacker position",
+      "Optional discard search actually sets up combo damage instead of choosing zero cards"
+    ],
+    "timingsMs": [
+      295.91049999999996,
+      214.4617999999998,
+      399.02239999999983,
+      89.7786000000001,
+      1043.7595999999999,
+      1031.0186999999996,
+      711.5848000000005,
+      710.1526000000003,
+      146.5619000000006
+    ],
+    "maxDecisionMs": 1043.7595999999999,
+    "botSha256": "3d68866c52d9ba633c792ba480e12517f07089303d2001b55bca96af2e78aa49",
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+  },
+  "shared": {
+    "passed": true,
+    "checks": [
+      "Three starter decks contain 60 mapped cards and satisfy enforced construction",
+      "Bot resolves setup and historical first-turn choices on every difficulty",
+      "Thinking leaves the live cards, journal and engine randomness unchanged",
+      "A bot waits during the human turn and cannot answer the human prompt",
+      "Bot decisions do not depend on hidden opponent hand or actual own deck/prize order",
+      "Hard prioritizes a guaranteed knockout; Easy can choose the weaker attack",
+      "Bot uses Rain Dance and assigns multiple Energy cards through the actual prompt",
+      "WOTC required attack-cost prompts are assigned to the attacking player",
+      "Bot resolves Jirachi Wishing Star top-five selection and continues its turn",
+      "Prize choices use remaining-card indexes while labels retain table slots",
+      "Bot forecasts preserve EX printing overrides and reject Fan Club on a full Bench",
+      "Saved unfinished unpaid Baby attack recovers the preceding turn exactly",
+      "Unaffordable attacks are rejected before Baby flips on every bot difficulty",
+      "Baby targets still allow attacks paid with Special Energy",
+      "easy completes a full rules-enforced starter game",
+      "normal completes a full rules-enforced starter game",
+      "hard completes a full rules-enforced starter game",
+      "realistic completes a full rules-enforced starter game"
+    ],
+    "games": [
+      {
+        "level": "easy",
+        "decisions": 80,
+        "turns": 12,
+        "winner": 1
+      },
+      {
+        "level": "normal",
+        "decisions": 133,
+        "turns": 22,
+        "winner": 1
+      },
+      {
+        "level": "hard",
+        "decisions": 267,
+        "turns": 36,
+        "winner": 1
+      },
+      {
+        "level": "realistic",
+        "decisions": 152,
+        "turns": 24,
+        "winner": 1
+      }
+    ]
+  },
+  "native": [
+    {
+      "passed": true,
+      "checks": [
+        "Realistic difficulty starts a dedicated local worker",
+        "Worker planning completes without error",
+        "Worker decision commits through the real rules engine",
+        "Worker and direct deterministic policy agree",
+        "Main thread continues processing while the worker thinks",
+        "Realistic Player is selected in the live difficulty menu",
+        "Difficulty persists in saved matches",
+        "Committed worker action replays exactly",
+        "Undo/pause cancels in-flight planning without a late action",
+        "Changing difficulty cancels the worker and rejects stale results",
+        "Leaving the table discards a late worker result",
+        "Worker restores and plays structured custom cards from the workspace fallback"
+      ],
+      "heartbeatCount": 120,
+      "worker": true,
+      "restored": false,
+      "botSha256": "3d68866c52d9ba633c792ba480e12517f07089303d2001b55bca96af2e78aa49"
+    },
+    {
+      "passed": true,
+      "checks": [
+        "Realistic difficulty starts a dedicated local worker",
+        "Worker planning completes without error",
+        "Worker decision commits through the real rules engine",
+        "Worker and direct deterministic policy agree",
+        "Main thread continues processing while the worker thinks",
+        "Realistic Player is selected in the live difficulty menu",
+        "Difficulty persists in saved matches",
+        "Committed worker action replays exactly",
+        "Undo/pause cancels in-flight planning without a late action",
+        "Changing difficulty cancels the worker and rejects stale results",
+        "Leaving the table discards a late worker result",
+        "Worker restores and plays structured custom cards from the workspace fallback"
+      ],
+      "heartbeatCount": 126,
+      "worker": true,
+      "restored": true,
+      "botSha256": "3d68866c52d9ba633c792ba480e12517f07089303d2001b55bca96af2e78aa49"
+    }
+  ],
+  "mobile": {
+    "passed": true,
+    "checks": [
+      "Realistic difficulty starts a dedicated local worker",
+      "Worker planning completes without error",
+      "Worker decision commits through the real rules engine",
+      "Worker and direct deterministic policy agree",
+      "Main thread continues processing while the worker thinks",
+      "Realistic Player is selected in the live difficulty menu",
+      "Difficulty persists in saved matches",
+      "Committed worker action replays exactly",
+      "Undo/pause cancels in-flight planning without a late action",
+      "Changing difficulty cancels the worker and rejects stale results",
+      "Android background hook cancels in-flight planning",
+      "Leaving the table discards a late worker result",
+      "Worker restores and plays structured custom cards from the workspace fallback"
+    ],
+    "heartbeatCount": 142,
+    "worker": true,
+    "botSha256": "3d68866c52d9ba633c792ba480e12517f07089303d2001b55bca96af2e78aa49"
+  },
+  "desktop": {
+    "passed": true,
+    "version": "1.14.0",
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3339,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246429429,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813586766,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "0bfaae804dc030c913a84283ac5bfbd3c5c2160e69f9af28878891139c4ae80d"
+  },
+  "android": {
+    "passed": true,
+    "checks": [
+      "All APK entries pass CRC integrity checks",
+      "Compiled Android Activity and host bridge included",
+      "Private signing material excluded",
+      "rules-engine.js matches verified desktop source",
+      "rules-match.js matches verified desktop source",
+      "bot-ai.js matches verified desktop source",
+      "bot-ui.js matches verified desktop source",
+      "bot-worker.js matches verified desktop source",
+      "cards.json matches verified desktop source",
+      "sets.json matches verified desktop source",
+      "card-details.json matches verified desktop source",
+      "rules-card-map.json matches verified desktop source",
+      "pack-model.js matches verified desktop source",
+      "pack-specials.js matches verified desktop source",
+      "pack-finishes.js matches verified desktop source",
+      "mobile.js matches final Android source",
+      "mobile-host.js matches final Android source",
+      "mobile-compat.js matches final Android source",
+      "mobile.css matches final Android source",
+      "mobile-landscape.css matches final Android source",
+      "236 startup and Base–Fossil scans bundled",
+      "Every bundled card scan matches manifest SHA-256",
+      "Compiled resource table is uncompressed for Android 11+",
+      "All stored ZIP entries aligned to four bytes",
+      "Universal APK has no CPU-specific native libraries",
+      "Android 8 minimum and SDK 36 target encoded in APK",
+      "Internet is the only requested Android permission",
+      "Launcher Activity registered",
+      "Realistic Player update uses higher versionCode for in-place installation",
+      "Mobile Chromium touch and responsive checks passed"
+    ],
+    "mobileChecks": 59,
+    "sha256": "a213eb12d9592edec34c9cfa9cc39a22b8054534d142aa4dc26f5fac385d61e4",
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "androidVersion": "1.14.0-android.13",
+  "androidVersionCode": 13,
+  "originalAndroidSigningCertificateRetained": true,
+  "physicalAndroidAcceptancePending": true,
+  "mixedDecks": {
+    "games": [
+      {
+        "decks": [
+          "Night March",
+          "M Audino EX"
+        ],
+        "profile": "xy",
+        "seed": 71,
+        "realisticSide": 1,
+        "decisions": 52,
+        "turn": 5,
+        "finished": true,
+        "winner": 2,
+        "prizes": [
+          6,
+          4
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": []
+      },
+      {
+        "decks": [
+          "M Audino EX",
+          "Night March"
+        ],
+        "profile": "xy",
+        "seed": 71,
+        "realisticSide": 2,
+        "decisions": 110,
+        "turn": 10,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          5,
+          4
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": []
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Fairy Box"
+        ],
+        "profile": "expanded",
+        "seed": 72,
+        "realisticSide": 1,
+        "decisions": 110,
+        "turn": 11,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          5,
+          6
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": []
+      },
+      {
+        "decks": [
+          "Fairy Box",
+          "Yveltal Garb"
+        ],
+        "profile": "expanded",
+        "seed": 72,
+        "realisticSide": 2,
+        "decisions": 110,
+        "turn": 15,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          6,
+          2
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": []
+      },
+      {
+        "decks": [
+          "Keldeo Blastoise",
+          "VirGen"
+        ],
+        "profile": "xy",
+        "seed": 73,
+        "realisticSide": 1,
+        "decisions": 110,
+        "turn": 8,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          6,
+          6
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": []
+      },
+      {
+        "decks": [
+          "VirGen",
+          "Keldeo Blastoise"
+        ],
+        "profile": "xy",
+        "seed": 73,
+        "realisticSide": 2,
+        "decisions": 110,
+        "turn": 9,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          4,
+          6
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": []
+      },
+      {
+        "decks": [
+          "M Mewtwo Garb",
+          "Greninja BREAK"
+        ],
+        "profile": "expanded",
+        "seed": 74,
+        "realisticSide": 1,
+        "decisions": 110,
+        "turn": 10,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          6,
+          6
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": [
+          "Greninja BREAK +1 basic Water in fixture only"
+        ]
+      },
+      {
+        "decks": [
+          "Greninja BREAK",
+          "M Mewtwo Garb"
+        ],
+        "profile": "expanded",
+        "seed": 74,
+        "realisticSide": 2,
+        "decisions": 110,
+        "turn": 13,
+        "finished": false,
+        "winner": null,
+        "prizes": [
+          6,
+          6
+        ],
+        "replay": true,
+        "undo": true,
+        "adjustments": [
+          "Greninja BREAK +1 basic Water in fixture only"
+        ]
+      }
+    ],
+    "decisions": 822,
+    "limits": "Eight bounded games with swapped seats/decks. Unfinished games do not count as wins; these checks do not establish superiority over Hard or tournament-level strength."
+  },
+  "priorHarnessRepairs": [
+    "Inherited BW inspector assertion now checks accessible Ability label rather than overlay text.",
+    "Realistic native cleanup restores the exact prior saved workspace instead of reserializing an older fixture.",
+    "Mixed-deck replay comparisons exclude wall-clock log timestamps and compare gameplay zones, IDs, RNG, prompts, turn and winner. Raw earlier failing reports are historical evidence."
+  ],
+  "publication": "Local Windows and Android packages only; no GitHub publication; no subagents."
+}

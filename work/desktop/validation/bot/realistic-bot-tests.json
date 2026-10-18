@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    "Separate Realistic Player option preserves all three existing levels",
+    "A paid immediate knockout takes priority over passing",
+    "An attachment that enables an attack is preferred to ending the turn",
+    "A mismatched Energy is not dumped on the Active when it helps a backup attacker",
+    "An unaffordable attack never reaches a coin or cost prompt",
+    "Repeated decisions are deterministic and bounded without consuming live randomness",
+    "Concealed opponent identities, own deck/prize order and live RNG cannot change the decision",
+    "Contextual search values a playable evolution above an unrelated basic",
+    "Useful gust resources gain value as the bot approaches its last prizes",
+    "Excess Energy lowers position value instead of encouraging overcommitment",
+    "Thinking waits for the other player and pending choices",
+    "Remaining prize indexes stay compressed after earlier prizes are taken",
+    "Gust choice takes a knockout on an exposed support Pokémon rather than a healthy attacker",
+    "Optional Energy acceleration builds a backup instead of overloading a ready Active",
+    "Used abilities remain used in the search history",
+    "A low-HP combo attacker is valued above an unnecessary two-prize support Pokémon",
+    "Discard-based damage setup improves a ready attacker position",
+    "Optional discard search actually sets up combo damage instead of choosing zero cards"
+  ],
+  "timingsMs": [
+    295.91049999999996,
+    214.4617999999998,
+    399.02239999999983,
+    89.7786000000001,
+    1043.7595999999999,
+    1031.0186999999996,
+    711.5848000000005,
+    710.1526000000003,
+    146.5619000000006
+  ],
+  "maxDecisionMs": 1043.7595999999999,
+  "botSha256": "3d68866c52d9ba633c792ba480e12517f07089303d2001b55bca96af2e78aa49",
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+}

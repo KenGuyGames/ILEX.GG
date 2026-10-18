@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5",
+  "results": [
+    {
+      "name": "xy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-tests.log"
+    },
+    {
+      "name": "sm-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-sm-tests.log"
+    },
+    {
+      "name": "xy-full-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-full-tests.log"
+    },
+    {
+      "name": "xy-interaction-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-interaction-tests.log"
+    },
+    {
+      "name": "basic-energy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-basic-energy-tests.log"
+    },
+    {
+      "name": "realistic-bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-realistic-bot-tests.log"
+    },
+    {
+      "name": "bw-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-bw-tests.log"
+    },
+    {
+      "name": "hgss-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-hgss-tests.log"
+    },
+    {
+      "name": "dp-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-dp-tests.log"
+    },
+    {
+      "name": "ex-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-ex-tests.log"
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-wotc-tests.log"
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-undo-tests.log"
+    },
+    {
+      "name": "bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-bot-tests.log"
+    }
+  ]
+}

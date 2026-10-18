@@ -1,3 +1,4 @@
+import {xyEnergyCards,xyEnergyView,xyDiscardEnergy,xyAfterAttack} from '../../../tcg-lab-xy-energy';
 import {
   PokemonCard,
   Stage,
@@ -123,12 +124,13 @@ export class DragoniteEX extends PokemonCard {
       );
     }
 
-    if (WAS_ATTACK_USED(effect, 1, this)) {
+    const completed=xyAfterAttack(effect,0,this);
+    if(completed){effect=completed;
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 
       // Defending Pokemon has no energy cards attached
-      if (!opponent.active.energies.cards.some((c) => c.superType === SuperType.ENERGY)) {
+      if (!xyEnergyCards(opponent.active).some((c) => c.superType === SuperType.ENERGY)) {
         return state;
       }
 
@@ -145,7 +147,7 @@ export class DragoniteEX extends PokemonCard {
         (selected) => {
           card = selected[0];
 
-          MOVE_CARDS(store, state, opponent.active, opponent.discard, { cards: [card], sourceCard: this });
+          xyDiscardEnergy(store,state,opponent.active,[card],this,effect);
           return state;
         },
       );

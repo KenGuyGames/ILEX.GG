@@ -2,22 +2,69 @@
 
 Pokémon TCG simulator for **Windows and Android**, with historical rules automation, deck building, local/bot play, custom cards, and a pack-opening simulator.
 
-## Download 1.12.0
+## Download 1.15.0
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.12.0-build-2026-10-17/ILEX.GG-Windows.zip) — about 232 MiB | 64-bit Windows; extract the entire ZIP and run `ILEX.GG.exe` |
-| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.12.0-build-2026-10-17/ILEX.GG-Android.apk) — about 75 MiB | Android 8.0+ and a current Android System WebView/Chrome |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.15.0-build-2026-10-18/ILEX.GG-Windows.zip) — about 239 MiB | 64-bit Windows; extract the entire ZIP and run `ILEX.GG.exe` |
+| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.15.0-build-2026-10-18/ILEX.GG-Android.apk) — about 78 MiB | Android 8.0+ and a current Android System WebView/Chrome |
 
-Windows includes its runtime; Node.js and Python are not needed to play. Android is a signed universal APK (`gg.ilex.app`, version `1.12.0-android.2`, versionCode 2), distributed directly here rather than through the Play Store. Install over an existing ILEX.GG Android installation to keep its workspace and cache; do not uninstall first.
+Windows includes its runtime; Node.js and Python are not needed to play. Android is a signed universal APK (`gg.ilex.app`, version `1.15.0-android.14`, versionCode 14), distributed directly here rather than through the Play Store. Install over an existing ILEX.GG Android installation to keep its workspace and cache; do not uninstall first.
 
-[Android installation and controls](verification/ILEX.GG-Android-Install.md) · [Checksums and verification reports](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.12.0-build-2026-10-17) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases)
+[Android installation and controls](verification/ILEX.GG-Android-Install.md) · [Checksums and verification reports](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.15.0-build-2026-10-18) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases)
 
-Card images download as viewed and remain cached. Use **Download card images** on the main menu to cache the full collection (about 2.5 GB), with pause/resume. Uncached images need internet. Windows retains the existing `%APPDATA%\TCG Lab` workspace and image cache. Android bundles 236 verified images covering Base–Fossil and the eight menu Celebi cards; other images use its private verified cache.
+Card images download as viewed and remain cached. Use **Download card images** on the main menu to cache the full collection (about 2.5 GB), with pause/resume. Uncached images need internet. Windows retains the existing `%APPDATA%\TCG Lab` workspace and image cache. Android bundles 246 verified startup/Base–Fossil/SM demonstration images; other images use its private verified cache.
 
 To move decks/saves between platforms, **Export workspace**, transfer the JSON, then **Import workspace** on the other device. Import replaces that device's workspace, so export it first if needed. There is no automatic cloud synchronization.
 
-## What's new since the last GitHub release (1.6.0)
+## What's new since 1.12.0
+
+### Complete XY and Sun & Moon eras
+
+- **XY: 2,208/2,208 printings, zero pending** — Kalos Starter, XY through Evolutions, 216 catalog XY promos, six Yellow A alternates, Double Crisis, Generations/Radiant Collection, eight 30-card Trainer Kit decks and McDonald's 2014–16.
+- **Sun & Moon: 3,069/3,069 printings, zero pending across 23 catalogs** — SM through Cosmic Eclipse, Shining Legends, Dragon Majesty, Hidden Fates/Shiny Vault, Detective Pikachu, SM1–SM248 promos and SM30a/103a/104a, McDonald's 2017–19, both complete 30-position Trainer Kits and omitted alternate printings.
+- Added era profiles and reviewed Mega/Primal Evolution, Fairy typing, Ancient Traits, BREAK, GX/TAG TEAM, Prism Star, Ultra Beast and Z-Move Tool interactions. Historical formats and prior WOTC/EX/DP/HGSS/BW coverage are preserved.
+- New interaction validation is scoped to **Black & White onward through implemented Sun & Moon**. Unlimited, later-era automation, networking and a new official Expanded banlist remain deferred. Modern pack contents do not imply later-era automation.
+- Added **68 exact scans**, bringing the manifest to **23,804**. Twelve numbered Trainer Kit Energy originals are only 253×359; they are retained at their real resolution.
+
+### Realistic Player bot
+
+A separate **Realistic Player** option joins Easy, Normal and Hard. Local deterministic bounded search plans up to three actions, rechecks leading actions against a second concealed forecast, and considers search/discard/gust/acceleration choices, follow-up attackers, Prize exposure, excess Energy, Bench liabilities and deck-out. Combo support includes Night March/Vengeance/Bee Revenge.
+
+Planning runs in an offline worker. Pause, Undo, difficulty changes and backgrounding cancel it; stale match/journal/table results cannot commit. Actual actions still use the existing rules reducer and forecast animations/audio remain quiet. Research used first-person tournament reports and official competitive analysis; this is not imitation training or proof of professional strength or a win-rate advantage over Hard.
+
+### Gameplay and presentation repairs
+
+- Corrected Basic Darkness/Metal Energy so the older Special Energy bonus/self-damage reducers apply only to explicitly Special printings; 44 targeted checks retain old Special Energy behavior.
+- XY fixes cover Pyroar Flare Command costs/targets, Venipede's printing stats, Delta Evolution eligibility, Dry Skin and named Yveltal conditions, Cross Slicer/Time Freeze protection, Burning Energy recovery, attached-Energy zones/ownership, Stardust shields, native attack indexes, Mist Slash/Recoil and defensive Energy discards after damage.
+- SM fixes cover attack continuation and empty-slot checks; scoped GX permissions without erasing shared history; Z-Move Tool dispatch; KO timing/history; Cat Walk/Dance of Tribute usage limits; Energy selection/transfer; conditional and named Powers; and Perfection/Time Recall copying eligibility.
+- Town Map's revealed holo Prizes now stay positioned inside their pile on desktop and Android. Grass impact progress is clamped, and animation exceptions/lost frames release gameplay; Skip remains available.
+- Printed attacks and Powers use transparent, outlined, full-height action regions. Accessible names/tooltips remain; copied actions, Retreat and no-scan fallbacks retain named buttons. Reviewed boundaries and joined LEGEND geometry are preserved.
+- A flat green/ivory Celebi sleeve recreation is shared by hidden hands, decks, Prizes and pack backs. Its silhouette is also used by Windows/Android icons and coin faces: cream-on-green heads, green-on-cream tails. Engine coin outcomes are unchanged. Attribution and approximation limits are recorded in `work/desktop/ui/CARD-BACK-SOURCE.md`.
+- Pack auto-reveal is now **450 ms**; sequential reveal, pause, Space, persistence and privacy are preserved.
+
+### Updated Android
+
+**1.15.0-android.14 / versionCode 14** keeps the original signing certificate. Install over the existing app to retain its workspace and cache. It includes the current SM/XY engine, Realistic Player worker, presentation fixes and landscape touch UI. **246 verified startup/Base–Fossil/SM demonstration scans** are bundled.
+
+65 mobile checks, SM checks at three landscape sizes, 30 APK/static checks, and official SDK signature/alignment verification pass. **Physical Android device/emulator acceptance remains pending**, including native pickers, live cache downloads, lifecycle/audio and performance. This is a direct APK release, not Play Store publication.
+
+### Current release evidence
+
+| Area | Recorded result |
+| --- | --- |
+| SM | 82 expected-result checks; 4,387 Pokémon attacks plus three Z-Move Tool attacks; 1,168 branch cases; Ability/Trainer and identity audits |
+| Scoped SM decks | 24 bounded games, 2,774 decisions, exact replay/Undo; not 24 claimed completed games |
+| XY | 52 original focused checks plus 56 interaction cases; 2,787 Pokémon attacks plus two Tool attacks; 1,604 branch cases; printed-data/identity audits |
+| Realistic Player | 18 tactical/privacy checks, shared bot groups with four completed starter games, eight bounded BW/XY games; 12 native worker checks per launch and 13 Android worker checks |
+| Shared/native | 13 shared suites and desktop v8 fresh/restored, retaining historical formats, packs, LEGEND, UI/audio, bot and Undo |
+| Integrity | 23,804 scan hashes, 5,269 provenance files, Windows archive integrity, matching Windows/Android engine and signed APK checks |
+
+See `verification/desktop-verification-1.15.0.json`, `work/rules-research/sm-final-release-evidence.json`, `sm-source-validation.json`, `SM-PROGRESS.md`, `SM-RULES-SOURCES.md`, `xy-interaction-release.json` and `realistic-bot-release.json`. Failed/intermediate reports remain historical evidence. Finite fixtures and bounded rollouts do not prove every possible board state.
+
+![Sun and Moon table — desktop verification capture](docs/screenshots/sm-native.png)
+
+## Earlier features retained (through 1.12.0)
 
 This release includes the locally completed 1.7.0–1.12.0 updates and the subsequent UI, pack, and Android improvements.
 
@@ -29,7 +76,7 @@ This release includes the locally completed 1.7.0–1.12.0 updates and the subse
 - All nine assembled LEGEND pairs display as one upright joined card on the table, in enlarged actions and magnification. Individual halves remain individual cards, and hidden cards stay hidden.
 - WOTC **1,793/1,793**, EX **1,857/1,857**, and DP/Platinum **1,558/1,558** coverage remains available with zero pending.
 
-The latest BW interaction validation covers **HGSS through Call of Legends plus the implemented BW pool**; HGSS validation covers the authorized Holon Phantoms-onward pool. Earlier era regressions are retained. Full printing coverage does not certify every possible cross-era interaction. Unlimited, XY-era automation, online multiplayer, and unrelated interaction sweeps remain deferred. Modern pack contents do not imply modern card automation.
+Those are the historical baseline scopes for these earlier releases. Current new-work validation uses BW onward through SM as described above; older rule profiles and regressions remain available. Unlimited and online multiplayer remain deferred.
 
 ### Redesigned desktop and main menu
 
@@ -43,7 +90,7 @@ The latest BW interaction validation covers **HGSS through Call of Legends plus 
 ### Pack opening and collection
 
 - **129 English pack profiles** with actual bundled booster-wrapper artwork, era/set selection, ordinary slots, chase slots and supported special-expansion structures.
-- Sequential automatic reveals at 600 ms, rare-pull shine and chase glow, reveal/pause controls, Space to open one new pack, magnification and reduced-motion support. Navigation, dialogs and backgrounding pause reveals.
+- Sequential automatic reveals at 450 ms, rare-pull shine and chase glow, reveal/pause controls, Space to open one new pack, magnification and reduced-motion support. Navigation, dialogs and backgrounding pause reveals.
 - A separate **My pulls** collection with quantities by finish, pagination, parent-era filtering and persistent partly revealed packs. Packs commit once before revealing; reloads resume rather than reroll, and save failures roll back.
 - **705 subset printings across 18 groups** are reachable within parent packs, including Shiny Vaults, Galarian/Trainer Galleries, Radiant collections, Paldean Fates shinies, Celebrations/30th Classics, Unseen Forces Unown and numbered DP/Platinum subsets.
 - Reverse Holo finishes and **505 supported Poké Ball/Master Ball variants** across Prismatic Evolutions, Black Bolt, White Flare and eligible Ascended Heroes printings.
@@ -77,7 +124,7 @@ Pack collation and rare-layout frequencies are simulation estimates where physic
 
 ## Screenshots
 
-Current 1.12.0 desktop and Android views:
+Current desktop and Android layouts (Android captures use Chromium touch emulation):
 
 ### Forest main menu
 
@@ -101,10 +148,10 @@ Current 1.12.0 desktop and Android views:
 
 Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies, Electron and uncached images. Other desktop operating systems are not verified.
 
-Download **Source code (zip)** from the [1.12.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.12.0-build-2026-10-17), extract it, and open PowerShell in the folder containing `package.json`. Or clone:
+Download **Source code (zip)** from the [1.15.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.15.0-build-2026-10-18), extract it, and open PowerShell in the folder containing `package.json`. Or clone:
 
 ```powershell
-git clone --branch v1.12.0-build-2026-10-17 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+git clone --branch v1.15.0-build-2026-10-18 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
 cd ILEX.GG
 ```
 
@@ -125,7 +172,7 @@ npm run build:rules
 npm start
 ```
 
-Run commands sequentially. The rebuilt engine must match SHA-256 `a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59`, recorded in `verification/source-manifest-1.12.0.json`.
+Run commands sequentially. The rebuilt engine must match SHA-256 `7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5`, recorded in `verification/source-manifest-1.15.0.json`.
 
 ### Run checks
 
@@ -135,15 +182,18 @@ npm run test:ex
 npm run test:dp
 npm run test:hgss
 npm run test:bw
+npm run test:xy
+npm run test:sm
+npm run test:realistic
 npm run test:bot
 node work/desktop-build/card-cache-tests.cjs
 ```
 
 `test:rules` runs the focused shared WOTC suite used by the current release. The earlier full WOTC enumeration remains historical baseline evidence; run `node work/desktop-build/wotc-tests.cjs` explicitly for that broader, slower suite.
 
-The [1.12.0 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-1.12.0.yml) checks installation, normal startup, the engine rebuild, README test commands and native desktop interactions on a clean Windows runner.
+The [1.15.0 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-1.15.0.yml) checks installation, normal startup, the engine rebuild, README test commands and native desktop interactions on a clean Windows runner.
 
-### Recorded release verification
+### Retained 1.12.0 baseline verification
 
 | Area | Evidence |
 | --- | --- |
@@ -155,7 +205,7 @@ The [1.12.0 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/action
 | Package | 23,736 scan hashes, 1,941 bundled provenance files, Windows archive integrity and engine/source consistency |
 | Android | 59 emulated touch/layout checks, 28 package/static checks, APK CRCs, official signatures and alignment; device acceptance pending |
 
-Reports are included in `verification/desktop-verification-1.12.0.json`, `verification/ILEX.GG-Android-verification.json`, `work/android-build/mobile-verification.json` and `work/rules-research`. Earlier and failed discovery reports are retained as historical evidence; they are not relabeled as final passes. Finite tests do not prove every board state.
+Reports are included in `verification/desktop-verification-1.15.0.json`, `verification/ILEX.GG-Android-verification.json`, `work/android-build/mobile-verification.json` and `work/rules-research`. Earlier and failed discovery reports are retained as historical evidence; they are not relabeled as final passes. Finite tests do not prove every board state.
 
 Recorded native desktop release checks used isolated profiles and test-only no-sandbox/disable-gpu flags required by that environment. Normal launches retain the Chromium sandbox. A full live download of every image is not part of fresh-source verification.
 
@@ -163,7 +213,7 @@ Recorded native desktop release checks used isolated profiles and test-only no-s
 
 Android source and rebuild notes are in [work/android-build/README.md](work/android-build/README.md). Rebuilding requires JDK 17, the verified official Android SDK tools and Python; it is separate from the Windows Node.js instructions. The original signing key and password are deliberately excluded. A build signed with a different key cannot update the installed release in place.
 
-`package-bw.py` is the current desktop verification/packaging script. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
+`package-sm.py` is the current desktop verification/packaging script. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
 
 ## Earlier release trailer
 
@@ -174,4 +224,6 @@ Android source and rebuild notes are in [work/android-build/README.md](work/andr
 ## Credits and rights
 
 Unofficial fan project. Pokémon names, card text and artwork belong to their respective owners. Modified Twinleaf rules-engine code retains its MIT notice at `work/desktop/ui/rules-engine-LICENSE.txt`. Card metadata originated from pokemon-tcg-data; booster artwork sources are documented in PACK-SOURCES.md. No new license is granted for original ILEX.GG code or third-party assets by this upload.
+
+
 

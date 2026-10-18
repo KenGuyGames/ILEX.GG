@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "results": [
+    {
+      "name": "xy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-xy-tests.log"
+    },
+    {
+      "name": "bw-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-bw-tests.log"
+    },
+    {
+      "name": "hgss-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-hgss-tests.log"
+    },
+    {
+      "name": "dp-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-dp-tests.log"
+    },
+    {
+      "name": "ex-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-ex-tests.log"
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-wotc-tests.log"
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-undo-tests.log"
+    },
+    {
+      "name": "bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\xy-regression-bot-tests.log"
+    }
+  ]
+}

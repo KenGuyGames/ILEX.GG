@@ -1,3 +1,4 @@
+import {xyEnergyCards,xyEnergyView,xyDiscardEnergy} from '../../../tcg-lab-xy-energy';
 import {
   Card,
   CardTarget,
@@ -63,12 +64,12 @@ export class Xerosic extends TrainerCard {
 
       let specialEnergy = 0;
       opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList, card, target) => {
-        if (cardList.energies.cards.some((c) => c.energyType === EnergyType.SPECIAL)) {
+        if (xyEnergyCards(cardList).some((c) => c.energyType === EnergyType.SPECIAL)) {
           specialEnergy += 1;
         }
       });
       player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card, target) => {
-        if (cardList.energies.cards.some((c) => c.energyType === EnergyType.SPECIAL)) {
+        if (xyEnergyCards(cardList).some((c) => c.energyType === EnergyType.SPECIAL)) {
           specialEnergy += 1;
         }
       });
@@ -168,14 +169,14 @@ export class Xerosic extends TrainerCard {
 
       const specialEnergyBlocked: CardTarget[] = [];
       opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList, card, target) => {
-        if (cardList.energies.cards.some((c) => c.energyType === EnergyType.SPECIAL)) {
+        if (xyEnergyCards(cardList).some((c) => c.energyType === EnergyType.SPECIAL)) {
           return;
         } else {
           specialEnergyBlocked.push(target);
         }
       });
       player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card, target) => {
-        if (cardList.energies.cards.some((c) => c.energyType === EnergyType.SPECIAL)) {
+        if (xyEnergyCards(cardList).some((c) => c.energyType === EnergyType.SPECIAL)) {
           return;
         } else {
           specialEnergyBlocked.push(target);
@@ -207,17 +208,14 @@ export class Xerosic extends TrainerCard {
                 new ChooseCardsPrompt(
                   player,
                   GameMessage.CHOOSE_CARD_TO_DISCARD,
-                  target.energies,
+                  xyEnergyView(target),
                   { energyType: EnergyType.SPECIAL },
                   { min: 1, max: 1, allowCancel: false },
                 ),
                 (selected) => {
                   cards = selected || [];
                   if (cards.length > 0) {
-                    MOVE_CARDS(store, state, target, opponent.discard, {
-                      cards: cards,
-                      sourceCard: this,
-                    });
+                    xyDiscardEnergy(store,state,target,cards,this,effect);
                   }
 
                   return state;

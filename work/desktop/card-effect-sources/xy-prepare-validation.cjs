@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..');
+const file=path.join(__dirname,'xy-full-match-audit.cjs');let t=fs.readFileSync(file,'utf8'),start=t.indexOf('const decks=['),end=t.indexOf('\nconst failures=',start);
+t=t.slice(0,start)+"const sourceDecks=JSON.parse(fs.readFileSync(path.join(root,'work/rules-research/xy-scoped-decks.json'),'utf8'));\nconst decks=[0,6,7,10,12,14,16,17,18,20,21,23,25,26,29,30].map(i=>sourceDecks[i]);"+t.slice(end);
+t=t.replace("level=['easy','normal','hard'][index%3]","level=['easy','normal','normal','hard'][index%4]").replace("profile:'xy',seed:37+index","profile:index%2?'expanded':'xy',seed:37+index").replace('decisions<35','decisions<80').replace("'xy-match-audit'","'xy-full-match-audit'").replace("scope:'BW/XY first wave only; three 35-decision bounded fixtures; replay and Undo'","scope:'BW onward through XY; sixteen cached deck pairings, bounded 80 decisions each; historical XY/current Expanded, exact replay and Undo'");
+fs.writeFileSync(file,t);

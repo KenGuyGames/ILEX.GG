@@ -1,5 +1,7 @@
 # Install ILEX.GG on Android
 
+Version **1.13.0-android.3** includes the completed XY era, with interactions scoped to Black & White onward. Unlimited remains deferred.
+
 Update: install this APK over your existing ILEX.GG app to keep its workspace and cached images. No uninstall is needed.
 
 1. Transfer `ILEX.GG-Android.apk` to your Android phone or tablet and open it.

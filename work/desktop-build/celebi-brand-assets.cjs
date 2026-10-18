@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui');
+const sleeve=fs.readFileSync(path.join(ui,'ilex-card-back.svg'),'utf8'),silhouette=sleeve.match(/<path d="([^"]+)"/)[1];
+const icon=`<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><title>ILEX.GG Celebi</title><rect width="512" height="512" rx="100" fill="#18733e"/><path transform="translate(-2 -38) scale(1.35)" fill="#efeccf" d="${silhouette}"/></svg>`;
+fs.writeFileSync(path.join(ui,'ilex-icon.svg'),icon);
+const coin=`<svg viewBox="40 80 310 280"><path fill="currentColor" d="${silhouette}"/></svg>`;
+const js=path.join(ui,'presentation.js');let source=fs.readFileSync(js,'utf8');const start=source.indexOf('<svg viewBox="0 0 100 100">'),end=source.indexOf('</svg>',start);if(start<0||end<0)throw Error('Coin artwork missing');source=source.slice(0,start)+coin+source.slice(end+6);fs.writeFileSync(js,source);
+fs.appendFileSync(path.join(ui,'presentation.css'),'\n/* Celebi sleeve mark: heads stays distinct from the ILEX tails face. */\n.coin-face:not(.back){background:#18733e;color:#efeccf}.coin-face:not(.back) svg{width:76%;height:76%;filter:none}\n');
+fs.writeFileSync(path.join(root,'work/android-build/launcher-icon.xml'),`<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="512" android:viewportHeight="512"><path android:fillColor="#18733e" android:pathData="M0,0h512v512h-512z"/><group android:translateX="-2" android:translateY="-38" android:scaleX="1.35" android:scaleY="1.35"><path android:fillColor="#efeccf" android:pathData="${silhouette}"/></group></vector>`);
+const build=path.join(root,'work/android-build/build.py');let py=fs.readFileSync(build,'utf8');py=py.replace(/\(res\/'icon.xml'\)\.write_text\('''[^]*?''',encoding='utf-8'\)/,"shutil.copy2(HERE/'launcher-icon.xml',res/'icon.xml')");if(!py.includes("shutil.copy2(HERE/'launcher-icon.xml'"))throw Error('Android icon hook missing');fs.writeFileSync(build,py);
+console.log('Shared silhouette applied to coin, SVG icon and Android launcher.');

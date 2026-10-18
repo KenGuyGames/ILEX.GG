@@ -1,0 +1,509 @@
+{
+  "passed": true,
+  "version": "1.13.2",
+  "completed": "2026-10-18T04:01:50.105Z",
+  "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c",
+  "fix": "Legacy Darkness/Metal special-energy reducer is installed only on printings explicitly classified as Special Energy, never on same-name Basic Energy",
+  "targeted": {
+    "passed": true,
+    "checks": [
+      "bw1-111 Darkness Energy stays Basic and has no Special Energy effects",
+      "bw1-112 Metal Energy stays Basic and has no Special Energy effects",
+      "col1-94 Darkness Energy stays Basic and has no Special Energy effects",
+      "col1-95 Metal Energy stays Basic and has no Special Energy effects",
+      "dp1-129 Darkness Energy stays Basic and has no Special Energy effects",
+      "dp1-130 Metal Energy stays Basic and has no Special Energy effects",
+      "g1-81 Darkness Energy stays Basic and has no Special Energy effects",
+      "g1-82 Metal Energy stays Basic and has no Special Energy effects",
+      "hgss1-121 Darkness Energy stays Basic and has no Special Energy effects",
+      "hgss1-122 Metal Energy stays Basic and has no Special Energy effects",
+      "sm3-168 Darkness Energy stays Basic and has no Special Energy effects",
+      "xy1-138 Darkness Energy stays Basic and has no Special Energy effects",
+      "xy1-139 Metal Energy stays Basic and has no Special Energy effects",
+      "xy12-97 Darkness Energy stays Basic and has no Special Energy effects",
+      "xy12-98 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-2 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-3 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-5 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-6 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-7 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-8 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-9 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-10 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-18 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-19 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-22 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-22 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-24 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-26 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-28 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-10 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-20 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-22 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-24 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-26 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-28 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-3 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-5 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-6 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-7 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-8 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-9 Darkness Energy stays Basic and has no Special Energy effects",
+      "neo1-104 retains its printed Special Darkness behavior",
+      "ex1-93 retains its printed Special Darkness behavior"
+    ],
+    "printings": [
+      "bw1-111",
+      "bw1-112",
+      "col1-94",
+      "col1-95",
+      "dp1-129",
+      "dp1-130",
+      "g1-81",
+      "g1-82",
+      "hgss1-121",
+      "hgss1-122",
+      "sm3-168",
+      "xy1-138",
+      "xy1-139",
+      "xy12-97",
+      "xy12-98",
+      "tk-xy-b-2",
+      "tk-xy-b-3",
+      "tk-xy-b-5",
+      "tk-xy-b-6",
+      "tk-xy-b-7",
+      "tk-xy-b-8",
+      "tk-xy-b-9",
+      "tk-xy-b-10",
+      "tk-xy-b-18",
+      "tk-xy-n-19",
+      "tk-xy-b-22",
+      "tk-xy-n-22",
+      "tk-xy-b-24",
+      "tk-xy-n-26",
+      "tk-xy-n-28",
+      "tk-bw-z-10",
+      "tk-bw-z-20",
+      "tk-bw-z-22",
+      "tk-bw-z-24",
+      "tk-bw-z-26",
+      "tk-bw-z-28",
+      "tk-bw-z-3",
+      "tk-bw-z-5",
+      "tk-bw-z-6",
+      "tk-bw-z-7",
+      "tk-bw-z-8",
+      "tk-bw-z-9"
+    ],
+    "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c"
+  },
+  "source": {
+    "passed": true,
+    "status": "source-validated-not-yet-packaged",
+    "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c",
+    "ruleAdapterSha256": "e390f4d43fd5acf3d48cfc24f9b2da21bbe82500e4796b759c696c81f33dc2a4",
+    "printings": 2208,
+    "pending": 0,
+    "printedAttacks": 2787,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "power": {
+      "resolved": 129,
+      "unavailable": 247
+    },
+    "trainer": {
+      "resolved": 578,
+      "unavailable": 72
+    },
+    "games": [
+      {
+        "decks": [
+          "Empoleon",
+          "Yveltal Garb"
+        ],
+        "level": "easy",
+        "decisions": 36,
+        "turn": 6,
+        "finished": true,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Rayquaza EX",
+          "Primal Groudon EX"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Greninja BREAK",
+          "M Audino EX"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 12,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "VespiPlume",
+          "Volcanion EX"
+        ],
+        "level": "normal",
+        "decisions": 44,
+        "turn": 5,
+        "finished": true,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Gardevoir EX",
+          "M Mewtwo Garb"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Empoleon"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Archiestoise"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 5,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Primal Groudon EX",
+          "Seismitoad Shaymin"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Audino EX",
+          "Night March"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Volcanion EX",
+          "Gyarados"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Mewtwo Garb",
+          "Vespiquen"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 10,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Archiestoise",
+          "M Rayquaza EX"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Seismitoad Shaymin",
+          "Greninja BREAK"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Night March",
+          "VespiPlume"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Gyarados",
+          "M Gardevoir EX"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Vespiquen",
+          "Yveltal Garb"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      }
+    ],
+    "fixtureAdjustments": [
+      {
+        "name": "Greninja BREAK",
+        "originalTotal": 59,
+        "added": "bw1-107",
+        "amount": 1,
+        "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+      },
+      {
+        "name": "Volcanion EX",
+        "originalTotal": 59,
+        "added": "bw1-106",
+        "amount": 1,
+        "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+      }
+    ],
+    "smokeFixtureCorrections": [],
+    "shared": [
+      {
+        "name": "xy-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-xy-tests.log"
+      },
+      {
+        "name": "bw-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-bw-tests.log"
+      },
+      {
+        "name": "hgss-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-hgss-tests.log"
+      },
+      {
+        "name": "dp-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-dp-tests.log"
+      },
+      {
+        "name": "ex-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-ex-tests.log"
+      },
+      {
+        "name": "wotc-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-wotc-tests.log"
+      },
+      {
+        "name": "undo-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-undo-tests.log"
+      },
+      {
+        "name": "bot-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-bot-tests.log"
+      }
+    ],
+    "scope": "BW onward through implemented XY; Unlimited deferred",
+    "limits": "Finite focused, branch and bounded game checks; not an exhaustive proof of every board state. Packaged builds still require their own verification.",
+    "trainerToolAttacks": 2
+  },
+  "desktop": {
+    "passed": true,
+    "version": "1.13.2",
+    "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3333,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246411835,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813568920,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "b02ffce2cc8b636589a6f437849bad1f14fbdd851e3f432038975261ec7a5b1e"
+  },
+  "android": {
+    "passed": true,
+    "version": "1.13.2-android.5",
+    "versionCode": 5,
+    "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c",
+    "sha256": "a9f050ca899dab17aab0851e8bac004f6b012485fab655d33d68a43b6ee0703f",
+    "sameSigningCertificateAsPrevious": true,
+    "mobileChecks": 59,
+    "apkChecks": 28,
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "mobile": {
+    "passed": true,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 360,
+        "passed": true,
+        "checks": [
+          "bw7-136 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "xy8-150 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "Animation releases the match without Skip",
+          "Grass damage continuation finishes without a negative particle radius",
+          "Animation completion leaves committed actions untouched",
+          "Animation releases the match without Skip",
+          "Renderer failure regression reaches the canvas callback",
+          "Renderer errors are recorded and release the queue",
+          "Animation releases the match without Skip",
+          "Stopped animation frames are bounded by the completion timer",
+          "Animation releases the match without Skip",
+          "Skip still cancels a running continuation safely"
+        ]
+      },
+      {
+        "width": 640,
+        "height": 312,
+        "passed": true,
+        "checks": [
+          "bw7-136 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "xy8-150 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "Animation releases the match without Skip",
+          "Grass damage continuation finishes without a negative particle radius",
+          "Animation completion leaves committed actions untouched",
+          "Animation releases the match without Skip",
+          "Renderer failure regression reaches the canvas callback",
+          "Renderer errors are recorded and release the queue",
+          "Animation releases the match without Skip",
+          "Stopped animation frames are bounded by the completion timer",
+          "Animation releases the match without Skip",
+          "Skip still cancels a running continuation safely"
+        ]
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "passed": true,
+        "checks": [
+          "bw7-136 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "xy8-150 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "Animation releases the match without Skip",
+          "Grass damage continuation finishes without a negative particle radius",
+          "Animation completion leaves committed actions untouched",
+          "Animation releases the match without Skip",
+          "Renderer failure regression reaches the canvas callback",
+          "Renderer errors are recorded and release the queue",
+          "Animation releases the match without Skip",
+          "Stopped animation frames are bounded by the completion timer",
+          "Animation releases the match without Skip",
+          "Skip still cancels a running continuation safely"
+        ]
+      }
+    ]
+  },
+  "limits": "Finite expected-result, attack, branch and bounded rollout checks. Physical Android/emulator acceptance remains pending."
+}

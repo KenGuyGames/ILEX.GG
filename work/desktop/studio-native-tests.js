@@ -22,6 +22,9 @@
   const coin=P.diagnostics().events.slice(startEvents).find(e=>e.kind==='coin');
   check(flips.length===1&&JSON.stringify(coin.results)===JSON.stringify(flips),'Visible single coin matches the actual engine result');
   check(document.querySelector('.coin-slot').dataset.result===(flips[0]?'heads':'tails'),'Coin face and label match the resolved result');
+  const face=document.querySelector('.coin-face:not(.back)'),backFace=document.querySelector('.coin-face.back');
+  check(face.querySelector('path').getAttribute('d')===backFace.querySelector('path').getAttribute('d'),'Heads and tails share the same Celebi silhouette');
+  check(getComputedStyle(face).backgroundColor===getComputedStyle(backFace).color&&getComputedStyle(backFace).backgroundColor===getComputedStyle(face).color,'Tails reverses the heads background and silhouette colors');
   ruleAction({type:'pass',player:active(m).id});runBotStep();
   check(m.journal.length===journal,'Inputs and bot dispatch cannot advance the match during presentation');
   await P.whenIdle();

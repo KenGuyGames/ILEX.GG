@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "version": "1.15.0-android.14",
+  "versionCode": 14,
+  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5",
+  "sha256": "06e91a75991cfa07a7b064291ca6c3a271dfc8deae6fb0a1fa253b6510691256",
+  "sameSigningCertificateAsPrevious": true,
+  "mobileChecks": 65,
+  "smLandscapeSizes": 3,
+  "apkChecks": 30,
+  "bundledScans": 246,
+  "physicalAndroidDeviceTested": false,
+  "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+}

@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [
+    {
+      "name": "Greninja BREAK",
+      "originalTotal": 59,
+      "added": "bw1-107",
+      "amount": 1,
+      "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+    },
+    {
+      "name": "Volcanion EX",
+      "originalTotal": 59,
+      "added": "bw1-106",
+      "amount": 1,
+      "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+    }
+  ],
+  "scope": "BW onward through XY; sixteen cached deck pairings, bounded 80 decisions each; historical XY/current Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Empoleon",
+        "Yveltal Garb"
+      ],
+      "level": "easy",
+      "decisions": 36,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "M Rayquaza EX",
+        "Primal Groudon EX"
+      ],
+      "level": "hard",
+      "decisions": 80,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Greninja BREAK",
+        "M Audino EX"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "VespiPlume",
+        "Volcanion EX"
+      ],
+      "level": "normal",
+      "decisions": 44,
+      "turn": 5,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "M Gardevoir EX",
+        "M Mewtwo Garb"
+      ],
+      "level": "easy",
+      "decisions": 80,
+      "turn": 6,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Yveltal Garb",
+        "Empoleon"
+      ],
+      "level": "hard",
+      "decisions": 80,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

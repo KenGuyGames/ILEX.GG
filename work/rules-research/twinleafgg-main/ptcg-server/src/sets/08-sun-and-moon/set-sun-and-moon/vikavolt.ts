@@ -22,7 +22,7 @@ function* useStrongCharge(next: Function, store: StoreLike, state: State, effect
     PlayerType.BOTTOM_PLAYER,
     [SlotType.BENCH, SlotType.ACTIVE],
     { superType: SuperType.ENERGY, energyType: EnergyType.BASIC },
-    { allowCancel: false, min: 0, max: 2, blocked }
+    { allowCancel: false, min: 0, max: 2, blocked, differentTypes: true }
   ), transfers => {
     transfers = transfers || [];
     for (const transfer of transfers) {
@@ -35,8 +35,8 @@ function* useStrongCharge(next: Function, store: StoreLike, state: State, effect
 
       const target = StateUtils.getTarget(state, player, transfer.to);
       MOVE_CARDS(store, state, player.deck, target, { cards: [transfer.card], sourceCard: effect.card });
-      next();
     }
+    next();
   });
   return store.prompt(state, new ShuffleDeckPrompt(player.id), order => {
     player.deck.applyOrder(order);

@@ -83,10 +83,12 @@ export class AfterAttackEffect implements Effect {
   public opponent: Player;
   public attack: Attack;
 
-  constructor(player: Player, opponent: Player, attack: Attack) {
+  public attackEffect: AttackEffect;
+  constructor(player: Player, opponent: Player, attack: Attack, attackEffect?: AttackEffect) {
     this.player = player;
     this.opponent = opponent;
     this.attack = attack;
+    this.attackEffect = attackEffect || new AttackEffect(player, opponent, attack);
   }
 }
 

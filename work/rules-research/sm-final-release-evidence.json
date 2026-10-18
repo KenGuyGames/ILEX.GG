@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "version": "1.15.0",
+  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5",
+  "printings": 3069,
+  "pending": 0,
+  "sets": [
+    {
+      "id": "sm1",
+      "name": "Sun & Moon",
+      "printings": 173,
+      "pending": 0
+    },
+    {
+      "id": "smp",
+      "name": "SM Black Star Promos",
+      "printings": 251,
+      "pending": 0
+    },
+    {
+      "id": "tk-sm-r",
+      "name": "SM trainer Kit (Alolan Raichu)",
+      "printings": 30,
+      "pending": 0
+    },
+    {
+      "id": "tk-sm-l",
+      "name": "SM trainer Kit (Lycanroc)",
+      "printings": 30,
+      "pending": 0
+    },
+    {
+      "id": "sm2",
+      "name": "Guardians Rising",
+      "printings": 180,
+      "pending": 0
+    },
+    {
+      "id": "2017sm",
+      "name": "McDonald's Collection 2017",
+      "printings": 12,
+      "pending": 0
+    },
+    {
+      "id": "sm3",
+      "name": "Burning Shadows",
+      "printings": 177,
+      "pending": 0
+    },
+    {
+      "id": "sm3.5",
+      "name": "Shining Legends",
+      "printings": 81,
+      "pending": 0
+    },
+    {
+      "id": "sm4",
+      "name": "Crimson Invasion",
+      "printings": 126,
+      "pending": 0
+    },
+    {
+      "id": "sm5",
+      "name": "Ultra Prism",
+      "printings": 178,
+      "pending": 0
+    },
+    {
+      "id": "sm6",
+      "name": "Forbidden Light",
+      "printings": 150,
+      "pending": 0
+    },
+    {
+      "id": "sm7",
+      "name": "Celestial Storm",
+      "printings": 187,
+      "pending": 0
+    },
+    {
+      "id": "sm7.5",
+      "name": "Dragon Majesty",
+      "printings": 80,
+      "pending": 0
+    },
+    {
+      "id": "2018sm",
+      "name": "McDonald's Collection 2018",
+      "printings": 12,
+      "pending": 0
+    },
+    {
+      "id": "sm8",
+      "name": "Lost Thunder",
+      "printings": 240,
+      "pending": 0
+    },
+    {
+      "id": "sm9",
+      "name": "Team Up",
+      "printings": 198,
+      "pending": 0
+    },
+    {
+      "id": "det1",
+      "name": "Detective Pikachu",
+      "printings": 18,
+      "pending": 0
+    },
+    {
+      "id": "sm10",
+      "name": "Unbroken Bonds",
+      "printings": 238,
+      "pending": 0
+    },
+    {
+      "id": "sm11",
+      "name": "Unified Minds",
+      "printings": 261,
+      "pending": 0
+    },
+    {
+      "id": "sma",
+      "name": "Hidden Fates Shiny Vault",
+      "printings": 94,
+      "pending": 0
+    },
+    {
+      "id": "sm115",
+      "name": "Hidden Fates",
+      "printings": 69,
+      "pending": 0
+    },
+    {
+      "id": "2019sm",
+      "name": "McDonald's Collection 2019",
+      "printings": 12,
+      "pending": 0
+    },
+    {
+      "id": "sm12",
+      "name": "Cosmic Eclipse",
+      "printings": 272,
+      "pending": 0
+    }
+  ],
+  "printedPokemonAttacks": 4387,
+  "trainerToolAttacks": 3,
+  "branchCases": 1168,
+  "focusedChecks": 82,
+  "games": 24,
+  "decisions": 2774,
+  "sharedSuites": 13,
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23804,
+  "additionalScansVerified": 68,
+  "limitedKitEnergyOriginals": 12,
+  "sourceFilesVerified": 5269,
+  "windows": {
+    "exeSha256": "788cb5f3f888e64686e0ef5f3badfd21699bebacbf9f7f62ed6e705d212f6faf",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 251040532,
+        "sha256": "8f48f852b639e92e246e78c43aa0393c1a20e33418482e62c380dbd07c293640",
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2866042493,
+        "sha256": "93e95b8f40f4becf7b206bda79076290b00f33540ccf768acd7745b19851b372",
+        "crcPassed": true
+      }
+    ]
+  },
+  "android": {
+    "version": "1.15.0-android.14",
+    "versionCode": 14,
+    "sha256": "06e91a75991cfa07a7b064291ca6c3a271dfc8deae6fb0a1fa253b6510691256",
+    "sameSigningCertificateAsPrevious": true,
+    "mobileChecks": 65,
+    "apkChecks": 30,
+    "physicalDeviceTested": false
+  },
+  "scope": "Black & White onward through complete Sun & Moon; historical profiles preserved; Unlimited deferred",
+  "limits": "Finite expected-result, smoke, branch and bounded-game checks do not prove every possible interaction. Unavailable Ability/Trainer fixtures include passive and conditional effects; focused tests cover selected positive conditions. No new official Expanded banlist is supplied. Desktop/mobile packaging and Android device acceptance are separate.",
+  "completedAt": "2026-10-18T14:18:46.304Z"
+}

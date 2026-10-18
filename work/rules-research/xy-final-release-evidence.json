@@ -1,0 +1,340 @@
+{
+  "passed": true,
+  "version": "1.13.0",
+  "completed": "2026-10-17T22:58:01.900Z",
+  "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+  "printings": 2208,
+  "pending": 0,
+  "scope": "Black & White onward through implemented XY; Unlimited remains deferred",
+  "futureBaseline": "Black & White onward for Expanded groundwork",
+  "source": {
+    "passed": true,
+    "status": "source-validated-not-yet-packaged",
+    "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+    "ruleAdapterSha256": "e390f4d43fd5acf3d48cfc24f9b2da21bbe82500e4796b759c696c81f33dc2a4",
+    "printings": 2208,
+    "pending": 0,
+    "printedAttacks": 2787,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "power": {
+      "resolved": 129,
+      "unavailable": 247
+    },
+    "trainer": {
+      "resolved": 578,
+      "unavailable": 72
+    },
+    "games": [
+      {
+        "decks": [
+          "Empoleon",
+          "Yveltal Garb"
+        ],
+        "level": "easy",
+        "decisions": 35,
+        "turn": 6,
+        "finished": true,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Rayquaza EX",
+          "Primal Groudon EX"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Greninja BREAK",
+          "M Audino EX"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 10,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "VespiPlume",
+          "Volcanion EX"
+        ],
+        "level": "normal",
+        "decisions": 44,
+        "turn": 5,
+        "finished": true,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Gardevoir EX",
+          "M Mewtwo Garb"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Empoleon"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Archiestoise"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 5,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Primal Groudon EX",
+          "Seismitoad Shaymin"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Audino EX",
+          "Night March"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Volcanion EX",
+          "Gyarados"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 9,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Mewtwo Garb",
+          "Vespiquen"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 10,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Archiestoise",
+          "M Rayquaza EX"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Seismitoad Shaymin",
+          "Greninja BREAK"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Night March",
+          "VespiPlume"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Gyarados",
+          "M Gardevoir EX"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Vespiquen",
+          "Yveltal Garb"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      }
+    ],
+    "fixtureAdjustments": [
+      {
+        "name": "Greninja BREAK",
+        "originalTotal": 59,
+        "added": "bw1-107",
+        "amount": 1,
+        "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+      },
+      {
+        "name": "Volcanion EX",
+        "originalTotal": 59,
+        "added": "bw1-106",
+        "amount": 1,
+        "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+      }
+    ],
+    "smokeFixtureCorrections": [],
+    "shared": [
+      {
+        "name": "xy-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-xy-tests.log"
+      },
+      {
+        "name": "bw-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-bw-tests.log"
+      },
+      {
+        "name": "hgss-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-hgss-tests.log"
+      },
+      {
+        "name": "dp-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-dp-tests.log"
+      },
+      {
+        "name": "ex-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-ex-tests.log"
+      },
+      {
+        "name": "wotc-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-wotc-tests.log"
+      },
+      {
+        "name": "undo-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-undo-tests.log"
+      },
+      {
+        "name": "bot-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-bot-tests.log"
+      }
+    ],
+    "scope": "BW onward through implemented XY; Unlimited deferred",
+    "limits": "Finite focused, branch and bounded game checks; not an exhaustive proof of every board state. Packaged builds still require their own verification.",
+    "trainerToolAttacks": 2
+  },
+  "desktop": {
+    "passed": true,
+    "version": "1.13.0",
+    "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3333,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246407630,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813564691,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "68d6ce9a41bc1a886c385f511b326b79929a8bf72f9219901145e5ece4994009"
+  },
+  "android": {
+    "passed": true,
+    "version": "1.13.0-android.3",
+    "versionCode": 3,
+    "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+    "sha256": "719f7b34a7ee0693c68d368a071a7965a58e80d4ef4bef29bd9ed86bbe86b7e6",
+    "sameSigningCertificateAsPrevious": true,
+    "mobileChecks": 59,
+    "apkChecks": 28,
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "subagentsUsed": false,
+  "publishedToGitHub": false,
+  "limits": "Finite test coverage; not an exhaustive proof of all board states. No physical Android/emulator acceptance was available."
+}

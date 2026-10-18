@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\android-build\\ILEX.GG-Android-xy-interaction-candidate.apk",
+  "bytes": 78542780,
+  "sha256": "fb52fedc46d71fdd3aacb2260621e39919e3cccaf7d5c0da3f117cdabedff664",
+  "bundledScans": 236,
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

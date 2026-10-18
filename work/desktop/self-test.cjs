@@ -1,1 +1,1 @@
-module.exports=require('./bw-self-test.cjs');
+module.exports=require('./sm-self-test.cjs');

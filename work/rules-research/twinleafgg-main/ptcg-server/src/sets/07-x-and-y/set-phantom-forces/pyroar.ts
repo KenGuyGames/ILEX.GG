@@ -1,3 +1,4 @@
+import {xyEnergyView,xyDiscardEnergy} from '../../../tcg-lab-xy-energy';
 import { ChooseCardsPrompt, ChoosePokemonPrompt, EnergyCard, GameError, GameMessage, PlayerType, SlotType, StateUtils } from '../../../game';
 import { CardType, EnergyType, Stage, SuperType } from '../../../game/store/card/card-types';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -54,7 +55,7 @@ export class Pyroar extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
-    if (WAS_ATTACK_USED(effect, 1, this)) {
+    if (WAS_ATTACK_USED(effect, 0, this)) {
       const player = effect.player;
 
       const dealDamage = new DealDamageEffect(effect, 30);
@@ -80,29 +81,23 @@ export class Pyroar extends PokemonCard {
         throw new GameError(GameMessage.POWER_ALREADY_USED);
       }
 
-      const hasEnergyAttached = cardList.cards.some(c => {
-        return c instanceof EnergyCard && c.energyType === EnergyType.BASIC && c.name === 'Fire Energy';
-      });
-
-      if (!hasEnergyAttached) {
-        throw new GameError(GameMessage.CANNOT_USE_POWER);
-      }
-
-      const checkProvidedEnergy = new CheckProvidedEnergyEffect(player);
+      const checkProvidedEnergy = new CheckProvidedEnergyEffect(player,cardList);
       state = store.reduceEffect(state, checkProvidedEnergy);
-
+      const eligible=checkProvidedEnergy.energyMap.filter(entry=>StateUtils.providesMatchesType(entry.provides,CardType.FIRE)).map(entry=>entry.card);
+      if(!eligible.length||!StateUtils.getOpponent(state,player).bench.some(list=>list.getPokemonCard()))throw new GameError(GameMessage.CANNOT_USE_POWER);
+      const energies=xyEnergyView(cardList);
       return store.prompt(state, new ChooseCardsPrompt(
         player,
         GameMessage.CHOOSE_CARD_TO_DISCARD,
-        player.active,
-        { superType: SuperType.ENERGY, energyType: EnergyType.BASIC, name: 'Fire Energy' },
-        { min: 1, max: 1, allowCancel: false }
+        energies,
+        {},
+        { min: 1, max: 1, allowCancel: false, blocked:energies.cards.map((c,i)=>eligible.includes(c)?-1:i).filter(i=>i>=0) }
       ), selected => {
         selected || [];
         if (selected.length === 0) {
           return;
         }
-        MOVE_CARDS(store, state, player.active, player.discard, { cards: selected, sourceCard: this });
+        xyDiscardEnergy(store,state,cardList,selected,this,effect);
         player.marker.addMarker(this.FLARE_COMMAND_MARKER, this);
 
         const opponent = StateUtils.getOpponent(state, player);

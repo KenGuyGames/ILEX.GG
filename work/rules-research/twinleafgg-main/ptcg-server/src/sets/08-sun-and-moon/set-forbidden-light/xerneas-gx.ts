@@ -2,6 +2,7 @@ import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils, GameError, GameMessage, PlayerType } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
+import {PutCountersEffect} from '../../../game/store/effects/attack-effects';
 
 import { BLOCK_IF_GX_ATTACK_USED, WAS_ATTACK_USED } from '../../../game/store/prefabs/prefabs';
 import { THIS_ATTACK_DOES_X_DAMAGE_TO_1_OF_YOUR_OPPONENTS_BENCHED_POKEMON } from '../../../game/store/prefabs/attack-effects';
@@ -50,25 +51,21 @@ export class XerneasGX extends PokemonCard {
     }
 
     // Sanctuary-GX
-    if (WAS_ATTACK_USED(effect, 1, this)) {
+    if (WAS_ATTACK_USED(effect, 2, this)) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
-
-      if (player.getPrizeLeft() + opponent.getPrizeLeft() > 6) {
-        throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
-      }
 
       // Check if player has used GX attack
       BLOCK_IF_GX_ATTACK_USED(player);
       // set GX attack as used for game
       player.usedGX = true;
 
-      let damageCounters = 0;
-      player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (card) => {
-        damageCounters += card.damage;
-        card.damage = 0;
-      });
-      opponent.active.damage += damageCounters;
+      const lists=[player.active,...player.bench].filter(list=>list.getPokemonCard());
+      const total=lists.reduce((n,list)=>n+list.damage,0),before=opponent.active.damage;
+      const counters=new PutCountersEffect(effect,total);counters.target=opponent.active;
+      store.reduceEffect(state,counters);
+      let moved=Math.min(total,Math.max(0,opponent.active.damage-before));
+      for(const list of lists){const amount=Math.min(moved,list.damage);list.damage-=amount;moved-=amount;}
     }
     return state;
   }

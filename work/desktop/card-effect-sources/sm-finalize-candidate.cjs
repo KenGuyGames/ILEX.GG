@@ -1,0 +1,17 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),crypto=require('crypto'),root=path.resolve(__dirname,'../..'),research=path.join(root,'work/rules-research'),ui=path.join(root,'work/desktop/ui'),native=path.join(root,'work/desktop-sm-tests-v8'),python='C:/Users/Kenneth/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe',engine=crypto.createHash('sha256').update(fs.readFileSync(path.join(ui,'rules-engine.js'))).digest('hex'),delay=ms=>new Promise(r=>setTimeout(r,ms)),read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
+const reports=['sm-focused-tests','sm-full-power-audit','sm-full-trainer-audit','sm-deep-identity','sm-native-guard-audit','sm-shared-regressions',...[0,1,2].flatMap(i=>['sm-full-smoke-report-'+i,'sm-full-branch-report-'+i,'sm-full-match-audit-'+i])];
+async function waitFor(label,check){const deadline=Date.now()+1800000;while(Date.now()<deadline){if(check()){console.log(label+' ready');return;}await delay(5000);}throw Error(label+' exceeded bounded wait');}
+async function run(label,exe,args,extra={}){console.log('Running '+label);const log=path.join(research,'sm-release-'+label+'.log'),fd=fs.openSync(log,'w');const code=await new Promise((resolve,reject)=>{const child=cp.spawn(exe,args,{cwd:root,env:{...process.env,...extra},windowsHide:true,stdio:['ignore',fd,fd]});child.on('error',reject);child.on('exit',resolve);});fs.closeSync(fd);if(code!==0){console.error(fs.readFileSync(log,'utf8').split('\n').slice(-30).join('\n'));throw Error(label+' exit '+code);}console.log(label+' passed');}
+(async()=>{
+ await waitFor('Current-engine source reports',()=>reports.every(name=>{const f=path.join(research,name+'.json');if(!fs.existsSync(f))return false;let r;try{r=read(f);}catch{return false;}if(r.engineSha256!==engine)return false;if(!r.passed)throw Error(name+' failed');return true;}));
+ await run('source-validation',process.execPath,['work/desktop-build/sm-record-validation.cjs']);
+ const android={ILEX_ANDROID_OUTPUT:path.join(root,'work/android-build/ILEX.GG-SM-candidate.apk'),ILEX_ANDROID_REPORT:path.join(root,'work/android-build/sm-build.json'),ILEX_ANDROID_VERIFICATION:path.join(root,'work/android-build/sm-apk-verification.json')};
+ await run('android-build',python,['work/android-build/build.py'],android);
+ await run('mobile-preview',process.execPath,['work/android-build/run-preview.cjs']);
+ await run('apk-verify',python,['work/android-build/verify.py'],android);
+ await waitFor('Fresh/restored native reports',()=>{if(fs.existsSync(path.join(native,'failure.txt')))throw Error(fs.readFileSync(path.join(native,'failure.txt'),'utf8'));const files=['sm-native-tests.json','sm-native-tests-fresh.json','persistence.json'];if(files.some(f=>!fs.existsSync(path.join(native,f))))return false;const [a,b,p]=files.map(f=>read(path.join(native,f)));return a.passed&&b.passed&&a.restored&&a.engineSha256===engine&&b.engineSha256===engine&&p.passed&&p.exactJournalAndDeckOrder;});
+ await run('completion-notes',process.execPath,['work/desktop-build/sm-release-notes.cjs']);
+ await run('stage',python,['work/desktop-build/stage-sm.py']);
+ await run('windows-package',python,['work/desktop-build/package-sm.py']);
+ console.log('Windows and Android candidates are verified. Review final screenshots, then publish Android and record final release evidence.');
+})().catch(e=>{console.error(e.stack);process.exitCode=1;});

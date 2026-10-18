@@ -71,7 +71,7 @@ When you play this card, you may discard 2 other cards from your hand. If you do
 
           player.switchPokemon(cardList);
 
-          if (player.hand.cards.length < 2 || !activeHasDamage) {
+          if ((this as any)._smCopiedSupporter || player.hand.cards.length < 2 || !activeHasDamage) {
             return state;
           }
 

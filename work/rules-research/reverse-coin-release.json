@@ -1,0 +1,200 @@
+{
+  "passed": true,
+  "date": "2026-10-18",
+  "heads": {
+    "background": "#18733e",
+    "silhouette": "#efeccf"
+  },
+  "tails": {
+    "background": "#efeccf",
+    "silhouette": "#18733e"
+  },
+  "sameSilhouette": true,
+  "desktop": {
+    "passed": true,
+    "version": "1.13.3",
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3339,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246407900,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813565117,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "dc3acb5db5206ad665fd1cb901f824db44e74d8edc835cffec0173bf836a0d16"
+  },
+  "android": {
+    "passed": true,
+    "checks": [
+      "All APK entries pass CRC integrity checks",
+      "Compiled Android Activity and host bridge included",
+      "Private signing material excluded",
+      "rules-engine.js matches verified desktop source",
+      "rules-match.js matches verified desktop source",
+      "bot-ai.js matches verified desktop source",
+      "cards.json matches verified desktop source",
+      "sets.json matches verified desktop source",
+      "card-details.json matches verified desktop source",
+      "rules-card-map.json matches verified desktop source",
+      "pack-model.js matches verified desktop source",
+      "pack-specials.js matches verified desktop source",
+      "pack-finishes.js matches verified desktop source",
+      "mobile.js matches final Android source",
+      "mobile-host.js matches final Android source",
+      "mobile-compat.js matches final Android source",
+      "mobile.css matches final Android source",
+      "mobile-landscape.css matches final Android source",
+      "236 startup and Base–Fossil scans bundled",
+      "Every bundled card scan matches manifest SHA-256",
+      "Compiled resource table is uncompressed for Android 11+",
+      "All stored ZIP entries aligned to four bytes",
+      "Universal APK has no CPU-specific native libraries",
+      "Android 8 minimum and SDK 36 target encoded in APK",
+      "Internet is the only requested Android permission",
+      "Launcher Activity registered",
+      "XY interaction update uses higher versionCode for in-place installation",
+      "Mobile Chromium touch and responsive checks passed"
+    ],
+    "mobileChecks": 59,
+    "sha256": "3888a93a575b8723da377fac6d71f2d4f59cc3c0cb951e005ff5fa641011cc4f",
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "native": [
+    {
+      "passed": true,
+      "checks": [
+        "Human attack starts presentation after committing the action",
+        "Committed action opens the cinematic layer",
+        "Visible single coin matches the actual engine result",
+        "Coin face and label match the resolved result",
+        "Heads and tails share the same Celebi silhouette",
+        "Tails reverses the heads background and silhouette colors",
+        "Inputs and bot dispatch cannot advance the match during presentation",
+        "Animation leaves game state, RNG, choices and journal untouched",
+        "Saved-game replay remains exact with presentation enabled",
+        "Undo restores the whole action after a cinematic",
+        "Undo leaves no lingering animation or input lock",
+        "Committed action opens the cinematic layer",
+        "Multi-flip attack shows every engine result in order",
+        "Multi-flip display contains all three visible coins",
+        "Skip immediately releases the layer and queued effects",
+        "Skipping cannot reroll coins or alter damage",
+        "Rejected unpaid attacks do not produce animations",
+        "Rejected moves retain normal rollback behavior",
+        "Bot forecasting remains silent and does not mutate live state",
+        "Committed bot attacks use the same cinematic pipeline",
+        "Committed action opens the cinematic layer",
+        "Manual tabletop flips also display the recorded side",
+        "Escape cancellation is presentation-only",
+        "Committed action opens the cinematic layer",
+        "Navigating away cancels effects without changing the match",
+        "Effects can be disabled without removing game functionality",
+        "Visual preferences are persisted independently of audio",
+        "Opponent hand identities stay concealed",
+        "Both players have persistent Deck, Discard and Prize count badges",
+        "Committed action opens the cinematic layer",
+        "WATER renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "GRASS renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "FIGHTING renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "PSYCHIC renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "DARK renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "COLORLESS renderer follows the committed card attack",
+        "Cinematic renderers complete without errors"
+      ],
+      "singleFlip": [
+        true
+      ],
+      "multiFlip": [
+        true,
+        true,
+        false
+      ],
+      "renderErrors": []
+    },
+    {
+      "passed": true,
+      "checks": [
+        "Human attack starts presentation after committing the action",
+        "Committed action opens the cinematic layer",
+        "Visible single coin matches the actual engine result",
+        "Coin face and label match the resolved result",
+        "Heads and tails share the same Celebi silhouette",
+        "Tails reverses the heads background and silhouette colors",
+        "Inputs and bot dispatch cannot advance the match during presentation",
+        "Animation leaves game state, RNG, choices and journal untouched",
+        "Saved-game replay remains exact with presentation enabled",
+        "Undo restores the whole action after a cinematic",
+        "Undo leaves no lingering animation or input lock",
+        "Committed action opens the cinematic layer",
+        "Multi-flip attack shows every engine result in order",
+        "Multi-flip display contains all three visible coins",
+        "Skip immediately releases the layer and queued effects",
+        "Skipping cannot reroll coins or alter damage",
+        "Rejected unpaid attacks do not produce animations",
+        "Rejected moves retain normal rollback behavior",
+        "Bot forecasting remains silent and does not mutate live state",
+        "Committed bot attacks use the same cinematic pipeline",
+        "Committed action opens the cinematic layer",
+        "Manual tabletop flips also display the recorded side",
+        "Escape cancellation is presentation-only",
+        "Committed action opens the cinematic layer",
+        "Navigating away cancels effects without changing the match",
+        "Effects can be disabled without removing game functionality",
+        "Visual preferences are persisted independently of audio",
+        "Opponent hand identities stay concealed",
+        "Both players have persistent Deck, Discard and Prize count badges",
+        "Committed action opens the cinematic layer",
+        "WATER renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "GRASS renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "FIGHTING renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "PSYCHIC renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "DARK renderer follows the committed card attack",
+        "Committed action opens the cinematic layer",
+        "COLORLESS renderer follows the committed card attack",
+        "Cinematic renderers complete without errors"
+      ],
+      "singleFlip": [
+        true
+      ],
+      "multiFlip": [
+        true,
+        true,
+        false
+      ],
+      "renderErrors": []
+    }
+  ],
+  "androidVersion": "1.13.3-android.11",
+  "androidVersionCode": 11,
+  "engineUnchanged": true,
+  "physicalAndroidAcceptancePending": true
+}

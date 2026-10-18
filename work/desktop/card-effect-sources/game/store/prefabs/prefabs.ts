@@ -1,4 +1,5 @@
 import { GameError } from '../../game-error';
+import {copyAttacks} from '../../../tcg-lab-wotc-final';
 import { GameMessage, GameLog } from '../../game-message';
 import { PlayerType, SlotType, CardTarget } from '../actions/play-card-action';
 import { Card } from '../card/card';
@@ -680,6 +681,8 @@ export function ATTACH_ENERGY_PROMPT(
         const target = StateUtils.getTarget(state, player, transfer.to);
         const energyCard = transfer.card as EnergyCard;
         const attachEnergyEffect = new AttachEnergyEffect(player, energyCard, target);
+        (attachEnergyEffect as any).source=source;
+        attachEnergyEffect.origin=sourceSlot===SlotType.DECK?'deck':sourceSlot===SlotType.DISCARD?'discard':'hand';
         store.reduceEffect(state, attachEnergyEffect);
       }
       if (sourceSlot === SlotType.DECK) {
@@ -1037,6 +1040,12 @@ export function ATTACH_UP_TO_X_ENERGY_FROM_DECK_TO_Y_OF_YOUR_POKEMON(
   }
 
   const blockedTo = getBlockedTargetsFromFilter(player, targetFilter);
+  const eligibleEnergy=player.deck.cards.filter(c=>c instanceof EnergyCard&&matchesPromptFilter(c,{superType:SuperType.ENERGY,...energyFilter})&&(!validCardTypes||c.provides.some(t=>validCardTypes.includes(t))));
+  let targetCount=0;
+  player.forEachPokemon(PlayerType.BOTTOM_PLAYER,(list,card,target)=>{if(destinationSlots.includes(target.slot)&&!blockedTo.some(b=>b.player===target.player&&b.slot===target.slot&&b.index===target.index))targetCount++;});
+  let available=Math.min(maxEnergyCards,eligibleEnergy.length,differentTargets?targetCount:targetCount?maxEnergyCards:0);
+  if(differentTypes)available=Math.min(available,new Set(eligibleEnergy.map(c=>(c as EnergyCard).provides[0])).size);
+  if(!available){SHUFFLE_DECK(store,state,player);return state;}
 
   return store.prompt(
     state,
@@ -1049,8 +1058,8 @@ export function ATTACH_UP_TO_X_ENERGY_FROM_DECK_TO_Y_OF_YOUR_POKEMON(
       { superType: SuperType.ENERGY, ...energyFilter },
       {
         allowCancel,
-        min: Math.max(0, min),
-        max: maxEnergyCards,
+        min: Math.min(available,Math.max(0, min)),
+        max: available,
         blockedTo,
         differentTypes,
         differentTargets,
@@ -1075,6 +1084,8 @@ export function ATTACH_UP_TO_X_ENERGY_FROM_DECK_TO_Y_OF_YOUR_POKEMON(
         const target = StateUtils.getTarget(state, player, transfer.to);
         const energyCard = transfer.card as EnergyCard;
         const attachEnergyEffect = new AttachEnergyEffect(player, energyCard, target);
+        (attachEnergyEffect as any).source=player.deck;
+        attachEnergyEffect.origin='deck';
         store.reduceEffect(state, attachEnergyEffect);
       }
 
@@ -1393,6 +1404,7 @@ export function SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(
 ) {
   BLOCK_IF_DECK_EMPTY(player);
   const slots = GET_PLAYER_BENCH_SLOTS(player);
+  if((state.rules as any).xyEraRules&&!slots.length)return SHUFFLE_DECK(store,state,player);
   BLOCK_IF_NO_SLOTS(slots);
   filter.superType = SuperType.POKEMON;
   const max = Math.min(options.max ?? 1, slots.length);
@@ -1405,7 +1417,7 @@ export function SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(
       GameMessage.CHOOSE_CARD_TO_PUT_ONTO_BENCH,
       player.deck,
       filter,
-      { ...options, max },
+      { ...options, ...((state.rules as any).xyEraRules?{min:0,allowCancel:false}:{}), max },
     ),
     (selected) => {
       const cards = selected || [];
@@ -2764,8 +2776,10 @@ export function COIN_FLIP_PROMPT(
   state: State,
   player: Player,
   callback: (result: boolean) => void,
+  options?: {system?:boolean},
 ): State {
   const coinFlip = new CoinFlipEffect(player, callback);
+  (coinFlip as any)._smSystemCoin=!!options?.system;
   return store.reduceEffect(state, coinFlip);
 }
 
@@ -3789,7 +3803,7 @@ export function BREAK_RULE(effect: Effect, state: State, source: PokemonCard): S
     const cardList = StateUtils.findCardList(state, source);
     const owner = StateUtils.findOwner(state, cardList);
 
-    if (owner !== player) {
+    if (owner !== player || owner.active !== cardList) {
       return state;
     }
 
@@ -3811,14 +3825,7 @@ export function BREAK_RULE(effect: Effect, state: State, source: PokemonCard): S
         evolutionCard !== source &&
         evolutionCard.name === source.evolvesFrom
       ) {
-        // Create a deep copy of each attack to ensure we don't modify the original
-        const inheritedAttacks = evolutionCard.attacks.map((attack) => ({
-          name: attack.name,
-          cost: [...attack.cost],
-          damage: attack.damage,
-          text: attack.text,
-        }));
-        effect.attacks.push(...inheritedAttacks);
+        copyAttacks(effect,evolutionCard);
       }
     }
   }
@@ -3829,7 +3836,7 @@ export function BREAK_RULE(effect: Effect, state: State, source: PokemonCard): S
     const cardList = StateUtils.findCardList(state, source);
     const owner = StateUtils.findOwner(state, cardList);
 
-    if (owner !== player) {
+    if (owner !== player || effect.target !== source) {
       return state;
     }
 
@@ -3845,7 +3852,7 @@ export function BREAK_RULE(effect: Effect, state: State, source: PokemonCard): S
     }
 
     // Add this card's own powers
-    effect.powers.push(...source.powers);
+    for(const power of source.powers)if(!effect.powers.includes(power))effect.powers.push(power);
 
     // Adds the powers from the previous stage
     for (const evolutionCard of cardList.cards) {
@@ -3854,7 +3861,7 @@ export function BREAK_RULE(effect: Effect, state: State, source: PokemonCard): S
         evolutionCard !== source &&
         evolutionCard.name === source.evolvesFrom
       ) {
-        effect.powers.push(...(evolutionCard.powers || []));
+        for(const power of evolutionCard.powers||[])if(!effect.powers.includes(power))effect.powers.push(power);
       }
     }
   }

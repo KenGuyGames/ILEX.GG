@@ -1,8 +1,9 @@
+import {smPreventTrainerSwitch,smDustIsland} from '../../../tcg-lab-sm-environment';
 import { GameError } from '../../game-error';
 import { hasActiveSwitchLock } from './active-switch-lock';
 import { GameMessage } from '../../game-message';
 import { CardTarget, PlayerType, SlotType } from '../actions/play-card-action';
-import { CardTag, CardType } from '../card/card-types';
+import { CardTag, CardType,SpecialCondition } from '../card/card-types';
 import { PokemonCard } from '../card/pokemon-card';
 import { PowerType } from '../card/pokemon-types';
 import { MovedFromActiveToBenchEffect, MovedToActiveEffect } from '../effects/game-effects';
@@ -450,6 +451,9 @@ export class Player {
   }
 
   switchPokemon(target: PokemonCardList, store?: any, state?: any) {
+    const smSwitchContext=(CardList as any).wotcMovementContext,smSwitchState=state||smSwitchContext?.state,smSwitchStore=store||smSwitchContext?.store;
+    if(smPreventTrainerSwitch(smSwitchState,this,smSwitchContext))return;
+    const smWasPoisoned=this.active.specialConditions.includes(SpecialCondition.POISONED);
     if (hasActiveSwitchLock(this, state)) return;
     const benchIndex = this.bench.indexOf(target);
     if (benchIndex !== -1) {
@@ -473,6 +477,7 @@ export class Player {
       this.active = this.bench[benchIndex];
       if(state?.rules?.dpEraRules){(this.active as any)._dpBenchTurn=state.turn;(temp as any)._dpBenchTurn=state.turn;}
       this.bench[benchIndex] = temp;
+      smDustIsland(smSwitchStore,smSwitchState,this,smWasPoisoned,smSwitchContext);
 
       const activePokemon = this.active.getPokemonCard();
       if (activePokemon) {

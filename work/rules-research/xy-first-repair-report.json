@@ -1,0 +1,13 @@
+{
+  "candidate": true,
+  "passed": true,
+  "scenarios": 8,
+  "failures": [],
+  "rejected": [],
+  "testedPrintings": [
+    "xy1-96"
+  ],
+  "shard": null,
+  "scope": "Kalos Starter/XY with BW-onward fixtures; Unlimited deferred",
+  "engineSha256": "63fae0b21180762f1b784323c443d15efe498fa73ee76773d49b8ae184bc73c4"
+}

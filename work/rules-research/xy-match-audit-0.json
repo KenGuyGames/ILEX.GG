@@ -1,0 +1,74 @@
+{
+  "passed": false,
+  "engineSha256": "89565638c75a8b77ad1abf102589450212fdedf13316c6901ed093c69235179a",
+  "rejectedDecks": [],
+  "scope": "BW onward through XY; sixteen cached deck pairings, bounded 80 decisions each; historical XY/current Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Empoleon",
+        "Yveltal Garb"
+      ],
+      "level": "easy",
+      "decisions": 35,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "M Rayquaza EX",
+        "Primal Groudon EX"
+      ],
+      "level": "hard",
+      "decisions": 80,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "M Gardevoir EX",
+        "M Mewtwo Garb"
+      ],
+      "level": "easy",
+      "decisions": 80,
+      "turn": 6,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Yveltal Garb",
+        "Empoleon"
+      ],
+      "level": "hard",
+      "decisions": 80,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": [
+    {
+      "decks": [
+        "Greninja BREAK",
+        "M Audino EX"
+      ],
+      "decisions": 0,
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    },
+    {
+      "decks": [
+        "VespiPlume",
+        "Volcanion EX"
+      ],
+      "decisions": 0,
+      "reason": "Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements."
+    }
+  ]
+}

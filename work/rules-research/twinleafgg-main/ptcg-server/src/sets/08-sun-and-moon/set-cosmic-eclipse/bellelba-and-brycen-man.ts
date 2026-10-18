@@ -85,7 +85,7 @@ When you play this card, you may discard 3 other cards from your hand. If you do
 
       MOVE_CARDS(store, state, opponentDeckTop, opponent.discard, { count: opponentDeckTop.cards.length, sourceCard: this });
 
-      if (cannotDiscardFromHand) {
+      if ((this as any)._smCopiedSupporter || cannotDiscardFromHand) {
         return state;
       }
 

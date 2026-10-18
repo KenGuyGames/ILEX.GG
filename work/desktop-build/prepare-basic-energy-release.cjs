@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+let s=fs.readFileSync(path.join(__dirname,'package-table-repair.py'),'utf8').replaceAll('v83','v84').replaceAll('1.13.1','1.13.2').replaceAll('table-repair-desktop-release.json','basic-energy-desktop-release.json');
+s=s.replace("repair=load(native/'table-repair-native-tests.json')", "energy_tests=load(research/'basic-energy-tests.json');assert energy_tests['passed'] and energy_tests['engineSha256']==engine and len(energy_tests['printings'])==42\nrepair=load(native/'table-repair-native-tests.json')");
+s=s.replace("# ILEX.GG 1.13.2", "# ILEX.GG 1.13.2\n\nBasic Darkness and Basic Metal Energy no longer receive the same-name Special Energy effects. Forty-two Basic printings and two Special Darkness controls pass expected-result regressions.");
+s=s.replace('The card engine is unchanged from the verified XY release.', 'These presentation repairs are retained alongside the Basic Energy engine correction.');
+s=s.replace("for file in research.glob('xy-*.json'):", "shutil.copy2(research/'basic-energy-tests.json',audit_dir/'basic-energy-tests.json')\nfor file in research.glob('xy-*.json'):");
+fs.writeFileSync(path.join(__dirname,'package-basic-energy.py'),s);
+s=fs.readFileSync(path.join(__dirname,'publish-android-table-repair.py'),'utf8').replaceAll('table-repair-candidate.apk','basic-energy-candidate.apk').replaceAll('table-repair-desktop-release.json','basic-energy-desktop-release.json').replaceAll('table-repair-verification-report.json','basic-energy-verification-report.json').replaceAll('table-repair-build-report.json','basic-energy-build-report.json').replaceAll('table-repair-android-release.json','basic-energy-android-release.json').replaceAll('1.13.1-android.4','1.13.2-android.5').replace("'versionCode':4","'versionCode':5");
+fs.writeFileSync(path.join(__dirname,'publish-android-basic-energy.py'),s);
+console.log('Prepared Basic Energy release gates');

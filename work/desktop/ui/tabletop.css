@@ -32,8 +32,14 @@
 
 #cardactions .card-action-scan{aspect-ratio:600/825}#cardactions .card-action-scan.no-scan{aspect-ratio:auto}
 #cardactions .card-action-hotspot{z-index:3}
-#cardactions .named-action{min-height:25px;background:#10352ee8;border-color:#bbdda3;text-align:center}#cardactions .named-action span{opacity:1;background:transparent}
+#cardactions .card-action-scan .scan-action{min-height:0;padding:0;box-sizing:border-box;background:transparent;backdrop-filter:none;opacity:1;border:1px solid #dcf8a766;box-shadow:none}
+#cardactions .card-action-scan .scan-action:hover,#cardactions .card-action-scan .scan-action:focus-visible{background:transparent;border-color:#e1ffb2;outline:2px solid #e1ffb2;outline-offset:-2px;box-shadow:none}
+#cardactions .card-action-scan .scan-action.unavailable{background:transparent;border-color:#85998455;cursor:not-allowed}
 .table-layout{display:block}.card-retreat-actions{display:flex;flex-direction:column;gap:6px;margin-top:12px}.card-retreat-actions h3{font-size:13px;margin:4px}.card-retreat-actions .card-action-hotspot{position:static;width:100%;background:#254534;text-align:center}.card-retreat-actions .card-action-hotspot span{opacity:1}
 
 /* The two sideways scans become one upright, full-height LEGEND. */
 .seat-pokemon.complete-legend,#cardactions .card-action-scan.complete-legend{aspect-ratio:825/1200}.legend-composite-image:not([data-legend-ready]){opacity:0}.legend-composite-image[data-legend-ready]{opacity:1}
+
+/* Foil layers need a positioned grid; pile offsets belong only to the outer pile. */
+.seat-prizes .seat-prizes{position:relative;inset:auto;min-width:0}.seat-prizes .seat-prizes>img{min-width:0;max-width:100%;aspect-ratio:63 / 88;object-fit:contain}
+

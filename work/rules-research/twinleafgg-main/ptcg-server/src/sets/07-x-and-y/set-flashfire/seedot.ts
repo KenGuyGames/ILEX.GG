@@ -4,7 +4,7 @@ import { StoreLike, State, PokemonCardList, GameError, GameMessage, Card, Choose
 import { Effect } from '../../../game/store/effects/effect';
 import { PlayPokemonFromDeckEffect } from '../../../game/store/effects/play-card-effects';
 
-import { WAS_ATTACK_USED } from '../../../game/store/prefabs/prefabs';
+import { WAS_ATTACK_USED, SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH } from '../../../game/store/prefabs/prefabs';
 
 export class Seedot extends PokemonCard {
   public stage: Stage = Stage.BASIC;
@@ -30,6 +30,7 @@ export class Seedot extends PokemonCard {
 
     if (WAS_ATTACK_USED(effect, 0, this)) {
       const player = effect.player;
+      if((state.rules as any).xyEraRules)return SEARCH_YOUR_DECK_FOR_POKEMON_AND_PUT_ONTO_BENCH(store,state,player,{stage:Stage.BASIC},{max:1});
       const slots: PokemonCardList[] = player.bench.filter(b => b.cards.length === 0);
 
       if (player.deck.cards.length === 0) {

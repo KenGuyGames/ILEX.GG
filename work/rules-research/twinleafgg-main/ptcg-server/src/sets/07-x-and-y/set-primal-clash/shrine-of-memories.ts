@@ -7,6 +7,7 @@ import {
 } from '../../../game/store/effects/check-effects';
 import { IS_STADIUM_EFFECT_BLOCKED } from '../../../game/store/prefabs/stadium-effect';
 import { Effect } from '../../../game/store/effects/effect';
+import {copyAttacks} from '../../../tcg-lab-wotc-final';
 
 export class ShrineOfMemories extends TrainerCard {
   protected _trainerType: TrainerType = TrainerType.STADIUM;
@@ -19,6 +20,13 @@ export class ShrineOfMemories extends TrainerCard {
     "Each player's evolved Pokémon can use any attack from its previous Evolutions. (That player still needs the necessary Energy to use each attack.)";
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
+    if((state.rules as any).xyEraRules){
+      if(effect instanceof CheckPokemonAttacksEffect&&StateUtils.getStadiumCard(state)===this){
+        const list=effect.player.active,card=list.getPokemonCard();
+        if(card&&card.stage!==Stage.BASIC&&!IS_STADIUM_EFFECT_BLOCKED(store,state,effect.player,list))for(const previous of list.getPokemons().filter(p=>p!==card))copyAttacks(effect,previous);
+      }
+      return state;
+    }
     if (effect instanceof CheckTableStateEffect) {
       if (StateUtils.getStadiumCard(state) !== this) {
         return state;

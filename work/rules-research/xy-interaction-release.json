@@ -1,0 +1,9631 @@
+{
+  "passed": true,
+  "version": "1.13.3",
+  "completed": "2026-10-18T05:13:14.365Z",
+  "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+  "scope": "BW onward through implemented XY; Unlimited deferred",
+  "fixes": [
+    "Pyroar Flare Command pays from its own slot on the Bench or Active, accepts attached Fire-providing Energy, and rejects missing costs or targets before payment",
+    "XY Venipede uses its printed 70 HP, 20 Poison Sting damage and three-Energy retreat, independently of the BW source constructor",
+    "Delta Evolution permission belongs only to the actual trait evolution card being played from hand, not unrelated copies on either field or in hand",
+    "Dry Skin queries the current attacker type and respects damage that ignores defender effects",
+    "Light of Life recognizes both Yveltal and Yveltal-EX through shared named-condition parsing, including BW copied attacks",
+    "Cross Slicer and Time Freeze use attack-effect events, respecting protection and normal switch/turn cleanup",
+    "Burning Energy records actual eligible discards before native reducers move cards and returns to the same in-play Pokemon, with negative controls for other attackers and Trainers",
+    "A shared attached-Energy view covers regular attachments and Pokemon-as-Energy zones for Enhanced Hammer, Shuppet, Xerosic, Jirachi, Groudon-EX and Dragonite-EX",
+    "Energy discards route through attack prevention and the correct physical zone; Xerosic puts each card in its owner discard pile",
+    "Stardust grants its shield only after a successful discard from the opponent Active; Bench-only Special Energy and blocked discards do not grant it",
+    "Dragonite-EX, Greninja and Pyroar native attack indexes match their printing; Mist Slash uses the normal damage/KO pipeline with correct bypass flags and attacker bonuses; Inferno Onrush applies recoil",
+    "Hyper Beam, Rip Claw and Stardust resolve defensive-Energy discards after damage, so Shield Energy still reduces that attack"
+  ],
+  "newExpectedResultChecks": 56,
+  "identity": {
+    "passed": true,
+    "printings": 2208,
+    "mismatches": [],
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+  },
+  "guards": {
+    "passed": true,
+    "tested": [
+      {
+        "id": "xyp-XY04",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY05",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY06",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY07",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY08",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY10",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY106",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY107",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY108",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY109",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY120",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY121",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY122",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY123",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY125",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY126",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY127",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY128",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY129",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY130",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY131",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY132",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY138",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY139",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY142",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY143",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY144",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY145",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY146",
+        "guards": []
+      },
+      {
+        "id": "xyp-XY147",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY149",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY150",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY150a",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY151",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY152",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY161",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY162",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY170",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY173",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY175",
+        "guards": []
+      },
+      {
+        "id": "xyp-XY183",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY193",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY21",
+        "guards": []
+      },
+      {
+        "id": "xyp-XY28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY30",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY38",
+        "guards": []
+      },
+      {
+        "id": "xyp-XY39",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY41",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY42",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY46",
+        "guards": []
+      },
+      {
+        "id": "xyp-XY49",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY51",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY52",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY60",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY67a",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY68",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY71",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY72",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xyp-XY93",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xyp-XY94",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-1",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-2",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-5",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-6",
+        "guards": []
+      },
+      {
+        "id": "xy1-7",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-8",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-10",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-13",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-15",
+        "guards": []
+      },
+      {
+        "id": "xy1-16",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-18",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-19",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-20",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-21",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-22",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-24",
+        "guards": []
+      },
+      {
+        "id": "xy1-25",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-31",
+        "guards": []
+      },
+      {
+        "id": "xy1-32",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-35",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-36",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-37",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-39",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-41",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-42",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-43",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-44",
+        "guards": []
+      },
+      {
+        "id": "xy1-45",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-46",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-47",
+        "guards": []
+      },
+      {
+        "id": "xy1-48",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-49",
+        "guards": []
+      },
+      {
+        "id": "xy1-50",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-51",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-52",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-53",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-57",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-59",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-61",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-63",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-66",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-68",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-69",
+        "guards": []
+      },
+      {
+        "id": "xy1-70",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-71",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-72",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-73",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-74",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-75",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-76",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-77",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-78",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-79",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-80",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-81",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-82",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-83",
+        "guards": []
+      },
+      {
+        "id": "xy1-84",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-86",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-87",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-88",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-89",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-90",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-91",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-92",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-93",
+        "guards": []
+      },
+      {
+        "id": "xy1-94",
+        "guards": []
+      },
+      {
+        "id": "xy1-95",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-96",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-97",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-98",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-99",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-100",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-101",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-102",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-103",
+        "guards": []
+      },
+      {
+        "id": "xy1-104",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-105",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-106",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-107",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-108",
+        "guards": []
+      },
+      {
+        "id": "xy1-109",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy1-110",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-111",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-112",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-113",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-114",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy1-141",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-142",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-143",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-144",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-145",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy1-146",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xya-24a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xya-28a",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xya-54a",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xya-55a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-n-1",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-n-2",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-n-3",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-n-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-n-13",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-n-16",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-n-18",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-n-20",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-n-30",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-sy-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-sy-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-sy-16",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-sy-21",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-sy-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-sy-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-1",
+        "guards": []
+      },
+      {
+        "id": "xy2-2",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-4",
+        "guards": []
+      },
+      {
+        "id": "xy2-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-6",
+        "guards": []
+      },
+      {
+        "id": "xy2-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-10",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-11",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-12",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-16",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-17",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-18",
+        "guards": []
+      },
+      {
+        "id": "xy2-19",
+        "guards": []
+      },
+      {
+        "id": "xy2-20",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-21",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-23",
+        "guards": []
+      },
+      {
+        "id": "xy2-24",
+        "guards": []
+      },
+      {
+        "id": "xy2-25",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-26",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-27",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-28",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-31",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-33",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-35",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-36",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-37",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-38",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-39",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-41",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-42",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-43",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-44",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-45",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-46",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-47",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-48",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-50",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-51",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-52",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-53",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-55",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-57",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-61",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-62",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-63",
+        "guards": []
+      },
+      {
+        "id": "xy2-64",
+        "guards": []
+      },
+      {
+        "id": "xy2-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-66",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-67",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-68",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-70",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-71",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-72",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-73",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-74",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-75",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-76",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-78",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-80",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-81",
+        "guards": []
+      },
+      {
+        "id": "xy2-82",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-83",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-84",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-86",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-87",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-100",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-101",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy2-102",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-103",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy2-107",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-108",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy2-109",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2014xy-5",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "2014xy-9",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2014xy-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-1",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-2",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-4",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-6",
+        "guards": []
+      },
+      {
+        "id": "xy3-7",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-10",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-11",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-13",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-14",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-15",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-16",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-18",
+        "guards": []
+      },
+      {
+        "id": "xy3-19",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-21",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-22",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-23",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-24",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-25",
+        "guards": []
+      },
+      {
+        "id": "xy3-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-28",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-29",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-30",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-31",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-33",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-36",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-37",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-39",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-41",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-42",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-44",
+        "guards": []
+      },
+      {
+        "id": "xy3-45",
+        "guards": []
+      },
+      {
+        "id": "xy3-46",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-47",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-48",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-49",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-50",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-51",
+        "guards": []
+      },
+      {
+        "id": "xy3-52",
+        "guards": []
+      },
+      {
+        "id": "xy3-53",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-54",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-55a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-56",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-57",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-61",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-63",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-65",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-66",
+        "guards": []
+      },
+      {
+        "id": "xy3-67",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-68",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-70",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-71",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-72",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-73",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-74",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-75",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-76",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-78",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-79",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-80",
+        "guards": []
+      },
+      {
+        "id": "xy3-81",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-82",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy3-83",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-84",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-85",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-86",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-87",
+        "guards": []
+      },
+      {
+        "id": "xy3-105",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-106",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-107",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy3-108",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-112",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy3-113",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-4",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-b-11",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-b-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-13",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-b-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-17",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-21",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-b-23",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-b-27",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-b-28",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-w-2",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-4",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-w-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-w-12",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-w-14",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-16",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-18",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-w-19",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-w-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-25",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-w-29",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-w-30",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-2",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-4",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-7",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-8",
+        "guards": []
+      },
+      {
+        "id": "xy4-9",
+        "guards": []
+      },
+      {
+        "id": "xy4-10",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-13",
+        "guards": []
+      },
+      {
+        "id": "xy4-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-16",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-18",
+        "guards": []
+      },
+      {
+        "id": "xy4-19",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-20",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-21",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-24",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-24a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-25",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-26",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-27",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-28",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-29",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-30",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-37",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-38",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-39",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-40",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-41",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-42",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-44",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-45",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-46",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-47",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-48",
+        "guards": []
+      },
+      {
+        "id": "xy4-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-50",
+        "guards": []
+      },
+      {
+        "id": "xy4-51",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-52",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-53",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-55",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-57",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-59",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-60",
+        "guards": []
+      },
+      {
+        "id": "xy4-61",
+        "guards": []
+      },
+      {
+        "id": "xy4-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-63",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-64",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-65a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-66",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-70",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-71",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-72",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-73",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-74",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-75",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-76",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-78",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-80",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-81",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-82",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-83",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-84",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-86",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-87",
+        "guards": []
+      },
+      {
+        "id": "xy4-88",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-89",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy4-90",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-113",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-114",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-115",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-116",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy4-120",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-121",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy4-122",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-2",
+        "guards": []
+      },
+      {
+        "id": "xy5-3",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-5",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-7",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-8",
+        "guards": []
+      },
+      {
+        "id": "xy5-9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-10",
+        "guards": []
+      },
+      {
+        "id": "xy5-11",
+        "guards": []
+      },
+      {
+        "id": "xy5-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-13",
+        "guards": []
+      },
+      {
+        "id": "xy5-14",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-16",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-18",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-19",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-20",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-21",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-24",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-26",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-33",
+        "guards": []
+      },
+      {
+        "id": "xy5-34",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-37",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-39",
+        "guards": []
+      },
+      {
+        "id": "xy5-40",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-41",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-42",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-44",
+        "guards": []
+      },
+      {
+        "id": "xy5-45",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-46",
+        "guards": []
+      },
+      {
+        "id": "xy5-47",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-48",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-50",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-51",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-52",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-53",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-54",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-56",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-57",
+        "guards": []
+      },
+      {
+        "id": "xy5-58",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-61",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-62",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-63",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-66",
+        "guards": []
+      },
+      {
+        "id": "xy5-67",
+        "guards": []
+      },
+      {
+        "id": "xy5-68",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-69",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-70",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-71",
+        "guards": []
+      },
+      {
+        "id": "xy5-72",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-73",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-74",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-75",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-76",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-78",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-79",
+        "guards": []
+      },
+      {
+        "id": "xy5-81",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-82",
+        "guards": []
+      },
+      {
+        "id": "xy5-83",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-84",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-86",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-87",
+        "guards": []
+      },
+      {
+        "id": "xy5-88",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-89",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-90",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-91",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-92",
+        "guards": []
+      },
+      {
+        "id": "xy5-93",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-94",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-95",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-96",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-97",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-98",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-99",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-100",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-101",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-102",
+        "guards": []
+      },
+      {
+        "id": "xy5-103",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-104",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-105",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-106",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-107",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-108",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-109",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-110",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-111",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-112",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-113",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-114",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-115",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-116",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy5-117",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-118",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-119",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-121",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-145",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-146",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-147",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-148",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-149",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-150",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-151",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-152",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-153",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-154",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy5-155",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy5-156",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "dc1-3",
+        "guards": []
+      },
+      {
+        "id": "dc1-4",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latio-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-11",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latio-12",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latio-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-14",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latio-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-19",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latio-22",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latio-23",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-24",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latio-25",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-26",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latio-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latio-28",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latio-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latia-4",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latia-6",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latia-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latia-11",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latia-12",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latia-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latia-14",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latia-16",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latia-18",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latia-21",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latia-23",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-latia-24",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latia-25",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latia-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-latia-27",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-latia-30",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-2",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-6",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-8",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-9",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-10",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-11",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-13",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-18",
+        "guards": []
+      },
+      {
+        "id": "xy6-19",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-20",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-21",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-22",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-23",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-24",
+        "guards": []
+      },
+      {
+        "id": "xy6-25",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-26",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-27",
+        "guards": []
+      },
+      {
+        "id": "xy6-28",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-30",
+        "guards": []
+      },
+      {
+        "id": "xy6-31",
+        "guards": []
+      },
+      {
+        "id": "xy6-32",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-37",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-39",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-41",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-42",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-44",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-45",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-46",
+        "guards": []
+      },
+      {
+        "id": "xy6-47",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-48",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-49",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-50",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-51",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-52",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-53",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-55",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-56",
+        "guards": []
+      },
+      {
+        "id": "xy6-57",
+        "guards": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "xy6-58",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-61",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-62",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-63",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-65",
+        "guards": []
+      },
+      {
+        "id": "xy6-66",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-69",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-70",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-72",
+        "guards": []
+      },
+      {
+        "id": "xy6-73",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-74",
+        "guards": []
+      },
+      {
+        "id": "xy6-75",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-76",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-77a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-78",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-80",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-81",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-82",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-98",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-99",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-100",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-101",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy6-102",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-103",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-104",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy6-105",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy6-106",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-2",
+        "guards": []
+      },
+      {
+        "id": "xy7-3",
+        "guards": []
+      },
+      {
+        "id": "xy7-4",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-7",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-9",
+        "guards": []
+      },
+      {
+        "id": "xy7-10",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-11",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-12",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-14",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-16",
+        "guards": []
+      },
+      {
+        "id": "xy7-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-18",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-19",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-21",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-22",
+        "guards": []
+      },
+      {
+        "id": "xy7-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-24",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-25",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-27",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-28",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-29",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-30",
+        "guards": []
+      },
+      {
+        "id": "xy7-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-33",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-34",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-37",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-39",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-40",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-41",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-42",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-44",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-45",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-46",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-47",
+        "guards": []
+      },
+      {
+        "id": "xy7-48",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-50",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-51",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-52",
+        "guards": []
+      },
+      {
+        "id": "xy7-53",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-57",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-58",
+        "guards": []
+      },
+      {
+        "id": "xy7-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-60",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-61",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-63",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-65",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-66",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-68",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-84",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-86",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-87",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-88",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-89",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-90",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-91",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy7-92",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-93",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-94",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy7-96",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-97",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy7-98",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-2",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-3",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-6",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-8",
+        "guards": []
+      },
+      {
+        "id": "xy8-9",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-10",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-11",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-16",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-17",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-18",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-19",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-21",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-23",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-24",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-25",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-29",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-30",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-36",
+        "guards": []
+      },
+      {
+        "id": "xy8-37",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-38",
+        "guards": []
+      },
+      {
+        "id": "xy8-39",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-41",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-42",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-44",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-45",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-46",
+        "guards": []
+      },
+      {
+        "id": "xy8-47",
+        "guards": []
+      },
+      {
+        "id": "xy8-48",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-49",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-50",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-52",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-53",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-56",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-57",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-60",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-61",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-63",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-66",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-67",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-69",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-70",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-71",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-72",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-73",
+        "guards": []
+      },
+      {
+        "id": "xy8-74",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-75",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-76",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-78",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-80",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-81",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-82",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-83",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-84",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-85",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-86",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-87",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-88",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-89",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-90",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-91",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-92",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-93",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-94",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-95",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-96",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-97",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-98",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-99",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-100",
+        "guards": []
+      },
+      {
+        "id": "xy8-101",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-102",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-103",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-104",
+        "guards": []
+      },
+      {
+        "id": "xy8-105",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-106",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-107",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-108",
+        "guards": []
+      },
+      {
+        "id": "xy8-109",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-110",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-111",
+        "guards": [
+          0,
+          2
+        ]
+      },
+      {
+        "id": "xy8-112",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-113",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-114",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-115",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-116",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-117",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-118",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-119",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-120",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-121",
+        "guards": []
+      },
+      {
+        "id": "xy8-122",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-123",
+        "guards": []
+      },
+      {
+        "id": "xy8-124",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-125",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-126",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-127",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-128",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-129",
+        "guards": []
+      },
+      {
+        "id": "xy8-130",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy8-131",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-132",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-153",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-154",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-155",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-156",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-157",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-158",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy8-159",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-160",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-163",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy8-164",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "2015xy-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2015xy-2",
+        "guards": []
+      },
+      {
+        "id": "2015xy-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2015xy-5",
+        "guards": []
+      },
+      {
+        "id": "2015xy-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2015xy-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2015xy-9",
+        "guards": []
+      },
+      {
+        "id": "2015xy-10",
+        "guards": []
+      },
+      {
+        "id": "2015xy-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2015xy-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-1",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-2",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-4",
+        "guards": []
+      },
+      {
+        "id": "xy9-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-8",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-10",
+        "guards": []
+      },
+      {
+        "id": "xy9-11",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-12",
+        "guards": []
+      },
+      {
+        "id": "xy9-13",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-14",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-15",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-16",
+        "guards": []
+      },
+      {
+        "id": "xy9-17",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-18",
+        "guards": []
+      },
+      {
+        "id": "xy9-19",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-21",
+        "guards": []
+      },
+      {
+        "id": "xy9-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-23",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-24",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-25",
+        "guards": []
+      },
+      {
+        "id": "xy9-26",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-29",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-30",
+        "guards": []
+      },
+      {
+        "id": "xy9-31",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-33",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-34",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-35",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-37",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-39",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-40",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-41",
+        "guards": []
+      },
+      {
+        "id": "xy9-42",
+        "guards": []
+      },
+      {
+        "id": "xy9-43",
+        "guards": []
+      },
+      {
+        "id": "xy9-44",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-45",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-46",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-47",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-48",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-50",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-51",
+        "guards": []
+      },
+      {
+        "id": "xy9-52",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-53",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-55",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-57",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-58",
+        "guards": []
+      },
+      {
+        "id": "xy9-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-61",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-63",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-66",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-67",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-70",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-71",
+        "guards": []
+      },
+      {
+        "id": "xy9-72",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-73",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-74",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-75",
+        "guards": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-76",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-77",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-78",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-80",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-81",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-82",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-83",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-84",
+        "guards": []
+      },
+      {
+        "id": "xy9-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-86",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-87",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-88",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-89",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-90",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-91",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-92",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-93",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-94",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy9-95",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-114",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-115",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-116",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-117",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-118",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-119",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy9-120",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-121",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy9-123",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-3",
+        "guards": []
+      },
+      {
+        "id": "g1-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-7",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-16",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "g1-19",
+        "guards": []
+      },
+      {
+        "id": "g1-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-21",
+        "guards": []
+      },
+      {
+        "id": "g1-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-26",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-27",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-28a",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-29",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "g1-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-32",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-34",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-35",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-37",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-39",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-40",
+        "guards": []
+      },
+      {
+        "id": "g1-41",
+        "guards": []
+      },
+      {
+        "id": "g1-42",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-43",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "g1-44",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-45",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-47",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-48",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-50",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-51",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-52",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-53",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-54",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-55",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-57",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-RC16",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-RC17",
+        "guards": []
+      },
+      {
+        "id": "g1-RC18",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC19",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC22",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-RC23",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-RC30",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "g1-RC31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "g1-RC9",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-p-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-4",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-p-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-11",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-p-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-15",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-p-16",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-19",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-p-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-23",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-p-24",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-p-25",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-p-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-p-28",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-p-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-su-4",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-su-6",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-su-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-su-11",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-su-12",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-su-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-su-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-su-16",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-su-18",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-su-21",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-su-23",
+        "guards": []
+      },
+      {
+        "id": "tk-xy-su-24",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-su-25",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-su-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "tk-xy-su-27",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "tk-xy-su-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-1",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-2",
+        "guards": []
+      },
+      {
+        "id": "xy10-3",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-4",
+        "guards": []
+      },
+      {
+        "id": "xy10-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-6",
+        "guards": []
+      },
+      {
+        "id": "xy10-7",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-9",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-10",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-12",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-13",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-14",
+        "guards": []
+      },
+      {
+        "id": "xy10-15",
+        "guards": []
+      },
+      {
+        "id": "xy10-16",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-17",
+        "guards": []
+      },
+      {
+        "id": "xy10-18",
+        "guards": []
+      },
+      {
+        "id": "xy10-19",
+        "guards": []
+      },
+      {
+        "id": "xy10-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-21",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-23",
+        "guards": []
+      },
+      {
+        "id": "xy10-24",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-25",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-28",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-29",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-31",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-34",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-36",
+        "guards": []
+      },
+      {
+        "id": "xy10-38",
+        "guards": []
+      },
+      {
+        "id": "xy10-39",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-41",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-42",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-43a",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-44",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-45",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-46",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-48",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-49",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-50",
+        "guards": []
+      },
+      {
+        "id": "xy10-51",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-52",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-53",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-54",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-54a",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-57",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-59",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-61",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-62",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-63",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-64",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-65",
+        "guards": []
+      },
+      {
+        "id": "xy10-66",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-70",
+        "guards": []
+      },
+      {
+        "id": "xy10-71",
+        "guards": [
+          0,
+          0
+        ]
+      },
+      {
+        "id": "xy10-72",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-73",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-74",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-75",
+        "guards": []
+      },
+      {
+        "id": "xy10-76",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-77",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-78",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-80",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-81",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy10-82",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-83",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-84",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-85",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-86",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-87",
+        "guards": []
+      },
+      {
+        "id": "xy10-88",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-89",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-116",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-117",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-118",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-119",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-120",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-121",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy10-122",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-123",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy10-125",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-1",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-2",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-3",
+        "guards": []
+      },
+      {
+        "id": "xy11-4",
+        "guards": []
+      },
+      {
+        "id": "xy11-5",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-7",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-8",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-9",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-10",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-11",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-12",
+        "guards": []
+      },
+      {
+        "id": "xy11-13",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-14",
+        "guards": []
+      },
+      {
+        "id": "xy11-15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-16",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-17",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy11-18",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy11-19",
+        "guards": []
+      },
+      {
+        "id": "xy11-20",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-21",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-23",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-24",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-25",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-27",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-28",
+        "guards": []
+      },
+      {
+        "id": "xy11-29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-30",
+        "guards": []
+      },
+      {
+        "id": "xy11-31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-32",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-34",
+        "guards": []
+      },
+      {
+        "id": "xy11-35",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-36",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-37",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-38",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-39",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy11-40",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-41",
+        "guards": []
+      },
+      {
+        "id": "xy11-42",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-44",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy11-45",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-46",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-47",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-48",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-49",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-50",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-51",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-52",
+        "guards": []
+      },
+      {
+        "id": "xy11-53",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-55",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-56",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-57",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-58",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-59",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-60",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-61",
+        "guards": []
+      },
+      {
+        "id": "xy11-62",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-63",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-64",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-65",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-66",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-70",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-71",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-72",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy11-73",
+        "guards": []
+      },
+      {
+        "id": "xy11-74",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-75",
+        "guards": []
+      },
+      {
+        "id": "xy11-76",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-77",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-78",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-79",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-80",
+        "guards": []
+      },
+      {
+        "id": "xy11-81",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-82",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-83",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-84",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-85",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-86",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-87",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-88",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-89",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-90",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-91",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-92",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-93",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-94",
+        "guards": []
+      },
+      {
+        "id": "xy11-95",
+        "guards": []
+      },
+      {
+        "id": "xy11-96",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-97",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-107",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-108",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-109",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-110",
+        "guards": []
+      },
+      {
+        "id": "xy11-111",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy11-112",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-115",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy11-116",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "2016xy-1",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2016xy-3",
+        "guards": []
+      },
+      {
+        "id": "2016xy-4",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2016xy-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2016xy-6",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2016xy-7",
+        "guards": []
+      },
+      {
+        "id": "2016xy-8",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "2016xy-9",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2016xy-10",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "2016xy-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "2016xy-12",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-1",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-2",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-3",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-4",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-5",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-6",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-7",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-8",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-10",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-11",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-12",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-13",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-14",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-15",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-16",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-17",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-18",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-19",
+        "guards": []
+      },
+      {
+        "id": "xy12-20",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-21",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-22",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-23",
+        "guards": []
+      },
+      {
+        "id": "xy12-24",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-25",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-26",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-27",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-28",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-29",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-30",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-31",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-32",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-33",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-34",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-35",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-36",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-37",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-38",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-39",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-40",
+        "guards": []
+      },
+      {
+        "id": "xy12-41",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-42",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-43",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-44",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-45",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-46",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-47",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-48",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-49",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-50",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-51",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-52",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-53",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-54",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-55",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-56",
+        "guards": [
+          1
+        ]
+      },
+      {
+        "id": "xy12-57",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-58",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-59",
+        "guards": []
+      },
+      {
+        "id": "xy12-60",
+        "guards": []
+      },
+      {
+        "id": "xy12-61",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-62",
+        "guards": []
+      },
+      {
+        "id": "xy12-63",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-64",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-65",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-66",
+        "guards": []
+      },
+      {
+        "id": "xy12-67",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-68",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-69",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-70",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-71",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-72",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-100",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-101",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-102",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-103",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-104",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-105",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-106",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-109",
+        "guards": [
+          0
+        ]
+      },
+      {
+        "id": "xy12-110",
+        "guards": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "xy12-111",
+        "guards": []
+      },
+      {
+        "id": "xy12-112",
+        "guards": []
+      }
+    ],
+    "failures": [],
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+  },
+  "focused": {
+    "passed": true,
+    "checks": [
+      "Every XY printing retains its complete printed attack costs, HP and damage",
+      "XY Venipede has 70 HP and 20 Poison Sting while BW printing stays distinct",
+      "Delta Evolution in hand cannot permit an ordinary Banette to evolve early",
+      "Delta Evolution in bench cannot permit an ordinary Banette to evolve early",
+      "Delta Evolution in opponent cannot permit an ordinary Banette to evolve early",
+      "Delta Evolution permits only its own eligible hand evolution",
+      "Dry Skin uses effective attacker type 3 rather than printed type",
+      "Dry Skin uses effective attacker type 1 rather than printed type",
+      "Dry Skin does not reduce damage that ignores defender effects",
+      "Light of Life checks the exact Yveltal family with xy1-78",
+      "Light of Life checks the exact Yveltal family with xy1-79",
+      "Light of Life checks the exact Yveltal family with bw1-1",
+      "Cross Slicer respects attack-effect prevention false",
+      "Cross Slicer respects attack-effect prevention true",
+      "Time Freeze respects attack-effect prevention false",
+      "Time Freeze respects attack-effect prevention true",
+      "Burning Energy returns after a compiled attack actually discards it",
+      "Burning Energy returns after native attacks as well as compiled attacks",
+      "Burning Energy discarded from a Bench Pokemon does not return for another attacker",
+      "xy Delta Evolution is an Ancient Trait even under Garbotoxin",
+      "xy Dry Skin switches off under BW Garbotoxin",
+      "xy Cross Slicer clears when its target switches",
+      "xy Time Freeze clears when its target switches",
+      "xy BW Mew-EX copies Light of Life with the correct named bonus",
+      "xy BW Mew-EX copied Cross Slicer respects the target shield",
+      "expanded Delta Evolution is an Ancient Trait even under Garbotoxin",
+      "expanded Dry Skin switches off under BW Garbotoxin",
+      "expanded Cross Slicer clears when its target switches",
+      "expanded Time Freeze clears when its target switches",
+      "expanded BW Mew-EX copies Light of Life with the correct named bonus",
+      "expanded BW Mew-EX copied Cross Slicer respects the target shield",
+      "Burning Energy cannot return when an opponent discards it with an attack",
+      "Burning Energy discarded by a Trainer is not a return trigger",
+      "Xerosic discards opponent attached Special Energy to its owner",
+      "Xerosic discards own attached Special Energy to its owner",
+      "Bleh sees ordinary attached Energy in the shared Energy view",
+      "Hyper Beam sees ordinary attached Energy in the shared Energy view",
+      "Rip Claw sees ordinary attached Energy in the shared Energy view",
+      "Stardust requires a successful Special Energy discard from Active: none",
+      "Stardust requires a successful Special Energy discard from Active: bench",
+      "Stardust requires a successful Special Energy discard from Active: active",
+      "Native attack-index guards stay inside their printing attack list",
+      "Greninja Mist Slash ignores weakness, resistance and defender shields; boost=false",
+      "Greninja Mist Slash ignores weakness, resistance and defender shields; boost=true",
+      "Pyroar Inferno Onrush applies its printed self damage",
+      "Bleh respects attack-effect shields while discarding Energy",
+      "Hyper Beam respects attack-effect shields while discarding Energy",
+      "Rip Claw respects attack-effect shields while discarding Energy",
+      "Wonder Energy prevents Stardust discard and its conditional shield",
+      "Hyper Beam applies Shield Energy reduction before discarding it",
+      "Rip Claw applies Shield Energy reduction before discarding it",
+      "Stardust applies Shield Energy reduction before discarding it",
+      "Benched Pyroar pays Flare Command from itself",
+      "Pyroar cannot pay Flare Command from another Pokemon",
+      "Flare Command accepts attached Burning Energy but never returns it as an attack discard",
+      "Flare Command rejects an empty opposing Bench before spending Energy"
+    ],
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+  },
+  "source": {
+    "passed": true,
+    "status": "source-validated-not-yet-packaged",
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+    "ruleAdapterSha256": "e390f4d43fd5acf3d48cfc24f9b2da21bbe82500e4796b759c696c81f33dc2a4",
+    "printings": 2208,
+    "pending": 0,
+    "printedAttacks": 2787,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "power": {
+      "resolved": 129,
+      "unavailable": 247
+    },
+    "trainer": {
+      "resolved": 582,
+      "unavailable": 68
+    },
+    "games": [
+      {
+        "decks": [
+          "Empoleon",
+          "Yveltal Garb"
+        ],
+        "level": "easy",
+        "decisions": 36,
+        "turn": 6,
+        "finished": true,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Rayquaza EX",
+          "Primal Groudon EX"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Greninja BREAK",
+          "M Audino EX"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 12,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "VespiPlume",
+          "Volcanion EX"
+        ],
+        "level": "normal",
+        "decisions": 44,
+        "turn": 5,
+        "finished": true,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Gardevoir EX",
+          "M Mewtwo Garb"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Empoleon"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Yveltal Garb",
+          "Archiestoise"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 5,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Primal Groudon EX",
+          "Seismitoad Shaymin"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 8,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Audino EX",
+          "Night March"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Volcanion EX",
+          "Gyarados"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 9,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "M Mewtwo Garb",
+          "Vespiquen"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 10,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Archiestoise",
+          "M Rayquaza EX"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Seismitoad Shaymin",
+          "Greninja BREAK"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Night March",
+          "VespiPlume"
+        ],
+        "level": "easy",
+        "decisions": 80,
+        "turn": 6,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Gyarados",
+          "M Gardevoir EX"
+        ],
+        "level": "hard",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      },
+      {
+        "decks": [
+          "Vespiquen",
+          "Yveltal Garb"
+        ],
+        "level": "normal",
+        "decisions": 80,
+        "turn": 7,
+        "finished": false,
+        "replay": true,
+        "undo": true
+      }
+    ],
+    "fixtureAdjustments": [
+      {
+        "name": "Greninja BREAK",
+        "originalTotal": 59,
+        "added": "bw1-107",
+        "amount": 1,
+        "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+      },
+      {
+        "name": "Volcanion EX",
+        "originalTotal": 59,
+        "added": "bw1-106",
+        "amount": 1,
+        "reason": "Cached 59-card list completed for this test fixture only; saved decks unchanged"
+      }
+    ],
+    "smokeFixtureCorrections": [],
+    "shared": [
+      {
+        "name": "xy-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-xy-tests.log"
+      },
+      {
+        "name": "bw-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-bw-tests.log"
+      },
+      {
+        "name": "hgss-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-hgss-tests.log"
+      },
+      {
+        "name": "dp-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-dp-tests.log"
+      },
+      {
+        "name": "ex-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-ex-tests.log"
+      },
+      {
+        "name": "wotc-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-wotc-tests.log"
+      },
+      {
+        "name": "undo-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-undo-tests.log"
+      },
+      {
+        "name": "bot-tests",
+        "passed": true,
+        "exitCode": 0,
+        "log": "work\\rules-research\\xy-regression-bot-tests.log"
+      }
+    ],
+    "scope": "BW onward through implemented XY; Unlimited deferred",
+    "limits": "Finite focused, branch and bounded game checks; not an exhaustive proof of every board state. Packaged builds still require their own verification.",
+    "trainerToolAttacks": 2
+  },
+  "basic": {
+    "passed": true,
+    "checks": [
+      "bw1-111 Darkness Energy stays Basic and has no Special Energy effects",
+      "bw1-112 Metal Energy stays Basic and has no Special Energy effects",
+      "col1-94 Darkness Energy stays Basic and has no Special Energy effects",
+      "col1-95 Metal Energy stays Basic and has no Special Energy effects",
+      "dp1-129 Darkness Energy stays Basic and has no Special Energy effects",
+      "dp1-130 Metal Energy stays Basic and has no Special Energy effects",
+      "g1-81 Darkness Energy stays Basic and has no Special Energy effects",
+      "g1-82 Metal Energy stays Basic and has no Special Energy effects",
+      "hgss1-121 Darkness Energy stays Basic and has no Special Energy effects",
+      "hgss1-122 Metal Energy stays Basic and has no Special Energy effects",
+      "sm3-168 Darkness Energy stays Basic and has no Special Energy effects",
+      "xy1-138 Darkness Energy stays Basic and has no Special Energy effects",
+      "xy1-139 Metal Energy stays Basic and has no Special Energy effects",
+      "xy12-97 Darkness Energy stays Basic and has no Special Energy effects",
+      "xy12-98 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-2 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-3 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-5 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-6 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-7 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-8 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-9 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-10 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-18 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-19 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-22 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-22 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-xy-b-24 Metal Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-26 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-xy-n-28 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-10 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-20 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-22 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-24 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-26 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-28 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-3 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-5 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-6 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-7 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-8 Darkness Energy stays Basic and has no Special Energy effects",
+      "tk-bw-z-9 Darkness Energy stays Basic and has no Special Energy effects",
+      "neo1-104 retains its printed Special Darkness behavior",
+      "ex1-93 retains its printed Special Darkness behavior"
+    ],
+    "printings": [
+      "bw1-111",
+      "bw1-112",
+      "col1-94",
+      "col1-95",
+      "dp1-129",
+      "dp1-130",
+      "g1-81",
+      "g1-82",
+      "hgss1-121",
+      "hgss1-122",
+      "sm3-168",
+      "xy1-138",
+      "xy1-139",
+      "xy12-97",
+      "xy12-98",
+      "tk-xy-b-2",
+      "tk-xy-b-3",
+      "tk-xy-b-5",
+      "tk-xy-b-6",
+      "tk-xy-b-7",
+      "tk-xy-b-8",
+      "tk-xy-b-9",
+      "tk-xy-b-10",
+      "tk-xy-b-18",
+      "tk-xy-n-19",
+      "tk-xy-b-22",
+      "tk-xy-n-22",
+      "tk-xy-b-24",
+      "tk-xy-n-26",
+      "tk-xy-n-28",
+      "tk-bw-z-10",
+      "tk-bw-z-20",
+      "tk-bw-z-22",
+      "tk-bw-z-24",
+      "tk-bw-z-26",
+      "tk-bw-z-28",
+      "tk-bw-z-3",
+      "tk-bw-z-5",
+      "tk-bw-z-6",
+      "tk-bw-z-7",
+      "tk-bw-z-8",
+      "tk-bw-z-9"
+    ],
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68"
+  },
+  "desktop": {
+    "passed": true,
+    "version": "1.13.3",
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3339,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246432985,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813590178,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "b4bff0223caece61f1d0cf59b5609c9a09ad3049bb7963ba71d6a0b52e861f4b"
+  },
+  "android": {
+    "passed": true,
+    "version": "1.13.3-android.6",
+    "versionCode": 6,
+    "engineSha256": "0b857042401c6731b0a2250cd963fae7d9a35f5b8f97ce80892950821fb6cf68",
+    "sha256": "fb52fedc46d71fdd3aacb2260621e39919e3cccaf7d5c0da3f117cdabedff664",
+    "sameSigningCertificateAsPrevious": true,
+    "mobileChecks": 59,
+    "apkChecks": 28,
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "limits": "Finite printing audits, expected-result cases, branch tests and bounded games; not a proof of every possible interaction. Physical Android/emulator acceptance remains pending."
+}

@@ -1,3 +1,4 @@
+import {xyEnergyCards,xyEnergyView,xyDiscardEnergy} from '../../../tcg-lab-xy-energy';
 import { TrainerCard } from '../../../game/store/card/trainer-card';
 import { TrainerType, EnergyType } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -32,7 +33,7 @@ function* playCard(
   let hasPokemonWithEnergy = false;
   const blocked: CardTarget[] = [];
   opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList, card, target) => {
-    if (cardList.energies.cards.some((c) => c.energyType === EnergyType.SPECIAL)) {
+    if (xyEnergyCards(cardList).some((c) => c.energyType === EnergyType.SPECIAL)) {
       hasPokemonWithEnergy = true;
     } else {
       blocked.push(target);
@@ -73,7 +74,7 @@ function* playCard(
     new ChooseCardsPrompt(
       player,
       GameMessage.CHOOSE_CARD_TO_DISCARD,
-      target.energies,
+      xyEnergyView(target),
       { energyType: EnergyType.SPECIAL },
       { min: 1, max: 1, allowCancel: false },
     ),
@@ -85,10 +86,7 @@ function* playCard(
 
   if (cards.length > 0) {
     // Discard selected special energy card
-    MOVE_CARDS(store, state, target, opponent.discard, {
-      cards: cards,
-      sourceCard: effect.trainerCard,
-    });
+    xyDiscardEnergy(store,state,target,cards,effect.trainerCard,effect);
   }
 
   return state;

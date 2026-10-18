@@ -39,3 +39,8 @@ Latest selected backlog work: pack opening simulator, completed October 15, 2026
 
 
 - [x] **Android app with touch controls:** Android release candidate built October 17, 2026. Signed installable APK, phone/tablet layouts, tap placement, dragging, long-press previews, native workspace import/export and verified image cache. Landscape fits the full match on one screen as of the versionCode 2 update; 59 mobile emulation and 28 package checks pass. Physical Android/emulator acceptance remains unverified; see work/rules-research/ANDROID-PROGRESS.md. No online multiplayer or Play Store publication added.
+
+
+Standing card-implementation scope (Kenneth, October 17, 2026): Black & White onward for XY and all future batches, building toward Expanded. Keep historical profiles intact; Unlimited stays deferred. This scope instruction does not select another backlog feature. See work/rules-research/XY-PROGRESS.md.
+
+- [x] **Realistic Player difficulty:** Implemented October 18, 2026 in ILEX.GG 1.14.0. Tournament-informed local strategy/search, contextual resource and prize decisions, background planning and cancellation. Existing difficulties retained. Research and finite validation: work/rules-research/realistic-bot-release.json.

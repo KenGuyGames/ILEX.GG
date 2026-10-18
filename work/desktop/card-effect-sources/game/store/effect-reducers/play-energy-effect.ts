@@ -65,7 +65,9 @@ export function playEnergyReducer(store: StoreLike, state: State, effect: Effect
       pokemon: pokemonCard.name
     });
     // Move card to main PokemonCardList first (so it's in the cards array)
-    effect.player.hand.moveCardTo(effect.energyCard, effect.target);
+    const source=(effect as any).source||effect.player.hand;
+    if((effect as any).source&&!source.cards.includes(effect.energyCard))throw new GameError(GameMessage.INVALID_TARGET);
+    source.moveCardTo(effect.energyCard, effect.target);
     // Then also add it to the energies CardList
     if (!effect.target.energies.cards.includes(effect.energyCard)) {
       effect.target.energies.cards.push(effect.energyCard);

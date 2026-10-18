@@ -1,0 +1,12 @@
+{
+  "failures": [
+    {
+      "name": "Burning Energy returns after native attacks as well as compiled attacks",
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(f.p.active.cards.includes(energy))\n"
+    },
+    {
+      "name": "Burning Energy discarded from a Bench Pokemon does not return for another attacker",
+      "error": "NOT_ENOUGH_ENERGY"
+    }
+  ]
+}

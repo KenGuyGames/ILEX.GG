@@ -1,0 +1,165 @@
+{
+  "status": "source-checkpoint-not-a-packaged-release",
+  "passed": true,
+  "engineSha256": "63fae0b21180762f1b784323c443d15efe498fa73ee76773d49b8ae184bc73c4",
+  "implementedWave": 185,
+  "eraCatalogTotal": 2208,
+  "standingInteractionScope": "BW onward through implemented newer sets; Expanded groundwork; Unlimited deferred",
+  "reports": {
+    "xy-focused-report": {
+      "passed": true,
+      "checks": 15,
+      "sha256": "d844a110eae1a6194c4779a536d31a04ac5acd2f6c5ed10282571a5a5d10ea7d"
+    },
+    "xy-first-smoke-report": {
+      "passed": true,
+      "scenarios": 253,
+      "sha256": "906cc718cc1b80c1581837cf7d15724eb4f147ee450ce5b9861a406c8c159ce1"
+    },
+    "xy-first-repair-report": {
+      "passed": true,
+      "scenarios": 8,
+      "sha256": "af815188b4f1f1d338d3ed1f358f5d7680afc6cf631c8fdac275bdff59c4791f"
+    },
+    "xy-power-audit": {
+      "passed": true,
+      "sha256": "59955e136b652019ab748c262b3c96ef695479fbb72c2490282729562e399f08"
+    },
+    "xy-trainer-audit": {
+      "passed": true,
+      "sha256": "8e4e29a2f3658caceadf9bfa027b8937757a71a83f22f46d6045c8a196e2343d"
+    },
+    "xy-match-audit": {
+      "passed": true,
+      "games": 3,
+      "sha256": "10385f66eff6a3bf6a3156cd46479357c2ea1dfd0b6c6deb9429351607c8eaf0"
+    },
+    "bw-focused-test-report": {
+      "passed": true,
+      "checks": 66,
+      "sha256": "91a9508b71be5d40d4e7c5fc0ed44cb00e0c5cca66b96ed8692501b2aeb614b7"
+    },
+    "hgss-focused-test-report": {
+      "passed": true,
+      "checks": 32,
+      "sha256": "56e76c6a42957fda1ff4c5fe1fd5950eae20a20a858312358eb7843a2201c311"
+    },
+    "dp-focused-test-report": {
+      "passed": true,
+      "checks": 109,
+      "sha256": "d767f36f45f45d12b1862fb34a40fbb74f22a657cb9862342595e53c65d735e0"
+    },
+    "ex-focused-test-report": {
+      "passed": true,
+      "checks": 170,
+      "sha256": "6fe9cca0d579eda67ea519ed85d2cf8d9b8d447528816d65ce19ace2220dc0d4"
+    }
+  },
+  "files": [
+    {
+      "path": "work/desktop-build/xy-library.cjs",
+      "sha256": "32d656ea8dc7d613d1ee8cef2bc5a69a99e6b3e6207b07c59b9462a798abd6ed"
+    },
+    {
+      "path": "work/desktop-build/xy-attack-patterns.cjs",
+      "sha256": "308abebb296f3e4d6f8ba5a9b25f2e457243e687e692cc1faaa1e1f28a1d258a"
+    },
+    {
+      "path": "work/desktop-build/xy-tests.cjs",
+      "sha256": "b7af43f6e2f200b60bee9dc256b09dd669e58ed936ed75b47e5feef8a8b96330"
+    },
+    {
+      "path": "work/desktop-build/xy-test-cases.js",
+      "sha256": "6cac570c18a1377b3b0953fe042feb90d5c33a1ba5c24e8a3e6c8ec0c0b925fd"
+    },
+    {
+      "path": "work/desktop-build/xy-first-sweep.cjs",
+      "sha256": "ba02d9c13e21ed85c442beddb229d41674983c93d613f441aa9674c799136fbf"
+    },
+    {
+      "path": "work/desktop-build/xy-power-audit.cjs",
+      "sha256": "bafd184fa63be43021ad548e09285a463746aeb2a96cd8ff849dcf083aaa8562"
+    },
+    {
+      "path": "work/desktop-build/xy-trainer-audit.cjs",
+      "sha256": "a279494f696fd55992ee023d01d83785a56038fd73c4bf58a29e7f2529d0c959"
+    },
+    {
+      "path": "work/desktop-build/xy-match-audit.cjs",
+      "sha256": "97a1869b994e5377827c039fde8868c1d57a5c732b8c9f286661ec08e7323af1"
+    },
+    {
+      "path": "work/desktop/ui/rules-match.js",
+      "sha256": "8d036a40e2338454fead61faafb80548b797a6272d3fb756dd0a699be5cfff4c"
+    },
+    {
+      "path": "work/desktop/ui/bot-ai.js",
+      "sha256": "ad4f32732291e5deee86a487001dca9eb5ed0fa5b4a48916bddfb5af858c1970"
+    },
+    {
+      "path": "work/desktop/ui/rules-engine.js",
+      "sha256": "63fae0b21180762f1b784323c443d15efe498fa73ee76773d49b8ae184bc73c4"
+    },
+    {
+      "path": "work/desktop/ui/rules-card-map.json",
+      "sha256": "88c9c261181bc1e5da4048dbf39eedc60f51d7609be5384b7f822fa73c8198cf"
+    },
+    {
+      "path": "work/desktop/ui/xy-coverage.json",
+      "sha256": "61422762f1b4bfcebc43a6a1ae602f92dc0721879c82400ad55f381f4157bd24"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-xy-data.ts",
+      "sha256": "fd6c1afcce964e7dbfe04e80900da6bd7dee9875e61f1d93999e91d23e912471"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-xy-evolution.ts",
+      "sha256": "f1ea82e9daa90daf5dede89ae90e05d5fbfe8b5c90408b2f024292d679d726a3"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-wotc.ts",
+      "sha256": "6af1aecfb24288fcbe93020ad4362310b5b26980cfabaa15500d495e08379cac"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/game/store/prefabs/prefabs.ts",
+      "sha256": "a5f2cd81e7ebf54b611a2fac60314c62f39f75a8feb5cf2b675ab8c82f159ee4"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/game/store/prefabs/tool-prefabs.ts",
+      "sha256": "0fc43020cb19a56f19258fb079deb9339eda224d66003a6c431a797b092c1c65"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/game/store/prompts/attach-energy-prompt.ts",
+      "sha256": "f211f155a39c1ba1bd254e782a3d10897d2566a4e4fe7fa27fdd4f65866a08bb"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/game/store/effect-reducers/play-energy-effect.ts",
+      "sha256": "bfb2584cf3b2721bbe0636b1e5f95412ae50aa9ccf0fd0a3af018141caa0d429"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/game/store/effect-reducers/play-pokemon-effect.ts",
+      "sha256": "6d27edf14022598f026e9575e106ebb51dfe82dbcab4b6676a93fc79ba25a083"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/game/store/effect-reducers/game-effect.ts",
+      "sha256": "ce8411744410fb371086df5fdc79a2c70f1c713f38862dfd87e977a5198b3e87"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/sets/06-black-and-white/set-emerging-powers/pokemon-catcher.ts",
+      "sha256": "505dd4dd9b5877a69d69d6d58d92d6d4645df9fc7bda63397ea8c11987ca9af4"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/sets/07-x-and-y/set-x-and-y/evosoda.ts",
+      "sha256": "2ccf2f7135d40b889da312f59cfefdd62a22d4306cdf72751740d2e8054cb1f8"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/sets/07-x-and-y/set-x-and-y/trevenant.ts",
+      "sha256": "34d339a1a5194317d9af9d2a7274b1053e1250764cb0d2c33d848ff5fc93fe00"
+    },
+    {
+      "path": "work/rules-research/twinleafgg-main/ptcg-server/src/sets/07-x-and-y/set-steam-siege/xerneas.ts",
+      "sha256": "5113eea2e317cdc6fd499ad2ab9871b753b044ba6a1a753ae045332f7d554603"
+    }
+  ],
+  "releaseArtifactsUpdated": false
+}

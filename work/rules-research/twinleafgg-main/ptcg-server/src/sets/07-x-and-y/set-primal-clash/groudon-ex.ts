@@ -1,3 +1,4 @@
+import {xyEnergyCards,xyEnergyView,xyDiscardEnergy,xyAfterAttack} from '../../../tcg-lab-xy-energy';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, SuperType } from '../../../game/store/card/card-types';
 import { StoreLike, State, Card, ChooseCardsPrompt, GameMessage } from '../../../game';
@@ -32,13 +33,14 @@ export class GroudonEx extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     // Rip Claw
-    if (WAS_ATTACK_USED(effect, 0, this)) {
+    const completed=xyAfterAttack(effect,0,this);
+    if(completed){effect=completed;
       const player = effect.player;
       const opponent = effect.opponent;
 
       COIN_FLIP_PROMPT(store, state, player, (result) => {
         if (result) {
-          if (!opponent.active.energies.cards.some((c) => c.superType === SuperType.ENERGY)) {
+          if (!xyEnergyCards(opponent.active).some((c) => c.superType === SuperType.ENERGY)) {
             return state;
           }
 
@@ -55,7 +57,7 @@ export class GroudonEx extends PokemonCard {
             (selected) => {
               cards = selected;
 
-              MOVE_CARDS(store, state, opponent.active, opponent.discard, { cards: cards });
+              xyDiscardEnergy(store,state,opponent.active,cards,this,effect);
             },
           );
         }

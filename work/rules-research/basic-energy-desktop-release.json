@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "version": "1.13.2",
+  "engineSha256": "6896c3d0e8ca0ece986fbe7f669288916d9ef95742d954ce0838af1a2028607c",
+  "coverage": {
+    "XY": 2208,
+    "pending": 0
+  },
+  "printedPokemonAttacks": 2787,
+  "trainerToolAttacks": 2,
+  "branchCases": 1604,
+  "focusedChecks": 52,
+  "boundedDeckGames": 16,
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23736,
+  "sourceFilesVerified": 3333,
+  "scope": "Black & White onward through XY; Unlimited deferred",
+  "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+  "archives": [
+    {
+      "name": "ILEX.GG-Windows.zip",
+      "bytes": 246411835,
+      "crcPassed": true
+    },
+    {
+      "name": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2813568920,
+      "crcPassed": true
+    }
+  ],
+  "executableSha256": "b02ffce2cc8b636589a6f437849bad1f14fbdd851e3f432038975261ec7a5b1e"
+}

@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..');
+let s=fs.readFileSync(path.join(__dirname,'package-xy.py'),'utf8').replaceAll('v81','v83').replaceAll('1.13.0','1.13.1').replaceAll("'xy-desktop-release.json'","'table-repair-desktop-release.json'");
+s=s.replace("pack=load(root/'work/pack-test-report.json')", "repair=load(native/'table-repair-native-tests.json');assert repair['passed']\nassert load(native/'table-repair-native-tests-fresh.json')['passed']\npack=load(root/'work/pack-test-report.json')");
+s=s.replace("for name in native_names:shutil.copy2", "native_names.append('table-repair-native-tests')\nfor name in native_names:shutil.copy2");
+s=s.replace("# ILEX.GG 1.13.1", "# ILEX.GG 1.13.1\n\nFixes revealed holo Prize positions after Town Map and automatic completion of Grass damage animations. Renderer exceptions and stopped frames also release presentation automatically. The card engine is unchanged from the verified XY release.");
+fs.writeFileSync(path.join(__dirname,'package-table-repair.py'),s);
+s=fs.readFileSync(path.join(__dirname,'publish-android-xy.py'),'utf8').replaceAll('ILEX.GG-Android-XY-candidate.apk','ILEX.GG-Android-table-repair-candidate.apk').replaceAll("'xy-desktop-release.json'","'table-repair-desktop-release.json'").replaceAll("'xy-verification-report.json'","'table-repair-verification-report.json'").replaceAll("'xy-build-report.json'","'table-repair-build-report.json'").replaceAll("'xy-android-release.json'","'table-repair-android-release.json'").replaceAll('1.13.0-android.3','1.13.1-android.4').replace("'versionCode':3","'versionCode':4");
+s=s.replace("assert len(mobile['checks'])==59", "repairs=load(android/'table-repair-mobile-tests.json');assert repairs['passed'] and len(repairs['sizes'])==3 and all(r['passed'] for r in repairs['sizes'])\nassert len(mobile['checks'])==59");
+fs.writeFileSync(path.join(__dirname,'publish-android-table-repair.py'),s);
+console.log('Prepared table repair release gates');

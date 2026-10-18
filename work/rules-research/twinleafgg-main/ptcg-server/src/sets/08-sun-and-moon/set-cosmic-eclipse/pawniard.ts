@@ -3,7 +3,7 @@
 // If you have any questions or feedback, reach out to @C4 in the discord.
 
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
-import { Stage, CardType, TrainerType } from '../../../game/store/card/card-types';
+import { Stage, CardType, TrainerType, SuperType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils, GameMessage } from '../../../game';
 import { TrainerCard } from '../../../game/store/card/trainer-card';
 import { Effect } from '../../../game/store/effects/effect';
@@ -49,13 +49,13 @@ export class Pawniard extends PokemonCard {
       SHOW_CARDS_TO_PLAYER(store, state, player, opponent.hand.cards);
 
       const itemCards = opponent.hand.cards.filter(c =>
-        c instanceof TrainerCard && c.trainerType === TrainerType.ITEM
+        c instanceof TrainerCard && [TrainerType.ITEM,TrainerType.TOOL].includes(c.trainerType)
       );
 
       if (itemCards.length > 0) {
         const blocked: number[] = [];
         opponent.hand.cards.forEach((c, index) => {
-          if (!(c instanceof TrainerCard && c.trainerType === TrainerType.ITEM)) {
+          if (!(c instanceof TrainerCard && [TrainerType.ITEM,TrainerType.TOOL].includes(c.trainerType))) {
             blocked.push(index);
           }
         });
@@ -64,7 +64,7 @@ export class Pawniard extends PokemonCard {
           player,
           GameMessage.CHOOSE_CARD_TO_DISCARD,
           opponent.hand,
-          { superType: undefined as any },
+          { superType: SuperType.TRAINER },
           { min: 1, max: 1, allowCancel: false, blocked }
         ), selected => {
           const cards = selected || [];

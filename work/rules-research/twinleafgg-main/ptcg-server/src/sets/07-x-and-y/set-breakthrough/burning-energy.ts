@@ -1,4 +1,4 @@
-import { GameError, GameMessage, PlayerType, State, StoreLike } from '../../../game';
+import { GameError, GameMessage, PlayerType, State, StoreLike, StateUtils } from '../../../game';
 import { CardType, EnergyType } from '../../../game/store/card/card-types';
 import { EnergyCard } from '../../../game/store/card/energy-card';
 import { DiscardCardsEffect } from '../../../game/store/effects/attack-effects';
@@ -10,6 +10,7 @@ import { AttachEnergyEffect } from '../../../game/store/effects/play-card-effect
 import {IS_SPECIAL_ENERGY_BLOCKED, MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
 
 export class BurningEnergy extends EnergyCard {
+  public _xyBurningEnergy = true;
   public provides: CardType[] = [];
   public energyType = EnergyType.SPECIAL;
   public set: string = 'BKT';
@@ -66,35 +67,19 @@ If this card is discarded by an attack of the [R] Pokémon this card is attached
       });
     }
 
-    if (effect instanceof AttackEffect && effect.source.cards.includes(this) && effect.player.active === effect.source) {
-      if (IS_SPECIAL_ENERGY_BLOCKED(store, state, effect.player, this, effect.source)) {
-        return state;
-      }
-      effect.player.marker.addMarker(this.BURNING_EXISTANCE_MARKER, this);
+    if (effect instanceof AttackEffect && effect.source.cards.includes(this) && !IS_SPECIAL_ENERGY_BLOCKED(store,state,effect.player,this,effect.source)) {
+      (this as any)._xyBurningAttack={turn:state.turn,pokemon:effect.source.getPokemonCard()};
     }
-
-    // checking if this card is discarded while attacking
-    if (effect instanceof DiscardCardsEffect && effect.player.marker.hasMarker(this.BURNING_EXISTANCE_MARKER, this)) {
-      if (IS_SPECIAL_ENERGY_BLOCKED(store, state, effect.player, this, effect.source)) {
-        return state;
-      }
-      effect.player.marker.addMarker(this.BURNING_DISCARDED_MARKER, this);
-    }
-
-    // removing the markers and handling the reattaching of it
-    if (effect instanceof EndTurnEffect && effect.player.marker.hasMarker(this.BURNING_EXISTANCE_MARKER, this)) {
-      effect.player.marker.removeMarker(this.BURNING_EXISTANCE_MARKER, this);
-
-      // if this card was in the discard and triggered that earlier part, move it onto the acitve
-      if (effect.player.marker.hasMarker(this.BURNING_DISCARDED_MARKER, this)) {
-        effect.player.marker.removeMarker(this.BURNING_DISCARDED_MARKER, this);
-
-        if (effect.player.active !== undefined) {
-          effect.player.discard.cards.forEach(card => {
-            if (card === this) {
-              MOVE_CARDS(store, state, effect.player.discard, effect.player.active, { cards: [card], sourceCard: this });
-            }
-          });
+    // Actual card movements record a discard by this attached Pokemon's attack,
+    // regardless of whether a native or compiled attack performed the move.
+    if(effect instanceof EndTurnEffect){
+      const plan=(this as any)._xyBurningReturn;
+      delete (this as any)._xyBurningAttack;delete (this as any)._xyBurningReturn;
+      if(plan?.turn===state.turn){
+        const owner=state.players.find(p=>p.id===plan.ownerId),list=StateUtils.findPokemonSlot(state,plan.pokemon);
+        if(owner?.discard.cards.includes(this)&&list&&StateUtils.findOwner(state,list)===owner){
+          const type=new CheckPokemonTypeEffect(list);store.reduceEffect(state,type);
+          if(type.cardTypes.includes(CardType.FIRE))MOVE_CARDS(store,state,owner.discard,list,{cards:[this],sourceCard:this,sourceEffect:effect});
         }
       }
     }

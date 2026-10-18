@@ -1,3 +1,4 @@
+import {smToolCapacity} from '../../../tcg-lab-sm-environment';
 import { withWotcMindGames } from '../prefabs/wotc-trainer-cancellation';
 import {
   AttachPokemonToolEffect, TrainerEffect, PlaySupporterEffect,
@@ -181,7 +182,7 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
     if (pokemonCard === undefined) {
       throw new GameError(GameMessage.INVALID_TARGET);
     }
-    if (effect.target.tools.length >= pokemonCard.maxTools) {
+    if (effect.target.tools.length >= smToolCapacity(store,state,targetOwner,target)) {
       throw new GameError(GameMessage.POKEMON_TOOL_ALREADY_ATTACHED);
     }
     if (player.cannotPlayToolCards && !(effect as any)._exFromDeck) {

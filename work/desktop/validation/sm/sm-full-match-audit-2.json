@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through SM; twenty-four cached SM deck pairings, bounded 120 decisions each; historical SM/Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "M Rayquaza",
+        "Sylveon GX"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Darkrai GX",
+        "DeciPlume"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Metagross GX",
+        "Buzzroc"
+      ],
+      "level": "easy",
+      "decisions": 79,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Ultra Necrozma",
+        "ZoroControl"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Granbull",
+        "Pikarom"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Zoroark Checkmate",
+        "Dark Box"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "LucMetal",
+        "MewtwoMew"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "ReshiZard",
+        "Decidueye Ninetales"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

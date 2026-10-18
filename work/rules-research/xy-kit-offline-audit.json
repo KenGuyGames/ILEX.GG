@@ -1,0 +1,2445 @@
+{
+  "choices": [
+    {
+      "id": "tk-xy-latio-1",
+      "source": "xy5-113",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Charm",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Tail Smack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy5-113"
+      ]
+    },
+    {
+      "id": "tk-xy-p-1",
+      "source": "xy9-93",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Act Cute",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-93"
+      ]
+    },
+    {
+      "id": "tk-xy-w-1",
+      "source": "xy0-24",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Draining Kiss",
+          "cost": [
+            "Fairy"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy0-24"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-1",
+      "source": "xy0-31",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Razor Wind",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy0-31"
+      ]
+    },
+    {
+      "id": "tk-xy-b-1",
+      "source": "xy1-113",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Me First",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy1-113"
+      ]
+    },
+    {
+      "id": "tk-xy-n-1",
+      "source": "xy1-49",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Splash",
+          "cost": [
+            "Psychic"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy1-49"
+      ]
+    },
+    {
+      "id": "tk-xy-w-2",
+      "source": "xy2-76",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Sand-Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Ambush",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20+"
+        }
+      ],
+      "options": [
+        "xy2-76"
+      ]
+    },
+    {
+      "id": "tk-xy-n-2",
+      "source": "xy1-57",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Eerie Voice",
+          "cost": [
+            "Psychic"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Spirit Scream",
+          "cost": [
+            "Psychic",
+            "Psychic"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy1-57"
+      ]
+    },
+    {
+      "id": "tk-xy-n-3",
+      "source": "xy1-48",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Gastro Acid",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Poison Jab",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        }
+      ],
+      "options": [
+        "xy1-48"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-4",
+      "source": "xy5-75",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        },
+        {
+          "name": "Horn Drill",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xy5-75"
+      ]
+    },
+    {
+      "id": "tk-xy-p-4",
+      "source": "xy9-43",
+      "hp": "110",
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        },
+        {
+          "name": "Electroslug",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "damage": "90"
+        }
+      ],
+      "options": [
+        "xy9-43"
+      ]
+    },
+    {
+      "id": "tk-xy-w-4",
+      "source": "xy2-81",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Tail Smack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy2-81"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-4",
+      "source": "xy4-89",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "10+"
+        }
+      ],
+      "options": [
+        "xy4-89"
+      ]
+    },
+    {
+      "id": "tk-xy-b-4",
+      "source": "xy3-82",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xy3-82"
+      ]
+    },
+    {
+      "id": "tk-xy-su-4",
+      "source": "xy7-63",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Lunge",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "xy7-63"
+      ]
+    },
+    {
+      "id": "tk-xy-n-4",
+      "source": "xy0-30",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Tackle",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy0-30"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-6",
+      "source": "xy5-11",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Hook",
+          "cost": [
+            "Grass"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Beat",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "xy5-11"
+      ]
+    },
+    {
+      "id": "tk-xy-su-6",
+      "source": "xy8-47",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Cut",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "xy8-47"
+      ]
+    },
+    {
+      "id": "tk-xy-p-7",
+      "source": "xy6-70",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Double Peck",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10×"
+        }
+      ],
+      "options": [
+        "xy6-70"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-7",
+      "source": "xy5-6",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Grass"
+          ],
+          "damage": "10+"
+        }
+      ],
+      "options": [
+        "xy5-6",
+        "xyp-XY36"
+      ]
+    },
+    {
+      "id": "tk-xy-su-7",
+      "source": "xy9-36",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Lunge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-36"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-11",
+      "source": "g1-40",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Fighting"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "g1-40",
+        "xy3-44"
+      ]
+    },
+    {
+      "id": "tk-xy-p-11",
+      "source": "xy6-24",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy6-24"
+      ]
+    },
+    {
+      "id": "tk-xy-w-11",
+      "source": "xy2-75",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Peck Off",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy2-75"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-11",
+      "source": "xy0-22",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy0-22"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-11",
+      "source": "xy5-10",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Beat",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy5-10"
+      ]
+    },
+    {
+      "id": "tk-xy-b-11",
+      "source": "xy1-83",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Metal"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy1-83"
+      ]
+    },
+    {
+      "id": "tk-xy-su-11",
+      "source": "xy8-46",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy8-46"
+      ]
+    },
+    {
+      "id": "tk-xy-n-11",
+      "source": "xy1-56",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Confuse Ray",
+          "cost": [
+            "Psychic"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy1-56"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-12",
+      "source": "xy5-83",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Solar Generator",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Knock Away",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "damage": "20+"
+        }
+      ],
+      "options": [
+        "xy5-83"
+      ]
+    },
+    {
+      "id": "tk-xy-p-12",
+      "source": "xy9-48",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-48"
+      ]
+    },
+    {
+      "id": "tk-xy-w-12",
+      "source": "xy1-87",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Rollout",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Heartfelt Song",
+          "cost": [
+            "Fairy"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy1-87"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-12",
+      "source": "xy5-5",
+      "hp": "130",
+      "attacks": [
+        {
+          "name": "Mega Drain",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        },
+        {
+          "name": "Grass Knot",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "80+"
+        }
+      ],
+      "options": [
+        "xy5-5"
+      ]
+    },
+    {
+      "id": "tk-xy-b-12",
+      "source": "xy1-106",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Hyper Fang",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy1-106"
+      ]
+    },
+    {
+      "id": "tk-xy-su-12",
+      "source": "xy8-28",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Soaking Horn",
+          "cost": [
+            "Water"
+          ],
+          "damage": "10+"
+        },
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy8-28"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-13",
+      "source": "xyp-XY65",
+      "hp": "110",
+      "attacks": [
+        {
+          "name": "Supersonic Flight",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        },
+        {
+          "name": "Psyburn",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xyp-XY65"
+      ]
+    },
+    {
+      "id": "tk-xy-p-13",
+      "source": "xy6-25",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Random Spark",
+          "cost": [
+            "Lightning"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy6-25"
+      ]
+    },
+    {
+      "id": "tk-xy-w-13",
+      "source": "g1-50",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Moonlight",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Pound",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "g1-50",
+        "xy3-69"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-13",
+      "source": "bw11-RC14",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Surprise Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "bw11-RC14",
+        "bw5-83"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-13",
+      "source": "g1-8",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Absorb",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "g1-8",
+        "xy5-4"
+      ]
+    },
+    {
+      "id": "tk-xy-b-13",
+      "source": "bw3-81",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Metal"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Cut",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "bw3-81",
+        "xy0-19"
+      ]
+    },
+    {
+      "id": "tk-xy-su-13",
+      "source": "xy8-27",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy8-27"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-14",
+      "source": "g1-41",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Beatdown",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "g1-41",
+        "xy3-45"
+      ]
+    },
+    {
+      "id": "tk-xy-w-14",
+      "source": "xy1-90",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Balloon Barrage",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20×"
+        },
+        {
+          "name": "Double-Edge",
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "90"
+        }
+      ],
+      "options": [
+        "xy1-90"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-14",
+      "source": "xy0-23",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "30"
+        },
+        {
+          "name": "Double Stomp",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50+"
+        }
+      ],
+      "options": [
+        "xy0-23"
+      ]
+    },
+    {
+      "id": "tk-xy-b-14",
+      "source": "xy1-84",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Dual Blades",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "damage": "30×"
+        }
+      ],
+      "options": [
+        "xy1-84"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-15",
+      "source": "g1-49",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "g1-49",
+        "xy5-74"
+      ]
+    },
+    {
+      "id": "tk-xy-p-15",
+      "source": "xy9-42",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-42"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-15",
+      "source": "xyp-XY04",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Disarming Voice",
+          "cost": [
+            "Fairy"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Fairy Wind",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "60"
+        }
+      ],
+      "options": [
+        "xyp-XY04"
+      ]
+    },
+    {
+      "id": "tk-xy-b-15",
+      "source": "xy3-81",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Big Yawn",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy3-81"
+      ]
+    },
+    {
+      "id": "tk-xy-p-16",
+      "source": "xy6-82",
+      "hp": "40",
+      "attacks": [
+        {
+          "name": "Acrobatics",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10+"
+        }
+      ],
+      "options": [
+        "xy6-82"
+      ]
+    },
+    {
+      "id": "tk-xy-w-16",
+      "source": "g1-51",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Follow Me",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Moonblast",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "g1-51",
+        "xy3-71"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-16",
+      "source": "xy0-32",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        }
+      ],
+      "options": [
+        "xy0-32",
+        "xy0-33",
+        "xy2-87",
+        "xy4-90"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-16",
+      "source": "xy5-13",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Stampede",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy5-13"
+      ]
+    },
+    {
+      "id": "tk-xy-b-16",
+      "source": "xy0-20",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Wicked Jab",
+          "cost": [
+            "Metal"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xy0-20"
+      ]
+    },
+    {
+      "id": "tk-xy-su-16",
+      "source": "xy8-36",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Wave Splash",
+          "cost": [
+            "Water",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "xy8-36"
+      ]
+    },
+    {
+      "id": "tk-xy-n-16",
+      "source": "xy1-47",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy1-47"
+      ]
+    },
+    {
+      "id": "tk-xy-b-17",
+      "source": "xy3-84",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Safety Check",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy3-84"
+      ]
+    },
+    {
+      "id": "tk-xy-w-18",
+      "source": "xy0-24",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Draining Kiss",
+          "cost": [
+            "Fairy"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy0-24"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-18",
+      "source": "xy5-7",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Grass"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Agility",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy5-7"
+      ]
+    },
+    {
+      "id": "tk-xy-su-18",
+      "source": "xy9-37",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Brave Bird",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "80"
+        }
+      ],
+      "options": [
+        "xy9-37"
+      ]
+    },
+    {
+      "id": "tk-xy-n-18",
+      "source": "xy1-56",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Confuse Ray",
+          "cost": [
+            "Psychic"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy1-56"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-19",
+      "source": "xy5-114",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Replace",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Play Rough",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30+"
+        }
+      ],
+      "options": [
+        "xy5-114"
+      ]
+    },
+    {
+      "id": "tk-xy-p-19",
+      "source": "xy9-94",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        },
+        {
+          "name": "Nyan Press",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40+"
+        }
+      ],
+      "options": [
+        "xy9-94"
+      ]
+    },
+    {
+      "id": "tk-xy-w-19",
+      "source": "g1-50",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Moonlight",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Pound",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "g1-50",
+        "xy3-69"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-19",
+      "source": "xy0-31",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Razor Wind",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy0-31"
+      ]
+    },
+    {
+      "id": "tk-xy-n-20",
+      "source": "xy0-32",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        }
+      ],
+      "options": [
+        "xy0-32",
+        "xy0-33",
+        "xy2-87",
+        "xy4-90"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-21",
+      "source": "bw11-RC14",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Surprise Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "bw11-RC14",
+        "bw5-83"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-21",
+      "source": "xy5-11",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Hook",
+          "cost": [
+            "Grass"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Beat",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "xy5-11"
+      ]
+    },
+    {
+      "id": "tk-xy-b-21",
+      "source": "bw3-81",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Metal"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Cut",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "bw3-81",
+        "xy0-19"
+      ]
+    },
+    {
+      "id": "tk-xy-su-21",
+      "source": "xy8-47",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Cut",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "xy8-47"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-22",
+      "source": "g1-41",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Beatdown",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "g1-41",
+        "xy3-45"
+      ]
+    },
+    {
+      "id": "tk-xy-p-22",
+      "source": "xy6-25",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Random Spark",
+          "cost": [
+            "Lightning"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy6-25"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-22",
+      "source": "xy0-32",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Tight Jaw",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Sharp Fang",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        }
+      ],
+      "options": [
+        "xy0-32",
+        "xy0-33",
+        "xy2-87",
+        "xy4-90"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-23",
+      "source": "g1-49",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fighting",
+            "Fighting"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "g1-49",
+        "xy5-74"
+      ]
+    },
+    {
+      "id": "tk-xy-p-23",
+      "source": "xy9-42",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-42"
+      ]
+    },
+    {
+      "id": "tk-xy-w-23",
+      "source": "xy2-76",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Sand-Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Ambush",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20+"
+        }
+      ],
+      "options": [
+        "xy2-76"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-23",
+      "source": "xy5-10",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Beat",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy5-10"
+      ]
+    },
+    {
+      "id": "tk-xy-b-23",
+      "source": "xy1-84",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Dual Blades",
+          "cost": [
+            "Metal",
+            "Colorless"
+          ],
+          "damage": "30×"
+        }
+      ],
+      "options": [
+        "xy1-84"
+      ]
+    },
+    {
+      "id": "tk-xy-su-23",
+      "source": "xy8-46",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy8-46"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-24",
+      "source": "xy5-114",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Replace",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Play Rough",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30+"
+        }
+      ],
+      "options": [
+        "xy5-114"
+      ]
+    },
+    {
+      "id": "tk-xy-p-24",
+      "source": "xy9-94",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        },
+        {
+          "name": "Nyan Press",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40+"
+        }
+      ],
+      "options": [
+        "xy9-94"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-24",
+      "source": "xy5-6",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Quick Attack",
+          "cost": [
+            "Grass"
+          ],
+          "damage": "10+"
+        }
+      ],
+      "options": [
+        "xy5-6",
+        "xyp-XY36"
+      ]
+    },
+    {
+      "id": "tk-xy-su-24",
+      "source": "xy9-36",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Lunge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-36"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-25",
+      "source": "xy5-75",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Take Down",
+          "cost": [
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        },
+        {
+          "name": "Horn Drill",
+          "cost": [
+            "Fighting",
+            "Fighting",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xy5-75"
+      ]
+    },
+    {
+      "id": "tk-xy-p-25",
+      "source": "xy9-43",
+      "hp": "110",
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "30"
+        },
+        {
+          "name": "Electroslug",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "damage": "90"
+        }
+      ],
+      "options": [
+        "xy9-43"
+      ]
+    },
+    {
+      "id": "tk-xy-w-25",
+      "source": "xy1-87",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Rollout",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        },
+        {
+          "name": "Heartfelt Song",
+          "cost": [
+            "Fairy"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy1-87"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-25",
+      "source": "xy5-5",
+      "hp": "130",
+      "attacks": [
+        {
+          "name": "Mega Drain",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50"
+        },
+        {
+          "name": "Grass Knot",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "80+"
+        }
+      ],
+      "options": [
+        "xy5-5"
+      ]
+    },
+    {
+      "id": "tk-xy-su-25",
+      "source": "xy8-28",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Soaking Horn",
+          "cost": [
+            "Water"
+          ],
+          "damage": "10+"
+        },
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy8-28"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-26",
+      "source": "xy5-83",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Solar Generator",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Knock Away",
+          "cost": [
+            "Fighting",
+            "Colorless"
+          ],
+          "damage": "20+"
+        }
+      ],
+      "options": [
+        "xy5-83"
+      ]
+    },
+    {
+      "id": "tk-xy-p-26",
+      "source": "xy9-48",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-48"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-26",
+      "source": "g1-8",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Absorb",
+          "cost": [
+            "Grass",
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Vine Whip",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "g1-8",
+        "xy5-4"
+      ]
+    },
+    {
+      "id": "tk-xy-b-26",
+      "source": "xy3-81",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Big Yawn",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": ""
+        }
+      ],
+      "options": [
+        "xy3-81"
+      ]
+    },
+    {
+      "id": "tk-xy-su-26",
+      "source": "xy8-27",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy8-27"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-27",
+      "source": "xy5-113",
+      "hp": "50",
+      "attacks": [
+        {
+          "name": "Charm",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Tail Smack",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy5-113"
+      ]
+    },
+    {
+      "id": "tk-xy-p-27",
+      "source": "xy9-93",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Act Cute",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy9-93"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-27",
+      "source": "xy0-22",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "20"
+        }
+      ],
+      "options": [
+        "xy0-22"
+      ]
+    },
+    {
+      "id": "tk-xy-latia-27",
+      "source": "xy5-7",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Pound",
+          "cost": [
+            "Grass"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Agility",
+          "cost": [
+            "Grass",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        }
+      ],
+      "options": [
+        "xy5-7"
+      ]
+    },
+    {
+      "id": "tk-xy-b-27",
+      "source": "xy1-83",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Pierce",
+          "cost": [
+            "Metal"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy1-83"
+      ]
+    },
+    {
+      "id": "tk-xy-su-27",
+      "source": "xy9-37",
+      "hp": "80",
+      "attacks": [
+        {
+          "name": "Wing Attack",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Brave Bird",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "80"
+        }
+      ],
+      "options": [
+        "xy9-37"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-28",
+      "source": "g1-40",
+      "hp": "70",
+      "attacks": [
+        {
+          "name": "Knuckle Punch",
+          "cost": [
+            "Fighting"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "g1-40",
+        "xy3-44"
+      ]
+    },
+    {
+      "id": "tk-xy-p-28",
+      "source": "xy6-24",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy6-24"
+      ]
+    },
+    {
+      "id": "tk-xy-w-28",
+      "source": "g1-51",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Follow Me",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": ""
+        },
+        {
+          "name": "Moonblast",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "30"
+        }
+      ],
+      "options": [
+        "g1-51",
+        "xy3-71"
+      ]
+    },
+    {
+      "id": "tk-xy-b-28",
+      "source": "xy3-82",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Scratch",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Reckless Charge",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xy3-82"
+      ]
+    },
+    {
+      "id": "tk-xy-w-29",
+      "source": "xy2-75",
+      "hp": "60",
+      "attacks": [
+        {
+          "name": "Peck Off",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "10"
+        }
+      ],
+      "options": [
+        "xy2-75"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-29",
+      "source": "xy0-23",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Headbutt",
+          "cost": [
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "30"
+        },
+        {
+          "name": "Double Stomp",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "50+"
+        }
+      ],
+      "options": [
+        "xy0-23"
+      ]
+    },
+    {
+      "id": "tk-xy-latio-30",
+      "source": "xyp-XY65",
+      "hp": "110",
+      "attacks": [
+        {
+          "name": "Supersonic Flight",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "40"
+        },
+        {
+          "name": "Psyburn",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xyp-XY65"
+      ]
+    },
+    {
+      "id": "tk-xy-w-30",
+      "source": "xy1-90",
+      "hp": "100",
+      "attacks": [
+        {
+          "name": "Balloon Barrage",
+          "cost": [
+            "Colorless"
+          ],
+          "damage": "20×"
+        },
+        {
+          "name": "Double-Edge",
+          "cost": [
+            "Fairy",
+            "Fairy",
+            "Colorless"
+          ],
+          "damage": "90"
+        }
+      ],
+      "options": [
+        "xy1-90"
+      ]
+    },
+    {
+      "id": "tk-xy-sy-30",
+      "source": "xyp-XY04",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Disarming Voice",
+          "cost": [
+            "Fairy"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Fairy Wind",
+          "cost": [
+            "Fairy",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "60"
+        }
+      ],
+      "options": [
+        "xyp-XY04"
+      ]
+    },
+    {
+      "id": "tk-xy-b-30",
+      "source": "xy0-20",
+      "hp": "90",
+      "attacks": [
+        {
+          "name": "Wicked Jab",
+          "cost": [
+            "Metal"
+          ],
+          "damage": "20"
+        },
+        {
+          "name": "Metal Claw",
+          "cost": [
+            "Metal",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "70"
+        }
+      ],
+      "options": [
+        "xy0-20"
+      ]
+    }
+  ],
+  "pending": []
+}

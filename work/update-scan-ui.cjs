@@ -1,0 +1,8 @@
+const fs=require('fs');const root='outputs/Pokemon-TCG-Lab/';let js=fs.readFileSync(root+'app.js','utf8');
+js=js.replace("function image(c){return c.image?c.image+(c.custom?'':'/low.webp'):''}","function image(c){if(c.custom)return c.image||'';return c.scan||find(c.id)?.scan||(c.image?c.image+'/high.webp':'')}");
+js=js.replace("onerror=\"this.style.display='none'\"","onerror=\"this.outerHTML='<div class=&quot;empty error&quot;>Scan failed to load</div>'\"");
+js=js.replace("<small>Official card entries</small>","<small>Card entries in English</small>");
+js=js.replace("<small>Your custom cards</small>","<small>Your custom cards</small>");
+js=js.replace("No collection limits.</p>","No collection limits. Downloaded scans load locally.</p><button onclick=\"scanReport()\" style=\"margin-top:12px\">Scan coverage report</button>");
+js+="\nasync function scanReport(){modal('<p>Loading scan audit…</p>');try{let r=await fetch('scan-audit.json');if(!r.ok)throw Error('Audit unavailable');let a=await r.json();$('#modalbody').innerHTML='<h2>Scan coverage</h2><p>'+a.verifiedDownloads.toLocaleString()+' / '+a.total.toLocaleString()+' image files downloaded. '+a.unresolved+' unresolved.</p><p>Scope: '+esc(a.scope)+'</p><p>Last checked: '+esc(a.generatedAt)+'</p><p>'+Object.entries(a.sources).map(([s,n])=>esc(s)+': '+n).join('<br>')+'</p><a href=\"scan-audit.json\" target=\"_blank\">View exact missing-card list</a><p>Placeholders do not count as scans. Download verification checks actual image files; the audit records file hashes and sources.</p>'}catch(e){$('#modalbody').textContent=e.message}}\n";
+fs.writeFileSync(root+'app.js',js);fs.copyFileSync(root+'app.js','work/pokemon/dist/app.js');

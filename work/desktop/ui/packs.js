@@ -21,7 +21,7 @@ var PackOpening=(()=>{
  function stopReveal(){clearTimeout(revealTimer);revealTimer=null;}
  function scheduleReveal(){
   stopReveal();const pack=current();if(tab!=='packs'||collectionView||!pack||pack.cards.every(c=>c.revealed))return;
-  const id=pack.id;revealTimer=setTimeout(()=>{revealTimer=null;if(tab!=='packs'||collectionView||current()?.id!==id)return;if(document.hidden||document.querySelector('dialog[open]')){scheduleReveal();return;}reveal(pack.cards.findIndex(c=>!c.revealed));},600);
+  const id=pack.id;revealTimer=setTimeout(()=>{revealTimer=null;if(tab!=='packs'||collectionView||current()?.id!==id)return;if(document.hidden||document.querySelector('dialog[open]')){scheduleReveal();return;}reveal(pack.cards.findIndex(c=>!c.revealed));},450);
  }
  function render(){syncNavigation();refresh();document.body.classList.remove('in-match');if(typeof hideTableCount==='function')hideTableCount();if(typeof IlexAudio!=='undefined')IlexAudio.sync();const p=profile();document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));$('#crumb').textContent='Pack opening';
   if(!rulesReady||!p){$('#app').innerHTML=title('THE GROVE','Pack opening','Loading booster card pools…');if(!rulesReady)rulesAssets.then(()=>{if(tab==='packs')render();});return;}

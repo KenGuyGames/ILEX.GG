@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "windowsIconSizes": [
+    16,
+    24,
+    32,
+    48,
+    64,
+    128,
+    256
+  ],
+  "allSevenWindowsPayloadsMatch": true,
+  "sameSleeveSilhouette": true,
+  "distinctTails": true,
+  "iconSha256": "c46b54bd3edb4832cb193a88b5f3e53ccc657e8c8fad774ee0591f310aa1267a",
+  "executableSha256": "dc3acb5db5206ad665fd1cb901f824db44e74d8edc835cffec0173bf836a0d16",
+  "physicalAndroidAcceptancePending": true
+}

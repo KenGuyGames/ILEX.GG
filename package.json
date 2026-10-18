@@ -1,6 +1,6 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "1.12.0",
+  "version": "1.15.0",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
@@ -10,7 +10,10 @@
     "test:dp": "node work/desktop-build/dp-tests.cjs",
     "test:hgss": "node work/desktop-build/hgss-tests.cjs",
     "test:bw": "node work/desktop-build/bw-tests.cjs",
-    "test:bot": "node work/desktop-build/bot-tests.cjs"
+    "test:bot": "node work/desktop-build/bot-tests.cjs",
+    "test:xy": "node work/desktop-build/xy-full-tests.cjs",
+    "test:sm": "node work/desktop-build/sm-tests.cjs",
+    "test:realistic": "node work/desktop-build/realistic-bot-tests.cjs"
   },
   "devDependencies": {
     "electron": "44.7.0"

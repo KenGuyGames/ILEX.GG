@@ -26,7 +26,7 @@ export class Bruxish extends PokemonCard {
       text: 'Search your deck for up to 3 basic Energy cards, reveal them, and put them into your hand. Then, shuffle your deck.'
     },
     {
-      name: 'Psychic Fangs',
+      name: 'Psychic Fang',
       cost: [W, W, C],
       damage: 90,
       shredAttack: true,
@@ -72,7 +72,7 @@ export class Bruxish extends PokemonCard {
       });
     }
 
-    // Attack 2: Psychic Fangs
+    // Attack 2: Psychic Fang
     // Ref: set-shining-legends/mewtwo-gx.ts (Psystrike-GX)
     if (WAS_ATTACK_USED(effect, 1, this)) {
       THIS_ATTACKS_DAMAGE_ISNT_AFFECTED_BY_EFFECTS(store, state, effect, 90);

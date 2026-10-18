@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "version": "1.13.1",
+  "completed": "2026-10-18T03:32:05.532Z",
+  "engineUnchanged": true,
+  "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+  "fixes": [
+    "Revealed holo Prizes retain pile-relative grid position with foil decoration",
+    "Grass particle burst progress is clamped so particle radii never become negative",
+    "Canvas callback errors finish the presentation; a bounded timer also finishes lost animation frames"
+  ],
+  "desktop": {
+    "passed": true,
+    "version": "1.13.1",
+    "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+    "coverage": {
+      "XY": 2208,
+      "pending": 0
+    },
+    "printedPokemonAttacks": 2787,
+    "trainerToolAttacks": 2,
+    "branchCases": 1604,
+    "focusedChecks": 52,
+    "boundedDeckGames": 16,
+    "nativeFreshAndRestored": true,
+    "scansVerified": 23736,
+    "sourceFilesVerified": 3333,
+    "scope": "Black & White onward through XY; Unlimited deferred",
+    "limits": "Finite tests do not prove every possible interaction. Android device acceptance is separate.",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 246411219,
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2813568292,
+        "crcPassed": true
+      }
+    ],
+    "executableSha256": "f04ec148fd5d41488a60bea55f8ca52a0f6e27ec37772bd2e9ecf130ade9e149"
+  },
+  "mobile": {
+    "passed": true,
+    "sizes": [
+      {
+        "width": 800,
+        "height": 360,
+        "passed": true,
+        "checks": [
+          "bw7-136 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "xy8-150 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "Animation releases the match without Skip",
+          "Grass damage continuation finishes without a negative particle radius",
+          "Animation completion leaves committed actions untouched",
+          "Animation releases the match without Skip",
+          "Renderer failure regression reaches the canvas callback",
+          "Renderer errors are recorded and release the queue",
+          "Animation releases the match without Skip",
+          "Stopped animation frames are bounded by the completion timer",
+          "Animation releases the match without Skip",
+          "Skip still cancels a running continuation safely"
+        ]
+      },
+      {
+        "width": 640,
+        "height": 312,
+        "passed": true,
+        "checks": [
+          "bw7-136 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "xy8-150 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "Animation releases the match without Skip",
+          "Grass damage continuation finishes without a negative particle radius",
+          "Animation completion leaves committed actions untouched",
+          "Animation releases the match without Skip",
+          "Renderer failure regression reaches the canvas callback",
+          "Renderer errors are recorded and release the queue",
+          "Animation releases the match without Skip",
+          "Stopped animation frames are bounded by the completion timer",
+          "Animation releases the match without Skip",
+          "Skip still cancels a running continuation safely"
+        ]
+      },
+      {
+        "width": 360,
+        "height": 800,
+        "passed": true,
+        "checks": [
+          "bw7-136 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "xy8-150 reveals all six Prizes through the engine",
+          "All six revealed holo Prizes retain foil decoration",
+          "Revealing holo Prizes does not move the Prize grid",
+          "Every revealed Prize stays inside its pile",
+          "Animation releases the match without Skip",
+          "Grass damage continuation finishes without a negative particle radius",
+          "Animation completion leaves committed actions untouched",
+          "Animation releases the match without Skip",
+          "Renderer failure regression reaches the canvas callback",
+          "Renderer errors are recorded and release the queue",
+          "Animation releases the match without Skip",
+          "Stopped animation frames are bounded by the completion timer",
+          "Animation releases the match without Skip",
+          "Skip still cancels a running continuation safely"
+        ]
+      }
+    ]
+  },
+  "android": {
+    "passed": true,
+    "version": "1.13.1-android.4",
+    "versionCode": 4,
+    "engineSha256": "16d55cd679249a61253728235c1150e95d2160f4587cdb7751aa58f941b39769",
+    "sha256": "3dcadeb4edf24deaab58fa5761c6fde468c18180b014aa187ed0ca4768aa712f",
+    "sameSigningCertificateAsPrevious": true,
+    "mobileChecks": 59,
+    "apkChecks": 28,
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "native": [
+    {
+      "passed": true,
+      "checks": [
+        "bw7-136 reveals all six Prizes through the engine",
+        "All six revealed holo Prizes retain foil decoration",
+        "Revealing holo Prizes does not move the Prize grid",
+        "Every revealed Prize stays inside its pile",
+        "xy8-150 reveals all six Prizes through the engine",
+        "All six revealed holo Prizes retain foil decoration",
+        "Revealing holo Prizes does not move the Prize grid",
+        "Every revealed Prize stays inside its pile",
+        "Animation releases the match without Skip",
+        "Grass damage continuation finishes without a negative particle radius",
+        "Animation completion leaves committed actions untouched",
+        "Animation releases the match without Skip",
+        "Renderer failure regression reaches the canvas callback",
+        "Renderer errors are recorded and release the queue",
+        "Animation releases the match without Skip",
+        "Stopped animation frames are bounded by the completion timer",
+        "Animation releases the match without Skip",
+        "Skip still cancels a running continuation safely"
+      ]
+    },
+    {
+      "passed": true,
+      "checks": [
+        "bw7-136 reveals all six Prizes through the engine",
+        "All six revealed holo Prizes retain foil decoration",
+        "Revealing holo Prizes does not move the Prize grid",
+        "Every revealed Prize stays inside its pile",
+        "xy8-150 reveals all six Prizes through the engine",
+        "All six revealed holo Prizes retain foil decoration",
+        "Revealing holo Prizes does not move the Prize grid",
+        "Every revealed Prize stays inside its pile",
+        "Animation releases the match without Skip",
+        "Grass damage continuation finishes without a negative particle radius",
+        "Animation completion leaves committed actions untouched",
+        "Animation releases the match without Skip",
+        "Renderer failure regression reaches the canvas callback",
+        "Renderer errors are recorded and release the queue",
+        "Animation releases the match without Skip",
+        "Stopped animation frames are bounded by the completion timer",
+        "Animation releases the match without Skip",
+        "Skip still cancels a running continuation safely"
+      ]
+    }
+  ],
+  "hashes": {
+    "presentation.js": "fb4d2ef23c35e14748d034aa706ff464894cecf5eb02d682ab47703735b13def",
+    "tabletop.css": "c5ed88a9cc25d6d2c523fb8de6f0aa6b82b7245a9d9dc92fb75ccc4e3c5c4f00"
+  },
+  "limits": "Finite rendering regression tests. Physical Android/emulator acceptance remains pending."
+}

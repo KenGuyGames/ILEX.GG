@@ -1,4 +1,7 @@
+import {smBeforeEffect,smAfterEffect,smPreparePrompts} from '../../tcg-lab-sm-environment';
 import {bwFinish} from '../../tcg-lab-bw-cards';
+import {xyCoinResult,xyPlayerProtected} from '../../tcg-lab-xy-player';
+import {xyBeforeEffect,xyAfterEffect} from '../../tcg-lab-xy-environment';
 import {bwEnvironment,syncBwBadges} from '../../tcg-lab-bw-actions';
 import { hgssEnvironment,hgssFinish } from '../../tcg-lab-hgss-legend';
 import { dpNativePowerChoice } from '../../tcg-lab-dp-power-window';
@@ -172,6 +175,8 @@ export class Store implements StoreLike {
     syncBwBadges(this,state);
     syncDpLevels(state);
     syncHolonVeil(this,state);
+    if(smBeforeEffect(this,state,effect))return state;
+    if(xyBeforeEffect(this,state,effect))return state;
     const shield:any=(effect as any).target;if(state.rules.exEraRules&&shield?.exAllDamageShield?.turn===state.turn&&shield.exAllDamageShield.card===shield.getPokemonCard()&&shield.marker.hasMarker('EX_ALL_DAMAGE_SHIELD')&&['PUT_DAMAGE_EFFECT','DEAL_DAMAGE_EFFECT','WOTC_POWER_DAMAGE_EFFECT'].includes(effect.type)){effect.preventDefault=true;return state;}
     const previous=(CardList as any).wotcMovementContext,e:any=effect;
     const previousDepth=(this as any)._wotcReduceDepth||0;
@@ -180,7 +185,7 @@ export class Store implements StoreLike {
     let actorId=e.player?.id??previous?.actorId??state.players[state.activePlayer]?.id;
     if(e.sourceCard||e.options?.sourceCard){try{actorId=StateUtils.findOwner(state,StateUtils.findCardList(state,e.sourceCard||e.options.sourceCard)).id;}catch{}}
     const store=this;
-    (CardList as any).wotcMovementContext={state,actorId,kind:effect instanceof PowerEffect?'power':effect instanceof TrainerEffect?'trainer':e.attackEffect||effect instanceof AttackEffect||effect instanceof UseAttackEffect||e.sourceEffect instanceof AttackEffect?'attack':previous?.kind,wholePokemon:previous?.wholePokemon||effect.type==='MOVE_POKEMON_OFF_BOARD_EFFECT',knockout:previous?.knockout||effect.type==='KNOCK_OUT_EFFECT',sourceCard:(effect as any).trainerCard||previous?.sourceCard,discardProtected:()=>discardPileProtected(store,state),keepProtected:(owner:any,list:any)=>keepEnergyProtected(store,state,owner,list),legendaryProtected:(owner:any,list:any)=>{const check:any={type:'WOTC_CHECK_LEGENDARY',player:owner,target:list,preventDefault:false};store.reduceEffect(state,check);return check.preventDefault;},isNonColorless:(list:any,card:any)=>{const owner=StateUtils.findOwner(state,list),check=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,check);const entry=check.energyMap.find((x:any)=>x.card===card);return !!entry&&entry.provides.some((type:any)=>type!==CardType.COLORLESS&&type!==CardType.NONE);}};
+    (CardList as any).wotcMovementContext={store:this,state,actorId,kind:effect instanceof PowerEffect?'power':effect instanceof TrainerEffect||e.attackEffect?._wotcTrainer||e.sourceEffect?._wotcTrainer?'trainer':e.attackEffect||effect instanceof AttackEffect||effect instanceof UseAttackEffect||e.sourceEffect instanceof AttackEffect?'attack':previous?.kind,wholePokemon:previous?.wholePokemon||effect.type==='MOVE_POKEMON_OFF_BOARD_EFFECT',knockout:previous?.knockout||effect.type==='KNOCK_OUT_EFFECT',sourceCard:(effect as any).trainerCard||previous?.sourceCard,xyPlayerProtected:(owner:any)=>xyPlayerProtected(store,state,owner),discardProtected:()=>discardPileProtected(store,state),keepProtected:(owner:any,list:any)=>keepEnergyProtected(store,state,owner,list),legendaryProtected:(owner:any,list:any)=>{const check:any={type:'WOTC_CHECK_LEGENDARY',player:owner,target:list,preventDefault:false};store.reduceEffect(state,check);return check.preventDefault;},isNonColorless:(list:any,card:any)=>{const owner=StateUtils.findOwner(state,list),check=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,check);const entry=check.energyMap.find((x:any)=>x.card===card);return !!entry&&entry.provides.some((type:any)=>type!==CardType.COLORLESS&&type!==CardType.NONE);}};
     try{return this.reduceEffectInternal(state,effect);}finally{(CardList as any).wotcMovementContext=previous;(this as any)._wotcReduceDepth=previousDepth;}
   }
   private reduceEffectInternal(state: State, effect: Effect): State {
@@ -265,7 +270,7 @@ export class Store implements StoreLike {
 
     if(effect instanceof PlayPokemonEffect&&(effect.pokemonCard as any)._dpLevelUp&&!this.calculatingPlayability)state=playDpLevel(this,state,effect);
     const dpResumeCore=(effect as any)._dpResumeCore===true;delete (effect as any)._dpResumeCore;
-    if(!dpResumeCore)state = this.propagateEffect(state, effect);
+    if(!dpResumeCore){state = this.propagateEffect(state, effect);xyAfterEffect(this,state,effect);}
     if(effect.type==='AFTER_DAMAGE_EFFECT'&&gym._wotcKogaCandidate){const poison=()=>{if(gym.target===gym.opponent.active&&gym.target.getPokemonCard()===gym._wotcKogaCandidate&&!gym.attackEffect._wotcFledTargets?.has(gym.target)){const status=new AddSpecialConditionsEffect(gym.attackEffect,[SpecialCondition.POISONED]);status.target=gym.target;this.reduceEffect(state,status);}};if(this.hasPrompts())this.waitPrompt(state,poison);else poison();}
     if(effect.type==='CHECK_POKEMON_TYPE_EFFECT'){const check=effect as any;if(check.target.wotcCounters?.color!==undefined)check.cardTypes=[check.target.wotcCounters.color];}
     if (effect.type === 'CHECK_HP_EFFECT' || effect instanceof AttackEffect) {
@@ -357,6 +362,7 @@ export class Store implements StoreLike {
       logAppliedEffect(this, state, effect);
     }
 
+    smAfterEffect(this,state,effect);
     finalAfter(this,state,effect);
     syncBwBadges(this,state);
     // Calculate playability after all effects are processed
@@ -386,6 +392,7 @@ export class Store implements StoreLike {
       prompts = [prompts];
     }
 
+    smPreparePrompts(state,prompts);
     const receipt:any=(this.resolvingTrainer?.trainerCard as any)?._wotcPrepaidCost;
     if(receipt)for(const prompt of prompts as any[]){
       if(receipt.energy&&prompt.type==='Choose pokemon'&&prompt.playerId===this.resolvingTrainer?.player.id&&prompt.playerType===PlayerType.BOTTOM_PLAYER)prompt._wotcAutoAnswer=[receipt.zone];
@@ -460,7 +467,7 @@ export class Store implements StoreLike {
     }
 
     try {
-      prompt.result = action.result;
+      prompt.result = xyCoinResult(this,state,prompt,action.result);
 
       if (action.log !== undefined) {
         this.log(state, action.log.message, action.log.params, action.log.client);

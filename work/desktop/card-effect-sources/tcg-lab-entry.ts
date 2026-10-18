@@ -14,3 +14,6 @@ export { PutDamageEffect, PutCountersEffect, HealTargetEffect, ApplyWeaknessEffe
 export { CheckAttackCostEffect } from './game/store/effects/check-effects';
 export { CoinFlipEffect,CoinFlipSequenceEffect } from './game/store/effects/play-card-effects';
 export { PlayPokemonEffect } from './game/store/effects/play-card-effects';
+export { CheckTableStateEffect, CheckEvolutionTimingEffect } from './game/store/effects/check-effects';
+export {TrainerEffect} from './game/store/effects/play-card-effects';
+export {MoveCardsEffect} from './game/store/effects/game-effects';

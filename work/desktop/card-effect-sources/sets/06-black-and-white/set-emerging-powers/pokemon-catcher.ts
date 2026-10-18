@@ -5,7 +5,7 @@ import { State } from '../../../game/store/state/state';
 import { Effect } from '../../../game/store/effects/effect';
 import { ChoosePokemonPrompt } from '../../../game/store/prompts/choose-pokemon-prompt';
 import { TrainerEffect } from '../../../game/store/effects/play-card-effects';
-import { PlayerType, SlotType, StateUtils, GameError, GameMessage } from '../../../game';
+import { PlayerType, SlotType, StateUtils, GameError, GameMessage, CoinFlipPrompt } from '../../../game';
 function* playCard(
   next: Function,
   store: StoreLike,
@@ -53,6 +53,15 @@ export class PokemonCatcher extends TrainerCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (effect instanceof TrainerEffect && effect.trainerCard === this) {
+      // XY introduced an erratum for all printings, including older BW copies.
+      // Historical BW profiles preserve their original no-flip behavior.
+      if ((state.rules as any).pokemonCatcherErrata) {
+        const opponent=StateUtils.getOpponent(state,effect.player);
+        if (!opponent.bench.some(b=>b.getPokemonCard())) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
+        return store.prompt(state,new CoinFlipPrompt(effect.player.id,GameMessage.COIN_FLIP),heads=>{
+          if(heads){const generator=playCard(()=>generator.next(),store,state,this,effect);return generator.next().value;}
+        });
+      }
       const generator = playCard(() => generator.next(), store, state, this, effect);
       return generator.next().value;
     }

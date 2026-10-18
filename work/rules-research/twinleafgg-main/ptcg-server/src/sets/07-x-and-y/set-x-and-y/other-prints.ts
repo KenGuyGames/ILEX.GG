@@ -75,6 +75,7 @@ export class XerneasEX2XY extends XerneasEXXY97 {
 }
 
 export class VenipedeXY extends Venipede {
+  constructor(){super();this.hp=70;this.retreat=[C,C,C];this.attacks=this.attacks.map(a=>({...a,cost:[P,C],damage:20}));}
   public set: string = 'XY';
   public setNumber: string = '51';
   public fullName: string = 'Venipede XY';
