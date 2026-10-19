@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "sizes": [
+    {
+      "width": 900,
+      "scroll": 885,
+      "cards": 7
+    },
+    {
+      "width": 1920,
+      "scroll": 1905,
+      "cards": 7
+    }
+  ]
+}

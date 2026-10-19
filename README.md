@@ -2,28 +2,53 @@
 
 Pokémon TCG simulator for **Windows and Android**, with historical rules automation, deck building, local/bot play, custom cards and pack opening.
 
+## Download stable 1.19.0
+
+| Platform | Download | Requirements |
+| --- | --- | --- |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Windows.zip) — about 336 MiB | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
+| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Android.apk) — about 135 MiB | Android 8+ with current WebView; 1.19.0-android.27 / versionCode 27 |
+
+Windows includes its runtime. Android keeps the original signing certificate: install over the previous app to retain workspace/cache; export first if needed and do not uninstall. Physical Android device/emulator acceptance remains pending. This is a direct APK release.
+
+Images download as viewed and remain cached. **Download card images** caches the full collection (about 2.5 GB), with pause/resume. Android bundles 439 verified startup/demo scans and 209 finish-specific images. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace. There is no automatic cloud synchronization.
+
+[Android installation](verification/ILEX.GG-Android-Install.md) · [Checksums and release evidence](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.19.0-build-2026-10-19) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
+
 ## Multiplayer is now in beta
 
-**Windows multiplayer beta: 1.18.0-private.1.** Invite a trusted friend using invite/response codes, confirm decks and Ready, and play with host-authoritative rules. Undo pauses play and requires the opponent's approval. Reconnect and separate local host recovery are included.
+The stable Windows app retains the **Private multiplayer beta**: invite/response codes, legal decks and Ready confirmation, host-authoritative rules, filtered guest views, opponent-approved Undo, reconnect and separate hosted-match recovery. Both players must use the same 1.19.0 build.
 
-**Real two-PC/Internet connectivity still needs acceptance testing.** Automated two-window tests used simulated channel delivery. Direct WebRTC uses free STUN; there is no TURN relay, so restrictive networks may not connect. The host can inspect full game state. Android multiplayer, custom-card networking and public matchmaking are not included.
+**Real two-PC/Internet connectivity and a complete external match remain unverified.** Native two-window acceptance used simulated delivery. Direct WebRTC uses free STUN with no TURN relay; some networks may not connect. Play with trusted friends because the host can inspect full state. Android multiplayer, custom-card networking and public matchmaking remain deferred. Stable release status does not promote this feature out of beta.
 
-[Download Windows multiplayer beta](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Private-Windows.zip) · [Invite, play and reconnect guide](verification/ILEX.GG-Private-Guide.md)
+[Invite, play and reconnect guide](verification/ILEX.GG-Private-Guide.md) · [Earlier separate 1.18.0 beta](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19)
 
-## Current downloads
+## New in stable 1.19.0
 
-| Platform | Download | Version |
-| --- | --- | --- |
-| Windows multiplayer beta | [ILEX.GG-Private-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Private-Windows.zip) — about 247 MiB | 1.18.0-private.1; extract the entire ZIP, close any running ILEX.GG and run ILEX.GG.exe |
-| Android local/bot play | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Android.apk) — about 136 MiB | 1.17.0-android.26 / code 26; Android 8+ with current WebView; no multiplayer |
+- **Complete Mega era through 30th Celebration: 1,293/1,293 standard-game printings, zero pending across ten catalogs.** MEE 16, Mega Evolution 188, MEP 110, Phantasmal Flames 130, Ascended Heroes 295, Perfect Order 124, Chaos Rising 122, Pitch Black 120, 30th 158 and Classic Collection 30.
+- **MEP102–110 are nine officially announced anniversary previews**, with future release dates retained. Museum remains collection-only and unconfirmed RGB Mew cache rows are excluded. Classic Collection's historical mechanics do not establish tournament legality.
+- Added modern Mega stage/Prize identities and reviewed Basic Energy names, physical attachment movement, damage/Weakness timing, reactive KO transfers/coins, optional Prize choices, Tool capacity/cleanup, Power Saver's condition, Gwynn's one-card discard, actual Antique Fossil identities, Waitress's selected Basic Energy and modern Antique setup restrictions.
+- **22 additional exact scans**, bringing regular scan records to 23,860; 209 verified finish-specific images retained. Reverse-scan acquisition is still incomplete.
+- **Android 1.19.0-android.27** includes the current Mega engine, updated mobile UI, 439 bundled startup/demo scans, original signing certificate and preserved workspace/cache.
+- All earlier WOTC/EX/DP/HGSS/BW/XY/SM/SWSH/SV coverage, corrected UTF-8 comparisons, Psychic Embrace/Evosoda repairs, bots, packs, music, UI, saved formats and image caching remain available.
 
-Windows includes its runtime. Android retains the original signing certificate: install over the previous app to keep workspace/cache; export first if needed and do not uninstall. Physical Android device/emulator acceptance is still pending. This is a direct APK release.
+Interactions cover **Black & White onward through Mega**; historical profiles remain available and Unlimited is deferred. No newly maintained official Expanded banlist is included.
 
-Card images download as viewed and remain cached. **Download card images** caches the full collection (about 2.5 GB), with pause/resume. Android bundles 395 startup/demo scans. Windows uses the existing `%APPDATA%\TCG Lab` workspace; online recovery is stored separately. Export/import transfers workspace JSON and replaces the destination workspace. There is no automatic cloud synchronization.
+### Current release evidence
 
-[Android installation](verification/ILEX.GG-Android-Install.md) · [Release and checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
+| Area | Recorded result |
+| --- | --- |
+| Mega identity and effects | 60 expected-result groups; 11,701 printed-field comparisons; 1,535 printed attack cases; 3,212 branch cases |
+| Power / Trainer fixtures | 116 / 288 resolved; 300 / 86 conditional or passive fixtures explicitly unavailable |
+| Mixed games | 24 bounded games, 2,111 decisions, 14 completed; exact replay/Undo |
+| Shared / modern | 20 shared and 28 preserved modern groups; fresh/restored native desktop acceptance |
+| Assets / Android | 23,860 regular scan hashes/decodes, 209 finish images; 140 mobile checks and three Mega landscape previews; APK CRC/signature/alignment checks |
 
-## What's new since 1.15.0
+These are finite checks, not proof of every board state. Unavailable fixtures are not passes. Current reports bind engine SHA-256 `dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722`; older reports retain their original hashes. Read `verification/desktop-verification-1.19.0.json`, `work/rules-research/mega-final-release-evidence.json`, `mega-source-validation.json`, `MEGA-PROGRESS.md` and `MEGA-RULES-SOURCES.md`.
+
+![Mega-era desktop verification capture](docs/screenshots/mega-native.png)
+
+## Earlier 1.18.0 beta changes
 
 - **Multiplayer beta for Windows:** invite/response codes, legal deck/format checks, both-player readiness, filtered guest views, native card controls, opponent-approved Undo, reconnect and hosted-match recovery. Both players need the same beta build. Real network acceptance remains pending as described above.
 - **Complete Sword & Shield:** 3,715/3,715 printings, zero pending across 28 catalogs, including all 307 promos, Sword & Shield through Crown Zenith, special expansions/subsets, Futsal and McDonald's 2021–22. Includes V-UNION composites and enlarged landscape actions.
@@ -180,18 +205,18 @@ Current desktop and Android layouts (Android captures use Chromium touch emulati
 
 Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies and uncached artwork. Other desktop operating systems are not verified.
 
-Download **Source code (zip)** from the [multiplayer beta release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19), extract it, and open PowerShell in the folder containing package.json. Or clone:
+Download **Source code (zip)** from the [stable 1.19.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.19.0-build-2026-10-19), extract it, and open PowerShell in the folder containing package.json. Or clone:
 
 ```powershell
-git clone --branch v1.18.0-private.1-build-2026-10-19 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+git clone --branch v1.19.0-build-2026-10-19 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
 cd ILEX.GG
 npm install
 npm start
 ```
 
-Keep the terminal open while playing. Normal launches use the existing Windows workspace; export it before source experiments. The engine is included; no copied scan folder or Python is needed to launch.
+Keep the terminal open while playing. Normal launches use the existing Windows workspace; export it before source experiments. The ready-to-run engine is included. Python and a copied scan folder are not needed to launch.
 
-Rebuild the checked-in TypeScript and launch:
+Rebuild and launch:
 
 ```powershell
 npm ci --prefix work/desktop-build
@@ -199,7 +224,7 @@ npm run build:rules
 npm start
 ```
 
-The rebuilt engine must match SHA-256 `d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7`, recorded in `verification/source-manifest-1.18.0-private.1.json`.
+The build wrapper selects the **canonical corrected UTF-8 TypeScript in work/mega-source/src**. It does not use the older shared source tree. The rebuilt engine must match SHA-256 `dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722`, recorded in `verification/source-manifest-1.19.0.json`. Do not rerun initial card generators over this release.
 
 Run checks sequentially:
 
@@ -212,6 +237,7 @@ npm run test:bw
 npm run test:xy
 npm run test:sm
 npm run test:swsh
+npm run test:mega
 npm run test:evosoda
 npm run test:psychic
 npm run test:multiplayer
@@ -221,7 +247,7 @@ npm run test:bot
 node work/desktop-build/card-cache-tests.cjs
 ```
 
-`test:rules` is the focused shared WOTC suite. Multiplayer/protocol tests simulate delivery and do not certify real networking. Recorded development evidence is listed above; publication verification is tracked in the [beta source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-beta.yml).
+`test:rules` is the focused shared WOTC suite. Multiplayer/protocol tests simulate delivery and do not establish real connectivity. Fresh-source install/start/rebuild/tests and both automatic source archives are checked by the [stable source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-1.19.0.yml).
 
 ### Retained 1.12.0 baseline verification
 
@@ -243,7 +269,7 @@ Recorded native desktop release checks used isolated profiles and test-only no-s
 
 Android source and rebuild notes are in [work/android-build/README.md](work/android-build/README.md). Rebuilding requires JDK 17, the verified official Android SDK tools and Python; it is separate from the Windows Node.js instructions. The original signing key and password are deliberately excluded. A build signed with a different key cannot update the installed release in place.
 
-`package-private.py` packages the separate Windows preview; `package-sv.py` is the stable SV packager. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
+`package-mega.py` and `finish-mega.cjs` package this stable release. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
 
 ## Earlier release trailer
 

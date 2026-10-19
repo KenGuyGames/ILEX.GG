@@ -1,0 +1,13 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Quick Sign is available on turn one and places searched Basics on the Bench",
+    "Devastating Wind shuffles only the opposing hand and draws four",
+    "Drawareness requires enough discards and finishes with five cards",
+    "Purging Strike grants its bonus only after discarding a nonempty hand",
+    "Psychic Insight reveals each top card without moving either card",
+    "Suction Cup Draw offers three cards after a hand evolution"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

@@ -1,0 +1,461 @@
+{
+  "reason": "Printed Basic prefix is not a different elemental Energy identity; Special Energy eligibility guards remain in the original reducers.",
+  "changes": [
+    {
+      "file": "work\\mega-source\\src\\sets\\03-ex-ruby-and-sapphire\\set-ex-delta-species\\holon-energy-ff.ts",
+      "comparisons": 3
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\03-ex-ruby-and-sapphire\\set-ex-delta-species\\holon-researcher.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\03-ex-ruby-and-sapphire\\set-ex-dragon-frontiers\\holon-energy-gl.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\03-ex-ruby-and-sapphire\\set-ex-dragon-frontiers\\holon-energy-wp.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\03-ex-ruby-and-sapphire\\set-ex-team-rocket-returns\\dark-electrode.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\03-ex-ruby-and-sapphire\\set-ex-unseen-forces\\meganium-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\04-diamond-pearl-platinum\\set-legends-awakened\\kingdra.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\04-diamond-pearl-platinum\\set-legends-awakened\\regirock.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\05-heartgold-and-soulsilver\\set-heartgold-and-soulsilver\\ninetales.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\05-heartgold-and-soulsilver\\set-triumphant\\celebi.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\05-heartgold-and-soulsilver\\set-undaunted\\slugma.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\05-heartgold-and-soulsilver\\set-unleashed\\roserade.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\06-black-and-white\\set-dark-explorers\\entei-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\06-black-and-white\\set-dark-explorers\\torkoal.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\06-black-and-white\\set-emerging-powers\\gigalith.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\06-black-and-white\\set-noble-victories\\landorus.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-breakpoint\\manaphy-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-double-crisis\\team-aquas-great-ball.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-double-crisis\\team-magmas-great-ball.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-evolutions\\raichu.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-flashfire\\fiery-torch.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-furious-fists\\victreebel.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-phantom-forces\\hydreigon.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-primal-clash\\m-gardevoir-ex-2.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-steam-siege\\volcanion-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-x-and-y\\delphox.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\07-x-and-y\\set-x-and-y\\greninja.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-burning-shadows\\gardevoir-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-burning-shadows\\necrozma-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-celestial-storm\\articuno-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-celestial-storm\\torkoal.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-forbidden-light\\crasher-wake.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-forbidden-light\\ultra-necrozma-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-forbidden-light\\zygarde-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-guardians-rising\\tapu-koko-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-lost-thunder\\ampharos.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-lost-thunder\\blacephalon-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-lost-thunder\\net-ball.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-team-up\\ninetales.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-ultra-prism\\gardenia.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-ultra-prism\\lunala-prism-star.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-ultra-prism\\mt-coronet.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-ultra-prism\\solgaleo-prism-star.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-ultra-prism\\volkner.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-unbroken-bonds\\arcanine.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-unbroken-bonds\\blacephalon.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-unbroken-bonds\\greninja-and-zoroark-gx.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-unbroken-bonds\\martial-arts-dojo.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\08-sun-and-moon\\set-unified-minds\\tsareena.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-astral-radiance\\adaman.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-astral-radiance\\gutsy-pickaxe.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-astral-radiance\\hisuian-lilligant-vstar.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-astral-radiance\\magnemite.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-astral-radiance\\magnezone.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-brilliant-stars\\kindler.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-brilliant-stars\\magma-basin.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-brilliant-stars\\raichu-v.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-champions-path\\incineroar-v.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-champions-path\\wailord-v.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-chilling-reign\\fog-crystal.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-chilling-reign\\melony.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-chilling-reign\\weezing.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-fusion-strike\\inteleon-vmax.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-fusion-strike\\swampert.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-lost-origin\\hoopa.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-lost-origin\\kyurem-vmax.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-rebel-clash\\barraskewda.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-rebel-clash\\lampent.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-rebel-clash\\sandaconda-v.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-rebel-clash\\zacian.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-silver-tempest\\arcanine.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-silver-tempest\\candice.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-silver-tempest\\claydol.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-silver-tempest\\rapidash.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-sword-and-shield\\zacian-v.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-sword-and-shield-promos\\greninja-v-union-tl.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-sword-and-shield-promos\\mewtwo-v-union-tl.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-sword-and-shield-promos\\morpeko-v-union-tl.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-sword-and-shield-promos\\pikachu-v-union-tl.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-sword-and-shield-promos\\zacian-v-union-tl.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-vivid-voltage\\dialga.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\09-sword-and-shield\\set-vivid-voltage\\nessa.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-destined-rivals\\ethans-adventure.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-destined-rivals\\gorebyss.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-destined-rivals\\huntail.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-destined-rivals\\hydrapple.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-destined-rivals\\regirock-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-journey-together\\ionos-kilowattrel.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-paldea-evolved\\meowscarada-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-paradox-rift\\mela.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-paradox-rift\\sandy-shocks-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-paradox-rift\\skeledirge-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-paradox-rift\\tulip.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-surging-sparks\\archaludon-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-surging-sparks\\armarouge.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-twilight-masquerade\\bug-catching-set.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-twilight-masquerade\\sinistcha-ex.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\10-scarlet-and-violet\\set-twilight-masquerade\\sinistcha.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-mega-evolution\\clawitizer.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-mega-evolution\\fighting-gong.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-mega-evolution\\kyogre.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-mega-evolution\\lunatone.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-mega-evolution\\mega-abomasnow-ex.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-perfect-order\\tarragon.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-phantasmal-flames\\blowtorch.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\11-mega-evolution\\set-phantasmal-flames\\ceruledge.ts",
+      "comparisons": 2
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-dragons-majesty\\feraligatr.ts",
+      "comparisons": 3
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-dragons-majesty\\turtonator.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-game-boy-exclusives\\moltres.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-gym-challenge\\erikas-bellsprout.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-gym-challenge\\rockets-zapdos.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-hidden-fates\\mistys-water-command.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-hidden-fates\\zapdos.ts",
+      "comparisons": 1
+    },
+    {
+      "file": "work\\mega-source\\src\\sets\\set-shining-legends\\yveltal.ts",
+      "comparisons": 1
+    }
+  ]
+}

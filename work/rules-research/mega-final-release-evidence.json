@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "version": "1.19.0",
+  "printings": 1293,
+  "pending": 0,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "ruleAdapterSha256": "25a5b491d6fa396e6b71187bb791846e3bfe1f98c8bcc81f76f7ccd0ad1aff31",
+  "botSha256": "e845283560f1585055027d236edcd5449692dfb0d075e9075df97a57db95ecfe",
+  "bySet": {
+    "mee": 16,
+    "me01": 188,
+    "mep": 110,
+    "me02": 130,
+    "me02.5": 295,
+    "me03": 124,
+    "me04": 122,
+    "me05": 120,
+    "30th": 158,
+    "30th-c": 30
+  },
+  "focusedChecks": 60,
+  "identityComparisons": 11701,
+  "printedPokemonAttacks": 1535,
+  "branchCases": 3212,
+  "trainerResolved": 288,
+  "trainerUnavailable": 86,
+  "powerResolved": 116,
+  "powerUnavailable": 300,
+  "powerAuditEngineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "preservedModernGroups": 28,
+  "preservedModernEngineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "sharedGroups": 20,
+  "games": 24,
+  "completedGames": 14,
+  "decisions": 2111,
+  "replayAndUndo": true,
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23860,
+  "sourceFilesVerified": 10897,
+  "previewPromos": [
+    "mep-102",
+    "mep-103",
+    "mep-104",
+    "mep-105",
+    "mep-106",
+    "mep-107",
+    "mep-108",
+    "mep-109",
+    "mep-110"
+  ],
+  "collectionOnly": [
+    "mep-Museum"
+  ],
+  "scope": "BW onward; Unlimited deferred",
+  "limits": [
+    "Finite fixtures do not prove all board states. Unavailable conditional/passive fixtures are reported separately.",
+    "All recorded release audit engine hashes match the final build.",
+    "Announced MEP102–110 preserve future release dates; Classic Collection does not imply tournament legality.",
+    "Real two-PC multiplayer and physical Android acceptance remain unverified."
+  ],
+  "archives": [
+    {
+      "file": "ILEX.GG-Windows.zip",
+      "bytes": 352654266,
+      "sha256": "79f2d94fdf8f02617543f945cf8386921ba21a4f4f82f5130627141fd840336f",
+      "crcPassed": true
+    },
+    {
+      "file": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2985887379,
+      "sha256": "0143a4d46c11dc1c51d6c16ffd666a47159c17491f1ad65b7fbb7501743c2e52",
+      "crcPassed": true
+    }
+  ],
+  "executableSha256": "3d31f497d54eaa87cfe6105aa6a31cd64e1c3ad476b393ed22e0a7fc1b70d518",
+  "androidSha256": "d9592735d7e86ebd037c13de975bcbcb06eb7dd067b7c9b18866f6680cb4d8d4",
+  "androidVersion": "1.19.0-android.27",
+  "androidOriginalCertificate": true,
+  "physicalAndroidDeviceTested": false,
+  "actualExternalTwoPCMatchTested": false,
+  "backup": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\before-mega-20261019-153254",
+  "preservedBackups": [
+    "work/before-mega-20261019-153128",
+    "work/before-mega-20261019-153254"
+  ]
+}

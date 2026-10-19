@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "Full-region transparent scan targets, no overlay text, accessible labels",
+    "Damage Swap on scan, read-only right click, pending prompts and Undo boundary",
+    "Energy validation disables unaffordable attacks",
+    "Passive Bodies and copied attacks",
+    "Bench Power and opponent inspection",
+    "Stale action rejection",
+    "Missing-art fallback",
+    "Enlarged Retreat, Energy selection prompt, correct destination and discard",
+    "Retreat Energy, status and field-position restrictions",
+    "Face-down reveal retained without exposing hidden identity"
+  ]
+}

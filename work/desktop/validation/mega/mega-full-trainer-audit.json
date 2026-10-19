@@ -1,0 +1,1592 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "me01-114",
+      "positive": false
+    },
+    {
+      "id": "me01-114",
+      "positive": true
+    },
+    {
+      "id": "me01-115",
+      "positive": false
+    },
+    {
+      "id": "me01-115",
+      "positive": true
+    },
+    {
+      "id": "me01-116",
+      "positive": false
+    },
+    {
+      "id": "me01-116",
+      "positive": true
+    },
+    {
+      "id": "me01-117",
+      "positive": false
+    },
+    {
+      "id": "me01-117",
+      "positive": true
+    },
+    {
+      "id": "me01-118",
+      "positive": false
+    },
+    {
+      "id": "me01-118",
+      "positive": true
+    },
+    {
+      "id": "me01-119",
+      "positive": false
+    },
+    {
+      "id": "me01-119",
+      "positive": true
+    },
+    {
+      "id": "me01-120",
+      "positive": false
+    },
+    {
+      "id": "me01-120",
+      "positive": true
+    },
+    {
+      "id": "me01-121",
+      "positive": false
+    },
+    {
+      "id": "me01-121",
+      "positive": true
+    },
+    {
+      "id": "me01-122",
+      "positive": false
+    },
+    {
+      "id": "me01-122",
+      "positive": true
+    },
+    {
+      "id": "me01-123",
+      "positive": false
+    },
+    {
+      "id": "me01-123",
+      "positive": true
+    },
+    {
+      "id": "me01-124",
+      "positive": false
+    },
+    {
+      "id": "me01-124",
+      "positive": true
+    },
+    {
+      "id": "me01-126",
+      "positive": false
+    },
+    {
+      "id": "me01-126",
+      "positive": true
+    },
+    {
+      "id": "me01-127",
+      "positive": false
+    },
+    {
+      "id": "me01-127",
+      "positive": true
+    },
+    {
+      "id": "me01-129",
+      "positive": false
+    },
+    {
+      "id": "me01-129",
+      "positive": true
+    },
+    {
+      "id": "me01-130",
+      "positive": false
+    },
+    {
+      "id": "me01-130",
+      "positive": true
+    },
+    {
+      "id": "me01-131",
+      "positive": false
+    },
+    {
+      "id": "me01-131",
+      "positive": true
+    },
+    {
+      "id": "me01-166",
+      "positive": false
+    },
+    {
+      "id": "me01-166",
+      "positive": true
+    },
+    {
+      "id": "me01-167",
+      "positive": false
+    },
+    {
+      "id": "me01-167",
+      "positive": true
+    },
+    {
+      "id": "me01-168",
+      "positive": false
+    },
+    {
+      "id": "me01-168",
+      "positive": true
+    },
+    {
+      "id": "me01-169",
+      "positive": false
+    },
+    {
+      "id": "me01-169",
+      "positive": true
+    },
+    {
+      "id": "me01-170",
+      "positive": false
+    },
+    {
+      "id": "me01-170",
+      "positive": true
+    },
+    {
+      "id": "me01-171",
+      "positive": false
+    },
+    {
+      "id": "me01-171",
+      "positive": true
+    },
+    {
+      "id": "me01-172",
+      "positive": false
+    },
+    {
+      "id": "me01-172",
+      "positive": true
+    },
+    {
+      "id": "me01-173",
+      "positive": false
+    },
+    {
+      "id": "me01-173",
+      "positive": true
+    },
+    {
+      "id": "me01-174",
+      "positive": false
+    },
+    {
+      "id": "me01-174",
+      "positive": true
+    },
+    {
+      "id": "me01-184",
+      "positive": false
+    },
+    {
+      "id": "me01-184",
+      "positive": true
+    },
+    {
+      "id": "me01-185",
+      "positive": false
+    },
+    {
+      "id": "me01-185",
+      "positive": true
+    },
+    {
+      "id": "mep-028",
+      "positive": false
+    },
+    {
+      "id": "mep-028",
+      "positive": true
+    },
+    {
+      "id": "mep-092",
+      "positive": false
+    },
+    {
+      "id": "mep-092",
+      "positive": true
+    },
+    {
+      "id": "me02-085",
+      "positive": false
+    },
+    {
+      "id": "me02-085",
+      "positive": true
+    },
+    {
+      "id": "me02-087",
+      "positive": false
+    },
+    {
+      "id": "me02-087",
+      "positive": true
+    },
+    {
+      "id": "me02-088",
+      "positive": false
+    },
+    {
+      "id": "me02-088",
+      "positive": true
+    },
+    {
+      "id": "me02-089",
+      "positive": false
+    },
+    {
+      "id": "me02-089",
+      "positive": true
+    },
+    {
+      "id": "me02-090",
+      "positive": false
+    },
+    {
+      "id": "me02-090",
+      "positive": true
+    },
+    {
+      "id": "me02-091",
+      "positive": false
+    },
+    {
+      "id": "me02-091",
+      "positive": true
+    },
+    {
+      "id": "me02-092",
+      "positive": false
+    },
+    {
+      "id": "me02-092",
+      "positive": true
+    },
+    {
+      "id": "me02-093",
+      "positive": false
+    },
+    {
+      "id": "me02-093",
+      "positive": true
+    },
+    {
+      "id": "me02-116",
+      "positive": false
+    },
+    {
+      "id": "me02-116",
+      "positive": true
+    },
+    {
+      "id": "me02-118",
+      "positive": false
+    },
+    {
+      "id": "me02-118",
+      "positive": true
+    },
+    {
+      "id": "me02-119",
+      "positive": false
+    },
+    {
+      "id": "me02-119",
+      "positive": true
+    },
+    {
+      "id": "me02-120",
+      "positive": false
+    },
+    {
+      "id": "me02-120",
+      "positive": true
+    },
+    {
+      "id": "me02-121",
+      "positive": false
+    },
+    {
+      "id": "me02-121",
+      "positive": true
+    },
+    {
+      "id": "me02-122",
+      "positive": false
+    },
+    {
+      "id": "me02-122",
+      "positive": true
+    },
+    {
+      "id": "me02-123",
+      "positive": false
+    },
+    {
+      "id": "me02-123",
+      "positive": true
+    },
+    {
+      "id": "me02-129",
+      "positive": false
+    },
+    {
+      "id": "me02-129",
+      "positive": true
+    },
+    {
+      "id": "me02.5-181",
+      "positive": false
+    },
+    {
+      "id": "me02.5-181",
+      "positive": true
+    },
+    {
+      "id": "me02.5-183",
+      "positive": false
+    },
+    {
+      "id": "me02.5-183",
+      "positive": true
+    },
+    {
+      "id": "me02.5-184",
+      "positive": false
+    },
+    {
+      "id": "me02.5-184",
+      "positive": true
+    },
+    {
+      "id": "me02.5-185",
+      "positive": false
+    },
+    {
+      "id": "me02.5-185",
+      "positive": true
+    },
+    {
+      "id": "me02.5-186",
+      "positive": false
+    },
+    {
+      "id": "me02.5-186",
+      "positive": true
+    },
+    {
+      "id": "me02.5-187",
+      "positive": false
+    },
+    {
+      "id": "me02.5-187",
+      "positive": true
+    },
+    {
+      "id": "me02.5-188",
+      "positive": false
+    },
+    {
+      "id": "me02.5-188",
+      "positive": true
+    },
+    {
+      "id": "me02.5-190",
+      "positive": false
+    },
+    {
+      "id": "me02.5-190",
+      "positive": true
+    },
+    {
+      "id": "me02.5-191",
+      "positive": false
+    },
+    {
+      "id": "me02.5-191",
+      "positive": true
+    },
+    {
+      "id": "me02.5-192",
+      "positive": false
+    },
+    {
+      "id": "me02.5-192",
+      "positive": true
+    },
+    {
+      "id": "me02.5-193",
+      "positive": false
+    },
+    {
+      "id": "me02.5-193",
+      "positive": true
+    },
+    {
+      "id": "me02.5-194",
+      "positive": false
+    },
+    {
+      "id": "me02.5-194",
+      "positive": true
+    },
+    {
+      "id": "me02.5-196",
+      "positive": false
+    },
+    {
+      "id": "me02.5-196",
+      "positive": true
+    },
+    {
+      "id": "me02.5-197",
+      "positive": false
+    },
+    {
+      "id": "me02.5-197",
+      "positive": true
+    },
+    {
+      "id": "me02.5-198",
+      "positive": false
+    },
+    {
+      "id": "me02.5-198",
+      "positive": true
+    },
+    {
+      "id": "me02.5-199",
+      "positive": false
+    },
+    {
+      "id": "me02.5-199",
+      "positive": true
+    },
+    {
+      "id": "me02.5-200",
+      "positive": false
+    },
+    {
+      "id": "me02.5-200",
+      "positive": true
+    },
+    {
+      "id": "me02.5-202",
+      "positive": false
+    },
+    {
+      "id": "me02.5-202",
+      "positive": true
+    },
+    {
+      "id": "me02.5-203",
+      "positive": false
+    },
+    {
+      "id": "me02.5-203",
+      "positive": true
+    },
+    {
+      "id": "me02.5-205",
+      "positive": false
+    },
+    {
+      "id": "me02.5-205",
+      "positive": true
+    },
+    {
+      "id": "me02.5-206",
+      "positive": false
+    },
+    {
+      "id": "me02.5-206",
+      "positive": true
+    },
+    {
+      "id": "me02.5-207",
+      "positive": false
+    },
+    {
+      "id": "me02.5-207",
+      "positive": true
+    },
+    {
+      "id": "me02.5-208",
+      "positive": false
+    },
+    {
+      "id": "me02.5-208",
+      "positive": true
+    },
+    {
+      "id": "me02.5-209",
+      "positive": false
+    },
+    {
+      "id": "me02.5-209",
+      "positive": true
+    },
+    {
+      "id": "me02.5-210",
+      "positive": false
+    },
+    {
+      "id": "me02.5-210",
+      "positive": true
+    },
+    {
+      "id": "me02.5-211",
+      "positive": false
+    },
+    {
+      "id": "me02.5-211",
+      "positive": true
+    },
+    {
+      "id": "me02.5-213",
+      "positive": false
+    },
+    {
+      "id": "me02.5-213",
+      "positive": true
+    },
+    {
+      "id": "me02.5-214",
+      "positive": false
+    },
+    {
+      "id": "me02.5-214",
+      "positive": true
+    },
+    {
+      "id": "me02.5-215",
+      "positive": false
+    },
+    {
+      "id": "me02.5-215",
+      "positive": true
+    },
+    {
+      "id": "me02.5-255",
+      "positive": false
+    },
+    {
+      "id": "me02.5-255",
+      "positive": true
+    },
+    {
+      "id": "me02.5-256",
+      "positive": false
+    },
+    {
+      "id": "me02.5-256",
+      "positive": true
+    },
+    {
+      "id": "me02.5-257",
+      "positive": false
+    },
+    {
+      "id": "me02.5-257",
+      "positive": true
+    },
+    {
+      "id": "me02.5-258",
+      "positive": false
+    },
+    {
+      "id": "me02.5-258",
+      "positive": true
+    },
+    {
+      "id": "me02.5-259",
+      "positive": false
+    },
+    {
+      "id": "me02.5-259",
+      "positive": true
+    },
+    {
+      "id": "me02.5-261",
+      "positive": false
+    },
+    {
+      "id": "me02.5-261",
+      "positive": true
+    },
+    {
+      "id": "me02.5-263",
+      "positive": false
+    },
+    {
+      "id": "me02.5-263",
+      "positive": true
+    },
+    {
+      "id": "me02.5-264",
+      "positive": false
+    },
+    {
+      "id": "me02.5-264",
+      "positive": true
+    },
+    {
+      "id": "me02.5-291",
+      "positive": false
+    },
+    {
+      "id": "me02.5-291",
+      "positive": true
+    },
+    {
+      "id": "me02.5-292",
+      "positive": false
+    },
+    {
+      "id": "me02.5-292",
+      "positive": true
+    },
+    {
+      "id": "me02.5-293",
+      "positive": false
+    },
+    {
+      "id": "me02.5-293",
+      "positive": true
+    },
+    {
+      "id": "me03-068",
+      "positive": false
+    },
+    {
+      "id": "me03-068",
+      "positive": true
+    },
+    {
+      "id": "me03-069",
+      "positive": false
+    },
+    {
+      "id": "me03-069",
+      "positive": true
+    },
+    {
+      "id": "me03-070",
+      "positive": false
+    },
+    {
+      "id": "me03-070",
+      "positive": true
+    },
+    {
+      "id": "me03-072",
+      "positive": false
+    },
+    {
+      "id": "me03-072",
+      "positive": true
+    },
+    {
+      "id": "me03-073",
+      "positive": false
+    },
+    {
+      "id": "me03-073",
+      "positive": true
+    },
+    {
+      "id": "me03-074",
+      "positive": false
+    },
+    {
+      "id": "me03-074",
+      "positive": true
+    },
+    {
+      "id": "me03-076",
+      "positive": false
+    },
+    {
+      "id": "me03-076",
+      "positive": true
+    },
+    {
+      "id": "me03-077",
+      "positive": false
+    },
+    {
+      "id": "me03-077",
+      "positive": true
+    },
+    {
+      "id": "me03-078",
+      "positive": false
+    },
+    {
+      "id": "me03-078",
+      "positive": true
+    },
+    {
+      "id": "me03-079",
+      "positive": false
+    },
+    {
+      "id": "me03-079",
+      "positive": true
+    },
+    {
+      "id": "me03-080",
+      "positive": false
+    },
+    {
+      "id": "me03-080",
+      "positive": true
+    },
+    {
+      "id": "me03-081",
+      "positive": false
+    },
+    {
+      "id": "me03-081",
+      "positive": true
+    },
+    {
+      "id": "me03-082",
+      "positive": false
+    },
+    {
+      "id": "me03-082",
+      "positive": true
+    },
+    {
+      "id": "me03-083",
+      "positive": false
+    },
+    {
+      "id": "me03-083",
+      "positive": true
+    },
+    {
+      "id": "me03-085",
+      "positive": false
+    },
+    {
+      "id": "me03-085",
+      "positive": true
+    },
+    {
+      "id": "me03-108",
+      "positive": false
+    },
+    {
+      "id": "me03-108",
+      "positive": true
+    },
+    {
+      "id": "me03-109",
+      "positive": false
+    },
+    {
+      "id": "me03-109",
+      "positive": true
+    },
+    {
+      "id": "me03-111",
+      "positive": false
+    },
+    {
+      "id": "me03-111",
+      "positive": true
+    },
+    {
+      "id": "me03-112",
+      "positive": false
+    },
+    {
+      "id": "me03-112",
+      "positive": true
+    },
+    {
+      "id": "me03-113",
+      "positive": false
+    },
+    {
+      "id": "me03-113",
+      "positive": true
+    },
+    {
+      "id": "me03-115",
+      "positive": false
+    },
+    {
+      "id": "me03-115",
+      "positive": true
+    },
+    {
+      "id": "me03-116",
+      "positive": false
+    },
+    {
+      "id": "me03-116",
+      "positive": true
+    },
+    {
+      "id": "me04-074",
+      "positive": false
+    },
+    {
+      "id": "me04-074",
+      "positive": true
+    },
+    {
+      "id": "me04-076",
+      "positive": false
+    },
+    {
+      "id": "me04-076",
+      "positive": true
+    },
+    {
+      "id": "me04-077",
+      "positive": false
+    },
+    {
+      "id": "me04-077",
+      "positive": true
+    },
+    {
+      "id": "me04-078",
+      "positive": false
+    },
+    {
+      "id": "me04-078",
+      "positive": true
+    },
+    {
+      "id": "me04-080",
+      "positive": false
+    },
+    {
+      "id": "me04-080",
+      "positive": true
+    },
+    {
+      "id": "me04-081",
+      "positive": false
+    },
+    {
+      "id": "me04-081",
+      "positive": true
+    },
+    {
+      "id": "me04-106",
+      "positive": false
+    },
+    {
+      "id": "me04-106",
+      "positive": true
+    },
+    {
+      "id": "me04-107",
+      "positive": false
+    },
+    {
+      "id": "me04-107",
+      "positive": true
+    },
+    {
+      "id": "me04-108",
+      "positive": false
+    },
+    {
+      "id": "me04-108",
+      "positive": true
+    },
+    {
+      "id": "me04-109",
+      "positive": false
+    },
+    {
+      "id": "me04-109",
+      "positive": true
+    },
+    {
+      "id": "me04-111",
+      "positive": false
+    },
+    {
+      "id": "me04-111",
+      "positive": true
+    },
+    {
+      "id": "me04-112",
+      "positive": false
+    },
+    {
+      "id": "me04-112",
+      "positive": true
+    },
+    {
+      "id": "me04-114",
+      "positive": false
+    },
+    {
+      "id": "me04-114",
+      "positive": true
+    },
+    {
+      "id": "me04-120",
+      "positive": false
+    },
+    {
+      "id": "me04-120",
+      "positive": true
+    },
+    {
+      "id": "me04-121",
+      "positive": false
+    },
+    {
+      "id": "me04-121",
+      "positive": true
+    },
+    {
+      "id": "me05-072",
+      "positive": false
+    },
+    {
+      "id": "me05-072",
+      "positive": true
+    },
+    {
+      "id": "me05-073",
+      "positive": false
+    },
+    {
+      "id": "me05-073",
+      "positive": true
+    },
+    {
+      "id": "me05-074",
+      "positive": false
+    },
+    {
+      "id": "me05-074",
+      "positive": true
+    },
+    {
+      "id": "me05-075",
+      "positive": false
+    },
+    {
+      "id": "me05-075",
+      "positive": true
+    },
+    {
+      "id": "me05-076",
+      "positive": false
+    },
+    {
+      "id": "me05-076",
+      "positive": true
+    },
+    {
+      "id": "me05-078",
+      "positive": false
+    },
+    {
+      "id": "me05-078",
+      "positive": true
+    },
+    {
+      "id": "me05-079",
+      "positive": false
+    },
+    {
+      "id": "me05-079",
+      "positive": true
+    },
+    {
+      "id": "me05-080",
+      "positive": false
+    },
+    {
+      "id": "me05-080",
+      "positive": true
+    },
+    {
+      "id": "me05-082",
+      "positive": false
+    },
+    {
+      "id": "me05-082",
+      "positive": true
+    },
+    {
+      "id": "me05-104",
+      "positive": false
+    },
+    {
+      "id": "me05-104",
+      "positive": true
+    },
+    {
+      "id": "me05-106",
+      "positive": false
+    },
+    {
+      "id": "me05-106",
+      "positive": true
+    },
+    {
+      "id": "me05-107",
+      "positive": false
+    },
+    {
+      "id": "me05-107",
+      "positive": true
+    },
+    {
+      "id": "me05-109",
+      "positive": false
+    },
+    {
+      "id": "me05-109",
+      "positive": true
+    },
+    {
+      "id": "me05-110",
+      "positive": false
+    },
+    {
+      "id": "me05-110",
+      "positive": true
+    },
+    {
+      "id": "me05-111",
+      "positive": false
+    },
+    {
+      "id": "me05-111",
+      "positive": true
+    },
+    {
+      "id": "me05-113",
+      "positive": false
+    },
+    {
+      "id": "me05-113",
+      "positive": true
+    },
+    {
+      "id": "me05-119",
+      "positive": false
+    },
+    {
+      "id": "me05-119",
+      "positive": true
+    },
+    {
+      "id": "30th-126",
+      "positive": false
+    },
+    {
+      "id": "30th-126",
+      "positive": true
+    },
+    {
+      "id": "30th-127",
+      "positive": false
+    },
+    {
+      "id": "30th-127",
+      "positive": true
+    },
+    {
+      "id": "30th-128",
+      "positive": false
+    },
+    {
+      "id": "30th-128",
+      "positive": true
+    },
+    {
+      "id": "30th-c-005",
+      "positive": false
+    },
+    {
+      "id": "30th-c-005",
+      "positive": true
+    },
+    {
+      "id": "30th-c-021",
+      "positive": false
+    },
+    {
+      "id": "30th-c-021",
+      "positive": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "me01-113",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-113",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-125",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-125",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-128",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-128",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-132",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-132",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-165",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-165",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-175",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-175",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-176",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-176",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-183",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-183",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-186",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me01-186",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02-086",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02-086",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02-094",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02-094",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02-117",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02-117",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-180",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-180",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-182",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-182",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-189",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-189",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-195",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-195",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-201",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-201",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-204",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-204",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-212",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-212",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-254",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-254",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-260",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-260",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-262",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me02.5-262",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-071",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-071",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-075",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-075",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-084",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-084",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-110",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-110",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-114",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-114",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-117",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-117",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-122",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-122",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-123",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me03-123",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-075",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-075",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-079",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-079",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-082",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-082",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-083",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-083",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-110",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-110",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-113",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-113",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-115",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me04-115",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-077",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-077",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-081",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-081",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-105",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-105",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-108",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-108",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-112",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-112",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-118",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "me05-118",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    }
+  ],
+  "failures": [],
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722"
+}

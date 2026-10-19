@@ -1,6 +1,6 @@
 # ILEX.GG private Windows multiplayer preview
 
-This preview adds invite-only Windows-to-Windows matches. No account, subscription, paid relay or hosted lobby is required. Both players must use the same preview build. The normal Windows release and Android APK remain separate.
+This preview adds invite-only Windows-to-Windows matches. No account, subscription, paid relay or hosted lobby is required. Both players must use the same preview build. The stable 1.19.0 Windows app retains this beta. Android multiplayer remains deferred. Both peers must use the same 1.19.0 build.
 
 ## Start a match
 

@@ -1,0 +1,13 @@
+# Mega era — local release 1.19.0 (October 19, 2026)
+
+1,293/1,293 standard-game printings implemented and verified with finite fixtures, zero pending, across ten catalogs: mee 16, me01 188, mep 110, me02 130, me02.5 295, me03 124, me04 122, me05 120, 30th 158, 30th-c 30. Interactions cover Black & White onward; Unlimited remains deferred. Museum is collection-only. Classic Collection preserves historical mechanics without implying official tournament legality. MEP102–110 are officially announced anniversary-product previews with future dates retained; all22 new scans089–110 preserve original image provenance. Unconfirmed RGB Mew rows remain excluded.
+
+Final engine dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722. 60 expected-result groups, 11701 printed-field comparisons, 1535 printed attacks, 3212 branch cases, 288 resolved Trainer fixtures (86 explicitly unavailable), 116 resolved Power fixtures (300 conditional/passive unavailable), 20 shared suites and 28 preserved SV/SWSH groups pass.24 bounded mixed games (2111 decisions, 14 completed) pass exact replay/Undo. Unavailable fixtures are not success cases, and finite tests do not prove all states.
+
+Windows fresh/restored checks, Mega desktop visuals, all23,860 scan hashes/image decodes and209 preserved finish images pass. Android140 mobile checks plus three Mega landscape previews and APK integrity/signature checks pass. Original signing certificate retained; physical Android acceptance remains pending. Private multiplayer simulated checks are preserved; an actual external two-PC full match remains unverified.
+
+Canonical source: work/mega-source/src (corrected UTF-8 baseline). Build with ILEX_RULES_SOURCE_ROOT=work/mega-source/src and ILEX_RULES_OUTFILE=work/mega-candidate/ui/rules-engine.js. Do not rebuild from older shared mojibake source or rerun initial generators over this release. Frozen corrected source and provenance are shipped under resources/app/card-effect-sources/mega-source and mega-source-manifest.json.
+
+Source repairs include modern Mega stage/Prize identity, Basic Energy names, physical attachment movements, damage/Weakness timing, reactive KO transfer/coins, optional Prize choices, Tool capacity and cleanup, Power Saver condition, Gwynn one-card discard, actual Antique Fossil identity, Waitress selected Basic Energy and modern Antique setup restrictions. Historical rules and all existing features retained. Reverse scan acquisition is still incomplete. No subagents or GitHub publication.
+
+Release evidence: mega-final-release-evidence.json, mega-source-validation.json and hash-bound audit reports.

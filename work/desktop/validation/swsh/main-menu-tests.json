@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "checks": [
+    "Fresh and restarted app opens the main menu",
+    "Sidebar removed and full viewport width available",
+    "Celebi Prime is the first menu card",
+    "Ordinary redraw does not rotate the menu card",
+    "All six destinations available in the forest menu",
+    "Workspace, download, audio and visual options retained",
+    "Menu destination opens: play",
+    "Return to main menu: play",
+    "Celebi changes on return from play",
+    "Menu destination opens: decks",
+    "Return to main menu: decks",
+    "Celebi changes on return from decks",
+    "Menu destination opens: library",
+    "Return to main menu: library",
+    "Celebi changes on return from library",
+    "Menu destination opens: formats",
+    "Return to main menu: formats",
+    "Celebi changes on return from formats",
+    "Menu destination opens: custom",
+    "Return to main menu: custom",
+    "Celebi changes on return from custom",
+    "Menu destination opens: packs",
+    "Return to main menu: packs",
+    "Celebi changes on return from packs",
+    "Eight Celebi printings cycle back to Prime without immediate repeats",
+    "Menu Celebi supports right-click magnification",
+    "Navigation preserves decks, formats, saved matches and pack inventory",
+    "Audio settings open from home",
+    "Visual settings open from home"
+  ],
+  "layouts": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "menu": true,
+      "buttons": [
+        {
+          "width": 378.65625,
+          "height": 116
+        },
+        {
+          "width": 378.671875,
+          "height": 116
+        },
+        {
+          "width": 378.65625,
+          "height": 116
+        },
+        {
+          "width": 378.65625,
+          "height": 116
+        },
+        {
+          "width": 378.671875,
+          "height": 116
+        },
+        {
+          "width": 378.65625,
+          "height": 116
+        }
+      ]
+    },
+    {
+      "width": 1920,
+      "scroll": 1920,
+      "menu": true,
+      "buttons": [
+        {
+          "width": 435.328125,
+          "height": 140
+        },
+        {
+          "width": 435.328125,
+          "height": 140
+        },
+        {
+          "width": 435.34375,
+          "height": 140
+        },
+        {
+          "width": 435.328125,
+          "height": 140
+        },
+        {
+          "width": 435.328125,
+          "height": 140
+        },
+        {
+          "width": 435.34375,
+          "height": 140
+        }
+      ]
+    },
+    {
+      "width": 1000,
+      "scroll": 985,
+      "menu": true,
+      "buttons": [
+        {
+          "width": 456.5,
+          "height": 104
+        },
+        {
+          "width": 456.5,
+          "height": 104
+        },
+        {
+          "width": 456.5,
+          "height": 104
+        },
+        {
+          "width": 456.5,
+          "height": 104
+        },
+        {
+          "width": 456.5,
+          "height": 104
+        },
+        {
+          "width": 456.5,
+          "height": 104
+        }
+      ]
+    },
+    {
+      "width": 900,
+      "scroll": 885,
+      "menu": true,
+      "buttons": [
+        {
+          "width": 406.5,
+          "height": 104
+        },
+        {
+          "width": 406.5,
+          "height": 104
+        },
+        {
+          "width": 406.5,
+          "height": 104
+        },
+        {
+          "width": 406.5,
+          "height": 104
+        },
+        {
+          "width": 406.5,
+          "height": 104
+        },
+        {
+          "width": 406.5,
+          "height": 104
+        }
+      ]
+    }
+  ]
+}

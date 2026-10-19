@@ -1,0 +1,180 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "xy0-35",
+      "positive": false
+    },
+    {
+      "id": "xy0-35",
+      "positive": true
+    },
+    {
+      "id": "xy0-36",
+      "positive": false
+    },
+    {
+      "id": "xy0-36",
+      "positive": true
+    },
+    {
+      "id": "xy0-37",
+      "positive": false
+    },
+    {
+      "id": "xy0-37",
+      "positive": true
+    },
+    {
+      "id": "xy0-38",
+      "positive": false
+    },
+    {
+      "id": "xy0-38",
+      "positive": true
+    },
+    {
+      "id": "xy0-39",
+      "positive": false
+    },
+    {
+      "id": "xy0-39",
+      "positive": true
+    },
+    {
+      "id": "xy1-115",
+      "positive": false
+    },
+    {
+      "id": "xy1-115",
+      "positive": true
+    },
+    {
+      "id": "xy1-116",
+      "positive": false
+    },
+    {
+      "id": "xy1-116",
+      "positive": true
+    },
+    {
+      "id": "xy1-117",
+      "positive": false
+    },
+    {
+      "id": "xy1-117",
+      "positive": true
+    },
+    {
+      "id": "xy1-118",
+      "positive": false
+    },
+    {
+      "id": "xy1-118",
+      "positive": true
+    },
+    {
+      "id": "xy1-119",
+      "positive": false
+    },
+    {
+      "id": "xy1-119",
+      "positive": true
+    },
+    {
+      "id": "xy1-120",
+      "positive": false
+    },
+    {
+      "id": "xy1-120",
+      "positive": true
+    },
+    {
+      "id": "xy1-121",
+      "positive": false
+    },
+    {
+      "id": "xy1-121",
+      "positive": true
+    },
+    {
+      "id": "xy1-122",
+      "positive": false
+    },
+    {
+      "id": "xy1-122",
+      "positive": true
+    },
+    {
+      "id": "xy1-123",
+      "positive": false
+    },
+    {
+      "id": "xy1-123",
+      "positive": true
+    },
+    {
+      "id": "xy1-124",
+      "positive": false
+    },
+    {
+      "id": "xy1-124",
+      "positive": true
+    },
+    {
+      "id": "xy1-125",
+      "positive": false
+    },
+    {
+      "id": "xy1-125",
+      "positive": true
+    },
+    {
+      "id": "xy1-126",
+      "positive": false
+    },
+    {
+      "id": "xy1-126",
+      "positive": true
+    },
+    {
+      "id": "xy1-127",
+      "positive": false
+    },
+    {
+      "id": "xy1-127",
+      "positive": true
+    },
+    {
+      "id": "xy1-128",
+      "positive": false
+    },
+    {
+      "id": "xy1-128",
+      "positive": true
+    },
+    {
+      "id": "xy1-129",
+      "positive": false
+    },
+    {
+      "id": "xy1-129",
+      "positive": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "xy0-34",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "xy0-34",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    }
+  ],
+  "failures": [],
+  "engineSha256": "63fae0b21180762f1b784323c443d15efe498fa73ee76773d49b8ae184bc73c4"
+}

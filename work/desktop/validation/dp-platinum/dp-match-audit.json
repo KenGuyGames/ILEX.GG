@@ -1,0 +1,116 @@
+{
+  "passed": true,
+  "engineSha256": "a84c466555b1dc677b59ad3377c9170f9e75ed0d0ec8fdf1ba6f4f434410963e",
+  "scope": "DP/Platinum with Holon Phantoms onward only; 150 decisions per match",
+  "games": [
+    {
+      "decks": [
+        "Glaceon Lock",
+        "Scizor Toxicroak"
+      ],
+      "level": "easy",
+      "decisions": 150,
+      "turn": 20,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Scizor Toxicroak",
+        "Torterra"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 24,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Torterra",
+        "AMU"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 19,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "AMU",
+        "CurseGar"
+      ],
+      "level": "easy",
+      "decisions": 42,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "CurseGar",
+        "DialgaChomp"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 23,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "DialgaChomp",
+        "Dusknoir"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 23,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dusknoir",
+        "Gliscor"
+      ],
+      "level": "easy",
+      "decisions": 150,
+      "turn": 24,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Gliscor",
+        "Stallgon"
+      ],
+      "level": "normal",
+      "decisions": 150,
+      "turn": 19,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Stallgon",
+        "Glaceon Lock"
+      ],
+      "level": "hard",
+      "decisions": 150,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

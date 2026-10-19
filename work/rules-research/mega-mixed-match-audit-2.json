@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through SV; twelve constructed SV fixtures interleaved with twelve cached SWSH decks, 24 bounded 120-decision pairings; SV/Expanded, exact replay and Undo. Constructed SV fixtures are not tournament lists.",
+  "games": [
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Venusaur ex",
+        "ADP Zacian"
+      ],
+      "level": "normal",
+      "decisions": 64,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Gardevoir ex",
+        "Constructed Mega interaction fixture: Mega Charizard X ex"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 12,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Dragonite ex",
+        "Constructed SV interaction fixture: Charizard ex"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 15,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Centiskorch VMax",
+        "Constructed Mega interaction fixture: Mega Lopunny ex"
+      ],
+      "level": "hard",
+      "decisions": 64,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Feraligatr ex",
+        "Cinccino Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Raging Bolt ex",
+        "Constructed Mega interaction fixture: Sylveon ex"
+      ],
+      "level": "normal",
+      "decisions": 25,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Greninja ex",
+        "Constructed SV interaction fixture: Dragapult ex"
+      ],
+      "level": "easy",
+      "decisions": 91,
+      "turn": 11,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Constructed Mega interaction fixture: Mega Lucario ex"
+      ],
+      "level": "hard",
+      "decisions": 83,
+      "turn": 8,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through SV; twelve constructed SV fixtures interleaved with twelve cached SWSH decks, 24 bounded 120-decision pairings; SV/Expanded, exact replay and Undo. Constructed SV fixtures are not tournament lists.",
+  "games": [
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Miraidon ex",
+        "Constructed Mega interaction fixture: Mega Venusaur ex"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Gardevoir ex",
+        "Constructed SV interaction fixture: Gardevoir ex"
+      ],
+      "level": "easy",
+      "decisions": 49,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Blowns",
+        "Constructed Mega interaction fixture: Mega Dragonite ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Darkrai ex",
+        "Centiskorch VMax"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Gholdengo ex",
+        "Constructed Mega interaction fixture: Mega Feraligatr ex"
+      ],
+      "level": "normal",
+      "decisions": 94,
+      "turn": 12,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Greninja ex",
+        "Constructed SV interaction fixture: Raging Bolt ex"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 16,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Eternatus VMax",
+        "Constructed Mega interaction fixture: Greninja ex"
+      ],
+      "level": "hard",
+      "decisions": 63,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed Mega interaction fixture: Salamence ex",
+        "MewtwoMew"
+      ],
+      "level": "normal",
+      "decisions": 64,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

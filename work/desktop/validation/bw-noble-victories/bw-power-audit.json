@@ -1,0 +1,2084 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "bw7-3",
+      "power": "Allergy Panic",
+      "bench": false
+    },
+    {
+      "id": "bw7-3",
+      "power": "Allergy Panic",
+      "bench": true
+    },
+    {
+      "id": "bw5-3",
+      "power": "Floral Fragrance",
+      "bench": false
+    },
+    {
+      "id": "bw5-3",
+      "power": "Floral Fragrance",
+      "bench": true
+    },
+    {
+      "id": "bw6-3",
+      "power": "Leave It to the Wind",
+      "bench": false
+    },
+    {
+      "id": "bw6-3",
+      "power": "Leave It to the Wind",
+      "bench": true
+    },
+    {
+      "id": "bw8-7",
+      "power": "Fair-Weather Heal",
+      "bench": false
+    },
+    {
+      "id": "bw8-7",
+      "power": "Fair-Weather Heal",
+      "bench": true
+    },
+    {
+      "id": "dv1-8",
+      "power": "Scornful Storm",
+      "bench": false
+    },
+    {
+      "id": "dv1-8",
+      "power": "Scornful Storm",
+      "bench": true
+    },
+    {
+      "id": "bw7-9",
+      "power": "Time Recall",
+      "bench": false
+    },
+    {
+      "id": "bw7-9",
+      "power": "Time Recall",
+      "bench": true
+    },
+    {
+      "id": "bw9-16",
+      "power": "Flare Navigate",
+      "bench": false
+    },
+    {
+      "id": "bw9-16",
+      "power": "Flare Navigate",
+      "bench": true
+    },
+    {
+      "id": "bw10-16",
+      "power": "Deluge",
+      "bench": false
+    },
+    {
+      "id": "bw10-16",
+      "power": "Deluge",
+      "bench": true
+    },
+    {
+      "id": "bw1-20",
+      "power": "Inferno Fandango",
+      "bench": false
+    },
+    {
+      "id": "bw1-20",
+      "power": "Inferno Fandango",
+      "bench": true
+    },
+    {
+      "id": "bw10-23",
+      "power": "Cursed Glare",
+      "bench": false
+    },
+    {
+      "id": "bw10-23",
+      "power": "Cursed Glare",
+      "bench": true
+    },
+    {
+      "id": "bw11-27",
+      "power": "Inferno Fandango",
+      "bench": false
+    },
+    {
+      "id": "bw11-27",
+      "power": "Inferno Fandango",
+      "bench": true
+    },
+    {
+      "id": "bw5-29",
+      "power": "Diving Draw",
+      "bench": false
+    },
+    {
+      "id": "bw5-29",
+      "power": "Diving Draw",
+      "bench": true
+    },
+    {
+      "id": "bw7-31",
+      "power": "Deluge",
+      "bench": false
+    },
+    {
+      "id": "bw7-31",
+      "power": "Deluge",
+      "bench": true
+    },
+    {
+      "id": "bw8-31",
+      "power": "Rain Dish",
+      "bench": false
+    },
+    {
+      "id": "bw8-31",
+      "power": "Rain Dish",
+      "bench": true
+    },
+    {
+      "id": "bw4-33",
+      "power": "Slippery Soles",
+      "bench": false
+    },
+    {
+      "id": "bw4-33",
+      "power": "Slippery Soles",
+      "bench": true
+    },
+    {
+      "id": "bw9-33",
+      "power": "Magnetic Draw",
+      "bench": false
+    },
+    {
+      "id": "bw9-33",
+      "power": "Magnetic Draw",
+      "bench": true
+    },
+    {
+      "id": "bw8-33",
+      "power": "Rough Skin",
+      "bench": false
+    },
+    {
+      "id": "bw8-33",
+      "power": "Rough Skin",
+      "bench": true
+    },
+    {
+      "id": "bw8-34",
+      "power": "Final Wish",
+      "bench": false
+    },
+    {
+      "id": "bw8-34",
+      "power": "Final Wish",
+      "bench": true
+    },
+    {
+      "id": "bw10-37",
+      "power": "Mental Shroud",
+      "bench": false
+    },
+    {
+      "id": "bw10-37",
+      "power": "Mental Shroud",
+      "bench": true
+    },
+    {
+      "id": "bw8-39",
+      "power": "Spiteful Spirit",
+      "bench": false
+    },
+    {
+      "id": "bw8-39",
+      "power": "Spiteful Spirit",
+      "bench": true
+    },
+    {
+      "id": "bw3-40",
+      "power": "Dynamotor",
+      "bench": false
+    },
+    {
+      "id": "bw3-40",
+      "power": "Dynamotor",
+      "bench": true
+    },
+    {
+      "id": "bw7-45",
+      "power": "Stickiness",
+      "bench": false
+    },
+    {
+      "id": "bw7-45",
+      "power": "Stickiness",
+      "bench": true
+    },
+    {
+      "id": "bw11-45",
+      "power": "Rush In",
+      "bench": true
+    },
+    {
+      "id": "bw8-46",
+      "power": "Dual Brains",
+      "bench": false
+    },
+    {
+      "id": "bw8-46",
+      "power": "Dual Brains",
+      "bench": true
+    },
+    {
+      "id": "bw6-48",
+      "power": "Empty Shell",
+      "bench": false
+    },
+    {
+      "id": "bw6-48",
+      "power": "Empty Shell",
+      "bench": true
+    },
+    {
+      "id": "bw7-49",
+      "power": "Rush In",
+      "bench": true
+    },
+    {
+      "id": "bw10-49",
+      "power": "Badge of Discipline",
+      "bench": false
+    },
+    {
+      "id": "bw10-49",
+      "power": "Badge of Discipline",
+      "bench": true
+    },
+    {
+      "id": "bw9-52",
+      "power": "Plasma Search",
+      "bench": false
+    },
+    {
+      "id": "bw9-52",
+      "power": "Plasma Search",
+      "bench": true
+    },
+    {
+      "id": "bw8-55",
+      "power": "Night Sight",
+      "bench": false
+    },
+    {
+      "id": "bw8-55",
+      "power": "Night Sight",
+      "bench": true
+    },
+    {
+      "id": "bw9-56",
+      "power": "Six Feet Under",
+      "bench": false
+    },
+    {
+      "id": "bw9-56",
+      "power": "Six Feet Under",
+      "bench": true
+    },
+    {
+      "id": "bw1-57",
+      "power": "Damage Swap",
+      "bench": false
+    },
+    {
+      "id": "bw1-57",
+      "power": "Damage Swap",
+      "bench": true
+    },
+    {
+      "id": "bw8-58",
+      "power": "Aftermath",
+      "bench": false
+    },
+    {
+      "id": "bw8-58",
+      "power": "Aftermath",
+      "bench": true
+    },
+    {
+      "id": "bw4-59",
+      "power": "Forewarn",
+      "bench": false
+    },
+    {
+      "id": "bw4-59",
+      "power": "Forewarn",
+      "bench": true
+    },
+    {
+      "id": "bw3-60",
+      "power": "Cursed Shadow",
+      "bench": false
+    },
+    {
+      "id": "bw7-63",
+      "power": "Sinister Hand",
+      "bench": false
+    },
+    {
+      "id": "bw7-63",
+      "power": "Sinister Hand",
+      "bench": true
+    },
+    {
+      "id": "bw7-67",
+      "power": "Sparkling Particles",
+      "bench": false
+    },
+    {
+      "id": "bw7-67",
+      "power": "Sparkling Particles",
+      "bench": true
+    },
+    {
+      "id": "bw7-68",
+      "power": "Long-Distance Hypnosis",
+      "bench": false
+    },
+    {
+      "id": "bw7-68",
+      "power": "Long-Distance Hypnosis",
+      "bench": true
+    },
+    {
+      "id": "bw7-72",
+      "power": "Poison Point",
+      "bench": false
+    },
+    {
+      "id": "bw7-72",
+      "power": "Poison Point",
+      "bench": true
+    },
+    {
+      "id": "bw7-73",
+      "power": "Poison Point",
+      "bench": false
+    },
+    {
+      "id": "bw7-73",
+      "power": "Poison Point",
+      "bench": true
+    },
+    {
+      "id": "bw8-73",
+      "power": "Premonition",
+      "bench": false
+    },
+    {
+      "id": "bw8-73",
+      "power": "Premonition",
+      "bench": true
+    },
+    {
+      "id": "bw7-74",
+      "power": "Poison Point",
+      "bench": false
+    },
+    {
+      "id": "bw7-74",
+      "power": "Poison Point",
+      "bench": true
+    },
+    {
+      "id": "bw10-74",
+      "power": "Plasma Transfer",
+      "bench": false
+    },
+    {
+      "id": "bw10-74",
+      "power": "Plasma Transfer",
+      "bench": true
+    },
+    {
+      "id": "bw1-76",
+      "power": "Shift Gear",
+      "bench": false
+    },
+    {
+      "id": "bw1-76",
+      "power": "Shift Gear",
+      "bench": true
+    },
+    {
+      "id": "bw8-78",
+      "power": "Dual Armor",
+      "bench": false
+    },
+    {
+      "id": "bw8-78",
+      "power": "Dual Armor",
+      "bench": true
+    },
+    {
+      "id": "bw5-82",
+      "power": "Softboiled",
+      "bench": false
+    },
+    {
+      "id": "bw5-82",
+      "power": "Softboiled",
+      "bench": true
+    },
+    {
+      "id": "bw6-89",
+      "power": "Dragon Call",
+      "bench": false
+    },
+    {
+      "id": "bw6-89",
+      "power": "Dragon Call",
+      "bench": true
+    },
+    {
+      "id": "bw8-90",
+      "power": "Plasma Steel",
+      "bench": false
+    },
+    {
+      "id": "bw8-90",
+      "power": "Plasma Steel",
+      "bench": true
+    },
+    {
+      "id": "bw6-97",
+      "power": "Dark Trance",
+      "bench": false
+    },
+    {
+      "id": "bw6-97",
+      "power": "Dark Trance",
+      "bench": true
+    },
+    {
+      "id": "bw8-98",
+      "power": "Moon Guidance",
+      "bench": false
+    },
+    {
+      "id": "bw8-98",
+      "power": "Moon Guidance",
+      "bench": true
+    },
+    {
+      "id": "bw11-99",
+      "power": "Dark Trance",
+      "bench": false
+    },
+    {
+      "id": "bw11-99",
+      "power": "Dark Trance",
+      "bench": true
+    },
+    {
+      "id": "bw4-100",
+      "power": "Inferno Fandango",
+      "bench": false
+    },
+    {
+      "id": "bw4-100",
+      "power": "Inferno Fandango",
+      "bench": true
+    },
+    {
+      "id": "bw4-101",
+      "power": "Cursed Shadow",
+      "bench": false
+    },
+    {
+      "id": "bw6-103",
+      "power": "Unobservant",
+      "bench": false
+    },
+    {
+      "id": "bw6-103",
+      "power": "Unobservant",
+      "bench": true
+    },
+    {
+      "id": "bw10-104",
+      "power": "Sinister Hand",
+      "bench": false
+    },
+    {
+      "id": "bw10-104",
+      "power": "Sinister Hand",
+      "bench": true
+    },
+    {
+      "id": "bw7-108",
+      "power": "Transform",
+      "bench": false
+    },
+    {
+      "id": "bw7-108",
+      "power": "Transform",
+      "bench": true
+    },
+    {
+      "id": "bw8-116",
+      "power": "Big Wing",
+      "bench": false
+    },
+    {
+      "id": "bw9-117",
+      "power": "Diving Draw",
+      "bench": false
+    },
+    {
+      "id": "bw9-117",
+      "power": "Diving Draw",
+      "bench": true
+    },
+    {
+      "id": "bw6-125",
+      "power": "Royal Heal",
+      "bench": false
+    },
+    {
+      "id": "bw6-125",
+      "power": "Royal Heal",
+      "bench": true
+    },
+    {
+      "id": "bw6-126",
+      "power": "Damage Swap",
+      "bench": false
+    },
+    {
+      "id": "bw6-126",
+      "power": "Damage Swap",
+      "bench": true
+    },
+    {
+      "id": "bw8-137",
+      "power": "Deluge",
+      "bench": false
+    },
+    {
+      "id": "bw8-137",
+      "power": "Deluge",
+      "bench": true
+    },
+    {
+      "id": "bw7-141",
+      "power": "Time Recall",
+      "bench": false
+    },
+    {
+      "id": "bw7-141",
+      "power": "Time Recall",
+      "bench": true
+    },
+    {
+      "id": "bw7-142",
+      "power": "Rush In",
+      "bench": true
+    },
+    {
+      "id": "bw7-143",
+      "power": "Sparkling Particles",
+      "bench": false
+    },
+    {
+      "id": "bw7-143",
+      "power": "Sparkling Particles",
+      "bench": true
+    },
+    {
+      "id": "bwp-BW21",
+      "power": "Inferno Fandango",
+      "bench": false
+    },
+    {
+      "id": "bwp-BW21",
+      "power": "Inferno Fandango",
+      "bench": true
+    },
+    {
+      "id": "bwp-BW51",
+      "power": "Night Sight",
+      "bench": false
+    },
+    {
+      "id": "bwp-BW51",
+      "power": "Night Sight",
+      "bench": true
+    },
+    {
+      "id": "bwp-BW61",
+      "power": "Rush In",
+      "bench": true
+    },
+    {
+      "id": "bwp-BW75",
+      "power": "Plasma Search",
+      "bench": false
+    },
+    {
+      "id": "bwp-BW75",
+      "power": "Plasma Search",
+      "bench": true
+    },
+    {
+      "id": "bwp-BW84",
+      "power": "Plasma Transfer",
+      "bench": false
+    },
+    {
+      "id": "bwp-BW84",
+      "power": "Plasma Transfer",
+      "bench": true
+    },
+    {
+      "id": "bwp-BW98",
+      "power": "Psyscan",
+      "bench": false
+    },
+    {
+      "id": "bw11-RC3",
+      "power": "Royal Garden",
+      "bench": false
+    },
+    {
+      "id": "bw11-RC3",
+      "power": "Royal Garden",
+      "bench": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "bw10-2",
+      "power": "Tool Reversal",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-2",
+      "power": "Tool Reversal",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-3",
+      "power": "Leaf Tailor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-3",
+      "power": "Leaf Tailor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-3",
+      "power": "Prehistoric Call",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-3",
+      "power": "Prehistoric Call",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-4",
+      "power": "Propagation",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-4",
+      "power": "Propagation",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw1-6",
+      "power": "Royal Heal",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw1-6",
+      "power": "Royal Heal",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-8",
+      "power": "Royal Heal",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-8",
+      "power": "Royal Heal",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-9",
+      "power": "Verdant Wind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-9",
+      "power": "Verdant Wind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-12",
+      "power": "Blazing Mane",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-12",
+      "power": "Blazing Mane",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-12",
+      "power": "Leaf Tailor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-12",
+      "power": "Leaf Tailor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dv1-14",
+      "power": "Grit",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "dv1-14",
+      "power": "Grit",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-14",
+      "power": "Victory Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-14",
+      "power": "Victory Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-20",
+      "power": "Safeguard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-20",
+      "power": "Safeguard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-22",
+      "power": "Scorching Scales",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-22",
+      "power": "Scorching Scales",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-22",
+      "power": "Laid-Back",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-22",
+      "power": "Laid-Back",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-22",
+      "power": "Freefloating",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-22",
+      "power": "Freefloating",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-22",
+      "power": "Rebirth",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-22",
+      "power": "Rebirth",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-23",
+      "power": "Freeze Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-23",
+      "power": "Freeze Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-23",
+      "power": "Victory Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-23",
+      "power": "Victory Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-24",
+      "power": "Airhead",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-24",
+      "power": "Airhead",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-26",
+      "power": "Solid Rock",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-26",
+      "power": "Solid Rock",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-27",
+      "power": "Prehistoric Call",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-27",
+      "power": "Prehistoric Call",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-29",
+      "power": "Shell Shield",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-29",
+      "power": "Shell Shield",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-31",
+      "power": "Cursed Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-31",
+      "power": "Cursed Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw1-32",
+      "power": "Shell Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw1-32",
+      "power": "Shell Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-35",
+      "power": "Drifting Balloon",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-35",
+      "power": "Drifting Balloon",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-39",
+      "power": "Shell Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-39",
+      "power": "Shell Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-41",
+      "power": "Toolbox",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-41",
+      "power": "Toolbox",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-45",
+      "power": "Rush In",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-46",
+      "power": "Versatile",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-46",
+      "power": "Versatile",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw2-47",
+      "power": "Magic Room",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw2-47",
+      "power": "Magic Room",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-47",
+      "power": "Bench Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-47",
+      "power": "Bench Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-48",
+      "power": "Solar Revelation",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-48",
+      "power": "Solar Revelation",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-49",
+      "power": "Rush In",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-52",
+      "power": "Safeguard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-52",
+      "power": "Safeguard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-53",
+      "power": "Ancient Scream",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-53",
+      "power": "Ancient Scream",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-53",
+      "power": "Power Connect",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-53",
+      "power": "Power Connect",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-53",
+      "power": "Free Flight",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-53",
+      "power": "Free Flight",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-53",
+      "power": "Prehistoric Call",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-53",
+      "power": "Prehistoric Call",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-54",
+      "power": "Garbotoxin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-54",
+      "power": "Garbotoxin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-57",
+      "power": "Psychic Mirage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-57",
+      "power": "Psychic Mirage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-60",
+      "power": "Cursed Shadow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw2-62",
+      "power": "Black Eyes",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw2-62",
+      "power": "Black Eyes",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-63",
+      "power": "Dark Cloak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-63",
+      "power": "Dark Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-64",
+      "power": "Craftsmanship",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-64",
+      "power": "Craftsmanship",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-64",
+      "power": "Reflexive Retaliation",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-64",
+      "power": "Reflexive Retaliation",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-64",
+      "power": "Dark Shade",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-64",
+      "power": "Dark Shade",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-66",
+      "power": "Safeguard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-66",
+      "power": "Safeguard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-67",
+      "power": "Ancient Power",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-67",
+      "power": "Ancient Power",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-68",
+      "power": "Garbotoxin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-68",
+      "power": "Garbotoxin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-72",
+      "power": "Magic Room",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-72",
+      "power": "Magic Room",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-76",
+      "power": "Heal Block",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-76",
+      "power": "Heal Block",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-79",
+      "power": "Dark Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-79",
+      "power": "Dark Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-80",
+      "power": "Reflexive Retaliation",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-80",
+      "power": "Reflexive Retaliation",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-84",
+      "power": "Fight Song",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-84",
+      "power": "Fight Song",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-85",
+      "power": "Smooth Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-85",
+      "power": "Smooth Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-85",
+      "power": "Bright Down",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-85",
+      "power": "Bright Down",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-87",
+      "power": "Sealing Scream",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-87",
+      "power": "Sealing Scream",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-88",
+      "power": "Dark Cloak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-88",
+      "power": "Dark Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-89",
+      "power": "Rough Skin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-89",
+      "power": "Rough Skin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-94",
+      "power": "Color Change",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-94",
+      "power": "Color Change",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-96",
+      "power": "Verdant Wind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-96",
+      "power": "Verdant Wind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-98",
+      "power": "Victory Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw3-98",
+      "power": "Victory Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-99",
+      "power": "Sand Slammer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-99",
+      "power": "Sand Slammer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-101",
+      "power": "Cursed Shadow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-101",
+      "power": "Block",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-101",
+      "power": "Block",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-102",
+      "power": "Overflow",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-102",
+      "power": "Overflow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-102",
+      "power": "Propagation",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw10-102",
+      "power": "Propagation",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-103",
+      "power": "Dark Aura",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw4-103",
+      "power": "Dark Aura",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-105",
+      "power": "Smooth Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-105",
+      "power": "Smooth Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-106",
+      "power": "Rough Skin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-106",
+      "power": "Rough Skin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-107",
+      "power": "Dark Cloak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-107",
+      "power": "Dark Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-108",
+      "power": "Overflow",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-108",
+      "power": "Overflow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-109",
+      "power": "Psychic Mirage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-109",
+      "power": "Psychic Mirage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-110",
+      "power": "Ancient Power",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw5-110",
+      "power": "Ancient Power",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-110",
+      "power": "Bouffer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-110",
+      "power": "Bouffer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-111",
+      "power": "Power Connect",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-111",
+      "power": "Power Connect",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-112",
+      "power": "Bright Down",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-112",
+      "power": "Bright Down",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-116",
+      "power": "Big Wing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-118",
+      "power": "Safeguard",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-118",
+      "power": "Safeguard",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-119",
+      "power": "Garbotoxin",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw9-119",
+      "power": "Garbotoxin",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-119",
+      "power": "Rebirth",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-119",
+      "power": "Rebirth",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-120",
+      "power": "Versatile",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw6-120",
+      "power": "Versatile",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-122",
+      "power": "Sentinel",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-122",
+      "power": "Sentinel",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-126",
+      "power": "Busybody",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-126",
+      "power": "Busybody",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-134",
+      "power": "Overflow",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw8-134",
+      "power": "Overflow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-142",
+      "power": "Rush In",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-152",
+      "power": "Fight Song",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw7-152",
+      "power": "Fight Song",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW20",
+      "power": "Royal Heal",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW20",
+      "power": "Royal Heal",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW22",
+      "power": "Shell Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW22",
+      "power": "Shell Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW32",
+      "power": "Victory Star",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW32",
+      "power": "Victory Star",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW40",
+      "power": "Scorching Scales",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW40",
+      "power": "Scorching Scales",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW46",
+      "power": "Dark Cloak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW46",
+      "power": "Dark Cloak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW48",
+      "power": "Fight Song",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW48",
+      "power": "Fight Song",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW53",
+      "power": "Sand Slammer",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW53",
+      "power": "Sand Slammer",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW55",
+      "power": "Weak Barrier",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW55",
+      "power": "Weak Barrier",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW61",
+      "power": "Rush In",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW70",
+      "power": "Justified",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW70",
+      "power": "Justified",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW71",
+      "power": "Justified",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW71",
+      "power": "Justified",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW72",
+      "power": "Justified",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW72",
+      "power": "Justified",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW82",
+      "power": "Power Connect",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW82",
+      "power": "Power Connect",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW83",
+      "power": "Overflow",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW83",
+      "power": "Overflow",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW92",
+      "power": "Solar Revelation",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW92",
+      "power": "Solar Revelation",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bwp-BW98",
+      "power": "Psyscan",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-RC19",
+      "power": "Smooth Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-RC19",
+      "power": "Smooth Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-RC24",
+      "power": "Versatile",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "bw11-RC24",
+      "power": "Versatile",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    }
+  ],
+  "failures": [],
+  "engineSha256": "a7f812b8c255e0246245455792f1be041a86c7212b0a8e0fed6999360423ab59"
+}

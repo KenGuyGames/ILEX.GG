@@ -1,0 +1,15 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Thunder Raid resolves without an eligible target and always discards its Energy",
+    "Adrena-Brain moves up to three counters from one donor and preserves them when Amber blocks the destination",
+    "Crispin chooses distinct Basic Energy, puts one in hand and attaches the other without spending the turn attachment",
+    "Salvatore evolves a Pokemon played this turn and excludes every Ability-bearing evolution",
+    "Order a Raid requires an actual Combee return before dealing its printed damage",
+    "Whirltide counts Basic and Special Energy, discards them and shuffles the other revealed cards back",
+    "Both Active returns require the attack owner to promote first even from player index one",
+    "Bother-Bot keeps the replacement Prize face up and swaps exactly the revealed random hand card"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

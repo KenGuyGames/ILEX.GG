@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),src=path.join(root,'work/mega-source/src');
+const file=path.join(src,'tcg-lab-wotc.ts');let s=fs.readFileSync(file,'utf8');
+if(!s.includes("import {megaData}"))s="import {megaData} from './tcg-lab-mega-data';\nimport {installMegaCard} from './tcg-lab-mega-cards';\n"+s;
+s=s.replace('...swshData,...svData])','...swshData,...svData,...megaData])').replace('||svData.includes(record),','||svData.includes(record)||megaData.includes(record),');
+if(!s.includes('if(megaData.includes(record))'))s=s.replace('supplemental.push(card);','if(megaData.includes(record))installMegaCard(card,record);\n supplemental.push(card);');
+if(!s.includes('Object.assign(codes,{"me01"'))s=s.replace('for(const record of [...wotcData','Object.assign(codes,{"me01":"MEG","me02":"PFL","me02.5":"ASC","me03":"POR","me04":"CRI","me05":"PBL","mep":"MEP","mee":"MEE","30th":"30C","30th-c":"30CC"});\nfor(const record of [...wotcData');
+fs.writeFileSync(file,s);
+let p=path.join(src,'tcg-lab-wotc.ts');s=fs.readFileSync(p,'utf8');if(!s.includes("import {megaAction}"))s="import {megaAction} from './tcg-lab-mega-actions';\n"+s;if(!s.includes("case 'mega':"))s=s.replace("case 'sv':return", "case 'mega':return megaAction(store,state,b,op,next,{run:(ops:any,done:any)=>run(store,state,e,ops,done),damage,heal});\n case 'sv':return");fs.writeFileSync(p,s);
+p=path.join(src,'tcg-lab-wotc-powers.ts');s=fs.readFileSync(p,'utf8');if(!s.includes("import {megaPower,"))s="import {megaPower,megaPowerTrigger} from './tcg-lab-mega-powers';\n"+s;s=s.replace('if(!svPowerTrigger(','if(!megaPowerTrigger(op,e,owner,list)&&!svPowerTrigger(');if(!s.includes("case 'activatedMega':"))s=s.replace("case 'onEvolutionSv':","case 'activatedMega':case 'megaPassive':return megaPower(card,op,power,store,state,e,owner,list,use);\n  case 'onEvolutionSv':");fs.writeFileSync(p,s);
+p=path.join(src,'game/store/effect-reducers/game-effect.ts');s=fs.readFileSync(p,'utf8').replace('history.push({turn:state.turn,types:','history.push({name:card.name,turn:state.turn,types:');fs.writeFileSync(p,s);
+console.log('Mega candidate registration installed in isolated source.');

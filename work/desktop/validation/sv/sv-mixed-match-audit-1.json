@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through SV; twelve constructed SV fixtures interleaved with twelve cached SWSH decks, 24 bounded 120-decision pairings; SV/Expanded, exact replay and Undo. Constructed SV fixtures are not tournament lists.",
+  "games": [
+    {
+      "decks": [
+        "ADP Zacian",
+        "Constructed SV interaction fixture: Gardevoir ex"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Charizard ex",
+        "Centiskorch VMax"
+      ],
+      "level": "easy",
+      "decisions": 93,
+      "turn": 14,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Cinccino Control",
+        "Constructed SV interaction fixture: Raging Bolt ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Dragapult ex",
+        "MewtwoMew"
+      ],
+      "level": "normal",
+      "decisions": 37,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Pikarom",
+        "Constructed SV interaction fixture: Hydreigon ex"
+      ],
+      "level": "normal",
+      "decisions": 67,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Ethan's Ho-Oh ex",
+        "Dragapult VMax"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 17,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Leafeon VMax",
+        "Constructed SV interaction fixture: Zekrom ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Team Rocket's Mewtwo ex",
+        "Rapid Strike Urshifu VMax"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

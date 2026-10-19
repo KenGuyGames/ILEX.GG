@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "layouts": [
+    {
+      "width": 1440,
+      "scroll": 1425,
+      "pulls": 11
+    },
+    {
+      "width": 1920,
+      "scroll": 1905,
+      "pulls": 11
+    },
+    {
+      "width": 1000,
+      "scroll": 985,
+      "pulls": 11
+    }
+  ]
+}

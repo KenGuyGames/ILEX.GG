@@ -1,8 +1,8 @@
 {
   "status": "windows-private-preview-real-network-unverified",
   "version": "1.18.0-private.1",
-  "engineSha256": "d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7",
-  "engineChangedFromFrozenRelease": true,
+  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
+  "engineChangedFromFrozenRelease": false,
   "coreChecks": 15,
   "protocolChecks": 4,
   "simulatedTwoWindowChecks": [
@@ -26,19 +26,6 @@
     "No TURN relay; restrictive networks may not connect",
     "Trusted host can inspect full state",
     "Custom-card networking, Android multiplayer and matchmaking deferred",
-    "Unlimited interactions remain deferred",
-    "Historical native two-window checks used the previous engine; publication checks cover the repaired engine separately"
-  ],
-  "executableSha256": "903cd075e5b3175e1d6451ee99d4272abddf3a6f7e66cee3f8549189ea849d1c",
-  "historicalEngineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
-  "publicationRepair": {
-    "status": "source-encoding-repaired",
-    "previousEngineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
-    "engineSha256": "d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7",
-    "issue": "Mojibake in generated-name and Delta-symbol comparisons broke EX Delta evolution; repaired UTF-8 source and normal compiler output",
-    "failingCase": "Peal of Thunder: EX Dragon Frontiers Charmeleon Delta evolves to Charizard Delta",
-    "focusedReproductionNowPasses": true,
-    "historicalValidationNotRelabeled": true,
-    "realNetworkVerified": false
-  }
+    "Unlimited interactions remain deferred"
+  ]
 }

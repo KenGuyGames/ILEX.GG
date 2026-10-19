@@ -2,6 +2,7 @@
 var RulesMatch=(()=>{
   const R=TCGRules;
   const profiles={
+    mega:{name:'Mega Evolution (2025–2026)',format:R.Format.SV,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true,svEraRules:true},
     sv:{name:'Scarlet & Violet (2023–2025)',format:R.Format.SV,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true,svEraRules:true},
     swsh:{name:'Sword & Shield (2020–2023)',format:R.Format.SWSH,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true},
     wotc:{name:'WOTC: Base–Neo (1999–2001)',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,wotcRules:true,wotcEarlyPowers:true,unlimitedRetreat:true,mulliganBonus:2},

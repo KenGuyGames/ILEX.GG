@@ -15,7 +15,7 @@
     "Leaving the table discards a late worker result",
     "Worker restores and plays structured custom cards from the workspace fallback"
   ],
-  "heartbeatCount": 301,
+  "heartbeatCount": 223,
   "worker": true,
   "botSha256": "e845283560f1585055027d236edcd5449692dfb0d075e9075df97a57db95ecfe"
 }

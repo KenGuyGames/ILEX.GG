@@ -1,0 +1,10 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Rainbow DNA permits a modern Eevee evolution ex from hand and bot candidates include it",
+    "Rainbow DNA retains first-turn, same-turn, suppression and modern-ex restrictions",
+    "Tuning Echo removes only its own named attack cost while hands match"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

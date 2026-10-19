@@ -1,0 +1,60 @@
+{
+  "status": "candidate-unvalidated",
+  "newPrintings": 22,
+  "MEPRange": "001–110 plus collection-only Museum entry; nine announced anniversary product promos included",
+  "officialAnniversaryPage": "https://www.pokemon.com/us/news/pokemon-tcg-30th-celebration-product-showcase",
+  "officialWorldsPage": "https://www.pokemon.com/uk/news/pikachu-promo-cards-revealed-ahead-of-the-2026-world-championships",
+  "announcedAssociatedPromos": [
+    {
+      "id": "mep-102",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_102.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-103",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_103.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-106",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_106.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-107",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-109",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-108",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_108.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-110",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_110.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-105",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_105.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    },
+    {
+      "id": "mep-104",
+      "source": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_104.png",
+      "reason": "Announced for October 30 or November 6; included as verified anniversary preview printings"
+    }
+  ],
+  "unconfirmedCacheEntries": [
+    "30th-R",
+    "30th-G",
+    "30th-B"
+  ],
+  "limits": "Non-numbered RGB Mew source rows are not confirmed by the official English 158-card catalog; held out rather than inventing English printings. Museum effect searches a real-world collection and is not standard-game automated. Stamps and finishes share effects."
+}

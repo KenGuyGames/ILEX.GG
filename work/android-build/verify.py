@@ -30,7 +30,7 @@ badging=subprocess.run([str(HERE/'toolchain/build-tools/android-16/aapt2.exe'),'
 check("minSdkVersion:'26'" in badging and "targetSdkVersion:'36'" in badging,'Android 8 minimum and SDK 36 target encoded in APK')
 check([line for line in badging.splitlines() if line.startswith('uses-permission:')]==["uses-permission: name='android.permission.INTERNET'"],'Internet is the only requested Android permission')
 check("launchable-activity: name='gg.ilex.app.MainActivity'" in badging,'Launcher Activity registered')
-expected_code=os.environ.get('ILEX_ANDROID_EXPECTED_CODE','26');expected_version=os.environ.get('ILEX_ANDROID_EXPECTED_VERSION','1.17.0-android.26')
+expected_code=os.environ.get('ILEX_ANDROID_EXPECTED_CODE','27');expected_version=os.environ.get('ILEX_ANDROID_EXPECTED_VERSION','1.19.0-android.27')
 check(f"versionCode='{expected_code}'" in badging and f"versionName='{expected_version}'" in badging,'Expected Android version supports in-place installation')
 mobile=json.loads((HERE/'mobile-verification.json').read_text())
 check(mobile['passed'] and not mobile['errors'],'Mobile Chromium touch and responsive checks passed')

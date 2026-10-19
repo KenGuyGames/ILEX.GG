@@ -1,0 +1,50 @@
+{
+  "candidate": true,
+  "passed": true,
+  "tools": [
+    {
+      "id": "sv04-176",
+      "attack": "Blindside",
+      "resolved": true,
+      "suppression": true,
+      "expired": true
+    },
+    {
+      "id": "sv04-177",
+      "attack": "Devolution",
+      "resolved": true,
+      "suppression": true,
+      "expired": true
+    },
+    {
+      "id": "sv04-178",
+      "attack": "Evolution",
+      "resolved": true,
+      "suppression": true,
+      "expired": true
+    },
+    {
+      "id": "sv04-179",
+      "attack": "Turbo Energize",
+      "resolved": true,
+      "suppression": true,
+      "expired": true
+    },
+    {
+      "id": "sv04.5-090",
+      "attack": "Crisis Punch",
+      "resolved": true,
+      "suppression": true,
+      "expired": true
+    },
+    {
+      "id": "sv08-188",
+      "attack": "Fluorite",
+      "resolved": true,
+      "suppression": true,
+      "expired": true
+    }
+  ],
+  "failures": [],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

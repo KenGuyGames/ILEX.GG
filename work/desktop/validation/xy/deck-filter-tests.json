@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "legalPool": true,
+  "cardCount": true,
+  "copyLimits": true,
+  "bans": true,
+  "customCards": true,
+  "emptyResults": true,
+  "noDeckDeletion": true
+}

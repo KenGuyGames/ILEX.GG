@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "sizes": [
+    {
+      "width": 900,
+      "height": 960,
+      "scroll": 885,
+      "table": 861,
+      "card": 84.15310668945312,
+      "handBottom": 918
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "scroll": 1905,
+      "table": 1857,
+      "card": 158.1483154296875,
+      "handBottom": 1037
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "scroll": 2545,
+      "table": 2352,
+      "card": 158.1483154296875,
+      "handBottom": 1397
+    }
+  ]
+}

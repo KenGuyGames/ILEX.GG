@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "screenshotsReviewed": [
+    "work/mega-native-final-v6/mega-native.png",
+    "work/android-build/mega-landscape-640.png",
+    "work/android-build/mega-landscape-800.png",
+    "work/android-build/mega-landscape-1280.png"
+  ],
+  "notes": "Desktop board and enlarged Mega scans reviewed; mobile enlarged card retains internal modal scrolling and accessible printed-action regions."
+}

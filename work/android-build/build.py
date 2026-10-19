@@ -38,13 +38,13 @@ ids += ['swsh11-131','swsh10-046','swsh5-85','swsh8-185','swsh9-123','swsh8-114'
 ids += ['energy2019-G', 'energy2019-R', 'energy2019-W', 'energy2019-L', 'energy2019-P', 'energy2019-F', 'energy2019-D', 'energy2019-M', 'energy2019-Y', 'energy2020-G', 'energy2020-R', 'energy2020-W', 'energy2020-L', 'energy2020-P', 'energy2020-F', 'energy2020-D', 'energy2020-M', 'energy2020-Y', 'energy2022-G', 'energy2022-R', 'energy2022-W', 'energy2022-L', 'energy2022-P', 'energy2022-F', 'energy2022-D', 'energy2022-M', 'mee-001', 'mee-002', 'mee-003', 'mee-004', 'mee-005', 'mee-006', 'mee-007', 'mee-008', 'sm1-164', 'sm1-165', 'sm1-166', 'sm1-167', 'sm1-168', 'sm1-169', 'sm1-170', 'sm1-171', 'sm1-172', 'sve-001', 'sve-002', 'sve-003', 'sve-004', 'sve-005', 'sve-006', 'sve-007', 'sve-008', 'sve-009', 'sve-010', 'sve-011', 'sve-012', 'sve-013', 'sve-014', 'sve-015', 'sve-016']
 # 30th anniversary Energy: distinct from ordinary Mega Evolution Energy.
 ids += ['mee-009', 'mee-010', 'mee-011', 'mee-012', 'mee-013', 'mee-014', 'mee-015', 'mee-016']
-ids += [card for card in os.environ.get('ILEX_ANDROID_EXTRA_SCANS',(HERE/'sv-startup-scans.txt').read_text(encoding='utf-8') if (HERE/'sv-startup-scans.txt').exists() else '').split(',') if card and card not in ids]
+ids += [card for card in os.environ.get('ILEX_ANDROID_EXTRA_SCANS',(HERE/'release-extra-scans.txt').read_text(encoding='utf-8') if (HERE/'release-extra-scans.txt').exists() else '').split(',') if card and card not in ids]
 wanted_scans={Path(manifest[card]['file']).name for card in ids}
 for stale in (UI/'scans').glob('*'):
     if stale.is_file() and stale.name not in wanted_scans:stale.unlink()
 for card in ids:
     entry=manifest[card]; target=UI/entry['file']; target.parent.mkdir(parents=True,exist_ok=True)
-    source=ROOT/'work/dp-desktop-candidate/resources'/entry['file']
+    source=Path(os.environ.get('ILEX_ANDROID_SCAN_ROOT',str(ROOT/'work/dp-desktop-candidate/resources')))/entry['file']
     assert hashlib.sha256(source.read_bytes()).hexdigest()==entry['sha256'],card
     shutil.copy2(source,target)
 res=OUT/'res/drawable';res.mkdir(parents=True,exist_ok=True)

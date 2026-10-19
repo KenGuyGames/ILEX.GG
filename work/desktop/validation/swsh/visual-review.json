@@ -1,0 +1,175 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "passed": true,
+      "regions": [
+        {
+          "label": "Union Gain — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Shocking Shock — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Disconnect — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Electro Ball Together — not enough energy",
+          "inside": true
+        }
+      ],
+      "first": 139
+    },
+    {
+      "passed": true,
+      "regions": [
+        {
+          "label": "Ninja Body — This effect is not activated from this field position.",
+          "inside": true
+        },
+        {
+          "label": "Antidote Jutsu — This effect is not activated from this field position.",
+          "inside": true
+        },
+        {
+          "label": "Feel the Way",
+          "inside": true
+        },
+        {
+          "label": "Union Gain — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Aqua Edge — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Twister Shuriken — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Waterfall Bind — not enough energy",
+          "inside": true
+        }
+      ],
+      "first": 155
+    },
+    {
+      "passed": true,
+      "regions": [
+        {
+          "label": "Photon Barrier — This effect is not activated from this field position.",
+          "inside": true
+        },
+        {
+          "label": "Union Gain — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Super Regeneration — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Psysplosion — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Final Burn — not enough energy",
+          "inside": true
+        }
+      ],
+      "first": 159
+    },
+    {
+      "passed": true,
+      "regions": [
+        {
+          "label": "Union Gain — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Dance of the Crowned Sword — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Steel Cut — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Master Blade — not enough energy",
+          "inside": true
+        }
+      ],
+      "first": 163
+    },
+    {
+      "passed": true,
+      "regions": [
+        {
+          "label": "Union Gain — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "All You Can Eat — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Burst Wheel — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Electric Ball — not enough energy",
+          "inside": true
+        }
+      ],
+      "first": 215
+    },
+    {
+      "passed": true,
+      "regions": [
+        {
+          "label": "Union Gain — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "All You Can Eat — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Burst Wheel — not enough energy",
+          "inside": true
+        },
+        {
+          "label": "Electric Ball — not enough energy",
+          "inside": true
+        }
+      ],
+      "first": 287
+    }
+  ],
+  "mobile": {
+    "passed": true,
+    "width": 640,
+    "height": 312,
+    "dialog": {
+      "x": 141.859375,
+      "y": 12,
+      "width": 356.28125,
+      "height": 288
+    }
+  },
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b",
+  "screenshotsReviewed": true,
+  "reviewedLayouts": [
+    "Pikachu",
+    "Greninja",
+    "Mewtwo",
+    "Zacian",
+    "Morpeko",
+    "Morpeko alternate",
+    "640x312 enlarged landscape"
+  ]
+}

@@ -1,10 +1,10 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "1.18.0-private.1",
+  "version": "1.19.0",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
-    "build:rules": "node work/desktop-build/build-rules.cjs",
+    "build:rules": "node work/desktop-build/build-release-rules.cjs",
     "test:rules": "node work/desktop-build/wotc-tests.cjs --focused",
     "test:ex": "node work/desktop-build/ex-tests.cjs --focused",
     "test:dp": "node work/desktop-build/dp-tests.cjs",
@@ -18,7 +18,8 @@
     "test:evosoda": "node work/desktop-build/evosoda-tests.cjs",
     "test:psychic": "node work/desktop-build/psychic-embrace-tests.cjs",
     "test:multiplayer": "node work/desktop-build/private-match-tests.cjs",
-    "test:protocol": "node work/desktop-build/private-peer-tests.cjs"
+    "test:protocol": "node work/desktop-build/private-peer-tests.cjs",
+    "test:mega": "node work/desktop-build/test-release-mega.cjs"
   },
   "devDependencies": {
     "electron": "44.7.0"

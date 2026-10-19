@@ -1,0 +1,11 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "KO reactions use opposing attack damage only and respect their separate Ability and Tool suppression",
+    "Buggy Turbo attaches up to four Basic Energy on heads and discards exactly one attached Energy on tails",
+    "Spread Filaments can bench a Grass Evolution without changing its printed Stage",
+    "Raging Cannon requires a nonempty Bench with damage on every occupied slot"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

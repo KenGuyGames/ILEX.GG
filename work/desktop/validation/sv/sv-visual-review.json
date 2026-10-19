@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "screenshotsReviewed": true,
+  "desktop": "work/desktop-sv-tests-v4/sv-native.png",
+  "mobile": [
+    "work/android-build/sv-landscape-640.png",
+    "work/android-build/sv-landscape-800.png"
+  ],
+  "observations": [
+    "SV card art and attached cards render on table",
+    "Full modern card image and transparent printed-action regions render in landscape",
+    "No missing demo scans after adding 395-scan startup catalog"
+  ],
+  "physicalAndroidDeviceTested": false
+}

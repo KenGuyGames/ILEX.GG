@@ -6,4 +6,4 @@ fs.cpSync(path.join(root,'preview'),path.join(dest,'resources/app'),{recursive:t
 const env={...process.env,ILEX_ANDROID_ROOT:root};delete env.ELECTRON_RUN_AS_NODE;
 const p=spawn(path.join(dest,'ILEX.GG.exe'),['--no-sandbox','--disable-gpu','--enable-logging=stderr'],{env,windowsHide:true,stdio:'pipe'});
 p.stdout.on('data',d=>process.stdout.write(d));p.stderr.on('data',d=>process.stderr.write(d));
-const timer=setTimeout(()=>{p.kill();process.exitCode=1},120000);p.on('exit',code=>{clearTimeout(timer);process.exitCode=code===0?0:1});p.on('error',e=>{console.error(e);clearTimeout(timer);process.exitCode=1});
+const timer=setTimeout(()=>{p.kill();process.exitCode=1},Number(process.env.ILEX_ANDROID_PREVIEW_TIMEOUT_MS)||120000);p.on('exit',code=>{clearTimeout(timer);process.exitCode=code===0?0:1});p.on('error',e=>{console.error(e);clearTimeout(timer);process.exitCode=1});

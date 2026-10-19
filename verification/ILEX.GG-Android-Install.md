@@ -1,6 +1,6 @@
 # Install ILEX.GG on Android
 
-Version **1.17.0-android.26** includes the complete Scarlet & Violet era, with interactions scoped to Black & White onward. Unlimited remains deferred.
+Version **1.19.0-android.27** includes the complete Mega era through 30th Celebration, with interactions scoped to Black & White onward. Unlimited remains deferred.
 
 Update: install this APK over your existing ILEX.GG app to keep its workspace and cached images. No uninstall is needed.
 
@@ -16,6 +16,6 @@ Update: install this APK over your existing ILEX.GG app to keep its workspace an
 
 **Offline images:** Base–Fossil and the rotating Celebi images are bundled. Other card images download as viewed. Use **Download card images** on the main menu to cache the full collection (about 2.5 GB); keep the app open during bulk downloads. Downloaded images, rules, cards and decks remain available offline.
 
-The APK's signatures, integrity, 112 Chromium mobile UI checks, SV checks at three landscape sizes and 38 package/static checks passed. Physical Android/emulator acceptance remains pending; native file pickers, cache downloads and real-device lifecycle/audio still need on-device confirmation.
+The APK's signatures, integrity, 140 Chromium mobile UI checks, Mega checks at three landscape sizes and 38 package/static checks passed. Physical Android/emulator acceptance remains pending; native file pickers, cache downloads and real-device lifecycle/audio still need on-device confirmation.
 
-This APK has local/bot play; Windows multiplayer beta is a separate download.
+Android multiplayer is deferred. VersionCode 27;439 verified startup/demo scans and209 finish images bundled.

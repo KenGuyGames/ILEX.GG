@@ -1,0 +1,84 @@
+{
+  "status": "validated-finite-checks",
+  "available": 1293,
+  "validated": 1293,
+  "pending": 0,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "bySet": [
+    {
+      "id": "mee",
+      "total": 16,
+      "validated": 16,
+      "pending": 0
+    },
+    {
+      "id": "me01",
+      "total": 188,
+      "validated": 188,
+      "pending": 0
+    },
+    {
+      "id": "mep",
+      "total": 110,
+      "validated": 110,
+      "pending": 0
+    },
+    {
+      "id": "me02",
+      "total": 130,
+      "validated": 130,
+      "pending": 0
+    },
+    {
+      "id": "me02.5",
+      "total": 295,
+      "validated": 295,
+      "pending": 0
+    },
+    {
+      "id": "me03",
+      "total": 124,
+      "validated": 124,
+      "pending": 0
+    },
+    {
+      "id": "me04",
+      "total": 122,
+      "validated": 122,
+      "pending": 0
+    },
+    {
+      "id": "me05",
+      "total": 120,
+      "validated": 120,
+      "pending": 0
+    },
+    {
+      "id": "30th",
+      "total": 158,
+      "validated": 158,
+      "pending": 0
+    },
+    {
+      "id": "30th-c",
+      "total": 30,
+      "validated": 30,
+      "pending": 0
+    }
+  ],
+  "collectionOnly": [
+    "mep-Museum"
+  ],
+  "previewPromos": [
+    "mep-102",
+    "mep-103",
+    "mep-104",
+    "mep-105",
+    "mep-106",
+    "mep-107",
+    "mep-108",
+    "mep-109",
+    "mep-110"
+  ],
+  "scope": "BW onward; Unlimited deferred"
+}

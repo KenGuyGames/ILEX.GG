@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "New-match controls offer four difficulties including Realistic Player, local play and starter decks",
+    "Bot resolves its own setup choices while the human resolves theirs",
+    "Concurrent bot choices preserve the human’s selected cards",
+    "Bot turns preserve the human seat, hide the bot hand and reject human control of the bot",
+    "The bot takes an action automatically; pause and resume work",
+    "Bot finishes its turn and hands control back; difficulty persists with the saved match",
+    "Bot automatically selects a real Wishing Star top-five choice through desktop scheduling",
+    "Mew ex Versatile copied attacks render with Latios alone and with Latias; Pokemon-ex exemption holds",
+    "Human Prize buttons preserve table labels while submitting compact remaining-card indexes across empty slots",
+    "Unsupported mandatory effects pause visibly instead of skipping an effect"
+  ]
+}

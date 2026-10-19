@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through SV; twelve constructed SV fixtures interleaved with twelve cached SWSH decks, 24 bounded 120-decision pairings; SV/Expanded, exact replay and Undo. Constructed SV fixtures are not tournament lists.",
+  "games": [
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Gardevoir ex",
+        "Blowns"
+      ],
+      "level": "normal",
+      "decisions": 74,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Centiskorch VMax",
+        "Constructed SV interaction fixture: Gholdengo ex"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Raging Bolt ex",
+        "Eternatus VMax"
+      ],
+      "level": "easy",
+      "decisions": 73,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Constructed SV interaction fixture: Terapagos ex"
+      ],
+      "level": "hard",
+      "decisions": 107,
+      "turn": 17,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Hydreigon ex",
+        "Vikavolt V"
+      ],
+      "level": "normal",
+      "decisions": 51,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dragapult VMax",
+        "Constructed SV interaction fixture: Reshiram ex"
+      ],
+      "level": "normal",
+      "decisions": 95,
+      "turn": 15,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Zekrom ex",
+        "Rapid Strike Box"
+      ],
+      "level": "easy",
+      "decisions": 76,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Urshifu VMax",
+        "Constructed SV interaction fixture: Miraidon ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

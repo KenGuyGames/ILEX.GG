@@ -1,0 +1,2690 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "me01-003",
+      "power": "Solar Transfer",
+      "bench": false
+    },
+    {
+      "id": "me01-003",
+      "power": "Solar Transfer",
+      "bench": true
+    },
+    {
+      "id": "me01-011",
+      "power": "Fermented Juice",
+      "bench": false
+    },
+    {
+      "id": "me01-104",
+      "power": "Run Errand",
+      "bench": false
+    },
+    {
+      "id": "me01-110",
+      "power": "Evidence Gathering",
+      "bench": false
+    },
+    {
+      "id": "me01-110",
+      "power": "Evidence Gathering",
+      "bench": true
+    },
+    {
+      "id": "me01-136",
+      "power": "Fermented Juice",
+      "bench": false
+    },
+    {
+      "id": "me01-153",
+      "power": "Evidence Gathering",
+      "bench": false
+    },
+    {
+      "id": "me01-153",
+      "power": "Evidence Gathering",
+      "bench": true
+    },
+    {
+      "id": "me01-155",
+      "power": "Solar Transfer",
+      "bench": false
+    },
+    {
+      "id": "me01-155",
+      "power": "Solar Transfer",
+      "bench": true
+    },
+    {
+      "id": "me01-164",
+      "power": "Run Errand",
+      "bench": false
+    },
+    {
+      "id": "me01-177",
+      "power": "Solar Transfer",
+      "bench": false
+    },
+    {
+      "id": "me01-177",
+      "power": "Solar Transfer",
+      "bench": true
+    },
+    {
+      "id": "me01-182",
+      "power": "Run Errand",
+      "bench": false
+    },
+    {
+      "id": "mep-013",
+      "power": "Solar Transfer",
+      "bench": false
+    },
+    {
+      "id": "mep-013",
+      "power": "Solar Transfer",
+      "bench": true
+    },
+    {
+      "id": "mep-025",
+      "power": "Run Errand",
+      "bench": false
+    },
+    {
+      "id": "mep-065",
+      "power": "Stone Arms",
+      "bench": false
+    },
+    {
+      "id": "mep-065",
+      "power": "Stone Arms",
+      "bench": true
+    },
+    {
+      "id": "mep-066",
+      "power": "Tyrannically Gutsy",
+      "bench": false
+    },
+    {
+      "id": "mep-066",
+      "power": "Tyrannically Gutsy",
+      "bench": true
+    },
+    {
+      "id": "mep-076",
+      "power": "Nighttime Maneuvers",
+      "bench": false
+    },
+    {
+      "id": "mep-081",
+      "power": "Mortal Shuriken",
+      "bench": false
+    },
+    {
+      "id": "mep-091",
+      "power": "Sky Transport",
+      "bench": false
+    },
+    {
+      "id": "mep-091",
+      "power": "Sky Transport",
+      "bench": true
+    },
+    {
+      "id": "mep-101",
+      "power": "Share Happiness",
+      "bench": false
+    },
+    {
+      "id": "mep-101",
+      "power": "Share Happiness",
+      "bench": true
+    },
+    {
+      "id": "me02.5-003",
+      "power": "Lovely Fragrance",
+      "bench": false
+    },
+    {
+      "id": "me02.5-003",
+      "power": "Lovely Fragrance",
+      "bench": true
+    },
+    {
+      "id": "me02.5-007",
+      "power": "Gathering of Blossoms",
+      "bench": false
+    },
+    {
+      "id": "me02.5-007",
+      "power": "Gathering of Blossoms",
+      "bench": true
+    },
+    {
+      "id": "me02.5-019",
+      "power": "Charging Up",
+      "bench": false
+    },
+    {
+      "id": "me02.5-019",
+      "power": "Charging Up",
+      "bench": true
+    },
+    {
+      "id": "me02.5-026",
+      "power": "Golden Flame",
+      "bench": true
+    },
+    {
+      "id": "me02.5-053",
+      "power": "Alluring Wings",
+      "bench": false
+    },
+    {
+      "id": "me02.5-060",
+      "power": "Dynamotor",
+      "bench": false
+    },
+    {
+      "id": "me02.5-060",
+      "power": "Dynamotor",
+      "bench": true
+    },
+    {
+      "id": "me02.5-070",
+      "power": "Electric Streamer",
+      "bench": false
+    },
+    {
+      "id": "me02.5-070",
+      "power": "Electric Streamer",
+      "bench": true
+    },
+    {
+      "id": "me02.5-084",
+      "power": "Bubble Gathering",
+      "bench": true
+    },
+    {
+      "id": "me02.5-099",
+      "power": "Adrena-Brain",
+      "bench": false
+    },
+    {
+      "id": "me02.5-110",
+      "power": "Champion's Call",
+      "bench": false
+    },
+    {
+      "id": "me02.5-110",
+      "power": "Champion's Call",
+      "bench": true
+    },
+    {
+      "id": "me02.5-137",
+      "power": "Trade",
+      "bench": false
+    },
+    {
+      "id": "me02.5-137",
+      "power": "Trade",
+      "bench": true
+    },
+    {
+      "id": "me02.5-151",
+      "power": "Evolutionary Guidance",
+      "bench": false
+    },
+    {
+      "id": "me02.5-152",
+      "power": "Sky Transport",
+      "bench": false
+    },
+    {
+      "id": "me02.5-152",
+      "power": "Sky Transport",
+      "bench": true
+    },
+    {
+      "id": "me02.5-159",
+      "power": "Recon Directive",
+      "bench": false
+    },
+    {
+      "id": "me02.5-159",
+      "power": "Recon Directive",
+      "bench": true
+    },
+    {
+      "id": "me02.5-218",
+      "power": "Gathering of Blossoms",
+      "bench": false
+    },
+    {
+      "id": "me02.5-218",
+      "power": "Gathering of Blossoms",
+      "bench": true
+    },
+    {
+      "id": "me02.5-248",
+      "power": "Recon Directive",
+      "bench": false
+    },
+    {
+      "id": "me02.5-248",
+      "power": "Recon Directive",
+      "bench": true
+    },
+    {
+      "id": "me02.5-271",
+      "power": "Sky Transport",
+      "bench": false
+    },
+    {
+      "id": "me02.5-271",
+      "power": "Sky Transport",
+      "bench": true
+    },
+    {
+      "id": "me02.5-279",
+      "power": "Electric Streamer",
+      "bench": false
+    },
+    {
+      "id": "me02.5-279",
+      "power": "Electric Streamer",
+      "bench": true
+    },
+    {
+      "id": "me02.5-286",
+      "power": "Trade",
+      "bench": false
+    },
+    {
+      "id": "me02.5-286",
+      "power": "Trade",
+      "bench": true
+    },
+    {
+      "id": "me02.5-289",
+      "power": "X-Boot",
+      "bench": false
+    },
+    {
+      "id": "me02.5-289",
+      "power": "X-Boot",
+      "bench": true
+    },
+    {
+      "id": "me02.5-290",
+      "power": "Sky Transport",
+      "bench": false
+    },
+    {
+      "id": "me02.5-290",
+      "power": "Sky Transport",
+      "bench": true
+    },
+    {
+      "id": "me02.5-295",
+      "power": "Sky Transport",
+      "bench": false
+    },
+    {
+      "id": "me02.5-295",
+      "power": "Sky Transport",
+      "bench": true
+    },
+    {
+      "id": "me03-009",
+      "power": "Grand Wing",
+      "bench": false
+    },
+    {
+      "id": "me03-009",
+      "power": "Grand Wing",
+      "bench": true
+    },
+    {
+      "id": "me03-012",
+      "power": "Sniper's Eye",
+      "bench": false
+    },
+    {
+      "id": "me03-012",
+      "power": "Sniper's Eye",
+      "bench": true
+    },
+    {
+      "id": "me03-014",
+      "power": "Sky Hunt",
+      "bench": false
+    },
+    {
+      "id": "me03-014",
+      "power": "Sky Hunt",
+      "bench": true
+    },
+    {
+      "id": "me03-024",
+      "power": "Tundra Wall",
+      "bench": false
+    },
+    {
+      "id": "me03-024",
+      "power": "Tundra Wall",
+      "bench": true
+    },
+    {
+      "id": "me03-036",
+      "power": "Scent Collection",
+      "bench": false
+    },
+    {
+      "id": "me03-036",
+      "power": "Scent Collection",
+      "bench": true
+    },
+    {
+      "id": "me03-043",
+      "power": "Stone Arms",
+      "bench": false
+    },
+    {
+      "id": "me03-043",
+      "power": "Stone Arms",
+      "bench": true
+    },
+    {
+      "id": "me03-045",
+      "power": "Tyrannically Gutsy",
+      "bench": false
+    },
+    {
+      "id": "me03-045",
+      "power": "Tyrannically Gutsy",
+      "bench": true
+    },
+    {
+      "id": "me03-050",
+      "power": "Infinite Shadow",
+      "bench": false
+    },
+    {
+      "id": "me03-050",
+      "power": "Infinite Shadow",
+      "bench": true
+    },
+    {
+      "id": "me03-091",
+      "power": "Sky Hunt",
+      "bench": false
+    },
+    {
+      "id": "me03-091",
+      "power": "Sky Hunt",
+      "bench": true
+    },
+    {
+      "id": "me03-092",
+      "power": "Tundra Wall",
+      "bench": false
+    },
+    {
+      "id": "me03-092",
+      "power": "Tundra Wall",
+      "bench": true
+    },
+    {
+      "id": "me03-100",
+      "power": "Sniper's Eye",
+      "bench": false
+    },
+    {
+      "id": "me03-100",
+      "power": "Sniper's Eye",
+      "bench": true
+    },
+    {
+      "id": "me04-022",
+      "power": "Mortal Shuriken",
+      "bench": false
+    },
+    {
+      "id": "me04-051",
+      "power": "Nighttime Maneuvers",
+      "bench": false
+    },
+    {
+      "id": "me04-093",
+      "power": "Nighttime Maneuvers",
+      "bench": false
+    },
+    {
+      "id": "me04-100",
+      "power": "Mortal Shuriken",
+      "bench": false
+    },
+    {
+      "id": "me04-116",
+      "power": "Mortal Shuriken",
+      "bench": false
+    },
+    {
+      "id": "me04-122",
+      "power": "Mortal Shuriken",
+      "bench": false
+    },
+    {
+      "id": "me05-045",
+      "power": "Destructive Headbutting",
+      "bench": false
+    },
+    {
+      "id": "me05-068",
+      "power": "Aerial Draw",
+      "bench": false
+    },
+    {
+      "id": "me05-068",
+      "power": "Aerial Draw",
+      "bench": true
+    },
+    {
+      "id": "me05-094",
+      "power": "Aerial Draw",
+      "bench": false
+    },
+    {
+      "id": "me05-094",
+      "power": "Aerial Draw",
+      "bench": true
+    },
+    {
+      "id": "me05-100",
+      "power": "Destructive Headbutting",
+      "bench": false
+    },
+    {
+      "id": "30th-008",
+      "power": "Guiding Dance",
+      "bench": false
+    },
+    {
+      "id": "30th-008",
+      "power": "Guiding Dance",
+      "bench": true
+    },
+    {
+      "id": "30th-066",
+      "power": "Memory Helix",
+      "bench": false
+    },
+    {
+      "id": "30th-088",
+      "power": "Share Happiness",
+      "bench": false
+    },
+    {
+      "id": "30th-088",
+      "power": "Share Happiness",
+      "bench": true
+    },
+    {
+      "id": "30th-105",
+      "power": "Sunrise",
+      "bench": true
+    },
+    {
+      "id": "30th-152",
+      "power": "Memory Helix",
+      "bench": false
+    },
+    {
+      "id": "30th-158",
+      "power": "Memory Helix",
+      "bench": false
+    },
+    {
+      "id": "30th-c-009",
+      "power": "Giant Water Shuriken",
+      "bench": false
+    },
+    {
+      "id": "30th-c-017",
+      "power": "Ultra Road",
+      "bench": false
+    },
+    {
+      "id": "30th-c-017",
+      "power": "Ultra Road",
+      "bench": true
+    },
+    {
+      "id": "30th-c-027",
+      "power": "Starbirth",
+      "bench": false
+    },
+    {
+      "id": "30th-c-027",
+      "power": "Starbirth",
+      "bench": true
+    },
+    {
+      "id": "30th-c-028",
+      "power": "Intrepid Sword",
+      "bench": false
+    },
+    {
+      "id": "30th-c-028",
+      "power": "Intrepid Sword",
+      "bench": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "me01-010",
+      "power": "Wild Growth",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-010",
+      "power": "Wild Growth",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-011",
+      "power": "Fermented Juice",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-024",
+      "power": "Intimidating Fang",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-024",
+      "power": "Intimidating Fang",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-028",
+      "power": "Explosiveness",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-028",
+      "power": "Explosiveness",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-038",
+      "power": "Fall Back to Reload",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-038",
+      "power": "Fall Back to Reload",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-061",
+      "power": "Fragile Husk",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-061",
+      "power": "Fragile Husk",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-074",
+      "power": "Lunar Cycle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-074",
+      "power": "Lunar Cycle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-084",
+      "power": "Powerful a-Salt",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-084",
+      "power": "Powerful a-Salt",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-087",
+      "power": "Spiteful Swirl",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-087",
+      "power": "Spiteful Swirl",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-101",
+      "power": "Lustrous Assist",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-101",
+      "power": "Lustrous Assist",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-104",
+      "power": "Run Errand",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-136",
+      "power": "Fermented Juice",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-141",
+      "power": "Fall Back to Reload",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-141",
+      "power": "Fall Back to Reload",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-144",
+      "power": "Fragile Husk",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-144",
+      "power": "Fragile Husk",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-147",
+      "power": "Powerful a-Salt",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-147",
+      "power": "Powerful a-Salt",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-148",
+      "power": "Spiteful Swirl",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-148",
+      "power": "Spiteful Swirl",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-164",
+      "power": "Run Errand",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me01-182",
+      "power": "Run Errand",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-001",
+      "power": "Wild Growth",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-001",
+      "power": "Wild Growth",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-004",
+      "power": "Lunar Cycle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-004",
+      "power": "Lunar Cycle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-007",
+      "power": "Damp",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-007",
+      "power": "Damp",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-008",
+      "power": "Damp",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-008",
+      "power": "Damp",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-017",
+      "power": "Sinister Surge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-017",
+      "power": "Sinister Surge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-024",
+      "power": "Excited Turbo",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-024",
+      "power": "Excited Turbo",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-025",
+      "power": "Run Errand",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-072",
+      "power": "Luminous Wing",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-072",
+      "power": "Luminous Wing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-073",
+      "power": "Shadowy Concealment",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-073",
+      "power": "Shadowy Concealment",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-074",
+      "power": "Flaring Magic",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-074",
+      "power": "Flaring Magic",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-075",
+      "power": "Synchro Pulse",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-075",
+      "power": "Synchro Pulse",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-076",
+      "power": "Nighttime Maneuvers",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-077",
+      "power": "Slimy Sliding",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-077",
+      "power": "Slimy Sliding",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-081",
+      "power": "Mortal Shuriken",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-082",
+      "power": "Photon Cord",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-082",
+      "power": "Photon Cord",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-085",
+      "power": "Ancient Bulwark",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-085",
+      "power": "Ancient Bulwark",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-086",
+      "power": "Dopey Face",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-086",
+      "power": "Dopey Face",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-094",
+      "power": "Scale Up",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-094",
+      "power": "Scale Up",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-096",
+      "power": "Fiery Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-096",
+      "power": "Fiery Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-097",
+      "power": "Frosty Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-097",
+      "power": "Frosty Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-098",
+      "power": "Flash-Pop Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "mep-098",
+      "power": "Flash-Pop Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-007",
+      "power": "Excited Heal",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-007",
+      "power": "Excited Heal",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-011",
+      "power": "Agile",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-011",
+      "power": "Agile",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-018",
+      "power": "Excited Turbo",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-018",
+      "power": "Excited Turbo",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-022",
+      "power": "Thick Fat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-022",
+      "power": "Thick Fat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-029",
+      "power": "Multi Adapter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-029",
+      "power": "Multi Adapter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-041",
+      "power": "Diamond Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-041",
+      "power": "Diamond Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-056",
+      "power": "Shadowy Concealment",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-056",
+      "power": "Shadowy Concealment",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-062",
+      "power": "Excited Power",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-062",
+      "power": "Excited Power",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-068",
+      "power": "Sinister Surge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-068",
+      "power": "Sinister Surge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-070",
+      "power": "Emperor's Stance",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-070",
+      "power": "Emperor's Stance",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-082",
+      "power": "Excited Dash",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-082",
+      "power": "Excited Dash",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-095",
+      "power": "Excited Heal",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-095",
+      "power": "Excited Heal",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-097",
+      "power": "Thick Fat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-097",
+      "power": "Thick Fat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-103",
+      "power": "Sinister Surge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-103",
+      "power": "Sinister Surge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-110",
+      "power": "Excited Turbo",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-110",
+      "power": "Excited Turbo",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-111",
+      "power": "Multi Adapter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-111",
+      "power": "Multi Adapter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-114",
+      "power": "Emperor's Stance",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-114",
+      "power": "Emperor's Stance",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-126",
+      "power": "Multi Adapter",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02-126",
+      "power": "Multi Adapter",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-015",
+      "power": "Boisterous Wind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-015",
+      "power": "Boisterous Wind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-024",
+      "power": "Melt Away",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-024",
+      "power": "Melt Away",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-026",
+      "power": "Golden Flame",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-027",
+      "power": "Incandescent Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-027",
+      "power": "Incandescent Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-039",
+      "power": "Damp",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-039",
+      "power": "Damp",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-040",
+      "power": "Damp",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-040",
+      "power": "Damp",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-053",
+      "power": "Alluring Wings",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-064",
+      "power": "Frilled Generator",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-064",
+      "power": "Frilled Generator",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-068",
+      "power": "Counterattack Quills",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-068",
+      "power": "Counterattack Quills",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-072",
+      "power": "Flashing Draw",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-072",
+      "power": "Flashing Draw",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-076",
+      "power": "Fairy Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-076",
+      "power": "Fairy Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-079",
+      "power": "Power Saver",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-079",
+      "power": "Power Saver",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-082",
+      "power": "Wonder Kiss",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-082",
+      "power": "Wonder Kiss",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-084",
+      "power": "Bubble Gathering",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-099",
+      "power": "Adrena-Brain",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-105",
+      "power": "Lunar Cycle",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-105",
+      "power": "Lunar Cycle",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-117",
+      "power": "Double Type",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-117",
+      "power": "Double Type",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-125",
+      "power": "Shadowy Concealment",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-125",
+      "power": "Shadowy Concealment",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-135",
+      "power": "Counterattacking Crest",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-135",
+      "power": "Counterattacking Crest",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-142",
+      "power": "Flip the Script",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-142",
+      "power": "Flip the Script",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-143",
+      "power": "Final Chain",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-143",
+      "power": "Final Chain",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-148",
+      "power": "Supreme Overlord",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-148",
+      "power": "Supreme Overlord",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-151",
+      "power": "Evolutionary Guidance",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-171",
+      "power": "Fan Call",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-171",
+      "power": "Fan Call",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-175",
+      "power": "Lethargic Charge",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-175",
+      "power": "Lethargic Charge",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-220",
+      "power": "Boisterous Wind",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-220",
+      "power": "Boisterous Wind",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-222",
+      "power": "Melt Away",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-222",
+      "power": "Melt Away",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-223",
+      "power": "Incandescent Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-223",
+      "power": "Incandescent Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-226",
+      "power": "Damp",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-226",
+      "power": "Damp",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-229",
+      "power": "Frilled Generator",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-229",
+      "power": "Frilled Generator",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-235",
+      "power": "Wonder Kiss",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-235",
+      "power": "Wonder Kiss",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-242",
+      "power": "Double Type",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-242",
+      "power": "Double Type",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-250",
+      "power": "Fan Call",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-250",
+      "power": "Fan Call",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-267",
+      "power": "Diamond Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-267",
+      "power": "Diamond Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-269",
+      "power": "Shadowy Concealment",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-269",
+      "power": "Shadowy Concealment",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-270",
+      "power": "Counterattacking Crest",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-270",
+      "power": "Counterattacking Crest",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-280",
+      "power": "Fairy Zone",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-280",
+      "power": "Fairy Zone",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-281",
+      "power": "Power Saver",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-281",
+      "power": "Power Saver",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-282",
+      "power": "Diamond Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-282",
+      "power": "Diamond Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-284",
+      "power": "Shadowy Concealment",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-284",
+      "power": "Shadowy Concealment",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-285",
+      "power": "Counterattacking Crest",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-285",
+      "power": "Counterattacking Crest",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-288",
+      "power": "Flip the Script",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me02.5-288",
+      "power": "Flip the Script",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-017",
+      "power": "Shell Spikes",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-017",
+      "power": "Shell Spikes",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-019",
+      "power": "Wash Out",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-019",
+      "power": "Wash Out",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-027",
+      "power": "Fighting Roar",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-027",
+      "power": "Fighting Roar",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-031",
+      "power": "Luminous Wing",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-031",
+      "power": "Luminous Wing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-103",
+      "power": "Luminous Wing",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-103",
+      "power": "Luminous Wing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-119",
+      "power": "Luminous Wing",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me03-119",
+      "power": "Luminous Wing",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-002",
+      "power": "Exoskeleton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-002",
+      "power": "Exoskeleton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-007",
+      "power": "Needly Armor",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-007",
+      "power": "Needly Armor",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-013",
+      "power": "Flaring Magic",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-013",
+      "power": "Flaring Magic",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-022",
+      "power": "Mortal Shuriken",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-029",
+      "power": "Synchro Pulse",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-029",
+      "power": "Synchro Pulse",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-038",
+      "power": "Spiteful Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-038",
+      "power": "Spiteful Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-051",
+      "power": "Nighttime Maneuvers",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-052",
+      "power": "Poison Point",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-052",
+      "power": "Poison Point",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-057",
+      "power": "Gloomy Garbage",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-057",
+      "power": "Gloomy Garbage",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-063",
+      "power": "Startling Drop",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-063",
+      "power": "Startling Drop",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-064",
+      "power": "Metal Road",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-064",
+      "power": "Metal Road",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-068",
+      "power": "Slimy Sliding",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-068",
+      "power": "Slimy Sliding",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-070",
+      "power": "Watchful Eye",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-070",
+      "power": "Watchful Eye",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-073",
+      "power": "Smooth Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-073",
+      "power": "Smooth Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-090",
+      "power": "Synchro Pulse",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-090",
+      "power": "Synchro Pulse",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-093",
+      "power": "Nighttime Maneuvers",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-100",
+      "power": "Mortal Shuriken",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-103",
+      "power": "Metal Road",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-103",
+      "power": "Metal Road",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-105",
+      "power": "Smooth Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-105",
+      "power": "Smooth Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-116",
+      "power": "Mortal Shuriken",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-119",
+      "power": "Smooth Coat",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-119",
+      "power": "Smooth Coat",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me04-122",
+      "power": "Mortal Shuriken",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-005",
+      "power": "Hide 'n' Sneak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-005",
+      "power": "Hide 'n' Sneak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-006",
+      "power": "Hide 'n' Sneak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-006",
+      "power": "Hide 'n' Sneak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-028",
+      "power": "Photon Cord",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-028",
+      "power": "Photon Cord",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-033",
+      "power": "Hide 'n' Sneak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-033",
+      "power": "Hide 'n' Sneak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-034",
+      "power": "Hide 'n' Sneak",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-034",
+      "power": "Hide 'n' Sneak",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-038",
+      "power": "Binding Flame",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-038",
+      "power": "Binding Flame",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-045",
+      "power": "Destructive Headbutting",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-062",
+      "power": "Ancient Bulwark",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-062",
+      "power": "Ancient Bulwark",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-070",
+      "power": "Call a Buddy",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-070",
+      "power": "Call a Buddy",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-093",
+      "power": "Ancient Bulwark",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-093",
+      "power": "Ancient Bulwark",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-095",
+      "power": "Call a Buddy",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-095",
+      "power": "Call a Buddy",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-099",
+      "power": "Binding Flame",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-099",
+      "power": "Binding Flame",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-100",
+      "power": "Destructive Headbutting",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-115",
+      "power": "Binding Flame",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "me05-115",
+      "power": "Binding Flame",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-002",
+      "power": "Scale Up",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-002",
+      "power": "Scale Up",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-004",
+      "power": "Supereffective Pheromones",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-004",
+      "power": "Supereffective Pheromones",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-011",
+      "power": "Fiery Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-011",
+      "power": "Fiery Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-018",
+      "power": "Frosty Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-018",
+      "power": "Frosty Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-022",
+      "power": "Counterattack Grouping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-022",
+      "power": "Counterattack Grouping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-028",
+      "power": "Lonely Gaze",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-028",
+      "power": "Lonely Gaze",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-033",
+      "power": "Keep Hidden",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-033",
+      "power": "Keep Hidden",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-055",
+      "power": "Flash-Pop Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-055",
+      "power": "Flash-Pop Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-066",
+      "power": "Memory Helix",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-090",
+      "power": "Fainting Spell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-090",
+      "power": "Fainting Spell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-096",
+      "power": "Nighttime Byway",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-096",
+      "power": "Nighttime Byway",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-100",
+      "power": "Life-Locked",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-100",
+      "power": "Life-Locked",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-105",
+      "power": "Sunrise",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-119",
+      "power": "Good Sleep",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-119",
+      "power": "Good Sleep",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-129",
+      "power": "Scale Up",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-129",
+      "power": "Scale Up",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-130",
+      "power": "Fiery Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-130",
+      "power": "Fiery Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-132",
+      "power": "Frosty Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-132",
+      "power": "Frosty Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-133",
+      "power": "Flash-Pop Flapping",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-133",
+      "power": "Flash-Pop Flapping",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-152",
+      "power": "Memory Helix",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-154",
+      "power": "Fainting Spell",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-154",
+      "power": "Fainting Spell",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-158",
+      "power": "Memory Helix",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "30th-c-009",
+      "power": "Giant Water Shuriken",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    }
+  ],
+  "failures": [],
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722"
+}

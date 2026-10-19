@@ -1,0 +1,11 @@
+{
+  "testedAt": "2026-10-19T12:55:00.7543230-05:00",
+  "passed": false,
+  "actualRTCConnectionVerified": false,
+  "externalWindowsPCsTested": false,
+  "fullNetworkMatchCompleted": false,
+  "attempt": "Two local Electron Windows renderers, real WebRTC, no simulated transport",
+  "result": "Invite and response exchanged; data-channel handshake timed out; guest ICE connection failed",
+  "diagnostics": "work/private-real-recheck-v1/private-failure-diagnostics.json",
+  "limitation": "Only local computer available; previous basic loopback probes also failed. Cannot distinguish all environment restrictions from possible application/network issues without an unrestricted two-PC test."
+}

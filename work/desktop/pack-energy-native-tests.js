@@ -6,9 +6,9 @@
    PackOpening.select(id);PackOpening.open();PackOpening.revealAll();
    const pack=PackOpening.current(),energy=pack.cards.find(c=>c.slot==='Basic Energy');check(energy?.id.startsWith(prefix),id+' opens the intended Energy printing');
    if(id==='me01'||id==='30th'){const n=+energy.id.split('-').at(-1);check(id==='30th'?n>=9&&n<=16:n>=1&&n<=8,id+' uses its own numbered Energy design');}
-   const index=pack.cards.indexOf(energy),img=document.querySelectorAll('.pack-results>.pack-pull')[index].querySelector('img');
-   for(let n=0;n<60&&!img.naturalWidth;n++)await new Promise(r=>setTimeout(r,50));
-   check(img.complete&&img.naturalWidth>0,id+' Energy artwork loads from bundled scan');
+   const index=pack.cards.indexOf(energy),currentImage=()=>document.querySelectorAll('.pack-results>.pack-pull')[index]?.querySelector('img');let img=currentImage();
+   for(let n=0;n<300&&(!img?.complete||!img.naturalWidth);n++){await new Promise(r=>setTimeout(r,50));img=currentImage();}
+   check(img?.complete&&img.naturalWidth>0,id+' Energy artwork loads from bundled scan');await img.decode();
    const c=cards.find(c=>c.id===energy.id);check(img.alt===c.name,id+' displayed Energy name matches its artwork record');
    check(PackOpening.inventory().collection[energy.id+'|'+energy.finish]>0,id+' collection saves the same Energy printing');
   }

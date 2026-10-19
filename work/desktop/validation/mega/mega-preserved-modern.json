@@ -1,0 +1,174 @@
+{
+  "passed": true,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "results": [
+    {
+      "name": "sv-foundation-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-foundation-tests.log"
+    },
+    {
+      "name": "sv-common-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-common-tests.log"
+    },
+    {
+      "name": "sv-bench-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-bench-tests.log"
+    },
+    {
+      "name": "sv-wave3-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave3-tests.log"
+    },
+    {
+      "name": "sv-wave4-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave4-tests.log"
+    },
+    {
+      "name": "sv-wave5-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave5-tests.log"
+    },
+    {
+      "name": "sv-wave6-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave6-tests.log"
+    },
+    {
+      "name": "sv-wave7-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave7-tests.log"
+    },
+    {
+      "name": "sv-wave8-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave8-tests.log"
+    },
+    {
+      "name": "sv-wave9-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave9-tests.log"
+    },
+    {
+      "name": "sv-wave10-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave10-tests.log"
+    },
+    {
+      "name": "sv-wave11-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave11-tests.log"
+    },
+    {
+      "name": "sv-wave12-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave12-tests.log"
+    },
+    {
+      "name": "sv-wave13-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave13-tests.log"
+    },
+    {
+      "name": "sv-wave14-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave14-tests.log"
+    },
+    {
+      "name": "sv-wave16-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave16-tests.log"
+    },
+    {
+      "name": "sv-wave17-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave17-tests.log"
+    },
+    {
+      "name": "sv-wave18-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave18-tests.log"
+    },
+    {
+      "name": "sv-wave20-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-wave20-tests.log"
+    },
+    {
+      "name": "sv-environment-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-environment-tests.log"
+    },
+    {
+      "name": "sv-final-effects-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-final-effects-tests.log"
+    },
+    {
+      "name": "sv-final-extra-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-final-extra-tests.log"
+    },
+    {
+      "name": "sv-reaction-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-reaction-tests.log"
+    },
+    {
+      "name": "sv-native-repair-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-native-repair-tests.log"
+    },
+    {
+      "name": "sv-deep-identity",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-deep-identity.log"
+    },
+    {
+      "name": "sv-tool-attacks",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-tool-attacks.log"
+    },
+    {
+      "name": "sv-native-guard-audit",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-sv-native-guard-audit.log"
+    },
+    {
+      "name": "swsh-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\mega-candidate\\preserved-swsh-tests.log"
+    }
+  ]
+}

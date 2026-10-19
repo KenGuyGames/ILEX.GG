@@ -2,7 +2,7 @@ const fs=require('node:fs'),path=require('node:path');
 module.exports=async(win,root)=>{
  const evaluate=s=>win.webContents.executeJavaScript(s,true),pause=ms=>new Promise(r=>setTimeout(r,ms));
  const capture=async()=>{for(let n=0;n<3;n++){try{return await win.webContents.capturePage();}catch(e){if(n===2)throw e;await pause(350);}}};
- for(let i=0;i<150;i++){if(await evaluate("typeof rulesReady!=='undefined'&&rulesReady&&cards.length===23736"))break;await pause(100)}
+ for(let i=0;i<150;i++){if(await evaluate("typeof rulesReady!=='undefined'&&rulesReady&&cards.length>=23860"))break;await pause(100)}
  if(!await evaluate('rulesReady'))throw Error('Rules catalog failed to load');
  const dpReport=await evaluate(fs.readFileSync(path.join(__dirname,'dp-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'dp-native-tests.json'),JSON.stringify({...dpReport,engineSha256:require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(__dirname,'ui/rules-engine.js'))).digest('hex')},null,2));
  const exReport=await evaluate(fs.readFileSync(path.join(__dirname,'ex-native-tests.js'),'utf8'));fs.writeFileSync(path.join(root,'ex-native-tests.json'),JSON.stringify(exReport,null,2));

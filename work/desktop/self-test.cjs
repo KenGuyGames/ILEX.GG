@@ -1,1 +1,1 @@
-module.exports=require('./private-self-test.cjs');
+module.exports=require('./mega-self-test.cjs');

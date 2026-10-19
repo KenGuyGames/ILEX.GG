@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "release": "https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19",
+  "prerelease": true,
+  "assets": [
+    {
+      "name": "ILEX.GG-Private-Windows.zip",
+      "bytes": 258844870,
+      "sha256": "707a30ba8f5f5566175873da79f660cfee7d98254ebcee5b579428cc24e1e6df",
+      "passed": true
+    },
+    {
+      "name": "ILEX.GG-Android.apk",
+      "bytes": 142782217,
+      "sha256": "dce37765ba6978847dacd51562f54aab71163d0a74a6da791f535a877de4051a",
+      "passed": true
+    },
+    {
+      "name": "ILEX.GG-Private-Guide.md",
+      "bytes": 4481,
+      "sha256": "095b515ea673dd0fdd93293920a65e358b4d36ef6bf8cf80c9475879b0986fbd",
+      "passed": true
+    },
+    {
+      "name": "ILEX.GG-Private-verification.json",
+      "bytes": 2039,
+      "sha256": "5674abfb968607821b4950a0a80c123f33e1280233a710783750487d8c538b6e",
+      "passed": true
+    },
+    {
+      "name": "ILEX.GG-Android-Install.md",
+      "bytes": 2112,
+      "sha256": "fea6b8c25e31e09ab20229b5a98f52a42e01b09f1c89c123b45221ba3d746ff1",
+      "passed": true
+    },
+    {
+      "name": "ILEX.GG-Android-verification.json",
+      "bytes": 3146,
+      "sha256": "2cfc6f4240a36506edefbe9bcd54750c3568139922a22d8e51e104182c514465",
+      "passed": true
+    },
+    {
+      "name": "source-encoding-repair.json",
+      "bytes": 595,
+      "sha256": "5f730ca18c6c0ac2349318391e51bf2b86bce5d1a91de19be83d5979576267f2",
+      "passed": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 665,
+      "sha256": "b7906278d8f609e292f84bd9b94baf196091efb1aba623eb378abd5dbedca350",
+      "passed": true
+    },
+    {
+      "name": "release-assets.json",
+      "bytes": 1113,
+      "sha256": "615b7ad0800e6502e7239aa3117ada0a009060be19623e711f4130df7c601b3e",
+      "passed": true
+    }
+  ],
+  "sourceCommit": "c5ee7b6884f488089ce2202e06a0bc797eb9ba2e",
+  "engineSha256": "d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7",
+  "freshSourceWorkflow": "https://github.com/KenGuyGames/ILEX.GG/actions/runs/39296692475",
+  "sourceSnapshot": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-1.18.0-private.1",
+  "publicationFix": "UTF-8 name/Delta comparisons restored; original d31 engine failed EX Peal of Thunder evolution; full EX and README suites pass on corrected engine",
+  "sharedDevelopmentSourceAndOutputsChanged": false,
+  "androidVersion": "1.17.0-android.26",
+  "actualTwoPCNetworkingVerified": false
+}

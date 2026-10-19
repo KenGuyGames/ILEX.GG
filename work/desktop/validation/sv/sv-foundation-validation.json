@@ -1,0 +1,28 @@
+{
+  "status": "focused-candidate-checks-only",
+  "checks": 18,
+  "passed": [
+    "SV candidate printing metadata is installed on every candidate",
+    "Modern ex has a Rule Box while legacy ex identity stays separate from uppercase EX",
+    "sv01-032 Tera blocks opposing attack damage on Bench but allows counters",
+    "sv01-032 Tera blocks own attack damage on Bench but allows counters",
+    "sv01-045 Tera blocks opposing attack damage on Bench but allows counters",
+    "sv01-045 Tera blocks own attack damage on Bench but allows counters",
+    "Tera protection does not apply in Active Spot",
+    "Tera under an evolution does not protect the top non-Tera Pokemon",
+    "Blooming Garden removes only its owner field Weakness",
+    "Well-Baked Body blocks opposing Fire damage, allows other types, and rejects Burn only",
+    "Maddening Scent counts opposing Bench only",
+    "Family Attack counts the Active and own Benched Maushold only",
+    "Sweeping Tackle subtracts twenty per counter and floors damage at zero",
+    "Tandem Unit caps its search at the one available Bench slot",
+    "Psychic Embrace exposes only living Psychic targets and one safe attachment per use",
+    "Counterattack Quills retaliates from Active",
+    "Counterattack Quills retaliates from Active even on KO",
+    "Strange Behavior moves exactly one counter and can be repeated"
+  ],
+  "candidates": 258,
+  "validatedEraPrintings": 0,
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "limitations": "Foundation tests only; printed effects, attack sweeps, bot rollouts and release validation remain pending."
+}

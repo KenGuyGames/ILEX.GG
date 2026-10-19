@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "checks": [
+    "Unlimited uses current turn rules with every historical mechanic adapter",
+    "Poison disables a condition-sensitive Base Pokémon Power in Unlimited",
+    "Fossil Muk suppresses Poké-Powers and Poké-Bodies but leaves modern Abilities"
+  ],
+  "failures": [
+    {
+      "name": "A legacy Pokémon Power lock never hides a modern Ability or Ancient Trait",
+      "error": "BLOCKED_BY_EFFECT"
+    }
+  ],
+  "engineSha256": "12666192cbd611844bd1b976b4aab2095e6bb4c1134ad5cbaa0834b8999b6da7"
+}

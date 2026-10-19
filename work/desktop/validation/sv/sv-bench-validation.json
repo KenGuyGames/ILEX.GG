@@ -1,0 +1,14 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Bench attack charges the selected copy, never a different copy",
+    "An Asleep Active does not prevent a legal Bench attack",
+    "An Asleep source cannot use its Bench attack",
+    "Bench declarations reject non-Bench attacks and foreign or invalid sources",
+    "Active attacks retain their own source when identical Bench copies exist",
+    "Dimension Valley checks the attack source type rather than the Active type",
+    "Bot candidates distinguish each Bench attacker and exclude its Active-only attack"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

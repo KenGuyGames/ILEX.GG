@@ -1,0 +1,37 @@
+{
+  "assets": [
+    {
+      "contentType": "image/jxl",
+      "id": "0a399b47e42d36d2",
+      "kind": "image",
+      "name": "MEP_EN_92.png",
+      "path": "C:\\Users\\Kenneth\\AppData\\Local\\Packages\\sandbox.{2b20a1e9-030e-4bc7-92dd-c223cf429299}\\AC\\Temp/browser-use/assets/4a9a7285-b816-4821-bb78-93241e76a9f8/0a399b47e42d36d2.png",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/web/MEP_EN_92.png"
+    },
+    {
+      "contentType": "image/jxl",
+      "id": "a3593f8e943047ab",
+      "kind": "image",
+      "name": "MEP_EN_92.png",
+      "path": "C:\\Users\\Kenneth\\AppData\\Local\\Packages\\sandbox.{2b20a1e9-030e-4bc7-92dd-c223cf429299}\\AC\\Temp/browser-use/assets/4a9a7285-b816-4821-bb78-93241e76a9f8/a3593f8e943047ab.png",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_92.png"
+    },
+    {
+      "contentType": "image/jxl",
+      "id": "b95b852d97f0a7f6",
+      "kind": "image",
+      "name": "MEP_EN_93.png",
+      "path": "C:\\Users\\Kenneth\\AppData\\Local\\Packages\\sandbox.{2b20a1e9-030e-4bc7-92dd-c223cf429299}\\AC\\Temp/browser-use/assets/4a9a7285-b816-4821-bb78-93241e76a9f8/b95b852d97f0a7f6.png",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/web/MEP_EN_93.png"
+    },
+    {
+      "contentType": "image/jxl",
+      "id": "c8375b2366de17fa",
+      "kind": "image",
+      "name": "MEP_EN_93.png",
+      "path": "C:\\Users\\Kenneth\\AppData\\Local\\Packages\\sandbox.{2b20a1e9-030e-4bc7-92dd-c223cf429299}\\AC\\Temp/browser-use/assets/4a9a7285-b816-4821-bb78-93241e76a9f8/c8375b2366de17fa.png",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_93.png"
+    }
+  ],
+  "failures": []
+}

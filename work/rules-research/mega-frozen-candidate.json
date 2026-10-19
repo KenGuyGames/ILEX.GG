@@ -1,0 +1,47 @@
+{
+  "status": "release-validated",
+  "version": "1.19.0",
+  "printings": 1293,
+  "bySet": {
+    "mee": 16,
+    "me01": 188,
+    "mep": 110,
+    "me02": 130,
+    "me02.5": 295,
+    "me03": 124,
+    "me04": 122,
+    "me05": 120,
+    "30th": 158,
+    "30th-c": 30
+  },
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722",
+  "ruleAdapterSha256": "25a5b491d6fa396e6b71187bb791846e3bfe1f98c8bcc81f76f7ccd0ad1aff31",
+  "botSha256": "e845283560f1585055027d236edcd5449692dfb0d075e9075df97a57db95ecfe",
+  "correctedBaseline": "d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7",
+  "sourceStatRepairs": [
+    {
+      "id": "me05-115",
+      "field": "subtypes.stage",
+      "counterpart": "me05-038"
+    }
+  ],
+  "limits": [
+    "BW onward; Unlimited deferred",
+    "Classic Collection retained for custom formats; no official tournament legality implied",
+    "Museum novelty collection-only",
+    "MEP102\u2013110 included as officially announced 30th-product previews, with future release dates retained"
+  ],
+  "previousEngineSha256": "eebcf6e6eebf802a6a40824aaf4f9336b9ccd6ac6d515e6e42db44ec14633e02",
+  "finalRepair": "Gwynn one-card discard; Fossil Quarry actual Antique Item identity; Waitress selected Basic Energy only; modern Antique setup restriction",
+  "previewPromos": [
+    "mep-102",
+    "mep-103",
+    "mep-104",
+    "mep-105",
+    "mep-106",
+    "mep-107",
+    "mep-108",
+    "mep-109",
+    "mep-110"
+  ]
+}

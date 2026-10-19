@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "total": 1558,
+  "available": 1558,
+  "pending": 0,
+  "allSetsComplete": true,
+  "dpPrintingMapCount": 1558,
+  "dpReplayAndUndo": true,
+  "inheritedEnlargedCardActions": true,
+  "hiddenEnergyPresentation": true,
+  "earlyAndLateProfiles": true,
+  "engineSha256": "dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722"
+}

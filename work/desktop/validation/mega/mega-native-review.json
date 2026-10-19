@@ -1,0 +1,6019 @@
+[
+  {
+    "id": "me01-028",
+    "name": "Cinderace",
+    "native": "Cinderace M1L",
+    "printed": {
+      "id": "me01-028",
+      "name": "Cinderace",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "160",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Raboot",
+      "abilities": [
+        {
+          "name": "Explosiveness",
+          "text": "If this Pokémon is in your hand when you are setting up to play, you may put it face down in the Active Spot.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Turbo Flare",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50",
+          "text": "Search your deck for up to 3 Basic Energy cards and attach them to your Benched Pokémon in any way you like. Then, shuffle your deck."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "number": "028",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        815
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/28.png",
+        "large": "https://images.pokemontcg.io/me1/28_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Flame Turbo",
+        "cost": [
+          9
+        ],
+        "damage": 50,
+        "text": "Search your deck for up to 3 Basic Energy cards and attach them to your Benched Pokémon in any way you like. Then, shuffle your deck."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Explosiveness",
+        "powerType": 2,
+        "text": "If this Pokémon is in your hand when you are setting up to play, you may put it face down as your Active Pokémon."
+      }
+    ]
+  },
+  {
+    "id": "me01-060",
+    "name": "Mega Gardevoir ex",
+    "native": "Mega Gardevoir ex M1S",
+    "printed": {
+      "id": "me01-060",
+      "name": "Mega Gardevoir ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "360",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Kirlia",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Overflowing Wishes",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a Basic Psychic Energy card and attach it to that Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Symphonia",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50×",
+          "text": "This attack does 50 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "060",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/60.png",
+        "large": "https://images.pokemontcg.io/me1/60_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overflowing Wishes",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "For each of your Benched Pokemon, search your deck for a Basic [P] Energy and attach it to that Pokemon. Then, shuffle your deck."
+      },
+      {
+        "name": "Mega Symphonia",
+        "cost": [
+          5
+        ],
+        "damage": 50,
+        "damageCalculation": "x",
+        "text": "This attack does 50 damage for each [P] Energy attached to all of your Pokemon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-064",
+    "name": "Xerneas",
+    "native": "Xerneas M1S",
+    "printed": {
+      "id": "me01-064",
+      "name": "Xerneas",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "types": [
+        "Psychic"
+      ],
+      "attacks": [
+        {
+          "name": "Geo Gate",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "Search your deck for up to 3 Basic Psychic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Bright Horns",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120",
+          "text": "During your next turn, this Pokémon can't use Bright Horns."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "064",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        716
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/64.png",
+        "large": "https://images.pokemontcg.io/me1/64_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Geogate",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "Search your deck for up to 3 Basic [P] Pokémon and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "Bright Horns",
+        "cost": [
+          5,
+          5,
+          9
+        ],
+        "damage": 120,
+        "text": "This Pokémon can't use Bright Horns during your next turn."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-066",
+    "name": "Houndstone",
+    "native": "Houndstone M1S",
+    "printed": {
+      "id": "me01-066",
+      "name": "Houndstone",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Greavard",
+      "attacks": [
+        {
+          "name": "Horrifying Bite",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin until you get tails. For each heads, choose a random card from your opponent's hand. Your opponent reveals those cards and shuffles them into their deck."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "066",
+      "rarity": "Uncommon",
+      "nationalPokedexNumbers": [
+        972
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/66.png",
+        "large": "https://images.pokemontcg.io/me1/66_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Horror Bite",
+        "cost": [
+          5
+        ],
+        "damage": 30,
+        "text": "Flip a coin until you get tails. For each heads, choose a random card from your opponent's hand. Your opponent reveals those cards and shuffles them into their deck."
+      },
+      {
+        "name": "Hammer In",
+        "cost": [
+          5,
+          5,
+          9
+        ],
+        "damage": 130,
+        "text": ""
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-085",
+    "name": "Crawdaunt",
+    "native": "Crawdaunt M1L",
+    "printed": {
+      "id": "me01-085",
+      "name": "Crawdaunt",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "130",
+      "types": [
+        "Darkness"
+      ],
+      "evolvesFrom": "Corphish",
+      "attacks": [
+        {
+          "name": "Vise Grip",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": ""
+        },
+        {
+          "name": "Cutting Riposte",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "If this Pokémon has any damage counters on it, this attack can be used for Darkness."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "085",
+      "rarity": "Uncommon",
+      "nationalPokedexNumbers": [
+        342
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/85.png",
+        "large": "https://images.pokemontcg.io/me1/85_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Vice Grip",
+        "cost": [
+          9
+        ],
+        "damage": 30,
+        "text": ""
+      },
+      {
+        "name": "Vengeful Scissors",
+        "cost": [
+          7,
+          7,
+          9
+        ],
+        "damage": 130,
+        "text": "If this Pokémon has any damage counters on it, this attack can be used for [D]."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-116",
+    "name": "Fighting Gong",
+    "native": "Fighting Gong M1L",
+    "printed": {
+      "id": "me01-116",
+      "name": "Fighting Gong",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Search your deck for a Basic Fighting Energy card or a Basic Fighting Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "116",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/116.png",
+        "large": "https://images.pokemontcg.io/me1/116_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Search your deck for a Basic [F] Pokémon or a Basic [F] Energy card, reveal it, and put it into your hand. Then, shuffle your deck."
+  },
+  {
+    "id": "me01-122",
+    "name": "Mystery Garden",
+    "native": "Mystery Garden M1S",
+    "printed": {
+      "id": "me01-122",
+      "name": "Mystery Garden",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may discard an Energy card from their hand in order to draw cards until they have as many cards in their hand as they have Psychic Pokémon in play.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+      ],
+      "number": "122",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/122.png",
+        "large": "https://images.pokemontcg.io/me1/122_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Once during each player's turn, that player may discard 1 Energy card from their hand. If they do, that player draws cards until they have as many cards in hand as they have Psychic Pokémon in play."
+  },
+  {
+    "id": "me01-124",
+    "name": "Premium Power Pro",
+    "native": "Power Protein M1L",
+    "printed": {
+      "id": "me01-124",
+      "name": "Premium Power Pro",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "During this turn, attacks used by your Fighting Pokémon do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "124",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/124.png",
+        "large": "https://images.pokemontcg.io/me1/124_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "During this turn, your [F] Pokémon's attacks do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+  },
+  {
+    "id": "me01-126",
+    "name": "Repel",
+    "native": "Repel M1L",
+    "printed": {
+      "id": "me01-126",
+      "name": "Repel",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Switch out your opponent's Active Pokémon to the Bench. (Your opponent chooses the new Active Pokémon.)",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "126",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/126.png",
+        "large": "https://images.pokemontcg.io/me1/126_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Your opponent switches their Active Pokémon with 1 of their Benched Pokémon."
+  },
+  {
+    "id": "me01-127",
+    "name": "Risky Ruins",
+    "native": "Risky Ruins MEG",
+    "printed": {
+      "id": "me01-127",
+      "name": "Risky Ruins",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Whenever any player puts a Basic non-Darkness Pokémon onto their Bench during their turn, place 2 damage counters on that Pokémon.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+      ],
+      "number": "127",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/127.png",
+        "large": "https://images.pokemontcg.io/me1/127_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Whenever any player puts a Basic non-[D] Pokémon onto their Bench, put 2 damage counters on that Pokémon."
+  },
+  {
+    "id": "me01-132",
+    "name": "Wally's Compassion",
+    "native": "Wally's Compassion M1S",
+    "printed": {
+      "id": "me01-132",
+      "name": "Wally's Compassion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal all damage from 1 of your Mega Evolution Pokémon ex. If you healed any damage in this way, put all Energy attached to that Pokémon into your hand.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "number": "132",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/132.png",
+        "large": "https://images.pokemontcg.io/me1/132_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Heal all damage from 1 of your Mega Evolution Pokémon ex. If you do, put all Energy attached to that Pokémon back into your hand."
+  },
+  {
+    "id": "me01-145",
+    "name": "Houndstone",
+    "native": "Houndstone2 MEG",
+    "printed": {
+      "id": "me01-145",
+      "name": "Houndstone",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Greavard",
+      "attacks": [
+        {
+          "name": "Horrifying Bite",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "30",
+          "text": "Flip a coin until you get tails. For each heads, choose a random card from your opponent's hand. Your opponent reveals those cards and shuffles them into their deck."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Psychic",
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "145",
+      "rarity": "Illustration Rare",
+      "nationalPokedexNumbers": [
+        972
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/145.png",
+        "large": "https://images.pokemontcg.io/me1/145_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Horror Bite",
+        "cost": [
+          5
+        ],
+        "damage": 30,
+        "text": "Flip a coin until you get tails. For each heads, choose a random card from your opponent's hand. Your opponent reveals those cards and shuffles them into their deck."
+      },
+      {
+        "name": "Hammer In",
+        "cost": [
+          5,
+          5,
+          9
+        ],
+        "damage": 130,
+        "text": ""
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-159",
+    "name": "Mega Gardevoir ex",
+    "native": "Mega Gardevoir ex2 MEG",
+    "printed": {
+      "id": "me01-159",
+      "name": "Mega Gardevoir ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "360",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Kirlia",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Overflowing Wishes",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a Basic Psychic Energy card and attach it to that Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Symphonia",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50×",
+          "text": "This attack does 50 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "159",
+      "rarity": "Ultra Rare",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/159.png",
+        "large": "https://images.pokemontcg.io/me1/159_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overflowing Wishes",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "For each of your Benched Pokemon, search your deck for a Basic [P] Energy and attach it to that Pokemon. Then, shuffle your deck."
+      },
+      {
+        "name": "Mega Symphonia",
+        "cost": [
+          5
+        ],
+        "damage": 50,
+        "damageCalculation": "x",
+        "text": "This attack does 50 damage for each [P] Energy attached to all of your Pokemon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-168",
+    "name": "Fighting Gong",
+    "native": "Fighting Gong2 MEG",
+    "printed": {
+      "id": "me01-168",
+      "name": "Fighting Gong",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Search your deck for a Basic Fighting Energy card or a Basic Fighting Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "168",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/168.png",
+        "large": "https://images.pokemontcg.io/me1/168_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Search your deck for a Basic [F] Pokémon or a Basic [F] Energy card, reveal it, and put it into your hand. Then, shuffle your deck."
+  },
+  {
+    "id": "me01-172",
+    "name": "Mystery Garden",
+    "native": "Mystery Garden2 MEG",
+    "printed": {
+      "id": "me01-172",
+      "name": "Mystery Garden",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may discard an Energy card from their hand in order to draw cards until they have as many cards in their hand as they have Psychic Pokémon in play.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+      ],
+      "number": "172",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/172.png",
+        "large": "https://images.pokemontcg.io/me1/172_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Once during each player's turn, that player may discard 1 Energy card from their hand. If they do, that player draws cards until they have as many cards in hand as they have Psychic Pokémon in play."
+  },
+  {
+    "id": "me01-174",
+    "name": "Premium Power Pro",
+    "native": "Premium Power Pro2 MEG",
+    "printed": {
+      "id": "me01-174",
+      "name": "Premium Power Pro",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "During this turn, attacks used by your Fighting Pokémon do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "174",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/174.png",
+        "large": "https://images.pokemontcg.io/me1/174_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "During this turn, your [F] Pokémon's attacks do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+  },
+  {
+    "id": "me01-176",
+    "name": "Wally's Compassion",
+    "native": "Wally's Compassion2 MEG",
+    "printed": {
+      "id": "me01-176",
+      "name": "Wally's Compassion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal all damage from 1 of your Mega Evolution Pokémon ex. If you healed any damage in this way, put all Energy attached to that Pokémon into your hand.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "number": "176",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/176.png",
+        "large": "https://images.pokemontcg.io/me1/176_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Heal all damage from 1 of your Mega Evolution Pokémon ex. If you do, put all Energy attached to that Pokémon back into your hand."
+  },
+  {
+    "id": "me01-178",
+    "name": "Mega Gardevoir ex",
+    "native": "Mega Gardevoir ex3 MEG",
+    "printed": {
+      "id": "me01-178",
+      "name": "Mega Gardevoir ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "360",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Kirlia",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Overflowing Wishes",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a Basic Psychic Energy card and attach it to that Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Symphonia",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50×",
+          "text": "This attack does 50 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "178",
+      "rarity": "Special Illustration Rare",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/178.png",
+        "large": "https://images.pokemontcg.io/me1/178_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overflowing Wishes",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "For each of your Benched Pokemon, search your deck for a Basic [P] Energy and attach it to that Pokemon. Then, shuffle your deck."
+      },
+      {
+        "name": "Mega Symphonia",
+        "cost": [
+          5
+        ],
+        "damage": 50,
+        "damageCalculation": "x",
+        "text": "This attack does 50 damage for each [P] Energy attached to all of your Pokemon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me01-186",
+    "name": "Wally's Compassion",
+    "native": "Wally's Compassion3 MEG",
+    "printed": {
+      "id": "me01-186",
+      "name": "Wally's Compassion",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Heal all damage from 1 of your Mega Evolution Pokémon ex. If you healed any damage in this way, put all Energy attached to that Pokémon into your hand.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "number": "186",
+      "rarity": "Special Illustration Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/186.png",
+        "large": "https://images.pokemontcg.io/me1/186_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Heal all damage from 1 of your Mega Evolution Pokémon ex. If you do, put all Energy attached to that Pokémon back into your hand."
+  },
+  {
+    "id": "me01-187",
+    "name": "Mega Gardevoir ex",
+    "native": "Mega Gardevoir ex4 MEG",
+    "printed": {
+      "id": "me01-187",
+      "name": "Mega Gardevoir ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "360",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Kirlia",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Overflowing Wishes",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a Basic Psychic Energy card and attach it to that Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Symphonia",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50×",
+          "text": "This attack does 50 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "187",
+      "rarity": "Mega Hyper Rare",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me1/187.png",
+        "large": "https://images.pokemontcg.io/me1/187_hires.png"
+      },
+      "set": {
+        "id": "me01"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overflowing Wishes",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "For each of your Benched Pokemon, search your deck for a Basic [P] Energy and attach it to that Pokemon. Then, shuffle your deck."
+      },
+      {
+        "name": "Mega Symphonia",
+        "cost": [
+          5
+        ],
+        "damage": 50,
+        "damageCalculation": "x",
+        "text": "This attack does 50 damage for each [P] Energy attached to all of your Pokemon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "mep-008",
+    "name": "Golduck",
+    "native": "Golduck MEP",
+    "printed": {
+      "name": "Golduck",
+      "number": "008",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "120",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Psyduck",
+      "retreatCost": [
+        "Colorless"
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "x2"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Hydro Pump",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "damage": "60+",
+          "text": "This attack does 20 more damage for each {W} Energy attached to this Pokémon."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Damp",
+          "type": "Ability",
+          "text": "Pokémon in play (both yours and your opponent's) lose any Ability that requires the Pokémon using it to Knock Out itself."
+        }
+      ],
+      "rules": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "id": "mep-008",
+      "set": {
+        "id": "mep"
+      },
+      "_megaTextRepair": {
+        "source": "Existing exact MEP 007/008 English scans, visually reviewed",
+        "fields": [
+          "abilities.0.text"
+        ]
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Hydro Pump",
+        "cost": [
+          9,
+          9,
+          9
+        ],
+        "damage": 60,
+        "damageCalculation": "+",
+        "text": "This attack does 20 more damage for each [W] Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Damp",
+        "powerType": 2,
+        "text": "Pokémon in play (both yours and your opponent's) lose any Ability that requires the Pokémon using it to Knock Out itself."
+      }
+    ]
+  },
+  {
+    "id": "mep-014",
+    "name": "Ceruledge",
+    "native": "Ceruledge MEP",
+    "printed": {
+      "name": "Ceruledge",
+      "number": "014",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Charcadet",
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "x2"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Infernal Slash",
+          "cost": [
+            "Fire"
+          ],
+          "damage": "220",
+          "text": "Discard 4 Basic {R} Energy cards from your hand. If you can't discard 4 cards in this way, this attack does nothing."
+        }
+      ],
+      "abilities": [],
+      "rules": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "id": "mep-014",
+      "set": {
+        "id": "mep"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Purgatory Slash",
+        "cost": [
+          2
+        ],
+        "damage": 220,
+        "text": "Discard 4 Basic [R] Energy cards from your hand or this attack does nothing."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "mep-028",
+    "name": "Celebratory Fanfare",
+    "native": "Celebratory Fanfare SV-P",
+    "printed": {
+      "name": "Celebratory Fanfare",
+      "number": "028",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "hp": "",
+      "retreatCost": [],
+      "attacks": [],
+      "abilities": [],
+      "rules": [
+        "Once during each player's turn, that player may heal 10 damage from each of their Pokémon. If a player healed any damage in this way, their turn ends."
+      ],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "id": "mep-028",
+      "set": {
+        "id": "mep"
+      }
+    },
+    "nativeText": "Once during each player's turn, that player may heal 10 damage from each of their Pokémon. If they do, that player's turn ends."
+  },
+  {
+    "id": "mep-032",
+    "name": "Mega Gardevoir ex",
+    "native": "Mega Gardevoir ex MEP",
+    "printed": {
+      "name": "Mega Gardevoir ex",
+      "number": "032",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "360",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Kirlia",
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "x2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Overflowing Wishes",
+          "cost": [
+            "Psychic"
+          ],
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a Basic {P} Energy card and attach it to that Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Symphonia",
+          "cost": [
+            "Psychic"
+          ],
+          "damage": "50×",
+          "text": "This attack does 50 damage for each {P} Energy attached to all of your Pokémon."
+        }
+      ],
+      "abilities": [],
+      "rules": [],
+      "regulationMark": "I",
+      "rarity": "Promo",
+      "id": "mep-032",
+      "set": {
+        "id": "mep"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overflowing Wishes",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "For each of your Benched Pokemon, search your deck for a Basic [P] Energy and attach it to that Pokemon. Then, shuffle your deck."
+      },
+      {
+        "name": "Mega Symphonia",
+        "cost": [
+          5
+        ],
+        "damage": 50,
+        "damageCalculation": "x",
+        "text": "This attack does 50 damage for each [P] Energy attached to all of your Pokemon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "mep-088",
+    "name": "Zarude",
+    "native": "Zarude M5",
+    "printed": {
+      "name": "Zarude",
+      "number": "088",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "types": [
+        "Darkness"
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "x2"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Overhead Throw",
+          "cost": [
+            "Darkness"
+          ],
+          "damage": "30",
+          "text": "This attack also does 30 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Shadowy Whip",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness"
+          ],
+          "damage": "100+",
+          "text": "If your Benched Pokémon have any Shadowy {D} Energy attached, this attack does 70 more damage."
+        }
+      ],
+      "abilities": [],
+      "rules": [],
+      "regulationMark": "J",
+      "rarity": "Promo",
+      "id": "mep-088",
+      "set": {
+        "id": "mep"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overhead Throw",
+        "cost": [
+          7
+        ],
+        "damage": 30,
+        "text": "This attack also does 30 damage to 1 of your Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Shadowy Whip",
+        "cost": [
+          7,
+          7,
+          7
+        ],
+        "damage": 100,
+        "damageCalculation": "+",
+        "text": "If your Benched Pokémon have any Shadowy [D] Energy attached, this attack does 70 more damage."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "mep-107",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex MEP",
+    "printed": {
+      "id": "mep-107",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "hp": "190",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Pika-Pika Parade",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "text": "Search your deck for any number of Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Discard all Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "107",
+      "artist": "5ban Graphics",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+        "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png"
+      },
+      "set": {
+        "id": "mep"
+      },
+      "abilities": [],
+      "_megaCounterpart": "30th-053",
+      "_megaReleaseDate": "2026-11-06",
+      "_megaPreview": true,
+      "_megaScan": {
+        "number": 107,
+        "id": "mep-107",
+        "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+        "source": "work\\card-sources\\mega-official-promos\\bfbec54126625819.jxl",
+        "sourceSha256": "3b33f6a40e0a6e2e2a5bdfc4ba4175d018041ccad01ceb3dd100b26fad73ee8f",
+        "width": 639,
+        "height": 891,
+        "format": "JXL",
+        "credit": "The Pokémon Company; official product image",
+        "file": "work\\card-sources\\mega-official-promos\\mep-107.png",
+        "sha256": "f9adf6c7aa6e5b8e6bded4ef50b413cde206a0d628c809de169126ae4f23b845",
+        "bytes": 948565
+      },
+      "_megaSource": {
+        "kind": "scan-verified-counterpart-or-transcription",
+        "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+        "sourceSha256": "3b33f6a40e0a6e2e2a5bdfc4ba4175d018041ccad01ceb3dd100b26fad73ee8f",
+        "decodedPngSha256": "f9adf6c7aa6e5b8e6bded4ef50b413cde206a0d628c809de169126ae4f23b845",
+        "counterpart": "30th-053"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Pika Pika Parade",
+        "cost": [
+          9
+        ],
+        "damage": 0,
+        "text": "Search your deck for as many Basic Pokémon as you like and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          4,
+          4,
+          9
+        ],
+        "damage": 200,
+        "text": "Discard all Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "mep-109",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex2 MEP",
+    "printed": {
+      "id": "mep-109",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "hp": "190",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Zip-Zap Frenzy",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "text": "You may attach any number of Basic Energy cards from your hand to your Pokémon in any way you like."
+        },
+        {
+          "name": "Thunder",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "This Pokémon also does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "109",
+      "artist": "takuyoa",
+      "rarity": "Promo",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+        "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png"
+      },
+      "set": {
+        "id": "mep"
+      },
+      "abilities": [],
+      "_megaCounterpart": "30th-054",
+      "_megaReleaseDate": "2026-11-06",
+      "_megaPreview": true,
+      "_megaScan": {
+        "number": 109,
+        "id": "mep-109",
+        "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+        "source": "work\\card-sources\\mega-official-promos\\74919c6fb7c333fb.jxl",
+        "sourceSha256": "95f12a40940f3a75664a1b9cef2ba72562e746abc85658cb4088c156c1e40975",
+        "width": 639,
+        "height": 891,
+        "format": "JXL",
+        "credit": "The Pokémon Company; official product image",
+        "file": "work\\card-sources\\mega-official-promos\\mep-109.png",
+        "sha256": "77e45c6c98adccc6535825b46433873700bfec8aba0c4d8e514cc427be79307c",
+        "bytes": 947449
+      },
+      "_megaSource": {
+        "kind": "scan-verified-counterpart-or-transcription",
+        "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+        "sourceSha256": "95f12a40940f3a75664a1b9cef2ba72562e746abc85658cb4088c156c1e40975",
+        "decodedPngSha256": "77e45c6c98adccc6535825b46433873700bfec8aba0c4d8e514cc427be79307c",
+        "counterpart": "30th-054"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Shocking Fever",
+        "cost": [
+          4
+        ],
+        "damage": 0,
+        "text": "You may attach as many Basic Energy cards from your hand to your Pokémon in any way you like."
+      },
+      {
+        "name": "Thunder",
+        "cost": [
+          4,
+          4,
+          9
+        ],
+        "damage": 200,
+        "text": "This Pokémon does 30 damage to itself."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02-008",
+    "name": "Genesect",
+    "native": "Genesect M2",
+    "printed": {
+      "id": "me02-008",
+      "name": "Genesect",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "types": [
+        "Grass"
+      ],
+      "attacks": [
+        {
+          "name": "Bug's Cannon",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "This attack does 20 damage to 1 of your opponent's Pokémon for each Grass Energy attached to this Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Speed Attack",
+          "cost": [
+            "Grass",
+            "Grass",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "110",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "008",
+      "artist": "Mitsuhiro Arita",
+      "rarity": "Rare",
+      "flavorText": "This Pokémon existed 300 million years ago. Team Plasma altered it and attached a cannon to its back.",
+      "nationalPokedexNumbers": [
+        649
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/8.png",
+        "large": "https://images.pokemontcg.io/me2/8_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Bug's Cannon",
+        "cost": [
+          1
+        ],
+        "damage": 0,
+        "text": "Choose 1 of your opponent's Pokémon. This attack does 20 damage to it for each [G] Energy attached to this Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Speed Attack",
+        "cost": [
+          1,
+          1,
+          9
+        ],
+        "damage": 110,
+        "text": ""
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02-011",
+    "name": "Charmander",
+    "native": "Charmander M2",
+    "printed": {
+      "id": "me02-011",
+      "name": "Charmander",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "80",
+      "types": [
+        "Fire"
+      ],
+      "evolvesTo": [
+        "Charmeleon"
+      ],
+      "abilities": [
+        {
+          "name": "Agile",
+          "text": "If this Pokémon has no Energy attached, it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Live Coal",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "011",
+      "artist": "HYOGONOSUKE",
+      "rarity": "Common",
+      "flavorText": "The flame on its tail shows the strength of its life-force. If Charmander is weak, the flame also burns weakly.",
+      "nationalPokedexNumbers": [
+        4
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/11.png",
+        "large": "https://images.pokemontcg.io/me2/11_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Live Coal",
+        "cost": [
+          2
+        ],
+        "damage": 20,
+        "text": ""
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Nimble",
+        "powerType": 2,
+        "text": "If this Pokémon has no Energy attached to it, this Pokémon has no Retreat Cost."
+      }
+    ]
+  },
+  {
+    "id": "me02-020",
+    "name": "Ceruledge",
+    "native": "Ceruledge M2",
+    "printed": {
+      "id": "me02-020",
+      "name": "Ceruledge",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Charcadet",
+      "attacks": [
+        {
+          "name": "Infernal Slash",
+          "cost": [
+            "Fire"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "220",
+          "text": "Discard 4 Basic Fire Energy cards from your hand. If you can't discard 4 cards in this way, this attack does nothing."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "020",
+      "artist": "Gemi",
+      "rarity": "Uncommon",
+      "flavorText": "The fiery blades on its arms burn fiercely with the lingering resentment of a sword wielder who fell before accomplishing their goal.",
+      "nationalPokedexNumbers": [
+        937
+      ],
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/20.png",
+        "large": "https://images.pokemontcg.io/me2/20_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Purgatory Slash",
+        "cost": [
+          2
+        ],
+        "damage": 220,
+        "text": "Discard 4 Basic [R] Energy cards from your hand or this attack does nothing."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02-090",
+    "name": "Grimsley's Move",
+    "native": "Grimsley's Gambit M2",
+    "printed": {
+      "id": "me02-090",
+      "name": "Grimsley's Move",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Look at the top 7 cards of your deck and put a Darkness Pokémon you find there onto your Bench. Shuffle the other cards and put them on the bottom of your deck. You can't use this card during your first turn.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "number": "090",
+      "artist": "GIDORA",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/90.png",
+        "large": "https://images.pokemontcg.io/me2/90_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Look at the top 7 cards of your deck and put a [D] Pokémon you find there onto your Bench. Shuffle the other cards and put them on the bottom of your deck. You can't use this card on your first turn."
+  },
+  {
+    "id": "me02-092",
+    "name": "Punk Helmet",
+    "native": "Punk Helmet PFL",
+    "printed": {
+      "id": "me02-092",
+      "name": "Punk Helmet",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "If the Darkness Pokémon this card is attached to is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 4 damage counters on the Attacking Pokémon.",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "number": "092",
+      "artist": "Studio Bora Inc.",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/92.png",
+        "large": "https://images.pokemontcg.io/me2/92_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "If the [D] Pokémon this card is attached to is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 4 damage counters on the Attacking Pokémon."
+  },
+  {
+    "id": "me02-093",
+    "name": "Sacred Charm",
+    "native": "Sacred Charm M2",
+    "printed": {
+      "id": "me02-093",
+      "name": "Sacred Charm",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "The Pokémon this card is attached to takes 30 less damage from attacks from your opponent's Pokémon that have an Ability (after applying Weakness and Resistance).",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "number": "093",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/93.png",
+        "large": "https://images.pokemontcg.io/me2/93_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "The Pokémon this card is attached to takes 30 less damage from attacks from your opponent's Pokémon that have any Abilities."
+  },
+  {
+    "id": "me02-120",
+    "name": "Grimsley's Move",
+    "native": "Grimsley's Gambit2 PFL",
+    "printed": {
+      "id": "me02-120",
+      "name": "Grimsley's Move",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Look at the top 7 cards of your deck and put a Darkness Pokémon you find there onto your Bench. Shuffle the other cards and put them on the bottom of your deck. You can't use this card during your first turn.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "number": "120",
+      "artist": "GIDORA",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/120.png",
+        "large": "https://images.pokemontcg.io/me2/120_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Look at the top 7 cards of your deck and put a [D] Pokémon you find there onto your Bench. Shuffle the other cards and put them on the bottom of your deck. You can't use this card on your first turn."
+  },
+  {
+    "id": "me02-121",
+    "name": "Punk Helmet",
+    "native": "Punk Helmet PFL",
+    "printed": {
+      "id": "me02-121",
+      "name": "Punk Helmet",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "If the Darkness Pokémon this card is attached to is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 4 damage counters on the Attacking Pokémon.",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "number": "121",
+      "artist": "Studio Bora Inc.",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/121.png",
+        "large": "https://images.pokemontcg.io/me2/121_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "If the [D] Pokémon this card is attached to is in the Active Spot and is damaged by an attack from your opponent's Pokémon (even if this Pokémon is Knocked Out), place 4 damage counters on the Attacking Pokémon."
+  },
+  {
+    "id": "me02-122",
+    "name": "Sacred Charm",
+    "native": "Sacred Charm2 PFL",
+    "printed": {
+      "id": "me02-122",
+      "name": "Sacred Charm",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "The Pokémon this card is attached to takes 30 less damage from attacks from your opponent's Pokémon that have an Ability (after applying Weakness and Resistance).",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "number": "122",
+      "artist": "Toyste Beach",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/122.png",
+        "large": "https://images.pokemontcg.io/me2/122_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "The Pokémon this card is attached to takes 30 less damage from attacks from your opponent's Pokémon that have any Abilities."
+  },
+  {
+    "id": "me02-124",
+    "name": "Ignition Energy",
+    "native": "Ignition Energy PFL",
+    "printed": {
+      "id": "me02-124",
+      "name": "Ignition Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "If this card is attached to 1 of your Pokémon, discard it at the end of your turn.  As long as this card is attached to a Pokémon, it provides Colorless Energy.  If this card is attached to an Evolution Pokémon, it provides ColorlessColorlessColorless Energy instead."
+      ],
+      "number": "124",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "unlimited": "Legal",
+        "standard": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.pokemontcg.io/me2/124.png",
+        "large": "https://images.pokemontcg.io/me2/124_hires.png"
+      },
+      "set": {
+        "id": "me02"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "If this card is attached to 1 of your Pokémon, discard it at the end of your turn.\n\nAs long as this card is attached to a Pokémon, it provides [C] Energy.\n\nIf this card is attached to an Evolution Pokémon, it provides [C][C][C] Energy instead."
+  },
+  {
+    "id": "me02.5-024",
+    "name": "Ethan's Magcargo",
+    "native": "Ethan's Magcargo ASC",
+    "printed": {
+      "id": "me02.5-024",
+      "name": "Ethan's Magcargo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "130",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Ethan's Slugma",
+      "abilities": [
+        {
+          "name": "Melt Away",
+          "text": "If this Pokémon has no Energy attached, it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Lava Burst",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70×",
+          "text": "Discard up to 5 Fire Energy from this Pokémon. This attack does 70 damage for each card you discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "024",
+      "artist": "kodama",
+      "rarity": "Rare",
+      "flavorText": "This Pokémon lives near the craters of volcanoes. It stores fire energy in its shell of cooled and hardened magma.",
+      "nationalPokedexNumbers": [
+        219
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-24/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-24/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Lava Burst",
+        "cost": [
+          2,
+          2,
+          2
+        ],
+        "damage": 70,
+        "damageCalculation": "x",
+        "text": "Discard up to 5 [R] Energy from this Pokémon. This attack does 70 damage for each card you discarded in this way."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Melt and Flow",
+        "powerType": 2,
+        "text": "If this Pokémon has no Energy attached, it has no Retreat Cost."
+      }
+    ]
+  },
+  {
+    "id": "me02.5-053",
+    "name": "Frosmoth",
+    "native": "Frosmoth M2a",
+    "printed": {
+      "id": "me02.5-053",
+      "name": "Frosmoth",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "110",
+      "types": [
+        "Water"
+      ],
+      "evolvesFrom": "Snom",
+      "abilities": [
+        {
+          "name": "Alluring Wings",
+          "text": "Once during your turn, if this Pokémon is in the Active Spot, you may use this Ability. Each player draws a card.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Cold Cyclone",
+          "cost": [
+            "Water",
+            "Water"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "90",
+          "text": "Move a Water Energy from this Pokémon to 1 of your Benched Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Metal",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "053",
+      "artist": "cochi8i",
+      "rarity": "Uncommon",
+      "flavorText": "It causes blizzards as it flies around with its huge, chill-emanating wings. Clean meltwater is its favorite thing to drink.",
+      "nationalPokedexNumbers": [
+        873
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-53/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-53/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Cold Cyclone",
+        "cost": [
+          3,
+          3
+        ],
+        "damage": 90,
+        "text": "Move a [W] Energy from this Pokémon to 1 of your Benched Pokémon."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Alluring Wings",
+        "useWhenInPlay": true,
+        "powerType": 2,
+        "text": "Once during your turn, if this Pokémon is in your Active Spot, you may use this Ability. Each player draws a card."
+      }
+    ]
+  },
+  {
+    "id": "me02.5-057",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex ASC",
+    "printed": {
+      "id": "me02.5-057",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Tera",
+        "ex"
+      ],
+      "hp": "200",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent’s).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Resolute Heart",
+          "text": "If this Pokémon has full HP and would be Knocked Out by damage from an attack, it is not Knocked Out, and its remaining HP becomes 10.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Topaz Bolt",
+          "cost": [
+            "Grass",
+            "Lightning",
+            "Metal"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "300",
+          "text": "Discard 3 Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "057",
+      "artist": "aky CG Works",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "H",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-57/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-57/large"
+      },
+      "set": {
+        "id": "me02.5"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Topaz Bolt",
+        "cost": [
+          1,
+          4,
+          8
+        ],
+        "damage": 300,
+        "text": "Discard 3 Energy from this Pokémon."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Tenacious Heart",
+        "powerType": 2,
+        "text": "If this Pokémon has full HP and would be Knocked Out by an attack, it isn't Knocked Out and its remaining HP becomes 10 instead."
+      }
+    ]
+  },
+  {
+    "id": "me02.5-061",
+    "name": "Mega Eelektross ex",
+    "native": "Mega Eelektross ex M2a",
+    "printed": {
+      "id": "me02.5-061",
+      "name": "Mega Eelektross ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "350",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Eelektrik",
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Split Bomb",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 60 damage to each of 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Disaster Shock",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "190",
+          "text": "You may discard 2 Lightning Energy from this Pokémon and make your opponent's Active Pokémon Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "061",
+      "artist": "takuyoa",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        604
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-61/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-61/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Split Bomb",
+        "cost": [
+          4,
+          4
+        ],
+        "damage": 0,
+        "text": "This attack does 60 damage to 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Disaster Shock",
+        "cost": [
+          4,
+          4,
+          4
+        ],
+        "damage": 190,
+        "text": "You may discard 2 [L] Energy from this Pokémon and make your opponent's Active Pokemon Paralyzed."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-089",
+    "name": "Mega Gardevoir ex",
+    "native": "Mega Gardevoir ex ASC",
+    "printed": {
+      "id": "me02.5-089",
+      "name": "Mega Gardevoir ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "360",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Kirlia",
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Overflowing Wishes",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "For each of your Benched Pokémon, search your deck for a Basic Psychic Energy card and attach it to that Pokémon. Then, shuffle your deck."
+        },
+        {
+          "name": "Mega Symphonia",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "50×",
+          "text": "This attack does 50 damage for each Psychic Energy attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "089",
+      "artist": "takuyoa",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        282
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-89/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-89/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overflowing Wishes",
+        "cost": [
+          5
+        ],
+        "damage": 0,
+        "text": "For each of your Benched Pokemon, search your deck for a Basic [P] Energy and attach it to that Pokemon. Then, shuffle your deck."
+      },
+      {
+        "name": "Mega Symphonia",
+        "cost": [
+          5
+        ],
+        "damage": 50,
+        "damageCalculation": "x",
+        "text": "This attack does 50 damage for each [P] Energy attached to all of your Pokemon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-092",
+    "name": "Rotom",
+    "native": "Rotom M2a",
+    "printed": {
+      "id": "me02.5-092",
+      "name": "Rotom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Psychic"
+      ],
+      "attacks": [
+        {
+          "name": "Roto Call",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "",
+          "text": "You may search your deck for any number of Pokémon that have \"Rotom\" in their name and put them onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Gadget Show",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "30×",
+          "text": "This attack does 30 damage for each Pokémon Tool attached to all of your Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "092",
+      "artist": "mingo",
+      "rarity": "Common",
+      "flavorText": "Research continues on this Pokémon, which could be the power source of a unique motor.",
+      "nationalPokedexNumbers": [
+        479
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-92/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-92/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Roto Call",
+        "cost": [
+          9
+        ],
+        "damage": 0,
+        "text": "You may search your deck for any number of Pokémon that have \"Rotom\" in their name and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "Gadget Show",
+        "cost": [
+          9,
+          9
+        ],
+        "damage": 30,
+        "damageCalculation": "x",
+        "text": "This attack does 30 damage for each Pokémon Tool attached to all your Pokémon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-097",
+    "name": "Team Rocket's Mimikyu",
+    "native": "Team Rocket's Mimikyu ASC",
+    "printed": {
+      "id": "me02.5-097",
+      "name": "Team Rocket's Mimikyu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Psychic"
+      ],
+      "attacks": [
+        {
+          "name": "Gemstone Mimicry",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Active Tera Pokémon's attacks and use it as this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "number": "097",
+      "artist": "DOM",
+      "rarity": "Uncommon",
+      "flavorText": "This Pokémon lives in dark places untouched by sunlight. When it appears before humans, it hides itself under a cloth that resembles a Pikachu.",
+      "nationalPokedexNumbers": [
+        778
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-97/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-97/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Gemstone Hunt",
+        "cost": [
+          5,
+          9
+        ],
+        "damage": 0,
+        "copycatAttack": true,
+        "text": "Choose an attack on your opponent's Active Tera Pokemon and use it as the effect of this attack."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-127",
+    "name": "Team Rocket's Honchkrow",
+    "native": "Team Rocket's Honchkrow M2a",
+    "printed": {
+      "id": "me02.5-127",
+      "name": "Team Rocket's Honchkrow",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "130",
+      "types": [
+        "Darkness"
+      ],
+      "evolvesFrom": "Team Rocket's Murkrow",
+      "attacks": [
+        {
+          "name": "Rocket Feathers",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60×",
+          "text": "You may discard any number of Supporter cards that have \"Team Rocket\" in their name from your hand, and this attack does 60 damage for each card you discarded in this way."
+        },
+        {
+          "name": "Hammer In",
+          "cost": [
+            "Darkness",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "100",
+          "text": ""
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "127",
+      "artist": "hncl",
+      "rarity": "Rare",
+      "flavorText": "A single cry from this nocturnal Pokémon, and more than 100 of its Murkrow cronies will assemble.",
+      "nationalPokedexNumbers": [
+        430
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-127/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-127/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Rocket Feathers",
+        "cost": [
+          9,
+          9
+        ],
+        "damage": 60,
+        "damageCalculation": "x",
+        "text": "You may discard any number of Supporter cards with \"Team Rocket\" in their name from your hand, and this attack does 60 damage for each card you discarded in this way."
+      },
+      {
+        "name": "Hammer In",
+        "cost": [
+          7,
+          9,
+          9
+        ],
+        "damage": 100,
+        "text": ""
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-133",
+    "name": "Cynthia's Spiritomb",
+    "native": "Cynthia's Spiritomb ASC",
+    "printed": {
+      "id": "me02.5-133",
+      "name": "Cynthia's Spiritomb",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Darkness"
+      ],
+      "attacks": [
+        {
+          "name": "Raging Curse",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "This attack does 10 damage for each damage counter on all of your Benched Cynthia's Pokémon. This attack's damage isn't affected by Weakness."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "133",
+      "artist": "satoma",
+      "rarity": "Uncommon",
+      "flavorText": "Its constant mischief and misdeeds resulted in it being bound to an Odd Keystone by a mysterious spell.",
+      "nationalPokedexNumbers": [
+        442
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-133/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-133/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Raging Curse",
+        "cost": [
+          9
+        ],
+        "damage": 10,
+        "damageCalculation": "x",
+        "text": "This attack does 10 damage for each damage counter on all your Benched Cynthia's Pokemon. Don't apply Weakness for this attack's damage."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-187",
+    "name": "Fighting Gong",
+    "native": "Fighting Gong M1L",
+    "printed": {
+      "id": "me02.5-187",
+      "name": "Fighting Gong",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Search your deck for a Basic Fighting Energy card or a Basic Fighting Pokémon, reveal it, and put it into your hand. Then, shuffle your deck.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "187",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-187/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-187/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Search your deck for a Basic [F] Pokémon or a Basic [F] Energy card, reveal it, and put it into your hand. Then, shuffle your deck."
+  },
+  {
+    "id": "me02.5-191",
+    "name": "Light Ball",
+    "native": "Light Ball M2a",
+    "printed": {
+      "id": "me02.5-191",
+      "name": "Light Ball",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Attacks used by the Pikachu ex this card is attached to do 50 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance).",
+        "You may attach any number of Pokémon Tools to your Pokémon during your turn. You may attach only 1 Pokémon Tool to each Pokémon, and it stays attached."
+      ],
+      "number": "191",
+      "artist": "Studio Bora Inc.",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-191/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-191/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Attacks used by the Pikachu ex this card is attached to do 50 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance)."
+  },
+  {
+    "id": "me02.5-194",
+    "name": "Mystery Garden",
+    "native": "Mystery Garden ASC",
+    "printed": {
+      "id": "me02.5-194",
+      "name": "Mystery Garden",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may discard an Energy card from their hand in order to draw cards until they have as many cards in their hand as they have Psychic Pokémon in play.",
+        "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can’t be played."
+      ],
+      "number": "194",
+      "artist": "AYUMI ODASHIMA",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-194/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-194/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Once during each player's turn, that player may discard 1 Energy card from their hand. If they do, that player draws cards until they have as many cards in hand as they have Psychic Pokémon in play."
+  },
+  {
+    "id": "me02.5-199",
+    "name": "Premium Power Pro",
+    "native": "Premium Power Pro ASC",
+    "printed": {
+      "id": "me02.5-199",
+      "name": "Premium Power Pro",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "During this turn, attacks used by your Fighting Pokémon do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance).",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "199",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-199/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-199/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "During this turn, your [F] Pokémon's attacks do 30 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance)."
+  },
+  {
+    "id": "me02.5-215",
+    "name": "Waitress",
+    "native": "Waitress MC",
+    "printed": {
+      "id": "me02.5-215",
+      "name": "Waitress",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Look at the top 6 cards of your deck and attach a Basic Energy card you find there to 1 of your Pokémon. Shuffle the other cards back into your deck.",
+        "You may play only 1 Supporter card during your turn."
+      ],
+      "number": "215",
+      "artist": "Cona Nitanda",
+      "rarity": "Common",
+      "legalities": {
+        "standard": "Not Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-215/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-215/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Look at the top 6 cards of your deck, and attach a Basic Energy you find there to 1 of your Pokémon. Shuffle the other cards back into your deck."
+  },
+  {
+    "id": "me02.5-216",
+    "name": "Prism Energy",
+    "native": "Prism Energy ASC",
+    "printed": {
+      "id": "me02.5-216",
+      "name": "Prism Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Colorless Energy.  If this card is attached to a Basic Pokémon, this card provides every type of Energy but provides only 1 Energy at a time."
+      ],
+      "number": "216",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-216/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-216/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "This card provides C Energy. If the Pokemon this card is attached to is a Basic Pokemon, this card provides every type of Energy but provides only 1 Energy at a time."
+  },
+  {
+    "id": "me02.5-217",
+    "name": "Team Rocket's Energy",
+    "native": "Team Rocket's Energy ASC",
+    "printed": {
+      "id": "me02.5-217",
+      "name": "Team Rocket's Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "This card can only be attached to a Team Rocket's Pokémon. If this card is attached to anything other than a Team Rocket's Pokémon, discard this card.  As long as this card is attached to a Pokémon, it provides 2 in any combination of Psychic Energy and Darkness Energy."
+      ],
+      "number": "217",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-217/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-217/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "This card can only be attached to a Team Rocket's Pokémon. If this card is attached to anything other than a Team Rocket's Pokémon, discard this card.\n\nAs long as this card is attached to a Pokémon, it provides 2 in any combination of [P] Energy and [D] Energy."
+  },
+  {
+    "id": "me02.5-222",
+    "name": "Ethan's Magcargo",
+    "native": "Ethan's Magcargo2 ASC",
+    "printed": {
+      "id": "me02.5-222",
+      "name": "Ethan's Magcargo",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "130",
+      "types": [
+        "Fire"
+      ],
+      "evolvesFrom": "Ethan's Slugma",
+      "abilities": [
+        {
+          "name": "Melt Away",
+          "text": "If this Pokémon has no Energy attached, it has no Retreat Cost.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Lava Burst",
+          "cost": [
+            "Fire",
+            "Fire",
+            "Fire"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "70×",
+          "text": "Discard up to 5 Fire Energy from this Pokémon. This attack does 70 damage for each card you discarded in this way."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Water",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "222",
+      "artist": "Hideki Ishikawa",
+      "rarity": "Illustration Rare",
+      "flavorText": "This Pokémon lives near the craters of volcanoes. It stores fire energy in its shell of cooled and hardened magma.",
+      "nationalPokedexNumbers": [
+        219
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-222/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-222/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Lava Burst",
+        "cost": [
+          2,
+          2,
+          2
+        ],
+        "damage": 70,
+        "damageCalculation": "x",
+        "text": "Discard up to 5 [R] Energy from this Pokémon. This attack does 70 damage for each card you discarded in this way."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Melt and Flow",
+        "powerType": 2,
+        "text": "If this Pokémon has no Energy attached, it has no Retreat Cost."
+      }
+    ]
+  },
+  {
+    "id": "me02.5-238",
+    "name": "Team Rocket's Mimikyu",
+    "native": "Team Rocket's Mimikyu2 ASC",
+    "printed": {
+      "id": "me02.5-238",
+      "name": "Team Rocket's Mimikyu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "60",
+      "types": [
+        "Psychic"
+      ],
+      "attacks": [
+        {
+          "name": "Gemstone Mimicry",
+          "cost": [
+            "Psychic",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Choose 1 of your opponent's Active Tera Pokémon's attacks and use it as this attack."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "number": "238",
+      "artist": "GOSSAN",
+      "rarity": "Illustration Rare",
+      "flavorText": "This Pokémon lives in dark places untouched by sunlight. When it appears before humans, it hides itself under a cloth that resembles a Pikachu.",
+      "nationalPokedexNumbers": [
+        778
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-238/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-238/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Gemstone Hunt",
+        "cost": [
+          5,
+          9
+        ],
+        "damage": 0,
+        "copycatAttack": true,
+        "text": "Choose an attack on your opponent's Active Tera Pokemon and use it as the effect of this attack."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-244",
+    "name": "Cynthia's Spiritomb",
+    "native": "Cynthia's Spiritomb2 ASC",
+    "printed": {
+      "id": "me02.5-244",
+      "name": "Cynthia's Spiritomb",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "70",
+      "types": [
+        "Darkness"
+      ],
+      "attacks": [
+        {
+          "name": "Raging Curse",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10×",
+          "text": "This attack does 10 damage for each damage counter on all of your Benched Cynthia's Pokémon. This attack's damage isn't affected by Weakness."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "244",
+      "artist": "hncl",
+      "rarity": "Illustration Rare",
+      "flavorText": "Its constant mischief and misdeeds resulted in it being bound to an Odd Keystone by a mysterious spell.",
+      "nationalPokedexNumbers": [
+        442
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-244/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-244/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Raging Curse",
+        "cost": [
+          9
+        ],
+        "damage": 10,
+        "damageCalculation": "x",
+        "text": "This attack does 10 damage for each damage counter on all your Benched Cynthia's Pokemon. Don't apply Weakness for this attack's damage."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-266",
+    "name": "Mega Eelektross ex",
+    "native": "Mega Eelektross ex2 ASC",
+    "printed": {
+      "id": "me02.5-266",
+      "name": "Mega Eelektross ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "350",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Eelektrik",
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Split Bomb",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 60 damage to each of 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Disaster Shock",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "190",
+          "text": "You may discard 2 Lightning Energy from this Pokémon and make your opponent's Active Pokémon Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "266",
+      "artist": "DOM",
+      "rarity": "MEGA_ATTACK_RARE",
+      "nationalPokedexNumbers": [
+        604
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-266/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-266/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Split Bomb",
+        "cost": [
+          4,
+          4
+        ],
+        "damage": 0,
+        "text": "This attack does 60 damage to 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Disaster Shock",
+        "cost": [
+          4,
+          4,
+          4
+        ],
+        "damage": 190,
+        "text": "You may discard 2 [L] Energy from this Pokémon and make your opponent's Active Pokemon Paralyzed."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me02.5-277",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex3 ASC",
+    "printed": {
+      "id": "me02.5-277",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "Tera",
+        "ex"
+      ],
+      "hp": "200",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "As long as this Pokémon is on your Bench, prevent all damage done to this Pokémon by attacks (both yours and your opponent’s).",
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "abilities": [
+        {
+          "name": "Resolute Heart",
+          "text": "If this Pokémon has full HP and would be Knocked Out by damage from an attack, it is not Knocked Out, and its remaining HP becomes 10.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Topaz Bolt",
+          "cost": [
+            "Grass",
+            "Lightning",
+            "Metal"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "300",
+          "text": "Discard 3 Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "277",
+      "artist": "James Turner",
+      "rarity": "Special Illustration Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "H",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-277/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-277/large"
+      },
+      "set": {
+        "id": "me02.5"
+      }
+    },
+    "nativeAttacks": [
+      {
+        "name": "Topaz Bolt",
+        "cost": [
+          1,
+          4,
+          8
+        ],
+        "damage": 300,
+        "text": "Discard 3 Energy from this Pokémon."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Tenacious Heart",
+        "powerType": 2,
+        "text": "If this Pokémon has full HP and would be Knocked Out by an attack, it isn't Knocked Out and its remaining HP becomes 10 instead."
+      }
+    ]
+  },
+  {
+    "id": "me02.5-278",
+    "name": "Mega Eelektross ex",
+    "native": "Mega Eelektross ex3 ASC",
+    "printed": {
+      "id": "me02.5-278",
+      "name": "Mega Eelektross ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "350",
+      "types": [
+        "Lightning"
+      ],
+      "evolvesFrom": "Eelektrik",
+      "rules": [
+        "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Split Bomb",
+          "cost": [
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "This attack does 60 damage to each of 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+        },
+        {
+          "name": "Disaster Shock",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "190",
+          "text": "You may discard 2 Lightning Energy from this Pokémon and make your opponent's Active Pokémon Paralyzed."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "278",
+      "artist": "akagi",
+      "rarity": "Special Illustration Rare",
+      "nationalPokedexNumbers": [
+        604
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me2pt5-278/small",
+        "large": "https://images.scrydex.com/pokemon/me2pt5-278/large"
+      },
+      "set": {
+        "id": "me02.5"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Split Bomb",
+        "cost": [
+          4,
+          4
+        ],
+        "damage": 0,
+        "text": "This attack does 60 damage to 2 of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Disaster Shock",
+        "cost": [
+          4,
+          4,
+          4
+        ],
+        "damage": 190,
+        "text": "You may discard 2 [L] Energy from this Pokémon and make your opponent's Active Pokemon Paralyzed."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me03-009",
+    "name": "Vivillon",
+    "native": "Vivillon M3",
+    "printed": {
+      "id": "me03-009",
+      "name": "Vivillon",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "120",
+      "types": [
+        "Grass"
+      ],
+      "evolvesFrom": "Spewpa",
+      "abilities": [
+        {
+          "name": "Grand Wing",
+          "text": "Once during your turn, you may use this Ability. Your opponent shuffles their hand and puts it on the bottom of their deck. If they put any cards on the bottom of their deck in this way, they draw 4 cards.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Blow Through",
+          "cost": [
+            "Grass"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "60+",
+          "text": "If a Stadium is in play, this attack does 60 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fire",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "009",
+      "rarity": "Uncommon",
+      "nationalPokedexNumbers": [
+        666
+      ],
+      "legalities": {
+        "standard": "Not Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me3-9/small",
+        "large": "https://images.scrydex.com/pokemon/me3-9/large"
+      },
+      "set": {
+        "id": "me03"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Blow Through",
+        "cost": [
+          1
+        ],
+        "damage": 60,
+        "damageCalculation": "+",
+        "text": "If there is a Stadium in play, this attack does 60 more damage."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Grand Wing",
+        "useWhenInPlay": true,
+        "powerType": 2,
+        "text": "Once during your turn, you may use this Ability. Your opponent shuffles their hand and puts it on the bottom of their deck. If they put any cards on the bottom of their deck in this way, they draw 4 cards."
+      }
+    ]
+  },
+  {
+    "id": "me03-061",
+    "name": "Raticate",
+    "native": "Raticate M3",
+    "printed": {
+      "id": "me03-061",
+      "name": "Raticate",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Rattata",
+      "attacks": [
+        {
+          "name": "Scrape Off",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Before doing damage, discard all Pokémon Tools from your opponent's Active Pokémon."
+        },
+        {
+          "name": "Retaliatory Incisors",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40×",
+          "text": "This attack does 40 damage for each damage counter on all of your Benched Rattata."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "061",
+      "rarity": "Uncommon",
+      "nationalPokedexNumbers": [
+        20
+      ],
+      "legalities": {
+        "standard": "Not Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me3-61/small",
+        "large": "https://images.scrydex.com/pokemon/me3-61/large"
+      },
+      "set": {
+        "id": "me03"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Scrape Off",
+        "cost": [
+          9
+        ],
+        "damage": 20,
+        "text": "Before doing damage, discard all Pokémon Tools attached to your opponent's Active Pokémon."
+      },
+      {
+        "name": "Retaliatory Incisors",
+        "cost": [
+          9
+        ],
+        "damage": 40,
+        "damageCalculation": "x",
+        "text": "This attack does 40 damage for each damage counter on all of your Benched Rattata."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me03-074",
+    "name": "Hole-Digging Shovel",
+    "native": "Hole-Digging Shovel POR",
+    "printed": {
+      "id": "me03-074",
+      "name": "Hole-Digging Shovel",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Item"
+      ],
+      "rules": [
+        "Discard the top 2 cards of your deck.",
+        "You may play any number of Item cards during your turn."
+      ],
+      "number": "074",
+      "rarity": "Common",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me3-74/small",
+        "large": "https://images.scrydex.com/pokemon/me3-74/large"
+      },
+      "set": {
+        "id": "me03"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Discard the top 2 cards of your deck. You may play any number of Item cards during your turn."
+  },
+  {
+    "id": "me03-087",
+    "name": "Rocky Fighting Energy",
+    "native": "Rock Fighting Energy M3",
+    "printed": {
+      "id": "me03-087",
+      "name": "Rocky Fighting Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Fighting Energy. Prevent all effects of attacks used by your opponent's Pokémon done to the Fighting Pokémon this card is attached to. (Existing effects are not removed. Damage is not an effect.)"
+      ],
+      "number": "087",
+      "rarity": "Rare",
+      "legalities": {
+        "standard": "Not Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me3-87/small",
+        "large": "https://images.scrydex.com/pokemon/me3-87/large"
+      },
+      "set": {
+        "id": "me03"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "As long as this card is attached to a Pokémon, it provides [F] Energy.\n\nPrevent all effects of attacks used by your opponent's Pokémon done to the [F] Pokémon this card is attached to. (Existing effects are not removed. Damage is not an effect.)"
+  },
+  {
+    "id": "me03-088",
+    "name": "Telepathic Psychic Energy",
+    "native": "Telepath [P] Energy M3",
+    "printed": {
+      "id": "me03-088",
+      "name": "Telepathic Psychic Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Psychic Energy. When you attach this card from your hand to a Psychic Pokémon, search your deck for up to 2 Basic Psychic Pokémon and put them onto your Bench. Then, shuffle your deck."
+      ],
+      "number": "088",
+      "rarity": "Rare",
+      "legalities": {
+        "standard": "Not Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me3-88/small",
+        "large": "https://images.scrydex.com/pokemon/me3-88/large"
+      },
+      "set": {
+        "id": "me03"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "As long as this card is attached to a Pokémon, it provides [P] Energy.\n\nWhen you attach this card from your hand to a [P] Pokémon, search your deck for up to 2 Basic [P] Pokémon and put them onto your Bench. Then, shuffle your deck."
+  },
+  {
+    "id": "me03-099",
+    "name": "Raticate",
+    "native": "RaticateIR POR",
+    "printed": {
+      "id": "me03-099",
+      "name": "Raticate",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "90",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Rattata",
+      "attacks": [
+        {
+          "name": "Scrape Off",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20",
+          "text": "Before doing damage, discard all Pokémon Tools from your opponent's Active Pokémon."
+        },
+        {
+          "name": "Retaliatory Incisors",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "40×",
+          "text": "This attack does 40 damage for each damage counter on all of your Benched Rattata."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "099",
+      "rarity": "Illustration Rare",
+      "nationalPokedexNumbers": [
+        20
+      ],
+      "legalities": {
+        "standard": "Not Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me3-99/small",
+        "large": "https://images.scrydex.com/pokemon/me3-99/large"
+      },
+      "set": {
+        "id": "me03"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Scrape Off",
+        "cost": [
+          9
+        ],
+        "damage": 20,
+        "text": "Before doing damage, discard all Pokémon Tools attached to your opponent's Active Pokémon."
+      },
+      {
+        "name": "Retaliatory Incisors",
+        "cost": [
+          9
+        ],
+        "damage": 40,
+        "damageCalculation": "x",
+        "text": "This attack does 40 damage for each damage counter on all of your Benched Rattata."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me04-065",
+    "name": "Mega Dragalge ex",
+    "native": "Mega Dragalge ex M4",
+    "printed": {
+      "id": "me04-065",
+      "name": "Mega Dragalge ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "330",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesFrom": "Skrelp",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corrosive Liquid",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard all Pokémon Tools and Special Energy from all of your opponent's Pokémon."
+        },
+        {
+          "name": "Pernicious Poison",
+          "cost": [
+            "Water",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, place 16 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "065",
+      "artist": "5ban Graphics",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        691
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-65/small",
+        "large": "https://images.scrydex.com/pokemon/me4-65/large"
+      },
+      "set": {
+        "id": "me04"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Corrosive Liquid",
+        "cost": [
+          9,
+          9
+        ],
+        "damage": 0,
+        "text": "Discard all Pokémon Tool cards and Special Energy from all of your opponent's Pokémon."
+      },
+      {
+        "name": "Pernicious Poison",
+        "cost": [
+          3,
+          7
+        ],
+        "damage": 0,
+        "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, put 16 damage counters on that Pokémon instead of 1."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me04-084",
+    "name": "Bubbly Water Energy",
+    "native": "Bubble Water Energy M4",
+    "printed": {
+      "id": "me04-084",
+      "name": "Bubbly Water Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Water Energy.\n\nThe Water Pokémon this card is attached to recovers from all Special Conditions and can't be affected by any Special Conditions."
+      ],
+      "number": "084",
+      "rarity": "Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-84/small",
+        "large": "https://images.scrydex.com/pokemon/me4-84/large"
+      },
+      "set": {
+        "id": "me04"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "As long as this card is attached to a Pokémon, it provides [W] Energy.\n\nThe [W] Pokémon this card is attached to recovers from all Special Conditions and can't be affected by any Special Conditions."
+  },
+  {
+    "id": "me04-085",
+    "name": "Magnetic Metal Energy",
+    "native": "Magnet Metal Energy M4",
+    "printed": {
+      "id": "me04-085",
+      "name": "Magnetic Metal Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Metal Energy.\n\nThe Metal Pokémon this card is attached to has no Retreat Cost."
+      ],
+      "number": "085",
+      "rarity": "Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-85/small",
+        "large": "https://images.scrydex.com/pokemon/me4-85/large"
+      },
+      "set": {
+        "id": "me04"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "As long as this card is attached to a Pokémon, it provides [M] Energy.\n\nAs long as this card is attached to a [M] Pokémon, that Pokémon has no Retreat Cost."
+  },
+  {
+    "id": "me04-086",
+    "name": "Nitro Fire Energy",
+    "native": "Nitro Fire Energy M4",
+    "printed": {
+      "id": "me04-086",
+      "name": "Nitro Fire Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Fire Energy.\n \nIf this card is discarded by an effect of an attack used by the Fire Pokémon this card is attached to, put this card into your hand after attack damage and effects."
+      ],
+      "number": "086",
+      "rarity": "Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-86/small",
+        "large": "https://images.scrydex.com/pokemon/me4-86/large"
+      },
+      "set": {
+        "id": "me04"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "As long as this card is attached to a Pokémon, it provides [R] Energy.\n\nIf this card is discarded by an effect of an attack used by the [R] Pokémon this card is attached to, put this card into your hand after attack damage and effects."
+  },
+  {
+    "id": "me04-104",
+    "name": "Mega Dragalge ex",
+    "native": "Mega Dragalge ex FA CRI",
+    "printed": {
+      "id": "me04-104",
+      "name": "Mega Dragalge ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "330",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesFrom": "Skrelp",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corrosive Liquid",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard all Pokémon Tools and Special Energy from all of your opponent's Pokémon."
+        },
+        {
+          "name": "Pernicious Poison",
+          "cost": [
+            "Water",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, place 16 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "104",
+      "artist": "5ban Graphics",
+      "rarity": "Ultra Rare",
+      "nationalPokedexNumbers": [
+        691
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-104/small",
+        "large": "https://images.scrydex.com/pokemon/me4-104/large"
+      },
+      "set": {
+        "id": "me04"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Corrosive Liquid",
+        "cost": [
+          9,
+          9
+        ],
+        "damage": 0,
+        "text": "Discard all Pokémon Tool cards and Special Energy from all of your opponent's Pokémon."
+      },
+      {
+        "name": "Pernicious Poison",
+        "cost": [
+          3,
+          7
+        ],
+        "damage": 0,
+        "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, put 16 damage counters on that Pokémon instead of 1."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me04-118",
+    "name": "Mega Dragalge ex",
+    "native": "Mega Dragalge ex SIR CRI",
+    "printed": {
+      "id": "me04-118",
+      "name": "Mega Dragalge ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1",
+        "MEGA",
+        "ex",
+        "Mega ex"
+      ],
+      "hp": "330",
+      "types": [
+        "Dragon"
+      ],
+      "evolvesFrom": "Skrelp",
+      "rules": [
+        "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Corrosive Liquid",
+          "cost": [
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Discard all Pokémon Tools and Special Energy from all of your opponent's Pokémon."
+        },
+        {
+          "name": "Pernicious Poison",
+          "cost": [
+            "Water",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "",
+          "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, place 16 damage counters on that Pokémon instead of 1."
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "118",
+      "artist": "Kazumasa Yasukunio",
+      "rarity": "Special Illustration Rare",
+      "nationalPokedexNumbers": [
+        691
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me4-118/small",
+        "large": "https://images.scrydex.com/pokemon/me4-118/large"
+      },
+      "set": {
+        "id": "me04"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Corrosive Liquid",
+        "cost": [
+          9,
+          9
+        ],
+        "damage": 0,
+        "text": "Discard all Pokémon Tool cards and Special Energy from all of your opponent's Pokémon."
+      },
+      {
+        "name": "Pernicious Poison",
+        "cost": [
+          3,
+          7
+        ],
+        "damage": 0,
+        "text": "Your opponent's Active Pokémon is now Poisoned. During Pokémon Checkup, put 16 damage counters on that Pokémon instead of 1."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me05-058",
+    "name": "Mabosstiff",
+    "native": "Mabosstiff M5",
+    "printed": {
+      "id": "me05-058",
+      "name": "Mabosstiff",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Darkness"
+      ],
+      "evolvesFrom": "Maschiff",
+      "attacks": [
+        {
+          "name": "Bite",
+          "cost": [
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "60",
+          "text": ""
+        },
+        {
+          "name": "Plunging Headbutt",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Darkness"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "210",
+          "text": "During your opponent's next turn, this Pokémon takes 100 more damage from attacks (after applying Weakness and Resistance)."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 3,
+      "number": "058",
+      "artist": "kawayoo",
+      "rarity": "Common",
+      "flavorText": "Mabosstiff loves playing with children. Though usually gentle, it takes on an intimidating look when protecting its family.",
+      "nationalPokedexNumbers": [
+        943
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-58/small",
+        "large": "https://images.scrydex.com/pokemon/me5-58/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          7,
+          7
+        ],
+        "damage": 60,
+        "text": ""
+      },
+      {
+        "name": "Plunging Headbutt",
+        "cost": [
+          7,
+          7,
+          7
+        ],
+        "damage": 210,
+        "text": "During your opponent's next turn, this Pokémon takes 100 extra damage from attacks (after applying Weakness and Resistance)."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "me05-070",
+    "name": "Silvally",
+    "native": "Silvally M5",
+    "printed": {
+      "id": "me05-070",
+      "name": "Silvally",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Type: Null",
+      "abilities": [
+        {
+          "name": "Call a Buddy",
+          "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Air Slash",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "070",
+      "artist": "Takumi Wada",
+      "rarity": "Rare",
+      "flavorText": "The final factor needed to release this Pokémon's true power was a strong bond with a Trainer it trusts.",
+      "nationalPokedexNumbers": [
+        773
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-70/small",
+        "large": "https://images.scrydex.com/pokemon/me5-70/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Air Slash",
+        "cost": [
+          9,
+          9,
+          9
+        ],
+        "damage": 130,
+        "text": "Discard an Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Call a Buddy",
+        "useWhenInPlay": true,
+        "powerType": 2,
+        "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+      }
+    ]
+  },
+  {
+    "id": "me05-074",
+    "name": "Backtrack Badge",
+    "native": "Retry Badge M5",
+    "printed": {
+      "id": "me05-074",
+      "name": "Backtrack Badge",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "Once during your turn, after you flip any coins for an attack of the Colorless Pokémon this card is attached to, you may ignore all results of those coin flips and begin flipping those coins again."
+      ],
+      "number": "074",
+      "artist": "Toyste Beach",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-74/small",
+        "large": "https://images.scrydex.com/pokemon/me5-74/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Once during your turn, after you flip any coins for an attack of the [C] Pokémon this card is attached to, you may ignore the results of those coin flips and begin flipping those coins again."
+  },
+  {
+    "id": "me05-076",
+    "name": "Fossil Quarry",
+    "native": "Fossil Excavation Site M5",
+    "printed": {
+      "id": "me05-076",
+      "name": "Fossil Quarry",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Stadium"
+      ],
+      "rules": [
+        "Once during each player's turn, that player may search their deck for up to 2 Item cards that have \"Antique\" in their name and put them onto their Bench. Then, that player shuffles their deck."
+      ],
+      "number": "076",
+      "artist": "Oswaldo KATO",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-76/small",
+        "large": "https://images.scrydex.com/pokemon/me5-76/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Once during each player's turn, that player may search their deck for up to 2 Item cards with \"Antique\" in their name and put them onto their Bench. Then, that player shuffles their deck."
+  },
+  {
+    "id": "me05-077",
+    "name": "Gladion's Final Battle",
+    "native": "Gladion's Decisive Battle M5",
+    "printed": {
+      "id": "me05-077",
+      "name": "Gladion's Final Battle",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "077",
+      "artist": "akagi",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-77/small",
+        "large": "https://images.scrydex.com/pokemon/me5-77/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "You can use this card only when it is the last card in your hand.\n\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "me05-078",
+    "name": "Gwynn",
+    "native": "Gwynn M5",
+    "printed": {
+      "id": "me05-078",
+      "name": "Gwynn",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "078",
+      "artist": "nagimiso",
+      "rarity": "Uncommon",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-78/small",
+        "large": "https://images.scrydex.com/pokemon/me5-78/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "me05-083",
+    "name": "Shadowy Darkness Energy",
+    "native": "Shadow Darkness Energy M5",
+    "printed": {
+      "id": "me05-083",
+      "name": "Shadowy Darkness Energy",
+      "supertype": "Energy",
+      "subtypes": [
+        "Special"
+      ],
+      "rules": [
+        "As long as this card is attached to a Pokémon, it provides Darkness Energy.\n \nAs long as the Darkness Pokémon this card is attached to is on your Bench, prevent all damage done to it by attacks from your opponent's Pokémon."
+      ],
+      "number": "083",
+      "rarity": "Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-83/small",
+        "large": "https://images.scrydex.com/pokemon/me5-83/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "As long as this card is attached to a Pokémon, it provides [D] Energy.\n\nPrevent all damage done by your opponent's attacks to the Benched [D] Pokémon this card is attached to."
+  },
+  {
+    "id": "me05-095",
+    "name": "Silvally",
+    "native": "Silvally IR PBL",
+    "printed": {
+      "id": "me05-095",
+      "name": "Silvally",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "140",
+      "types": [
+        "Colorless"
+      ],
+      "evolvesFrom": "Type: Null",
+      "abilities": [
+        {
+          "name": "Call a Buddy",
+          "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Air Slash",
+          "cost": [
+            "Colorless",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "130",
+          "text": "Discard an Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "095",
+      "artist": "DOM",
+      "rarity": "Illustration Rare",
+      "flavorText": "The final factor needed to release this Pokémon's true power was a strong bond with a Trainer it trusts.",
+      "nationalPokedexNumbers": [
+        773
+      ],
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-95/small",
+        "large": "https://images.scrydex.com/pokemon/me5-95/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Air Slash",
+        "cost": [
+          9,
+          9,
+          9
+        ],
+        "damage": 130,
+        "text": "Discard an Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Call a Buddy",
+        "useWhenInPlay": true,
+        "powerType": 2,
+        "text": "Once during your turn, if you have no cards in your hand, you may use this Ability. Search your deck for a Supporter card, reveal it, and put it into your hand. Then, shuffle your deck."
+      }
+    ]
+  },
+  {
+    "id": "me05-104",
+    "name": "Brave Bangle",
+    "native": "Brave Bangle FA PBL",
+    "printed": {
+      "id": "me05-104",
+      "name": "Brave Bangle",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Pokémon Tool"
+      ],
+      "rules": [
+        "If the Pokémon this card is attached to doesn't have a Rule Box, the attacks it uses do 30 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "104",
+      "artist": "Toyste Beach",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "I",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-104/small",
+        "large": "https://images.scrydex.com/pokemon/me5-104/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "If the Pokémon this card is attached to doesn't have a Rule Box, the attacks it uses do 30 more damage to your opponent's Active Pokémon ex (before applying Weakness and Resistance). (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "me05-108",
+    "name": "Gladion's Final Battle",
+    "native": "Gladion's Final Battle FA PBL",
+    "printed": {
+      "id": "me05-108",
+      "name": "Gladion's Final Battle",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "108",
+      "artist": "akagi",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-108/small",
+        "large": "https://images.scrydex.com/pokemon/me5-108/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "You can use this card only when it is the last card in your hand.\n\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "me05-109",
+    "name": "Gwynn",
+    "native": "Gwynn FA PBL",
+    "printed": {
+      "id": "me05-109",
+      "name": "Gwynn",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "109",
+      "artist": "nagimiso",
+      "rarity": "Ultra Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-109/small",
+        "large": "https://images.scrydex.com/pokemon/me5-109/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "me05-118",
+    "name": "Gladion's Final Battle",
+    "native": "Gladion's Final Battle SIR PBL",
+    "printed": {
+      "id": "me05-118",
+      "name": "Gladion's Final Battle",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "You can use this card only when it is the last card in your hand.\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "118",
+      "artist": "DOM",
+      "rarity": "Special Illustration Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-118/small",
+        "large": "https://images.scrydex.com/pokemon/me5-118/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "You can use this card only when it is the last card in your hand.\n\nDuring this turn, attacks used by your Pokémon that don't have a Rule Box do 80 more damage to your opponent's Active Pokémon (before applying Weakness and Resistance). (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "me05-119",
+    "name": "Gwynn",
+    "native": "Gwynn SIR PBL",
+    "printed": {
+      "id": "me05-119",
+      "name": "Gwynn",
+      "supertype": "Trainer",
+      "subtypes": [
+        "Supporter"
+      ],
+      "rules": [
+        "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V_atk, etc. have Rule Boxes.)"
+      ],
+      "number": "119",
+      "artist": "Naoki Saito",
+      "rarity": "Special Illustration Rare",
+      "legalities": {
+        "standard": "Legal",
+        "unlimited": "Legal",
+        "expanded": "Legal"
+      },
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me5-119/small",
+        "large": "https://images.scrydex.com/pokemon/me5-119/large"
+      },
+      "set": {
+        "id": "me05"
+      },
+      "abilities": [],
+      "attacks": []
+    },
+    "nativeText": "Discard up to 2 Pokémon that don't have a Rule Box from your hand, and draw 3 cards for each card you discarded in this way. (Pokémon ex, Pokémon V, etc. have Rule Boxes.)"
+  },
+  {
+    "id": "30th-040",
+    "name": "Pikachu",
+    "native": "Pikachu 30C 40",
+    "printed": {
+      "id": "30th-040",
+      "name": "Pikachu",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "80",
+      "types": [
+        "Lightning"
+      ],
+      "attacks": [
+        {
+          "name": "Overwriting Bolt",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "10",
+          "text": "The Defending Pokémon's Weakness is now Lightning until the end of your next turn. (Apply Weakness as x2.)"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "040",
+      "artist": "Shinji Kanda",
+      "rarity": "Pikachu Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-40/small",
+        "large": "https://images.scrydex.com/pokemon/me55-40/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Overwriting Bolt",
+        "cost": [
+          4
+        ],
+        "damage": 10,
+        "text": "The Defending Pokémon's Weakness is now [L] until the end of your next turn. (Apply Weakness as ×2.)"
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-053",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex MEP",
+    "printed": {
+      "id": "30th-053",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "hp": "190",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Pika-Pika Parade",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "text": "Search your deck for any number of Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Discard all Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "053",
+      "artist": "5ban Graphics",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-53/small",
+        "large": "https://images.scrydex.com/pokemon/me55-53/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Pika Pika Parade",
+        "cost": [
+          9
+        ],
+        "damage": 0,
+        "text": "Search your deck for as many Basic Pokémon as you like and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          4,
+          4,
+          9
+        ],
+        "damage": 200,
+        "text": "Discard all Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-054",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex2 MEP",
+    "printed": {
+      "id": "30th-054",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "hp": "190",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Zip-Zap Frenzy",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "text": "You may attach any number of Basic Energy cards from your hand to your Pokémon in any way you like."
+        },
+        {
+          "name": "Thunder",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "This Pokémon also does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "054",
+      "artist": "takuyoa",
+      "rarity": "Double Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-54/small",
+        "large": "https://images.scrydex.com/pokemon/me55-54/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Shocking Fever",
+        "cost": [
+          4
+        ],
+        "damage": 0,
+        "text": "You may attach as many Basic Energy cards from your hand to your Pokémon in any way you like."
+      },
+      {
+        "name": "Thunder",
+        "cost": [
+          4,
+          4,
+          9
+        ],
+        "damage": 200,
+        "text": "This Pokémon does 30 damage to itself."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-056",
+    "name": "Zekrom",
+    "native": "Zekrom 30C",
+    "printed": {
+      "id": "30th-056",
+      "name": "Zekrom",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "130",
+      "types": [
+        "Lightning"
+      ],
+      "attacks": [
+        {
+          "name": "Slash",
+          "cost": [
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 2,
+          "damage": "50"
+        },
+        {
+          "name": "Nitro Thunder",
+          "cost": [
+            "Lightning",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "80+",
+          "text": "If this Pokémon has any Fire Energy attaches, this attack does 80 more damage."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "056",
+      "artist": "akagi",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        644
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-56/small",
+        "large": "https://images.scrydex.com/pokemon/me55-56/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Slash",
+        "cost": [
+          4,
+          9
+        ],
+        "damage": 50,
+        "text": ""
+      },
+      {
+        "name": "Nitro Thunder",
+        "cost": [
+          4,
+          9,
+          9
+        ],
+        "damage": 80,
+        "damageCalculation": "+",
+        "text": "If this Pokémon has any [R] Energy attached, this attack does 80 more damage."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-080",
+    "name": "Lunala",
+    "native": "Lunala 30C",
+    "printed": {
+      "id": "30th-080",
+      "name": "Lunala",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 2"
+      ],
+      "hp": "160",
+      "types": [
+        "Psychic"
+      ],
+      "evolvesFrom": "Cosmoem",
+      "attacks": [
+        {
+          "name": "Midnight Ray",
+          "cost": [
+            "Psychic"
+          ],
+          "convertedEnergyCost": 1,
+          "damage": "20+",
+          "text": "This attack does 20 more damage for each Energy card in your discard pile."
+        },
+        {
+          "name": "Lunar Blast",
+          "cost": [
+            "Psychic",
+            "Colorless",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "120"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Darkness",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "080",
+      "artist": "Bun Toujo",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        792
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-80/small",
+        "large": "https://images.scrydex.com/pokemon/me55-80/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Midnight Ray",
+        "cost": [
+          5
+        ],
+        "damage": 20,
+        "damageCalculation": "+",
+        "text": "This attack does 20 more damage for each Energy in your discard pile."
+      },
+      {
+        "name": "Lunar Blast",
+        "cost": [
+          5,
+          9,
+          9
+        ],
+        "damage": 120,
+        "text": ""
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-096",
+    "name": "Zoroark",
+    "native": "Zoroark 30C",
+    "printed": {
+      "id": "30th-096",
+      "name": "Zoroark",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Stage 1"
+      ],
+      "hp": "120",
+      "types": [
+        "Darkness"
+      ],
+      "abilities": [
+        {
+          "name": "Nighttime Byway",
+          "text": "As long as this Pokémon is on your Bench, your Active Pokémon's Retreat Cost is 2 less.",
+          "type": "Ability"
+        }
+      ],
+      "attacks": [
+        {
+          "name": "Slashing Claw",
+          "cost": [
+            "Darkness",
+            "Darkness",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "90"
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Grass",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "096",
+      "artist": "Shiburingaru",
+      "rarity": "Common",
+      "nationalPokedexNumbers": [
+        571
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-96/small",
+        "large": "https://images.scrydex.com/pokemon/me55-96/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "rules": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Slash Claw",
+        "cost": [
+          7,
+          7,
+          9
+        ],
+        "damage": 90,
+        "text": ""
+      }
+    ],
+    "nativePowers": [
+      {
+        "name": "Night Escape Route",
+        "powerType": 2,
+        "text": "As long as this Pokémon is on your Bench, your Active Pokémon's retreat cost is [C][C] less."
+      }
+    ]
+  },
+  {
+    "id": "30th-121",
+    "name": "Lugia",
+    "native": "Lugia 30C",
+    "printed": {
+      "id": "30th-121",
+      "name": "Lugia",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic"
+      ],
+      "hp": "120",
+      "types": [
+        "Colorless"
+      ],
+      "attacks": [
+        {
+          "name": "Elemental Blast",
+          "cost": [
+            "Fire",
+            "Water",
+            "Lightning"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "250",
+          "text": "Discard a Fire Energy, a Water Energy, and a Lightning Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Lightning",
+          "value": "×2"
+        }
+      ],
+      "resistances": [
+        {
+          "type": "Fighting",
+          "value": "-30"
+        }
+      ],
+      "retreatCost": [
+        "Colorless",
+        "Colorless"
+      ],
+      "convertedRetreatCost": 2,
+      "number": "121",
+      "artist": "Kazuki Minami",
+      "rarity": "Rare",
+      "nationalPokedexNumbers": [
+        249
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-121/small",
+        "large": "https://images.scrydex.com/pokemon/me55-121/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "rules": [],
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Elemental Blast",
+        "cost": [
+          2,
+          3,
+          4
+        ],
+        "damage": 250,
+        "text": "Discard a [R] Energy, a [W] Energy, and a [L] Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-149",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex MEP",
+    "printed": {
+      "id": "30th-149",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "hp": "190",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Pika-Pika Parade",
+          "cost": [
+            "Colorless"
+          ],
+          "convertedEnergyCost": 1,
+          "text": "Search your deck for any number of Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+        },
+        {
+          "name": "Thunderbolt",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "Discard all Energy from this Pokémon."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "149",
+      "artist": "kantaro",
+      "rarity": "Special Illustration Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-149/small",
+        "large": "https://images.scrydex.com/pokemon/me55-149/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Pika Pika Parade",
+        "cost": [
+          9
+        ],
+        "damage": 0,
+        "text": "Search your deck for as many Basic Pokémon as you like and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          4,
+          4,
+          9
+        ],
+        "damage": 200,
+        "text": "Discard all Energy attached to this Pokémon."
+      }
+    ],
+    "nativePowers": []
+  },
+  {
+    "id": "30th-150",
+    "name": "Pikachu ex",
+    "native": "Pikachu ex2 MEP",
+    "printed": {
+      "id": "30th-150",
+      "name": "Pikachu ex",
+      "supertype": "Pokémon",
+      "subtypes": [
+        "Basic",
+        "ex"
+      ],
+      "hp": "190",
+      "types": [
+        "Lightning"
+      ],
+      "rules": [
+        "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+      ],
+      "attacks": [
+        {
+          "name": "Zip-Zap Frenzy",
+          "cost": [
+            "Lightning"
+          ],
+          "convertedEnergyCost": 1,
+          "text": "You may attach any number of Basic Energy cards from your hand to your Pokémon in any way you like."
+        },
+        {
+          "name": "Thunder",
+          "cost": [
+            "Lightning",
+            "Lightning",
+            "Colorless"
+          ],
+          "convertedEnergyCost": 3,
+          "damage": "200",
+          "text": "This Pokémon also does 30 damage to itself."
+        }
+      ],
+      "weaknesses": [
+        {
+          "type": "Fighting",
+          "value": "×2"
+        }
+      ],
+      "retreatCost": [
+        "Colorless"
+      ],
+      "convertedRetreatCost": 1,
+      "number": "150",
+      "artist": "kantaro",
+      "rarity": "Special Illustration Rare",
+      "nationalPokedexNumbers": [
+        25
+      ],
+      "regulationMark": "J",
+      "images": {
+        "small": "https://images.scrydex.com/pokemon/me55-150/small",
+        "large": "https://images.scrydex.com/pokemon/me55-150/large"
+      },
+      "set": {
+        "id": "30th"
+      },
+      "abilities": []
+    },
+    "nativeAttacks": [
+      {
+        "name": "Shocking Fever",
+        "cost": [
+          4
+        ],
+        "damage": 0,
+        "text": "You may attach as many Basic Energy cards from your hand to your Pokémon in any way you like."
+      },
+      {
+        "name": "Thunder",
+        "cost": [
+          4,
+          4,
+          9
+        ],
+        "damage": 200,
+        "text": "This Pokémon does 30 damage to itself."
+      }
+    ],
+    "nativePowers": []
+  }
+]

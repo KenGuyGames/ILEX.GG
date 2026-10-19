@@ -1,0 +1,1782 @@
+[
+  {
+    "id": "mep-089",
+    "name": "Mega Zeraora ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "MEGA",
+      "ex",
+      "Mega ex"
+    ],
+    "hp": "270",
+    "types": [
+      "Lightning"
+    ],
+    "rules": [
+      "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Thunderous Fist",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "60×",
+        "text": "This attack does 60 damage for each Lightning Energy attached to this Pokémon."
+      },
+      {
+        "name": "Zepto Turn",
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "150",
+        "text": "Switch this Pokémon with 1 of your Benched Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "089",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      807
+    ],
+    "legalities": {
+      "standard": "Legal",
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "regulationMark": "J",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_089_R_EN_LG.png",
+      "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_089_R_EN_LG.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "me05-027",
+    "_megaReleaseDate": "2026-08-21",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 89,
+      "id": "mep-089",
+      "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_089_R_EN_LG.png",
+      "source": "work\\card-sources\\mega-official-promos\\7d40dbf0dfd9d997.source.png",
+      "sourceSha256": "5d2aa9a32783fa56da0797b84cb8c9998def5d5584b6983368ab15bb49bcd8b1",
+      "width": 460,
+      "height": 640,
+      "format": "PNG",
+      "credit": "The Pokémon Company; scan hosted by Limitless TCG",
+      "file": "work\\card-sources\\mega-official-promos\\mep-089.png",
+      "sha256": "86ab4ced2e03268b634235ad785ddbc5d352fec0a92647d03cc5ec72a3fd683a",
+      "bytes": 130640
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_089_R_EN_LG.png",
+      "sourceSha256": "5d2aa9a32783fa56da0797b84cb8c9998def5d5584b6983368ab15bb49bcd8b1",
+      "decodedPngSha256": "86ab4ced2e03268b634235ad785ddbc5d352fec0a92647d03cc5ec72a3fd683a",
+      "counterpart": "me05-027"
+    }
+  },
+  {
+    "id": "mep-090",
+    "name": "Mega Darkrai ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "MEGA",
+      "ex",
+      "Mega ex"
+    ],
+    "hp": "280",
+    "types": [
+      "Darkness"
+    ],
+    "rules": [
+      "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Dusk Raid",
+        "cost": [
+          "Darkness",
+          "Darkness"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "110+",
+        "text": "If your Benched Pokémon have any damage counters on them, this attack does 110 more damage."
+      },
+      {
+        "name": "Abyss Eye",
+        "cost": [
+          "Darkness",
+          "Darkness",
+          "Darkness"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "",
+        "text": "If your opponent's Active Pokémon is affected by a Special Condition, it is Knocked Out."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "090",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      491
+    ],
+    "legalities": {
+      "standard": "Legal",
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "regulationMark": "J",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_090_R_EN_LG.png",
+      "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_090_R_EN_LG.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "me05-048",
+    "_megaReleaseDate": "2026-08-21",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 90,
+      "id": "mep-090",
+      "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_090_R_EN_LG.png",
+      "source": "work\\card-sources\\mega-official-promos\\3c9f3ed3ea3bff5c.source.png",
+      "sourceSha256": "cc2eb2b9cceda702abca704a7d24ba6f0f7fd7fb49ba92ee52a17d29ce32f485",
+      "width": 460,
+      "height": 640,
+      "format": "PNG",
+      "credit": "The Pokémon Company; scan hosted by Limitless TCG",
+      "file": "work\\card-sources\\mega-official-promos\\mep-090.png",
+      "sha256": "b400dd6479fee06c08878afd9474617d44cbb496c10930375aa8bab3194f8032",
+      "bytes": 135126
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_090_R_EN_LG.png",
+      "sourceSha256": "cc2eb2b9cceda702abca704a7d24ba6f0f7fd7fb49ba92ee52a17d29ce32f485",
+      "decodedPngSha256": "b400dd6479fee06c08878afd9474617d44cbb496c10930375aa8bab3194f8032",
+      "counterpart": "me05-048"
+    }
+  },
+  {
+    "id": "mep-091",
+    "name": "Mega Dragonite ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 2",
+      "MEGA",
+      "ex",
+      "Mega ex"
+    ],
+    "hp": "370",
+    "types": [
+      "Dragon"
+    ],
+    "evolvesFrom": "Dragonair",
+    "rules": [
+      "Pokémon ex rule: When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards.",
+      "Mega Evolution ex Rule: When your Mega Evolution Pokémon ex is Knocked Out, your opponent takes 3 Prize cards."
+    ],
+    "abilities": [
+      {
+        "name": "Sky Transport",
+        "text": "Once during your turn, you may use this Ability. Switch your Active Pokémon with 1 of your Benched Pokémon.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Ryuno Glide",
+        "cost": [
+          "Water",
+          "Lightning",
+          "Lightning"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "330",
+        "text": "Discard 2 Energy from this Pokémon."
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "091",
+    "artist": "aky CG Works",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      149
+    ],
+    "legalities": {
+      "standard": "Legal",
+      "unlimited": "Legal",
+      "expanded": "Legal"
+    },
+    "regulationMark": "I",
+    "images": {
+      "small": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_091_R_EN_LG.png",
+      "large": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_091_R_EN_LG.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "_megaCounterpart": "me02.5-152",
+    "_megaReleaseDate": "2026-08-21",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 91,
+      "id": "mep-091",
+      "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_091_R_EN_LG.png",
+      "source": "work\\card-sources\\mega-official-promos\\57f7310da975f378.source.png",
+      "sourceSha256": "6eef320b374947099cfc6c970589283fb672e444124628620b851580039a2be7",
+      "width": 460,
+      "height": 640,
+      "format": "PNG",
+      "credit": "The Pokémon Company; scan hosted by Limitless TCG",
+      "file": "work\\card-sources\\mega-official-promos\\mep-091.png",
+      "sha256": "d20a82e3802f2df85c5de736fd21f5ffdfda718ccc75878a003a8285f6801f65",
+      "bytes": 128704
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEP/MEP_091_R_EN_LG.png",
+      "sourceSha256": "6eef320b374947099cfc6c970589283fb672e444124628620b851580039a2be7",
+      "decodedPngSha256": "d20a82e3802f2df85c5de736fd21f5ffdfda718ccc75878a003a8285f6801f65",
+      "counterpart": "me02.5-152"
+    }
+  },
+  {
+    "id": "mep-094",
+    "name": "Alolan Exeggutor",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "150",
+    "types": [
+      "Grass"
+    ],
+    "evolvesFrom": "Exeggcute",
+    "abilities": [
+      {
+        "name": "Scale Up",
+        "text": "If this Pokémon has 6 or more Grass Energy attached, it gets +250 HP.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Mega Drain",
+        "cost": [
+          "Grass",
+          "Colorless",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "150",
+        "text": "Heal 50 damage from this Pokémon"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fire",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless",
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 4,
+    "number": "094",
+    "artist": "Oswaldo KATO",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      103
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_94.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_94.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "_megaCounterpart": "30th-002",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 94,
+      "id": "mep-094",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_94.png",
+      "source": "work\\card-sources\\mega-official-promos\\2310a4f7f1b17f58.jxl",
+      "sourceSha256": "64d29a28ca9c994d183bb70aded28cd13594c20e19e2a92ae03aba28711d2b2d",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-094.png",
+      "sha256": "fd9b4bd1fb41c3ef233b7b6be2d75c08ec4c933b8cf3e0711bb4eb844fbf148b",
+      "bytes": 948068
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_94.png",
+      "sourceSha256": "64d29a28ca9c994d183bb70aded28cd13594c20e19e2a92ae03aba28711d2b2d",
+      "decodedPngSha256": "fd9b4bd1fb41c3ef233b7b6be2d75c08ec4c933b8cf3e0711bb4eb844fbf148b",
+      "counterpart": "30th-002"
+    }
+  },
+  {
+    "id": "mep-095",
+    "name": "Lucario",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "120",
+    "types": [
+      "Fighting"
+    ],
+    "evolvesFrom": "Riolu",
+    "attacks": [
+      {
+        "name": "Aura Sphere",
+        "cost": [
+          "Fighting",
+          "Fighting",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "100",
+        "text": "This attack also does 60 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Psychic",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "095",
+    "artist": "Hideki Ishikawa",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      448
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_95.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_95.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "abilities": [],
+    "_megaCounterpart": "30th-083",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 95,
+      "id": "mep-095",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_95.png",
+      "source": "work\\card-sources\\mega-official-promos\\100654ea67c6aef7.jxl",
+      "sourceSha256": "b144c996bca2c0d185f0e74a7329b30d01af0eaf371a5b1cd6201417042e9857",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-095.png",
+      "sha256": "077a0ed9ee11d66953189f4b9bd4f9355174db1d9c5c5c55b78df3a288b0b97b",
+      "bytes": 1026104
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_95.png",
+      "sourceSha256": "b144c996bca2c0d185f0e74a7329b30d01af0eaf371a5b1cd6201417042e9857",
+      "decodedPngSha256": "077a0ed9ee11d66953189f4b9bd4f9355174db1d9c5c5c55b78df3a288b0b97b",
+      "counterpart": "30th-083"
+    }
+  },
+  {
+    "id": "mep-096",
+    "name": "Moltres",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "120",
+    "types": [
+      "Fire"
+    ],
+    "abilities": [
+      {
+        "name": "Fiery Flapping",
+        "text": "Once during your turn, if you have Articuno and Zapdos in play, you may use this Ability. Attach a Basic Fire Energy card from your hand to this Pokémon.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Fire Spin",
+        "cost": [
+          "Fire",
+          "Fire",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "130",
+        "text": "Discard 2 Energy from this Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "096",
+    "artist": "HYOGONOSUKE",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      146
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_96.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_96.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "_megaCounterpart": "30th-011",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 96,
+      "id": "mep-096",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_96.png",
+      "source": "work\\card-sources\\mega-official-promos\\57bd28b042a8d8a5.jxl",
+      "sourceSha256": "7c9aa797da6fa692276a602d53f8958251e2d222f5587ac860cbc08ba8f5f89d",
+      "width": 384,
+      "height": 535,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-096.png",
+      "sha256": "0bfcb92748000a010b8a8775c5a7014401f91aee1087747dd1748daaebb8d472",
+      "bytes": 434464
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_96.png",
+      "sourceSha256": "7c9aa797da6fa692276a602d53f8958251e2d222f5587ac860cbc08ba8f5f89d",
+      "decodedPngSha256": "0bfcb92748000a010b8a8775c5a7014401f91aee1087747dd1748daaebb8d472",
+      "counterpart": "30th-011"
+    }
+  },
+  {
+    "id": "mep-097",
+    "name": "Articuno",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "120",
+    "types": [
+      "Water"
+    ],
+    "abilities": [
+      {
+        "name": "Frosty Flapping",
+        "text": "Once during your turn, if you have Moltres and Zapdos in play, you may use this Ability. Attach a Basic Water Energy card from your hand to this Pokémon.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Hail",
+        "cost": [
+          "Water",
+          "Water",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "text": "This attack does 30 damage to each of your opponent's Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Metal",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "097",
+    "artist": "HYOGONOSUKE",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      144
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_97.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_97.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "_megaCounterpart": "30th-018",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 97,
+      "id": "mep-097",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_97.png",
+      "source": "work\\card-sources\\mega-official-promos\\6292213dd43bdef9.jxl",
+      "sourceSha256": "45f5190eba84e3ca3e56984eb8ab75dd306ddf4c0a641b270f3168e296767893",
+      "width": 384,
+      "height": 535,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-097.png",
+      "sha256": "9627a31ec43fd15327625c2ede51bdc849a52d3f5880f4e3386b0216da3b3313",
+      "bytes": 399149
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_97.png",
+      "sourceSha256": "45f5190eba84e3ca3e56984eb8ab75dd306ddf4c0a641b270f3168e296767893",
+      "decodedPngSha256": "9627a31ec43fd15327625c2ede51bdc849a52d3f5880f4e3386b0216da3b3313",
+      "counterpart": "30th-018"
+    }
+  },
+  {
+    "id": "mep-098",
+    "name": "Zapdos",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "120",
+    "types": [
+      "Lightning"
+    ],
+    "abilities": [
+      {
+        "name": "Flash-Pop Flapping",
+        "text": "Once during your turn, if you have Moltres and Articuno in play, you may use this Ability. Attach a Basic Lightning Energy card from your hand to this Pokémon.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Thundering Lightning",
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 4,
+        "damage": "210",
+        "text": "This Pokémon also does 60 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "098",
+    "artist": "HYOGONOSUKE",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      145
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_98.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_98.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "_megaCounterpart": "30th-055",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 98,
+      "id": "mep-098",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_98.png",
+      "source": "work\\card-sources\\mega-official-promos\\58bd7dcbab00af23.jxl",
+      "sourceSha256": "a41978173826bf64f667fb953fb797e70eeeac0b0d3055d7ddab3fd82ef003c7",
+      "width": 384,
+      "height": 535,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-098.png",
+      "sha256": "b31736cb3d7851a74576f62af57693d08b06b0ed6341fd2fad46d1a05460e43f",
+      "bytes": 392289
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_384,h_535/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_98.png",
+      "sourceSha256": "a41978173826bf64f667fb953fb797e70eeeac0b0d3055d7ddab3fd82ef003c7",
+      "decodedPngSha256": "b31736cb3d7851a74576f62af57693d08b06b0ed6341fd2fad46d1a05460e43f",
+      "counterpart": "30th-055"
+    }
+  },
+  {
+    "id": "mep-099",
+    "name": "Greninja ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 2",
+      "ex"
+    ],
+    "hp": "300",
+    "types": [
+      "Water"
+    ],
+    "evolvesFrom": "Frogadier",
+    "rules": [
+      "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Stealthy Slash",
+        "cost": [
+          "Water"
+        ],
+        "convertedEnergyCost": 1,
+        "text": "This attack does 30 damage to 1 of your opponent's Pokémon for each damage counter on that Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      },
+      {
+        "name": "Aqua Edge",
+        "cost": [
+          "Water",
+          "Water"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "160"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Lightning",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "099",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      658
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_99.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_99.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "30th-021",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 99,
+      "id": "mep-099",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_99.png",
+      "source": "work\\card-sources\\mega-official-promos\\91d8b20369680ae9.jxl",
+      "sourceSha256": "0154e4248fb2aa03c4f643e476a10711b7c108138bc1e6f487d139abe3e6abf0",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-099.png",
+      "sha256": "b7ad61ff9feef3a2564d7a389a65e5ab1caade3302435de3342fc4d06abff5ba",
+      "bytes": 1029045
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_99.png",
+      "sourceSha256": "0154e4248fb2aa03c4f643e476a10711b7c108138bc1e6f487d139abe3e6abf0",
+      "decodedPngSha256": "b7ad61ff9feef3a2564d7a389a65e5ab1caade3302435de3342fc4d06abff5ba",
+      "counterpart": "30th-021"
+    }
+  },
+  {
+    "id": "mep-100",
+    "name": "Sylveon ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "hp": "270",
+    "types": [
+      "Psychic"
+    ],
+    "evolvesFrom": "Eevee",
+    "rules": [
+      "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Colorful Harmony",
+        "cost": [
+          "Psychic",
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "50×",
+        "text": "This attack does 50 damage for each type of Basic Energy attached to all of your Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Metal",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "100",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      700
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_100.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_100.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "30th-071",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 100,
+      "id": "mep-100",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_100.png",
+      "source": "work\\card-sources\\mega-official-promos\\ee222a7fb0679af8.jxl",
+      "sourceSha256": "fed9262bd3f4c4525ee05cd14a28897d9f73847ce3169f5082622d403d7989d1",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-100.png",
+      "sha256": "52521be4081e6d5f130d9d6660586bd01c51f179bd5fda2cbc9f7a1fb870e14f",
+      "bytes": 946426
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_100.png",
+      "sourceSha256": "fed9262bd3f4c4525ee05cd14a28897d9f73847ce3169f5082622d403d7989d1",
+      "decodedPngSha256": "52521be4081e6d5f130d9d6660586bd01c51f179bd5fda2cbc9f7a1fb870e14f",
+      "counterpart": "30th-071"
+    }
+  },
+  {
+    "id": "mep-101",
+    "name": "Nidorina",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1"
+    ],
+    "hp": "90",
+    "types": [
+      "Darkness"
+    ],
+    "evolvesFrom": "Nidoran ♀",
+    "abilities": [
+      {
+        "name": "Share Happiness",
+        "text": "Once during your turn, you may use this Ability. Heal 30 damage from 1 of your Pokémon.",
+        "type": "Ability"
+      }
+    ],
+    "attacks": [
+      {
+        "name": "Bite",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "101",
+    "artist": "Miki Tanaka",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      30
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_101.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_101.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "_megaCounterpart": "30th-088",
+    "_megaReleaseDate": "2026-09-16",
+    "_megaPreview": false,
+    "_megaScan": {
+      "number": 101,
+      "id": "mep-101",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_101.png",
+      "source": "work\\card-sources\\mega-official-promos\\95f0b2d1046bf7c0.jxl",
+      "sourceSha256": "1f621b440b196fbb871fbce889fec04289054ce61d226ba9c635853c05448c61",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-101.png",
+      "sha256": "2d05ed604bfa23025ec7d5334acaf48fc4063ee585496d1d530193b2964d517e",
+      "bytes": 1083151
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_101.png",
+      "sourceSha256": "1f621b440b196fbb871fbce889fec04289054ce61d226ba9c635853c05448c61",
+      "decodedPngSha256": "2d05ed604bfa23025ec7d5334acaf48fc4063ee585496d1d530193b2964d517e",
+      "counterpart": "30th-088"
+    }
+  },
+  {
+    "id": "mep-102",
+    "name": "Victini",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "80",
+    "types": [
+      "Fire"
+    ],
+    "attacks": [
+      {
+        "name": "Call for Family",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "text": "Search your deck for up to 2 Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "V-Flame",
+        "cost": [
+          "Fire",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "50"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Water",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "102",
+    "artist": "Jiro Sasumo",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      494
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_102.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_102.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "abilities": [],
+    "_megaCounterpart": "30th-013",
+    "_megaReleaseDate": "2026-10-30",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 102,
+      "id": "mep-102",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_102.png",
+      "source": "work\\card-sources\\mega-official-promos\\46c8c30cc6001508.jxl",
+      "sourceSha256": "60665f24d943231343c62e4c4729aa57ea483734039b802fd0be30574a29f7ec",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-102.png",
+      "sha256": "10512f94403803830d22434145ddb0621d7a33e8b1cf867d6ebe3dabb82c0874",
+      "bytes": 862464
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_102.png",
+      "sourceSha256": "60665f24d943231343c62e4c4729aa57ea483734039b802fd0be30574a29f7ec",
+      "decodedPngSha256": "10512f94403803830d22434145ddb0621d7a33e8b1cf867d6ebe3dabb82c0874",
+      "counterpart": "30th-013"
+    }
+  },
+  {
+    "id": "mep-103",
+    "name": "Zeraora",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "110",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Rapid Draw",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "damage": "20",
+        "text": "Draw a card."
+      },
+      {
+        "name": "Electrobullet",
+        "cost": [
+          "Lightning",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "50",
+        "text": "This attack also does 20 damage to 1 of your opponent's Benched Pokémon. (Don't apply Weakness and Resistance for Benched Pokémon.)"
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "103",
+    "artist": "Bun Toujo",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      807
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_103.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_103.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "abilities": [],
+    "_megaCounterpart": "30th-057",
+    "_megaReleaseDate": "2026-10-30",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 103,
+      "id": "mep-103",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_103.png",
+      "source": "work\\card-sources\\mega-official-promos\\ddc5522b36b90678.jxl",
+      "sourceSha256": "9a504317d07fe430426b979e53bdc09f26b728b9791649cc2ea51d5bee18f7b5",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-103.png",
+      "sha256": "7d08fac62cf18160d4b7a130e6264359054a5cf7c5e09cc7d582dce662b7cea4",
+      "bytes": 1007552
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_103.png",
+      "sourceSha256": "9a504317d07fe430426b979e53bdc09f26b728b9791649cc2ea51d5bee18f7b5",
+      "decodedPngSha256": "7d08fac62cf18160d4b7a130e6264359054a5cf7c5e09cc7d582dce662b7cea4",
+      "counterpart": "30th-057"
+    }
+  },
+  {
+    "id": "mep-104",
+    "name": "Mewtwo",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "130",
+    "types": [
+      "Psychic"
+    ],
+    "attacks": [
+      {
+        "name": "Empower",
+        "cost": [
+          "Psychic"
+        ],
+        "convertedEnergyCost": 1,
+        "text": "Attach up to 2 Basic Energy cards from your discard pile to 1 of your Pokémon."
+      },
+      {
+        "name": "Psydrive",
+        "cost": [
+          "Psychic",
+          "Psychic",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "120",
+        "text": "Discard an Energy from this Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Darkness",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "104",
+    "artist": "nagimiso",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      150
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_104.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_104.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "abilities": [],
+    "_megaCounterpart": "30th-063",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 104,
+      "id": "mep-104",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_104.png",
+      "source": "work\\card-sources\\mega-official-promos\\faa810735cd05b74.jxl",
+      "sourceSha256": "486d13b41c2d63eb1fc94ac640fd4c622eb2eaa9a2292ffd4943c52c2f246eb4",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-104.png",
+      "sha256": "7e04755e533607eea8236ccd820ec1c131430e8e3233fd653f91f73f983064f5",
+      "bytes": 1017314
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_104.png",
+      "sourceSha256": "486d13b41c2d63eb1fc94ac640fd4c622eb2eaa9a2292ffd4943c52c2f246eb4",
+      "decodedPngSha256": "7e04755e533607eea8236ccd820ec1c131430e8e3233fd653f91f73f983064f5",
+      "counterpart": "30th-063"
+    }
+  },
+  {
+    "id": "mep-105",
+    "name": "Mew",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "60",
+    "types": [
+      "Psychic"
+    ],
+    "attacks": [
+      {
+        "name": "Psychic",
+        "cost": [
+          "Psychic",
+          "Psychic"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "10+",
+        "text": "This attack does 40 more damage for each Energy attached to your opponent's Active Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Darkness",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "105",
+    "artist": "danciao",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      151
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_105.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_105.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "abilities": [],
+    "_megaCounterpart": "30th-065",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 105,
+      "id": "mep-105",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_105.png",
+      "source": "work\\card-sources\\mega-official-promos\\b6f12f49a76861bb.jxl",
+      "sourceSha256": "ce8149c9777bab2e696a2a879a4ab88e4d36ae1d012b9fec758f5c490edec946",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-105.png",
+      "sha256": "e9200826aea9517b25dec00914b303160053f85f545d714a1dc945b1f7da1752",
+      "bytes": 1034407
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_105.png",
+      "sourceSha256": "ce8149c9777bab2e696a2a879a4ab88e4d36ae1d012b9fec758f5c490edec946",
+      "decodedPngSha256": "e9200826aea9517b25dec00914b303160053f85f545d714a1dc945b1f7da1752",
+      "counterpart": "30th-065"
+    }
+  },
+  {
+    "id": "mep-106",
+    "name": "Ditto",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Colorless"
+    ],
+    "attacks": [
+      {
+        "name": "Surprisingly Transform",
+        "cost": [
+          "Colorless",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "text": "Flip a coin. If heads, search your deck for a Pokémon and switch it with this Pokémon. Any attached cards, damage counters, Special Conditions, turns in play, and any other effects remain on the new Pokémon. If you switched a Pokémon in this way, put this card into your deck. Then, shuffle your deck."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "106",
+    "artist": "Toshinao Aoki",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      132
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_106.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_106.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "rules": [],
+    "abilities": [],
+    "_megaCounterpart": "30th-115",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 106,
+      "id": "mep-106",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_106.png",
+      "source": "work\\card-sources\\mega-official-promos\\970feb48badc9066.jxl",
+      "sourceSha256": "31cf4bc2196e027781bdaa1e7ad9c0107eef602e46b59167437f3ac368a20ad0",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-106.png",
+      "sha256": "c15c4be8fe17044f6e747d328fc59d5dce9612223a21fbf7b4665cf332e65546",
+      "bytes": 1028006
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_106.png",
+      "sourceSha256": "31cf4bc2196e027781bdaa1e7ad9c0107eef602e46b59167437f3ac368a20ad0",
+      "decodedPngSha256": "c15c4be8fe17044f6e747d328fc59d5dce9612223a21fbf7b4665cf332e65546",
+      "counterpart": "30th-115"
+    }
+  },
+  {
+    "id": "mep-107",
+    "name": "Pikachu ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "ex"
+    ],
+    "hp": "190",
+    "types": [
+      "Lightning"
+    ],
+    "rules": [
+      "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Pika-Pika Parade",
+        "cost": [
+          "Colorless"
+        ],
+        "convertedEnergyCost": 1,
+        "text": "Search your deck for any number of Basic Pokémon and put them onto your Bench. Then, shuffle your deck."
+      },
+      {
+        "name": "Thunderbolt",
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "200",
+        "text": "Discard all Energy from this Pokémon."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "107",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      25
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "30th-053",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 107,
+      "id": "mep-107",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+      "source": "work\\card-sources\\mega-official-promos\\bfbec54126625819.jxl",
+      "sourceSha256": "3b33f6a40e0a6e2e2a5bdfc4ba4175d018041ccad01ceb3dd100b26fad73ee8f",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-107.png",
+      "sha256": "f9adf6c7aa6e5b8e6bded4ef50b413cde206a0d628c809de169126ae4f23b845",
+      "bytes": 948565
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_107.png",
+      "sourceSha256": "3b33f6a40e0a6e2e2a5bdfc4ba4175d018041ccad01ceb3dd100b26fad73ee8f",
+      "decodedPngSha256": "f9adf6c7aa6e5b8e6bded4ef50b413cde206a0d628c809de169126ae4f23b845",
+      "counterpart": "30th-053"
+    }
+  },
+  {
+    "id": "mep-108",
+    "name": "Espeon ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "hp": "260",
+    "types": [
+      "Psychic"
+    ],
+    "evolvesFrom": "Eevee",
+    "rules": [
+      "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Solar Beatdown",
+        "cost": [
+          "Psychic",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "30×",
+        "text": "This attack does 30 damage for each of your Pokémon in play."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Darkness",
+        "value": "×2"
+      }
+    ],
+    "resistances": [
+      {
+        "type": "Fighting",
+        "value": "-30"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "108",
+    "artist": "5ban Graphics",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      196
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_108.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_108.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "30th-070",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 108,
+      "id": "mep-108",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_108.png",
+      "source": "work\\card-sources\\mega-official-promos\\2fdf589f792b3572.jxl",
+      "sourceSha256": "c14a4bd5ecaabca08122e082996750a3c0378cf43a56e852477f56b3cbe75fdd",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-108.png",
+      "sha256": "40fa4f9552b01adf2c7085e0cc8eab2f5650dcb3186effb63e2478fa4a856206",
+      "bytes": 1110695
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_108.png",
+      "sourceSha256": "c14a4bd5ecaabca08122e082996750a3c0378cf43a56e852477f56b3cbe75fdd",
+      "decodedPngSha256": "40fa4f9552b01adf2c7085e0cc8eab2f5650dcb3186effb63e2478fa4a856206",
+      "counterpart": "30th-070"
+    }
+  },
+  {
+    "id": "mep-109",
+    "name": "Pikachu ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic",
+      "ex"
+    ],
+    "hp": "190",
+    "types": [
+      "Lightning"
+    ],
+    "rules": [
+      "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Zip-Zap Frenzy",
+        "cost": [
+          "Lightning"
+        ],
+        "convertedEnergyCost": 1,
+        "text": "You may attach any number of Basic Energy cards from your hand to your Pokémon in any way you like."
+      },
+      {
+        "name": "Thunder",
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 3,
+        "damage": "200",
+        "text": "This Pokémon also does 30 damage to itself."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "convertedRetreatCost": 1,
+    "number": "109",
+    "artist": "takuyoa",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      25
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "30th-054",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 109,
+      "id": "mep-109",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+      "source": "work\\card-sources\\mega-official-promos\\74919c6fb7c333fb.jxl",
+      "sourceSha256": "95f12a40940f3a75664a1b9cef2ba72562e746abc85658cb4088c156c1e40975",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-109.png",
+      "sha256": "77e45c6c98adccc6535825b46433873700bfec8aba0c4d8e514cc427be79307c",
+      "bytes": 947449
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_109.png",
+      "sourceSha256": "95f12a40940f3a75664a1b9cef2ba72562e746abc85658cb4088c156c1e40975",
+      "decodedPngSha256": "77e45c6c98adccc6535825b46433873700bfec8aba0c4d8e514cc427be79307c",
+      "counterpart": "30th-054"
+    }
+  },
+  {
+    "id": "mep-110",
+    "name": "Umbreon ex",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Stage 1",
+      "ex"
+    ],
+    "hp": "270",
+    "types": [
+      "Darkness"
+    ],
+    "evolvesFrom": "Eevee",
+    "rules": [
+      "When your Pokémon ex is Knocked Out, your opponent takes 2 Prize cards."
+    ],
+    "attacks": [
+      {
+        "name": "Lunatic Claw",
+        "cost": [
+          "Darkness",
+          "Colorless"
+        ],
+        "convertedEnergyCost": 2,
+        "damage": "100+",
+        "text": "If your opponent's Active Pokémon already has any damage counters on it, this attack does 140 more damage."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Grass",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless",
+      "Colorless"
+    ],
+    "convertedRetreatCost": 2,
+    "number": "110",
+    "artist": "Keisuke Azuma",
+    "rarity": "Promo",
+    "nationalPokedexNumbers": [
+      197
+    ],
+    "regulationMark": "J",
+    "images": {
+      "small": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_110.png",
+      "large": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_110.png"
+    },
+    "set": {
+      "id": "mep"
+    },
+    "abilities": [],
+    "_megaCounterpart": "30th-092",
+    "_megaReleaseDate": "2026-11-06",
+    "_megaPreview": true,
+    "_megaScan": {
+      "number": 110,
+      "id": "mep-110",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_110.png",
+      "source": "work\\card-sources\\mega-official-promos\\bf7d8ddc6f315cab.jxl",
+      "sourceSha256": "b56f2208dad4c3752e011d8c8b235c02666d020b7bc53f0f75aae2aacddf3555",
+      "width": 639,
+      "height": 891,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-110.png",
+      "sha256": "3bf9331a2d1c8e60e88a7ff346d3a8cd5d2a6fcfb0b91cb2b89c67c9cf9c9c62",
+      "bytes": 1100100
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/image/upload/c_fit,w_639,h_892/f_auto/q_auto:best/v1/live/pcom-cms/static-assets/cms3/us/img/cards/full/MEP/MEP_EN_110.png",
+      "sourceSha256": "b56f2208dad4c3752e011d8c8b235c02666d020b7bc53f0f75aae2aacddf3555",
+      "decodedPngSha256": "3bf9331a2d1c8e60e88a7ff346d3a8cd5d2a6fcfb0b91cb2b89c67c9cf9c9c62",
+      "counterpart": "30th-092"
+    }
+  },
+  {
+    "id": "mep-092",
+    "name": "Paradise Resort",
+    "number": "092",
+    "supertype": "Trainer",
+    "subtypes": [
+      "Stadium"
+    ],
+    "rules": [
+      "The Retreat Cost of each Psyduck in play (both yours and your opponent's) is Colorless less.",
+      "You may play only 1 Stadium card during your turn. Put it next to the Active Spot, and discard it if another Stadium comes into play. A Stadium with the same name can't be played."
+    ],
+    "set": {
+      "id": "mep"
+    },
+    "rarity": "Promo",
+    "_megaReleaseDate": "2026-08-28",
+    "_megaScan": {
+      "number": 92,
+      "id": "mep-092",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_92.png",
+      "source": "work\\card-sources\\mega-official-promos\\a3593f8e943047ab.jxl",
+      "sourceSha256": "c916f27316ebfb7bfbde45f847a5be76f89071818d56435a7708000c81c48de9",
+      "width": 420,
+      "height": 585,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-092.png",
+      "sha256": "c5a3aa253979a41ff5e95f656831febd86f19a5c9690282324aa186b2488eba5",
+      "bytes": 437431
+    },
+    "images": {
+      "small": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_92.png",
+      "large": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_92.png"
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_92.png",
+      "sourceSha256": "c916f27316ebfb7bfbde45f847a5be76f89071818d56435a7708000c81c48de9",
+      "decodedPngSha256": "c5a3aa253979a41ff5e95f656831febd86f19a5c9690282324aa186b2488eba5",
+      "counterpart": null
+    }
+  },
+  {
+    "id": "mep-093",
+    "name": "Pikachu",
+    "number": "093",
+    "supertype": "Pokémon",
+    "subtypes": [
+      "Basic"
+    ],
+    "hp": "70",
+    "types": [
+      "Lightning"
+    ],
+    "attacks": [
+      {
+        "name": "Scrappy Spark",
+        "cost": [
+          "Lightning",
+          "Lightning",
+          "Colorless"
+        ],
+        "damage": "30+",
+        "text": "Flip a coin until you get tails. This attack does 30 more damage for each heads."
+      }
+    ],
+    "weaknesses": [
+      {
+        "type": "Fighting",
+        "value": "×2"
+      }
+    ],
+    "retreatCost": [
+      "Colorless"
+    ],
+    "set": {
+      "id": "mep"
+    },
+    "rarity": "Promo",
+    "regulationMark": "J",
+    "_megaReleaseDate": "2026-08-21",
+    "_megaScan": {
+      "number": 93,
+      "id": "mep-093",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_93.png",
+      "source": "work\\card-sources\\mega-official-promos\\c8375b2366de17fa.jxl",
+      "sourceSha256": "04733d8839e8bc3367d984649ac83cc14163b02bda83d2101df545dddb757fab",
+      "width": 420,
+      "height": 585,
+      "format": "JXL",
+      "credit": "The Pokémon Company; official product image",
+      "file": "work\\card-sources\\mega-official-promos\\mep-093.png",
+      "sha256": "9b431f8a1869b2bad7af42f87c373adad34ebcbcfcea1c76af67087e7c87388c",
+      "bytes": 482654
+    },
+    "images": {
+      "small": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_93.png",
+      "large": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_93.png"
+    },
+    "_megaSource": {
+      "kind": "scan-verified-counterpart-or-transcription",
+      "url": "https://mcdn.pokemon.com/pokemon-prod/image/upload/v1/live/static-assets/content-assets/cms2/img/attend-events/championship/2026-naic/closing-ceremony/inline/full/MEP_EN_93.png",
+      "sourceSha256": "04733d8839e8bc3367d984649ac83cc14163b02bda83d2101df545dddb757fab",
+      "decodedPngSha256": "9b431f8a1869b2bad7af42f87c373adad34ebcbcfcea1c76af67087e7c87388c",
+      "counterpart": null
+    }
+  }
+]

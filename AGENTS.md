@@ -1,3 +1,31 @@
+# Latest completed scope — Mega era through 30th Celebration (October 19, 2026)
+
+ILEX.GG **1.19.0** is verified and released locally: **1,293/1,293 standard-game printings, zero pending**, across ten catalogs. MEE 16, Mega Evolution 188, MEP 110, Phantasmal Flames 130, Ascended Heroes 295, Perfect Order 124, Chaos Rising 122, Pitch Black 120, 30th 158 and Classic Collection 30. MEP102–110 are nine officially announced anniversary previews with future release dates retained. Museum is collection-only; unconfirmed RGB Mew cache rows excluded. BW onward; Unlimited deferred.
+
+Final engine dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722. 60 expected-result groups, 11,701 printed-field comparisons, 1,535 printed attack cases, 3,212 branch cases, Power/Trainer audits, 24 bounded mixed games (2111 decisions; 14 completed) with exact replay/Undo, 20 shared and 28 preserved modern groups, native fresh/restored and Android checks pass. Finite checks are not exhaustive proof; unavailable conditional/passive fixtures are separate. 23,860 regular scan hashes/decodes and 209 preserved finish images pass.
+
+Windows EXE and both ZIPs updated/integrity verified. Android **1.19.0-android.27/code27**, original signing certificate retained; physical Android acceptance pending. Private Windows multiplayer preview retained, but real external two-PC connection/full-match acceptance remains unverified. No subagents or GitHub publication. Existing features, saves, historical formats and signing preserved. Reverse scan acquisition remains incomplete.
+
+Read work/rules-research/MEGA-PROGRESS.md and mega-final-release-evidence.json. Canonical corrected UTF-8 source is **work/mega-source/src**; build only with ILEX_RULES_SOURCE_ROOT=work/mega-source/src and ILEX_RULES_OUTFILE=work/mega-candidate/ui/rules-engine.js. Do not build older shared mojibake source or rerun initial generators over the release. Canonical source/provenance shipped under resources/app/card-effect-sources/mega-source and mega-source-manifest.json. Packaging scripts: package-mega.py and finish-mega.cjs; final evidence commit: mega-commit-record.cjs.
+
+---
+
+# Active Mega era implementation — candidate only (October 19, 2026)
+
+Kenneth requested the English Mega era through 30th Celebration. BW onward; Unlimited deferred. Isolated corrected source is `work/mega-source/src` (from published d7bf35e6 source); build with `ILEX_RULES_SOURCE_ROOT=work/mega-source/src` and `ILEX_RULES_OUTFILE=work/mega-candidate/ui/rules-engine.js`. Do not build the older shared mojibake source. Candidate maps 1,284 standard-game printings across ten catalogs, including 13 scan-verified MEP 089–101 additions. Museum remains collection-only; future MEP 102–110 and unconfirmed RGB Mew cache rows are held out. Read `work/rules-research/MEGA-PROGRESS.md`, `MEGA-RULES-SOURCES.md` and latest `mega-*.json` reports.
+
+Candidate validation is IN PROGRESS. Older engine passed 1,521 printed attack smoke cases, 976 representative branches in one partition, 24 bounded games with replay/Undo, Power/Trainer audits and 20 preserved suites. Subsequent semantic repairs changed the engine: these earlier passes must not be presented as final current-engine validation. Latest focused suite has 31 groups; additional framework tests are being repaired/run. Native desktop/mobile validation and packaging pending. `work/mega-desktop-candidate` is a work-in-progress staging folder, not a release. Released EXE/ZIP/APK remain unchanged. No subagents or GitHub publication. Preserve private multiplayer beta caveats and original signing.
+
+---
+
+# GitHub publication — October 19, 2026
+
+Published `v1.18.0-private.1-build-2026-10-19` as Multiplayer Beta, with Android `1.17.0-android.26`, matching source and prominent README beta notice. Publication found a real UTF-8/mojibake regression: the d31 engine rejects EX Dragon Frontiers Charmeleon Delta -> Charizard Delta (Peal of Thunder). Corrected TypeScript source now rebuilds normally to **d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7**; full EX and all README regression suites, clean Windows install/start/rebuild, native UI and simulated multiplayer checks pass. Real two-PC/Internet and physical Android acceptance remain pending. Both source archives and all nine public asset downloads hash-verified.
+
+Corrected frozen source: `C:/Users/Kenneth/Documents/Codex/2026-10-13/ta/work/source-1.18.0-private.1`. Release ZIP/APK/evidence: this chat's `outputs/ILEX-1.18.0-beta-release`. Read `work/rules-research/github-beta-release-2026-10-19.json`. The shared development source and original output folders were not overwritten; incorporate the UTF-8 source correction before future packaging so the broken name/Delta comparisons do not return. Prior exhaustive/native reports retain their original hashes. No reminder was created or resumed.
+
+---
+
 # Latest feature — private Windows multiplayer preview (October 19, 2026)
 
 Separate 1.18.0-private.1 Windows preview implements invite/response codes, host-authoritative catalog rules, filtered guest state, format-first decks, ready confirmation, native card controls, reconnect and separate host recovery. Undo freezes play until the opponent approves or denies; no rewind before approval. Free STUN/direct WebRTC, no paid infrastructure or TURN fallback. Real two-PC/Internet acceptance remains UNVERIFIED: sandbox real RTC failed, UDP loopback timed out and TCP returned EACCES. Controlled native two-window tests explicitly simulate channel delivery; do not claim real networking passed.
