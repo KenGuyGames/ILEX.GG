@@ -17,7 +17,7 @@ with zipfile.ZipFile(apk) as z:
     manifest=json.loads(z.read('assets/ui/scan-manifest.json'))
     by_file={e['file']:e for e in manifest.values() if 'file' in e}
     scans=[n for n in z.namelist() if n.startswith('assets/ui/scans/')]
-    check(len(scans)==int(os.environ.get('ILEX_ANDROID_EXPECTED_SCANS','395')),'Expected startup and era demonstration scans bundled')
+    check(len(scans)==int(os.environ.get('ILEX_ANDROID_EXPECTED_SCANS','439')),'Expected startup and era demonstration scans bundled')
     check(all(hashlib.sha256(z.read(n)).hexdigest()==by_file[n[len('assets/ui/'):]]['sha256'] for n in scans),'Every bundled card scan matches manifest SHA-256')
     check(z.getinfo('resources.arsc').compress_type==zipfile.ZIP_STORED,'Compiled resource table is uncompressed for Android 11+')
     with apk.open('rb') as raw:
