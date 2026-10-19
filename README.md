@@ -14,8 +14,8 @@ Pokémon TCG simulator for **Windows and Android**, with historical rules automa
 
 | Platform | Download | Version |
 | --- | --- | --- |
-| Windows multiplayer beta | [ILEX.GG-Private-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Private-Windows.zip) — about 269 MiB | 1.18.0-private.1; extract the entire ZIP, close any running ILEX.GG and run ILEX.GG.exe |
-| Android local/bot play | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Android.apk) — about 130 MiB | 1.17.0-android.25 / code 25; Android 8+ with current WebView; no multiplayer |
+| Windows multiplayer beta | [ILEX.GG-Private-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Private-Windows.zip) — about 247 MiB | 1.18.0-private.1; extract the entire ZIP, close any running ILEX.GG and run ILEX.GG.exe |
+| Android local/bot play | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Android.apk) — about 136 MiB | 1.17.0-android.26 / code 26; Android 8+ with current WebView; no multiplayer |
 
 Windows includes its runtime. Android retains the original signing certificate: install over the previous app to keep workspace/cache; export first if needed and do not uninstall. Physical Android device/emulator acceptance is still pending. This is a direct APK release.
 
@@ -29,6 +29,7 @@ Card images download as viewed and remain cached. **Download card images** cache
 - **Complete Sword & Shield:** 3,715/3,715 printings, zero pending across 28 catalogs, including all 307 promos, Sword & Shield through Crown Zenith, special expansions/subsets, Futsal and McDonald's 2021–22. Includes V-UNION composites and enlarged landscape actions.
 - **Complete Scarlet & Violet:** 3,694/3,694 standard English TCG printings, zero pending across 20 catalogs, through Black Bolt/White Flare, special expansions, SVP001–225 and SVP500, McDonald's 2023–24 and SVE Energy. Battle Academy unique promos are included. My First Battle's separate simplified ruleset is excluded from standard 60-card automation.
 - **Card repairs:** Custom Catcher's single/pair choices, Lysandre Labs' Tool suppression, Puzzle of Time with an empty deck and paired recovery, Shining Legends Pokémon Breeder's draw/heal effect, and Jamming Net/Head Ringer opponent targeting and original ownership. Evosoda now uses the actual first-turn window; Gardevoir ex Psychic Embrace accepts typed Psychic Energy, including the corrected SVE Basic Energy mappings, with damage/nonlethal restrictions retained.
+- **Publication fix:** repaired UTF-8 source comparisons for EX Delta evolution and printed Pokémon/Power identities. The failing Dragon Frontiers Charmeleon → Charizard Peal of Thunder regression now passes; Windows and Android were rebuilt with this correction.
 - **Table and packs:** GX/VSTAR used markers and new-match setup fixes; era-correct Basic Energy artwork, including the 30th Celebration MEE009–016 exception. Existing saved pulls are preserved.
 - **209 verified finish-specific images:** 100 Legendary Collection reverses (original low-resolution watermarks retained) and 109 Prismatic Poké Ball/Master Ball images, with an Original finish images filter and source credits. Acquisition remains incomplete: 13,378 cataloged finish entries still lack verified images; other supported finishes use cosmetic reconstruction.
 - **Updated Android:** same current card engine and local UI fixes, 395 bundled scans and 209 finish images. Android multiplayer is deferred. Earlier WOTC/EX/DP/HGSS/BW/XY/SM, bots, packs, music, image cache and UI remain available.
@@ -46,7 +47,7 @@ New interaction validation is scoped to **Black & White onward through Scarlet &
 | Android | 128 mobile Chromium and 38 package checks recorded for Psychic Embrace; original certificate retained; physical-device acceptance pending |
 | Assets | 23,838 scan records and 209 verified finish-specific images retained |
 
-The broad SWSH/SV baseline reports retain their original engine hashes. The beta and Android use the later fixed engine `d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d`; historical broad results have not been relabeled as new-hash passes. Finite fixtures and bounded games do not prove all possible interactions. See `verification/ILEX.GG-Private-verification.json`, `work/rules-research/private-preview-release.json`, `sv-source-validation.json`, `swsh-source-validation.json`, `evosoda-fix.json` and `psychic-embrace-fix.json`.
+The broad SWSH/SV baseline reports retain their original engine hashes. The beta and Android use the publication encoding repair engine `d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7`; historical broad results have not been relabeled as new-hash passes. Finite fixtures and bounded games do not prove all possible interactions. See `verification/ILEX.GG-Private-verification.json`, `work/rules-research/private-preview-release.json`, `sv-source-validation.json`, `swsh-source-validation.json`, `evosoda-fix.json` and `psychic-embrace-fix.json`.
 
 ## Earlier 1.15.0 changes (historical release notes)
 
@@ -198,7 +199,7 @@ npm run build:rules
 npm start
 ```
 
-The build preserves the original packaged engine encoding using an explicit, SHA-256 guarded compatibility step (`release-engine-encoding.json`); it refuses changed compiler output. The rebuilt engine must match SHA-256 `d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d`, recorded in `verification/source-manifest-1.18.0-private.1.json`.
+The rebuilt engine must match SHA-256 `d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7`, recorded in `verification/source-manifest-1.18.0-private.1.json`.
 
 Run checks sequentially:
 

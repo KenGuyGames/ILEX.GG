@@ -1,8 +1,8 @@
 {
   "passed": true,
   "checks": [
-    "All five Holon Pokemon attach from hand and provide their printed Energy"
+    "Peal of Thunder attaches selected top-five Energy to one target and discards the rest"
   ],
   "candidate": true,
-  "engineSha256": "934c15bdeb6e732993e25e20d9717a89d2e587c206b714ec99016f449a0df67d"
+  "engineSha256": "d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7"
 }

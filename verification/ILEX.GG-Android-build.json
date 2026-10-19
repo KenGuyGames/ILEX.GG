@@ -1,9 +1,9 @@
 {
   "apk": "ILEX.GG-Android.apk",
-  "bytes": 136355498,
-  "sha256": "ab7c15d8785dd544e0c7f6a6d4a45c0ef9d3f42ac96946c8591750085c5a24e7",
+  "bytes": 142782217,
+  "sha256": "dce37765ba6978847dacd51562f54aab71163d0a74a6da791f535a877de4051a",
   "bundledScans": 395,
-  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
+  "engineSha256": "d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7",
   "minAndroid": "8.0",
   "targetSdk": 36,
   "physicalDeviceTested": false

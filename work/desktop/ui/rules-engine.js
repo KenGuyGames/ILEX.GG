@@ -2448,7 +2448,7 @@ var TCGRules = (() => {
           throw new Error("Method not implemented.");
         }
         /**
-         * True when provides lists multiple distinct types â€” one energy choosable as any of them.
+         * True when provides lists multiple distinct types — one energy choosable as any of them.
          * Homogeneous repeats ([D,D], [C,C], [ANY,ANY]) are multi-unit, not choosable.
          */
         static isChoosableProvides(provides) {
@@ -3173,7 +3173,7 @@ var TCGRules = (() => {
         hasRuleBox() {
           if (this._swshUnionPart !== void 0 && this._swshUnionInPlay === false) return false;
           return this.tags.includes("ex" /* POKEMON_ex */) && this.regulationMark || // Gen 3-era ex do not have a Rule box. Separate Mega ex check not necessary
-          this.tags.includes("V" /* POKEMON_V */) || this.tags.includes("VMAX" /* POKEMON_VMAX */) || this.tags.includes("VSTAR" /* POKEMON_VSTAR */) || this.tags.includes("V-UNION" /* POKEMON_VUNION */) || this.tags.includes("GX" /* POKEMON_GX */) || // All rule box TAG TEAM mons are PokÃ©mon-GX so an extra check is not necessary
+          this.tags.includes("V" /* POKEMON_V */) || this.tags.includes("VMAX" /* POKEMON_VMAX */) || this.tags.includes("VSTAR" /* POKEMON_VSTAR */) || this.tags.includes("V-UNION" /* POKEMON_VUNION */) || this.tags.includes("GX" /* POKEMON_GX */) || // All rule box TAG TEAM mons are Pokémon-GX so an extra check is not necessary
           this.tags.includes("EX" /* POKEMON_EX */) || // Same with M EX/Primals/etc.
           this.tags.includes("Break" /* BREAK */) || this.tags.includes("Prism Star" /* PRISM_STAR */) || this.tags.includes("Radiant" /* RADIANT */);
         }
@@ -3618,7 +3618,7 @@ var TCGRules = (() => {
           this.recordingEnabled = true;
           this.format = 1 /* STANDARD */;
           this.sandboxMode = false;
-          /** When sandboxMode: any PokÃ©mon may be played onto an empty Bench slot as if Basic (setup + in-game). */
+          /** When sandboxMode: any Pokémon may be played onto an empty Bench slot as if Basic (setup + in-game). */
           this.sandboxAllPokemonBasic = false;
           /** When sandboxMode: attacks ignore Energy costs (payment checks see cost []). */
           this.sandboxAttacksCostNoEnergy = false;
@@ -6539,7 +6539,7 @@ var TCGRules = (() => {
           this.type = ChoosePokemonPromptType;
           /**
            * Retreat already logs a more specific line. Skip the switch outcome so that
-           * prompt does not also say the PokÃ©mon was switched to the active spot.
+           * prompt does not also say the Pokémon was switched to the active spot.
            */
           this.skipSwitchLog = false;
           this.options = Object.assign({}, {
@@ -6921,18 +6921,18 @@ var TCGRules = (() => {
           this.preventEffectsOfAttacksNextTurn = null;
           this.preventEffectsOfAttacksNextTurnPending = null;
           this.cannotBeHealedNextTurn = false;
-          /** True if this PokÃ©mon had damage counters removed by a HealEffect this turn. */
+          /** True if this Pokémon had damage counters removed by a HealEffect this turn. */
           this.healedThisTurn = false;
           /** During the opponent's next turn, flip a coin when attack damage would be done; heads prevents that damage. */
           this.coinFlipPreventAttackDamageNextTurn = false;
           this.coinFlipPreventAttackDamageNextTurnPending = false;
-          /** During the opponent's next turn, this PokÃ©mon can't be affected by Special Conditions. */
+          /** During the opponent's next turn, this Pokémon can't be affected by Special Conditions. */
           this.cannotBeSpecialConditionedNextTurn = false;
           this.cannotBeSpecialConditionedNextTurnPending = false;
-          /** During the opponent's next turn, this PokÃ©mon has no Weakness. */
+          /** During the opponent's next turn, this Pokémon has no Weakness. */
           this.noWeaknessNextTurn = false;
           this.noWeaknessNextTurnPending = false;
-          /** During the owner's next turn, this PokÃ©mon has no Retreat Cost. */
+          /** During the owner's next turn, this Pokémon has no Retreat Cost. */
           this.zeroRetreatCostNextTurn = false;
           this.zeroRetreatCostNextTurnPending = false;
           this.defendingPokemonExtraDamageNextTurn = 0;
@@ -6942,9 +6942,9 @@ var TCGRules = (() => {
           this.attackCostIncreaseNextTurn = 0;
           this.attackCostIncreaseNextTurnPending = 0;
           this.attackCostIncreaseWhileActive = 0;
-          /** Extra attack damage while this PokÃ©mon stays Active. Cleared on switch. */
+          /** Extra attack damage while this Pokémon stays Active. Cleared on switch. */
           this.whileActiveAttackDamageBonus = 0;
-          /** Extra damage this PokÃ©mon's attacks do to the opponent's Active during its next turn. */
+          /** Extra damage this Pokémon's attacks do to the opponent's Active during its next turn. */
           this.outgoingAttackDamageBonusNextTurn = 0;
           this.outgoingAttackDamageBonusNextTurnPending = 0;
           /** Overrides the coin-flip count of a named attack during the owner's next turn. */
@@ -6961,7 +6961,7 @@ var TCGRules = (() => {
           this.weaknessOverrideAttackerId = void 0;
           this.weaknessOverrideClearArmed = false;
           /**
-           * Hangman / ticking KO: during the attacker's next turn, if this PokÃ©mon is
+           * Hangman / ticking KO: during the attacker's next turn, if this Pokémon is
            * damaged by an attack (optionally filtered), it is Knocked Out.
            */
           this.knockOutIfDamagedNextTurn = false;
@@ -6978,16 +6978,16 @@ var TCGRules = (() => {
           this.retaliateOnDamageNextTurn = null;
           this.retaliateOnDamageNextTurnPending = null;
           /**
-           * Extra prizes if this (Defending) PokÃ©mon is Knocked Out during the
+           * Extra prizes if this (Defending) Pokémon is Knocked Out during the
            * attacker's next turn.
            */
           this.extraPrizesIfKnockedOutNextTurn = 0;
           this.extraPrizesIfKnockedOutNextTurnPending = false;
           this.extraPrizesIfKnockedOutNextTurnAttackerId = void 0;
-          /** If this PokÃ©mon is Knocked Out during opponent's next turn, deny prizes. */
+          /** If this Pokémon is Knocked Out during opponent's next turn, deny prizes. */
           this.denyPrizesIfKnockedOutNextTurn = false;
           this.denyPrizesIfKnockedOutNextTurnPending = false;
-          /** If this PokÃ©mon is Knocked Out during opponent's next turn, discard Energy from attacker. */
+          /** If this Pokémon is Knocked Out during opponent's next turn, discard Energy from attacker. */
           this.discardAttackerEnergyIfKnockedOutNextTurn = false;
           this.discardAttackerEnergyIfKnockedOutNextTurnPending = false;
           this.discardAttackerEnergyIfKnockedOutNextTurnAttack = void 0;
@@ -6998,28 +6998,28 @@ var TCGRules = (() => {
           this.cannotUseAttacksNextTurn = [];
           this.cannotUseAttacksNextTurnPending = [];
           /**
-           * Smokescreen / Sand-Attack style: when this PokÃ©mon tries to attack, its owner
+           * Smokescreen / Sand-Attack style: when this Pokémon tries to attack, its owner
            * flips this many coins. If any is tails, that attack does nothing.
-           * `0` = inactive. Set on the Defending PokÃ©mon for the opponent's next turn.
+           * `0` = inactive. Set on the Defending Pokémon for the opponent's next turn.
            */
           this.coinFlipCancelAttackNextTurn = 0;
           /**
-           * Growl / Daunt style: this PokÃ©mon's attacks do this many less damage
+           * Growl / Daunt style: this Pokémon's attacks do this many less damage
            * (before Weakness and Resistance). `0` = inactive.
-           * Set on the Defending PokÃ©mon for the opponent's next turn.
+           * Set on the Defending Pokémon for the opponent's next turn.
            */
           this.attackDamageReductionNextTurn = 0;
           /**
-           * Snarl style: this PokÃ©mon's attacks do this many less damage
+           * Snarl style: this Pokémon's attacks do this many less damage
            * after Weakness and Resistance. `0` = inactive.
-           * Set on the Defending PokÃ©mon for the opponent's next turn.
+           * Set on the Defending Pokémon for the opponent's next turn.
            */
           this.attackDamageReductionAfterWeaknessNextTurn = 0;
           this.cannotRetreatNextTurn = false;
           this.cannotRetreatNextTurnPending = false;
           /**
-           * During the owner's next turn, Energy can't be attached from their hand to this PokÃ©mon.
-           * Set on the Defending PokÃ©mon by Sand Tomb / Spit Glue / etc.
+           * During the owner's next turn, Energy can't be attached from their hand to this Pokémon.
+           * Set on the Defending Pokémon by Sand Tomb / Spit Glue / etc.
            */
           this.cannotAttachEnergyFromHandNextTurn = false;
           this.pendingEnergyAttachDamageCounters = null;
@@ -7029,20 +7029,20 @@ var TCGRules = (() => {
           this.blockedAttackNameNextTurn = void 0;
           this.blockedAttackNameUntilLeavesActive = void 0;
           /**
-           * Encore: during the owner's next turn, this PokÃ©mon can only use this attack.
+           * Encore: during the owner's next turn, this Pokémon can only use this attack.
            */
           this.onlyAllowedAttackNameNextTurn = void 0;
           /**
-           * During the owner's next turn, PokÃ©mon can't be played from hand to evolve this PokÃ©mon.
+           * During the owner's next turn, Pokémon can't be played from hand to evolve this Pokémon.
            */
           this.cannotEvolveNextTurn = false;
           /**
-           * This PokÃ©mon may evolve this turn even if it was put into play this turn
+           * This Pokémon may evolve this turn even if it was put into play this turn
            * (e.g. Evolutionary Advantage). Cleared at end of turn / when leaving play.
            */
           this.canEvolveThisTurn = false;
           /**
-           * The Defending PokÃ©mon has no Abilities until the end of the attacker's next turn
+           * The Defending Pokémon has no Abilities until the end of the attacker's next turn
            * (Gastro Acid). Cleared with a two-phase arm on the attacker's EndTurns.
            */
           this.noAbilities = false;
@@ -12151,7 +12151,7 @@ var TCGRules = (() => {
           this.KNOCKOUT_MARKER = "KNOCKOUT_MARKER";
           /**
            * Attack-sourced hand play locks (Item / Supporter / Stadium / Tool / Energy / Pokemon).
-           * Live on the player â€” not cleared by Pokemon switch. Cleared after
+           * Live on the player — not cleared by Pokemon switch. Cleared after
            * {@link playLocksTurnsRemaining} of this player's EndTurns (default 1 =
            * "during opponent's next turn").
            */
@@ -12163,13 +12163,13 @@ var TCGRules = (() => {
           this.cannotPlayEnergyCards = false;
           this.cannotPlayPokemonCards = false;
           this.cannotPlayPokemonWithAbilities = false;
-          /** Block playing PokÃ©mon from hand only to evolve (basics still allowed). */
+          /** Block playing Pokémon from hand only to evolve (basics still allowed). */
           this.cannotEvolvePokemonCards = false;
           this.playLocksTurnsRemaining = 0;
           /**
            * Attack-sourced power suppressions on this player. Each entry counts this
            * player's EndTurns. `turnsRemaining` 1 = during their next turn.
-           * Default Greninja entry is remove + Ability; PokÃ©-Power locks use block.
+           * Default Greninja entry is remove + Ability; Poké-Power locks use block.
            */
           this.attackPowerSuppressions = [];
           /**
@@ -12193,13 +12193,13 @@ var TCGRules = (() => {
            */
           this.cannotAttackTurnsRemaining = 0;
           /**
-           * During this player's upcoming turn(s), PokÃ©mon with this many Energy or
+           * During this player's upcoming turn(s), Pokémon with this many Energy or
            * fewer can't attack (Walrein Frigid Fangs). Null when inactive.
            */
           this.cannotAttackMaxEnergy = null;
           this.cannotAttackMaxEnergyTurnsRemaining = 0;
           /**
-           * Ignore Energy in attack costs for PokÃ©mon of these types (Sunflora Solar Power).
+           * Ignore Energy in attack costs for Pokémon of these types (Sunflora Solar Power).
            * Counts this player's EndTurns until clear. Set to 2 for "during your next turn".
            */
           this.ignoreAttackCostCardTypes = null;
@@ -12237,7 +12237,7 @@ var TCGRules = (() => {
           this.playableCardIds = [];
           /**
            * Subset of hand cards whose useFromHandToBench ability is currently legal
-           * (Excitedive, Swelling Flash, â€¦). Distinct from {@link playableCardIds} so
+           * (Excitedive, Swelling Flash, …). Distinct from {@link playableCardIds} so
            * evolution can remain playable when a hand ability lock is active.
            */
           this.playableHandAbilityCardIds = [];
@@ -12355,7 +12355,7 @@ var TCGRules = (() => {
          * Remove effects of attacks currently on this player.
          * Does not remove damage, Special Conditions, Ability/Trainer/Energy effects,
          * or the fact that an attack was used (`usedGX`, `usedVSTAR`).
-         * PokÃ©mon Ranger and Channeler both go through this.
+         * Pokémon Ranger and Channeler both go through this.
          */
         removeAttackEffects() {
           this.marker.removeAttackEffects();
@@ -12377,7 +12377,7 @@ var TCGRules = (() => {
           this.usedFullMetalWall = false;
         }
         /**
-         * Remove effects of attacks on this player and each of their PokÃ©mon in play.
+         * Remove effects of attacks on this player and each of their Pokémon in play.
          * Does not remove damage counters or Special Conditions.
          */
         removeAttackEffectsFromPlayerAndPokemon() {
@@ -14893,7 +14893,7 @@ var TCGRules = (() => {
     return (card._dpEntryId || card.id) + ":" + power.name;
   }
   function shared(power) {
-    return /can't use more than (?:1|one) .+?PokÃ©-Power (?:each|per) turn/i.test(power.text);
+    return /can't use more than (?:1|one) .+?Poké-Power (?:each|per) turn/i.test(power.text);
   }
   function once(power) {
     return /^Once /i.test(power.text);
@@ -15910,7 +15910,7 @@ var TCGRules = (() => {
         });
       }
       case "activatedDpSpeedGain": {
-        if ([p.active, ...p.bench].some((target) => target !== list && target.getPokemonCard()?.name.replace(/ Î´$/, "") === card.name.replace(/ Î´$/, ""))) throw new GameError(GameMessage.CANNOT_USE_POWER);
+        if ([p.active, ...p.bench].some((target) => target !== list && target.getPokemonCard()?.name.replace(/ δ$/, "") === card.name.replace(/ δ$/, ""))) throw new GameError(GameMessage.CANNOT_USE_POWER);
         use();
         const flip = (heads) => COIN_FLIP_PROMPT(store, state, p, (result) => {
           if (result) return flip(heads + 1);
@@ -20075,7 +20075,7 @@ var TCGRules = (() => {
       case "waveCopyNames":
         for (const target of [p.active, ...p.bench]) {
           const donor = target.getPokemonCard();
-          if (donor && donor !== card && op.names.includes(donor.name.replace(/ Î´$/, ""))) copyAttacks(e, donor);
+          if (donor && donor !== card && op.names.includes(donor.name.replace(/ δ$/, ""))) copyAttacks(e, donor);
         }
         break;
       case "waveBindingAura":
@@ -20477,7 +20477,7 @@ var TCGRules = (() => {
         if (op.minimumCounters && list.damage < op.minimumCounters * 10 || op.maxDamage !== void 0 && e.damage > op.maxDamage) break;
         if (op.status && !list.specialConditions.includes(SpecialCondition[op.status]) || op.tool && !list.tools.length) break;
         if (op.inPlayName && !state.players.flatMap((p) => [p.active, ...p.bench]).some((l) => l.getPokemonCard()?.name === op.inPlayName)) break;
-        if (op.ownerName && !/[â€™']s /.test(e.source.getPokemonCard()?.name)) break;
+        if (op.ownerName && !/[’']s /.test(e.source.getPokemonCard()?.name)) break;
         if (op.evolved && !list.isEvolved() || op.sourceSpecialEnergy && ![...e.source.cards, ...e.source.energies.cards].some((c) => c.superType === 3 /* ENERGY */ && c.energyType === 1 /* SPECIAL */)) break;
         if (e.attackEffect?.wotcBypassDefender || op.opponent && e.player === owner || op.evolvedSource && !e.source.isEvolved() || op.sourceEx && !e.source.getPokemonCard()?.tags.includes("ex" /* POKEMON_ex */) || op.stadium && StateUtils.getStadiumCard(state)?.name !== op.stadium || op.opponentHandAtLeast && opponent.hand.cards.length < op.opponentHandAtLeast) break;
         if (op.types) {
@@ -21204,10 +21204,10 @@ var TCGRules = (() => {
   function assertActivatedPowerNotLocked(store, state, player, card, power) {
     if (card._wotcRevealAction) return;
     if (state.rules.dpEraRules && power.powerType === 1 /* POKEPOWER */) {
-      const list = StateUtils.findPokemonSlot(state, card), text = power.text.replace(/[â€™â€˜]/g, "'");
+      const list = StateUtils.findPokemonSlot(state, card), text = power.text.replace(/[’‘]/g, "'");
       if (list?.specialConditions.length && /can't be used if .+ affected by a Special Condition/i.test(text)) throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
       const normalize = (value) => value.replace(/[^a-z0-9]/gi, "").toLowerCase();
-      let match = text.match(/if (.+?) is your Active PokÃ©mon/i);
+      let match = text.match(/if (.+?) is your Active Pokémon/i);
       if (match && normalize(match[1]) === normalize(card.name) && list !== player.active) throw new GameError(GameMessage.CANNOT_USE_POWER);
       match = text.match(/if (.+?) is on your Bench/i);
       if (match && normalize(match[1]) === normalize(card.name) && !player.bench.includes(list)) throw new GameError(GameMessage.CANNOT_USE_POWER);
@@ -26434,7 +26434,7 @@ var TCGRules = (() => {
     const extraCost = StateUtils.getStadiumCard(state)?._wotcRemovalSurcharge && ["Energy Removal", "Super Energy Removal"].includes(trainer.name) && !state.players.some((p) => p.stadiumAndToolHaveNoEffectTurnsRemaining > 0) ? 2 : 0;
     const amount = (handCost ? /^(?:a|an)$/.test(handCost[1]) ? 1 : Number(handCost[1]) : 0) + extraCost;
     const energyCost = () => {
-      if (!/^Discard 1 Energy card attached to 1 of your (?:own )?PokÃ©mon in order/i.test(trainer.text)) return attempt();
+      if (!/^Discard 1 Energy card attached to 1 of your (?:own )?Pokémon in order/i.test(trainer.text)) return attempt();
       const slots2 = [player.active, ...player.bench].filter((l) => l.cards.some((c) => c.superType === 3 /* ENERGY */) && (trainer.name !== "Super Potion" || l.damage > 0));
       if (!slots2.length) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
       return store.prompt(state, new ChoosePokemonPrompt(player.id, GameMessage.CHOOSE_POKEMON_TO_DISCARD_CARDS, 2 /* BOTTOM_PLAYER */, [1 /* ACTIVE */, 2 /* BENCH */], { allowCancel: false, blocked: player.bench.map((l, index2) => ({ l, index: index2 })).filter((s) => !slots2.includes(s.l)).map((s) => ({ player: 2 /* BOTTOM_PLAYER */, slot: 2 /* BENCH */, index: s.index })).concat(slots2.includes(player.active) ? [] : [{ player: 2 /* BOTTOM_PLAYER */, slot: 1 /* ACTIVE */, index: 0 }]) }), (selected) => {
@@ -30218,7 +30218,7 @@ var TCGRules = (() => {
         }
       ];
     }
-    // public text = 'Play Clefairy Doll as if it were a Basic PokÃ©mon. While in play, Clefairy Doll counts a a PokÃ©mon (instead of a Trainer card). Clefairy Doll has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn\'t count as a Knocked Out PokÃ©mon.';
+    // public text = 'Play Clefairy Doll as if it were a Basic Pokémon. While in play, Clefairy Doll counts a a Pokémon (instead of a Trainer card). Clefairy Doll has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Clefairy Doll is Knocked Out, it doesn\'t count as a Knocked Out Pokémon.';
     reduceEffect(store, state, effect) {
       if (effect instanceof AddSpecialConditionsEffect && effect.target.getPokemonCard() === this) {
         effect.preventDefault = true;
@@ -37031,7 +37031,7 @@ var TCGRules = (() => {
       ];
     }
     // public text =
-    //   'Play Mysterious Fossil as if it were a Basic PokÃ©mon. While in play, Mysterious Fossil counts as a PokÃ©mon (instead of a Trainer card). Mysterious Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Mysterious Fossil is Knocked Out, it doesn\'t count as a Knocked Out PokÃ©mon. (Discard it anyway.)';
+    //   'Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Pokémon (instead of a Trainer card). Mysterious Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Mysterious Fossil is Knocked Out, it doesn\'t count as a Knocked Out Pokémon. (Discard it anyway.)';
     reduceEffect(store, state, effect) {
       if (WAS_POWER_USED(effect, 0, this)) {
         const cardList = StateUtils.findCardList(state, this);
@@ -56061,7 +56061,7 @@ If this card is discarded from play, put it into your hand instead of the discar
       ];
     }
     // public text =
-    //   'Play Root Fossil as if it were a Basic PokÃ©mon. While in play, Root Fossil counts as a PokÃ©mon (instead of a Trainer card). Root Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Root Fossil is Knocked Out, it doesn\'t count as a Knocked Out PokÃ©mon. (Discard it anyway.)';
+    //   'Play Root Fossil as if it were a Basic Pokémon. While in play, Root Fossil counts as a Pokémon (instead of a Trainer card). Root Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Root Fossil is Knocked Out, it doesn\'t count as a Knocked Out Pokémon. (Discard it anyway.)';
     reduceEffect(store, state, effect) {
       if (effect instanceof PowerEffect && effect.card === this && effect.power === this.powers[0]) {
         const list = StateUtils.findCardList(state, this), owner = StateUtils.findOwner(state, list);
@@ -56678,7 +56678,7 @@ If this card is discarded from play, put it into your hand instead of the discar
       ];
     }
     // public text =
-    //   'Play Claw Fossil as if it were a Basic PokÃ©mon. While in play, Claw Fossil counts as a PokÃ©mon (instead of a Trainer card). Claw Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Claw Fossil is Knocked Out, it doesn\'t count as a Knocked Out PokÃ©mon. (Discard it anyway.)';
+    //   'Play Claw Fossil as if it were a Basic Pokémon. While in play, Claw Fossil counts as a Pokémon (instead of a Trainer card). Claw Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Claw Fossil is Knocked Out, it doesn\'t count as a Knocked Out Pokémon. (Discard it anyway.)';
     reduceEffect(store, state, effect) {
       if (WAS_POWER_USED(effect, 0, this)) {
         const cardList = effect.player.active;
@@ -83430,7 +83430,7 @@ Move 1 Energy card attached to the Defending Pok\xE9mon to another of your oppon
       ];
     }
     // public text =
-    //   'Play Mysterious Fossil as if it were a Basic PokÃ©mon. While in play, Mysterious Fossil counts as a PokÃ©mon (instead of a Trainer card). Mysterious Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Mysterious Fossil is Knocked Out, it doesn\'t count as a Knocked Out PokÃ©mon. (Discard it anyway.)';
+    //   'Play Mysterious Fossil as if it were a Basic Pokémon. While in play, Mysterious Fossil counts as a Pokémon (instead of a Trainer card). Mysterious Fossil has no attacks, can\'t retreat, and can\'t be Asleep, Confused, Paralyzed, or Poisoned. If Mysterious Fossil is Knocked Out, it doesn\'t count as a Knocked Out Pokémon. (Discard it anyway.)';
     reduceEffect(store, state, effect) {
       if (WAS_POWER_USED(effect, 0, this)) {
         const cardList = effect.player.active;
@@ -188426,7 +188426,7 @@ This card can't retreat. If this card is Knocked Out, your opponent can't take a
         }
       ];
     }
-    // public text = 'Play this card as if it were a 30 HP [C] Basic PokÃ©mon. At any time during your turn (before your attack), you may discard this card from play. This card can\'t retreat. If this card is Knocked Out, your opponent can\'t take any Prize cards for it.';
+    // public text = 'Play this card as if it were a 30 HP [C] Basic Pokémon. At any time during your turn (before your attack), you may discard this card from play. This card can\'t retreat. If this card is Knocked Out, your opponent can\'t take any Prize cards for it.';
     reduceEffect(store, state, effect) {
       if (WAS_POWER_USED(effect, 0, this)) {
         const cardList = StateUtils.findCardList(state, this);
@@ -277704,7 +277704,7 @@ This card can't retreat. If this card is Knocked Out, your opponent can't take a
       ];
     }
     // public text =
-    //   'Play this card as if it were a 30-HP [C] Basic PokÃ©mon. At any time during your turn (before your attack), if this PokÃ©mon is your Active PokÃ©mon, you may discard all cards from it and put it on the bottom of your deck.' +
+    //   'Play this card as if it were a 30-HP [C] Basic Pokémon. At any time during your turn (before your attack), if this Pokémon is your Active Pokémon, you may discard all cards from it and put it on the bottom of your deck.' +
     //   '' +
     //   'This card can\'t retreat. If this card is Knocked Out, your opponent can\'t take any Prize cards for it.';
     reduceEffect(store, state, effect) {
@@ -278637,7 +278637,7 @@ This card can't retreat.`,
       ];
     }
     // public text =
-    //   'Play this card as if it were a 60-HP [C] Basic PokÃ©mon.' +
+    //   'Play this card as if it were a 60-HP [C] Basic Pokémon.' +
     //   '' +
     //   'This card can\'t retreat.';
     reduceEffect(store, state, effect) {
@@ -355324,7 +355324,7 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
       this.name = "Hypno";
       this.fullName = "Hypno UNB";
     }
-    // TODO: Hypnotic Pendulum ability - "When your opponent's Active PokÃ©mon is Knocked Out, flip a coin. If heads, choose which of your opponent's Benched PokÃ©mon becomes their new Active PokÃ©mon."
+    // TODO: Hypnotic Pendulum ability - "When your opponent's Active Pokémon is Knocked Out, flip a coin. If heads, choose which of your opponent's Benched Pokémon becomes their new Active Pokémon."
     // This requires intercepting the post-KO active promotion system which is not straightforward with current engine facilities.
     reduceEffect(store, state, effect) {
       if (WAS_ATTACK_USED(effect, 0, this)) {
@@ -400236,7 +400236,7 @@ As long as this card is attached to a Pok\xE9mon, it provides [F] and [D] Energy
     // TODO: The "if any coin flip during an attack is tails, draw 3 at end of turn" mechanic requires
     // intercepting CoinFlipPrompt results during another card's attack, which is not currently
     // implementable without engine changes. The engine dispatches CoinFlipPrompt results directly
-    // to the attacking card's callback â€” there is no intermediary CoinFlipEffect dispatched via
+    // to the attacking card's callback — there is no intermediary CoinFlipEffect dispatched via
     // store.reduceEffect() that this tool could intercept.
     // See also: set-phantom-forces/trick-coin.ts (same limitation noted there)
     reduceEffect(store, state, effect) {
@@ -430926,7 +430926,7 @@ This card can't be affected by any Special Conditions, and it can't retreat.`,
       ];
     }
     // public text =
-    //   'Play this card as if it were a 70-HP Basic [C] PokÃ©mon. At any time during your turn, you may discard this card from play. This card can\'t be affected by any Special Conditions, and it can\'t retreat.';
+    //   'Play this card as if it were a 70-HP Basic [C] Pokémon. At any time during your turn, you may discard this card from play. This card can\'t be affected by any Special Conditions, and it can\'t retreat.';
     reduceEffect(store, state, effect) {
       if (effect instanceof AddSpecialConditionsEffect && effect.target.getPokemonCard() === this) {
         effect.preventDefault = true;
@@ -434416,7 +434416,7 @@ When you attach this card from your hand to a Pok\xE9mon, search your deck for a
       this.hp = 330;
       this.weakness = [{ type: F }];
       this.retreat = [C, C, C];
-      // Rubbish Collecting: This PokÃ©mon may have up to 2 PokÃ©mon Tools attached to it.
+      // Rubbish Collecting: This Pokémon may have up to 2 Pokémon Tools attached to it.
       // Setting maxTools = 2 allows the system to accept the second tool attachment.
       // Ref: set-evolving-skies/play-trainer-effect.ts (tools.length >= pokemonCard.maxTools check)
       this.maxTools = 2;
@@ -638747,7 +638747,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
   init_check_effects();
   init_state();
   function exWaveTool(card, op, store, state, e) {
-    const legal = (list2) => !!list2.getPokemonCard() && (!op.evolved || list2.isEvolved()) && (!op.excludeEx || !list2.getPokemonCard().tags.includes("ex" /* POKEMON_ex */)) && (!op.excludeDarkOwner || !/Dark|[â€™']s /.test(list2.getPokemonCard().name));
+    const legal = (list2) => !!list2.getPokemonCard() && (!op.evolved || list2.isEvolved()) && (!op.excludeEx || !list2.getPokemonCard().tags.includes("ex" /* POKEMON_ex */)) && (!op.excludeDarkOwner || !/Dark|[’']s /.test(list2.getPokemonCard().name));
     if (e instanceof AttachPokemonToolEffect && e.trainerCard === card && !legal(e.target)) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
     if (!(e instanceof CheckTableStateEffect || e instanceof CheckPokemonStatsEffect || e instanceof KnockOutEffect || e.type === "EX_CHECKUP_COMPLETE_EFFECT")) return state;
     let owner, list;
@@ -643095,7 +643095,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
         break;
       case "exDoubleBattleOnly":
         break;
-      // This engine supports one Active PokÃ©mon per player.
+      // This engine supports one Active Pokémon per player.
       case "exDrawNamed":
         DRAW_CARDS(store, state, p, [p.active, ...p.bench].some((l) => l.getPokemonCard()?.name === op.name) ? op.amount : 1);
         break;
@@ -643397,7 +643397,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
     const card = original ? new original.constructor() : d.supertype === "Energy" ? new EnergyCard() : d.supertype === "Trainer" ? new TrainerCard() : new PokemonCard();
     addCopySupport(card, record);
     const bwPrinting = bwData.includes(record) || xyData.includes(record) || smData.includes(record) || swshData.includes(record) || svEraCandidateData.includes(record), hgssPrinting = hgssData.includes(record), dpPrinting = dpData.includes(record) || hgssPrinting || bwPrinting, exPrinting = exData.includes(record) || dpPrinting;
-    card.name = exPrinting ? d.name.replace(/\s*Î´\s*$/, "") : d.name;
+    card.name = exPrinting ? d.name.replace(/\s*δ\s*$/, "") : d.name;
     card.fullName = (exPrinting ? "ILEX EX " : "ILEX WOTC ") + d.id;
     card.set = codes[d.set.id];
     card.setNumber = d.number;
@@ -643575,7 +643575,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
           if (tool.kind.startsWith("dp")) return dpTool(this, tool.kind.slice(2), store, state, e);
           if (tool.kind.startsWith("finish")) return finishTool(this, tool, store, state, e);
           if (["exOrb", "exCurse", "exSitrus"].includes(tool.kind)) return exWaveTool(this, tool, store, state, e);
-          if (tool.excludeExOwner && e instanceof AttachPokemonToolEffect && e.trainerCard === this && (e.target.getPokemonCard()?.tags.includes("ex" /* POKEMON_ex */) || /[â€™']s /.test(e.target.getPokemonCard()?.name))) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
+          if (tool.excludeExOwner && e instanceof AttachPokemonToolEffect && e.trainerCard === this && (e.target.getPokemonCard()?.tags.includes("ex" /* POKEMON_ex */) || /[’']s /.test(e.target.getPokemonCard()?.name))) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
           if (tool.kind === "exStrengthCharm") {
             if (!(e instanceof ApplyWeaknessEffect || e instanceof UseAttackEffect || e instanceof EndTurnEffect)) return state;
             let owner2, list2;
@@ -643704,7 +643704,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
               if (!s.list.getPokemonCard()) return false;
               const type = new CheckPokemonTypeEffect(s.list);
               store.reduceEffect(state, type);
-              const allowed = (!machine.spOnly || s.list.getPokemonCard().tags.includes("SP" /* POKEMON_SP */)) && (!machine.evolved || (machine.excludeExOwner ? s.list.isEvolved() : s.list.getPokemonCard().stage !== 2 /* BASIC */)) && (!machine.excludeExOwner || !s.list.getPokemonCard().tags.includes("ex" /* POKEMON_ex */) && !/[â€™']s /.test(s.list.getPokemonCard().name)) && (machine.anyType || (machine.energies || [machine.energy]).some((energy2) => type.cardTypes.includes(types9[energy2])));
+              const allowed = (!machine.spOnly || s.list.getPokemonCard().tags.includes("SP" /* POKEMON_SP */)) && (!machine.evolved || (machine.excludeExOwner ? s.list.isEvolved() : s.list.getPokemonCard().stage !== 2 /* BASIC */)) && (!machine.excludeExOwner || !s.list.getPokemonCard().tags.includes("ex" /* POKEMON_ex */) && !/[’']s /.test(s.list.getPokemonCard().name)) && (machine.anyType || (machine.energies || [machine.energy]).some((energy2) => type.cardTypes.includes(types9[energy2])));
               const check = new CheckTechnicalMachineAttachmentEffect(e.player, s.list, this, allowed);
               store.reduceEffect(state, check);
               return check.allowed;

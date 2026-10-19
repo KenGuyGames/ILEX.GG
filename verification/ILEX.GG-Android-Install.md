@@ -1,6 +1,6 @@
 # Install ILEX.GG on Android
 
-Version **1.17.0-android.25** includes the complete Scarlet & Violet era, with interactions scoped to Black & White onward. Unlimited remains deferred.
+Version **1.17.0-android.26** includes the complete Scarlet & Violet era, with interactions scoped to Black & White onward. Unlimited remains deferred.
 
 Update: install this APK over your existing ILEX.GG app to keep its workspace and cached images. No uninstall is needed.
 

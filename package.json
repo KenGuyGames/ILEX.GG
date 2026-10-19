@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
-    "build:rules": "node work/desktop-build/build-rules.cjs && node work/desktop-build/release-engine-encoding.cjs",
+    "build:rules": "node work/desktop-build/build-rules.cjs",
     "test:rules": "node work/desktop-build/wotc-tests.cjs --focused",
     "test:ex": "node work/desktop-build/ex-tests.cjs --focused",
     "test:dp": "node work/desktop-build/dp-tests.cjs",
