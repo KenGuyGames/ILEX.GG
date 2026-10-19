@@ -1,0 +1,79 @@
+name: Sync verified ILEX.GG 1.19.0 source
+on:
+  push:
+    paths:
+      - .github/workflows/finalize-stable-source.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify and unpack source
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib, json, subprocess
+          root = Path.cwd().resolve()
+          archives = {
+            "ILEX.GG-source-1.19.0-docs-part1.zip": "b3401837a9558d401e4f6562dcc83450c9794b5cb71b62607c2ca449da92e2e0",
+          }
+          for name, expected in archives.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+              with ZipFile(name) as archive:
+                  for member in archive.infolist():
+                      target = (root / member.filename).resolve()
+                      assert target.is_relative_to(root) and ".git" not in target.relative_to(root).parts
+                  archive.extractall(root)
+          manifest = json.loads(Path("verification/source-manifest-1.19.0.json").read_text())
+          files = manifest["files"]
+          managed = ("work/mega-source/", "work/desktop/", "work/desktop-build/", "work/android-build/", "docs/screenshots/", "work/rules-research/twinleafgg-main/ptcg-server/", "work/card-sources/pokemon-tcg-data-master/")
+          for name in subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0"):
+              if name and name.startswith(managed) and name not in files:
+                  Path(name).unlink(missing_ok=True)
+          for name in Path("work/rules-research").glob("wotc-pending-*.txt"):
+              if name.as_posix() not in files:
+                  name.unlink()
+          for name, expected in files.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+          assert json.loads(Path("work/desktop/package.json").read_text())["version"] == "1.19.0"
+          for era, count in [("wotc",1793),("ex",1857),("dp",1558),("hgss",605),("bw",1521),("xy",2208),("sm",3069),("swsh",3715),("sv",3694),("mega",1293)]:
+              c = json.loads(Path(f"work/desktop/ui/{era}-coverage.json").read_text())
+              assert c["available"] == count and c["pending"] == 0
+          print(f"Verified {len(files)} source files against the release snapshot.")
+      - name: Install locked build tools
+        run: npm ci --prefix work/desktop-build
+      - name: Rebuild release rules engine
+        run: npm run build:rules
+      - name: Verify rebuilt engine and source
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib, json
+          m = json.loads(Path("verification/source-manifest-1.19.0.json").read_text())
+          for name, expected in m["files"].items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+          print("Rebuilt engine and all source files match verified ILEX.GG 1.19.0.")
+      - name: Commit synchronized source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git rm --ignore-unmatch ILEX.GG-source.zip ILEX.GG-source-1.19.0-*.zip
+          git rm .github/workflows/finalize-stable-source.yml
+          git add -A
+          git commit -m "Finalize stable 1.19.0 Android source documentation and verifier defaults"
+          git push origin HEAD:main
+
+          git fetch origin tag v1.19.0-build-2026-10-19
+          test "$(git rev-parse v1.19.0-build-2026-10-19)" = "f5015d93937b7c673156ba69f45c815ca5bc519d"
+          git tag -f v1.19.0-build-2026-10-19
+          git push --force origin refs/tags/v1.19.0-build-2026-10-19
+
+
+
+
+
+
