@@ -28,6 +28,18 @@ jobs:
       - name: README npm install
         working-directory: ${{ runner.temp }}/source
         run: npm install
+      - name: Seed verified artwork only for isolated native fixtures
+        shell: pwsh
+        run: |
+          $target = "$env:RUNNER_TEMP/runtime-smoke/profile/card-cache"
+          Expand-Archive "$env:RUNNER_TEMP/source/verification/native-artwork.zip" $target
+          $manifest = Get-Content "$env:RUNNER_TEMP/source/verification/native-artwork.json" -Raw | ConvertFrom-Json -AsHashtable
+          foreach ($name in $manifest.Keys) {
+            $file = Join-Path $target $name
+            if ((Get-Item $file).Length -ne $manifest[$name].bytes) { throw "Fixture size mismatch: $name" }
+            if ((Get-FileHash $file -Algorithm SHA256).Hash.ToLower() -ne $manifest[$name].sha256) { throw "Fixture hash mismatch: $name" }
+          }
+          Write-Output "Verified $($manifest.Count) cached artwork fixtures; earlier normal startup remains unseeded."
       - name: Write isolated runtime smoke test
         shell: pwsh
         run: |
