@@ -19,6 +19,7 @@ jobs:
           root = Path.cwd().resolve()
           archives = {
             "ILEX.GG-source-1.19.0-promo-part1.zip": "91359a2633018e946016cf067f79b282d478710c6dd28eead6bc52b4b35ef245",
+            "ILEX.GG-source-1.19.0-cache-part2.zip": "c953cff46da0b121e898ef17c182e2c66db30fbd8969e2230483962d7abd095c",
           }
           for name, expected in archives.items():
               assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
@@ -63,6 +64,7 @@ jobs:
           git config core.autocrlf false
           git rm --ignore-unmatch ILEX.GG-source.zip ILEX.GG-source-1.19.0-*.zip
           git rm .github/workflows/finalize-stable-promo.yml
+          git add -f verification/native-artwork.zip
           git add -A
           git commit -m "Use bundled original promo artwork with verified offline lookup"
           git push origin HEAD:main
