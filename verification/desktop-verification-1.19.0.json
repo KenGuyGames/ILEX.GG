@@ -57,5 +57,13 @@
     "All recorded release audit engine hashes match the final build.",
     "Announced MEP102\u2013110 preserve future release dates; Classic Collection does not imply tournament legality.",
     "Real two-PC multiplayer and physical Android acceptance remain unverified."
-  ]
+  ],
+  "publicationCacheRepair": {
+    "moduleSha256": "2d316674bfeb75a9d541a28051926abc91002fce44a52cc07b8eea32c6a05251",
+    "change": "Accept sourceUrl or url manifest entries and exact mcdn.pokemon.com HTTPS host; existing hashes/size verification retained",
+    "engineUnchanged": true,
+    "androidUnchanged": true,
+    "cacheTests": "pass including alias, official host and lookalike-host rejection",
+    "windowsZipSha256": "06cfc8444a4af5f513080f3295e443d649b3d24739a3ee518dbec382d52189ff"
+  }
 }

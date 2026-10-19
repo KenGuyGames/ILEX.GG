@@ -14,8 +14,8 @@ class CardCache {
   async resolve(name){if(!this.validName(name))throw Error('Unknown card image');const local=await this.local(name);if(local)return local;
     if(this.pending.has(name))return this.pending.get(name);
     const job=(async()=>{await new Promise(resolve=>{this.queue.push(resolve);this.pump()});try{
-      const e=this.entries.get(name),url=new URL(e.sourceUrl);
-      if(url.protocol!=='https:'||!['assets.tcgdex.net','pkmncards.com','images.pokemontcg.io','cdn.malie.io','img.tcgscreener.com','limitlesstcg.nyc3.cdn.digitaloceanspaces.com','product-images.tcgplayer.com','static.dextcg.com','www.pokebeach.com'].includes(url.hostname))throw Error('Unsupported image source');
+      const e=this.entries.get(name),url=new URL(e.sourceUrl||e.url);
+      if(url.protocol!=='https:'||!['assets.tcgdex.net','pkmncards.com','images.pokemontcg.io','cdn.malie.io','img.tcgscreener.com','limitlesstcg.nyc3.cdn.digitaloceanspaces.com','product-images.tcgplayer.com','static.dextcg.com','www.pokebeach.com','mcdn.pokemon.com'].includes(url.hostname))throw Error('Unsupported image source');
       const response=await this.fetch(url.href,{signal:AbortSignal.timeout(30000)});
       if(!response.ok)throw Error('Image server returned '+response.status);
       const chunks=[];let size=0;for await(const chunk of response.body){size+=chunk.length;if(size>e.bytes)throw Error('Image size changed');chunks.push(Buffer.from(chunk))}

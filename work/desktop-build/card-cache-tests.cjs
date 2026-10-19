@@ -10,6 +10,13 @@ const Cache=require('../desktop/card-cache.cjs');
  const offline=new Cache({manifest:{test:entry},directory:path.join(root,'cache'),fetch:async()=>{throw Error('offline')}});await offline.resolve(name);
  const bad=new Cache({manifest:{test:entry},directory:path.join(root,'bad'),fetch:async()=>new Response('bad')});await assert.rejects(bad.resolve(name));await assert.rejects(fs.access(path.join(root,'bad',name)));
  const forbidden=new Cache({manifest:{test:{...entry,sourceUrl:'https://example.com/image'}},directory:path.join(root,'forbidden'),fetch:async()=>{throw Error('should not fetch')}});await assert.rejects(forbidden.resolve(name),/Unsupported/);
+ for(const url of ['https://mcdn.pokemon.com/image/upload/promo.png','https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/promo.png']){
+  const promo={...entry,url};delete promo.sourceUrl;let fetched;
+  const official=new Cache({manifest:{test:promo},directory:path.join(root,'promo-'+crypto.createHash('sha256').update(url).digest('hex')),fetch:async u=>{fetched=u;return new Response(bytes)}});
+  await official.resolve(name);assert.equal(fetched,url);
+ }
+ const hostile={...entry,url:'https://mcdn.pokemon.com.evil.example/promo.png'};delete hostile.sourceUrl;
+ const rejected=new Cache({manifest:{test:hostile},directory:path.join(root,'hostile'),fetch:async()=>{throw Error('should not fetch')}});await assert.rejects(rejected.resolve(name),/Unsupported/);
  const restart=new Cache({manifest:{test:entry},directory:path.join(root,'cache'),fetch:async()=>{throw Error('offline')}});await restart.resolve(name);
  await new Promise(resolve=>{restart.notify=s=>{if(!s.running)resolve()};restart.start()});assert.equal(restart.status().failed,0);assert.equal(restart.status().checked,1);
  const many={};for(let i=0;i<12;i++){const n=i.toString(16).padStart(24,'0')+'.webp';many[i]={...entry,file:'scans/'+n}}

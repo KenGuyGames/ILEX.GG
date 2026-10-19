@@ -6,7 +6,7 @@ Pokémon TCG simulator for **Windows and Android**, with historical rules automa
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Windows.zip) — about 336 MiB | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Windows.zip) — about 312 MiB | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
 | Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Android.apk) — about 135 MiB | Android 8+ with current WebView; 1.19.0-android.27 / versionCode 27 |
 
 Windows includes its runtime. Android keeps the original signing certificate: install over the previous app to retain workspace/cache; export first if needed and do not uninstall. Physical Android device/emulator acceptance remains pending. This is a direct APK release.
@@ -28,6 +28,7 @@ The stable Windows app retains the **Private multiplayer beta**: invite/response
 - **Complete Mega era through 30th Celebration: 1,293/1,293 standard-game printings, zero pending across ten catalogs.** MEE 16, Mega Evolution 188, MEP 110, Phantasmal Flames 130, Ascended Heroes 295, Perfect Order 124, Chaos Rising 122, Pitch Black 120, 30th 158 and Classic Collection 30.
 - **MEP102–110 are nine officially announced anniversary previews**, with future release dates retained. Museum remains collection-only and unconfirmed RGB Mew cache rows are excluded. Classic Collection's historical mechanics do not establish tournament legality.
 - Added modern Mega stage/Prize identities and reviewed Basic Energy names, physical attachment movement, damage/Weakness timing, reactive KO transfers/coins, optional Prize choices, Tool capacity/cleanup, Power Saver's condition, Gwynn's one-card discard, actual Antique Fossil identities, Waitress's selected Basic Energy and modern Antique setup restrictions.
+- Fixed on-demand Windows downloads for the 22 new promos, including the official Pokémon image host; byte/hash verification and the source allowlist remain enforced.
 - **22 additional exact scans**, bringing regular scan records to 23,860; 209 verified finish-specific images retained. Reverse-scan acquisition is still incomplete.
 - **Android 1.19.0-android.27** includes the current Mega engine, updated mobile UI, 439 bundled startup/demo scans, original signing certificate and preserved workspace/cache.
 - All earlier WOTC/EX/DP/HGSS/BW/XY/SM/SWSH/SV coverage, corrected UTF-8 comparisons, Psychic Embrace/Evosoda repairs, bots, packs, music, UI, saved formats and image caching remain available.
