@@ -59,11 +59,12 @@
     "Real two-PC multiplayer and physical Android acceptance remain unverified."
   ],
   "publicationCacheRepair": {
-    "moduleSha256": "2d316674bfeb75a9d541a28051926abc91002fce44a52cc07b8eea32c6a05251",
+    "moduleSha256": "67a352330e99d04aeb83f04b60563bc7e5b1dc6fa97dc554384ba0ba8ae0b778",
     "change": "Accept sourceUrl or url manifest entries and exact mcdn.pokemon.com HTTPS host; existing hashes/size verification retained",
     "engineUnchanged": true,
     "androidUnchanged": true,
-    "cacheTests": "pass including alias, official host and lookalike-host rejection",
-    "windowsZipSha256": "06cfc8444a4af5f513080f3295e443d649b3d24739a3ee518dbec382d52189ff"
+    "cacheTests": "pass: all 22 original promos resolve offline; URL alias, official host, lookalike-host rejection and existing cache suite",
+    "windowsZipSha256": "34afb2ce13ec2486bab0c7f547b965778fcc47bbdf5714361616a4087edf4119",
+    "bundledOriginalPromos": 22
   }
 }

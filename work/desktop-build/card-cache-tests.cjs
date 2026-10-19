@@ -17,6 +17,9 @@ const Cache=require('../desktop/card-cache.cjs');
  }
  const hostile={...entry,url:'https://mcdn.pokemon.com.evil.example/promo.png'};delete hostile.sourceUrl;
  const rejected=new Cache({manifest:{test:hostile},directory:path.join(root,'hostile'),fetch:async()=>{throw Error('should not fetch')}});await assert.rejects(rejected.resolve(name),/Unsupported/);
+ const promoManifest=JSON.parse(await fs.readFile(path.join(__dirname,'../desktop/ui/scan-manifest.json'),'utf8'));
+ const bundledPromos=new Cache({manifest:promoManifest,directory:path.join(root,'bundled-promos'),fetch:async()=>{throw Error('Bundled original promo should not fetch')}});
+ for(let i=89;i<=110;i++){const e=promoManifest['mep-'+String(i).padStart(3,'0')];const file=await bundledPromos.resolve(path.basename(e.file));assert.equal(crypto.createHash('sha256').update(await fs.readFile(file)).digest('hex'),e.sha256)}
  const restart=new Cache({manifest:{test:entry},directory:path.join(root,'cache'),fetch:async()=>{throw Error('offline')}});await restart.resolve(name);
  await new Promise(resolve=>{restart.notify=s=>{if(!s.running)resolve()};restart.start()});assert.equal(restart.status().failed,0);assert.equal(restart.status().checked,1);
  const many={};for(let i=0;i<12;i++){const n=i.toString(16).padStart(24,'0')+'.webp';many[i]={...entry,file:'scans/'+n}}

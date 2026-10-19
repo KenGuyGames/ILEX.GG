@@ -10,7 +10,8 @@ class CardCache {
   }
   validName(name){return /^[a-f0-9]{24}\.(webp|jpg|png)$/.test(name)&&this.entries.has(name)}
   async valid(file,e){try{const b=await fs.readFile(file);return b.length===e.bytes&&createHash('sha256').update(b).digest('hex')===e.sha256}catch{return false}}
-  async local(name){if(!this.validName(name))throw Error('Unknown card image');const e=this.entries.get(name);for(const root of [this.directory,this.bundled]){if(root&&await this.valid(path.join(root,name),e))return path.join(root,name)}return null}
+  async local(name){if(!this.validName(name))throw Error('Unknown card image');const e=this.entries.get(name);for(const root of [this.directory,this.bundled]){if(root&&await this.valid(path.join(root,name),e))return path.join(root,name)}
+    const promo=require('./promo-scan-files.json')[name];if(promo&&path.basename(promo)===promo){const file=path.join(__dirname,'card-effect-sources/mega-official-promos',promo);if(await this.valid(file,e))return file}return null}
   async resolve(name){if(!this.validName(name))throw Error('Unknown card image');const local=await this.local(name);if(local)return local;
     if(this.pending.has(name))return this.pending.get(name);
     const job=(async()=>{await new Promise(resolve=>{this.queue.push(resolve);this.pump()});try{
