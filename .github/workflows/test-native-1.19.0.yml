@@ -1,0 +1,92 @@
+name: Diagnose stable 1.19.0 native checks
+on:
+  push:
+    paths:
+      - .github/workflows/test-native-1.19.0.yml
+permissions:
+  contents: read
+jobs:
+  readme:
+    runs-on: windows-2025
+    timeout-minutes: 15
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Fresh source ZIP from the release
+        shell: pwsh
+        run: |
+          Invoke-WebRequest 'https://github.com/KenGuyGames/ILEX.GG/archive/refs/tags/v1.19.0-build-2026-10-19.zip' -OutFile "$env:RUNNER_TEMP/source.zip"
+          Expand-Archive "$env:RUNNER_TEMP/source.zip" "$env:RUNNER_TEMP/extracted"
+          $download = Get-ChildItem "$env:RUNNER_TEMP/extracted" -Directory | Select-Object -First 1
+          Move-Item -LiteralPath $download.FullName -Destination "$env:RUNNER_TEMP/source"
+          node --version
+          npm --version
+          if (Test-Path "$env:RUNNER_TEMP/source/node_modules") { throw 'Download contains dependencies' }
+          if (Test-Path "$env:RUNNER_TEMP/source/outputs/Pokemon-TCG-Lab/scans") { throw 'Download contains scans' }
+          if (Test-Path "$env:APPDATA/TCG Lab") { throw 'Test profile is not fresh' }
+      - name: README npm install
+        working-directory: ${{ runner.temp }}/source
+        run: npm install
+      - name: Write isolated runtime smoke test
+        shell: pwsh
+        run: |
+          @'
+          const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+          const source=path.join(__dirname,'source/work/desktop'),report=path.join(__dirname,'runtime-smoke');fs.mkdirSync(report,{recursive:true});
+          process.argv.push('--self-test',report);
+          const self=path.join(source,'self-test.cjs');
+          require.cache[self]={id:self,filename:self,loaded:true,exports:async(win)=>{
+           const ev=async s=>{const r=await win.webContents.executeJavaScript('(async()=>{try{return await (0,eval)('+JSON.stringify(s)+')}catch(e){return {__nativeError:true,message:e?.message,name:e?.name,stack:e?.stack,text:String(e)}}})()',true);if(r?.__nativeError)throw Error(JSON.stringify(r));return r;}; const delay=ms=>new Promise(r=>setTimeout(r,ms));
+           const errors=[];win.webContents.on('console-message',(_e,_l,message)=>{if(/Uncaught|ReferenceError|TypeError/.test(message||''))errors.push(message)});
+           for(let i=0;i<300;i++){if(await ev("typeof rulesReady!=='undefined'&&rulesReady&&cards.length>23000"))break;await delay(100)}
+           const status=await ev(`(async()=>({ready:rulesReady,cards:cards.length,title:document.title,version:'1.19.0',wotc:await fetch('wotc-coverage.json').then(r=>r.json()),ex:await fetch('ex-coverage.json').then(r=>r.json()),dp:await fetch('dp-coverage.json').then(r=>r.json()),hgss:await fetch('hgss-coverage.json').then(r=>r.json()),bw:await fetch('bw-coverage.json').then(r=>r.json()),xy:await fetch('xy-coverage.json').then(r=>r.json()),sm:await fetch('sm-coverage.json').then(r=>r.json())}))()`);
+           assert(status.ready);for(const [era,n] of [['swsh',3715],['sv',3694],['mega',1293]]){const c=await ev(`fetch('${era}-coverage.json').then(r=>r.json())`);assert.equal(c.available,n);assert.equal(c.pending,0);}assert.equal(status.wotc.available,1793);assert.equal(status.ex.available,1857);assert.equal(status.ex.pending,0);assert.equal(status.dp.available,1558);assert.equal(status.dp.pending,0);assert.equal(status.hgss.available,605);assert.equal(status.hgss.pending,0);assert.equal(status.bw.available,1521);assert.equal(status.bw.pending,0);assert.equal(status.xy.available,2208);assert.equal(status.xy.pending,0);assert.equal(status.sm.available,3069);assert.equal(status.sm.pending,0);
+           const home=await ev(`({tab,prime:document.querySelector('#menu-celebi').dataset.cardId,count:document.querySelectorAll('nav button').length})`);assert.equal(home.tab,'home');assert.equal(home.prime,'hgss4-92');assert(home.count>=6);
+           const screens=[];
+           for(const tab of ['library','decks','play','formats','custom','packs']){
+             const text=await ev(`document.querySelector('nav button[data-tab="${tab}"]').click(); document.querySelector('#app').innerText`);
+             assert(text.length>20,tab+' did not render');screens.push({tab,rendered:true});
+           }
+           await ev("document.querySelector('nav button[data-tab=library]').click()");
+           await delay(3000);
+           const artwork=await ev("Array.from(document.querySelectorAll('#app img')).map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0}))");
+           fs.writeFileSync(path.join(report,'menu.png'),(await win.webContents.capturePage()).toPNG());
+           console.log('START ex-native-tests.js');const native=await ev(fs.readFileSync(path.join(source,'ex-native-tests.js'),'utf8'));
+           assert(native.passed,'EX native checks failed');
+           console.log('START dp-native-tests.js');const dpNative=await ev(fs.readFileSync(path.join(source,'dp-native-tests.js'),'utf8'));
+           assert(dpNative.passed,'DP native checks failed');
+           console.log('START hgss-native-tests.js');const hgssNative=await ev(fs.readFileSync(path.join(source,'hgss-native-tests.js'),'utf8'));assert(hgssNative.passed,'HGSS native checks failed');
+           console.log('START bw-native-tests.js');const bwNative=await ev(fs.readFileSync(path.join(source,'bw-native-tests.js'),'utf8'));assert(bwNative.passed,'BW native checks failed');
+           console.log('START xy-native-tests.js');const xyNative=await ev(fs.readFileSync(path.join(source,'xy-native-tests.js'),'utf8'));assert(xyNative.passed,'XY native checks failed');
+           console.log('START sm-native-tests.js');const smNative=await ev(fs.readFileSync(path.join(source,'sm-native-tests.js'),'utf8'));assert(smNative.passed,'SM native checks failed');
+           console.log('START mega-native-tests.js');const megaNative=await ev(fs.readFileSync(path.join(source,'mega-native-tests.js'),'utf8'));assert(megaNative.passed,'Mega native checks failed');await ev('window.megaNativeCleanup?.()');
+           console.log('START private native');process.env.ILEX_PRIVATE_SIMULATED='1';await require(path.join(source,'private-native-tests.cjs'))(win,report);
+           assert.equal(errors.length,0,JSON.stringify(errors));
+           fs.writeFileSync(path.join(report,'report.json'),JSON.stringify({passed:true,ready:status.ready,cards:status.cards,wotc:status.wotc.available,ex:status.ex.available,dp:status.dp.available,hgss:status.hgss.available,bw:status.bw.available,xy:status.xy.available,sm:status.sm.available,xyNative,smNative,megaNative,dpNative,hgssNative,bwNative,home,screens,artwork,native,errors},null,2));
+           console.log('PASS fresh-source Electron startup, six screens, forest home, and EX/DP/HGSS/BW/XY/SM native interaction/replay/Undo checks.');
+          }};
+          require(path.join(source,'main.cjs'));
+          '@ | Set-Content "$env:RUNNER_TEMP/smoke.cjs" -Encoding utf8
+      - name: Launch app and test native interactions
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          $electron = node -e "console.log(require('electron'))" | Select-Object -Last 1
+          $env:ELECTRON_RUN_AS_NODE = $null
+          $process = Start-Process -FilePath $electron -ArgumentList @("$env:RUNNER_TEMP/smoke.cjs",'--enable-logging=stderr') -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput "$env:RUNNER_TEMP/electron-out.txt" -RedirectStandardError "$env:RUNNER_TEMP/electron-error.txt"
+          Get-Content "$env:RUNNER_TEMP/electron-out.txt"
+          Get-Content "$env:RUNNER_TEMP/electron-error.txt"
+          if (Test-Path "$env:RUNNER_TEMP/runtime-smoke/failure.txt") { Get-Content "$env:RUNNER_TEMP/runtime-smoke/failure.txt" }
+          if ($process.ExitCode -ne 0) { throw "Electron exit $($process.ExitCode)" }
+          $report = Get-Content "$env:RUNNER_TEMP/runtime-smoke/report.json" -Raw | ConvertFrom-Json
+          if (!$report.passed) { throw 'Runtime smoke test failed' }
+          $report | ConvertTo-Json -Depth 8
+
+
+
+
+
+
+
+
