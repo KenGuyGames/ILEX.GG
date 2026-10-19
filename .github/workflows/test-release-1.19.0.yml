@@ -145,6 +145,18 @@ jobs:
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
           node work/desktop-build/card-cache-tests.cjs
           if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Seed verified artwork only for isolated native fixtures
+        shell: pwsh
+        run: |
+          $target = "$env:RUNNER_TEMP/runtime-smoke/profile/card-cache"
+          Expand-Archive "$env:RUNNER_TEMP/source/verification/native-artwork.zip" $target
+          $manifest = Get-Content "$env:RUNNER_TEMP/source/verification/native-artwork.json" -Raw | ConvertFrom-Json -AsHashtable
+          foreach ($name in $manifest.Keys) {
+            $file = Join-Path $target $name
+            if ((Get-Item $file).Length -ne $manifest[$name].bytes) { throw "Fixture size mismatch: $name" }
+            if ((Get-FileHash $file -Algorithm SHA256).Hash.ToLower() -ne $manifest[$name].sha256) { throw "Fixture hash mismatch: $name" }
+          }
+          Write-Output "Verified $($manifest.Count) cached artwork fixtures; earlier normal startup remains unseeded."
       - name: Write isolated runtime smoke test
         shell: pwsh
         run: |
@@ -154,7 +166,7 @@ jobs:
           process.argv.push('--self-test',report);
           const self=path.join(source,'self-test.cjs');
           require.cache[self]={id:self,filename:self,loaded:true,exports:async(win)=>{
-           const ev=s=>win.webContents.executeJavaScript(s,true); const delay=ms=>new Promise(r=>setTimeout(r,ms));
+           const ev=async s=>{if(s.trim().startsWith('(async()=>{'))s='('+s.trim().replace(/;$/,'')+').catch(e=>({__nativeError:true,message:e?.message,name:e?.name,stack:e?.stack,text:String(e)}))';const r=await win.webContents.executeJavaScript(s,true);if(r?.__nativeError)throw Error(JSON.stringify(r));return r;}; const delay=ms=>new Promise(r=>setTimeout(r,ms));
            const errors=[];win.webContents.on('console-message',(_e,_l,message)=>{if(/Uncaught|ReferenceError|TypeError/.test(message||''))errors.push(message)});
            for(let i=0;i<300;i++){if(await ev("typeof rulesReady!=='undefined'&&rulesReady&&cards.length>23000"))break;await delay(100)}
            const status=await ev(`(async()=>({ready:rulesReady,cards:cards.length,title:document.title,version:'1.19.0',wotc:await fetch('wotc-coverage.json').then(r=>r.json()),ex:await fetch('ex-coverage.json').then(r=>r.json()),dp:await fetch('dp-coverage.json').then(r=>r.json()),hgss:await fetch('hgss-coverage.json').then(r=>r.json()),bw:await fetch('bw-coverage.json').then(r=>r.json()),xy:await fetch('xy-coverage.json').then(r=>r.json()),sm:await fetch('sm-coverage.json').then(r=>r.json())}))()`);
@@ -169,16 +181,16 @@ jobs:
            await delay(3000);
            const artwork=await ev("Array.from(document.querySelectorAll('#app img')).map(i=>({src:i.getAttribute('src'),loaded:i.complete&&i.naturalWidth>0}))");
            fs.writeFileSync(path.join(report,'menu.png'),(await win.webContents.capturePage()).toPNG());
-           const native=await ev(fs.readFileSync(path.join(source,'ex-native-tests.js'),'utf8'));
+           console.log('START ex-native-tests.js');const native=await ev(fs.readFileSync(path.join(source,'ex-native-tests.js'),'utf8'));
            assert(native.passed,'EX native checks failed');
-           const dpNative=await ev(fs.readFileSync(path.join(source,'dp-native-tests.js'),'utf8'));
+           console.log('START dp-native-tests.js');const dpNative=await ev(fs.readFileSync(path.join(source,'dp-native-tests.js'),'utf8'));
            assert(dpNative.passed,'DP native checks failed');
-           const hgssNative=await ev(fs.readFileSync(path.join(source,'hgss-native-tests.js'),'utf8'));assert(hgssNative.passed,'HGSS native checks failed');
-           const bwNative=await ev(fs.readFileSync(path.join(source,'bw-native-tests.js'),'utf8'));assert(bwNative.passed,'BW native checks failed');
-           const xyNative=await ev(fs.readFileSync(path.join(source,'xy-native-tests.js'),'utf8'));assert(xyNative.passed,'XY native checks failed');
-           const smNative=await ev(fs.readFileSync(path.join(source,'sm-native-tests.js'),'utf8'));assert(smNative.passed,'SM native checks failed');
-           const megaNative=await ev(fs.readFileSync(path.join(source,'mega-native-tests.js'),'utf8'));assert(megaNative.passed,'Mega native checks failed');await ev('window.megaNativeCleanup?.()');
-           process.env.ILEX_PRIVATE_SIMULATED='1';await require(path.join(source,'private-native-tests.cjs'))(win,report);
+           console.log('START hgss-native-tests.js');const hgssNative=await ev(fs.readFileSync(path.join(source,'hgss-native-tests.js'),'utf8'));assert(hgssNative.passed,'HGSS native checks failed');
+           console.log('START bw-native-tests.js');const bwNative=await ev(fs.readFileSync(path.join(source,'bw-native-tests.js'),'utf8'));assert(bwNative.passed,'BW native checks failed');
+           console.log('START xy-native-tests.js');const xyNative=await ev(fs.readFileSync(path.join(source,'xy-native-tests.js'),'utf8'));assert(xyNative.passed,'XY native checks failed');
+           console.log('START sm-native-tests.js');const smNative=await ev(fs.readFileSync(path.join(source,'sm-native-tests.js'),'utf8'));assert(smNative.passed,'SM native checks failed');
+           console.log('START mega-native-tests.js');const megaNative=await ev(fs.readFileSync(path.join(source,'mega-native-tests.js'),'utf8'));assert(megaNative.passed,'Mega native checks failed');await ev('window.megaNativeCleanup?.()');
+           console.log('START private native');process.env.ILEX_PRIVATE_SIMULATED='1';await require(path.join(source,'private-native-tests.cjs'))(win,report);
            assert.equal(errors.length,0,JSON.stringify(errors));
            fs.writeFileSync(path.join(report,'report.json'),JSON.stringify({passed:true,ready:status.ready,cards:status.cards,wotc:status.wotc.available,ex:status.ex.available,dp:status.dp.available,hgss:status.hgss.available,bw:status.bw.available,xy:status.xy.available,sm:status.sm.available,xyNative,smNative,megaNative,dpNative,hgssNative,bwNative,home,screens,artwork,native,errors},null,2));
            console.log('PASS fresh-source Electron startup, six screens, forest home, and EX/DP/HGSS/BW/XY/SM native interaction/replay/Undo checks.');
@@ -199,6 +211,7 @@ jobs:
           $report = Get-Content "$env:RUNNER_TEMP/runtime-smoke/report.json" -Raw | ConvertFrom-Json
           if (!$report.passed) { throw 'Runtime smoke test failed' }
           $report | ConvertTo-Json -Depth 8
+
 
 
 
@@ -228,5 +241,3 @@ jobs:
                   assert hashlib.sha256(read(prefix+n)).hexdigest()==h,n
               print(f'PASS {kind}: {len(m["files"])} files match the release manifest')
 
-
-# Legacy test data readers use the canonical work/mega-source/src tree.
