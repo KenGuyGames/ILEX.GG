@@ -228,3 +228,5 @@ jobs:
                   assert hashlib.sha256(read(prefix+n)).hexdigest()==h,n
               print(f'PASS {kind}: {len(m["files"])} files match the release manifest')
 
+
+# Legacy test data readers use the canonical work/mega-source/src tree.
