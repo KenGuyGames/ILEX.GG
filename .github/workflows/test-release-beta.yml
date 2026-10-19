@@ -1,4 +1,4 @@
-name: Follow 1.18.0-private.1 release README from fresh source
+name: Verify corrected multiplayer beta source and README
 on:
   push:
     paths:
@@ -175,6 +175,7 @@ jobs:
            const bwNative=await ev(fs.readFileSync(path.join(source,'bw-native-tests.js'),'utf8'));assert(bwNative.passed,'BW native checks failed');
            const xyNative=await ev(fs.readFileSync(path.join(source,'xy-native-tests.js'),'utf8'));assert(xyNative.passed,'XY native checks failed');
            const smNative=await ev(fs.readFileSync(path.join(source,'sm-native-tests.js'),'utf8'));assert(smNative.passed,'SM native checks failed');
+           process.env.ILEX_PRIVATE_SIMULATED='1';await require(path.join(source,'private-native-tests.cjs'))(win,report);
            assert.equal(errors.length,0,JSON.stringify(errors));
            fs.writeFileSync(path.join(report,'report.json'),JSON.stringify({passed:true,ready:status.ready,cards:status.cards,wotc:status.wotc.available,ex:status.ex.available,dp:status.dp.available,hgss:status.hgss.available,bw:status.bw.available,xy:status.xy.available,sm:status.sm.available,xyNative,smNative,dpNative,hgssNative,bwNative,home,screens,artwork,native,errors},null,2));
            console.log('PASS fresh-source Electron startup, six screens, forest home, and EX/DP/HGSS/BW/XY/SM native interaction/replay/Undo checks.');
