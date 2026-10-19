@@ -1,0 +1,94 @@
+{
+  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
+  "baseline": "Released SV plus Evosoda and Psychic Embrace fixes; previous provenance retained as historical evidence",
+  "files": [
+    {
+      "path": "private/PRIVATE-MULTIPLAYER.md",
+      "sha256": "095b515ea673dd0fdd93293920a65e358b4d36ef6bf8cf80c9475879b0986fbd"
+    },
+    {
+      "path": "private/audio.js",
+      "sha256": "aff3738d4c7b96cc86c8e3de8da40d0654b333dc1e2e6ea9da98534e22cb3533"
+    },
+    {
+      "path": "private/index.html",
+      "sha256": "1d9806e94e36a2579195279a2837e81fd227df529919f9886671cd8e5f03debe"
+    },
+    {
+      "path": "private/main.cjs",
+      "sha256": "46e7bc5ab4162cf0160dcd816ee448635933a15dd0d5d0f07ff32f5aedfa8345"
+    },
+    {
+      "path": "private/presentation.js",
+      "sha256": "8d2f4e5808083b28c6ef189d22ac4f8e471b2148e5403787804df4fda362b309"
+    },
+    {
+      "path": "private/private-match.js",
+      "sha256": "75c6c9aecefb460fcca6c7f769ae8a24f995af236b6c9df50c72bdf940f65611"
+    },
+    {
+      "path": "private/private-native-tests.cjs",
+      "sha256": "5c41306c9f2c6c284945d74ef715e3e757f87322a052fe0a406be00068333dc3"
+    },
+    {
+      "path": "private/private-online.css",
+      "sha256": "7b688ad427f6c6473a7e04d4974a4d9a76a4e5069cd38cb0d8890c5d8baaa51d"
+    },
+    {
+      "path": "private/private-online.js",
+      "sha256": "5f843a85c2fcb976cea0f42e5fac51814e14b56fd5577847f603e31da15c23be"
+    },
+    {
+      "path": "private/private-peer.js",
+      "sha256": "cb303ff69b74efac9afbe63570bb9b6b90b1c583f11b9efee7a0e96ab0d2b826"
+    },
+    {
+      "path": "private/private-self-test.cjs",
+      "sha256": "d512a4976a2a3e3f845d7caafb40e81edccdc2cd17765697cbb8e81521df0f13"
+    },
+    {
+      "path": "private/private-test-rtc.js",
+      "sha256": "354e5e8739164cc97b940314166034908fcc2f775db43ba8764a68f0792bcb1a"
+    },
+    {
+      "path": "private/tools/brand-private.cjs",
+      "sha256": "f160ca79f4d3b81f4c701789e9bf06cf36998dbbe1d6090b30dc174e105982bc"
+    },
+    {
+      "path": "private/tools/package-private.py",
+      "sha256": "747f58112db837f15ca204c52da9924345cb80f46f7368ee5afb54a04827a9e9"
+    },
+    {
+      "path": "private/tools/private-acceptance.cjs",
+      "sha256": "02d0146aa2ed84ce43343ff56c92b7d88ef891e196a4169ca2bf8dd051c6dbca"
+    },
+    {
+      "path": "private/tools/private-assets.cjs",
+      "sha256": "a63d05cce850365b7398f3acaa2aaf9d67e916ad28573f65f97ed86230ae446b"
+    },
+    {
+      "path": "private/tools/private-match-tests.cjs",
+      "sha256": "1f2f75faf211089df6bad8c703bfc5b2dc525898dc35b89d09f18119cd1047a9"
+    },
+    {
+      "path": "private/tools/private-peer-tests.cjs",
+      "sha256": "a023554c631a1f2ef7b9bce87f8edc74dc6dc8fdb55de131ea82e9937fb26a4e"
+    },
+    {
+      "path": "private/tools/private-record.cjs",
+      "sha256": "f8af1f9799022c3d5ea10d936293739d6bdc0299d059010c24e4751acfbe22ac"
+    },
+    {
+      "path": "private/tools/private-refresh.cjs",
+      "sha256": "d1ce9ffaf537c51af3ab35dfd20970c9945f37bc660461429eade08a9759cf2a"
+    },
+    {
+      "path": "private/tools/private-stage.cjs",
+      "sha256": "12b8f80ff92aedc44f0a867cbe6942f4c130a29b4989e5466ccd5c8fb2dda40f"
+    },
+    {
+      "path": "private/tools/run-private-native.cjs",
+      "sha256": "aa95b596c3b7c9b0bedad3ff0ff405fd2dd90dcc46d5ca1f7e048ce64209e418"
+    }
+  ]
+}

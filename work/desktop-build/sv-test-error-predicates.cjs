@@ -1,0 +1,1 @@
+const fs=require('fs'),f='work/desktop-build/sv-common-tests.cjs';let s=fs.readFileSync(f,'utf8');s=s.replaceAll(',/BLOCKED_BY_EFFECT/)',",e=>e.message==='BLOCKED_BY_EFFECT')");fs.writeFileSync(f,s);

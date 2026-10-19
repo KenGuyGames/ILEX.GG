@@ -42,4 +42,5 @@
 
 /* Foil layers need a positioned grid; pile offsets belong only to the outer pile. */
 .seat-prizes .seat-prizes{position:relative;inset:auto;min-width:0}.seat-prizes .seat-prizes>img{min-width:0;max-width:100%;aspect-ratio:63 / 88;object-fit:contain}
+.seat-pokemon[data-union-parts],#cardactions .card-action-scan:has(img[data-union-parts]){aspect-ratio:734/1024}
 

@@ -1,0 +1,17 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Fixed retaliation places the printed counters on the actual attacker",
+    "Optional typed Energy discard counts physical cards and permits zero",
+    "Gear Coating applies to Energy-bearing own targets and respects suppression",
+    "Lunar Zone gives free retreat only to its owner with Psychic-providing Energy",
+    "Primal Knowledge adds damage only against the opposing Active Evolution",
+    "Alluring Light draws once for both players and a repeated activation draws no additional cards",
+    "Paradise Resort reduces Psyduck retreat for either player and stops when removed",
+    "Antique Fossil plays with printed HP, blocks Special Conditions, and can be discarded",
+    "Minccino Beat does damage and Cleaning Up resolves with no opposing Tools",
+    "Cinnabar Lure resolves and shuffles with a full Bench"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

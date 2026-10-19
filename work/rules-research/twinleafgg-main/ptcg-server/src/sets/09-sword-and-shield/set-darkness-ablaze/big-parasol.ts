@@ -28,7 +28,7 @@ export class BigParasol extends TrainerCard {
     if (effect instanceof AbstractAttackEffect) {
       const player = StateUtils.findOwner(state, effect.target);
 
-      if (player.active.tools.includes(this) && !IS_TOOL_BLOCKED(store, state, player, this)) {
+      if (effect.player !== player && player.active.tools.includes(this) && !IS_TOOL_BLOCKED(store, state, player, this)) {
         const sourceCard = effect.source.getPokemonCard();
 
         if (sourceCard) {

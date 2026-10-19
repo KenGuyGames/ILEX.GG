@@ -1,0 +1,442 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "sv01-041",
+      "power": "Fire Off",
+      "bench": false
+    },
+    {
+      "id": "sv01-041",
+      "power": "Fire Off",
+      "bench": true
+    },
+    {
+      "id": "sv01-043",
+      "power": "Strange Behavior",
+      "bench": false
+    },
+    {
+      "id": "sv01-043",
+      "power": "Strange Behavior",
+      "bench": true
+    },
+    {
+      "id": "sv01-054",
+      "power": "Energy Carnival",
+      "bench": false
+    },
+    {
+      "id": "sv01-054",
+      "power": "Energy Carnival",
+      "bench": true
+    },
+    {
+      "id": "sv01-076",
+      "power": "Electrogenesis",
+      "bench": false
+    },
+    {
+      "id": "sv01-076",
+      "power": "Electrogenesis",
+      "bench": true
+    },
+    {
+      "id": "sv01-081",
+      "power": "Tandem Unit",
+      "bench": false
+    },
+    {
+      "id": "sv01-081",
+      "power": "Tandem Unit",
+      "bench": true
+    },
+    {
+      "id": "sv01-125",
+      "power": "Dino Cry",
+      "bench": false
+    },
+    {
+      "id": "sv01-125",
+      "power": "Dino Cry",
+      "bench": true
+    },
+    {
+      "id": "sv01-137",
+      "power": "Intimidating Howl",
+      "bench": false
+    },
+    {
+      "id": "sv01-137",
+      "power": "Intimidating Howl",
+      "bench": true
+    },
+    {
+      "id": "sv01-151",
+      "power": "Nest Stash",
+      "bench": false
+    },
+    {
+      "id": "sv01-151",
+      "power": "Nest Stash",
+      "bench": true
+    },
+    {
+      "id": "sv01-203",
+      "power": "Fire Off",
+      "bench": false
+    },
+    {
+      "id": "sv01-203",
+      "power": "Fire Off",
+      "bench": true
+    },
+    {
+      "id": "sv01-209",
+      "power": "Electrogenesis",
+      "bench": false
+    },
+    {
+      "id": "sv01-209",
+      "power": "Electrogenesis",
+      "bench": true
+    },
+    {
+      "id": "sv01-218",
+      "power": "Intimidating Howl",
+      "bench": false
+    },
+    {
+      "id": "sv01-218",
+      "power": "Intimidating Howl",
+      "bench": true
+    },
+    {
+      "id": "sv01-222",
+      "power": "Nest Stash",
+      "bench": false
+    },
+    {
+      "id": "sv01-222",
+      "power": "Nest Stash",
+      "bench": true
+    },
+    {
+      "id": "sv01-227",
+      "power": "Tandem Unit",
+      "bench": false
+    },
+    {
+      "id": "sv01-227",
+      "power": "Tandem Unit",
+      "bench": true
+    },
+    {
+      "id": "sv01-231",
+      "power": "Dino Cry",
+      "bench": false
+    },
+    {
+      "id": "sv01-231",
+      "power": "Dino Cry",
+      "bench": true
+    },
+    {
+      "id": "sv01-244",
+      "power": "Tandem Unit",
+      "bench": false
+    },
+    {
+      "id": "sv01-244",
+      "power": "Tandem Unit",
+      "bench": true
+    },
+    {
+      "id": "sv01-247",
+      "power": "Dino Cry",
+      "bench": false
+    },
+    {
+      "id": "sv01-247",
+      "power": "Dino Cry",
+      "bench": true
+    },
+    {
+      "id": "sv01-253",
+      "power": "Tandem Unit",
+      "bench": false
+    },
+    {
+      "id": "sv01-253",
+      "power": "Tandem Unit",
+      "bench": true
+    },
+    {
+      "id": "sv01-254",
+      "power": "Dino Cry",
+      "bench": false
+    },
+    {
+      "id": "sv01-254",
+      "power": "Dino Cry",
+      "bench": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "sv01-005",
+      "power": "Counterattack Quills",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-005",
+      "power": "Counterattack Quills",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-006",
+      "power": "Counterattack Quills",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-006",
+      "power": "Counterattack Quills",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-008",
+      "power": "Adaptive Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-008",
+      "power": "Adaptive Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-009",
+      "power": "Adaptive Evolution",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-009",
+      "power": "Adaptive Evolution",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-019",
+      "power": "Trap Territory",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-019",
+      "power": "Trap Territory",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-068",
+      "power": "Electricity Pouches",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-068",
+      "power": "Electricity Pouches",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-093",
+      "power": "Blooming Garden",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-093",
+      "power": "Blooming Garden",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-096",
+      "power": "Mischievous Lock",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-096",
+      "power": "Mischievous Lock",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-099",
+      "power": "Well-Baked Body",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-099",
+      "power": "Well-Baked Body",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-121",
+      "power": "Exoskeleton",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-121",
+      "power": "Exoskeleton",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-127",
+      "power": "Poison Sacs",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-127",
+      "power": "Poison Sacs",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-134",
+      "power": "Leadership",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-134",
+      "power": "Leadership",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-142",
+      "power": "Rumbling Engine",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-142",
+      "power": "Rumbling Engine",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-145",
+      "power": "Busybody Nurse",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-145",
+      "power": "Busybody Nurse",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-208",
+      "power": "Electricity Pouches",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-208",
+      "power": "Electricity Pouches",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-220",
+      "power": "Leadership",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-220",
+      "power": "Leadership",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-223",
+      "power": "Trap Territory",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-223",
+      "power": "Trap Territory",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-243",
+      "power": "Trap Territory",
+      "bench": false,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    },
+    {
+      "id": "sv01-243",
+      "power": "Trap Territory",
+      "bench": true,
+      "error": "CANNOT_USE_POWER",
+      "pending": []
+    }
+  ],
+  "failures": [],
+  "engineSha256": "c5924308c0c128cc8c4c1d0cd7930fa178cd1efee609930a3e8344ff7935430f"
+}

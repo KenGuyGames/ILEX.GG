@@ -7,6 +7,7 @@ import { PowerEffect } from '../effects/game-effects';
 export interface Weakness {
   type: CardType;
   value?: number; // when undefined, then it's x2
+  multiplier?: number;
 }
 
 export interface Resistance {

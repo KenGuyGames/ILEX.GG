@@ -18,7 +18,8 @@ import { Effect } from '../../../game/store/effects/effect';
 
 import { AttachEnergyPrompt } from '../../../game/store/prompts/attach-energy-prompt';
 import { RemoveSpecialConditionsEffect } from '../../../game/store/effects/attack-effects';
-import { CheckHpEffect } from '../../../game/store/effects/check-effects';
+import { CheckHpEffect, CheckPokemonTypeEffect } from '../../../game/store/effects/check-effects';
+import {attachWotcEnergy} from '../../../game/store/prefabs/wotc-energy-attachment';
 import {WAS_ATTACK_USED, WAS_POWER_USED, MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
 
 export class Gardevoirex extends PokemonCard {
@@ -59,6 +60,15 @@ export class Gardevoirex extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (WAS_POWER_USED(effect, 0, this)) {
       const player = effect.player;
+      const slots=[{list:player.active,player:PlayerType.BOTTOM_PLAYER,slot:SlotType.ACTIVE,index:0},...player.bench.map((list,index)=>({list,player:PlayerType.BOTTOM_PLAYER,slot:SlotType.BENCH,index}))];
+      const eligible=(target:any)=>{
+        if(!target.getPokemonCard())return false;
+        const type=new CheckPokemonTypeEffect(target);store.reduceEffect(state,type);
+        const hp=new CheckHpEffect(player,target);store.reduceEffect(state,hp);
+        return type.cardTypes.includes(CardType.PSYCHIC)&&target.damage+20<hp.hp;
+      };
+      const legal=slots.filter(s=>eligible(s.list));
+      if(!legal.length||!player.discard.cards.some(c=>c.superType===SuperType.ENERGY&&(c as any).energyType===EnergyType.BASIC&&(c as any).provides.includes(CardType.PSYCHIC)))throw new GameError(GameMessage.CANNOT_USE_POWER);
 
       // const blocked: CardTarget[] = [];
       // player.bench.forEach((card, index) => {
@@ -81,8 +91,8 @@ export class Gardevoirex extends PokemonCard {
           player.discard,
           PlayerType.BOTTOM_PLAYER,
           [SlotType.BENCH, SlotType.ACTIVE],
-          { superType: SuperType.ENERGY, energyType: EnergyType.BASIC, name: 'Psychic Energy' },
-          { allowCancel: true, min: 0 },
+          { superType: SuperType.ENERGY, energyType: EnergyType.BASIC, cardType: [CardType.PSYCHIC] },
+          { allowCancel: true, min: 0, max:1, blockedTo:slots.filter(s=>!legal.includes(s)).map(({list,...target})=>target) },
         ),
         (transfers) => {
           transfers = transfers || [];
@@ -95,10 +105,8 @@ export class Gardevoirex extends PokemonCard {
             const checkHpEffect = new CheckHpEffect(player, target);
             store.reduceEffect(state, checkHpEffect);
 
-            if (
-              target.cards[0] instanceof PokemonCard &&
-              !pokemonHasCardType(target.cards[0], CardType.PSYCHIC)
-            ) {
+            const targetType=new CheckPokemonTypeEffect(target);store.reduceEffect(state,targetType);
+            if (!targetType.cardTypes.includes(CardType.PSYCHIC)) {
               throw new GameError(GameMessage.CAN_ONLY_ATTACH_TO_PSYCHIC);
             }
 
@@ -106,8 +114,8 @@ export class Gardevoirex extends PokemonCard {
             if (damageAfterTransfer >= checkHpEffect.hp) {
               throw new GameError(GameMessage.CANNOT_USE_POWER);
             }
-            MOVE_CARDS(store, state, player.discard, target, { cards: [transfer.card], sourceCard: this });
-            target.damage += 20;
+            attachWotcEnergy(store,state,player,player.discard,target,transfer.card,{sourceCard:this,sourceEffect:effect,sourceKind:'power'});
+            if(target.cards.includes(transfer.card)||target.energies.cards.includes(transfer.card))target.damage += 20;
           }
         },
       );

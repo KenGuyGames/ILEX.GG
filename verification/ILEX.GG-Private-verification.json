@@ -1,0 +1,47 @@
+{
+  "status": "windows-private-preview-real-network-unverified",
+  "version": "1.18.0-private.1",
+  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
+  "engineChangedFromFrozenRelease": false,
+  "coreChecks": 15,
+  "protocolChecks": 4,
+  "simulatedTwoWindowChecks": [
+    20,
+    20
+  ],
+  "inheritedFreshAndRestored": true,
+  "verifiedScans": 23838,
+  "retainedFinishImages": 209,
+  "opponentApprovalRequiredForUndo": true,
+  "paidInfrastructureRequired": false,
+  "actualRTCConnectionVerified": false,
+  "externalWindowsPCsTested": false,
+  "networkEnvironment": {
+    "UDP_loopback": "timed out",
+    "TCP_loopback": "EACCES",
+    "actualWebRTCTrials": "work/private-native-v1 through v8 failed; diagnostics retained"
+  },
+  "limits": [
+    "Real two-PC and Internet/NAT acceptance pending",
+    "No TURN relay; restrictive networks may not connect",
+    "Trusted host can inspect full state",
+    "Custom-card networking, Android multiplayer and matchmaking deferred",
+    "Unlimited interactions remain deferred"
+  ],
+  "archives": [
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Private-Windows.zip",
+      "bytes": 282178454,
+      "sha256": "821fa62d435568d541521a8de96093fb314a8f8204374a4ead879b3707c8b61b",
+      "crcPassed": true
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Private-Windows-Offline.zip",
+      "bytes": 2899026100,
+      "sha256": "bcf557bcd1845868b334b54d25339b9f6296727eae64992893d9b338f7be977e",
+      "crcPassed": true
+    }
+  ],
+  "executable": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Private-win32-x64\\ILEX.GG.exe",
+  "executableSha256": "903cd075e5b3175e1d6451ee99d4272abddf3a6f7e66cee3f8549189ea849d1c"
+}

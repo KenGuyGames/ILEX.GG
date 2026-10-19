@@ -1,3 +1,5 @@
+import {svPower,svPowerTrigger} from './tcg-lab-sv-powers';
+import {swshPower,swshPowerTrigger} from './tcg-lab-swsh-powers';
 import {smPower,smPowerTrigger} from './tcg-lab-sm-powers';
 import { hgssPower,hgssPowerTrigger } from './tcg-lab-hgss-powers';
 import { dpCapturePowerChoice,dpTriggerPower } from './tcg-lab-dp-power-window';
@@ -45,7 +47,7 @@ class ExPowerCountersEffect {
  constructor(public player:any,public source:any,public target:any,public damage:number){}
 }
 export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIndex?:number){
- const isOwnEvolution=e instanceof EvolveEffect&&e.pokemonCard===card;const ownHandPlacement=e instanceof PlayPokemonEffect&&e.pokemonCard===card;const ownEntry=isOwnEvolution||ownHandPlacement;
+ const isOwnEvolution=e instanceof EvolveEffect&&e.pokemonCard===card&&(!e._xyEvolutionSource||e._xyEvolutionSource===e.player.hand);const ownHandPlacement=e instanceof PlayPokemonEffect&&e.pokemonCard===card;const ownEntry=isOwnEvolution||ownHandPlacement;
  if(isOwnEvolution||ownHandPlacement&&card.stage===Stage.BASIC&&!store.calculatingPlayability)card._wotcPowerTurn={};
  // Effects may move cards into temporary choice lists during propagation.
  // Only an in-play slot (or this card's explicit entry target) can supply field powers.
@@ -56,7 +58,7 @@ export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIn
  if(e instanceof CheckPokemonTypeEffect&&e.target===list&&list._dpTypeChange?.turn===state.turn&&list.marker.hasMarker('DP_TYPE_CHANGE',list._dpTypeChange.card))e.cardTypes=list._dpTypeChange.types||[list._dpTypeChange.type];
  for(let index=0;index<plans.length;index++){
   if(onlyIndex!==undefined&&index!==onlyIndex)continue;
-  const op=plans[index],power=card.powers[index];if(op.final){finalPower(card,op,power,index,store,state,e,owner,list);continue;}const activated=e instanceof PowerEffect&&e.card===card&&e.power===power;
+  const op=plans[index],power=card.powers[index];if(op.final){finalPower(card,op,power,index,store,state,e,owner,list);continue;}const activated=e instanceof PowerEffect&&e.type==='POWER_EFFECT'&&e.card===card&&e.power===power;
   if(activated&&!op.kind.startsWith('activated')&&!e._wotcReactiveProbe)throw new GameError(GameMessage.CANNOT_USE_POWER);
   const triggers=activated||isOwnEvolution&&op.kind.startsWith('onEvolution')||e instanceof CheckRetreatCostEffect&&op.kind==='retreatTax'||e instanceof CheckProvidedEnergyEffect&&op.kind==='convertEnergy'&&e.source===list||e instanceof PutDamageEffect&&(op.kind==='reduceDamage'&&e.target===list||op.kind==='confusionBonus'&&e.source===list)||e instanceof AfterRetreatEffect&&op.kind==='onRetreatDamage'&&e.player!==owner||e instanceof KnockOutEffect&&op.kind==='onKnockoutBeam'&&e.target===list&&state.phase===GamePhase.ATTACK&&state.players[state.activePlayer]!==owner;
   if(op.kind==='onAttachCrystalType'&&e instanceof CheckPokemonTypeEffect&&e.target===list&&list.marker.hasMarker('WOTC_CRYSTAL_TYPE',card)&&card._wotcCrystalTurn===state.turn){e.cardTypes=[card._wotcCrystalType];continue;}
@@ -76,7 +78,7 @@ export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIn
   const handEnergyGuard=op.kind==='preventHandEnergy'&&e instanceof AttachEnergyEffect&&e.target===list&&owner.hand.cards.includes(e.energyCard)&&e.energyCard.provides.includes(types[op.energy]);
   const typeGuard=op.kind==='activatedSelfType'&&e instanceof CheckPokemonTypeEffect&&e.target===list&&card._wotcSelfTypeTurn===state.turn&&list.marker.hasMarker('WOTC_SELF_TYPE',card);
   const retreatNameGuard=op.kind==='retreatOwnName'&&e instanceof CheckRetreatCostEffect&&e.player===owner&&owner.bench.includes(list)&&owner.active.getPokemonCard()?.name.includes(op.nameContains);
-  const reactiveDamage=op.kind.startsWith('onDamaged')&&e instanceof AfterDamageEffect&&e.target===list&&e.player!==owner&&e.damage>0&&state.phase===GamePhase.ATTACK;
+  const reactiveDamage=(!op.active||owner.active===list)&&op.kind.startsWith('onDamaged')&&e instanceof AfterDamageEffect&&e.target===list&&e.player!==owner&&e.damage>0&&state.phase===GamePhase.ATTACK;
   const attachDamage=op.kind==='onOpponentAttachDamage'&&e instanceof AttachEnergyEffect&&e.player!==owner&&e.player.hand.cards.includes(e.energyCard);
   const promotionDamage=op.kind==='onOpponentPromotionDamage'&&e instanceof MovedToActiveEffect&&e.player!==owner&&state.players[state.activePlayer]===e.player;
   const retreatDiscard=op.kind==='onOpponentRetreatDiscard'&&e instanceof AfterRetreatEffect&&e.player!==owner;
@@ -106,7 +108,7 @@ export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIn
   const waveTrigger=op.kind==='onEntryExRecoverTop'&&ownHandPlacement&&owner.bench.includes(list);
   const reactiveExTrigger=op.kind==='onEntryExMoveEnergy'&&ownHandPlacement&&owner.bench.includes(list)||['exKnockoutCounters','exKnockoutConditions'].includes(op.kind)&&e instanceof KnockOutEffect&&e.target===list&&owner.active===list&&state.phase===GamePhase.ATTACK&&state.players[state.activePlayer]!==owner||op.kind==='exMirrorConditions'&&e.type==='EX_AFTER_ATTACK_CONDITIONS_EFFECT'&&e.target===list&&e.player!==owner||op.kind==='exAttachDarkGust'&&e instanceof AfterEnergyAttachedEffect&&e.target===list&&e.fromHand&&StateUtils.providesMatchesType(e.energyCard.provides,CardType.DARK);
   const newExTrigger=op.kind==='exBurnAura'&&e instanceof BetweenTurnsEffect&&owner.active===list||op.kind==='exCheckupCounters'&&e.type==='EX_CHECKUP_COMPLETE_EFFECT'&&(op.noActiveRestriction||owner.active===list)||op.kind==='exPreventOwnDamage'&&e instanceof PutDamageEffect&&e.player===owner&&e.target===list;
-  if(!smPowerTrigger(op,e,owner,list,state)&&!xyPowerTrigger(op,e,owner,list,card,state)&&!hgssPowerTrigger(op,e,owner,list,card,state)&&!dpReactiveTrigger(op,e,owner,list,card,state)&&!dpPassiveTrigger(op,e,owner,list)&&!dpLevelEntryTrigger&&!dpEntryTrigger&&!dpDamageLockTrigger&&!dpPrizeHpTrigger&&!dpSkullTrigger&&!dpEnergyEvolutionTrigger&&!dpBenchTrigger&&!dpWeaknessTrigger&&!dpAttachmentTrigger&&!dpTimingTrigger&&!finishPowerTrigger(op,e,owner,list,card,state)&&!waveTriggers(op,e,owner,list,card,state)&&!waveTrigger&&!reactiveExTrigger&&!newExTrigger&&!exGuardTrigger&&!exPassiveTrigger&&!exEnvironmentTrigger&&!exDamageTrigger&&!exTrigger&&!ownShock&&!gym&&!replacement&&!attachmentCost&&!chain&&!benchGuard&&!rebirth&&!triggers&&!additionalTriggers&&!attackEffectGuard&&!conditionGuard&&!handEnergyGuard&&!typeGuard&&!retreatNameGuard&&!reactiveDamage&&!attachDamage&&!promotionDamage&&!retreatDiscard&&!allDamageGuard&&!attachedEnergy&&!fullAttackGuard&&!evolutionGuard&&!benchPowerGuard&&!machineGuard&&!surviveGuard&&!sleepGuard)continue;
+  if(!svPowerTrigger(op,e,owner,list)&&!swshPowerTrigger(op,e,owner,list,card)&&!smPowerTrigger(op,e,owner,list,state)&&!xyPowerTrigger(op,e,owner,list,card,state)&&!hgssPowerTrigger(op,e,owner,list,card,state)&&!dpReactiveTrigger(op,e,owner,list,card,state)&&!dpPassiveTrigger(op,e,owner,list,state)&&!dpLevelEntryTrigger&&!dpEntryTrigger&&!dpDamageLockTrigger&&!dpPrizeHpTrigger&&!dpSkullTrigger&&!dpEnergyEvolutionTrigger&&!dpBenchTrigger&&!dpWeaknessTrigger&&!dpAttachmentTrigger&&!dpTimingTrigger&&!finishPowerTrigger(op,e,owner,list,card,state)&&!waveTriggers(op,e,owner,list,card,state)&&!waveTrigger&&!reactiveExTrigger&&!newExTrigger&&!exGuardTrigger&&!exPassiveTrigger&&!exEnvironmentTrigger&&!exDamageTrigger&&!exTrigger&&!ownShock&&!gym&&!replacement&&!attachmentCost&&!chain&&!benchGuard&&!rebirth&&!triggers&&!additionalTriggers&&!attackEffectGuard&&!conditionGuard&&!handEnergyGuard&&!typeGuard&&!retreatNameGuard&&!reactiveDamage&&!attachDamage&&!promotionDamage&&!retreatDiscard&&!allDamageGuard&&!attachedEnergy&&!fullAttackGuard&&!evolutionGuard&&!benchPowerGuard&&!machineGuard&&!surviveGuard&&!sleepGuard)continue;
   
   const disabled=(state.rules.dpEraRules&&op.kind==='dpKoReaction'&&power.powerType===PowerType.POKEPOWER&&list._exLethalAttackDamage?.powerBlocked)||power.powerType===PowerType.POKEBODY&&state.wotcIgnoreBodiesUntilTurn===state.turn||state.wotcGlobalPowerLockUntilTurn>=state.turn||(op.conditions==='all'&&list.specialConditions.length)||(op.conditions==='legacy'&&list.specialConditions.some((c:any)=>[SpecialCondition.ASLEEP,SpecialCondition.CONFUSED,SpecialCondition.PARALYZED,...((state.rules as any).wotcPowerConditions?[SpecialCondition.POISONED,SpecialCondition.BURNED]:[])].includes(c)))||(state.rules.dpEraRules&&power.powerType===PowerType.POKEBODY?IS_POKEBODY_BLOCKED(store,state,owner,card):state.rules.dpEraRules&&power.powerType===PowerType.POKEPOWER?IS_POKEPOWER_BLOCKED(store,state,owner,card):power.powerType===PowerType.ABILITY?IS_ABILITY_BLOCKED(store,state,owner,card):IS_POKEMON_POWER_BLOCKED(store,state,owner,card));
   const pokePowerLocked=power.powerType===PowerType.POKEPOWER&&list.marker.hasMarker('WOTC_POKEPOWER_LOCK')&&list.wotcPokePowerLockUntilTurn>=state.turn;
@@ -126,8 +128,11 @@ export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIn
   if(op.kind.includes('Finish')||op.kind.startsWith('finish')){finishPower(card,op,store,state,e,owner,list,use);continue;}
   if(op.kind!=='dpHeatWave'&&(op.kind.includes('Wave')||op.kind.startsWith('wave'))){wavePower(card,op,power,store,state,e,owner,list,use,activated);continue;}
   if(dpReactiveTrigger(op,e,owner,list,card,state)){dpReactivePower(card,op,power,index,store,state,e,owner,list,use);continue;}
-  if(dpPassiveTrigger(op,e,owner,list)){dpPassive(op,store,state,e,owner,list,types);continue;}
+  if(dpPassiveTrigger(op,e,owner,list,state)){dpPassive(op,store,state,e,owner,list,types);continue;}
   switch(op.kind){
+  case 'onEvolutionSv':if(!(e._bwFromHand??owner.hand.cards.includes(card)))break;
+  case 'dpBasicEntrySv':case 'activatedSv':case 'svPassive':return svPower(card,op,power,store,state,e,owner,list,use);
+  case 'activatedSwsh':case 'swshPassive':return swshPower(card,op,power,store,state,e,owner,list,use,powerDamage);
   case 'activatedSm':case 'smPassive':return smPower(card,op,power,store,state,e,owner,list,use);
   case 'activatedXy':case 'xyPassive':return xyPower(card,op,power,store,state,e,owner,list,use);
   case 'activatedHgss':case 'hgssPassive':return hgssPower(card,op,power,store,state,e,owner,list,use);
@@ -168,7 +173,7 @@ export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIn
   case 'dpBenchShield':e.preventDefault=true;break;
   case 'dpDoubleWeakness':e.weakness=e.weakness.map((weakness:any)=>({type:weakness.type}));break;
   case 'dpEarlyEvolution':e.ignorePlayedTurn=true;break;
-  case 'dpEnergyNoWeakness':{const energy=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,energy);if(energy.energyMap.some((entry:any)=>StateUtils.getProvidesUnitCount(entry.provides)>0))e.weakness=[];break;}
+  case 'dpEnergyNoWeakness':{const energy=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,energy);if(energy.energyMap.some((entry:any)=>StateUtils.getProvidesUnitCount(entry.provides,entry)>0))e.weakness=[];break;}
   case 'exTypedEnergyNoWeakness':case 'exOwnActiveConditionShield':{const target=op.kind==='exTypedEnergyNoWeakness'?list:e.target,energy=new CheckProvidedEnergyEffect(owner,target);store.reduceEffect(state,energy);if(energy.energyMap.some((x:any)=>StateUtils.providesMatchesType(x.provides,types[op.energy]))){if(op.kind==='exTypedEnergyNoWeakness')e.weakness=[];else e.preventDefault=true;}break;}
   case 'exBenchTypedWeaknessRemoval':e.weakness=e.weakness.filter((w:any)=>w.type!==types[op.energy]);break;
   case 'exBenchDamageShield':if(!e.attackEffect.wotcBypassDefender)e.preventDefault=true;break;
@@ -245,7 +250,7 @@ export function wotcPowers(card:any,plans:any[],store:any,state:any,e:any,onlyIn
   case 'reduceOwnDamageByType':{if(op.nonstackName&&[owner.active,...owner.bench].filter((l:any)=>l.getPokemonCard()?.name===card.name).length!==1)break;const sourceTypes=e instanceof WotcPowerDamageEffect?e.sourceTypes:(()=>{const type=new CheckPokemonTypeEffect(e.source);store.reduceEffect(state,type);return type.cardTypes;})();if(sourceTypes.includes(types[op.energy])){const key='wotcDamageReduction'+power.name;if(e[key])break;e[key]=true;e.damage=Math.max(0,e.damage-op.amount);}break;}
   case 'onDamagedStatus':{if(op.active&&owner.active!==list)break;const perform=()=>store.reduceEffect(state,new AddSpecialConditionsPowerEffect(owner,card,e.source,[(SpecialCondition as any)[op.condition]]));if(op.coin)COIN_FLIP_PROMPT(store,state,owner,heads=>{if(heads)perform();});else perform();break;}
   case 'onDamagedDiscardEnergy':COIN_FLIP_PROMPT(store,state,owner,heads=>{if(!heads||!e.source.cards.some((c:any)=>c.superType===SuperType.ENERGY))return;store.prompt(state,new ChooseCardsPrompt(owner,GameMessage.CHOOSE_ENERGIES_TO_DISCARD,e.source,{superType:SuperType.ENERGY},{min:1,max:1,allowCancel:false}),(chosen:any)=>MOVE_CARDS(store,state,e.source,e.player.discard,{cards:chosen,sourceCard:card,sourceEffect:e}));});break;
-  case 'onDamagedReturnDamage':if(!op.requireCondition||list.specialConditions.includes((SpecialCondition as any)[op.requireCondition]))powerDamage(e.source,op.amount);break;
+  case 'onDamagedReturnDamage':if(op.requireTool&&!list.tools.length)break;if(!op.requireCondition||list.specialConditions.includes((SpecialCondition as any)[op.requireCondition]))powerDamage(e.source,op.amount);break;
   case 'onOpponentAttachDamage':if(!op.nonstackName||[owner.active,...owner.bench].filter((l:any)=>l.getPokemonCard()?.name===card.name).length===1)powerDamage(e.target,op.amount);break;
   case 'onOpponentPromotionDamage':powerDamage(e.player.active,op.amount);break;
   case 'onOpponentRetreatDiscard':if(!op.active||owner.active===list)MOVE_CARDS(store,state,e.target,e.player.discard,{cards:e.target.cards.filter((c:any)=>c.superType===SuperType.ENERGY),sourceCard:card,sourceEffect:e});break;

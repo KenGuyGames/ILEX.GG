@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('work/desktop-build/new-match-native.cjs','utf8').replace("work/dp-desktop-candidate","outputs/ILEX.GG-win32-x64").replace("work/new-match-native","work/new-match-release-native");s=s.replace(/for\(const name of \['tabletop.js'[^\n]+\n/,'');fs.writeFileSync('work/desktop-build/new-match-release-native.cjs',s);

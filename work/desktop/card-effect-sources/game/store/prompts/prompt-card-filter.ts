@@ -47,6 +47,7 @@ export function matchesPromptFilter(card: PromptFilterCard | null | undefined, f
   if (!card) {
     return false;
   }
+  if((card as any)._swshUnionPart!==undefined&&(card as any)._swshUnionInPlay===false&&Object.keys(filter).some(key=>!['superType','cardType','name'].includes(key)))return false;
   for (const key in filter) {
     if (!Object.prototype.hasOwnProperty.call(filter, key)) {
       continue;

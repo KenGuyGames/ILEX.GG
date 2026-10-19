@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "tests": [
+    "Deck validation rejects bad sizes, quantities, copy limits, unavailable/custom cards, bans and illegal formats",
+    "Both players must confirm ready; deck changes clear readiness",
+    "Guest projection contains no seed, deck list/order, hidden hand identity, prize identities or private journal",
+    "Only the actor can make their choice; random/automatic prompts cannot be submitted by a peer",
+    "Turn and capability ownership, stale revision and duplicate-request protections reject unauthorized commits",
+    "Undo request freezes moves and never rewinds before approval; requester cannot approve; denial leaves journal unchanged",
+    "Approved Undo restores the exact previous decision and clears approvals; old approval cannot be replayed",
+    "Undo timeout, withdrawal and disconnect cancel requests without rewinding",
+    "Hosted resume keeps private state exact and requires matching engine; no pending Undo survives reconnection",
+    "Secret-selection prompts and face-down target labels cannot reveal the concealed card",
+    "Failed engine actions roll back atomically with no partial move or extra journal entry",
+    "Actual Energy attachment and attack resolve through the engine; approved Undo reverses the attack only",
+    "Prompt controller authorization stays separate from the board perspective",
+    "Face-up Prizes are public; hidden Prizes and secret Energy remain anonymous",
+    "Format printing equivalence, explicit printings and permitted Basic Energy types survive room sharing"
+  ],
+  "checks": 15,
+  "coreSha256": "75c6c9aecefb460fcca6c7f769ae8a24f995af236b6c9df50c72bdf940f65611",
+  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d"
+}

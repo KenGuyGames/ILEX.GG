@@ -1,0 +1,5 @@
+const fs=require('fs'),vm=require('vm'),path=require('path'),root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),ctx={};vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(ui,'limitless-collection.js'),'utf8')+';this.collection=LimitlessCollection',ctx);
+const decks=ctx.collection.decks.filter(d=>/^202[012]/.test(d.sourceFolder));if(decks.length!==24)throw Error('Unexpected scoped deck count');
+fs.writeFileSync(path.join(root,'work/rules-research/swsh-cached-decks.json'),JSON.stringify(decks,null,2));
+let s=fs.readFileSync(path.join(__dirname,'sm-full-match-audit.cjs'),'utf8').replaceAll('sm-cached-decks','swsh-cached-decks').replaceAll('sm-full-match-audit','swsh-full-match-audit').replace("profile:index%2?'expanded':'sm'","profile:index%2?'expanded':'swsh'").replace(/const decks=\[.*?\.map\(i=>JSON.parse\(JSON.stringify\(sourceDecks\[i\]\)\)\);/,'const decks=sourceDecks.map(d=>JSON.parse(JSON.stringify(d)));').replace('through SM','through Sword & Shield').replace('cached SM','cached SWSH').replace('historical SM','historical SWSH');
+fs.writeFileSync(path.join(__dirname,'swsh-full-match-audit.cjs'),s);

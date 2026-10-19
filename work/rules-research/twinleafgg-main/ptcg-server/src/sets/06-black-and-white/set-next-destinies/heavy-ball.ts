@@ -30,7 +30,7 @@ function* playCard(
 
   const blocked: number[] = [];
   player.deck.cards.forEach((card, index) => {
-    if (card instanceof PokemonCard && card.retreat.length < 3) {
+    if (card instanceof PokemonCard && ((card as any)._swshUnionPart!==undefined||card.retreat.length < 3)) {
       blocked.push(index);
     }
   });

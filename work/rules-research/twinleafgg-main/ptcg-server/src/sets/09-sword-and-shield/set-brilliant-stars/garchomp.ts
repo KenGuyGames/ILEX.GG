@@ -54,8 +54,8 @@ export class Garchomp extends PokemonCard {
         GameMessage.WANT_TO_USE_ABILITY,
       ), wantToUse => {
         if (wantToUse) {
-          player.active.preventDamageNextTurnPending = {};
-          player.active.preventEffectsOfAttacksNextTurnPending = {};
+          effect.target.preventDamageNextTurnPending = {};
+          effect.target.preventEffectsOfAttacksNextTurnPending = {};
         }
       });
       return state;

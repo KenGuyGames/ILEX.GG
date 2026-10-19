@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "version": "1.16.0-android.19",
+  "versionCode": 19,
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b",
+  "sha256": "d712ba672908885121f7ea20b20688376bf1e6b55f225c60d4a7dff9547bd4e2",
+  "sameSigningCertificateAsPrevious": true,
+  "mobileChecks": 71,
+  "swshLandscapeSizes": 3,
+  "apkChecks": 35,
+  "bundledScans": 285,
+  "physicalAndroidDeviceTested": false,
+  "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+}

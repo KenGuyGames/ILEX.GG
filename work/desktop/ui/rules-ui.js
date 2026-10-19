@@ -58,9 +58,13 @@ function undoRuleAction(){
  try{const restored=RulesMatch.undoAction(rulesMatch,ruleMap,rulesMatch.spec.custom||state.custom);if(typeof stopBotForUndo==='function')stopBotForUndo();rulesMatch=restored;ruleSelected=null;promptChoice=[];if(typeof seatFocus!=='undefined')seatFocus=null;state.rulesRestoreError='';saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('undo');play();toast(restored.spec.opponent?.type==='bot'?'Action undone. Bot paused.':'Action undone.');}catch(e){toast('Could not undo: '+e.message);}
 }
 async function beginRules(){
+ try{await beginRulesChecked();}catch(e){toast('Could not start match: '+(e.message||String(e)));}
+}
+async function beginRulesChecked(){
   await rulesAssets;
   const ds=[$('#rp1').value,$('#rp2').value].map(id=>(typeof ruleDeckChoices==='function'?ruleDeckChoices():state.decks).find(d=>d.id===id));
-  if(ds.some(d=>!d))return toast('Create two decks first.');
+  if(!$('#matchformat')?.value)return toast('Choose a match format first.');
+  if(ds.some(d=>!d))return toast('Choose both your deck and your opponent’s deck to start.');
   const selectedFormat=state.formats.find(f=>f.id===$('#matchformat')?.value);
   if(!selectedFormat||ds.some(d=>d.format!==selectedFormat.id))return toast('Choose two decks assigned to the selected match format.');
   const formatsUsed=ds.map(()=>selectedFormat);
@@ -84,7 +88,7 @@ async function beginRules(){
   if(rulesMatch&&!confirm('Replace the current rules match?'))return;
   try{
     const opponent=typeof newOpponentSettings==='function'?newOpponentSettings():{type:'local'};
-    const candidate=RulesMatch.create({version:1,profile,opponent,format:{id:selectedFormat.id,name:selectedFormat.name},decks:ds.map(d=>({name:d.name,cards:d.cards})),custom:state.custom},ruleMap,state.custom);
+    const candidate=RulesMatch.create({version:1,profile,opponent,format:{id:selectedFormat.id,name:selectedFormat.name,markerRules:structuredClone(selectedFormat)},decks:ds.map(d=>({name:d.name,cards:d.cards})),custom:state.custom},ruleMap,state.custom);
     state.botPaused=false;state.botError='';
     if(typeof IlexPresentation!=='undefined')IlexPresentation.cancel();rulesMatch=candidate;const setupVisual=typeof IlexPresentation!=='undefined'?IlexPresentation.before(candidate,{type:'setup'}):null;autoRules();if(typeof IlexPresentation!=='undefined')IlexPresentation.after(setupVisual,candidate,{type:'setup'});saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}
@@ -113,7 +117,8 @@ function ruleSlot(list,p,index,active,enabled){
 }
 function pickRuleHand(player,index){
   const R=RulesMatch.R,p=rulesMatch.store.state.players.find(p=>p.id===player),c=p.hand.cards[index];
-  const options=[{target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.ACTIVE,index:0},label:'Active'},...p.bench.map((l,i)=>({target:{player:R.PlayerType.BOTTOM_PLAYER,slot:R.SlotType.BENCH,index:i},label:'Bench '+(i+1)+(l.getPokemonCard()?' · '+l.getPokemonCard().name:' · empty')}))];
+  const opponentTool=c.trainerType===R.TrainerType.TOOL&&c.attachesToOpponentsPokemon,owner=opponentTool?rulesMatch.store.state.players.find(x=>x!==p):p,side=opponentTool?R.PlayerType.TOP_PLAYER:R.PlayerType.BOTTOM_PLAYER,prefix=opponentTool?'Opponent ':'';
+  const options=[{list:owner.active,target:{player:side,slot:R.SlotType.ACTIVE,index:0},label:prefix+'Active'},...owner.bench.map((l,i)=>({list:l,target:{player:side,slot:R.SlotType.BENCH,index:i},label:prefix+'Bench '+(i+1)+(l.getPokemonCard()?' · '+l.getPokemonCard().name:' · empty')}))].filter(o=>!opponentTool||o.list.getPokemonCard());
   if(c.superType===R.SuperType.TRAINER&&![R.TrainerType.TOOL].includes(c.trainerType)){ruleAction({type:'play',player,index,target:options[0].target});return;}
   const energyAction=RulesMatch.handEnergyAction(p,index);
   modal(`<h2>Play ${esc(c.name)}</h2>${ruleZoneAbilityButtons(p,R.SlotType.HAND,index)}${energyAction?`<button onclick="$('#modal').close();ruleAction(${esc(JSON.stringify(energyAction))})">Attach as Energy</button><p>Uses your Energy attachment for this turn. Follow the target and Energy-return choices. Or play as a Pokémon below.</p>`:''}<p>Choose where to play, evolve, or attach. The engine checks legality.</p>${options.map((o,i)=>`<button onclick="$('#modal').close();ruleAction({type:'play',player:${player},index:${index},target:${esc(JSON.stringify(o.target))}})">${esc(o.label)}</button>`).join(' ')}`);

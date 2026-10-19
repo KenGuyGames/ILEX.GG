@@ -50,6 +50,7 @@ export abstract class Card {
    * @returns `true` if this card has that tag, `false` otherwise
    */
   public hasTag(tag: CardTag): boolean {
+    if(tag===CardTag.POKEMON_V&&(this.tags.includes(CardTag.POKEMON_VMAX)||this.tags.includes(CardTag.POKEMON_VSTAR)||this.tags.includes(CardTag.POKEMON_VUNION)&&(this as any)._swshUnionInPlay!==false))return true;
     return this.tags.includes(tag) || this._runtimeTags.includes(tag);
   }
 
@@ -141,6 +142,7 @@ export abstract class Card {
   }
 
   public hasRuleBox() {
+    if((this as any)._swshUnionPart!==undefined&&(this as any)._swshUnionInPlay===false)return false;
     return (
       (this.tags.includes(CardTag.POKEMON_ex) && this.regulationMark) || // Gen 3-era ex do not have a Rule box. Separate Mega ex check not necessary
       this.tags.includes(CardTag.POKEMON_V) ||

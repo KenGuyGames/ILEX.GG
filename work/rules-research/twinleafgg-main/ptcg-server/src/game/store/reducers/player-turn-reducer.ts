@@ -9,7 +9,7 @@ import { GameMessage } from '../../game-message';
 import { RetreatEffect, RetreatStartEffect, UseAttackEffect, UseEnergyPowerEffect, UsePowerEffect, UseStadiumEffect, UseTrainerPowerEffect } from '../effects/game-effects';
 import { EndTurnEffect } from '../effects/game-phase-effects';
 import { StateUtils } from '../state-utils';
-import { SlotType } from '../actions/play-card-action';
+import { PlayerType, SlotType } from '../actions/play-card-action';
 import { PokemonCard } from '../card/pokemon-card';
 import { CheckAttackCostEffect, CheckProvidedEnergyEffect, CheckPokemonAttacksEffect, CheckPokemonPowersEffect } from '../effects/check-effects';
 import { Attack } from '../card/pokemon-types';
@@ -64,44 +64,30 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
       }
 
       if(player.active.getPokemonCard()?._wotcConcealedCard&&revealWotcSlot(store,state,player.active))return checkState(store,state);
-      const pokemonCard = player.active.getPokemonCard();
-      let attacks: Attack[] = [];
-
-      if (pokemonCard) {
-        attacks = [...pokemonCard.attacks];
-      }
-
-      // Add bench attacks
-      player.bench.forEach(benchSlot => {
-        const benchPokemon = benchSlot.getPokemonCard();
-        if (benchPokemon && benchPokemon.attacks.some(attack => attack.useOnBench)) {
-          const benchAttacks = benchPokemon.attacks.filter(attack => attack.useOnBench);
-          attacks.push(...benchAttacks);
-          const attackEffect = new CheckPokemonAttacksEffect(player);
-          state = store.reduceEffect(state, attackEffect);
-          attacks = [...attacks, ...attackEffect.attacks];
-        }
-      });
-
-      const attackEffect = new CheckPokemonAttacksEffect(player);
-      state = store.reduceEffect(state, attackEffect);
-
-      attacks = [...attacks, ...attackEffect.attacks];
-
-      const attack = attacks.find(a => a.name === action.name);
-
-      if (attack === undefined) {
-        throw new GameError(GameMessage.UNKNOWN_ATTACK);
-      }
-
-      // Validate payment before attack interception (Baby rule, coin locks, etc.).
-      // A cancelled attack must not make an unaffordable declaration legal.
       let attackingSlot = player.active;
-      player.bench.forEach(slot => {
-        if (slot.getPokemonCard()?.attacks.some(a => a.name === attack.name && a.useOnBench)) attackingSlot = slot;
-      });
-      const cost = new CheckAttackCostEffect(player, attack);
-      state = store.reduceEffect(state, cost);
+      if (action.sourceTarget) {
+        const target=action.sourceTarget;
+        if(target.player!==PlayerType.BOTTOM_PLAYER || ![SlotType.ACTIVE,SlotType.BENCH].includes(target.slot)
+          || !Number.isInteger(target.index) || target.index<0 || (target.slot===SlotType.ACTIVE?target.index!==0:target.index>=player.bench.length))
+          throw new GameError(GameMessage.INVALID_TARGET);
+        attackingSlot=target.slot===SlotType.ACTIVE?player.active:player.bench[target.index];
+      }
+      const pokemonCard=attackingSlot.getPokemonCard();
+      let attacks:Attack[] = pokemonCard ? pokemonCard.attacks.filter(a=>attackingSlot===player.active||a.useOnBench) : [];
+      const attackEffect = new CheckPokemonAttacksEffect(player);
+      if(attackingSlot===player.active){
+        state=store.reduceEffect(state,attackEffect);
+        attacks=[...attacks,...attackEffect.attacks];
+      }
+      // Legacy actions without a source still select a unique Bench-only attack.
+      let attack=attacks.find(a=>a.name===action.name);
+      if(!attack&&!action.sourceTarget){
+        const choices=player.bench.flatMap(slot=>(slot.getPokemonCard()?.attacks||[]).filter(a=>a.useOnBench&&a.name===action.name).map(a=>({slot,a})));
+        if(choices.length===1){attackingSlot=choices[0].slot;attack=choices[0].a;}
+      }
+      if(!attack)throw new GameError(GameMessage.UNKNOWN_ATTACK);
+      const cost=new CheckAttackCostEffect(player,attack,attackingSlot);
+      state=store.reduceEffect(state,cost);
       const energy = new CheckProvidedEnergyEffect(player, attackingSlot);
       state = store.reduceEffect(state, energy);
       if (!StateUtils.checkEnoughEnergy(energy.energyMap, cost.cost)) {
@@ -109,6 +95,8 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
       }
 
       const useAttackEffect = new UseAttackEffect(player, attack);
+      useAttackEffect.source=attackingSlot;
+      useAttackEffect.explicitSource=true;
       useAttackEffect.delegateFrom=attackEffect.attackSources.get(attack);
       state = store.reduceEffect(state, useAttackEffect);
 
@@ -117,8 +105,8 @@ export function playerTurnReducer(store: StoreLike, state: State, action: Action
       if (!state.playerLastAttack) {
         state.playerLastAttack = {};
       }
-      if (pokemonCard) {
-        state.playerLastAttack[player.id] = { attack, sourceCard: pokemonCard };
+      if (attackingSlot.getPokemonCard()) {
+        state.playerLastAttack[player.id] = { attack, sourceCard: attackingSlot.getPokemonCard() };
       }
 
       return state;

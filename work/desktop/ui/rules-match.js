@@ -2,9 +2,11 @@
 var RulesMatch=(()=>{
   const R=TCGRules;
   const profiles={
+    sv:{name:'Scarlet & Violet (2023–2025)',format:R.Format.SV,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true,svEraRules:true},
+    swsh:{name:'Sword & Shield (2020–2023)',format:R.Format.SWSH,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true},
     wotc:{name:'WOTC: Base–Neo (1999–2001)',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,wotcRules:true,wotcEarlyPowers:true,unlimitedRetreat:true,mulliganBonus:2},
     wotc2002:{name:'WOTC: 2002–Skyridge',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:true,forceFirst:true,legacyBurn:true,supporterCleanupAtEndTurn:true,wotcRules:true,wotcPowerConditions:true,unlimitedRetreat:true,mulliganBonus:2},
-    modern:{name:'Sword & Shield onward',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false},
+    modern:{name:'Sword & Shield onward',format:R.Format.UNLIMITED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true},
     sm:{name:'Sun & Moon (2017–2019)',format:R.Format.SM,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true},
     xy:{name:'XY (2013–2016)',format:R.Format.XY,firstTurnDrawCard:true,firstTurnUseSupporter:true,attackFirstTurn:false,forceFirst:true,legacyBurn:true,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true},
     expanded:{name:'Expanded (BW onward)',format:R.Format.EXPANDED,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true},
@@ -95,9 +97,11 @@ var RulesMatch=(()=>{
       if(a.type==='play'){
         const card=player.hand.cards[a.index];if(!card)throw Error('Card not in hand.');
         if(s.turn===1&&s.rules.firstTurnNoTrainers&&card.superType===R.SuperType.TRAINER)throw Error('The first player cannot play Trainers under the Diamond & Pearl rules.');
-        if(!Number.isInteger(a.index)||!a.target||a.target.player!==R.PlayerType.BOTTOM_PLAYER||![R.SlotType.ACTIVE,R.SlotType.BENCH].includes(a.target.slot)||!Number.isInteger(a.target.index)||a.target.index<0||(a.target.slot===R.SlotType.ACTIVE?a.target.index!==0:a.target.index>=player.bench.length))throw Error('Invalid play target.');
+        const opponentTool=card.superType===R.SuperType.TRAINER&&card.trainerType===R.TrainerType.TOOL&&card.attachesToOpponentsPokemon;
+        const targetSide=opponentTool?R.PlayerType.TOP_PLAYER:R.PlayerType.BOTTOM_PLAYER,targetOwner=opponentTool?s.players.find(p=>p!==player):player;
+        if(!Number.isInteger(a.index)||!a.target||a.target.player!==targetSide||![R.SlotType.ACTIVE,R.SlotType.BENCH].includes(a.target.slot)||!Number.isInteger(a.target.index)||a.target.index<0||(a.target.slot===R.SlotType.ACTIVE?a.target.index!==0:a.target.index>=targetOwner.bench.length))throw Error('Invalid play target.');
         action=new R.PlayCardAction(a.player,a.index,a.target);
-      }else if(a.type==='attack')action=new R.AttackAction(a.player,a.name);
+      }else if(a.type==='attack')action=new R.AttackAction(a.player,a.name,a.target);
       else if(a.type==='ability')action=new R.UseAbilityAction(a.player,a.name,a.target);
       else if(a.type==='stadium')action=new R.UseStadiumAction(a.player);
       else if(a.type==='retreat')action=new R.RetreatAction(a.player,a.index);

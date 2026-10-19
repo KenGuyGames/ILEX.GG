@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "profiles": 129,
+  "generatorPoolChecks": 13507,
+  "catalogReverseFinishes": 13587,
+  "counts": {
+    "reverse": 12828,
+    "pokeball": 302,
+    "energy-symbols": 140,
+    "masterball": 211,
+    "friendball": 23,
+    "loveball": 25,
+    "quickball": 22,
+    "team-rocket": 10,
+    "duskball": 26
+  },
+  "source": "Generator pools plus cached positive TCGdex reverse metadata; no separate scans claimed"
+}

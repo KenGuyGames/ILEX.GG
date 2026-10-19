@@ -1,0 +1,20 @@
+module.exports=(a,name)=>{
+ const t=a.text||'',base=parseInt(a.damage)||0;let m;
+ if(m=t.match(/^During your opponent's next turn, attacks (?:that the Defending Pokémon uses|used by the Defending Pokémon) cost (Colorless)+ more\.$/))return [{op:'hgss',kind:'attackTax',amount:(t.match(/Colorless/g)||[]).length,after:true}];
+ if(m=t.match(/^During your opponent's next turn, prevent all damage done to this Pokémon by attacks if that damage is (\d+) or less\.$/))return [{op:'protect',filter:{maxDamage:+m[1]},after:true}];
+ if(m=t.match(/^This attack does (\d+) damage for each Energy attached to all of your opponent's Pokémon\.$/))return [{op:'exCountDamage',count:'opponentFieldEnergy',amount:+m[1],base:0}];
+ if(m=t.match(/^This attack does (\d+) damage to 1 of your opponent's Pokémon for each Energy attached to this Pokémon\. \(Don't apply Weakness and Resistance for Benched Pokémon\.\)$/))return [{op:'sv',kind:'energySnipe',amount:+m[1]}];
+ if(t==='You may move any amount of Metal Energy from your Pokémon to your other Pokémon in any way you like.')return [{op:'dpRedistribute',energy:'Metal',after:true}];
+ if(m=t.match(/^Discard (\d+) Energy from this Pokémon\. During your opponent's next turn, this Pokémon takes (\d+) less damage from attacks \(after applying Weakness and Resistance\)\.$/))return [{op:'dpPaySelf',amount:+m[1],effectOnly:true,after:true},{op:'reduceNextDamage',amount:+m[2],allDamage:true,after:true}];
+ if(m=t.match(/^Choose (\d+) of your opponent's Pokémon and put (\d+) damage counters on each of them\.$/))return [{op:'sv',kind:'chosenCounters',targets:+m[1],amount:+m[2]*10,after:true}];
+ if(t==="Put 1 damage counter on each of your opponent's Pokémon for each of your Maushold in play.")return [{op:'sv',kind:'namedFieldCounters',name:'Maushold',amount:10,after:true}];
+ if(m=t.match(/^Heal (\d+) damage from each of your Basic Pokémon\.$/))return [{op:'sv',kind:'healField',basic:true,amount:+m[1],after:true}];
+ if(t==='Discard all Energy from this Pokémon, and heal all damage from each of your Tera Pokémon.')return [{op:'dpReturnAllSelfEnergy',discard:true,after:true},{op:'sv',kind:'healField',tag:'Tera',all:true,after:true}];
+ if(t==="Your opponent's Active Pokémon is now Poisoned. During your opponent's next turn, Energy cards can't be attached from your opponent's hand to that Pokémon.")return [{op:'status',conditions:['POISONED']},{op:'xy',kind:'defenderLock',lock:'energy',after:true}];
+ if(t==="Flip a coin. If heads, choose 1 of your opponent's Active Pokémon's attacks and use it as this attack.")return [{op:'coin',heads:[{op:'copyAttack'}],tails:[{op:'damage',amount:0}]}];
+ if(t==="During your next turn, your Pokémon can't attack. (This includes new Pokémon that come into play.)")return [{op:'sv',kind:'teamAttackLock',after:true}];
+ if(m=t.match(/^If this Pokémon used (.+) during your last turn, this attack does (\d+) more damage\.$/))return [{op:'sv',kind:'conditional',condition:'previousAttack',name:m[1],ops:[{op:'addDamage',amount:+m[2]}]}];
+ if(m=t.match(/^If any of your Benched (.+) have any damage counters on them, this attack does (\d+) more damage\.$/))return [{op:'sv',kind:'conditional',condition:'namedBenchDamaged',name:m[1],ops:[{op:'addDamage',amount:+m[2]}]}];
+ if(t==="If you have exactly 1 Prize card remaining, your opponent's Active Pokémon is now Paralyzed.")return [{op:'sv',kind:'conditional',condition:'ownPrizeOne',ops:[{op:'status',conditions:['PARALYZED']}]}];
+ return null;
+};

@@ -23,6 +23,13 @@ export class CheckEvolutionTimingEffect implements Effect {
   constructor(public player: Player, public target: PokemonCardList) { }
 }
 
+/** Name/stage permission only; normal turn and play-zone checks still apply. */
+export class CheckEvolutionEligibilityEffect implements Effect {
+  readonly type = 'CHECK_EVOLUTION_ELIGIBILITY_EFFECT';
+  public preventDefault = false;
+  constructor(public player: Player, public target: PokemonCardList, public evolution: PokemonCard, public allowed: boolean) { }
+}
+
 export class CheckSleepRecoveryEffect implements Effect {
   readonly type = 'CHECK_SLEEP_RECOVERY_EFFECT';
   public preventDefault = false;
@@ -160,6 +167,7 @@ export class CheckRetreatCostEffect implements Effect {
     this.player = player;
     const pokemonCard = target.getPokemonCard();
     this.cost = pokemonCard !== undefined ? [...pokemonCard.retreat] : [];
+      this.cost.push(...Array(target.retreatCostIncreaseNextTurn||0).fill(CardType.COLORLESS));
   }
 }
 
@@ -169,11 +177,14 @@ export class CheckAttackCostEffect implements Effect {
   public player: Player;
   public attack: Attack;
   public cost: CardType[];
+  public source: PokemonCardList;
 
-  constructor(player: Player, attack: Attack) {
+  constructor(player: Player, attack: Attack, source: PokemonCardList = player.active) {
     this.player = player;
     this.attack = attack;
     this.cost = [...attack.cost];
+      if(!player.hand.cards.length&&(attack as any)._svEmptyHandCost)this.cost=[...(attack as any)._svEmptyHandCost];
+    this.source = source;
   }
 }
 

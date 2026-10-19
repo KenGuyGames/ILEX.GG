@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5",
+  "engineSha256": "ea83b8768408a5b1fbf3e6f67c0ed1f99b2a72193e7fcedc16e17579e2108789",
   "results": [
     {
       "name": "xy-tests",
@@ -15,16 +15,16 @@
       "log": "work\\rules-research\\sm-regression-sm-tests.log"
     },
     {
-      "name": "xy-full-tests",
-      "passed": true,
-      "exitCode": 0,
-      "log": "work\\rules-research\\sm-regression-xy-full-tests.log"
-    },
-    {
       "name": "xy-interaction-tests",
       "passed": true,
       "exitCode": 0,
       "log": "work\\rules-research\\sm-regression-xy-interaction-tests.log"
+    },
+    {
+      "name": "xy-full-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sm-regression-xy-full-tests.log"
     },
     {
       "name": "basic-energy-tests",

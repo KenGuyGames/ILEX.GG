@@ -23,7 +23,7 @@ export class Dusknoir extends PokemonCard {
     }
   ];
 
-  public power: Power[] = [
+  public powers: Power[] = [
     {
       name: 'Spectral Breach',
       powerType: PowerType.ABILITY,

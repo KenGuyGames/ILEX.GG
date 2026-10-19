@@ -9,6 +9,7 @@ import { matchesPromptFilter } from '../prompts/prompt-card-filter';
 import { revealConcealedCard } from '../prefabs/wotc-facedown';
 
 export function restoreTemporaryStage(card: any, destination: CardList) {
+  if(card._swshUnionPart!==undefined&&!('energies' in destination))card._swshUnionInPlay=false;
   if(card._dpPokemonEnergyRole&&!('energies' in destination)){const role=card._dpPokemonEnergyRole;card.superType=role.superType;if(role.hadEnergyType)card.energyType=role.energyType;else delete card.energyType;if(role.hadProvides)card.provides=role.provides;else delete card.provides;delete card._dpPokemonEnergyRole;}
   if(card._dpPokemonStadiumRole&&(destination as any)._dpRoleStadiumOwnerId!==card._dpPokemonStadiumRole.ownerId){const role=card._dpPokemonStadiumRole;card.superType=role.superType;if(role.hadTrainerType)card.trainerType=role.trainerType;else delete card.trainerType;delete card._dpPokemonStadiumRole;}
   if(card._dpFaceDownEnergyRole&&!('energies' in destination)){const role=card._dpFaceDownEnergyRole;card.superType=role.superType;card.energyType=role.energyType;card.provides=role.provides;delete card._dpFaceDownEnergyRole;}
@@ -26,6 +27,12 @@ export function restoreTemporaryStage(card: any, destination: CardList) {
 
 export function ecogymDestination(source:CardList,destination:CardList,card:Card):CardList {
  const context=(CardList as any).wotcMovementContext;
+ if(context?.svMovementBlocked?.(source,destination,card,context))return source;
+ if(context?.swshMovementBlocked?.(source,destination,card,context))return source;
+ if(context?.state&&(card as any)._ilexToolOwnerId!==undefined&&'energies' in source&&destination!==source){
+  const owner=context.state.players.find((p:any)=>p.id===(card as any)._ilexToolOwnerId);
+  if(owner)return owner.discard;
+ }
  if(context?.kind==='attack'&&!context.knockout&&!context.wholePokemon){const owner=context.state.players.find((p:any)=>p.hand===source||p.hand===destination);if(owner&&owner.id!==context.actorId&&context.xyPlayerProtected?.(owner))return source;}
  if(card._dpPokemonStadiumRole&&context?.state?.players.some((player:any)=>player.discard===destination)){const owner=context.state.players.find((player:any)=>player.id===card._dpPokemonStadiumRole.ownerId);if(owner)return owner.hand;}
  const ownerId=(destination as any)._wotcDiscardOwnerId;

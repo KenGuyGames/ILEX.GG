@@ -1,0 +1,1 @@
+const fs=require('fs'),r=require('../rules-research/sv-native-stat-provenance.json'),d=require('../card-sources/sv-supplements.json');console.log(r.conflicts);console.log(r.unresolved.slice(0,40).map(id=>({id,...Object.fromEntries(Object.entries(d.find(d=>d.id===id)).filter(([k])=>['name','hp','subtypes','attacks','abilities','evolvesFrom'].includes(k)))})));

@@ -147,7 +147,7 @@ export function WAS_POWER_USED(
   index: number,
   user: PokemonCard,
 ): effect is PowerEffect {
-  return effect instanceof PowerEffect && effect.power === user.powers[index];
+  return effect instanceof PowerEffect && effect.type === 'POWER_EFFECT' && effect.card === user && effect.power === user.powers[index];
 }
 
 export const AFTER_ATTACK = (
@@ -1888,6 +1888,7 @@ export function MOVE_CARDS(
  */
 export function MOVE_POKEMON_OFF_BOARD(store:StoreLike,state:State,slot:PokemonCardList,options:{pokemonDestination:CardList;attachedDestination?:CardList;sourceCard?:Card;sourceEffect?:any}):State {
  const context=(CardList as any).wotcMovementContext;
+ if(context?.svMovementBlocked?.(slot,options.pokemonDestination,slot.getPokemonCard(),{...context,store,state,wholePokemon:true}))return state;
  (CardList as any).wotcMovementContext={...context,wholePokemon:true};
  try{return movePokemonOffBoardInternal(store,state,slot,options);}finally{(CardList as any).wotcMovementContext=context;}
 }
@@ -3223,6 +3224,7 @@ export function CLEAR_MARKER_AND_OPPONENTS_POKEMON_MARKER_AT_END_OF_TURN(
  * lock via `HANDLE_ABILITY_LOCK` in `prefabs/ability-lock.ts` so Check + PowerEffect stay in sync.
  * Ability owners must still call this before applying ability effects.
  */
+const abilityProbeStack = new WeakMap<object, Set<PokemonCard>>();
 export function IS_ABILITY_BLOCKED(
   store: StoreLike,
   state: State,
@@ -3231,6 +3233,12 @@ export function IS_ABILITY_BLOCKED(
   /** When probing a specific power (e.g. useFromHand), pass it so allowUseFromHand locks match. */
   power?: Partial<Power>,
 ): boolean {
+  let probes=abilityProbeStack.get(store);
+  if(!probes){probes=new Set<PokemonCard>();abilityProbeStack.set(store,probes);}
+  // A passive lock may ask whether its own Ability is suppressed while the
+  // surrounding probe is already checking it. Let the outer probe finish.
+  if(probes.has(card))return false;
+  probes.add(card);
   // Try to reduce PowerEffect, to check if something is blocking our ability
   try {
     store.reduceEffect(
@@ -3252,6 +3260,8 @@ export function IS_ABILITY_BLOCKED(
     );
   } catch {
     return true;
+  } finally {
+    probes.delete(card);
   }
   return false;
 }

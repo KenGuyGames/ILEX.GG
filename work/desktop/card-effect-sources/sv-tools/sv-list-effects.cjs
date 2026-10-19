@@ -1,0 +1,1 @@
+const fs=require('fs'),r=require('../rules-research/sv-uncompiled-effects.json');for(const kind of ['attack','ability','rules']){console.log('\n'+kind);console.log(r.filter(r=>r.kind===kind).map((r,i)=>i+' '+[...new Set(r.names)].join('/')+': '+r.text).join('\n'));}

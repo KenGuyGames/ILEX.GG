@@ -1,0 +1,1 @@
+module.exports=d=>d.id==='swsh1-36'?{...d,retreatCost:['Colorless'],convertedRetreatCost:1}:d.name==='Greninja V-UNION'?{...d,attacks:(d.attacks||[]).map(a=>a.name==='Waterfall Blind'?{...a,name:'Waterfall Bind'}:a)}:d;

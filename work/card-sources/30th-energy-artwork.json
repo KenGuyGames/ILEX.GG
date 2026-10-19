@@ -1,0 +1,74 @@
+[
+  {
+    "id": "mee-009",
+    "number": "009",
+    "type": "Grass",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_009_R_EN_LG.png",
+    "bytes": 83490,
+    "sha256": "3a210519bd4a9773a48a71f046842a9134d6904dfd864c7c14ca4b42a1ac9895",
+    "file": "mee-009.png"
+  },
+  {
+    "id": "mee-010",
+    "number": "010",
+    "type": "Fire",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_010_R_EN_LG.png",
+    "bytes": 81465,
+    "sha256": "5ea6e1c9434b4e850df5a9ebc6c33ed553ee2cd7edfa88e4facd29ab1805e578",
+    "file": "mee-010.png"
+  },
+  {
+    "id": "mee-011",
+    "number": "011",
+    "type": "Water",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_011_R_EN_LG.png",
+    "bytes": 78950,
+    "sha256": "52ae8b25e9f7115ea1d2b1e3c75de44e902f0767f5104e5d5ac8f308134cab36",
+    "file": "mee-011.png"
+  },
+  {
+    "id": "mee-012",
+    "number": "012",
+    "type": "Lightning",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_012_R_EN_LG.png",
+    "bytes": 80630,
+    "sha256": "cdecd014cfb3687b481305de0b6056fc55a0bb6209bc89db88c802eddb090411",
+    "file": "mee-012.png"
+  },
+  {
+    "id": "mee-013",
+    "number": "013",
+    "type": "Psychic",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_013_R_EN_LG.png",
+    "bytes": 79117,
+    "sha256": "3a1604f1920efced414abef1aa78af901f1f15ca9e28b65c30b79fdc9319d7b9",
+    "file": "mee-013.png"
+  },
+  {
+    "id": "mee-014",
+    "number": "014",
+    "type": "Fighting",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_014_R_EN_LG.png",
+    "bytes": 70875,
+    "sha256": "3d1796bdf547f63048ea2ea24cb040d0b43bd99b1402ef96039972b76c039f35",
+    "file": "mee-014.png"
+  },
+  {
+    "id": "mee-015",
+    "number": "015",
+    "type": "Darkness",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_015_R_EN_LG.png",
+    "bytes": 79003,
+    "sha256": "f6ed7069e0936f754941d582222c3bd5593c7859812b1132076a38fad3e169c4",
+    "file": "mee-015.png"
+  },
+  {
+    "id": "mee-016",
+    "number": "016",
+    "type": "Metal",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_016_R_EN_LG.png",
+    "bytes": 89537,
+    "sha256": "3ad8893a6aedc561ac944734d163f22972182153a4962d521332276b110d863d",
+    "file": "mee-016.png"
+  }
+]

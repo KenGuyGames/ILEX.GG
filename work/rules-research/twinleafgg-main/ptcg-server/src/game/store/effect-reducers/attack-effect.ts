@@ -1,4 +1,4 @@
-import {CoinFlipEffect} from '../effects/play-card-effects';
+import {CoinFlipEffect,ToolEffect} from '../effects/play-card-effects';
 import { getCardTarget } from "../../../simple-bot/simple-tactics/simple-tactics";
 import { GameError } from "../../game-error";
 import { GameMessage, GameLog } from "../../game-message";
@@ -9,7 +9,7 @@ import { Effect } from "../effects/effect";
 import { shouldPreventAttackEffects, shouldPreventAttackDamage, shouldApplyDamageReduction, getActiveSurviveOnTenHpOptions, shouldKnockOutIfDamaged, getActiveRetaliateOnDamage, retaliateDamageEffect, RetaliateDamageEffect, EffectOfAttackEffect } from "../effects/effect-of-attack-effects";
 import { AttackEffect, KnockOutAttackEffect, HealEffect } from "../effects/game-effects";
 import { GameStatsTracker } from "../game-stats-tracker";
-import { TAKE_X_PRIZES, IS_POKEPOWER_BLOCKED, MOVE_CARDS, MOVE_POKEMON_OFF_BOARD, COIN_FLIP_PROMPT } from "../prefabs/prefabs";
+import { TAKE_X_PRIZES, IS_POKEPOWER_BLOCKED, IS_ABILITY_BLOCKED, IS_TOOL_BLOCKED, MOVE_CARDS, MOVE_POKEMON_OFF_BOARD, COIN_FLIP_PROMPT } from "../prefabs/prefabs";
 import { StateUtils } from "../state-utils";
 import { State, GamePhase } from "../state/state";
 import { StoreLike } from "../store-like";
@@ -71,7 +71,7 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
     }
 
     if(effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){if((target as any).wotcLastOpponentAttackDamageTurn!==state.turn)(target as any).wotcLastOpponentAttackDamage=0;(target as any).wotcLastOpponentAttackDamageTurn=state.turn;}
-    if((state.rules as any).exEraRules&&damage>0&&(effect.player!==StateUtils.findOwner(state,target)||(state.rules as any).dpEraRules)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
+    if((state.rules as any).exEraRules&&damage>0&&(effect.player!==StateUtils.findOwner(state,target)||(state.rules as any).dpEraRules)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard),abilityBlocked:(state.rules as any).dpEraRules&&IS_ABILITY_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
     const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
     afterDamageEffect.target = effect.target;
     store.reduceEffect(state, afterDamageEffect);
@@ -93,14 +93,8 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
 
 export function attackReducer(store: StoreLike, state: State, effect: Effect): State {
 
-  // A forced switch affects both the incoming Bench Pokemon and outgoing Active.
-  if (effect instanceof GustOpponentBenchEffect) {
-    const incoming = effect.target;
-    effect.target = effect.opponent.active;
-    const blocked = shouldPreventAttackEffects(state, effect);
-    effect.target = incoming;
-    if (blocked) return state;
-  }
+  // Switch-in affects the selected Bench Pokemon; switch-out affects the Active.
+  // Official advanced rulebook C-04/C-05: immunity on the other slot is irrelevant.
 
   if (shouldPreventAttackEffects(state, effect)) {
     return state;
@@ -183,8 +177,17 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
       effect.damage+=(effect.attackEffect as any)._wotcSurgeBonus||0;
       for(const bonus of bonuses||[])if(bonus.turn===state.turn&&effect.source.getPokemonCard()?.name.includes(bonus.nameIncludes))effect.damage+=bonus.amount;
     }
+    // Consumable reductions belong after prevention and ordinary reductions.
+    // Their own Tool effect discards them, retaining physical-card ownership.
+    for(const entry of effect.consumableDamageReductions.splice(0)){
+      const owner=StateUtils.findOwner(state,entry.holder);
+      if(!bypassDefender&&effect.damage>0&&entry.holder.tools.includes(entry.card)&&!IS_TOOL_BLOCKED(store,state,owner,entry.card)){
+        effect.damage=Math.max(0,effect.damage-entry.amount);
+        MOVE_CARDS(store,state,entry.holder,owner.discard,{cards:[entry.card],sourceCard:entry.card,sourceEffect:new ToolEffect(owner,entry.card)});
+      }
+    }
     // Survive at 10 HP during opponent's next turn
-    const surviveOpts = bypassDefender ? null : (effect as any)._wotcSurviveTenPower ? {coinFlipOnWouldKo:true,requireFullHp:false} : getActiveSurviveOnTenHpOptions(target);
+    const surviveOpts = bypassDefender ? null : (effect as any)._wotcSurviveTenOptions || ((effect as any)._wotcSurviveTenPower ? {coinFlipOnWouldKo:true,requireFullHp:false} : getActiveSurviveOnTenHpOptions(target));
     if (surviveOpts !== null
       && effect.surviveOnTenHPReason === undefined
       && state.phase === GamePhase.ATTACK) {

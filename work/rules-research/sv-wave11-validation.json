@@ -1,0 +1,11 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Primordial Tentacles prevents opposing retreat only while Active and enabled",
+    "Ancient Way replaces opposing Active Weakness with x4 without multiplying resistance",
+    "Stir and Snooze changes only its own sleep recovery flips",
+    "Forest Miasma applies once at each Checkup and stops on the Bench"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

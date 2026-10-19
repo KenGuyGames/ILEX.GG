@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "bug": "Lysandre Labs must disable Fairy Charms and other attached Tools",
+  "engineSha256": "117e52f186fa4f4d5be616679043148e4204fac7d5d09b7d16f07e677bc17c56",
+  "baseEngineSha256": "adf38e961d572dabd8fc96503b552b5738e509d37a84d069d0d207ef11d63d3a",
+  "bundleChangeScope": "LysandreLabs.reduceEffect only",
+  "focusedChecks": 24,
+  "fairyCharmVariants": 7,
+  "smChecks": 82,
+  "androidChecks": 31,
+  "androidVersionCode": 18,
+  "sameAndroidSigningCertificate": true,
+  "physicalAndroidDeviceTested": false,
+  "priorFixesPreserved": [
+    "Custom Catcher",
+    "Stadium placement",
+    "Realistic Player aliases"
+  ],
+  "fullWindowsZipsRebuilt": false,
+  "outputs": {
+    "ILEX.GG-Bug-Fixes.zip": "33c1471dddf2e70398961abe84c946102240761960abad1569a60bc579b38d25",
+    "ILEX.GG-Android.apk": "0867163073ab3eacce8504329eb6401b1c48bebf519f77f32dd42dd5beb47979"
+  }
+}

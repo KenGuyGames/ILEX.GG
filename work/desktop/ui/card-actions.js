@@ -4,8 +4,8 @@ let cardActionView=null;
 function cardActionEntries(player,list,active,index){
  const R=RulesMatch.R,c=list.getPokemonCard();if(!c)return [];
  const target={player:R.PlayerType.BOTTOM_PLAYER,slot:active?R.SlotType.ACTIVE:R.SlotType.BENCH,index};
- const printed=[...c.powers.filter(p=>!p._dpExtra).map(p=>({kind:'ability',name:p.name,text:p.text||'',passive:p.powerType===R.PowerType.POKEBODY||p._wotcPassive||p.powerType===R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT,action:{type:'ability',player:player.id,name:p.name,target}})),...c.attacks.map(a=>({kind:'attack',name:a.name,text:a.text||'',passive:!active&&!a.useOnBench,action:{type:'attack',player:player.id,name:a.name}}))];
- const extras=active?RulesMatch.attacks(rulesMatch,player).filter(a=>!c.attacks.some(p=>p.name===a.name)).map(a=>({kind:'attack',name:a.name,text:a.text||'',copied:true,action:{type:'attack',player:player.id,name:a.name}})):[];
+ const printed=[...c.powers.filter(p=>!p._dpExtra&&!(c._swshUnionPart!==undefined&&p.powerType===R.PowerType.VUNION_ASSEMBLY)).map(p=>({kind:'ability',name:p.name,text:p.text||'',passive:p.powerType===R.PowerType.POKEBODY||p._wotcPassive||p.powerType===R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT,action:{type:'ability',player:player.id,name:p.name,target}})),...c.attacks.map(a=>({kind:'attack',name:a.name,text:a.text||'',passive:!active&&!a.useOnBench,action:{type:'attack',player:player.id,name:a.name,target}}))];
+ const extras=active?RulesMatch.attacks(rulesMatch,player).filter(a=>!c.attacks.some(p=>p.name===a.name)).map(a=>({kind:'attack',name:a.name,text:a.text||'',copied:true,action:{type:'attack',player:player.id,name:a.name,target}})):[];
  const inherited=RulesMatch.powers(rulesMatch,player,list).filter(p=>p._dpExtra||!c.powers.some(own=>own.name===p.name)).map(p=>({kind:'ability',name:p.name,text:p.text||'',copied:true,passive:p.powerType===R.PowerType.POKEBODY||p._wotcPassive,action:{type:'ability',player:player.id,name:p.name,target}}));
  const retreats=active?player.bench.flatMap((slot,i)=>slot.getPokemonCard()?[{kind:'retreat',name:'Retreat to '+slot.getPokemonCard().name+' · Bench '+(i+1),text:'',action:{type:'retreat',player:player.id,index:i}}]:[]):[];
  return [...printed,...extras,...inherited,...retreats];
@@ -29,9 +29,16 @@ function openCardActions(playerId,index,active){
  // Scan-reviewed boundaries keep neighbouring printed names in separate regions.
  const reviewed=card.name==='Alakazam'&&printed.length===2&&printed[0].name==='Damage Swap'?[.58,.723,.835]:card.name==='Jirachi'&&printed.length===2&&printed[0].name==='Wishing Star'?[.50,.75,.895]:null;
  const joined=!!LegendDisplay.pair(list);if(joined)top=.66;
- const regions=printed.map((entry,i)=>{const height=reviewed?reviewed[i+1]-reviewed[i]:((joined ? .96 : end)-(joined ? .66 : start))*weights[i]/total;if(reviewed)top=reviewed[i];const result=button(entry,entries.indexOf(entry),`top:${top*100}%;height:${height*100}%;`,true);top+=height;return result;}).join('');
+ const unionRegions={
+  'Union Gain':[.115,.177,.37,.063],'Shocking Shock':[.525,.177,.37,.063],'Disconnect':[.115,.790,.37,.070],'Electro Ball Together':[.525,.825,.37,.040],
+  'Ninja Body':[.525,.177,.37,.065],'Aqua Edge':[.525,.250,.37,.035],'Antidote Jutsu':[.115,.740,.37,.045],'Feel the Way':[.525,.740,.37,.055],'Twister Shuriken':[.115,.790,.37,.070],'Waterfall Bind':[.525,.800,.37,.065],
+  'Super Regeneration':[.525,.177,.37,.060],'Psysplosion':[.115,.800,.37,.065],'Photon Barrier':[.525,.750,.37,.075],'Final Burn':[.525,.830,.37,.035],
+  'Dance of the Crowned Sword':[.525,.177,.37,.075],'Steel Cut':[.115,.825,.37,.035],'Master Blade':[.525,.800,.37,.065],
+  'All You Can Eat':[.525,.177,.37,.060],'Burst Wheel':[.115,.780,.37,.080],'Electric Ball':[.525,.825,.37,.040]
+ };
+ const regions=printed.map((entry,i)=>{const union=card._swshUnionPart!==undefined&&unionRegions[entry.name];if(union){const [x,y,w,h]=union;return button(entry,entries.indexOf(entry),`left:${x*100}%;top:${y*100}%;width:${w*100}%;height:${h*100}%;`,true);}const height=reviewed?reviewed[i+1]-reviewed[i]:((joined ? .96 : end)-(joined ? .66 : start))*weights[i]/total;if(reviewed)top=reviewed[i];const result=button(entry,entries.indexOf(entry),`top:${top*100}%;height:${height*100}%;`,true);top+=height;return result;}).join('');
  const legendParts=LegendDisplay.pair(list)||[],legendBottom=legendParts[1];
- const art=ruleArt(legendBottom||card);
+ const art=ruleArt(legendParts.length===4?legendParts[0]:legendBottom||card);
  cardActionDialog.innerHTML=`<button class="card-action-close" aria-label="Close card actions">×</button><h2>${esc(card.name)}</h2><p>${enabled?'Select an attack or Power on the card.':'Card inspection · actions unavailable'}</p><div class="card-action-scan ${legendParts.length?'complete-legend':''} ${art?'':'no-scan'}">${art?`<img src="${esc(art)}" alt="${esc(card.name)}" ${previewAttrs(card)} ${legendParts.length?LegendDisplay.attrs(list):''}>`:`<h3>${esc(card.name)}</h3>`}${art?regions:printed.map(e=>button(e,entries.indexOf(e))).join('')}</div>${entries.some(e=>e.copied)?`<div class="card-copied-actions"><h3>Additional attacks and Powers</h3>${entries.filter(e=>e.copied).map(e=>button(e,entries.indexOf(e))).join('')}</div>`:''}<p class="card-action-help">Select a printed attack or Power in its outlined region. Hover or focus for availability details. Esc returns to the table.</p>`;
  cardActionDialog.querySelector('.card-action-close').onclick=()=>cardActionDialog.close();
  if(active)cardActionDialog.querySelector('.card-action-help').insertAdjacentHTML('beforebegin',`<section class="card-retreat-actions"><h3>Retreat · choose a Benched Pokémon</h3>${entries.filter(e=>e.kind==='retreat').map(e=>button(e,entries.indexOf(e))).join('')||'<p>No Benched Pokémon available.</p>'}</section>`);

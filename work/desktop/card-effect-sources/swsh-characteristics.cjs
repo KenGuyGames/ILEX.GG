@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path'),src=path.resolve(__dirname,'../rules-research/twinleafgg-main/ptcg-server/src');let changed=0;
+function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())walk(p);else if(e.name.endsWith('.ts')){let s=fs.readFileSync(p,'utf8'),next=s.replaceAll('.tags.includes(CardTag.POKEMON_V)','.hasTag(CardTag.POKEMON_V)').replaceAll('.tags.includes(tag)','.hasTag(tag)');if(next!==s){fs.writeFileSync(p,next);changed++;}}}}
+walk(path.join(src,'sets/09-sword-and-shield'));
+for(const dir of ['sets/06-black-and-white/set-next-destinies','sets/07-x-and-y/set-breakthrough']){const p=path.join(src,dir,'heavy-ball.ts');if(!fs.existsSync(p))continue;const s=fs.readFileSync(p,'utf8'),next=s.replace('card.retreat.length < 3',"((card as any)._swshUnionPart!==undefined||card.retreat.length < 3)");if(next!==s&&!s.includes('_swshUnionPart')){fs.writeFileSync(p,next);changed++;}}
+console.log('V-family and individual-piece queries updated in '+changed+' files');

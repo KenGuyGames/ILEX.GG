@@ -1,0 +1,382 @@
+{
+  "status": "scan-reviewed-source-candidates-not-engine-validation",
+  "evidence": [
+    {
+      "id": "2023sv-1",
+      "sourceId": "sv1-13",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/5080d288a57d81e76512bfd2.jpg",
+      "scanSha256": "4c5e9c3a5c3df59150bdb9033af9fe7bd9a2bb0e37b983a565dcb8ef722fcf9d",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-13"
+      ]
+    },
+    {
+      "id": "2023sv-2",
+      "sourceId": "sv1-36",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/783b646329304faa11a3165f.jpg",
+      "scanSha256": "40d8abfed27e88a39d019eb8a74c5c487da606218fc5e822dd6fcbca0a7d59c9",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-36"
+      ]
+    },
+    {
+      "id": "2023sv-3",
+      "sourceId": "sv1-52",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/56aea7eca4c5ba98861dd6fa.jpg",
+      "scanSha256": "3a7d211a3bf8dd65a410d115e8ef0d72f24f991deb81471631c402554845db58",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-52"
+      ]
+    },
+    {
+      "id": "2023sv-4",
+      "sourceId": "sv1-59",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/cbc6f1cd06bd6ffbaad1af0d.jpg",
+      "scanSha256": "7b04784e99472fc8a2953da00c664b978ded798a6d4c27aa927024e48c9cf939",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-59"
+      ]
+    },
+    {
+      "id": "2023sv-5",
+      "sourceId": "sv1-60",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/7a478ae0c59fbae80fe0d448.jpg",
+      "scanSha256": "c36393d48de6f1760c193643ba6bdfd33b3cd6d71f1b24fb032403f8f61d3f4a",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-60"
+      ]
+    },
+    {
+      "id": "2023sv-6",
+      "sourceId": "sv2-62",
+      "sourceFile": "sv2.json",
+      "sourceSha256": "93f4e1195e53d6b4c91fb3a1b05affb1b2c944597b025d60eb63789f7e68b873",
+      "scan": "scans/1cacc923791ca638f1fd5e0f.jpg",
+      "scanSha256": "6c109f56645789d80c1d0040bac4dfcc25076cca8c023afe6d925562fde38b21",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv2-62",
+        "sv4pt5-18",
+        "sv4pt5-131",
+        "svp-88"
+      ]
+    },
+    {
+      "id": "2023sv-7",
+      "sourceId": "sv1-74",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/1059560e289182c52c00402a.jpg",
+      "scanSha256": "fbbcdc7659bba9569e394d5463aa35a68249518327d2fea53de6c3e5881e367b",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-74",
+        "sv4pt5-142",
+        "sv4pt5-226"
+      ]
+    },
+    {
+      "id": "2023sv-8",
+      "sourceId": "sv1-79",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/801b923af458c9714104442e.jpg",
+      "scanSha256": "062fcea750ed303d87d78e32076773c6a1a18163acb9c8685363d2af4ca4f64e",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-79"
+      ]
+    },
+    {
+      "id": "2023sv-9",
+      "sourceId": "sv1-100",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/feb5df02993057eb66df7538.jpg",
+      "scanSha256": "9b4c87f1b92f87ac18e4f77fddd08d10292402c94e92c38705eb2a10f66fe870",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-100"
+      ]
+    },
+    {
+      "id": "2023sv-10",
+      "sourceId": "sv1-120",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/052b457c2fb0e72705ca64a7.jpg",
+      "scanSha256": "c44e75b8082c018bb1ba61552188878baf6258ac682523de3756a9f95d68e8bf",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-120"
+      ]
+    },
+    {
+      "id": "2023sv-11",
+      "sourceId": "sv1-122",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/52b9763642ed625575215ac4.jpg",
+      "scanSha256": "9fdbed4a9d8cd09035cfd0e39b550b348a097c70b7533c53e2dd776c27a5a2b7",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-122",
+        "sv1-217"
+      ]
+    },
+    {
+      "id": "2023sv-12",
+      "sourceId": "sv1-145",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/933516509a7fa7555557ad2e.jpg",
+      "scanSha256": "54b02a1f2578efc3a20d0fbd04044ae4b720e8d29c5514d73f4aa5446d8ca55d",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-145"
+      ]
+    },
+    {
+      "id": "2023sv-13",
+      "sourceId": "sv1-160",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/03d8c432c032339e902c83e1.jpg",
+      "scanSha256": "8fd8974cc3e770f425b9861228b700a9142e26f5a3d71ed02517cfc25a2c4458",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-160"
+      ]
+    },
+    {
+      "id": "2023sv-14",
+      "sourceId": "sv1-164",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/c76727c7fef1d5a4bec82cda.jpg",
+      "scanSha256": "5ad4ab69260985daf04974e566a32eec84cb5e26f568ffcd177ee9df25e0a643",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-164"
+      ]
+    },
+    {
+      "id": "2023sv-15",
+      "sourceId": "sv1-85",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/4f721e57c4f7cbc05f370e8d.jpg",
+      "scanSha256": "5305ad7078c92f6c4471c021bade02bdfce08bfab8eddb8de0b5d19f52f419cf",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-85",
+        "sv1-212",
+        "sv4pt5-28",
+        "sv4pt5-154"
+      ]
+    },
+    {
+      "id": "2024sv-1",
+      "sourceId": "swsh11tg-TG03",
+      "sourceFile": "swsh11tg.json",
+      "sourceSha256": "65391e4ef339e1bdce2ae61fe953d56c2d6c86017a84c12dab1281c8ed43f8dc",
+      "scan": "scans/1a66fd45ff34904f9cd2ab4e.jpg",
+      "scanSha256": "998f82fe0b4c343b20ad4d01bc8c3cc02b9b9b0b8432ff34a043ef6699a9913c",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swsh11tg-TG03",
+        "swsh4-25",
+        "swshp-SWSH066"
+      ]
+    },
+    {
+      "id": "2024sv-2",
+      "sourceId": "sv3pt5-25",
+      "sourceFile": "sv3pt5.json",
+      "sourceSha256": "3bbcffe73967b9d0c080aaa4728fd5a26f476fb306c3070efd67cf41c7378440",
+      "scan": "scans/4c181fe8dc8a476181525e1a.jpg",
+      "scanSha256": "d5baa1766c0c05c9eebef1179ab87914255f1890c5818f56a1b2c49c4224d2cb",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv3pt5-25",
+        "sv3pt5-173"
+      ]
+    },
+    {
+      "id": "2024sv-3",
+      "sourceId": "sv1-80",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/1090fc943549960eb0d46335.jpg",
+      "scanSha256": "e75d118c66f25ca0157133225a8acda036aa52f311da754b4660b36acc640fb8",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-80",
+        "svp-13"
+      ]
+    },
+    {
+      "id": "2024sv-4",
+      "sourceId": "swsh8-110",
+      "sourceFile": "swsh8.json",
+      "sourceSha256": "30b1d1bf641fb41e79f089cdb1d43755a7b8de36cb11cf98c86d6f9ed07e5ffb",
+      "scan": "scans/59d900ef75089a14593146e6.jpg",
+      "scanSha256": "a6e7d8b9a1e51bee7e6b4c77584946170765f9ccb4083049f030f6c950a1b6ff",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swsh8-110"
+      ]
+    },
+    {
+      "id": "2024sv-5",
+      "sourceId": "swsh35-18",
+      "sourceFile": "swsh35.json",
+      "sourceSha256": "2605a4a51ee210d9d0fd0bc9fad5ab0e3dee68464788fbd6536f58f3af11875c",
+      "scan": "scans/8a5981e919e73942a4885af7.jpg",
+      "scanSha256": "d2439338caf9108df6fb9bacfb4fb73c2f5c2b3a802ff4dde617a8627e6db25c",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swsh35-18"
+      ]
+    },
+    {
+      "id": "2024sv-6",
+      "sourceId": "swsh12-89",
+      "sourceFile": "swsh12.json",
+      "sourceSha256": "abc5a4d2b1e4ccbcb746c3b40f2e2531cfc545fc53204ba0c5b83dd30ad7d77b",
+      "scan": "scans/f31c4754d0be022f357127e6.jpg",
+      "scanSha256": "506ba592f41a82f2cbfeda153ee1dd1eca3131da2442927531ba5a205da0e5af",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swsh12-89"
+      ]
+    },
+    {
+      "id": "2024sv-7",
+      "sourceId": "swsh4-84",
+      "sourceFile": "swsh4.json",
+      "sourceSha256": "8c4c5ea398c8e6f95b548a8ed837d3d2d858727d8399c4763d835e5bec3c977d",
+      "scan": "scans/9bcd9a8b5f97287821b18d3f.jpg",
+      "scanSha256": "3f6f34c9a9fca9be5d91a6d45d67173705df5ac014a7eb5cf8261c0a5144889d",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swsh4-84"
+      ]
+    },
+    {
+      "id": "2024sv-8",
+      "sourceId": "sv1-124",
+      "sourceFile": "sv1.json",
+      "sourceSha256": "ddef4f12770f10391aa01d724388b7cce4e2920ce389cbc940a4caf42510c61d",
+      "scan": "scans/6eab8fae77b211cd81bbb6cf.jpg",
+      "scanSha256": "f5233c7f32fabe7b40518730843db8c62fb8835d1995c2b2109a8b8f8dae77b2",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv1-124",
+        "svp-14"
+      ]
+    },
+    {
+      "id": "2024sv-9",
+      "sourceId": "swshp-SWSH129",
+      "sourceFile": "swshp.json",
+      "sourceSha256": "5fbdd6b5ecdd6a3c6cf923be51995f361863da30049cb495d4ffd185688b60a3",
+      "scan": "scans/39b3aa24b6890d4ddecf34f2.jpg",
+      "scanSha256": "cc035b295f530088656c4b59190ced32008c156ef1a4172a90a5a0ed6860d74c",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swshp-SWSH129"
+      ]
+    },
+    {
+      "id": "2024sv-10",
+      "sourceId": "sv2-140",
+      "sourceFile": "sv2.json",
+      "sourceSha256": "93f4e1195e53d6b4c91fb3a1b05affb1b2c944597b025d60eb63789f7e68b873",
+      "scan": "scans/aa218705ef1b32b18f3077a3.jpg",
+      "scanSha256": "472b0606f87ddff7d8a8267d6239332d3cab4984c08751e42de683c793b428ea",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv2-140"
+      ]
+    },
+    {
+      "id": "2024sv-11",
+      "sourceId": "sv5-109",
+      "sourceFile": "sv5.json",
+      "sourceSha256": "c5105f7a045d9093039ea2da6ff002e1d9befb0d3f1c483d67fd6c8077a953c4",
+      "scan": "scans/4e4c9a2f7b4370671af675d4.jpg",
+      "scanSha256": "417218962d62483968f610126b75d56ae02c45406927f0d445e9901395a0ec74",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv5-109",
+        "sv8pt5-65"
+      ]
+    },
+    {
+      "id": "2024sv-12",
+      "sourceId": "sv3pt5-149",
+      "sourceFile": "sv3pt5.json",
+      "sourceSha256": "3bbcffe73967b9d0c080aaa4728fd5a26f476fb306c3070efd67cf41c7378440",
+      "scan": "scans/79f2a77fe67c7a54304d6903.jpg",
+      "scanSha256": "1b98623c4d800a3ed62a158aa60bfc4a6a3f03285f4dc442d4c54a3faf170aea",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv3pt5-149"
+      ]
+    },
+    {
+      "id": "2024sv-13",
+      "sourceId": "swsh8-205",
+      "sourceFile": "swsh8.json",
+      "sourceSha256": "30b1d1bf641fb41e79f089cdb1d43755a7b8de36cb11cf98c86d6f9ed07e5ffb",
+      "scan": "scans/b2dba25d1299c09fa3b5f7c7.jpg",
+      "scanSha256": "0927213a6f3eb8eeb598a4a5b1c7cc4f51ff17b168b6a06b368f264ace070ade",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swsh8-205"
+      ]
+    },
+    {
+      "id": "2024sv-14",
+      "sourceId": "swshp-SWSH029",
+      "sourceFile": "swshp.json",
+      "sourceSha256": "5fbdd6b5ecdd6a3c6cf923be51995f361863da30049cb495d4ffd185688b60a3",
+      "scan": "scans/cf1fbdda26c342343a80c663.jpg",
+      "scanSha256": "fbb9d4e8a7c5f64ac1c30b245d00dfad390d1eff60c5d4b4f3ec14ac92883325",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "swshp-SWSH029"
+      ]
+    },
+    {
+      "id": "2024sv-15",
+      "sourceId": "sv5-138",
+      "sourceFile": "sv5.json",
+      "sourceSha256": "c5105f7a045d9093039ea2da6ff002e1d9befb0d3f1c483d67fd6c8077a953c4",
+      "scan": "scans/1f88b493ef3864af716bb628.jpg",
+      "scanSha256": "ef5546a8d494960ccf4982d46c47cfdee28fece45fee28955ff633f9ddcda6b8",
+      "review": "Bundled scan reviewed: HP, attack/Ability text, costs, type, Weakness, Resistance, Retreat and evolution match the identified printing. Cosmetic set/number replaced.",
+      "counterparts": [
+        "sv5-138",
+        "sv5-184"
+      ]
+    }
+  ],
+  "missing": []
+}

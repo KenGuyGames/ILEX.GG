@@ -1,0 +1,84 @@
+[
+  {
+    "kind": "ability",
+    "text": "Prevent all effects of your opponent's Pokémon's Abilities done to this Pokémon.",
+    "names": [
+      "Amber Protection"
+    ],
+    "ids": [
+      "sv03.5-154"
+    ]
+  },
+  {
+    "kind": "rules",
+    "text": "Play this card as if it were a 60-HP Basic Colorless Pokémon. This card can't be affected by any Special Conditions and can't retreat.  At any time during your turn, you may discard this card from play.",
+    "names": [
+      "Antique Old Amber"
+    ],
+    "ids": [
+      "sv03.5-154"
+    ]
+  },
+  {
+    "kind": "rules",
+    "text": "You may play any number of Item cards during your turn.",
+    "names": [
+      "Antique Old Amber",
+      "Team Rocket's Bother-Bot"
+    ],
+    "ids": [
+      "sv03.5-154",
+      "sv10-172"
+    ]
+  },
+  {
+    "kind": "attack",
+    "text": "Search your deck for a Basic Pokémon and put it onto your Bench. Then, shuffle your deck. If you put any Pokémon onto your Bench in this way, move an Energy from this Pokémon to the new Benched Pokémon.",
+    "names": [
+      "Inviting Kiss"
+    ],
+    "ids": [
+      "sv06-046"
+    ]
+  },
+  {
+    "kind": "ability",
+    "text": "Your opponent's Pokémon in play and all attached cards can't be put into your opponent's hand.",
+    "names": [
+      "Mentally Calm"
+    ],
+    "ids": [
+      "sv06-050"
+    ]
+  },
+  {
+    "kind": "ability",
+    "text": "As long as this Pokémon is in the Active Spot, whenever your opponent plays a Supporter card from their hand, prevent all effects of that card done to all of your Pokémon.",
+    "names": [
+      "Wide Wall"
+    ],
+    "ids": [
+      "sv07-076"
+    ]
+  },
+  {
+    "kind": "attack",
+    "text": "During your opponent's next turn, prevent all damage done to each of your Future Pokémon by attacks from Pokémon ex. If this Pokémon is no longer your Active Pokémon, this effect ends.",
+    "names": [
+      "C.O.D.E.: Protect"
+    ],
+    "ids": [
+      "sv08-069"
+    ]
+  },
+  {
+    "kind": "rules",
+    "text": "Turn 1 of your opponent's face-down Prize cards face up and choose a random card from your opponent's hand. Your opponent reveals that card. You may have your opponent switch those cards. (That Prize card remains face up for the rest of the game.)",
+    "names": [
+      "Team Rocket's Bother-Bot"
+    ],
+    "ids": [
+      "sv10-172"
+    ]
+  }
+]

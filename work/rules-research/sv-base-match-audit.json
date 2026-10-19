@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "engineSha256": "4f6650ba7b57848d7accdf0f51dbacf0a3c9df4fad7ce7d69f34b68a252a0df7",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "SV base custom fixture decks, three bounded 120-decision pairings; BW-onward, exact replay and Undo; not historical tournament decks",
+  "games": [
+    {
+      "decks": [
+        "SV fixture Miraidon",
+        "SV fixture Gardevoir"
+      ],
+      "level": "easy",
+      "decisions": 31,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "SV fixture Gardevoir",
+        "SV fixture Koraidon"
+      ],
+      "level": "easy",
+      "decisions": 84,
+      "turn": 12,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "SV fixture Koraidon",
+        "SV fixture Miraidon"
+      ],
+      "level": "easy",
+      "decisions": 111,
+      "turn": 16,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

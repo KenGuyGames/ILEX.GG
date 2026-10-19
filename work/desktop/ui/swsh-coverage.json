@@ -1,0 +1,264 @@
+{
+  "status": "source-validated-finite-scope",
+  "total": 3715,
+  "available": 3715,
+  "pending": 0,
+  "validated": 3715,
+  "interactionScope": "Black & White onward through Sword & Shield; Unlimited deferred",
+  "bySet": [
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "total": 307,
+      "missingText": 0,
+      "nativeCandidates": 197,
+      "available": 307,
+      "validated": 307
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "total": 216,
+      "missingText": 0,
+      "nativeCandidates": 209,
+      "available": 216,
+      "validated": 216
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "total": 209,
+      "missingText": 0,
+      "nativeCandidates": 205,
+      "available": 209,
+      "validated": 209
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "total": 201,
+      "missingText": 0,
+      "nativeCandidates": 201,
+      "available": 201,
+      "validated": 201
+    },
+    {
+      "id": "fut2020",
+      "name": "Pokémon Futsal 2020",
+      "total": 5,
+      "missingText": 0,
+      "nativeCandidates": 0,
+      "available": 5,
+      "validated": 5
+    },
+    {
+      "id": "swsh3.5",
+      "name": "Champion's Path",
+      "total": 80,
+      "missingText": 0,
+      "nativeCandidates": 79,
+      "available": 80,
+      "validated": 80
+    },
+    {
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "total": 203,
+      "missingText": 0,
+      "nativeCandidates": 202,
+      "available": 203,
+      "validated": 203
+    },
+    {
+      "id": "2021swsh",
+      "name": "McDonald's Collection 2021",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 18,
+      "available": 25,
+      "validated": 25
+    },
+    {
+      "id": "swsh4.5",
+      "name": "Shining Fates",
+      "total": 73,
+      "missingText": 0,
+      "nativeCandidates": 73,
+      "available": 73,
+      "validated": 73
+    },
+    {
+      "id": "swsh4.5sv",
+      "name": "Shining Fates Shiny Vault",
+      "total": 122,
+      "missingText": 0,
+      "nativeCandidates": 121,
+      "available": 122,
+      "validated": 122
+    },
+    {
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "total": 183,
+      "missingText": 0,
+      "nativeCandidates": 179,
+      "available": 183,
+      "validated": 183
+    },
+    {
+      "id": "swsh6",
+      "name": "Chilling Reign",
+      "total": 233,
+      "missingText": 0,
+      "nativeCandidates": 231,
+      "available": 233,
+      "validated": 233
+    },
+    {
+      "id": "swsh7",
+      "name": "Evolving Skies",
+      "total": 237,
+      "missingText": 0,
+      "nativeCandidates": 234,
+      "available": 237,
+      "validated": 237
+    },
+    {
+      "id": "cel25cc",
+      "name": "Celebrations Classic Collection",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 23,
+      "available": 25,
+      "validated": 25
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 23,
+      "available": 25,
+      "validated": 25
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "total": 284,
+      "missingText": 0,
+      "nativeCandidates": 277,
+      "available": 284,
+      "validated": 284
+    },
+    {
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "total": 186,
+      "missingText": 0,
+      "nativeCandidates": 179,
+      "available": 186,
+      "validated": 186
+    },
+    {
+      "id": "swsh10",
+      "name": "Astral Radiance",
+      "total": 216,
+      "missingText": 0,
+      "nativeCandidates": 214,
+      "available": 216,
+      "validated": 216
+    },
+    {
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh10.5",
+      "name": "Pokémon GO",
+      "total": 88,
+      "missingText": 0,
+      "nativeCandidates": 34,
+      "available": 88,
+      "validated": 88
+    },
+    {
+      "id": "2022swsh",
+      "name": "McDonald's Collection 2022",
+      "total": 15,
+      "missingText": 0,
+      "nativeCandidates": 15,
+      "available": 15,
+      "validated": 15
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "total": 217,
+      "missingText": 0,
+      "nativeCandidates": 212,
+      "available": 217,
+      "validated": 217
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
+      "total": 215,
+      "missingText": 0,
+      "nativeCandidates": 214,
+      "available": 215,
+      "validated": 215
+    },
+    {
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh12.5",
+      "name": "Crown Zenith",
+      "total": 160,
+      "missingText": 0,
+      "nativeCandidates": 158,
+      "available": 160,
+      "validated": 160
+    },
+    {
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "total": 70,
+      "missingText": 0,
+      "nativeCandidates": 66,
+      "available": 70,
+      "validated": 70
+    }
+  ],
+  "unsupported": [],
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b"
+}

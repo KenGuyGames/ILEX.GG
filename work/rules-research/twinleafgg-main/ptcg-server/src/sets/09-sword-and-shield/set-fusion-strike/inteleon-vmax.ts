@@ -23,7 +23,7 @@ export class InteleonVMAX extends PokemonCard {
 
   public attacks = [
     {
-      name: 'Aqua Bullet',
+      name: 'G-Max Spiral',
       cost: [CardType.WATER, CardType.COLORLESS],
       damage: 70,
       text: 'You may put an Energy attached to this Pokémon into your hand. If you do, this attack does 70 more damage.',
@@ -46,7 +46,7 @@ export class InteleonVMAX extends PokemonCard {
 
     REMOVE_MARKER_AT_END_OF_TURN(effect, this.DOUBLE_GUNNER_MARKER, this);
 
-    // Aqua Bullet
+    // G-Max Spiral
     if (WAS_ATTACK_USED(effect, 0, this)) {
       const player = effect.player;
       const attacker = effect.source;

@@ -53,7 +53,7 @@ export function exPassive(store:any,state:any,e:any,op:any,owner:any,list:any){
   if(op.types){const check=new CheckPokemonTypeEffect(e.source);store.reduceEffect(state,check);if(!op.types.some((t:string)=>check.cardTypes.includes(types[t])))break;}
   const entries=op.energy||op.countEnergy?energy():[];
   if(op.energy&&!matches(entries,op.energy)||op.requireEnergy&&!cards.some(c=>c.superType===SuperType.ENERGY&&(!op.basic||c.energyType===EnergyType.BASIC)))break;
-  const count=op.countName?cards.filter(c=>c.superType===SuperType.ENERGY&&c.name===op.countName).length:op.countEnergy?entries.reduce((n:number,x:any)=>n+(op.countEnergy===true||StateUtils.providesMatchesType(x.provides,types[op.countEnergy])?StateUtils.getProvidesUnitCount(x.provides):0),0):1;
+  const count=op.countName?cards.filter(c=>c.superType===SuperType.ENERGY&&c.name===op.countName).length:op.countEnergy?entries.reduce((n:number,x:any)=>n+(op.countEnergy===true||StateUtils.providesMatchesType(x.provides,types[op.countEnergy])?StateUtils.getProvidesUnitCount(x.provides,x):0),0):1;
   e.reduceDamage(Math.min(op.cap??Infinity,op.amount*count));break;
  }
  case 'exRetreatFilter':{

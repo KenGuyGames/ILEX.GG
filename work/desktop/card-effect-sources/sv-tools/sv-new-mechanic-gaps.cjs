@@ -1,0 +1,1 @@
+const p=require('../rules-research/sv-era-pending.json');console.log(p.filter(r=>r.abilities?.some(a=>a.name==='Festival Lead')).map(r=>[r.id,r.name]));console.log(p.filter(r=>r.attacks?.some(a=>a.name==='Dimensional Hand')).map(r=>[r.id,r.name]));

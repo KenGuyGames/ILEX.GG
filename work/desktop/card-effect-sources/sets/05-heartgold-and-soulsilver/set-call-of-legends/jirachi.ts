@@ -135,7 +135,7 @@ export class Jirachi extends PokemonCard {
         GameMessage.CHOOSE_POKEMON,
         PlayerType.TOP_PLAYER,
         [SlotType.ACTIVE, SlotType.BENCH],
-        { allowCancel: false, min: 0, max: Math.min(6-blocked.length,checkProvidedEnergy.energyMap.reduce((total,entry)=>total+StateUtils.getProvidesUnitCount(entry.provides),0)), blocked }
+        { allowCancel: false, min: 0, max: Math.min(6-blocked.length,checkProvidedEnergy.energyMap.reduce((total,entry)=>total+StateUtils.getProvidesUnitCount(entry.provides,entry),0)), blocked }
       ),
         (results) => {
           if (results && results.length > 0) {

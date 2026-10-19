@@ -1,0 +1,12 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Bench counter transfer moves every counter and preserves the donor when blocked",
+    "Named Supporter bonuses require that named card in the current-turn Supporter zone",
+    "Redirected Sunlight counts only Fire-providing Energy across the opposing field",
+    "Petal Blade Dance cannot pay its two Basic Grass cards with Special Energy",
+    "Supplemental Swallow-Up exposes attachment destinations only for its own attacker"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

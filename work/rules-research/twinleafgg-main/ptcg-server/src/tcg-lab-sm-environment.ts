@@ -3,7 +3,7 @@ import {AttackEffect} from './game/store/effects/game-effects';
 import {AddSpecialConditionsEffect} from './game/store/effects/attack-effects';
 import {CheckPokemonTypeEffect} from './game/store/effects/check-effects';
 import {IS_ABILITY_BLOCKED,IS_TOOL_BLOCKED,MOVE_CARDS,COIN_FLIP_PROMPT} from './game/store/prefabs/prefabs';
-export function smToolCapacity(store:any,state:any,owner:any,list:any){const card=list.getPokemonCard();return card?.powers.some((p:any)=>p.name==='Double Drive')?(IS_ABILITY_BLOCKED(store,state,owner,card)?1:2):card?.maxTools||1;}
+export function smToolCapacity(store:any,state:any,owner:any,list:any){const card=list.getPokemonCard(),drive=card?.powers.some((p:any)=>p.name==='Double Drive'),pockets=card?.powers.some((p:any)=>['Boss Pockets','Tune-Up'].includes(p.name));return drive||pockets?(IS_ABILITY_BLOCKED(store,state,owner,card)?1:pockets?4:2):card?.maxTools||1;}
 export function smBeforeEffect(store:any,state:any,e:any):boolean{
  if(!state.rules.xyEraRules)return false;
  const context=(CardList as any).wotcMovementContext;
@@ -22,7 +22,7 @@ export function smBeforeEffect(store:any,state:any,e:any):boolean{
   const type=new CheckPokemonTypeEffect(e.target);store.reduceEffect(state,type);const owner=StateUtils.findOwner(state,e.target);e._smKoSnapshot={card:e.target.getPokemonCard(),owner,active:owner.active===e.target,types:type.cardTypes.slice(),turn:state.turn,duringTurn:state.phase!==GamePhase.BETWEEN_TURNS};
  }
  if(e.type==='CHECK_TABLE_STATE_EFFECT')for(const owner of state.players)for(const list of [owner.active,...owner.bench]){
-  if(!list.getPokemonCard()?._smDoubleDrive&&!list.getPokemonCard()?.powers.some((p:any)=>p.name==='Double Drive'))continue;
+  if(!list.getPokemonCard()?._smDoubleDrive&&!list.getPokemonCard()?.powers.some((p:any)=>['Double Drive','Boss Pockets','Tune-Up'].includes(p.name)))continue;
   const capacity=smToolCapacity(store,state,owner,list),excess=list.tools.length-capacity;
   if(excess>0&&!list._smChoosingTools){list._smChoosingTools=true;const view=new CardList();view.cards=list.tools.slice();store.prompt(state,new ChooseCardsPrompt(owner,GameMessage.CHOOSE_CARD_TO_DISCARD,view,{},{min:excess,max:excess,allowCancel:false}),(cards:any)=>{delete list._smChoosingTools;MOVE_CARDS(store,state,list,owner.discard,{cards,sourceCard:list.getPokemonCard(),sourceEffect:e});store.reduceEffect(state,e);});return true;}
  }

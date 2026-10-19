@@ -25,7 +25,7 @@ export class Meloetta extends PokemonCard {
 
   public attacks = [
     {
-      name: 'Melodius Echo',
+      name: 'Melodious Echo',
       cost: [CardType.PSYCHIC, CardType.COLORLESS],
       damage: 70,
       text:

@@ -1,0 +1,1 @@
+const r=require('../rules-research/sv-wave-data.json');for(const n of ['Gyarados ex','Arcanine ex'])console.log(r.filter(x=>x.d.name===n).map(x=>({id:x.d.id,subtypes:x.d.subtypes,rules:x.d.rules,reuse:x.reuse})));

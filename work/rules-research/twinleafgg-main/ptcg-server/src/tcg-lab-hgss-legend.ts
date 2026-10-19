@@ -14,9 +14,9 @@ export function playHgssLegend(store:any,state:any,e:any){const card=e.pokemonCa
 export function hgssEnvironment(store:any,state:any,e:any){
  if(e instanceof ApplyWeaknessEffect&&e.player._hgssBlackBelt?.turn===state.turn&&e.target===StateUtils.getOpponent(state,e.player).active&&e.damage>0)e.damage+=e.player._hgssBlackBelt.amount;
  if(e instanceof PowerEffect&&e.power.powerType===PowerType.POKEPOWER&&e.player._hgssPowerLockTurn===state.turn)throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
- if(e instanceof CheckAttackCostEffect){const list=e.player.active,tax=list._hgssAttackTax;if(!e._hgssNoAttackCost&&tax?.turn===state.turn&&list.marker.hasMarker('HGSS_ATTACK_TAX',tax.card))e.cost.push(...Array(tax.amount).fill(CardType.COLORLESS));}
+ if(e instanceof CheckAttackCostEffect){const list=e.source,tax=list._hgssAttackTax;if(!e._hgssNoAttackCost&&tax?.turn===state.turn&&list.marker.hasMarker('HGSS_ATTACK_TAX',tax.card))e.cost.push(...Array(tax.amount).fill(CardType.COLORLESS));}
  const stadium:any=StateUtils.getStadiumCard(state);if(stadium?._hgssStadium){if(e instanceof CheckPokemonStatsEffect&&stadium._hgssStadium==='noResistance')e.resistance=[];if(e instanceof CheckHpEffect&&stadium._hgssStadium==='legendHp'&&e.target.getPokemonCard()?._hgssLegend)e.hp+=30;}
  return state;
 }
 
-export function hgssFinish(store:any,state:any,e:any){if(state.rules.hgssEraRules&&e instanceof CheckRetreatCostEffect&&e._hgssNoRetreatCost)e.cost=[];if(e instanceof CheckProvidedEnergyEffect&&e._hgssEnergyType!==undefined)for(const entry of e.energyMap)entry.provides=Array(StateUtils.getProvidesUnitCount(entry.provides)).fill(e._hgssEnergyType);return state;}
+export function hgssFinish(store:any,state:any,e:any){if(state.rules.hgssEraRules&&e instanceof CheckRetreatCostEffect&&e._hgssNoRetreatCost)e.cost=[];if(e instanceof CheckProvidedEnergyEffect&&e._hgssEnergyType!==undefined)for(const entry of e.energyMap)entry.provides=Array(StateUtils.getProvidesUnitCount(entry.provides,entry)).fill(e._hgssEnergyType);return state;}

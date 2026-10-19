@@ -7,6 +7,8 @@ const selfTest=process.argv.includes('--self-test');
 const testRoot=selfTest ? process.argv[process.argv.indexOf('--self-test')+1] : null;
 if(selfTest){
   app.disableHardwareAcceleration();
+  app.commandLine.appendSwitch('allow-loopback-in-peer-connection');
+  app.commandLine.appendSwitch('disable-features','WebRtcHideLocalIpsWithMdns');
   if(!testRoot || !path.isAbsolute(testRoot)) throw Error('Self-test requires an absolute output directory');
   fs.mkdirSync(testRoot,{recursive:true});
   app.setPath('userData',path.join(testRoot,'profile'));
@@ -40,6 +42,9 @@ else{
       }catch{return new Response('Not found',{status:404})}
     });
     win=new BrowserWindow({width:1440,height:960,minWidth:900,minHeight:640,title:'ILEX.GG',icon:path.join(__dirname,'icon.ico'),backgroundColor:'#0d211b',show:!selfTest,autoHideMenuBar:true,webPreferences:{offscreen:selfTest,backgroundThrottling:!selfTest,preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true}});
+    // Manual invitations intentionally share connection addresses with the invited peer.
+    // Explicit interface policy avoids relying on multicast DNS across Windows networks.
+    win.webContents.setWebRTCIPHandlingPolicy(selfTest?'default':'default_public_and_private_interfaces');
     ipcMain.handle('export-json',async(event,name,data)=>{
       if(event.sender!==win.webContents || !ownURL(event.senderFrame.url) || typeof name!=='string' || !/^[a-zA-Z0-9_-]{1,60}\.json$/.test(name))throw Error('Invalid export request');
       const text=JSON.stringify(data,null,2);
@@ -48,8 +53,10 @@ else{
       if(!destination)return false;
       await fs.promises.writeFile(destination,text,'utf8');return true;
     });
-    win.webContents.session.setPermissionRequestHandler((wc,permission,callback)=>callback(false));
-    win.webContents.session.setPermissionCheckHandler(()=>false);
+    const privateNetworkPermissions=new Set(['local-network','loopback-network','local-network-access']);
+    const ownNetworkPermission=(wc,permission,origin)=>!!wc&&ownURL(wc.getURL())&&ownURL(origin||wc.getURL())&&privateNetworkPermissions.has(permission);
+    win.webContents.session.setPermissionRequestHandler((wc,permission,callback,details)=>{if(selfTest)fs.appendFileSync(path.join(testRoot,'permission-checks.log'),'request '+permission+'\n');callback(ownNetworkPermission(wc,permission,details?.requestingUrl));});
+    win.webContents.session.setPermissionCheckHandler((wc,permission,origin)=>{if(selfTest)fs.appendFileSync(path.join(testRoot,'permission-checks.log'),'check '+permission+'\n');return ownNetworkPermission(wc,permission,origin);});
     win.webContents.setWindowOpenHandler(({url})=>{
       if(ownURL(url)){net.fetch(url).then(r=>r.text()).then(text=>dialog.showMessageBox(win,{title:'ILEX.GG scan audit',message:text,buttons:['Close']})).catch(()=>{});}
       else openLink(url);
@@ -64,7 +71,7 @@ else{
     Menu.setApplicationMenu(Menu.buildFromTemplate([
       {label:'File',submenu:[{label:'Export workspaceâ€¦',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
       {label:'View',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]},
-      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG 1.15.0',detail:'Automated historical card pools through the complete Sun & Moon era, including promos and supplements. New interactions cover Black & White onward; Unlimited remains deferred. Historical rules profiles, custom cards and Limitless-compatible deck lists. Card images are available through the persistent cache. Unofficial fan-made simulator. See README for tested coverage.'})}]}
+      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG '+app.getVersion(),detail:'Private Windows multiplayer preview. Catalog rules through Scarlet & Violet; BW onward interactions, Unlimited deferred. Real two-PC connection acceptance remains pending. Local decks and saves are retained. Unofficial fan-made simulator.'})}]}
     ]));
     await win.loadURL('tcglab://app/index.html');
     if(selfTest)win.webContents.setAudioMuted(true);

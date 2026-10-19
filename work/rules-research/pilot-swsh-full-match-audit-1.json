@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "48743613c9925b515172e0764877bcf6ca7935fdb95f9aea4594654d54c18e7c",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through Sword & Shield; twenty-four cached SWSH deck pairings, bounded 120 decisions each; historical SWSH/Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Blowns",
+        "Centiskorch VMax"
+      ],
+      "level": "normal",
+      "decisions": 50,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Eternatus VMax",
+        "MewtwoMew"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Vikavolt V",
+        "Dragapult VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Box",
+        "Rapid Strike Urshifu VMax"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Single Strike Urshifu VMax",
+        "Suicune Ludicolo"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Arc Dura",
+        "Kyurem VMax"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Lugia VStar",
+        "Mew VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Regis",
+        "Yveltal Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

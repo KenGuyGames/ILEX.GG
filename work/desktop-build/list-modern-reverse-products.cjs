@@ -1,0 +1,1 @@
+const fs=require('fs');const list=JSON.parse(fs.readFileSync('work/card-sources/reverse-scan-research/market-candidates.json'));for(const prefix of ['sv10.5b-','sv10.5w-','me02.5-']){const ids=[...new Set(list.filter(c=>c.id.startsWith(prefix)).map(c=>c.productId))];console.log(prefix,ids.length,JSON.stringify(ids));}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "tests": [
+    "Complete invite/response codes match room, nonce and build; no media permissions requested",
+    "Truncated codes, wrong type, video offers, mismatched engine and wrong invite are rejected",
+    "Large Unicode game views survive bounded fragmentation and ordered reassembly",
+    "Malformed, reordered or oversized frames close the connection safely"
+  ],
+  "checks": 4,
+  "simulatedRTC": true,
+  "realNetworkVerified": false,
+  "peerSha256": "cb303ff69b74efac9afbe63570bb9b6b90b1c583f11b9efee7a0e96ab0d2b826"
+}

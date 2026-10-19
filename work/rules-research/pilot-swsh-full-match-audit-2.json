@@ -1,0 +1,106 @@
+{
+  "passed": true,
+  "engineSha256": "48743613c9925b515172e0764877bcf6ca7935fdb95f9aea4594654d54c18e7c",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "BW onward through Sword & Shield; twenty-four cached SWSH deck pairings, bounded 120 decisions each; historical SWSH/Expanded, exact replay and Undo",
+  "games": [
+    {
+      "decks": [
+        "Centiskorch VMax",
+        "Cinccino Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Pikarom"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dragapult VMax",
+        "Leafeon VMax"
+      ],
+      "level": "easy",
+      "decisions": 97,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Urshifu VMax",
+        "Shadow Rider VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Suicune Ludicolo",
+        "Zacian V"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Kyurem VMax",
+        "Lost Box"
+      ],
+      "level": "normal",
+      "decisions": 118,
+      "turn": 17,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Mew VMax",
+        "Palkia VStar"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Yveltal Control",
+        "ADP Zacian"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

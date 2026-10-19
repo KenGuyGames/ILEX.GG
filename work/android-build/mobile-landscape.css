@@ -88,3 +88,10 @@
  .landscape-table .seated-experience{--hand-height:56px}
  .landscape-table .seat-half,.landscape-table .near-seat{grid-template-rows:minmax(0,1fr) minmax(0,1fr)}
 }
+
+@media (orientation:landscape) and (min-width:480px){
+ .landscape-table .table-divider>.seat-stadium{left:14%!important;top:50%!important;bottom:auto!important;width:44px!important;height:auto;transform:translate(-50%,-50%)}
+ .landscape-table .table-divider>.seat-stadium button{width:44px!important;height:auto!important;min-height:0!important}
+ .landscape-table .table-divider>.seat-stadium img{width:44px!important;height:auto!important;transform:none!important}
+ .landscape-table .table-divider>.seat-stadium .stadium-label{font-size:6px;line-height:8px;margin-bottom:1px}
+}

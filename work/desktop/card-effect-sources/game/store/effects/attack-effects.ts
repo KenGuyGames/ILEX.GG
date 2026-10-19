@@ -83,6 +83,7 @@ export class PutDamageEffect extends AbstractAttackEffect implements Effect {
   public wasKnockedOutFromFullHP: boolean = false;
   public surviveOnTenHPReason: undefined | string = undefined;
   public weaknessApplied: boolean = false;
+  public consumableDamageReductions: any[] = [];
 
   private nonstackingDamageReducers: string[] = [];
 

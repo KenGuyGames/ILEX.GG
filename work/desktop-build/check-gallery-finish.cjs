@@ -1,0 +1,1 @@
+const fs=require('fs');const s=fs.readFileSync('work/desktop/ui/app.js','utf8');let i=s.indexOf('async function inspect');console.log(s.slice(i,i+2200));console.log('art with finish:',s.includes('FinishCatalog.attrs(c)'),'layer:',s.includes('FinishCatalog.layer(c)'));

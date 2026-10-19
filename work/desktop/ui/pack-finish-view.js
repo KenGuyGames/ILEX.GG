@@ -2,9 +2,11 @@
 var PackFinish=(()=>{
  const names={normal:'Regular',holo:'Foil',reverse:'Reverse Holo',pokeball:'Poké Ball Reverse Holo',masterball:'Master Ball Reverse Holo',friendball:'Friend Ball Reverse Holo',loveball:'Love Ball Reverse Holo',quickball:'Quick Ball Reverse Holo',duskball:'Dusk Ball Reverse Holo','energy-symbols':'Energy Symbols Reverse Holo','team-rocket':'Team Rocket Reverse Holo'};
  const isReverse=finish=>Object.hasOwn(names,finish)&&!['normal','holo'].includes(finish);
- const className=finish=>isReverse(finish)?'finish-surface finish-'+finish:'';
+ const scan=(id,finish)=>typeof FinishScans!=='undefined'?FinishScans[id+'|'+finish]:null;
+ const source=(id,finish,fallback)=>scan(id,finish)?.file||fallback;
+ const className=(finish,id)=>scan(id,finish)?'finish-surface actual-finish-scan':isReverse(finish)?'finish-surface finish-'+finish:'';
  const energyTypes=['Grass','Fire','Water','Lightning','Psychic','Fighting','Darkness','Metal','Dragon','Colorless','Fairy'];
- const layer=(finish,energy='Colorless')=>isReverse(finish)?'<span class="finish-pattern" data-energy-symbol="'+(energyTypes.includes(energy)?energy:'Colorless')+'" aria-hidden="true"></span>':'';
- function decorate(host,finish,energy='Colorless'){host.querySelectorAll(':scope>.finish-pattern').forEach(el=>el.remove());host.classList.remove('finish-surface',...Object.keys(names).map(k=>'finish-'+k));if(isReverse(finish)){host.classList.add('finish-surface','finish-'+finish);host.insertAdjacentHTML('beforeend',layer(finish,energy));}}
- return {label:finish=>names[finish]||'Regular',isReverse,className,layer,decorate};
+ const layer=(finish,energy='Colorless',id)=>!scan(id,finish)&&isReverse(finish)?'<span class="finish-pattern" data-energy-symbol="'+(energyTypes.includes(energy)?energy:'Colorless')+'" aria-hidden="true"></span>':'';
+ function decorate(host,finish,energy='Colorless',id){if(finish)host.dataset.previewFinish=finish;else delete host.dataset.previewFinish;host.querySelectorAll(':scope>.finish-pattern').forEach(el=>el.remove());host.classList.remove('finish-surface','actual-finish-scan',...Object.keys(names).map(k=>'finish-'+k));if(scan(id,finish)){host.classList.add('finish-surface','actual-finish-scan');}else if(isReverse(finish)){host.classList.add('finish-surface','finish-'+finish);host.insertAdjacentHTML('beforeend',layer(finish,energy,id));}}
+ return {label:finish=>names[finish]||'Regular',isReverse,className,layer,decorate,scan,source};
 })();

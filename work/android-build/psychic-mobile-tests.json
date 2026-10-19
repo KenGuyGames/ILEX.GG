@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "Natural saved game contains Gardevoir ex and two modern Psychic Energy in discard",
+    "Printed Psychic Embrace action is available, use 1",
+    "Click opens modern Psychic Energy attachment choices, use 1; pending=Attach energy",
+    "Energy destination is selectable, use 1",
+    "Attachment adds exactly two damage counters, use 1",
+    "Printed Psychic Embrace action is available, use 2",
+    "Click opens modern Psychic Energy attachment choices, use 2; pending=Attach energy",
+    "Energy destination is selectable, use 2",
+    "Attachment adds exactly two damage counters, use 2",
+    "Both Energy leave the discard after repeated use",
+    "Saved Psychic Embrace attachments replay with damage",
+    "Undo restores both Psychic Energy and clears Ability damage"
+  ]
+}

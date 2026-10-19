@@ -1,0 +1,69 @@
+{
+  "status": "finish-catalog-and-pack-workflow-implemented",
+  "separateReverseScans": "not complete; base scan plus cosmetic overlay retained",
+  "windowsLooseAppUpdated": true,
+  "archivesUpdated": false,
+  "androidUpdated": false,
+  "engineChanged": false,
+  "catalog": {
+    "passed": true,
+    "profiles": 129,
+    "generatorPoolChecks": 13507,
+    "catalogReverseFinishes": 13587,
+    "counts": {
+      "reverse": 12828,
+      "pokeball": 302,
+      "energy-symbols": 140,
+      "masterball": 211,
+      "friendball": 23,
+      "loveball": 25,
+      "quickball": 22,
+      "team-rocket": 10,
+      "duskball": 26
+    },
+    "source": "Generator pools plus cached positive TCGdex reverse metadata; no separate scans claimed"
+  },
+  "nativeFresh": {
+    "passed": true,
+    "checks": [
+      "master ball gallery pagination",
+      "gallery exact finish",
+      "gallery magnifier finish",
+      "inspector finish",
+      "base1 reverse-all gallery",
+      "lc reverse gallery",
+      "ecard2 reverse gallery",
+      "ex13 reverse gallery",
+      "swsh12.5 reverse gallery",
+      "me02.5 friendball gallery",
+      "me02.5 loveball gallery",
+      "me02.5 quickball gallery",
+      "me02.5 duskball gallery",
+      "me02.5 energy-symbols gallery",
+      "me02.5 team-rocket gallery",
+      "pack-to-gallery shortcut",
+      "hidden finish privacy",
+      "finish-specific inventory filter",
+      "deck and match data unchanged",
+      "saved finish identity",
+      "pack reverse pool includes supplemental Energy",
+      "pack-pool count matches generator",
+      "three distinct Exeggcute finishes"
+    ]
+  },
+  "nativeRestored": {
+    "passed": true,
+    "restoredExactFinishes": true,
+    "hiddenPackRetained": true
+  },
+  "packRegression": "303 checks; 129 profiles; 212900 packs",
+  "files": {
+    "index.html": "ce3167cdf7ec5c76a356e131de1954e387842223825de4141e15ad441e861589",
+    "app.js": "73bd9db66fa6ca24d945ab5a6ce79b98e8d7a7f914b1307a59b260ab3082d529",
+    "packs.js": "045845fd76c2924d74ae52911f01b3a8fbc5331e7e5b790f9c0bbb74930e78b3",
+    "finish-catalog.js": "aa918fc4703a7b2ff175aec40ab67fb126898bf53c5077c25d7e3afdcf73d83f",
+    "foil.js": "1f50065bc0915e68d961d1db3d405859d14a578016895fd1e77068cfc1adb628",
+    "pack-finish-view.js": "8e6f0882b63081f7fbc53a5151919e656d35b89f95a50638a1129d6fc4dc3245",
+    "PACK-SOURCES.md": "8d3fc0d41ebf6a78eb80652c821d7b268bb6b86fd563c499cb7ddbe1f1d99607"
+  }
+}

@@ -1,0 +1,1 @@
+for(const id of ['sv01-001','sv01-005','sv01-043','sv01-054','sv01-127','sv01-145']){const r=require('../rules-research/sv-wave-data.json').find(r=>r.d.id===id);console.log(id,r.d.name,r.d.attacks,r.powers);}

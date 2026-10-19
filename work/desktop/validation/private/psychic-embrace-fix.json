@@ -1,0 +1,168 @@
+{
+  "passed": true,
+  "bug": "Gardevoir ex Psychic Embrace does nothing with Psychic Energy in discard",
+  "rootCauses": [
+    "Generated SVE Basic Energy type lookup failed to strip Basic prefix, leaving provides undefined",
+    "Attachment choice required exact Psychic Energy name, excluding Basic Psychic Energy"
+  ],
+  "change": {
+    "base": "b87b67a5d3add97d79d93359a871b058e724cbbf2614522a5f80a55e7ac493e8",
+    "patched": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
+    "scope": "Gardevoirex Psychic Embrace AttachEnergyPrompt filter only; exact name replaced by Psychic Energy type; Basic Energy type mapping accepts optional Basic prefix"
+  },
+  "focusedChecks": 72,
+  "focusedCases": [
+    "sv01-086 accepts bw1-109 using type rather than name",
+    "sv01-086 accepts sm1-168 using type rather than name",
+    "sv01-086 accepts sve-005 using type rather than name",
+    "sv01-086 accepts sve-013 using type rather than name",
+    "sv01-086 accepts energy2022-P using type rather than name",
+    "sv01-086 accepts mee-005 using type rather than name",
+    "sv01-086 accepts mee-013 using type rather than name",
+    "sv01-228 accepts bw1-109 using type rather than name",
+    "sv01-228 accepts sm1-168 using type rather than name",
+    "sv01-228 accepts sve-005 using type rather than name",
+    "sv01-228 accepts sve-013 using type rather than name",
+    "sv01-228 accepts energy2022-P using type rather than name",
+    "sv01-228 accepts mee-005 using type rather than name",
+    "sv01-228 accepts mee-013 using type rather than name",
+    "sv01-245 accepts bw1-109 using type rather than name",
+    "sv01-245 accepts sm1-168 using type rather than name",
+    "sv01-245 accepts sve-005 using type rather than name",
+    "sv01-245 accepts sve-013 using type rather than name",
+    "sv01-245 accepts energy2022-P using type rather than name",
+    "sv01-245 accepts mee-005 using type rather than name",
+    "sv01-245 accepts mee-013 using type rather than name",
+    "sv04.5-029 accepts bw1-109 using type rather than name",
+    "sv04.5-029 accepts sm1-168 using type rather than name",
+    "sv04.5-029 accepts sve-005 using type rather than name",
+    "sv04.5-029 accepts sve-013 using type rather than name",
+    "sv04.5-029 accepts energy2022-P using type rather than name",
+    "sv04.5-029 accepts mee-005 using type rather than name",
+    "sv04.5-029 accepts mee-013 using type rather than name",
+    "sv04.5-217 accepts bw1-109 using type rather than name",
+    "sv04.5-217 accepts sm1-168 using type rather than name",
+    "sv04.5-217 accepts sve-005 using type rather than name",
+    "sv04.5-217 accepts sve-013 using type rather than name",
+    "sv04.5-217 accepts energy2022-P using type rather than name",
+    "sv04.5-217 accepts mee-005 using type rather than name",
+    "sv04.5-217 accepts mee-013 using type rather than name",
+    "sv04.5-233 accepts bw1-109 using type rather than name",
+    "sv04.5-233 accepts sm1-168 using type rather than name",
+    "sv04.5-233 accepts sve-005 using type rather than name",
+    "sv04.5-233 accepts sve-013 using type rather than name",
+    "sv04.5-233 accepts energy2022-P using type rather than name",
+    "sv04.5-233 accepts mee-005 using type rather than name",
+    "sv04.5-233 accepts mee-013 using type rather than name",
+    "Psychic Embrace can be used repeatedly in one turn",
+    "Benched Gardevoir can attach to another Psychic Pokemon",
+    "Non-Psychic Basic Energy and Special Energy are excluded from choices",
+    "Targets that would be knocked out stay blocked; a target with 30 HP left is legal",
+    "Non-Psychic targets stay blocked",
+    "Cancel attaches nothing and adds no damage",
+    "SVE 1 provides the correct Basic Energy type",
+    "SVE 2 provides the correct Basic Energy type",
+    "SVE 3 provides the correct Basic Energy type",
+    "SVE 4 provides the correct Basic Energy type",
+    "SVE 5 provides the correct Basic Energy type",
+    "SVE 6 provides the correct Basic Energy type",
+    "SVE 7 provides the correct Basic Energy type",
+    "SVE 8 provides the correct Basic Energy type",
+    "SVE 9 provides the correct Basic Energy type",
+    "SVE 10 provides the correct Basic Energy type",
+    "SVE 11 provides the correct Basic Energy type",
+    "SVE 12 provides the correct Basic Energy type",
+    "SVE 13 provides the correct Basic Energy type",
+    "SVE 14 provides the correct Basic Energy type",
+    "SVE 15 provides the correct Basic Energy type",
+    "SVE 16 provides the correct Basic Energy type",
+    "SVE 17 provides the correct Basic Energy type",
+    "SVE 18 provides the correct Basic Energy type",
+    "SVE 19 provides the correct Basic Energy type",
+    "SVE 20 provides the correct Basic Energy type",
+    "SVE 21 provides the correct Basic Energy type",
+    "SVE 22 provides the correct Basic Energy type",
+    "SVE 23 provides the correct Basic Energy type",
+    "SVE 24 provides the correct Basic Energy type"
+  ],
+  "naturalReplay": {
+    "passed": true,
+    "checks": [
+      "Natural Ralts evolves to Kirlia then Gardevoir ex over three own turns",
+      "Ultra Ball discards two modern Basic Psychic Energy through normal prompts",
+      "Old engine reproduces CANNOT_USE_POWER with same real save",
+      "Fixed ability offers modern Psychic Energy",
+      "Attachment adds20 damage",
+      "Exact seeded save replay preserves all zones and random state",
+      "Undo restores discard, Pokemon and damage"
+    ]
+  },
+  "coreSuites": [
+    {
+      "name": "rules-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "undo-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-interaction-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-full-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sm-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-foundation-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "swsh-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-common-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-native-repair-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-final-effects-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-final-extra-tests",
+      "exitCode": 0
+    }
+  ],
+  "nativeFreshChecks": 12,
+  "nativeRestoredChecks": 12,
+  "mobileChecks": 128,
+  "apkChecks": 38,
+  "androidVersion": "1.17.0-android.25",
+  "sameSigningCertificate": true,
+  "androidAssetParity": "All prior UI assets identical except rules-engine.js;395 startup scans and209 finish images retained",
+  "physicalAndroidDeviceTested": false,
+  "profileDataModified": false,
+  "fullWindowsZipsRebuilt": false,
+  "updatedMatchingCandidates": [
+    "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\sv-candidate\\rules-engine.js",
+    "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\sv-desktop-candidate\\resources\\app\\ui\\rules-engine.js"
+  ],
+  "artifactSha256": {
+    "ILEX.GG-Psychic-Embrace-Fix.zip": "7ef09f670a933452d2933805d30c93f13ad9e6ca3bbc8caea462d15f3cc26074",
+    "ILEX.GG-Android.apk": "ab7c15d8785dd544e0c7f6a6d4a45c0ef9d3f42ac96946c8591750085c5a24e7"
+  }
+}

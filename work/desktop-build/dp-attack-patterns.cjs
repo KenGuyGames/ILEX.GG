@@ -10,7 +10,7 @@ function compile(a,name,depth=0){
  if(costEnd>=0){const cost=t.slice(0,costEnd).match(/^Discard (\d+) (?:(Grass|Fire|Water|Lightning|Psychic|Fighting|Darkness|Metal) )?Energy$/);if(cost){const tail=t.slice(costEnd+(' attached to '+name+'.').length).trim(),ops=tail?compile({...a,text:tail},name,depth+1):[];if(ops!==null)return [{op:'dpPayUnits',energies:Array(+cost[1]).fill(cost[2]||'Colorless')},...ops];}}
  const basic=shared({...a,text:t},name);if(basic!==null){
   // Unrestricted searches do not reveal cards unless the printing says so.
-  const privateSearch=ops=>ops.map(op=>({...op,...(op.op==='search'&&op.category==='Any'&&!/show|reveal/i.test(t)?{noReveal:true}:{}),...(op.heads?{heads:privateSearch(op.heads)}:{}),...(op.tails?{tails:privateSearch(op.tails)}:{})}));
+  const privateSearch=ops=>ops.map(op=>({...op,...(op.op==='search'&&op.category==='Any'&&!/show|reveal/i.test(t)?{noReveal:true}:{}),...(Array.isArray(op.heads)?{heads:privateSearch(op.heads)}:{}),...(Array.isArray(op.tails)?{tails:privateSearch(op.tails)}:{})}));
   return require('./dp-op-adapters.cjs')(privateSearch(basic));
  }
  let m;

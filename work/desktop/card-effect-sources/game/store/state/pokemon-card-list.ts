@@ -20,6 +20,7 @@ export interface PreventDamageFilter {
   sourceTags?: CardTag[];
   sourceCardTypes?: CardType[];
   sourceHasAbility?: boolean;
+  sourceNamesExcluded?: string[];
   /** Attacker has this Special Condition (e.g. Burned). */
   sourceHasSpecialCondition?: SpecialCondition;
   /** Attacker has a Poké-Power or Poké-Body. */
@@ -147,6 +148,7 @@ export class PokemonCardList extends CardList {
   public nextTurnAttackBaseDamage: NextTurnAttackBaseDamage | null = null;
   public nextTurnAttackBaseDamagePending: NextTurnAttackBaseDamage | null = null;
   public weaknessOverrideType: CardType | undefined = undefined;
+  public svWeaknessOverride: {type:CardType,untilTurn:number}|undefined;
   public weaknessOverrideAttackerId: number | undefined = undefined;
   public weaknessOverrideClearArmed: boolean = false;
 
@@ -406,6 +408,9 @@ export class PokemonCardList extends CardList {
     this.nextTurnAttackBaseDamage = null;
     this.nextTurnAttackBaseDamagePending = null;
     this.weaknessOverrideType = undefined;
+    this.svWeaknessOverride = undefined;
+    (this as any)._svRetainedAbilityTurns=undefined;
+    (this as any)._svToolAttachedFromHandTurn=undefined;
     this.weaknessOverrideAttackerId = undefined;
     this.weaknessOverrideClearArmed = false;
     this.knockOutIfDamagedNextTurn = false;
@@ -490,6 +495,8 @@ export class PokemonCardList extends CardList {
     this.defendingPokemonExtraDamagePending = false;
     this.defendingPokemonExtraDamageRearmAfterAttack = false;
     this.weaknessOverrideType = undefined;
+    this.svWeaknessOverride = undefined;
+
     this.weaknessOverrideAttackerId = undefined;
     this.weaknessOverrideClearArmed = false;
     this.knockOutIfDamagedNextTurn = false;

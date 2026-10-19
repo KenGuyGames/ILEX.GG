@@ -113,21 +113,8 @@ export class Skeledirgeex extends PokemonCard {
       }
     }
 
-    if (WAS_ATTACK_USED(effect, 1, this)) {
-      const player = effect.player;
-      const opponent = StateUtils.getOpponent(state, player);
-
-      const applyWeakness = new ApplyWeaknessEffect(effect, 160);
-      store.reduceEffect(state, applyWeakness);
-      const damage = applyWeakness.damage;
-
-      effect.damage = 0;
-
-      if (damage > 0) {
-        opponent.active.damage += damage;
-        const afterDamage = new AfterDamageEffect(effect, damage);
-        state = store.reduceEffect(state, afterDamage);
-      }
+    if (WAS_ATTACK_USED(effect, 0, this)) {
+      (effect as any).wotcBypassDefender = true;
     }
 
     if (

@@ -1,0 +1,615 @@
+{
+  "passed": true,
+  "version": "1.17.0",
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "ruleAdapterSha256": "09dfc68d5853e040c394ff193d5df06c7d96ae919bf1ed4f9ecc9317c18fb20c",
+  "botSha256": "e845283560f1585055027d236edcd5449692dfb0d075e9075df97a57db95ecfe",
+  "printedDataSha256": "b153166bca1374538969feba8bf574ab694065bba543c5e6fdb343c3c2280d71",
+  "printings": 3694,
+  "pending": 0,
+  "bySet": [
+    {
+      "id": "sv01",
+      "name": "Scarlet & Violet",
+      "total": 258,
+      "missingText": 0,
+      "nativeCandidates": 128,
+      "available": 258,
+      "validated": 258
+    },
+    {
+      "id": "sve",
+      "name": "Scarlet & Violet Energy",
+      "total": 24,
+      "missingText": 0,
+      "nativeCandidates": 0,
+      "available": 24,
+      "validated": 24
+    },
+    {
+      "id": "svp",
+      "name": "SVP Black Star Promos",
+      "total": 226,
+      "missingText": 0,
+      "nativeCandidates": 124,
+      "available": 226,
+      "validated": 226
+    },
+    {
+      "id": "sv02",
+      "name": "Paldea Evolved",
+      "total": 279,
+      "missingText": 0,
+      "nativeCandidates": 141,
+      "available": 279,
+      "validated": 279
+    },
+    {
+      "id": "2023sv",
+      "name": "McDonald's Collection 2023",
+      "total": 15,
+      "missingText": 0,
+      "nativeCandidates": 5,
+      "available": 15,
+      "validated": 15
+    },
+    {
+      "id": "sv03",
+      "name": "Obsidian Flames",
+      "total": 230,
+      "missingText": 0,
+      "nativeCandidates": 93,
+      "available": 230,
+      "validated": 230
+    },
+    {
+      "id": "sv03.5",
+      "name": "151",
+      "total": 207,
+      "missingText": 0,
+      "nativeCandidates": 105,
+      "available": 207,
+      "validated": 207
+    },
+    {
+      "id": "sv04",
+      "name": "Paradox Rift",
+      "total": 266,
+      "missingText": 0,
+      "nativeCandidates": 161,
+      "available": 266,
+      "validated": 266
+    },
+    {
+      "id": "sv04.5",
+      "name": "Paldean Fates",
+      "total": 245,
+      "missingText": 0,
+      "nativeCandidates": 152,
+      "available": 245,
+      "validated": 245
+    },
+    {
+      "id": "sv05",
+      "name": "Temporal Forces",
+      "total": 218,
+      "missingText": 0,
+      "nativeCandidates": 139,
+      "available": 218,
+      "validated": 218
+    },
+    {
+      "id": "sv06",
+      "name": "Twilight Masquerade",
+      "total": 226,
+      "missingText": 0,
+      "nativeCandidates": 154,
+      "available": 226,
+      "validated": 226
+    },
+    {
+      "id": "sv06.5",
+      "name": "Shrouded Fable",
+      "total": 99,
+      "missingText": 0,
+      "nativeCandidates": 82,
+      "available": 99,
+      "validated": 99
+    },
+    {
+      "id": "sv07",
+      "name": "Stellar Crown",
+      "total": 175,
+      "missingText": 0,
+      "nativeCandidates": 95,
+      "available": 175,
+      "validated": 175
+    },
+    {
+      "id": "sv08",
+      "name": "Surging Sparks",
+      "total": 252,
+      "missingText": 0,
+      "nativeCandidates": 174,
+      "available": 252,
+      "validated": 252
+    },
+    {
+      "id": "2024sv",
+      "name": "McDonald's Collection 2024",
+      "total": 15,
+      "missingText": 0,
+      "nativeCandidates": 9,
+      "available": 15,
+      "validated": 15
+    },
+    {
+      "id": "sv08.5",
+      "name": "Prismatic Evolutions",
+      "total": 180,
+      "missingText": 0,
+      "nativeCandidates": 140,
+      "available": 180,
+      "validated": 180
+    },
+    {
+      "id": "sv09",
+      "name": "Journey Together",
+      "total": 190,
+      "missingText": 0,
+      "nativeCandidates": 119,
+      "available": 190,
+      "validated": 190
+    },
+    {
+      "id": "sv10",
+      "name": "Destined Rivals",
+      "total": 244,
+      "missingText": 0,
+      "nativeCandidates": 197,
+      "available": 244,
+      "validated": 244
+    },
+    {
+      "id": "sv10.5b",
+      "name": "Black Bolt",
+      "total": 172,
+      "missingText": 0,
+      "nativeCandidates": 94,
+      "available": 172,
+      "validated": 172
+    },
+    {
+      "id": "sv10.5w",
+      "name": "White Flare",
+      "total": 173,
+      "missingText": 0,
+      "nativeCandidates": 88,
+      "available": 173,
+      "validated": 173
+    }
+  ],
+  "printedPokemonAttacks": 4808,
+  "trainerToolAttacks": 6,
+  "branchCases": 7312,
+  "focusedChecks": 163,
+  "powerAudit": {
+    "resolved": 364,
+    "unavailable": 810
+  },
+  "trainerAudit": {
+    "resolved": 830,
+    "unavailable": 136
+  },
+  "nativeGuardPrintings": 1738,
+  "sharedSuites": [
+    {
+      "name": "custom-catcher-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-custom-catcher-tests.log"
+    },
+    {
+      "name": "lysandre-labs-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-lysandre-labs-tests.log"
+    },
+    {
+      "name": "realistic-alias-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-realistic-alias-tests.log"
+    },
+    {
+      "name": "xy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-xy-tests.log"
+    },
+    {
+      "name": "sm-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-sm-tests.log"
+    },
+    {
+      "name": "xy-interaction-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-xy-interaction-tests.log"
+    },
+    {
+      "name": "xy-full-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-xy-full-tests.log"
+    },
+    {
+      "name": "basic-energy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-basic-energy-tests.log"
+    },
+    {
+      "name": "bw-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-bw-tests.log"
+    },
+    {
+      "name": "realistic-bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-realistic-bot-tests.log"
+    },
+    {
+      "name": "hgss-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-hgss-tests.log"
+    },
+    {
+      "name": "dp-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-dp-tests.log"
+    },
+    {
+      "name": "ex-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-ex-tests.log"
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-wotc-tests.log"
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-undo-tests.log"
+    },
+    {
+      "name": "bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\sv-current-regression-bot-tests.log"
+    }
+  ],
+  "games": [
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Miraidon ex",
+        "ADP Zacian"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Blowns",
+        "Constructed SV interaction fixture: Charizard ex"
+      ],
+      "level": "hard",
+      "decisions": 49,
+      "turn": 5,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Gholdengo ex",
+        "Cinccino Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Eternatus VMax",
+        "Constructed SV interaction fixture: Dragapult ex"
+      ],
+      "level": "normal",
+      "decisions": 50,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Terapagos ex",
+        "Pikarom"
+      ],
+      "level": "easy",
+      "decisions": 52,
+      "turn": 5,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Vikavolt V",
+        "Constructed SV interaction fixture: Ethan's Ho-Oh ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Reshiram ex",
+        "Leafeon VMax"
+      ],
+      "level": "normal",
+      "decisions": 57,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Box",
+        "Constructed SV interaction fixture: Team Rocket's Mewtwo ex"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 19,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "ADP Zacian",
+        "Constructed SV interaction fixture: Gardevoir ex"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Charizard ex",
+        "Centiskorch VMax"
+      ],
+      "level": "easy",
+      "decisions": 93,
+      "turn": 14,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Cinccino Control",
+        "Constructed SV interaction fixture: Raging Bolt ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Dragapult ex",
+        "MewtwoMew"
+      ],
+      "level": "normal",
+      "decisions": 37,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Pikarom",
+        "Constructed SV interaction fixture: Hydreigon ex"
+      ],
+      "level": "normal",
+      "decisions": 67,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Ethan's Ho-Oh ex",
+        "Dragapult VMax"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 17,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Leafeon VMax",
+        "Constructed SV interaction fixture: Zekrom ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Team Rocket's Mewtwo ex",
+        "Rapid Strike Urshifu VMax"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Gardevoir ex",
+        "Blowns"
+      ],
+      "level": "normal",
+      "decisions": 74,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Centiskorch VMax",
+        "Constructed SV interaction fixture: Gholdengo ex"
+      ],
+      "level": "normal",
+      "decisions": 80,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Raging Bolt ex",
+        "Eternatus VMax"
+      ],
+      "level": "easy",
+      "decisions": 73,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Constructed SV interaction fixture: Terapagos ex"
+      ],
+      "level": "hard",
+      "decisions": 107,
+      "turn": 17,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Hydreigon ex",
+        "Vikavolt V"
+      ],
+      "level": "normal",
+      "decisions": 51,
+      "turn": 6,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dragapult VMax",
+        "Constructed SV interaction fixture: Reshiram ex"
+      ],
+      "level": "normal",
+      "decisions": 95,
+      "turn": 15,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV interaction fixture: Zekrom ex",
+        "Rapid Strike Box"
+      ],
+      "level": "easy",
+      "decisions": 76,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Urshifu VMax",
+        "Constructed SV interaction fixture: Miraidon ex"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "decisions": 2161,
+  "scope": "Black & White onward through complete Scarlet & Violet; historical profiles retained; Unlimited deferred",
+  "limits": "Finite expected-result, attack, branch and bounded-game checks do not prove every possible state. Passive/conditional unavailable Ability and Trainer fixtures remain explicit. Standard TCG catalogs exclude separate My First Battle ruleset and finish/stamp duplicates. Reverse scan acquisition remains incomplete. No newly maintained Expanded banlist. Physical Android acceptance remains pending.",
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23838,
+  "sourceFilesVerified": 11160,
+  "unsignedWindowsExecutable": true,
+  "archives": [
+    {
+      "name": "ILEX.GG-Windows.zip",
+      "bytes": 293320561,
+      "sha256": "837e0f4ffd5ec5201e7683d351b87a5a374f477da0b73a4191afc7db424dbea7",
+      "crcPassed": true
+    },
+    {
+      "name": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2909789979,
+      "sha256": "6bf1a93bed9426563eb7c3d0695b420d35fa9fcd1d1719c4092dd57d56187f0e",
+      "crcPassed": true
+    }
+  ],
+  "executableSha256": "a7966a0e78caa64e95ba357cfedcfa031efd1488a0268cb55b3c99267d2a4a0f"
+}

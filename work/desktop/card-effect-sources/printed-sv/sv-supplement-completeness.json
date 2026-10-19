@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "standardTCGPrintings": 3694,
+  "promoPrintings": 226,
+  "promoRange": "SVP001–225 and SVP500 (Terapagos & Friends)",
+  "battleAcademyUniquePromos": [
+    {
+      "id": "svp-105",
+      "name": "Armarouge ex"
+    },
+    {
+      "id": "svp-106",
+      "name": "Pikachu ex"
+    },
+    {
+      "id": "svp-107",
+      "name": "Mareep"
+    },
+    {
+      "id": "svp-108",
+      "name": "Flaaffy"
+    },
+    {
+      "id": "svp-109",
+      "name": "Ampharos"
+    },
+    {
+      "id": "svp-110",
+      "name": "Darkrai ex"
+    },
+    {
+      "id": "svp-111",
+      "name": "Pawniard"
+    },
+    {
+      "id": "svp-112",
+      "name": "Bisharp"
+    },
+    {
+      "id": "svp-113",
+      "name": "Kingambit"
+    },
+    {
+      "id": "svp-114",
+      "name": "Picnicker"
+    }
+  ],
+  "catalogs": [
+    "sv01",
+    "sve",
+    "svp",
+    "sv02",
+    "2023sv",
+    "sv03",
+    "sv03.5",
+    "sv04",
+    "sv04.5",
+    "sv05",
+    "sv06",
+    "sv06.5",
+    "sv07",
+    "sv08",
+    "2024sv",
+    "sv08.5",
+    "sv09",
+    "sv10",
+    "sv10.5b",
+    "sv10.5w"
+  ],
+  "supplements": [
+    "2023 and 2024 McDonald’s catalogs",
+    "Battle Academy 2024 unique mechanics via SVP105–114; reprints retain original card implementations",
+    "SVE Basic Energy including later artwork generations"
+  ],
+  "separateRuleset": {
+    "name": "My First Battle",
+    "includedInStandardAutomation": false,
+    "reason": "Separate 17-card mini-deck product with simplified rules. Its cards are not normal BW-onward 60-card TCG printings."
+  },
+  "finishVariants": "Reverse, stamped and Ball finishes share card effects; verified finish scan acquisition is a separate incomplete backlog.",
+  "sources": [
+    "https://www.pokemon.com/us/pokemon-tcg/product-gallery/my-first-battle",
+    "https://parents.pokemon.com/en-us/trading-card-game/",
+    "https://www.pokemon.com/us/pokemon-tcg/product-gallery/battle-academy-2024",
+    "https://www.pokemon-card.com/ex/sv11/index.html"
+  ],
+  "limits": "Catalog-level English standard-TCG coverage; alternate language, oversized, jumbo, numbered deck stamps and the simplified My First Battle ruleset are not counted as distinct automated cards."
+}

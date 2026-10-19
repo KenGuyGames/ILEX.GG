@@ -1,0 +1,1 @@
+const r=require('../card-sources/sv-supplements.json'),c=require('../desktop/ui/cards.json');for(const id of ['sv10.5b-003','sv10.5b-009','sv10.5b-004']){console.log(JSON.stringify(r.find(r=>r.id===id),null,2));console.log(c.find(c=>c.id===id)?.scan);}

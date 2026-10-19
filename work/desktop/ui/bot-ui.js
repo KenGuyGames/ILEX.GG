@@ -7,6 +7,11 @@ function wireMatchFormatSetup(){
  const toolbar=$('#rp1')?.closest('.toolbar');if(!toolbar)return;
  toolbar.insertAdjacentHTML('afterbegin','<label class="opponent-setting">Match format<select id="matchformat" aria-label="Match format"><option value="">Choose a format…</option>'+state.formats.map(f=>'<option value="'+esc(f.id)+'">'+esc(f.name)+'</option>').join('')+'</select></label>');
  const formatSelect=$('#matchformat'),start=toolbar.querySelector('button.primary');
+ if(!matchSetupFormat&&rulesMatch?.spec.format?.id){
+  matchSetupFormat=rulesMatch.spec.format.id;
+  const choices=matchFormatDecks(matchSetupFormat);
+  matchSetupDecks=rulesMatch.spec.decks.map(saved=>choices.find(d=>d.name===saved.name&&JSON.stringify(Object.entries(d.cards).sort())===JSON.stringify(Object.entries(saved.cards).sort()))?.id||'');
+ }
  formatSelect.value=state.formats.some(f=>f.id===matchSetupFormat)?matchSetupFormat:'';
  const populate=()=>{
   matchSetupFormat=formatSelect.value;
@@ -14,9 +19,9 @@ function wireMatchFormatSetup(){
   for(const [i,id] of ['rp1','rp2'].entries()){
    const select=$('#'+id);select.innerHTML='<option value="">'+(format?'Choose a deck…':'Choose a format first…')+'</option>'+choices.map(d=>'<option value="'+esc(d.id)+'">'+esc(d.name+' · '+format.name)+'</option>').join('');
    select.disabled=!format||!choices.length;select.value=choices.some(d=>d.id===matchSetupDecks[i])?matchSetupDecks[i]:'';matchSetupDecks[i]=select.value;
-   select.onchange=()=>{matchSetupDecks[i]=select.value;if(i===0)$('#ruleprofile').value=rulesProfileFor(choices.find(d=>d.id===select.value));start.disabled=!matchSetupDecks.every(Boolean);};
+   select.onchange=()=>{matchSetupDecks[i]=select.value;if(i===0)$('#ruleprofile').value=rulesProfileFor(choices.find(d=>d.id===select.value));start.disabled=false;};
   }
-  start.disabled=!format||!matchSetupDecks.every(Boolean);
+  start.disabled=false;
   if(format)$('#ruleprofile').value=rulesProfileFor({format:format.id,cards:{}});
   const empty=$('.empty');if(!rulesMatch&&empty)empty.textContent=!format?'Select the match format, then choose your deck and your opponent’s deck.':choices.length?'Only decks assigned to '+format.name+' are shown. Choose both decks to start.':'No decks are assigned to '+format.name+'. Assign or create a deck in My decks first.';
  };

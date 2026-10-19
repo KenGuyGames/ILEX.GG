@@ -20,6 +20,8 @@ const dpKits=path.join(root,'work/card-sources/dp-trainer-kits.json');if(fs.exis
 const hgssKits=path.join(root,'work/card-sources/hgss-trainer-kits.json');if(fs.existsSync(hgssKits))for(const c of JSON.parse(fs.readFileSync(hgssKits,'utf8')))records[c.id]=c;
 const xySupplements=path.join(root,'work/card-sources/xy-supplements.json');if(fs.existsSync(xySupplements))for(const c of JSON.parse(fs.readFileSync(xySupplements,'utf8')))records[c.id]=c;
 const smSupplementFile=path.join(root,'work/card-sources/sm-supplements.json');if(fs.existsSync(smSupplementFile))for(const d of JSON.parse(fs.readFileSync(smSupplementFile,'utf8')))records[d.id]=d;
+const swshSupplementFile=path.join(root,'work/card-sources/swsh-supplements.json');if(fs.existsSync(swshSupplementFile))for(const d of JSON.parse(fs.readFileSync(swshSupplementFile,'utf8')))records[d.id]=d;
+const swshPrintedFile=path.join(root,'work/rules-research/swsh-wave-data.json');if(fs.existsSync(swshPrintedFile))for(const row of JSON.parse(fs.readFileSync(swshPrintedFile,'utf8')))records[row.d.id]=row.d;
 const bwDataFile=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-bw-data.ts');if(fs.existsSync(bwDataFile)){const data=JSON.parse(fs.readFileSync(bwDataFile,'utf8').match(/^export const bwData:any = (.*);$/m)[1]);for(const record of data)records[record.d.id]=record.d;}
 const codes={};const metadata={};const mapping={};
 const variants={};for(const c of unique){const key=norm(c.set)+'|'+String(c.setNumber).toLowerCase().replace(/^0+(?=\d)/,'');(variants[key]??=[]).push(c);}
@@ -43,6 +45,7 @@ const bwCoverageFile=path.join(ui,'bw-coverage.json');if(fs.existsSync(bwCoverag
 const hgssCoverageFile=path.join(ui,'hgss-coverage.json');if(fs.existsSync(hgssCoverageFile))for(const pending of JSON.parse(fs.readFileSync(hgssCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
 const dpCoverageFile=path.join(ui,'dp-coverage.json');if(fs.existsSync(dpCoverageFile))for(const pending of JSON.parse(fs.readFileSync(dpCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
 const xyCoverageFile=path.join(ui,'xy-coverage.json');if(fs.existsSync(xyCoverageFile))for(const pending of JSON.parse(fs.readFileSync(xyCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
+const swshCoverageFile=path.join(ui,'swsh-coverage.json');if(fs.existsSync(swshCoverageFile))for(const pending of JSON.parse(fs.readFileSync(swshCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
 const smCoverageFile=path.join(ui,'sm-coverage.json');if(fs.existsSync(smCoverageFile))for(const pending of JSON.parse(fs.readFileSync(smCoverageFile,'utf8')).unsupported||[])delete mapping[pending.id];
 fs.writeFileSync(path.join(ui,'card-details.json'),JSON.stringify(metadata));
 fs.writeFileSync(path.join(ui,'deck-set-codes.json'),JSON.stringify(codes));

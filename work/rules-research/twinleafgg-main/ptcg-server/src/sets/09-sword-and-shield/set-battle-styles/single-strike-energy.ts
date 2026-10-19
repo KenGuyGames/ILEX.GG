@@ -3,7 +3,7 @@ import { EnergyCard } from '../../../game/store/card/energy-card';
 import { StoreLike } from '../../../game/store/store-like';
 import { State } from '../../../game/store/state/state';
 import { Effect } from '../../../game/store/effects/effect';
-import { DealDamageEffect } from '../../../game/store/effects/attack-effects';
+import { ApplyWeaknessEffect } from '../../../game/store/effects/attack-effects';
 import {
   CheckProvidedEnergyEffect,
   CheckTableStateEffect,
@@ -62,7 +62,7 @@ As long as this card is attached to a Pokémon, it provides [F] and [D] Energy b
     }
 
     // Deal +20 damage
-    if (effect instanceof DealDamageEffect && effect.source.cards.includes(this)) {
+    if (effect instanceof ApplyWeaknessEffect && effect.damage > 0 && effect.source.cards.includes(this)) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 

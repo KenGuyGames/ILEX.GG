@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path'),assert=require('assert'),crypto=require('crypto'),vm=require('vm');const ui=path.resolve(__dirname,'../desktop/ui'),P=require(path.join(ui,'pack-model.js')),load=n=>JSON.parse(fs.readFileSync(path.join(ui,n))),cards=load('cards.json'),details=load('card-details.json'),profiles=P.build(cards,load('sets.json'),details),checks=[];
+const check=(v,n)=>{assert(v,n);checks.push(n)},anniversary=Array.from({length:8},(_,i)=>'mee-'+String(i+9).padStart(3,'0')),ordinary=Array.from({length:8},(_,i)=>'mee-'+String(i+1).padStart(3,'0'));
+let seed=1937;const rng=()=>((seed=(Math.imul(seed,1664525)+1013904223)>>>0)/4294967296);let packs=0;
+for(const id of ['30th','me01','me02','me02.5','me03','me04','me05']){
+ const p=profiles.find(p=>p.id===id),expected=id==='30th'?anniversary:ordinary,seen=new Set();check(JSON.stringify(p.pools.energy)===JSON.stringify(expected),id+' exact eight Energy printings');
+ for(let n=0;n<1000;n++){
+  const pack=P.generate(p,rng,{special:false}),energy=pack.filter(c=>c.slot==='Basic Energy');assert.equal(energy.length,1);assert(expected.includes(energy[0].id));assert.equal(energy[0].finish,id==='30th'?'holo':'normal');if(id==='30th'){assert.equal(pack.length,6);assert(pack.every(c=>c.finish==='holo'));assert.equal(pack.filter(c=>c.tier==='pikachu').length,1);}seen.add(energy[0].id);packs++;
+ }
+ check(seen.size===8,id+' samples all eight correct types');
+}
+const manifest=load('scan-manifest.json'),map=load('rules-card-map.json'),ctx={};vm.createContext(ctx);for(const n of ['rules-engine.js','rules-match.js'])vm.runInContext(fs.readFileSync(path.join(ui,n),'utf8'),ctx);
+for(const id of anniversary){const card=cards.find(c=>c.id===id),d=details[id],m=manifest[id],bytes=fs.readFileSync(path.join(path.resolve(__dirname,'../dp-desktop-candidate/resources'),m.file));check(card.scan===m.file&&crypto.createHash('sha256').update(bytes).digest('hex')===m.sha256,id+' artwork path/hash match');const R=ctx.RulesMatch.R,c=R.CardManager.getInstance().getCardByName(map[id]);check(c.energyType===R.EnergyType.BASIC&&c.provides.includes(R.CardType[d.types[0]==='Darkness'?'DARK':d.types[0].toUpperCase()]),id+' provides matching Basic Energy');}
+const result={passed:true,checks,packs,profiles:profiles.length,energyPool:anniversary,engineSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(ui,'rules-engine.js'))).digest('hex')};fs.writeFileSync(path.resolve(__dirname,'../rules-research/pack-30th-energy-tests.json'),JSON.stringify(result,null,2));console.log({passed:true,checks:checks.length,packs});

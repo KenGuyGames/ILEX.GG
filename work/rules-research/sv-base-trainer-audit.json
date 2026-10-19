@@ -1,0 +1,394 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "sv01-166",
+      "positive": false
+    },
+    {
+      "id": "sv01-166",
+      "positive": true
+    },
+    {
+      "id": "sv01-167",
+      "positive": false
+    },
+    {
+      "id": "sv01-167",
+      "positive": true
+    },
+    {
+      "id": "sv01-169",
+      "positive": false
+    },
+    {
+      "id": "sv01-169",
+      "positive": true
+    },
+    {
+      "id": "sv01-171",
+      "positive": false
+    },
+    {
+      "id": "sv01-171",
+      "positive": true
+    },
+    {
+      "id": "sv01-172",
+      "positive": false
+    },
+    {
+      "id": "sv01-172",
+      "positive": true
+    },
+    {
+      "id": "sv01-173",
+      "positive": false
+    },
+    {
+      "id": "sv01-173",
+      "positive": true
+    },
+    {
+      "id": "sv01-174",
+      "positive": false
+    },
+    {
+      "id": "sv01-174",
+      "positive": true
+    },
+    {
+      "id": "sv01-175",
+      "positive": false
+    },
+    {
+      "id": "sv01-175",
+      "positive": true
+    },
+    {
+      "id": "sv01-176",
+      "positive": false
+    },
+    {
+      "id": "sv01-176",
+      "positive": true
+    },
+    {
+      "id": "sv01-177",
+      "positive": false
+    },
+    {
+      "id": "sv01-177",
+      "positive": true
+    },
+    {
+      "id": "sv01-178",
+      "positive": false
+    },
+    {
+      "id": "sv01-178",
+      "positive": true
+    },
+    {
+      "id": "sv01-179",
+      "positive": false
+    },
+    {
+      "id": "sv01-179",
+      "positive": true
+    },
+    {
+      "id": "sv01-180",
+      "positive": false
+    },
+    {
+      "id": "sv01-180",
+      "positive": true
+    },
+    {
+      "id": "sv01-181",
+      "positive": false
+    },
+    {
+      "id": "sv01-181",
+      "positive": true
+    },
+    {
+      "id": "sv01-182",
+      "positive": false
+    },
+    {
+      "id": "sv01-182",
+      "positive": true
+    },
+    {
+      "id": "sv01-183",
+      "positive": false
+    },
+    {
+      "id": "sv01-183",
+      "positive": true
+    },
+    {
+      "id": "sv01-184",
+      "positive": false
+    },
+    {
+      "id": "sv01-184",
+      "positive": true
+    },
+    {
+      "id": "sv01-185",
+      "positive": false
+    },
+    {
+      "id": "sv01-185",
+      "positive": true
+    },
+    {
+      "id": "sv01-186",
+      "positive": false
+    },
+    {
+      "id": "sv01-186",
+      "positive": true
+    },
+    {
+      "id": "sv01-187",
+      "positive": false
+    },
+    {
+      "id": "sv01-187",
+      "positive": true
+    },
+    {
+      "id": "sv01-188",
+      "positive": false
+    },
+    {
+      "id": "sv01-188",
+      "positive": true
+    },
+    {
+      "id": "sv01-189",
+      "positive": false
+    },
+    {
+      "id": "sv01-189",
+      "positive": true
+    },
+    {
+      "id": "sv01-190",
+      "positive": false
+    },
+    {
+      "id": "sv01-190",
+      "positive": true
+    },
+    {
+      "id": "sv01-192",
+      "positive": false
+    },
+    {
+      "id": "sv01-192",
+      "positive": true
+    },
+    {
+      "id": "sv01-193",
+      "positive": false
+    },
+    {
+      "id": "sv01-193",
+      "positive": true
+    },
+    {
+      "id": "sv01-194",
+      "positive": false
+    },
+    {
+      "id": "sv01-194",
+      "positive": true
+    },
+    {
+      "id": "sv01-195",
+      "positive": false
+    },
+    {
+      "id": "sv01-195",
+      "positive": true
+    },
+    {
+      "id": "sv01-196",
+      "positive": false
+    },
+    {
+      "id": "sv01-196",
+      "positive": true
+    },
+    {
+      "id": "sv01-197",
+      "positive": false
+    },
+    {
+      "id": "sv01-197",
+      "positive": true
+    },
+    {
+      "id": "sv01-198",
+      "positive": false
+    },
+    {
+      "id": "sv01-198",
+      "positive": true
+    },
+    {
+      "id": "sv01-235",
+      "positive": false
+    },
+    {
+      "id": "sv01-235",
+      "positive": true
+    },
+    {
+      "id": "sv01-236",
+      "positive": false
+    },
+    {
+      "id": "sv01-236",
+      "positive": true
+    },
+    {
+      "id": "sv01-237",
+      "positive": false
+    },
+    {
+      "id": "sv01-237",
+      "positive": true
+    },
+    {
+      "id": "sv01-238",
+      "positive": false
+    },
+    {
+      "id": "sv01-238",
+      "positive": true
+    },
+    {
+      "id": "sv01-239",
+      "positive": false
+    },
+    {
+      "id": "sv01-239",
+      "positive": true
+    },
+    {
+      "id": "sv01-240",
+      "positive": false
+    },
+    {
+      "id": "sv01-240",
+      "positive": true
+    },
+    {
+      "id": "sv01-241",
+      "positive": false
+    },
+    {
+      "id": "sv01-241",
+      "positive": true
+    },
+    {
+      "id": "sv01-242",
+      "positive": false
+    },
+    {
+      "id": "sv01-242",
+      "positive": true
+    },
+    {
+      "id": "sv01-249",
+      "positive": false
+    },
+    {
+      "id": "sv01-249",
+      "positive": true
+    },
+    {
+      "id": "sv01-250",
+      "positive": false
+    },
+    {
+      "id": "sv01-250",
+      "positive": true
+    },
+    {
+      "id": "sv01-251",
+      "positive": false
+    },
+    {
+      "id": "sv01-251",
+      "positive": true
+    },
+    {
+      "id": "sv01-252",
+      "positive": false
+    },
+    {
+      "id": "sv01-252",
+      "positive": true
+    },
+    {
+      "id": "sv01-255",
+      "positive": false
+    },
+    {
+      "id": "sv01-255",
+      "positive": true
+    }
+  ],
+  "unavailable": [
+    {
+      "id": "sv01-168",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-168",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-170",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-170",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-191",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-191",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-256",
+      "positive": false,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    },
+    {
+      "id": "sv01-256",
+      "positive": true,
+      "error": "CANNOT_PLAY_THIS_CARD"
+    }
+  ],
+  "failures": [],
+  "engineSha256": "c5924308c0c128cc8c4c1d0cd7930fa178cd1efee609930a3e8344ff7935430f"
+}

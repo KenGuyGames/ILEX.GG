@@ -84,7 +84,7 @@ export class Gengar extends PokemonCard {
       let psychicEnergyCount = 0;
       checkProvidedEnergy.energyMap.forEach((em) => {
         if (em.provides.includes(CardType.PSYCHIC) || em.provides.includes(CardType.ANY)) {
-          psychicEnergyCount += StateUtils.getProvidesUnitCount(em.provides);
+          psychicEnergyCount += StateUtils.getProvidesUnitCount(em.provides,em);
         }
       });
 

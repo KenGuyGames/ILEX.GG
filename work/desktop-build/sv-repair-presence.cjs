@@ -1,0 +1,1 @@
+const data=require('../rules-research/sv-era-candidate-data.json');for(const id of ['sv04-100','sv05-072','sv06.5-018','sv08-161','sv06-099'])console.log(id,!!data.find(r=>r.d.id===id),data.find(r=>r.d.id===id)?.reason);

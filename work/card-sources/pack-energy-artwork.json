@@ -1,0 +1,342 @@
+[
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "G",
+    "type": "Grass",
+    "file": "2019-G.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_G_R_EN_LG.png",
+    "sha256": "e9baded9bfdf114d5988302950f3655225f7a013c36ac212427691c1621ea8db",
+    "bytes": 95885
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "R",
+    "type": "Fire",
+    "file": "2019-R.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_R_R_EN_LG.png",
+    "sha256": "98593e7f2e0c47a0bf0f5d92878810523a273f10cbdd606938892ecb0c26d6f9",
+    "bytes": 88001
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "W",
+    "type": "Water",
+    "file": "2019-W.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_W_R_EN_LG.png",
+    "sha256": "f7031bc9f244238a0782e09f5f2494078459993c7d75035c583f889cdb99b60a",
+    "bytes": 84183
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "L",
+    "type": "Lightning",
+    "file": "2019-L.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_L_R_EN_LG.png",
+    "sha256": "d8373b6f615873d829f5b29c2001f5d51a3fd5be82f7ad0bc6e3555f60dbdcdd",
+    "bytes": 79595
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "P",
+    "type": "Psychic",
+    "file": "2019-P.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_P_R_EN_LG.png",
+    "sha256": "517d78bd0494989f0a50b928638e6a5d0d07e7f4e6c6f6bd00acc26cd5d2336d",
+    "bytes": 91003
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "F",
+    "type": "Fighting",
+    "file": "2019-F.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_F_R_EN_LG.png",
+    "sha256": "ab4744ff7f10cf3e671f52f7807fd4b4bbd56c07230507f81027f7f50997e535",
+    "bytes": 92781
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "D",
+    "type": "Darkness",
+    "file": "2019-D.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_D_R_EN_LG.png",
+    "sha256": "956a92971aff37a52b670291ea611f70ef5eeb3cdd5dc3a328f3cb65ae3fd428",
+    "bytes": 93896
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "M",
+    "type": "Metal",
+    "file": "2019-M.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_M_R_EN_LG.png",
+    "sha256": "993cb62d6221b95190e6eca5b725fd6962c4f192c90f9ab1bc3a34b4874a3e00",
+    "bytes": 110135
+  },
+  {
+    "year": 2019,
+    "code": "TEU",
+    "key": "Y",
+    "type": "Fairy",
+    "file": "2019-Y.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/TEU/TEU_Y_R_EN_LG.png",
+    "sha256": "daa7df1f4ca994ea86054858000543fab01641e2b2d61981b8d32b3a83a7b854",
+    "bytes": 96351
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "G",
+    "type": "Grass",
+    "file": "2020-G.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_G_R_EN_LG.png",
+    "sha256": "3a5e5181a016383f1f7a0be65ea125b1a8fad295a2ef7e1d1b664173e066293e",
+    "bytes": 65380
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "R",
+    "type": "Fire",
+    "file": "2020-R.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_R_R_EN_LG.png",
+    "sha256": "362c5504767235c00a9d84ab049e6988dc12527f1764199c0830644899e7d0a7",
+    "bytes": 63263
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "W",
+    "type": "Water",
+    "file": "2020-W.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_W_R_EN_LG.png",
+    "sha256": "ec1e0e24c57b8fa5120928cdff96c3d1a8b5aac4420de46fe7c494bf59ec8d7b",
+    "bytes": 63912
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "L",
+    "type": "Lightning",
+    "file": "2020-L.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_L_R_EN_LG.png",
+    "sha256": "09291cf22d3d32ed1bef912703583fcef0d64c6e58ae776d43dcf2d14bbb00cd",
+    "bytes": 67494
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "P",
+    "type": "Psychic",
+    "file": "2020-P.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_P_R_EN_LG.png",
+    "sha256": "ea39c70d643a6fda26f9e79881ab43fca148048aa9df120f9d7347f99b778329",
+    "bytes": 65398
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "F",
+    "type": "Fighting",
+    "file": "2020-F.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_F_R_EN_LG.png",
+    "sha256": "f697769f67192b0c51dc8a139149ab784ef32f6e60fe2f2cdb2d66b12f094354",
+    "bytes": 60649
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "D",
+    "type": "Darkness",
+    "file": "2020-D.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_D_R_EN_LG.png",
+    "sha256": "72c7a1b053946e59a870afd355d65a1bcfbe5f5b9b637cb2f535a0efc3bd8853",
+    "bytes": 66230
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "M",
+    "type": "Metal",
+    "file": "2020-M.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_M_R_EN_LG.png",
+    "sha256": "576769dd1411004b0ed7ecbf94523e852285045e9827f43cef2900b2c1e47804",
+    "bytes": 71202
+  },
+  {
+    "year": 2020,
+    "code": "SSH",
+    "key": "Y",
+    "type": "Fairy",
+    "file": "2020-Y.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/SSH/SSH_Y_R_EN_LG.png",
+    "sha256": "e2894ee0176c85f641d5738a7b99419faeccee11db100d9cb3bd59315066ea77",
+    "bytes": 67599
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "G",
+    "type": "Grass",
+    "file": "2022-G.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_G_R_EN_LG.png",
+    "sha256": "443bf5b0357357c60c4cf1f49a812721abbe8c688757f1219fcc60f630dc74a4",
+    "bytes": 92698
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "R",
+    "type": "Fire",
+    "file": "2022-R.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_R_R_EN_LG.png",
+    "sha256": "4ed40ea226976f39eb8cb5c75de31d7065e1b8e307e27f17c1447c7c4799fd8b",
+    "bytes": 93401
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "W",
+    "type": "Water",
+    "file": "2022-W.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_W_R_EN_LG.png",
+    "sha256": "2cb2cfba08da2f078fb2db83d1c3229107d1f9872ee65cccb336ea12f2104a4e",
+    "bytes": 94149
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "L",
+    "type": "Lightning",
+    "file": "2022-L.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_L_R_EN_LG.png",
+    "sha256": "65d987313fcadc7aa102247cbf29e1ee0f028896a1a8b51b493fc12989f4c7ca",
+    "bytes": 94867
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "P",
+    "type": "Psychic",
+    "file": "2022-P.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_P_R_EN_LG.png",
+    "sha256": "b4fb567c5fc1a20c044f7ff903ea9a086bd4afacf0d65df5fa606c8af9848e06",
+    "bytes": 92952
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "F",
+    "type": "Fighting",
+    "file": "2022-F.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_F_R_EN_LG.png",
+    "sha256": "f4ec2fc357710c4beef21639e5cb75764389938f27f8466877fbf4b66f4c6de0",
+    "bytes": 87121
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "D",
+    "type": "Darkness",
+    "file": "2022-D.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_D_R_EN_LG.png",
+    "sha256": "50dfb57d973a8e79f9aeb275d50f0f472c00f39c4cfe250ff08da93010790fb5",
+    "bytes": 100165
+  },
+  {
+    "year": 2022,
+    "code": "BRS",
+    "key": "M",
+    "type": "Metal",
+    "file": "2022-M.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/BRS/BRS_M_R_EN_LG.png",
+    "sha256": "26f4955c5094cdd4f21a5513e2eeb23a9c22f426148cadfbd85fa14d910596dc",
+    "bytes": 99512
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "G",
+    "type": "Grass",
+    "file": "2025-G.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_001_R_EN_LG.png",
+    "sha256": "2c0e659d960b968f78198fd38fae5d4a7e13cfd803e43c66d2a5f7abd554f119",
+    "bytes": 95523
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "R",
+    "type": "Fire",
+    "file": "2025-R.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_002_R_EN_LG.png",
+    "sha256": "38df40980c80c3314726531f661db2cbf9c57b21e46d082e17706b70c21c2492",
+    "bytes": 96409
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "W",
+    "type": "Water",
+    "file": "2025-W.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_003_R_EN_LG.png",
+    "sha256": "0877f20fb530bd825334effc7a314f0a5ca37e44a510fc3f356a80849f294617",
+    "bytes": 102445
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "L",
+    "type": "Lightning",
+    "file": "2025-L.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_004_R_EN_LG.png",
+    "sha256": "6b13cb2e85224575f8ec8f35ff530d4ff0ed8b58665913830ab1d20a4b08142d",
+    "bytes": 98853
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "P",
+    "type": "Psychic",
+    "file": "2025-P.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_005_R_EN_LG.png",
+    "sha256": "38238d08cf43ea09ba869ed6d750561352c7965b42c2053eb39878de503cfabc",
+    "bytes": 103318
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "F",
+    "type": "Fighting",
+    "file": "2025-F.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_006_R_EN_LG.png",
+    "sha256": "82450837414fce9f4a5914f395915209f13fa904bbd9b502bb39a73ec77e2bd6",
+    "bytes": 90284
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "D",
+    "type": "Darkness",
+    "file": "2025-D.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_007_R_EN_LG.png",
+    "sha256": "722af0422676a6b3b7fc0f4be0e8a9cf502287825c21429e0a2f790d0103924b",
+    "bytes": 96653
+  },
+  {
+    "year": 2025,
+    "code": "MEE",
+    "key": "M",
+    "type": "Metal",
+    "file": "2025-M.png",
+    "url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/MEE/MEE_008_R_EN_LG.png",
+    "sha256": "bab84b6d9e4cfcdcc1d8cff8df34ece42757b046866b08611d4960efc621dc9c",
+    "bytes": 123056
+  }
+]

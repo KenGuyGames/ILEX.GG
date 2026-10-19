@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "bug": "Custom Catcher one/two-card effects",
+  "engineSha256": "adf38e961d572dabd8fc96503b552b5738e509d37a84d069d0d207ef11d63d3a",
+  "targetedChecks": 13,
+  "smChecksOnShippedSnapshot": 82,
+  "nativeFreshChecks": 12,
+  "nativeRestoredChecks": 12,
+  "separateSharedSourceSuites": 13,
+  "separateSharedSourcePassed": true,
+  "separateSharedSourceEngineSha256": "ea83b8768408a5b1fbf3e6f67c0ed1f99b2a72193e7fcedc16e17579e2108789",
+  "androidChecks": 31,
+  "androidVersionCode": 17,
+  "sameAndroidSigningCertificate": true,
+  "physicalAndroidDeviceTested": false,
+  "priorFixesPreserved": [
+    "Stadium placement",
+    "Realistic Player aliases"
+  ],
+  "fullWindowsZipsRebuilt": false,
+  "outputs": {
+    "ILEX.GG-Bug-Fixes.zip": "59e83e7b8f33fa2f881e802ef6f3a5e0b469bb3408bf5bcf2feb12736959a286",
+    "ILEX.GG-Android.apk": "3e82c2fbed39bb0f50402fecaab4c2298e468f914ef91a6021b257db2d3bdc60"
+  }
+}

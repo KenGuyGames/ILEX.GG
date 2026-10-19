@@ -26,11 +26,11 @@ export class DimensionValley extends TrainerCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (effect instanceof CheckAttackCostEffect && StateUtils.getStadiumCard(state) === this) {
       const index = effect.cost.indexOf(CardType.COLORLESS);
-      const checkPokemonType = new CheckPokemonTypeEffect(effect.player.active);
+      const checkPokemonType = new CheckPokemonTypeEffect(effect.source);
 
       if (
         index === -1 ||
-        IS_STADIUM_EFFECT_BLOCKED(store, state, effect.player, effect.player.active)
+        IS_STADIUM_EFFECT_BLOCKED(store, state, effect.player, effect.source)
       ) {
         return state;
       }

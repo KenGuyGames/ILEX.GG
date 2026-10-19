@@ -10,7 +10,7 @@ import { StoreLike } from '../store-like';
 import { CheckPokemonPlayedTurnEffect, CheckSpecialConditionRemovalEffect } from '../effects/check-effects';
 import { EvolveEffect } from '../effects/game-effects';
 import { EndTurnEffect } from '../effects/game-phase-effects';
-import { CheckEvolutionTimingEffect } from '../effects/check-effects';
+import { CheckEvolutionTimingEffect,CheckEvolutionEligibilityEffect } from '../effects/check-effects';
 import { PowerType } from '../card/pokemon-types';
 
 /**
@@ -88,7 +88,9 @@ export function playPokemonReducer(store: StoreLike, state: State, effect: Effec
       (isEvolved && pokemonCard.evolvesToStage.includes(effect.pokemonCard.stage)) ||
       (isEvolved && Array.isArray(pokemonCard.evolvesFromBase) && pokemonCard.evolvesFromBase.length > 0 && pokemonCard.evolvesFromBase.includes(effect.pokemonCard.evolvesFrom));
 
-    if (isValidEvolution) {
+    const permission=new CheckEvolutionEligibilityEffect(player,effect.target,effect.pokemonCard,!!isValidEvolution);
+    store.reduceEffect(state,permission);
+    if (permission.allowed) {
       if (player.cannotEvolvePokemonCards || effect.target.cannotEvolveNextTurn) {
         throw new GameError(GameMessage.BLOCKED_BY_EFFECT);
       }

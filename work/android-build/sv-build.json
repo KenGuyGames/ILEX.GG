@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\android-build\\ILEX.GG-SV-candidate.apk",
+  "bytes": 122550570,
+  "sha256": "c82b8098b4b07df975653f3a5d345d24906fe501083e9781f5172fe4f69d988c",
+  "bundledScans": 395,
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

@@ -127,7 +127,7 @@ describe('StateUtils', () => {
       const energy = createEnergy('Blend Energy GRPD', blendGrpd);
       expect(energy.provides.includes(CardType.DARK)).toBeTruthy();
       expect(StateUtils.isChoosableProvides(energy.provides)).toBeTruthy();
-      expect(StateUtils.getProvidesUnitCount(energy.provides)).toBe(1);
+      expect(StateUtils.getProvidesUnitCount(energy.provides,energy)).toBe(1);
     });
 
     it('Should not overcount blend as multiple typed energies', () => {

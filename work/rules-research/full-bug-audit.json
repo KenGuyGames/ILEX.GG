@@ -1,0 +1,920 @@
+{
+  "passed": true,
+  "scope": "Historical formats and implemented cards through Sun & Moon; BW-onward interaction fixtures; Unlimited and newer-era development excluded",
+  "engineSha256": "4765883e38fd22c0dc695103f918dd4b92d2c50d2d904b5b70d0b8702551f1e6",
+  "broadSweepEngineSha256": "3181169f13be076a683d3a85a300fabd53100142fc2c948881e7033ba6c2464d",
+  "snapshotDifference": "Broad attack sweeps used the Puzzle/Breeder snapshot; final candidate adds narrow foreign-Tool ownership and targeting fixes, validated by final core, native, replay/Undo and mobile regressions. Shared newer source bundle was preserved.",
+  "fixes": [
+    "Puzzle of Time: correct paired play with empty deck, modes, in-play costs and discard recovery eligibility",
+    "Shining Legends Pokemon Breeder 63/73: Supporter draw-two/heal-twenty, preserving Base Set evolution behavior",
+    "Jamming Net: opponent targeting in adapter, modal, drag, mobile and bots",
+    "Jamming Net/Head Ringer: discard to original owner on removal, return-to-hand effects and knockout"
+  ],
+  "priorFixesPreserved": [
+    "Realistic Player imported aliases",
+    "Shared Stadium placement",
+    "Custom Catcher modes",
+    "Lysandre Labs and Fairy Charms"
+  ],
+  "printedFields": {
+    "passed": true,
+    "printings": 12611,
+    "checks": 73542,
+    "failures": []
+  },
+  "scanIntegrity": {
+    "passed": true,
+    "scanEntries": 23804,
+    "files": 23804,
+    "errors": [],
+    "elapsedSeconds": 26.1
+  },
+  "sweeps": {
+    "SM attacks": 4387,
+    "SM branches": 1168,
+    "XY attacks": 2787,
+    "XY branches": 1604,
+    "BW attacks": 2206,
+    "HGSS attacks": 809,
+    "DP attacks": 2361,
+    "EX attacks": 2651,
+    "Base-Fossil attack scenarios": 634,
+    "Other WOTC attack scenarios": 2510
+  },
+  "broadGroups": 90,
+  "broadResults": [
+    {
+      "name": "xy-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 12,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-tests.log"
+    },
+    {
+      "name": "custom-catcher-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 13,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\custom-catcher-tests.log"
+    },
+    {
+      "name": "rules-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 16,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\rules-tests.log"
+    },
+    {
+      "name": "hgss-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 15,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\hgss-tests.log"
+    },
+    {
+      "name": "realistic-alias-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 21,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\realistic-alias-tests.log"
+    },
+    {
+      "name": "bw-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 21,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\bw-tests.log"
+    },
+    {
+      "name": "lysandre-labs-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 22,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\lysandre-labs-tests.log"
+    },
+    {
+      "name": "undo-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 22,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\undo-tests.log"
+    },
+    {
+      "name": "xy-interaction-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 23,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-interaction-tests.log"
+    },
+    {
+      "name": "sm-native-guard-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 9,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-native-guard-audit.log"
+    },
+    {
+      "name": "basic-energy-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 25,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\basic-energy-tests.log"
+    },
+    {
+      "name": "pack-subset-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 1,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\pack-subset-audit.log"
+    },
+    {
+      "name": "pack-ball-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 1,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\pack-ball-audit.log"
+    },
+    {
+      "name": "ascended-pattern-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 2,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ascended-pattern-audit.log"
+    },
+    {
+      "name": "deck-sort-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 1,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\deck-sort-tests.log"
+    },
+    {
+      "name": "pack-speed-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 1,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\pack-speed-tests.log"
+    },
+    {
+      "name": "sm-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 38,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-tests.log"
+    },
+    {
+      "name": "xy-full-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 41,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-full-tests.log"
+    },
+    {
+      "name": "god-pack-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 19,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\god-pack-audit.log"
+    },
+    {
+      "name": "realistic-bot-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 35,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\realistic-bot-tests.log"
+    },
+    {
+      "name": "dp-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 41,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-tests.log"
+    },
+    {
+      "name": "pack-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 49,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\pack-tests.log"
+    },
+    {
+      "name": "ex-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 71,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-tests.log"
+    },
+    {
+      "name": "sm-identity-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 79,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-identity-audit.log"
+    },
+    {
+      "name": "sm-full-power-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 195,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-full-power-audit.log"
+    },
+    {
+      "name": "xy-full-trainer-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 203,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-full-trainer-audit.log"
+    },
+    {
+      "name": "sm-printed-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 150,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-0.log"
+    },
+    {
+      "name": "sm-full-trainer-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 151,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-full-trainer-audit.log"
+    },
+    {
+      "name": "sm-printed-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 151,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-1.log"
+    },
+    {
+      "name": "sm-printed-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 154,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-2.log"
+    },
+    {
+      "name": "sm-printed-4",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 135,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-4.log"
+    },
+    {
+      "name": "sm-printed-5",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 137,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-5.log"
+    },
+    {
+      "name": "sm-printed-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 143,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-3.log"
+    },
+    {
+      "name": "sm-printed-6",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 144,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-6.log"
+    },
+    {
+      "name": "sm-printed-10",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 136,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-10.log"
+    },
+    {
+      "name": "sm-printed-8",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 170,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-8.log"
+    },
+    {
+      "name": "sm-printed-9",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 165,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-9.log"
+    },
+    {
+      "name": "sm-printed-7",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 174,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-7.log"
+    },
+    {
+      "name": "sm-branches-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 48,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-1.log"
+    },
+    {
+      "name": "sm-branches-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 55,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-0.log"
+    },
+    {
+      "name": "sm-branches-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 57,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-2.log"
+    },
+    {
+      "name": "sm-branches-4",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 47,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-4.log"
+    },
+    {
+      "name": "sm-branches-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 55,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-3.log"
+    },
+    {
+      "name": "sm-branches-5",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 54,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-5.log"
+    },
+    {
+      "name": "sm-printed-11",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 162,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-printed-11.log"
+    },
+    {
+      "name": "sm-branches-7",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 51,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-7.log"
+    },
+    {
+      "name": "sm-branches-8",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 43,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-8.log"
+    },
+    {
+      "name": "sm-branches-6",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 60,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-6.log"
+    },
+    {
+      "name": "sm-branches-9",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 48,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-9.log"
+    },
+    {
+      "name": "sm-branches-11",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 49,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-11.log"
+    },
+    {
+      "name": "sm-branches-10",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 51,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-branches-10.log"
+    },
+    {
+      "name": "xy-printed-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 136,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-0.log"
+    },
+    {
+      "name": "xy-printed-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 131,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-1.log"
+    },
+    {
+      "name": "xy-printed-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 136,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-3.log"
+    },
+    {
+      "name": "xy-printed-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 139,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-2.log"
+    },
+    {
+      "name": "xy-printed-4",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 132,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-4.log"
+    },
+    {
+      "name": "xy-printed-5",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 136,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-5.log"
+    },
+    {
+      "name": "xy-printed-6",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 129,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-6.log"
+    },
+    {
+      "name": "xy-printed-7",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 128,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-printed-7.log"
+    },
+    {
+      "name": "xy-branches-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 102,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-0.log"
+    },
+    {
+      "name": "xy-branches-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 93,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-1.log"
+    },
+    {
+      "name": "xy-branches-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 107,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-2.log"
+    },
+    {
+      "name": "xy-branches-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 107,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-3.log"
+    },
+    {
+      "name": "xy-branches-4",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 137,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-4.log"
+    },
+    {
+      "name": "xy-branches-5",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 134,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-5.log"
+    },
+    {
+      "name": "xy-branches-7",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 125,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-7.log"
+    },
+    {
+      "name": "xy-branches-6",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 129,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\xy-branches-6.log"
+    },
+    {
+      "name": "bw-printed-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 169,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\bw-printed-0.log"
+    },
+    {
+      "name": "bw-printed-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 163,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\bw-printed-1.log"
+    },
+    {
+      "name": "bw-printed-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 155,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\bw-printed-2.log"
+    },
+    {
+      "name": "bw-printed-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 155,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\bw-printed-3.log"
+    },
+    {
+      "name": "hgss-printed-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 46,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\hgss-printed-1.log"
+    },
+    {
+      "name": "hgss-printed-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 50,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\hgss-printed-0.log"
+    },
+    {
+      "name": "hgss-printed-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 48,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\hgss-printed-2.log"
+    },
+    {
+      "name": "hgss-printed-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 50,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\hgss-printed-3.log"
+    },
+    {
+      "name": "dp-printed-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 93,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-printed-0.log"
+    },
+    {
+      "name": "dp-printed-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 94,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-printed-1.log"
+    },
+    {
+      "name": "dp-printed-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 91,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-printed-2.log"
+    },
+    {
+      "name": "dp-printed-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 91,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-printed-3.log"
+    },
+    {
+      "name": "dp-printed-4",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 97,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-printed-4.log"
+    },
+    {
+      "name": "dp-printed-5",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 96,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\dp-printed-5.log"
+    },
+    {
+      "name": "ex-printed-0",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 102,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-printed-0.log"
+    },
+    {
+      "name": "ex-printed-1",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 108,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-printed-1.log"
+    },
+    {
+      "name": "ex-printed-3",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 191,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-printed-3.log"
+    },
+    {
+      "name": "ex-printed-2",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 194,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-printed-2.log"
+    },
+    {
+      "name": "bot-tests",
+      "exitCode": 1,
+      "timedOut": false,
+      "elapsedSeconds": 19,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\bot-tests.log"
+    },
+    {
+      "name": "ex-printed-4",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 214,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-printed-4.log"
+    },
+    {
+      "name": "ex-printed-5",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 213,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\ex-printed-5.log"
+    },
+    {
+      "name": "wotc-tests",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 649,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\wotc-tests.log"
+    },
+    {
+      "name": "sm-full-match-audit",
+      "exitCode": 0,
+      "timedOut": false,
+      "elapsedSeconds": 672,
+      "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\final-logs\\sm-full-match-audit.log"
+    }
+  ],
+  "finalCoreGroups": {
+    "total": 16,
+    "complete": 16,
+    "engineSha256": "4765883e38fd22c0dc695103f918dd4b92d2c50d2d904b5b70d0b8702551f1e6",
+    "results": [
+      {
+        "name": "custom-catcher-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 10,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-custom-catcher-tests.log"
+      },
+      {
+        "name": "rules-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 12,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-rules-tests.log"
+      },
+      {
+        "name": "lysandre-labs-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 19,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-lysandre-labs-tests.log"
+      },
+      {
+        "name": "undo-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 19,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-undo-tests.log"
+      },
+      {
+        "name": "xy-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 10,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-xy-tests.log"
+      },
+      {
+        "name": "xy-interaction-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 15,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-xy-interaction-tests.log"
+      },
+      {
+        "name": "bw-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 16,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-bw-tests.log"
+      },
+      {
+        "name": "hgss-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 11,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-hgss-tests.log"
+      },
+      {
+        "name": "dp-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 18,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-dp-tests.log"
+      },
+      {
+        "name": "ex-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 30,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-ex-tests.log"
+      },
+      {
+        "name": "sm-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 17,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-sm-tests.log"
+      },
+      {
+        "name": "realistic-alias-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 12,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-realistic-alias-tests.log"
+      },
+      {
+        "name": "realistic-bot-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 19,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-realistic-bot-tests.log"
+      },
+      {
+        "name": "basic-energy-tests",
+        "exitCode": 0,
+        "elapsedSeconds": 12,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-basic-energy-tests.log"
+      },
+      {
+        "name": "xy-full-trainer-audit",
+        "exitCode": 0,
+        "elapsedSeconds": 107,
+        "log": "work\\full-audit\\logs\\candidate-xy-trainer-corrected.log",
+        "fixtureCorrection": "Use opposing EX target for Jamming Net; all 650 Trainer trials exercised, 584 resolve and 66 unavailable"
+      },
+      {
+        "name": "sm-full-trainer-audit",
+        "exitCode": 0,
+        "elapsedSeconds": 141,
+        "log": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-18\\us\\work\\full-audit\\logs\\candidate-sm-full-trainer-audit.log"
+      }
+    ]
+  },
+  "targetedChecks": {
+    "puzzle-regressions": 11,
+    "breeder-regressions": 17,
+    "opponent-tools-regressions": 15,
+    "puzzle-native-fresh": 18,
+    "puzzle-native-restored": 18,
+    "opponent-tools-native-fresh": 12,
+    "opponent-tools-native-restored": 12
+  },
+  "desktop": {
+    "passed": true,
+    "freshAndRestored": true,
+    "engineSha256": "4765883e38fd22c0dc695103f918dd4b92d2c50d2d904b5b70d0b8702551f1e6",
+    "verificationStage": "complete"
+  },
+  "mobile": {
+    "passed": true,
+    "checks": 69,
+    "touchOpponentToolPlacementAndDrag": true,
+    "errors": []
+  },
+  "apk": {
+    "passed": true,
+    "checks": [
+      "All APK entries pass CRC integrity checks",
+      "Compiled Android Activity and host bridge included",
+      "Private signing material excluded",
+      "rules-engine.js matches verified desktop source",
+      "rules-match.js matches verified desktop source",
+      "rules-ui.js matches verified desktop source",
+      "tabletop-drag.js matches verified desktop source",
+      "studio.css matches verified desktop source",
+      "bot-ai.js matches verified desktop source",
+      "bot-ui.js matches verified desktop source",
+      "bot-worker.js matches verified desktop source",
+      "limitless-collection.js matches verified desktop source",
+      "cards.json matches verified desktop source",
+      "sets.json matches verified desktop source",
+      "card-details.json matches verified desktop source",
+      "rules-card-map.json matches verified desktop source",
+      "pack-model.js matches verified desktop source",
+      "pack-specials.js matches verified desktop source",
+      "pack-finishes.js matches verified desktop source",
+      "legend-display.js matches verified desktop source",
+      "card-actions.js matches verified desktop source",
+      "tabletop.js matches verified desktop source",
+      "tabletop.css matches verified desktop source",
+      "mobile.js matches final Android source",
+      "mobile-host.js matches final Android source",
+      "mobile-compat.js matches final Android source",
+      "mobile.css matches final Android source",
+      "mobile-landscape.css matches final Android source",
+      "246 startup and historical demonstration scans bundled",
+      "Every bundled card scan matches manifest SHA-256",
+      "Compiled resource table is uncompressed for Android 11+",
+      "All stored ZIP entries aligned to four bytes",
+      "Universal APK has no CPU-specific native libraries",
+      "Android 8 minimum and SDK 36 target encoded in APK",
+      "Internet is the only requested Android permission",
+      "Launcher Activity registered",
+      "Audit fixes use higher versionCode for in-place installation",
+      "Mobile Chromium touch and responsive checks passed"
+    ],
+    "mobileChecks": 69,
+    "sha256": "5495ba880ea6040d062add3f052e8fc6c1f75cee9da44ebbdb65529df159a90d",
+    "physicalAndroidDeviceTested": false,
+    "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
+  },
+  "release": {
+    "passed": true,
+    "engineSha256": "4765883e38fd22c0dc695103f918dd4b92d2c50d2d904b5b70d0b8702551f1e6",
+    "windowsFiles": {
+      "tabletop.js": "96FFE1AD953F5EBF53D18574AB9AD9349C3A2676E17B88066BD11A0DE9C5BF7E",
+      "studio.css": "00E59E86C390D405E8E89A8794540389E2454E4E93B34D137E4A3C118D49912D",
+      "bot-worker.js": "0DC6FC612CA3833D3E3F4CF2842BECD926C1BD99D7D5E6670EC476F6E3D2594E",
+      "rules-engine.js": "4765883E38FD22C0DC695103F918DD4B92D2C50D2D904B5B70D0B8702551F1E6",
+      "rules-match.js": "99100494B4A273A9688087FFDA94D2855B932E0B97C7E781D1E194181BF319E8",
+      "bot-ai.js": "4B65AB7C7302D0E8B72FB898DD384816D570B9C2B55206444FB9217067DAF354",
+      "rules-card-map.json": "A62AC8FDB2915DF7B35AA49DEC50E00EACFFD52872C82009BBF1077B09375B93",
+      "card-details.json": "CFFB9B424DDE20D4BE75EDD476A0243F098FEB6E5CBEE7F247A2B629F2E72CFC",
+      "rules-coverage.json": "5FA9C073A5F2A5EF1042969203B0DE47EC4EA2A281ABFBFEA98DD567ECDD9C1F",
+      "rules-ui.js": "8B0B2CB0D847D38E6DAFA8715E0AD3136198E0038316BDFC351E7F5903CD2764",
+      "tabletop-drag.js": "B29C819BB19505DEAFF50CB33CF8143A4A67D24B4D12F228D7E62C5AF81A6316"
+    },
+    "sameAndroidSigningCertificate": true,
+    "androidVersionCode": 20,
+    "physicalAndroidDeviceTested": false,
+    "profileDataModified": false,
+    "fullWindowsZipsRebuilt": false,
+    "newerSourceBundleOverwritten": false
+  },
+  "starterGames": [
+    {
+      "level": "easy",
+      "decisions": 80,
+      "turns": 12,
+      "winner": 1
+    },
+    {
+      "level": "normal",
+      "decisions": 133,
+      "turns": 22,
+      "winner": 1
+    },
+    {
+      "level": "hard",
+      "decisions": 228,
+      "turns": 31,
+      "winner": 0
+    },
+    {
+      "level": "realistic",
+      "decisions": 152,
+      "turns": 24,
+      "winner": 1
+    }
+  ],
+  "boundedDeckGames": {
+    "count": 24,
+    "decisions": 2778,
+    "finished": 4,
+    "exactReplayAndUndo": true
+  },
+  "harnessCorrections": [
+    "XY Trainer fixture now targets an opposing EX for Jamming Net rather than its own Pokemon. 584 resolved and 66 unavailable scenarios; no failures.",
+    "Initial broad bot test expected Rain Dance first but timed planning skipped it under parallel CPU pressure. Focused check and complete final-candidate bot suite pass. Initial failure retained in raw evidence; superseded by final candidate bot report.",
+    "Duplicate broad runner was stopped; final original-run result and complete shard reports are authoritative."
+  ],
+  "limits": [
+    "Finite seeded cases, not an exhaustive proof of all game states or a guarantee of no bugs",
+    "Generic passive/conditional fixtures that cannot legally activate are listed as unavailable; focused tests cover selected conditions",
+    "Bounded SM deck audits stop at 120 decisions and are not all completed games",
+    "Physical Android device, native file picker, network cache, real lifecycle/audio and device performance acceptance pending",
+    "Old full Windows ZIPs were not rebuilt; cumulative patch updates the audited release"
+  ],
+  "artifactSha256": {
+    "ILEX.GG-Bug-Fixes.zip": "613bde47132e48aa05cdb37da8fb2f640cdbad40ea0c6696e6c0414711c7c9dc",
+    "ILEX.GG-Android.apk": "5495ba880ea6040d062add3f052e8fc6c1f75cee9da44ebbdb65529df159a90d"
+  }
+}

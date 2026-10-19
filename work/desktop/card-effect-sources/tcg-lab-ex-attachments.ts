@@ -6,7 +6,7 @@ import { MOVE_CARDS } from './game/store/prefabs/prefabs';
 // Prompts use one read-only view; movement uses the actual owning list.
 export function exAttachedEnergy(store:any,state:any,owner:any,list:any){
  const check=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,check);
- return [...new Map(check.energyMap.filter((entry:any)=>list.cards.includes(entry.card)||list.energies.cards.includes(entry.card)).map((entry:any)=>[entry.card,{...entry,zone:list.cards.includes(entry.card)?list:list.energies}])).values()] as any[];
+ return StateUtils.physicalEnergyMap(check.energyMap.filter((entry:any)=>list.cards.includes(entry.card)||list.energies.cards.includes(entry.card))).map((entry:any)=>({...entry,zone:list.cards.includes(entry.card)?list:list.energies})) as any[];
 }
 export function exMoveEnergy(store:any,state:any,owner:any,sourceCard:any,sourceEffect:any,op:any,done:(target?:any)=>void){
  const sources=(op.fromBench?owner.bench:op.fromActive?[owner.active]:[owner.active,...owner.bench]).filter((list:any)=>list.getPokemonCard()&&(!op.fromSelf||list.getPokemonCard()===sourceCard)&&(!op.toSelf||list.getPokemonCard()!==sourceCard)&&(!op.targetName||[owner.active,...owner.bench].some((target:any)=>target!==list&&target.getPokemonCard()?.name===op.targetName)));

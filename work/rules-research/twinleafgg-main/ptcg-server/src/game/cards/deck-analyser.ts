@@ -29,6 +29,7 @@ export class DeckAnalyser {
     let hasAceSpec = false;
     let hasRadiant = false;
     let hasStar = false;
+    const unionGroups=new Map<string,number>();
     let hasUnownTag = false;
     let unownCount = 0;
     let hasArceusRule = false;
@@ -52,6 +53,7 @@ export class DeckAnalyser {
 
     for (let i = 0; i < this.cards.length; i++) {
       const card = this.cards[i];
+      if((card as any)._swshUnionGroup!==undefined){const group=(card as any)._swshUnionGroup,prior=unionGroups.get(card.name);if(prior!==undefined&&prior!==group)return false;unionGroups.set(card.name,group);}
 
       if (card instanceof PokemonCard && card.stage === Stage.BASIC) {
         hasBasicPokemon = true;

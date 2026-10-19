@@ -23,7 +23,8 @@ function* playCard(
   effect: TrainerEffect,
 ): IterableIterator<State> {
   const player = effect.player;
-  if ((state.rules as any).xyEraRules && !player.canEvolve)throw new GameError(GameMessage.CANNOT_EVOLVE_ON_YOUR_FIRST_TURN);
+  // canEvolve is an exceptional permission flag, not a completed-turn counter.
+  if (state.turn <= 2)throw new GameError(GameMessage.CANNOT_EVOLVE_ON_YOUR_FIRST_TURN);
 
   if (player.deck.cards.length === 0) {
     throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);

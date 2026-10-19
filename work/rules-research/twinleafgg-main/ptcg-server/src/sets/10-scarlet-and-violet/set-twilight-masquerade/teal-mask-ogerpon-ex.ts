@@ -25,6 +25,7 @@ import { PlayPokemonEffect } from '../../../game/store/effects/play-card-effects
 import { PutDamageEffect } from '../../../game/store/effects/attack-effects';
 import { CheckProvidedEnergyEffect } from '../../../game/store/effects/check-effects';
 import {WAS_ATTACK_USED, WAS_POWER_USED, MOVE_CARDS } from '../../../game/store/prefabs/prefabs';
+import {attachWotcEnergy} from '../../../game/store/prefabs/wotc-energy-attachment';
 
 export class TealMaskOgerponex extends PokemonCard {
   protected _tags = [CardTag.POKEMON_ex, CardTag.POKEMON_TERA];
@@ -74,6 +75,7 @@ export class TealMaskOgerponex extends PokemonCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (effect instanceof PlayPokemonEffect && effect.pokemonCard === this) {
+      delete (this as any)._svTealDanceUsedTurn;
       const player = effect.player;
       player.marker.removeMarker(this.TEAL_DANCE_MARKER, this);
     }
@@ -114,6 +116,7 @@ export class TealMaskOgerponex extends PokemonCard {
           cards = cards || [];
           if (cards.length > 0) {
             player.marker.addMarker(this.TEAL_DANCE_MARKER, this);
+            (this as any)._svTealDanceUsedTurn=state.turn;
 
             player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList) => {
               if (cardList.getPokemonCard() === this) {
@@ -121,13 +124,9 @@ export class TealMaskOgerponex extends PokemonCard {
               }
             });
 
-            MOVE_CARDS(store, state, player.hand, cardList, { cards: cards, sourceCard: this });
-
-            // cards.forEach((card, index) => {
-            //   store.log(state, GameLog.LOG_PLAYER_ATTACHES_CARD, { name: player.name, card: card.name, cardList: cardList });
-            // });
-
-            MOVE_CARDS(store, state, player.deck, player.hand, { count: 1, sourceCard: this });
+            attachWotcEnergy(store,state,player,player.hand,cardList,cards[0],{sourceCard:this,sourceEffect:effect,sourceKind:'power'});
+            const finish=()=>{if(cardList.cards.includes(cards[0]))MOVE_CARDS(store,state,player.deck,player.hand,{count:1,sourceCard:this,sourceEffect:effect});};
+            if(store.hasPrompts())store.waitPrompt(state,finish);else finish();
           }
         },
       );

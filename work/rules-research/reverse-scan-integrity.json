@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "actualImages": 209,
+  "catalogFinishes": 13587,
+  "missing": 13378,
+  "bySet": {
+    "lc": 100,
+    "sv08.5": 109
+  },
+  "lcRejectedRegularOrWrongPrinting": [
+    13,
+    19,
+    42,
+    55,
+    81,
+    89,
+    90,
+    94,
+    105
+  ],
+  "lcMissingSourcePage": [
+    43
+  ],
+  "limitation": "Acquisition incomplete. Historical scans are low resolution and watermarked. Product imagery shows exact finishes but capture method is not guaranteed."
+}

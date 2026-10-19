@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process');
+const root=path.resolve(__dirname,'../..'),candidate=path.join(root,'outputs/ILEX.GG-win32-x64'),app=path.join(candidate,'resources/app'),hook=path.join(app,'self-test.cjs'),backup=fs.readFileSync(hook),dir=path.join(root,'work/new-match-release-native');fs.mkdirSync(dir,{recursive:true});
+const fixture=`(async()=>{botSuspended=true;state.botPaused=true;rulesMatch=null;tab='play';tableMode='rules';render();const f=state.formats.find(f=>f.id===BotAI.decks[0].format);document.querySelector('#matchformat').value=f.id;document.querySelector('#matchformat').dispatchEvent(new Event('change'));document.querySelector('#rp1').value=BotAI.decks[0].id;document.querySelector('#rp2').value=BotAI.decks[1].id;document.querySelector('#opponentmode').value='local';window.confirm=()=>true;await beginRules();if(!rulesMatch)throw Error('No match: '+document.querySelector('#toast').textContent+' '+document.querySelector('#modalbody').textContent);return {started:true,format:rulesMatch.spec.format};})()`;
+const body=`const fs=require('fs'),path=require('path');module.exports=async(w,dir)=>{
+ const run=async s=>{const result=await w.webContents.executeJavaScript('(async()=>{try{return await ('+s+')}catch(e){return {testError:e.stack}}})()',true);if(result?.testError)throw Error(result.testError);return result;},pause=ms=>new Promise(r=>setTimeout(r,ms));
+ for(let i=0;i<200;i++){if(await run("typeof RulesMatch!=='undefined'&&rulesReady&&cards.length>23700"))break;await pause(100);}
+ const fixture=await run(${JSON.stringify(fixture)});fs.writeFileSync(path.join(dir,'result.json'),JSON.stringify(fixture,null,2));
+};`;
+const env={...process.env};delete env.ELECTRON_RUN_AS_NODE;
+try{fs.writeFileSync(hook,body);const p=cp.spawnSync(path.join(candidate,'ILEX.GG.exe'),['--no-sandbox','--self-test',dir],{env,cwd:candidate,windowsHide:true,encoding:'utf8',timeout:90000});fs.writeFileSync(path.join(dir,'run.log'),(p.stdout||'')+(p.stderr||''));if(p.status!==0)throw Error(fs.existsSync(path.join(dir,'failure.txt'))?fs.readFileSync(path.join(dir,'failure.txt'),'utf8'):String(p.error||p.stderr||p.status));console.log(fs.readFileSync(path.join(dir,'result.json'),'utf8'));}finally{fs.writeFileSync(hook,backup);}
+

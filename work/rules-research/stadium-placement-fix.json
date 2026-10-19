@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "fixture": {
+    "stadium": "bwp-BW50"
+  },
+  "results": [
+    {
+      "passed": true,
+      "viewport": [
+        1920,
+        1080
+      ],
+      "stadium": {
+        "x": 620.172607421875,
+        "y": 566.009521484375,
+        "width": 60.45318603515625,
+        "height": 62.84912109375,
+        "right": 680.6257934570312,
+        "bottom": 628.858642578125
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": false
+    },
+    {
+      "passed": true,
+      "viewport": [
+        1280,
+        800
+      ],
+      "stadium": {
+        "x": 494.9603576660156,
+        "y": 457.20721435546875,
+        "width": 35.369110107421875,
+        "height": 39.700775146484375,
+        "right": 530.3294677734375,
+        "bottom": 496.9079895019531
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": false
+    },
+    {
+      "passed": true,
+      "viewport": [
+        960,
+        720
+      ],
+      "stadium": {
+        "x": 373.2265625,
+        "y": 417.72222900390625,
+        "width": 23.862884521484375,
+        "height": 27.17333984375,
+        "right": 397.0894470214844,
+        "bottom": 444.89556884765625
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": false
+    },
+    {
+      "passed": true,
+      "viewport": [
+        640,
+        360
+      ],
+      "stadium": {
+        "x": 131.671875,
+        "y": 150.8671875,
+        "width": 44,
+        "height": 61.453125,
+        "right": 175.671875,
+        "bottom": 212.3203125
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": true
+    },
+    {
+      "passed": true,
+      "viewport": [
+        800,
+        450
+      ],
+      "stadium": {
+        "x": 154.078125,
+        "y": 187.7734375,
+        "width": 44,
+        "height": 61.453125,
+        "right": 198.078125,
+        "bottom": 249.2265625
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": true
+    },
+    {
+      "passed": true,
+      "viewport": [
+        1280,
+        800
+      ],
+      "stadium": {
+        "x": 221.265625,
+        "y": 348.2734375,
+        "width": 44,
+        "height": 61.453125,
+        "right": 265.265625,
+        "bottom": 409.7265625
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": true
+    },
+    {
+      "passed": true,
+      "viewport": [
+        390,
+        844
+      ],
+      "stadium": {
+        "x": 103.296875,
+        "y": 668.6796875,
+        "width": 48,
+        "height": 67.046875,
+        "right": 151.296875,
+        "bottom": 735.7265625
+      },
+      "overlap": [],
+      "hit": true,
+      "visible": true,
+      "sameLane": true,
+      "mobile": true
+    }
+  ],
+  "actions": {
+    "passed": true,
+    "checks": [
+      "own activation",
+      "opponent activation",
+      "once-per-turn restriction",
+      "empty lane"
+    ]
+  },
+  "androidVersionCode": 16,
+  "androidChecks": 31,
+  "sameSigningCertificate": true,
+  "physicalAndroidDeviceTested": false,
+  "engineChanged": false,
+  "windowsArchiveRebuilt": false,
+  "files": {
+    "ILEX.GG-Android.apk": "6fda28cd7959a5384b0cc768711c9a8d8553dc61310415ff6f0e5daa2a7d268e",
+    "ILEX.GG-Bug-Fixes.zip": "1bfd9fbd9b384d40471bba04b42b152b3dc07d3b044d32175b774e6967ec1f50"
+  }
+}

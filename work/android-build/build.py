@@ -10,10 +10,12 @@ TOOLS=HERE/'toolchain/build-tools/android-16'
 JAR=HERE/'toolchain/platform/android-36/android.jar'
 OUT=HERE/'build'; OUT.mkdir(exist_ok=True)
 ASSETS=OUT/'assets'; UI=ASSETS/'ui'
+UI_SOURCE=Path(os.environ.get('ILEX_ANDROID_UI_ROOT',str(ROOT/'work/desktop/ui')))
+MANIFEST_SOURCE=Path(os.environ.get('ILEX_ANDROID_MANIFEST',str(HERE/'AndroidManifest.xml')))
 def run(*args):
     print('Running',Path(str(args[0])).name,flush=True)
     subprocess.run([str(x) for x in args],check=True)
-shutil.copytree(ROOT/'work/desktop/ui',UI,dirs_exist_ok=True)
+shutil.copytree(UI_SOURCE,UI,dirs_exist_ok=True)
 for name in ['mobile.js','mobile-host.js','mobile-compat.js','mobile.css','mobile-landscape.css']:
     shutil.copy2(HERE/name,UI/name)
 index=(UI/'index.html').read_text(encoding='utf-8')
@@ -30,6 +32,13 @@ presentation=(UI/'presentation.js').read_text(encoding='utf-8').replace('functio
 manifest=json.loads((UI/'scan-manifest.json').read_text(encoding='utf-8'))
 ids=[k for k in manifest if k.startswith(('base1-','base2-','base3-'))]+['hgss4-92','neo3-3','neo4-106','ex10-117','bw7-9','bw7-141','swsh8-245','smp-SM79']
 ids+=['sm10-107','sm10-54','sm1-12','smp-SM30a','sm8-130','sma-SV94','sm11-151','sm5-129','sm10-182a','tk-sm-l-28']
+ids += ['swshp-SWSH'+str(n) for start in [139,155,159,163,215,287] for n in range(start,start+4)]
+ids += ['swsh11-131','swsh10-046','swsh5-85','swsh8-185','swsh9-123','swsh8-114','swsh7-123','swsh12-139','swsh10.5-011','swsh1-178','swsh6-148','swsh5-141','swsh5-140','swsh8-244','swsh9-151']
+# Pack Energy artwork: era-specific unnumbered printings and both SV designs.
+ids += ['energy2019-G', 'energy2019-R', 'energy2019-W', 'energy2019-L', 'energy2019-P', 'energy2019-F', 'energy2019-D', 'energy2019-M', 'energy2019-Y', 'energy2020-G', 'energy2020-R', 'energy2020-W', 'energy2020-L', 'energy2020-P', 'energy2020-F', 'energy2020-D', 'energy2020-M', 'energy2020-Y', 'energy2022-G', 'energy2022-R', 'energy2022-W', 'energy2022-L', 'energy2022-P', 'energy2022-F', 'energy2022-D', 'energy2022-M', 'mee-001', 'mee-002', 'mee-003', 'mee-004', 'mee-005', 'mee-006', 'mee-007', 'mee-008', 'sm1-164', 'sm1-165', 'sm1-166', 'sm1-167', 'sm1-168', 'sm1-169', 'sm1-170', 'sm1-171', 'sm1-172', 'sve-001', 'sve-002', 'sve-003', 'sve-004', 'sve-005', 'sve-006', 'sve-007', 'sve-008', 'sve-009', 'sve-010', 'sve-011', 'sve-012', 'sve-013', 'sve-014', 'sve-015', 'sve-016']
+# 30th anniversary Energy: distinct from ordinary Mega Evolution Energy.
+ids += ['mee-009', 'mee-010', 'mee-011', 'mee-012', 'mee-013', 'mee-014', 'mee-015', 'mee-016']
+ids += [card for card in os.environ.get('ILEX_ANDROID_EXTRA_SCANS',(HERE/'sv-startup-scans.txt').read_text(encoding='utf-8') if (HERE/'sv-startup-scans.txt').exists() else '').split(',') if card and card not in ids]
 wanted_scans={Path(manifest[card]['file']).name for card in ids}
 for stale in (UI/'scans').glob('*'):
     if stale.is_file() and stale.name not in wanted_scans:stale.unlink()
@@ -45,7 +54,7 @@ run(TOOLS/'aapt2.exe','compile','--dir',OUT/'res','-o',compiled)
 unsigned=OUT/'unsigned.apk'
 linked=OUT/'linked';linked.mkdir(exist_ok=True)
 (linked/'res/drawable').mkdir(parents=True,exist_ok=True)
-run(TOOLS/'aapt2.exe','link','-I',JAR,'--manifest',HERE/'AndroidManifest.xml','--min-sdk-version','26','--target-sdk-version','36','--output-to-dir','-o',linked,*compiled.glob('*.flat'))
+run(TOOLS/'aapt2.exe','link','-I',JAR,'--manifest',MANIFEST_SOURCE,'--min-sdk-version','26','--target-sdk-version','36','--output-to-dir','-o',linked,*compiled.glob('*.flat'))
 with zipfile.ZipFile(unsigned,'w',compression=zipfile.ZIP_DEFLATED) as archive:
     for f in linked.rglob('*'):
         if f.is_file():archive.write(f,f.relative_to(linked).as_posix())

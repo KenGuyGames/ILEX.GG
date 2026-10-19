@@ -1,0 +1,1 @@
+const fs=require('fs');for(const id of ['sv08.5-001','sv10.5b-001','me02.5-001']){const d=JSON.parse(fs.readFileSync('work/card-sources/pack-finishes/'+id+'.json'));console.log(id,JSON.stringify(d.variants_detailed.map(v=>({type:v.type,foil:v.foil,stamp:v.stamp,ids:v.thirdParty})),null,2));}

@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\android-build\\ILEX.GG-SWSH-candidate.apk",
+  "bytes": 92122019,
+  "sha256": "d712ba672908885121f7ea20b20688376bf1e6b55f225c60d4a7dff9547bd4e2",
+  "bundledScans": 285,
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

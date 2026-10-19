@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "xy xy1-116 works on the second own turn with the natural false permission flag",
+    "xy g1-62 works on the second own turn with the natural false permission flag",
+    "sm xy1-116 works on the second own turn with the natural false permission flag",
+    "sm g1-62 works on the second own turn with the natural false permission flag",
+    "swsh xy1-116 works on the second own turn with the natural false permission flag",
+    "swsh g1-62 works on the second own turn with the natural false permission flag",
+    "sv xy1-116 works on the second own turn with the natural false permission flag",
+    "sv g1-62 works on the second own turn with the natural false permission flag",
+    "expanded xy1-116 works on the second own turn with the natural false permission flag",
+    "expanded g1-62 works on the second own turn with the natural false permission flag",
+    "xy1-116 also works for the second player on global turn four",
+    "g1-62 also works for the second player on global turn four",
+    "xy1-116 rejects actual first turn 1 even with permission false",
+    "xy1-116 rejects actual first turn 1 even with permission true",
+    "xy1-116 rejects actual first turn 2 even with permission false",
+    "xy1-116 rejects actual first turn 2 even with permission true",
+    "g1-62 rejects actual first turn 1 even with permission false",
+    "g1-62 rejects actual first turn 1 even with permission true",
+    "g1-62 rejects actual first turn 2 even with permission false",
+    "g1-62 rejects actual first turn 2 even with permission true",
+    "A much later turn also works while canEvolve remains false",
+    "Pokemon played this turn still cannot evolve through Evosoda",
+    "Item lock still rejects Evosoda",
+    "Natural second-turn Evosoda saves/replays exactly and Undo restores it"
+  ],
+  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d"
+}

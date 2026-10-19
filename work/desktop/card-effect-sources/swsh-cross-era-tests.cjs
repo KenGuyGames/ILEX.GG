@@ -1,0 +1,18 @@
+const fs=require('fs'),path=require('path'),vm=require('vm');
+const base=fs.readFileSync(path.join(__dirname,'rules-tests.cjs'),'utf8'),prefix=base.slice(0,base.indexOf("test('Limitless import:"));
+const sweep=fs.readFileSync(path.join(__dirname,'swsh-full-sweep.cjs'),'utf8'),start=sweep.indexOf('const script=String.raw`')+'const script=String.raw`'.length,helpers=sweep.slice(start,sweep.indexOf('const selected=',start));
+const body=String.raw`
+const checks=[];
+for(const [id,name]of [['swshp-SWSH197','Crystal Star'],['swsh10-114','Star Chronos'],['swsh11-131','Star Requiem']]){try{
+ const m=fixture('bw6-46',7),[p,o]=m.store.state.players;p.bench[0].cards=[];put(m,id,p.bench[0]);if(name==='Star Requiem')for(let i=0;i<10;i++)put(m,'bw1-105',p.lostzone);
+ const defender=o.active.getPokemonCard();assert.ok(M.attacks(m,p).some(a=>a.name===name));M.apply(m,{type:'attack',player:p.id,name});settle(m,true);assert.equal(p.usedVSTAR,true);if(name==='Crystal Star'){assert.equal(o.active.damage,230);assert.ok(p.active.preventDamageNextTurn||p.active.preventDamageNextTurnPending);}if(name==='Star Requiem')assert.ok(o.discard.cards.includes(defender));checks.push({name:'BW Mew-EX borrows '+name,passed:true});
+}catch(e){failures.push({id,name,error:e.message||String(e),stack:e.stack});}}
+for(const [id,name]of [['swshp-SWSH197','Crystal Star'],['swsh10-114','Star Chronos'],['swsh11-131','Star Requiem']]){try{const m=fixture('bw6-46',7),p=m.store.state.players[0];p.bench[0].cards=[];put(m,id,p.bench[0]);for(let i=0;i<10;i++)put(m,'bw1-105',p.lostzone);p.usedVSTAR=true;const journal=m.journal.length,random=m.randomState;assert.throws(()=>M.apply(m,{type:'attack',player:p.id,name}));assert.equal(M.pending(m).length,0);assert.equal(m.journal.length,journal);assert.equal(m.randomState,random);checks.push({name:'Spent copied '+name+' rejected before animation',passed:true});}catch(e){failures.push({name:'Spent copied '+name,error:e.message||String(e)});}}
+try{const m=fixture('bw6-46',7),p=m.store.state.players[0];p.bench[0].cards=[];put(m,'swsh11-131',p.bench[0]);for(let i=0;i<9;i++)put(m,'bw1-105',p.lostzone);const journal=m.journal.length;assert.throws(()=>M.apply(m,{type:'attack',player:p.id,name:'Star Requiem'}));assert.equal(p.usedVSTAR,false);assert.equal(m.journal.length,journal);assert.equal(M.pending(m).length,0);checks.push({name:'Copied Star Requiem requires ten Lost Zone cards without spending VSTAR',passed:true});}catch(e){failures.push({name:'Copied Star Requiem prerequisite',error:e.message||String(e)});}
+for(const blocked of [false,true]){try{
+ const m=fixture('swsh5-85',7),[p,o]=m.store.state.players,tool=put(m,'swsh12-156',p.hand);p.hand.cards=[];p.active.tools=[tool];if(blocked)put(m,'swsh6-148',o.stadium);p.usedGX=true;
+ const e=new R.CheckPokemonPowersEffect(p,p.active.getPokemonCard());m.store.reduceEffect(m.store.state,e);assert.ok(e.powers.some(a=>a.name==='Star Alchemy'));M.apply(m,{type:'ability',player:p.id,name:'Star Alchemy',target});settle(m,true);assert.equal(p.usedVSTAR,true);assert.equal(p.usedGX,true);checks.push({name:'Tool VSTAR stays independent of GX and Path to the Peak '+blocked,passed:true});
+}catch(e){failures.push({name:'Tool VSTAR exemption',blocked,error:e.message||String(e)});}}
+const report={passed:!failures.length,engineSha256:engineShaAtStart,checks,failures};fs.writeFileSync(path.join(root,'work/rules-research/swsh-cross-era-tests.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));if(failures.length)process.exitCode=1;
+`;
+vm.runInNewContext(prefix+helpers+body,{require,__dirname,console,setTimeout,clearTimeout,process});

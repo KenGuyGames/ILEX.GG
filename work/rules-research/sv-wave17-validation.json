@@ -1,0 +1,12 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Switch-in immunity belongs to the incoming Bench; switch-out immunity belongs to the outgoing Active",
+    "Conditional switch damage is zero when the chosen incoming Pokemon blocks the switch",
+    "Leaflet Blessings attaches only a Basic Grass Energy to Bench and heals that target",
+    "Lucian skips flips with two empty hands and otherwise preserves the existing deck order",
+    "Teal Dance uses a power attachment without spending the normal turn attachment and cannot repeat"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

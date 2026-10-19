@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "bug": "Evosoda incorrectly says cannot evolve on first turn after the Pokemon and player have completed prior turns",
+  "rootCause": "canEvolve is an exceptional evolution permission reset at end of turn, not an indicator that the player is still on their first turn",
+  "change": {
+    "base": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+    "patched": "b87b67a5d3add97d79d93359a871b058e724cbbf2614522a5f80a55e7ac493e8",
+    "scope": "Evosoda playCard first-turn guard only"
+  },
+  "before": {
+    "reproduced": true,
+    "turn": 3,
+    "pokemonPlayedTurn": 1,
+    "canEvolve": false,
+    "error": "CANNOT_EVOLVE_ON_YOUR_FIRST_TURN",
+    "fixture": "Seeded normal game, both players passed once"
+  },
+  "focusedChecks": 24,
+  "focusedCases": [
+    "xy xy1-116 works on the second own turn with the natural false permission flag",
+    "xy g1-62 works on the second own turn with the natural false permission flag",
+    "sm xy1-116 works on the second own turn with the natural false permission flag",
+    "sm g1-62 works on the second own turn with the natural false permission flag",
+    "swsh xy1-116 works on the second own turn with the natural false permission flag",
+    "swsh g1-62 works on the second own turn with the natural false permission flag",
+    "sv xy1-116 works on the second own turn with the natural false permission flag",
+    "sv g1-62 works on the second own turn with the natural false permission flag",
+    "expanded xy1-116 works on the second own turn with the natural false permission flag",
+    "expanded g1-62 works on the second own turn with the natural false permission flag",
+    "xy1-116 also works for the second player on global turn four",
+    "g1-62 also works for the second player on global turn four",
+    "xy1-116 rejects actual first turn 1 even with permission false",
+    "xy1-116 rejects actual first turn 1 even with permission true",
+    "xy1-116 rejects actual first turn 2 even with permission false",
+    "xy1-116 rejects actual first turn 2 even with permission true",
+    "g1-62 rejects actual first turn 1 even with permission false",
+    "g1-62 rejects actual first turn 1 even with permission true",
+    "g1-62 rejects actual first turn 2 even with permission false",
+    "g1-62 rejects actual first turn 2 even with permission true",
+    "A much later turn also works while canEvolve remains false",
+    "Pokemon played this turn still cannot evolve through Evosoda",
+    "Item lock still rejects Evosoda",
+    "Natural second-turn Evosoda saves/replays exactly and Undo restores it"
+  ],
+  "coreSuites": [
+    {
+      "name": "rules-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "undo-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-interaction-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-full-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sm-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-foundation-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "swsh-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-common-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-native-repair-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-final-extra-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-final-effects-tests",
+      "exitCode": 0
+    }
+  ],
+  "nativeFreshChecks": 10,
+  "nativeRestoredChecks": 10,
+  "mobileChecks": 116,
+  "apkChecks": 38,
+  "androidVersion": "1.17.0-android.24",
+  "sameSigningCertificate": true,
+  "androidAssetParity": "Every previous UI asset byte-identical except rules-engine.js; all 395 startup scans and 209 finish images retained",
+  "physicalAndroidDeviceTested": false,
+  "profileDataModified": false,
+  "fullWindowsZipsRebuilt": false,
+  "updatedMatchingCandidates": [
+    "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\sv-candidate\\rules-engine.js",
+    "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\sv-desktop-candidate\\resources\\app\\ui\\rules-engine.js"
+  ],
+  "artifactSha256": {
+    "ILEX.GG-Evosoda-Fix.zip": "8cef007826556425f41d2868e2a68c198b62ed26beb18a582637dde2fd5f31d8",
+    "ILEX.GG-Android.apk": "7bee7f753a37bc12812a995e6e9473cc4a0e8ce2a62162522a10baaa9f9df4db"
+  }
+}

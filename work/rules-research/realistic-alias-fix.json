@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "bug": "Realistic Player fails restoring supported imported card IDs",
+  "rootCause": "Worker omitted the imported-card alias map used by the UI",
+  "tacticalChecks": 18,
+  "nativeFreshChecks": 21,
+  "nativeRestoredChecks": 21,
+  "importedAliasesChecked": 42,
+  "androidChecks": 31,
+  "sameAndroidSigningCertificate": true,
+  "androidVersionCode": 15,
+  "androidDeviceTested": false,
+  "engineChanged": false,
+  "workerSha256": "0dc6fc612ca3833d3e3f4cf2842becd926c1bd99d7d5e6670ec476f6e3d2594e",
+  "outputs": {
+    "ILEX.GG-Android.apk": "c3e2ec51d91ea30dee052756690a242fc6050a6ae093b92812f2ee16342cb711",
+    "ILEX.GG-Realistic-Player-Fix.zip": "83e29eb9e4a6d59d61c9c8480bdf538e9d626170ed3fe850c764038eb7df3382"
+  }
+}

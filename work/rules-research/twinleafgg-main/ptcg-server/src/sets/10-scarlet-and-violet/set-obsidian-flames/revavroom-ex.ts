@@ -51,8 +51,8 @@ export class Revavroomex extends PokemonCard {
 
   public maxTools: number = 4;
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    if (WAS_ATTACK_USED(effect, 1, this)) {
-      effect.player.active.damageReductionNextTurn = 30;
+    if (WAS_ATTACK_USED(effect, 0, this)) {
+      effect.source.damageReductionNextTurn = 30;
     }
 
     return state;

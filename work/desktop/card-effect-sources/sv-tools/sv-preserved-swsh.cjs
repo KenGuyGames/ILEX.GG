@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path'),vm=require('vm');let s=fs.readFileSync(path.join(__dirname,'swsh-tests.cjs'),'utf8').replaceAll('swsh-focused-tests.json','sv-preserved-swsh.json');vm.runInThisContext('(function(require,__dirname){'+s+'})',{filename:__filename})(require,__dirname);

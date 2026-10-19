@@ -1,0 +1,17 @@
+{
+  "candidate": true,
+  "passed": true,
+  "scenarios": 9,
+  "failures": [],
+  "rejected": [],
+  "testedPrintings": [
+    "sv05-182",
+    "sv06-094",
+    "sv06.5-009",
+    "sv08-226",
+    "sv08.5-004"
+  ],
+  "shard": null,
+  "scope": "SV era candidate with BW-onward fixtures; Unlimited deferred",
+  "engineSha256": "4f6650ba7b57848d7accdf0f51dbacf0a3c9df4fad7ce7d69f34b68a252a0df7"
+}

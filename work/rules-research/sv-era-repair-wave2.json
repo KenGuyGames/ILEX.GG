@@ -1,0 +1,27 @@
+{
+  "candidate": true,
+  "passed": true,
+  "scenarios": 27,
+  "failures": [],
+  "rejected": [],
+  "testedPrintings": [
+    "svp-092",
+    "sv02-073",
+    "sv04-100",
+    "sv04-227",
+    "sv05-121",
+    "sv05-171",
+    "sv06-010",
+    "sv06-181",
+    "sv06.5-018",
+    "sv06.5-068",
+    "sv08-147",
+    "sv08-161",
+    "sv08-227",
+    "sv08.5-081",
+    "sv10-213"
+  ],
+  "shard": null,
+  "scope": "SV era candidate with BW-onward fixtures; Unlimited deferred",
+  "engineSha256": "909a2196b198cc5810e08d396af75d83d06d50066273d80874c7bcc8a63b8915"
+}

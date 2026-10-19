@@ -1,0 +1,21 @@
+{
+  "feature": "GX and VSTAR visual markers",
+  "checks": "work/marker-native/stadium-layout.json",
+  "windowsLooseAppUpdated": true,
+  "archivesUpdated": false,
+  "androidUpdated": false,
+  "engineChanged": false,
+  "files": [
+    "index.html",
+    "tabletop.js",
+    "rules-ui.js",
+    "power-markers.js",
+    "power-markers.css"
+  ],
+  "limitations": [
+    "Native checks exercise public used flags and layout; exhaustive card-effect validation was not rerun.",
+    "Manual sandbox counters are not included; markers follow enforced-match engine flags."
+  ],
+  "placementFix": "Counters moved inward beside Active lane; desktop size increased. Seven layouts verify table containment and no card/pile overlap.",
+  "placementCssSha256": "dac969a2a8a4e893ca24f1ee6edae4e9a06e1bacb3f09dd0b9544245061c40f7"
+}

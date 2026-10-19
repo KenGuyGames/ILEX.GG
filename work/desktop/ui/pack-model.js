@@ -36,7 +36,13 @@
    const subsetId=Object.keys(subsetParents).find(id=>subsetParents[id]===set.id&&!['cel25cc','30th-c'].includes(id));
    if(subsetId)pools.subset.push(...(grouped.get(subsetId)||[]).map(c=>c.id));
    if(set.id==='cel25'||set.id==='30th')pools.classic=(grouped.get(set.id==='30th'?'30th-c':'cel25cc')||[]).map(c=>c.id);
-   if(layout.energy&&!pools.energy.length){const from=layout.modern?'sve':/^sm|^swsh/.test(set.id)?'sm1':set.id;pools.energy=(grouped.get(from)||[]).filter(c=>basic(details[c.id]||{})).map(c=>c.id);}
+   if(layout.energy){
+    // Unnumbered Energy printings are separate catalogs, not expansion chase cards.
+    const from=/^me/.test(set.id)||set.id==='30th'?'mee':/^sv/.test(set.id)?'sve':/^swsh/.test(set.id)?(/^(swsh(?:9|10|11|12)(?:\.5)?)$/.test(set.id)?'energy2022':'energy2020'):/^sm/.test(set.id)?(/^(sm(?:9|10|11|12)|sm115)$/.test(set.id)?'energy2019':'sm1'):set.id;
+    const laterSv=/^sv(?:07|08|09|10)/.test(set.id);
+    const eligible=(grouped.get(from)||[]).filter(c=>basic(details[c.id]||{})&&(from!=='sve'||(+details[c.id].number>=(laterSv?9:1)&&+details[c.id].number<=(laterSv?16:8)))&&(from!=='mee'||(+details[c.id].number>=(set.id==='30th'?9:1)&&+details[c.id].number<=(set.id==='30th'?16:8))));
+    pools.energy=eligible.map(c=>c.id);
+   }
    if(set.id==='sv08.5'){pools.reverse=pools.reverse.filter(id=>finishes.special[id]?.reverse);const types=new Set();for(const id of pools.energy){const name=details[id]?.name;if(!types.has(name)){types.add(name);pools.reverse.push(id);}}}
    if(set.id==='me02.5')pools.reverse=pools.reverse.filter(id=>finishes.special[id]?.plainReverse);
    if(/^ecard[23]$/.test(set.id))pools.reverse=pools.reverse.filter(id=>!/^H/i.test(details[id]?.number||''));

@@ -16,6 +16,15 @@ type EnergyUnit =
   | { kind: 'choosable'; types: CardType[] };
 
 export class StateUtils {
+  /** Preserve every provided unit while exposing each physical card once. */
+  public static physicalEnergyMap(energy: EnergyMap[]): EnergyMap[] {
+    const cards=new Map<Card,EnergyMap>();
+    for(const entry of energy){const groups=(entry.providedGroups||[entry.provides]).map(group=>group.slice()),prior=cards.get(entry.card);
+      if(prior){prior.providedGroups!.push(...groups);prior.provides=[...new Set(prior.providedGroups!.flat())];}
+      else cards.set(entry.card,{...entry,provides:entry.provides.slice(),providedGroups:groups});
+    }
+    return [...cards.values()];
+  }
   static getStadium(state: State) {
     throw new Error('Method not implemented.');
   }
@@ -29,7 +38,8 @@ export class StateUtils {
   }
 
   /** Number of energy units an EnergyMap provides entry represents. */
-  public static getProvidesUnitCount(provides: CardType[]): number {
+  public static getProvidesUnitCount(provides: CardType[], entry?: EnergyMap): number {
+    if(entry?.providedGroups)return entry.providedGroups.reduce((sum,group)=>sum+StateUtils.getProvidesUnitCount(group),0);
     return StateUtils.isChoosableProvides(provides) ? 1 : provides.length;
   }
 
@@ -44,12 +54,14 @@ export class StateUtils {
   private static toEnergyUnits(energy: EnergyMap[]): EnergyUnit[] {
     const units: EnergyUnit[] = [];
     for (const e of energy) {
-      if (StateUtils.isChoosableProvides(e.provides)) {
-        units.push({ kind: 'choosable', types: [...e.provides] });
+      for(const provides of e.providedGroups||[e.provides]){
+      if (StateUtils.isChoosableProvides(provides)) {
+        units.push({ kind: 'choosable', types: [...provides] });
       } else {
-        for (const t of e.provides) {
+        for (const t of provides) {
           units.push({ kind: 'concrete', type: t });
         }
+      }
       }
     }
     return units;
@@ -168,7 +180,7 @@ export class StateUtils {
     if (energyMap.length === 0) {
       return false;
     }
-    const providesKey = (e: EnergyMap) => [...e.provides].sort().join(',');
+    const providesKey = (e: EnergyMap) => JSON.stringify((e.providedGroups||[e.provides]).map(group=>[...group].sort()).sort());
     const firstKey = providesKey(energyMap[0]);
     return energyMap.every(e => providesKey(e) === firstKey);
   }
@@ -203,64 +215,14 @@ export class StateUtils {
    * Satisfies typed costs first, then colorless, then trims excess.
    */
   public static selectMinimalEnergyForCost(energyMap: EnergyMap[], cost: CardType[]): EnergyMap[] | null {
-    if (cost.length === 0) {
-      return [];
-    }
-    let result: EnergyMap[] = [];
-    const provides = energyMap.slice();
-    const costs = cost.filter(c => c !== CardType.COLORLESS);
-
-    // Satisfy typed costs first
-    while (costs.length > 0 && provides.length > 0) {
-      const costType = costs[0];
-      let index = provides.findIndex(p => StateUtils.providesMatchesType(p.provides, costType));
-      if (index === -1) {
-        index = provides.findIndex(p => p.provides.includes(CardType.ANY));
-      }
-      if (index === -1) {
-        return null;
-      }
-      const provide = provides[index];
-      provides.splice(index, 1);
-      result.push(provide);
-      StateUtils.applyProvidesToTypedCosts(provide.provides, costs);
-    }
-
-    if (costs.length > 0) {
-      return null;
-    }
-
-    // Satisfy colorless with remaining provides (prefer fewer units)
-    provides.sort((p1, p2) => {
-      return StateUtils.getProvidesUnitCount(p1.provides) - StateUtils.getProvidesUnitCount(p2.provides);
-    });
-    while (provides.length > 0 && !StateUtils.checkEnoughEnergy(result, cost)) {
-      const provide = provides.shift();
-      if (provide) {
-        result.push(provide);
-      }
-    }
-
-    if (!StateUtils.checkEnoughEnergy(result, cost)) {
-      return null;
-    }
-
-    // Trim to minimal
-    let needCheck = true;
-    while (needCheck) {
-      needCheck = false;
-      for (let i = 0; i < result.length; i++) {
-        const tempCards = result.slice();
-        tempCards.splice(i, 1);
-        if (StateUtils.checkEnoughEnergy(tempCards, cost)) {
-          result = tempCards;
-          needCheck = true;
-          break;
-        }
-      }
-    }
-
-    return result;
+    if(!cost.length)return [];
+    let selected=StateUtils.physicalEnergyMap(energyMap);
+    if(!StateUtils.checkEnoughEnergy(selected,cost))return null;
+    selected.sort((a,b)=>StateUtils.getProvidesUnitCount(a.provides,a)-StateUtils.getProvidesUnitCount(b.provides,b));
+    // Trim physical cards using the full matching solver, retaining overlapping
+    // selectable types and every unit of multi-unit Special Energy.
+    for(let i=0;i<selected.length;){const rest=selected.filter((_,index)=>index!==i);if(StateUtils.checkEnoughEnergy(rest,cost))selected=rest;else i++;}
+    return selected;
   }
 
   public static getPlayerById(state: State, playerId: number): Player {

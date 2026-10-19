@@ -78,7 +78,8 @@ function dragIntent(d,z){
   if(card.superType===R.SuperType.ENERGY&&owner.energyPlayedTurn===g.turn&&!owner.usedDragonsWish&&!g.rules.unlimitedEnergyAttachments)return null;
   const trainer=card.superType===R.SuperType.TRAINER&&card.trainerType!==R.TrainerType.TOOL;
   if(trainer&&(z.kind==='trainer'||z.kind==='slot'&&z.player===owner.id))return {action:{type:'play',player:d.player,index:d.index,target:z.kind==='slot'?dragTarget(z.player,z.active,z.index):dragTarget(owner.id,true,0)}};
-  if(!trainer&&z.kind==='slot'&&z.player===owner.id)return {action:{type:'play',player:d.player,index:d.index,target:dragTarget(z.player,z.active,z.index)}};
+  const opponentTool=card.superType===R.SuperType.TRAINER&&card.trainerType===R.TrainerType.TOOL&&card.attachesToOpponentsPokemon;
+  if(!trainer&&z.kind==='slot'&&(opponentTool?z.player!==owner.id:z.player===owner.id))return {action:{type:'play',player:d.player,index:d.index,target:dragTarget(z.player,z.active,z.index)}};
  }
  if(d.kind==='pokemon'&&z.kind==='slot'&&z.player===d.player&&d.active!==z.active){
   const index=d.active?z.index:d.index;if(owner.bench[index]?.getPokemonCard())return {action:{type:'retreat',player:d.player,index}};

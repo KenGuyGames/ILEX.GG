@@ -1,0 +1,693 @@
+{
+  "passed": true,
+  "version": "1.16.0",
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b",
+  "ruleAdapterSha256": "99100494b4a273a9688087ffda94d2855b932e0b97c7e781d1e194181bf319e8",
+  "botSha256": "4b65ab7c7302d0e8b72fb898dd384816d570b9c2b55206444fb9217067daf354",
+  "printedDataSha256": "e1e3c7e8583672c2cd678e6f986bf7a22f27fc1bbea9bbf73d60de9a1078a5bd",
+  "printings": 3715,
+  "pending": 0,
+  "bySet": [
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "total": 307,
+      "missingText": 0,
+      "nativeCandidates": 197,
+      "available": 307,
+      "validated": 307
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "total": 216,
+      "missingText": 0,
+      "nativeCandidates": 209,
+      "available": 216,
+      "validated": 216
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "total": 209,
+      "missingText": 0,
+      "nativeCandidates": 205,
+      "available": 209,
+      "validated": 209
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "total": 201,
+      "missingText": 0,
+      "nativeCandidates": 201,
+      "available": 201,
+      "validated": 201
+    },
+    {
+      "id": "fut2020",
+      "name": "Pok\u00e9mon Futsal 2020",
+      "total": 5,
+      "missingText": 0,
+      "nativeCandidates": 0,
+      "available": 5,
+      "validated": 5
+    },
+    {
+      "id": "swsh3.5",
+      "name": "Champion's Path",
+      "total": 80,
+      "missingText": 0,
+      "nativeCandidates": 79,
+      "available": 80,
+      "validated": 80
+    },
+    {
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "total": 203,
+      "missingText": 0,
+      "nativeCandidates": 202,
+      "available": 203,
+      "validated": 203
+    },
+    {
+      "id": "2021swsh",
+      "name": "McDonald's Collection 2021",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 18,
+      "available": 25,
+      "validated": 25
+    },
+    {
+      "id": "swsh4.5",
+      "name": "Shining Fates",
+      "total": 73,
+      "missingText": 0,
+      "nativeCandidates": 73,
+      "available": 73,
+      "validated": 73
+    },
+    {
+      "id": "swsh4.5sv",
+      "name": "Shining Fates Shiny Vault",
+      "total": 122,
+      "missingText": 0,
+      "nativeCandidates": 121,
+      "available": 122,
+      "validated": 122
+    },
+    {
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "total": 183,
+      "missingText": 0,
+      "nativeCandidates": 179,
+      "available": 183,
+      "validated": 183
+    },
+    {
+      "id": "swsh6",
+      "name": "Chilling Reign",
+      "total": 233,
+      "missingText": 0,
+      "nativeCandidates": 231,
+      "available": 233,
+      "validated": 233
+    },
+    {
+      "id": "swsh7",
+      "name": "Evolving Skies",
+      "total": 237,
+      "missingText": 0,
+      "nativeCandidates": 234,
+      "available": 237,
+      "validated": 237
+    },
+    {
+      "id": "cel25cc",
+      "name": "Celebrations Classic Collection",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 23,
+      "available": 25,
+      "validated": 25
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 23,
+      "available": 25,
+      "validated": 25
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "total": 284,
+      "missingText": 0,
+      "nativeCandidates": 277,
+      "available": 284,
+      "validated": 284
+    },
+    {
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "total": 186,
+      "missingText": 0,
+      "nativeCandidates": 179,
+      "available": 186,
+      "validated": 186
+    },
+    {
+      "id": "swsh10",
+      "name": "Astral Radiance",
+      "total": 216,
+      "missingText": 0,
+      "nativeCandidates": 214,
+      "available": 216,
+      "validated": 216
+    },
+    {
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh10.5",
+      "name": "Pok\u00e9mon GO",
+      "total": 88,
+      "missingText": 0,
+      "nativeCandidates": 34,
+      "available": 88,
+      "validated": 88
+    },
+    {
+      "id": "2022swsh",
+      "name": "McDonald's Collection 2022",
+      "total": 15,
+      "missingText": 0,
+      "nativeCandidates": 15,
+      "available": 15,
+      "validated": 15
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "total": 217,
+      "missingText": 0,
+      "nativeCandidates": 212,
+      "available": 217,
+      "validated": 217
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
+      "total": 215,
+      "missingText": 0,
+      "nativeCandidates": 214,
+      "available": 215,
+      "validated": 215
+    },
+    {
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30,
+      "available": 30,
+      "validated": 30
+    },
+    {
+      "id": "swsh12.5",
+      "name": "Crown Zenith",
+      "total": 160,
+      "missingText": 0,
+      "nativeCandidates": 158,
+      "available": 160,
+      "validated": 160
+    },
+    {
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "total": 70,
+      "missingText": 0,
+      "nativeCandidates": 66,
+      "available": 70,
+      "validated": 70
+    }
+  ],
+  "printedPokemonAttacks": 4869,
+  "trainerToolAttacks": 7,
+  "branchCases": 1484,
+  "focusedChecks": 67,
+  "powerAudit": {
+    "resolved": 499,
+    "unavailable": 705
+  },
+  "trainerAudit": {
+    "resolved": 984,
+    "unavailable": 180
+  },
+  "nativeGuardPrintings": 2863,
+  "sharedSuites": [
+    {
+      "name": "custom-catcher-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-custom-catcher-tests.log"
+    },
+    {
+      "name": "lysandre-labs-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-lysandre-labs-tests.log"
+    },
+    {
+      "name": "realistic-alias-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-realistic-alias-tests.log"
+    },
+    {
+      "name": "xy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-xy-tests.log"
+    },
+    {
+      "name": "sm-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-sm-tests.log"
+    },
+    {
+      "name": "xy-interaction-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-xy-interaction-tests.log"
+    },
+    {
+      "name": "xy-full-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-xy-full-tests.log"
+    },
+    {
+      "name": "basic-energy-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-basic-energy-tests.log"
+    },
+    {
+      "name": "realistic-bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-realistic-bot-tests.log"
+    },
+    {
+      "name": "bw-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-bw-tests.log"
+    },
+    {
+      "name": "hgss-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-hgss-tests.log"
+    },
+    {
+      "name": "dp-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-dp-tests.log"
+    },
+    {
+      "name": "ex-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-ex-tests.log"
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-wotc-tests.log"
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-undo-tests.log"
+    },
+    {
+      "name": "bot-tests",
+      "passed": true,
+      "exitCode": 0,
+      "log": "work\\rules-research\\swsh-regression-bot-tests.log"
+    }
+  ],
+  "games": [
+    {
+      "decks": [
+        "ADP Zacian",
+        "Blowns"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Cinccino Control",
+        "Eternatus VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Pikarom",
+        "Vikavolt V"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 21,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Leafeon VMax",
+        "Rapid Strike Box"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Shadow Rider VMax",
+        "Single Strike Urshifu VMax"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 6,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Zacian V",
+        "Arc Dura"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Lost Box",
+        "Lugia VStar"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Palkia VStar",
+        "Regis"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Blowns",
+        "Centiskorch VMax"
+      ],
+      "level": "normal",
+      "decisions": 50,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Eternatus VMax",
+        "MewtwoMew"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Vikavolt V",
+        "Dragapult VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 11,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Box",
+        "Rapid Strike Urshifu VMax"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Single Strike Urshifu VMax",
+        "Suicune Ludicolo"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Arc Dura",
+        "Kyurem VMax"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Lugia VStar",
+        "Mew VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 9,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Regis",
+        "Yveltal Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Centiskorch VMax",
+        "Cinccino Control"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 10,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "MewtwoMew",
+        "Pikarom"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 13,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Dragapult VMax",
+        "Leafeon VMax"
+      ],
+      "level": "easy",
+      "decisions": 97,
+      "turn": 9,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Rapid Strike Urshifu VMax",
+        "Shadow Rider VMax"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 8,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Suicune Ludicolo",
+        "Zacian V"
+      ],
+      "level": "normal",
+      "decisions": 120,
+      "turn": 12,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Kyurem VMax",
+        "Lost Box"
+      ],
+      "level": "normal",
+      "decisions": 118,
+      "turn": 17,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Mew VMax",
+        "Palkia VStar"
+      ],
+      "level": "easy",
+      "decisions": 120,
+      "turn": 7,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Yveltal Control",
+        "ADP Zacian"
+      ],
+      "level": "hard",
+      "decisions": 120,
+      "turn": 14,
+      "finished": false,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "decisions": 2785,
+  "scope": "Black & White onward through complete Sword & Shield; historical profiles preserved; Unlimited deferred",
+  "limits": "Finite expected-result, smoke, branch and bounded-game checks do not prove every possible interaction. Unavailable Ability/Trainer fixtures include passive and conditional effects; focused tests cover selected positive conditions. No new official Expanded banlist is supplied. Desktop/mobile packaging and Android device acceptance are separate.",
+  "crossEraChecks": 9,
+  "toolPowerChecks": 2,
+  "bridgeTargetChecks": 4,
+  "currentBotCoreChecks": 14,
+  "strategyClock": "Fixed for exact-decision fixtures; full games and native workers use the production clock",
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23804,
+  "additionalScansVerified": 0,
+  "sourceFilesVerified": 7651,
+  "unsignedWindowsExecutable": true,
+  "archives": [
+    {
+      "name": "ILEX.GG-Windows.zip",
+      "bytes": 256628109,
+      "sha256": "9f9627959e6f2a8c904b2ad7d25bab989b538fb8a3f22745d539398292deb704",
+      "crcPassed": true
+    },
+    {
+      "name": "ILEX.GG-Windows-Offline.zip",
+      "bytes": 2871659326,
+      "sha256": "c866947879244349705623ace27f9928ad842b8f40bb39428e969bb7a580a857",
+      "crcPassed": true
+    }
+  ],
+  "executableSha256": "e65c48f67ab4eeece9fa414c3579d78c053ee1c173c47a1e8cd576b8cbb5fba3"
+}

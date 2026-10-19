@@ -64,10 +64,10 @@ var BotAI=(()=>{
   if(p.type.startsWith('Shuffle')){const n=p.type==='Shuffle hand'?owner.hand.cards.length:owner.deck.cards.length,a=Array.from({length:n},(_,i)=>i);for(let i=n-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return out(a);}
   if(p.type==='Choose cards'){
    const eligible=p.cards.cards.map((c,i)=>({c,i})).filter(x=>!p.options.blocked.includes(x.i)&&R.matchesPromptFilter(x.c,p.filter));
-   const discard=/DISCARD|PUT.*BOTTOM|PUT.*BACK|RETURN.*DECK/.test(String(p.message));
+   const payment=p.energyPayment;if(payment){const colored=payment.requirements.filter(t=>t!==R.CardType.COLORLESS);if(!payment.requirements.includes(R.CardType.COLORLESS))for(let i=eligible.length-1;i>=0;i--){const entry=payment.entries.find(e=>e.card===eligible[i].c);if(!entry||!colored.some(t=>R.StateUtils.providesMatchesType(entry.provides,t)))eligible.splice(i,1);}}const discard=/DISCARD|PUT.*BOTTOM|PUT.*BACK|RETURN.*DECK/.test(String(p.message));
    eligible.sort((a,b)=>difficulty==='easy'?hash(a.c.fullName+p.id)-hash(b.c.fullName+p.id):(discard?-1:1)*(cardValue(b.c,owner)-cardValue(a.c,owner)));
    const max=p.options.max??eligible.length,min=p.options.min??0;
-   const desired=/BENCH|SEARCH|DRAW|HAND|RECOVER/.test(String(p.message))&&!discard?Math.min(max,eligible.length):min;
+   const desired=p.options._ilexAttackPayment?Math.min(max,eligible.length):payment?Math.min(payment.requirements.length,max,eligible.length):/BENCH|SEARCH|DRAW|HAND|RECOVER/.test(String(p.message))&&!discard?Math.min(max,eligible.length):min;
    const indexes=eligible.map(x=>x.i),value=subsets(indexes,desired,desired,v=>valid(m,p,v),500)||subsets(indexes,min,max,v=>valid(m,p,v));return value===undefined?(p.options.allowCancel?out(null):null):out(value);
   }
   if(p.type==='Choose energy'){const indexes=p.energy.map((e,i)=>i).sort((a,b)=>(p.energy[a].provides.length-p.energy[b].provides.length));const value=subsets(indexes,0,indexes.length,v=>valid(m,p,v),12000);return value===undefined?(p.options.allowCancel?out(null):null):out(value);}
@@ -78,7 +78,7 @@ var BotAI=(()=>{
   }
   if(p.type==='Choose prize'){const prizeOwner=p.options.useOpponentPrizes?g.players.find(x=>x!==owner):owner,indexes=prizeOwner.prizes.filter(list=>list.cards.length).map((list,i)=>i).filter(i=>!p.options.blocked.includes(i));const value=subsets(indexes,0,indexes.length,v=>valid(m,p,v));return value===undefined?null:out(value);}
   if(p.type==='Choose attack'){const choices=p.cards.flatMap((c,index)=>c.attacks.map(a=>({index,attack:a.name,damage:Number(a.damage)||0}))).sort((a,b)=>b.damage-a.damage);for(const c of choices){const a=out({index:c.index,attack:c.attack});if(a)return a;}}
-  if(['Select','SelectOption'].includes(p.type)){const indexes=p.values.map((v,i)=>i).filter(i=>!p.options.disabled?.[i]);if(p.options.isBlindGuess){indexes.sort((a,b)=>hash(String(m.spec?.seed)+':blind:'+p.id+':'+a)-hash(String(m.spec?.seed)+':blind:'+p.id+':'+b));for(const i of indexes){const action=out(i);if(action)return action;}return null;}const types=owner.hand.cards.filter(c=>c.superType===R.SuperType.ENERGY).flatMap(c=>(c.provides||[]).map(t=>R.CardType[t]?.toLowerCase()));indexes.sort((a,b)=>Number(types.includes(String(p.values[b]).toLowerCase()))-Number(types.includes(String(p.values[a]).toLowerCase())));for(const i of indexes){const a=out(i);if(a)return a;}}
+  if(['Select','SelectOption'].includes(p.type)){const indexes=p.values.map((v,i)=>i).filter(i=>!p.options.disabled?.[i]);if(p.values.length===3&&['Rock','Paper','Scissors'].every(v=>p.values.includes(v))){indexes.sort((a,b)=>hash(String(m.spec?.seed)+':rps:'+p.playerId+':'+p.id+':'+a)-hash(String(m.spec?.seed)+':rps:'+p.playerId+':'+p.id+':'+b));for(const i of indexes){const action=out(i);if(action)return action;}return null;}if(p.options.isBlindGuess){indexes.sort((a,b)=>hash(String(m.spec?.seed)+':blind:'+p.id+':'+a)-hash(String(m.spec?.seed)+':blind:'+p.id+':'+b));for(const i of indexes){const action=out(i);if(action)return action;}return null;}const types=owner.hand.cards.filter(c=>c.superType===R.SuperType.ENERGY).flatMap(c=>(c.provides||[]).map(t=>R.CardType[t]?.toLowerCase()));indexes.sort((a,b)=>Number(types.includes(String(p.values[b]).toLowerCase()))-Number(types.includes(String(p.values[a]).toLowerCase())));for(const i of indexes){const a=out(i);if(a)return a;}}
   if(p.type==='Order cards')return out(p.cards.cards.map((c,i)=>({c,i})).sort((a,b)=>cardValue(b.c,owner)-cardValue(a.c,owner)).map(x=>x.i));
   if(['Attach energy','Move energy','Discard energy'].includes(p.type)){
    const ts=targets(m,p),rows=p.type==='Attach energy'?p.cardList.cards.map((card,index)=>({card,index})).filter(x=>x.card.superType===R.SuperType.ENERGY&&!p.options.blocked.includes(x.index)&&R.matchesPromptFilter(x.card,p.filter)&&(!p.options.validCardTypes||x.card.provides.some(t=>p.options.validCardTypes.includes(t)))):RulesMatch.targets(m,p).flatMap(x=>x.list.cards.map((card,index)=>({card,index,from:x.target}))).filter(x=>x.card.superType===R.SuperType.ENERGY&&R.matchesPromptFilter(x.card,p.filter));
@@ -102,11 +102,11 @@ var BotAI=(()=>{
    for(const x of ts){const a=out([{target:x.target,damage:p.damage}]);if(a)return a;}
    const step=p.options.damageMultiple||10,assigned=[];let left=p.damage;for(const x of ts){const damage=Math.min(left,Math.max(step,Math.ceil(((x.list.hp||0)-x.list.damage)/step)*step));assigned.push({target:x.target,damage});left-=damage;if(left<=0)break;}if(left===0){const a=out(assigned);if(a)return a;}
   }
-  if(p.type==='Move damage'){
+  if(p.type==='Move damage'||p.type==='Remove damage'){
    const ts=RulesMatch.targets(m,p),key=t=>JSON.stringify(t),blocked=(target,rows)=>(rows||[]).some(t=>key(t)===key(target)),damage=new Map(ts.map(x=>[key(x.target),x.list.damage])),caps=new Map((p.maxAllowedDamage||[]).map(x=>[key(x.target),x.damage]));
    const sources=ts.filter(x=>x.list.damage>0&&!blocked(x.target,p.options.blockedFrom)).sort((a,b)=>b.list.damage-a.list.damage),destinations=ts.filter(x=>!blocked(x.target,p.options.blockedTo)).sort((a,b)=>Number(b.target.player===R.PlayerType.TOP_PLAYER)-Number(a.target.player===R.PlayerType.TOP_PLAYER));
    const moves=[],max=p.options.max??sources.reduce((n,x)=>n+Math.floor(x.list.damage/10),0);let chosenSource,chosenDestination;
-   for(const from of sources){if(p.options.singleSourceTarget&&chosenSource&&chosenSource!==key(from.target))continue;while(damage.get(key(from.target))>=10&&moves.length<max){const to=destinations.find(x=>key(x.target)!==key(from.target)&&(!p.options.singleDestinationTarget||!chosenDestination||chosenDestination===key(x.target))&&(!caps.has(key(x.target))||damage.get(key(x.target))+10<=caps.get(key(x.target))));if(!to)break;moves.push({from:from.target,to:to.target});chosenSource=key(from.target);chosenDestination=key(to.target);damage.set(chosenSource,damage.get(chosenSource)-10);damage.set(chosenDestination,damage.get(chosenDestination)+10);}}
+   for(const from of sources){if(p.options.singleSourceTarget&&chosenSource&&chosenSource!==key(from.target))continue;while(damage.get(key(from.target))>=10&&moves.length<max){const to=destinations.find(x=>key(x.target)!==key(from.target)&&(!(p.options.singleDestinationTarget||p.options.sameTarget)||!chosenDestination||chosenDestination===key(x.target))&&(!caps.has(key(x.target))||damage.get(key(x.target))+10<=caps.get(key(x.target))));if(!to)break;moves.push({from:from.target,to:to.target});chosenSource=key(from.target);chosenDestination=key(to.target);damage.set(chosenSource,damage.get(chosenSource)-10);damage.set(chosenDestination,damage.get(chosenDestination)+10);}}
    const full=out(moves);if(full)return full;for(let n=p.options.min??0;n<moves.length;n++){const a=out(moves.slice(0,n));if(a)return a;}return p.options.allowCancel?out(null):null;
   }
   if(p.type==='Remove damage'){
@@ -123,7 +123,7 @@ var BotAI=(()=>{
   value-=Math.max(0,(Number.isFinite(opposingHp)?opposingHp:60)+op.active.hpBonus-op.active.damage)*.45;
   value+=op.active.specialConditions.length*12+Math.min(p.hand.cards.length,12)*3+Math.min(p.deck.cards.length,15)*.3;
   if(p.deck.cards.length<5)value-=(5-p.deck.cards.length)*30;
-  for(const list of [p.active,...p.bench]){const c=list.getPokemonCard();if(!c)continue;const n=energyMap(list).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides),0),max=Math.max(0,...c.attacks.map(a=>a.cost.length));value+=Math.min(n,max+1)*7-Math.max(0,n-max-1)*5;}
+  for(const list of [p.active,...p.bench]){const c=list.getPokemonCard();if(!c)continue;const n=energyMap(list).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides,e),0),max=Math.max(0,...c.attacks.map(a=>a.cost.length));value+=Math.min(n,max+1)*7-Math.max(0,n-max-1)*5;}
   return value;
  }
  function recent(m){let at=m.journal.length-1;for(;at>=0;at--)if(['attack','pass'].includes(m.journal[at].type))break;return m.journal.slice(at+1);}
@@ -134,12 +134,12 @@ var BotAI=(()=>{
   p.hand.cards.forEach((c,index)=>{
    const holon=RulesMatch.handEnergyAction(p,index);if(holon&&p.energyPlayedTurn!==g.turn)add(holon,60);
    if(c.trainerType===R.TrainerType.SUPPORTER&&(p.supporter.cards.length||p.supporterTurn>0))return;
-   if(c.superType===R.SuperType.POKEMON){for(const s of slots)if(c.stage===R.Stage.BASIC||c._hgssLegend?!s.list.getPokemonCard()&&(!c._hgssLegend||s.target.slot===R.SlotType.BENCH):s.list.getPokemonCard()&&(s.list.getPokemonCard().name===c.evolvesFrom||!c.evolvesFrom))add({type:'play',player:id,index,target:s.target},c.stage===R.Stage.BASIC?35:55);}
-   else if(c.superType===R.SuperType.ENERGY||c.trainerType===R.TrainerType.TOOL){for(const s of slots)if(s.list.getPokemonCard())add({type:'play',player:id,index,target:s.target},s.target.slot===R.SlotType.ACTIVE?60:20+readyDamage(s.list)*.1);}
+   if(c.superType===R.SuperType.POKEMON){for(const s of slots)if(c.stage===R.Stage.BASIC||c._hgssLegend?!s.list.getPokemonCard()&&(!c._hgssLegend||s.target.slot===R.SlotType.BENCH):s.list.getPokemonCard()&&(s.list.getPokemonCard().name===c.evolvesFrom||!c.evolvesFrom||s.list.getPokemonCard()._svRainbowDna&&c.evolvesFrom==='Eevee'&&c.stage===R.Stage.STAGE_1&&c.tags.includes(R.CardTag.POKEMON_ex)&&c.regulationMark))add({type:'play',player:id,index,target:s.target},c.stage===R.Stage.BASIC?35:55);}
+   else if(c.superType===R.SuperType.ENERGY||c.trainerType===R.TrainerType.TOOL){const owner=c.trainerType===R.TrainerType.TOOL&&c.attachesToOpponentsPokemon?g.players.find(x=>x!==p):p,side=owner===p?R.PlayerType.BOTTOM_PLAYER:R.PlayerType.TOP_PLAYER,targets=owner===p?slots:[{list:owner.active,target:{player:side,slot:R.SlotType.ACTIVE,index:0}},...owner.bench.map((list,index)=>({list,target:{player:side,slot:R.SlotType.BENCH,index}}))];for(const s of targets)if(s.list.getPokemonCard())add({type:'play',player:id,index,target:s.target},s.target.slot===R.SlotType.ACTIVE?60:20+readyDamage(s.list)*.1);}
    else {add({type:'play',player:id,index,target:slots[0].target},/bill|professor|draw|search|ball/i.test(c.name+' '+c.text)?50:30);if(/fossil|doll|substitute/i.test(c.name))for(const s of slots.slice(1).filter(s=>!s.list.getPokemonCard()))add({type:'play',player:id,index,target:s.target},35);}
   });
   for(const s of slots){const c=s.list.getPokemonCard();if(!c)continue;
-   if(s.target.slot===R.SlotType.ACTIVE)for(const a of RulesMatch.attacks(m,p))add({type:'attack',player:id,name:a.name},65+(Number(a.damage)||0)*.1);
+   for(const a of (s.target.slot===R.SlotType.ACTIVE?RulesMatch.attacks(m,p):c.attacks.filter(a=>a.useOnBench)))add({type:'attack',player:id,name:a.name,target:s.target},65+(Number(a.damage)||0)*.1);
    for(const a of RulesMatch.powers(m,p,s.list).filter(a=>a.powerType!==R.PowerType.POKEBODY&&a.powerType!==R.PowerType.HOLONS_SPECIAL_ENERGY_EFFECT&&!a._wotcPassive))if(!history.some(h=>h.type==='ability'&&h.player===id&&h.name===a.name&&JSON.stringify(h.target)===JSON.stringify(s.target)))add({type:'ability',player:id,name:a.name,target:s.target},40);
   }
   if(!history.some(h=>h.type==='retreat'&&h.player===id))for(let index=0;index<p.bench.length;index++)if(p.bench[index].getPokemonCard())add({type:'retreat',player:id,index},readyDamage(p.bench[index])>readyDamage(p.active)?45:5);
@@ -182,7 +182,7 @@ var BotAI=(()=>{
   if(attack.name==='Night March')return 20*Math.max(planning?2:0,discard.filter(c=>c.attacks?.some(a=>a.name==='Night March')).length);
   if(/Vengeance|Bee Revenge/.test(attack.name))return damage+10*discard.filter(c=>c.superType===R.SuperType.POKEMON).length;
   if(/Energy attached to both|Energy attached to this Pok[eé]mon and the Defending/i.test(text)){
-   const opponent=m.store.state.players.find(x=>x!==p),units=realEnergy(m,p,list).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides),0)+realEnergy(m,opponent,opponent.active).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides),0);return Math.max(damage,20*units);
+   const opponent=m.store.state.players.find(x=>x!==p),units=realEnergy(m,p,list).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides,e),0)+realEnergy(m,opponent,opponent.active).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides,e),0);return Math.max(damage,20*units);
   }
   return damage;
  }
@@ -261,7 +261,7 @@ var BotAI=(()=>{
    const l=row.list,c=l.getPokemonCard(),damage=Math.max(0,...row.attacks.map(a=>realPrintedDamage(m,p,l,a.attack,true)/(a.missing+1))),missing=Math.min(6,...row.attacks.map(a=>a.missing));
    value+=Math.min(realHp(l),180)*.13+Math.min(damage,160)*(l===p.active?1.1:.55)+Math.max(0,3-missing)*13;
    if(c.powers.length)value+=12;
-   const units=realEnergy(m,p,l).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides),0),cost=Math.max(0,...row.attacks.map(a=>a.cost.length));value+=Math.min(units,cost)*5-Math.max(0,units-cost)*12;
+   const units=realEnergy(m,p,l).reduce((n,e)=>n+R.StateUtils.getProvidesUnitCount(e.provides,e),0),cost=Math.max(0,...row.attacks.map(a=>a.cost.length));value+=Math.min(units,cost)*5-Math.max(0,units-cost)*12;
    if(l===p.active){const incoming=Math.max(0,...threats.map(t=>realDamage(m,t.list,l,t.attack)*(t.missing? .5:1)));if(incoming>=realHp(l)){value-=realPrize(l)*65;if(prizeCount(op)<=realPrize(l))value-=210;}}
    else if(realPrize(l)>1&&damage<30&&op.prizes.length){value-=18+(prizeCount(op)<=2?25:0);}
   }

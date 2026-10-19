@@ -1,0 +1,1 @@
+const fs=require('fs');const d=JSON.parse(fs.readFileSync('work/desktop/ui/card-details.json'));console.log(Object.keys(d).slice(0,3));console.log(JSON.stringify(d['ex13-1']).slice(0,1500));console.log(JSON.stringify(JSON.parse(fs.readFileSync('work/card-sources/pack-finishes/sv08.5-001.json'))).slice(0,1100));

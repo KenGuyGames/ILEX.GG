@@ -24,7 +24,7 @@ function* useAbility(next: Function, store: StoreLike, state: State, effect: Att
       { min: 1, max: 1, allowCancel: false }
     ), (selected: Card[] | null) => {
       const cards = selected || [];
-      MOVE_CARDS(store, state, opponent.hand, opponent.discard, { cards: cards, sourceCard: effect.source.getPokemonCard()! });
+      MOVE_CARDS(store, state, opponent.hand, opponent.discard, { cards: cards, sourceCard: effect.card });
       next();
     });
   }
@@ -39,7 +39,7 @@ function* useAbility(next: Function, store: StoreLike, state: State, effect: Att
       { min: 1, max: 1, allowCancel: false }
     ), (selected: Card[] | null) => {
       const cards = selected || [];
-      MOVE_CARDS(store, state, player.hand, player.discard, { cards: cards, sourceCard: effect.source.getPokemonCard()! });
+      MOVE_CARDS(store, state, player.hand, player.discard, { cards: cards, sourceCard: effect.card });
       next();
     });
   }

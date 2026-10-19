@@ -328,12 +328,12 @@ export function gamePhaseReducer(store: StoreLike, state: State, effect: Effect)
     [player, opponent].forEach(p => {
       p.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList) => {
         if (cardList.attackCostIncreaseNextTurnPending
-          && cardList.attackCostIncreaseNextTurnAttackerId !== player.id) {
+          && cardList.attackCostIncreaseNextTurnAttackerId === player.id) {
           cardList.attackCostIncreaseNextTurn = cardList.attackCostIncreaseNextTurnPending;
           cardList.attackCostIncreaseNextTurnPending = 0;
         }
         if (cardList.retreatCostIncreaseNextTurnPending
-          && cardList.retreatCostIncreaseNextTurnAttackerId !== player.id) {
+          && cardList.retreatCostIncreaseNextTurnAttackerId === player.id) {
           cardList.retreatCostIncreaseNextTurn = cardList.retreatCostIncreaseNextTurnPending;
           cardList.retreatCostIncreaseNextTurnPending = 0;
         }
@@ -356,14 +356,14 @@ export function gamePhaseReducer(store: StoreLike, state: State, effect: Effect)
 
     [player, opponent].forEach(p => {
       p.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList) => {
-        if (cardList.attackCostIncreaseNextTurnAttackerId === player.id
+        if (cardList.attackCostIncreaseNextTurnAttackerId !== player.id
           && !cardList.attackCostIncreaseNextTurnPending
           && cardList.attackCostIncreaseNextTurn > 0
         ) {
           cardList.attackCostIncreaseNextTurn = 0;
           cardList.attackCostIncreaseNextTurnAttackerId = undefined;
         }
-        if (cardList.retreatCostIncreaseNextTurnAttackerId === player.id
+        if (cardList.retreatCostIncreaseNextTurnAttackerId !== player.id
           && !cardList.retreatCostIncreaseNextTurnPending
           && cardList.retreatCostIncreaseNextTurn > 0
         ) {

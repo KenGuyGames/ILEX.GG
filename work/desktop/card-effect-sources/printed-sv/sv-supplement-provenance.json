@@ -1,0 +1,3672 @@
+{
+  "status": "candidate-transcription-not-validated",
+  "records": 414,
+  "sources": [
+    {
+      "id": "sve-017",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-017",
+      "cache": "work\\card-sources\\pack-finishes\\sve-017.json",
+      "sha256": "3ab1b2273835c70f3d2896925d9e4ac45d0a99ed6bd361f762988c5e38f68b76",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-018",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-018",
+      "cache": "work\\card-sources\\pack-finishes\\sve-018.json",
+      "sha256": "f1ed8d527e2fe395d6b553748fe6840e8a7cab098e3953ac356a2a2e569d61b6",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-019",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-019",
+      "cache": "work\\card-sources\\pack-finishes\\sve-019.json",
+      "sha256": "eee300d425c900b2e0c2d4505c5959625468047c3e291e9b4d18057a2cad7655",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-020",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-020",
+      "cache": "work\\card-sources\\pack-finishes\\sve-020.json",
+      "sha256": "ccdca570583ca95903cbc9d399a6a1d538f0ae7dbf279ea879e96ff6bf0a7853",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-021",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-021",
+      "cache": "work\\card-sources\\pack-finishes\\sve-021.json",
+      "sha256": "597f770d6a53f04850b3b21d4a2426f17507cb784cd516c3f9b24267001c2ada",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-022",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-022",
+      "cache": "work\\card-sources\\pack-finishes\\sve-022.json",
+      "sha256": "9ffe65fc81339142dc28a3add7249119b15e59a599640161153b79c893786b08",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-023",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-023",
+      "cache": "work\\card-sources\\pack-finishes\\sve-023.json",
+      "sha256": "baf25e610cab7d22ee197e4c5b80cb9e2956ef051102da8e1a6a1bcb6c0968e4",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sve-024",
+      "url": "https://api.tcgdex.net/v2/en/cards/sve-024",
+      "cache": "work\\card-sources\\pack-finishes\\sve-024.json",
+      "sha256": "283c83ddf0a45400481ddf31b455144b7bb63f85ad80abf713ac1573366ad8a5",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-166",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-166",
+      "cache": "work\\card-sources\\pack-finishes\\svp-166.json",
+      "sha256": "21dc43b57bbbae1b3ce05bd9357b24e64de51da0608fb060f0dd99b29fda9170",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-167",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-167",
+      "cache": "work\\card-sources\\pack-finishes\\svp-167.json",
+      "sha256": "0af28af2fc0baffcc08481bdd12032acc5daac3cb6d9f1204ad0c3d12ec5668f",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-168",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-168",
+      "cache": "work\\card-sources\\pack-finishes\\svp-168.json",
+      "sha256": "21adfa0ea45064b960444a4c07361c3b563e05ed3bd80b506f7a14909128c1c3",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-169",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-169",
+      "cache": "work\\card-sources\\pack-finishes\\svp-169.json",
+      "sha256": "dd1b1c421a57cd6e682c8894e1a55f8ad190d1e1725e07608335322e8be133b8",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-170",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-170",
+      "cache": "work\\card-sources\\pack-finishes\\svp-170.json",
+      "sha256": "a984660f52eccf9ea470b122f8e80b20b4a7330159be6fc692028c6cf5410c9d",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-171",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-171",
+      "cache": "work\\card-sources\\pack-finishes\\svp-171.json",
+      "sha256": "95d061fde07754022b12a3af54689314ac014aef50eed368fb7ca0a1d7f23c6e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-172",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-172",
+      "cache": "work\\card-sources\\pack-finishes\\svp-172.json",
+      "sha256": "9cc80735058c85d11ed2941fdfe0592d5c691b94f1e0faede5ae264f5a036b54",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-173",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-173",
+      "cache": "work\\card-sources\\pack-finishes\\svp-173.json",
+      "sha256": "16808edd0cbd97a7e6e1ec2f4ea4b7f16eb4423ade07b3b464509ab2a46daf56",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-174",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-174",
+      "cache": "work\\card-sources\\pack-finishes\\svp-174.json",
+      "sha256": "9a17213543c87fa5cf5c71255dfa4c22a8cd55722d4e877d56223656086c9f35",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-175",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-175",
+      "cache": "work\\card-sources\\pack-finishes\\svp-175.json",
+      "sha256": "364102300b02bd56670a71de38d51b5438f854c7a00a34c34e79a6e114b81c15",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-176",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-176",
+      "cache": "work\\card-sources\\pack-finishes\\svp-176.json",
+      "sha256": "82fb92624ab24b0de0095510b0cf807575f7f16e0176db7c59e9ed84d4c5fcda",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-177",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-177",
+      "cache": "work\\card-sources\\pack-finishes\\svp-177.json",
+      "sha256": "2328eb73e5a8cdf553c42927c7c0eb410f61a8cc9c3c709ff1333a9b54ae42dc",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-178",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-178",
+      "cache": "work\\card-sources\\pack-finishes\\svp-178.json",
+      "sha256": "4947fa19365a7b98e3d8674eada2fe69b9ca2f01e94471291ca9646e5b97a4ae",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-179",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-179",
+      "cache": "work\\card-sources\\pack-finishes\\svp-179.json",
+      "sha256": "06a75a2787f1bcb67e1101e466e0b7164463616addde41dc81e3a5b971c7031f",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-180",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-180",
+      "cache": "work\\card-sources\\pack-finishes\\svp-180.json",
+      "sha256": "8d6a4c77486aff17bfdfdf596fe8277d12e689f6184b33588eafb66328a6d70f",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-181",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-181",
+      "cache": "work\\card-sources\\pack-finishes\\svp-181.json",
+      "sha256": "5526bf56ccc99fd16a14e4689f7ced8278ea55bd32e11e6cb688f1fb65240a85",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-182",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-182",
+      "cache": "work\\card-sources\\pack-finishes\\svp-182.json",
+      "sha256": "3225090e53919a9ec96b01e50e38956d2961470a4b45ead5ab606856166a949c",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-183",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-183",
+      "cache": "work\\card-sources\\pack-finishes\\svp-183.json",
+      "sha256": "f39630d6e14002c62bcfa70fe83fb42e55c4891acf83711407dfa2f9dd3a77ae",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-184",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-184",
+      "cache": "work\\card-sources\\pack-finishes\\svp-184.json",
+      "sha256": "5eb4a65d23ab3cde63b1ed1c16db6b49e3c5342d531d78ba119cbb4138a19b42",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-185",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-185",
+      "cache": "work\\card-sources\\pack-finishes\\svp-185.json",
+      "sha256": "72658cd805cfb149370b040179b7093df0f973c00c4e2fd851e2e39b329004be",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-186",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-186",
+      "cache": "work\\card-sources\\pack-finishes\\svp-186.json",
+      "sha256": "00766c33d01c2ff359a176f17bf721b383b3ad5b3ddc16b7117ab888f6ac6486",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-187",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-187",
+      "cache": "work\\card-sources\\pack-finishes\\svp-187.json",
+      "sha256": "443ebdb9e83beb370b909bc3075488a634f033a27524475b29904733a89fbafe",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-188",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-188",
+      "cache": "work\\card-sources\\pack-finishes\\svp-188.json",
+      "sha256": "8a4c42b6442efc768710f292f0544645670ca8b80d3bef25acd7c79eb2115653",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-189",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-189",
+      "cache": "work\\card-sources\\pack-finishes\\svp-189.json",
+      "sha256": "b223f3a3ff430b2c1def337ec0b1d59acb7b00666e5357be943f5a52627face9",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-190",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-190",
+      "cache": "work\\card-sources\\pack-finishes\\svp-190.json",
+      "sha256": "e23d444eb88252da2e7d7c0b6a1d221f1b43a24118b98dad1f8b40b06428df1c",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-191",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-191",
+      "cache": "work\\card-sources\\pack-finishes\\svp-191.json",
+      "sha256": "c045034d187fbdcbd2dd456c1681c1197248f3435fc8d710a8a3997c712f051c",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-192",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-192",
+      "cache": "work\\card-sources\\pack-finishes\\svp-192.json",
+      "sha256": "26f0dd5dfefc98ebf7a0f36924045966441d9cdf5a7a4146c8ef8823cafb43dd",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-193",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-193",
+      "cache": "work\\card-sources\\pack-finishes\\svp-193.json",
+      "sha256": "cfbbd58b4dc8398d962cd4abbec0b75a9d7ce72ec75b8c108257ae0cf82789d2",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-194",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-194",
+      "cache": "work\\card-sources\\pack-finishes\\svp-194.json",
+      "sha256": "ff83b41182fc4ea3aa943a88ead3b9e5a89b6a7321195b084dc3f903c49eb9bd",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-195",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-195",
+      "cache": "work\\card-sources\\pack-finishes\\svp-195.json",
+      "sha256": "db0067212d3041700d5046bc88904b9640a4f6957543624bfa8d811ced8aab1f",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-196",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-196",
+      "cache": "work\\card-sources\\pack-finishes\\svp-196.json",
+      "sha256": "b51959f967ff275479f3a411ef3c763da0af781883119b63c09050288ca999ea",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-197",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-197",
+      "cache": "work\\card-sources\\pack-finishes\\svp-197.json",
+      "sha256": "56b2e4c05372c6e86b95f16a043aa4f0b1bd0e2d5db8eea0909a3e22de7ae1a8",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-198",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-198",
+      "cache": "work\\card-sources\\pack-finishes\\svp-198.json",
+      "sha256": "162b4c74f8768b2b4abf0e6751f35547fbe5305db9bd35d76b3fc244dab8159a",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-199",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-199",
+      "cache": "work\\card-sources\\pack-finishes\\svp-199.json",
+      "sha256": "05afeaab10137b6f7f34472434f63655692830a56564416595921fd69c0627bb",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-200",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-200",
+      "cache": "work\\card-sources\\pack-finishes\\svp-200.json",
+      "sha256": "dccdea182c1c13de2b5c1bebe38cbdada1bc8b5b5cd5d3142b3e7457672ed989",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-201",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-201",
+      "cache": "work\\card-sources\\pack-finishes\\svp-201.json",
+      "sha256": "b6466800d3591976278370543aa308962f229d8dcdc41ccbc364de529fed1dce",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-202",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-202",
+      "cache": "work\\card-sources\\pack-finishes\\svp-202.json",
+      "sha256": "e80827403f99e5903c94c4ec0c7610ef140f36da569be560abbab3d6992c417a",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-203",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-203",
+      "cache": "work\\card-sources\\pack-finishes\\svp-203.json",
+      "sha256": "9ecd7fd1a206c88a677aeefb0e66cd4d530ce8fc17c2fd4c7ce3ebad9cf53f55",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-204",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-204",
+      "cache": "work\\card-sources\\pack-finishes\\svp-204.json",
+      "sha256": "d8c70fee7ef5c5f54ea5507c4074968d8ebcdb3f3c682393d9e65353f47dd598",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-205",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-205",
+      "cache": "work\\card-sources\\pack-finishes\\svp-205.json",
+      "sha256": "92f244f3b7c5fbbdc5ac863aeff4766274aaa99ba8f23883969d57ede7ff2027",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-206",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-206",
+      "cache": "work\\card-sources\\pack-finishes\\svp-206.json",
+      "sha256": "51e6ecb813997127a1c229b0371a991dd694caf5c55cfa46517ed2c7a76f7770",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-207",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-207",
+      "cache": "work\\card-sources\\pack-finishes\\svp-207.json",
+      "sha256": "cedb9101decd8caca12a074ae95c8d779b281f16ad7d7de69de7a4e062657bac",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-208",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-208",
+      "cache": "work\\card-sources\\pack-finishes\\svp-208.json",
+      "sha256": "66931396c075bdfc486b46c74f175fc4ff6db619d911b7fae5648fd8743e8a93",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-209",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-209",
+      "cache": "work\\card-sources\\pack-finishes\\svp-209.json",
+      "sha256": "d65408298c5d7027b97dbadd1ba645caea5e034d59e0e5472945469f85194209",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-210",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-210",
+      "cache": "work\\card-sources\\pack-finishes\\svp-210.json",
+      "sha256": "dedee321aa8da782d1d166c39da6589511d509bf397d7dde30dbb5dce3c10211",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-211",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-211",
+      "cache": "work\\card-sources\\pack-finishes\\svp-211.json",
+      "sha256": "ad8c065617dda3ccfccd74af8063af29a4cec6bbc938b274604d75bcaa86d20e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-212",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-212",
+      "cache": "work\\card-sources\\pack-finishes\\svp-212.json",
+      "sha256": "d404811d77a8d11f24cd8c2337c51dfe5f95f263b0d92d0c66516464462798c5",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-213",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-213",
+      "cache": "work\\card-sources\\pack-finishes\\svp-213.json",
+      "sha256": "74f8e222f46d89f50b1ce70820bd8994913d3befb21c7f2338869472ab372134",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-214",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-214",
+      "cache": "work\\card-sources\\pack-finishes\\svp-214.json",
+      "sha256": "a299adb8f44f90b146927cc677146643235bc49cbf17277b8985f154acec7509",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-215",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-215",
+      "cache": "work\\card-sources\\pack-finishes\\svp-215.json",
+      "sha256": "6adebe99a72e691f82fccc3a3d47279c109241d61f7d5e211c38e606022b6f2e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-216",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-216",
+      "cache": "work\\card-sources\\pack-finishes\\svp-216.json",
+      "sha256": "c5eee4ace87b9c02700f83664e2609f473ca09c3b4191b2450ef80e1239741f4",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-217",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-217",
+      "cache": "work\\card-sources\\pack-finishes\\svp-217.json",
+      "sha256": "fa19ee0e0911c551044004b53139d28ed146a2e9c11fc3e5c5e0d251a8d125d3",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-218",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-218",
+      "cache": "work\\card-sources\\pack-finishes\\svp-218.json",
+      "sha256": "5b48175437543aa31145ff7f7bf8a4f68dc6b1af6b597b7b94dbc85f2a97eec0",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-219",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-219",
+      "cache": "work\\card-sources\\pack-finishes\\svp-219.json",
+      "sha256": "185cadd199ea515a646a40af8d62590f61c85b97ccc3b31fef789485024b6aec",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-220",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-220",
+      "cache": "work\\card-sources\\pack-finishes\\svp-220.json",
+      "sha256": "a3485c9d8b5a7d789827c09c4dd21083904e123afa8717a51c4ffefe0571e62c",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-221",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-221",
+      "cache": "work\\card-sources\\pack-finishes\\svp-221.json",
+      "sha256": "f1c6cfb96148046556766a57f6447100b1b693657d1cea62ce3fe66650b4fabf",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-222",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-222",
+      "cache": "work\\card-sources\\pack-finishes\\svp-222.json",
+      "sha256": "01dbfd327abc675a680ce8098e5626595c0737c3cc1299950550bf5f0b40d972",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-223",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-223",
+      "cache": "work\\card-sources\\pack-finishes\\svp-223.json",
+      "sha256": "7e914ed47c2029571cf8f64ed9534c0e8cfb0680d07002d98b5b64f19911acc0",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-224",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-224",
+      "cache": "work\\card-sources\\pack-finishes\\svp-224.json",
+      "sha256": "27707ab7a2296ec8321eb88f7c23c25cc131239b0c9e2d607e8a309d909ebef1",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-225",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-225",
+      "cache": "work\\card-sources\\pack-finishes\\svp-225.json",
+      "sha256": "f84aa374bcb37889fd67a93d76c96f99e77bd98a75ef6233740d1d390ba204ec",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "svp-500",
+      "url": "https://api.tcgdex.net/v2/en/cards/svp-500",
+      "cache": "work\\card-sources\\pack-finishes\\svp-500.json",
+      "sha256": "787c2a8ee2b4df6d8a7679e58d34bf2ddf7cbb81cba7cbbc87b5869bf2b7725b",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-001",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-001",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-001.json",
+      "sha256": "a02d2116e8d449b57cfdb3e50c91fc390a4e8ec5eca79d11b2748847aaa1f83a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-002",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-002",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-002.json",
+      "sha256": "72704be1c56fcc8e3552ed3ddb7792f60e17c8f9010025c333c8463857e952b7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-003",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-003",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-003.json",
+      "sha256": "a43738bc699c14a22cbaa49aeb52c0aefecbdd257739c091f4118fd943136009",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-004",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-004",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-004.json",
+      "sha256": "122b2a3d3ea472e48cf0ea56f9e0fc3a043ab9467e8830b8c4b5a8a2114745ea",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-005",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-005",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-005.json",
+      "sha256": "2f01ba6207f0cebcb42d4d5e59ff6fe4e7486437ebd822f43af19929646aa7d7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-006",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-006",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-006.json",
+      "sha256": "fc0b0b0ab2c5657d943784d270b33284a17efc0ebef9bab6585706292157242b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-007",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-007",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-007.json",
+      "sha256": "df289a97fdf6a633296ba023c1c089117add7e0d597c55f00ccc268311c7822d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-008",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-008",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-008.json",
+      "sha256": "80c516f49d5748bb3a317d73ab48af8860d8d09299c848b114418d6dbfc5c6de",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-009",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-009",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-009.json",
+      "sha256": "8e13d87cb4dc88d54b966f1fa015a9a0ed634ebe3c1560b0fd84fc8554160a50",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-010",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-010",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-010.json",
+      "sha256": "32a33e4bd77930ca9f37222a433bd4443fd8ea63c467aa836ab40e4c93da9278",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-011",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-011",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-011.json",
+      "sha256": "9caf65c1f3a3eca31daf4c86d1623011577f6f9d2e23959609354fe57e98f9f0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-012",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-012",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-012.json",
+      "sha256": "04593c525308a0bf07042d9522c34497a6bbebc8a52098e25b319252928e7555",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-013",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-013",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-013.json",
+      "sha256": "a2256709cc0ae2989b5c1270e0ead75b8da2bd1347221e6015cb84d2f48450e3",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-014",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-014",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-014.json",
+      "sha256": "3dfb77c95abe074f9ed0a15c63c090d1434a4b3fcf32277e77ef643dcbcf03db",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-015",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-015",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-015.json",
+      "sha256": "c68cd29e0c66cc156036184a11ff0b12eb3b93134aa1ee429ea87a6f119f8014",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-016",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-016",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-016.json",
+      "sha256": "e17e1824576e47bd75727e2c434c9cf1866dc5c6941ac73f986512881b402708",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-017",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-017",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-017.json",
+      "sha256": "0e1d9c46a42c63ca60ee4be1ac91079470fdfd6bd370a8d2181ab0a71012232a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-018",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-018",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-018.json",
+      "sha256": "4d7d67076235308f3049fa63a2db781a672ddbbdc1e7487d1747952bdd65a718",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-019",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-019",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-019.json",
+      "sha256": "103d435b467ccde2878a2160166ffff7387ef87aef694a0d9ef0777a940749f4",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-020",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-020",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-020.json",
+      "sha256": "afca85f12ab3c63b6f0571ee6fe7f3558ccf511411c749b61324b80117081caa",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-021",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-021",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-021.json",
+      "sha256": "5243939ae6c1de4c9bd76f37ead3b593676ac9b9ae07d0eaf78b43e829c20b9a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-022",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-022",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-022.json",
+      "sha256": "a5ecce4575323d5dc3494cb41238d9ecece85ac2bc1a24171eff0d2cdcdad436",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-023",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-023",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-023.json",
+      "sha256": "88071742ab311721c19eddd5aafe33ff1af178ecf36ea40b241394811ef5c2d8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-024",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-024",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-024.json",
+      "sha256": "cf7f20ff023baec279fc9b40b69a87cad91ab763defa8dc734785a615b2f132e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-025",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-025",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-025.json",
+      "sha256": "5b6445b1551f4a8937e48edb141a460bfd39c7bdeb35a3e45f64b727035b51e2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-026",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-026",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-026.json",
+      "sha256": "d2ee4598179f0492da33a7f0086b5d9977950130d75ed24c32c7579a7ec8441a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-027",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-027",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-027.json",
+      "sha256": "a63b274d515d5211f32641c1729b58915860a413b2b7232f222ef863a9222c55",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-028",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-028",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-028.json",
+      "sha256": "43ab70f6a16eb6fc24c153ed84f86d1230e00aa1553d91d34f4fc71f2986e184",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-029",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-029",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-029.json",
+      "sha256": "00e512862fa8566433ba9936b10721177b1b039f125e0e23648103a209bd2a34",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-030",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-030",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-030.json",
+      "sha256": "e0090cc1556fc3ced5bf3dadc5b4a55a282705df056887448227640e16614def",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-031",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-031",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-031.json",
+      "sha256": "61761166479f67c74cdc6f1d6487b490eb3499f0c5f82648dd9b3d3c5c4e0eb6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-032",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-032",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-032.json",
+      "sha256": "d09250bc61d5b1b249d4afe78e400c6e37d7080f019d1bd98089742ee37d5a6d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-033",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-033",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-033.json",
+      "sha256": "da4b58c23dee7ae1abf6d99dc3a7fbee0a852f773d9458d712b0944e6eca1000",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-034",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-034",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-034.json",
+      "sha256": "da711d3f209242fb2e2453ab531d6a0da49b9214c504a3701a4be4d899bb1aa8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-035",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-035",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-035.json",
+      "sha256": "dee4de889500e360599068cb8cf39283a8a6b68ee5fcf201f478c6110e50cb18",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-036",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-036",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-036.json",
+      "sha256": "053f074c3d493efbe71e74d8ee91af41b70e1c15a33c25db9b7117481166be56",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-037",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-037",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-037.json",
+      "sha256": "d63e87f1c87dc2962d156c13937ca078860e0bb796d44d49745c678e28e7ec9f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-038",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-038",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-038.json",
+      "sha256": "bc30ff097bac770136f1ba1eeeebc3f36d515cf90519ac5b5804edd8632fd9ea",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-039",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-039",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-039.json",
+      "sha256": "a1156e0230545cf242fd5ec4dad51d7f16ef842384e57863181df946764ade4e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-040",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-040",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-040.json",
+      "sha256": "ebef148d4af748fef870d938756b36a75dbe56b7399f92579b4ad623b69243f6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-041",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-041",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-041.json",
+      "sha256": "b0da5e168be8cbebe2f8bb7dc178399fe203651b4edd4860fbb3d88c355433c8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-042",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-042",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-042.json",
+      "sha256": "53b4dd2059a016b7a8a7f6af0ee9c8a87b5afd9058225e2acd1b315d0b7b0261",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-043",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-043",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-043.json",
+      "sha256": "e10de3fde85aeb881979ee49eb67c09a5b53b83a366dfc55ca2ed3d35d04381d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-044",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-044",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-044.json",
+      "sha256": "fb126500870e9300e7d5795f55c21249badeec8371dbb0c85fcc817db8df9bab",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-045",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-045",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-045.json",
+      "sha256": "f5e6d054c6c02a72c82c8202a9f12d1bcd0fdd2ac54928a75af829cec4140add",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-046",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-046",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-046.json",
+      "sha256": "658b01c9ace54f3f797850bba6e0cf65e1c698c0611d1455d3b666fa6af9f048",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-047",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-047",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-047.json",
+      "sha256": "3659ce7b919fcbeb3140b9703a21b7733213f8ac9ac68972e02029d71cba545e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-048",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-048",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-048.json",
+      "sha256": "5a6c995fd5ebb40afbbbef8b972c33cae45c55a7f6db2ed8f5a66257b39ffe7e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-049",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-049",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-049.json",
+      "sha256": "7c015429ee4e1f545fce62fa12f1576c14198c0375190ff8d5c46eb6b9c8e363",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-050",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-050",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-050.json",
+      "sha256": "a5f90747c9e77f969196a2e955736135a21e6d7f28b40200cb13fde852f2f401",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-051",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-051",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-051.json",
+      "sha256": "66a84af1054deea06755d4ab0eeea4effc1e3cc21bdd9df53e07b07bafe03082",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-052",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-052",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-052.json",
+      "sha256": "bb1cbb16131d6962e04f376bcd921151d1a22a509b7491a70e5c79203cbb8e31",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-053",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-053",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-053.json",
+      "sha256": "0446d6419975b105739d8795f4289421175e2330c83e57b02e86a6908cba4b5c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-054",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-054",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-054.json",
+      "sha256": "861bbef064a539f89da3b89f6697b8673dbe09210062203c8271cc42e2259416",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-055",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-055",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-055.json",
+      "sha256": "e9064982bcc6afb24907d96ba672687a93846e5a4f05f9599854b80642e09a80",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-056",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-056",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-056.json",
+      "sha256": "e30e405469ee71a7f9dd5a96b95068df6ca26c463428c36684f21009f538b2b9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-057",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-057",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-057.json",
+      "sha256": "db610195caa9a5cb8ceaff0b8a1e7ec0d9dc77abf796d8e48382503b398e7af8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-058",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-058",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-058.json",
+      "sha256": "9b6cd5b942d9f30a2d05fe71bfaec086f30eb1d61b6010c2b1a34b10fa54b8d9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-059",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-059",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-059.json",
+      "sha256": "f56d12ae75c321393484008af6893bd633aed69ac713820d928a07f1de4caad1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-060",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-060",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-060.json",
+      "sha256": "146c76856d8e76d6a79c785c5e456b5e91d483940384d43a4e1494e0e6ee0352",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-061",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-061",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-061.json",
+      "sha256": "dc32cc39513292d4cbc6848627a8e972b2ed493d272d19cc726758c98caa48d8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-062",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-062",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-062.json",
+      "sha256": "f90c7877376ef9d43cf7a55e3a44494c3989c30d9535e958edf79621a62571c0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-063",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-063",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-063.json",
+      "sha256": "cec18ce749060bf2b000c0b2fb0b406c77cf4189e938b4880b54a72661c80b71",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-064",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-064",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-064.json",
+      "sha256": "3ab31a712c2c6e98be28e4bab53232c52a3d38328634df8c074ec97384e33743",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-065",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-065",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-065.json",
+      "sha256": "7807d6c14d83c52cef60ced44bc8273b7ac683b4b569a751b0317b610c6e0b88",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-066",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-066",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-066.json",
+      "sha256": "872aa08d6d799e18eb5f20be1b3e044c66bd7d3389fdcc84fcadaa536431a509",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-067",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-067",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-067.json",
+      "sha256": "8a9dbfc911e1cd12bfd108ccb7ae9af59cbe04761e62e8fca7f1dd1e0c1a2710",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-068",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-068",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-068.json",
+      "sha256": "60004663cda0f8cf0a039bba6cf46a12192dbbbdc65f9df1fca1bfd82e770b48",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-069",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-069",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-069.json",
+      "sha256": "294b0b8afad917da7ab4128f976cce8103eb5e64107a64b4a43d5fcfd222b201",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-070",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-070",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-070.json",
+      "sha256": "65379ef583ef0465cc44c0f31d72f3a968f103c7213c213f6ca08bb21b593731",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-071",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-071",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-071.json",
+      "sha256": "2cb85f1f719724863482921d1892b25f5cf05ff3d43b41edee77268de99daf2e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-072",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-072",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-072.json",
+      "sha256": "9a3f10859bdefe2b5e796c310f1fc590f18a585b8bc5aa8acba42b856f59777a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-073",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-073",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-073.json",
+      "sha256": "fc323fb89b18da3bd01ed84f342900b8a8d03df47f5cffef212d7f127c262ed2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-074",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-074",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-074.json",
+      "sha256": "dd2c5adac2a48e938400b548cb4356efc229bf54d820475b096a8f5f1554748d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-075",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-075",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-075.json",
+      "sha256": "da4ac028bd359346133e8922713c53c055ae015d5d8f497e279891958b799509",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-076",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-076",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-076.json",
+      "sha256": "c9cdfb6cb8fad41dd9032bef69d4b107b16444b09b740e05491e11253f471bdf",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-077",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-077",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-077.json",
+      "sha256": "fbdb3a670285fe2ff39cd40fef43d8d94e4fe3c12e1b59802593b1a48ea6a2be",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-078",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-078",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-078.json",
+      "sha256": "3a53ee75217423c8381fab0a2df5258ed36c3299c6fc37c587420f8bf8e2913e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-079",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-079",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-079.json",
+      "sha256": "d1442addb0d22aa016e0eb744f6482dd356eafc3fab26497d788eaa43748cbd5",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-080",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-080",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-080.json",
+      "sha256": "c0700f1a27fd5f19cf66e17a4e82c95d608311842f5fb028e70a34205fd617cb",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-081",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-081",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-081.json",
+      "sha256": "910303a3d97d187e967276f2dca1f58b0eaca8a7a6b7e7f7a3b2b15a4b20ca7d",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-082",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-082",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-082.json",
+      "sha256": "b528b784281fa79cfb16c0fed740e0a5986f1ec87c473fabe0fa09934b1a9985",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-083",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-083",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-083.json",
+      "sha256": "ec1f282c783d7bb5b689bb1d13524e24795b8252089a76be55bff4d05b6447c1",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-084",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-084",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-084.json",
+      "sha256": "0b77a1f8e7d9c18f6f54710564c9ccd45a81a36ffe7cedc2d097ae2658036b14",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-085",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-085",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-085.json",
+      "sha256": "188d9bd5d4e4c9747a1269f417418f5381c62eade168b5cc0a138f4180c3631a",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-086",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-086",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-086.json",
+      "sha256": "547b9581bcac440dbce8dcfdd03313ad7a6863988ff3d82ac0339251d9763f33",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-087",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-087",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-087.json",
+      "sha256": "a67940512ff495a3a6ab7da6cb6bae29e4000d0779f9c156707a37dfa6a7ccbc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-088",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-088",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-088.json",
+      "sha256": "b57ebd454bcd57685f0a9f9d42812d56e3b977644338947f5c147aee602a14f5",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-089",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-089",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-089.json",
+      "sha256": "24e3ddc00c018c63f0bd621bf7e7cb834d49bf818c35d4893bcd0a5ab61ff91e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-090",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-090",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-090.json",
+      "sha256": "a6d53f90b3e2b5e87430f062ea053cb562d236bd54f3cca31c99b9dac3e4d959",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-091",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-091",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-091.json",
+      "sha256": "7b8791504b20af8948dee10b11dfff9377f1c44c4043f6f643f78b83f04c4e1b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-092",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-092",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-092.json",
+      "sha256": "dca109c848d8f2460f418584e638ff0a816f53f0d3373ce65cf68d19caeba8c6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-093",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-093",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-093.json",
+      "sha256": "047414381040dc0f7ae20abe1a6be628d973b2121f9abd0759dd67d023876b6e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-094",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-094",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-094.json",
+      "sha256": "128eb59ad94313218ecdd91ef980a2f77c267a417a9bed71484a9fa81c909735",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-095",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-095",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-095.json",
+      "sha256": "5deee1c8b35bcb750e07ccfc3d4833a36cff36df877be02417c4cc20f728c810",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-096",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-096",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-096.json",
+      "sha256": "803560412a7d06531beb200124dfeb68dbc3ac2ea8b26d9d7815e892a06cafbd",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-097",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-097",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-097.json",
+      "sha256": "65084d84e920140554452ab4ce4088e576bcc02777893418a1335bff6fb07e63",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-098",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-098",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-098.json",
+      "sha256": "4f9c7aa64398a094bed89cc0b472f3f8c2f21f0063dfff98065ea47ba9233cd7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-099",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-099",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-099.json",
+      "sha256": "ba687112b253a1de6af0ee24c0229386e669255d03401dbf5ba23dc3f0177cc9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-100",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-100",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-100.json",
+      "sha256": "36ed8361362f4c1ab9caf4082eba8f6cd31a9a107286bfd61f4ce479b24f0578",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-101",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-101",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-101.json",
+      "sha256": "58b1e3582b28bf0c9a2b3569fd7c42601b4d956d7968ef0639124b2aea8cfc84",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-102",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-102",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-102.json",
+      "sha256": "855f3ce7b800cbddfdf4d4041ff65610d69c0a58deef05b70067d81d48025bd0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-103",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-103",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-103.json",
+      "sha256": "a2cf153494d283f414a6e9c912024b589dcfba585de2503a9d4ea2f6e3ff0a29",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-104",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-104",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-104.json",
+      "sha256": "736190233c1413c0f43ff44de15564dc94207fde5304304a0247ae61e8ebd773",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-105",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-105",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-105.json",
+      "sha256": "39e44b3fa71e5fc68084dc4ba3c9f7f3b27952b5589159e04ee19ce3ab53e173",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-106",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-106",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-106.json",
+      "sha256": "278a2fb073f26178b44288ae26e2405f7bfc73eff7c3e8a98a0032ce0e5f5bbe",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-107",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-107",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-107.json",
+      "sha256": "3223e26829465ed485356ccf46abf2f814b77ea54017b50dafd10f3f4301af00",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-108",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-108",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-108.json",
+      "sha256": "ec34245ab27b90096b609735a8c5e9d4a84275362c62f61fe6ab69bdce127d9b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-109",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-109",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-109.json",
+      "sha256": "d4eaf05967f2f6bcb2a7745af919b912b07b4a1f33364f37e8c28e6060ff3b37",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-110",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-110",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-110.json",
+      "sha256": "001376e4be9a3158ac10ee05ca772bee29911b3528101ed8a928b56905559b85",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-111",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-111",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-111.json",
+      "sha256": "8df1c2451918ebab744d33f4455082a80d0161f9dbc9b04e99a9558482b866e4",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-112",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-112",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-112.json",
+      "sha256": "b6e819597c090ae67df5216f491e04641edfd1df7b9e03ff91b3943bdb91b38d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-113",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-113",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-113.json",
+      "sha256": "2b0198ced8e35c326fd93bdfa37ea68988936bd782a5c9b27bedca168854de4b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-114",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-114",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-114.json",
+      "sha256": "ba9fce56188d8c53e1b8e4ba12bd3dded533ec5b0664eb43bdd6aa492f1bcdd2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-115",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-115",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-115.json",
+      "sha256": "d173c2cba974a1c01b17f76ab0768291cf6995501a73c88dd8c73514f610e447",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-116",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-116",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-116.json",
+      "sha256": "d54433425eaf2dfb7fc46a5f850bbf7f6e8b3a8a57d7cf623fe4113430eb54de",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-117",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-117",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-117.json",
+      "sha256": "3f85801b70c0087be7d9e21bd2ba86b815ec1ea0bc8855060619e64578f48c4b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-118",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-118",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-118.json",
+      "sha256": "15282ff069db843fc3041c88ffbede92721874c3042d479ce277fc58a41f7058",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-119",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-119",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-119.json",
+      "sha256": "7a2aed6c727cecf0fdcc0a2d1aee5d220c1ac0626a134dac4636455f88ccb675",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-120",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-120",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-120.json",
+      "sha256": "d21c14d77880f82b019504e520fe9721824c570adeca943013c70cafd845edcc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-121",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-121",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-121.json",
+      "sha256": "b73d892761b8b1d60773a3c86d346f53f13f71ae8783ca825fa3c2a9990b6331",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-122",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-122",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-122.json",
+      "sha256": "1ff664d17707c042de348268ea9bbb72830bad9d51bb3f109d38da86c5d31741",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-123",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-123",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-123.json",
+      "sha256": "02f36e369ba5a457b9f601a571c709d90bf19667b5daeb20cfb217a1f3452880",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-124",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-124",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-124.json",
+      "sha256": "2e1022def64125a5f9fe17592d93451dc4e34e925b6adaa88a4ab5d1d3487287",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-125",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-125",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-125.json",
+      "sha256": "9de7f1e7b33530ca030530ae40b2a5b9297d249f2d5859f0ecf9c33d9c4e8f26",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-126",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-126",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-126.json",
+      "sha256": "bb335b1befc747ba2678bfc4993afd727146bcb1717616dc343db05a9705b3c1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-127",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-127",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-127.json",
+      "sha256": "920185fc803b56d961a7d62949b43db64439d42e8236ab3f4b13763103b2e741",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-128",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-128",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-128.json",
+      "sha256": "091553082a2f2cd43e37304dff24033f204ef9a49bf2e340c63131f299d0569e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-129",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-129",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-129.json",
+      "sha256": "ac7596eddec9abc872230010678afb50b1e31e196b692828e953820fb31ddf4a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-130",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-130",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-130.json",
+      "sha256": "05c750b31f5c8efaf590f858aa33b8ab6b5097afde10a8ff68b93cc96b48430e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-131",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-131",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-131.json",
+      "sha256": "ece1bc20cadec6b126c2c3aa4bb3c2cc5556091a72399e7cab4900b2da009e22",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-132",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-132",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-132.json",
+      "sha256": "72220c2b4bf2da77431687610ea32767eb450d8f8c163c572843d34dcd23ee67",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-133",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-133",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-133.json",
+      "sha256": "033a8b0634cc6a707a33198913345eb302537ab6d147347a0107a5b29c21815a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-134",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-134",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-134.json",
+      "sha256": "7379c3a37f2d7335a604c005b2cccaaacb9eca072351cb7e3197f4def831c5c0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-135",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-135",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-135.json",
+      "sha256": "680179d88ef55b9330c223f4bb7d1a38be099e938f54cd4d5f797b806b1e0418",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-136",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-136",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-136.json",
+      "sha256": "dadbd2b07165db2faa384f35ddef39c036c74f611a5cca5ef24921d17679a5a0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-137",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-137",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-137.json",
+      "sha256": "518028412309b87f5e2d6825487ca6537be973d1fb98ef29558284fb0fa9e236",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-138",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-138",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-138.json",
+      "sha256": "3464057356c57aa7ba52fb7c8f7677a686677288487d593bdab232f2c75ae074",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-139",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-139",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-139.json",
+      "sha256": "c8252fbbdb04e50fd3ac37454c1581110b35d239edba82063b5737e7b9752369",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-140",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-140",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-140.json",
+      "sha256": "cfd2a526224a74ab8fc562d8116b8b7cc2d2881c64195743730d5d706f494ad4",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-141",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-141",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-141.json",
+      "sha256": "ecd4468d12c53c139cd3c32bc7b60acd2c11f72dab8cbda39cf891e9fdfdab63",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-142",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-142",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-142.json",
+      "sha256": "ccbab71bda5e34978b219670e6b7fe71850ef4bbc93304e664f64063aa79e68c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-143",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-143",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-143.json",
+      "sha256": "b09c9c943971c9aeb192865351008e73c3441ac9a0b0e24a84e0b21e512ea553",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-144",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-144",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-144.json",
+      "sha256": "e51ac68691815fb0fd3ac836de7cac9b71cf617fe8548a96d033ee5a700d060e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-145",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-145",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-145.json",
+      "sha256": "854e976d6d4743047e588c329843c9e1069907c759355f678d268bd90a117f71",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-146",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-146",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-146.json",
+      "sha256": "958fde94e5e34a5e18a057f621b6caf088ec8db1f59729cf892a7390fe43c158",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-147",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-147",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-147.json",
+      "sha256": "101812b45f4b97d1296568e5e81bfcbbebf9217ea289929a8276cdaf0b8a0eb1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-148",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-148",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-148.json",
+      "sha256": "a19d82a4983a3488baccad2f53c5574ad641d1df2884a8e7cbe5c1b2a1170fb0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-149",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-149",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-149.json",
+      "sha256": "a524d9159b318fc38e948fd1a45e886a55a66ef9d986c1f2fdb34f11e3895c35",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-150",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-150",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-150.json",
+      "sha256": "45f74d041574815d5c196211b4fdde8961d03fc123698ba54e32ded2f5c1efd9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-151",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-151",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-151.json",
+      "sha256": "00fbf6d63198fde4d8a48d738fc7b47e3ffcb55a04e984b2db8e5c95600a1e41",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-152",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-152",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-152.json",
+      "sha256": "06a5cd07651208af30ef9eca6cfffbedb4d75f6ae0f7aebba1f9f871b3c434a6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-153",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-153",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-153.json",
+      "sha256": "f8f57f045e3cf451e5360dc0f1d2af983a4dcd3a6e517529c406a57b158ecb29",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-154",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-154",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-154.json",
+      "sha256": "31e7b8dad25812690632bba7fc13537ba5faf1769759b817e9df4b94add7a6e8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-155",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-155",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-155.json",
+      "sha256": "f7783a180559febce69649a944ec06d452e3dc7b373c07f794666939f30f6878",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-156",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-156",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-156.json",
+      "sha256": "6d51605396360234330b95fff6e3e3ec9be21f4cfa962dd86d93d3f6d17eb65f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-157",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-157",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-157.json",
+      "sha256": "5088b38c7f8a189b9714c280cbe4ae6b8080b60d70b98242c489a00716c13bb1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-158",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-158",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-158.json",
+      "sha256": "8c71b299d8c669b7226ca2fd18c903ea335dd1073c37fa7a5df486c94956d60e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-159",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-159",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-159.json",
+      "sha256": "03e292e69a5e2f23c64e9a0ce3b85ff2e5ffff967914f68d3d39d7bac1df0d4d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-160",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-160",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-160.json",
+      "sha256": "6ad4302475071e13d150b4a7b19ae5b41d387f6a165e1af704276fe93a2ec4a9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-161",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-161",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-161.json",
+      "sha256": "01ab41bbfbd98999e274d360bfa87392b9b55f7d78b980d6fa1e5b41d6ed3498",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-162",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-162",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-162.json",
+      "sha256": "1466168521ee0d8e45d3af8f020e016d287bab97d4b59e4b2c6c6d129af0283e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-163",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-163",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-163.json",
+      "sha256": "00d579e2cb68b463912c04d62e091dc9c2bdf12967fed797de9431825154d52c",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-164",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-164",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-164.json",
+      "sha256": "eec726a7afe629d0ebe2fa45e88e599c185e97258a59fd4bcb127bc493905d9d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-165",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-165",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-165.json",
+      "sha256": "a6b4e32d46660db7d4898f43c74a7ef8e22a2e54fd077ef1ee218dc577c209a0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-166",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-166",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-166.json",
+      "sha256": "87e16b2f895320e220b97e96202de10645336d9933c8e1eb86e9af8956f257a8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-167",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-167",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-167.json",
+      "sha256": "21223cc06aaba1ad7d46c860bcaeeb23054088502f498cbc2d7f4ccab4003d25",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-168",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-168",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-168.json",
+      "sha256": "8dbf1dd0f208efc069420ef2cc03bab7a982d9a66a73709c11d805000bf5a96f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-169",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-169",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-169.json",
+      "sha256": "c6eb3933669ecc51222f712835a917177efd086440b03e19473d07eaf9840d2e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-170",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-170",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-170.json",
+      "sha256": "fac508fc2d02ce8d62e18bd9616c76057eaa84b67068ade37ec770270399c618",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5b-171",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-171",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-171.json",
+      "sha256": "a36e55f37be491ed39e3e6df5ceea88bf8824e571f0cff048a15745a6f49dfc0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5b-172",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5b-172",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5b-172.json",
+      "sha256": "c7ed4a503371f7d50ba6cab3c068af9f65c9039f3ea47ba1f16c1ef33ab85628",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-001",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-001",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-001.json",
+      "sha256": "842012ed2eb76c3d362c5d414bbd2d924f8d72e94287c578c0efbcc0a6a87400",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-002",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-002",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-002.json",
+      "sha256": "6c69fd6b63fc802d401d21209f2c32d8a78457287565ce468b23aaafb502db36",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-003",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-003",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-003.json",
+      "sha256": "4cec49f7dc1d64ba995291f67711638a0d4ec37325dbe818d5d163805b1a5f7a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-004",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-004",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-004.json",
+      "sha256": "8ce4a50fd41b7cb4ad86fad048e33a3da4e06a56d3009812c68ab8b7669f66e7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-005",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-005",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-005.json",
+      "sha256": "d1bd34c950add6210771b7051facce68105ccc8e2c2848a98cd8effbafd8225a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-006",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-006",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-006.json",
+      "sha256": "920610f109b3931033c5071da87030fb6d1f8dbc218871fdaf6377d200d5c1a1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-007",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-007",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-007.json",
+      "sha256": "51dfa6d77bc73708d57bdd036218a4da273659fe109a7d0e5d8a7846141bbebe",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-008",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-008",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-008.json",
+      "sha256": "ca2f91de926b4ed9cd0fcdd554076d278d3e1103e5c20b9e5a146b64164d67fc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-009",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-009",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-009.json",
+      "sha256": "63caed25feabc5042d6684f9b9be4e6e7cc4789e6a03f630f8f618970fb13faa",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-010",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-010",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-010.json",
+      "sha256": "de790338e8eab07220b3ab6c03cc2a40c70ee75014f860faa97ee9b05872ca74",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-011",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-011",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-011.json",
+      "sha256": "0d35d6876d6cc5605345878dab639b78c49c7c882c523c42bffa70cc638f7e30",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-012",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-012",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-012.json",
+      "sha256": "07a616dafa1ba953be92d638e806d743dbe5d65d91b1da4880ed6d30fa4b1fb6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-013",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-013",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-013.json",
+      "sha256": "f3baee6c232c8ead613d79a7e588ce35a3f954de627e8d53728524879da509d2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-014",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-014",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-014.json",
+      "sha256": "73d608f54c67cb40e42568e3ed181dd4ab4ade5b082d68610f4fd011f50b0cb1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-015",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-015",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-015.json",
+      "sha256": "181c010c6260f15e2291bc80e888d18c87835e8cbbd4a5d22a9f3badd31364cf",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-016",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-016",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-016.json",
+      "sha256": "dcfbf97a5d202b623a48beff0ea9d360afec5e91ebc13bf9e21a0c064d4756b4",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-017",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-017",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-017.json",
+      "sha256": "151abc0ecec0f711339ae77f55a070f938790b8661f31dcbded89fe4804e2510",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-018",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-018",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-018.json",
+      "sha256": "9eb302caa7a2d93e493f8a2c2dcfd72d0121090d800b7e965b020bf43ca91500",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-019",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-019",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-019.json",
+      "sha256": "112c38cad070228565958c1a25e656d32631eca9d7068f8336ef0d9be4f6b347",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-020",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-020",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-020.json",
+      "sha256": "bded70287e33b29b4b98f5604be7776259b2791997540626461e34af3fffe5be",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-021",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-021",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-021.json",
+      "sha256": "90d3429eb956f96f5332e0fcf7b108d05466c00bacad055a3306fd31f4184cbc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-022",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-022",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-022.json",
+      "sha256": "f7b94dcc7570f7ff564dbcdb6399409aaf7038cab8ef4c12ff6ef069895cde42",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-023",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-023",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-023.json",
+      "sha256": "2fd564833768d4e5131cd2a91c708d0a5aa090964c0a05a19b943c5315b11d50",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-024",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-024",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-024.json",
+      "sha256": "51b924ec893de422f7d549006b0b5a5a33f9983e83f90edc66955236d02a3a29",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-025",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-025",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-025.json",
+      "sha256": "7e7031f83a93e1dea1f60b6c4145c9aef16ea48fc676ef4124f689617577cbac",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-026",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-026",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-026.json",
+      "sha256": "0ca1e9369387c2dc2801f7998a718f1a5cc94d717e9b35507fcdf8147c88b646",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-027",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-027",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-027.json",
+      "sha256": "9a1efa4a8e88b735af7c25e4a28b27b791adbe69d404726d2047ec5231f6f734",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-028",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-028",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-028.json",
+      "sha256": "ba69cd569571508de7c0f44e7bf80d56485de31de8ffbee172af4cfc6417d59f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-029",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-029",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-029.json",
+      "sha256": "9face3d573b8831e2e7b237035421a989e393efc7535fd526e73579df5415e4b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-030",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-030",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-030.json",
+      "sha256": "94a6d381f08f7e289fbf3460bb2b3eaf72c27b2c374102d320daac0d563d7561",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-031",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-031",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-031.json",
+      "sha256": "061fde8dc770644c1c505f722af14b5216b28f1635c24e7d596409fdbdae4cf7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-032",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-032",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-032.json",
+      "sha256": "3f593511889da29e7568e0b568696fad9071e06f32d78d9040cfeea9c7102303",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-033",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-033",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-033.json",
+      "sha256": "d6e154f4ed6b20a4d44186a22775c80c9d5e28a3b9a8a8523b440bb8c237c609",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-034",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-034",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-034.json",
+      "sha256": "296b7d78922721e461d5b80e80ef4ba84fe051321d16035b86a3000a422dbc4e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-035",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-035",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-035.json",
+      "sha256": "418e310a600ff5bcf7a9fadc9cd72b00188f1b7684304b5223bd5d96778c3fbc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-036",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-036",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-036.json",
+      "sha256": "91a84d40015c040c37471085c17d2082a46ddba01010ef4078b1190a021b5c95",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-037",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-037",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-037.json",
+      "sha256": "eb5e7bca2f56e1bd469a175581baf1db5fcafb4bfaf9b4c78de0933752bdb2f2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-038",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-038",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-038.json",
+      "sha256": "3f204eec5e01d3de461c480c9433542268e56f0adc10a97231496f4227a6da98",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-039",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-039",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-039.json",
+      "sha256": "2f698f267888e95c5574b5f3b0495586809494560527ec0d4c30d90a1ae759b1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-040",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-040",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-040.json",
+      "sha256": "e5bf2f2410661decd968b6257280f2330af68911714a0ba5aa389332cd12dd9c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-041",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-041",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-041.json",
+      "sha256": "fbd9e90700772552022ff650fc0016356d46ed718530b732ceee84c35a4e99e2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-042",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-042",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-042.json",
+      "sha256": "ee8d96b8b933839ab018b0c7c61d586aa8cf363cf6b0bb01c68ca259e87bdfb8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-043",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-043",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-043.json",
+      "sha256": "4b643d6fcc940bb8aa0366f422fb8eca0038db471ef3bc38a79f0418f09b3a0d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-044",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-044",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-044.json",
+      "sha256": "442db2e0b1878728b389c4af9e85b70a85ca0505922b0e291b74cee96a11a90f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-045",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-045",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-045.json",
+      "sha256": "66d6fc712b68ef4931d75ce29e200df6ec702516267af0c740e40573f8eebbca",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-046",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-046",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-046.json",
+      "sha256": "2eb56cfb69d8a7fcf7e85c8e0a8bcae9063b96bce7e2c523a3a714c9ff7203a5",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-047",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-047",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-047.json",
+      "sha256": "b7fc29a7fc34a2d951552d777ee4c1f8bde268b40a8c56893330ed5169a6c1fc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-048",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-048",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-048.json",
+      "sha256": "74df9c7ec0924dc4074582795f2d456927ea56f3d31ee3882790d4c20433941a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-049",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-049",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-049.json",
+      "sha256": "e3ddf0a14a9a8d06e5f246c77eea7f3d31ba360483a521e5eb56274c190fb920",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-050",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-050",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-050.json",
+      "sha256": "27059a009427f39b4fdb64b1a226bb06ab16f73e184cfc341e04cc70830ce52a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-051",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-051",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-051.json",
+      "sha256": "04abcc24015dc3b39fe761bcf98ea8ea21ef319b5506ae846e7edd80208dc153",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-052",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-052",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-052.json",
+      "sha256": "792f2f4c68cf2eff5b58065503c6cb1952d9b76c8a1fdb688d9d279f2b8f984e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-053",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-053",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-053.json",
+      "sha256": "a8cd21fc25b5a18a1141cd5146436bee935af9f1c2d5997152813cf1d0d0c4b6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-054",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-054",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-054.json",
+      "sha256": "eb17011a9034ebfea16c2a8f2ac3c1b9db766b3526bc00b1d290136c3166cd32",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-055",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-055",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-055.json",
+      "sha256": "4974788d86cc24ae7b171c4009b49eb17d580f0b7502286554beae44be4828fa",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-056",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-056",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-056.json",
+      "sha256": "95c46719e9d2949884e901fe6dad6bcb344653e11378e3c4c691007a7dffe39b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-057",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-057",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-057.json",
+      "sha256": "cee9c6e7b8c02008c2537c1b28a61fc01c5f2a8599168520b63cceeecf9a919a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-058",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-058",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-058.json",
+      "sha256": "eb7dfc93fe60bb7bd08637716f14c727bd61df238724f3e582ec980f0cdaae28",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-059",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-059",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-059.json",
+      "sha256": "65d18669d4291b68d4fa685a1279b01f10a6199edaafc64b1d41e5400dd10a2b",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-060",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-060",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-060.json",
+      "sha256": "e4fec87e81664cc7dfa26ae034a12c34be329f5b572b0bfffd4c9d92f9142270",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-061",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-061",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-061.json",
+      "sha256": "dd371ca3ea02051d1192f10859d259d6a6a784ba54cc6ea3a5b93e6a98943ab0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-062",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-062",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-062.json",
+      "sha256": "b1d79ab40a3dc3b7ad2a4995a896dbbc9c0371801e62b1c46e609bd281c13938",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-063",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-063",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-063.json",
+      "sha256": "af514d601faf85c91844ee13cec7c20c6fcdf352265b32073ed7dfca6a3460b2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-064",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-064",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-064.json",
+      "sha256": "02aceaf3964f81a0d1650734e90797c970e6bc67ac5d1a6409a5a850eabfa0f9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-065",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-065",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-065.json",
+      "sha256": "fcccb1e83ef24f43400323c394d50e54892bd771f9ceec992b6b7823f2117310",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-066",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-066",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-066.json",
+      "sha256": "eb5dd04c3547ad6442507bd5feb7868fab9bd5ffa8867811ecec52719c1e3a84",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-067",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-067",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-067.json",
+      "sha256": "ed3c81117356742fb8174cc9f1f703733cbe674829ed0192017bc2781eaaa57d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-068",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-068",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-068.json",
+      "sha256": "53762fc770d0c4ee674970df4d4d229befdb4f961fdf89bb8e3cc23cfa6e61df",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-069",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-069",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-069.json",
+      "sha256": "2e3585f7768da78c6c69cc7200131f8d2ca201f3a8be6a7726e20a1c0dea50fc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-070",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-070",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-070.json",
+      "sha256": "5dcc55313187ce89fa6e6350e8a35a438e19cee63467837edc55951678171c71",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-071",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-071",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-071.json",
+      "sha256": "3e905de95fa4f74473703c2f0bc2ff5ad7f0c36cb4f8fd46223059adef5968b6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-072",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-072",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-072.json",
+      "sha256": "70d37ecbc6e3554b0b8f5a1d3313e98c7f79ebb949464e3bf40841ad82b9e851",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-073",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-073",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-073.json",
+      "sha256": "7e86a4857eb4c2ceaf38efcf762266eae640bacbcac591b0ae3357085baebbd4",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-074",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-074",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-074.json",
+      "sha256": "58b8eaf1576a9025e103b12c70dc5086b22f55acca46ddf1f7e33946881e44c6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-075",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-075",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-075.json",
+      "sha256": "bfa0ff4d6df03a9556920e22061201f4060e51447d3539f88e14b378e6259dac",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-076",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-076",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-076.json",
+      "sha256": "bf360d511d7ba17bfb7f08bd1848521fa941845b86e99f02949cd691f37fe01e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-077",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-077",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-077.json",
+      "sha256": "cae2d0836349c3a8ad766ce8df9a094f64f8f2c5a748c4b4af513d4957bcbfb9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-078",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-078",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-078.json",
+      "sha256": "3e18b9d6a11a2e789c16e57b8941eb333ac9cce9d29ee5a40c3702719ed03909",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-079",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-079",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-079.json",
+      "sha256": "cd59b81421530ad8580de998ae268d5849c00f733a56e447e08ba5027e8aa70e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-080",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-080",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-080.json",
+      "sha256": "9a094ea47526cc4e8c2366207e58a8490e743da244dd0c18cd94a18af33911ee",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-081",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-081",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-081.json",
+      "sha256": "b052c9b5dc65f5c92db46fcdb611a1abe003b37defd187fa6138883464a18d91",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-082",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-082",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-082.json",
+      "sha256": "169219b466f3b13bff11d4aede031609664c2d7aafea276fdc5564c27a21c739",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-083",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-083",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-083.json",
+      "sha256": "8a3f84da7c78f0374b93eafe1802868f589e6df1269a7f0a58c34f1e64f4d1b2",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-084",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-084",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-084.json",
+      "sha256": "5f282b860a5acc04e9d63938843046961a74f993a7b45c12c957e7894320e028",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-085",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-085",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-085.json",
+      "sha256": "85e143ddfdf2d14918d1be489e4cec9c44a1c79804a01ec36e1579287eb0030e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-086",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-086",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-086.json",
+      "sha256": "ab495ba98c8ebebaa398d925d57725ad7b3f7010ef2a63378967b97cc6cd8a0e",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-087",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-087",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-087.json",
+      "sha256": "6d220fb757ba82b6a60d30d7db1c95354057715ee4db0cf3dbdeb0308132ab5f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-088",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-088",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-088.json",
+      "sha256": "27c8df6e035660326af3147ae5b2b6349d2bbdc7fdb44d281e2951ca4321e7e6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-089",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-089",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-089.json",
+      "sha256": "af7495cfae1638036fdffd05844f8c970b64541ebe883ebf0478b157c8a54351",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-090",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-090",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-090.json",
+      "sha256": "e3885a8b46746379cc873a1422cfee3affadeb00e844afcae3ff992c2ab88741",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-091",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-091",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-091.json",
+      "sha256": "6094b9b684a8be3b43beb05eae1cc5e6064e250e5cfdcc6b9d75775bf3a616a5",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-092",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-092",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-092.json",
+      "sha256": "982e05ef436428a0d99603885f2b3e30feebd38d29f5c1c379c3357ca093b49e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-093",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-093",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-093.json",
+      "sha256": "0ffa6f9272d44b35e181bdbf0ea065c581373aa08d739187ddbff58353f7c326",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-094",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-094",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-094.json",
+      "sha256": "12965b23c26c2184fdb13642e0527fb234a1d73cc4451ff6470b7b7a02216a29",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-095",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-095",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-095.json",
+      "sha256": "9a78930737b9a3d9b82222250432f1ac683bda8b0c5f87d26f8576c814014755",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-096",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-096",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-096.json",
+      "sha256": "3bbf0b3b98d8026b4d80f008b95b84afc0956eeef064b9b4604789c8ceb59828",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-097",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-097",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-097.json",
+      "sha256": "9c4581ed3c7fbee4afbc8fd3937bd3d00b717693806cdf0d5df96347bf5d2dd2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-098",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-098",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-098.json",
+      "sha256": "db83ca3826cf278f21a962b1173216be70e37732859d431f3c0969f0967108c7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-099",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-099",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-099.json",
+      "sha256": "20f8c2ef59af383afb989aa9b60fe0d7e8ac9fdfbc223c5c9eceffc1c7dc7f14",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-100",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-100",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-100.json",
+      "sha256": "46a636589adac1a04f25c17be8569517ae034705c9e80cf8662d94fce166e0ea",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-101",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-101",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-101.json",
+      "sha256": "192105fb6611e63ad6fed530c53a4337aec7c20a6da60cee600daf0449a6d57e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-102",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-102",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-102.json",
+      "sha256": "b843d22fa3be503b2f2f4050bff7aad694a834fe6431c060b62b6471999dfab8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-103",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-103",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-103.json",
+      "sha256": "9c4950d7488cdab2c799aef63e1747bb4ef38e5d77f96df052b79c9729e08f4a",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-104",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-104",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-104.json",
+      "sha256": "268ef40312bd18562d41034a09c457ec1d47c36e9fec514f35b13515cb2f4145",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-105",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-105",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-105.json",
+      "sha256": "86512d9bcbc024e52df1203e8dabda23e39eb7a88274e77bdb31e56d2716afe8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-106",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-106",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-106.json",
+      "sha256": "fd2f0eae724e569802b43234b2f9852d510b587a6153df7a1de02b944be71282",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-107",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-107",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-107.json",
+      "sha256": "92bb2ae264ab5b656ad321d8e5d439418e3876b184ec5e267547701d09090622",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-108",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-108",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-108.json",
+      "sha256": "839e25f32e1f6c44d0ccee1bf5ad6070cf1e96c7220e8ee5f1526656a93b2c03",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-109",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-109",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-109.json",
+      "sha256": "78b81edcb3d74a9ee5ae8a4fec56b98586dc1a72e67818b756117bea6d2a5388",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-110",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-110",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-110.json",
+      "sha256": "a01834c3b9037f50b33424f0c3b011221f601ccabbe28ae62f00c48a9eeba445",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-111",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-111",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-111.json",
+      "sha256": "82fd53da734d1423e5919d7e887392b4f35048c00c2247bbb45b801e3998c1cf",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-112",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-112",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-112.json",
+      "sha256": "28034d02073bee339c4869eeaeb3fcc8f00299a1a947f82cd9d88d30f15dedcc",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-113",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-113",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-113.json",
+      "sha256": "ab9c7bc49898893f1867e7cdb1b56e0045a85549fadb4f54d0db09273f5a8683",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-114",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-114",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-114.json",
+      "sha256": "67ad6c52838a412ca4d6297b1d9c6e15e7cbd3c9c8007c585db646c6d5d6a96f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-115",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-115",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-115.json",
+      "sha256": "a9f99d60624606b062a4d784e467abcb6ea9182480936ffe01f6f21898545256",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-116",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-116",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-116.json",
+      "sha256": "edd9f47fa406800266480365540a593b2c6a70e9f1035a2af4a26060e84b512e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-117",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-117",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-117.json",
+      "sha256": "cb81b2dc3ef7ffc002c11f2b562d3efe2df63fb6a5c64c2bc3ce5bb3a020b469",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-118",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-118",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-118.json",
+      "sha256": "182cf75331ec3f1fe197a0d52fbc46b8bdcd407b16216d1631a6fffa5d624e9e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-119",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-119",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-119.json",
+      "sha256": "24ab0b35ebc2b88d8fc4b7e6043ec280f9ca5920968a5c15af19b206ae4eeb96",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-120",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-120",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-120.json",
+      "sha256": "92347f3b3f9942ecb74f8ee08df4da5eb41e1cb1c6aa3405b6222825a8eba6d1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-121",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-121",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-121.json",
+      "sha256": "a418d0635e3b143af1b1bc0ebe380269f4fee6728a920b7fa278bd5ec34488b1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-122",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-122",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-122.json",
+      "sha256": "260f3e8058dd4ddf1f297f822bc874de85e5c5b8e6a214922941e2baff756869",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-123",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-123",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-123.json",
+      "sha256": "a34809976d41580f6c884250eaea0a6b816fe4ee7d233c7b91c4aadbdbe26f6e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-124",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-124",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-124.json",
+      "sha256": "68c3166c32f4adb70718d1d2dd6bbbe662c314042ef84793e68ba7320f1a2e0e",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-125",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-125",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-125.json",
+      "sha256": "bbf30102cccb0321e1fab6a49da0a07fc0c84189a17c9d0306f89c1372ca625c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-126",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-126",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-126.json",
+      "sha256": "0c8a330df1830fcb334345256752b0c456fd651b9e6cdcbe3619b515580e0e05",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-127",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-127",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-127.json",
+      "sha256": "a2630afb5a57cea03febc194a5ff70c5e385d36d9072c5967a81e7942563cef0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-128",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-128",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-128.json",
+      "sha256": "47009d615d974cf9bda4d3777d997782be783009fb02e63d61e9ce165082fee2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-129",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-129",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-129.json",
+      "sha256": "88627d30e607696c4b3886ef2234708bbe5d2025a859b4f5825c7c61a3ded349",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-130",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-130",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-130.json",
+      "sha256": "424f6c37e9944d0162143237c654a046b1eb0a2e15d42394d4cd81a6403de8d8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-131",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-131",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-131.json",
+      "sha256": "4ded2f76fe1b6258aaa86f12fc8740bf236066bf4614aa4ff4cb90ef531ed448",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-132",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-132",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-132.json",
+      "sha256": "8425e33e5a67709ac26a370bc23cc3b0fdb6f804c60b802c206208267870fd65",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-133",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-133",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-133.json",
+      "sha256": "a6153cdaffb6fcb1a0479d6c9c72269453ede3a9c766515141a62e2ede35152d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-134",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-134",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-134.json",
+      "sha256": "abcebe0130f1f532083c5cf56f464a93ff432b047950ebab4783288dadac0be4",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-135",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-135",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-135.json",
+      "sha256": "c92d905da37f2b3556e413d4f9dee558485c17dee945a5a1c4de70ca3d801cd0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-136",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-136",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-136.json",
+      "sha256": "72698e9b8f943a8e3b3942da5e784aa74bca206649693218d526d41b2b1dad1d",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-137",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-137",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-137.json",
+      "sha256": "ef095a2f8883e1551bd19c9167ad270b03e28e4ff2a12d2c548f71e33c71ffa1",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-138",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-138",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-138.json",
+      "sha256": "1cca61510434b3eec108b84a1f34698f4f0d6acf8608789c1835887203c7ea37",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-139",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-139",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-139.json",
+      "sha256": "0acf9ac43437919177c0ba28be94f889eaf639ed87bdec5ab6a565a913456189",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-140",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-140",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-140.json",
+      "sha256": "43296dbd1d01a8dd53857f56de41696a340597f9090d0efd0bc579515cb0db44",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-141",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-141",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-141.json",
+      "sha256": "2bcc25f741345df849c6b29ece75ae2338058474f069316f244cad52b6c669e2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-142",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-142",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-142.json",
+      "sha256": "f28f7b3143df09858b92c62677b7daee09135f73645c5d95e513dd45254f18e5",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-143",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-143",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-143.json",
+      "sha256": "95c575f0b22d1a0d4edc2e77b7f0acb1cb1d212f92c027947fb0c67fc2fa7e13",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-144",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-144",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-144.json",
+      "sha256": "ae227b841411ae65974cb97283ff0ae4cd885f9b598de610177d04331ea95ac0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-145",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-145",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-145.json",
+      "sha256": "412f33c1ce8f88cad1578447688432760b977b2467d4dea8cc8ece5a670487c6",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-146",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-146",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-146.json",
+      "sha256": "47d0d29cdcef25b6d7e21551eaf5fead65406370dbf61213cbe6fe4fe70d3b68",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-147",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-147",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-147.json",
+      "sha256": "6bafa36571b8cda639f4a11dfe7537d7f96eac54492583f014640008900d3a28",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-148",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-148",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-148.json",
+      "sha256": "f8db796cb2a0160c2fa1f84b79bcc73375c30356190d7f2d2096c9849a8e5413",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-149",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-149",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-149.json",
+      "sha256": "ffc034e06dfe30ae741377cd861e759703808954d7509eb01cd42a4d3fd03c2c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-150",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-150",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-150.json",
+      "sha256": "dfc120af91dcf5e2b12c10fce4cd86647e18274a53a2d7f21357c7e61b0899c8",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-151",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-151",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-151.json",
+      "sha256": "61dcc03e2f89221f916ed33902470d28832067ffdafb3a9ee33c12514152ac40",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-152",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-152",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-152.json",
+      "sha256": "e36ccbbf2a83bf7170184b9ade697c4ab422527ea383f7abdb414fbb5ba9252c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-153",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-153",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-153.json",
+      "sha256": "63b6a4027184fed847e56d94d6da6023ec98f2f5ad037eafe8b119415ee5d521",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-154",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-154",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-154.json",
+      "sha256": "3dbb908e839d93e25566928bbbc401e261b37eab288cb372cd548b87a23a3ca3",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-155",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-155",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-155.json",
+      "sha256": "bdfe59387ab554eba26235d92943d34da5cded459702ae1aa8166dfdbc0c43c2",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-156",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-156",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-156.json",
+      "sha256": "3ecffbc8a118d7b14582a093c2f0e902551566102fe19af7eef82fa94494ae52",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-157",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-157",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-157.json",
+      "sha256": "94c14bf687ea5608c8b1f2b2cc389f9d0b8df593e727e7a7f3e3674c3f8c9b65",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-158",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-158",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-158.json",
+      "sha256": "be211029f6aeab421c7f35f6b382590fdbe72dfa2a221ee7becaa2db8c94a71c",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-159",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-159",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-159.json",
+      "sha256": "74d0b9d0c49e193c6653ecc0823519a500801835fc0b4cd7756cbbd53bcdbf17",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-160",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-160",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-160.json",
+      "sha256": "bcfb5087d97c5faebb1102e5de4470f602618f53ca9549ef9324c1c50e975846",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-161",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-161",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-161.json",
+      "sha256": "73f78f3e344f5ff440f36903dede3f7250784aa1a0f6944858c09f5384d0e365",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-162",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-162",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-162.json",
+      "sha256": "97826ba2972e5b7146e626c6cb80f4e8bf7514d063dcf975971e0ddc17b5b7e9",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-163",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-163",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-163.json",
+      "sha256": "b6cb0445b6acd3e3665500846fd601e675beffadaa9371715ff2c0fcd7c8e81a",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-164",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-164",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-164.json",
+      "sha256": "b1ae9ae1bb66f1dc00e326b15f2436d3b835ba30faf62111ae6a660afba581d7",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-165",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-165",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-165.json",
+      "sha256": "575c1ec89c190e32b3e55a16fca6b13dd2c1d6c2fe76c470677022cef11c5783",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-166",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-166",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-166.json",
+      "sha256": "8daf178c017838f4b6c2d2826e352d0f0c11873375f1985084f3a2d6cfedfdbb",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-167",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-167",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-167.json",
+      "sha256": "f48f0ce2a94fbdf6ad63100bd5e2b6f13c829e2cab62519c08bb169ea4701d08",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-168",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-168",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-168.json",
+      "sha256": "dd22276744f85a80f53567f80b29c8b9139502ae565ef3cd2941a23b1d6e5b57",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-169",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-169",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-169.json",
+      "sha256": "6f41260595b6fdd3c0eadb016ef7881c216bacddb07c243cae5f210d2be812d0",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-170",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-170",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-170.json",
+      "sha256": "5b2c3f8c467642299261a3c345af9c56ea13598b5d4d83d1457da5b0d463997f",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-171",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-171",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-171.json",
+      "sha256": "ded64594690f4888ec3fe70e4b7aa930b5f044bee0e0a35b9bad56f1927e2d5f",
+      "fieldsIncomplete": []
+    },
+    {
+      "id": "sv10.5w-172",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-172",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-172.json",
+      "sha256": "5fed6d835b3df32b505df2dbf09902b639bde4b1460b8b68e20fdd96db48a802",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    },
+    {
+      "id": "sv10.5w-173",
+      "url": "https://api.tcgdex.net/v2/en/cards/sv10.5w-173",
+      "cache": "work\\card-sources\\pack-finishes\\sv10.5w-173.json",
+      "sha256": "8396ea7684958c44080e90f72e6d6dccc8118ce53378410051177a3a1f3669a7",
+      "fieldsIncomplete": [
+        "Printed Weakness/Resistance must be verified against a complete source or scan"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "2023sv-1",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-2",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-3",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-4",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-5",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-6",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-7",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-8",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-9",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-10",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-11",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-12",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-13",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-14",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2023sv-15",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-1",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-2",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-3",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-4",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-5",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-6",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-7",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-8",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-9",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-10",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-11",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-12",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-13",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-14",
+      "reason": "No cached text record"
+    },
+    {
+      "id": "2024sv-15",
+      "reason": "No cached text record"
+    }
+  ]
+}

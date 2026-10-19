@@ -1,4 +1,5 @@
 import {smPreventTrainerSwitch,smDustIsland} from '../../../tcg-lab-sm-environment';
+import {svPokemonEffectBlocked} from '../../../tcg-lab-sv-environment';
 import { GameError } from '../../game-error';
 import { hasActiveSwitchLock } from './active-switch-lock';
 import { GameMessage } from '../../game-message';
@@ -452,6 +453,7 @@ export class Player {
 
   switchPokemon(target: PokemonCardList, store?: any, state?: any) {
     const smSwitchContext=(CardList as any).wotcMovementContext,smSwitchState=state||smSwitchContext?.state,smSwitchStore=store||smSwitchContext?.store;
+      if(smSwitchState&&smSwitchStore&&svPokemonEffectBlocked(smSwitchStore,smSwitchState,this.active,smSwitchContext?.actorId,smSwitchContext?.kind,smSwitchContext?.sourceCard))return;
     if(smPreventTrainerSwitch(smSwitchState,this,smSwitchContext))return;
     const smWasPoisoned=this.active.specialConditions.includes(SpecialCondition.POISONED);
     if (hasActiveSwitchLock(this, state)) return;

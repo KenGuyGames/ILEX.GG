@@ -23,7 +23,7 @@ export function hgssAction(store:any,state:any,b:any,op:any,next:()=>void,ctx:an
  const status=(target:any,conditions:any[],poison?:number)=>{const e:any=new AddSpecialConditionsEffect(b,conditions);e.target=target;if(poison)e.poisonDamage=poison;store.reduceEffect(state,e);if(poison&&!e.preventDefault)target.poisonDamage=poison;};
  const hp=(owner:any,list:any)=>{const h=new CheckHpEffect(owner,list);store.reduceEffect(state,h);return h.hp-list.damage;};
  const off=(list:any,owner:any,to:any)=>MOVE_POKEMON_OFF_BOARD(store,state,list,{pokemonDestination:to,attachedDestination:to,sourceCard:card,sourceEffect:b});
- const countUnits=(entries:any[])=>entries.reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides),0);
+ const countUnits=(entries:any[])=>entries.reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides,x),0);
  const chooseEnergy=(owner:any,list:any,amount:number,to:any,done:()=>void,type?:string,optional=false)=>{const entries=energy(owner,list,type);if(entries.length<amount&&!optional){ctx.abort();return state;}return choose(p,view(entries.map((x:any)=>x.card)),entries.map((x:any)=>x.card),optional?0:amount,optional?entries.length:amount,cards=>{for(const c of cards)move(entries.find((x:any)=>x.card===c).zone,to,[c]);after(done);});};
  const search=()=>ctx.run([{op:'search',zone:op.discard?'discard':'deck',category:op.category||'Pokemon',amount:op.amount||1,energy:op.energy,pokemonType:(op.category||'Pokemon')==='Pokemon'?op.energy:undefined,names:op.names}],next);
  switch(op.kind){

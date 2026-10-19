@@ -574,7 +574,7 @@ export function checkState(store: StoreLike, state: State, onComplete?: () => vo
 export function checkStateReducer(store: StoreLike, state: State, effect: Effect): State {
 
   if (effect instanceof CheckAttackCostEffect) {
-    const active = effect.player.active;
+    const active = effect.source;
     const sourceCard = active.attackCostIncreaseWhileActiveSourceCard;
     const sourceOwner = StateUtils.getOpponent(state, effect.player);
 

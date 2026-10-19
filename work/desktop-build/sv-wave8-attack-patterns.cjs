@@ -1,0 +1,21 @@
+module.exports=(a,name)=>{
+ const t=a.text||'';let m;
+ if(t==="If your opponent's Active Pokémon is an evolved Pokémon, devolve it by putting the highest Stage Evolution card on it into your opponent's hand.")return [{op:'exDevolve',toHand:true,activeOnly:true,after:true}];
+ if(t==="Devolve 1 of your opponent's evolved Pokémon by putting the highest Stage Evolution card on it into your opponent's hand.")return [{op:'exDevolve',toHand:true,after:true}];
+ if(t==="Move all damage counters from 1 of your Benched Pokémon to your opponent's Active Pokémon.")return [{op:'dpMoveAttackCounters',fromBench:true,activeOnly:true,amount:999,after:true}];
+ if(t==="Move all damage counters from 1 of your Benched Ancient Pokémon to your opponent's Active Pokémon.")return [{op:'dpMoveAttackCounters',fromBench:true,ancient:true,activeOnly:true,amount:999,after:true}];
+ if(t==="Move all damage counters from 1 of your Benched Pokémon to 1 of your opponent's Pokémon.")return [{op:'dpMoveAttackCounters',fromBench:true,amount:999,after:true}];
+ if(t==='Attach a basic Fire Energy card from your discard pile to 1 of your Dragon Pokémon.')return [{op:'attachZoneEnergy',zone:'discard',basic:true,energy:'Fire',targetType:'Dragon',amount:1,after:true}];
+ if(t==='Discard a card from your hand. If you do, draw 3 cards.')return [{op:'dpAnyHandCost',amount:1},{op:'draw',amount:3}];
+ if(t==="Discard 2 basic Grass Energy cards from your hand. If you can't discard 2 cards in this way, this attack does nothing.")return [{op:'dpHandEnergy',energy:'Grass',basic:true,required:2,max:2}];
+ if(t==='If you played a Future Supporter card from your hand during this turn, this attack does 100 more damage.')return [{op:'sv',kind:'conditional',condition:'futureSupporter',ops:[{op:'addDamage',amount:100}]}];
+ if(m=t.match(/^If you played (?!a )(.+) from your hand during this turn, this attack does (\d+) more damage\.$/))return [{op:'sv',kind:'conditional',condition:'namedSupporter',name:m[1],ops:[{op:'addDamage',amount:+m[2]}]}];
+ if(t==="Switch in 1 of your opponent's Benched Pokémon to the Active Spot. If you do, this attack does 120 damage to the new Active Pokémon. If you didn't play Xerosic's Machinations from your hand during this turn, this attack does nothing.")return [{op:'sv',kind:'conditional',condition:'namedSupporter',name:"Xerosic's Machinations",failZero:true,ops:[{op:'sm',kind:'gustDamage',amount:120}]}];
+ if(t==='Choose basic Lightning Energy cards from your discard pile up to the number of Prize cards your opponent has taken and attach them to your Pokémon in any way you like.')return [{op:'sv',kind:'prizeAttach',energy:'Lightning',after:true}];
+ if(m=t.match(/^This attack does (\d+) damage for each (Grass|Fire|Water|Lightning|Psychic|Fighting|Darkness|Metal) Energy attached to all of your opponent's Pokémon\.$/))return [{op:'exCountDamage',count:'opponentFieldEnergy',energy:m[2],base:0,amount:+m[1]}];
+ if(t==='This attack does 20 damage for each damage counter on all of your Benched Fighting Pokémon.')return [{op:'sv',kind:'countDamage',count:'ownBenchCounters',energy:'Fighting',amount:20}];
+ if(t==='If Flamigo is on your Bench, this attack also does 60 damage to 1 of your opponent\'s Benched Pokémon. (Don\'t apply Weakness and Resistance for Benched Pokémon.)')return [{op:'sv',kind:'conditional',condition:'namedBench',name:'Flamigo',ops:[{op:'benchDamage',amount:60,after:true}]}];
+ if(t==='Look at the top 5 cards of your deck. You may attach any number of basic Energy cards you find there to this Pokémon. Shuffle the other cards back into your deck.')return [{op:'swsh',kind:'topEnergyAttach',count:5,energies:['Grass','Fire','Water','Lightning','Psychic','Fighting','Darkness','Metal','Fairy'],self:true,after:true}];
+ if(t==='Flip a coin for each Darkness Pokémon you have in play. This attack does 60 damage for each heads.')return [{op:'sv',kind:'typedFieldCoins',energy:'Darkness',amount:60}];
+ return null;
+};

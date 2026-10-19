@@ -1,0 +1,1 @@
+const fs=require('fs'),sets=require('../card-sources/pokemon-tcg-data-master/sets/en.json');console.log(sets.filter(s=>/2023|2024/.test(s.name)&&/McDonald/.test(s.name)));for(const id of ['zsv10pt5','rsv10pt5']){const d=require('../card-sources/pokemon-tcg-data-master/cards/en/'+id+'.json');console.log(id,d.length,d[2]);}

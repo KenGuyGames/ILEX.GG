@@ -1,10 +1,10 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "1.15.0",
+  "version": "1.18.0-private.1",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
-    "build:rules": "node work/desktop-build/build-rules.cjs",
+    "build:rules": "node work/desktop-build/build-rules.cjs && node work/desktop-build/release-engine-encoding.cjs",
     "test:rules": "node work/desktop-build/wotc-tests.cjs --focused",
     "test:ex": "node work/desktop-build/ex-tests.cjs --focused",
     "test:dp": "node work/desktop-build/dp-tests.cjs",
@@ -13,7 +13,12 @@
     "test:bot": "node work/desktop-build/bot-tests.cjs",
     "test:xy": "node work/desktop-build/xy-full-tests.cjs",
     "test:sm": "node work/desktop-build/sm-tests.cjs",
-    "test:realistic": "node work/desktop-build/realistic-bot-tests.cjs"
+    "test:realistic": "node work/desktop-build/realistic-bot-tests.cjs",
+    "test:swsh": "node work/desktop-build/swsh-tests.cjs",
+    "test:evosoda": "node work/desktop-build/evosoda-tests.cjs",
+    "test:psychic": "node work/desktop-build/psychic-embrace-tests.cjs",
+    "test:multiplayer": "node work/desktop-build/private-match-tests.cjs",
+    "test:protocol": "node work/desktop-build/private-peer-tests.cjs"
   },
   "devDependencies": {
     "electron": "44.7.0"

@@ -1,7 +1,7 @@
 import { StoreLike, State } from '../../../game';
 import { CardType, EnergyType } from '../../../game/store/card/card-types';
 import { EnergyCard } from '../../../game/store/card/energy-card';
-import { DealDamageEffect } from '../../../game/store/effects/attack-effects';
+import { ApplyWeaknessEffect } from '../../../game/store/effects/attack-effects';
 import { CheckProvidedEnergyEffect } from '../../../game/store/effects/check-effects';
 import { Effect } from '../../../game/store/effects/effect';
 import { IS_SPECIAL_ENERGY_BLOCKED } from '../../../game/store/prefabs/prefabs';
@@ -31,11 +31,11 @@ export class DoubleTurboEnergy extends EnergyCard {
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
 
-    if ((effect instanceof DealDamageEffect) && effect.source.cards.includes(this)) {
+    if ((effect instanceof ApplyWeaknessEffect) && effect.damage > 0 && effect.source.cards.includes(this)) {
       if (IS_SPECIAL_ENERGY_BLOCKED(store, state, effect.player, this, effect.source)) {
         return state;
       }
-      effect.damage -= 20;
+      if(effect.target===effect.opponent.active||effect.opponent.bench.includes(effect.target))effect.damage=Math.max(0,effect.damage-20);
     }
 
     if (effect instanceof CheckProvidedEnergyEffect && effect.source.cards.includes(this)) {

@@ -1,0 +1,21 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),crypto=require('crypto'),root=path.resolve(__dirname,'../..'),candidate=path.join(root,'work/dp-desktop-candidate'),app=path.join(candidate,'resources/app'),hook=path.join(app,'self-test.cjs'),dir=path.join(root,'work/swsh-visual-review'),native=path.join(root,'work/desktop-swsh-tests-v5'),pause=ms=>new Promise(r=>setTimeout(r,ms));
+const body=`const fs=require('fs'),path=require('path'),crypto=require('crypto');module.exports=async(w,dir)=>{
+const run=s=>w.webContents.executeJavaScript(s,true),pause=ms=>new Promise(r=>setTimeout(r,ms));
+for(let i=0;i<200&&!await run("typeof rulesReady!=='undefined'&&rulesReady&&cards.length>23000");i++)await pause(100);
+w.setMinimumSize(0,0);w.setContentSize(1280,900);await run('window.swshNativeCapture=true;');
+await run(fs.readFileSync(path.join(__dirname,'swsh-native-tests.js'),'utf8'));
+const results=[];
+for(const first of [139,155,159,163,215,287]){
+await run('(()=>{const p=rulesMatch.store.state.players[0],R=RulesMatch.R;p.active.cards=[];for(const i of [1,2,3,0]){const id="swshp-SWSH"+('+first+'+i),c=R.CardManager.getInstance().getCardByName(ruleMap[id]);c._labId=id;c.id=-(930000+i);c._swshUnionInPlay=true;p.active.cards.push(c);}play();openCardActions(p.id,0,true);})()');
+await pause(700);
+const r=await run('(()=>{const im=cardActionDialog.querySelector("img"),rect=im.getBoundingClientRect(),regions=[...cardActionDialog.querySelectorAll(".scan-action")].map(b=>{const r=b.getBoundingClientRect();return {label:b.getAttribute("aria-label"),inside:r.left>=rect.left-1&&r.right<=rect.right+1&&r.top>=rect.top-1&&r.bottom<=rect.bottom+1};});return {passed:cardActionDialog.open&&im.complete&&im.naturalWidth>0&&regions.length>=4&&regions.every(r=>r.inside),regions};})()');r.first=first;results.push(r);if(!r.passed)throw Error(JSON.stringify(r));fs.writeFileSync(path.join(dir,'enlarged-'+first+'.png'),(await w.webContents.capturePage()).toPNG());await run('cardActionDialog.close()');}
+for(const name of ['mobile.css','mobile-landscape.css'])await w.webContents.insertCSS(fs.readFileSync(path.join(${JSON.stringify(root)},'work/android-build',name),'utf8'));
+await run(fs.readFileSync(path.join(${JSON.stringify(root)},'work/android-build/mobile.js'),'utf8'));w.setContentSize(640,312);await run('document.documentElement.classList.add("ilex-mobile");document.body.classList.add("landscape-table");window.dispatchEvent(new Event("resize"));play();openCardActions(rulesMatch.store.state.players[0].id,0,true);');await pause(700);
+const mobile=await run('(()=>{const r=cardActionDialog.getBoundingClientRect();return {passed:cardActionDialog.open&&r.left>=0&&r.top>=0&&r.right<=innerWidth+1&&r.bottom<=innerHeight+1,width:innerWidth,height:innerHeight,dialog:{x:r.x,y:r.y,width:r.width,height:r.height}}})()');if(!mobile.passed)throw Error(JSON.stringify(mobile));fs.writeFileSync(path.join(dir,'enlarged-mobile-640.png'),(await w.webContents.capturePage()).toPNG());
+fs.writeFileSync(path.join(dir,'visual-review.json'),JSON.stringify({passed:true,results,mobile,engineSha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname,'ui/rules-engine.js'))).digest('hex')},null,2));
+};`;
+(async()=>{
+ for(let i=0;i<360;i++){const f=path.join(native,'swsh-native-tests.json');if(fs.existsSync(path.join(native,'failure.txt')))throw Error(fs.readFileSync(path.join(native,'failure.txt'),'utf8'));if(fs.existsSync(f)&&JSON.parse(fs.readFileSync(f,'utf8')).restored)break;if(i===359)throw Error('Native gate timeout');await pause(5000);}
+ fs.mkdirSync(dir,{recursive:true});const backup=fs.readFileSync(hook),env={...process.env};delete env.ELECTRON_RUN_AS_NODE;
+ try{fs.writeFileSync(hook,body);const fd=fs.openSync(path.join(dir,'run.log'),'w');const code=await new Promise(resolve=>{const child=cp.spawn(path.join(candidate,'ILEX.GG.exe'),['--no-sandbox','--self-test',dir],{cwd:candidate,env,windowsHide:true,stdio:['ignore',fd,fd]});child.on('exit',resolve);});fs.closeSync(fd);if(code!==0)throw Error(fs.existsSync(path.join(dir,'failure.txt'))?fs.readFileSync(path.join(dir,'failure.txt'),'utf8'):'Visual runner '+code);console.log('All six enlarged composites and small landscape view pass');}finally{fs.writeFileSync(hook,backup);}
+})().catch(e=>{console.error(e.stack);process.exitCode=1});

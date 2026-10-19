@@ -1,0 +1,12 @@
+{
+  "fix": "New-match setup no longer silently disables Start/New match; restore current saved format and exact deck choices when available; show missing format/deck feedback and surface setup errors.",
+  "evidence": "work/new-match-fixed-release-native/result.json",
+  "windowsLooseAppUpdated": true,
+  "archivesUpdated": false,
+  "androidUpdated": false,
+  "engineChanged": false,
+  "files": {
+    "rules-ui.js": "0280dd607d3be6d48930d53966d967ba1a4b969c2935489ca50ac755b0e98e2c",
+    "bot-ui.js": "6a7a37e6ab4d24efc384f31a23ac1134ea56715fb4b170bcf457a4ceb9afbef6"
+  }
+}

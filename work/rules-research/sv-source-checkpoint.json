@@ -1,0 +1,14 @@
+{
+  "status": "complete-released-finite-validation",
+  "scope": "Black & White onward through complete Scarlet & Violet; historical profiles retained; Unlimited deferred",
+  "catalogPrintings": 3694,
+  "sourceCandidates": 3694,
+  "uncompiled": 0,
+  "missingText": 0,
+  "validatedReleasePrintings": 3694,
+  "candidateEngineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "releasedEngineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369",
+  "releasedEngineUnchanged": false,
+  "evidence": "sv-final-release-evidence.json",
+  "limits": "Finite expected-result, attack, branch and bounded-game checks do not prove every possible state. Passive/conditional unavailable Ability and Trainer fixtures remain explicit. Standard TCG catalogs exclude separate My First Battle ruleset and finish/stamp duplicates. Reverse scan acquisition remains incomplete. No newly maintained Expanded banlist. Physical Android acceptance remains pending."
+}

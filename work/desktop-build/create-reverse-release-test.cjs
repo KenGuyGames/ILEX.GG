@@ -1,0 +1,1 @@
+const fs=require('fs');let s=fs.readFileSync('work/desktop-build/reverse-finish-native.cjs','utf8').replace('work/dp-desktop-candidate','outputs/ILEX.GG-win32-x64').replace('work/reverse-finish-native','work/reverse-finish-release-native');s=s.replace(/for\(const name of \['index.html'[^\n]+\n/,'');fs.writeFileSync('work/desktop-build/reverse-finish-release-native.cjs',s);

@@ -35,6 +35,15 @@ export class ChooseAttackPrompt extends Prompt<Attack> {
       blockedMessage: GameMessage.NOT_ENOUGH_ENERGY,
       blocked: []
     }, options);
+    this.cards.forEach((card, index) => {
+      if ((card as any)._swshUnionPart !== undefined && (card as any)._swshUnionInPlay === false) {
+        for (const attack of card.attacks) this.options.blocked.push({ index, attack: attack.name });
+      }
+    });
+    if (!this.cards.some((card, index) => card.attacks.some(attack =>
+      !this.options.blocked.some(block => block.index === index && block.attack === attack.name)))) {
+      this.options.allowCancel = true;
+    }
 
   }
 

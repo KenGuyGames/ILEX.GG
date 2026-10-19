@@ -15,6 +15,8 @@
     "sm1-170 Darkness Energy stays Basic and has no Special Energy effects",
     "sm1-171 Metal Energy stays Basic and has no Special Energy effects",
     "sm3-168 Darkness Energy stays Basic and has no Special Energy effects",
+    "swsh7-236 Darkness Energy stays Basic and has no Special Energy effects",
+    "swsh7-237 Metal Energy stays Basic and has no Special Energy effects",
     "xy1-138 Darkness Energy stays Basic and has no Special Energy effects",
     "xy1-139 Metal Energy stays Basic and has no Special Energy effects",
     "xy12-97 Darkness Energy stays Basic and has no Special Energy effects",
@@ -64,6 +66,8 @@
     "sm1-170",
     "sm1-171",
     "sm3-168",
+    "swsh7-236",
+    "swsh7-237",
     "xy1-138",
     "xy1-139",
     "xy12-97",
@@ -96,5 +100,5 @@
     "tk-bw-z-8",
     "tk-bw-z-9"
   ],
-  "engineSha256": "7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5"
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
 }

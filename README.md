@@ -1,23 +1,54 @@
 # ILEX.GG
 
-Pokémon TCG simulator for **Windows and Android**, with historical rules automation, deck building, local/bot play, custom cards, and a pack-opening simulator.
+Pokémon TCG simulator for **Windows and Android**, with historical rules automation, deck building, local/bot play, custom cards and pack opening.
 
-## Download 1.15.0
+## Multiplayer is now in beta
 
-| Platform | Download | Requirements |
+**Windows multiplayer beta: 1.18.0-private.1.** Invite a trusted friend using invite/response codes, confirm decks and Ready, and play with host-authoritative rules. Undo pauses play and requires the opponent's approval. Reconnect and separate local host recovery are included.
+
+**Real two-PC/Internet connectivity still needs acceptance testing.** Automated two-window tests used simulated channel delivery. Direct WebRTC uses free STUN; there is no TURN relay, so restrictive networks may not connect. The host can inspect full game state. Android multiplayer, custom-card networking and public matchmaking are not included.
+
+[Download Windows multiplayer beta](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Private-Windows.zip) · [Invite, play and reconnect guide](verification/ILEX.GG-Private-Guide.md)
+
+## Current downloads
+
+| Platform | Download | Version |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.15.0-build-2026-10-18/ILEX.GG-Windows.zip) — about 239 MiB | 64-bit Windows; extract the entire ZIP and run `ILEX.GG.exe` |
-| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.15.0-build-2026-10-18/ILEX.GG-Android.apk) — about 78 MiB | Android 8.0+ and a current Android System WebView/Chrome |
+| Windows multiplayer beta | [ILEX.GG-Private-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Private-Windows.zip) — about 269 MiB | 1.18.0-private.1; extract the entire ZIP, close any running ILEX.GG and run ILEX.GG.exe |
+| Android local/bot play | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.18.0-private.1-build-2026-10-19/ILEX.GG-Android.apk) — about 130 MiB | 1.17.0-android.25 / code 25; Android 8+ with current WebView; no multiplayer |
 
-Windows includes its runtime; Node.js and Python are not needed to play. Android is a signed universal APK (`gg.ilex.app`, version `1.15.0-android.14`, versionCode 14), distributed directly here rather than through the Play Store. Install over an existing ILEX.GG Android installation to keep its workspace and cache; do not uninstall first.
+Windows includes its runtime. Android retains the original signing certificate: install over the previous app to keep workspace/cache; export first if needed and do not uninstall. Physical Android device/emulator acceptance is still pending. This is a direct APK release.
 
-[Android installation and controls](verification/ILEX.GG-Android-Install.md) · [Checksums and verification reports](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.15.0-build-2026-10-18) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases)
+Card images download as viewed and remain cached. **Download card images** caches the full collection (about 2.5 GB), with pause/resume. Android bundles 395 startup/demo scans. Windows uses the existing `%APPDATA%\TCG Lab` workspace; online recovery is stored separately. Export/import transfers workspace JSON and replaces the destination workspace. There is no automatic cloud synchronization.
 
-Card images download as viewed and remain cached. Use **Download card images** on the main menu to cache the full collection (about 2.5 GB), with pause/resume. Uncached images need internet. Windows retains the existing `%APPDATA%\TCG Lab` workspace and image cache. Android bundles 246 verified startup/Base–Fossil/SM demonstration images; other images use its private verified cache.
+[Android installation](verification/ILEX.GG-Android-Install.md) · [Release and checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
 
-To move decks/saves between platforms, **Export workspace**, transfer the JSON, then **Import workspace** on the other device. Import replaces that device's workspace, so export it first if needed. There is no automatic cloud synchronization.
+## What's new since 1.15.0
 
-## What's new since 1.12.0
+- **Multiplayer beta for Windows:** invite/response codes, legal deck/format checks, both-player readiness, filtered guest views, native card controls, opponent-approved Undo, reconnect and hosted-match recovery. Both players need the same beta build. Real network acceptance remains pending as described above.
+- **Complete Sword & Shield:** 3,715/3,715 printings, zero pending across 28 catalogs, including all 307 promos, Sword & Shield through Crown Zenith, special expansions/subsets, Futsal and McDonald's 2021–22. Includes V-UNION composites and enlarged landscape actions.
+- **Complete Scarlet & Violet:** 3,694/3,694 standard English TCG printings, zero pending across 20 catalogs, through Black Bolt/White Flare, special expansions, SVP001–225 and SVP500, McDonald's 2023–24 and SVE Energy. Battle Academy unique promos are included. My First Battle's separate simplified ruleset is excluded from standard 60-card automation.
+- **Card repairs:** Custom Catcher's single/pair choices, Lysandre Labs' Tool suppression, Puzzle of Time with an empty deck and paired recovery, Shining Legends Pokémon Breeder's draw/heal effect, and Jamming Net/Head Ringer opponent targeting and original ownership. Evosoda now uses the actual first-turn window; Gardevoir ex Psychic Embrace accepts typed Psychic Energy, including the corrected SVE Basic Energy mappings, with damage/nonlethal restrictions retained.
+- **Table and packs:** GX/VSTAR used markers and new-match setup fixes; era-correct Basic Energy artwork, including the 30th Celebration MEE009–016 exception. Existing saved pulls are preserved.
+- **209 verified finish-specific images:** 100 Legendary Collection reverses (original low-resolution watermarks retained) and 109 Prismatic Poké Ball/Master Ball images, with an Original finish images filter and source credits. Acquisition remains incomplete: 13,378 cataloged finish entries still lack verified images; other supported finishes use cosmetic reconstruction.
+- **Updated Android:** same current card engine and local UI fixes, 395 bundled scans and 209 finish images. Android multiplayer is deferred. Earlier WOTC/EX/DP/HGSS/BW/XY/SM, bots, packs, music, image cache and UI remain available.
+
+New interaction validation is scoped to **Black & White onward through Scarlet & Violet**; historical profiles remain available and Unlimited is deferred. No newly maintained official Expanded banlist is included. Modern pack contents do not imply automation beyond the implemented eras.
+
+### Recorded validation and limits
+
+| Area | Evidence |
+| --- | --- |
+| Multiplayer | 15 core checks, four simulated protocol checks, 20 native simulated two-window checks per launch; actual RTC connection and external PCs unverified |
+| SWSH baseline | 67 expected-result checks, 4,869 printed attacks, 1,484 branch cases, 24 bounded games / 2,785 decisions with replay/Undo |
+| SV baseline | 163 focused checks, 4,808 Pokémon attacks plus six TM attacks, 7,312 branch cases, 24 bounded games / 2,161 decisions with replay/Undo |
+| Latest engine fixes | 24 Evosoda and 72 Psychic Embrace focused checks; genuine replay/Undo and native fresh/restored checks recorded |
+| Android | 128 mobile Chromium and 38 package checks recorded for Psychic Embrace; original certificate retained; physical-device acceptance pending |
+| Assets | 23,838 scan records and 209 verified finish-specific images retained |
+
+The broad SWSH/SV baseline reports retain their original engine hashes. The beta and Android use the later fixed engine `d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d`; historical broad results have not been relabeled as new-hash passes. Finite fixtures and bounded games do not prove all possible interactions. See `verification/ILEX.GG-Private-verification.json`, `work/rules-research/private-preview-release.json`, `sv-source-validation.json`, `swsh-source-validation.json`, `evosoda-fix.json` and `psychic-embrace-fix.json`.
+
+## Earlier 1.15.0 changes (historical release notes)
 
 ### Complete XY and Sun & Moon eras
 
@@ -146,25 +177,20 @@ Current desktop and Android layouts (Android captures use Chromium touch emulati
 
 ## Build and run the Windows source
 
-Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies, Electron and uncached images. Other desktop operating systems are not verified.
+Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies and uncached artwork. Other desktop operating systems are not verified.
 
-Download **Source code (zip)** from the [1.15.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.15.0-build-2026-10-18), extract it, and open PowerShell in the folder containing `package.json`. Or clone:
+Download **Source code (zip)** from the [multiplayer beta release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19), extract it, and open PowerShell in the folder containing package.json. Or clone:
 
 ```powershell
-git clone --branch v1.15.0-build-2026-10-18 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+git clone --branch v1.18.0-private.1-build-2026-10-19 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
 cd ILEX.GG
-```
-
-Install and launch:
-
-```powershell
 npm install
 npm start
 ```
 
-Keep the terminal open while the app runs. Python and a copied scans folder are not required to launch. Normal source launches use the existing Windows workspace; export it before experimenting with source changes.
+Keep the terminal open while playing. Normal launches use the existing Windows workspace; export it before source experiments. The engine is included; no copied scan folder or Python is needed to launch.
 
-The ready-to-run engine is included. To rebuild the checked-in TypeScript:
+Rebuild the checked-in TypeScript and launch:
 
 ```powershell
 npm ci --prefix work/desktop-build
@@ -172,9 +198,9 @@ npm run build:rules
 npm start
 ```
 
-Run commands sequentially. The rebuilt engine must match SHA-256 `7b9381016ff3d3a469b885342535aba901e257527ccead6c86d1325175d559b5`, recorded in `verification/source-manifest-1.15.0.json`.
+The build preserves the original packaged engine encoding using an explicit, SHA-256 guarded compatibility step (`release-engine-encoding.json`); it refuses changed compiler output. The rebuilt engine must match SHA-256 `d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d`, recorded in `verification/source-manifest-1.18.0-private.1.json`.
 
-### Run checks
+Run checks sequentially:
 
 ```powershell
 npm run test:rules
@@ -184,14 +210,17 @@ npm run test:hgss
 npm run test:bw
 npm run test:xy
 npm run test:sm
+npm run test:swsh
+npm run test:evosoda
+npm run test:psychic
+npm run test:multiplayer
+npm run test:protocol
 npm run test:realistic
 npm run test:bot
 node work/desktop-build/card-cache-tests.cjs
 ```
 
-`test:rules` runs the focused shared WOTC suite used by the current release. The earlier full WOTC enumeration remains historical baseline evidence; run `node work/desktop-build/wotc-tests.cjs` explicitly for that broader, slower suite.
-
-The [1.15.0 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-1.15.0.yml) checks installation, normal startup, the engine rebuild, README test commands and native desktop interactions on a clean Windows runner.
+`test:rules` is the focused shared WOTC suite. Multiplayer/protocol tests simulate delivery and do not certify real networking. Recorded development evidence is listed above; publication verification is tracked in the [beta source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-beta.yml).
 
 ### Retained 1.12.0 baseline verification
 
@@ -213,7 +242,7 @@ Recorded native desktop release checks used isolated profiles and test-only no-s
 
 Android source and rebuild notes are in [work/android-build/README.md](work/android-build/README.md). Rebuilding requires JDK 17, the verified official Android SDK tools and Python; it is separate from the Windows Node.js instructions. The original signing key and password are deliberately excluded. A build signed with a different key cannot update the installed release in place.
 
-`package-sm.py` is the current desktop verification/packaging script. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
+`package-private.py` packages the separate Windows preview; `package-sv.py` is the stable SV packager. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
 
 ## Earlier release trailer
 
@@ -224,6 +253,3 @@ Android source and rebuild notes are in [work/android-build/README.md](work/andr
 ## Credits and rights
 
 Unofficial fan project. Pokémon names, card text and artwork belong to their respective owners. Modified Twinleaf rules-engine code retains its MIT notice at `work/desktop/ui/rules-engine-LICENSE.txt`. Card metadata originated from pokemon-tcg-data; booster artwork sources are documented in PACK-SOURCES.md. No new license is granted for original ILEX.GG code or third-party assets by this upload.
-
-
-

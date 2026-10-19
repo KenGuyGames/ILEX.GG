@@ -1,0 +1,31 @@
+{
+  "status": "windows-private-preview-real-network-unverified",
+  "version": "1.18.0-private.1",
+  "engineSha256": "d31da38c530531718e546471fbf59ae49714b70a2bc02133132385b322a0378d",
+  "engineChangedFromFrozenRelease": false,
+  "coreChecks": 15,
+  "protocolChecks": 4,
+  "simulatedTwoWindowChecks": [
+    20,
+    20
+  ],
+  "inheritedFreshAndRestored": true,
+  "verifiedScans": 23838,
+  "retainedFinishImages": 209,
+  "opponentApprovalRequiredForUndo": true,
+  "paidInfrastructureRequired": false,
+  "actualRTCConnectionVerified": false,
+  "externalWindowsPCsTested": false,
+  "networkEnvironment": {
+    "UDP_loopback": "timed out",
+    "TCP_loopback": "EACCES",
+    "actualWebRTCTrials": "work/private-native-v1 through v8 failed; diagnostics retained"
+  },
+  "limits": [
+    "Real two-PC and Internet/NAT acceptance pending",
+    "No TURN relay; restrictive networks may not connect",
+    "Trusted host can inspect full state",
+    "Custom-card networking, Android multiplayer and matchmaking deferred",
+    "Unlimited interactions remain deferred"
+  ]
+}

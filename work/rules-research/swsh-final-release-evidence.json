@@ -1,0 +1,221 @@
+{
+  "passed": true,
+  "version": "1.16.0",
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b",
+  "printings": 3715,
+  "pending": 0,
+  "sets": [
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "printings": 307,
+      "pending": 0
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "printings": 216,
+      "pending": 0
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "printings": 209,
+      "pending": 0
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "printings": 201,
+      "pending": 0
+    },
+    {
+      "id": "fut2020",
+      "name": "Pokémon Futsal 2020",
+      "printings": 5,
+      "pending": 0
+    },
+    {
+      "id": "swsh3.5",
+      "name": "Champion's Path",
+      "printings": 80,
+      "pending": 0
+    },
+    {
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "printings": 203,
+      "pending": 0
+    },
+    {
+      "id": "2021swsh",
+      "name": "McDonald's Collection 2021",
+      "printings": 25,
+      "pending": 0
+    },
+    {
+      "id": "swsh4.5",
+      "name": "Shining Fates",
+      "printings": 73,
+      "pending": 0
+    },
+    {
+      "id": "swsh4.5sv",
+      "name": "Shining Fates Shiny Vault",
+      "printings": 122,
+      "pending": 0
+    },
+    {
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "printings": 183,
+      "pending": 0
+    },
+    {
+      "id": "swsh6",
+      "name": "Chilling Reign",
+      "printings": 233,
+      "pending": 0
+    },
+    {
+      "id": "swsh7",
+      "name": "Evolving Skies",
+      "printings": 237,
+      "pending": 0
+    },
+    {
+      "id": "cel25cc",
+      "name": "Celebrations Classic Collection",
+      "printings": 25,
+      "pending": 0
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
+      "printings": 25,
+      "pending": 0
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "printings": 284,
+      "pending": 0
+    },
+    {
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "printings": 30,
+      "pending": 0
+    },
+    {
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "printings": 186,
+      "pending": 0
+    },
+    {
+      "id": "swsh10",
+      "name": "Astral Radiance",
+      "printings": 216,
+      "pending": 0
+    },
+    {
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "printings": 30,
+      "pending": 0
+    },
+    {
+      "id": "swsh10.5",
+      "name": "Pokémon GO",
+      "printings": 88,
+      "pending": 0
+    },
+    {
+      "id": "2022swsh",
+      "name": "McDonald's Collection 2022",
+      "printings": 15,
+      "pending": 0
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "printings": 217,
+      "pending": 0
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "printings": 30,
+      "pending": 0
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
+      "printings": 215,
+      "pending": 0
+    },
+    {
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "printings": 30,
+      "pending": 0
+    },
+    {
+      "id": "swsh12.5",
+      "name": "Crown Zenith",
+      "printings": 160,
+      "pending": 0
+    },
+    {
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "printings": 70,
+      "pending": 0
+    }
+  ],
+  "printedPokemonAttacks": 4869,
+  "trainerToolAttacks": 7,
+  "branchCases": 1484,
+  "focusedChecks": 67,
+  "games": 24,
+  "decisions": 2785,
+  "sharedSuites": 16,
+  "nativeFreshAndRestored": true,
+  "scansVerified": 23804,
+  "additionalScansVerified": 0,
+  "sourceFilesVerified": 7651,
+  "windows": {
+    "exeSha256": "e65c48f67ab4eeece9fa414c3579d78c053ee1c173c47a1e8cd576b8cbb5fba3",
+    "archives": [
+      {
+        "name": "ILEX.GG-Windows.zip",
+        "bytes": 256628109,
+        "sha256": "9f9627959e6f2a8c904b2ad7d25bab989b538fb8a3f22745d539398292deb704",
+        "crcPassed": true
+      },
+      {
+        "name": "ILEX.GG-Windows-Offline.zip",
+        "bytes": 2871659326,
+        "sha256": "c866947879244349705623ace27f9928ad842b8f40bb39428e969bb7a580a857",
+        "crcPassed": true
+      }
+    ]
+  },
+  "android": {
+    "version": "1.16.0-android.19",
+    "versionCode": 19,
+    "sha256": "d712ba672908885121f7ea20b20688376bf1e6b55f225c60d4a7dff9547bd4e2",
+    "sameSigningCertificateAsPrevious": true,
+    "mobileChecks": 71,
+    "apkChecks": 35,
+    "physicalDeviceTested": false
+  },
+  "scope": "Black & White onward through complete Sword & Shield; historical profiles preserved; Unlimited deferred",
+  "limits": "Finite expected-result, smoke, branch and bounded-game checks do not prove every possible interaction. Unavailable Ability/Trainer fixtures include passive and conditional effects; focused tests cover selected positive conditions. No new official Expanded banlist is supplied. Desktop/mobile packaging and Android device acceptance are separate.",
+  "completedAt": "2026-10-19T05:15:05.894Z",
+  "crossEraChecks": 9,
+  "toolPowerChecks": 2,
+  "bridgeTargetChecks": 4,
+  "currentBotCoreChecks": 14
+}

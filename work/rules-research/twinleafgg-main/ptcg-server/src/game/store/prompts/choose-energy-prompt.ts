@@ -10,7 +10,7 @@ export interface ChooseEnergyOptions {
   allowCancel: boolean;
 }
 
-export type EnergyMap = { card: Card, provides: CardType[] }
+export type EnergyMap = { card: Card, provides: CardType[], providedGroups?: CardType[][] }
 
 export class ChooseEnergyPrompt extends Prompt<EnergyMap[]> {
 
@@ -26,6 +26,7 @@ export class ChooseEnergyPrompt extends Prompt<EnergyMap[]> {
     options?: Partial<ChooseEnergyOptions>
   ) {
     super(playerId);
+    this.energy = StateUtils.physicalEnergyMap(this.energy);
 
     // Default options
     this.options = Object.assign({}, {
@@ -42,6 +43,7 @@ export class ChooseEnergyPrompt extends Prompt<EnergyMap[]> {
       return null;
     }
     const energy: EnergyMap[] = this.energy;
+    if(new Set(result).size!==result.length||result.some(index=>!Number.isInteger(index)||index<0||index>=energy.length))throw new Error(GameMessage.INVALID_PROMPT_RESULT);
     return result.map(index => energy[index]);
   }
 
@@ -49,6 +51,7 @@ export class ChooseEnergyPrompt extends Prompt<EnergyMap[]> {
     if (result === null) {
       return this.options.allowCancel;
     }
+    if(new Set(result.map(entry=>entry.card)).size!==result.length)return false;
     if (!StateUtils.checkExactEnergy(result, this.cost)) {
       return false;
     }
@@ -56,66 +59,11 @@ export class ChooseEnergyPrompt extends Prompt<EnergyMap[]> {
   }
 
   private getCostThatCanBePaid(): CardType[] {
-    const result: CardType[] = this.cost.slice();
-    const provides = this.energy.slice();
-    const costs: CardType[] = this.cost.filter(c => c !== CardType.COLORLESS);
-    const colorlessCount = result.length - costs.length;
-
-    while (costs.length > 0 && provides.length > 0) {
-      const cost = costs[0];
-      let index = provides.findIndex(p => StateUtils.providesMatchesType(p.provides, cost));
-
-      if (index === -1) {
-        // concrete energy not found, try to use rainbow energies
-        index = provides.findIndex(p => p.provides.includes(CardType.ANY));
-      }
-
-      if (index !== -1) {
-        const provide = provides[index];
-        provides.splice(index, 1);
-
-        if (StateUtils.isChoosableProvides(provide.provides)) {
-          // Blend/unit: pays at most one typed cost
-          const matchIndex = costs.findIndex(c => StateUtils.providesMatchesType(provide.provides, c));
-          if (matchIndex !== -1) {
-            costs.splice(matchIndex, 1);
-          }
-        } else {
-          provide.provides.forEach(c => {
-            if (c === CardType.ANY && costs.length > 0) {
-              costs.shift();
-            } else {
-              const i = costs.indexOf(c);
-              if (i !== -1) {
-                costs.splice(i, 1);
-              }
-            }
-          });
-        }
-      } else {
-        // Impossible to pay for this cost
-        costs.shift();
-        const costToDelete = result.indexOf(cost);
-        if (costToDelete !== -1) {
-          result.splice(costToDelete, 1);
-        }
-      }
-    }
-
-    let energyLeft = 0;
-    for (const energy of provides) {
-      energyLeft += StateUtils.getProvidesUnitCount(energy.provides);
-    }
-
-    const colorlessToDelete = Math.max(0, colorlessCount - energyLeft);
-    for (let i = 0; i < colorlessToDelete; i++) {
-      const costToDelete = result.indexOf(CardType.COLORLESS);
-      if (costToDelete !== -1) {
-        result.splice(costToDelete, 1);
-      }
-    }
-
-    return result;
+    const payable: CardType[] = [];
+    // Prefer printed typed requirements, then spend any remaining units on C.
+    const ordered=[...this.cost.filter(type=>type!==CardType.COLORLESS),...this.cost.filter(type=>type===CardType.COLORLESS)];
+    for(const type of ordered)if(StateUtils.checkEnoughEnergy(this.energy,[...payable,type]))payable.push(type);
+    return payable;
   }
 
 }

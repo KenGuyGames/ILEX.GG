@@ -1,9 +1,21 @@
-import {CardTag,CardType,EnergyType,GameError,GameMessage,ChooseCardsPrompt,ShuffleDeckPrompt} from './game';
-import {AttackEffect,UseAttackEffect,PowerEffect} from './game/store/effects/game-effects';
+import {CardTag,CardType,EnergyType,TrainerType,GameError,GameMessage,ChooseCardsPrompt,ShuffleDeckPrompt} from './game';
+import {AttackEffect,UseAttackEffect,PowerEffect,HealEffect} from './game/store/effects/game-effects';
+import {TrainerEffect} from './game/store/effects/play-card-effects';
 import {CheckPokemonAttacksEffect,CheckPokemonTypeEffect} from './game/store/effects/check-effects';
 import {IS_TOOL_BLOCKED,IS_ABILITY_BLOCKED,FLIP_UNTIL_TAILS_AND_COUNT_HEADS,MOVE_CARDS,DRAW_CARDS} from './game/store/prefabs/prefabs';
 import {exAttachedEnergy} from './tcg-lab-ex-attachments';
 export function installSmCard(card:any,record:any){
+ // Shining Legends shares a name, but no gameplay effect, with Base Set Breeder.
+ if(['sm3.5-63','sm3.5-73'].includes(record.d.id)){
+  card.trainerType=TrainerType.SUPPORTER;card.text=(record.d.rules||[]).join(' ');
+  card.reduceEffect=function(store:any,state:any,e:any){
+   if(e instanceof TrainerEffect&&e.trainerCard===this){
+    if(!e.player.deck.cards.length)throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
+    DRAW_CARDS(store,state,e.player,2);store.reduceEffect(state,new HealEffect(e.player,e.player.active,20));
+   }
+   return state;
+  };
+ }
  card._smId=record.d.id;
  if(card.powers?.some((p:any)=>['Cat Walk','Dance of Tribute'].includes(p.name))){const reduce=card.reduceEffect;card.reduceEffect=function(store:any,state:any,e:any){if(e instanceof PowerEffect&&e.card===this&&this.powers.includes(e.power)&&['Cat Walk','Dance of Tribute'].includes(e.power.name)){const p=e.player,name=e.power.name;if(IS_ABILITY_BLOCKED(store,state,p,this))throw new GameError(GameMessage.BLOCKED_BY_EFFECT);if(!(p._smKos||[]).some((ko:any)=>ko.turn===(p._dpLastOpponentTurn??state.turn-1)&&ko.opponentTurn&&(name!=='Cat Walk'||ko.gxEx))||p._smAbilityTurns?.[name]===state.turn||!p.deck.cards.length)throw new GameError(GameMessage.CANNOT_USE_POWER);(p._smAbilityTurns??={})[name]=state.turn;if(name==='Dance of Tribute'){DRAW_CARDS(store,state,p,3);return state;}return store.prompt(state,new ChooseCardsPrompt(p,GameMessage.CHOOSE_CARD_TO_HAND,p.deck,{},{min:0,max:2,allowCancel:false}),(cards:any)=>{MOVE_CARDS(store,state,p.deck,p.hand,{cards,sourceCard:this,sourceEffect:e});store.prompt(state,new ShuffleDeckPrompt(p.id),(order:any)=>p.deck.applyOrder(order));});}return reduce.call(this,store,state,e);};}
  if(record.powers?.some((p:any)=>p.action==='doubleDrive')||record.d.abilities?.some((p:any)=>p.name==='Double Drive'))card._smDoubleDrive=true;

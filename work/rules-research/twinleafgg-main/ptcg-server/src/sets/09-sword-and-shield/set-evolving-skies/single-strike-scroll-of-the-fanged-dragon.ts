@@ -28,12 +28,12 @@ export class SingleStrikeScrollOfTheFangedDragon extends TrainerCard {
       name: 'Superstrong Slash',
       cost: [F, M, M, C, C],
       damage: 300,
-      text: 'Discard all Energy from this Pokémon.',
+      text: 'Discard all Energy from this PokÃ©mon.',
     },
   ];
 
   public text: string =
-    'The Single Strike Pokémon this card is attached to can use the attack on this card. (You still need the necessary Energy to use this attack.)';
+    'The Single Strike PokÃ©mon this card is attached to can use the attack on this card. (You still need the necessary Energy to use this attack.)';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (
@@ -50,7 +50,7 @@ export class SingleStrikeScrollOfTheFangedDragon extends TrainerCard {
     }
 
     if (effect instanceof AttackEffect && effect.attack === this.attacks[0]) {
-      DISCARD_ALL_ENERGY_FROM_POKEMON(store, state, effect, this);
+      DISCARD_ALL_ENERGY_FROM_POKEMON(store, state, effect, effect.player.active.getPokemonCard()!);
     }
 
     return state;

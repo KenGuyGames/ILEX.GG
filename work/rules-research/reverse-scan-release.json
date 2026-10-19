@@ -1,0 +1,42 @@
+{
+  "status": "partial-acquisition-integrated",
+  "actualFinishImages": 209,
+  "remainingCatalogFinishesWithoutVerifiedImage": 13378,
+  "sourceCounts": {
+    "Charizard.dk Legendary Collection reverse": 100,
+    "TCGplayer Prismatic Pok\u00e9 Ball/Master Ball": 109
+  },
+  "integrity": "work/rules-research/reverse-scan-integrity.json",
+  "native": "work/reverse-scan-native/result.json",
+  "visuallyReviewedSheets": [
+    "lc-sheet-1.jpg",
+    "lc-sheet-2.jpg",
+    "lc-sheet-3.jpg",
+    "lc-sheet-4.jpg",
+    "market-sheet-1.jpg",
+    "market-sheet-2.jpg",
+    "market-sheet-3.jpg",
+    "market-sheet-4.jpg"
+  ],
+  "windowsLooseAppUpdated": true,
+  "archivesUpdated": false,
+  "androidUpdated": false,
+  "engineChanged": false,
+  "retrievalLimitations": [
+    "Shell downloads fail DNS resolution in the restricted environment.",
+    "Browser downloads initially succeeded, then source operations stalled and returned blank pages.",
+    "Metadata-only or normal-image reverse entries were rejected."
+  ],
+  "files": {
+    "index.html": "50e8ba8ffc5ede523b6ef6108f30e9d4e4f68db0434a33282db51d0d7bf3548d",
+    "app.js": "626d0b5604717f4bb121461fbcf9cd622f3ccabd6e3509a1263cf50fd9993c09",
+    "pack-finish-view.js": "24eaafe606fe6a53a7d9aa32a72a7910c9eddda4fdb99de3974edb5f216d64a0",
+    "finish-catalog.js": "134822101f28d3893eec3a2a33b3323034e91dab444bd850b0cc28bc3facaf5a",
+    "finish-scans.js": "312c205cb974b63134ec8203df1a932319ee7afe4b92551dffdddaf2c25eb71c",
+    "packs.js": "2ff6fd1256e6bd9bc98882b9b42cea557e8668e0881803cda58b6a9be131c9ab",
+    "tabletop.js": "3604df4344cc8f3705b88101e3b02e4028e93cf4c3eb1f453e3c75e3d5fa44da"
+  },
+  "nativeRelease": "work/reverse-scan-release-native/result.json",
+  "newMatchRegression": "work/new-match-fixed-release-native/result.json",
+  "releaseScreenshotReviewed": true
+}

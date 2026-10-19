@@ -1,0 +1,11 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Amber Protection prevents opposing Ability counters, conditions and attached Energy movement with suppression controls",
+    "Amber Protection allows attacks and its own player Abilities",
+    "Mentally Calm prevents a whole Pokemon return without losing its Energy, while suppression restores return",
+    "Wide Wall prevents opposing Supporter movement only while Active and does not block Items"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

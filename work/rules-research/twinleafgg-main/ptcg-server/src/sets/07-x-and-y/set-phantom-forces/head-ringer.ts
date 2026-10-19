@@ -91,6 +91,7 @@ export class HeadRinger extends TrainerCard {
         (targets) => {
           if (targets && targets.length > 0) {
             const target = targets[0];
+              (this as any)._ilexToolOwnerId ??= player.id;
             MOVE_CARDS(store, state, player.hand, target, { cards: [this], sourceCard: this });
             target.tools.push(this);
           }

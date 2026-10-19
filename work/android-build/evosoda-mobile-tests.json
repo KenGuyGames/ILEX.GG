@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "Natural later turn retains false exceptional-evolution flag",
+    "Eevee has been in play since an earlier turn",
+    "Playing Evosoda opens search instead of false first-turn error",
+    "Choosing Espeon-GX opens the evolution target prompt",
+    "Eevee evolves through actual UI choices",
+    "Evosoda finishes in discard",
+    "Shuffle and continuation complete",
+    "Saved second-turn evolution restores correctly",
+    "Undo returns before playing Evosoda",
+    "Undo restores Eevee and Evosoda"
+  ]
+}

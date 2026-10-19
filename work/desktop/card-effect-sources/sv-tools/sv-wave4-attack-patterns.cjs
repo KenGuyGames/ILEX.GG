@@ -1,0 +1,28 @@
+module.exports=(a,name)=>{
+ const t=a.text||'',base=parseInt(a.damage)||0;let m;
+ if(m=t.match(/^Discard up to (\d+) Pokémon Tools from your opponent's Pokémon\.$/))return [{op:'xy',kind:'discardTools',amount:+m[1],after:true}];
+ if(m=t.match(/^This attack does (\d+) damage for each card in your opponent's hand\.$/))return [{op:'sv',kind:'countDamage',count:'opponentHand',amount:+m[1]}];
+ if(m=t.match(/^During your opponent's next turn, if this Pokémon is damaged by an attack \(even if (?:it|this Pokémon) is Knocked Out\), put (\d+) damage counters on the Attacking Pokémon\.$/))return [{op:'sv',kind:'retaliate',amount:+m[1]*10,after:true}];
+ if(m=t.match(/^You may discard up to (\d+) (Grass|Fire|Water|Lightning|Psychic|Fighting|Darkness|Metal) Energy from this Pokémon\. This attack does (\d+) more damage for each card you discarded in this way\.$/))return [{op:'sv',kind:'optionalEnergyScale',amount:+m[1],energy:m[2],bonus:+m[3]}];
+ if(m=t.match(/^Shuffle up to (\d+) basic (Grass|Fire|Water|Lightning|Psychic|Fighting|Darkness|Metal) Energy cards from your discard pile into your deck\.$/))return [{op:'dpRecoverGroup',energy:m[2],basic:true,amount:+m[1],after:true}];
+ if(t==='Discard the top card of each player\'s deck. This attack does 100 more damage for each Energy card discarded in this way.')return [{op:'dpBothMillDamage',base,amount:100}];
+ if(t==='If you go second and it\'s your first turn, your opponent\'s Active Pokémon is now Paralyzed.')return [{op:'sv',kind:'conditional',condition:'secondFirstTurn',ops:[{op:'status',conditions:['PARALYZED']}]}];
+ if(t==='Put a Pokémon from your discard pile onto your Bench.')return [{op:'sv',kind:'reviveNamed',amount:1,after:true}];
+ if(t==="Move all Energy from this Pokémon to your Benched Pokémon in any way you like.")return [{op:'dpRedistribute',self:true,bench:true,all:true,after:true}];
+ if(t==='Attach an Energy card from your hand to 1 of your Pokémon.')return [{op:'attachZoneEnergy',zone:'hand',amount:1,after:true}];
+ if(m=t.match(/^Flip (\d+) coins\. Put a number of cards up to the number of heads from your discard pile into your hand\.$/))return [{op:'coinTable',count:+m[1],after:true,branches:Array.from({length:+m[1]+1},(_,n)=>n?[{op:'recover',category:'Any',amount:n,optional:true}]:[])}];
+ if(m=t.match(/^If you have no cards in your hand, this attack does (\d+) more damage, and your opponent's Active Pokémon is now Paralyzed and Poisoned\.$/))return [{op:'sv',kind:'conditional',condition:'emptyHand',ops:[{op:'addDamage',amount:+m[1]},{op:'status',conditions:['PARALYZED','POISONED']}]}];
+ if(t==="If your opponent's Pokémon is Knocked Out by damage from this attack, take 1 more Prize card.")return [{op:'dpExtraPrize',amount:1}];
+ if(m=t.match(/^Discard a (Grass|Fire|Water|Lightning|Psychic|Fighting|Darkness|Metal) Energy from your opponent's Active Pokémon\.$/))return [{op:'dpOpponentEnergy',energy:m[1],amount:1,after:true}];
+ if(m=t.match(/^During your opponent's next turn, if the Defending Pokémon tries to use an attack, your opponent flips (\d+) coins\. If either of them is tails, that attack doesn't happen\.$/))return [{op:'sv',kind:'coinAttackLock',amount:+m[1],after:true}];
+ if(t==="During your opponent's next turn, this Pokémon takes 100 less damage from attacks from Evolution Pokémon (after applying Weakness and Resistance).")return [{op:'reduceNextDamage',amount:100,sourceIsEvolution:true,after:true}];
+ if(t==='If Tulip is in your discard pile, this attack does 70 more damage.')return [{op:'sv',kind:'conditional',condition:'namedDiscard',name:'Tulip',ops:[{op:'addDamage',amount:70}]}];
+ if(m=t.match(/^Search your deck for up to (\d+) cards and put them into your hand\. Then, shuffle your deck\. You may switch this Pokémon with 1 of your Benched Pokémon\.$/))return [{op:'search',category:'Any',amount:+m[1],optional:true,noReveal:true},{op:'switchSelf',optional:true,after:true}];
+ if(m=t.match(/^Put (an|\d+) Energy attached to this Pokémon into your hand\.$/))return [{op:'dpPaySelf',amount:m[1]==='an'?1:+m[1],effectOnly:true,toHand:true,after:true}];
+ if(t==='You may attach any number of basic Metal Energy cards from your hand to your Pokémon in any way you like.')return [{op:'attachZoneEnergy',zone:'hand',energy:'Metal',basic:true,amount:999,optional:true,after:true}];
+ if(m=t.match(/^Flip (\d+) coins\. For each tails, discard an Energy from this Pokémon\.$/))return [{op:'coinTable',count:+m[1],after:true,branches:Array.from({length:+m[1]+1},(_,heads)=>heads===+m[1]?[]:[{op:'dpPaySelf',amount:+m[1]-heads,effectOnly:true}])}];
+ if(t==="This attack does 50 damage to 1 of your opponent's Pokémon. This attack's damage isn't affected by Weakness or Resistance, or by any effects on that Pokémon.")return [{op:'exBypassDefender',weakness:true},{op:'targetDamage',amount:50}];
+ if(t==="If your opponent's Active Pokémon isn't a Pokémon ex, this attack does nothing. This attack's damage isn't affected by Weakness or Resistance.")return [{op:'sv',kind:'conditional',condition:'defenderEx',ops:[],failZero:true},{op:'ignoreWeakness'},{op:'ignoreResistance'}];
+ if(t==='You may search your deck for any number of Fennel cards, reveal them, and put them into your hand. Then, shuffle your deck.')return [{op:'search',category:'Supporter',names:['Fennel'],amount:999,optional:true,reveal:true}];
+ return null;
+};

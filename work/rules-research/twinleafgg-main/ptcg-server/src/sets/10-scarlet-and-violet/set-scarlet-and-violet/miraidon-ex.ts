@@ -88,7 +88,7 @@ export class Miraidonex extends PokemonCard {
           GameMessage.CHOOSE_CARD_TO_PUT_ONTO_BENCH,
           player.deck,
           { superType: SuperType.POKEMON, stage: Stage.BASIC, cardType: [CardType.LIGHTNING] },
-          { min: 0, max: 2, allowCancel: false },
+          { min: 0, max: Math.min(2, slots.length), allowCancel: false },
         ),
         (selectedCards) => {
           cards = selectedCards || [];

@@ -195,6 +195,7 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
         card: trainerCard.name,
         pokemon: pokemonCard.name
       });
+      if (trainerCard.attachesToOpponentsPokemon) (trainerCard as any)._ilexToolOwnerId ??= player.id;
       player.hand.moveCardTo(trainerCard, target);
       // Remove from cards if present (should only be in tools)
       const idx = target.cards.indexOf(trainerCard);
@@ -202,6 +203,7 @@ export function playTrainerReducer(store: StoreLike, state: State, effect: Effec
         target.cards.splice(idx, 1);
       }
       target.tools.push(effect.trainerCard);
+      if(!(effect as any)._exFromDeck)(target as any)._svToolAttachedFromHandTurn=state.turn;
 
       if (!(effect as any)._exFromDeck) { const playTrainer = new TrainerEffect(player, trainerCard, target);
       state = store.reduceEffect(state, playTrainer); }

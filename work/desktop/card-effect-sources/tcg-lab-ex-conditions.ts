@@ -3,7 +3,7 @@ import { CardTag,CardType,Stage,SuperType,StateUtils,SpecialCondition,EnergyType
 import { CheckProvidedEnergyEffect, CheckPokemonTypeEffect,CheckHpEffect,CheckPokemonStatsEffect,CheckRetreatCostEffect } from './game/store/effects/check-effects';
 export function exCondition(store:any,state:any,e:any,op:any){
  const p=e.player,o=e.opponent,source=e.source,defender=o.active.getPokemonCard();
- const units=(owner:any,list:any)=>{const check=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,check);return check.energyMap.reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides),0);};
+ const units=(owner:any,list:any)=>{const check=new CheckProvidedEnergyEffect(owner,list);store.reduceEffect(state,check);return check.energyMap.reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides,x),0);};
  switch(op.condition){
  case 'dpSelfCountersAtLeast':return source.damage>=op.amount*10;
  case 'dpDefenderPowers':return dpPrintedPowers(o.active).some((power:any)=>[PowerType.POKEPOWER,PowerType.POKEBODY].includes(power.powerType));
@@ -84,7 +84,7 @@ export function exCondition(store:any,state:any,e:any,op:any){
  case 'onlySelfLastPrize':return o.prizes.filter((l:any)=>l.cards.length).length===1&&!p.bench.some((l:any)=>l.getPokemonCard());
  case 'defenderDarkOrNamed':return exCondition(store,state,e,{condition:'defenderType',energy:'Darkness'})||!!defender?.name.includes('Dark');
  case 'defenderResistance':return defender?.resistance.some((r:any)=>r.type===({Fighting:CardType.FIGHTING} as any)[op.energy]);
- case 'selfTypedEnergyAtLeast':{const types:any={Grass:CardType.GRASS,Fire:CardType.FIRE,Water:CardType.WATER,Lightning:CardType.LIGHTNING,Psychic:CardType.PSYCHIC,Fighting:CardType.FIGHTING,Darkness:CardType.DARK,Metal:CardType.METAL};const energy=new CheckProvidedEnergyEffect(p,source);store.reduceEffect(state,energy);return energy.energyMap.reduce((n:number,x:any)=>n+(StateUtils.providesMatchesType(x.provides,types[op.energy])?StateUtils.getProvidesUnitCount(x.provides):0),0)>=op.amount;}
+ case 'selfTypedEnergyAtLeast':{const types:any={Grass:CardType.GRASS,Fire:CardType.FIRE,Water:CardType.WATER,Lightning:CardType.LIGHTNING,Psychic:CardType.PSYCHIC,Fighting:CardType.FIGHTING,Darkness:CardType.DARK,Metal:CardType.METAL};const energy=new CheckProvidedEnergyEffect(p,source);store.reduceEffect(state,energy);return energy.energyMap.reduce((n:number,x:any)=>n+(StateUtils.providesMatchesType(x.provides,types[op.energy])?StateUtils.getProvidesUnitCount(x.provides,x):0),0)>=op.amount;}
  default:return false;
  }
 }

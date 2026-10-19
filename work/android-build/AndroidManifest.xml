@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="gg.ilex.app" android:versionCode="14" android:versionName="1.15.0-android.14">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="gg.ilex.app" android:versionCode="25" android:versionName="1.17.0-android.25">
  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="36"/>
  <uses-permission android:name="android.permission.INTERNET"/>
  <application android:label="ILEX.GG" android:icon="@drawable/icon" android:theme="@android:style/Theme.Material.NoActionBar" android:allowBackup="false" android:usesCleartextTraffic="false" android:hardwareAccelerated="true">

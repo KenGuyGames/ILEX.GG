@@ -1,0 +1,1 @@
+const r=require('../rules-research/sv-era-smoke-report-0.json');console.log(r.engineSha256);console.log(r.failures.map(f=>({id:f.id,attack:f.attack,error:f.error})));console.log('tested',r.testedPrintings.length);

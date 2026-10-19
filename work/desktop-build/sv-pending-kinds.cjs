@@ -1,0 +1,1 @@
+const p=require('../rules-research/sv-era-pending.json');let o={};for(const r of p)o[r.supertype]=(o[r.supertype]||0)+1;console.log(o);console.log(p.filter(r=>r.supertype==='Energy'));console.log(p.filter(r=>r.supertype==='Pokémon'&&!(r.attacks||[]).length&&!(r.abilities||[]).length).map(r=>({id:r.id,name:r.name,rules:r.rules})));

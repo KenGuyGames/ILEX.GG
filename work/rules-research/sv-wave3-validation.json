@@ -1,0 +1,21 @@
+{
+  "status": "candidate-focused-only",
+  "passed": true,
+  "tests": [
+    "Printed attack condition: defenderDamaged",
+    "Printed attack condition: selfConfused",
+    "Printed attack condition: defenderBurned",
+    "Printed attack condition: selfCountersBelow",
+    "Printed attack condition: equalEnergy",
+    "Printed attack condition: opponentHandMaximum",
+    "Printed attack condition: opponentPrizeCount",
+    "Printed attack condition: notEvolvedThisTurn",
+    "Printed attack condition: selfEnergyMinimum",
+    "Budew attacks with no Energy attached",
+    "Suction heals actual damage after opposing reduction",
+    "Suction does not heal when attack damage is prevented",
+    "Rika keeps the unchosen remainder on the bottom without shuffling the rest",
+    "Dendra pays a real hand card and draws up to five"
+  ],
+  "engineSha256": "e4808199a2bb203739d1e63b97326b503733a41de894a26bff9283e094a12369"
+}

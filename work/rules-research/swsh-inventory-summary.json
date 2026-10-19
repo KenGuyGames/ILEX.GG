@@ -1,0 +1,203 @@
+{
+  "status": "inventory-only-not-automation",
+  "scope": "Black & White onward through Sword & Shield; Unlimited deferred",
+  "total": 3715,
+  "bySet": [
+    {
+      "id": "swshp",
+      "name": "SWSH Black Star Promos",
+      "total": 307,
+      "missingText": 0,
+      "nativeCandidates": 197
+    },
+    {
+      "id": "swsh1",
+      "name": "Sword & Shield",
+      "total": 216,
+      "missingText": 0,
+      "nativeCandidates": 209
+    },
+    {
+      "id": "swsh2",
+      "name": "Rebel Clash",
+      "total": 209,
+      "missingText": 0,
+      "nativeCandidates": 205
+    },
+    {
+      "id": "swsh3",
+      "name": "Darkness Ablaze",
+      "total": 201,
+      "missingText": 0,
+      "nativeCandidates": 201
+    },
+    {
+      "id": "fut2020",
+      "name": "Pokémon Futsal 2020",
+      "total": 5,
+      "missingText": 0,
+      "nativeCandidates": 0
+    },
+    {
+      "id": "swsh3.5",
+      "name": "Champion's Path",
+      "total": 80,
+      "missingText": 0,
+      "nativeCandidates": 79
+    },
+    {
+      "id": "swsh4",
+      "name": "Vivid Voltage",
+      "total": 203,
+      "missingText": 0,
+      "nativeCandidates": 202
+    },
+    {
+      "id": "2021swsh",
+      "name": "McDonald's Collection 2021",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 18
+    },
+    {
+      "id": "swsh4.5",
+      "name": "Shining Fates",
+      "total": 73,
+      "missingText": 0,
+      "nativeCandidates": 73
+    },
+    {
+      "id": "swsh4.5sv",
+      "name": "Shining Fates Shiny Vault",
+      "total": 122,
+      "missingText": 0,
+      "nativeCandidates": 121
+    },
+    {
+      "id": "swsh5",
+      "name": "Battle Styles",
+      "total": 183,
+      "missingText": 0,
+      "nativeCandidates": 179
+    },
+    {
+      "id": "swsh6",
+      "name": "Chilling Reign",
+      "total": 233,
+      "missingText": 0,
+      "nativeCandidates": 231
+    },
+    {
+      "id": "swsh7",
+      "name": "Evolving Skies",
+      "total": 237,
+      "missingText": 0,
+      "nativeCandidates": 234
+    },
+    {
+      "id": "cel25cc",
+      "name": "Celebrations Classic Collection",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 23
+    },
+    {
+      "id": "cel25",
+      "name": "Celebrations",
+      "total": 25,
+      "missingText": 0,
+      "nativeCandidates": 23
+    },
+    {
+      "id": "swsh8",
+      "name": "Fusion Strike",
+      "total": 284,
+      "missingText": 0,
+      "nativeCandidates": 277
+    },
+    {
+      "id": "swsh9tg",
+      "name": "Brilliant Stars Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30
+    },
+    {
+      "id": "swsh9",
+      "name": "Brilliant Stars",
+      "total": 186,
+      "missingText": 0,
+      "nativeCandidates": 179
+    },
+    {
+      "id": "swsh10",
+      "name": "Astral Radiance",
+      "total": 216,
+      "missingText": 0,
+      "nativeCandidates": 214
+    },
+    {
+      "id": "swsh10tg",
+      "name": "Astral Radiance Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30
+    },
+    {
+      "id": "swsh10.5",
+      "name": "Pokémon GO",
+      "total": 88,
+      "missingText": 0,
+      "nativeCandidates": 34
+    },
+    {
+      "id": "2022swsh",
+      "name": "McDonald's Collection 2022",
+      "total": 15,
+      "missingText": 0,
+      "nativeCandidates": 15
+    },
+    {
+      "id": "swsh11",
+      "name": "Lost Origin",
+      "total": 217,
+      "missingText": 0,
+      "nativeCandidates": 212
+    },
+    {
+      "id": "swsh11tg",
+      "name": "Lost Origin Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30
+    },
+    {
+      "id": "swsh12",
+      "name": "Silver Tempest",
+      "total": 215,
+      "missingText": 0,
+      "nativeCandidates": 214
+    },
+    {
+      "id": "swsh12tg",
+      "name": "Silver Tempest Trainer Gallery",
+      "total": 30,
+      "missingText": 0,
+      "nativeCandidates": 30
+    },
+    {
+      "id": "swsh12.5",
+      "name": "Crown Zenith",
+      "total": 160,
+      "missingText": 0,
+      "nativeCandidates": 158
+    },
+    {
+      "id": "swsh12.5gg",
+      "name": "Crown Zenith Galarian Gallery",
+      "total": 70,
+      "missingText": 0,
+      "nativeCandidates": 66
+    }
+  ]
+}

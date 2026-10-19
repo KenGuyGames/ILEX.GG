@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "engineSha256": "6ebac3c9fe187ddf5b6c916e8315b565fff09622e96aaaeb3b212dddb100661b",
+  "checks": [
+    {
+      "name": "BW Mew-EX borrows Crystal Star",
+      "passed": true
+    },
+    {
+      "name": "BW Mew-EX borrows Star Chronos",
+      "passed": true
+    },
+    {
+      "name": "BW Mew-EX borrows Star Requiem",
+      "passed": true
+    },
+    {
+      "name": "Spent copied Crystal Star rejected before animation",
+      "passed": true
+    },
+    {
+      "name": "Spent copied Star Chronos rejected before animation",
+      "passed": true
+    },
+    {
+      "name": "Spent copied Star Requiem rejected before animation",
+      "passed": true
+    },
+    {
+      "name": "Copied Star Requiem requires ten Lost Zone cards without spending VSTAR",
+      "passed": true
+    },
+    {
+      "name": "Tool VSTAR stays independent of GX and Path to the Peak false",
+      "passed": true
+    },
+    {
+      "name": "Tool VSTAR stays independent of GX and Path to the Peak true",
+      "passed": true
+    }
+  ],
+  "failures": []
+}

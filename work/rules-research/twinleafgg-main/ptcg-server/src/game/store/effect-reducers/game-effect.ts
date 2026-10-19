@@ -94,7 +94,9 @@ export function applyWeaknessAndResistance(
 
   for (const item of weakness) {
     if (allTypes.includes(item.type)) {
-      if (item.value === undefined) {
+      if (item.multiplier !== undefined) {
+        multiply *= item.multiplier;
+      } else if (item.value === undefined) {
         multiply *= 2;
       } else {
         modifier += item.value;
@@ -143,30 +145,29 @@ function resetEmptyPokemonSlot(slot: PokemonCardList): void {
 function* useAttack(next: Function, store: StoreLike, state: State, effect: UseAttackEffect | AttackEffect): IterableIterator<State> {
   const player = effect.player;
   const opponent = StateUtils.getOpponent(state, player);
+  if(effect instanceof UseAttackEffect){
+    if((effect.attack as any)._swshVstar&&player.usedVSTAR)throw new GameError(GameMessage.LABEL_VSTAR_USED);
+    const minimum=(effect.attack as any)._swshLostZoneMinimum;
+    if(minimum&&player.lostzone.cards.length<minimum)throw new GameError(GameMessage.CANNOT_USE_ATTACK);
+  }
 
   //Skip attack on first turn
   if (state.turn === 1 && effect.attack.canUseOnFirstTurn !== true && state.rules.attackFirstTurn == false) {
     throw new GameError(GameMessage.CANNOT_ATTACK_ON_FIRST_TURN);
   }
 
-  const sp = player.active.specialConditions;
-  const ignoreStatusConditions = effect instanceof UseAttackEffect && effect.ignoreStatusConditions;
-  if ((sp.includes(SpecialCondition.PARALYZED) || sp.includes(SpecialCondition.ASLEEP)) && !ignoreStatusConditions) {
-    throw new GameError(GameMessage.BLOCKED_BY_SPECIAL_CONDITION);
+  const attack=effect.attack;
+  let attackingPokemon=effect.source||player.active;
+  if(effect instanceof UseAttackEffect&&!effect.explicitSource&&attackingPokemon===player.active&&!player.active.getPokemonCard()?.attacks.includes(attack)){
+    const candidates=player.bench.filter(slot=>slot.getPokemonCard()?.attacks.includes(attack)&&attack.useOnBench);
+    if(candidates.length===1)attackingPokemon=candidates[0];
   }
-
-  const attack = effect.attack;
-  const preceding=(attack as any)._wotcRequiredPreviousAttack,last=(player.active.getPokemonCard() as any)?._wotcLastUsedAttack;
+  const sp=attackingPokemon.specialConditions;
+  const ignoreStatusConditions=effect instanceof UseAttackEffect&&effect.ignoreStatusConditions;
+  if((sp.includes(SpecialCondition.PARALYZED)||sp.includes(SpecialCondition.ASLEEP))&&!ignoreStatusConditions)
+    throw new GameError(GameMessage.BLOCKED_BY_SPECIAL_CONDITION);
+  const preceding=(attack as any)._wotcRequiredPreviousAttack,last=(attackingPokemon.getPokemonCard() as any)?._wotcLastUsedAttack;
   if(preceding&&(last?.name!==preceding||last.turn!==(player as any).wotcLastTurnEnded))throw new GameError(GameMessage.CANNOT_USE_ATTACK);
-  let attackingPokemon = player.active;
-
-  // Check for attacks that can be used from bench
-  player.bench.forEach(benchSlot => {
-    const benchPokemon = benchSlot.getPokemonCard();
-    if (benchPokemon && benchPokemon.attacks.some(a => a.name === attack.name && a.useOnBench)) {
-      attackingPokemon = benchSlot;
-    }
-  });
 
   // Check if Pokemon cannot attack next turn
   if (attackingPokemon.cannotAttackNextTurn || attackingPokemon.marker.hasMarker('WOTC_PERSISTENT_ATTACK_LOCK')) {
@@ -252,7 +253,7 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
     );
   }
 
-  const checkAttackCost = new CheckAttackCostEffect(player, attack);
+  const checkAttackCost = new CheckAttackCostEffect(player, attack, attackingPokemon);
   state = store.reduceEffect(state, checkAttackCost);
 
   const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, attackingPokemon);
@@ -270,7 +271,7 @@ function* useAttack(next: Function, store: StoreLike, state: State, effect: UseA
   let wotcEnergyCostPaid = false;
   let roaringDamage:number|undefined;
   const roaring=(attack as any)._wotcRoaringCost;
-  if((state.rules as any).wotcRules&&roaring){const entries=checkProvidedEnergy.energyMap.filter(entry=>StateUtils.providesMatchesType(entry.provides,roaring.energy));const units=entries.reduce((n,entry)=>n+Math.min(StateUtils.getProvidesUnitCount(entry.provides),entry.provides.filter(type=>type===roaring.energy||type===CardType.ANY).length),0);attackingPokemon.moveCardsTo(entries.map(entry=>entry.card),player.discard);roaringDamage=roaring.base+units*roaring.amount;wotcEnergyCostPaid=true;}
+  if((state.rules as any).wotcRules&&roaring){const entries=checkProvidedEnergy.energyMap.filter(entry=>StateUtils.providesMatchesType(entry.provides,roaring.energy));const units=entries.reduce((n,entry)=>n+Math.min(StateUtils.getProvidesUnitCount(entry.provides,entry),entry.provides.filter(type=>type===roaring.energy||type===CardType.ANY).length),0);attackingPokemon.moveCardsTo(entries.map(entry=>entry.card),player.discard);roaringDamage=roaring.base+units*roaring.amount;wotcEnergyCostPaid=true;}
   let wotcRequiredEnergyCount = 0;
   const cardRequirements = (attack as any)._wotcRequiredEnergyCards;
   const returnRequirements = (attack as any)._wotcRequiredEnergyReturn;
@@ -809,6 +810,8 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
   if (effect instanceof CheckPokemonStatsEffect) {
     if (effect.target.noWeaknessNextTurn) {
       effect.weakness = [];
+    } else if(effect.target.svWeaknessOverride&&state.turn<=effect.target.svWeaknessOverride.untilTurn){
+      effect.weakness=effect.weakness.map(w=>({...w,type:effect.target.svWeaknessOverride!.type}));
     } else if (effect.target.weaknessOverrideType !== undefined) {
       effect.weakness = [{ type: effect.target.weaknessOverrideType }];
     } else {

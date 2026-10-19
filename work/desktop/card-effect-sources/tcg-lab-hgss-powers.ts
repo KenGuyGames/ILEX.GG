@@ -15,7 +15,7 @@ const types:any={Fire:CardType.FIRE,Water:CardType.WATER,Grass:CardType.GRASS,Li
 export function hgssPowerTrigger(op:any,e:any,p:any,list:any,card:any,state:any){
  if(op.kind!=='hgssPassive')return false;
  switch(op.action){
- case 'trainerLock':return e instanceof PlayItemEffect||e instanceof AttachPokemonToolEffect;
+ case 'trainerLock':return e instanceof PlayItemEffect||!state.rules.svEraRules&&e instanceof AttachPokemonToolEffect;
  case 'benchLimit':return e instanceof CheckTableStateEffect;
  case 'sleepShield':case 'discardReduction':case 'energyReduction':case 'specialShield':case 'benchShield':return e instanceof PutDamageEffect;
  case 'retreatTax':case 'retreatAid':case 'activeEnergyRetreat':case 'selfEnergyRetreat':case 'namedRetreat':case 'energyRetreat':case 'namedAid':return e instanceof CheckRetreatCostEffect;
@@ -54,7 +54,7 @@ export function hgssPower(card:any,op:any,power:any,store:any,state:any,e:any,p:
    if(op.action==='activeEnergyRetreat'&&target===p.active&&energy(p,target,op.energy).length){e.cost=[];e._hgssNoRetreatCost=true;}
    if(op.action==='selfEnergyRetreat'&&target===list&&energy(p,list).length){e.cost=[];e._hgssNoRetreatCost=true;}
    if(op.action==='namedRetreat'&&target===list&&field(p).some(l=>l.getPokemonCard().name===op.name)){e.cost=[];e._hgssNoRetreatCost=true;}
-   if(op.action==='energyRetreat'&&target===list)e.cost.splice(0,energy(p,list,op.energy).reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides),0));
+   if(op.action==='energyRetreat'&&target===list)e.cost.splice(0,energy(p,list,op.energy).reduce((n:number,x:any)=>n+StateUtils.getProvidesUnitCount(x.provides,x),0));
    if(op.action==='namedAid'&&op.names.includes(target.getPokemonCard()?.name))e.cost.splice(0,op.amount);
   }
   if(op.action==='namedHp')e.hp+=op.amount*field(p).filter(l=>l.getPokemonCard().name===op.name).length;

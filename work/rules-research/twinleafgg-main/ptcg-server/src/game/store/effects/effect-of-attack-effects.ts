@@ -21,6 +21,7 @@ function sourceMatchesPreventFilter(
   filter: PreventDamageFilter,
   sourceList?: PokemonCardList,
 ): boolean {
+  if(filter.sourceNamesExcluded?.includes(sourceCard.name))return false;
   if (filter.sourceStage !== undefined && sourceCard.stage !== filter.sourceStage) {
     return false;
   }
@@ -60,6 +61,7 @@ function sourceMatchesPreventFilter(
 
 function preventFilterFromOptions(options: PreventDamageOptions): PreventDamageFilter {
   const filter: PreventDamageFilter = {};
+  if(options.sourceNamesExcluded)filter.sourceNamesExcluded=options.sourceNamesExcluded.slice();
   if (options.minDamage !== undefined) filter.minDamage = options.minDamage;
   if (options.maxDamage !== undefined) {
     filter.maxDamage = options.maxDamage;
@@ -1245,7 +1247,7 @@ export class RetaliateOnDamageDuringOpponentsNextTurnEffect extends EffectOfAtta
   }
 
   applyEffect(): void {
-    this.player.active.retaliateOnDamageNextTurnPending = {
+    this.target.retaliateOnDamageNextTurnPending = {
       ...this.options,
       attack: this.attack,
       sourceCard: this.markerSource as PokemonCard,
