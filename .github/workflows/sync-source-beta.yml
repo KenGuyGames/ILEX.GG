@@ -1,0 +1,80 @@
+name: Sync verified ILEX.GG 1.18.0-private.1 source
+on:
+  push:
+    paths:
+      - .github/workflows/sync-source-beta.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify and unpack source
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib, json, subprocess
+          root = Path.cwd().resolve()
+          archives = {
+            "ILEX.GG-source-beta-part1.zip": "c7c1338b86bf6c0e5eace8f6779c8b90252c38631360896769c55fd8866eb3bc",
+            "ILEX.GG-source-beta-part2.zip": "566784fb2cbcf3487651adaf62ae56a54f21fb54d8db5d1ba3d2995a579b60fe",
+            "ILEX.GG-source-beta-part3.zip": "64a945638f85597f01f21d95e5c492a2d4c8fda784bc85207a75e6505e5f7e7d",
+            "ILEX.GG-source-beta-part4.zip": "1ae0657f7cc3a0949176d024f07baa4220634d2817625312fa28ae774e3c116b",
+          }
+          for name, expected in archives.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+              with ZipFile(name) as archive:
+                  for member in archive.infolist():
+                      target = (root / member.filename).resolve()
+                      assert target.is_relative_to(root) and ".git" not in target.relative_to(root).parts
+                  archive.extractall(root)
+          manifest = json.loads(Path("verification/source-manifest-1.18.0-private.1.json").read_text())
+          files = manifest["files"]
+          managed = ("work/desktop/", "work/desktop-build/", "work/android-build/", "docs/screenshots/", "work/rules-research/twinleafgg-main/ptcg-server/", "work/card-sources/pokemon-tcg-data-master/")
+          for name in subprocess.check_output(["git", "ls-files", "-z"]).decode().split("\0"):
+              if name and name.startswith(managed) and name not in files:
+                  Path(name).unlink(missing_ok=True)
+          for name in Path("work/rules-research").glob("wotc-pending-*.txt"):
+              if name.as_posix() not in files:
+                  name.unlink()
+          for name, expected in files.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+          assert json.loads(Path("work/desktop/package.json").read_text())["version"] == "1.18.0-private.1"
+          for era, count in [("wotc",1793),("ex",1857),("dp",1558),("hgss",605),("bw",1521),("xy",2208),("sm",3069),("swsh",3715),("sv",3694)]:
+              c = json.loads(Path(f"work/desktop/ui/{era}-coverage.json").read_text())
+              assert c["available"] == count and c["pending"] == 0
+          print(f"Verified {len(files)} source files against the release snapshot.")
+      - name: Install locked build tools
+        run: npm ci --prefix work/desktop-build
+      - name: Rebuild release rules engine
+        run: npm run build:rules
+      - name: Verify rebuilt engine and source
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib, json
+          m = json.loads(Path("verification/source-manifest-1.18.0-private.1.json").read_text())
+          for name, expected in m["files"].items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected, name
+          print("Rebuilt engine and all source files match verified ILEX.GG 1.18.0-private.1.")
+      - name: Commit synchronized source
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git rm --ignore-unmatch ILEX.GG-source.zip ILEX.GG-source-beta-*.zip
+          git rm .github/workflows/sync-source-beta.yml
+          git add -A
+          git commit -m "Synchronize source with verified ILEX.GG 1.18.0-private.1 multiplayer Windows beta and Android local build, complete SWSH and SV eras"
+          git push origin HEAD:main
+
+          git tag v1.18.0-private.1-build-2026-10-19
+          git push origin v1.18.0-private.1-build-2026-10-19
+
+
+
+
+
+
