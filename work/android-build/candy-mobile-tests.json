@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "Natural later turn has false exceptional evolution flag",
+    "Ralts has been in play since an earlier turn",
+    "Stage2 is in hand without the intermediate Stage1",
+    "Playing Rare Candy opens valid Basic Pokemon selection",
+    "Choosing Ralts opens Stage2 hand selection",
+    "Gardevoir ex is a legal Stage2 choice",
+    "Actual UI evolves Ralts directly to Gardevoir ex",
+    "Rare Candy finishes in discard",
+    "Rare Candy resolves completely",
+    "Saved Rare Candy evolution restores correctly",
+    "Undo returns before Rare Candy",
+    "Undo restores Ralts, Rare Candy and Stage2"
+  ]
+}

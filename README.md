@@ -1,29 +1,49 @@
 # ILEX.GG
 
-Pokémon TCG simulator for **Windows and Android**, with historical rules automation, deck building, local/bot play, custom cards and pack opening.
+Pokémon TCG simulator for **Windows and Android**, with rules automation, deck building, local/bot play, pack opening and **Cube Drafting**.
 
-## Download stable 1.19.0
+## New: Cube Drafting in 1.22.0
+
+Open **Cube draft** from the forest main menu. Draft a custom card pool against local drafting bots, resume saved sessions, build a deck from your seat's picks and play local or bot matches.
+
+- **Zander's cube:** 640 Core cards, with seeded packs of **5 Basics + 5 Evolutions + 6 Trainers/Special Energy**. Basic Energy is supplied separately for deck building. New drafts are Core-only; retired EXpansion setup is removed. Existing drafts, decks and matches remain intact and legacy sessions show guidance to start a new draft.
+- **Build your own cube:** create cubes, edit card printings/pools, review supported rule switches and numbers, and import/export ILEX cube JSON. Public CubeKoga link importing is implemented, with exact-printing review and visible errors; live desktop transport remains unverified as described below.
+- **Saved drafts and recovery:** choose and resume active/completed drafts. Delete an individual draft with confirmation and restore its exact picks/packs. Deleting a cube can also recover its drafts/decks. Recovery survives restart, and deleted presets stay deleted.
+- **Cube gameplay:** mutant evolution, the two-Prize evolution barrier, unified Ability and EX/GX/V references, lowercase ex one-Prize rules, and 40-card/four-Prize Core games. Each seat builds only from its own drafted pool plus Basic Energy. Drafts, decks, formats and matches keep their selected rules when the cube library changes.
+- **Printing repairs:** all 1,283 entries in the bundled Zander workbook definition resolve, including reserves/exclusions. CubeKoga Umbreon Star aliases map to the equivalent POP5-17 printing; standard Starmie Delta/Mewtwo Delta supplied definitions are accepted while altered custom definitions still require review. Two optional additional Colorless Stage 1 choices remain user choices.
+- **CouncilCube X Attack:** bundled original custom artwork and an explicit one-use Item adaptation: choose one own Pokémon for +30 damage to the opponent's Active before Weakness/Resistance this turn; evolution removes the effect. Original artwork retains its earlier Battle wording; the inspector shows executable text.
+- **Latest mutant-evolution fixes:** Skiploom's Solar Evolution, Surprise! Time Machine, Pupate, Emerge and Wally Training use shared type/stage/Prize eligibility and normal evolution events. Time Machine identifies the Pokémon remaining after devolution rather than attached Energy. Ordinary family matching is preserved outside mutant rules. These are five repaired effects, not an exhaustive audit of every evolution card.
+
+Cube drafting is **local/bot only**; cube matches are blocked from private multiplayer. Draft bots use a simple type/setup heuristic. Descriptive cube notes do not execute arbitrary custom rules. The public CubeKoga API/schema and importer contracts were checked, but live desktop importing could not be verified because the development environment could not resolve cubekoga.net. Check a live import on an unrestricted connection; do not treat the contract tests as a live transport pass.
+
+## Download 1.22.0
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Windows.zip) — about 312 MiB | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
-| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.19.0-build-2026-10-19/ILEX.GG-Android.apk) — about 135 MiB | Android 8+ with current WebView; 1.19.0-android.27 / versionCode 27 |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.22.0-build-2026-10-20/ILEX.GG-Windows.zip) — about 360 MiB | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
+| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v1.22.0-build-2026-10-20/ILEX.GG-Android.apk) — about 196 MiB | Android 8+ with current WebView; **1.22.0-android.41 / code41** |
 
-Windows includes its runtime. Android keeps the original signing certificate: install over the previous app to retain workspace/cache; export first if needed and do not uninstall. Physical Android device/emulator acceptance remains pending. This is a direct APK release.
+Windows includes its runtime; the EXE is unsigned. Keep the extracted folder together. Android retains the original signing certificate: install over the previous APK to preserve workspace/cache; do not uninstall first. Physical Android acceptance remains pending. Android bundles **1,137 startup scans and 209 finish images**. Images download as viewed; **Download card images** caches the wider collection with pause/resume. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace; there is no automatic cloud sync.
 
-Images download as viewed and remain cached. **Download card images** caches the full collection (about 2.5 GB), with pause/resume. Android bundles 439 verified startup/demo scans and 209 finish-specific images. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace. There is no automatic cloud synchronization.
+[Android installation](verification/ILEX.GG-Android-Install.md) · [Release notes and checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.22.0-build-2026-10-20) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
 
-[Android installation](verification/ILEX.GG-Android-Install.md) · [Checksums and release evidence](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.19.0-build-2026-10-19) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
+## Multiplayer remains in beta
 
-## Multiplayer is now in beta
+Windows retains invite/response codes, deck/readiness checks, host-authoritative rules, filtered guest views, opponent-approved Undo, reconnect and hosted-match recovery. Both players need **1.22.0**. Real external two-PC/Internet connectivity and a complete external match remain unverified; acceptance tests simulate delivery. Direct WebRTC uses free STUN with no TURN fallback. Use trusted friends because the host can inspect full state. Android multiplayer, cube networking, custom-card networking and public matchmaking remain deferred.
 
-The stable Windows app retains the **Private multiplayer beta**: invite/response codes, legal decks and Ready confirmation, host-authoritative rules, filtered guest views, opponent-approved Undo, reconnect and separate hosted-match recovery. Both players must use the same 1.19.0 build.
+## Also included since 1.19.0
 
-**Real two-PC/Internet connectivity and a complete external match remain unverified.** Native two-window acceptance used simulated delivery. Direct WebRTC uses free STUN with no TURN relay; some networks may not connect. Play with trusted friends because the host can inspect full state. Android multiplayer, custom-card networking and public matchmaking remain deferred. Stable release status does not promote this feature out of beta.
+- The **Unlimited profile and cross-era interaction work**, with historical profiles retained. Finite regression checks do not prove every possible board state or interaction.
+- **Improved Realistic Player bot policy** and historical format/reprint handling, including selected-pool cutoffs. Restart and start a new match to use new policy; existing saves keep their pinned/original semantics. Tournament-level strength is not established.
+- **VSTAR printed action regions** now distinguish ordinary attacks from Ability VSTAR Powers, including Palkia's Star Portal. Existing local play, packs, music, UI, saves, 23,860 regular scan records and 209 finish images are retained. Finish-image acquisition remains incomplete.
 
-[Invite, play and reconnect guide](verification/ILEX.GG-Private-Guide.md) · [Earlier separate 1.18.0 beta](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.18.0-private.1-build-2026-10-19)
+### Verification and limits
 
-## New in stable 1.19.0
+The original Cube Drafting release recorded 24 effect/model groups, six importer contracts, seven final historical/bot/Undo/private regression groups, fresh/restored native checks, 273 mobile Chromium checks and 44 APK checks. Later patches have separate exact hashes: draft deletion has 13 fresh/15 restored native checks; the final mutant repair has **10 focused, 10 fresh, 10 restored and 32 mobile checks**, plus 24 cube groups, 10 X Attack checks and 44 APK checks. Earlier broad reports retain their actual ancestor hashes and are not relabeled as final-engine executions. Physical Android and live external networking/import acceptance remain pending.
+
+Current engine SHA-256: `38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd`. See `verification/desktop-verification-1.22.0.json`, `work/desktop/validation/cube*` and `work/rules-research/cube-mutant-repair-release.json` for evidence and limits.
+
+## Earlier 1.19.0 changes (historical)
 
 - **Complete Mega era through 30th Celebration: 1,293/1,293 standard-game printings, zero pending across ten catalogs.** MEE 16, Mega Evolution 188, MEP 110, Phantasmal Flames 130, Ascended Heroes 295, Perfect Order 124, Chaos Rising 122, Pitch Black 120, 30th 158 and Classic Collection 30.
 - **MEP102–110 are nine officially announced anniversary previews**, with future release dates retained. Museum remains collection-only and unconfirmed RGB Mew cache rows are excluded. Classic Collection's historical mechanics do not establish tournament legality.
@@ -206,10 +226,10 @@ Current desktop and Android layouts (Android captures use Chromium touch emulati
 
 Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies and uncached artwork. Other desktop operating systems are not verified.
 
-Download **Source code (zip)** from the [stable 1.19.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.19.0-build-2026-10-19), extract it, and open PowerShell in the folder containing package.json. Or clone:
+Download **Source code (zip)** from the [1.22.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v1.22.0-build-2026-10-20), extract it, and open PowerShell in the folder containing package.json. Or clone:
 
 ```powershell
-git clone --branch v1.19.0-build-2026-10-19 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+git clone --branch v1.22.0-build-2026-10-20 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
 cd ILEX.GG
 npm install
 npm start
@@ -225,30 +245,21 @@ npm run build:rules
 npm start
 ```
 
-The build wrapper selects the **canonical corrected UTF-8 TypeScript in work/mega-source/src**. It does not use the older shared source tree. The rebuilt engine must match SHA-256 `dae9e59c8cedc6e7f40216556999a808e66800976bc0ec9569c54e109efd8722`, recorded in `verification/source-manifest-1.19.0.json`. Do not rerun initial card generators over this release.
+The build wrapper selects the **canonical corrected UTF-8 TypeScript in work/cube-source/src**. It does not use the older shared source tree. The rebuilt engine must match SHA-256 `38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd`, recorded in `verification/source-manifest-1.22.0.json`. Do not rerun initial card generators over this release.
 
-Run checks sequentially:
+Run the current release checks sequentially:
 
 ```powershell
-npm run test:rules
-npm run test:ex
-npm run test:dp
-npm run test:hgss
-npm run test:bw
-npm run test:xy
-npm run test:sm
-npm run test:swsh
-npm run test:mega
-npm run test:evosoda
-npm run test:psychic
-npm run test:multiplayer
-npm run test:protocol
-npm run test:realistic
-npm run test:bot
+npm run test:cube
+npm run test:cube-import
+npm run test:cube-seeding
+npm run test:x-attack
+npm run test:cube-mutant
+npm run test:release
 node work/desktop-build/card-cache-tests.cjs
 ```
 
-`test:rules` is the focused shared WOTC suite. Multiplayer/protocol tests simulate delivery and do not establish real connectivity. Fresh-source install/start/rebuild/tests and both automatic source archives are checked by the [stable source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-1.19.0.yml).
+`test:release` runs the focused historical/format/bot/Undo/private regression groups against the current UI/engine. Multiplayer/protocol tests simulate delivery and do not establish real connectivity. Fresh-source install/start/rebuild/tests and both automatic source archives are checked by the [stable source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-1.22.0.yml).
 
 ### Retained 1.12.0 baseline verification
 
@@ -270,7 +281,7 @@ Recorded native desktop release checks used isolated profiles and test-only no-s
 
 Android source and rebuild notes are in [work/android-build/README.md](work/android-build/README.md). Rebuilding requires JDK 17, the verified official Android SDK tools and Python; it is separate from the Windows Node.js instructions. The original signing key and password are deliberately excluded. A build signed with a different key cannot update the installed release in place.
 
-`package-mega.py` and `finish-mega.cjs` package this stable release. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
+Historical packaging scripts preserve the original staged build workflow; use the canonical work/cube-source/src and npm run build:rules for the current engine. The embedded card-effect-sources/cube-source/cube-engine-src.zip is an initial historical snapshot with later repairs beside it; it is not the final standalone source tree. Packaging scripts expect original candidate/output folders and native profiles; they are not a clean-clone release pipeline. Do not use the legacy `work/desktop-build/build.cjs` to regenerate the current UI.
 
 ## Earlier release trailer
 

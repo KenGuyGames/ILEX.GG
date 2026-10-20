@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "feature": "Delete and restore individual saved cube drafts",
+  "hashes": {
+    "cube-ui.js": "6b2581bef2ac4bf3e54ecdadcfddada43b61d35269f077cfed04a7188773fef1"
+  },
+  "freshChecks": 13,
+  "restoredChecks": 15,
+  "touchChecks": 12,
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+    "bytes": 205440342,
+    "sha256": "ffa82eae59a48109918ee71de98e3ad8f757ddbeeedb25410526aba2e813088f",
+    "bundledScans": 1137,
+    "engineSha256": "c11986066e985ea684aa517577c219a566bb5fa8285ca092112fab38e92049dc",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidStaticChecks": 44,
+  "engineUnchanged": "c11986066e985ea684aa517577c219a566bb5fa8285ca092112fab38e92049dc",
+  "limits": [
+    "Deleting a draft keeps its drafted decks, format, cube and current match.",
+    "Draft deletion is recoverable within its cube.",
+    "Physical Android acceptance remains pending."
+  ],
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows.zip",
+      "sha256": "a61a109579622a7f90131ff8fa2f3135345ec33048727d92e2554e4cd67f91e8",
+      "crcPassed": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows-Offline.zip",
+      "sha256": "5d98bb05628d35811acdd11c2647502ba690d63a8c38c7897cb9cb571564e09d",
+      "crcPassed": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "layouts": [
+    {
+      "width": 900,
+      "scroll": 885,
+      "matches": 5
+    },
+    {
+      "width": 1920,
+      "scroll": 1905,
+      "matches": 5
+    }
+  ]
+}

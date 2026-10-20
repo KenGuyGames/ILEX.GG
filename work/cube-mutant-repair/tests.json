@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "checks": [
+    "Solar Evolution offers same-type mutant Stage2 and blocks wrong type, stage and two-Prize cards",
+    "Ordinary Solar Evolution does not offer unrelated Venusaur",
+    "Surprise Time Machine searches from remaining Pokemon despite attached Energy",
+    "Surprise Time Machine normal rules keep printed family despite Energy in stack",
+    "Pupate uses shared mutant search and keeps evolution stage",
+    "Emerge uses shared mutant search and keeps evolution stage",
+    "Wally Training evolves Active across same-type families without broadening its target",
+    "Surprise Time Machine blocks wrong-type/stage and two-Prize mutants after devolving",
+    "Skiploom cannot trigger Solar Evolution while underneath an evolved Pokemon",
+    "Naturally played Solar Evolution round-trips with exact replay and Undo"
+  ],
+  "hashes": {
+    "rules-engine.js": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd"
+  }
+}

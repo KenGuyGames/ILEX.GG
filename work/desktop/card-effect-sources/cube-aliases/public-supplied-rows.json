@@ -1,0 +1,22 @@
+[
+  {
+    "card_ID": "ex11-15",
+    "card_Name": "Starmie δ",
+    "card_Definition_Supplied": 1,
+    "hp": "60",
+    "type1": "Metal",
+    "type2": "Water",
+    "subtype": "Stage 1",
+    "notes": "Starmie δ -- 60 -- [W][M]\nStage 1\n\nPoké-Power: Metal Navigation\nOnce during your turn (before your attack), you may search your deck for a Metal Energy card and attach it to Starmie. Shuffle your deck afterward. This power can't be used if Starmie is affected by a Special Condition.\n\n[W] Collect: \nDraw 3 cards.\n\n[M] Energy Loop: 30\nReturn an Energy card attached to Starmie to your hand.\n\nWeakness: [L]×2\nResistance: \nRetreat: "
+  },
+  {
+    "card_ID": "ex11-12",
+    "card_Name": "Mewtwo δ",
+    "card_Definition_Supplied": 1,
+    "hp": "70",
+    "type1": "Metal",
+    "type2": "Fire",
+    "subtype": "Basic",
+    "notes": "Mewtwo δ -- 70 -- [R][M]\nBasic\n\nPoké-Power: Delta Switch\nOnce during your turn, when you put Mewtwo from your hand onto your Bench, you may move any number of basic Energy cards attached to your Pokémon to your other Pokémon (excluding Mewtwo) in any way you like.\n\n[R][M] Energy Burst: 10×\nDoes 10 damage times the total amount of Energy attached to Mewtwo and the Defending Pokémon.\n\nWeakness: [P]×2\nResistance: \nRetreat: 1"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "passed": true,
+  "finalBotSha256": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874",
+  "finalEngineSha256": "a711f38166daf06f658d0f42b6b7279d925e9ad84a4cbdead68a77451e031d74",
+  "resourceSnapshotSha256": "edc0259fe5cc966cc201e89d15b8a6f51886e323686eb20051eba0a516d0dda3",
+  "discardSnapshotSha256": "39cdc67895514894185a365de342af7d1cbb4179cb26da5450e532e703989173",
+  "results": [
+    {
+      "pair": 0,
+      "decks": [
+        "Night March",
+        "M Audino EX"
+      ],
+      "attacks": 16,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "xy",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 1,
+      "decks": [
+        "Keldeo Blastoise",
+        "VirGen"
+      ],
+      "attacks": 16,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "xy",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 2,
+      "decks": [
+        "Yveltal Garb",
+        "M Mewtwo Garb"
+      ],
+      "attacks": 16,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "xy",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 3,
+      "decks": [
+        "Decidueye Ninetales",
+        "Espeon Garb"
+      ],
+      "attacks": 33,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "sm",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 4,
+      "decks": [
+        "ADP Zacian",
+        "Blowns"
+      ],
+      "attacks": 21,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [
+        {
+          "id": "sm10-32",
+          "name": "Fireball Circus",
+          "text": "Discard any number of [R] Energy cards from your hand. This attack does 50 damage for each card you discarded in this way."
+        },
+        {
+          "id": "sm8-199",
+          "name": "Mind Blown",
+          "text": "Put any amount of [R] Energy attached to your Pokémon in the Lost Zone. This attack does 50 damage for each card put in the Lost Zone in this way."
+        }
+      ],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": false,
+      "profile": "swsh",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 5,
+      "decks": [
+        "Pikarom",
+        "Eternatus VMax"
+      ],
+      "attacks": 25,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "swsh",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 6,
+      "decks": [
+        "Constructed SV interaction fixture: Miraidon ex",
+        "Constructed SV interaction fixture: Gardevoir ex"
+      ],
+      "attacks": 5,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "sv",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    },
+    {
+      "pair": 7,
+      "decks": [
+        "Constructed Mega interaction fixture: Mega Lucario ex",
+        "Constructed SV interaction fixture: Miraidon ex"
+      ],
+      "attacks": 4,
+      "qualifiedEnergyAttacks": [],
+      "variableDiscardAttacks": [],
+      "qualifierDeltaInactive": true,
+      "discardDeltaInactive": true,
+      "profile": "unlimited",
+      "repairAffectedCandyIds": [],
+      "rareCandyRepairInactive": true
+    }
+  ],
+  "limits": "Static semantic applicability audit of scoped policy deltas and the SV Rare Candy repair against the exact benchmark decks/profiles. Non-Unlimited historical Candy implementations retain their own reducers. This does not turn an ancestor execution into a final-source execution; original hashes are retained. Generated/custom cards outside these fixtures are not covered."
+}

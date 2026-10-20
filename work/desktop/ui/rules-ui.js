@@ -70,11 +70,12 @@ async function beginRulesChecked(){
   const formatsUsed=ds.map(()=>selectedFormat);
   if(formatsUsed.some(f=>!f))return toast('Choose a format for each deck before starting a match.');
   const profile=$('#ruleprofile').value;
-  if(formatsUsed.some(f=>+f.size!==60||+f.prizes!==6))return toast('Automated matches currently require 60-card decks and 6 prizes.');
+  if(!selectedFormat.cubeRules&&formatsUsed.some(f=>+f.size!==60||+f.prizes!==6))return toast('Automated matches currently require 60-card decks and 6 prizes.');
   const problems=[];
+  if(selectedFormat.cubeRules)for(const d of ds)problems.push(...CubeLibrary.deckIssues(d,selectedFormat,cardMetadata).map(x=>d.name+': '+x));
   for(let i=0;i<2;i++){
     const f=formatsUsed[i],d=ds[i];
-    const counts={};for(const [id,n] of Object.entries(d.cards)){const c=cardMetadata[id]||find(id);if(c?.category==='Energy'&&c.energyType==='Normal')continue;const name=c?.name||id;counts[name]=(counts[name]||0)+n;}
+    const counts={};for(const [id,n] of Object.entries(d.cards)){const c=cardMetadata[id]||find(id);if(c?.category==='Energy'&&['Normal','Basic'].includes(c.energyType))continue;const name=c?.name||id;counts[name]=(counts[name]||0)+n;}
     for(const [name,n] of Object.entries(counts))if(n>+f.copies)problems.push(`${d.name}: ${name} exceeds the format's ${f.copies}-copy limit`);
     for(const [id,n] of Object.entries(d.cards)){
       const c=find(id);if(!c){problems.push(`${d.name}: missing ${id}`);continue;}
@@ -88,12 +89,12 @@ async function beginRulesChecked(){
   if(rulesMatch&&!confirm('Replace the current rules match?'))return;
   try{
     const opponent=typeof newOpponentSettings==='function'?newOpponentSettings():{type:'local'};
-    const candidate=RulesMatch.create({version:1,profile,opponent,format:{id:selectedFormat.id,name:selectedFormat.name,markerRules:structuredClone(selectedFormat)},decks:ds.map(d=>({name:d.name,cards:d.cards})),custom:state.custom},ruleMap,state.custom);
+    const candidate=RulesMatch.create({version:1,profile,opponent,cubeRules:selectedFormat.cubeRules?structuredClone(selectedFormat.cubeRules):undefined,format:{id:selectedFormat.id,name:selectedFormat.name,markerRules:structuredClone(selectedFormat)},decks:ds.map(d=>({name:d.name,cards:d.cards,cubePool:d.cubePool,cubeDraftId:d.cubeDraftId})),custom:state.custom},ruleMap,state.custom);
     state.botPaused=false;state.botError='';
     if(typeof IlexPresentation!=='undefined')IlexPresentation.cancel();rulesMatch=candidate;const setupVisual=typeof IlexPresentation!=='undefined'?IlexPresentation.before(candidate,{type:'setup'}):null;autoRules();if(typeof IlexPresentation!=='undefined')IlexPresentation.after(setupVisual,candidate,{type:'setup'});saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}
 }
-function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||(f?.id==='expanded'?'expanded':'modern');if(['dp','dppl'].includes(profile)&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:hgss[1-4p]?|col1)$/.test(id.trim().replace(/-$/,''))))return 'hgss';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
+function rulesProfileFor(deck){const f=state.formats.find(f=>f.id===deck?.format),profile=f?.ruleProfile||(f?.id==='unlimited'?'unlimited':f?.id==='expanded'?'expanded':'modern');if(['dp','dppl'].includes(profile)&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:hgss[1-4p]?|col1)$/.test(id.trim().replace(/-$/,''))))return 'hgss';if(profile==='dp'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^(?:dp[1-7]?|pl[1-4]?|dpp|pop[4-9]|ru1)$/.test(id.trim())))return 'dppl';if(profile==='ex'&&[...String(f.sets||'').split(','),...Object.keys(deck?.cards||{}).map(id=>id.split('-')[0])].some(id=>/^ex(?:[6-9]|1[0-6])$/.test(id.trim())))return 'exlate';return profile;}
 function rulesTable(){
   const R=RulesMatch.R,g=rulesMatch?.store.state;
   $('#app').innerHTML=title('RULES TABLE','Play a rules-enforced match','Setup, card effects, attachments, attacks and checkup are resolved by the game engine.',`<button onclick="tableMode='manual';play()">Manual sandbox</button>`)+
@@ -192,7 +193,7 @@ function importDeckText(){
 }
 async function exportDeckText(){await rulesAssets;try{const text=DeckText.format(state.decks.find(d=>d.id===activeDeck),cards,cardMetadata,deckCodes);modal('<h2>Limitless-compatible deck text</h2><p>Copy this text into Limitless Deck Builder or TCG Live.</p><textarea id="exportdecktext" style="min-height:300px"></textarea><button id="selectdecktext">Select all</button>');$('#exportdecktext').value=text;$('#selectdecktext').onclick=()=>{$('#exportdecktext').focus();$('#exportdecktext').select()};}catch(e){toast(e.message)}}
 const originalFormatForm=formatForm;
-formatForm=function(f={}){originalFormatForm(f);$('#ff').insertAdjacentHTML('afterbegin',`<label>Historical game rules<select name="ruleProfile">${Object.entries(RulesMatch.profiles).map(([id,p])=>`<option value="${id}" ${id===(f.ruleProfile||'modern')?'selected':''}>${esc(p.name)}</option>`).join('')}</select></label>`);};
+formatForm=function(f={}){originalFormatForm(f);$('#ff').insertAdjacentHTML('afterbegin',`<label>Historical game rules<select name="ruleProfile">${Object.entries(RulesMatch.profiles).map(([id,p])=>`<option value="${id}" ${id===(f.ruleProfile||(f.id==='unlimited'?'unlimited':'modern'))?'selected':''}>${esc(p.name)}</option>`).join('')}</select></label>`);};
 const originalCustom=custom;
 custom=function(){originalCustom();const cf=$('#cf');cf.insertAdjacentHTML('beforeend','<label>Automated attack effect<select name="condition"><option value="">None (numeric damage only)</option>'+['POISONED','BURNED','ASLEEP','CONFUSED','PARALYZED'].map(s=>'<option>'+s+'</option>').join('')+'</select></label><label>Evolves from (for automated evolution)<input name="evolveFrom"></label>');const handler=cf.onsubmit;cf.onsubmit=e=>{const condition=cf.elements.condition.value,evolveFrom=cf.elements.evolveFrom.value.trim();handler(e);const c=state.custom.at(-1);if(condition)c.automation={condition};if(evolveFrom)c.evolveFrom=evolveFrom;save();};};
 

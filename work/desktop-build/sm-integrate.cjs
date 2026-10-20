@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),src=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src');
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),src=path.join(root,'work/cube-source/src');
 const file=path.join(src,'tcg-lab-wotc.ts');let s=fs.readFileSync(file,'utf8');
 s=s.split('\n').filter(line=>!line.startsWith('import {smData')&&!line.startsWith('import {installSmCard}')).join('\n');s="import {smData,smSupporterCopyData} from './tcg-lab-sm-data';\nimport {installSmCard} from './tcg-lab-sm-cards';\n"+s;
 s=s.replace("import {smData} from './tcg-lab-sm-data'","import {smData,smSupporterCopyData} from './tcg-lab-sm-data'").replace("import {xyData} from './tcg-lab-xy-data'","import {xyData,xySupporterCopyData} from './tcg-lab-xy-data'");

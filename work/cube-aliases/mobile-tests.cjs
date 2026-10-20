@@ -1,0 +1,16 @@
+const fs=require('fs'),path=require('path'),crypto=require('crypto');
+module.exports=async(win,root,run)=>{
+ const checks=[],check=(v,n)=>{if(!v)throw Error(n);checks.push(n)},wait=ms=>new Promise(r=>setTimeout(r,ms));await run('cubeAssets');await win.webContents.debugger.attach('1.3');await win.webContents.debugger.sendCommand('Emulation.setTouchEmulationEnabled',{enabled:true,maxTouchPoints:5});
+ const tap=async selector=>{await run(`document.querySelector(${JSON.stringify(selector)}).scrollIntoView({block:'center'})`);const p=await run(`(()=>{const r=document.querySelector(${JSON.stringify(selector)}).getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()`);for(const type of ['touchStart','touchEnd'])await win.webContents.debugger.sendCommand('Input.dispatchTouchEvent',{type,touchPoints:type==='touchEnd'?[]:[{x:p.x,y:p.y,id:1,radiusX:2,radiusY:2,force:1}]});await wait(150);};
+ for(const [width,height] of [[640,312],[360,800]]){
+  await win.webContents.debugger.sendCommand('Emulation.setDeviceMetricsOverride',{width,height,deviceScaleFactor:1,mobile:true});win.setContentSize(width,height);await wait(200);
+  const rows=JSON.parse(fs.readFileSync(path.join(root,'../cube-aliases/public-supplied-rows.json')));rows.push({card_ID:'cel25c-17_A',card_Name:'Umbreon ★',type1:'Darkness',subtype:'Basic'});const repeated=[...rows,...rows].map((r,i)=>({...r,id:i+1}));await run(`(async()=>{const c=CubeLibrary.fromKoga({cube_Name:'Zander’s Cube and EXpansion'},${JSON.stringify(repeated)},ruleMap,cardMetadata,'https://cubekoga.net/cube/ZandersCubeAndEXpansion');c.rules.packSize=3;c.rules.players=2;c.rules.packsPerPlayer=1;state.cubes=[c];state.cubeDrafts=[];activeCubeId=c.id;tab='cubes';render();await cubeScreen()})()`);
+  check(await run('currentCube().entries.length===6&&currentCube().entries.every(e=>e.id&&ruleMap[e.id])'),'Fresh imports resolve Umbreon and both Delta supplied definitions '+width);
+  check(await run('(()=>{const c=CubeLibrary.clone(currentCube());for(const e of c.entries){e.id=null;e.resolution=e.sourceId==="cel25c-17_A"?"CubeKoga printing ID":"Custom CubeKoga definition needs review";}return CubeLibrary.repairPrintings(c,cubeBuiltins[0],ruleMap,cardMetadata)===6&&c.entries.every(e=>e.id)})()'),'Saved imported aliases repair on mobile '+width);
+  await run('cubeDraftSetup();void 0');await run('(()=>{const f=document.querySelector("#cube-draft-start");f.elements.players.value="2";f.elements.packs.value="1";f.elements.expansion.checked=false})()');
+  await tap('#cube-draft-start button.primary');check(await run('state.cubeDrafts.at(-1)?.rounds[0].packs.flat().length===6'),'Touch starts imported draft without printing error '+width);
+  await tap('.cube-pack button');check(await run('state.cubeDrafts.at(-1).pick===1'),'First touch draft pick resolves '+width);
+  check(await run('document.documentElement.scrollWidth<=Math.ceil(visualViewport.width)+1'),'Imported cube controls fit mobile '+width);
+ }
+ return {passed:true,checks,errors:[],physicalAndroidDevice:false,hashes:Object.fromEntries(['cube-library.js','cube-ui.js','cube-presets.json'].map(n=>[n,crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'build/assets/ui',n))).digest('hex')]))};
+};

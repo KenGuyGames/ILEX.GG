@@ -9,7 +9,7 @@ const smoke=[0,1,2].map(i=>read('dp-final-smoke-report-'+i));
 assert.ok(smoke.every(r=>r.engineSha256===proof.baseEngineSha256));
 const failures=smoke.flatMap(r=>r.failures);assert.equal(failures.length,1);assert.equal(failures[0].id,'dp4-93');
 assert.ok(targeted.testedPrintings.includes('dp4-93'));
-const data=fs.readFileSync(path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-dp-data.ts'),'utf8');
+const data=fs.readFileSync(path.join(root,'work/cube-source/src/tcg-lab-dp-data.ts'),'utf8');
 const records=JSON.parse(data.slice(data.indexOf('[')).trim().replace(/;$/,'')),pokemon=records.filter(r=>r.d.supertype==='Pokémon');
 const ids=smoke.flatMap(r=>r.testedPrintings);assert.equal(ids.length,new Set(ids).size);
 assert.deepEqual(ids.slice().sort(),pokemon.map(r=>r.d.id).sort());

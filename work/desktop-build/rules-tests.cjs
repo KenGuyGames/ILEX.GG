@@ -55,8 +55,8 @@ test('ex profile skips the first draw; Diamond & Pearl disallows first-turn Trai
   const ex=setup('ex');assert.equal(ex.store.state.players[0].hand.cards.length,6);
   const dp=setup('dp');assert.throws(()=>M.apply(dp,{type:'play',player:1,index:inHand(dp,'base1-91'),target}),/Diamond/);
 });
-test('Bill draws two and moves to discard through its implemented effect',()=>{
-  const m=setup();const p=m.store.state.players[0],i=inHand(m,'base1-91'),before=p.hand.cards.length;M.apply(m,{type:'play',player:1,index:i,target});assert.equal(p.hand.cards.length,before+1);assert.equal(p.discard.cards.at(-1).name,'Bill');
+test('Historical WOTC Bill draws two as a Trainer and moves to discard',()=>{
+  const m=setup('wotc');const p=m.store.state.players[0],i=inHand(m,'base1-91'),before=p.hand.cards.length;M.apply(m,{type:'play',player:1,index:i,target});assert.equal(p.hand.cards.length,before+1);assert.equal(p.discard.cards.at(-1).name,'Bill');
 });
 test('Evolving on a subsequent turn preserves damage and attachments and clears conditions',()=>{
   const m=setup();energy(m);const p=m.store.state.players[0];p.active.damage=10;p.active.specialConditions=[R.SpecialCondition.POISONED];m.store.state.turn=3;

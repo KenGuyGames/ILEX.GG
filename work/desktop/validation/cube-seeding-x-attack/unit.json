@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual imported712-card cube migrates from all-Core random15 to640 core /72 excluded with seeded5/5/6",
+    "Every pack across64 seeds has exact5 Basics /5 Evolutions /6 Trainers or Special Energy, without EXpansion",
+    "Mislabeled EXpansion cards cannot leak back through Core or an old expansion=true request",
+    "Printed stages override stale imported stage labels; Basic Energy never fills seeded Trainer slots",
+    "Lowercase ex remains core, while uppercase EX/GX/V families are excluded",
+    "Legacy random or EXpansion sessions are identified without rewriting saved picks",
+    "Unrelated custom cubes keep their selected rules"
+  ],
+  "seededPacksChecked": 1024,
+  "hashes": {
+    "cube-library.js": "aadf849e6f0288b453e3d92def6430d525b205e4150b80dac81def153c093351",
+    "cube-ui.js": "3b03910f44c97f6bcc117c430950c2e246ce8c3060bb116fc8c8c5836e2a7f8a"
+  }
+}

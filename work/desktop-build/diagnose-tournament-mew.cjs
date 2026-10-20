@@ -1,0 +1,3 @@
+const fs=require('fs'),vm=require('vm'),path=require('path');let s=fs.readFileSync(path.join(__dirname,'tournament-bot-tests.cjs'),'utf8');s=s.slice(0,s.indexOf("test('Separate"));s+=`
+const {m,p}=start();p.active.cards=[card('xy10-29'),card('xy10-114')];p.bench[0].cards=[card('xy4-26')];console.log('direct',M.attacks(m,p).map(a=>[a.name,a.cost]));console.log('heuristic',B.strategy.availableAttacks(m,p.id));console.log(p.active.cards.map(c=>[c.name,c.provides]));
+`;const Module=require('module'),q=new Module(__filename,module);q.filename=__filename;q.paths=module.paths;q._compile(s,__filename);

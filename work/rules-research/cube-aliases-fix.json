@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "feature": "CubeKoga Classic Collection Umbreon alias and reviewed Delta supplied definitions",
+  "hashes": {
+    "cube-library.js": "39a47083a4d42c17234c3d83e3cc43570378e322af8f09e84622a771b66613be"
+  },
+  "savedCube": {
+    "cards": 712,
+    "unresolved": 0,
+    "reported": [
+      {
+        "name": "Umbreon \u2605",
+        "id": "pop5-17",
+        "sourceId": "cel25c-17_A"
+      },
+      {
+        "name": "Starmie \u03b4",
+        "id": "ex11-15",
+        "sourceId": "ex11-15"
+      },
+      {
+        "name": "Mewtwo \u03b4",
+        "id": "ex11-12",
+        "sourceId": "ex11-12"
+      }
+    ],
+    "unrelatedStatePreserved": true
+  },
+  "focusedChecks": 4,
+  "mobileChecks": 10,
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+    "bytes": 205104404,
+    "sha256": "dc582a9eac66548b7a05e7705fe5435edcf897ec73790a4915f223f2eb198502",
+    "bundledScans": 1137,
+    "engineSha256": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidStaticChecks": 44,
+  "engineUnchanged": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+  "limits": [
+    "Umbreon Celebrations alias uses equivalent original POP5 printing/rules in the local library.",
+    "Arbitrary or mismatched custom definitions still require review.",
+    "Physical Android acceptance remains pending.",
+    "Live desktop network acceptance remains unverified; public source schema observed in browser."
+  ],
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows.zip",
+      "sha256": "5ddfb22528849fd7d327a4f570aa9d9ca937534abacad27c8691914eb8879613",
+      "crcPassed": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows-Offline.zip",
+      "sha256": "4841b4032285bfdab1bcbc1590c5a08e514953a6c491e394ce863bb01868c1de",
+      "crcPassed": true
+    }
+  ]
+}

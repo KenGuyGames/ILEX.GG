@@ -1,0 +1,4 @@
+const fs=require('fs'),path=require('path'),p=path.join(__dirname,'tournament-bot-benchmark.cjs');let s=fs.readFileSync(p,'utf8');
+s=s.replace("assert.equal(replaySnap(restored),replaySnap(m),'Exact replay')","assert.deepStrictEqual(JSON.parse(replaySnap(restored)),JSON.parse(replaySnap(m)),'Exact replay')").replace("assert.equal(replaySnap(undone),replaySnap(expected),'Exact Undo')","assert.deepStrictEqual(JSON.parse(replaySnap(undone)),JSON.parse(replaySnap(expected)),'Exact Undo')");
+s=s.replace("failures.push({leg,decisions,message:e.stack,saved:m&&{spec:m.spec,journal:m.journal}})","failures.push({leg,decisions,message:e.stack,comparison:e.actual&&e.expected?{actual:e.actual,expected:e.expected}:undefined,saved:m&&{spec:m.spec,journal:m.journal}})");
+fs.writeFileSync(p,s);console.log('Replay comparison now ignores JSON object-key insertion order, retaining all fields and array order; any differences are saved verbatim.');

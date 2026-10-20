@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": [
+    "605 HGSS printings available",
+    "All expansions, promos and two Trainer Kits complete",
+    "HGSS format selects historical rules even without HGSS cards in deck",
+    "Historical HGSS rules available",
+    "HGSS saved-game replay",
+    "HGSS Undo boundary",
+    "LEGEND played from hand to Bench",
+    "Both LEGEND halves form one enlarged card",
+    "LEGEND attack visible"
+  ],
+  "profile": "hgss",
+  "coverage": 605,
+  "engineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8"
+}

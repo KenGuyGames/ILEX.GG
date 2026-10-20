@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/cube-candidate/ui/cube-library.js');s=p.read_text(encoding='utf-8').replace("type:e.type,stage:e.stage}","type:e.type,stage:['Pokemon','Pokémon'].includes(d?.category)?(d.stage==='Basic'?'Basic':d.stage==='Stage2'?'Stage 2':'Stage 1'):e.stage}");p.write_text(s,encoding='utf-8')
+p=Path('work/cube-seeding/export-self-test.cjs');s=p.read_text(encoding='utf-8').replace("=>{const s=", "=>{for(let i=0;i<150;i++){if(await win.webContents.executeJavaScript(\"typeof cubeAssets!=='undefined'\"))break;await new Promise(r=>setTimeout(r,100));}const s=");p.write_text(s,encoding='utf-8')

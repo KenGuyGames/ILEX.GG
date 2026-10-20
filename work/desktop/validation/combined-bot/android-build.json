@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\combined-bot-release\\ILEX.GG-Android.apk",
+  "bytes": 142499177,
+  "sha256": "5c02dddaf3c55d947a803aa1157940d4b1838779cd7e9c67132f8801e1918e84",
+  "bundledScans": 445,
+  "engineSha256": "46e3e52c11617aa3a8870083ff547c899af0b7d5ef5c8bea643c8a074d74b67e",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

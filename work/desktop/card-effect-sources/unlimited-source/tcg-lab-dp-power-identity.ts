@@ -1,0 +1,2 @@
+// Printed Powers remain present even while disabled. Level-Up retains its parent Powers.
+export function dpPrintedPowers(list:any):any[]{const top=list.getPokemonCard();if(!top)return [];const cards=list.getPokemons(),parent=top._dpLevelUp?cards[cards.length-2]:null;return [...(top.powers||[]),...(parent?.powers||[])].filter((power:any,index:number,array:any[])=>array.findIndex((other:any)=>other.name===power.name&&other.powerType===power.powerType)===index);}

@@ -1,0 +1,7 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),root=path.resolve(__dirname,'../..'),dir=path.join(root,'work/combined-bot-release/native-v2'),candidate=path.join(root,'outputs/ILEX.GG-1.21.1');
+try{fs.closeSync(fs.openSync(path.join(root,'work/combined-bot-release/native-v2.lock'),'wx'));}catch(e){if(e.code==='EEXIST'){console.log('Combined native run already owns this snapshot.');process.exit(0);}throw e;}
+async function run(label){const env={...process.env,ILEX_MEGA_PRIVATE:"1",ILEX_PRIVATE_SIMULATED:"1"};delete env.ELECTRON_RUN_AS_NODE;fs.mkdirSync(dir,{recursive:true});const output=fs.openSync(path.join(dir,'launch-'+label+'.log'),'w');const code=await new Promise(resolve=>{const child=cp.spawn(path.join(candidate,'ILEX.GG.exe'),['--no-sandbox','--self-test',dir],{cwd:candidate,env,windowsHide:true,stdio:['ignore',output,output]});child.on('error',e=>{console.error(e.message);resolve(-1)});child.on('exit',resolve);});fs.closeSync(output);if(code!==0)throw Error(label+' desktop test exit '+code);if(fs.existsSync(path.join(dir,'failure.txt')))throw Error(fs.readFileSync(path.join(dir,'failure.txt'),'utf8'));console.log(label+' passed');}
+(async()=>{await run('fresh');for(const name of fs.readdirSync(dir).filter(n=>n.endsWith('.json')&&!n.includes('-fresh'))){const value=JSON.parse(fs.readFileSync(path.join(dir,name),'utf8'));if(value.passed)fs.copyFileSync(path.join(dir,name),path.join(dir,name.replace('.json','-fresh.json')));}await run('restored');})().catch(e=>{console.error(e.stack);process.exitCode=1});
+
+
+

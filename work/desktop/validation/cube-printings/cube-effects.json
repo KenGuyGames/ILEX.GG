@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "checks": [
+    "Source core remains exactly 640 entries, with 72 separate EXpansion cards",
+    "CubeKoga numeric, slug and old query links normalize without accepting other hosts",
+    "Seeded draft deals without replacement and keeps reserves/exclusions out",
+    "All draft rounds finish with conserved card ownership and a saved session resumes identically",
+    "Insufficient pack capacity and unresolved active printings are rejected before a draft changes state",
+    "40-card cube match deals four Prizes and uses modern first-turn rules",
+    "60-card EXpansion match deals six Prizes",
+    "Mutant hand evolution accepts a different same-type family and rejects cross-type or skipped stages",
+    "Two-Prize evolution barrier applies even to an otherwise matching type",
+    "Lowercase ex has a one-Prize base value while uppercase EX/GX/V keep two",
+    "Unified Ability context is restored after throws and cannot leak into another match",
+    "Cube rules survive exact journal replay and Undo without changing regular profiles",
+    "Random-pack mode imports a conventional cube without imposing Zander’s seeded ratios",
+    "Each deck owns only its own seat’s drafted cards, with freely supplied Basic Energy",
+    "Actual Knock Out reducers award one Prize for old and modern lowercase ex and two for a V",
+    "Aerodactyl TEU Fossil Fangs counts a Benched V as an EX/GX reference",
+    "Mutant Pokémon Breeder can take a different same-type Stage 2 line without requiring a matching Stage 1",
+    "Unified Toxic Gas actually blocks a modern Ability, while disabling the cube rule preserves ordinary behavior",
+    "Actual engine construction rejects a card owned only by a different draft seat",
+    "Unified Abilities do not impose old Pokémon Power status restrictions on a modern Ability",
+    "Printed Damage Swap status restrictions still apply after Pokémon Powers become Abilities",
+    "Wally and Evosoda evolve a different same-type family from the deck, preserving source-zone and timing rules",
+    "EXpansion deals every active expansion card across all seats and rounds",
+    "Technical Machine TS-1 Evoluter uses mutant matching for evolution from the deck"
+  ],
+  "hashes": {
+    "rules-engine.js": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+    "rules-match.js": "c44ca56f429d9cea5510ac55b429c799fec11b5e5cc4e11a9fcfb3f569e47eb2",
+    "bot-ai.js": "fbcd53005b32336c4fb755119b337a0eb2a67c7cf6d20795c4031367287dc99a",
+    "cube-library.js": "28f1d54e33baa8f869f864ece811f2c98ce4a7d5bcabf78d15da77e36a2d2e66"
+  }
+}

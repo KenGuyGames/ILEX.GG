@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path('work/cube-candidate/ui/cube-ui.js');s=p.read_text(encoding='utf-8');s=s.replace("draft=state.cubeDrafts.find(d=>d.cubeId===c.id&&!d.complete)||state.cubeDrafts.filter(d=>d.cubeId===c.id).at(-1)","draft=state.cubeDrafts.find(d=>d.cubeId===c.id&&d.id===state.activeCubeDraftId)||state.cubeDrafts.filter(d=>d.cubeId===c.id&&!d.complete).at(-1)||state.cubeDrafts.filter(d=>d.cubeId===c.id).at(-1)")
+s=s.replace('${cubeImportPanel()}${draft?cubeDraftView(draft)', '${cubeImportPanel()}${draft?`<label class="panel">Saved draft<select id="cube-session">${state.cubeDrafts.filter(d=>d.cubeId===c.id).map((d,i)=>`<option value="${esc(d.id)}" ${d.id===draft.id?\'selected\':\'\'}>Draft ${i+1} · ${d.complete?\'Complete\':\'Pack \'+(d.round+1)+\', Pick \'+(d.pick+1)}</option>`).join(\'\')}</select></label>`:\'\'}${draft?cubeDraftView(draft)')
+s=s.replace("$('#cube-select').onchange", "if($('#cube-session'))$('#cube-session').onchange=e=>{state.activeCubeDraftId=e.target.value;save();cubeScreen();};$('#cube-select').onchange")
+s=s.replace('state.cubeDrafts.push(d);save();', 'state.cubeDrafts.push(d);state.activeCubeDraftId=d.id;save();')
+p.write_text(s,encoding='utf-8')

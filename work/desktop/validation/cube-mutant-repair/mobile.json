@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": [
+    "Solar Evolution offers same-type mutant Stage2 and blocks wrong type, stage and two-Prize cards 640",
+    "Ordinary Solar Evolution does not offer unrelated Venusaur 640",
+    "Surprise Time Machine searches from remaining Pokemon despite attached Energy 640",
+    "Surprise Time Machine normal rules keep printed family despite Energy in stack 640",
+    "Pupate uses shared mutant search and keeps evolution stage 640",
+    "Emerge uses shared mutant search and keeps evolution stage 640",
+    "Wally Training evolves Active across same-type families without broadening its target 640",
+    "Surprise Time Machine blocks wrong-type/stage and two-Prize mutants after devolving 640",
+    "Skiploom cannot trigger Solar Evolution while underneath an evolved Pokemon 640",
+    "Naturally played Solar Evolution round-trips with exact replay and Undo 640",
+    "Delete draft opens confirmation 640",
+    "Touch cancel keeps draft 640",
+    "Touch deletes last saved draft 640",
+    "Deleting draft keeps cube 640",
+    "Touch restores deleted draft 640",
+    "Imported cube controls fit mobile 640",
+    "Solar Evolution offers same-type mutant Stage2 and blocks wrong type, stage and two-Prize cards 360",
+    "Ordinary Solar Evolution does not offer unrelated Venusaur 360",
+    "Surprise Time Machine searches from remaining Pokemon despite attached Energy 360",
+    "Surprise Time Machine normal rules keep printed family despite Energy in stack 360",
+    "Pupate uses shared mutant search and keeps evolution stage 360",
+    "Emerge uses shared mutant search and keeps evolution stage 360",
+    "Wally Training evolves Active across same-type families without broadening its target 360",
+    "Surprise Time Machine blocks wrong-type/stage and two-Prize mutants after devolving 360",
+    "Skiploom cannot trigger Solar Evolution while underneath an evolved Pokemon 360",
+    "Naturally played Solar Evolution round-trips with exact replay and Undo 360",
+    "Delete draft opens confirmation 360",
+    "Touch cancel keeps draft 360",
+    "Touch deletes last saved draft 360",
+    "Deleting draft keeps cube 360",
+    "Touch restores deleted draft 360",
+    "Imported cube controls fit mobile 360"
+  ],
+  "errors": [],
+  "physicalAndroidDevice": false,
+  "hashes": {
+    "rules-engine.js": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd"
+  }
+}

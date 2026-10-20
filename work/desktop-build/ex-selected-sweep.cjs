@@ -6,7 +6,7 @@ const settle=settleBase.replace("else if(q.type==='Order cards')",`else if(q.typ
  else if(q.type==='Attach energy'){const to=M.targets(m,q).find(x=>!q.options.blockedTo.some(b=>JSON.stringify(b)===JSON.stringify(x.target)));value=q.cardList.cards.map((card,index)=>({card,index})).filter(x=>!q.options.blocked.includes(x.index)&&R.matchesPromptFilter(x.card,q.filter)).slice(0,Math.max(q.options.min,Math.min(q.options.max,1))).map(x=>({to:to.target,index:x.index}));}
  else if(q.type==='Order cards')`);
 const script=`
-const records=JSON.parse(fs.readFileSync(path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-ex-data.ts'),'utf8').replace(/^export const exData:any = /,'').replace(/;\\s*$/,''));
+const records=JSON.parse(fs.readFileSync(path.join(root,'work/cube-source/src/tcg-lab-ex-data.ts'),'utf8').replace(/^export const exData:any = /,'').replace(/;\\s*$/,''));
 const engineSha256=require('crypto').createHash('sha256').update(fs.readFileSync(path.join(ui,'rules-engine.js'))).digest('hex');
 const failures=[];let scenarios=0;const scope=['ex6','ex7','ex8','np','pop1'];
 for(const record of records.filter(r=>scope.includes(r.d.set.id)&&r.d.supertype==='Pokémon'))for(const printed of record.d.attacks||[])for(const seed of [1,7]){

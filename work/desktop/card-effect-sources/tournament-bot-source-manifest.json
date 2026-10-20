@@ -1,0 +1,215 @@
+{
+  "passed": true,
+  "version": "1.21.0",
+  "engineSha256": "a711f38166daf06f658d0f42b6b7279d925e9ad84a4cbdead68a77451e031d74",
+  "botSha256": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874",
+  "botUiSha256": "f6f0c6a068952696ca41a1365445aae7014853cd4e6b1560841b8166c6efc51a",
+  "reproduced": true,
+  "files": [
+    {
+      "path": "base-ui/bot-ai.js",
+      "bytes": 39933,
+      "sha256": "e845283560f1585055027d236edcd5449692dfb0d075e9075df97a57db95ecfe"
+    },
+    {
+      "path": "base-ui/bot-ui.js",
+      "bytes": 11556,
+      "sha256": "6a7a37e6ab4d24efc384f31a23ac1134ea56715fb4b170bcf457a4ceb9afbef6"
+    },
+    {
+      "path": "data/mega-mixed-fixture-decks.json",
+      "bytes": 34942,
+      "sha256": "4ae7e6703605cd19df7a0f61e6a6af8b56343713f931e202b3c24235b2024329"
+    },
+    {
+      "path": "data/sm-cached-decks.json",
+      "bytes": 220491,
+      "sha256": "94a839f938d394bf2e578d85605a30b2ac86cbbfee939cacf8461e23461c734d"
+    },
+    {
+      "path": "data/sv-mixed-fixture-decks.json",
+      "bytes": 60223,
+      "sha256": "314dcb0bd75e828bc97261ca808da7fdaf9b076c3edec685a99c2dd54eab56e1"
+    },
+    {
+      "path": "data/swsh-cached-decks.json",
+      "bytes": 115562,
+      "sha256": "d011f5b22d9161e3c4f370e9a20ceed29f8ac5c98db68266473b02f8901da0fb"
+    },
+    {
+      "path": "data/xy-scoped-decks.json",
+      "bytes": 140444,
+      "sha256": "2866d2198d0ea1e57dafe9fe9680ea906cb8daadc2a2e2e1d94f71aab175e0d5"
+    },
+    {
+      "path": "engine-repair/apply-engine-repair.cjs",
+      "bytes": 702,
+      "sha256": "34ec6c4578628a1e1084372de7c0a8457ed89aa83095e8bf41c9acfa64921553"
+    },
+    {
+      "path": "engine-repair/engine-repair.json",
+      "bytes": 1405,
+      "sha256": "32d9bda29a1ece5fe2883a54dafad285dd83ae30fd8468ac701f1f00861d1183"
+    },
+    {
+      "path": "engine-repair/rare-candy-fix.json",
+      "bytes": 5516,
+      "sha256": "efce3c08308b487064f6dffe75c5c6dab66d12aa46f9d1cd356491c2d9a2c8ee"
+    },
+    {
+      "path": "engine-repair/rare-candy-tests.cjs",
+      "bytes": 6001,
+      "sha256": "811bcd3617cc2b536d7eec16d07202850bd037f7cf50aa3a350bbf73f0a87de7"
+    },
+    {
+      "path": "engine-repair/rare-candy.ts",
+      "bytes": 6668,
+      "sha256": "5aca27b377a113faf525c78c445d1fdef52d516c42b5a52ba486ad2d495f6c99"
+    },
+    {
+      "path": "README.txt",
+      "bytes": 1469,
+      "sha256": "9b3f7a21661729702bcb67f90981bba2ca2c7ff5b1418dcbbfa5b206b1d990b4"
+    },
+    {
+      "path": "tools/create-tournament-tests.cjs",
+      "bytes": 16300,
+      "sha256": "58686be0cbab8c52b745391fb5bee3b4c0181f6002091b92ba8610300d87ad74"
+    },
+    {
+      "path": "tools/fix-tournament-private-harness.cjs",
+      "bytes": 1284,
+      "sha256": "7ebc5f26d41bdcd9471b88d970647826cfe9c41931d556980bc33c7d24cc47e2"
+    },
+    {
+      "path": "tools/merge-tournament-expanded.cjs",
+      "bytes": 899,
+      "sha256": "2eb8aa6015d10583e9b67e496f429a185bfe9476f27b3b21ba573bbfb5560d6f"
+    },
+    {
+      "path": "tools/package-tournament.py",
+      "bytes": 10388,
+      "sha256": "7d0697d6096228bc4dfb133eed9314c7dab9f33999163b9d2f44741e0ddf7446"
+    },
+    {
+      "path": "tools/prepare-tournament-expanded.cjs",
+      "bytes": 455,
+      "sha256": "c29ec1ff3bf98e234a62e1cde84338001fe544d57c67fddd6aa110ce31e9e51b"
+    },
+    {
+      "path": "tools/rare-candy-native-fixture.json",
+      "bytes": 1642,
+      "sha256": "efb87144a7ad2a74001b408655873e76d57d4c02af6e0ea62ad6ed4374c0f289"
+    },
+    {
+      "path": "tools/rare-candy-native-tests.js",
+      "bytes": 2851,
+      "sha256": "ec72ab488927e1d6e7d1c6efd74c431513b6b9fb35e67ce1cd6558868c1edf68"
+    },
+    {
+      "path": "tools/realistic-bot-tests.cjs",
+      "bytes": 8866,
+      "sha256": "4ccd1e1e1299d26de6076315b5182d370d7b021e78ce84ef1723b5bba0c93060"
+    },
+    {
+      "path": "tools/record-tournament-validation.cjs",
+      "bytes": 7440,
+      "sha256": "fb668da31961d09f0f28fecda5e252fe77cb1c946ab31ed3ac2701ba9913a45f"
+    },
+    {
+      "path": "tools/reuse_zip_entries.py",
+      "bytes": 3244,
+      "sha256": "17f5a53df2ecedfa2d1cfca2ec24f363822fef506d842eca6de3f10795f0f0c9"
+    },
+    {
+      "path": "tools/run-tournament-exact-release.cjs",
+      "bytes": 1641,
+      "sha256": "b823c15f9ebc03b261ada0e5df82578ff70dc7dc47ead67258b87fbb09102644"
+    },
+    {
+      "path": "tools/run-tournament-final-benchmarks.cjs",
+      "bytes": 1506,
+      "sha256": "d086dd2137bd83a342477f540ed35718c0dc8ccf64e1714ebd92bda96835c7b8"
+    },
+    {
+      "path": "tools/sync-tournament-engine-repair.cjs",
+      "bytes": 1933,
+      "sha256": "9801a8b939352bb7efc9b6ea7f4a1515eb959ba5ef4d7ec2ca2fd8602098635e"
+    },
+    {
+      "path": "tools/tournament-bot-benchmark.cjs",
+      "bytes": 5896,
+      "sha256": "fe7781e13ba047b3332ac2dd70423636858f25834974100c20b571d815396736"
+    },
+    {
+      "path": "tools/tournament-bot-native-tests.js",
+      "bytes": 2049,
+      "sha256": "537d541c5b4fc53caec77687f7b1cd53b40bdff5e7b35ba1ab4ce2ae0cc11dda"
+    },
+    {
+      "path": "tools/tournament-bot-self-test.cjs",
+      "bytes": 1336,
+      "sha256": "4bfe457c6a987cb233135e4b478d14e4a145b9a40b938f0f2bf630c9fd6cc3db"
+    },
+    {
+      "path": "tools/tournament-bot-tests.cjs",
+      "bytes": 23893,
+      "sha256": "4602bc39a96a60a5174bbf6bcffe26cb62029baddf22f4eed788d4d3a6fce715"
+    },
+    {
+      "path": "tools/tournament-damage.fragment.js",
+      "bytes": 2981,
+      "sha256": "c5614edc8bbc7fc2376f437cbf9c05d8860aa2feb3b726b2b536377973bad5a9"
+    },
+    {
+      "path": "tools/tournament-discard.fragment.js",
+      "bytes": 2974,
+      "sha256": "c762f65773d958a416dfd5cfeb859b59347facc4003f7fc1842fab27bcd389c3"
+    },
+    {
+      "path": "tools/tournament-expanded-profile.cjs",
+      "bytes": 2053,
+      "sha256": "2b94a89ec5cb3e885b2a6f7e9b07c7142add0be12efaa22c359ede52ffe36de0"
+    },
+    {
+      "path": "tools/tournament-policy-delta-audit.cjs",
+      "bytes": 3457,
+      "sha256": "d852c1c55c23ab8ecd217787e75e4a4d2a789116ece16c90e5727d225ed169b1"
+    },
+    {
+      "path": "tools/tournament-private-native-tests.cjs",
+      "bytes": 13126,
+      "sha256": "b4a292bf1ea99b0dab320c69bb52f467cd00d60f364c084646f8714f5aa4a296"
+    },
+    {
+      "path": "tools/tournament-profile-tests.cjs",
+      "bytes": 2151,
+      "sha256": "af204e663748ab60b28bafb24788fba883892f26ca9652c7c6a64de9e5242d99"
+    },
+    {
+      "path": "tools/tournament-promo-cache-tests.cjs",
+      "bytes": 1095,
+      "sha256": "f0c89fc69b92ede01e9834dc2a14de5b0280e1e90cd1363da37fbc178392cfec"
+    },
+    {
+      "path": "tools/tournament-prompts.fragment.js",
+      "bytes": 4238,
+      "sha256": "30cf4b6e4ee0229f9e8f4f3a79ecaf29a4380fbd6aec7dc244b96b56c7baaa81"
+    },
+    {
+      "path": "tools/tournament-scaled-resources.fragment.js",
+      "bytes": 3770,
+      "sha256": "95a46c6ecf78dc4628799b6327c3f505f5848b65ae768bc354775c428d652bfd"
+    },
+    {
+      "path": "tools/tournament-search.fragment.js",
+      "bytes": 12009,
+      "sha256": "120ae266652c7c7cead0313950a1f8c8447f29ddc8fd88727a66dc1bd0c25932"
+    },
+    {
+      "path": "tools/upgrade-tournament-bot.cjs",
+      "bytes": 14682,
+      "sha256": "38eb4e7e7e057cad3ebb72f6598f5d95263fa984b20d5fe6ae73f3e0be4beb01"
+    }
+  ]
+}

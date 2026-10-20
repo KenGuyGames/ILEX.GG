@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Classic Collection Umbreon alias resolves only to Umbreon Star, never CEL17 Groudon",
+    "Observed supplied Delta definitions match standard automated HP, types, stage, costs and effects",
+    "Altered HP, type, attack cost and damage still require review",
+    "Saved Zander CubeKoga review flags repair without affecting unrelated custom cards"
+  ],
+  "source": "Public CubeKoga279 card records observed directly; saved-cube behavior tested separately on isolated profile copy.",
+  "hashes": {
+    "cube-library.js": "39a47083a4d42c17234c3d83e3cc43570378e322af8f09e84622a771b66613be"
+  }
+}

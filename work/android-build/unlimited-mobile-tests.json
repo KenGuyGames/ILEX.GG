@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "sizes": [
+    {
+      "width": 800,
+      "height": 360,
+      "passed": true,
+      "checks": [
+        "All-era profile uses current turn/Tool rules and legacy Power conditions",
+        "Format selects the Unlimited profile",
+        "Deck UI accepts one old Computer Search using current ACE SPEC rules",
+        "Deck UI rejects two ACE SPEC across old/new printings",
+        "Unlimited saved replay preserves effective rules and original printing IDs",
+        "Unlimited Undo preserves exact replay",
+        "Original Bill artwork/ID uses effective Supporter classification",
+        "Live table retains Unlimited profile",
+        "Unlimited exposes both players’ independent GX and VSTAR markers",
+        "Enlarged historical Pokémon opens in an Unlimited match",
+        "Historical attacks and Retreat retain enlarged actions",
+        "Cross-era inspection is read-only",
+        "GX use never consumes VSTAR"
+      ],
+      "scope": "Cross-era rules/deck validation/table/markers/replay/Undo; actual external two-PC and physical Android remain unverified"
+    },
+    {
+      "width": 640,
+      "height": 312,
+      "passed": true,
+      "checks": [
+        "All-era profile uses current turn/Tool rules and legacy Power conditions",
+        "Format selects the Unlimited profile",
+        "Deck UI accepts one old Computer Search using current ACE SPEC rules",
+        "Deck UI rejects two ACE SPEC across old/new printings",
+        "Unlimited saved replay preserves effective rules and original printing IDs",
+        "Unlimited Undo preserves exact replay",
+        "Original Bill artwork/ID uses effective Supporter classification",
+        "Live table retains Unlimited profile",
+        "Unlimited exposes both players’ independent GX and VSTAR markers",
+        "Enlarged historical Pokémon opens in an Unlimited match",
+        "Historical attacks and Retreat retain enlarged actions",
+        "Cross-era inspection is read-only",
+        "GX use never consumes VSTAR"
+      ],
+      "scope": "Cross-era rules/deck validation/table/markers/replay/Undo; actual external two-PC and physical Android remain unverified"
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "passed": true,
+      "checks": [
+        "All-era profile uses current turn/Tool rules and legacy Power conditions",
+        "Format selects the Unlimited profile",
+        "Deck UI accepts one old Computer Search using current ACE SPEC rules",
+        "Deck UI rejects two ACE SPEC across old/new printings",
+        "Unlimited saved replay preserves effective rules and original printing IDs",
+        "Unlimited Undo preserves exact replay",
+        "Original Bill artwork/ID uses effective Supporter classification",
+        "Live table retains Unlimited profile",
+        "Unlimited exposes both players’ independent GX and VSTAR markers",
+        "Enlarged historical Pokémon opens in an Unlimited match",
+        "Historical attacks and Retreat retain enlarged actions",
+        "Cross-era inspection is read-only",
+        "GX use never consumes VSTAR"
+      ],
+      "scope": "Cross-era rules/deck validation/table/markers/replay/Undo; actual external two-PC and physical Android remain unverified"
+    }
+  ],
+  "engineSha256": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3"
+}

@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),vm=require('vm');
 const additionalAttack=require('./wotc-attack-patterns.cjs');
 const finalClauses=require('./wotc-final-clauses.json');const clauseText=t=>String(t||'').replace(/\s+/g,' ').replace(/Flip a coin, If heads,/g,'Flip a coin. If heads,').trim();
-const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),src=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),src=path.join(root,'work/cube-source/src');
 const sets={base1:'BS',base2:'JU',base3:'FO',base4:'B2',base5:'TR',gym1:'G1',gym2:'G2',neo1:'N1',neo2:'N2',neo3:'N3',neo4:'N4',si1:'SI',base6:'LC',ecard1:'EX',ecard2:'AQ',ecard3:'SK',basep:'PR',bp:'BP'};
 const canonical=Object.keys(sets).flatMap(s=>JSON.parse(fs.readFileSync(path.join(root,'work/card-sources/pokemon-tcg-data-master/cards/en',s+'.json'))).map(c=>({...c,set:{id:s}})));
 const scanCards=JSON.parse(fs.readFileSync(path.join(ui,'cards.json'))),scanAliases={lc:'base6',bog:'bp'},numberAlias=s=>s.replace(/^H0+(?=\d)/i,'H').replace(/(?<=\d)[ab]$/i,'');

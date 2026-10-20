@@ -1,0 +1,35 @@
+{
+  "before": {
+    "player": 1,
+    "index": 0,
+    "card": "Rare Candy",
+    "type": 2,
+    "trainer": 0,
+    "hand": [
+      "sv01-191",
+      "sve-005",
+      "sve-005",
+      "sve-005",
+      "sve-005",
+      "sv01-086",
+      "sve-005",
+      "sve-005"
+    ]
+  },
+  "clicked": 1,
+  "action": {
+    "type": "play",
+    "player": 1,
+    "index": 0,
+    "target": {
+      "player": 2,
+      "slot": 1,
+      "index": 0
+    }
+  },
+  "pending": [
+    "Choose pokemon"
+  ],
+  "toast": "",
+  "modal": "Rare CandyChoose a destination on the table, or use the full play options.Place on tableMore play optionsEnlarge card"
+}

@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "feature": "X Attack Active-only bonus before Weakness/Resistance, removed on evolution",
+  "hashes": {
+    "rules-engine.js": "c11986066e985ea684aa517577c219a566bb5fa8285ca092112fab38e92049dc",
+    "card-details.json": "d24023ab8996d3895a3af000b7a78f235aece8e6afd521f8a1803582764835da"
+  },
+  "seededPacksChecked": 1024,
+  "nativeChecksPerLaunch": 12,
+  "touchChecks": 14,
+  "xAttackChecks": 10,
+  "cubeChecks": 24,
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+    "bytes": 205440341,
+    "sha256": "5e4b816b970edf1eb483b4678640854746a1871f094ccffd24d547383b8e6fc1",
+    "bundledScans": 1137,
+    "engineSha256": "c11986066e985ea684aa517577c219a566bb5fa8285ca092112fab38e92049dc",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidStaticChecks": 44,
+  "priorEngine": "bbbb7403e6437457766572e8135fffc618cee276c885fc7b78790bebbb261138",
+  "limits": [
+    "Start a NEW draft to use corrected5/5/6 composition; old sessions retain picks.",
+    "X Attack uses Kenneth-selected one-use Item lifecycle, differing from printed Battle face-down text.",
+    "Physical Android acceptance remains pending.",
+    "Finite checks do not prove every interaction."
+  ],
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows.zip",
+      "sha256": "c77002d803936875a3b3a7e1b028ce658ae0bdedb307f5ab2aaa600d49a5f1f1",
+      "crcPassed": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows-Offline.zip",
+      "sha256": "42fb8199f20e86216687bcb8a1123145831f7bebafad55ac4d99cd355a69dd40",
+      "crcPassed": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "format-reprints-extra-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-replay-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-cutoff-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "rare-candy-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "tournament-bot-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "tournament-expanded-profile",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-match-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-peer-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "realistic-alias-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "tournament-profile-tests",
+      "passed": true,
+      "exitCode": 0
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "status": "candidate",
+  "printings": 21314,
+  "byEra": {
+    "EX": {
+      "printings": 1857,
+      "attacks": 2659,
+      "trainers": 214
+    },
+    "HGSS": {
+      "printings": 605,
+      "attacks": 809,
+      "trainers": 71
+    },
+    "SM": {
+      "printings": 3078,
+      "attacks": 4390,
+      "trainers": 489
+    },
+    "XY": {
+      "printings": 2208,
+      "attacks": 2790,
+      "trainers": 325
+    },
+    "DP": {
+      "printings": 1558,
+      "attacks": 2364,
+      "trainers": 142
+    },
+    "BW": {
+      "printings": 1521,
+      "attacks": 2208,
+      "trainers": 142
+    },
+    "SV": {
+      "printings": 3694,
+      "attacks": 4814,
+      "trainers": 483
+    },
+    "WOTC": {
+      "printings": 1793,
+      "attacks": 2426,
+      "trainers": 258
+    },
+    "SWSH": {
+      "printings": 3707,
+      "attacks": 4845,
+      "trainers": 579
+    },
+    "MEGA": {
+      "printings": 1293,
+      "attacks": 1536,
+      "trainers": 187
+    }
+  }
+}

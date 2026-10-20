@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "engineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "Unlimited all ten era fixtures with mixed Trainer reprints and Fossil Ditto; bounded120 decisions with replay/Undo. Constructed fixtures are not tournament lists.",
+  "games": [
+    {
+      "decks": [
+        "Constructed WOTC Unlimited fixture: Blastoise",
+        "Constructed EX Unlimited fixture: Gardevoir"
+      ],
+      "level": "easy",
+      "decisions": 53,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed HGSS Unlimited fixture: Magnezone",
+        "Constructed BW Unlimited fixture: Darkrai-EX"
+      ],
+      "level": "hard",
+      "decisions": 111,
+      "turn": 14,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SM Unlimited fixture: Dragonite",
+        "Constructed SWSH Unlimited fixture: Zacian V"
+      ],
+      "level": "normal",
+      "decisions": 24,
+      "turn": 3,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed MEGA Unlimited fixture: Mega Venusaur ex",
+        "Constructed WOTC Unlimited fixture: Blastoise"
+      ],
+      "level": "normal",
+      "decisions": 97,
+      "turn": 17,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

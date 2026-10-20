@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Realistic difficulty starts a dedicated local worker",
+    "Worker planning completes without error",
+    "Worker decision commits through the real rules engine",
+    "Worker and direct deterministic policy agree",
+    "Main thread continues processing while the worker thinks",
+    "Realistic Player is selected in the live difficulty menu",
+    "Difficulty persists in saved matches",
+    "Committed worker action replays exactly",
+    "Undo/pause cancels in-flight planning without a late action",
+    "Changing difficulty cancels the worker and rejects stale results",
+    "Leaving the table discards a late worker result",
+    "Worker restores and plays structured custom cards from the workspace fallback"
+  ],
+  "heartbeatCount": 381,
+  "worker": true,
+  "restored": true,
+  "botSha256": "e845283560f1585055027d236edcd5449692dfb0d075e9075df97a57db95ecfe"
+}

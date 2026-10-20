@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "All cube and EXpansion printings available 640",
+    "Saved Greninja and Urshifu repair on mobile 640",
+    "Touch starts full EXpansion without printing error 640",
+    "First touch draft pick resolves 640",
+    "EXpansion controls fit mobile 640",
+    "All cube and EXpansion printings available 360",
+    "Saved Greninja and Urshifu repair on mobile 360",
+    "Touch starts full EXpansion without printing error 360",
+    "First touch draft pick resolves 360",
+    "EXpansion controls fit mobile 360"
+  ],
+  "errors": [],
+  "physicalAndroidDevice": false,
+  "hashes": {
+    "cube-library.js": "28f1d54e33baa8f869f864ece811f2c98ce4a7d5bcabf78d15da77e36a2d2e66",
+    "cube-ui.js": "5ccf8ce7f5e3ccbcba2c3a36fbe4fe2d6e5b50309e7d493e87cb26dd00dc2da4",
+    "cube-presets.json": "849520c43c01f557e6de2597dc4ecabe0ec9f9c5b184b7fff48022c52cb14a51"
+  }
+}

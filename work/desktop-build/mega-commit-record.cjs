@@ -11,7 +11,7 @@ Final engine ${v.engineSha256}.60 expected-result groups,11,701 printed-field co
 
 Windows EXE and both ZIPs updated/integrity verified. Android **1.19.0-android.27/code27**, original signing certificate retained; physical Android acceptance pending. Private Windows multiplayer preview retained, but real external two-PC connection/full-match acceptance remains unverified. No subagents or GitHub publication. Existing features, saves, historical formats and signing preserved. Reverse scan acquisition remains incomplete.
 
-Read work/rules-research/MEGA-PROGRESS.md and mega-final-release-evidence.json. Canonical corrected UTF-8 source is **work/mega-source/src**; build only with ILEX_RULES_SOURCE_ROOT=work/mega-source/src and ILEX_RULES_OUTFILE=work/mega-candidate/ui/rules-engine.js. Do not build older shared mojibake source or rerun initial generators over the release. Canonical source/provenance shipped under resources/app/card-effect-sources/mega-source and mega-source-manifest.json. Packaging scripts: package-mega.py and finish-mega.cjs; final evidence commit: mega-commit-record.cjs.
+Read work/rules-research/MEGA-PROGRESS.md and mega-final-release-evidence.json. Canonical corrected UTF-8 source is **work/cube-source/src**; build only with ILEX_RULES_SOURCE_ROOT=work/cube-source/src and ILEX_RULES_OUTFILE=work/mega-candidate/ui/rules-engine.js. Do not build older shared mojibake source or rerun initial generators over the release. Canonical source/provenance shipped under resources/app/card-effect-sources/mega-source and mega-source-manifest.json. Packaging scripts: package-mega.py and finish-mega.cjs; final evidence commit: mega-commit-record.cjs.
 
 ---
 

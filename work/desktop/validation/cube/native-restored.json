@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "restored": true,
+  "checks": [
+    "Cube rules, draft picks, drafted decks and formats survive exact restart",
+    "Cube draft is accessible from the forest main menu",
+    "Zander core has640 entries",
+    "Excluded cards have a separate visible view",
+    "Confirmed mutant and unified Ability rules appear in editor",
+    "Draft setup uses the selected pod size and pack count",
+    "A seeded pack displays all16 cards",
+    "Draft cards magnify without selecting a pick",
+    "Stale duplicate pick cannot consume the next pack",
+    "Three visible card picks are committed exactly once",
+    "Editing library rules does not mutate an in-progress draft",
+    "Completed two-seat draft conserves all32 dealt cards",
+    "Human and bot decks share a format but retain separate drafted pools",
+    "Constructed human draft deck passes its ownership and40-card checks",
+    "Constructed opponent draft deck passes its own pool checks",
+    "Gallery cannot add an undrafted card to a drafted deck",
+    "Both generated drafted decks complete native40-card match setup",
+    "Draft match places four Prizes for both players",
+    "Realistic Player worker restores cube rules and produces an action",
+    "Cube engine accepts the worker action",
+    "Normal Start match button creates a cube match with seat ownership and pinned rules",
+    "Cube match renders the normal play table"
+  ],
+  "hashes": {
+    "rules-engine.js": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+    "rules-match.js": "c44ca56f429d9cea5510ac55b429c799fec11b5e5cc4e11a9fcfb3f569e47eb2",
+    "cube-library.js": "7ff245351247f8f4c450b74521efaba00875ee44d8d9679377ec04fb5f1c0918",
+    "cube-ui.js": "6539ca75bc27260b971978a971880b87b5cfe881945e301df2f6f6a984546963",
+    "cube-deck.js": "96238e61a85e2fc8972e15cdb920e51d39af2718fa71698db52f769246f1900e"
+  },
+  "liveImport": {
+    "passed": false,
+    "networkUnavailable": true,
+    "error": "Error invoking remote method 'cube-import': Error: net::ERR_NAME_NOT_RESOLVED"
+  }
+}

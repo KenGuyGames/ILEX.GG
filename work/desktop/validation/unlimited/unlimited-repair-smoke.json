@@ -1,0 +1,29 @@
+{
+  "uniqueCompiledBranches": false,
+  "candidate": true,
+  "passed": true,
+  "scenarios": 31,
+  "failures": [],
+  "rejected": [],
+  "testedPrintings": [
+    "ex4-3",
+    "basep-19",
+    "ecard3-21",
+    "base1-29",
+    "basep-35",
+    "neo4-36",
+    "base2-39",
+    "base4-43",
+    "ecard2-44",
+    "neo3-46",
+    "neo4-50",
+    "gym1-54",
+    "gym1-66",
+    "ecard3-81",
+    "ecard3-90",
+    "ecard3-H20"
+  ],
+  "shard": null,
+  "scope": "Unlimited cross-era candidate; all implemented eras, modern turn rules, Trainer reprint resolver; generic conditional exclusions recorded separately",
+  "engineSha256": "3631238ced8f0e69401694d9c31397e708b939ee3d13b5e3b4530c5a0281eb0d"
+}

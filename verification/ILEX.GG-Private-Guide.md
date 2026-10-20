@@ -1,6 +1,8 @@
+Current Windows build: **1.22.0**. Both peers must use this build. **Cube matches/drafting are local/bot only and excluded from multiplayer.** Real external two-PC acceptance remains pending.
+
 # ILEX.GG private Windows multiplayer preview
 
-This preview adds invite-only Windows-to-Windows matches. No account, subscription, paid relay or hosted lobby is required. Both players must use the same preview build. The stable 1.19.0 Windows app retains this beta. Android multiplayer remains deferred. Both peers must use the same 1.19.0 build.
+This preview adds invite-only Windows-to-Windows matches. No account, subscription, paid relay or hosted lobby is required. Both players must use the same preview build. The normal Windows release and Android APK remain separate.
 
 ## Start a match
 

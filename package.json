@@ -1,6 +1,6 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "1.19.0",
+  "version": "1.22.0",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
@@ -19,7 +19,14 @@
     "test:psychic": "node work/desktop-build/psychic-embrace-tests.cjs",
     "test:multiplayer": "node work/desktop-build/private-match-tests.cjs",
     "test:protocol": "node work/desktop-build/private-peer-tests.cjs",
-    "test:mega": "node work/desktop-build/test-release-mega.cjs"
+    "test:mega": "node work/desktop-build/test-release-mega.cjs",
+    "test:cube": "node work/desktop-build/cube-tests.cjs",
+    "test:cube-import": "node work/desktop-build/cube-import-tests.cjs",
+    "test:cube-mutant": "node work/cube-mutant-repair/tests.cjs",
+    "test:cube-seeding": "node work/cube-seeding/tests.cjs",
+    "test:x-attack": "node work/cube-x-attack-v2/tests.cjs",
+    "test:formats": "node work/desktop-build/format-reprints-tests.cjs",
+    "test:release": "node work/desktop-build/test-cube-release.cjs"
   },
   "devDependencies": {
     "electron": "44.7.0"

@@ -1,0 +1,7 @@
+ILEX.GG 1.21.0 Realistic Player source overlay
+
+The engine preserves the independently released Rare Candy repair (a711f38166daf06f658d0f42b6b7279d925e9ad84a4cbdead68a77451e031d74). Historical 1.20.0 source remains in unlimited-source. The engine-repair folder contains the one-file TS override, original repair evidence and an exact hash-checked patch from the historical a46 engine. Replace src/sets/10-scarlet-and-violet/set-scarlet-and-violet/rare-candy.ts with that override for a source rebuild. The bot upgrade changes no other card reducer. This folder preserves the exact earlier bot source and the deterministic generator/fragments for this overlay. No training data, neural model, paid service or signing key is included.
+
+To reproduce only the two bot UI files using Node.js, set ILEX_BOT_BASE_UI to this folder's absolute base-ui path and ILEX_TOURNAMENT_UI to an existing empty output folder, then run tools/upgrade-tournament-bot.cjs. The shipped files were reproduced byte for byte. Do not run the generator without those environment variables against a historical workspace. Validation tools retain their original workspace-relative research-data paths.
+
+Functional and bounded policy checks do not certify professional tournament strength. Opponent concealed identities and real RNG are excluded from planning; decisions are approximate and search is bounded. Research references and source-specific game comparisons are in validation/tournament-bot.

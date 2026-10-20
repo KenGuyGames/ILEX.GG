@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "baseline": false,
+  "checks": [
+    "Actual copied CubeKoga library inspected",
+    "Saved decks, formats, drafts, matches and deleted records fingerprint preserved"
+  ],
+  "data": {
+    "found": true,
+    "count": 712,
+    "missing": [],
+    "reported": [
+      {
+        "name": "Umbreon ★",
+        "id": "pop5-17",
+        "sourceId": "cel25c-17_A"
+      },
+      {
+        "name": "Starmie δ",
+        "id": "ex11-15",
+        "sourceId": "ex11-15"
+      },
+      {
+        "name": "Mewtwo δ",
+        "id": "ex11-12",
+        "sourceId": "ex11-12"
+      }
+    ],
+    "decks": 322,
+    "drafts": 0
+  },
+  "hashes": {
+    "cube-library.js": "39a47083a4d42c17234c3d83e3cc43570378e322af8f09e84622a771b66613be"
+  }
+}

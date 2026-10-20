@@ -1,0 +1,30 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),ui=process.env.ILEX_REPRINT_UI_ROOT?path.resolve(process.env.ILEX_REPRINT_UI_ROOT):path.join(root,'work/unlimited-candidate/ui');
+const read=n=>JSON.parse(fs.readFileSync(path.join(ui,n),'utf8')),map=read('rules-card-map.json'),sets=read('sets.json'),groups=read('unlimited-reprints.json').groups,rank=new Map(sets.map((s,i)=>[s.id,i]));
+const boundaries={wotc:'neo3',wotc2002:'ecard3',ex:'ex5',exlate:'ex16',dppl:'pl4',dp:'hgss4',hgss:'col1',bw:'bw10',xy:'xy12',sm:'sm12',swsh:'swsh12.5',sv:'sv10.5w',mega:'30th',modern:'30th',expanded:'30th'};
+const modern=new Set(['bw','xy','sm','swsh','sv','mega','modern','expanded']),latest=new Set(['sv','mega','modern','expanded']);const setOf=id=>sets.filter(s=>id.startsWith(s.id+'-')).sort((a,b)=>b.id.length-a.id.length)[0]?.id;
+const formatReprints={},audit=[];
+for(const [profile,end]of Object.entries(boundaries)){
+ const aliases={},records=[];
+ for(const group of groups){const eligible=group.printings.filter(id=>rank.get(setOf(id))<=rank.get(end)).sort((a,b)=>rank.get(setOf(b))-rank.get(setOf(a))||a.localeCompare(b,undefined,{numeric:true}));if(!eligible.length)continue;const reference=eligible[0];let template=map[reference];
+  if(modern.has(profile))template=({'Rare Candy':'Rare Candy SVI','Potion':'Potion BLW','Great Ball':'Great Ball PAL','PlusPower':'PlusPower BLW','Energy Retrieval':'Energy Retrieval SVI'})[group.name]||template;
+  if(profile==='bw'&&group.name==='Pokémon Catcher')template='Pokemon Catcher EPO';
+  if(['dppl','dp','hgss'].includes(profile)&&group.name==='PlusPower')template='PlusPower DP';
+  if(group.name==='Leftovers'&&!latest.has(profile))template='ILEX FORMAT Leftovers legacy';
+  if(group.name==='Lum Berry')template=['swsh','sv','mega','modern','expanded'].includes(profile)?'ILEX FORMAT Lum Berry modern':'ILEX FORMAT Lum Berry legacy';
+  for(const id of group.printings)if(map[id]!==template)aliases[map[id]]=template;
+  records.push({name:group.name,category:group.category,reference,template,printings:group.printings});
+ }
+ formatReprints[profile]=aliases;audit.push({profile,through:end,groups:records,aliases:Object.keys(aliases).length});
+}
+formatReprints.unlimited={};const lum=groups.find(g=>g.name==='Lum Berry');formatReprints.unlimited[map[lum.reference]]='ILEX FORMAT Lum Berry modern';
+const formatReprintCatalog={rank:Object.fromEntries(rank),ends:boundaries,groups:groups.map(g=>({name:g.name,rows:g.printings.map(id=>[map[id],rank.get(setOf(id))])})),overrides:Object.fromEntries(audit.map(row=>[row.profile,Object.fromEntries(row.groups.filter(g=>g.template!==map[g.reference]).map(g=>[g.name,g.template]))]))};
+const p=path.join(ui,'rules-match.js');let s=fs.readFileSync(p,'utf8');s=s.replace(/^  const formatReprints=.*;\r?\n/m,'').replace(/^  const formatReprintCatalog=.*;\r?\n/m,'');const cut=s.indexOf('  const formatCutoffCache=');if(cut>=0){const end=s.indexOf('  function resolveCardName',cut);s=s.slice(0,cut)+s.slice(end);}const at=s.indexOf('  // Historical effect templates');if(at>=0){const end=s.indexOf('  function constructionIssues',at);if(end<0)throw Error('Historical template boundary missing');s=s.slice(0,at)+s.slice(end);}
+const resolver="  const formatReprints="+JSON.stringify(formatReprints)+";\n  const formatReprintCatalog="+JSON.stringify(formatReprintCatalog)+";\n"+fs.readFileSync(path.join(__dirname,'format-reprint-cutoffs.js'),'utf8')+"\n  function resolveCardName(name,profile,version=1,through){const resolved=profile==='unlimited'?(unlimitedReprints[name]||name):name;return version===0?resolved:(reprintTableFor(profile,through)[resolved]||resolved);}";
+if(!/^  function resolveCardName\(.*\r?$/m.test(s))throw Error('Resolver missing');s=s.replace(/^  function resolveCardName\(.*\r?$/m,resolver);
+const marker='if(!prototypes.has(c.fullName)){prototypes.set(c.fullName,c);manager.defineCard(c);}';if(!s.includes(marker))throw Error('Registry missing');s=s.replace(marker,marker+'\n'+fs.readFileSync(path.join(__dirname,'legacy-reprint-templates.js'),'utf8'));
+if(!s.includes('spec.reprintRulesVersion??=1;'))s=s.replace('spec=JSON.parse(JSON.stringify(spec));','spec=JSON.parse(JSON.stringify(spec));\n    spec.reprintRulesVersion??=1;');
+s=s.replaceAll('resolveCardName(map[id],spec.profile)','resolveCardName(map[id],spec.profile,spec.reprintRulesVersion??1)').replaceAll('resolveCardName(map[id],spec.profile,spec.reprintRulesVersion??1)','resolveCardName(map[id],spec.profile,spec.reprintRulesVersion??1,spec.reprintRulesThrough)');
+if(!s.includes('if(spec.reprintRulesVersion&&!spec.reprintRulesThrough)'))s=s.replace('spec.reprintRulesVersion??=1;','spec.reprintRulesVersion??=1;\n    if(spec.reprintRulesVersion&&!spec.reprintRulesThrough){const through=reprintRulesThroughFor(spec);if(through)spec.reprintRulesThrough=through;}');
+s=s.replace('return {R,profiles,prototypes,resolveCardName,constructionIssues','return {R,profiles,prototypes,resolveCardName,reprintRulesThroughFor,constructionIssues');
+if(!s.includes('const replaySpec='))s=s.replace('const m=create(saved.spec,map,custom),journal=saved.journal||[];','const replaySpec={...saved.spec,reprintRulesVersion:saved.spec.reprintRulesVersion??0};\n    const m=create(replaySpec,map,custom),journal=saved.journal||[];');
+fs.writeFileSync(p,s,'utf8');fs.writeFileSync(path.join(root,'work/rules-research/format-reprints-policy.json'),JSON.stringify({boundaries,audit,sources:['https://play.pokemon.com/en-gb/resources/documents/tcg-errata/','https://assets.pokemon.com/assets/cms/pdf/op/tournaments/2012/pokemon_official_tournament_formats.pdf'],notes:'Era-bounded semantics do not change card-pool legality. Equivalent Trainer/Special Energy printings keep original IDs and art; Pokemon and Basic Energy are not merged. New historical matches pin the latest set in their selected pool within the era endpoint, as well as version1; unversioned historical saves replay version0.'},null,2),'utf8');console.log('Format-specific reprint policy generated');

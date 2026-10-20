@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "feature": "Resolve every Zander cube printing and repair saved/imported Greninja Star links",
+  "hashes": {
+    "cube-library.js": "28f1d54e33baa8f869f864ece811f2c98ce4a7d5bcabf78d15da77e36a2d2e66",
+    "cube-ui.js": "5ccf8ce7f5e3ccbcba2c3a36fbe4fe2d6e5b50309e7d493e87cb26dd00dc2da4",
+    "cube-presets.json": "849520c43c01f557e6de2597dc4ecabe0ec9f9c5b184b7fff48022c52cb14a51"
+  },
+  "data": {
+    "core": 640,
+    "expansion": 72,
+    "allEntries": 1283,
+    "unresolved": 0,
+    "urshifuDefault": "swsh5-85",
+    "greninja": "swshp-SWSH144"
+  },
+  "focusedChecks": 5,
+  "nativeChecks": [
+    2,
+    8
+  ],
+  "mobileChecks": 10,
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+    "bytes": 205104402,
+    "sha256": "d0071a5498f59054f958c8f50837025013a2be0039aedd37a0b988ca8b065b8a",
+    "bundledScans": 1137,
+    "engineSha256": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidStaticChecks": 44,
+  "engineUnchanged": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+  "limits": [
+    "Physical Android acceptance remains pending.",
+    "Two additional Colorless Stage1 slots remain user choices; no new cube cards added.",
+    "Old full-release and deletion evidence retain their original source hashes.",
+    "Prior live CubeKoga network acceptance remains unverified."
+  ],
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows.zip",
+      "sha256": "987e0f47e8ad49e6d49077e10e0a680a4d822baa886bb4aa1e0c86a9cd7af8e7",
+      "crcPassed": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-1.22.0-Windows-Offline.zip",
+      "sha256": "88ad7dc70ed69510785aeac7485be162b3e969f30821109ab064c62df91fa881",
+      "crcPassed": true
+    }
+  ]
+}

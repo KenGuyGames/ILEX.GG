@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "Native drag/drop handlers bench a Basic Pokémon",
+    "Energy drop attaches through the engine",
+    "Illegal second attachments and opponent drops preserve hand and journal",
+    "Trainer drop resolves Bill and draws two cards",
+    "Bench-to-Active drag retreats and pays the printed Energy cost",
+    "Switch Trainer is played by dragging and its Bench choice is also dragged",
+    "Bench drag resolves a required single Pokémon switch/promotion choice",
+    "Attached Energy can be dragged to Discard for a pending cost and confirmed"
+  ]
+}

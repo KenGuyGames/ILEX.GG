@@ -3,7 +3,7 @@ const fs=require('fs'),path=require('path'),vm=require('vm');
 const {compile,compilePower,compileTrainer}=require('./printed-effect-compiler.cjs');
 const energyClauses=require('./ex-energy-clauses.json');
 const correctText=require('./ex-text-corrections.cjs');
-const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),src=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),src=path.join(root,'work/cube-source/src');
 const codes=['RS','SS','DR','MA','HL','RG','TRR','DX','EM','UF','DS','LM','HP','CG','DF','PK'];
 const sets=Object.fromEntries(codes.map((code,i)=>['ex'+(i+1),code]));
 Object.assign(sets,{np:'NP',pop1:'POP1',pop2:'POP2',pop3:'POP3','tk-ex-latia':'TK1A','tk-ex-latio':'TK1B','tk-ex-p':'TK2A','tk-ex-m':'TK2B'});

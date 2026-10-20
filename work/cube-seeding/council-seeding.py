@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/cube-candidate/ui/cube-library.js');s=p.read_text(encoding='utf-8');s=s.replace(' function isExpansion(entry,metadata)'," function seededProfile(cube){return isZander(cube)||cube?.source?.kind==='cubekoga'&&/\\/cube\\/(?:CouncilCube|9971)\\/?$/i.test(cube.source.url||'');}\n function isExpansion(entry,metadata)")
+s=s.replace('if(!isZander(cube)||cube.seededExpansionRevision===1)', 'if(!seededProfile(cube)||cube.seededExpansionRevision===1)').replace("e.pool==='Core'&&isExpansion(e,metadata)", "e.pool==='Core'&&isZander(cube)&&isExpansion(e,metadata)").replace('return !!d.expansion||isZander(cube)&&', 'return !!d.expansion||seededProfile(cube)&&');p.write_text(s,encoding='utf-8')

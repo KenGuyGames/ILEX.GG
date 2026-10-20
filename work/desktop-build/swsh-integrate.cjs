@@ -1,5 +1,5 @@
 const fs=require('fs'),path=require('path');
-const root=path.resolve(__dirname,'../..'),src=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src');
+const root=path.resolve(__dirname,'../..'),src=path.join(root,'work/cube-source/src');
 const file=path.join(src,'tcg-lab-wotc.ts');let s=fs.readFileSync(file,'utf8');
 if(!s.includes("import {swshData}"))s="import {swshData} from './tcg-lab-swsh-data';\nimport {installSwshCard} from './tcg-lab-swsh-cards';\n"+s;
 if(!s.includes("import {swshAction}"))s="import {swshAction} from './tcg-lab-swsh-actions';\n"+s;

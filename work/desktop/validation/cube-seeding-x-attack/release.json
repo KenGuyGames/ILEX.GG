@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "feature": "Exact seeded5/5/6 core-only drafts and CouncilCube X Attack custom Item",
+  "hashes": {
+    "cube-library.js": "aadf849e6f0288b453e3d92def6430d525b205e4150b80dac81def153c093351",
+    "cube-ui.js": "3b03910f44c97f6bcc117c430950c2e246ce8c3060bb116fc8c8c5836e2a7f8a",
+    "rules-engine.js": "bbbb7403e6437457766572e8135fffc618cee276c885fc7b78790bebbb261138",
+    "rules-card-map.json": "3c867e75ed06c396ac07c6373ff3e2147b85a8f1d86efd296f9772715755d3d2",
+    "card-details.json": "ea35c6ef6702f1347340175664588d92f6438fe483e3af71c460cc99034a013e",
+    "cards.json": "99b900a82516cfd96971c825dddae31c2d3be56b8f1335d94a7d21df1dea5df6",
+    "cube-x-attack.webp": "7d13553a3e054c39253fa6096c9641df9af147229c44a53e2bdf12798e83663a"
+  },
+  "seededPacksChecked": 1024,
+  "nativeChecksPerLaunch": 12,
+  "touchChecks": 14,
+  "xAttackChecks": 7,
+  "cubeChecks": 24,
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+    "bytes": 205440336,
+    "sha256": "99b12c4f298a6c041d281b29b04c57929539700836eefef32f4e17b08fb9ee12",
+    "bundledScans": 1137,
+    "engineSha256": "bbbb7403e6437457766572e8135fffc618cee276c885fc7b78790bebbb261138",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidStaticChecks": 44,
+  "engineControlIdenticalToPrevious": true,
+  "priorEngine": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+  "limits": [
+    "Start a NEW draft to use corrected5/5/6 composition; old sessions retain picks.",
+    "X Attack uses Kenneth-selected one-use Item lifecycle, differing from printed Battle face-down text.",
+    "Physical Android acceptance remains pending.",
+    "Finite checks do not prove every interaction."
+  ]
+}

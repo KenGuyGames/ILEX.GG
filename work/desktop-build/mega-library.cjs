@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path'),vm=require('vm'),root=path.resolve(__dirname,'../..'),research=path.join(root,'work/rules-research'),src=path.join(root,'work/mega-source/src'),inventory=require('../rules-research/mega-inventory.json');
+const fs=require('fs'),path=require('path'),vm=require('vm'),root=path.resolve(__dirname,'../..'),research=path.join(root,'work/rules-research'),src=path.join(root,'work/cube-source/src'),inventory=require('../rules-research/mega-inventory.json');
 const attack=require('./mega-patterns.cjs').attack,power=require('./mega-patterns.cjs').power,trainer=require('./mega-patterns.cjs').trainer,held=require('./dp-printed-rules.cjs');
 const ctx={console,setTimeout,clearTimeout};vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'work/desktop/ui/rules-engine.js'),'utf8'),ctx);const R=ctx.TCGRules,native=new Map(Object.values(R.sets).filter(Array.isArray).flat().map(c=>[c.fullName,c]));
 const types={Grass:1,Fire:2,Water:3,Lightning:4,Psychic:5,Fighting:6,Darkness:7,Metal:8,Colorless:9,Fairy:10,Dragon:11,Free:0};

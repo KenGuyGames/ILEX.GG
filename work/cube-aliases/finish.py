@@ -1,0 +1,18 @@
+from pathlib import Path
+import json,hashlib
+root=Path.cwd();p=root/'AGENTS.md';old=p.read_text(encoding='utf-8');note='''# Latest cube import fix — Umbreon Star and supplied Delta definitions (October 20, 2026)
+
+Kenneth reported Umbreon Star, Starmie Delta and Mewtwo Delta still missing. The actual affected library is his imported CubeKoga **Zander’s Cube and EXpansion**, source https://cubekoga.net/cube/ZandersCubeAndEXpansion (public cube279), not the workbook preset fixed previously. Inspected only an isolated copy of TCG Lab Local Storage; original user profile never modified/closed. Actual imported712-card cube had exactly three unresolved entries. CubeKoga cel25c-17_A is Umbreon Star's Classic Collection alternate ID; explicitly maps to equivalent local POP5-17 card/rules (original POP artwork, not a newly added Celebrations scan). Native cel25-17 is Groudon and MUST NOT be used. ex11-15 Starmie Delta/ex11-12 Mewtwo Delta were wrongly blocked solely by card_Definition_Supplied=1. Public source rows directly inspected: these are standard printed HP, types, costs, attacks and Powers. New imports accept matching supplied standard definitions; mismatched HP/types/costs/damage and unrelated custom definitions remain review cases. Saved Zander279 flags for these exact two source IDs repair on startup. Other cubes' custom entries and valid user choices retained.
+
+Only cube-library.js changed:39a47083a4d42c17234c3d83e3cc43570378e322af8f09e84622a771b66613be. Actual copied saved library tested fresh/restored:712 entries, zero unresolved; fingerprints of322 existing decks, formats, drafts, saved matches and deleted records unchanged. Four new focused checks, previous five printing-repair and six importer contract checks,10 touch checks and44 APK checks pass. Actual copied profiles/LevelDB are local diagnostics only, not packaged; released validation includes counts/fingerprints, not saved deck lists or profile data. Engine/adapter/bot/presets unchanged. Source work/cube-candidate/ui; package script work/desktop-build/package-cube-aliases.py; tests work/cube-aliases. Evidence work/rules-research/cube-aliases-fix.json.
+
+Shared/independent1.22.0 Windows apps, versioned/standard Windows archives updated and CRC/differences pass. Original-certificate Android1.22.0-android.37/code37 updated,1137 startup scans; physical Android acceptance pending. Next code38. Restart repairs existing imported library without reimport. Prior evidence retains its source hashes. Live desktop CubeKoga fetch DNS limitation still unverified; source API rows were observed in browser. Research tabs closed. No subagents, remote publication, or original-profile writes. Preserve deletion/restoration and previous source mappings.
+
+---
+
+''';p.write_text(note+old,encoding='utf-8')
+p=root/'work/cube-review/CHECKPOINT.json';d=json.loads(p.read_text(encoding='utf-8'));d['latestPatch']='work/rules-research/cube-aliases-fix.json';d['nextAndroidCode']=38;d['actualImportedCube']={'source':'https://cubekoga.net/cube/ZandersCubeAndEXpansion','entries':712,'unresolved':0};p.write_text(json.dumps(d,indent=2),encoding='utf-8')
+d=json.loads((root/'work/rules-research/cube-aliases-fix.json').read_text(encoding='utf-8'))
+for base in ['ILEX.GG-win32-x64','ILEX.GG-1.22.0']:assert hashlib.sha256((root/'outputs'/base/'resources/app/ui/cube-library.js').read_bytes()).hexdigest()==d['hashes']['cube-library.js']
+assert hashlib.sha256((root/'outputs/ILEX.GG-Android.apk').read_bytes()).hexdigest()==d['android']['sha256']
+print('Deployed alias repair and signed Android verified. Current progress saved.')

@@ -7,7 +7,7 @@ const compile=require('./dp-attack-patterns.cjs');
 const energyClauses=require('./dp-energy-clauses.json');
 const applyErrata=require('./dp-errata.cjs');
 const correctScans=require('./dp-scan-corrections.cjs');
-const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),src=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui'),src=path.join(root,'work/cube-source/src');
 const sets={dp1:'DP',dp2:'MT',dp3:'SW',dp4:'GE',dp5:'MD',dp6:'LA',dp7:'SF',pl1:'PL',pl2:'RR',pl3:'SV',pl4:'AR',dpp:'DPP',pop4:'P4',pop5:'P5',pop6:'P6',pop7:'P7',pop8:'P8',pop9:'P9',ru1:'RU','tk-dp-l':'TKDPL','tk-dp-m':'TKDPM'};
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8')),all=read(path.join(ui,'cards.json')),catalog=read(path.join(ui,'sets.json'));
 let canonical=[];for(const id of Object.keys(sets)){const file=path.join(root,'work/card-sources/pokemon-tcg-data-master/cards/en',id+'.json');if(fs.existsSync(file))canonical.push(...read(file).map(d=>({...d,set:{id}})));}

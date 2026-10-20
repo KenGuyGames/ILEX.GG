@@ -1,0 +1,7 @@
+{
+  "baseSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+  "patchedSha256": "a711f38166daf06f658d0f42b6b7279d925e9ad84a4cbdead68a77451e031d74",
+  "before": "tage1, basic2, stage2) {\n    for (const card of stage1) {\n      if (card.name === stage2.evolvesFrom && basic2.name === card.evolvesFrom) {\n        return true;\n      }\n    }\n    return false;\n  }\n  function canUseRareCandy(store, state, player) {\n    if (!player.canEvolve) return false;\n    const stage2 = player.hand.cards.filter(\n      (c) => c instanceof PokemonCard && c.stage === 4 /* STAGE_2 */\n    );\n    if (stage2.length === 0) {\n      return false;\n    }\n    const stage1 = CardManager.getInstance().getAllCards().fil",
+  "after": "tage1, basic2, stage2) {\n    for (const card of stage1) {\n      if (card.name === stage2.evolvesFrom && basic2.name === card.evolvesFrom) {\n        return true;\n      }\n    }\n    return false;\n  }\n  function canUseRareCandy(store, state, player) {\n    if (state.turn <= 2) return false;\n    const stage2 = player.hand.cards.filter(\n      (c) => c instanceof PokemonCard && c.stage === 4 /* STAGE_2 */\n    );\n    if (stage2.length === 0) {\n      return false;\n    }\n    const stage1 = CardManager.getInstance().getAllCards().fil",
+  "scope": "Rare Candy SVI canUseRareCandy: replace exceptional-permission guard with actual first-turn window"
+}

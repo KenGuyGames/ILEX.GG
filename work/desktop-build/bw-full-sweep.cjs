@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),path=require('path');
 const base=fs.readFileSync(path.join(__dirname,'rules-tests.cjs'),'utf8'),prefix=base.slice(0,base.indexOf("test('Limitless import:"));
 const script=String.raw`
 vm.runInContext(fs.readFileSync(path.join(ui,'bot-ai.js'),'utf8'),ctx);const B=ctx.BotAI;
-const raw=fs.readFileSync(path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-bw-data.ts'),'utf8'),records=JSON.parse(raw.match(/^export const bwData:any = (.*);$/m)[1]);
+const raw=fs.readFileSync(path.join(root,'work/cube-source/src/tcg-lab-bw-data.ts'),'utf8'),records=JSON.parse(raw.match(/^export const bwData:any = (.*);$/m)[1]);
 const failures=[],rejected=[];let scenarios=0;
 const reduce=R.Store.prototype.reduceEffect;R.Store.prototype.reduceEffect=function(state,effect){this.dpEffects=(this.dpEffects||0)+1;if(this.dpEffects>15000)throw Error('Effect budget exceeded');return reduce.call(this,state,effect);};
 function put(m,id,list){const c=R.CardManager.getInstance().getCardByName(map[id]);if(!c)throw Error('Missing '+id);c._labId=id;c.id=-(1000000+(m.dpSeq=(m.dpSeq||0)+1));list.cards.push(c);return c;}

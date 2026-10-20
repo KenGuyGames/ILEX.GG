@@ -54,7 +54,7 @@ function planRealisticStep(){
    if(rulesMatch!==match||generation!==botGeneration||JSON.stringify(match.journal)!==journal||state.botPaused||tab!=='play'||botSettings()?.difficulty!=='realistic'){if(tab==='play')play();return;}
    if(result.error||!result.action){fail(result.error||'Realistic Player has no valid choice.');return;}runBotStep({action:result.action});
   };
-  realisticTimeout=setTimeout(()=>fail('Realistic Player planning timed out. Resume to retry.'),15000);
+  realisticTimeout=setTimeout(()=>fail('Realistic Player planning timed out. Resume to retry.'),45000);
   realisticWorker.postMessage({requestId,player:b.botPlayer,custom:match.spec.custom||state.custom,saved:{spec:match.spec,journal:match.journal.slice()}});
  }catch(e){fail(e.message||'Realistic Player could not start.');}
 }

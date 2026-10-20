@@ -1,0 +1,25 @@
+{
+  "candidate": true,
+  "passed": true,
+  "resolved": [
+    {
+      "id": "xy4-97",
+      "positive": false
+    },
+    {
+      "id": "xy4-97",
+      "positive": true
+    },
+    {
+      "id": "xy4-98",
+      "positive": false
+    },
+    {
+      "id": "xy4-98",
+      "positive": true
+    }
+  ],
+  "unavailable": [],
+  "failures": [],
+  "engineSha256": "3811e9492b38dafb02147fdb3740d2e6563c1da09d6d05da9976069809fb18ba"
+}

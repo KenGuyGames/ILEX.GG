@@ -24,10 +24,14 @@ function openCardActions(playerId,index,active){
  }
  cardActionView={match:m,journal:m.journal.length,cardId:card.id,playerId,index,active,entries};
  const id=card._labId||'',vintage=/^(base|gym|neo|lc-|si)/.test(id),start=vintage?.58:.50,end=vintage?.835:.895;
- const printed=entries.filter(e=>!e.copied&&e.kind!=='retreat'),weights=printed.map(e=>1.7+Math.ceil(e.text.length/65)),total=weights.reduce((a,b)=>a+b,0)||1;let top=start;
+ // VSTAR Powers are printed below the ordinary attack, including Ability Powers.
+ const vstar=card.stage===RulesMatch.R.Stage.VSTAR;
+ const printed=entries.filter(e=>!e.copied&&e.kind!=='retreat');
+ if(vstar)printed.sort((a,b)=>(a.kind==='ability')-(b.kind==='ability'));
+ const weights=printed.map(e=>1.7+Math.ceil(e.text.length/65)),total=weights.reduce((a,b)=>a+b,0)||1;let top=start;
  const button=(entry,i,style='',overlay=false)=>`<button class="card-action-hotspot ${overlay?'scan-action':''} ${entry.reason?'unavailable':''}" data-card-action="${i}" style="${style}" ${entry.reason?'disabled':''} title="${esc(entry.reason||'Use '+entry.name)}" aria-label="${esc(entry.name+(entry.reason?' — '+entry.reason:''))}">${overlay?'':`<span>${esc(entry.name)}</span>`}</button>`;
  // Scan-reviewed boundaries keep neighbouring printed names in separate regions.
- const reviewed=card.name==='Alakazam'&&printed.length===2&&printed[0].name==='Damage Swap'?[.58,.723,.835]:card.name==='Jirachi'&&printed.length===2&&printed[0].name==='Wishing Star'?[.50,.75,.895]:null;
+ const reviewed=vstar&&printed.length===2?[.50,.66,.86]:card.name==='Alakazam'&&printed.length===2&&printed[0].name==='Damage Swap'?[.58,.723,.835]:card.name==='Jirachi'&&printed.length===2&&printed[0].name==='Wishing Star'?[.50,.75,.895]:null;
  const joined=!!LegendDisplay.pair(list);if(joined)top=.66;
  const unionRegions={
   'Union Gain':[.115,.177,.37,.063],'Shocking Shock':[.525,.177,.37,.063],'Disconnect':[.115,.790,.37,.070],'Electro Ball Together':[.525,.825,.37,.040],

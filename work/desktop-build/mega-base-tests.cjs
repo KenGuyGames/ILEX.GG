@@ -1,5 +1,5 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
-const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/desktop/ui');
+const root=path.resolve(__dirname,'../..'),ui=path.join(root,'work/mega-candidate/ui');
 const ctx={console,setTimeout,clearTimeout};vm.createContext(ctx);
 for(const file of ['rules-engine.js','rules-match.js','deck-text.js'])vm.runInContext(fs.readFileSync(path.join(ui,file),'utf8'),ctx,{filename:file});
 const M=ctx.RulesMatch,R=M.R,T=ctx.DeckText;

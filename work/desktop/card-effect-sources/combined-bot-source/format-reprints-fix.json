@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "scope": "Reprint effects follow the selected supported era profile; historical and modern Rare Candy are distinct",
+  "changes": {
+    "base": "ef7c36efa3d7abafbcd896c2fee910f62d425fa12f0f216c2cb67569fa4390f3",
+    "patched": "90b679ff7bc2e796d28d5e4a35cd5b51492cf18a4f29d373a7911d89445a7b21",
+    "engine": "46e3e52c11617aa3a8870083ff547c899af0b7d5ef5c8bea643c8a074d74b67e",
+    "scope": "Format-bounded Trainer and Special Energy reprints; modern Rare Candy uses fixed modern template; Unlimited policy unchanged; pin new-match reprint rules and preserve unversioned historical save replay; historical set-pool cutoffs refine broad era profiles",
+    "baseEngine": "a711f38166daf06f658d0f42b6b7279d925e9ad84a4cbdead68a77451e031d74",
+    "previousAdapter": "9192709fb7fabdbbe9565ae194ffff87d3e26918b205a3b862e9aebefc68612b"
+  },
+  "historicalBoundaries": {
+    "wotc": "neo3",
+    "wotc2002": "ecard3",
+    "ex": "ex5",
+    "exlate": "ex16",
+    "dppl": "pl4",
+    "dp": "hgss4",
+    "hgss": "col1",
+    "bw": "bw10",
+    "xy": "xy12",
+    "sm": "sm12",
+    "swsh": "swsh12.5",
+    "sv": "sv10.5w",
+    "mega": "30th",
+    "modern": "30th",
+    "expanded": "30th"
+  },
+  "focusedChecks": 576,
+  "matrixChecks": 505,
+  "additionalEffectChecks": 57,
+  "replayChecks": 5,
+  "withinEraCutoffChecks": 9,
+  "rareCandyPrintings": 22,
+  "reprintIdentityPairs": 18666,
+  "coreSuites": [
+    {
+      "name": "rules-tests",
+      "exitCode": 0,
+      "note": "WOTC Bill draw test now selects its historical profile; current Bill is a Supporter."
+    },
+    {
+      "name": "undo-tests",
+      "exitCode": 0,
+      "note": "WOTC Bill draw test now selects its historical profile; current Bill is a Supporter."
+    },
+    {
+      "name": "xy-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-interaction-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "xy-full-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sm-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "swsh-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-foundation-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-common-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-native-repair-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-final-effects-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "sv-final-extra-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "psychic-embrace-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "evosoda-tests",
+      "exitCode": 0
+    },
+    {
+      "name": "unlimited-focused-tests",
+      "exitCode": 0
+    }
+  ],
+  "unlimitedExpectedResultGroups": 199,
+  "privateSimulationSuitesPassed": 2,
+  "nativeFreshChecks": 36,
+  "nativeRestoredChecks": 36,
+  "mobileChecks": 182,
+  "apkChecks": 38,
+  "androidVersion": "1.20.0-android.31",
+  "sameSigningCertificate": true,
+  "androidAssetParity": "Every previous UI asset retained; only rules engine exports and rules adapter differ.445 startup scans and209 finish images retained.",
+  "newMatchesPinReprintRulesVersion": 1,
+  "unversionedSavedMatchesReplayVersion": 0,
+  "profileDataModified": false,
+  "physicalAndroidDeviceTested": false,
+  "fullWindowsZipsRebuilt": false,
+  "concurrentBotIntegration": {
+    "scope": "Format-specific reprint repair merged without changing bot policy",
+    "engineSha256": "46e3e52c11617aa3a8870083ff547c899af0b7d5ef5c8bea643c8a074d74b67e",
+    "adapterSha256": "90b679ff7bc2e796d28d5e4a35cd5b51492cf18a4f29d373a7911d89445a7b21",
+    "mergedFiles": [
+      "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\tournament-bot-release\\ui\\rules-engine.js",
+      "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\tournament-bot-release\\ui\\rules-match.js",
+      "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\tournament-bot-desktop-candidate\\resources\\app\\ui\\rules-engine.js",
+      "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\tournament-bot-desktop-candidate\\resources\\app\\ui\\rules-match.js"
+    ],
+    "pendingBotAndroidCode": 32,
+    "currentRepairAndroidCode": 31,
+    "status": "Bot candidate validation for the old engine/adapter remains historical; revalidate before packaging or releasing the bot upgrade.",
+    "historicalDevelopmentSnapshotPreserved": true,
+    "historicalMatchSetCutoffsIncluded": true
+  },
+  "sources": [
+    "https://play.pokemon.com/en-gb/resources/documents/tcg-errata/",
+    "https://assets.pokemon.com/assets/cms/pdf/op/tournaments/2012/pokemon_official_tournament_formats.pdf"
+  ],
+  "limits": "Supported era profiles use the recorded endpoints; this does not provide every historical tournament date or exhaustive proof of every card state. Card-pool legality is unchanged.",
+  "artifactSha256": {
+    "ILEX.GG-Format-Reprint-Fix.zip": "b8050cb7930ec451c1c9e66d1e191fecabdc0c54e89a0ba961849c7370e4396c",
+    "ILEX.GG-Android.apk": "22c470f0d2d55df9bf91784116f179542ce9f6616e9a25b47c0dada0dad10772"
+  }
+}

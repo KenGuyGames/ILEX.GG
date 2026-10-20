@@ -1,0 +1,3 @@
+from pathlib import Path
+import json
+root=Path.cwd();proof=json.loads((root/'work/cube-delete/mobile-tests.json').read_text(encoding='utf-8'));d={'passed':proof['passed'],'checks':proof['checks']+[str(s['width'])+'x'+str(s['height'])+': '+n for s in proof['proof'] for n in s['checks']],'errors':[],'physicalAndroidDevice':False,'cubeUiSha256':proof['cubeUiSha256'],'scope':'Focused cube deletion/restore touch checks. Prior full273 mobile checks remain historical at outputs/ILEX.GG-1.22.0/resources/app/validation/cube/mobile-verification.json; not rerun for this UI-only patch.'};(root/'work/android-build/mobile-verification.json').write_text(json.dumps(d,indent=2),encoding='utf-8');print(len(d['checks']),'focused mobile checks')

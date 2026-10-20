@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Constructed WOTC Unlimited fixture: Blastoise",
+    "cards": {
+      "base1-2": 4,
+      "si1-15": 4,
+      "base1-63": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-003": 29
+    }
+  },
+  {
+    "name": "Constructed EX Unlimited fixture: Gardevoir",
+    "cards": {
+      "ex1-7": 4,
+      "ex16-31": 4,
+      "ex16-59": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-005": 29
+    }
+  },
+  {
+    "name": "Constructed DP Unlimited fixture: Gardevoir",
+    "cards": {
+      "dp3-7": 4,
+      "pop7-8": 4,
+      "pop7-15": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-005": 29
+    }
+  },
+  {
+    "name": "Constructed HGSS Unlimited fixture: Magnezone",
+    "cards": {
+      "hgss4-96": 4,
+      "hgss4-43": 4,
+      "hgss4-68": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-004": 29
+    }
+  },
+  {
+    "name": "Constructed BW Unlimited fixture: Darkrai-EX",
+    "cards": {
+      "bw5-63": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-007": 37
+    }
+  },
+  {
+    "name": "Constructed XY Unlimited fixture: Venusaur-EX",
+    "cards": {
+      "xy1-1": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-001": 37
+    }
+  },
+  {
+    "name": "Constructed SM Unlimited fixture: Dragonite",
+    "cards": {
+      "sm1-96": 4,
+      "sm7.5-36": 4,
+      "2018sm-9": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-001": 9,
+      "sve-004": 10,
+      "sve-003": 10
+    }
+  },
+  {
+    "name": "Constructed SWSH Unlimited fixture: Zacian V",
+    "cards": {
+      "swsh1-138": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-008": 37
+    }
+  },
+  {
+    "name": "Constructed SV Unlimited fixture: Gardevoir ex",
+    "cards": {
+      "sv01-086": 4,
+      "sv04.5-028": 4,
+      "sv04.5-027": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-005": 29
+    }
+  },
+  {
+    "name": "Constructed MEGA Unlimited fixture: Mega Venusaur ex",
+    "cards": {
+      "me01-003": 4,
+      "me01-002": 4,
+      "me01-001": 4,
+      "base3-3": 1,
+      "base1-88": 2,
+      "base1-91": 2,
+      "base1-94": 2,
+      "base1-95": 2,
+      "ex2-88": 2,
+      "neo1-103": 1,
+      "30th-128": 3,
+      "sv04.5-084": 3,
+      "me02.5-183": 1,
+      "sve-001": 29
+    }
+  }
+]

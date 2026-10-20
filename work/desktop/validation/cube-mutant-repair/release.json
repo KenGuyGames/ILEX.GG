@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "feature": "Shared mutant evolution searches for Solar Evolution, Surprise Time Machine, Pupate, Emerge and Wally Training",
+  "hashes": {
+    "rules-engine.js": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd"
+  },
+  "freshChecks": 10,
+  "restoredChecks": 10,
+  "touchChecks": 32,
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+    "bytes": 205444431,
+    "sha256": "d6eac50bfbcffb2389777e216a8c0f2145b9cf4ac5c169d499ea7b1f7af1d973",
+    "bundledScans": 1137,
+    "engineSha256": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidStaticChecks": 44,
+  "previousEngine": "c11986066e985ea684aa517577c219a566bb5fa8285ca092112fab38e92049dc",
+  "focusedChecks": 10,
+  "cubeChecks": 24,
+  "limits": [
+    "Repairs cover five evolution effects and shared helper, not an exhaustive review of all evolution-related cards.",
+    "Physical Android acceptance remains pending."
+  ]
+}

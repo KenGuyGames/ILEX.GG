@@ -3,7 +3,7 @@
 // receive their original printed stats, evolution names, attack names and costs.
 const fs=require('fs'),path=require('path');const root=path.resolve(__dirname,'../..');
 const data={};for(const [id,code] of [['base1','BS'],['base2','JU'],['base3','FO']])for(const c of JSON.parse(fs.readFileSync(path.join(root,'work/card-sources/pokemon-tcg-data-master/cards/en',id+'.json'))))data[code+'-'+c.number]=c;
-const dest=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-printed.ts');
+const dest=path.join(root,'work/cube-source/src/tcg-lab-printed.ts');
 fs.writeFileSync(dest,`import * as sets from './sets';
 import { CardType, Stage, SuperType } from './game';
 const data: any = ${JSON.stringify(data)};

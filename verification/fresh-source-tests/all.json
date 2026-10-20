@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "engineSha256": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd",
+  "results": [
+    {
+      "name": "rare-candy-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "combined-tournament-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-match-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-peer-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0
+    }
+  ],
+  "rerunNote": "Private suite data paths corrected to frozen current UI; both suites rerun successfully."
+}

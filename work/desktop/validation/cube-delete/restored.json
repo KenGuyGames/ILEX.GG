@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "restored": true,
+  "checks": [
+    "Deleting the last cube persists after restart without restoring presets",
+    "Deleted drafted decks stay deleted after restart",
+    "Recovery records survive restart",
+    "Deleted cube can be restored after restart"
+  ],
+  "hashes": {
+    "cube-ui.js": "6a543d4fb75768d3ca53372e0a8983251d67a9b95f29e613100c4a362da857e0"
+  }
+}

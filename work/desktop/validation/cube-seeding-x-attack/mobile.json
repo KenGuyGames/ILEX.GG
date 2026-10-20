@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "No EXpansion option 640",
+    "Touch starts imported draft without printing error 640",
+    "Exact5/5/6 and no EXpansion 640",
+    "X Attack printing and native rule registered 640",
+    "Offline X Attack artwork decodes 640",
+    "First touch draft pick resolves 640",
+    "Imported cube controls fit mobile 640",
+    "No EXpansion option 360",
+    "Touch starts imported draft without printing error 360",
+    "Exact5/5/6 and no EXpansion 360",
+    "X Attack printing and native rule registered 360",
+    "Offline X Attack artwork decodes 360",
+    "First touch draft pick resolves 360",
+    "Imported cube controls fit mobile 360"
+  ],
+  "errors": [],
+  "physicalAndroidDevice": false,
+  "hashes": {
+    "cube-library.js": "aadf849e6f0288b453e3d92def6430d525b205e4150b80dac81def153c093351",
+    "cube-ui.js": "3b03910f44c97f6bcc117c430950c2e246ce8c3060bb116fc8c8c5836e2a7f8a",
+    "rules-engine.js": "bbbb7403e6437457766572e8135fffc618cee276c885fc7b78790bebbb261138",
+    "rules-card-map.json": "3c867e75ed06c396ac07c6373ff3e2147b85a8f1d86efd296f9772715755d3d2",
+    "card-details.json": "ea35c6ef6702f1347340175664588d92f6438fe483e3af71c460cc99034a013e",
+    "cards.json": "99b900a82516cfd96971c825dddae31c2d3be56b8f1335d94a7d21df1dea5df6",
+    "cube-x-attack.webp": "7d13553a3e054c39253fa6096c9641df9af147229c44a53e2bdf12798e83663a"
+  }
+}

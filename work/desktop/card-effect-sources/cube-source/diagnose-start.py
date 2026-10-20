@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/cube-review/native-self-test.cjs');s=p.read_text(encoding='utf-8').replace("'Normal Start match button creates a cube match with seat ownership and pinned rules'", "'Normal Start match button creates a cube match with seat ownership and pinned rules: '+document.querySelector('#toast').textContent+' '+document.querySelector('#modalbody').textContent+' '+JSON.stringify([document.querySelector('#matchformat')?.value,document.querySelector('#rp1')?.value,document.querySelector('#rp2')?.value])");p.write_text(s,encoding='utf-8')

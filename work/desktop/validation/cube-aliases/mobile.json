@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "Fresh imports resolve Umbreon and both Delta supplied definitions 640",
+    "Saved imported aliases repair on mobile 640",
+    "Touch starts imported draft without printing error 640",
+    "First touch draft pick resolves 640",
+    "Imported cube controls fit mobile 640",
+    "Fresh imports resolve Umbreon and both Delta supplied definitions 360",
+    "Saved imported aliases repair on mobile 360",
+    "Touch starts imported draft without printing error 360",
+    "First touch draft pick resolves 360",
+    "Imported cube controls fit mobile 360"
+  ],
+  "errors": [],
+  "physicalAndroidDevice": false,
+  "hashes": {
+    "cube-library.js": "39a47083a4d42c17234c3d83e3cc43570378e322af8f09e84622a771b66613be",
+    "cube-ui.js": "5ccf8ce7f5e3ccbcba2c3a36fbe4fe2d6e5b50309e7d493e87cb26dd00dc2da4",
+    "cube-presets.json": "849520c43c01f557e6de2597dc4ecabe0ec9f9c5b184b7fff48022c52cb14a51"
+  }
+}

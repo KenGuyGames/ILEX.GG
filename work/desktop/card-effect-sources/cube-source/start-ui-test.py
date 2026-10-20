@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/cube-review/native-self-test.cjs');s=p.read_text(encoding='utf-8');s=s.replace("rulesMatch=m;tableMode='rules';", "rulesMatch=null;tableMode='rules';tab='play';matchSetupFormat=format.id;matchSetupDecks=[human.id,bot.id];play();document.querySelector('#opponentmode').value='local';await beginRules();check(rulesMatch?.spec.cubeRules?.deckSize===40&&rulesMatch.spec.decks[0].cubePool,'Normal Start match button creates a cube match with seat ownership and pinned rules');rulesMatch=m;tableMode='rules';");p.write_text(s,encoding='utf-8')

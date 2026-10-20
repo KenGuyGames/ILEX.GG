@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "version": "1.20.0",
+  "engineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+  "archivesMatchExactLauncherAndEngine": true,
+  "finishImagesInEachArchive": 209,
+  "androidHashMatches": true,
+  "localLauncher": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-win32-x64\\ILEX.GG-1.20.0.exe",
+  "physicalAndroidDeviceTested": false,
+  "actualExternalTwoPCMatchTested": false
+}

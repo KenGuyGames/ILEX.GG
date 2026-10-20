@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "checks": [
+    "All four difficulties remain available",
+    "Flexible Energy is one unit in the desktop policy",
+    "Modern Mega threat is three Prizes",
+    "Worker plans a legal wotc action",
+    "Bounded upgraded search runs in wotc",
+    "Worker leaves wotc live state unchanged before commit",
+    "Engine accepts wotc worker action",
+    "Worker plans a legal xy action",
+    "Bounded upgraded search runs in xy",
+    "Worker leaves xy live state unchanged before commit",
+    "Engine accepts xy worker action",
+    "Worker plans a legal mega action",
+    "Bounded upgraded search runs in mega",
+    "Worker leaves mega live state unchanged before commit",
+    "Engine accepts mega worker action",
+    "Worker plans a legal unlimited action",
+    "Bounded upgraded search runs in unlimited",
+    "Worker leaves unlimited live state unchanged before commit",
+    "Engine accepts unlimited worker action"
+  ],
+  "results": [
+    {
+      "profile": "wotc",
+      "diagnostics": {
+        "version": 2,
+        "trials": 149,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 18,
+        "returnAttacks": 8,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 7,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "retreat"
+          },
+          {
+            "type": "attack",
+            "name": "String Shot"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 1,
+          "index": 6,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 139.01500000000001
+      }
+    },
+    {
+      "profile": "xy",
+      "diagnostics": {
+        "version": 2,
+        "trials": 292,
+        "budget": 420,
+        "depth": 8,
+        "cacheReuse": false,
+        "opponentReplies": 24,
+        "returnAttacks": 12,
+        "inferredAttachments": 6,
+        "concealedSamples": 4,
+        "alternatives": 13,
+        "plannedActions": 5,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 1,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 152.51133333333337
+      }
+    },
+    {
+      "profile": "mega",
+      "diagnostics": {
+        "version": 2,
+        "trials": 238,
+        "budget": 420,
+        "depth": 6,
+        "cacheReuse": false,
+        "opponentReplies": 24,
+        "returnAttacks": 12,
+        "inferredAttachments": 6,
+        "concealedSamples": 4,
+        "alternatives": 13,
+        "plannedActions": 5,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 1,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 147.58333333333334
+      }
+    },
+    {
+      "profile": "unlimited",
+      "diagnostics": {
+        "version": 2,
+        "trials": 238,
+        "budget": 420,
+        "depth": 6,
+        "cacheReuse": false,
+        "opponentReplies": 24,
+        "returnAttacks": 12,
+        "inferredAttachments": 6,
+        "concealedSamples": 4,
+        "alternatives": 13,
+        "plannedActions": 5,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 1,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 149.43133333333333
+      }
+    }
+  ],
+  "limits": "Worker/format integration checks, not proof of professional human strength",
+  "botSha256": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874"
+}

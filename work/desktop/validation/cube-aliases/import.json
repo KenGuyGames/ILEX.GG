@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": [
+    "Observed CubeKoga public metadata and card schema imports its exact printing IDs",
+    "Padded native printings match CubeKoga card numbers without substituting an unrelated card",
+    "Removed cards are excluded, repeated active entries preserve copies, custom definitions require review",
+    "CubeKoga prose remains descriptive text and cannot turn itself into executable rules",
+    "Importer rejects private, missing and oversized responses",
+    "Importer rejects arbitrary hosts, credentials, endpoint paths and prototype identifiers"
+  ],
+  "source": "Live public CubeKoga metadata/card schema observed at /api/cubes/cube/noahsark and /api/cubes/12428/cards; transport tests use captured-schema fixtures. Native live network attempt is recorded separately."
+}

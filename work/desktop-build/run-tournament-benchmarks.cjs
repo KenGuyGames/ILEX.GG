@@ -1,0 +1,3 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process');let next=0;
+async function worker(){while(next<8){const i=next++,fd=fs.openSync(path.resolve(__dirname,'../tournament-bot-candidate/benchmark-'+i+'.log'),'w');const code=await new Promise(resolve=>{const p=cp.spawn(process.execPath,[path.join(__dirname,'tournament-bot-benchmark.cjs')],{env:{...process.env,ILEX_TOURNAMENT_PAIR:String(i)},windowsHide:true,stdio:['ignore',fd,fd]});p.on('exit',resolve);});fs.closeSync(fd);console.log('Benchmark pair '+i+' exit '+code);if(code!==0)throw Error('Benchmark '+i+' failed');}}
+Promise.all([worker(),worker(),worker()]).catch(e=>{console.error(e);process.exitCode=1});

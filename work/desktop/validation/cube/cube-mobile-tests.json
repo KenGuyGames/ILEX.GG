@@ -1,0 +1,91 @@
+{
+  "passed": true,
+  "sizes": [
+    {
+      "width": 800,
+      "height": 360,
+      "passed": true,
+      "checks": [
+        "Cube draft is accessible from the forest main menu",
+        "Zander core has640 entries",
+        "Excluded cards have a separate visible view",
+        "Confirmed mutant and unified Ability rules appear in editor",
+        "Draft setup uses the selected pod size and pack count",
+        "A seeded pack displays all16 cards",
+        "Draft cards magnify without selecting a pick",
+        "Stale duplicate pick cannot consume the next pack",
+        "Three visible card picks are committed exactly once",
+        "Editing library rules does not mutate an in-progress draft",
+        "Completed two-seat draft conserves all32 dealt cards",
+        "Human and bot decks share a format but retain separate drafted pools",
+        "Constructed human draft deck passes its ownership and40-card checks",
+        "Constructed opponent draft deck passes its own pool checks",
+        "Gallery cannot add an undrafted card to a drafted deck",
+        "Both generated drafted decks complete native40-card match setup",
+        "Draft match places four Prizes for both players",
+        "Realistic Player worker restores cube rules and produces an action",
+        "Cube engine accepts the worker action",
+        "Normal Start match button creates a cube match with seat ownership and pinned rules",
+        "Cube match renders the normal play table"
+      ]
+    },
+    {
+      "width": 640,
+      "height": 312,
+      "passed": true,
+      "checks": [
+        "Cube draft is accessible from the forest main menu",
+        "Zander core has640 entries",
+        "Excluded cards have a separate visible view",
+        "Confirmed mutant and unified Ability rules appear in editor",
+        "Draft setup uses the selected pod size and pack count",
+        "A seeded pack displays all16 cards",
+        "Draft cards magnify without selecting a pick",
+        "Stale duplicate pick cannot consume the next pack",
+        "Three visible card picks are committed exactly once",
+        "Editing library rules does not mutate an in-progress draft",
+        "Completed two-seat draft conserves all32 dealt cards",
+        "Human and bot decks share a format but retain separate drafted pools",
+        "Constructed human draft deck passes its ownership and40-card checks",
+        "Constructed opponent draft deck passes its own pool checks",
+        "Gallery cannot add an undrafted card to a drafted deck",
+        "Both generated drafted decks complete native40-card match setup",
+        "Draft match places four Prizes for both players",
+        "Realistic Player worker restores cube rules and produces an action",
+        "Cube engine accepts the worker action",
+        "Normal Start match button creates a cube match with seat ownership and pinned rules",
+        "Cube match renders the normal play table"
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "passed": true,
+      "checks": [
+        "Cube draft is accessible from the forest main menu",
+        "Zander core has640 entries",
+        "Excluded cards have a separate visible view",
+        "Confirmed mutant and unified Ability rules appear in editor",
+        "Draft setup uses the selected pod size and pack count",
+        "A seeded pack displays all16 cards",
+        "Draft cards magnify without selecting a pick",
+        "Stale duplicate pick cannot consume the next pack",
+        "Three visible card picks are committed exactly once",
+        "Editing library rules does not mutate an in-progress draft",
+        "Completed two-seat draft conserves all32 dealt cards",
+        "Human and bot decks share a format but retain separate drafted pools",
+        "Constructed human draft deck passes its ownership and40-card checks",
+        "Constructed opponent draft deck passes its own pool checks",
+        "Gallery cannot add an undrafted card to a drafted deck",
+        "Both generated drafted decks complete native40-card match setup",
+        "Draft match places four Prizes for both players",
+        "Realistic Player worker restores cube rules and produces an action",
+        "Cube engine accepts the worker action",
+        "Normal Start match button creates a cube match with seat ownership and pinned rules",
+        "Cube match renders the normal play table"
+      ]
+    }
+  ],
+  "physicalAndroidDevice": false,
+  "engineSha256": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3"
+}

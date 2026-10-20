@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/android-build/preview/main.cjs');s=p.read_text(encoding='utf-8').replace("await evalJS('cubeDraftSetup();const f=", "await evalJS('(()=>{cubeDraftSetup();const f=").replace('f.dispatchEvent(new Event("submit",{bubbles:true,cancelable:true}));void 0\');await wait(250);','f.dispatchEvent(new Event("submit",{bubbles:true,cancelable:true}));})()\');await wait(250);');p.write_text(s,encoding='utf-8')

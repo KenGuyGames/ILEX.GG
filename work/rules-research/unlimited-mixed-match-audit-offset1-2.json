@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "engineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+  "rejectedDecks": [],
+  "fixtureAdjustments": [],
+  "scope": "Unlimited all ten era fixtures with mixed Trainer reprints and Fossil Ditto; bounded120 decisions with replay/Undo. Constructed fixtures are not tournament lists.",
+  "games": [
+    {
+      "decks": [
+        "Constructed DP Unlimited fixture: Gardevoir",
+        "Constructed HGSS Unlimited fixture: Magnezone"
+      ],
+      "level": "normal",
+      "decisions": 72,
+      "turn": 10,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed XY Unlimited fixture: Venusaur-EX",
+        "Constructed SM Unlimited fixture: Dragonite"
+      ],
+      "level": "normal",
+      "decisions": 47,
+      "turn": 5,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    },
+    {
+      "decks": [
+        "Constructed SV Unlimited fixture: Gardevoir ex",
+        "Constructed MEGA Unlimited fixture: Mega Venusaur ex"
+      ],
+      "level": "easy",
+      "decisions": 49,
+      "turn": 7,
+      "finished": true,
+      "replay": true,
+      "undo": true
+    }
+  ],
+  "failures": []
+}

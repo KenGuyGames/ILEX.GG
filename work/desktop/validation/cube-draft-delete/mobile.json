@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "Delete draft opens confirmation 640",
+    "Touch cancel keeps draft 640",
+    "Touch deletes last saved draft 640",
+    "Deleting draft keeps cube 640",
+    "Touch restores deleted draft 640",
+    "Imported cube controls fit mobile 640",
+    "Delete draft opens confirmation 360",
+    "Touch cancel keeps draft 360",
+    "Touch deletes last saved draft 360",
+    "Deleting draft keeps cube 360",
+    "Touch restores deleted draft 360",
+    "Imported cube controls fit mobile 360"
+  ],
+  "errors": [],
+  "physicalAndroidDevice": false,
+  "hashes": {
+    "cube-ui.js": "6b2581bef2ac4bf3e54ecdadcfddada43b61d35269f077cfed04a7188773fef1"
+  }
+}

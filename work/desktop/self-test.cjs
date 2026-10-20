@@ -1,1 +1,1 @@
-module.exports=require('./mega-self-test.cjs');
+module.exports=require('./combined-bot-self-test.cjs');

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "restored": true,
+  "checks": [
+    "All1283 saved workbook entries resolve after restart",
+    "Saved Greninja Star resolves to SWSH144",
+    "EXpansion Urshifu resolves to Battle Styles85",
+    "Cube name and customized rules are preserved",
+    "User pool edits are preserved",
+    "Drafted decks, saved drafts, formats and saved match are unchanged",
+    "Deleted cubes are repaired for recovery without being restored",
+    "Saved EXpansion starts without choose-printing errors"
+  ],
+  "hashes": {
+    "cube-library.js": "28f1d54e33baa8f869f864ece811f2c98ce4a7d5bcabf78d15da77e36a2d2e66",
+    "cube-ui.js": "5ccf8ce7f5e3ccbcba2c3a36fbe4fe2d6e5b50309e7d493e87cb26dd00dc2da4",
+    "cube-presets.json": "849520c43c01f557e6de2597dc4ecabe0ec9f9c5b184b7fff48022c52cb14a51"
+  }
+}

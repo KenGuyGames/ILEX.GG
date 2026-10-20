@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "release": "1.21.0",
+  "engineSha256": "a711f38166daf06f658d0f42b6b7279d925e9ad84a4cbdead68a77451e031d74",
+  "priorEngineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+  "preservedRareCandyRepair": {
+    "focusedChecks": 39,
+    "sharedSuites": 15,
+    "evidence": "rare-candy-fix.json",
+    "change": "Rare Candy SVI canUseRareCandy: replace exceptional-permission guard with actual first-turn window"
+  },
+  "botSha256": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874",
+  "botUiSha256": "f6f0c6a068952696ca41a1365445aae7014853cd4e6b1560841b8166c6efc51a",
+  "focusedChecks": 52,
+  "focusedMaxDecisionMs": 13013.113299999997,
+  "ruleProfiles": [
+    "wotc",
+    "wotc2002",
+    "ex",
+    "exlate",
+    "dp",
+    "dppl",
+    "hgss",
+    "bw",
+    "xy",
+    "sm",
+    "swsh",
+    "sv",
+    "mega",
+    "unlimited",
+    "expanded"
+  ],
+  "profileScope": "First-turn legal planning across fifteen listed rule profiles using constructed starter fixtures; not competitive strength or deck legality testing in every format",
+  "sourceReproduced": true,
+  "sourceManifestSha256": "ec25ef241001b71a0a69188923d9ed976bb3ebc3fd1ee809b5316291668acef7",
+  "launches": [
+    {
+      "label": "fresh",
+      "workerChecks": 19,
+      "controllerChecks": 12,
+      "privateChecks": 20,
+      "rareCandyChecks": 12
+    },
+    {
+      "label": "restored",
+      "workerChecks": 19,
+      "controllerChecks": 12,
+      "privateChecks": 20,
+      "rareCandyChecks": 12
+    }
+  ],
+  "mobile": {
+    "checks": 165,
+    "workerChecks": 19,
+    "controllerChecks": 13,
+    "landscapeSizes": 3,
+    "physicalDeviceTested": false
+  },
+  "android": {
+    "version": "1.21.0-android.30",
+    "code": 30,
+    "checks": 38,
+    "sha256": "81783bdbef3d40c6026dcf12be1f0243df344fc5faf9762edf9e06c529226fd6",
+    "originalCertificate": true
+  },
+  "benchmarks": {
+    "exact": {
+      "label": "Exact released bot policy on the pre-Rare-Candy-repair engine; fixture has no affected Candy cards",
+      "botSha256": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874",
+      "executedEngineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+      "pairs": [
+        2
+      ],
+      "games": 2,
+      "completed": 2,
+      "wins": 1,
+      "losses": 1,
+      "unfinished": 0,
+      "decisions": 366
+    },
+    "previousDiscard": {
+      "label": "Prior discard-aware source; qualifier delta inactive in these exact decks",
+      "botSha256": "39cdc67895514894185a365de342af7d1cbb4179cb26da5450e532e703989173",
+      "executedEngineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+      "pairs": [
+        0,
+        4
+      ],
+      "games": 4,
+      "completed": 4,
+      "wins": 4,
+      "losses": 0,
+      "unfinished": 0,
+      "decisions": 610
+    },
+    "resources": {
+      "label": "Prior resource source; both later deltas inactive in these exact decks",
+      "botSha256": "edc0259fe5cc966cc201e89d15b8a6f51886e323686eb20051eba0a516d0dda3",
+      "executedEngineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+      "pairs": [
+        1,
+        5
+      ],
+      "games": 4,
+      "completed": 4,
+      "wins": 3,
+      "losses": 1,
+      "unfinished": 0,
+      "decisions": 886
+    },
+    "constructed": {
+      "label": "Constructed SV fixture on pre-repair engine; excluded from strength totals and not relabeled as final-engine validation",
+      "botSha256": "edc0259fe5cc966cc201e89d15b8a6f51886e323686eb20051eba0a516d0dda3",
+      "executedEngineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+      "pairs": [
+        6
+      ],
+      "games": 2,
+      "completed": 2,
+      "wins": 1,
+      "losses": 1,
+      "unfinished": 0,
+      "decisions": 257
+    },
+    "sourceHashesPreserved": true,
+    "humanBenchmarked": false,
+    "professionalStrengthEstablished": false
+  },
+  "inheritedRulesRegressionSuites": 19,
+  "inheritedRulesValidation": "Historical full engine validation remains tied to a46; latest a711 preserves the independently validated one-guard Rare Candy repair. Final bot/profile/native/mobile checks run on a711.",
+  "promoOriginalFallbacks": 22,
+  "cardCacheSha256": "67a352330e99d04aeb83f04b60563bc7e5b1dc6fa97dc554384ba0ba8ae0b778",
+  "promoMapSha256": "8110774d09f605472c346c3cbe66432f94453574d1ad05adc105ccb67cf695d4",
+  "actualExternalTwoPCMatchTested": false,
+  "finishScanAcquisitionComplete": false,
+  "limits": [
+    "Bounded tactical and paired seeded fixtures do not certify professional human strength or every possible card interaction.",
+    "Historical profiles have functional planning checks; competitive matchup tests do not cover every format.",
+    "Comparison records retain their actual bot and engine source hashes; scoped later changes are audited separately.",
+    "Physical Android and an actual external two-PC match remain unverified."
+  ],
+  "publication": "Local Windows and Android only; no GitHub or Play Store publication"
+}

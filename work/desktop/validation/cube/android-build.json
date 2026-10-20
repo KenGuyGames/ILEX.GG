@@ -1,0 +1,10 @@
+{
+  "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\cube-candidate\\ILEX.GG-Android.apk",
+  "bytes": 205104404,
+  "sha256": "800bbd26cc007ba0293b47d7c62c4f72678ff0563bc9702c3259931db522b120",
+  "bundledScans": 1137,
+  "engineSha256": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+  "minAndroid": "8.0",
+  "targetSdk": 36,
+  "physicalDeviceTested": false
+}

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": [
+    "Touch opens delete confirmation 640",
+    "Touch confirms deletion 640",
+    "Touch restores a deleted cube 640",
+    "Cube controls fit mobile width 640",
+    "Touch opens delete confirmation 360",
+    "Touch confirms deletion 360",
+    "Touch restores a deleted cube 360",
+    "Cube controls fit mobile width 360"
+  ],
+  "proof": [
+    {
+      "width": 640,
+      "height": 312,
+      "checks": [
+        "Fixture includes human and opponent drafted decks",
+        "Deletion prompt shows the affected deck count",
+        "Cancel preserves cube and drafted decks",
+        "Confirmed deletion removes only the selected cube and its drafted decks",
+        "Deleted saved drafts cannot regenerate removed decks",
+        "Other cubes and unrelated decks are preserved",
+        "Selected deleted deck falls back safely",
+        "Formats and current match are preserved",
+        "Restore returns the exact cube drafts and drafted decks",
+        "Deleting all cubes displays a valid empty library",
+        "Empty library still offers cube creation and import",
+        "New cube can be created after deleting the last cube"
+      ]
+    },
+    {
+      "width": 360,
+      "height": 800,
+      "checks": [
+        "Fixture includes human and opponent drafted decks",
+        "Deletion prompt shows the affected deck count",
+        "Cancel preserves cube and drafted decks",
+        "Confirmed deletion removes only the selected cube and its drafted decks",
+        "Deleted saved drafts cannot regenerate removed decks",
+        "Other cubes and unrelated decks are preserved",
+        "Selected deleted deck falls back safely",
+        "Formats and current match are preserved",
+        "Restore returns the exact cube drafts and drafted decks",
+        "Deleting all cubes displays a valid empty library",
+        "Empty library still offers cube creation and import",
+        "New cube can be created after deleting the last cube"
+      ]
+    }
+  ],
+  "physicalAndroidDevice": false,
+  "cubeUiSha256": "6a543d4fb75768d3ca53372e0a8983251d67a9b95f29e613100c4a362da857e0"
+}

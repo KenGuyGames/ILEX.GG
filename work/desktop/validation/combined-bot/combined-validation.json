@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "release": "1.21.1",
+  "hashes": {
+    "rules-engine.js": "46e3e52c11617aa3a8870083ff547c899af0b7d5ef5c8bea643c8a074d74b67e",
+    "rules-match.js": "90b679ff7bc2e796d28d5e4a35cd5b51492cf18a4f29d373a7911d89445a7b21",
+    "bot-ai.js": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874",
+    "bot-ui.js": "f6f0c6a068952696ca41a1365445aae7014853cd4e6b1560841b8166c6efc51a",
+    "limitless-collection.js": "ac6a86f1b4cdf62506264982641a47e385e889ba55e9baefc02026407d06f8df"
+  },
+  "includes": [
+    "Realistic Player bot upgrade",
+    "Format-specific reprint rules",
+    "Selected-set-pool historical cutoffs",
+    "Original unversioned-save replay semantics",
+    "Rare Candy eligibility repair"
+  ],
+  "tacticalChecks": 52,
+  "botReprintIntegrationChecks": 11,
+  "formatChecks": [
+    {
+      "name": "format-reprints-regressions",
+      "checks": 505
+    },
+    {
+      "name": "format-reprints-extra-regressions",
+      "checks": 57
+    },
+    {
+      "name": "format-reprints-replay-regressions",
+      "checks": 5
+    },
+    {
+      "name": "format-reprints-cutoff-regressions",
+      "checks": 9
+    }
+  ],
+  "ruleProfiles": [
+    "wotc",
+    "wotc2002",
+    "ex",
+    "exlate",
+    "dp",
+    "dppl",
+    "hgss",
+    "bw",
+    "xy",
+    "sm",
+    "swsh",
+    "sv",
+    "mega",
+    "unlimited",
+    "expanded"
+  ],
+  "checks": [
+    {
+      "name": "format-reprints-extra-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-replay-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-cutoff-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "rare-candy-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "tournament-bot-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "tournament-expanded-profile",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-match-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-peer-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "realistic-alias-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "tournament-profile-tests",
+      "passed": true,
+      "exitCode": 0
+    }
+  ],
+  "launches": [
+    {
+      "label": "fresh",
+      "tournament-bot-native-tests": 19,
+      "realistic-native-tests": 12,
+      "private-native-tests": 20,
+      "candy-native-tests": 12,
+      "format-reprints-native-tests": 36
+    },
+    {
+      "label": "restored",
+      "tournament-bot-native-tests": 19,
+      "realistic-native-tests": 12,
+      "private-native-tests": 20,
+      "candy-native-tests": 12,
+      "format-reprints-native-tests": 36
+    }
+  ],
+  "mobile": {
+    "checks": 201,
+    "workerChecks": 19,
+    "formatChecks": 36,
+    "errors": [],
+    "physicalDeviceTested": false
+  },
+  "android": {
+    "version": "1.21.1-android.32",
+    "code": 32,
+    "sha256": "5c02dddaf3c55d947a803aa1157940d4b1838779cd7e9c67132f8801e1918e84",
+    "checks": 38,
+    "originalCertificate": true,
+    "bundledScans": 445
+  },
+  "professionalHumanStrengthEstablished": false,
+  "benchmarkNote": "Earlier comparisons retain their actual source hashes. They were not rerun on this combined engine/adapter and are not relabeled.",
+  "existingProfileDataModified": false,
+  "externalTwoPCMatchTested": false,
+  "limits": [
+    "Finite functional/tactical tests are not exhaustive interaction proof or professional tournament strength evidence.",
+    "Rule-profile fixtures are functional integration checks, not competitive tests for every format.",
+    "Physical Android and actual external two-PC acceptance remain pending."
+  ]
+}

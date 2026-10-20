@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),src=path.join(root,'work/mega-source/src');
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..'),src=path.join(root,'work/cube-source/src');
 const file=path.join(src,'tcg-lab-wotc.ts');let s=fs.readFileSync(file,'utf8');
 if(!s.includes("import {megaData}"))s="import {megaData} from './tcg-lab-mega-data';\nimport {installMegaCard} from './tcg-lab-mega-cards';\n"+s;
 s=s.replace('...swshData,...svData])','...swshData,...svData,...megaData])').replace('||svData.includes(record),','||svData.includes(record)||megaData.includes(record),');

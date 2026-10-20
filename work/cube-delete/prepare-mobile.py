@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/android-build/preview/main.cjs');s=p.read_text(encoding='utf-8');needle="  await check('rulesReady&&cards.length>20000";i=s.index(needle);s=s[:i]+"  if(process.env.ILEX_ANDROID_CUBE_DELETE_CHECKS==='1'){const proof=await require(path.join(root,'../cube-delete/mobile-tests.cjs'))(win,root,evalJS);fs.writeFileSync(path.join(root,'../cube-delete/mobile-tests.json'),JSON.stringify(proof,null,2));console.log('Cube deletion touch checks passed');app.exit(0);return;}\n"+s[i:];p.write_text(s,encoding='utf-8')
+s=Path('work/cube-delete/self-test.cjs').read_text(encoding='utf-8');a=s.index('`(async()=>{')+1;b=s.index('})()`);',a)+4;Path('work/cube-delete/workflow.js').write_text(s[a:b].replace('${restored}','false'),encoding='utf-8')

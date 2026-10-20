@@ -12,12 +12,14 @@ OUT=HERE/'build'; OUT.mkdir(exist_ok=True)
 ASSETS=OUT/'assets'; UI=ASSETS/'ui'
 UI_SOURCE=Path(os.environ.get('ILEX_ANDROID_UI_ROOT',str(ROOT/'work/desktop/ui')))
 MANIFEST_SOURCE=Path(os.environ.get('ILEX_ANDROID_MANIFEST',str(HERE/'AndroidManifest.xml')))
+MOBILE_SOURCE=Path(os.environ.get('ILEX_ANDROID_MOBILE_SOURCE',str(HERE)))
+JAVA_SOURCE=Path(os.environ.get('ILEX_ANDROID_JAVA_SOURCE',str(HERE/'MainActivity.java')))
 def run(*args):
     print('Running',Path(str(args[0])).name,flush=True)
     subprocess.run([str(x) for x in args],check=True)
 shutil.copytree(UI_SOURCE,UI,dirs_exist_ok=True)
 for name in ['mobile.js','mobile-host.js','mobile-compat.js','mobile.css','mobile-landscape.css']:
-    shutil.copy2(HERE/name,UI/name)
+    shutil.copy2((MOBILE_SOURCE/name) if (MOBILE_SOURCE/name).exists() else HERE/name,UI/name)
 index=(UI/'index.html').read_text(encoding='utf-8')
 index=index.replace('width=device-width,initial-scale=1','width=device-width,initial-scale=1,viewport-fit=cover')
 index=index.replace("object-src 'none';", "frame-src 'none'; object-src 'none';")
@@ -38,7 +40,7 @@ ids += ['swsh11-131','swsh10-046','swsh5-85','swsh8-185','swsh9-123','swsh8-114'
 ids += ['energy2019-G', 'energy2019-R', 'energy2019-W', 'energy2019-L', 'energy2019-P', 'energy2019-F', 'energy2019-D', 'energy2019-M', 'energy2019-Y', 'energy2020-G', 'energy2020-R', 'energy2020-W', 'energy2020-L', 'energy2020-P', 'energy2020-F', 'energy2020-D', 'energy2020-M', 'energy2020-Y', 'energy2022-G', 'energy2022-R', 'energy2022-W', 'energy2022-L', 'energy2022-P', 'energy2022-F', 'energy2022-D', 'energy2022-M', 'mee-001', 'mee-002', 'mee-003', 'mee-004', 'mee-005', 'mee-006', 'mee-007', 'mee-008', 'sm1-164', 'sm1-165', 'sm1-166', 'sm1-167', 'sm1-168', 'sm1-169', 'sm1-170', 'sm1-171', 'sm1-172', 'sve-001', 'sve-002', 'sve-003', 'sve-004', 'sve-005', 'sve-006', 'sve-007', 'sve-008', 'sve-009', 'sve-010', 'sve-011', 'sve-012', 'sve-013', 'sve-014', 'sve-015', 'sve-016']
 # 30th anniversary Energy: distinct from ordinary Mega Evolution Energy.
 ids += ['mee-009', 'mee-010', 'mee-011', 'mee-012', 'mee-013', 'mee-014', 'mee-015', 'mee-016']
-ids += [card for card in os.environ.get('ILEX_ANDROID_EXTRA_SCANS',(HERE/'release-extra-scans.txt').read_text(encoding='utf-8') if (HERE/'release-extra-scans.txt').exists() else '').split(',') if card and card not in ids]
+ids += [card for card in os.environ.get('ILEX_ANDROID_EXTRA_SCANS',(HERE/'sv-startup-scans.txt').read_text(encoding='utf-8') if (HERE/'sv-startup-scans.txt').exists() else '').split(',') if card and card not in ids]
 wanted_scans={Path(manifest[card]['file']).name for card in ids}
 for stale in (UI/'scans').glob('*'):
     if stale.is_file() and stale.name not in wanted_scans:stale.unlink()
@@ -59,7 +61,7 @@ with zipfile.ZipFile(unsigned,'w',compression=zipfile.ZIP_DEFLATED) as archive:
     for f in linked.rglob('*'):
         if f.is_file():archive.write(f,f.relative_to(linked).as_posix())
 classes=OUT/'classes';classes.mkdir(exist_ok=True)
-run(JAVA/'javac.exe','--release','8','-encoding','UTF-8','-classpath',JAR,'-d',classes,HERE/'MainActivity.java')
+run(JAVA/'javac.exe','--release','8','-encoding','UTF-8','-classpath',JAR,'-d',classes,JAVA_SOURCE)
 dex=OUT/'dex';dex.mkdir(exist_ok=True)
 run(JAVA/'java.exe','-cp',TOOLS/'lib/d8.jar','com.android.tools.r8.D8','--release','--min-api','26','--lib',JAR,'--output',dex,*classes.rglob('*.class'))
 with zipfile.ZipFile(unsigned,'a',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as archive:

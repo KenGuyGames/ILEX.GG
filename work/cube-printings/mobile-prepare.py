@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/android-build/preview/main.cjs');s=p.read_text(encoding='utf-8');needle="  if(process.env.ILEX_ANDROID_CUBE_DELETE_CHECKS";i=s.index(needle);s=s[:i]+"  if(process.env.ILEX_ANDROID_CUBE_PRINTING_CHECKS==='1'){const proof=await require(path.join(root,'../cube-printings/mobile-tests.cjs'))(win,root,evalJS);fs.writeFileSync(path.join(root,'../cube-printings/mobile-tests.json'),JSON.stringify(proof,null,2));console.log('Cube printings touch checks passed');app.exit(0);return;}\n"+s[i:];p.write_text(s,encoding='utf-8')

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "exlate natural reprint evolution replays exactly and Undo restores it",
+    "hgss natural reprint evolution replays exactly and Undo restores it",
+    "bw natural reprint evolution replays exactly and Undo restores it",
+    "sv natural reprint evolution replays exactly and Undo restores it",
+    "Unversioned historical saves retain their original printing semantics"
+  ]
+}

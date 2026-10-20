@@ -1,0 +1,14 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'../..');
+const ui=path.join(root,'work/unlimited-candidate/ui');
+let p=path.join(ui,'rules-match.js'),s=fs.readFileSync(p,'utf8');
+if(!s.includes('unlimited:{'))s=s.replace('const profiles={',"const profiles={\n    unlimited:{name:'Unlimited — all eras',format:R.Format.UNLIMITED,unlimitedRules:true,firstTurnDrawCard:true,firstTurnUseSupporter:false,attackFirstTurn:false,legacyBurn:false,dpEraRules:true,exEraRules:true,hgssEraRules:true,bwEraRules:true,pokemonCatcherErrata:true,xyEraRules:true,svEraRules:true},");
+s=s.replace('unlimitedRules:true,firstTurnDrawCard','unlimitedRules:true,wotcPowerConditions:true,firstTurnDrawCard');
+fs.writeFileSync(p,s);
+fs.writeFileSync(path.join(__dirname,'unlimited-base-tests.cjs'),fs.readFileSync(path.join(__dirname,'mega-base-tests.cjs'),'utf8').replaceAll('mega-candidate','unlimited-candidate'));
+const focused=fs.readFileSync(path.join(__dirname,'mega-focused-tests.cjs'),'utf8'),start=focused.indexOf('const script=String.raw`')+'const script=String.raw`'.length;
+let helpers=focused.slice(start,focused.indexOf("test('Every candidate",start)).replace("setup('mega'","setup('unlimited'");
+helpers=helpers.replace('getCardByName(map[id])',"getCardByName(M.resolveCardName?M.resolveCardName(map[id],'unlimited'):map[id])");
+const runner=`const fs=require('fs'),path=require('path'),vm=require('vm');const base=fs.readFileSync(path.join(__dirname,'unlimited-base-tests.cjs'),'utf8'),prefix=base.slice(0,base.indexOf("test('Limitless import:"));\nconst script=String.raw\`${helpers}`;
+const ending="\nfs.writeFileSync(path.join(root,'work/rules-research/unlimited-focused-tests.json'),JSON.stringify({passed:!failures.length,checks,failures,engineSha256:require('crypto').createHash('sha256').update(fs.readFileSync(path.join(ui,'rules-engine.js'))).digest('hex')},null,2));console.log(JSON.stringify({checks:checks.length,failures:failures.length}));if(failures.length)process.exitCode=1;\n`;(vm.runInNewContext(prefix+script,{require,__dirname,console,setTimeout,clearTimeout,process},{filename:'unlimited-focused-tests.cjs'}));\n";
+fs.writeFileSync(path.join(__dirname,'unlimited-focused-tests.cjs'),runner+fs.readFileSync(path.join(__dirname,'unlimited-fixtures.js'),'utf8')+ending);
+console.log('Unlimited profile and focused harness prepared; released app unchanged.');

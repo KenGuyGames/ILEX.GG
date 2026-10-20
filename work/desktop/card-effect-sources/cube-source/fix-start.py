@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/cube-candidate/ui/rules-ui.js');s=p.read_text(encoding='utf-8').replace("c?.category==='Energy'&&c.energyType==='Normal'", "c?.category==='Energy'&&['Normal','Basic'].includes(c.energyType)");p.write_text(s,encoding='utf-8')
+p=Path('work/cube-review/native-self-test.cjs');s=p.read_text(encoding='utf-8');a=s.index("'Normal Start match button creates a cube match with seat ownership and pinned rules: '");b=s.index(');rulesMatch=m',a);s=s[:a]+"'Normal Start match button creates a cube match with seat ownership and pinned rules'"+s[b:];p.write_text(s,encoding='utf-8')

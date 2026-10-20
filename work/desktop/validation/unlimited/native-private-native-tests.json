@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": [
+    "Private menu and host controls render",
+    "Host generates a complete LAN invite without external infrastructure",
+    "Guest produces the response code",
+    "Both Windows renderers authenticate with simulated channel delivery",
+    "Both players finish setup with private choice interfaces",
+    "Guest wire view conceals host hand and both Prize identities",
+    "Guest receives no private journal or random state",
+    "Opponent hand DOM contains card backs only",
+    "Dragging a hand Energy commits exactly once through the host engine",
+    "Enlarged Pokémon has transparent printed-action regions",
+    "Guest/host action advances the shared turn",
+    "Requester sees withdrawal, never self-approval",
+    "Only opponent sees approval and denial",
+    "Pending Undo freezes gameplay",
+    "Denied Undo leaves both boards unchanged",
+    "Approved Undo restores exact hands, deck counts and board across peers",
+    "Disconnect pauses authoritative gameplay",
+    "Fresh invite reconnects to the exact same match",
+    "Saved host recovery replays exact state and reopens the guest seat",
+    "No renderer errors in private-match flow"
+  ],
+  "hashes": {
+    "private-match.js": "75c6c9aecefb460fcca6c7f769ae8a24f995af236b6c9df50c72bdf940f65611",
+    "private-peer.js": "cb303ff69b74efac9afbe63570bb9b6b90b1c583f11b9efee7a0e96ab0d2b826",
+    "private-online.js": "5f843a85c2fcb976cea0f42e5fac51814e14b56fd5577847f603e31da15c23be",
+    "private-online.css": "7b688ad427f6c6473a7e04d4974a4d9a76a4e5069cd38cb0d8890c5d8baaa51d",
+    "index.html": "1d9806e94e36a2579195279a2837e81fd227df529919f9886671cd8e5f03debe",
+    "audio.js": "aff3738d4c7b96cc86c8e3de8da40d0654b333dc1e2e6ea9da98534e22cb3533",
+    "presentation.js": "8d2f4e5808083b28c6ef189d22ac4f8e471b2148e5403787804df4fda362b309"
+  },
+  "engineSha256": "a46bb1b8e2b45f4e639fe4438bd934e18f66cc9fed2027dfb288b28ca1a92ce8",
+  "transport": "Two Windows Electron renderers; simulated RTC channel delivery, real protocol framing and invite/answer flow",
+  "actualRTCConnectionVerified": false,
+  "externalWindowsPCsTested": false,
+  "internetNATAcceptancePending": true
+}

@@ -6,7 +6,7 @@ const R=ctx.TCGRules;const upstream=Object.values(R.sets).filter(Array.isArray).
 const unique=[...new Map(upstream.map(c=>[c.fullName,c])).values()];
 const definitions=[],unsafeClasses=new Set(),unsafeNames=new Set();
 function scan(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const p=path.join(dir,entry.name);if(entry.isDirectory())scan(p);else if(p.endsWith('.ts')){const text=fs.readFileSync(p,'utf8');const imports=new Map();for(const im of text.matchAll(/import\s*\{([^}]+)\}\s*from\s*['"]([^'"]+)['"]/g)){for(const binding of im[1].split(',')){const [original,local]=binding.trim().split(/\s+as\s+/);imports.set(local||original,{file:path.resolve(path.dirname(p),im[2])+'.ts',name:original});}}for(const m of text.matchAll(/export class (\w+) extends (\w+)/g)){const body=text.slice(m.index,text.indexOf('export class',m.index+12)<0?undefined:text.indexOf('export class',m.index+12));const full=body.match(/fullName(?:\s*:\s*string)?\s*=\s*['"]([^'\"]+)/)?.[1];const imported=imports.get(m[2]);const id=p+'#'+m[1],parent=(imported?.file||p)+'#'+(imported?.name||m[2]);definitions.push({id,parent,full});if(/TODO|not implemented|not currently implementable/i.test(body))unsafeClasses.add(id);}}}}
-scan(path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/sets'));
+scan(path.join(root,'work/cube-source/src/sets'));
 for(let i=0;i<definitions.length;i++){let changed=false;for(const d of definitions)if(unsafeClasses.has(d.parent)&&!unsafeClasses.has(d.id)){unsafeClasses.add(d.id);changed=true}if(!changed)break;}
 for(const d of definitions)if(unsafeClasses.has(d.id)&&d.full)unsafeNames.add(d.full);
 const cards=JSON.parse(fs.readFileSync(path.join(ui,'cards.json'))),sets=JSON.parse(fs.readFileSync(path.join(ui,'sets.json')));
@@ -22,7 +22,7 @@ const xySupplements=path.join(root,'work/card-sources/xy-supplements.json');if(f
 const smSupplementFile=path.join(root,'work/card-sources/sm-supplements.json');if(fs.existsSync(smSupplementFile))for(const d of JSON.parse(fs.readFileSync(smSupplementFile,'utf8')))records[d.id]=d;
 const swshSupplementFile=path.join(root,'work/card-sources/swsh-supplements.json');if(fs.existsSync(swshSupplementFile))for(const d of JSON.parse(fs.readFileSync(swshSupplementFile,'utf8')))records[d.id]=d;
 const swshPrintedFile=path.join(root,'work/rules-research/swsh-wave-data.json');if(fs.existsSync(swshPrintedFile))for(const row of JSON.parse(fs.readFileSync(swshPrintedFile,'utf8')))records[row.d.id]=row.d;
-const bwDataFile=path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-bw-data.ts');if(fs.existsSync(bwDataFile)){const data=JSON.parse(fs.readFileSync(bwDataFile,'utf8').match(/^export const bwData:any = (.*);$/m)[1]);for(const record of data)records[record.d.id]=record.d;}
+const bwDataFile=path.join(root,'work/cube-source/src/tcg-lab-bw-data.ts');if(fs.existsSync(bwDataFile)){const data=JSON.parse(fs.readFileSync(bwDataFile,'utf8').match(/^export const bwData:any = (.*);$/m)[1]);for(const record of data)records[record.d.id]=record.d;}
 const codes={};const metadata={};const mapping={};
 const variants={};for(const c of unique){const key=norm(c.set)+'|'+String(c.setNumber).toLowerCase().replace(/^0+(?=\d)/,'');(variants[key]??=[]).push(c);}
 for(const c of cards){

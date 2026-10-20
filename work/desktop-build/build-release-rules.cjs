@@ -1,1 +1,1 @@
-const path=require('node:path');process.env.ILEX_RULES_SOURCE_ROOT=path.resolve(__dirname,'../mega-source/src');require('./build-rules.cjs');
+const path=require('node:path');require('esbuild').build({entryPoints:[path.resolve(__dirname,'../cube-source/src/tcg-lab-entry.ts')],bundle:true,platform:'browser',format:'iife',globalName:'TCGRules',define:{global:'globalThis'},outfile:path.resolve(__dirname,'../desktop/ui/rules-engine.js'),target:'chrome140',logLevel:'warning'}).then(()=>console.log('Release engine rebuilt')).catch(()=>process.exitCode=1);

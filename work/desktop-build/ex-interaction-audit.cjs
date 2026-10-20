@@ -5,8 +5,8 @@ const ex=fs.readFileSync(path.join(__dirname,'ex-test-cases.js'),'utf8');
 const helpers=ex.slice(0,ex.indexOf("test('EX inventory"));
 const script=String.raw`
 vm.runInContext(fs.readFileSync(path.join(ui,'bot-ai.js'),'utf8'),ctx);const B=ctx.BotAI;
-const records=JSON.parse(fs.readFileSync(path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-ex-data.ts'),'utf8').replace(/^export const exData:any = /,'').replace(/;\s*$/,''));
-const ecardText=fs.readFileSync(path.join(root,'work/rules-research/twinleafgg-main/ptcg-server/src/tcg-lab-wotc-data.ts'),'utf8');records.push(...JSON.parse(ecardText.slice(ecardText.indexOf('['),ecardText.lastIndexOf(']')+1)).filter(r=>['ecard1','ecard2','ecard3'].includes(r.d.set.id)));
+const records=JSON.parse(fs.readFileSync(path.join(root,'work/cube-source/src/tcg-lab-ex-data.ts'),'utf8').replace(/^export const exData:any = /,'').replace(/;\s*$/,''));
+const ecardText=fs.readFileSync(path.join(root,'work/cube-source/src/tcg-lab-wotc-data.ts'),'utf8');records.push(...JSON.parse(ecardText.slice(ecardText.indexOf('['),ecardText.lastIndexOf(']')+1)).filter(r=>['ecard1','ecard2','ecard3'].includes(r.d.set.id)));
 const failures=[],rejected=[],resolved=[];
 const reduce=R.Store.prototype.reduceEffect;
 R.Store.prototype.reduceEffect=function(state,effect){this.auditEffects=(this.auditEffects||0)+1;if(this.auditEffects>6000)throw Error('Interaction effect budget exceeded');return reduce.call(this,state,effect);};

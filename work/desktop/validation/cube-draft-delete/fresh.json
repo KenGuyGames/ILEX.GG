@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Saved draft has a Delete draft control",
+    "Cancel keeps both drafts",
+    "Only the chosen draft is deleted",
+    "Other draft picks and packs are unchanged",
+    "Selection moves to a remaining draft",
+    "Cube, drafted deck, format and active match are preserved",
+    "Deleted picks and packs are recoverable exactly",
+    "Restore control appears",
+    "Restore returns exact saved draft",
+    "Restore selects draft and clears trash entry",
+    "Repeated restore does not duplicate draft",
+    "Completed drafts can also be deleted",
+    "Stale confirmation cannot remove another draft"
+  ],
+  "hashes": {
+    "cube-ui.js": "6b2581bef2ac4bf3e54ecdadcfddada43b61d35269f077cfed04a7188773fef1"
+  }
+}

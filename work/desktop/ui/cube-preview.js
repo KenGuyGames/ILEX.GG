@@ -1,0 +1,4 @@
+const cubePreviewScreen=cubeScreen;
+cubeScreen=async function(){await cubePreviewScreen();if(tab!=='cubes')return;for(const button of document.querySelectorAll('.cube-pack button')){const img=button.querySelector('img');if(img){button.dataset.previewSrc=img.getAttribute('src');button.dataset.previewName=img.alt;button.title='Tap to draft. Hold or right-click to magnify.';}}};
+const cubePriorEditFormat=editFormat;
+editFormat=function(id){const f=state.formats.find(f=>f.id===id);if(!f?.cubeRules)return cubePriorEditFormat(id);modal('<h2>Saved draft rules</h2><p>This format belongs to a saved draft. Its deck size, Prize count and cube rules stay with that session. Edit the cube library to change the rules for your next draft.</p><button id="cube-format-edit">Open cube rules</button>');document.querySelector('#cube-format-edit').onclick=()=>{activeCubeId=f.cubeId;document.querySelector('#modal').close();tab='cubes';render();editCubeRules();};};

@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "renders": [
+    {
+      "id": "grove",
+      "rms": 0.0290946703703057,
+      "peak": 0.13387179374694824,
+      "seconds": 8
+    },
+    {
+      "id": "dew",
+      "rms": 0.03075391415986537,
+      "peak": 0.13774245977401733,
+      "seconds": 8
+    },
+    {
+      "id": "duel",
+      "rms": 0.03077048254501585,
+      "peak": 0.1787453293800354,
+      "seconds": 8
+    },
+    {
+      "id": "time",
+      "rms": 0.03112852398980325,
+      "peak": 0.17453885078430176,
+      "seconds": 8
+    },
+    {
+      "id": "gambit",
+      "rms": 0.030854409302783617,
+      "peak": 0.1841491460800171,
+      "seconds": 8
+    }
+  ],
+  "controls": true,
+  "muting": true,
+  "noDuplicateLoops": true,
+  "noGameMutation": true,
+  "uncommittedActionsSilent": true,
+  "preferences": {
+    "music": true,
+    "effects": true,
+    "musicVolume": 0.23,
+    "effectsVolume": 0.47,
+    "muted": true,
+    "track": "auto"
+  }
+}

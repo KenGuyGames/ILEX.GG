@@ -28,6 +28,7 @@ else{
     const CardCache=require('./card-cache.cjs');
     const cache=new CardCache({manifest:JSON.parse(fs.readFileSync(path.join(ui,'scan-manifest.json'),'utf8')),directory:path.join(app.getPath('userData'),'card-cache'),bundled:scans,fetch:(url,options)=>net.fetch(url,options),notify:status=>{if(win&&!win.isDestroyed())win.webContents.send('card-cache-progress',status)}});
     for(const [channel,action] of Object.entries({'card-cache-status':()=>cache.status(),'card-cache-start':()=>cache.start(),'card-cache-pause':()=>cache.pause()}))ipcMain.handle(channel,event=>{if(event.sender!==win?.webContents||!ownURL(event.senderFrame.url))throw Error('Invalid cache request');return action()});
+    ipcMain.handle('cube-import',async(event,url)=>{if(event.sender!==win?.webContents||!ownURL(event.senderFrame.url)||typeof url!=='string'||url.length>1000)throw Error('Invalid cube import request');return require('./cube-import.cjs').load((u,o)=>net.fetch(u,o),url);});
     protocol.handle('tcglab',async request=>{
       try{
         const u=new URL(request.url);

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "An early EX pool pins Sandstorm rather than a later EX printing",
+    "A DP-only pool keeps Bill as a Trainer under the legacy DP/HGSS profile",
+    "A HGSS pool uses the Supporter reprint of Bill",
+    "Before the 151 reprint, Leftovers retains its 10-damage effect",
+    "A 151 pool uses modern Leftovers",
+    "Modern and Unlimited profiles keep current rules even with a restricted pool",
+    "A saved cutoff stays pinned if the format configuration is later changed",
+    "Version0 saved games retain original per-printing behavior",
+    "Default profile mappings are unchanged by the cutoff refinement"
+  ],
+  "adapterSha256": "90b679ff7bc2e796d28d5e4a35cd5b51492cf18a4f29d373a7911d89445a7b21"
+}

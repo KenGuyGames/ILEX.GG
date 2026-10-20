@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "engineSha256": "d0141830b7551dceb6e4b9765d99b93dc9e757fdc419c06ec37556529b2993c3",
+  "results": [
+    {
+      "name": "rare-candy-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "combined-tournament-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "undo-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "format-reprints-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-match-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "private-peer-tests",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "name": "wotc-tests",
+      "passed": true,
+      "exitCode": 0
+    }
+  ]
+}

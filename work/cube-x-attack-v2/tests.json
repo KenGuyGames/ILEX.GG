@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": [
+    "CouncilCube custom printing imports and existing unresolved entry repairs",
+    "Selected Active gets30 extra attack damage and Item is discarded",
+    "Selecting a Benched Pokemon does not boost the other Active",
+    "Bonus expires when ending the turn without attacking",
+    "Boost stays with the selected Pokemon when it moves to Active",
+    "Using two Items stacks on the same Pokemon",
+    "Natural dealt Item survives exact replay and Undo restores hand and removes boost",
+    "Bonus is applied before Weakness, producing80 against Fire-weak Zacian",
+    "Evolution removes all X Attack markers, including after devolving back",
+    "Damage to Benched Pokemon gets no bonus, even through DealDamageEffect"
+  ],
+  "hashes": {
+    "rules-engine.js": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd",
+    "rules-card-map.json": "3c867e75ed06c396ac07c6373ff3e2147b85a8f1d86efd296f9772715755d3d2",
+    "card-details.json": "d24023ab8996d3895a3af000b7a78f235aece8e6afd521f8a1803582764835da",
+    "cards.json": "99b900a82516cfd96971c825dddae31c2d3be56b8f1335d94a7d21df1dea5df6",
+    "cube-library.js": "aadf849e6f0288b453e3d92def6430d525b205e4150b80dac81def153c093351",
+    "cube-x-attack.webp": "7d13553a3e054c39253fa6096c9641df9af147229c44a53e2bdf12798e83663a"
+  }
+}

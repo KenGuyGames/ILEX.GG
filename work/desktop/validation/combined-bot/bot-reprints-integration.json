@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "ex ex1,ex2 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "exlate ex1,ex16 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "dp dp1 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "dp dp1,hgss1 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "hgss hgss1,hgss2 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "bw bw1 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "xy xy1 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "sv sv01 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "sv sv01,sv3pt5 forecast preserves exact reprint identities and cutoff without mutating live state",
+    "unlimited latest forecast preserves exact reprint identities and cutoff without mutating live state",
+    "Legacy replay policy remains version zero in the bot forecast"
+  ],
+  "hashes": {
+    "rules-engine.js": "46e3e52c11617aa3a8870083ff547c899af0b7d5ef5c8bea643c8a074d74b67e",
+    "rules-match.js": "90b679ff7bc2e796d28d5e4a35cd5b51492cf18a4f29d373a7911d89445a7b21",
+    "bot-ai.js": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874"
+  }
+}

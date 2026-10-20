@@ -1,0 +1,13 @@
+from pathlib import Path
+p=Path('work/cube-source/src/tcg-lab-cube-trainers.ts')
+s=p.read_text(encoding='utf-8').replace("import { TrainerEffect }", "import { ShuffleDeckPrompt } from './game/store/prompts/shuffle-deck-prompt';\nimport { TrainerEffect }")
+s=s.replace("if (card.trainerType !== TrainerType.ITEM || !['Rare Candy', 'Pokémon Breeder', 'Pokemon Breeder'].includes(card.name)) return false;", "const fromDeck = ['Wally', 'Evosoda'].includes(card.name);\n  if (!(fromDeck || (card.trainerType === TrainerType.ITEM && ['Rare Candy', 'Pokémon Breeder', 'Pokemon Breeder'].includes(card.name)))) return false;")
+s=s.replace("const slots = [player.active, ...player.bench];", "const source = fromDeck ? player.deck : player.hand;\n  const slots = [player.active, ...player.bench];")
+s=s.replace("if (!basic || basic.stage !== Stage.BASIC ||", "if (!basic || (fromDeck ? ![Stage.BASIC, Stage.STAGE_1].includes(basic.stage) : basic.stage !== Stage.BASIC) ||")
+s=s.replace("if (evolution.stage !== Stage.STAGE_2 && !(legacyCandy && evolution.stage === Stage.STAGE_1)) return false;", "if (!fromDeck && evolution.stage !== Stage.STAGE_2 && !(legacyCandy && evolution.stage === Stage.STAGE_1)) return false;\n    if (fromDeck && ![Stage.STAGE_1, Stage.STAGE_2].includes(evolution.stage)) return false;")
+s=s.replace("if (!legacyCandy && (state.turn <= 2 || list.pokemonPlayedTurn >= state.turn))", "if (!legacyCandy && card.name !== 'Wally' && (state.turn <= 2 || list.pokemonPlayedTurn >= state.turn))")
+s=s.replace("cubeEvolution(basic, evolution, true, rules)", "cubeEvolution(basic, evolution, !fromDeck, rules)")
+s=s.replace('player.hand.cards.some','source.cards.some').replace('player.hand.cards.flatMap','source.cards.flatMap').replace('player.hand, { superType','source, { superType')
+s=s.replace('(evolve as any)._dpHandEvolution = true;', '(evolve as any)._dpHandEvolution = !fromDeck;\n      (evolve as any)._xyEvolutionSource = source;')
+s=s.replace('store.reduceEffect(state, evolve);', "store.reduceEffect(state, evolve);\n      if (fromDeck) store.prompt(state, new ShuffleDeckPrompt(player.id), (order: number[]) => player.deck.applyOrder(order));")
+p.write_text(s,encoding='utf-8');Path('work/cube-review/cube-trainers.ts').write_text(s,encoding='utf-8')

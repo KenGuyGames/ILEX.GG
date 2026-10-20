@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');let s=fs.readFileSync(path.join(__dirname,'run-unlimited-native.cjs'),'utf8');s=s.slice(0,s.indexOf('(async()=>'))+"run('restored').catch(e=>{console.error(e.stack);process.exitCode=1});\n";fs.writeFileSync(path.join(__dirname,'run-unlimited-restored.cjs'),s);

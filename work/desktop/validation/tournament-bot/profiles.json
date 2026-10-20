@@ -1,0 +1,632 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "profile": "wotc",
+      "passed": true,
+      "action": "play",
+      "ms": 4717.8086,
+      "diagnostics": {
+        "version": 2,
+        "trials": 173,
+        "budget": 420,
+        "depth": 6,
+        "cacheReuse": false,
+        "opponentReplies": 18,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 4,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 1,
+          "index": 2,
+          "target": {
+            "player": 2,
+            "slot": 1,
+            "index": 0
+          }
+        },
+        "expectedGain": 120.99533333333333
+      }
+    },
+    {
+      "profile": "wotc2002",
+      "passed": true,
+      "action": "play",
+      "ms": 4742.035899999999,
+      "diagnostics": {
+        "version": 2,
+        "trials": 173,
+        "budget": 420,
+        "depth": 6,
+        "cacheReuse": false,
+        "opponentReplies": 18,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 4,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 1,
+          "index": 2,
+          "target": {
+            "player": 2,
+            "slot": 1,
+            "index": 0
+          }
+        },
+        "expectedGain": 120.99533333333333
+      }
+    },
+    {
+      "profile": "ex",
+      "passed": true,
+      "action": "play",
+      "ms": 3112.9465,
+      "diagnostics": {
+        "version": 2,
+        "trials": 95,
+        "budget": 420,
+        "depth": 4,
+        "cacheReuse": false,
+        "opponentReplies": 16,
+        "returnAttacks": 4,
+        "inferredAttachments": 4,
+        "concealedSamples": 3,
+        "alternatives": 2,
+        "plannedActions": 3,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 5,
+          "target": {
+            "player": 2,
+            "slot": 1,
+            "index": 0
+          }
+        },
+        "expectedGain": 83.20800000000001
+      }
+    },
+    {
+      "profile": "exlate",
+      "passed": true,
+      "action": "play",
+      "ms": 3003.7919,
+      "diagnostics": {
+        "version": 2,
+        "trials": 95,
+        "budget": 420,
+        "depth": 4,
+        "cacheReuse": false,
+        "opponentReplies": 16,
+        "returnAttacks": 4,
+        "inferredAttachments": 4,
+        "concealedSamples": 3,
+        "alternatives": 2,
+        "plannedActions": 3,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 5,
+          "target": {
+            "player": 2,
+            "slot": 1,
+            "index": 0
+          }
+        },
+        "expectedGain": 83.20800000000001
+      }
+    },
+    {
+      "profile": "dp",
+      "passed": true,
+      "action": "play",
+      "ms": 5154.524100000002,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "dppl",
+      "passed": true,
+      "action": "pass",
+      "ms": 615.0212000000029,
+      "diagnostics": {
+        "version": 2,
+        "trials": 17,
+        "budget": 420,
+        "depth": 1,
+        "cacheReuse": false,
+        "opponentReplies": 8,
+        "returnAttacks": 2,
+        "inferredAttachments": 2,
+        "concealedSamples": 2,
+        "alternatives": 1,
+        "plannedActions": 1,
+        "plan": [
+          {
+            "type": "pass"
+          }
+        ],
+        "action": {
+          "type": "pass",
+          "player": 2
+        },
+        "expectedGain": -39.12
+      }
+    },
+    {
+      "profile": "hgss",
+      "passed": true,
+      "action": "pass",
+      "ms": 584.7783000000018,
+      "diagnostics": {
+        "version": 2,
+        "trials": 17,
+        "budget": 420,
+        "depth": 1,
+        "cacheReuse": false,
+        "opponentReplies": 8,
+        "returnAttacks": 2,
+        "inferredAttachments": 2,
+        "concealedSamples": 2,
+        "alternatives": 1,
+        "plannedActions": 1,
+        "plan": [
+          {
+            "type": "pass"
+          }
+        ],
+        "action": {
+          "type": "pass",
+          "player": 2
+        },
+        "expectedGain": -39.12
+      }
+    },
+    {
+      "profile": "bw",
+      "passed": true,
+      "action": "play",
+      "ms": 5236.3207,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "xy",
+      "passed": true,
+      "action": "play",
+      "ms": 5001.9313,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "sm",
+      "passed": true,
+      "action": "play",
+      "ms": 5142.131499999996,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "swsh",
+      "passed": true,
+      "action": "play",
+      "ms": 5485.168100000003,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "sv",
+      "passed": true,
+      "action": "play",
+      "ms": 5276.524900000004,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "mega",
+      "passed": true,
+      "action": "play",
+      "ms": 4085.334299999995,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "unlimited",
+      "passed": true,
+      "action": "play",
+      "ms": 3857.975099999996,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    },
+    {
+      "profile": "expanded",
+      "passed": true,
+      "action": "play",
+      "ms": 3789.6792,
+      "diagnostics": {
+        "version": 2,
+        "trials": 171,
+        "budget": 420,
+        "depth": 5,
+        "cacheReuse": false,
+        "opponentReplies": 12,
+        "returnAttacks": 6,
+        "inferredAttachments": 0,
+        "concealedSamples": 4,
+        "alternatives": 17,
+        "plannedActions": 4,
+        "plan": [
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          },
+          {
+            "type": "play"
+          }
+        ],
+        "action": {
+          "type": "play",
+          "player": 2,
+          "index": 4,
+          "target": {
+            "player": 2,
+            "slot": 2,
+            "index": 0
+          }
+        },
+        "expectedGain": 111.42000000000003
+      }
+    }
+  ],
+  "botSha256": "f0235ac708d1eb4dfd05409d7d26e26e6226094539df4c0c844038c9a878d874",
+  "scope": "First-turn legal planning across fifteen listed rule profiles using constructed starter fixtures; not competitive strength or deck legality testing in every format",
+  "additionalProfileReport": "expanded-profile.json"
+}

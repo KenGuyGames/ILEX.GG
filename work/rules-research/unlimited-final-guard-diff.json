@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "beforeSha256": "3631238ced8f0e69401694d9c31397e708b939ee3d13b5e3b4530c5a0281eb0d",
+  "afterSha256": "991c8d5c2c853ae06cee361e8e6c2c47f7223d394a6f17a046a31bd7d0393903",
+  "beforeDelta": "",
+  "afterDelta": "if (!player.canEvolve) return false;\n    ",
+  "context": "}\n    }\n    return false;\n  }\n  function canUseRareCandy(store, state, player) {\n    if (!player.canEvolve) return false;\n    const stage2 = player.hand.cards.filter(\n      (c) => c instanceof PokemonCard && c.stage"
+}
