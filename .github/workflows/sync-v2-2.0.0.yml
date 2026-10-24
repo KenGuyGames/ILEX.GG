@@ -1,0 +1,78 @@
+name: Sync verified Forest, Pocket and starter-only 3DS 2.0.0 source
+on:
+  push:
+    paths:
+      - .github/workflows/sync-v2-2.0.0.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Verify and synchronize frozen Cube Drafting source
+        shell: python
+        run: |
+          from pathlib import Path
+          from zipfile import ZipFile
+          import hashlib,json,subprocess
+          root=Path.cwd().resolve()
+          archives={
+            "ILEX.GG-source-2.0.0-part1.zip": "beeb1cf485ff1ee3b41e76a9bff9c552695eb54e9e17422fccd25f36df35dc76",
+            "ILEX.GG-source-2.0.0-part2.zip": "6e66d134849d92478ed6a7cb81a59124ea9f1fb3d81805a2525e027e33421e2b",
+            "ILEX.GG-source-2.0.0-part3.zip": "f5e973e88d9b33a4178241ea455bbf707e9dd97c4515258aa7b793e2e45abadd",
+            "ILEX.GG-source-2.0.0-part4.zip": "2db0e83a9b7d5a2caaea0ce9fe5f5075ff2851bfdddf3f40a1cd4b7d14d45f38",
+            "ILEX.GG-source-2.0.0-part5.zip": "8411ff0d70f558e177a6dcaf8018b02d2290dc3e69f02d68dfd56ce18c78bad9",
+            "ILEX.GG-source-2.0.0-part6.zip": "5cc09d7cbc1b1f9a9d5d56052c70e91e4993dc99a5da7435a38387c4e215e55f",
+            "ILEX.GG-source-2.0.0-part7.zip": "bc614443847008944a81562d48830c4fb9fb6ae30c223bca2c251dbb30e7db6a",
+            "ILEX.GG-source-2.0.0-part8.zip": "21d2a9da40a1dd84bf7c9ae1b395f7abbb998fcb65b2bebb5d2f4993dd7fc8ca",
+            "ILEX.GG-source-2.0.0-part9.zip": "72612263e8ba399214af563602a91b3795c1e59f03c50fdc6821b589341513f4",
+            "ILEX.GG-source-2.0.0-part10.zip": "bb35e54d15b287c2b58e96afa254ad8edcb0cd244cce7132a9034eb97a7a5ba7",
+            "ILEX.GG-source-2.0.0-part11.zip": "d088b5433b8854834ac0b9354a38f357cf560d017478d3123618a23afd7f5cdb",
+            "ILEX.GG-source-2.0.0-part12.zip": "8465b1b453848a56b565814a7cf2b0828a39f14d18152c8bef0b6df9e23cbc98",
+            "ILEX.GG-source-2.0.0-part13.zip": "e3f687f6b46444e80b5f89d1451ec32daa483e3c7df3dd83c71d2eebdb4e2ee5",
+            "ILEX.GG-source-2.0.0-part14.zip": "fdc3e27b460338515cefc5febf5984a81c171d3c9e687f42239c2cdbb9af3318",
+            "ILEX.GG-source-2.0.0-part15.zip": "1caf773e52380b2473e9499fb824a2d90ce68b841a7f5325a7a7b054f05f840f",
+          }
+          for name,expected in archives.items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==expected,name
+              with ZipFile(name) as z:
+                  for e in z.infolist():
+                      p=(root/e.filename).resolve()
+                      assert p.is_relative_to(root) and '.git' not in p.relative_to(root).parts
+                  z.extractall(root)
+          m=json.loads(Path('verification/source-manifest-2.0.0.json').read_text());files=m['files']
+          managed=('work/desktop/','work/desktop-build/','work/cube-source/','work/mega-source/','work/overeager/','work/pocket-research/','ports/3ds/','work/android-build/','docs/screenshots/','verification/')
+          for name in subprocess.check_output(['git','ls-files','-z']).decode().split('\0'):
+              if name and name.startswith(managed) and name not in files:Path(name).unlink(missing_ok=True)
+          for name,h in files.items():assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==h,name
+          assert json.loads(Path('work/desktop/package.json').read_text())['version']=='2.0.0'
+          print(f'Verified {len(files)} source files')
+      - name: Install locked build tools
+        run: npm ci --prefix work/desktop-build
+      - name: Rebuild canonical current engine
+        run: npm run build:rules
+      - name: Verify reproducible source and stage source archives
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib,json,subprocess
+          m=json.loads(Path('verification/source-manifest-2.0.0.json').read_text())
+          for name,h in m['files'].items():assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==h,name
+          for name in m['files']:
+              if name.endswith('.zip'):subprocess.run(['git','add','-f','--',name],check=True)
+          print('All frozen files and rebuilt engine match')
+      - name: Commit source and create new release tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git rm --ignore-unmatch ILEX.GG-source-2.0.0-part*.zip
+          git rm .github/workflows/sync-v2-2.0.0.yml
+          git add -A
+          git commit -m "Release ILEX.GG 2.0.0 forest, Pocket and starter-only 3DS source"
+          git push origin HEAD:main
+          test -z "$(git ls-remote origin refs/tags/v2.0.0-build-2026-10-23)"
+          git tag v2.0.0-build-2026-10-23
+          git push origin refs/tags/v2.0.0-build-2026-10-23
+
