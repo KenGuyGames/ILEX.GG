@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "date": "2026-10-21",
+  "feature": "Starting Active Overeager forces first player after setup",
+  "hashes": {
+    "rules-engine.js": {
+      "baseline": "d90cc67812d83f939d6fc9a3a9f0dc20c8498d5f4da99dbfc578ce1eb6eccc51",
+      "patched": "61bc06c62c3fdcaaa07950a3b72667d4a035c304f741e8ff5e9900594d1689d0"
+    },
+    "rules-match.js": {
+      "baseline": "a1710a79c734e4f2de598a51dac0a6ec1b89a1ccccfba39e1a89fcdbea0e05fb",
+      "patched": "84d32b2d4808a1526db8046faa31f263d6dde9804afcaf117af8e1e54f3c0e08"
+    }
+  },
+  "focused": [
+    "Starting Active Sableye overrides choosing the other player first from either seat",
+    "Both starting Actives with Overeager cancel and preserve the chosen first player",
+    "No Overeager preserves the chosen first player",
+    "Historical DP and HGSS setups also honor starting Active Overeager",
+    "Overeager does not lift modern first-turn attack or Supporter restrictions",
+    "Saved setup journal restores the same starter and evolution timing",
+    "Sableye on the starting Bench does not force the first turn or trigger after a later switch",
+    "Alternative thirteen-card setup also applies Overeager after starter selection",
+    "Old unversioned saves retain their original first player",
+    "New setup saves pin the corrected starting-Power policy"
+  ],
+  "nativeFreshRestored": [
+    16,
+    16
+  ],
+  "mobile": [
+    [
+      412,
+      915,
+      16
+    ],
+    [
+      915,
+      412,
+      16
+    ],
+    [
+      1280,
+      720,
+      16
+    ]
+  ],
+  "regressions": [
+    {
+      "name": "format-reprints-tests",
+      "passed": true
+    },
+    {
+      "name": "rare-candy-tests",
+      "passed": true
+    },
+    {
+      "name": "custom-catcher-tests",
+      "passed": true
+    },
+    {
+      "name": "undo-tests",
+      "passed": true
+    }
+  ],
+  "newMatchStartingPowerRulesVersion": 1,
+  "unversionedSavedMatchesUse": 0,
+  "sourceBaselineParity": true,
+  "androidVersion": "2.0.0-android.80",
+  "apkSha256": "bdc88ed7e6e16aa3202e0b6072e9dcaeb5e2820bf59e41cc6de3baeec56058f8",
+  "originalCertificate": true,
+  "androidUiChanges": [
+    "assets/ui/rules-engine.js",
+    "assets/ui/rules-match.js"
+  ],
+  "startupScansPreserved": 1137,
+  "physicalAndroidTested": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "372fe1e38e105ffd6a04c6882c9ec0dcd8637e73246c6586c9358f7fab032109"
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "92a0e9d0442f439bbae1c908c37a1690f2311adc3b50b09d620b5e5c89e987dd"
+    }
+  ]
+}

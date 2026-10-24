@@ -16,9 +16,12 @@ function previewAttrs(card){if(card?._dpFaceDownEnergyRole)return 'data-card-bac
 function seatCard(list,p,index,active){
  const card=list.getPokemonCard(),secret=list.isSecret&&list.cards.length,legend=LegendDisplay.pair(list);
  const focus=seatFocus?.player===p.id&&seatFocus.index===index&&seatFocus.active===active;
- const attachments=!secret?[...new Set([...list.cards,...(list.energies?.cards||[]),...(list.tools||[])])].filter(c=>c!==card&&!legend?.includes(c)):[];
+ const attached=!secret?[...new Set([...list.cards,...(list.energies?.cards||[]),...(list.tools||[])])].filter(c=>c!==card&&!legend?.includes(c)):[];
+ const energies=attached.filter(c=>c.superType===RulesMatch.R.SuperType.ENERGY||(list.energies?.cards||[]).includes(c)||c._dpPokemonEnergyRole||c._dpFaceDownEnergyRole);
+ const tools=attached.filter(c=>!energies.includes(c)&&c.superType===RulesMatch.R.SuperType.TRAINER);
+ const attachmentRow=(items,kind)=>items.length?`<div class="seat-attachments seat-${kind}" aria-label="Attached ${kind==='energy-bottom'?'Energy':'Trainers'}">${items.map(c=>`<span ${previewAttrs(c)} title="${esc(c._dpFaceDownEnergyRole?'Face-down Energy':c.name)}">${ruleArt(c)?`<img src="${esc(ruleArt(c))}" alt="${esc(c._dpFaceDownEnergyRole?'Face-down Energy':c.name)}">`:'Card'}</span>`).join('')}</div>`:'';
  return `<div class="seat-slot ${active?'seat-active':'seat-bench'} ${focus?'focused':''}" data-seat-slot data-slot-player="${p.id}" data-slot-kind="${active?'active':'bench'}" data-slot-index="${index}"><span class="seat-zone-name">${active?'ACTIVE':'BENCH '+(index+1)}</span>
-  ${attachments.length?`<div class="seat-energy">${attachments.map(c=>`<span ${previewAttrs(c)} title="${esc(c._dpFaceDownEnergyRole?'Face-down Energy':c.name)}">${ruleArt(c)?`<img src="${esc(ruleArt(c))}" alt="${esc(c.name)}">`:'Energy'}</span>`).join('')}</div>`:''}
+  ${attachmentRow(energies,'energy-bottom')}${attachmentRow(tools,'tools-right')}
   <button class="seat-pokemon ${legend?'complete-legend':''} ${card||secret?'occupied':''}" ${legend?LegendDisplay.attrs(list):''} ${!secret&&card?previewAttrs(card):'data-card-back="true"'} onclick="focusSeat(${p.id},${index},${active})" aria-label="${secret?'Face-down Pokémon':card?'Select '+esc(card.name):'Empty '+(active?'Active':'Bench')}" >${secret?'<img src="ilex-card-back.svg" alt="Face-down Pokémon">':card&&ruleArt(card)?`<img src="${esc(ruleArt(card))}" alt="${esc(card.name)}" ${legend?LegendDisplay.attrs(list):''}>`:card?`<span>${esc(card.name)}${ruleCounterLabels(list)?' · '+esc(ruleCounterLabels(list)):''}</span>`:'<span>＋</span>'}</button>
   ${card&&!secret?`<span class="seat-counters">${list.damage?`<b>${list.damage}</b> damage`:'Healthy'}${list.specialConditions.length?' · '+list.specialConditions.map(s=>esc(RulesMatch.R.SpecialCondition[s])).join(' / '):''}${ruleCounterLabels(list)?' · '+esc(ruleCounterLabels(list)):''}</span>`:''}
  </div>`;

@@ -1,0 +1,26 @@
+var IlexPromptGuards=(()=>{
+ const R=RulesMatch.R,m=RulesMatch.create({profile:'wotc',seed:1,decks:[{name:'A',cards:{'base1-46':4,'base1-98':56}},{name:'B',cards:{'base1-46':4,'base1-98':56}}]},IlexCardMap),state=m.store.state,p=state.players[0],checks=[];
+ const check=(name,actual,wanted)=>{if(actual!==wanted)throw Error(name+': '+actual);checks.push(name);},valid=(q,value)=>BotAI.valid(m,q,value),target=(slot,index=0,player=R.PlayerType.BOTTOM_PLAYER)=>({player,slot,index});
+ const mon=()=>{const c=new R.PokemonCard();c.name='Fixture';c.hp=60;c.stage=R.Stage.BASIC;return c;},energy=(special=false)=>{const c=new R.EnergyCard();c.name='Fire Energy';c.energyType=special?R.EnergyType.SPECIAL:R.EnergyType.BASIC;c.provides=[R.CardType.FIRE];return c;};
+ p.active.cards=[mon()];p.bench[0].cards=[mon()];p.bench[1].cards=[mon()];p.hand.cards=[energy(),energy(true)];
+ let q=new R.AttachEnergyPrompt(p.id,'ATTACH_ENERGY',p.hand,R.PlayerType.BOTTOM_PLAYER,[R.SlotType.ACTIVE,R.SlotType.BENCH],{superType:R.SuperType.ENERGY,energyType:R.EnergyType.BASIC},{min:1,max:2,allowCancel:false,blockedTo:[target(R.SlotType.BENCH,0)]});
+ check('Attach allowed target',valid(q,[{index:0,to:target(R.SlotType.ACTIVE)}]),true);
+ check('Attach blocked target',valid(q,[{index:0,to:target(R.SlotType.BENCH,0)}]),false);
+ check('Attach opponent prohibited',valid(q,[{index:0,to:target(R.SlotType.ACTIVE,0,R.PlayerType.TOP_PLAYER)}]),false);
+ check('Attach slot prohibited',valid(q,[{index:0,to:target(R.SlotType.HAND)}]),false);
+ check('Attach empty slot prohibited',valid(q,[{index:0,to:target(R.SlotType.BENCH,4)}]),false);
+ check('Attach invalid Active index',valid(q,[{index:0,to:target(R.SlotType.ACTIVE,9)}]),false);
+ check('Attach filter enforced',valid(q,[{index:1,to:target(R.SlotType.ACTIVE)}]),false);
+ check('Attach physical duplicate rejected',valid(q,[{index:0,to:target(R.SlotType.ACTIVE)},{index:0,to:target(R.SlotType.BENCH,1)}]),false);
+ p.active.cards.push(p.hand.cards[0],p.hand.cards[1]);
+ q=new R.MoveEnergyPrompt(p.id,'MOVE_ENERGY',R.PlayerType.BOTTOM_PLAYER,[R.SlotType.ACTIVE,R.SlotType.BENCH],{superType:R.SuperType.ENERGY,energyType:R.EnergyType.BASIC},{min:1,max:1,allowCancel:false,blockedTo:[target(R.SlotType.BENCH,0)]});
+ const move={from:target(R.SlotType.ACTIVE),to:target(R.SlotType.BENCH,1),index:1};
+ check('Move allowed target',valid(q,[move]),true);check('Move blocked destination',valid(q,[{...move,to:target(R.SlotType.BENCH,0)}]),false);check('Move cannot target itself',valid(q,[{...move,to:move.from}]),false);check('Move count enforced',valid(q,[move,move]),false);check('Move filter enforced',valid(q,[{...move,index:2}]),false);check('Move scope enforced',valid(q,[{...move,to:target(R.SlotType.ACTIVE,0,R.PlayerType.TOP_PLAYER)}]),false);
+ p.deck.cards=[mon()];p.deck.isPublic=false;q=new R.ChooseCardsPrompt(p,'CHOOSE_CARD_TO_HAND',p.deck,{superType:R.SuperType.ENERGY},{min:1,max:1,allowCancel:false});check('Qualified private search may fail',valid(q,[]),true);
+ q=new R.ChooseCardsPrompt(p,'CHOOSE_CARD_TO_HAND',p.deck,{},{min:1,max:1,allowCancel:false});check('Unqualified search still mandatory',valid(q,[]),false);
+ p.deck.isPublic=true;q=new R.ChooseCardsPrompt(p,'CHOOSE_CARD_TO_HAND',p.deck,{superType:R.SuperType.ENERGY},{min:1,max:1,allowCancel:false});check('Public selection still mandatory',valid(q,[]),false);
+ p.discard.cards=[mon()];q=new R.ChooseCardsPrompt(p,'CHOOSE_CARD_TO_HAND',p.discard,{superType:R.SuperType.ENERGY},{min:1,max:1,allowCancel:false});check('Discard selection still mandatory',valid(q,[]),false);
+ p.deck.isPublic=false;q=new R.ChooseCardsPrompt(p,'SETUP_CHOOSE_POKEMON',p.deck,{superType:R.SuperType.POKEMON},{min:1,max:1,allowCancel:false});check('Setup still mandatory',valid(q,[]),false);
+ const duplicates=Array.from({length:40},(_,i)=>{const c=mon();c.id=900+i;return c;});p.discard.cards=duplicates.slice();p.discard.sort();check('Identical cards retain physical order',p.discard.cards.map(c=>c.id).join(',')===duplicates.map(c=>c.id).join(','),true);q=new R.ChooseCardsPrompt(p,'CHOOSE_CARD_TO_HAND',p.discard,{superType:R.SuperType.POKEMON},{min:1,max:1,allowCancel:false,blocked:[7]});check('Blocked duplicate retains identity',valid(q,[7]),false);check('Other duplicate stays selectable',valid(q,[8]),true);
+ return {passed:true,checks};
+})();

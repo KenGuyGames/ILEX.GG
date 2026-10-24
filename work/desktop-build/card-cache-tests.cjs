@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs/promises'),path=require('node:path'),crypto=require('node:crypto');
 const Cache=require('../desktop/card-cache.cjs');
 (async()=>{
- const root=await fs.mkdtemp(path.join(require('node:os').tmpdir(),'ilex-cache-tests-'));const bytes=Buffer.from('verified image fixture'),name='123456789012345678901234.webp';
+ const root=await fs.mkdtemp(path.join(process.env.ILEX_TEST_TEMP||require('node:os').tmpdir(),'ilex-cache-tests-'));const bytes=Buffer.from('verified image fixture'),name='123456789012345678901234.webp';
  const entry={file:'scans/'+name,sourceUrl:'https://assets.tcgdex.net/test.webp',bytes:bytes.length,sha256:crypto.createHash('sha256').update(bytes).digest('hex')};let calls=0;
  const cache=new Cache({manifest:{test:entry},directory:path.join(root,'cache'),fetch:async()=>{calls++;return new Response(bytes)}});
  const results=await Promise.all([cache.resolve(name),cache.resolve(name)]);assert.equal(results[0],results[1]);assert.equal(calls,1);

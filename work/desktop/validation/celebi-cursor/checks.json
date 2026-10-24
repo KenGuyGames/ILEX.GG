@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "checks": [
+    "Original 16px animated asset decodes",
+    "Mouse activates cursor replacement",
+    "Left half retains supplied orientation",
+    "Cursor renders in top layer",
+    "Native pointer hidden",
+    "Cursor cannot intercept clicks",
+    "Crisp 32px display size",
+    "Right half mirrors sprite",
+    "Cursor remains above modal dialog",
+    "Normal clicking works through cursor",
+    "Touch restores native behavior",
+    "Window blur hides Celebi",
+    "Native drag feedback retained",
+    "Cursor resumes after drag",
+    "Reduced motion uses static sprite",
+    "Workspace state unchanged"
+  ]
+}

@@ -46,8 +46,8 @@
     "Expected Android version supports in-place installation",
     "Mobile Chromium touch and responsive checks passed"
   ],
-  "mobileChecks": 32,
-  "sha256": "d6eac50bfbcffb2389777e216a8c0f2145b9cf4ac5c169d499ea7b1f7af1d973",
+  "mobileChecks": 18,
+  "sha256": "0ae17458ad363d8f7cf6a46f4129ed2bd8c418022376871e94891de0975c61c1",
   "physicalAndroidDeviceTested": false,
   "limits": "Native file picker, cache network downloads, actual Android lifecycle/audio and device performance still require an installed-device acceptance pass."
 }

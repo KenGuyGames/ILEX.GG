@@ -24,7 +24,7 @@ function* playCard(
   const name = effect.trainerCard.name;
 
   const count = player.hand.cards.reduce((sum, c) => {
-    return sum + (c.name === name ? 1 : 0);
+    return sum + (c !== effect.trainerCard && c.name === name ? 1 : 0);
   }, 0);
 
   // Don't allow to play both blowers,
@@ -35,7 +35,7 @@ function* playCard(
 
   let playTwoCards = false;
 
-  if (benchCount > 0 && count >= 2) {
+  if (benchCount > 0 && count >= 1) {
     yield store.prompt(
       state,
       new ConfirmPrompt(player.id, GameMessage.WANT_TO_PLAY_BOTH_CARDS_AT_ONCE),

@@ -6,7 +6,15 @@ require.cache[self]={id:self,filename:self,loaded:true,exports:async(win)=>{
  const expected=path.join(report,'expected-draft.json');if(fs.existsSync(expected)){assert.equal(await ev('JSON.stringify(state.cubeDrafts)'),fs.readFileSync(expected,'utf8'));console.log('PASS exact saved cube draft restart');}
  const results=await ev(`(async()=>{
  const checks=[],check=(v,n)=>{if(!v)throw Error(n);checks.push(n)};
- document.querySelector('nav button[data-tab="cubes"]').click();await cubeScreen();
+ check(IlexMenuGroups.group()==='home','Forest root is visible');
+ check(document.querySelector('[data-menu-group="arena"]').textContent.includes('Arena'),'Arena navigation');
+ check(document.querySelector('[data-menu-group="vault"]').textContent.includes('Vault'),'Vault navigation');
+ check(!document.querySelector('[data-tab="story"]')&&!Array.from(document.scripts).some(s=>s.src.includes('story')),'Story Mode absent');
+ IlexMenuGroups.show('arena');document.querySelector('nav button[data-tab="pocket"]').click();await PocketUI.screen();
+ check(tab==='pocket'&&document.querySelector('#pocket-content'),'Pocket gallery opens');
+ check(document.querySelectorAll('.pocket-card').length>0,'Pocket cards render');
+ await PocketUI.go('decks');check(document.querySelector('#pocket-content').textContent.includes('deck'),'Pocket deck builder renders');
+ await mainMenu();IlexMenuGroups.show('arena');document.querySelector('nav button[data-tab="cubes"]').click();await cubeScreen();
  check(tab==='cubes'&&document.querySelector('#cube-select'),'Cube Drafting opens from the main menu');
  const c=currentCube();check(CubeLibrary.active(c).length===640,'Bundled Zander Core has 640 playable entries');
  cubeDraftSetup();let f=document.querySelector('#cube-draft-start');check(!!f,'Draft setup opens');check(!f.elements.expansion,'Retired EXpansion is absent from new draft setup');f.elements.players.value='2';f.elements.packs.value='1';f.dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));await cubeScreen();

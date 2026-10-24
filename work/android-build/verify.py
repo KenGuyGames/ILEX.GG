@@ -22,7 +22,7 @@ with zipfile.ZipFile(apk) as z:
     manifest=json.loads(z.read('assets/ui/scan-manifest.json'))
     by_file={e['file']:e for e in manifest.values() if 'file' in e}
     scans=[n for n in z.namelist() if n.startswith('assets/ui/scans/')]
-    check(len(scans)==int(os.environ.get('ILEX_ANDROID_EXPECTED_SCANS','1137')),'Expected startup and era demonstration scans bundled')
+    check(len(scans)==int(os.environ.get('ILEX_ANDROID_EXPECTED_SCANS','395')),'Expected startup and era demonstration scans bundled')
     check(all(hashlib.sha256(z.read(n)).hexdigest()==by_file[n[len('assets/ui/'):]]['sha256'] for n in scans),'Every bundled card scan matches manifest SHA-256')
     check(z.getinfo('resources.arsc').compress_type==zipfile.ZIP_STORED,'Compiled resource table is uncompressed for Android 11+')
     with apk.open('rb') as raw:
@@ -35,7 +35,7 @@ badging=subprocess.run([str(HERE/'toolchain/build-tools/android-16/aapt2.exe'),'
 check("minSdkVersion:'26'" in badging and "targetSdkVersion:'36'" in badging,'Android 8 minimum and SDK 36 target encoded in APK')
 check([line for line in badging.splitlines() if line.startswith('uses-permission:')]==["uses-permission: name='android.permission.INTERNET'"],'Internet is the only requested Android permission')
 check("launchable-activity: name='gg.ilex.app.MainActivity'" in badging,'Launcher Activity registered')
-expected_code=os.environ.get('ILEX_ANDROID_EXPECTED_CODE','41');expected_version=os.environ.get('ILEX_ANDROID_EXPECTED_VERSION','1.22.0-android.41')
+expected_code=os.environ.get('ILEX_ANDROID_EXPECTED_CODE','25');expected_version=os.environ.get('ILEX_ANDROID_EXPECTED_VERSION','1.17.0-android.25')
 check(f"versionCode='{expected_code}'" in badging and f"versionName='{expected_version}'" in badging,'Expected Android version supports in-place installation')
 mobile=json.loads((HERE/'mobile-verification.json').read_text())
 check(mobile['passed'] and not mobile['errors'],'Mobile Chromium touch and responsive checks passed')

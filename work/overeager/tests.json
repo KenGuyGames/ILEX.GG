@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "Starting Active Sableye overrides choosing the other player first from either seat",
+    "Both starting Actives with Overeager cancel and preserve the chosen first player",
+    "No Overeager preserves the chosen first player",
+    "Historical DP and HGSS setups also honor starting Active Overeager",
+    "Overeager does not lift modern first-turn attack or Supporter restrictions",
+    "Saved setup journal restores the same starter and evolution timing",
+    "Sableye on the starting Bench does not force the first turn or trigger after a later switch",
+    "Alternative thirteen-card setup also applies Overeager after starter selection",
+    "Old unversioned saves retain their original first player",
+    "New setup saves pin the corrected starting-Power policy"
+  ]
+}

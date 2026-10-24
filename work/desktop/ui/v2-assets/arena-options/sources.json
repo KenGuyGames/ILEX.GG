@@ -1,0 +1,77 @@
+{
+  "method": "SVG artwork-only viewports of existing unmodified bundled card scans; original Pokemon card art and notices retained",
+  "cards": [
+    {
+      "option": "play",
+      "card": "bwp-BW09",
+      "name": "Zoroark",
+      "sourceSha256": "3137be2c00fddf6ea362c41c51f4cae357313afce04d65b7fa0ade1b7a545433",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        42,
+        88,
+        514,
+        318
+      ],
+      "backgroundPosition": "60%",
+      "originalRasterModified": false
+    },
+    {
+      "option": "pocket",
+      "card": "pocket-a4a-090",
+      "name": "Suicune ex \u2014 Secluded Springs immersive rare",
+      "sourceSha256": "0a4958eaa66b6cdcaf19135ac67fe0a83ec1da5b8028ac8f7b13dcc5b65fe622",
+      "sourceDimensions": [
+        367,
+        512
+      ],
+      "artworkViewport": [
+        28,
+        58,
+        309,
+        210
+      ],
+      "backgroundPosition": "55%",
+      "originalRasterModified": false
+    },
+    {
+      "option": "cubes",
+      "card": "xy2-95",
+      "name": "Protection Cube",
+      "sourceSha256": "3cac88bba2c979e203bbf493ece7c76ff7080208464f1d34a2d8bf1871902212",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        62,
+        135,
+        473,
+        276
+      ],
+      "backgroundPosition": "50%",
+      "originalRasterModified": false
+    },
+    {
+      "option": "online",
+      "card": "xyp-XY95",
+      "name": "Pikachu",
+      "sourceSha256": "732b212a58dfc2d8139a3adffbc24a738fa87a65cd76a479b7df77be357c3841",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        53,
+        90,
+        491,
+        315
+      ],
+      "backgroundPosition": "50%",
+      "originalRasterModified": false
+    }
+  ]
+}

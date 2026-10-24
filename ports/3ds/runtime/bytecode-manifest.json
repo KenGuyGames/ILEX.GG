@@ -1,0 +1,78 @@
+{
+  "runtime": "QuickJS-NG 0.17.0 32-bit little endian",
+  "sourceTextStripped": true,
+  "files": [
+    {
+      "file": "base-engine.js",
+      "sourceSha256": "5ad41d23cfeaf81591bb8ff1808676b9767132b158eb9c0036115b98fd829eab",
+      "bytecodeSha256": "44506c462200167410384dcf19633bd250792268b98a3d9bb6d277fa85d0a916",
+      "bytes": 1462110
+    },
+    {
+      "file": "bot-ai.js",
+      "sourceSha256": "f6e5787601ea8af7a6f6d9effd08d447f0ce7f0c831eb5f8260bf3733348e986",
+      "bytecodeSha256": "bf6c4c5f5d74f997b1c6d85e563564040c92dd9244281f04bbf6f9c33912ee26",
+      "bytes": 90097
+    },
+    {
+      "file": "library-index.js",
+      "sourceSha256": "f5a7a11831a2cb7afdc6757d47588f80dae7752a5f7c1538c23d10893208e4c4",
+      "bytecodeSha256": "ac56b035b18db4ff50fadf7f715dfaeeb56269f218d21312d644234df563381f",
+      "bytes": 219
+    },
+    {
+      "file": "lobby.js",
+      "sourceSha256": "9f574cc36b0954d8929cc7c3e0b545e4237ddba595b01e4ba42803783dd7a22f",
+      "bytecodeSha256": "b0fbd8032b96fdbe50edfe093db4fbd018bd2ba78b8fae61cf306d80b9860ef4",
+      "bytes": 1994
+    },
+    {
+      "file": "map.js",
+      "sourceSha256": "dc0a1989a93c8108eb02c4d673f1fcaf60315c396c01e4d6e23c715e425d2f56",
+      "bytecodeSha256": "6ec9f32d2d2f07032d8afb273332cf27b57b395da242ecf0756d178d213096d0",
+      "bytes": 3533
+    },
+    {
+      "file": "platform.js",
+      "sourceSha256": "ea5f1f18f9127888506d9908c8271e8e8093e65b43fdc1bab763110deb067a1f",
+      "bytecodeSha256": "eb9e5e1c01fc9f5a51a26392bc71d380018e567b1ad9d7823a586f664c3502e0",
+      "bytes": 477
+    },
+    {
+      "file": "play.js",
+      "sourceSha256": "8ef02ab10b421f573d8355b824b785041107693329bf073fd926160c0ffe9e41",
+      "bytecodeSha256": "f9330599efb2b0734e83c33c0a7ff0c224361526724fe5f46c0fefef6ebf2a76",
+      "bytes": 36573
+    },
+    {
+      "file": "presentation.js",
+      "sourceSha256": "e65f278f37304daf9056d21a075224112aeced4b9c5ec4e197dc918cfe276f06",
+      "bytecodeSha256": "cae9deeab17154fcf359f052ab03726fb490149cfc20a149281d9311440f1091",
+      "bytes": 37094
+    },
+    {
+      "file": "probe.js",
+      "sourceSha256": "100e71bbbda4f74f7022e99726f7f369505acb6d9636096211613406ad478c7f",
+      "bytecodeSha256": "0a16ce0ef1be21fe4ee40fd62cc3017958aa8b367f6c4482631784426095aced",
+      "bytes": 2495
+    },
+    {
+      "file": "rules-match.js",
+      "sourceSha256": "53495b67e18e830d19252c2038afbabb66f05009bc1ae98bd2b48238f8239221",
+      "bytecodeSha256": "f799ee2b08833a72ed6d3566bfcfb067bcd4595380f54f824f20ac52bfe5967d",
+      "bytes": 293595
+    },
+    {
+      "file": "starter-data.js",
+      "sourceSha256": "e1a12a44cab99e7b57f66ea36b2411f4ab3855e19216e4075e59b5cd7216ef15",
+      "bytecodeSha256": "abc1210d862cc123e6766f39a654480d82281e3ffad277b14fa739c1dad495f6",
+      "bytes": 4153
+    },
+    {
+      "file": "unassigned-data.js",
+      "sourceSha256": "bd6a0940ef57705f3a5d798a87cd702f3b51fcbeb6c0ad36dde1c63f12464be0",
+      "bytecodeSha256": "7f86816275484b29cc941bcaf348fcf316a7a053288757f15b192118a6195b40",
+      "bytes": 240
+    }
+  ]
+}

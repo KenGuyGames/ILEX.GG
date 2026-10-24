@@ -4,7 +4,7 @@ import { StoreLike } from '../../game/store/store-like';
 import { State } from '../../game/store/state/state';
 import { Effect } from '../../game/store/effects/effect';
 import { MOVE_CARDS, WAS_ATTACK_USED, WAS_POWER_USED, MULTIPLE_COIN_FLIPS_PROMPT } from '../../game/store/prefabs/prefabs';
-import { Card, CardTarget, ChooseEnergyPrompt, ChoosePokemonPrompt, GameError, GameMessage, PlayerType, PowerType, SlotType } from '../../game';
+import { Card, CardList, ChooseCardsPrompt, CardTarget, ChooseEnergyPrompt, ChoosePokemonPrompt, GameError, GameMessage, PlayerType, PowerType, SlotType } from '../../game';
 import { CheckProvidedEnergyEffect } from '../../game/store/effects/check-effects';
 
 export class Espeon extends PokemonCard {
@@ -97,16 +97,15 @@ export class Espeon extends PokemonCard {
         const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, targets[0]);
         state = store.reduceEffect(state, checkProvidedEnergy);
 
-        return store.prompt(state, new ChooseEnergyPrompt(
-          player.id,
-          GameMessage.CHOOSE_ENERGIES_TO_HAND,
-          checkProvidedEnergy.energyMap,
-          [CardType.COLORLESS],
-          { allowCancel: false }
-        ), energy => {
-          const cards: Card[] = (energy || []).map(e => e.card);
-          MOVE_CARDS(store, state, targets[0], player.hand, { cards: cards, sourceCard: this });
-          MOVE_CARDS(store, state, targets[0], player.hand, { cards, sourceCard: this, sourceEffect: this.powers[0] });
+        const choices = new CardList();
+        choices.cards = [...new Set(checkProvidedEnergy.energyMap.map(entry => entry.card))];
+        return store.prompt(state, new ChooseCardsPrompt(
+          player.id, GameMessage.CHOOSE_ENERGIES_TO_HAND, choices, {},
+          { min: 1, max: choices.cards.length, allowCancel: false }
+        ), selected => {
+          for (const card of selected || []) {
+            MOVE_CARDS(store, state, targets[0], player.hand, { cards: [card], sourceCard: this, sourceEffect: this.powers[0] });
+          }
         });
       });
     }

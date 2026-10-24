@@ -1,0 +1,181 @@
+{
+  "assets": [
+    {
+      "key": "ultra",
+      "name": "Ultra Ball",
+      "file": "v2-assets/balls/ultra.png",
+      "source": "https://archives.bulbagarden.net/media/upload/5/55/Bag_Ultra_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Ultra_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 13377,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "547d4ca4dc3652d902676eb2094d4b76155feeb0b94519a729fb141643d8f2a2",
+      "modified": false
+    },
+    {
+      "key": "level",
+      "name": "Level Ball",
+      "file": "v2-assets/balls/level.png",
+      "source": "https://archives.bulbagarden.net/media/upload/f/f1/Bag_Level_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Level_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 13603,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "311836769c1ebc7f54d2b83ca96ef8ebd483d49f2be5979046331949e3209469",
+      "modified": false
+    },
+    {
+      "key": "fast",
+      "name": "Fast Ball",
+      "file": "v2-assets/balls/fast.png",
+      "source": "https://archives.bulbagarden.net/media/upload/3/3c/Bag_Fast_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Fast_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 14587,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "789aaf851b625e1303f6409497f7851c6443fbb68c4b50dbb9502adb003ad8eb",
+      "modified": false
+    },
+    {
+      "key": "lure",
+      "name": "Lure Ball",
+      "file": "v2-assets/balls/lure.png",
+      "source": "https://archives.bulbagarden.net/media/upload/f/f4/Bag_Lure_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Lure_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 16156,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "bd74939edc1992d3a9b32c5fc6d2ab27ba6b150d476fc908348473db152190fa",
+      "modified": false
+    },
+    {
+      "key": "friend",
+      "name": "Friend Ball",
+      "file": "v2-assets/balls/friend.png",
+      "source": "https://archives.bulbagarden.net/media/upload/4/4c/Bag_Friend_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Friend_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 15297,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "1bffa66c7ec6b7f4311a80bf9e754413fa390204a0d9333a508bcce9974c7da4",
+      "modified": false
+    },
+    {
+      "key": "moon",
+      "name": "Moon Ball",
+      "file": "v2-assets/balls/moon.png",
+      "source": "https://archives.bulbagarden.net/media/upload/2/26/Bag_Moon_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Moon_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 13841,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "4840f0d8779529912b82ed5cebd4238c1f446845b281992dec1123ebcab291be",
+      "modified": false
+    },
+    {
+      "key": "heavy",
+      "name": "Heavy Ball",
+      "file": "v2-assets/balls/heavy.png",
+      "source": "https://archives.bulbagarden.net/media/upload/4/46/Bag_Heavy_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Heavy_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 14496,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "4ef5540b5bff18387e72437786a93d6f6d06298f80ae4aae139f445b9eb06377",
+      "modified": false
+    },
+    {
+      "key": "sport",
+      "name": "Sport Ball",
+      "file": "v2-assets/balls/sport.png",
+      "source": "https://archives.bulbagarden.net/media/upload/6/68/Bag_Sport_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Sport_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 13179,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "6706dd76e2d0641c4721b634f1fc73ac941bc3da9ae34eef0f308e1a56a8b9b4",
+      "modified": false
+    },
+    {
+      "key": "strange",
+      "name": "Strange Ball",
+      "file": "v2-assets/balls/strange.png",
+      "source": "https://archives.bulbagarden.net/media/upload/4/48/Bag_Strange_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Strange_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 16324,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "705963fe6c74bf6ba7d7b8cf392b485a72241d06b0da6b85039a2c74ca225a91",
+      "modified": false
+    },
+    {
+      "key": "love",
+      "name": "Love Ball",
+      "file": "v2-assets/balls/love.png",
+      "source": "https://archives.bulbagarden.net/media/upload/4/40/Bag_Love_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Love_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 13797,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "4a4a79af90f2ec776daec89bf452540710ed4de1acec3e08748286f7ac139e29",
+      "modified": false
+    },
+    {
+      "key": "master",
+      "name": "Master Ball",
+      "file": "v2-assets/balls/master.png",
+      "source": "https://archives.bulbagarden.net/media/upload/a/a6/Bag_Master_Ball_SV_Sprite.png",
+      "sourcePage": "https://archives.bulbagarden.net/wiki/File:Bag_Master_Ball_SV_Sprite.png",
+      "origin": "Pokemon Scarlet and Violet in-game bag sprite",
+      "bytes": 14978,
+      "size": [
+        160,
+        160
+      ],
+      "mode": "RGBA",
+      "sha256": "2abe559ebe41ba400232250c30e1ad9fb58c3bb909eb74c29c6951d9a34634a6",
+      "modified": false
+    }
+  ],
+  "notice": "Pokemon game artwork and sprites belong to Nintendo, Creatures Inc., GAME FREAK and The Pokemon Company. Files are unmodified PNGs mirrored by Bulbagarden Archives; original source/license references are linked per image."
+}

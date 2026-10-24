@@ -1,7 +1,7 @@
-# Android 1.22.0-android.41 installation
+# ILEX.GG Android 2.0.0 / code86
 
-Download ILEX.GG-Android.apk from the 1.22.0 GitHub release. Requires Android 8+ with a current Android System WebView. Allow installation from the browser/file manager when Android requests it, then install over the prior ILEX.GG app. The original signing certificate is retained; do not uninstall first if you want to keep local workspace/cache. Export your workspace before replacing or moving devices.
+Android 8+ with a current Android System WebView. Install the APK over your existing ILEX.GG app to preserve its workspace/cache; the original certificate is retained. Do not uninstall first. This is a direct APK download, not Play Store publication.
 
-This build includes Cube Drafting and the current desktop card engine, 1,137 startup/demo scans and 209 finish images. Other images download as viewed and remain cached. Cube drafts/matches are local/bot only; Android multiplayer is deferred. Physical Android acceptance remains pending; Chromium touch/layout and APK static/signature checks are documented separately.
+Current forest UI, Pocket, local/bot play, Cube Drafting, packs and music are included; Story Mode is removed/deferred. Android multiplayer is unavailable. Export workspace before import: import replaces the destination workspace. Images download with hash verification and bulk caching supports pause/resume.
 
-Android source is in work/android-build. Rebuilding needs JDK17, official Android SDK tools, Python, the artwork resources and your own signing material. The original signing key/password and SDK binaries are excluded. A different signing key cannot update the installed release in place.
+Physical device acceptance of rendering/audio, native pickers, lifecycle and performance remains pending. Desktop Chromium touch tests are not installed-device certification.

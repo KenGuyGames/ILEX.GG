@@ -4,12 +4,12 @@ import { TrainerEffect } from './game/store/effects/play-card-effects';
 import { EndTurnEffect } from './game/store/effects/game-phase-effects';
 import { IS_POKEPOWER_BLOCKED,MOVE_CARDS } from './game/store/prefabs/prefabs';
 
-function usageKey(card:any,power:any){return (card._dpEntryId||card.id)+':'+power.name;}
+function usageKey(state:any,card:any,power:any){const list=StateUtils.findPokemonSlot(state,card);const entry=list?.getPokemons().map((pokemon:any)=>pokemon._dpEntryId).find(Boolean)||card._dpEntryId||0;return card.id+':'+entry+':'+power.name;}
 function shared(power:any){return /can't use more than (?:1|one) .+?Poké-Power (?:each|per) turn/i.test(power.text);}
 function once(power:any){return /^Once /i.test(power.text);}
 function game(power:any){return /Once during a game|more than (?:1|one) .+?each game/i.test(power.text);}
-export function dpPowerAlreadyUsed(state:any,p:any,card:any,power:any){return game(power)&&p._dpPowerGames?.[power.name]||once(power)&&p._dpPowerTurns?.[usageKey(card,power)]===state.turn||shared(power)&&p._dpSharedPowerTurns?.[power.name]===state.turn;}
-function claim(state:any,p:any,card:any,power:any){p._dpPowerTurns??={};p._dpPowerTurns[usageKey(card,power)]=state.turn;if(shared(power)){p._dpSharedPowerTurns??={};p._dpSharedPowerTurns[power.name]=state.turn;}if(game(power)){p._dpPowerGames??={};p._dpPowerGames[power.name]=true;}}
+export function dpPowerAlreadyUsed(state:any,p:any,card:any,power:any){return game(power)&&p._dpPowerGames?.[power.name]||once(power)&&p._dpPowerTurns?.[usageKey(state,card,power)]===state.turn||shared(power)&&p._dpSharedPowerTurns?.[power.name]===state.turn;}
+function claim(state:any,p:any,card:any,power:any){p._dpPowerTurns??={};p._dpPowerTurns[usageKey(state,card,power)]=state.turn;if(shared(power)){p._dpSharedPowerTurns??={};p._dpSharedPowerTurns[power.name]=state.turn;}if(game(power)){p._dpPowerGames??={};p._dpPowerGames[power.name]=true;}}
 function wait(store:any,state:any,done:()=>void){if(store.hasPrompts())store.waitPrompt(state,done);else done();}
 function decision(prompt:any){return prompt.type==='Confirm'||prompt.type==='Confirm prompt'||prompt.type==='ConfirmPrompt'||prompt.type==='Select'&&prompt.values?.some((value:any)=>/^Use (?:Power|Link Lightning)/i.test(String(value)))||prompt.type==='Select'&&prompt.options?.some?.((value:any)=>/^Use Power/i.test(String(value)));}
 

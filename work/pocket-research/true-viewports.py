@@ -1,0 +1,3 @@
+from pathlib import Path
+import shutil
+r=Path('work');p=r/'pocket-research/native-self-test.cjs';s=p.read_text().replace(' for(const [w,h] of [[1440',' win.setMinimumSize(300,250);for(const [w,h] of [[1440').replace("check(await run('(()=>{const t=document.querySelector", "check(await run('innerWidth==='+w+'&&innerHeight==='+h),'Actual viewport '+w+'x'+h);check(await run('(()=>{const t=document.querySelector");p.write_text(s);shutil.copy2(p,r/'pocket-desktop-candidate/resources/app/self-test.cjs');p=r/'pocket-research/run-native.cjs';p.write_text(p.read_text().replace('native-v5','native-v6'))

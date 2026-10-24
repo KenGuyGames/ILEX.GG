@@ -1,0 +1,102 @@
+{
+  "method": "Artwork-only SVG viewports over unmodified local scans; printed Mega attack calligraphy remains part of the Rayquaza illustration",
+  "cards": [
+    {
+      "option": "decks",
+      "card": "bw5-11",
+      "name": "Accelgor",
+      "sourceSha256": "cef3b5ed4916d42e3063890f105e9de89c82f2a73727867bfbad1fd3e437574f",
+      "sourceUrl": "https://assets.tcgdex.net/en/bw/bw5/11/high.webp",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        53,
+        96,
+        492,
+        308
+      ],
+      "backgroundPosition": "center 50%",
+      "originalRasterModified": false
+    },
+    {
+      "option": "library",
+      "card": "swsh12.5gg-GG10",
+      "name": "Mew",
+      "sourceSha256": "e2b2341b4854d67892d14276c3324e47339d63c80c8edf495377a825a43852b5",
+      "sourceUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG10_hires.png",
+      "sourceDimensions": [
+        734,
+        1024
+      ],
+      "artworkViewport": [
+        31,
+        111,
+        671,
+        430
+      ],
+      "backgroundPosition": "center 68%",
+      "originalRasterModified": false
+    },
+    {
+      "option": "formats",
+      "card": "xy6-105",
+      "name": "M Rayquaza EX",
+      "sourceSha256": "e945b66e60cee0e6d932bba44a40b22a1e571b10198af5e620c4da4bbfaac185",
+      "sourceUrl": "https://assets.tcgdex.net/en/xy/xy6/105/high.webp",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        20,
+        143,
+        560,
+        318
+      ],
+      "backgroundPosition": "center 59%",
+      "originalRasterModified": false
+    },
+    {
+      "option": "custom",
+      "card": "sm8-171",
+      "name": "Custom Catcher",
+      "sourceSha256": "fdaef5430359fbbf064a87ccabce206c4a7f49790cc61af500ac376ba10b4e42",
+      "sourceUrl": "https://assets.tcgdex.net/en/sm/sm8/171/high.webp",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        46,
+        125,
+        505,
+        290
+      ],
+      "backgroundPosition": "center 44%",
+      "originalRasterModified": false,
+      "presentation": "Smooth monotonic artwork mapping with overlapping sample strips; removes abrupt joins and antialiasing gaps, no inset or card border"
+    },
+    {
+      "option": "packs",
+      "card": "base1-4",
+      "name": "Charizard",
+      "sourceSha256": "0a1e077b13319e2e50c63d54b3afdecabe57f6dfdd07377a6979efbea48fe254",
+      "sourceUrl": "https://assets.tcgdex.net/en/base/base1/4/high.webp",
+      "sourceDimensions": [
+        600,
+        825
+      ],
+      "artworkViewport": [
+        66,
+        185,
+        469,
+        195
+      ],
+      "backgroundPosition": "center 48%",
+      "originalRasterModified": false,
+      "presentation": "Smooth monotonic artwork mapping with overlapping sample strips; removes abrupt joins and antialiasing gaps, no inset or card border"
+    }
+  ]
+}

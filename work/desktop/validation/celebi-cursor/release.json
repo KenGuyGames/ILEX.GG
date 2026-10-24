@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "feature": "White and green animated Crystal Celebi cursor",
+  "checks": [
+    "Original 16px animated asset decodes",
+    "Mouse activates cursor replacement",
+    "Left half retains supplied orientation",
+    "Cursor renders in top layer",
+    "Native pointer hidden",
+    "Cursor cannot intercept clicks",
+    "Crisp 32px display size",
+    "Right half mirrors sprite",
+    "Cursor remains above modal dialog",
+    "Normal clicking works through cursor",
+    "Touch restores native behavior",
+    "Window blur hides Celebi",
+    "Native drag feedback retained",
+    "Cursor resumes after drag",
+    "Reduced motion uses static sprite",
+    "Workspace state unchanged"
+  ],
+  "hashes": {
+    "celebi-cursor.js": "d33a2b198cc253e2bcbfc990ab807650a1fd426109a7320ce6abf9bef999c0c1",
+    "celebi-cursor.css": "0442896a179fa65bea63cc2e106f779315fba8c21eb490e3e4425352d818ee9e",
+    "v2-assets/celebi-cursor.gif": "c5d5c193f4ffa009ca9d9f8fa0bd871c9bdf33080abfc23cd4eef6d30b7a6559",
+    "v2-assets/celebi-cursor-still.png": "efec55db305b279383b0e5bc8cfd928338d33e0ae86efe8c2a5196f8cb7aca3e",
+    "index.html": "649f8be23d87345f4cafc8c6049bd5055da941ba426b24e2847f55519b1f3fe3",
+    "v2-assets/celebi-cursor-source.json": "2b4c11329cc78ebace33055d7ca074438c0785d4d2a3a4525022e1ccb3f234c4"
+  },
+  "nativeValidation": "Isolated Electron profile, 16 focused checks",
+  "android": "Unchanged; mouse feature only",
+  "activation": "Reopen or reload desktop app",
+  "workspaceStateUnchanged": true,
+  "customization": "Orange replaced with white; exact pixel, alpha and timing comparison passed"
+}

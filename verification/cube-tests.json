@@ -27,8 +27,8 @@
     "Technical Machine TS-1 Evoluter uses mutant matching for evolution from the deck"
   ],
   "hashes": {
-    "rules-engine.js": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd",
-    "rules-match.js": "c44ca56f429d9cea5510ac55b429c799fec11b5e5cc4e11a9fcfb3f569e47eb2",
+    "rules-engine.js": "61bc06c62c3fdcaaa07950a3b72667d4a035c304f741e8ff5e9900594d1689d0",
+    "rules-match.js": "84d32b2d4808a1526db8046faa31f263d6dde9804afcaf117af8e1e54f3c0e08",
     "bot-ai.js": "fbcd53005b32336c4fb755119b337a0eb2a67c7cf6d20795c4031367287dc99a",
     "cube-library.js": "aadf849e6f0288b453e3d92def6430d525b205e4150b80dac81def153c093351"
   }

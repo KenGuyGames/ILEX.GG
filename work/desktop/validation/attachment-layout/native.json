@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "Energy only below 1920",
+    "PlusPower and Defender right 1920",
+    "Lower evolution scans hidden 1920",
+    "Energy below without overlap and Trainers right 1920",
+    "Attachment previews retained 1920",
+    "Energy only below 1280",
+    "PlusPower and Defender right 1280",
+    "Lower evolution scans hidden 1280",
+    "Energy below without overlap and Trainers right 1280",
+    "Attachment previews retained 1280",
+    "Energy only below 800",
+    "PlusPower and Defender right 800",
+    "Lower evolution scans hidden 800",
+    "Energy below without overlap and Trainers right 800",
+    "Attachment previews retained 800",
+    "Energy only below 390",
+    "PlusPower and Defender right 390",
+    "Lower evolution scans hidden 390",
+    "Energy below without overlap and Trainers right 390",
+    "Attachment previews retained 390",
+    "Pokemon attached as Energy displayed below",
+    "Secret stack attachments concealed",
+    "Workspace and game unchanged"
+  ]
+}

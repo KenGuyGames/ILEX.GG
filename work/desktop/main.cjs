@@ -42,7 +42,8 @@ else{
         return await net.fetch(pathToFileURL(isScan?await cache.resolve(name.slice(6)):target).toString());
       }catch{return new Response('Not found',{status:404})}
     });
-    win=new BrowserWindow({width:1440,height:960,minWidth:900,minHeight:640,title:'ILEX.GG',icon:path.join(__dirname,'icon.ico'),backgroundColor:'#0d211b',show:!selfTest,autoHideMenuBar:true,webPreferences:{offscreen:selfTest,backgroundThrottling:!selfTest,preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true}});
+    const initialBounds=selfTest?{width:1440,height:960}:require('electron').screen.getPrimaryDisplay().workArea;
+    win=new BrowserWindow({...initialBounds,minWidth:900,minHeight:640,title:'ILEX.GG',icon:path.join(__dirname,'icon.ico'),backgroundColor:'#0d211b',show:false,autoHideMenuBar:true,webPreferences:{offscreen:selfTest,backgroundThrottling:!selfTest,preload:path.join(__dirname,'preload.cjs'),nodeIntegration:false,contextIsolation:true,sandbox:true,webSecurity:true}});
     // Manual invitations intentionally share connection addresses with the invited peer.
     // Explicit interface policy avoids relying on multicast DNS across Windows networks.
     win.webContents.setWebRTCIPHandlingPolicy(selfTest?'default':'default_public_and_private_interfaces');
@@ -72,11 +73,11 @@ else{
     Menu.setApplicationMenu(Menu.buildFromTemplate([
       {label:'File',submenu:[{label:'Export workspaceâ€¦',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
       {label:'View',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]},
-      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG '+app.getVersion(),detail:'Private Windows multiplayer preview. Catalog rules through Scarlet & Violet; BW onward interactions, Unlimited deferred. Real two-PC connection acceptance remains pending. Local decks and saves are retained. Unofficial fan-made simulator.'})}]}
+      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG '+app.getVersion(),detail:'Paper TCG and Pokemon TCG Pocket simulator. Separate Pocket cards, decks, Energy Zone battles and packs. Local decks and saves are retained. Unofficial fan-made simulator.'})}]}
     ]));
     await win.loadURL('tcglab://app/index.html');
     if(selfTest)win.webContents.setAudioMuted(true);
-    if(!selfTest)win.maximize();
+    if(!selfTest){win.maximize();win.show();}
     if(selfTest){
       try{
         await require('./self-test.cjs')(win,testRoot);

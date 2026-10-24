@@ -38,7 +38,7 @@ export class Porygon2 extends PokemonCard {
   public readonly DOWNLOAD_MARKER = 'DOWNLOAD_MARKER';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    REMOVE_MARKER_AT_END_OF_TURN(effect, this.DOWNLOAD_MARKER, this);
+    // Per-Pokemon counters survive switching and clear when the Pokemon leaves play.
 
     // Ref: set-secret-wonders/gardevoir.ts (Telepass), set-forbidden-light/sylveon.ts (Wink Wink)
     if (WAS_POWER_USED(effect, 0, this)) {
@@ -57,7 +57,7 @@ export class Porygon2 extends PokemonCard {
         throw new GameError(GameMessage.CANNOT_USE_POWER);
       }
 
-      if (HAS_MARKER(this.DOWNLOAD_MARKER, player)) {
+      if (cardList.wotcCounters.downloadTurn === state.turn) {
         throw new GameError(GameMessage.CANNOT_USE_POWER);
       }
 
@@ -65,7 +65,7 @@ export class Porygon2 extends PokemonCard {
         throw new GameError(GameMessage.CANNOT_USE_POWER);
       }
 
-      ADD_MARKER(this.DOWNLOAD_MARKER, player, this);
+      cardList.wotcCounters.downloadTurn = state.turn;
       ABILITY_USED(player, this);
 
       return store.prompt(state, new ChooseCardsPrompt(

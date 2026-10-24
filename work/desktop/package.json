@@ -1,1 +1,9 @@
-{"name": "ilex-gg", "productName": "ILEX.GG", "version": "1.22.0", "description": "ILEX.GG \u2014 a forest sanctuary for Pokemon TCG across every era", "author": "ILEX.GG", "main": "main.cjs", "license": "UNLICENSED"}
+{
+  "name": "ilex-gg",
+  "productName": "ILEX.GG",
+  "version": "2.0.0",
+  "description": "ILEX.GG \u2014 a forest sanctuary for Pokemon TCG across every era",
+  "author": "ILEX.GG",
+  "main": "main.cjs",
+  "license": "UNLICENSED"
+}

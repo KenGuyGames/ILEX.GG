@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('work/pocket-research/interaction-tests.cjs');s=p.read_text(encoding='utf-8').replace("function equip(s,p,name,index=0){const c=named(name);", "function equip(s,p,name,index=0){const active=s.active;s.active=p.id;const c=named(name);").replace("return R.apply(s,{type:'choice',player:p.id,value:{player:p.id,key:index===0?p.active.key:p.bench[index-1].key}});}","s=R.apply(s,{type:'choice',player:p.id,value:{player:p.id,key:index===0?p.active.key:p.bench[index-1].key}});s.active=active;return s;}");p.write_text(s,encoding='utf-8')

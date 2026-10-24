@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "games": [
+    {
+      "seed": 1,
+      "decisions": 99,
+      "turn": 30,
+      "winner": "tie",
+      "points": [
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 2,
+      "decisions": 71,
+      "turn": 24,
+      "winner": 0,
+      "points": [
+        3,
+        0
+      ]
+    },
+    {
+      "seed": 3,
+      "decisions": 69,
+      "turn": 21,
+      "winner": 1,
+      "points": [
+        0,
+        3
+      ]
+    },
+    {
+      "seed": 4,
+      "decisions": 85,
+      "turn": 30,
+      "winner": "tie",
+      "points": [
+        0,
+        0
+      ]
+    },
+    {
+      "seed": 5,
+      "decisions": 57,
+      "turn": 17,
+      "winner": 1,
+      "points": [
+        0,
+        3
+      ]
+    },
+    {
+      "seed": 6,
+      "decisions": 75,
+      "turn": 28,
+      "winner": 0,
+      "points": [
+        3,
+        0
+      ]
+    },
+    {
+      "seed": 7,
+      "decisions": 79,
+      "turn": 24,
+      "winner": 1,
+      "points": [
+        0,
+        3
+      ]
+    },
+    {
+      "seed": 8,
+      "decisions": 81,
+      "turn": 27,
+      "winner": 0,
+      "points": [
+        3,
+        0
+      ]
+    }
+  ]
+}

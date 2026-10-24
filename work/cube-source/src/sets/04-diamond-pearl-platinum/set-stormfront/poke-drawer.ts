@@ -26,11 +26,11 @@ function* playCard(
   }
 
   const count = player.hand.cards.reduce((sum, c) => {
-    return sum + (c.name === name ? 1 : 0);
+    return sum + (c !== effect.trainerCard && c.name === name ? 1 : 0);
   }, 0);
   let playTwoCards = false;
 
-  if (count >= 2) {
+  if (count >= 1) {
     yield store.prompt(
       state,
       new ConfirmPrompt(player.id, GameMessage.WANT_TO_PLAY_BOTH_CARDS_AT_ONCE),

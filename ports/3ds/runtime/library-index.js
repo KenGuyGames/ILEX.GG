@@ -1,0 +1,1 @@
+var IlexFormats=[{"id":"starter","formatId":"handheld-starters","name":"Base Set starters","decks":2,"available":true,"playable":2}];

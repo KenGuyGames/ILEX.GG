@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "electron": "44.9.3",
+  "officialElectronZipSha256": "41a1ffa0541cb0f2c9b9fe920dd2cef1793ad0ea2ada1a9582958880f4d1b23c",
+  "advisory": "GHSA-jr5w-w6x2-84p9",
+  "unchangedGameFilesVerified": 39943,
+  "runtimeFilesReplaced": 72,
+  "runtimeFilesAdded": 0,
+  "zipCrc": "pass",
+  "nativeFreshSourceValidation": "pending"
+}

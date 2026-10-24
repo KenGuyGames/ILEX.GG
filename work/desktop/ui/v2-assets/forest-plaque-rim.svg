@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 150" preserveAspectRatio="none">
+ <defs>
+  <linearGradient id="wood" x2="0" y2="1"><stop stop-color="#35503b"/><stop offset=".25" stop-color="#1d362b"/><stop offset=".64" stop-color="#12291f"/><stop offset="1" stop-color="#273b28"/></linearGradient>
+  <linearGradient id="brass" x2="0" y2="1"><stop stop-color="#f2dca3"/><stop offset=".22" stop-color="#a18a4e"/><stop offset=".48" stop-color="#4e532d"/><stop offset=".72" stop-color="#c7b36a"/><stop offset="1" stop-color="#73633b"/></linearGradient>
+  <linearGradient id="inlay"><stop stop-color="#d1b877" stop-opacity=".6"/><stop offset=".45" stop-color="#b8c696" stop-opacity=".04"/><stop offset="1" stop-color="#c8b77c" stop-opacity=".5"/></linearGradient>
+  <radialGradient id="light"><stop stop-color="#c0d68a" stop-opacity=".15"/><stop offset="1" stop-color="#9bb063" stop-opacity="0"/></radialGradient>
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".035 .32" numOctaves="2" seed="7"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".09"/></feComponentTransfer><feBlend in="SourceGraphic" mode="soft-light"/></filter>
+  <path id="shape" d="M10 75C23 60 29 35 60 23C113 2 165 21 219 17Q300 4 381 17C435 21 487 2 540 23C571 35 577 60 590 75C577 90 571 115 540 127C487 148 435 129 381 133Q300 146 219 133C165 129 113 148 60 127C29 115 23 90 10 75Z"/>
+  <clipPath id="clip"><use href="#shape"/></clipPath>
+  <g id="leaf"><path d="M0 0C-15-17-35-18-42-13C-39-2-20 9 0 0Z" fill="#677543" stroke="#c5b777" stroke-width=".65"/><path d="M-2-1-34-11" fill="none" stroke="#dfcd8a" stroke-opacity=".45" stroke-width=".7"/></g>
+  <g id="branch" fill="none" stroke-linecap="round"><path d="M20 75C45 60 49 33 87 28S138 35 179 24" stroke="#071b13" stroke-width="6"/><path d="M20 73C45 58 49 31 87 26S138 33 179 22" stroke="url(#brass)" stroke-width="2.3"/><use href="#leaf" transform="translate(57 41) rotate(27) scale(.6)"/><use href="#leaf" transform="translate(81 28) rotate(40) scale(.72)"/><use href="#leaf" transform="translate(109 28) rotate(155) scale(.58)"/><use href="#leaf" transform="translate(140 29) rotate(25) scale(.55)"/><path d="M29 68Q44 60 43 49Q41 42 36 48Q33 56 41 57" stroke="#c5b777" stroke-width="1.1"/></g>
+ </defs>
+ <use href="#shape" fill="none" stroke="#07120d" stroke-width="9"/>
+ <use href="#shape" fill="none" stroke="url(#brass)" stroke-width="3"/>
+ <g clip-path="url(#clip)">
+  <path d="M0 42Q120 17 230 35T600 36M0 112Q140 137 270 119T600 114" fill="none" stroke="#688456" stroke-opacity=".16" stroke-width="2"/>
+  
+  <path d="M52 53Q150 21 231 30Q300 18 369 30Q455 22 548 53M52 97Q150 129 231 120Q300 132 369 120Q455 128 548 97" fill="none" stroke="url(#inlay)" stroke-width=".8"/>
+  <path d="M115 20Q160 9 214 23M386 23Q440 9 485 20" stroke="#e1d69b" stroke-opacity=".45" fill="none"/>
+ </g>
+ <use href="#branch"/><use href="#branch" transform="translate(600 0) scale(-1 1)"/><use href="#branch" transform="translate(0 150) scale(1 -1)"/><use href="#branch" transform="translate(600 150) scale(-1 -1)"/>
+ <g fill="#b7b16d" stroke="#182a18" stroke-width="1"><path d="m300 12 8 7-8 5-8-5Z"/><path d="m300 126 8 5-8 7-8-7Z"/></g>
+</svg>

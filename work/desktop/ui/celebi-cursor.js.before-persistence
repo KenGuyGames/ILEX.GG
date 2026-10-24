@@ -1,0 +1,45 @@
+(() => {
+  'use strict';
+  const fine = matchMedia('(any-pointer: fine) and (any-hover: hover)');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const cursor = document.createElement('img');
+  cursor.id = 'ilex-celebi-cursor';
+  cursor.alt = '';
+  cursor.setAttribute('aria-hidden', 'true');
+  cursor.setAttribute('popover', 'manual');
+  cursor.draggable = false;
+  document.body.append(cursor);
+  let ready = false, dragging = false, modal = null;
+  const hide = () => {
+    document.documentElement.classList.remove('ilex-celebi-cursor-active');
+    if (cursor.matches(':popover-open')) cursor.hidePopover();
+  };
+  const load = () => {
+    ready = false;
+    hide();
+    cursor.src = reduced.matches ? 'v2-assets/celebi-cursor-still.png' : 'v2-assets/celebi-cursor.gif';
+  };
+  cursor.addEventListener('load', () => { ready = cursor.naturalWidth > 0; });
+  cursor.addEventListener('error', () => { ready = false; hide(); });
+  document.addEventListener('pointermove', event => {
+    if (event.pointerType !== 'mouse' || !fine.matches || !ready || dragging ||
+        typeof cursor.showPopover !== 'function') { hide(); return; }
+    // The supplied orientation belongs on the left; mirror on the right.
+    cursor.style.left = event.clientX + 'px';
+    cursor.style.top = event.clientY + 'px';
+    cursor.style.setProperty('--celebi-facing', event.clientX < innerWidth / 2 ? '1' : '-1');
+    const currentModal = document.querySelector('dialog:modal');
+    if (currentModal !== modal) { hide(); modal = currentModal; }
+    if (!cursor.matches(':popover-open')) cursor.showPopover();
+    document.documentElement.classList.add('ilex-celebi-cursor-active');
+  }, {passive: true, capture: true});
+  document.addEventListener('pointerout', event => { if (!event.relatedTarget) hide(); }, true);
+  document.addEventListener('pointerdown', event => { if (event.pointerType !== 'mouse') hide(); }, true);
+  document.addEventListener('dragstart', () => { dragging = true; hide(); }, true);
+  document.addEventListener('dragend', () => { dragging = false; }, true);
+  document.addEventListener('visibilitychange', () => { if (document.hidden) hide(); });
+  window.addEventListener('blur', hide);
+  fine.addEventListener('change', hide);
+  reduced.addEventListener('change', load);
+  load();
+})();

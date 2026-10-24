@@ -1,0 +1,3 @@
+from pathlib import Path
+p=Path('work/pocket-research/mobile-tests.cjs');s=p.read_text();s=s.replace('throw Error("Missing touch target: "+selector);', '{fs.writeFileSync(path.join(root,"../pocket-research/mobile-failure.png"),(await win.webContents.capturePage()).toPNG());fs.writeFileSync(path.join(root,"../pocket-research/mobile-failure.json"),JSON.stringify(await run("({viewport:[innerWidth,innerHeight],phase:state.pocket?.match?.phase,journal:state.pocket?.match?.journal,modal:document.querySelector(\'#modal\').open,content:document.querySelector(\'#pocket-content\').innerText})")));throw Error("Missing touch target: "+selector);}')
+p.write_text(s)

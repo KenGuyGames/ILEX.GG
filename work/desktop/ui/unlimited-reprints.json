@@ -609,8 +609,7 @@
     "swsh3-168": "swsh4.5-71",
     "swsh3-189": "swsh4.5-71",
     "swsh3-196": "swsh4.5-71",
-    "base4-101": "bw7-137",
-    "base1-71": "bw7-137",
+    "base1-71": "base4-101",
     "ex9-75": "ex16-71",
     "base4-109": "hgss3-72",
     "base1-80": "hgss3-72",
@@ -3262,12 +3261,12 @@
     {
       "name": "Computer Search",
       "category": "Trainer",
-      "reference": "bw7-137",
+      "reference": "base4-101",
       "printings": [
-        "bw7-137",
         "base4-101",
         "base1-71"
-      ]
+      ],
+      "identity": "original-non-ACE-SPEC"
     },
     {
       "name": "Battle Frontier",
@@ -8771,5 +8770,5 @@
       ]
     }
   ],
-  "policy": "Trainer and Special Energy reprints use newest catalog wording only in Unlimited; printed IDs/art remain intact. Pokémon are never merged, and Basic Energy is kept distinct from Special Energy."
+  "policy": "Trainer and Special Energy reprints use newest catalog wording only in Unlimited; printed IDs/art remain intact. Pokémon are never merged, and Basic Energy is kept distinct from Special Energy. Original Computer Search is distinct from ACE SPEC Computer Search."
 }

@@ -1,0 +1,3 @@
+const fs=require('fs'),path=require('path'),cp=require('child_process'),root=path.resolve(__dirname,'../..'),app=path.join(root,'work/pocket-desktop-candidate'),dir=path.join(root,'work/pocket-research/native-v8');fs.mkdirSync(dir,{recursive:true});
+const env={...process.env,ILEX_CUBE_SCAN_ROOT:path.join(root,'outputs/ILEX.GG-1.21.1/resources/scans')};delete env.ELECTRON_RUN_AS_NODE;
+const fd=fs.openSync(path.join(dir,'native.log'),'w'),p=cp.spawn(path.join(app,'ILEX.GG.exe'),['--no-sandbox','--self-test',dir],{cwd:app,env,windowsHide:true,stdio:['ignore',fd,fd]});p.on('exit',code=>{fs.closeSync(fd);if(code!==0){console.error(fs.readFileSync(path.join(dir,'failure.txt'),'utf8'));process.exitCode=1;}else console.log('Pocket desktop checks passed');});

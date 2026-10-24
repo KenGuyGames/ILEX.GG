@@ -1,0 +1,222 @@
+{
+  "passed": true,
+  "date": "2026-10-21",
+  "feature": "Refine Rayquaza, Custom Catcher and Charizard framing",
+  "nativeChecks": [
+    "Exact Vault artwork mapping decks",
+    "Exact Vault artwork mapping library",
+    "Exact Vault artwork mapping formats",
+    "Exact Vault artwork mapping custom",
+    "Exact Vault artwork mapping packs",
+    "Suicune midpoint retained",
+    "No right arrows on root 1920",
+    "No submenu heading arena 1920",
+    "No option right arrows arena 1920",
+    "All destinations retained arena 1920",
+    "No horizontal overflow arena 1920",
+    "Intermediate submenu size arena 1920",
+    "Roomier option spacing arena 1920",
+    "Back retained arena 1920",
+    "No submenu heading vault 1920",
+    "No option right arrows vault 1920",
+    "All destinations retained vault 1920",
+    "All five Vault artwork panels decode 1920",
+    "No horizontal overflow vault 1920",
+    "Intermediate submenu size vault 1920",
+    "Roomier option spacing vault 1920",
+    "Back retained vault 1920",
+    "No right arrows on root 1280",
+    "No submenu heading arena 1280",
+    "No option right arrows arena 1280",
+    "All destinations retained arena 1280",
+    "No horizontal overflow arena 1280",
+    "Intermediate submenu size arena 1280",
+    "Roomier option spacing arena 1280",
+    "Back retained arena 1280",
+    "No submenu heading vault 1280",
+    "No option right arrows vault 1280",
+    "All destinations retained vault 1280",
+    "All five Vault artwork panels decode 1280",
+    "No horizontal overflow vault 1280",
+    "Intermediate submenu size vault 1280",
+    "Roomier option spacing vault 1280",
+    "Back retained vault 1280",
+    "No right arrows on root 800",
+    "No submenu heading arena 800",
+    "No option right arrows arena 800",
+    "All destinations retained arena 800",
+    "No horizontal overflow arena 800",
+    "Intermediate submenu size arena 800",
+    "Roomier option spacing arena 800",
+    "Back retained arena 800",
+    "No submenu heading vault 800",
+    "No option right arrows vault 800",
+    "All destinations retained vault 800",
+    "All five Vault artwork panels decode 800",
+    "No horizontal overflow vault 800",
+    "Intermediate submenu size vault 800",
+    "Roomier option spacing vault 800",
+    "Back retained vault 800",
+    "No right arrows on root 390",
+    "No submenu heading arena 390",
+    "No option right arrows arena 390",
+    "All destinations retained arena 390",
+    "No horizontal overflow arena 390",
+    "Intermediate submenu size arena 390",
+    "Roomier option spacing arena 390",
+    "Back retained arena 390",
+    "No submenu heading vault 390",
+    "No option right arrows vault 390",
+    "All destinations retained vault 390",
+    "All five Vault artwork panels decode 390",
+    "No horizontal overflow vault 390",
+    "Intermediate submenu size vault 390",
+    "Roomier option spacing vault 390",
+    "Back retained vault 390",
+    "Existing Celebi cursor retained",
+    "Saved workspace unchanged"
+  ],
+  "touchChecks": [
+    "Version slogan removed 800",
+    "Header fits 800",
+    "Two root buttons retained 800",
+    "Settings touch works 800",
+    "Arena heading and arrows removed; touch works 800",
+    "Vault heading and arrows removed; touch works 800",
+    "Version slogan removed 640",
+    "Header fits 640",
+    "Two root buttons retained 640",
+    "Settings touch works 640",
+    "Arena heading and arrows removed; touch works 640",
+    "Vault heading and arrows removed; touch works 640",
+    "Version slogan removed 390",
+    "Header fits 390",
+    "Two root buttons retained 390",
+    "Settings touch works 390",
+    "Arena heading and arrows removed; touch works 390",
+    "Vault heading and arrows removed; touch works 390"
+  ],
+  "sha256": "fc76b10d231a77b3fdea146d43fdda223c69d7ded2cc5b68d205686edfe20d50",
+  "baseline": "43498c1a2ec4e95ebc0e145b417ed7b36a4411c78a8abcfca3e584098fbb5584",
+  "android": {
+    "apk": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\vault-art-refine\\ILEX.GG-Android.apk",
+    "bytes": 433887462,
+    "sha256": "a445d471069a20de1f610acc338d57a6ea6581ffc9e7810502be654f492bf446",
+    "bundledScans": 1137,
+    "engineSha256": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd",
+    "minAndroid": "8.0",
+    "targetSdk": 36,
+    "physicalDeviceTested": false
+  },
+  "androidUiOnlyChanged": [
+    "menu-plaques.css",
+    "v2-assets/vault-options/custom.svg",
+    "v2-assets/vault-options/packs.svg",
+    "v2-assets/vault-options/sources.json"
+  ],
+  "artworkSources": {
+    "method": "Artwork-only SVG viewports over unmodified local scans; printed Mega attack calligraphy remains part of the Rayquaza illustration",
+    "cards": [
+      {
+        "option": "decks",
+        "card": "bw5-11",
+        "name": "Accelgor",
+        "sourceSha256": "cef3b5ed4916d42e3063890f105e9de89c82f2a73727867bfbad1fd3e437574f",
+        "sourceUrl": "https://assets.tcgdex.net/en/bw/bw5/11/high.webp",
+        "sourceDimensions": [
+          600,
+          825
+        ],
+        "artworkViewport": [
+          53,
+          96,
+          492,
+          308
+        ],
+        "backgroundPosition": "center 50%",
+        "originalRasterModified": false
+      },
+      {
+        "option": "library",
+        "card": "swsh12.5gg-GG10",
+        "name": "Mew",
+        "sourceSha256": "e2b2341b4854d67892d14276c3324e47339d63c80c8edf495377a825a43852b5",
+        "sourceUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG10_hires.png",
+        "sourceDimensions": [
+          734,
+          1024
+        ],
+        "artworkViewport": [
+          31,
+          111,
+          671,
+          430
+        ],
+        "backgroundPosition": "center 68%",
+        "originalRasterModified": false
+      },
+      {
+        "option": "formats",
+        "card": "xy6-105",
+        "name": "M Rayquaza EX",
+        "sourceSha256": "e945b66e60cee0e6d932bba44a40b22a1e571b10198af5e620c4da4bbfaac185",
+        "sourceUrl": "https://assets.tcgdex.net/en/xy/xy6/105/high.webp",
+        "sourceDimensions": [
+          600,
+          825
+        ],
+        "artworkViewport": [
+          20,
+          143,
+          560,
+          318
+        ],
+        "backgroundPosition": "center 59%",
+        "originalRasterModified": false
+      },
+      {
+        "option": "custom",
+        "card": "sm8-171",
+        "name": "Custom Catcher",
+        "sourceSha256": "fdaef5430359fbbf064a87ccabce206c4a7f49790cc61af500ac376ba10b4e42",
+        "sourceUrl": "https://assets.tcgdex.net/en/sm/sm8/171/high.webp",
+        "sourceDimensions": [
+          600,
+          825
+        ],
+        "artworkViewport": [
+          46,
+          125,
+          505,
+          290
+        ],
+        "backgroundPosition": "center 44%",
+        "originalRasterModified": false,
+        "presentation": "Continuous adjacent artwork strips; proportional focal region, expanded peripheral scenery, no inset or border"
+      },
+      {
+        "option": "packs",
+        "card": "base1-4",
+        "name": "Charizard",
+        "sourceSha256": "0a1e077b13319e2e50c63d54b3afdecabe57f6dfdd07377a6979efbea48fe254",
+        "sourceUrl": "https://assets.tcgdex.net/en/base/base1/4/high.webp",
+        "sourceDimensions": [
+          600,
+          825
+        ],
+        "artworkViewport": [
+          66,
+          185,
+          469,
+          195
+        ],
+        "backgroundPosition": "center 48%",
+        "originalRasterModified": false,
+        "presentation": "Continuous adjacent artwork strips; proportional focal region, expanded peripheral scenery, no inset or border"
+      }
+    ]
+  },
+  "cursorAndEnginesPreserved": true,
+  "realProfileWritten": false,
+  "realAppClosed": false
+}

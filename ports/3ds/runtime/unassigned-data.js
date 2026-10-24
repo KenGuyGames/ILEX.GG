@@ -1,0 +1,1 @@
+var IlexCardMap={};var IlexDeckLibrary={"id":"unassigned","format":{"id":"unassigned-decks","name":"No imported decks"},"labels":{},"decks":[]};

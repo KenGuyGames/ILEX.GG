@@ -1384,61 +1384,61 @@ var TCGRules = (() => {
         Archetype2["PECHARUNT"] = "Pecharunt";
         return Archetype2;
       })(Archetype || {});
-      CardType = /* @__PURE__ */ ((CardType6858) => {
-        CardType6858[CardType6858["ANY"] = 0] = "ANY";
-        CardType6858[CardType6858["GRASS"] = 1] = "GRASS";
-        CardType6858[CardType6858["FIRE"] = 2] = "FIRE";
-        CardType6858[CardType6858["WATER"] = 3] = "WATER";
-        CardType6858[CardType6858["LIGHTNING"] = 4] = "LIGHTNING";
-        CardType6858[CardType6858["PSYCHIC"] = 5] = "PSYCHIC";
-        CardType6858[CardType6858["FIGHTING"] = 6] = "FIGHTING";
-        CardType6858[CardType6858["DARK"] = 7] = "DARK";
-        CardType6858[CardType6858["METAL"] = 8] = "METAL";
-        CardType6858[CardType6858["COLORLESS"] = 9] = "COLORLESS";
-        CardType6858[CardType6858["FAIRY"] = 10] = "FAIRY";
-        CardType6858[CardType6858["DRAGON"] = 11] = "DRAGON";
-        CardType6858[CardType6858["NONE"] = 12] = "NONE";
-        CardType6858[CardType6858["CHARIZARD_EX"] = 13] = "CHARIZARD_EX";
-        CardType6858[CardType6858["PIDGEOT_EX"] = 14] = "PIDGEOT_EX";
-        CardType6858[CardType6858["GIRATINA_VSTAR"] = 15] = "GIRATINA_VSTAR";
-        CardType6858[CardType6858["ARCEUS_VSTAR"] = 16] = "ARCEUS_VSTAR";
-        CardType6858[CardType6858["COMFEY"] = 17] = "COMFEY";
-        CardType6858[CardType6858["SABLEYE"] = 18] = "SABLEYE";
-        CardType6858[CardType6858["RAGING_BOLT_EX"] = 19] = "RAGING_BOLT_EX";
-        CardType6858[CardType6858["SOLROCK"] = 20] = "SOLROCK";
-        CardType6858[CardType6858["LUNATONE"] = 21] = "LUNATONE";
-        CardType6858[CardType6858["KYUREM_VMAX"] = 22] = "KYUREM_VMAX";
-        CardType6858[CardType6858["MURKROW"] = 23] = "MURKROW";
-        CardType6858[CardType6858["FLAMIGO"] = 24] = "FLAMIGO";
-        CardType6858[CardType6858["CHIEN_PAO_EX"] = 25] = "CHIEN_PAO_EX";
-        CardType6858[CardType6858["BAXCALIBUR"] = 26] = "BAXCALIBUR";
-        CardType6858[CardType6858["SNORLAX_STALL"] = 27] = "SNORLAX_STALL";
-        CardType6858[CardType6858["LUGIA_VSTAR"] = 28] = "LUGIA_VSTAR";
-        CardType6858[CardType6858["ABSOL_EX"] = 29] = "ABSOL_EX";
-        CardType6858[CardType6858["THWACKEY"] = 30] = "THWACKEY";
-        CardType6858[CardType6858["DIPPLIN"] = 31] = "DIPPLIN";
-        CardType6858[CardType6858["PALKIA_VSTAR"] = 32] = "PALKIA_VSTAR";
-        CardType6858[CardType6858["ROTOM_V"] = 33] = "ROTOM_V";
-        CardType6858[CardType6858["BIBAREL"] = 34] = "BIBAREL";
-        CardType6858[CardType6858["GHOLDENGO_EX"] = 35] = "GHOLDENGO_EX";
-        CardType6858[CardType6858["SANDY_SHOCKS_EX"] = 36] = "SANDY_SHOCKS_EX";
-        CardType6858[CardType6858["GARDEVOIR_EX"] = 37] = "GARDEVOIR_EX";
-        CardType6858[CardType6858["XATU"] = 38] = "XATU";
-        CardType6858[CardType6858["TEALMASK_OGERPON_EX"] = 39] = "TEALMASK_OGERPON_EX";
-        CardType6858[CardType6858["LUXRAY_EX"] = 40] = "LUXRAY_EX";
-        CardType6858[CardType6858["GRENINJA_EX"] = 41] = "GRENINJA_EX";
-        CardType6858[CardType6858["BLISSEY_EX"] = 42] = "BLISSEY_EX";
-        CardType6858[CardType6858["ROARING_MOON"] = 43] = "ROARING_MOON";
-        CardType6858[CardType6858["KORAIDON"] = 44] = "KORAIDON";
-        CardType6858[CardType6858["IRON_CROWN_EX"] = 45] = "IRON_CROWN_EX";
-        CardType6858[CardType6858["CINCCINO"] = 46] = "CINCCINO";
-        CardType6858[CardType6858["ARCHEOPS"] = 47] = "ARCHEOPS";
-        CardType6858[CardType6858["MIRAIDON_EX"] = 48] = "MIRAIDON_EX";
-        CardType6858[CardType6858["IRON_HANDS_EX"] = 49] = "IRON_HANDS_EX";
-        CardType6858[CardType6858["DRAGAPULT_EX"] = 50] = "DRAGAPULT_EX";
-        CardType6858[CardType6858["DRIFLOON"] = 51] = "DRIFLOON";
-        CardType6858[CardType6858["FROSLASS"] = 52] = "FROSLASS";
-        return CardType6858;
+      CardType = /* @__PURE__ */ ((CardType6859) => {
+        CardType6859[CardType6859["ANY"] = 0] = "ANY";
+        CardType6859[CardType6859["GRASS"] = 1] = "GRASS";
+        CardType6859[CardType6859["FIRE"] = 2] = "FIRE";
+        CardType6859[CardType6859["WATER"] = 3] = "WATER";
+        CardType6859[CardType6859["LIGHTNING"] = 4] = "LIGHTNING";
+        CardType6859[CardType6859["PSYCHIC"] = 5] = "PSYCHIC";
+        CardType6859[CardType6859["FIGHTING"] = 6] = "FIGHTING";
+        CardType6859[CardType6859["DARK"] = 7] = "DARK";
+        CardType6859[CardType6859["METAL"] = 8] = "METAL";
+        CardType6859[CardType6859["COLORLESS"] = 9] = "COLORLESS";
+        CardType6859[CardType6859["FAIRY"] = 10] = "FAIRY";
+        CardType6859[CardType6859["DRAGON"] = 11] = "DRAGON";
+        CardType6859[CardType6859["NONE"] = 12] = "NONE";
+        CardType6859[CardType6859["CHARIZARD_EX"] = 13] = "CHARIZARD_EX";
+        CardType6859[CardType6859["PIDGEOT_EX"] = 14] = "PIDGEOT_EX";
+        CardType6859[CardType6859["GIRATINA_VSTAR"] = 15] = "GIRATINA_VSTAR";
+        CardType6859[CardType6859["ARCEUS_VSTAR"] = 16] = "ARCEUS_VSTAR";
+        CardType6859[CardType6859["COMFEY"] = 17] = "COMFEY";
+        CardType6859[CardType6859["SABLEYE"] = 18] = "SABLEYE";
+        CardType6859[CardType6859["RAGING_BOLT_EX"] = 19] = "RAGING_BOLT_EX";
+        CardType6859[CardType6859["SOLROCK"] = 20] = "SOLROCK";
+        CardType6859[CardType6859["LUNATONE"] = 21] = "LUNATONE";
+        CardType6859[CardType6859["KYUREM_VMAX"] = 22] = "KYUREM_VMAX";
+        CardType6859[CardType6859["MURKROW"] = 23] = "MURKROW";
+        CardType6859[CardType6859["FLAMIGO"] = 24] = "FLAMIGO";
+        CardType6859[CardType6859["CHIEN_PAO_EX"] = 25] = "CHIEN_PAO_EX";
+        CardType6859[CardType6859["BAXCALIBUR"] = 26] = "BAXCALIBUR";
+        CardType6859[CardType6859["SNORLAX_STALL"] = 27] = "SNORLAX_STALL";
+        CardType6859[CardType6859["LUGIA_VSTAR"] = 28] = "LUGIA_VSTAR";
+        CardType6859[CardType6859["ABSOL_EX"] = 29] = "ABSOL_EX";
+        CardType6859[CardType6859["THWACKEY"] = 30] = "THWACKEY";
+        CardType6859[CardType6859["DIPPLIN"] = 31] = "DIPPLIN";
+        CardType6859[CardType6859["PALKIA_VSTAR"] = 32] = "PALKIA_VSTAR";
+        CardType6859[CardType6859["ROTOM_V"] = 33] = "ROTOM_V";
+        CardType6859[CardType6859["BIBAREL"] = 34] = "BIBAREL";
+        CardType6859[CardType6859["GHOLDENGO_EX"] = 35] = "GHOLDENGO_EX";
+        CardType6859[CardType6859["SANDY_SHOCKS_EX"] = 36] = "SANDY_SHOCKS_EX";
+        CardType6859[CardType6859["GARDEVOIR_EX"] = 37] = "GARDEVOIR_EX";
+        CardType6859[CardType6859["XATU"] = 38] = "XATU";
+        CardType6859[CardType6859["TEALMASK_OGERPON_EX"] = 39] = "TEALMASK_OGERPON_EX";
+        CardType6859[CardType6859["LUXRAY_EX"] = 40] = "LUXRAY_EX";
+        CardType6859[CardType6859["GRENINJA_EX"] = 41] = "GRENINJA_EX";
+        CardType6859[CardType6859["BLISSEY_EX"] = 42] = "BLISSEY_EX";
+        CardType6859[CardType6859["ROARING_MOON"] = 43] = "ROARING_MOON";
+        CardType6859[CardType6859["KORAIDON"] = 44] = "KORAIDON";
+        CardType6859[CardType6859["IRON_CROWN_EX"] = 45] = "IRON_CROWN_EX";
+        CardType6859[CardType6859["CINCCINO"] = 46] = "CINCCINO";
+        CardType6859[CardType6859["ARCHEOPS"] = 47] = "ARCHEOPS";
+        CardType6859[CardType6859["MIRAIDON_EX"] = 48] = "MIRAIDON_EX";
+        CardType6859[CardType6859["IRON_HANDS_EX"] = 49] = "IRON_HANDS_EX";
+        CardType6859[CardType6859["DRAGAPULT_EX"] = 50] = "DRAGAPULT_EX";
+        CardType6859[CardType6859["DRIFLOON"] = 51] = "DRIFLOON";
+        CardType6859[CardType6859["FROSLASS"] = 52] = "FROSLASS";
+        return CardType6859;
       })(CardType || {});
       SpecialCondition = /* @__PURE__ */ ((SpecialCondition7) => {
         SpecialCondition7[SpecialCondition7["PARALYZED"] = 0] = "PARALYZED";
@@ -15629,8 +15629,10 @@ var TCGRules = (() => {
   });
 
   // work/cube-source/src/tcg-lab-dp-power-window.ts
-  function usageKey(card, power) {
-    return (card._dpEntryId || card.id) + ":" + power.name;
+  function usageKey(state, card, power) {
+    const list = StateUtils.findPokemonSlot(state, card);
+    const entry = list?.getPokemons().map((pokemon) => pokemon._dpEntryId).find(Boolean) || card._dpEntryId || 0;
+    return card.id + ":" + entry + ":" + power.name;
   }
   function shared(power) {
     return /can't use more than (?:1|one) .+?Poké-Power (?:each|per) turn/i.test(power.text);
@@ -15642,11 +15644,11 @@ var TCGRules = (() => {
     return /Once during a game|more than (?:1|one) .+?each game/i.test(power.text);
   }
   function dpPowerAlreadyUsed(state, p, card, power) {
-    return game(power) && p._dpPowerGames?.[power.name] || once(power) && p._dpPowerTurns?.[usageKey(card, power)] === state.turn || shared(power) && p._dpSharedPowerTurns?.[power.name] === state.turn;
+    return game(power) && p._dpPowerGames?.[power.name] || once(power) && p._dpPowerTurns?.[usageKey(state, card, power)] === state.turn || shared(power) && p._dpSharedPowerTurns?.[power.name] === state.turn;
   }
   function claim(state, p, card, power) {
     p._dpPowerTurns ??= {};
-    p._dpPowerTurns[usageKey(card, power)] = state.turn;
+    p._dpPowerTurns[usageKey(state, card, power)] = state.turn;
     if (shared(power)) {
       p._dpSharedPowerTurns ??= {};
       p._dpSharedPowerTurns[power.name] = state.turn;
@@ -19525,6 +19527,13 @@ var TCGRules = (() => {
       player.deck.moveTo(player.prizes[i], 1);
     }
   }
+  function applyOvereager(store, state) {
+    if (state.rules.startingPowerRulesVersion === 0) return;
+    const starters = state.players.filter((player) => player.active.getPokemonCard()?.powers.some((power) => power.name === "Overeager"));
+    if (starters.length !== 1) return;
+    state.activePlayer = state.players.indexOf(starters[0]);
+    store.log(state, "LOG_STARTS_BECAUSE_OF_ABILITY" /* LOG_STARTS_BECAUSE_OF_ABILITY */, { name: starters[0].name, ability: "Overeager" });
+  }
   function* alternativeSetupGame(next, store, state) {
     const player = state.players[0];
     const opponent = state.players[1];
@@ -19686,6 +19695,7 @@ var TCGRules = (() => {
         }
       }
     }
+    applyOvereager(store, state);
     const first = state.players[state.activePlayer];
     const second = state.players[state.activePlayer ? 0 : 1];
     first.forEachPokemon(2 /* BOTTOM_PLAYER */, (cardList) => {
@@ -19947,6 +19957,7 @@ var TCGRules = (() => {
         next();
       });
     }
+    applyOvereager(store, state);
     const first = state.players[state.activePlayer];
     const second = state.players[state.activePlayer ? 0 : 1];
     first.forEachPokemon(2 /* BOTTOM_PLAYER */, (cardList) => {
@@ -49888,16 +49899,18 @@ If this card is discarded from play, put it into your hand instead of the discar
           }
           const checkProvidedEnergy2 = new CheckProvidedEnergyEffect(player, targets[0]);
           state = store.reduceEffect(state, checkProvidedEnergy2);
-          return store.prompt(state, new ChooseEnergyPrompt(
+          const choices = new CardList();
+          choices.cards = [...new Set(checkProvidedEnergy2.energyMap.map((entry) => entry.card))];
+          return store.prompt(state, new ChooseCardsPrompt(
             player.id,
             GameMessage.CHOOSE_ENERGIES_TO_HAND,
-            checkProvidedEnergy2.energyMap,
-            [9 /* COLORLESS */],
-            { allowCancel: false }
-          ), (energy2) => {
-            const cards = (energy2 || []).map((e) => e.card);
-            MOVE_CARDS(store, state, targets[0], player.hand, { cards, sourceCard: this });
-            MOVE_CARDS(store, state, targets[0], player.hand, { cards, sourceCard: this, sourceEffect: this.powers[0] });
+            choices,
+            {},
+            { min: 1, max: choices.cards.length, allowCancel: false }
+          ), (selected) => {
+            for (const card of selected || []) {
+              MOVE_CARDS(store, state, targets[0], player.hand, { cards: [card], sourceCard: this, sourceEffect: this.powers[0] });
+            }
           });
         });
       }
@@ -94470,7 +94483,6 @@ Move 1 Energy card attached to the Defending Pok\xE9mon to another of your oppon
     fullName = "Porygon2 GE";
     DOWNLOAD_MARKER = "DOWNLOAD_MARKER";
     reduceEffect(store, state, effect) {
-      REMOVE_MARKER_AT_END_OF_TURN(effect, this.DOWNLOAD_MARKER, this);
       if (WAS_POWER_USED(effect, 0, this)) {
         const player = effect.player;
         const cardList = StateUtils.findCardList(state, this);
@@ -94483,13 +94495,13 @@ Move 1 Energy card attached to the Defending Pok\xE9mon to another of your oppon
         if (!supportersInHand || supportersInHand.length === 0) {
           throw new GameError(GameMessage.CANNOT_USE_POWER);
         }
-        if (HAS_MARKER(this.DOWNLOAD_MARKER, player)) {
+        if (cardList.wotcCounters.downloadTurn === state.turn) {
           throw new GameError(GameMessage.CANNOT_USE_POWER);
         }
         if (cardList.specialConditions.length > 0) {
           throw new GameError(GameMessage.CANNOT_USE_POWER);
         }
-        ADD_MARKER(this.DOWNLOAD_MARKER, player, this);
+        cardList.wotcCounters.downloadTurn = state.turn;
         ABILITY_USED(player, this);
         return store.prompt(state, new ChooseCardsPrompt(
           player,
@@ -591578,13 +591590,13 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
     const opponent = StateUtils.getOpponent(state, player);
     const name = effect.trainerCard.name;
     const count = player.hand.cards.reduce((sum, c) => {
-      return sum + (c.name === name ? 1 : 0);
+      return sum + (c !== effect.trainerCard && c.name === name ? 1 : 0);
     }, 0);
     const benchCount = opponent.bench.reduce((sum, b) => {
       return sum + (b.cards.length > 0 ? 1 : 0);
     }, 0);
     let playTwoCards = false;
-    if (benchCount > 0 && count >= 2) {
+    if (benchCount > 0 && count >= 1) {
       yield store.prompt(
         state,
         new ConfirmPrompt(player.id, GameMessage.WANT_TO_PLAY_BOTH_CARDS_AT_ONCE),
@@ -591678,10 +591690,10 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
       throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
     }
     const count = player.hand.cards.reduce((sum, c) => {
-      return sum + (c.name === name ? 1 : 0);
+      return sum + (c !== effect.trainerCard && c.name === name ? 1 : 0);
     }, 0);
     let playTwoCards = false;
-    if (count >= 2) {
+    if (count >= 1) {
       yield store.prompt(
         state,
         new ConfirmPrompt(player.id, GameMessage.WANT_TO_PLAY_BOTH_CARDS_AT_ONCE),
@@ -603288,6 +603300,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
       card.provides = [types9[d.name.replace(/^Basic /, "").replace(" Energy", "")]];
     }
     if (d.supertype === "Trainer" && d.subtypes?.includes("Rocket's Secret Machine") && !card.tags.includes("Secret Machine" /* ROCKETS_SECRET_MACHINE */)) card.tags.push("Secret Machine" /* ROCKETS_SECRET_MACHINE */);
+    if (d.supertype === "Trainer" && d.subtypes?.includes("ACE SPEC") && !card.tags.includes("Ace Spec" /* ACE_SPEC */)) card.tags.push("Ace Spec" /* ACE_SPEC */);
     if (record.fossil) installDpFossil(card, record);
     if (d.supertype === "Trainer" && !original && !record.fossil) {
       if (d.attacks) card.attacks = d.attacks.map((a) => ({ name: a.name, cost: a.cost.map((c) => types9[c]), damage: parseInt(a.damage) || 0, text: a.text }));
@@ -603777,7 +603790,7 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
   }
   registerDpSupporterCopy((store, state, player, card, source, attack3) => {
     const ops = smSupporterCopyData[card._smId] || xySupporterCopyData[card._xyId] || bwSupporterCopyData[card._bwId] || hgssSupporterCopyData[card._hgssId] || dpSupporterCopyData[card._dpId || card._wotcId];
-    if (!ops && card._smId) {
+    if (!ops && (card._smId || card._xyId && xyData.some((record) => record.d.id === card._xyId && record.reuse))) {
       const copied = Object.assign(Object.create(Object.getPrototypeOf(card)), card);
       copied._smCopiedSupporter = true;
       const effect = new TrainerEffect(player, copied);

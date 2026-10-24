@@ -1,0 +1,1 @@
+for(const f of ['runtime/platform.js','runtime/base-engine.js','runtime/rules-match.js','runtime/bot-ai.js','runtime/map.js']){const file=std.open('ports/3ds/'+f+'.qbc','rb'),buf=file.readAsArrayBuffer();file.close();std.evalScript(bjson.read(buf,0,buf.byteLength,1),{eval_function:true});}std.loadScript('ports/3ds/tests/prompt-guards.js');print(JSON.stringify(IlexPromptGuards));

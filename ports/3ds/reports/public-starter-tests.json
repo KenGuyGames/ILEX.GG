@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "scope": "Public starter-only runtime, not imported-library or physical hardware acceptance",
+  "decks": 2,
+  "formats": 1,
+  "privateImportedDecks": 0,
+  "v8": {
+    "passed": true,
+    "scope": "Controller-driven starter matches; not physical handheld acceptance",
+    "matches": [
+      {
+        "stateHash": "fd805f80",
+        "journalHash": "e87bbeaf",
+        "deck": 0,
+        "seed": 314159,
+        "steps": 46,
+        "humanMoves": 18,
+        "botMoves": 28,
+        "actions": 72,
+        "turn": 10,
+        "winner": 1,
+        "prompts": [
+          "Shuffle deck",
+          "Choose cards",
+          "Show mulligan",
+          "Select",
+          "Coin flip",
+          "Choose pokemon",
+          "Choose prize"
+        ],
+        "saveRestore": true
+      },
+      {
+        "stateHash": "7ca2d4d8",
+        "journalHash": "f36b0192",
+        "deck": 1,
+        "seed": 271828,
+        "steps": 24,
+        "humanMoves": 7,
+        "botMoves": 17,
+        "actions": 51,
+        "turn": 7,
+        "winner": 1,
+        "prompts": [
+          "Shuffle deck",
+          "Choose cards",
+          "Coin flip",
+          "Choose attack"
+        ],
+        "saveRestore": true
+      },
+      {
+        "stateHash": "c599cdc",
+        "journalHash": "844e78d7",
+        "deck": 0,
+        "seed": 42,
+        "steps": 70,
+        "humanMoves": 27,
+        "botMoves": 43,
+        "actions": 102,
+        "turn": 13,
+        "winner": 1,
+        "prompts": [
+          "Shuffle deck",
+          "Choose cards",
+          "Show mulligan",
+          "Select",
+          "Coin flip",
+          "Choose pokemon",
+          "Choose prize"
+        ],
+        "saveRestore": true
+      }
+    ],
+    "rejectedActionSafe": true
+  },
+  "quickjs32": {
+    "passed": true,
+    "scope": "Controller-driven starter matches; not physical handheld acceptance",
+    "matches": [
+      {
+        "stateHash": "fd805f80",
+        "journalHash": "e87bbeaf",
+        "deck": 0,
+        "seed": 314159,
+        "steps": 46,
+        "humanMoves": 18,
+        "botMoves": 28,
+        "actions": 72,
+        "turn": 10,
+        "winner": 1,
+        "prompts": [
+          "Shuffle deck",
+          "Choose cards",
+          "Show mulligan",
+          "Select",
+          "Coin flip",
+          "Choose pokemon",
+          "Choose prize"
+        ],
+        "saveRestore": true
+      },
+      {
+        "stateHash": "7ca2d4d8",
+        "journalHash": "f36b0192",
+        "deck": 1,
+        "seed": 271828,
+        "steps": 24,
+        "humanMoves": 7,
+        "botMoves": 17,
+        "actions": 51,
+        "turn": 7,
+        "winner": 1,
+        "prompts": [
+          "Shuffle deck",
+          "Choose cards",
+          "Coin flip",
+          "Choose attack"
+        ],
+        "saveRestore": true
+      },
+      {
+        "stateHash": "c599cdc",
+        "journalHash": "844e78d7",
+        "deck": 0,
+        "seed": 42,
+        "steps": 70,
+        "humanMoves": 27,
+        "botMoves": 43,
+        "actions": 102,
+        "turn": 13,
+        "winner": 1,
+        "prompts": [
+          "Shuffle deck",
+          "Choose cards",
+          "Show mulligan",
+          "Select",
+          "Coin flip",
+          "Choose pokemon",
+          "Choose prize"
+        ],
+        "saveRestore": true
+      }
+    ],
+    "rejectedActionSafe": true
+  },
+  "memoryCap": 67108864,
+  "starterMenuPassed": true,
+  "uninstalledPrivateSaveRejected": true
+}

@@ -1,0 +1,8 @@
+{
+  "source": "https://raw.githubusercontent.com/pret/pokecrystal/master/gfx/overworld/celebi.png",
+  "palette": "PAL_OW_GREEN, gfx/overworld/npc_sprites.pal",
+  "animation": "engine/events/celebi.asm GetCelebiSpriteTile; 1,2,3,4; GIF durations 100,100,100,130 ms",
+  "copyright": "Pokemon sprites: Nintendo / Creatures / GAME FREAK. Unofficial fan project.",
+  "gifSha256": "c5d5c193f4ffa009ca9d9f8fa0bd871c9bdf33080abfc23cd4eef6d30b7a6559",
+  "customization": "Orange RGB(255,156,82) replaced with white RGB(255,255,255); pixel geometry, alpha, orientation and animation timing preserved."
+}

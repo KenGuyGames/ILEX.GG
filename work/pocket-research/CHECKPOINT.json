@@ -1,0 +1,63 @@
+{
+  "status": "Released locally: ILEX.GG 1.23.0; Windows EXE and both ZIPs, original-certificate Android42",
+  "scope": "Every released Pokemon TCG Pocket printing through2026-10-20; separate rules, decks, matches and packs from paper TCG",
+  "catalog": 4317,
+  "sets": 24,
+  "packPools": 55,
+  "packArt": 29,
+  "verifiedCardImages": 4317,
+  "candidatePrintings": 4317,
+  "pendingPrintings": 0,
+  "pendingDistinctEffects": 0,
+  "releaseValidated": 0,
+  "sourceUI": "work/pocket-candidate/ui",
+  "research": "work/pocket-research",
+  "nativePreview": "work/pocket-desktop-candidate",
+  "coreChecks": 11,
+  "nativeChecks": 31,
+  "packSamples": 61000,
+  "paperEngineUnchanged": "38420f9be848b12126bc1153bce544ca9419de9c89a213e82b7b7379147f50dd",
+  "releasedAppsUnchanged": false,
+  "rulesUncertainties": [
+    "Exact official opening-hand distribution/RNG is not replicated; simulator uses seeded conditional shuffle with a guaranteed Basic.",
+    "Current-client edge acceptance for simultaneous end-of-turn triggers and stolen Item discard ownership remains pending.",
+    "Physical Android device/lifecycle/performance acceptance remains pending."
+  ],
+  "remaining": [],
+  "sources": [
+    "https://github.com/PocketDecks/pokemon-tcg-pocket-cards",
+    "https://github.com/flibustier/pokemon-tcg-pocket-database",
+    "https://support.pokemon.com/hc/en-us/articles/38906248102292-Pok%C3%A9mon-TCG-Pocket-Battle-Rules-FAQ",
+    "https://www.pokemon.com/uk/pokemon-video-games/pokemon-trading-card-game-pocket",
+    "https://www.pokemon.com/us/features/pokemon-tcg-pocket-deck-strategies-pikachu-ex-mewtwo-ex-and-charizard-ex"
+  ],
+  "artArchive": {
+    "file": "C:/Users/Kenneth/Downloads/dist.zip",
+    "url": "https://github.com/flibustier/pokemon-tcg-pocket-database/releases/download/2.12.0/dist.zip",
+    "sha256": "3bbebce85e77fe4d2c1bf3a26bffd9b7c06df547d94415644dd74222a01ac38c"
+  },
+  "browserTab": "27 (agent-created; close at completion)",
+  "nextAndroidCode": 43,
+  "notes": [
+    "No subagents. No original profile writes or app closing. No publication.",
+    "normalize.py is INITIAL generation and currently overwrites automation/scan fields: do not rerun blindly; preserve compiled catalog and all local scan links.",
+    "compile.cjs is idempotent on normalized catalog and preserves scan paths; add new effect handlers there, then rerun.",
+    "Engine/model CommonJS compatible for focused Node tests. No paper card aliases in Pocket.",
+    "Native runtime ACL for only the owned Pocket preview was given ALL APPLICATION PACKAGES read/execute for Electron sandbox; no user directory permissions changed.",
+    "Canonical current UI is work/pocket-candidate/ui. All cards enabled in separate Pocket mode. Release tests are finite; uncertainties retained."
+  ],
+  "interactionChecks": 78,
+  "attackSmokeCases": 4055,
+  "botGames": 8,
+  "nativeEvidence": "native-v8 and actual versioned packaged EXE fresh/restored pass",
+  "updated": "2026-10-20",
+  "attackBranchCases": 32440,
+  "activatedEffectSmokeCases": 634,
+  "browserResearch": "Temporary browser tab27 closed after downloading flibustier MIT license; original source licenses/inputs/compiler now bundled in ui/pocket-source and POCKET-*.txt.",
+  "strategicGames": 24,
+  "strategicDecisions": 938,
+  "mobileChecks": 51,
+  "androidVersion": "1.23.0-android.42",
+  "releaseEnabledPrintings": 4317,
+  "releaseEvidence": "work/rules-research/pocket-release.json"
+}

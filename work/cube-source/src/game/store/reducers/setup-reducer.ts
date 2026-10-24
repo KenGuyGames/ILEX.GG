@@ -97,6 +97,16 @@ function putStartingPokemonsAndPrizes(player: Player, cards: Card[], state: Stat
 }
 
 // Helper: Alternative setup where players start with 13 cards and choose prizes (4 for Pre-Release, 6 otherwise)
+// Printed starting-position effects resolve after both players have committed
+// their Active Pokemon, before turn ownership and evolution timing are stamped.
+function applyOvereager(store: StoreLike, state: State): void {
+  if ((state.rules as any).startingPowerRulesVersion === 0) return;
+  const starters = state.players.filter(player => player.active.getPokemonCard()?.powers.some(power => power.name === 'Overeager'));
+  if (starters.length !== 1) return;
+  state.activePlayer = state.players.indexOf(starters[0]);
+  store.log(state, GameLog.LOG_STARTS_BECAUSE_OF_ABILITY, { name: starters[0].name, ability: 'Overeager' });
+}
+
 function* alternativeSetupGame(next: Function, store: StoreLike, state: State): IterableIterator<State> {
   const player = state.players[0];
   const opponent = state.players[1];
@@ -287,6 +297,8 @@ function* alternativeSetupGame(next: Function, store: StoreLike, state: State): 
       }
     }
   }
+
+  applyOvereager(store, state);
 
   // Set initial Pokemon Played Turn, so players can't evolve during first turn
   const first = state.players[state.activePlayer];
@@ -583,6 +595,8 @@ export function* setupGame(next: Function, store: StoreLike, state: State): Iter
   if ((state.rules as any).wotcRules) {
     yield store.prompt(state, new CoinFlipPrompt(player.id, GameMessage.SETUP_WHO_BEGINS_FLIP), heads => { state.activePlayer = heads ? 0 : 1; next(); });
   }
+
+  applyOvereager(store, state);
 
   // Set initial Pokemon Played Turn, so players can't evolve during first turn
   const first = state.players[state.activePlayer];
