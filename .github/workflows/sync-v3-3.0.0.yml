@@ -1,0 +1,78 @@
+name: Synchronize verified Campaign3.0.0 source
+on:
+  push:
+    paths:
+      - .github/workflows/sync-v3-3.0.0.yml
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Download and verify authorized source transfer from release draft
+        shell: python
+        run: |
+          from pathlib import Path
+          import json,subprocess,hashlib,os,zipfile
+          repo='repos/KenGuyGames/ILEX.GG'
+          releases=json.loads(subprocess.check_output(['gh','api',repo+'/releases']))
+          matches=[r for r in releases if r['draft'] and r['name']=='ILEX.GG 3.0.0 — Campaign: The Forest Keeps Growing']
+          assert len(matches)==1,'Expected one Campaign3.0.0 draft'
+          assets=[a for a in matches[0]['assets'] if a['name']=='ILEX.GG-source-3.0.0-transfer.zip']
+          assert len(assets)==1,'Expected one frozen source transfer'
+          asset=assets[0]
+          file=Path(os.environ['RUNNER_TEMP'])/'campaign-source.zip'
+          with file.open('wb') as fp:subprocess.run(['gh','api',repo+'/releases/assets/'+str(asset['id']),'-H','Accept: application/octet-stream'],stdout=fp,check=True)
+          assert hashlib.sha256(file.read_bytes()).hexdigest()=='bcc311e1bc31fed74b86e3bc5cc8f43fc4e366fa66c261c2e66254b6d504e484','Source transfer hash mismatch'
+          root=Path.cwd().resolve()
+          with zipfile.ZipFile(file) as z:
+              for e in z.infolist():
+                  p=(root/e.filename).resolve()
+                  assert p.is_relative_to(root) and '.git' not in p.relative_to(root).parts
+              z.extractall(root)
+          m=json.loads(Path('verification/source-manifest-3.0.0.json').read_text());files=m['files']
+          managed=('work/desktop/','work/desktop-build/','work/cube-source/','work/android-build/','work/campaign-release/','docs/screenshots/','verification/')
+          for name in subprocess.check_output(['git','ls-files','-z']).decode().split('\0'):
+              if name and name.startswith(managed) and name not in files:Path(name).unlink(missing_ok=True)
+          for name,h in files.items():assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==h,name
+          assert json.loads(Path('work/desktop/package.json').read_text())['version']=='3.0.0'
+          Path(os.environ['RUNNER_TEMP']+'/transfer-asset-id').write_text(str(asset['id']))
+          print('Verified',len(files),'Campaign3.0.0 source files')
+      - name: Install locked build tools and rebuild exact engine
+        run: |
+          npm ci --prefix work/desktop-build
+          npm run build:rules
+      - name: Verify reproducible source and stage intentional source archives
+        shell: python
+        run: |
+          from pathlib import Path
+          import hashlib,json,subprocess
+          m=json.loads(Path('verification/source-manifest-3.0.0.json').read_text())
+          for name,h in m['files'].items():assert hashlib.sha256(Path(name).read_bytes()).hexdigest()==h,name
+          for name in m['files']:
+              if name.endswith('.zip'):subprocess.run(['git','add','-f','--',name],check=True)
+          print('All frozen source bytes and rebuilt engine match')
+      - name: Commit current source and create new3.0.0 tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config core.autocrlf false
+          git rm .github/workflows/sync-v3-3.0.0.yml
+          git add -A
+          git commit -m "Release ILEX.GG3.0.0 Campaign source and README;3DS/Pocket/Multiplayer in progress"
+          git push origin HEAD:main
+          test -z "$(git ls-remote origin refs/tags/v3.0.0-build-2026-10-26)"
+          git tag v3.0.0-build-2026-10-26
+          git push origin refs/tags/v3.0.0-build-2026-10-26
+      - name: Remove only the completed temporary source transfer asset
+        shell: python
+        run: |
+          from pathlib import Path
+          import os,subprocess
+          asset=Path(os.environ['RUNNER_TEMP']+'/transfer-asset-id').read_text().strip()
+          assert asset.isdigit()
+          subprocess.run(['gh','api','--method','DELETE','repos/KenGuyGames/ILEX.GG/releases/assets/'+asset],check=True)
+
