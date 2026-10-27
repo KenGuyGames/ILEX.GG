@@ -23,6 +23,36 @@ Read the [New Rule guide](NEW-RULE-MODE.md) for the supplied interpretations and
 
 Read the [Ken Guy Rules guide](KEN-GUY-RULES.md) for the exact High 5 probabilities, timing and exceptions. Both modes support local/bot play and saved journal replay/Undo. Private Undo requires opponent approval; Multiplayer remains in progress.
 
+### New Rule and Ken Guy Rules screenshots
+
+Captured from the 3.1.0 Windows app using isolated demo matches.
+
+**New Rule — shared rules at the play table**
+
+![New Rule play table with three active shared rules](docs/screenshots/new-rule-table.jpg)
+
+<details>
+<summary>View the shared rule cards</summary>
+
+Inspect active cards and use their available actions from **Shared Rules**.
+
+![New Rule expanded shared-card controls](docs/screenshots/new-rule-shared-cards.jpg)
+
+</details>
+
+**Ken Guy Rules — play table and once-per-game controls**
+
+![Ken Guy Rules play table with mode banner and opponent-turn interruption control](docs/screenshots/ken-guy-table.jpg)
+
+<details>
+<summary>View a High 5 choice</summary>
+
+A qualifying hand-discard effect opens the native **Offer High 5 / Decline** prompt.
+
+![Ken Guy Rules High 5 offer and decline prompt](docs/screenshots/ken-guy-high-five.jpg)
+
+</details>
+
 ### Pocket implementation removed
 
 **Pocket has been removed from the app. ILEX.GG now focuses on the regular Pokémon TCG.** The separate Pocket rules engine, screens, cards, packs, artwork and mixed-in gallery catalogs are no longer included. Legacy migration removes retired Pocket-only workspace data while retaining regular TCG content. Campaign, regular eras, packs, decks, music, image caching and Cube Drafting remain available.
