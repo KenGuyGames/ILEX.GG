@@ -1,0 +1,199 @@
+name: Verify 3.1.0 alternate modes fresh source and README
+on:
+  push:
+    paths:
+      - .github/workflows/test-release-3.1.0.yml
+permissions:
+  contents: read
+jobs:
+  readme:
+    runs-on: windows-2025
+    timeout-minutes: 30
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Fresh source ZIP from the release
+        shell: pwsh
+        run: |
+          Invoke-WebRequest 'https://github.com/KenGuyGames/ILEX.GG/archive/refs/tags/v3.1.0-build-2026-10-27.zip' -OutFile "$env:RUNNER_TEMP/source.zip"
+          Expand-Archive "$env:RUNNER_TEMP/source.zip" "$env:RUNNER_TEMP/extracted"
+          $download = Get-ChildItem "$env:RUNNER_TEMP/extracted" -Directory | Select-Object -First 1
+          Move-Item -LiteralPath $download.FullName -Destination "$env:RUNNER_TEMP/source"
+          node --version
+          npm --version
+          if (Test-Path "$env:RUNNER_TEMP/source/node_modules") { throw 'Download contains dependencies' }
+          if (Test-Path "$env:RUNNER_TEMP/source/outputs/Pokemon-TCG-Lab/scans") { throw 'Download contains scans' }
+          if (Test-Path "$env:APPDATA/TCG Lab") { throw 'Test profile is not fresh' }
+      - name: README npm install
+        working-directory: ${{ runner.temp }}/source
+        run: npm install
+      - name: First README npm start
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          $logPrefix = Join-Path $env:RUNNER_TEMP 'first-start'
+          $launcher = Start-Process -FilePath $env:ComSpec -ArgumentList '/d /s /c "npm start"' -WorkingDirectory (Get-Location).Path -WindowStyle Hidden -PassThru -RedirectStandardOutput "$logPrefix-out.txt" -RedirectStandardError "$logPrefix-error.txt"
+          $sourcePrefix = (Get-Location).Path
+          $deadline = (Get-Date).AddSeconds(120)
+          $window = $null
+          while ((Get-Date) -lt $deadline) {
+            $window = Get-Process electron -ErrorAction SilentlyContinue | Where-Object { $_.Path -like "$sourcePrefix*" -and $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -like '*ILEX.GG*' } | Select-Object -First 1
+            if ($window) { break }
+            if ($launcher.HasExited) { break }
+            Start-Sleep -Milliseconds 500
+          }
+          if (!$window) {
+            Get-Content "$logPrefix-out.txt" -ErrorAction SilentlyContinue
+            Get-Content "$logPrefix-error.txt" -ErrorAction SilentlyContinue
+            throw 'npm start did not open the ILEX.GG window'
+          }
+          Start-Sleep -Seconds 12
+          $window.Refresh()
+          if ($window.HasExited) { throw 'The app exited during startup' }
+          $cached = @(Get-ChildItem "$env:APPDATA/TCG Lab/card-cache" -Recurse -File -ErrorAction SilentlyContinue)
+          Write-Output "PASS npm start: title=$($window.MainWindowTitle); responding=$($window.Responding); cacheFiles=$($cached.Count)"
+          if (!$window.Responding) { throw 'App window is not responding' }
+          if ($cached.Count -eq 0) { throw 'No artwork was cached from the fresh launch' }
+          $null = $window.CloseMainWindow()
+          if (!$launcher.WaitForExit(15000)) { throw 'npm start did not exit after closing the app' }
+          Get-Content "$logPrefix-out.txt"
+          $stderr = Get-Content "$logPrefix-error.txt" -Raw -ErrorAction SilentlyContinue
+          if ($stderr -match 'Uncaught Exception|ReferenceError:|TypeError:') { throw $stderr }
+          Write-Output "PASS normal window launch and close; npm exit $($launcher.ExitCode)"
+          if ($launcher.ExitCode -ne 0) { throw 'npm start returned a nonzero exit code' }
+
+      - name: README install locked build tools
+        working-directory: ${{ runner.temp }}/source
+        run: npm ci --prefix work/desktop-build
+      - name: README rebuild engine
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          npm run build:rules
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $manifest = Get-Content verification/source-manifest-3.1.0.json -Raw | ConvertFrom-Json
+          if ((Get-FileHash work/desktop/ui/rules-engine.js).Hash.ToLower() -ne $manifest.rulesEngineSha256) { throw 'Rebuilt engine hash mismatch' }
+      - name: Rebuilt README npm start
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          $logPrefix = Join-Path $env:RUNNER_TEMP 'rebuilt-start'
+          $launcher = Start-Process -FilePath $env:ComSpec -ArgumentList '/d /s /c "npm start"' -WorkingDirectory (Get-Location).Path -WindowStyle Hidden -PassThru -RedirectStandardOutput "$logPrefix-out.txt" -RedirectStandardError "$logPrefix-error.txt"
+          $sourcePrefix = (Get-Location).Path
+          $deadline = (Get-Date).AddSeconds(120)
+          $window = $null
+          while ((Get-Date) -lt $deadline) {
+            $window = Get-Process electron -ErrorAction SilentlyContinue | Where-Object { $_.Path -like "$sourcePrefix*" -and $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -like '*ILEX.GG*' } | Select-Object -First 1
+            if ($window) { break }
+            if ($launcher.HasExited) { break }
+            Start-Sleep -Milliseconds 500
+          }
+          if (!$window) {
+            Get-Content "$logPrefix-out.txt" -ErrorAction SilentlyContinue
+            Get-Content "$logPrefix-error.txt" -ErrorAction SilentlyContinue
+            throw 'npm start did not open the ILEX.GG window'
+          }
+          Start-Sleep -Seconds 12
+          $window.Refresh()
+          if ($window.HasExited) { throw 'The app exited during startup' }
+          $cached = @(Get-ChildItem "$env:APPDATA/TCG Lab/card-cache" -Recurse -File -ErrorAction SilentlyContinue)
+          Write-Output "PASS npm start: title=$($window.MainWindowTitle); responding=$($window.Responding); cacheFiles=$($cached.Count)"
+          if (!$window.Responding) { throw 'App window is not responding' }
+          if ($cached.Count -eq 0) { throw 'No artwork was cached from the fresh launch' }
+          $null = $window.CloseMainWindow()
+          if (!$launcher.WaitForExit(15000)) { throw 'npm start did not exit after closing the app' }
+          Get-Content "$logPrefix-out.txt"
+          $stderr = Get-Content "$logPrefix-error.txt" -Raw -ErrorAction SilentlyContinue
+          if ($stderr -match 'Uncaught Exception|ReferenceError:|TypeError:') { throw $stderr }
+          Write-Output "PASS normal window launch and close; npm exit $($launcher.ExitCode)"
+          if ($launcher.ExitCode -ne 0) { throw 'npm start returned a nonzero exit code' }
+
+      - name: README test commands in order
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          npm run test:campaign
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:cube
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:cube-import
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:overeager
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:new-rule
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:ken-guy
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:removal
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:multiplayer
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          npm run test:protocol
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          node work/desktop-build/card-cache-tests.cjs
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Fresh and restored New Rule and Ken Guy native checks
+        working-directory: ${{ runner.temp }}/source
+        shell: pwsh
+        run: |
+          $electron = node -e "console.log(require('electron'))" | Select-Object -Last 1
+          $env:ELECTRON_RUN_AS_NODE = $null
+          foreach ($mode in @('new-rule','ken')) {
+            $report = "$env:RUNNER_TEMP/native-$mode"
+            foreach ($launch in @('fresh','restored')) {
+              $entry = (Resolve-Path work/new-rule-audit/native-entry.cjs).Path
+              $process = Start-Process -FilePath $electron -ArgumentList @($entry,$report,$mode) -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput "$env:RUNNER_TEMP/$mode-$launch-out.txt" -RedirectStandardError "$env:RUNNER_TEMP/$mode-$launch-error.txt"
+              Get-Content "$env:RUNNER_TEMP/$mode-$launch-out.txt"
+              if ($process.ExitCode -ne 0) {
+                Get-Content "$env:RUNNER_TEMP/$mode-$launch-error.txt"
+                if (Test-Path "$report/failure.txt") { Get-Content "$report/failure.txt" }
+                throw "Native $mode $launch exited $($process.ExitCode)"
+              }
+              $result = Get-Content "$report/native-result.json" -Raw | ConvertFrom-Json
+              if (!$result.passed -or !$result.pocketRemoved) { throw 'Native mode/removal check failed' }
+              $result | ConvertTo-Json -Depth 7
+            }
+          }
+
+  source_archives:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Verify ZIP and sequential tar.gz source downloads
+        shell: python
+        run: |
+          import urllib.request,zipfile,tarfile,io,json,hashlib
+          tag='v3.1.0-build-2026-10-27';manifest='verification/source-manifest-3.1.0.json'
+          url=f'https://github.com/KenGuyGames/ILEX.GG/archive/refs/tags/{tag}.zip'
+          data=urllib.request.urlopen(url,timeout=300).read()
+          with zipfile.ZipFile(io.BytesIO(data)) as z:
+              name=next(n for n in z.namelist() if n.endswith('/'+manifest));prefix=name[:-len(manifest)]
+              raw=z.read(name);m=json.loads(raw);checked=set()
+              for e in z.infolist():
+                  n=e.filename[len(prefix):]
+                  if n in m['files']:
+                      assert hashlib.sha256(z.read(e)).hexdigest()==m['files'][n],n
+                      checked.add(n)
+              assert len(checked)==len(m['files'])
+              print('PASS zip:',len(checked),'files match the release manifest',flush=True)
+          del data
+          url=f'https://github.com/KenGuyGames/ILEX.GG/archive/refs/tags/{tag}.tar.gz'
+          checked=set();found=False
+          with urllib.request.urlopen(url,timeout=300) as response,tarfile.open(fileobj=response,mode='r|gz') as z:
+              for e in z:
+                  if not e.isfile():continue
+                  n=e.name.split('/',1)[1] if '/' in e.name else ''
+                  if n==manifest:
+                      assert z.extractfile(e).read()==raw;found=True
+                  elif n in m['files']:
+                      h=hashlib.sha256();f=z.extractfile(e)
+                      while True:
+                          b=f.read(1024*1024)
+                          if not b:break
+                          h.update(b)
+                      assert h.hexdigest()==m['files'][n],n
+                      assert n not in checked;checked.add(n)
+          assert found and len(checked)==len(m['files'])
+          print('PASS tar.gz:',len(checked),'files match the release manifest',flush=True)
+
