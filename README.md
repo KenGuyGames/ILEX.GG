@@ -17,7 +17,28 @@ Choose **Campaign** directly from the main menu, beside Enter the Arena and Ente
 
 **3DS, Pocket and Multiplayer are still in progress. Hoping to have an update soon.** Existing experimental Pocket and Windows Multiplayer features remain in the app, with their current limitations. This release does not announce a new 3DS or Pocket update. Earlier starter-only 3DS Alpha downloads remain available in the [2.0.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v2.0.0-build-2026-10-23).
 
+### Campaign screenshots
+
+**Campaign on the main menu**
+
 ![Campaign on the main menu](docs/screenshots/campaign-menu-3.0.0.png)
+
+**Character dialogue and scenic environments**
+
+![Campaign dialogue with Rowan in his hut](docs/screenshots/campaign-dialogue.png)
+
+**Mobile dialogue layout** — captured with touch emulation.
+
+![Campaign dialogue in the mobile layout](docs/screenshots/campaign-mobile-dialogue.png)
+
+<details>
+<summary>View an era-rules briefing</summary>
+
+Learn the opening-turn rules and mechanics before entering an era.
+
+![Campaign Base–Fossil era-rules briefing](docs/screenshots/campaign-era-briefing.png)
+
+</details>
 
 ## Download 3.0.0
 
