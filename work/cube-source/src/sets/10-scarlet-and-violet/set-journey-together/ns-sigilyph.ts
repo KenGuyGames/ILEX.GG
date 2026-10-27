@@ -43,10 +43,10 @@ export class NsSigilyph extends PokemonCard {
 
       if (player.getPrizeLeft() === 1) {
         if (owner === 0) {
-          state = endGame(store, state, GameWinner.PLAYER_1);
+          state = endGame(store, state, GameWinner.PLAYER_1, 'card-win');
         }
         if (owner === 1) {
-          state = endGame(store, state, GameWinner.PLAYER_2);
+          state = endGame(store, state, GameWinner.PLAYER_2, 'card-win');
         }
       }
     }

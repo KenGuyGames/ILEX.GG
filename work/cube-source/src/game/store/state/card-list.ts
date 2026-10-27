@@ -27,6 +27,8 @@ export function restoreTemporaryStage(card: any, destination: CardList) {
 
 export function ecogymDestination(source:CardList,destination:CardList,card:Card):CardList {
  const context=(CardList as any).wotcMovementContext;
+ const nr=(globalThis as any).IlexNewRules;
+ if(context?.state?.newRules){if(!nr.moveAllowed(context.state,source,destination))return source;const next=nr.destination(source,destination,card,context);if(next!==destination)return next;}
  if(context?.svMovementBlocked?.(source,destination,card,context))return source;
  if(context?.swshMovementBlocked?.(source,destination,card,context))return source;
  if(context?.state&&(card as any)._ilexToolOwnerId!==undefined&&'energies' in source&&destination!==source){
@@ -108,6 +110,7 @@ export class CardList {
   }
 
   public moveTo(destination: CardList, count?: number): void {
+    if((this as any)._kenHand)(globalThis as any).IlexKenGuy?.discardAttempt(this,destination,count===undefined?this.cards:this.cards.slice(0,count));
     if (count === undefined) {
       count = this.cards.length;
     }
@@ -120,6 +123,7 @@ export class CardList {
   }
 
   public moveCardsTo(cards: Card[], destination: CardList): void {
+    if((this as any)._kenHand)(globalThis as any).IlexKenGuy?.discardAttempt(this,destination,cards);
     for (let i = 0; i < cards.length; i++) {
       const actualDestination=ecogymDestination(this,destination,cards[i]);
       let index = this.cards.indexOf(cards[i]);

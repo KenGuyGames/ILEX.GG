@@ -1,0 +1,869 @@
+{
+  "cards": [
+    {
+      "id": "ancient-way",
+      "name": "Ancient Way",
+      "image": "new-rules/cards/ancient-way.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Ancient Way.png",
+      "sha256": "1efc7c2c9db0ca4d7dad06d463da574e96bc5f6de6e34314d3fb1d4c72e15192"
+    },
+    {
+      "id": "arven",
+      "name": "Arven",
+      "image": "new-rules/cards/arven.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Arven.png",
+      "sha256": "6e75375fab7b3b06841845ecebda1f9f1f11ee9567e03064b57bb49f5cd851bb"
+    },
+    {
+      "id": "attract-customers",
+      "name": "Attract Customers",
+      "image": "new-rules/cards/attract-customers.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Attract Customers.png",
+      "sha256": "07f3b736c5df597f505f33d3787a56e9dba25e603ce49ab2faec62d78a17b8c5"
+    },
+    {
+      "id": "ball-guy",
+      "name": "Ball Guy",
+      "image": "new-rules/cards/ball-guy.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Ball Guy.png",
+      "sha256": "93ea7435a67730175da6d4afe2b07bd10f71a6b9a07074a663e3097a95e6971a"
+    },
+    {
+      "id": "barrier-shrine",
+      "name": "Barrier Shrine",
+      "image": "new-rules/cards/barrier-shrine.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Barrier Shrine.png",
+      "sha256": "2f94a76473fc3c49fd7424b428f65317cca71c4750172a9b432337fa19bad924"
+    },
+    {
+      "id": "bloodthirsty-eyes",
+      "name": "Bloodthirsty Eyes",
+      "image": "new-rules/cards/bloodthirsty-eyes.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Bloodthirsty Eyes.png",
+      "sha256": "00b679f29cd11dd66a63355510e594028c009ec8e756cc14853d9da775315d7c"
+    },
+    {
+      "id": "candice",
+      "name": "Candice",
+      "image": "new-rules/cards/candice.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Candice.png",
+      "sha256": "157941cdb951230a327a31d78e7b5c90d42fa3704af6c6ff9161d059ae69054b"
+    },
+    {
+      "id": "cedric-juniper",
+      "name": "Cedric Juniper",
+      "image": "new-rules/cards/cedric-juniper.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Cedric Juniper.png",
+      "sha256": "d6be40487a7c88c14a43d3e4b5f7cc3dc2f68848279df7852ea3c27862f7ea64"
+    },
+    {
+      "id": "charging-up",
+      "name": "Charging Up",
+      "image": "new-rules/cards/charging-up.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Charging Up.png",
+      "sha256": "2d9016e1fd7a983bb63539f426d65683bb7db751e55847eca284bad964d7e2d1"
+    },
+    {
+      "id": "clay",
+      "name": "Clay",
+      "image": "new-rules/cards/clay.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Clay.png",
+      "sha256": "fee883901b87e9e86a4b97948c3fc1b33c89c095cd2bbf171a002bb056299191"
+    },
+    {
+      "id": "collapsed-stadium",
+      "name": "Collapsed Stadium",
+      "image": "new-rules/cards/collapsed-stadium.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Collapsed Stadium.png",
+      "sha256": "9c6564b2623536527ff26c73ceb4a60cf3bf69ae19700b6b11304330ee983bd3"
+    },
+    {
+      "id": "colress-experiment",
+      "name": "Colress Experiment",
+      "image": "new-rules/cards/colress-experiment.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Colress Experiment.png",
+      "sha256": "d1a20e82e91d475393759e1c56eb039d08dbca93c6cd9abacca7655bd0e8fd76"
+    },
+    {
+      "id": "colress",
+      "name": "Colress",
+      "image": "new-rules/cards/colress.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Colress.png",
+      "sha256": "b9ededc18422e0897bfadbe83717e55f3679058e1c2df7538e6a8a478f8a6b99"
+    },
+    {
+      "id": "concealed-cards",
+      "name": "Concealed Cards",
+      "image": "new-rules/cards/concealed-cards.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Concealed Cards.png",
+      "sha256": "a2fee40a94b817e4b805189c41060039a408f7d72bebad543923c32ec8463cc1"
+    },
+    {
+      "id": "crazy-code",
+      "name": "Crazy Code",
+      "image": "new-rules/cards/crazy-code.png",
+      "mode": "action",
+      "repeat": true,
+      "source": "Crazy Code.png",
+      "sha256": "3af405220ee10097b1d7f4b313c7b0e1785c87ce36f1dad113461fda6ae59779"
+    },
+    {
+      "id": "cursed-blast",
+      "name": "Cursed Blast",
+      "image": "new-rules/cards/cursed-blast.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Cursed Blast.png",
+      "sha256": "e569b37988607c9a66eccc7c10432008282430a4565151e074afc9c1125c4a2c"
+    },
+    {
+      "id": "daunting-pose",
+      "name": "Daunting Pose",
+      "image": "new-rules/cards/daunting-pose.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Daunting Pose.png",
+      "sha256": "e17838875259288d5a5ce13d69fc6f31c87bbf12752d0ef5c0a25cc0222aad8f"
+    },
+    {
+      "id": "delinquent",
+      "name": "Delinquent",
+      "image": "new-rules/cards/delinquent.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Delinquent.png",
+      "sha256": "bbfcfc47eb375df40dcb206af4fb03841a10ca20275046b17d60ee102814738d"
+    },
+    {
+      "id": "dino-cry",
+      "name": "Dino Cry",
+      "image": "new-rules/cards/dino-cry.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Dino Cry.png",
+      "sha256": "a120cfdcfa68237744a1d506f35584abe76b4ea1ce63ed31c0b5a7dbc0f3a279"
+    },
+    {
+      "id": "double-gunner",
+      "name": "Double Gunner",
+      "image": "new-rules/cards/double-gunner.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Double Gunner.png",
+      "sha256": "5465b618eaedd8faa68d0e19f9d6b4a84d5745d1893d3bf06b257e60e124396c"
+    },
+    {
+      "id": "excited-heart",
+      "name": "Excited Heart",
+      "image": "new-rules/cards/excited-heart.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Excited Heart.png",
+      "sha256": "862464ec3edb9d744715e5bb5730fb56f722f76b7d10eeec611c8356ac8fd3aa"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "name": "Explorer's Guidance",
+      "image": "new-rules/cards/explorer-s-guidance.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Explorer's Guidance.png",
+      "sha256": "374c1789dd196654db96a2e21a7fdcd819eacf8d124e08eed281f996e76aabe8"
+    },
+    {
+      "id": "feather-arrow",
+      "name": "Feather Arrow",
+      "image": "new-rules/cards/feather-arrow.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Feather Arrow.png",
+      "sha256": "ef1f4f1d34a8a521da3814d82ee862cc7f7bb3a62c49e774c56243878ea28f39"
+    },
+    {
+      "id": "flip-the-script",
+      "name": "Flip the Script",
+      "image": "new-rules/cards/flip-the-script.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Flip the Script.png",
+      "sha256": "26fcdb9ca046389d9489612db6d309bc8d654adc93410d902302519c4dbfb7f4"
+    },
+    {
+      "id": "flower-selecting",
+      "name": "Flower Selecting",
+      "image": "new-rules/cards/flower-selecting.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Flower Selecting.png",
+      "sha256": "1bc2216bb867b4fbb4549613116e19725f4a5cb48d33318e0167044dd3004558"
+    },
+    {
+      "id": "fusion-strike-system",
+      "name": "Fusion Strike System",
+      "image": "new-rules/cards/fusion-strike-system.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Fusion Strike System.png",
+      "sha256": "b793f40dd64420b4f8bd8ea29048e29748401f6d7e21ca87085f6a134e8fc2d6"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "name": "Giant Water Shuriken",
+      "image": "new-rules/cards/giant-water-shuriken.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Giant Water Shuriken.png",
+      "sha256": "493ab90145f2e313cd6b51200a512de5831852a070e470e56e866969727182ea"
+    },
+    {
+      "id": "goodnight-babies",
+      "name": "Goodnight Babies",
+      "image": "new-rules/cards/goodnight-babies.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Goodnight Babies.png",
+      "sha256": "16f6a59435126a0585528a9ace374d06c659c6e544b9b933f844b349f41db922"
+    },
+    {
+      "id": "grand-tree",
+      "name": "Grand Tree",
+      "image": "new-rules/cards/grand-tree.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Grand Tree.png",
+      "sha256": "cd681b0bfa0cd7e98d0f887c6da44c952fc3e5c55e380e12f9985eca3a186a06"
+    },
+    {
+      "id": "green-s-exploration",
+      "name": "Green's Exploration",
+      "image": "new-rules/cards/green-s-exploration.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Green's Exploration.png",
+      "sha256": "f61ab5d1209678e4c0d7408127e679c3e150c734659b0abe7417e5862fb57579"
+    },
+    {
+      "id": "guzma",
+      "name": "Guzma",
+      "image": "new-rules/cards/guzma.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Guzma.png",
+      "sha256": "5f675b0a5cedb1b216a54363e18465cbfc7ab851faede6e7dba43558bd377ac0"
+    },
+    {
+      "id": "happy-match",
+      "name": "Happy Match",
+      "image": "new-rules/cards/happy-match.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Happy Match.png",
+      "sha256": "622e6f89f54091f3e0561252714e57283d33f58900c94ec6babae3aa0d39726f"
+    },
+    {
+      "id": "heat-factory",
+      "name": "Heat Factory",
+      "image": "new-rules/cards/heat-factory.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Heat Factory.png",
+      "sha256": "372efe8a86a1adbffdfd9bb371232eed9fc5ff48c55b4cf79ed917cf5b3dab46"
+    },
+    {
+      "id": "hex-maniac",
+      "name": "Hex Maniac",
+      "image": "new-rules/cards/hex-maniac.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Hex Maniac.png",
+      "sha256": "81124395473aaed54d2d0d3217f118e2185994bf3f37653c9cdd73d59850ad25"
+    },
+    {
+      "id": "hugh",
+      "name": "Hugh",
+      "image": "new-rules/cards/hugh.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Hugh.png",
+      "sha256": "92f5283c3368f6fcfa18123109ca654a7e51f5ce782f8fe0b9d4b229d38b9664"
+    },
+    {
+      "id": "hyper-blower",
+      "name": "Hyper Blower",
+      "image": "new-rules/cards/hyper-blower.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Hyper Blower.png",
+      "sha256": "8a964bb3e99d33d9331780844c8395bbc3415ca4251d779373a388f8d004e099"
+    },
+    {
+      "id": "illuminate",
+      "name": "Illuminate",
+      "image": "new-rules/cards/illuminate.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Illuminate.png",
+      "sha256": "a265dcf2256786ae816f7a0b82e557ce7018a685407c4b8884099749d8351ff1"
+    },
+    {
+      "id": "industrious-incisors",
+      "name": "Industrious Incisors",
+      "image": "new-rules/cards/industrious-incisors.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Industrious Incisors.png",
+      "sha256": "b5f3497351eb7acea6062cf20f1ed26567c5b4d0fe9032281a50bc899b7d2a4f"
+    },
+    {
+      "id": "initialize",
+      "name": "Initialize",
+      "image": "new-rules/cards/initialize.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Initialize.png",
+      "sha256": "21d4ef340a8adb2ccfa8b2347848e2b71de575300b4ca108438b9578936b785c"
+    },
+    {
+      "id": "instant-charge",
+      "name": "Instant Charge",
+      "image": "new-rules/cards/instant-charge.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Instant Charge.png",
+      "sha256": "86a83713210a562bd82eadca53fa92c139939e75da5e11156bbdb19f54368d1f"
+    },
+    {
+      "id": "intrepid-sword",
+      "name": "Intrepid Sword",
+      "image": "new-rules/cards/intrepid-sword.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Intrepid Sword.png",
+      "sha256": "61867ac6b29a352fb6d8a9b6ec007fbe0b0456332fdb04b2a4c47776caece870"
+    },
+    {
+      "id": "iono",
+      "name": "Iono",
+      "image": "new-rules/cards/iono.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Iono.png",
+      "sha256": "20be600919547ac9a60d845e60f54dc7072712aee6697651ef48611d06251a02"
+    },
+    {
+      "id": "jessie-and-james",
+      "name": "Jessie and James",
+      "image": "new-rules/cards/jessie-and-james.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Jessie and James.png",
+      "sha256": "8fbb44ea0e199bc05f21ae68170323cb832884171bf38202083368ddd9e61e0d"
+    },
+    {
+      "id": "karen",
+      "name": "Karen",
+      "image": "new-rules/cards/karen.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Karen.png",
+      "sha256": "beda7dddf079eecb99d6f8d1b9bffc49626771dded06a3292184be3184aa2e4c"
+    },
+    {
+      "id": "legacy-star",
+      "name": "Legacy Star",
+      "image": "new-rules/cards/legacy-star.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Legacy Star.png",
+      "sha256": "71e080203c46316ffffcd45571bd803b658766c64752d2a02ae7921f31058262"
+    },
+    {
+      "id": "lost-city",
+      "name": "Lost City",
+      "image": "new-rules/cards/lost-city.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Lost City.png",
+      "sha256": "2a85e2b7ae1009dfefbae589975093b425c6a4daf831da8252a66485ff866e06"
+    },
+    {
+      "id": "lucian",
+      "name": "Lucian",
+      "image": "new-rules/cards/lucian.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Lucian.png",
+      "sha256": "e1b5d339b3e6bfdb5bbf7eaa4a299cdf2a6b3a7a3ea3c10bce68b78575622d9a"
+    },
+    {
+      "id": "lusamine",
+      "name": "Lusamine",
+      "image": "new-rules/cards/lusamine.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Lusamine.png",
+      "sha256": "a5dace0b3474bc54727d1234b9fecc8c45d3834c0341a35e92d74fcb7961f93f"
+    },
+    {
+      "id": "lysandre-s-trump-card",
+      "name": "Lysandre's Trump Card",
+      "image": "new-rules/cards/lysandre-s-trump-card.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Lysandre's Trump Card.png",
+      "sha256": "313c44178b5e84fd9f4cc83e583de97751c7ec6102f3763d6aef1a924d54216b"
+    },
+    {
+      "id": "marnie",
+      "name": "Marnie",
+      "image": "new-rules/cards/marnie.png",
+      "mode": "reveal",
+      "repeat": false,
+      "source": "Marnie.png",
+      "sha256": "3e134d56deb89f75362ce25fcda127602f9c0783de07f52b9ec23de5c1e3f0de"
+    },
+    {
+      "id": "metal-maker",
+      "name": "Metal Maker",
+      "image": "new-rules/cards/metal-maker.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Metal Maker.png",
+      "sha256": "fbc51f038e167f283bb45db889bd7f4da48054e00010f4bdcdd3a12418b8c751"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "name": "Miss Fortune Sisters",
+      "image": "new-rules/cards/miss-fortune-sisters.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Miss Fortune Sisters.png",
+      "sha256": "277db8bc9c7ae38e1ab34f30274444db1e0264c0089f097566e0934004e943bd"
+    },
+    {
+      "id": "mysterious-guidance",
+      "name": "Mysterious Guidance",
+      "image": "new-rules/cards/mysterious-guidance.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Mysterious Guidance.png",
+      "sha256": "2fb9b3c072e05c94db3a1bad3d7c6d526d406e366ef1aa839a84a6702dfd00ab"
+    },
+    {
+      "id": "mysterious-tail",
+      "name": "Mysterious Tail",
+      "image": "new-rules/cards/mysterious-tail.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Mysterious Tail.png",
+      "sha256": "43479d1e940344c9501b6081e0d435e23549cc5c908ea9d890c93eec807a8c65"
+    },
+    {
+      "id": "nest-stash",
+      "name": "Nest Stash",
+      "image": "new-rules/cards/nest-stash.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Nest Stash.png",
+      "sha256": "d461bc7b8d8c99598cbc432e157d0dc0e400bd39c2424b270d659f1ea78f054c"
+    },
+    {
+      "id": "parallel-city",
+      "name": "Parallel City",
+      "image": "new-rules/cards/parallel-city.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Parallel City.png",
+      "sha256": "83e3d20ed863596725ff197873bf78917658bef22487163283bb9eebbf3df11f"
+    },
+    {
+      "id": "path-to-the-peak",
+      "name": "Path to the Peak",
+      "image": "new-rules/cards/path-to-the-peak.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Path to the Peak.png",
+      "sha256": "3d12521f590e151cef42a6b3ebf90341e8fb0e465f4f2544030cef424e361762"
+    },
+    {
+      "id": "phantom-star",
+      "name": "Phantom Star",
+      "image": "new-rules/cards/phantom-star.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Phantom Star.png",
+      "sha256": "845ba6b5ee1c34f37ca2f0d216671af79403f229cde2635cf855063f54bfea38"
+    },
+    {
+      "id": "power-of-alchemy",
+      "name": "Power of Alchemy",
+      "image": "new-rules/cards/power-of-alchemy.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Power of Alchemy.png",
+      "sha256": "3d173dcf1c2078b4afc4bfb3af3e741b2db5b1ffbd9f48feab98828ba1544852"
+    },
+    {
+      "id": "premonition",
+      "name": "Premonition",
+      "image": "new-rules/cards/premonition.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Premonition.png",
+      "sha256": "6f94475cb21514cba52bd2c478c5b08e86111b33b04018b7b32291ecedc22c35"
+    },
+    {
+      "id": "primal-turbo",
+      "name": "Primal Turbo",
+      "image": "new-rules/cards/primal-turbo.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Primal Turbo.png",
+      "sha256": "198083932dd0230af12e5759fd3c7c16595345caf44064e8dbd28a11d4c9ab92"
+    },
+    {
+      "id": "primate-wisdom",
+      "name": "Primate Wisdom",
+      "image": "new-rules/cards/primate-wisdom.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Primate Wisdom.png",
+      "sha256": "eca15c416b037f1063a2571fd047edd5f70f9453f0036ca420a3ed252a097e0b"
+    },
+    {
+      "id": "psychic-embrace",
+      "name": "Psychic Embrace",
+      "image": "new-rules/cards/psychic-embrace.png",
+      "mode": "action",
+      "repeat": true,
+      "source": "Psychic Embrace.png",
+      "sha256": "fee0a7221144cecd259e440d6838d8aec7d39b3ce859cbc72cc6fe736ffca663"
+    },
+    {
+      "id": "queenly-majesty",
+      "name": "Queenly Majesty",
+      "image": "new-rules/cards/queenly-majesty.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Queenly Majesty.png",
+      "sha256": "d7eee3cef9d5c889f876b046b814badabc2f2e8b801d2cfab1be6d5997cbc9aa"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "name": "Quick Ripening Herb",
+      "image": "new-rules/cards/quick-ripening-herb.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Quick Ripening Herb.png",
+      "sha256": "69f9acc7e41610883595cbdf2d50d5907a7a6f7f93562cbc72afd03c770bd76f"
+    },
+    {
+      "id": "resolute-heart",
+      "name": "Resolute Heart",
+      "image": "new-rules/cards/resolute-heart.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Resolute Heart.png",
+      "sha256": "1e9c5ade9ccc0f9eeff3e9fbd700d5a63f8bf2c28c2c1ca4c8c422d2efd42653"
+    },
+    {
+      "id": "ripening-charge",
+      "name": "Ripening Charge",
+      "image": "new-rules/cards/ripening-charge.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Ripening Charge.png",
+      "sha256": "7ec7cfa0bf2fa25065221acd9fab4bf36cd2c69f815ff200d3dba5ed133a02f5"
+    },
+    {
+      "id": "run-away-draw",
+      "name": "Run Away Draw",
+      "image": "new-rules/cards/run-away-draw.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Run Away Draw.png",
+      "sha256": "a289890551428a9cd60fb9475afeafd069ebb94f0fb05148a8b915fd6a88e811"
+    },
+    {
+      "id": "scoop-up-block",
+      "name": "Scoop Up Block",
+      "image": "new-rules/cards/scoop-up-block.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Scoop Up Block.png",
+      "sha256": "2a920c688da0b63fcbf06263ed4a0ee79f4410b9baa3cc8d52deb70e919cc742"
+    },
+    {
+      "id": "search-the-premises",
+      "name": "Search the Premises",
+      "image": "new-rules/cards/search-the-premises.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Search the Premises.png",
+      "sha256": "0bacc1e77f842eae9f4135269ede42ac41f01ca23adf26e7a8f2a29ea1987422"
+    },
+    {
+      "id": "shadow-hunt",
+      "name": "Shadow Hunt",
+      "image": "new-rules/cards/shadow-hunt.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Shadow Hunt.png",
+      "sha256": "2f83619584ec1d8988a2597e59bfd1a2ac8fcdc975aa3fabd9dd64bd62c5ad40"
+    },
+    {
+      "id": "shady-dealings",
+      "name": "Shady Dealings",
+      "image": "new-rules/cards/shady-dealings.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Shady Dealings.png",
+      "sha256": "7aeda4cfd0fcbe61036d78d07e6d9a5ad307ba6c0969962cc745364bc293c728"
+    },
+    {
+      "id": "shining-arcana",
+      "name": "Shining Arcana",
+      "image": "new-rules/cards/shining-arcana.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Shining Arcana.png",
+      "sha256": "7c338ed34314bd4c8076fa71e34ec7b242428b359fd892d6b1e2a222255d67d7"
+    },
+    {
+      "id": "silent-lab",
+      "name": "Silent Lab",
+      "image": "new-rules/cards/silent-lab.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Silent Lab.png",
+      "sha256": "d6c26d08da5ec5395dfd1be7552aa0b3895cb5e890e30f6261ba6eb3d7732cad"
+    },
+    {
+      "id": "skyliner",
+      "name": "Skyliner",
+      "image": "new-rules/cards/skyliner.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Skyliner.png",
+      "sha256": "00756afb3c85cdbf234444ee0bf023a15f09981620ab39fe129570eb2aaf87fd"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "name": "Spiritborne Evolution",
+      "image": "new-rules/cards/spiritborne-evolution.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Spiritborne Evolution.png",
+      "sha256": "17295e3f7ee6dae718a386d5382d722fbd5b4ca868a45f14a262edaf90852366"
+    },
+    {
+      "id": "sprint",
+      "name": "Sprint",
+      "image": "new-rules/cards/sprint.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Sprint.png",
+      "sha256": "2f70277cc7dbb79decfabb692acfa362f714c6259ea851e439559f8b097da427"
+    },
+    {
+      "id": "star-abyss",
+      "name": "Star Abyss",
+      "image": "new-rules/cards/star-abyss.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Star Abyss.png",
+      "sha256": "bed15cc5c7c9a9c86a1bda840dc1e06dbb4e3499c9e81d8775229626a3db36f5"
+    },
+    {
+      "id": "star-perfume",
+      "name": "Star Perfume",
+      "image": "new-rules/cards/star-perfume.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Star Perfume.png",
+      "sha256": "c5525fca20ac2fa8f226cf3f8d966b3a896fda837d68776827e1702b077fbb6b"
+    },
+    {
+      "id": "strong-charge",
+      "name": "Strong Charge",
+      "image": "new-rules/cards/strong-charge.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Strong Charge.png",
+      "sha256": "10e484726fdfea097aa82cf6fad2b1d76e591dadbb317cbcce522e94ffad37ee"
+    },
+    {
+      "id": "tandem-unit",
+      "name": "Tandem Unit",
+      "image": "new-rules/cards/tandem-unit.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Tandem Unit.png",
+      "sha256": "d56c9ef1ba4c0e7dd87f8b9d624a3c5deb5df7416ac6d9443b528e357ce64041"
+    },
+    {
+      "id": "teal-dance",
+      "name": "Teal Dance",
+      "image": "new-rules/cards/teal-dance.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Teal Dance.png",
+      "sha256": "e5afa1f59d274f0e243d12aa15c20b50ec6dac808413edc088e29e9d95b19dd5"
+    },
+    {
+      "id": "thunder-mountain",
+      "name": "Thunder Mountain",
+      "image": "new-rules/cards/thunder-mountain.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Thunder Mountain.png",
+      "sha256": "8e33a6e4de21993054d5fa4426e5ee63b5df700cf57bf303d12c797905747858"
+    },
+    {
+      "id": "town-store",
+      "name": "Town Store",
+      "image": "new-rules/cards/town-store.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Town Store.png",
+      "sha256": "eacf8bdc74ea1b40c123953312f6e1e08d2c6bb584e9ec1abe9a7ac8f84ce956"
+    },
+    {
+      "id": "trade",
+      "name": "Trade",
+      "image": "new-rules/cards/trade.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Trade.png",
+      "sha256": "870c00c4957e0cef6c877e1a9c4cc18e1372bcf8b566af4a1954f48776316ae0"
+    },
+    {
+      "id": "treasure-hunt",
+      "name": "Treasure Hunt",
+      "image": "new-rules/cards/treasure-hunt.png",
+      "mode": "trigger",
+      "repeat": false,
+      "source": "Treasure Hunt.png",
+      "sha256": "33babbbf8d4b50d61aeb04b4517765308cc96eb35865b9e5c076ef67e5b254c7"
+    },
+    {
+      "id": "tri-howl",
+      "name": "Tri Howl",
+      "image": "new-rules/cards/tri-howl.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Tri Howl.png",
+      "sha256": "ba449cd61b08d585e3851c55c2cdae70ea1a867cc94f221d57e90fb4971d24e4"
+    },
+    {
+      "id": "tropical-beach",
+      "name": "Tropical Beach",
+      "image": "new-rules/cards/tropical-beach.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Tropical Beach.png",
+      "sha256": "fb6b750e52c4b02b57d9ed3aea696bb571dbb087fdef435c549db62a32444a76"
+    },
+    {
+      "id": "tyme",
+      "name": "Tyme",
+      "image": "new-rules/cards/tyme.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Tyme.png",
+      "sha256": "0783af1de4c25bfaeb36972dba289105450b0459fe7606de06b3f39b0cff387b"
+    },
+    {
+      "id": "underworld-door",
+      "name": "Underworld Door",
+      "image": "new-rules/cards/underworld-door.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Underworld Door.png",
+      "sha256": "0d0440c2737ccfa0ee5cf403ffce9ef64da89f3d31d1ba12821677a73b0ce655"
+    },
+    {
+      "id": "vanishing-wings",
+      "name": "Vanishing Wings",
+      "image": "new-rules/cards/vanishing-wings.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Vanishing Wings.png",
+      "sha256": "3c834bd5acf1657ec47150ddd2a8b2b975fc4f475bf640b98e716a461c5d0f70"
+    },
+    {
+      "id": "vessel-of-life",
+      "name": "Vessel of Life",
+      "image": "new-rules/cards/vessel-of-life.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Vessel of Life.png",
+      "sha256": "55faecbc7df42b7a514a393766c1a5adedd1ab080f8f2d463b1742091a3f7679"
+    },
+    {
+      "id": "welder",
+      "name": "Welder",
+      "image": "new-rules/cards/welder.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "Welder.png",
+      "sha256": "08b6f55a383d68dcb0d8ad4c9ecd77c073605a2d36a7c230731d431693c159df"
+    },
+    {
+      "id": "wonder-kiss",
+      "name": "Wonder Kiss",
+      "image": "new-rules/cards/wonder-kiss.png",
+      "mode": "passive",
+      "repeat": false,
+      "source": "Wonder Kiss.png",
+      "sha256": "c0afc35327dd3b22e095cb59e8a12315bb0f5f278f85ff7ddbbfff34afedca1d"
+    },
+    {
+      "id": "conversion-star",
+      "name": "Conversion Star",
+      "image": "new-rules/cards/conversion-star.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "conversion star.png",
+      "sha256": "c9ae0771cf725322d3830747e72d292911fd7b98b1897b21aaa48d7d8ad4a6ef"
+    },
+    {
+      "id": "pokestop",
+      "name": "PokéStop",
+      "image": "new-rules/cards/pokestop.png",
+      "mode": "action",
+      "repeat": false,
+      "source": "pokestop.png",
+      "sha256": "c70233a00c7a49389ec5ec4280e6300cf2e90f29ca089e9d870e5407bd89ef3b"
+    }
+  ],
+  "source": "User-provided New Rule card images"
+}

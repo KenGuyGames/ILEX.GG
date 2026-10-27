@@ -1,11 +1,11 @@
 /* Menu navigation is presentation-only and never changes saved game state. */
 var IlexMenuGroups=(()=>{
  const nav=document.querySelector('#mainmenu nav'),divider=document.querySelector('#mainmenu>.menu-divider');
- const groups={arena:['play','pocket','cubes','online'],vault:['decks','library','formats','custom','packs']};
+ const groups={arena:['play','cubes','online'],vault:['decks','library','formats','custom','packs']};
  let current='home';
  const labels={arena:'Enter the Arena',vault:'Enter the Vault'};
- const optionLabels={story:'Campaign',play:'Play',pocket:'Pocket',cubes:'Cube Draft',online:'Private Multiplayer',decks:'Deck Builder',library:'Card Gallery',formats:'Formats',custom:'Custom Cards',packs:'Pack Opening'};
- const optionBalls={story:'friend',play:'level',pocket:'fast',cubes:'lure',online:'friend',decks:'moon',library:'heavy',formats:'sport',custom:'strange',packs:'love'};
+ const optionLabels={story:'Campaign',play:'Play',cubes:'Cube Draft',online:'Private Multiplayer',decks:'Deck Builder',library:'Card Gallery',formats:'Formats',custom:'Custom Cards',packs:'Pack Opening'};
+ const optionBalls={story:'friend',play:'level',cubes:'lure',online:'friend',decks:'moon',library:'heavy',formats:'sport',custom:'strange',packs:'love'};
  function ballImage(type,classes){return '<img class="'+classes+'" data-ball="'+type+'" src="v2-assets/balls/'+type+'.png" alt="" aria-hidden="true" decoding="async">';}
  function apricornIcon(type){return ballImage(type,'apricorn-ball official-ball');}
  const ballIcons={arena:ballImage('ultra','menu-ball ultra-ball official-ball'),vault:ballImage('master','menu-ball master-ball official-ball')};

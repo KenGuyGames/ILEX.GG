@@ -1,8 +1,0 @@
-from pathlib import Path
-p=Path('work/pocket-candidate/ui/pocket-engine.js');s=p.read_text(encoding='utf-8').replace("if(bench&&tool(target).benchProtection)return;", "if(bench&&tool(target).benchProtection&&!slots(s.players[player]).includes(target))return;")
-s=s.replace("else if(op.kind==='benchDamage'){for(const t of [...o.bench])attackDamage(s,p.id,l,t,op.amount,{bench:true});}", "else if(op.kind==='benchDamage'){for(const t of [...(op.self?p:o).bench])if(!op.wounded||t.damage>0)attackDamage(s,p.id,l,t,op.amount,{bench:true});}")
-s=s.replace("case 'extraEnergy':{const paid=pay(l.energy,op.cost);yes=paid&&l.energy.filter((t,i)=>t===op.type&&!paid.includes(i)).length>=op.count;break;}", "case 'extraEnergy':{const remaining=[...l.energy];let reserved=0;for(let i=0;i<op.count;i++){const at=remaining.indexOf(op.type);if(at<0)break;remaining.splice(at,1);reserved++;}yes=reserved===op.count&&!!pay(remaining,op.cost);break;}")
-s=s.replace("const owner=op.opponent?o:p,target=op.opponent?o.active:l;if(target?.tool)","const owner=op.opponent?o:p,target=op.opponent?o.active:l;if(op.opponent&&op.sourceKind==='attack'&&effectsBlocked(target))return;if(target?.tool)")
-s=s.replace("const sides=op.side==='opponent'?", "if(op.side==='opponent'&&op.sourceKind==='attack'&&op.next.some(x=>x.kind==='switch')&&effectsBlocked(o.active))return;\n    const sides=op.side==='opponent'?")
-s=s.replace("if((source.conditions.includes('Confused')||source.effects.some(e=>e.kind==='coinAttack'))&&!coin(s,p.id))", "if(source.conditions.includes('Confused')&&!coin(s,p.id)||source.effects.some(e=>e.kind==='coinAttack')&&!coin(s,p.id))")
-p.write_text(s,encoding='utf-8')

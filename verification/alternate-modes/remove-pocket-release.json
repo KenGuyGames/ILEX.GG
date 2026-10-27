@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "feature": "Regular TCG only; discontinued mode removed from menus, catalogs, scans, packs, engines, shared hooks, About and active documentation. Legacy retired workspace is removed on startup/import/save.",
+  "checks": {
+    "desktop": 33,
+    "mobile": 33,
+    "native": 25,
+    "android": 44
+  },
+  "catalog": {
+    "dedicatedPrintings": 4317,
+    "generalPrintingsRemoved": 2480,
+    "generalSetsRemoved": 15,
+    "regularPrintingsRetained": 21381,
+    "regularSetsRetained": 208,
+    "regularScanRecordsRetained": 21380,
+    "externalScanFilesRemoved": 2480,
+    "removedUiFiles": 4363,
+    "regularEngineUnchanged": true
+  },
+  "paperParity": {
+    "passed": true,
+    "regularPrintingsPreserved": 21381,
+    "regularScanRecordsPreserved": 21380,
+    "regularPackProfilesUnchanged": 129,
+    "generatedRegularPacks": 387,
+    "regularRulesSha256": "61bc06c62c3fdcaaa07950a3b72667d4a035c304f741e8ff5e9900594d1689d0"
+  },
+  "productFilesRemoved": 6942,
+  "apkUiFilesRemoved": 4363,
+  "androidVersion": 104,
+  "savedData": "Only retired workspace/cards/pulls removed; regular cards/decks/matches/Campaign retained. No real user profile opened by the agent.",
+  "physicalAndroidTested": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "bytes": 629742089,
+      "sha256": "a7ceab97a4be289cd7a14ff2b27bd836fef909a7d5f89dd157b9f00e53991412",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "bytes": 3096756152,
+      "sha256": "86d4b46b5ca04f7a2eebf70f2b73e70528c04e4342a7ff1bb4f218d04c545680",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "6068375cf0cc3306ce936c0dfa5a94828145b246ab095ba00fe5d68588462f97",
+  "nativeCatalog": {
+    "passed": true,
+    "catalogCards": 21381,
+    "removedEntries": 2480,
+    "unchangedExecutableSha256": "6048d7d4ae3f59ad4a59d523b7d9126fd8681d76d70a97d9674a8e74d13386ad",
+    "catalogSha256": "2756e01dde528813fdc66aeff9bd90f0bf9582b1d9fbc9210ccebb1283b6d6c3",
+    "gameRulesAndImportedDecksUnchanged": true,
+    "physicalDeviceTested": false,
+    "packages": [
+      {
+        "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-New3DS-Playable-Alpha.zip",
+        "bytes": 407858506,
+        "sha256": "9b8f0f871e2eacac6a9bb6c47930b0cbe0deaaf9c653eb48eef46476b9d024a2"
+      },
+      {
+        "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-New3DS-CIA-SD.zip",
+        "bytes": 408520422,
+        "sha256": "d944a06971b46683252a59987dfb6697bc573bca725b44f965b66ae7de20aeec"
+      },
+      {
+        "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-New3DS-Alpha5-Update.zip",
+        "bytes": 1513237,
+        "sha256": "2b8abe901fcc90a095819b1beddb77b0740bbdb805fe293cb4c2fdcaaaeaf8e3"
+      }
+    ],
+    "catalogUpdate": {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-New3DS-Regular-TCG-Catalog-Update.zip",
+      "bytes": 224411,
+      "sha256": "fbb781c3aacf38cc3fde09e22a0460afe7713b1c7db608746423efe1c747bc50"
+    },
+    "cryMetadata": {
+      "removedKeys": [
+        "pocket-a2b-013",
+        "pocket-b2a-058",
+        "pocket-b2b-014",
+        "pocket-b3-036"
+      ],
+      "regularIdentityMappingsUnchanged": true,
+      "engineBotAndControllerUnchanged": true
+    },
+    "quickjsIdentity": {
+      "passed": true,
+      "regularCryAndReadOnlyView": true,
+      "retiredIdentitiesRemoved": true,
+      "quickjs32": true
+    },
+    "nativeCAndRulesUnchanged": true
+  },
+  "apkDelta": {
+    "passed": true,
+    "changedUiFiles": [
+      "assets/ui/app.js",
+      "assets/ui/audio.js",
+      "assets/ui/cards.json",
+      "assets/ui/cries/forms.json",
+      "assets/ui/index.html",
+      "assets/ui/menu-groups.js",
+      "assets/ui/menu-plaques.css",
+      "assets/ui/mobile.js",
+      "assets/ui/packs.js",
+      "assets/ui/presentation.js",
+      "assets/ui/scan-audit.json",
+      "assets/ui/scan-manifest.json",
+      "assets/ui/sets.json",
+      "assets/ui/v2-assets/arena-options/sources.json",
+      "assets/ui/v2.css",
+      "assets/ui/v2.js"
+    ],
+    "removedUiFiles": 4363,
+    "allOtherApkUiBytesUnchanged": true,
+    "androidCode": 104,
+    "originalCertificateVerified": true
+  },
+  "cryMappings": {
+    "removedPrintingOverrides": [
+      "pocket-a2b-013",
+      "pocket-b2a-058",
+      "pocket-b2b-014",
+      "pocket-b3-036"
+    ],
+    "regularMappingUnchanged": true,
+    "sharedCryAudioUnchanged": true
+  },
+  "finalAuditPassed": true,
+  "catalogTests": 4
+}

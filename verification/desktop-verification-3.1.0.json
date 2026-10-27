@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "3.1.0",
+  "electron": "44.9.3",
+  "sourceBuild": "current alternate-mode Android110/Windows snapshot, republished as3.1.0",
+  "unchangedGameFilesVerified": 35693,
+  "productChanges": [
+    "package.json version3.1.0",
+    "EXE product/file version3.1.0",
+    "README/start guide"
+  ],
+  "engineSha256": "44ddf4a88877ec76943cba5c6b10a70534a1686bdd03f88843111dc923bbfdd2",
+  "zipCrc": "pass",
+  "sha256": "a999c55ec8a3745f55f23f394e4b1dfe53ad32d021f9eea57f1d2b4dd936a5bf",
+  "bytes": 721080358
+}

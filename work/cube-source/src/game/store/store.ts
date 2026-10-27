@@ -177,7 +177,13 @@ export class Store implements StoreLike {
     return state;
   }
 
-  public reduceEffect(state: State,effect:Effect):State { return withCubeRules(state,()=>this.cubeReduceEffect(state,effect)); }
+  public reduceEffect(state: State,effect:Effect):State { return withCubeRules(state,()=>{
+    const nr=(state as any).newRules&&(globalThis as any).IlexNewRules,token=nr?.before(this,state,effect);
+    const kg=(state as any).kenGuy&&(globalThis as any).IlexKenGuy,kt=kg?.beforeEffect(this,state,effect);
+    if(token?.skip)return state;
+    const result=this.cubeReduceEffect(state,effect);
+    nr?.after(this,result,effect,token);kg?.afterEffect(this,result,effect,kt);return result;
+  }); }
   private cubeReduceEffect(state: State,effect:Effect):State { cubePrintedPowerConditions(state,effect);if(cubeEvolutionTrainer(this,state,effect))return state;
     if(effect instanceof AttackEffect && effect.attack.shredAttack)(effect as any).wotcBypassDefender=true;
     outgoingBeforeHit(this,state,effect);

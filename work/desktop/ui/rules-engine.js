@@ -3012,6 +3012,12 @@ var TCGRules = (() => {
   }
   function ecogymDestination(source, destination, card) {
     const context = CardList.wotcMovementContext;
+    const nr = globalThis.IlexNewRules;
+    if (context?.state?.newRules) {
+      if (!nr.moveAllowed(context.state, source, destination)) return source;
+      const next = nr.destination(source, destination, card, context);
+      if (next !== destination) return next;
+    }
     if (context?.svMovementBlocked?.(source, destination, card, context)) return source;
     if (context?.swshMovementBlocked?.(source, destination, card, context)) return source;
     if (context?.state && card._ilexToolOwnerId !== void 0 && "energies" in source && destination !== source) {
@@ -3108,6 +3114,7 @@ var TCGRules = (() => {
           }
         }
         moveTo(destination, count) {
+          if (this._kenHand) globalThis.IlexKenGuy?.discardAttempt(this, destination, count === void 0 ? this.cards : this.cards.slice(0, count));
           if (count === void 0) {
             count = this.cards.length;
           }
@@ -3121,6 +3128,7 @@ var TCGRules = (() => {
           destination.cards.push(...cards);
         }
         moveCardsTo(cards, destination) {
+          if (this._kenHand) globalThis.IlexKenGuy?.discardAttempt(this, destination, cards);
           for (let i = 0; i < cards.length; i++) {
             const actualDestination = ecogymDestination(this, destination, cards[i]);
             let index = this.cards.indexOf(cards[i]);
@@ -9993,6 +10001,7 @@ var TCGRules = (() => {
     return store.reduceEffect(state, new MoveCardsEffect(source, destination, options));
   }
   function MOVE_POKEMON_OFF_BOARD(store, state, slot, options) {
+    if (state.newRules && globalThis.IlexNewRules?.moveAllowed(state, slot, options.pokemonDestination) === false) return state;
     const context = CardList.wotcMovementContext;
     if (context?.svMovementBlocked?.(slot, options.pokemonDestination, slot.getPokemonCard(), { ...context, store, state, wholePokemon: true })) return state;
     CardList.wotcMovementContext = { ...context, wholePokemon: true };
@@ -10762,6 +10771,8 @@ var TCGRules = (() => {
     }
   }
   function IS_ABILITY_BLOCKED(store, state, player, card, power) {
+    if (state.newRules && globalThis.IlexNewRules?.blocked(state, player, card, power)) return true;
+    if (state.kenGuy && globalThis.IlexKenGuy?.abilityBlocked(state, player, card, power)) return true;
     let probes = abilityProbeStack.get(store);
     if (!probes) {
       probes = /* @__PURE__ */ new Set();
@@ -18752,13 +18763,20 @@ var TCGRules = (() => {
     store.log(state, "LOG_TURN" /* LOG_TURN */, { turn: state.turn });
     player.movedToActiveThisTurn = [];
     player.movedFromActiveToBenchThisTurn = [];
+    const newRules = globalThis.IlexNewRules;
+    if (state.newRules && newRules) return newRules.beforeTurn(store, state, () => continueNewTurn(store, state));
+    return continueNewTurn(store, state);
+  }
+  function continueNewTurn(store, state) {
+    const player = getActivePlayer(state);
+    if (state.kenGuy) globalThis.IlexKenGuy.beginTurn(state, player);
     if (state.turn === 1 && !state.rules.firstTurnDrawCard) {
       state.phase = 2 /* PLAYER_TURN */;
       return state;
     }
     state.phase = 8 /* DRAW */;
     store.log(state, "LOG_PLAYER_DRAWS_CARD" /* LOG_PLAYER_DRAWS_CARD */, { name: player.name });
-    if (player.deck.cards.length === 0) {
+    if (player.deck.cards.length === 0 && !state.kenGuy) {
       store.log(state, "LOG_PLAYER_NO_CARDS_IN_DECK" /* LOG_PLAYER_NO_CARDS_IN_DECK */, { name: player.name });
       const winner = state.activePlayer ? 0 /* PLAYER_1 */ : 1 /* PLAYER_2 */;
       state = endGame(store, state, winner);
@@ -18783,8 +18801,27 @@ var TCGRules = (() => {
         }
       );
     }
+    const kg = state.kenGuy;
+    if (kg && drawCardForTurn.preventDefault) {
+      state.phase = 2 /* PLAYER_TURN */;
+      return state;
+    }
+    if (kg && kg.actionIndex >= kg.emptyDrawPrizeFromAction && drawCardForTurn.drawCount > 0 && player.deck.cards.length === 0) {
+      const finish = () => {
+        if (state.phase !== 7 /* FINISHED */) state.phase = 2 /* PLAYER_TURN */;
+      };
+      if (store.hasPrompts()) return store.waitPrompt(state, () => {
+        if (player.deck.cards.length === 0) globalThis.IlexKenGuy.emptyOpeningDraw(store, state, player, finish);
+        else finishTurnDraw(store, state, player, drawCardForTurn.drawCount);
+      });
+      globalThis.IlexKenGuy.emptyOpeningDraw(store, state, player, finish);
+      return state;
+    }
+    return finishTurnDraw(store, state, player, drawCardForTurn.drawCount);
+  }
+  function finishTurnDraw(store, state, player, drawCount) {
     const handStartLength = player.hand.cards.length;
-    state = MOVE_CARDS(store, state, player.deck, player.hand, { count: drawCardForTurn.drawCount });
+    state = MOVE_CARDS(store, state, player.deck, player.hand, { count: drawCount });
     const drawnCount = player.hand.cards.length - handStartLength;
     for (let i = 0; i < drawnCount; i++) {
       const drawnCard = player.hand.cards[handStartLength + i];
@@ -18811,6 +18848,12 @@ var TCGRules = (() => {
   }
   function startNextTurn(store, state) {
     const player = state.players[state.activePlayer];
+    const kg = state.kenGuy;
+    if (kg) globalThis.IlexKenGuy.turnEnded(state, player);
+    if (kg && kg.lastCompletedTurn !== state.turn) {
+      kg.completedTurns[player.id] = (kg.completedTurns[player.id] || 0) + 1;
+      kg.lastCompletedTurn = state.turn;
+    }
     store.log(state, "LOG_PLAYER_ENDS_TURN" /* LOG_PLAYER_ENDS_TURN */, { name: player.name });
     player.active.removeSpecialCondition(0 /* PARALYZED */);
     for (const card of player.supporter.cards.slice()) if (card._dpReturnSupporter) player.supporter.moveCardTo(card, player.hand);
@@ -19714,6 +19757,31 @@ var TCGRules = (() => {
     return initNextTurn(store, state);
   }
   function* alternativeSetupSinglePlayer(player, chooseCardsOptions, state, store, next) {
+    if (state.kenGuy) {
+      const prizePrompt = new ChooseCardsPrompt(player, GameMessage.CHOOSE_PRIZES_SETUP, player.hand, {}, { min: 6, max: 6, allowCancel: false });
+      prizePrompt.options.kenGuyPrizes = true;
+      const valid = prizePrompt.validate.bind(prizePrompt);
+      prizePrompt.validate = (cards) => valid(cards) && Array.isArray(cards) && player.hand.cards.some((c) => !cards.includes(c) && isStartingPokemonCandidate(state, c));
+      yield store.prompt(state, prizePrompt, (cards) => {
+        for (let i = 0; i < 6; i++) {
+          player.hand.moveCardTo(cards[i], player.prizes[i]);
+          player.prizes[i].isSecret = true;
+          player.prizes[i].faceUpPrize = false;
+        }
+        next();
+      });
+      const blocked2 = player.hand.cards.map((c, i) => isStartingPokemonCandidate(state, c) ? -1 : i).filter((i) => i >= 0);
+      yield store.prompt(state, new ChooseCardsPrompt(player, GameMessage.CHOOSE_STARTING_POKEMONS, player.hand, {}, { ...chooseCardsOptions, blocked: blocked2, startingActiveFirst: true }), (cards) => {
+        player.hand.moveCardTo(cards[0], player.active);
+        player.active.isSecret = true;
+        for (let i = 1; i < cards.length; i++) {
+          player.hand.moveCardTo(cards[i], player.bench[i - 1]);
+          player.bench[i - 1].isSecret = true;
+        }
+        next();
+      });
+      return;
+    }
     const blocked = [];
     player.hand.cards.forEach((c, index) => {
       if (!isStartingPokemonCandidate(state, c)) {
@@ -20267,7 +20335,9 @@ var TCGRules = (() => {
       resize(0);
       return state;
     }
-    state.players.forEach((player, index) => {
+    const orderedPlayers = policy?.benchResizeOrder?.map((id) => state.players.find((p) => p.id === id)).filter(Boolean) || state.players;
+    orderedPlayers.forEach((player) => {
+      const index = state.players.indexOf(player);
       const benchSize = benchSizes[index];
       while (player.bench.length < benchSize) {
         const bench = new PokemonCardList();
@@ -20406,7 +20476,9 @@ var TCGRules = (() => {
     }
     return prompts;
   }
-  function endGame(store, state, winner) {
+  function endGame(store, state, winner, reason) {
+    if (state.kenGuy && reason === "card-win" && [0 /* PLAYER_1 */, 1 /* PLAYER_2 */].includes(winner)) state.kenGuy.cardWin = { winner, turn: state.turn };
+    if (state.kenGuy && ![1 /* SETUP */, 0 /* WAITING_FOR_PLAYERS */].includes(state.phase) && !globalThis.IlexKenGuy?.victoryAllowed(state, winner)) return state;
     if (state.players.length !== 2) {
       return state;
     }
@@ -26137,7 +26209,8 @@ var TCGRules = (() => {
       coin.skipReflipTool = true;
       return store.reduceEffect(state, coin);
     }
-    const damage = Math.max(0, effect.damage);
+    const proposedDamage = Math.max(0, effect.damage);
+    const damage = state.newRules ? globalThis.IlexNewRules?.finalDamage(store, state, effect, proposedDamage) ?? proposedDamage : proposedDamage;
     target.damage += damage;
     if (damage > 0) target.marker.removeMarker("WOTC_SHADOW_IMAGES");
     if (damage > 0) {
@@ -26314,7 +26387,8 @@ var TCGRules = (() => {
     }
     if (effect instanceof AfterWeaknessAndResistanceEffect) {
       const target = effect.target;
-      const damage = Math.max(0, effect.damage);
+      const proposed = Math.max(0, effect.damage);
+      const damage = state.newRules ? globalThis.IlexNewRules?.finalDamage(store, state, effect, proposed) ?? proposed : proposed;
       target.damage += damage;
       if (damage > 0 && effect.attackEffect && effect.source) {
         GameStatsTracker.trackDamageDealt(effect.player, effect.source, damage);
@@ -26383,7 +26457,8 @@ var TCGRules = (() => {
         state = store.reduceEffect(state, applyWeakness);
         effect.damage = applyWeakness.damage;
       }
-      const damage = Math.max(0, effect.damage);
+      const proposed = Math.max(0, effect.damage);
+      const damage = state.newRules ? globalThis.IlexNewRules?.finalDamage(store, state, effect, proposed) ?? proposed : proposed;
       target.damage += damage;
       const targetOwner = StateUtils.findOwner(state, target);
       targetOwner.marker.addMarkerToState(effect.player.DAMAGE_DEALT_MARKER);
@@ -26449,7 +26524,8 @@ var TCGRules = (() => {
       if (targetCard2 === void 0) {
         throw new GameError(GameMessage.ILLEGAL_ACTION);
       }
-      const damage = Math.max(0, effect.damage);
+      const proposed = Math.max(0, effect.damage);
+      const damage = state.newRules ? globalThis.IlexNewRules?.finalDamage(store, state, effect, proposed) ?? proposed : proposed;
       target.damage += damage;
       if (state.rules.exEraRules && damage > 0) delete target._exLethalAttackDamage;
       if (damage > 0) {
@@ -26683,6 +26759,10 @@ var TCGRules = (() => {
         if (handCard === void 0) {
           throw new GameError(GameMessage.UNKNOWN_CARD);
         }
+        const nr = globalThis.IlexNewRules;
+        if (state.newRules && nr?.preventsStadium(state, player, handCard)) throw new Error("Barrier Shrine prevents playing Stadium cards");
+        const ken = globalThis.IlexKenGuy;
+        if (state.kenGuy && ken?.correctedInteractions(state) && handCard.superType === 2 /* TRAINER */ && ken.activePenalty(state, player.id, "no-trainers")) throw new Error("High 5 penalty: no Trainer cards this turn");
         if (handCard instanceof EnergyCard) {
           const target = findPokemonTarget(state, player, action.target);
           if (!(target instanceof PokemonCardList) || target.cards.length === 0) {
@@ -27949,6 +28029,7 @@ var TCGRules = (() => {
 
   // work/cube-source/src/game/store/reducers/concede-reducer.ts
   function concedeReducer(store, state, action) {
+    if (state.kenGuy) throw new Error("Conceding is disabled in Ken Guy Rules");
     if (state.phase === 7 /* FINISHED */) {
       return state;
     }
@@ -28577,7 +28658,15 @@ var TCGRules = (() => {
           return state;
         }
         reduceEffect(state, effect) {
-          return withCubeRules(state, () => this.cubeReduceEffect(state, effect));
+          return withCubeRules(state, () => {
+            const nr = state.newRules && globalThis.IlexNewRules, token = nr?.before(this, state, effect);
+            const kg = state.kenGuy && globalThis.IlexKenGuy, kt = kg?.beforeEffect(this, state, effect);
+            if (token?.skip) return state;
+            const result = this.cubeReduceEffect(state, effect);
+            nr?.after(this, result, effect, token);
+            kg?.afterEffect(this, result, effect, kt);
+            return result;
+          });
         }
         cubeReduceEffect(state, effect) {
           cubePrintedPowerConditions(state, effect);
@@ -29424,6 +29513,7 @@ var TCGRules = (() => {
     ConcedeAction: () => ConcedeAction,
     ConfirmCardsPrompt: () => ConfirmCardsPrompt,
     ConfirmPrompt: () => ConfirmPrompt,
+    DEVOLVE_POKEMON: () => DEVOLVE_POKEMON,
     DeckAnalyser: () => DeckAnalyser,
     DiscardEnergyPrompt: () => DiscardEnergyPrompt,
     DiscardEnergyPromptType: () => DiscardEnergyPromptType,
@@ -29432,6 +29522,7 @@ var TCGRules = (() => {
     Energy: () => Energy,
     EnergyCard: () => EnergyCard,
     EnergyType: () => EnergyType,
+    EvolveEffect: () => EvolveEffect,
     Format: () => Format,
     GameCardMessage: () => GameCardMessage,
     GameCoreError: () => GameCoreError,
@@ -29445,9 +29536,12 @@ var TCGRules = (() => {
     GustOpponentBenchEffect: () => GustOpponentBenchEffect,
     HealEffect: () => HealEffect,
     HealTargetEffect: () => HealTargetEffect,
+    IS_TOOL_BLOCKED: () => IS_TOOL_BLOCKED,
     InvitePlayerAction: () => InvitePlayerAction,
     InvitePlayerPrompt: () => InvitePlayerPrompt,
     KnockOutEffect: () => KnockOutEffect,
+    MOVE_CARDS: () => MOVE_CARDS,
+    MOVE_POKEMON_OFF_BOARD: () => MOVE_POKEMON_OFF_BOARD,
     MoveCardsEffect: () => MoveCardsEffect,
     MoveDamagePrompt: () => MoveDamagePrompt,
     MoveDamagePromptType: () => MoveDamagePromptType,
@@ -29458,6 +29552,7 @@ var TCGRules = (() => {
     OrderCardsPrompt: () => OrderCardsPrompt,
     OrderCardsPromptType: () => OrderCardsPromptType,
     PassTurnAction: () => PassTurnAction,
+    PlaceDamageCountersEffect: () => PlaceDamageCountersEffect,
     PlayCardAction: () => PlayCardAction,
     PlayPokemonEffect: () => PlayPokemonEffect,
     Player: () => Player3,
@@ -29497,6 +29592,7 @@ var TCGRules = (() => {
     Store: () => Store,
     SuperType: () => SuperType,
     SwitchOutOpponentsActiveEffect: () => SwitchOutOpponentsActiveEffect,
+    TAKE_X_PRIZES: () => TAKE_X_PRIZES,
     ToolEffect: () => ToolEffect,
     TrainerCard: () => TrainerCard,
     TrainerEffect: () => TrainerEffect,
@@ -29506,12 +29602,14 @@ var TCGRules = (() => {
     UseStadiumAction: () => UseStadiumAction,
     UseTrainerAbilityAction: () => UseTrainerAbilityAction,
     WaitPrompt: () => WaitPrompt,
+    checkState: () => checkState,
     chooseCardsSelectionValid: () => chooseCardsSelectionValid,
     coerceGameSettings: () => coerceGameSettings,
     cubeBasePrizes: () => cubeBasePrizes,
     cubeEvolution: () => cubeEvolution,
     currentCubeRules: () => currentCubeRules,
     ecogymDestination: () => ecogymDestination,
+    endGame: () => endGame,
     getOverriddenCanPlay: () => getOverriddenCanPlay,
     getOverriddenReduceEffect: () => getOverriddenReduceEffect,
     getPokemonCardTypes: () => getPokemonCardTypes,
@@ -29526,6 +29624,7 @@ var TCGRules = (() => {
     recordDpEnergyDiscard: () => recordDpEnergyDiscard,
     restoreTemporaryStage: () => restoreTemporaryStage,
     sets: () => sets_exports,
+    smToolCapacity: () => smToolCapacity,
     withCubeRules: () => withCubeRules
   });
 
@@ -99945,7 +100044,7 @@ Move 1 Energy card attached to the Defending Pok\xE9mon to another of your oppon
         if (opponent.lostzone.cards.filter((c) => c instanceof PokemonCard).length < 6) {
           throw new GameError(GameMessage.CANNOT_USE_STADIUM);
         }
-        state = endGame(store, state, winner);
+        state = endGame(store, state, winner, "card-win");
       }
       return state;
     }
@@ -205285,7 +205384,7 @@ Search your deck for up to 2 cards and put them into your hand. Shuffle your dec
         const prizesLeft = player.prizes.filter((p) => p.cards.length > 0).length;
         if (prizesLeft === 1) {
           const winner = state.players.indexOf(player) === 0 ? 0 /* PLAYER_1 */ : 1 /* PLAYER_2 */;
-          state = endGame(store, state, winner);
+          state = endGame(store, state, winner, "card-win");
           return state;
         }
       }
@@ -301943,7 +302042,7 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
           throw new GameError(GameMessage.CANNOT_USE_POWER);
         }
         const winner = state.players.indexOf(player) === 0 ? 0 /* PLAYER_1 */ : 1 /* PLAYER_2 */;
-        state = endGame(store, state, winner);
+        state = endGame(store, state, winner, "card-win");
       }
       return state;
     }
@@ -301991,10 +302090,10 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
         }
         const owner = state.activePlayer;
         if (owner === 0) {
-          state = endGame(store, state, 0 /* PLAYER_1 */);
+          state = endGame(store, state, 0 /* PLAYER_1 */, "card-win");
         }
         if (owner === 1) {
-          state = endGame(store, state, 1 /* PLAYER_2 */);
+          state = endGame(store, state, 1 /* PLAYER_2 */, "card-win");
         }
         return state;
       }
@@ -302052,7 +302151,7 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
         }
         ABILITY_USED(player, this);
         const winner = state.players.indexOf(player) === 0 ? 0 /* PLAYER_1 */ : 1 /* PLAYER_2 */;
-        state = endGame(store, state, winner);
+        state = endGame(store, state, winner, "card-win");
       }
       return state;
     }
@@ -302101,10 +302200,10 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
         }
         if (totalDamage >= 660) {
           if (owner === 0) {
-            state = endGame(store, state, 0 /* PLAYER_1 */);
+            state = endGame(store, state, 0 /* PLAYER_1 */, "card-win");
           }
           if (owner === 1) {
-            state = endGame(store, state, 1 /* PLAYER_2 */);
+            state = endGame(store, state, 1 /* PLAYER_2 */, "card-win");
           }
         }
         return state;
@@ -302149,10 +302248,10 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
         }
         if (player.hand.cards.length >= 35) {
           if (owner === 0) {
-            state = endGame(store, state, 0 /* PLAYER_1 */);
+            state = endGame(store, state, 0 /* PLAYER_1 */, "card-win");
           }
           if (owner === 1) {
-            state = endGame(store, state, 1 /* PLAYER_2 */);
+            state = endGame(store, state, 1 /* PLAYER_2 */, "card-win");
           }
         }
         return state;
@@ -405697,6 +405796,7 @@ This card can't be affected by any Special Conditions, and it can't retreat.`,
         MOVE_CARDS(store, state, player.discard, target, { cards: [transfer.card], sourceCard: self });
       }
       const handCards = player.hand.cards.slice();
+      if (handCards.length === 0 && state.kenGuy && globalThis.IlexKenGuy?.correctedInteractions(state)) MOVE_CARDS(store, state, player.hand, player.discard, { cards: [], sourceCard: self });
       handCards.forEach((c) => MOVE_CARDS(store, state, player.hand, player.discard, { cards: [c], sourceCard: self }));
     }
     MOVE_CARDS(store, state, player.supporter, player.discard, { cards: [self], sourceCard: self });
@@ -457217,10 +457317,10 @@ If this card is attached to a Pok\xE9mon V or a Pok\xE9mon-GX, it provides [C] E
         const owner = state.activePlayer;
         if (player.getPrizeLeft() === 1) {
           if (owner === 0) {
-            state = endGame(store, state, 0 /* PLAYER_1 */);
+            state = endGame(store, state, 0 /* PLAYER_1 */, "card-win");
           }
           if (owner === 1) {
-            state = endGame(store, state, 1 /* PLAYER_2 */);
+            state = endGame(store, state, 1 /* PLAYER_2 */, "card-win");
           }
         }
       }
@@ -535416,10 +535516,10 @@ Search your deck for a Supporter card, reveal it, and put it into your hand. The
         const owner = state.activePlayer;
         if (player.getPrizeLeft() === 1) {
           if (owner === 0) {
-            state = endGame(store, state, 0 /* PLAYER_1 */);
+            state = endGame(store, state, 0 /* PLAYER_1 */, "card-win");
           }
           if (owner === 1) {
-            state = endGame(store, state, 1 /* PLAYER_2 */);
+            state = endGame(store, state, 1 /* PLAYER_2 */, "card-win");
           }
         }
       }
@@ -603828,5 +603928,9 @@ Attacks used by the [L] Pok\xE9mon this card is attached to do 20 more damage to
   init_game_effects();
   init_game_phase_effects();
   init_tcg_lab_cube();
+  init_check_effect();
+  init_game_effects();
+  init_prefabs();
+  init_tcg_lab_sm_environment();
   return __toCommonJS(tcg_lab_entry_exports);
 })();

@@ -54,10 +54,10 @@ export class Unown2 extends PokemonCard {
 
       const owner = state.activePlayer;
       if (owner === 0) {
-        state = endGame(store, state, GameWinner.PLAYER_1);
+        state = endGame(store, state, GameWinner.PLAYER_1, 'card-win');
       }
       if (owner === 1) {
-        state = endGame(store, state, GameWinner.PLAYER_2);
+        state = endGame(store, state, GameWinner.PLAYER_2, 'card-win');
       }
 
       return state;

@@ -14,7 +14,7 @@ import { PokemonCardList } from '../state/pokemon-card-list';
 import { State, GamePhase } from '../state/state';
 import { StoreLike } from '../store-like';
 import { TrainerCard } from '../card/trainer-card';
-import { TrainerType, CardTag } from '../card/card-types';
+import { TrainerType, CardTag, SuperType } from '../card/card-types';
 import { assembleDualStadiumFromHand } from '../dual-stadium-utils';
 import { assembleDualLegendFromHand } from '../dual-legend-utils';
 import { Effect } from '../effects/effect';
@@ -47,6 +47,10 @@ export function playCardReducer(store: StoreLike, state: State, action: Action):
         throw new GameError(GameMessage.UNKNOWN_CARD);
       }
 
+      const nr=(globalThis as any).IlexNewRules;
+      if((state as any).newRules&&nr?.preventsStadium(state,player,handCard))throw new Error('Barrier Shrine prevents playing Stadium cards');
+      const ken=(globalThis as any).IlexKenGuy;
+      if((state as any).kenGuy&&ken?.correctedInteractions(state)&&handCard.superType===SuperType.TRAINER&&ken.activePenalty(state,player.id,'no-trainers'))throw new Error('High 5 penalty: no Trainer cards this turn');
       if (handCard instanceof EnergyCard) {
         const target = findPokemonTarget(state, player, action.target);
         if (!(target instanceof PokemonCardList) || target.cards.length === 0) {

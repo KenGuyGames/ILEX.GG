@@ -81,6 +81,14 @@ export function initNextTurn(store: StoreLike, state: State): State {
   player.movedToActiveThisTurn = [];
   player.movedFromActiveToBenchThisTurn = [];
 
+  const newRules=(globalThis as any).IlexNewRules;
+  if ((state as any).newRules && newRules) return newRules.beforeTurn(store,state,()=>continueNewTurn(store,state));
+  return continueNewTurn(store,state);
+}
+
+function continueNewTurn(store:StoreLike,state:State):State {
+  const player=getActivePlayer(state);
+  if((state as any).kenGuy)(globalThis as any).IlexKenGuy.beginTurn(state,player);
   // Skip draw card on first turn
   if (state.turn === 1 && !state.rules.firstTurnDrawCard) {
     state.phase = GamePhase.PLAYER_TURN;
@@ -91,7 +99,7 @@ export function initNextTurn(store: StoreLike, state: State): State {
 
   // Draw card at the beginning
   store.log(state, GameLog.LOG_PLAYER_DRAWS_CARD, { name: player.name });
-  if (player.deck.cards.length === 0) {
+  if (player.deck.cards.length === 0 && !(state as any).kenGuy) {
     store.log(state, GameLog.LOG_PLAYER_NO_CARDS_IN_DECK, { name: player.name });
     const winner = state.activePlayer ? GameWinner.PLAYER_1 : GameWinner.PLAYER_2;
     state = endGame(store, state, winner);
@@ -121,8 +129,19 @@ export function initNextTurn(store: StoreLike, state: State): State {
     );
   }
 
+  const kg=(state as any).kenGuy;
+  if(kg&&drawCardForTurn.preventDefault){state.phase=GamePhase.PLAYER_TURN;return state;}
+  if(kg&&kg.actionIndex>=kg.emptyDrawPrizeFromAction&&drawCardForTurn.drawCount>0&&player.deck.cards.length===0){
+    const finish=()=>{if(state.phase!==GamePhase.FINISHED)state.phase=GamePhase.PLAYER_TURN;};
+    if(store.hasPrompts())return store.waitPrompt(state,()=>{if(player.deck.cards.length===0)(globalThis as any).IlexKenGuy.emptyOpeningDraw(store,state,player,finish);else finishTurnDraw(store,state,player,drawCardForTurn.drawCount);});
+    (globalThis as any).IlexKenGuy.emptyOpeningDraw(store,state,player,finish);return state;
+  }
+  return finishTurnDraw(store,state,player,drawCardForTurn.drawCount);
+}
+
+function finishTurnDraw(store:StoreLike,state:State,player:Player,drawCount:number):State {
   const handStartLength = player.hand.cards.length;
-  state = MOVE_CARDS(store, state, player.deck, player.hand, { count: drawCardForTurn.drawCount });
+  state = MOVE_CARDS(store, state, player.deck, player.hand, { count: drawCount });
 
   // Check each drawn card (for cards like Metagross Emergency Entry, Nugget, etc.)
   const drawnCount = player.hand.cards.length - handStartLength;
@@ -153,6 +172,7 @@ export function initNextTurn(store: StoreLike, state: State): State {
 
 function startNextTurn(store: StoreLike, state: State): State {
   const player = state.players[state.activePlayer];
+  const kg=(state as any).kenGuy;if(kg)(globalThis as any).IlexKenGuy.turnEnded(state,player);if(kg&&kg.lastCompletedTurn!==state.turn){kg.completedTurns[player.id]=(kg.completedTurns[player.id]||0)+1;kg.lastCompletedTurn=state.turn;}
   store.log(state, GameLog.LOG_PLAYER_ENDS_TURN, { name: player.name });
 
   // Remove Paralyzed at the end of the turn

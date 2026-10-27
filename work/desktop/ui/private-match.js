@@ -21,7 +21,7 @@ var PrivateMatch=(()=>{
   function auto(){for(let i=0;i<1000;i++){const p=pending().find(p=>automatic.has(p.type));if(!p)return;let value=true;if(p.type==='Coin flip'){value=!!(random()&1);note('Coin flip: '+(value?'Heads':'Tails'));}else if(p.type.startsWith('Shuffle')){const id=p.getPerspectivePlayerId?.()??p.playerId,pl=match.store.state.players.find(x=>x.id===id);value=shuff(p.type==='Shuffle hand'?pl.hand.cards.length:pl.deck.cards.length);}M.apply(match,{type:'prompt',id:p.id,value});}fail('Effect resolution limit exceeded.');}
   function connectedTo(value){if(connected===!!value)return;connected=!!value;if(!connected&&undo){undo=null;note('Undo request canceled by disconnect.');}touch();}
   function expire(){if(undo&&clock()>=undo.expires){undo=null;note('Undo request expired; game unchanged.');touch();}}
-  function start(){const candidate=M.create({version:1,profile,format:{id:format.id,name:format.name,markerRules:format},opponent:{type:'private'},decks:[hostDeck,guestDeck]},map);match=candidate;try{auto();}catch(e){match=null;throw e;}note('Private match started.');}
+  function start(){const candidate=M.create({version:1,profile,format:{id:format.id,name:format.name,markerRules:format},opponent:{type:'private'},newRules:options.saved?.newRules||options.newRules,kenGuy:options.saved?.kenGuy||options.kenGuy,decks:[hostDeck,guestDeck]},map);match=candidate;try{auto();}catch(e){match=null;throw e;}note('Private match started.');}
   function receive(player,message){
    expire();if(![1,2].includes(player)||!message||typeof message!=='object'||JSON.stringify(message).length>LIMIT)fail('Invalid private-match message.');const id=message.requestId;if(typeof id!=='string'||!/^[\w-]{1,80}$/.test(id))fail('Invalid request identifier.');if(seen[player-1].has(id))return {duplicate:true};
    if(!connected)fail('Match paused: opponent disconnected.');if(message.revision!==revision)fail('The game changed. Use the refreshed table.');
@@ -39,7 +39,7 @@ var PrivateMatch=(()=>{
    seen[player-1].set(id,true);while(seen[player-1].size>256)seen[player-1].delete(seen[player-1].keys().next().value);touch();return {accepted:true};
   }
   const reverse=new Map();for(const [id,name]of Object.entries(map))if(!reverse.has(name))reverse.set(name,id);
-  function card(c){if(!c||c._dpFaceDownEnergyRole)return null;return {id:c._labId||reverse.get(c.fullName)||'',name:c.name,hp:c.hp||0};}
+  function card(c){if(!c||c._dpFaceDownEnergyRole)return null;if(c._newRule)return {id:'new-rule-'+c._newRule,name:c.name,newRule:c._newRule,hp:0};return {id:c._labId||reverse.get(c.fullName)||'',name:c.name,hp:c.hp||0};}
   const fieldKey=c=>Number.isInteger(c.id)&&c.id>=0?'id:'+c.id:c;
   function publicFieldCards(){return new Set(match.store.state.players.flatMap(p=>[p.active,...p.bench].filter(l=>l&&!l.isSecret).flatMap(l=>l.cards.map(fieldKey))));}
   function arrivingActors(before){return match.store.state.players.flatMap(p=>[p.active,...p.bench].filter(l=>l&&!l.isSecret).flatMap(l=>{const c=l.getPokemonCard();return c&&!before.has(fieldKey(c))?[cryActor(c)]:[];}));}
@@ -68,13 +68,15 @@ var PrivateMatch=(()=>{
   }
   function view(player){
    expire();if(![1,2].includes(player))fail('Invalid viewer.');if(cached[player-1])return clone(cached[player-1]);
-   const out={protocol:VERSION,roomId,revision,viewer:player,connected,format:clone(format),profile,engine,lobby:!match,guestSelected:!!guestDeck,ready:ready.slice(),undo:undo?clone(undo):null,canUndo:!!match&&!!decisions.length&&!undo&&connected,events:events.slice(),cryCue:cryCue?clone(cryCue):null,actions:[]};
-   if(match){const g=match.store.state;out.phase=R.GamePhase[g.phase];out.turn=g.turn;out.active=g.players[g.activePlayer]?.id;out.winner=g.winner;out.players=g.players.map(p=>({id:p.id,name:p.id===1?'Host':'Guest',hand:p.hand.cards.map(c=>p.id===player||p.hand.isPublic?card(c):null),deckCount:p.deck.cards.length,discard:p.discard.cards.map(card),lostzone:p.lostzone.cards.map(card),prizes:p.prizes.filter(l=>l.cards.length).map(l=>l.faceUpPrize?card(l.cards[0]):null),active:list(p.active),bench:p.bench.map(list),stadium:p.stadium.cards.map(card)}));
+   const out={protocol:VERSION,roomId,revision,viewer:player,newRuleMode:!!(options.saved?.newRules||options.newRules),kenGuyMode:!!(options.saved?.kenGuy||options.kenGuy),connected,format:clone(format),profile,engine,lobby:!match,guestSelected:!!guestDeck,ready:ready.slice(),undo:undo?clone(undo):null,canUndo:!!match&&!!decisions.length&&!undo&&connected,events:events.slice(),cryCue:cryCue?clone(cryCue):null,actions:[]};
+   if(match){const g=match.store.state;out.kenGuy=globalThis.IlexKenGuy?.publicView(g);out.newRules=globalThis.IlexNewRules?.publicView(g);out.phase=R.GamePhase[g.phase];out.turn=g.turn;out.active=g.players[g.activePlayer]?.id;out.winner=g.winner;out.players=g.players.map(p=>({id:p.id,name:p.id===1?'Host':'Guest',hand:p.hand.cards.map(c=>p.id===player||p.hand.isPublic?card(c):null),deckCount:p.deck.cards.length,discard:p.discard.cards.map(card),lostzone:p.lostzone.cards.map(card),prizes:p.prizes.filter(l=>l.cards.length).map(l=>l.faceUpPrize?card(l.cards[0]):null),active:list(p.active),bench:p.bench.map(list),stadium:p.stadium.cards.map(card)}));
     out.players.forEach((p,i)=>{p.usedGX=!!g.players[i].usedGX;p.usedVSTAR=!!g.players[i].usedVSTAR;});
     out.prompt=prompt(pending().find(p=>p.playerId===player)||{},player);if(!pending().some(p=>p.playerId===player))out.prompt=null;out.waiting=pending().length&&!out.prompt;
     const p=g.players.find(p=>p.id===player),enabled=connected&&!undo&&!pending().length&&g.phase===R.GamePhase.PLAYER_TURN&&g.players[g.activePlayer]===p;
     const add=(action,label,group,where)=>{const id=revision+':'+player+':'+caps[player-1].size;caps[player-1].set(id,action);out.actions.push({id,label,group,...where});};
+    if(globalThis.IlexKenGuy?.canInterrupt(match,player)&&connected&&!undo)add({type:'ken-gx',player},'Go Fuck Yourself GX','ken-gx',{player});
     if(enabled){
+     if(globalThis.IlexNewRules)for(const action of IlexNewRules.actions(match,p))add(action,action.name,'new-rule',{instance:action.instance});
      for(const [i,c]of p.hand.cards.entries()){
       const foreign=c.trainerType===R.TrainerType.TOOL&&c.attachesToOpponentsPokemon,owner=foreign?g.players.find(x=>x!==p):p,side=foreign?R.PlayerType.TOP_PLAYER:R.PlayerType.BOTTOM_PLAYER,slots=[{l:owner.active,slot:R.SlotType.ACTIVE,index:0},...owner.bench.map((l,index)=>({l,slot:R.SlotType.BENCH,index}))];
       for(const s of slots){if(foreign&&!s.l.getPokemonCard())continue;if(c.superType===R.SuperType.TRAINER&&c.trainerType!==R.TrainerType.TOOL&&s.slot!==R.SlotType.ACTIVE&&!/fossil|doll|substitute/i.test(c.name))continue;add({type:'play',player,index:i,target:{player:side,slot:s.slot,index:s.index}},'Play → '+(foreign?'opponent ':'')+(s.slot===R.SlotType.ACTIVE?'Active':'Bench '+(s.index+1)),'hand',{hand:i,owner:owner.id,slot:s.slot,index:s.index});}
@@ -87,13 +89,13 @@ var PrivateMatch=(()=>{
       for(const attack of (slot===R.SlotType.ACTIVE?M.attacks(match,p):c.attacks.filter(a=>a.useOnBench)))add({type:'attack',player,name:attack.name,target},attack.name,'field',{...where,kind:'attack',text:attack.text||''});
      }
      p.bench.forEach((l,index)=>{if(l.getPokemonCard())add({type:'retreat',player,index},'Retreat → Bench '+(index+1),'retreat',{owner:player,slot:R.SlotType.BENCH,index});});
-     if(g.players.some(x=>x.stadium.cards.length))add({type:'stadium',player},'Use Stadium','stadium',{});add({type:'pass',player},'End turn','turn',{});add({type:'concede',player},'Concede','turn',{});
+     if(g.players.some(x=>x.stadium.cards.length))add({type:'stadium',player},'Use Stadium','stadium',{});add({type:'pass',player},'End turn','turn',{});if(!g.kenGuy)add({type:'concede',player},'Concede','turn',{});
      p.discard.cards.forEach((c,index)=>{for(const a of M.zoneAbilities(match,p,R.SlotType.DISCARD,index))add(a,a.name,'discard',{index});});
     }
    }
    cached[player-1]=out;return clone(out);
   }
-  function save(){return {version:VERSION,engine,roomId,format,profile,hostDeck,guestDeck,ready,revision,match:match?saved():null,decisions,events};}
+  function save(){return {version:VERSION,engine,roomId,format,profile,hostDeck,guestDeck,ready,revision,newRules:options.saved?.newRules||options.newRules,kenGuy:options.saved?.kenGuy||options.kenGuy,match:match?saved():null,decisions,events};}
   if(options.saved){const s=clone(options.saved);if(s.version!==VERSION||s.engine!==engine||s.roomId!==roomId)fail('Saved private match requires the same build.');if(s.guestDeck)guestDeck=validateDeck(s.guestDeck,format,{map,metadata,allowed});ready=s.ready;revision=s.revision;decisions=s.decisions;events=s.events;if(s.match)match=restore(s.match);}
   return {receive,view,connected:connectedTo,expire,save};
  }

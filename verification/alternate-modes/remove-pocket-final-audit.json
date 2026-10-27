@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "activeFeatureReferencesRemoved": true,
+  "legacyMigrationOnly": true,
+  "regularCardTextAndCampaignProseRetained": true,
+  "regularEngineUnchanged": true
+}

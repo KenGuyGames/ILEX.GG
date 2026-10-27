@@ -37,7 +37,7 @@ function cancelRealisticPlanning(){realisticRequest++;clearTimeout(realisticTime
 function stopBotForUndo(){botGeneration++;clearTimeout(botTimer);botTimer=null;cancelRealisticPlanning();if(botSettings())state.botPaused=true;state.botError='';}
 function setBotPaused(value){state.botPaused=value;state.botError='';botGeneration++;clearTimeout(botTimer);botTimer=null;cancelRealisticPlanning();save();play();}
 function setBotDifficulty(value){const b=botSettings();if(!b||!BotAI.levels[value])return;botGeneration++;clearTimeout(botTimer);botTimer=null;cancelRealisticPlanning();b.difficulty=value;saveRules();play();}
-function botNeedsAction(){const b=botSettings();if(!b||!rulesMatch)return false;const g=rulesMatch.store.state,p=RulesMatch.pending(rulesMatch),botTurn=g.players[g.activePlayer]?.id===b.botPlayer;return p.some(p=>p.playerId===b.botPlayer||p.playerId==null&&botTurn)||!p.length&&g.phase===RulesMatch.R.GamePhase.PLAYER_TURN&&botTurn;}
+function botNeedsAction(){const b=botSettings();if(!b||!rulesMatch)return false;const g=rulesMatch.store.state,p=RulesMatch.pending(rulesMatch),botTurn=g.players[g.activePlayer]?.id===b.botPlayer;return !!globalThis.IlexKenGuy?.botAction(rulesMatch,b.botPlayer)||p.some(p=>p.playerId===b.botPlayer||p.playerId==null&&botTurn)||!p.length&&g.phase===RulesMatch.R.GamePhase.PLAYER_TURN&&botTurn;}
 function scheduleBot(){
  if((typeof IlexPresentation!=='undefined'&&IlexPresentation.busy())||botTimer||botThinking||botSuspended||state.botPaused||tab!=='play'||!botNeedsAction())return;
  const match=rulesMatch,generation=botGeneration;

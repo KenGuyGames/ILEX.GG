@@ -73,7 +73,7 @@ else{
     Menu.setApplicationMenu(Menu.buildFromTemplate([
       {label:'File',submenu:[{label:'Export workspaceâ€¦',click:()=>win.webContents.executeJavaScript("document.querySelector('#backup').click()")},{type:'separator'},{role:'quit'}]},
       {label:'View',submenu:[{role:'reload'},{role:'resetZoom'},{role:'zoomIn'},{role:'zoomOut'},{role:'togglefullscreen'}]},
-      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG '+app.getVersion(),detail:'Paper TCG and Pokemon TCG Pocket simulator. Separate Pocket cards, decks, Energy Zone battles and packs. Local decks and saves are retained. Unofficial fan-made simulator.'})}]}
+      {label:'Help',submenu:[{label:'About ILEX.GG',click:()=>dialog.showMessageBox(win,{title:'ILEX.GG',message:'ILEX.GG '+app.getVersion(),detail:'Regular Pokemon TCG simulator. Historical formats, decks, campaign, cube drafts and virtual packs. Local decks and saves are retained. Unofficial fan-made simulator.'})}]}
     ]));
     await win.loadURL('tcglab://app/index.html');
     if(selfTest)win.webContents.setAudioMuted(true);

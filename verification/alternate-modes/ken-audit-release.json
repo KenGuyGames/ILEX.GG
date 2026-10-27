@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "feature": "Ken Guy interaction audit and fixes",
+  "highFivePenaltyWeights": [
+    9,
+    30,
+    30,
+    30,
+    1
+  ],
+  "modes": [
+    "local",
+    "bot",
+    "private with opponent-approved Undo"
+  ],
+  "rulesVersion": 1,
+  "engineSha256": "7cc62cf48c131f369fb028a7d1aa6ce635009f66073bbdd7cb864a1a54533055",
+  "checks": {
+    "results": 15,
+    "base-results": 34,
+    "audit-results": 93,
+    "regression-results": 16,
+    "penalty-results": 32,
+    "penalty-replay-results": 16,
+    "timer-results": 13,
+    "rose-replay-results": 5,
+    "legacy-results": 3,
+    "cube-results": 1,
+    "ability-matrix-results": 1442,
+    "trainer-lock-results": 1381,
+    "browser-results": 24,
+    "mobile-results": 28,
+    "full-match-results": 26,
+    "android-verification": 44,
+    "native": 6,
+    "restart": 3
+  },
+  "fullMatchProfiles": [
+    "unlimited",
+    "mega",
+    "sv",
+    "swsh",
+    "wotc",
+    "wotc2002",
+    "modern",
+    "sm",
+    "xy",
+    "expanded",
+    "bw",
+    "dp",
+    "hgss",
+    "dppl",
+    "exlate",
+    "ex",
+    "unlimited",
+    "unlimited",
+    "xy",
+    "xy",
+    "sv",
+    "sv",
+    "swsh",
+    "swsh",
+    "sm",
+    "sm"
+  ],
+  "normalMatchBaselineParity": true,
+  "androidCode": 109,
+  "androidSha256": "5f130533dfd719893f20db0ba41c215e73409eef09b4c72d39aee76bf85af518",
+  "originalAndroidCertificate": true,
+  "physicalAndroidTested": false,
+  "twoPhysicalPcsTested": false,
+  "new3dsChanged": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "apkDelta": {
+    "passed": true,
+    "changed": [
+      "AndroidManifest.xml",
+      "META-INF/ILEX.RSA",
+      "META-INF/ILEX.SF",
+      "META-INF/MANIFEST.MF",
+      "assets/ui/ken-guy-engine.js",
+      "assets/ui/rules-engine.js",
+      "assets/ui/rules-match.js"
+    ],
+    "added": [],
+    "unchangedExistingEntries": 3970
+  },
+  "fixes": [
+    "Rose conditional empty-hand discard triggers High 5 only after attaching Energy",
+    "Rejected actions clear pending High 5 and restore Ken RNG state",
+    "Paired Stadium play respects no-Trainers penalty"
+  ],
+  "saveCompatibility": "Historical journals retain old behavior; corrected interactions begin after saved commands",
+  "exhaustiveCardPairCertification": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "ad1ce25be7967b02844262ca35cfd990afb68f8705d39ba62dd53020634f0c7d",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "16e661875aedb50472980b5b8a87f8de5e6acd33ef0585f1e2a9a4d0dc121dfa",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

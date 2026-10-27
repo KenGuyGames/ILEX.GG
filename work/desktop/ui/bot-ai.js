@@ -43,6 +43,7 @@ var BotAI=(()=>{
   const p=store.state.players.find(x=>x.id===id),unseen=[...p.deck.cards,...p.prizes.filter(l=>!l.isPublic).flatMap(l=>l.cards)].sort((a,b)=>a.fullName.localeCompare(b.fullName));
   for(let i=unseen.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[unseen[i],unseen[j]]=[unseen[j],unseen[i]];}
   let at=p.deck.cards.length;p.deck.cards=unseen.slice(0,at);for(const prize of p.prizes){if(prize.isPublic)continue;const n=prize.cards.length;prize.cards=unseen.slice(at,at+n);at+=n;}
+  if(store.state.newRules){const order=store.state.newRules.deck;for(let i=order.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[order[i],order[j]]=[order[j],order[i]];}}
   const opponent=store.state.players.find(x=>x!==p);
   for(const slot of [opponent.active,...opponent.bench])if(slot.isSecret&&slot.getPokemonCard()?._wotcConcealedCard){const hidden=new R.PokemonCard();hidden.id=slot.getPokemonCard().id;hidden.name='Unknown Pokémon';hidden.fullName='Unknown Pokémon';hidden.hp=60;hidden.stage=R.Stage.BASIC;hidden.cardType=[R.CardType.COLORLESS];slot.getPokemonCard()._wotcConcealedCard=hidden;}
   if(!opponent.hand.isPublic)opponent.hand.cards=opponent.hand.cards.map(unknown);
@@ -58,6 +59,8 @@ var BotAI=(()=>{
  }
  function targets(m,p){return RulesMatch.targets(m,p).filter(x=>!(p.options?.blocked||[]).some(b=>JSON.stringify(b)===JSON.stringify(x.target)));}
  function prompt(m,p,difficulty='normal'){
+  const kg=globalThis.IlexKenGuy?.botPrompt(m,p);if(kg)return kg;
+  const nr=globalThis.IlexNewRules?.botPrompt?.(m,p,difficulty);if(nr)return nr;
   if(difficulty==='realistic'){const selected=realisticPrompt(m,p);if(selected)return selected;}
   const g=m.store.state,owner=actor(m,p.getPerspectivePlayerId?.()??p.playerId),random=rng(visibleSeed(m,owner.id)^p.id^(m._botForecastSalt||0)),out=value=>valid(m,p,value)?{type:'prompt',id:p.id,value}:null;
   if(p.type==='Coin flip')return out(random()>=.5);
@@ -146,6 +149,7 @@ var BotAI=(()=>{
   }
   if(!history.some(h=>h.type==='retreat'&&h.player===id))for(let index=0;index<p.bench.length;index++)if(p.bench[index].getPokemonCard())add({type:'retreat',player:id,index},readyDamage(p.bench[index])>readyDamage(p.active)?45:5);
   if(g.players.some(owner=>owner.stadium.cards.some(c=>c._wotcStadiumAction!==false))&&!history.some(h=>h.type==='stadium'&&h.player===id))add({type:'stadium',player:id},40);
+  if(globalThis.IlexNewRules)for(const action of IlexNewRules.actions(m,p))add(action,48);
   add({type:'pass',player:id},-100);return moves.sort((a,b)=>b.priority-a.priority);
  }
  function trial(m,id,action,difficulty){
@@ -489,6 +493,7 @@ var BotAI=(()=>{
   return realisticLast.action;
  }
  function choose(m,id,difficulty='normal'){
+  const interrupt=globalThis.IlexKenGuy?.botAction(m,id);if(interrupt)return interrupt;
   const config=levels[difficulty]||levels.normal,pending=RulesMatch.pending(m),p=pending.find(p=>p.playerId===id);
   if(p)return prompt(m,p,difficulty);
   const g=m.store.state;if(pending.length||g.phase!==R.GamePhase.PLAYER_TURN||g.players[g.activePlayer].id!==id)return null;

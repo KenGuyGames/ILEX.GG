@@ -93,6 +93,8 @@ function* playCard(
 
     // Discard entire hand
     const handCards = player.hand.cards.slice();
+    // Even an empty hand reaches the conditional discard instruction after attaching Energy.
+    if(handCards.length===0&&(state as any).kenGuy&&(globalThis as any).IlexKenGuy?.correctedInteractions(state))MOVE_CARDS(store,state,player.hand,player.discard,{cards:[],sourceCard:self});
     handCards.forEach((c) => MOVE_CARDS(store, state, player.hand, player.discard, { cards: [c], sourceCard: self }));
   }
 

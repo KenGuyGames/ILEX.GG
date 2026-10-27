@@ -35,7 +35,8 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
   const charity=(effect as any)._wotcCharityPlayer;
   if(charity&&!(effect as any)._wotcCharityUsed&&effect.damage>0){(effect as any)._wotcCharityUsed=true;return store.prompt(state,new SelectPrompt(charity.id,GameMessage.CHOOSE_OPTION,Array.from({length:Math.floor(effect.damage/10)+1},(_,i)=>'Reduce damage by '+i*10),{allowCancel:false}),(choice:any)=>{effect.damage=Math.max(0,effect.damage-choice*10);applyPutDamage(store,state,effect);});}
   const rock=(effect as any)._bwSolidRock;if(rock&&!(effect as any)._bwRockDone&&effect.damage>0){(effect as any)._bwRockDone=true;const coin=new CoinFlipEffect(rock.player,heads=>{if(heads)effect.damage=Math.max(0,effect.damage-rock.amount);applyPutDamage(store,state,effect);});coin.skipReflipTool=true;return store.reduceEffect(state,coin);}
-  const damage = Math.max(0, effect.damage);
+  const proposedDamage = Math.max(0, effect.damage);
+  const damage = (state as any).newRules ? ((globalThis as any).IlexNewRules?.finalDamage(store,state,effect,proposedDamage) ?? proposedDamage) : proposedDamage;
   target.damage += damage;
   if(damage>0)target.marker.removeMarker('WOTC_SHADOW_IMAGES');
 
@@ -265,7 +266,8 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
 
   if (effect instanceof AfterWeaknessAndResistanceEffect) {
     const target = effect.target;
-    const damage = Math.max(0, effect.damage);
+    const proposed = Math.max(0,effect.damage);
+    const damage = (state as any).newRules ? ((globalThis as any).IlexNewRules?.finalDamage(store,state,effect,proposed) ?? proposed) : proposed;
     target.damage += damage;
 
     // Track damage dealt by the attacking Pokemon
@@ -357,7 +359,8 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
 
     }
 
-    const damage = Math.max(0, effect.damage);
+    const proposed = Math.max(0,effect.damage);
+    const damage = (state as any).newRules ? ((globalThis as any).IlexNewRules?.finalDamage(store,state,effect,proposed) ?? proposed) : proposed;
     target.damage += damage;
 
     const targetOwner = StateUtils.findOwner(state, target);
@@ -435,7 +438,8 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
       throw new GameError(GameMessage.ILLEGAL_ACTION);
     }
 
-    const damage = Math.max(0, effect.damage);
+    const proposed = Math.max(0,effect.damage);
+    const damage = (state as any).newRules ? ((globalThis as any).IlexNewRules?.finalDamage(store,state,effect,proposed) ?? proposed) : proposed;
     target.damage += damage;
     if((state.rules as any).exEraRules&&damage>0)delete (target as any)._exLethalAttackDamage;
 

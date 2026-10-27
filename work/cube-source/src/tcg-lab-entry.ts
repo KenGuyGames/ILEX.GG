@@ -22,3 +22,9 @@ export {MovedToActiveEffect, MovedFromActiveToBenchEffect} from './game/store/ef
 export {EndTurnEffect,BetweenTurnsEffect} from './game/store/effects/game-phase-effects';
 
 export {withCubeRules,currentCubeRules,cubeEvolution,cubeBasePrizes,prepareCubeCards} from './tcg-lab-cube';
+
+// Optional shared New Rule mode uses the same native movement/checkup reducers.
+export {checkState,endGame} from './game/store/effect-reducers/check-effect';
+export {EvolveEffect,PlaceDamageCountersEffect} from './game/store/effects/game-effects';
+export {MOVE_CARDS,MOVE_POKEMON_OFF_BOARD,DEVOLVE_POKEMON,IS_TOOL_BLOCKED,TAKE_X_PRIZES} from './game/store/prefabs/prefabs';
+export {smToolCapacity} from './tcg-lab-sm-environment';

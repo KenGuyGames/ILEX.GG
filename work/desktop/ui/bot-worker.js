@@ -1,5 +1,5 @@
 /* Dedicated local planner. No external services, accounts or network API. */
-importScripts('rules-engine.js','rules-match.js','bot-ai.js','limitless-collection.js');
+importScripts('rules-engine.js','new-rule-data.js','new-rule-engine.js','ken-guy-engine.js','rules-match.js','bot-ai.js','limitless-collection.js');
 const cardMap=fetch('rules-card-map.json').then(r=>{if(!r.ok)throw Error('Offline card map unavailable');return r.json();}).then(map=>RulesMatch.withAliases(map,LimitlessCollection));
 self.onmessage=async event=>{
  const {requestId,saved,player,custom}=event.data;

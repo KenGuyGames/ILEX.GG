@@ -95,7 +95,9 @@ function handleBenchSizeChange(store: StoreLike, state: State, benchSizes: numbe
     };resize(0);return state;
   }
 
-  state.players.forEach((player, index) => {
+  const orderedPlayers=policy?.benchResizeOrder?.map(id=>state.players.find(p=>p.id===id)!).filter(Boolean)||state.players;
+  orderedPlayers.forEach(player => {
+    const index=state.players.indexOf(player);
     const benchSize = benchSizes[index];
     // Add empty slots if bench is smaller
     while (player.bench.length < benchSize) {
@@ -313,7 +315,9 @@ function choosePrizeCards(store: StoreLike, state: State, prizeGroups: PrizeGrou
 // }
 
 
-export function endGame(store: StoreLike, state: State, winner: GameWinner): State {
+export function endGame(store: StoreLike, state: State, winner: GameWinner, reason?: 'card-win'): State {
+  if((state as any).kenGuy&&reason==='card-win'&&[GameWinner.PLAYER_1,GameWinner.PLAYER_2].includes(winner)) (state as any).kenGuy.cardWin={winner,turn:state.turn};
+  if((state as any).kenGuy && ![GamePhase.SETUP,GamePhase.WAITING_FOR_PLAYERS].includes(state.phase) && !(globalThis as any).IlexKenGuy?.victoryAllowed(state,winner))return state;
 
   if (state.players.length !== 2) {
     return state;

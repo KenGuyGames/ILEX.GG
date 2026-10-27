@@ -5,6 +5,7 @@ import { StoreLike } from '../store-like';
 import { endGame } from '../effect-reducers/check-effect';
 
 export function concedeReducer(store: StoreLike, state: State, action: ConcedeAction): State {
+  if((state as any).kenGuy)throw new Error('Conceding is disabled in Ken Guy Rules');
   if (state.phase === GamePhase.FINISHED) {
     return state;
   }

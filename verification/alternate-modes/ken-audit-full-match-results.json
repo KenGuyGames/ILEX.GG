@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "passed": true,
+      "label": "unlimited: Ken core",
+      "profile": "unlimited",
+      "turns": 7,
+      "commands": 44,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "mega: Ken core",
+      "profile": "mega",
+      "turns": 10,
+      "commands": 61,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "sv: Ken core",
+      "profile": "sv",
+      "turns": 7,
+      "commands": 43,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "swsh: Ken core",
+      "profile": "swsh",
+      "turns": 7,
+      "commands": 42,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "wotc: Ken core",
+      "profile": "wotc",
+      "turns": 7,
+      "commands": 43,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "wotc2002: Ken core",
+      "profile": "wotc2002",
+      "turns": 7,
+      "commands": 38,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "modern: Ken core",
+      "profile": "modern",
+      "turns": 10,
+      "commands": 63,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "sm: Ken core",
+      "profile": "sm",
+      "turns": 7,
+      "commands": 39,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "xy: Ken core",
+      "profile": "xy",
+      "turns": 7,
+      "commands": 42,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "expanded: Ken core",
+      "profile": "expanded",
+      "turns": 7,
+      "commands": 39,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "bw: Ken core",
+      "profile": "bw",
+      "turns": 10,
+      "commands": 57,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "dp: Ken core",
+      "profile": "dp",
+      "turns": 10,
+      "commands": 61,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "hgss: Ken core",
+      "profile": "hgss",
+      "turns": 13,
+      "commands": 81,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "dppl: Ken core",
+      "profile": "dppl",
+      "turns": 7,
+      "commands": 41,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "exlate: Ken core",
+      "profile": "exlate",
+      "turns": 10,
+      "commands": 56,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "ex: Ken core",
+      "profile": "ex",
+      "turns": 7,
+      "commands": 40,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "unlimited: Constructed WOTC Unlimited fixture: Blastoise",
+      "profile": "unlimited",
+      "turns": 25,
+      "commands": 164,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "unlimited: Constructed EX Unlimited fixture: Gardevoir",
+      "profile": "unlimited",
+      "turns": 17,
+      "commands": 113,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "xy: Empoleon",
+      "profile": "xy",
+      "turns": 52,
+      "commands": 287,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "xy: Fairy Plasma Box",
+      "profile": "xy",
+      "turns": 34,
+      "commands": 278,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "sv: Constructed SV interaction fixture: Miraidon ex",
+      "profile": "sv",
+      "turns": 16,
+      "commands": 141,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "sv: ADP Zacian",
+      "profile": "sv",
+      "turns": 25,
+      "commands": 224,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "swsh: ADP Zacian",
+      "profile": "swsh",
+      "turns": 33,
+      "commands": 283,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "swsh: Blowns",
+      "profile": "swsh",
+      "turns": 31,
+      "commands": 230,
+      "winner": 0,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "sm: Decidueye Ninetales",
+      "profile": "sm",
+      "turns": 20,
+      "commands": 192,
+      "winner": 1,
+      "highFives": 0
+    },
+    {
+      "passed": true,
+      "label": "sm: Espeon Garb",
+      "profile": "sm",
+      "turns": 23,
+      "commands": 170,
+      "winner": 0,
+      "highFives": 0
+    }
+  ]
+}

@@ -28,7 +28,7 @@ function openWotcCoverage(){
 const oldDetails=details;
 details=async id=>cardMetadata[id]?{...find(id),...cardMetadata[id]}:oldDetails(id);
 function ruleCard(c){return find(c?._labId)||find(Object.keys(ruleMap).find(id=>ruleMap[id]===c?.fullName))||{name:c?.name||'Card'};}
-function ruleArt(c){return c?._dpFaceDownEnergyRole?'ilex-card-back.svg':image(ruleCard(c));}
+function ruleArt(c){if(c?._newRule)return IlexNewRules.def(c._newRule)?.image;return c?._dpFaceDownEnergyRole?'ilex-card-back.svg':image(ruleCard(c));}
 function saveRules(){state.rulesMatch={spec:rulesMatch.spec,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch)};save();}
 function autoRules(){
   for(let n=0;n<1000;n++){
@@ -89,7 +89,7 @@ async function beginRulesChecked(){
   if(rulesMatch&&!confirm('Replace the current rules match?'))return;
   try{
     const opponent=typeof newOpponentSettings==='function'?newOpponentSettings():{type:'local'};
-    const candidate=RulesMatch.create({version:1,profile,opponent,cubeRules:selectedFormat.cubeRules?structuredClone(selectedFormat.cubeRules):undefined,format:{id:selectedFormat.id,name:selectedFormat.name,markerRules:structuredClone(selectedFormat)},decks:ds.map(d=>({name:d.name,cards:d.cards,cubePool:d.cubePool,cubeDraftId:d.cubeDraftId})),custom:state.custom},ruleMap,state.custom);
+    const candidate=RulesMatch.create({version:1,profile,opponent,newRules:globalThis.IlexNewRuleUI?.selected(),kenGuy:globalThis.IlexNewRuleUI?.kenGuySelected(),cubeRules:selectedFormat.cubeRules?structuredClone(selectedFormat.cubeRules):undefined,format:{id:selectedFormat.id,name:selectedFormat.name,markerRules:structuredClone(selectedFormat)},decks:ds.map(d=>({name:d.name,cards:d.cards,cubePool:d.cubePool,cubeDraftId:d.cubeDraftId})),custom:state.custom},ruleMap,state.custom);
     state.botPaused=false;state.botError='';
     if(typeof IlexPresentation!=='undefined')IlexPresentation.cancel();rulesMatch=candidate;const setupVisual=typeof IlexPresentation!=='undefined'?IlexPresentation.before(candidate,{type:'setup'}):null;autoRules();if(typeof IlexPresentation!=='undefined')IlexPresentation.after(setupVisual,candidate,{type:'setup'});saveRules();if(typeof IlexAudio!=='undefined')IlexAudio.play('shuffle');play();
   }catch(e){toast(e.message)}

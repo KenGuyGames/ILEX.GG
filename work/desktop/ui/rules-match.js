@@ -91,6 +91,8 @@ var RulesMatch=(()=>{
     store.state.rules=new R.Rules(spec.cubeRules?{...profile,cubeRules:spec.cubeRules,wotcPowerConditions:spec.cubeRules.unifiedAbilities?false:profile.wotcPowerConditions,firstTurnUseSupporter:spec.cubeRules.firstTurnSupporter,attackFirstTurn:spec.cubeRules.firstTurnAttack}:profile);
     store.state.rules.startingPowerRulesVersion=spec.startingPowerRulesVersion;
     store.state.gameSettings=new R.GameSettings();store.state.gameSettings.rules=store.state.rules;store.state.gameSettings.format=profile.format;
+    if(spec.newRules){spec.newRules.interactionFixesFromAction??=0;if(!globalThis.IlexNewRules)throw Error("New Rule engine unavailable");IlexNewRules.init(store,spec);IlexNewRules.registerEvolutions(prototypes);}
+    if(spec.kenGuy){spec.kenGuy.emptyDrawPrizeFromAction??=0;spec.kenGuy.interactionFixesFromAction??=0;if(spec.newRules)throw Error('Choose one alternate mode');if(!globalThis.IlexKenGuy)throw Error('Ken Guy engine unavailable');IlexKenGuy.init(store,spec);}
     const namesFor=id=>{
       if(map[id])return spec.cubeRules?.printedCardText?(cubePrintingRules[id]||map[id]):resolveCardName(map[id],spec.profile,spec.reprintRulesVersion??1,spec.reprintRulesThrough);
       const c=custom.find(x=>x.id===id);
@@ -120,6 +122,7 @@ var RulesMatch=(()=>{
       if(store.state.phase===R.GamePhase.FINISHED)throw Error('Deck does not satisfy 60-card construction rules, copy limits, rule-box limits, or Basic Pokémon requirements.');
       const player=store.state.players[i];R.prepareCubeCards(store.state);player.wotcEarlyPowers=!!profile.wotcEarlyPowers;player.deck.cards.forEach((c,k)=>c._labId=ids[k]);
     }
+    if(spec.kenGuy)IlexKenGuy.bindHands(store.state);
     return {store,spec,journal:[],randomState:spec.seed>>>0};
   }
   function typeCode(s){return ({Fire:R.CardType.FIRE,Water:R.CardType.WATER,Grass:R.CardType.GRASS,Lightning:R.CardType.LIGHTNING,Psychic:R.CardType.PSYCHIC,Fighting:R.CardType.FIGHTING,Darkness:R.CardType.DARK,Metal:R.CardType.METAL,Fairy:R.CardType.FAIRY,Dragon:R.CardType.DRAGON,Colorless:R.CardType.COLORLESS})[s]??R.CardType.COLORLESS;}
@@ -176,8 +179,12 @@ var RulesMatch=(()=>{
     return false;
   }
   function apply(m,a){
+    const ken=m.store.state.kenGuy,previous=ken?.inFlight?JSON.parse(JSON.stringify(ken.inFlight)):null,random=m.randomState;
+    try{return applyInternal(m,a);}catch(error){if(ken&&IlexKenGuy.correctedInteractions(m.store.state)){m.store.state.kenGuy.inFlight=previous;m.randomState=random;}throw error;}
+  }
+  function applyInternal(m,a){
     if(a.type==='play'&&repeatEnergyShortcut(m,a))return m;
-    const s=m.store.state;let action;
+    const s=m.store.state;if(s.newRules)IlexNewRules.beforeAction(m);const kenToken=s.kenGuy?IlexKenGuy.beforeAction(m,a):null;let action;
     if(a.type==='prompt'){
       const p=pending(m).find(p=>p.id===a.id);if(!p)throw Error('This choice is no longer pending.');
       if(a.value!==null){
@@ -195,14 +202,14 @@ var RulesMatch=(()=>{
       }
       const value=p.decode(a.value,s);if(!p.validate(value,s))throw Error('That selection does not meet the effect’s requirements.');
       action=new R.ResolvePromptAction(p.id,value);
-    }else{
+    }else if(a.type==='ken-gx'){if(!s.kenGuy||!IlexKenGuy.canInterrupt(m,a.player))throw Error('This GX action is unavailable');}else{
       if(s.phase!==R.GamePhase.PLAYER_TURN)throw Error('Finish the pending setup or effect first.');
       if(pending(m).length)throw Error('Resolve the pending effect first.');
       const player=s.players[s.activePlayer];if(a.player!==player.id)throw Error('It is not that player’s turn.');
       if(a.type==='play'&&player.hand.cards[a.index]?.trainerType===R.TrainerType.SUPPORTER&&(player.supporter.cards.length||player.supporterTurn>0))throw Error('SUPPORTER_ALREADY_PLAYED');
       if(a.type==='play'){
         const card=player.hand.cards[a.index];if(!card)throw Error('Card not in hand.');
-        if(s.turn===1&&s.rules.firstTurnNoTrainers&&card.superType===R.SuperType.TRAINER)throw Error('The first player cannot play Trainers under the Diamond & Pearl rules.');
+        if(s.turn===1&&s.rules.firstTurnNoTrainers&&card.superType===R.SuperType.TRAINER&&!(s.kenGuy&&card.trainerType===R.TrainerType.SUPPORTER))throw Error('The first player cannot play Trainers under the Diamond & Pearl rules.');
         const opponentTool=card.superType===R.SuperType.TRAINER&&card.trainerType===R.TrainerType.TOOL&&card.attachesToOpponentsPokemon;
         const targetSide=opponentTool?R.PlayerType.TOP_PLAYER:R.PlayerType.BOTTOM_PLAYER,targetOwner=opponentTool?s.players.find(p=>p!==player):player;
         if(!Number.isInteger(a.index)||!a.target||a.target.player!==targetSide||![R.SlotType.ACTIVE,R.SlotType.BENCH].includes(a.target.slot)||!Number.isInteger(a.target.index)||a.target.index<0||(a.target.slot===R.SlotType.ACTIVE?a.target.index!==0:a.target.index>=targetOwner.bench.length))throw Error('Invalid play target.');
@@ -213,11 +220,13 @@ var RulesMatch=(()=>{
       else if(a.type==='retreat')action=new R.RetreatAction(a.player,a.index);
       else if(a.type==='pass')action=new R.PassTurnAction(a.player);
       else if(a.type==='concede')action=new R.ConcedeAction(a.player);
+      else if(a.type==='new-rule'){if(!globalThis.IlexNewRules)throw Error('New Rule engine unavailable');}
+
       else throw Error('Unknown game action.');
     }
     const originalRandom=Math.random;
     Math.random=()=>{m.randomState=(m.randomState+0x6D2B79F5)>>>0;let t=m.randomState;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;};
-    try{m.store.dispatch(action)}finally{Math.random=originalRandom}
+    try{if(a.type==='new-rule')IlexNewRules.activate(m,a);else if(a.type==='ken-gx')IlexKenGuy.interrupt(m,a.player);else m.store.dispatch(action);if(s.kenGuy)IlexKenGuy.afterAction(m,a,kenToken);}finally{Math.random=originalRandom}
     m.journal.push(JSON.parse(JSON.stringify(a)));return m;
   }
   function handEnergyAction(player,index){
@@ -231,7 +240,7 @@ var RulesMatch=(()=>{
   }
   function checkpoint(m,index){const points=undoPoints(m).filter(n=>n<index);if(Number.isInteger(index)&&index>=0&&index<m.journal.length)points.push(index);m.undoHistory=points;}
   function restore(saved,map,custom){
-    const replaySpec={...saved.spec,reprintRulesVersion:saved.spec.reprintRulesVersion??0,startingPowerRulesVersion:saved.spec.startingPowerRulesVersion??0};
+    const replaySpec={...saved.spec,newRules:saved.spec.newRules?{...saved.spec.newRules,interactionFixesFromAction:saved.spec.newRules.interactionFixesFromAction??(saved.journal||[]).length}:undefined,kenGuy:saved.spec.kenGuy?{...saved.spec.kenGuy,emptyDrawPrizeFromAction:saved.spec.kenGuy.emptyDrawPrizeFromAction??(saved.journal||[]).length,interactionFixesFromAction:saved.spec.kenGuy.interactionFixesFromAction??(saved.journal||[]).length}:undefined,reprintRulesVersion:saved.spec.reprintRulesVersion??0,startingPowerRulesVersion:saved.spec.startingPowerRulesVersion??0};
     const m=create(replaySpec,map,custom),journal=saved.journal||[];m._replaying=true;
     for(let i=0;i<journal.length;i++){
       try{apply(m,journal[i]);}catch(error){
@@ -242,7 +251,7 @@ var RulesMatch=(()=>{
         recovered.recoveredInvalidAttack=true;return recovered;
       }
     }
-    m._replaying=false;if(Array.isArray(saved.undoHistory))m.undoHistory=undoPoints({journal:m.journal,undoHistory:saved.undoHistory});return m;
+    m._replaying=false;if(m.store.state.newRules)IlexNewRules.finishReplay(m);if(Array.isArray(saved.undoHistory))m.undoHistory=undoPoints({journal:m.journal,undoHistory:saved.undoHistory});return m;
   }
   function undoAction(m,map,custom){const points=undoPoints(m);if(!points.length)throw Error('No action to undo.');const index=points.pop();return restore({spec:m.spec,journal:m.journal.slice(0,index),undoHistory:points},map,custom);}
 

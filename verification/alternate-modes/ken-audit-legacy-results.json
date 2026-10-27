@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": [
+    "Actual previous build replays the Rose journal without a new prompt",
+    "Updated restore matches previous Ken state exactly",
+    "Migrated live actions activate corrected rules after saved history"
+  ]
+}

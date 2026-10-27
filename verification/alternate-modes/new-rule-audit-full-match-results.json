@@ -1,0 +1,239 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "passed": true,
+      "label": "unlimited: New Rule core",
+      "profile": "unlimited",
+      "turns": 6,
+      "commands": 53,
+      "winner": 0,
+      "rulesRevealed": 6
+    },
+    {
+      "passed": true,
+      "label": "mega: New Rule core",
+      "profile": "mega",
+      "turns": 6,
+      "commands": 54,
+      "winner": 1,
+      "rulesRevealed": 6
+    },
+    {
+      "passed": true,
+      "label": "sv: New Rule core",
+      "profile": "sv",
+      "turns": 3,
+      "commands": 31,
+      "winner": 1,
+      "rulesRevealed": 3
+    },
+    {
+      "passed": true,
+      "label": "swsh: New Rule core",
+      "profile": "swsh",
+      "turns": 10,
+      "commands": 96,
+      "winner": 0,
+      "rulesRevealed": 10
+    },
+    {
+      "passed": true,
+      "label": "wotc: New Rule core",
+      "profile": "wotc",
+      "turns": 5,
+      "commands": 38,
+      "winner": 0,
+      "rulesRevealed": 5
+    },
+    {
+      "passed": true,
+      "label": "wotc2002: New Rule core",
+      "profile": "wotc2002",
+      "turns": 5,
+      "commands": 42,
+      "winner": 1,
+      "rulesRevealed": 5
+    },
+    {
+      "passed": true,
+      "label": "modern: New Rule core",
+      "profile": "modern",
+      "turns": 11,
+      "commands": 99,
+      "winner": 0,
+      "rulesRevealed": 11
+    },
+    {
+      "passed": true,
+      "label": "sm: New Rule core",
+      "profile": "sm",
+      "turns": 7,
+      "commands": 59,
+      "winner": 1,
+      "rulesRevealed": 7
+    },
+    {
+      "passed": true,
+      "label": "xy: New Rule core",
+      "profile": "xy",
+      "turns": 3,
+      "commands": 40,
+      "winner": 1,
+      "rulesRevealed": 3
+    },
+    {
+      "passed": true,
+      "label": "expanded: New Rule core",
+      "profile": "expanded",
+      "turns": 19,
+      "commands": 167,
+      "winner": 1,
+      "rulesRevealed": 19
+    },
+    {
+      "passed": true,
+      "label": "bw: New Rule core",
+      "profile": "bw",
+      "turns": 5,
+      "commands": 50,
+      "winner": 0,
+      "rulesRevealed": 5
+    },
+    {
+      "passed": true,
+      "label": "dp: New Rule core",
+      "profile": "dp",
+      "turns": 5,
+      "commands": 39,
+      "winner": 1,
+      "rulesRevealed": 5
+    },
+    {
+      "passed": true,
+      "label": "hgss: New Rule core",
+      "profile": "hgss",
+      "turns": 5,
+      "commands": 46,
+      "winner": 0,
+      "rulesRevealed": 5
+    },
+    {
+      "passed": true,
+      "label": "dppl: New Rule core",
+      "profile": "dppl",
+      "turns": 7,
+      "commands": 73,
+      "winner": 1,
+      "rulesRevealed": 7
+    },
+    {
+      "passed": true,
+      "label": "exlate: New Rule core",
+      "profile": "exlate",
+      "turns": 6,
+      "commands": 48,
+      "winner": 1,
+      "rulesRevealed": 6
+    },
+    {
+      "passed": true,
+      "label": "ex: New Rule core",
+      "profile": "ex",
+      "turns": 6,
+      "commands": 60,
+      "winner": 1,
+      "rulesRevealed": 6
+    },
+    {
+      "passed": true,
+      "label": "unlimited: Constructed WOTC Unlimited fixture: Blastoise",
+      "profile": "unlimited",
+      "turns": 10,
+      "commands": 98,
+      "winner": 1,
+      "rulesRevealed": 10
+    },
+    {
+      "passed": true,
+      "label": "unlimited: Constructed EX Unlimited fixture: Gardevoir",
+      "profile": "unlimited",
+      "turns": 7,
+      "commands": 79,
+      "winner": 1,
+      "rulesRevealed": 7
+    },
+    {
+      "passed": true,
+      "label": "sv: Constructed SV interaction fixture: Miraidon ex",
+      "profile": "sv",
+      "turns": 27,
+      "commands": 415,
+      "winner": 0,
+      "rulesRevealed": 27
+    },
+    {
+      "passed": true,
+      "label": "sv: ADP Zacian",
+      "profile": "sv",
+      "turns": 16,
+      "commands": 199,
+      "winner": 1,
+      "rulesRevealed": 16
+    },
+    {
+      "passed": true,
+      "label": "swsh: ADP Zacian",
+      "profile": "swsh",
+      "turns": 49,
+      "commands": 611,
+      "winner": 0,
+      "rulesRevealed": 49
+    },
+    {
+      "passed": true,
+      "label": "swsh: Blowns",
+      "profile": "swsh",
+      "turns": 15,
+      "commands": 194,
+      "winner": 0,
+      "rulesRevealed": 15
+    },
+    {
+      "passed": true,
+      "label": "sm: Decidueye Ninetales",
+      "profile": "sm",
+      "turns": 13,
+      "commands": 153,
+      "winner": 1,
+      "rulesRevealed": 13
+    },
+    {
+      "passed": true,
+      "label": "sm: Espeon Garb",
+      "profile": "sm",
+      "turns": 7,
+      "commands": 69,
+      "winner": 0,
+      "rulesRevealed": 7
+    },
+    {
+      "passed": true,
+      "label": "xy: Empoleon",
+      "profile": "xy",
+      "turns": 33,
+      "commands": 429,
+      "winner": 1,
+      "rulesRevealed": 33
+    },
+    {
+      "passed": true,
+      "label": "xy: Fairy Plasma Box",
+      "profile": "xy",
+      "turns": 25,
+      "commands": 361,
+      "winner": 1,
+      "rulesRevealed": 25
+    }
+  ]
+}

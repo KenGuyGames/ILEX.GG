@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "Previous build journal state exact, configured deck false",
+    "Corrected eligibility available immediately on old-save restore, configured deck false",
+    "Undo into historical turns activates fixes for its new branch, configured deck false",
+    "Future actions activate fixes, configured deck false",
+    "Migrated rules replay exactly, configured deck false",
+    "Previous build journal state exact, configured deck true",
+    "Corrected eligibility available immediately on old-save restore, configured deck true",
+    "Undo into historical turns activates fixes for its new branch, configured deck true",
+    "Future actions activate fixes, configured deck true",
+    "Migrated rules replay exactly, configured deck true",
+    "Regular TCG state matches previous engine exactly"
+  ]
+}

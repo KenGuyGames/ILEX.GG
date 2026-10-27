@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "checks": [
+    "Real Scratch creates damaged Active under Scoop Up Block",
+    "Run Away Draw remains legal with only a damaged Pokémon",
+    "Effect returns the last Pokémon to deck and resolves the correct winner",
+    "Undo restores the damaged Active and action allowance"
+  ]
+}

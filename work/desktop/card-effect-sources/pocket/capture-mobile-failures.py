@@ -1,3 +1,0 @@
-from pathlib import Path
-p=Path('work/pocket-research/mobile-tests.cjs');s=p.read_text();s=s.replace(' for(const [width,height]of', ' try{for(const [width,height]of');s=s.replace(' return {passed:true,checks,errors:[]', ''' }catch(e){fs.writeFileSync(path.join(root,'../pocket-research/mobile-failure.png'),(await win.webContents.capturePage()).toPNG());fs.writeFileSync(path.join(root,'../pocket-research/mobile-failure.json'),JSON.stringify(await run('({viewport:[innerWidth,innerHeight],match:state.pocket.match,modal:document.querySelector("#modal").open,toast:document.querySelector("#toast").textContent})')));throw e;}
- return {passed:true,checks,errors:[]''');p.write_text(s)

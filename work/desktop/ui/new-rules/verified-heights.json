@@ -1,0 +1,420 @@
+{
+  "unit": "inches",
+  "verification": "Printed length strip visually checked against each exact local scan; no species-height inference",
+  "cards": [
+    {
+      "id": "base1-1",
+      "heightInches": 59,
+      "scan": "scans/eb8ff64e51d15f9c89f37fd2.webp",
+      "sha256": "aacc56f3eec4aa94ce19d23827a8a67fc63caba4487f9c11f961152ae70e4145"
+    },
+    {
+      "id": "base1-2",
+      "heightInches": 63,
+      "scan": "scans/de598af7c2280868af908970.webp",
+      "sha256": "fbbca6fe68777fb7a2f4b5335bd932ed5d6d363c8cab0a9ed30046adc4f4bfb3"
+    },
+    {
+      "id": "base1-3",
+      "heightInches": 43,
+      "scan": "scans/606ff3715cc89085a911dfe1.webp",
+      "sha256": "d87dd8f51e4e61785fef24d5e903032ca4427679a1634758f8efb3060991d76f"
+    },
+    {
+      "id": "base1-4",
+      "heightInches": 67,
+      "scan": "scans/2ac39da43736343492e07fb8.webp",
+      "sha256": "0a1e077b13319e2e50c63d54b3afdecabe57f6dfdd07377a6979efbea48fe254"
+    },
+    {
+      "id": "base1-5",
+      "heightInches": 24,
+      "scan": "scans/aac65ddbb876e494eb46d1ac.webp",
+      "sha256": "0ee4e3738f74b696947eb65719d8f235f8abb07c30d52615200c17c9255bcea1"
+    },
+    {
+      "id": "base1-6",
+      "heightInches": 256,
+      "scan": "scans/65e3cc379066bd943ff98043.webp",
+      "sha256": "06d682c8f72f1d51951ad4035211ab7a202e3e50fbdad091918b69a1e685f460"
+    },
+    {
+      "id": "base1-7",
+      "heightInches": 55,
+      "scan": "scans/2eb71d2c45de166304954b11.webp",
+      "sha256": "8f1c13f945785d700dcfbec3d19e78ab21f2abf8a49e81a2da7c9566619b25d5"
+    },
+    {
+      "id": "base1-8",
+      "heightInches": 63,
+      "scan": "scans/6528e7bfef4292efbf564ce6.webp",
+      "sha256": "3104c69eb8ba533c2ce9fecdc24839dad9dd1a473ba021e6b30838a911d2233c"
+    },
+    {
+      "id": "base1-9",
+      "heightInches": 39,
+      "scan": "scans/55ab6a5b45247bb10815594b.webp",
+      "sha256": "7e42d0fd9009bca50f6890bad7ec9496b18d482296874809d43df2e5d1c69fd2"
+    },
+    {
+      "id": "base1-10",
+      "heightInches": 79,
+      "scan": "scans/6a6af65e412824ab8967ab0b.webp",
+      "sha256": "b264c56b77d55bb2826ef2b1a95de3fcf608685bfc3eddbfadef8197c968a5e3"
+    },
+    {
+      "id": "base1-11",
+      "heightInches": 55,
+      "scan": "scans/8182ff21bf934e867df7d80e.webp",
+      "sha256": "7654062742480de9805124e9dde9b3c389fb05db37278e1f89596b40f57d2b0b"
+    },
+    {
+      "id": "base1-12",
+      "heightInches": 43,
+      "scan": "scans/34a9ca2707035e5d2e19d6df.webp",
+      "sha256": "430e8a8275726cd8bca20e83fcf8977174a36b0da979d41ade759a0b5e8959ed"
+    },
+    {
+      "id": "base1-13",
+      "heightInches": 51,
+      "scan": "scans/646b4d7f2b4f84784fd51e80.webp",
+      "sha256": "c01cb3f0dc9c7fa1d2efb3b3744d1ff431b673097af7ffcf8198bf71b55e1721"
+    },
+    {
+      "id": "base1-14",
+      "heightInches": 31,
+      "scan": "scans/8c5e5c61a0514373cae07623.webp",
+      "sha256": "58e5ce01f52b51c2a82ab583040ca68505a6c0e94704c670a47d0243575cea94"
+    },
+    {
+      "id": "base1-15",
+      "heightInches": 79,
+      "scan": "scans/51c6d300296bb33df5ec9d36.webp",
+      "sha256": "21dd830f76f5f6332405bd02a038480420efdcb08939c0a0b17a423962d46e1b"
+    },
+    {
+      "id": "base1-16",
+      "heightInches": 63,
+      "scan": "scans/e544813d0e40ae8fa69130e7.webp",
+      "sha256": "612a9cf191a1a023d0aa30ea1ddbcc219126452e596c5ec8b56cd8d3a8a6c250"
+    },
+    {
+      "id": "base1-17",
+      "heightInches": 39,
+      "scan": "scans/97b19e22d10add44a6cb844a.webp",
+      "sha256": "93a440d41b39601055ffded66dd45c2a7fe2f7549ffab97869b422a9f7c23b7d"
+    },
+    {
+      "id": "base1-18",
+      "heightInches": 157,
+      "scan": "scans/1da8cfab014d86780dfcd5fa.webp",
+      "sha256": "fabff9c7dea10a29b31616f3413c1f9c008dec3d7c2a14cf674f246c06aa2cd5"
+    },
+    {
+      "id": "base1-19",
+      "heightInches": 28,
+      "scan": "scans/dd6c95c5d12e5ed6e7522af0.webp",
+      "sha256": "069e89eea6cb80e5901531a87e29aa0f92ee08fbeb5099598e3e259eee7a3bac"
+    },
+    {
+      "id": "base1-20",
+      "heightInches": 43,
+      "scan": "scans/e33e852ce507fb3b32d01bb1.webp",
+      "sha256": "f6b377d937934a003946dac0ba41253a1ac371cb79a4fe1cdfcb60c2e6f154ab"
+    },
+    {
+      "id": "base1-21",
+      "heightInches": 47,
+      "scan": "scans/95af2199f78befe8fbb61dc2.webp",
+      "sha256": "f1608d091f169ce407c22869a20c4ecdc5c85baa5d760d8355d2eabd0adf8534"
+    },
+    {
+      "id": "base1-22",
+      "heightInches": 43,
+      "scan": "scans/c0a13531fbfc0aae56b4ef19.webp",
+      "sha256": "2eba30a713126fcb2265b292bb370d17eaa66a22801aeeb1a65f21f8f340c386"
+    },
+    {
+      "id": "base1-23",
+      "heightInches": 75,
+      "scan": "scans/43b1cc2e95a20b169a5d0a04.webp",
+      "sha256": "6b6c71c3d50c24356973bd49e45b1403807229c6563975bac439e93a51e8e638"
+    },
+    {
+      "id": "base1-24",
+      "heightInches": 43,
+      "scan": "scans/899d45f5d3a3cdcf14b07eff.webp",
+      "sha256": "266c93cac29adba16d5c0c9d57521766646c697d6c8a6d27711b025d538ffb62"
+    },
+    {
+      "id": "base1-25",
+      "heightInches": 67,
+      "scan": "scans/9ff4886787b9c399ce291272.webp",
+      "sha256": "9aefc854ac252837ead06bedf8ba910f68f06a368e6b70cd40bca3e4fc528f89"
+    },
+    {
+      "id": "base1-26",
+      "heightInches": 71,
+      "scan": "scans/6568bc3042b40a80c7fb5a21.webp",
+      "sha256": "97b6bc19122a466c7b54d958a4741dcfaf61041b59608e85ce0b3a7f83cdfb78"
+    },
+    {
+      "id": "base1-27",
+      "heightInches": 31,
+      "scan": "scans/627d034e7a16b5737d5c86bf.webp",
+      "sha256": "75d50b4035bd9d2efab8651a66417ac8cbfae1bc67d00d0a119b129c83205b81"
+    },
+    {
+      "id": "base1-28",
+      "heightInches": 28,
+      "scan": "scans/c9e04d68ea3dd2b6cf6badce.webp",
+      "sha256": "32ea7b7706575b56f2b815cd56a298ee1d65217300d9e8b351f431de8bb1e03e"
+    },
+    {
+      "id": "base1-29",
+      "heightInches": 63,
+      "scan": "scans/d4e576bb7ce74304bb00f0c1.webp",
+      "sha256": "8f5007540b0a6bc1bd453d843f40ae9c2b7acc73eb81e6196d0a69664444d452"
+    },
+    {
+      "id": "base1-30",
+      "heightInches": 39,
+      "scan": "scans/082aa22331f09a273e67b377.webp",
+      "sha256": "ddee7aa39f739fc884e578dd8ae5fc031d613fb754efa1aee167dbcd4ccbedb3"
+    },
+    {
+      "id": "base1-31",
+      "heightInches": 55,
+      "scan": "scans/2f13d8b7fcb91676fba1ea2d.webp",
+      "sha256": "e4b2b2d7860f053085102402eadfee49fac6bf99610218a0be823ea142501362"
+    },
+    {
+      "id": "base1-32",
+      "heightInches": 51,
+      "scan": "scans/43aa43ad7b4226202cf2db75.webp",
+      "sha256": "73d28661af4aeb7811f0abe7aff9af8be326ed915091082cc099d5cfe525e12c"
+    },
+    {
+      "id": "base1-33",
+      "heightInches": 24,
+      "scan": "scans/2e83d1363f16ee82e8f26d7c.webp",
+      "sha256": "95348172eaef61cc2129848e978c82dae8124acd805a11ca80a32e801d5843e3"
+    },
+    {
+      "id": "base1-34",
+      "heightInches": 59,
+      "scan": "scans/bf91ebf21c1bfb219569342b.webp",
+      "sha256": "8bddd92d6d5f315a28e66daabf2ed879c16e3276504f778a2a8634819c929039"
+    },
+    {
+      "id": "base1-35",
+      "heightInches": 35,
+      "scan": "scans/82d2d8ecca3af0a31fbc6318.webp",
+      "sha256": "c8d4dd574c0f60e01221a5421eb955f2190a0e6de30f2736f8afb1ebd66e35e0"
+    },
+    {
+      "id": "base1-36",
+      "heightInches": 51,
+      "scan": "scans/2332c0e19dc0b9b35b4ec2c5.webp",
+      "sha256": "38db8dd5e5d140ad5f070d91c4760d8460abc404eaeb2953434e5cb05835e211"
+    },
+    {
+      "id": "base1-37",
+      "heightInches": 35,
+      "scan": "scans/fa7539176b8eeec207e61d93.webp",
+      "sha256": "03f9045c5494441a65b22f9421028126c0c3d5785cb38d570c54ed9d22e903fb"
+    },
+    {
+      "id": "base1-38",
+      "heightInches": 40,
+      "scan": "scans/99cc51de2e8eca241be62043.webp",
+      "sha256": "99c6c0fdf6a8ea8a21f1b88e970dab4855b13670384f884ee140899823697325"
+    },
+    {
+      "id": "base1-39",
+      "heightInches": 31,
+      "scan": "scans/e83125bcb2edc6e33fe1d52f.webp",
+      "sha256": "81d4621c43af3d71f170d89571381ab11348dea5a7fd622a29135082d1e1e736"
+    },
+    {
+      "id": "base1-40",
+      "heightInches": 28,
+      "scan": "scans/c8d7ad890f944c70689bd149.webp",
+      "sha256": "f7526e0f2ec379f5574b11841bd50bb3bca7a345bcca54af0d2f1344352143ef"
+    },
+    {
+      "id": "base1-41",
+      "heightInches": 43,
+      "scan": "scans/fc2867fd968d0706cda65002.webp",
+      "sha256": "ed0185137c5e32781f00a6e775b47cfd09045774492ec0a70510515940dfee5a"
+    },
+    {
+      "id": "base1-42",
+      "heightInches": 39,
+      "scan": "scans/1f923fe3b3ab4281464fd2a1.webp",
+      "sha256": "26a53674a08fbf33bc9093258445a9730078bce00141e643416e318aec251208"
+    },
+    {
+      "id": "base1-43",
+      "heightInches": 35,
+      "scan": "scans/9862fb5d106cd2e1a436cf39.webp",
+      "sha256": "7b61bc7cefd5a0ecefe902d8f7fc3e84a1ebacfe2232b16328d07f2b14b5151d"
+    },
+    {
+      "id": "base1-44",
+      "heightInches": 28,
+      "scan": "scans/17ba8c2cc578af5014ce3486.webp",
+      "sha256": "81f9406f24a157641aee88e30863ba04e0d662d2b1fe271eac4b1c21f3acb676"
+    },
+    {
+      "id": "base1-45",
+      "heightInches": 12,
+      "scan": "scans/1b75ff06fb5f08841e513055.webp",
+      "sha256": "7f7421ffd30d34c136ee423486adf781eacb92c834e621e2355cddcd36a93c9d"
+    },
+    {
+      "id": "base1-46",
+      "heightInches": 24,
+      "scan": "scans/60e3f611321724e14076acb4.webp",
+      "sha256": "39c92b48110051caddf55ae4c49cee0ed1bcb39df4e2a5e93530204170bb64ec"
+    },
+    {
+      "id": "base1-47",
+      "heightInches": 8,
+      "scan": "scans/da1944267364a32d973c0102.webp",
+      "sha256": "9990f88d0c0a637d02faa4ebec17d89c8f38f834bc1908e66c94830df5b1bf3e"
+    },
+    {
+      "id": "base1-48",
+      "heightInches": 55,
+      "scan": "scans/b624516944b69b2e8d9bf2e1.webp",
+      "sha256": "c3852e46e27eac35615202a7b3be1b0ea2be99635e7b72392141d8db0d3129ae"
+    },
+    {
+      "id": "base1-49",
+      "heightInches": 39,
+      "scan": "scans/88ef73683e220dbc30754928.webp",
+      "sha256": "ff04cdd4fa1a677e1ca28c59cb22e9dfd6f78e0f52f61920838ed867c765ac72"
+    },
+    {
+      "id": "base1-50",
+      "heightInches": 51,
+      "scan": "scans/1d1680331438d86ea5b3df97.webp",
+      "sha256": "d44cb2d5b10bd2083f1f8af5ef53774e97f98e7af5531b5721b42ddbd895e15f"
+    },
+    {
+      "id": "base1-51",
+      "heightInches": 24,
+      "scan": "scans/1b0e7bf43bfec73429dcf9f4.webp",
+      "sha256": "38ae91c05fc7d4cfc3963574e8500a928c52b87372496742384ef25ac3b206c2"
+    },
+    {
+      "id": "base1-52",
+      "heightInches": 31,
+      "scan": "scans/c24d7649f1385ab33aa2e8af.webp",
+      "sha256": "e3898c63f41c37ecdeda9fa559af92703912bb36c71aa4035e536e686a24ddc7"
+    },
+    {
+      "id": "base1-53",
+      "heightInches": 12,
+      "scan": "scans/e45e67de7bd299fb25b164c4.webp",
+      "sha256": "05b0b30f340440496ed231939822f4cc4ab49effd34e2d362b9bb3b42f87892c"
+    },
+    {
+      "id": "base1-54",
+      "heightInches": 28,
+      "scan": "scans/0494ebb4242c376e1527aad7.webp",
+      "sha256": "375483c1e8d44d57a7fd5ad37f0ec741401a3edcc02de0e7ea94b98bbeef8d0f"
+    },
+    {
+      "id": "base1-55",
+      "heightInches": 16,
+      "scan": "scans/f13fc85c31bc39610bfc26f8.webp",
+      "sha256": "1075fcfd97d1de07b65f6a6d14a7112693549249ab029a82dc7a1519605b76d8"
+    },
+    {
+      "id": "base1-56",
+      "heightInches": 346,
+      "scan": "scans/7821501996cf66088c33cba2.webp",
+      "sha256": "8b2ec754c32282795f970bacb687f7121963ea41ce9cc990e6fb3dece81fb04c"
+    },
+    {
+      "id": "base1-57",
+      "heightInches": 12,
+      "scan": "scans/a6507bd2e9e1a34e4dacd2dd.webp",
+      "sha256": "cbf69dfd9e39b3025c7ca6c4235616f65cbed2d5275184afc1a60ad2f831dfd5"
+    },
+    {
+      "id": "base1-58",
+      "heightInches": 16,
+      "scan": "scans/9ebb8f9f8884358880255ff7.webp",
+      "sha256": "41382f71a19c925afccee1f818c5311ca14216b629baa3b93c3be9e58acb8ed7"
+    },
+    {
+      "id": "base1-59",
+      "heightInches": 24,
+      "scan": "scans/4a2c660a8cbc0d3fc45ac9ea.webp",
+      "sha256": "1d1c1dd383762ed3a9d704b7ae21c766de6464ecf7a585df12a849e9bfbae6dd"
+    },
+    {
+      "id": "base1-60",
+      "heightInches": 39,
+      "scan": "scans/5d8fb6c1a401e8226435ba79.webp",
+      "sha256": "5a0eef9389d1b11c9cdbdf8f4bac281de2c4db86870237f8f3f93f5607fb7fe9"
+    },
+    {
+      "id": "base1-61",
+      "heightInches": 12,
+      "scan": "scans/326276d203d89c09fadf2f0f.webp",
+      "sha256": "5b19427a1db40257693d1417213106868f5fd8f5750f8a5d7da0709227a8b05d"
+    },
+    {
+      "id": "base1-62",
+      "heightInches": 24,
+      "scan": "scans/9ee3b47db5c7e2070f3f3b60.webp",
+      "sha256": "9aba37b682b03cab20887fece0107ec959a0065c3851b49b77860f7dfde1648d"
+    },
+    {
+      "id": "base1-63",
+      "heightInches": 20,
+      "scan": "scans/44401aaa6ef27a2905533275.webp",
+      "sha256": "142a851977f0cb39482b8593608646e344609a72eb88850d8a2f93707d9a4eb5"
+    },
+    {
+      "id": "base1-64",
+      "heightInches": 43,
+      "scan": "scans/32fc753044d2cd5731514903.webp",
+      "sha256": "399df3ed5b72846f1e8cff1c5543f5608b2e6f5cf9237fbd18986b7bb728140f"
+    },
+    {
+      "id": "base1-65",
+      "heightInches": 31,
+      "scan": "scans/65c2c6afb61c346e13cee76a.webp",
+      "sha256": "877996c4e89c3699c433184207454f98356ca6a7c714a785c62ccb32a1b55a2e"
+    },
+    {
+      "id": "base1-66",
+      "heightInches": 39,
+      "scan": "scans/fac5054cb71715c951fa5f15.webp",
+      "sha256": "b2376a22ddf667fee40328465c24ab9fad8625a075a66f5c619ea4f9cf24782d"
+    },
+    {
+      "id": "base1-67",
+      "heightInches": 20,
+      "scan": "scans/b428bae2f159064ea256f5a0.webp",
+      "sha256": "77c177eeb51f998babca813f9efbe7cbac4fcbeb930ee96a2001686a6525e5c0"
+    },
+    {
+      "id": "base1-68",
+      "heightInches": 24,
+      "scan": "scans/0631eac7fed4ec0fc8e473d3.webp",
+      "sha256": "cdf41de66c4a70ffcabf4ca6e95f9f6b33edc4f3c1858df7dfed23e640c97a05"
+    },
+    {
+      "id": "base1-69",
+      "heightInches": 12,
+      "scan": "scans/2f124887d9eb97596c3a7a17.webp",
+      "sha256": "ba8a69bc74163d9606e8ca2b2d5b7a66514656659fd447bb807ae9a2350bde02"
+    }
+  ]
+}

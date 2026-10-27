@@ -1888,6 +1888,7 @@ export function MOVE_CARDS(
  * when the slot is vacated — callers should not manually clearEffects/damage=0.
  */
 export function MOVE_POKEMON_OFF_BOARD(store:StoreLike,state:State,slot:PokemonCardList,options:{pokemonDestination:CardList;attachedDestination?:CardList;sourceCard?:Card;sourceEffect?:any}):State {
+ if((state as any).newRules&&(globalThis as any).IlexNewRules?.moveAllowed(state,slot,options.pokemonDestination)===false)return state;
  const context=(CardList as any).wotcMovementContext;
  if(context?.svMovementBlocked?.(slot,options.pokemonDestination,slot.getPokemonCard(),{...context,store,state,wholePokemon:true}))return state;
  (CardList as any).wotcMovementContext={...context,wholePokemon:true};
@@ -3234,6 +3235,8 @@ export function IS_ABILITY_BLOCKED(
   /** When probing a specific power (e.g. useFromHand), pass it so allowUseFromHand locks match. */
   power?: Partial<Power>,
 ): boolean {
+  if((state as any).newRules&&(globalThis as any).IlexNewRules?.blocked(state,player,card,power))return true;
+  if((state as any).kenGuy&&(globalThis as any).IlexKenGuy?.abilityBlocked(state,player,card,power))return true;
   let probes=abilityProbeStack.get(store);
   if(!probes){probes=new Set<PokemonCard>();abilityProbeStack.set(store,probes);}
   // A passive lock may ask whether its own Ability is suppressed while the

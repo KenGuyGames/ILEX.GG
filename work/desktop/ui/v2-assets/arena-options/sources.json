@@ -20,24 +20,6 @@
       "originalRasterModified": false
     },
     {
-      "option": "pocket",
-      "card": "pocket-a4a-090",
-      "name": "Suicune ex \u2014 Secluded Springs immersive rare",
-      "sourceSha256": "0a4958eaa66b6cdcaf19135ac67fe0a83ec1da5b8028ac8f7b13dcc5b65fe622",
-      "sourceDimensions": [
-        367,
-        512
-      ],
-      "artworkViewport": [
-        28,
-        58,
-        309,
-        210
-      ],
-      "backgroundPosition": "55%",
-      "originalRasterModified": false
-    },
-    {
       "option": "cubes",
       "card": "xy2-95",
       "name": "Protection Cube",

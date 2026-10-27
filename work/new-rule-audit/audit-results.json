@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    "run-away-draw shuffles a damaged Pokémon despite Scoop Up Block",
+    "vanishing-wings shuffles a damaged Pokémon despite Scoop Up Block",
+    "Tandem observes available space below four: 3",
+    "Tandem fills only the single legal slot",
+    "Tandem observes available space below four: 4",
+    "Tandem respects the three-Pokémon Parallel City side",
+    "Paired Stadium obeys Barrier Shrine true",
+    "Paired Stadium obeys Barrier Shrine false",
+    "Thunder Mountain follows Kecleon Color Change",
+    "Ability lock restores Kecleon printed type for cost reduction",
+    "No active rules before setup vessel-of-life",
+    "Explicit full rule order honored vessel-of-life",
+    "Explicit full deck order replays vessel-of-life",
+    "No active rules before setup parallel-city",
+    "Explicit full rule order honored parallel-city",
+    "Explicit full deck order replays parallel-city",
+    "No active rules before setup silent-lab",
+    "Explicit full rule order honored silent-lab",
+    "Explicit full deck order replays silent-lab",
+    "No active rules before setup hex-maniac",
+    "Explicit full rule order honored hex-maniac",
+    "Explicit full deck order replays hex-maniac",
+    "No active rules before setup grand-tree",
+    "Explicit full rule order honored grand-tree",
+    "Explicit full deck order replays grand-tree"
+  ]
+}

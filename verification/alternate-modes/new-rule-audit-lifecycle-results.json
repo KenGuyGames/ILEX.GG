@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "count": 200,
+  "recycles": 2,
+  "checks": [
+    "Each of 96 physical rules conserved through 200 controlled turn transitions",
+    "Five-rule maximum and two reshuffles preserve unique rules",
+    "Vessel attaches outside shared row and returns to shared discard",
+    "No synthetic cards enter ordinary deck/hand/discard/Lost Zone"
+  ],
+  "controlledFixture": true
+}

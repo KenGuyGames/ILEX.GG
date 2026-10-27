@@ -1,0 +1,7808 @@
+{
+  "passed": true,
+  "count": 1560,
+  "executed": 1464,
+  "ineligible": 96,
+  "results": [
+    {
+      "id": "arven",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "arven",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "attract-customers",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "ball-guy",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "candice",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "cedric-juniper",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "charging-up",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "clay",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "colress-experiment",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "concealed-cards",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "crazy-code",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "cursed-blast",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "delinquent",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "dino-cry",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "double-gunner",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "explorer-s-guidance",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "feather-arrow",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "ancient-way",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "barrier-shrine",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "bloodthirsty-eyes",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "collapsed-stadium",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "daunting-pose",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "excited-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "happy-match",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "initialize",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "lost-city",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "mysterious-guidance",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "path-to-the-peak",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "power-of-alchemy",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "queenly-majesty",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "resolute-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "scoop-up-block",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "shadow-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "shady-dealings",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "silent-lab",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "skyliner",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "thunder-mountain",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "treasure-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "wonder-kiss",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": "hex-maniac",
+      "status": "ineligible"
+    },
+    {
+      "id": "flip-the-script",
+      "other": null,
+      "status": "ineligible"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "flower-selecting",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "fusion-strike-system",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "giant-water-shuriken",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "goodnight-babies",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "grand-tree",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "green-s-exploration",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "guzma",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "heat-factory",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "hyper-blower",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "illuminate",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "ancient-way",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "barrier-shrine",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "bloodthirsty-eyes",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "collapsed-stadium",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "daunting-pose",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "excited-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "happy-match",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "initialize",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "lost-city",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "mysterious-guidance",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "path-to-the-peak",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "power-of-alchemy",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "queenly-majesty",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "resolute-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "scoop-up-block",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "shadow-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "shady-dealings",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "silent-lab",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "skyliner",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "thunder-mountain",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "treasure-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "wonder-kiss",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": "hex-maniac",
+      "status": "ineligible"
+    },
+    {
+      "id": "industrious-incisors",
+      "other": null,
+      "status": "ineligible"
+    },
+    {
+      "id": "instant-charge",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "instant-charge",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "intrepid-sword",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "legacy-star",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "lusamine",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "metal-maker",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "miss-fortune-sisters",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "mysterious-tail",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "nest-stash",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "parallel-city",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "phantom-star",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "premonition",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "primal-turbo",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "primate-wisdom",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "psychic-embrace",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "quick-ripening-herb",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "ripening-charge",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "run-away-draw",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "search-the-premises",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "shining-arcana",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "spiritborne-evolution",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "sprint",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "star-abyss",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "star-perfume",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "strong-charge",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "ancient-way",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "barrier-shrine",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "bloodthirsty-eyes",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "collapsed-stadium",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "daunting-pose",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "excited-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "happy-match",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "initialize",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "lost-city",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "mysterious-guidance",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "path-to-the-peak",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "power-of-alchemy",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "queenly-majesty",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "resolute-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "scoop-up-block",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "shadow-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "shady-dealings",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "silent-lab",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "skyliner",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "thunder-mountain",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "treasure-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "wonder-kiss",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": "hex-maniac",
+      "status": "ineligible"
+    },
+    {
+      "id": "tandem-unit",
+      "other": null,
+      "status": "ineligible"
+    },
+    {
+      "id": "teal-dance",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "teal-dance",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "town-store",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "trade",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "tri-howl",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "ancient-way",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "barrier-shrine",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "bloodthirsty-eyes",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "collapsed-stadium",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "daunting-pose",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "excited-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "happy-match",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "initialize",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "lost-city",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "mysterious-guidance",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "path-to-the-peak",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "power-of-alchemy",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "queenly-majesty",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "resolute-heart",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "scoop-up-block",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "shadow-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "shady-dealings",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "silent-lab",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "skyliner",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "thunder-mountain",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "treasure-hunt",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "wonder-kiss",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": "hex-maniac",
+      "status": "ineligible"
+    },
+    {
+      "id": "tropical-beach",
+      "other": null,
+      "status": "ineligible"
+    },
+    {
+      "id": "tyme",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "tyme",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "underworld-door",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "vanishing-wings",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "vessel-of-life",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "welder",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "conversion-star",
+      "other": null,
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "ancient-way",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "barrier-shrine",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "bloodthirsty-eyes",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "collapsed-stadium",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "daunting-pose",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "excited-heart",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "happy-match",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "initialize",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "lost-city",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "mysterious-guidance",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "path-to-the-peak",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "power-of-alchemy",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "queenly-majesty",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "resolute-heart",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "scoop-up-block",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "shadow-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "shady-dealings",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "silent-lab",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "skyliner",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "thunder-mountain",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "treasure-hunt",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "wonder-kiss",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": "hex-maniac",
+      "status": "passed"
+    },
+    {
+      "id": "pokestop",
+      "other": null,
+      "status": "passed"
+    }
+  ]
+}

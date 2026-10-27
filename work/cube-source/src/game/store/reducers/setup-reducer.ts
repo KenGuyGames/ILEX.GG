@@ -319,6 +319,16 @@ function* alternativeSetupGame(next: Function, store: StoreLike, state: State): 
 
 // Helper: Alternative setup for a single player (choose Active, Bench, choose Prizes from hand)
 function* alternativeSetupSinglePlayer(player: Player, chooseCardsOptions: any, state: State, store: StoreLike, next: Function) {
+  if ((state as any).kenGuy) {
+    const prizePrompt=new ChooseCardsPrompt(player,GameMessage.CHOOSE_PRIZES_SETUP,player.hand,{}, {min:6,max:6,allowCancel:false});
+    (prizePrompt.options as any).kenGuyPrizes=true;
+    const valid=prizePrompt.validate.bind(prizePrompt);
+    prizePrompt.validate=(cards:any)=>valid(cards)&&Array.isArray(cards)&&player.hand.cards.some(c=>!cards.includes(c)&&isStartingPokemonCandidate(state,c));
+    yield store.prompt(state,prizePrompt,(cards:any)=>{for(let i=0;i<6;i++){player.hand.moveCardTo(cards[i],player.prizes[i]);player.prizes[i].isSecret=true;(player.prizes[i] as any).faceUpPrize=false;}next();});
+    const blocked=player.hand.cards.map((c,i)=>isStartingPokemonCandidate(state,c)?-1:i).filter(i=>i>=0);
+    yield store.prompt(state,new ChooseCardsPrompt(player,GameMessage.CHOOSE_STARTING_POKEMONS,player.hand,{}, {...chooseCardsOptions,blocked,startingActiveFirst:true}),(cards:any)=>{player.hand.moveCardTo(cards[0],player.active);player.active.isSecret=true;for(let i=1;i<cards.length;i++){player.hand.moveCardTo(cards[i],player.bench[i-1]);player.bench[i-1].isSecret=true;}next();});
+    return;
+  }
   const blocked: number[] = [];
   player.hand.cards.forEach((c, index) => {
     if (!isStartingPokemonCandidate(state, c)) {

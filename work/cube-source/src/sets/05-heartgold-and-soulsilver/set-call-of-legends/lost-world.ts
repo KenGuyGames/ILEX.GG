@@ -30,7 +30,7 @@ export class LostWorld extends TrainerCard {
         throw new GameError(GameMessage.CANNOT_USE_STADIUM);
       }
 
-      state = endGame(store, state, winner);
+      state = endGame(store, state, winner, 'card-win');
     }
     return state;
   }

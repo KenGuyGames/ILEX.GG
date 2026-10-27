@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "feature": "New Rule interaction audit and fixes",
+  "newRuleCards": 96,
+  "verifiedHeightPrintings": 69,
+  "modes": [
+    "local",
+    "bot",
+    "private with opponent-approved Undo"
+  ],
+  "rulesVersion": 1,
+  "engineSha256": "44ddf4a88877ec76943cba5c6b10a70534a1686bdd03f88843111dc923bbfdd2",
+  "checks": {
+    "action-results": 66,
+    "audit-results": 25,
+    "outcome-results": 35,
+    "extended-results": 46,
+    "edge-results": 7,
+    "copied-attack-results": 3,
+    "reveal-results": 96,
+    "pair-results": 1560,
+    "ability-matrix-results": 5768,
+    "stadium-matrix-results": 207,
+    "lifecycle-results": 200,
+    "legacy-results": 11,
+    "journal-results": 4,
+    "ken-base-results": 34,
+    "ken-audit-results": 93,
+    "browser-results": 16,
+    "mobile-results": 20,
+    "full-match-results": 26,
+    "android-verification": 44,
+    "native": 9,
+    "restart": 3
+  },
+  "fullMatchProfiles": [
+    "unlimited",
+    "mega",
+    "sv",
+    "swsh",
+    "wotc",
+    "wotc2002",
+    "modern",
+    "sm",
+    "xy",
+    "expanded",
+    "bw",
+    "dp",
+    "hgss",
+    "dppl",
+    "exlate",
+    "ex",
+    "unlimited",
+    "unlimited",
+    "sv",
+    "sv",
+    "swsh",
+    "swsh",
+    "sm",
+    "sm",
+    "xy",
+    "xy"
+  ],
+  "normalMatchBaselineParity": true,
+  "androidCode": 110,
+  "androidSha256": "aeb142f5cfb3d13328f5ea50a4518ad8a580880d81434d718eae7f6447f9ddeb",
+  "originalAndroidCertificate": true,
+  "physicalAndroidTested": false,
+  "twoPhysicalPcsTested": false,
+  "new3dsChanged": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "apkDelta": {
+    "passed": true,
+    "changed": [
+      "AndroidManifest.xml",
+      "META-INF/ILEX.RSA",
+      "META-INF/ILEX.SF",
+      "META-INF/MANIFEST.MF",
+      "assets/ui/new-rule-engine.js",
+      "assets/ui/rules-engine.js",
+      "assets/ui/rules-match.js"
+    ],
+    "added": [],
+    "unchangedExistingEntries": 3970
+  },
+  "fixes": [
+    "Scoop Up Block permits Run Away Draw and Vanishing Wings to shuffle damaged Pok\u00e9mon into deck",
+    "Tandem Unit uses the effective Bench limit",
+    "Thunder Mountain follows current Pok\u00e9mon type and Ability suppression",
+    "Barrier Shrine prevents paired Stadium assembly",
+    "Explicit validated rule-deck order is honored"
+  ],
+  "saveCompatibility": "Historical journals retain old behavior; corrected interactions begin after saved commands",
+  "exhaustiveCardPairCertification": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "65f842974d3386bb9adf87a4dddf9e6e38006c6d73d9fbf55c3f83f72069837d",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "10e8757471e668023192988bddba41668a480eca57f97424593d2a683b3b229d",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

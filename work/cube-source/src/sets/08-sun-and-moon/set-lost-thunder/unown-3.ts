@@ -69,7 +69,7 @@ export class Unown3 extends PokemonCard {
       const winner = state.players.indexOf(player) === 0
         ? GameWinner.PLAYER_1
         : GameWinner.PLAYER_2;
-      state = endGame(store, state, winner);
+      state = endGame(store, state, winner, 'card-win');
     }
 
     return state;
