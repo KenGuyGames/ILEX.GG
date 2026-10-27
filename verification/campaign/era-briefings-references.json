@@ -1,0 +1,14 @@
+{
+  "scope": "Instructional text follows the existing IlexStoryDecks format and RulesMatch profile. No engine/card effects or deck legality changed.",
+  "campaignVariants": ["Base-Neo is custom, Slowking works from Bench as printed", "Expedition-Skyridge is a custom narrow retro pool", "Chapter8 retains early EX first-turn Supporter allowance rather than late2004Worlds change"],
+  "sources": [
+    {"topic":"DP/HGSS opening Trainer restriction and LV.X","url":"https://assets.pokemon.com/assets/cms/pdf/tcg/rulebooks/HeartGold_SoulSilver_Rulebook.pdf"},
+    {"topic":"e-series Supporters, Powers and early rules","url":"https://www.pojo.com/pokemon/rules/PokemonS-Rulebook.pdf","note":"Original Wizards rulebook scan"},
+    {"topic":"XY opening attack restriction and Mega Evolution","url":"https://assets.pokemon.com/assets/cms2/pdf/trading-card-game/rulebook/xy1-rulebook-en.pdf"},
+    {"topic":"Lysandre's Trump Card historical ban","url":"https://www.pokemon.com/us/news/pokemon-tcg-notables-choose-their-favorite-cards-from-the-xy-series"},
+    {"topic":"Rare Candy text","url":"https://assets.pokemon.com/assets/cms/pdf/tcg/tcg_errata.pdf"},
+    {"topic":"SwordShield opening Supporter restriction","url":"https://www.pokemon.com/uk/news/pokemon-tcg-retrospective-the-sword-shield-era"},
+    {"topic":"Modern Rule Boxes, GX, VSTAR, ACE SPEC","url":"https://www.pokemon.com/static-assets/content-assets/cms2/pdf/trading-card-game/rulebook/par_rulebook_en.pdf"},
+    {"topic":"Tools become separate category","url":"https://www.pokemon.com/us/news/2023-pokemon-tcg-standard-format-rotation-and-pokemon-tool-errata"}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "campaign": "The Forest Keeps Growing",
+  "chapters": 13,
+  "paths": 26,
+  "battlesPerPlaythrough": 64,
+  "usedDecklists": 94,
+  "hashes": {
+    "index.html": "3f443c21e38a28ba3a428812d585ec70631831dcf4d2d35b852f36ece0a66660",
+    "menu-groups.js": "7c74bb262c18213135c9a2915e6b55433314189d85b31255d33e67dbed384ae7",
+    "story-decks.js": "783741084c3c8fa909229ff79f541e998ea95a73704d41a62f8d87d491a91427",
+    "story-content.js": "505fb766d841ef1a8289d3b94fc3f2f7186220af35a11094ba474b7365c90bd4",
+    "story-mode.js": "18ad07183190ca02dddc5a4a0066e064cdadfff980ecbca80db95e2561a5c5cd",
+    "story.css": "6729043245bb4ed9ae8d5ec20e36f0663753e3f13870a5c0afdc2ebb365a28c4"
+  },
+  "checks": {
+    "decks": 94,
+    "desktop": 198,
+    "native": 7,
+    "mobile": 18,
+    "visual": 4,
+    "slowking": 1,
+    "gameplay": 108,
+    "android": 44
+  },
+  "savedProgress": "Version2 campaign; dialogue, selected path, mission, battle journal, difficulty and ending saved separately from regular matches. Legacy version1 archived when opened.",
+  "limits": "Progression fixtures use real reducer concessions; gameplay checks are finite opening-turn smoke tests, not exhaustive strategic playthroughs. Physical Android acceptance remains unverified.",
+  "androidVersion": 87,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "c3c6bdcc0011a05affcd136f243b127f233754562e3b9c1ede7c19386756b327",
+      "unchangedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "14d30521823eb04d90ea84c036d3a167e8427107cbd8871fe63c87d15b1a7188",
+      "unchangedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "2952e5e8acbc957ea5c64936e93baac63fd80f268a8da3eebe6a0b5702be2e8f"
+}

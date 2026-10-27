@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "fix": "Mission briefing changed from globally styled fixed aside to collapsed details in normal document flow. Duplicate opponent portrait removed from briefing. Full-width deck controls and independent dialogue settings.",
+  "missionBriefingsChecked": 128,
+  "viewports": [
+    "523x679 (reported screenshot)",
+    "390x844",
+    "800x360",
+    "1440x1000"
+  ],
+  "checks": {
+    "desktop": 21,
+    "mobile": 21,
+    "native": 10,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "fd7f01714e73aad79ba93a4f0c7814716307a8a196e42df1744eabc8ac0542b8",
+    "story.css": "02690a731eefd0a51b7b8405d2b3d38eb304e3b03f8de14b31a5b29d65e85bad"
+  },
+  "savedProgress": "Existing campaign, audio preferences, battle journal and save schema unchanged. Native battle reload/resume verified.",
+  "androidVersion": 90,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "5f2c584d673a1087afd7820b49885d47138e23572adac5be59491bc200ed1403",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "abac00b9fe71a3b8b1924cc36fcfd40644331ad55c3aadde08512ef1d228aca3",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "a268ef0304dae2978c73241833b5313e072b20ab4ff11685fdc2dd5af5e3aa42"
+}

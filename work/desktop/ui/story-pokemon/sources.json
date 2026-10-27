@@ -1,0 +1,245 @@
+[
+  {
+    "name": "Giratina",
+    "dex": 487,
+    "file": "giratina.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/487.png",
+    "page": "https://www.pokemon.com/us/pokedex/giratina",
+    "sha256": "a43e1563cf09e86f391a75b1de445b2eaef4773a956c39b8d9377048b02f82e2",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Venusaur",
+    "dex": 3,
+    "file": "venusaur.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+    "page": "https://www.pokemon.com/us/pokedex/venusaur",
+    "sha256": "106d0040aa775f95871706c30ddd4abaef2c962215f5e8bd4141e0caef0ef8e4",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Palkia",
+    "dex": 484,
+    "file": "palkia.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/484.png",
+    "page": "https://www.pokemon.com/us/pokedex/palkia",
+    "sha256": "2c7827e8ecdf18194761404141b27ee6e50c6805b34d3cce2cabc9449e4b48e2",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Garchomp",
+    "dex": 445,
+    "file": "garchomp.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/445.png",
+    "page": "https://www.pokemon.com/us/pokedex/garchomp",
+    "sha256": "c9122fe26666487f152bc299ce73257141d5e762d486ac49867c97b19342980f",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Mewtwo",
+    "dex": 150,
+    "file": "mewtwo.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png",
+    "page": "https://www.pokemon.com/us/pokedex/mewtwo",
+    "sha256": "d99adeb9b4523073ca218a6f472ea5b602b047ccd8af8dea6fa7ae051f80366a",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Reshiram",
+    "dex": 643,
+    "file": "reshiram.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/643.png",
+    "page": "https://www.pokemon.com/us/pokedex/reshiram",
+    "sha256": "a420e47a41e5b2b65f1ccd528cfc01e47d1c05eeef5bea7d06a7da26cd09f6fe",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Seismitoad",
+    "dex": 537,
+    "file": "seismitoad.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/537.png",
+    "page": "https://www.pokemon.com/us/pokedex/seismitoad",
+    "sha256": "b59c85f0c4a26e3e97d37839bcf51666713cfde488ad7c6f36007ada8bfe04f2",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Eternatus",
+    "dex": 890,
+    "file": "eternatus.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/890.png",
+    "page": "https://www.pokemon.com/us/pokedex/eternatus",
+    "sha256": "d307b476c143719a43161ecd2af57ddf19cb21280f0e2a90011e8952f4ed458c",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Durant",
+    "dex": 632,
+    "file": "durant.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/632.png",
+    "page": "https://www.pokemon.com/us/pokedex/durant",
+    "sha256": "6c5a3e9ec82139c5a620d86184d50485864733febe759e53bc09e51e0dace6eb",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Dialga",
+    "dex": 483,
+    "file": "dialga.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/483.png",
+    "page": "https://www.pokemon.com/us/pokedex/dialga",
+    "sha256": "34d234eef4714349ead88d0df85adcdb97195198f556a09e35dd7aac02d7918d",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Zoroark",
+    "dex": 571,
+    "file": "zoroark.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/571.png",
+    "page": "https://www.pokemon.com/us/pokedex/zoroark",
+    "sha256": "b9dc530c88c2baee1026f03eb4b57bd7db94289d9811bafbe961ae49150938cd",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Muk",
+    "dex": 89,
+    "file": "muk.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/089.png",
+    "page": "https://www.pokemon.com/us/pokedex/muk",
+    "sha256": "bbc4d735100cbfdb1e2cb17669d82430d930abe4b3d779de6b679590a68c15f6",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Arceus",
+    "dex": 493,
+    "file": "arceus.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/493.png",
+    "page": "https://www.pokemon.com/us/pokedex/arceus",
+    "sha256": "2c33a80a60316f3bb3aa611246543857e053a2728c94c0f67efa44b965d8bc31",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Lugia",
+    "dex": 249,
+    "file": "lugia.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/249.png",
+    "page": "https://www.pokemon.com/us/pokedex/lugia",
+    "sha256": "6977890cdd83d4b542961be5bbe965c8ca92ccff843094be4840939c4f0674d6",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Gengar",
+    "dex": 94,
+    "file": "gengar.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png",
+    "page": "https://www.pokemon.com/us/pokedex/gengar",
+    "sha256": "b6549b80537676fcf4a589c8853b38cce42f42b5f707bbe2e63797666175cf06",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Celebi",
+    "dex": 251,
+    "file": "celebi.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/251.png",
+    "page": "https://www.pokemon.com/us/pokedex/celebi",
+    "sha256": "31384fd45c2663c1e6ed94deeb8b16c7e2e0a5afb4eb8ea95fef175ab34308be",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Zekrom",
+    "dex": 644,
+    "file": "zekrom.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/644.png",
+    "page": "https://www.pokemon.com/us/pokedex/zekrom",
+    "sha256": "de9c3fa59c8bd6a7903598b4737fecb410c78d0ee59617b4bf454dbeebd3dfe4",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Alakazam",
+    "dex": 65,
+    "file": "alakazam.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png",
+    "page": "https://www.pokemon.com/us/pokedex/alakazam",
+    "sha256": "8f1dfebe7855bf0838dc4110629b01a8862370373cabe527adf3f979bc4fa1e0",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Groudon",
+    "dex": 383,
+    "file": "groudon.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/383.png",
+    "page": "https://www.pokemon.com/us/pokedex/groudon",
+    "sha256": "bf6a4334d6a49af32396c9d155e867a1699439ff73c28bb6dad15dd4684b4461",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Rayquaza",
+    "dex": 384,
+    "file": "rayquaza.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png",
+    "page": "https://www.pokemon.com/us/pokedex/rayquaza",
+    "sha256": "52fdacd461e20343dc7fd127b062c23429dc63dfe558c94b9aea0dc7a27be939",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Dragonite",
+    "dex": 149,
+    "file": "dragonite.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png",
+    "page": "https://www.pokemon.com/us/pokedex/dragonite",
+    "sha256": "4bd7549caa15eac43a8197ba53e843a95f2b56c71b1121829ea76764fbf26f9c",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Slowking",
+    "dex": 199,
+    "file": "slowking.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/199.png",
+    "page": "https://www.pokemon.com/us/pokedex/slowking",
+    "sha256": "ef4c791a9ea73ca822a8c52a1f728e1712d28e333ff477255574baf8d8fbcb61",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Charizard",
+    "dex": 6,
+    "file": "charizard.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+    "page": "https://www.pokemon.com/us/pokedex/charizard",
+    "sha256": "b6d5b8ee9fb05dc6f53294b2cae660dec770b92762cdb19d16bcbd679e1ba43a",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Hydreigon",
+    "dex": 635,
+    "file": "hydreigon.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/635.png",
+    "page": "https://www.pokemon.com/us/pokedex/hydreigon",
+    "sha256": "74b0d31de02ec0c2350fccce401190f196037d51f17a5931a04ff9b2d67a2c3b",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Chandelure",
+    "dex": 609,
+    "file": "chandelure.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/609.png",
+    "page": "https://www.pokemon.com/us/pokedex/chandelure",
+    "sha256": "c4dc9669beb0d42295e776a823aa6874e62bdecb83e1bc7b8cf28bfabdc91840",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Mew",
+    "dex": 151,
+    "file": "mew.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/151.png",
+    "page": "https://www.pokemon.com/us/pokedex/mew",
+    "sha256": "9991aee5181178b604b99aec636533b0c5a52a321ce246dd3b9c33243a342a64",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  },
+  {
+    "name": "Pikachu",
+    "dex": 25,
+    "file": "pikachu.png",
+    "source": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+    "page": "https://www.pokemon.com/us/pokedex/pikachu",
+    "sha256": "759ceafdb4b8d637dfcfe673cf672bc3c472354a3b2e7e0835d9cdcacd8d195d",
+    "provenance": "Official Pokemon Pokedex illustration; downloaded original bytes, no generated artwork."
+  }
+]

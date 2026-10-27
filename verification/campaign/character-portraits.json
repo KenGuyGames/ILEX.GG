@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "humanPortraits": 68,
+  "atlasCount": 10,
+  "dialogueLinesChecked": 796,
+  "checks": {
+    "desktop": 158,
+    "mobile": 158,
+    "native": 5,
+    "alpha": 10,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "02d66b845dc87aaf42f24d785ba1e72a19a15bd75e4371f95692709bfbac7924",
+    "story.css": "44747b6010d091907511a9ffa0253386e0380ad0dbc59cf8e0d7997e4725052b",
+    "story-portraits/manifest.json": "0f4a9de42de3af33b93333c3b5518ff304081e2f5d2f3d29363a0461224f2a3a",
+    "story-portraits/original-1.png": "ba30b3f9ac0e1b0721b8ea49a782d17f4751496bbef6da69508fe4dff958ed8a",
+    "story-portraits/original-2.png": "2880baf42322a59605078cfc79d139c9463835cb280577402576ed261b754969",
+    "story-portraits/original-3.png": "eec31bd3616312d1769a0ebf810dd83c94b87e8cc6f315075b3fda4e61a37543",
+    "story-portraits/original-4.png": "c77bb510092c40c6d47224612bb8047973d430e5b4065cd2dc8e6eb6c5ce775e",
+    "story-portraits/support-1.png": "1d1682b976523b53c323118008b53b44800af896000f84f5910195450133c71e",
+    "story-portraits/support-2.png": "c5b2d44b98e7eb5255f80cabc6fa6a38e09b648d5f7ce037d8d41bdaf5a06166",
+    "story-portraits/support-3.png": "c0d812293602665a4c7cd45a8f32b9b3e3018e4ed096ce4cae23052fc88246ce",
+    "story-portraits/support-4.png": "848a550d9548ff37b13f65d2606ff8f134da07570e1fabe39bae47f1621d50d8",
+    "story-portraits/support-5.png": "7cb72e1c66caa0a54b253664405d0b061e3b580cc233e51ede2d025e102207c4",
+    "story-portraits/support-6.png": "f36b8544919b86f4a47dcb5997ed4ecc901bccd7dc5657a85872bcf156473ee2"
+  },
+  "scope": "Human speaker portraits, path companions and mission opponents. Transparent artwork without backgrounds, frames or labels. No Pokemon redesigns.",
+  "savedProgress": "Existing version2 campaign/save schema retained. Dialogue, path and battle reload verified in isolated browser/native profiles. Real user saves untouched.",
+  "androidVersion": 88,
+  "physicalAndroidDeviceTested": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "generation": "Built-in imagegen background extraction; original generated PNG alpha preserved. SVG viewports select individual humans.",
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "a7c4e3c5223627a76dc428af5055881eadc9a1c847205134458e2613fcf8932f",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "edd42b85c6fd62113bba99ad8867b7154e17749eb6af3369c649fc965168b0c8",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "f6ad1eeff7510dddfb6a0b08c718b3b86194c16aa8a6dff4cdd392d6d5c32418"
+}

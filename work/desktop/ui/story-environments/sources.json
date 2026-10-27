@@ -1,0 +1,58 @@
+{
+  "generated": true,
+  "tool": "built-in image_gen",
+  "characters": false,
+  "panelsPerAtlas": 6,
+  "locationCount": 42,
+  "art": [
+    {
+      "file": "atlas-1.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-0b31c9bc-8226-4e86-811a-43825246521c.png",
+      "sha256": "7d6aa5c00f685018729aaec5e2801b1fd45deb81e6e9e5a74c655931e2b7ae66",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "atlas-2.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-bbdb054a-dc72-4264-8eb6-8f17596bf958.png",
+      "sha256": "85fe6243c45ff5838209b2c2dd4f2d16ddf6ec099bb37018ac1df0a55fe32838",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "file": "atlas-3.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-5943646c-a73c-4c8a-b86f-da6113f15f9a.png",
+      "sha256": "0cac75f6e84be9cfa3d05c511c86c2da767e2f2645525b0801da7b5b6f5ab42d",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "file": "atlas-4.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-87ca5f2a-975d-46c5-a46a-7cb566caf946.png",
+      "sha256": "5a2645b7165fd9156b58c301f538d83069e4d642a95840d74ebb6fbf3132e9a4",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "atlas-5.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-dd039ad7-0cd6-4eb7-9b6b-d311110ca57f.png",
+      "sha256": "f4d86de12adafedf39a84a6dc27650078c044bd15b472cecb496727e0eba83f2",
+      "width": 1774,
+      "height": 887
+    },
+    {
+      "file": "atlas-6.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-4f3f2fc1-7b19-4c6c-a883-e42e91f4cfb7.png",
+      "sha256": "12adc28f9dcaf1e0c7788b8987cab65854a97f1a9eda32d8d0e488b9e3d4e6c7",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "atlas-7.png",
+      "source": "C:/Users/Kenneth/.codex/generated_images/01a1618a-9928-79a1-99b3-0b972fcb604d/exec-e3b3f0ed-9753-4000-a712-2d368dc6ac05.png",
+      "sha256": "d46e9fcb060ce4aac263832f924a58e9cfc8595234dd9ad2775484dbf689952e",
+      "width": 1774,
+      "height": 887
+    }
+  ]
+}

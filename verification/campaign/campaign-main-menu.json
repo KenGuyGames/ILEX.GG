@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "feature": "Campaign moved from Arena to the Main Menu with matching forest plaque and Celebi art. All original Arena/Vault destinations retained.",
+  "checks": {
+    "desktop": 56,
+    "mobile": 56,
+    "native": 6,
+    "android": 44
+  },
+  "hashes": {
+    "menu-groups.js": "04e13cd52933a09a4378f15c9e4d31fc9083191573fbab7319c4e166ee250e06",
+    "menu-plaques.css": "8453bbb364011f4508bf01653f0e5422738f878dee9debac437c67e705b1999c"
+  },
+  "savedProgress": "No campaign progress, match journals, rules, decks, audio or save schema changes. Existing Continue retained.",
+  "androidVersion": 102,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "de78d42ac8cc35831702e4eefa9b5d6e00bd7a704c0696addab9e1b23183191e",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "94d3c8716e97dc0b5d2db1bddabbbcf2e74472e8f2aef7e11336eb43b088944c",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "5b6dd25445160b23a94bc7d98d2656e2de606734622c29f0eac27661254f35d9"
+}

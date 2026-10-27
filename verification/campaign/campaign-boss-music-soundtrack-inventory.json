@@ -1,0 +1,340 @@
+{
+  "passed": true,
+  "total": 50,
+  "counts": {
+    "dialogue": 13,
+    "regular": 13,
+    "boss": 24
+  },
+  "missingRequiredTracks": [],
+  "ending": "Chapter13 dialogue track",
+  "bossCoverage": 42,
+  "regularCoverage": 86,
+  "sourceFilesUnmodified": true,
+  "tracks": [
+    {
+      "kind": "dialogue",
+      "chapter": 1,
+      "file": "campaign/dialogue-01.mp3",
+      "sha256": "d5666973d847bab952a2f4137a895673a5f0b9535ab072350528681f0a5ef595"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 2,
+      "file": "campaign/dialogue-02.mp3",
+      "sha256": "561a4690ee2001d2a0b66fc50ceee2df08d2361e1ada59c79de01c81fe662364"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 3,
+      "file": "campaign/dialogue-03.mp3",
+      "sha256": "74452226a0b7add5f25e69ce98ded85bd2c36bd941beb04a5539a83418555d9b"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 4,
+      "file": "campaign/dialogue-04.mp3",
+      "sha256": "f731afbdcdbecbe00d74dc7e0c5fdccc324b7138232b5df89389de7e494ede2c"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 5,
+      "file": "campaign/dialogue-05.mp3",
+      "sha256": "8021a3372f555b0567bf6e424c8136074ab32b2f0cbacec41dbcef4fd20ffffb"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 6,
+      "file": "campaign/dialogue-06.mp3",
+      "sha256": "2700bfec28a83550c558a56b82a4e72eccdaae6de3be0589cb3e41172ec1db61"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 7,
+      "file": "campaign/dialogue-07.mp3",
+      "sha256": "9f1f3aaf546aee93a5a41f2a866c756366df29c8a969426cc564a49ad4579238"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 8,
+      "file": "campaign/dialogue-08.mp3",
+      "sha256": "e359240c0e58c4c8d21d47d1e4dc5b93569a6792b21810c0b70854513eec7925"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 9,
+      "file": "campaign/dialogue-09.mp3",
+      "sha256": "aa0214311a8e4d29812090964caaf5c3fe781282adad05b75086699897c8790d"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 10,
+      "file": "campaign/dialogue-10.mp3",
+      "sha256": "f5e86b4afb185eb702915d6583170c049006f246fed23524b7ec9e44f73e7192"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 11,
+      "file": "campaign/dialogue-11.mp3",
+      "sha256": "1e8f71af75c2bcf138f12c36179fbf964f07ab6f597ce9b28bdd735f6add7974"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 12,
+      "file": "campaign/dialogue-12.mp3",
+      "sha256": "68d1e8b66d3760799a4e1446190f86b8f4afb012dccd0e60bb59fce6a46ff020"
+    },
+    {
+      "kind": "dialogue",
+      "chapter": 13,
+      "file": "campaign/dialogue-13.mp3",
+      "sha256": "7b36363330c03da47ce63ff8a86204b6edbc603c49214b1ef43755618fa5cda1"
+    },
+    {
+      "kind": "regular",
+      "chapter": 1,
+      "file": "campaign-regular/battle-01.mp3",
+      "sha256": "41cfd79cef5642bbe1b861366453427be4a014d026e033a4c4d35fd569c66134"
+    },
+    {
+      "kind": "regular",
+      "chapter": 2,
+      "file": "campaign-regular/battle-02.mp3",
+      "sha256": "5147b7fbdb77bc8589fe6ecc0225ea9269b920f07188fc2cc1be233d01b752c2"
+    },
+    {
+      "kind": "regular",
+      "chapter": 3,
+      "file": "campaign-regular/battle-03.mp3",
+      "sha256": "1f82dfa55718b1199ba83df460fcf643140ce09f473e91c985275defa520139c"
+    },
+    {
+      "kind": "regular",
+      "chapter": 4,
+      "file": "campaign-regular/battle-04.mp3",
+      "sha256": "b08e4bc492d92f4d53435698489e7a29964449aadfc584dd05e213f02b72eac5"
+    },
+    {
+      "kind": "regular",
+      "chapter": 5,
+      "file": "campaign-regular/battle-05.mp3",
+      "sha256": "6002e16367c0f1ae3f3cc09840c97bed31af1048d6ac17eb827714414464c3a7"
+    },
+    {
+      "kind": "regular",
+      "chapter": 6,
+      "file": "campaign-regular/battle-06.mp3",
+      "sha256": "58ad7fe28a8f03a8c9b9ca9c76b663d0c764cd4ae361b1386c69516fb573bd89"
+    },
+    {
+      "kind": "regular",
+      "chapter": 7,
+      "file": "campaign-regular/battle-07.mp3",
+      "sha256": "cd7ffea3284d8273c0ddb376b5dbb99b7761569c9ce6e57cce54114f1f6b4da4"
+    },
+    {
+      "kind": "regular",
+      "chapter": 8,
+      "file": "campaign-regular/battle-08.mp3",
+      "sha256": "5680c243ce6b1ae0d7f9985271477b2c577e832c584bad02d006a9efeadcbb6e"
+    },
+    {
+      "kind": "regular",
+      "chapter": 9,
+      "file": "campaign-regular/battle-09.mp3",
+      "sha256": "fe3ab0910065864419ce259b05e059f34404e9c37d514b09fab83f6da281c1c6"
+    },
+    {
+      "kind": "regular",
+      "chapter": 10,
+      "file": "campaign-regular/battle-10.mp3",
+      "sha256": "5d22e927a36abd5ffef0b6d36b860312d013551e6065f7352607f41ee7d29496"
+    },
+    {
+      "kind": "regular",
+      "chapter": 11,
+      "file": "campaign-regular/battle-11.mp3",
+      "sha256": "e2147998191d62c40ca69b7eba4ff1a4fdf373ea350645d84c09e7014ef3708d"
+    },
+    {
+      "kind": "regular",
+      "chapter": 12,
+      "file": "campaign-regular/battle-12.mp3",
+      "sha256": "9ff89f38c5b0794dd967c87d1e8ff16afeb81d5b1105b7322975d98626d8e233"
+    },
+    {
+      "kind": "regular",
+      "chapter": 13,
+      "file": "campaign-regular/battle-13.mp3",
+      "sha256": "57300c6c7028364d4751588d3d262244392c9865a2da59cdd77d9c4fdc2ab714"
+    },
+    {
+      "kind": "boss",
+      "chapter": 1,
+      "file": "campaign-boss/warden.mp3",
+      "encounter": "forest/forest-machine",
+      "sha256": "2941cfefb65793aa8b6331aee2eca1708d2214192f2f3bef405fe067be52962e"
+    },
+    {
+      "kind": "boss",
+      "chapter": 2,
+      "file": "campaign-boss/saturn.mp3",
+      "encounter": "galactic/saturn",
+      "sha256": "bcafe7c417b73a5699f2a4c86660ab7feaafb2e0f9d8ab96e15a6fceac581bdd"
+    },
+    {
+      "kind": "boss",
+      "chapter": 3,
+      "file": "campaign-boss/slowking.mp3",
+      "encounter": "mind-games/slowking",
+      "sha256": "a71d3f0b075dd4af7d57187f8668f862941ff440f0f8ed0ab7bb5ab304ea6e88"
+    },
+    {
+      "kind": "boss",
+      "chapter": 4,
+      "file": "campaign-boss/lysandre.mp3",
+      "encounter": "recovery/lysandre",
+      "sha256": "d141a6ad043d7439c1fae653e0d10c8141c797135028090c609bdff3c86a29e4"
+    },
+    {
+      "kind": "boss",
+      "chapter": 4,
+      "file": "campaign-boss/seismitoad.mp3",
+      "encounter": "recovery/seismitoad",
+      "sha256": "e985f48cf17f134254dd1c374e91bf811e76add26d6552a0fd6c014b0e68e6f4"
+    },
+    {
+      "kind": "boss",
+      "chapter": 5,
+      "file": "campaign-boss/observatory.mp3",
+      "encounter": "purge/connection",
+      "sha256": "f44a8000d5a78b2df662bb593b23884b6ae161d6dee713fb72ee4854fde22a77"
+    },
+    {
+      "kind": "boss",
+      "chapter": 6,
+      "file": "campaign-boss/delta.mp3",
+      "encounter": "delta/wrong-sky",
+      "sha256": "7e766c576b4b8547ddc71030cd6854c7ffd157a97f9dba5ee5fbd430a56649bd"
+    },
+    {
+      "kind": "boss",
+      "chapter": 7,
+      "file": "campaign-boss/rayquaza.mp3",
+      "encounter": "dragons/second",
+      "sha256": "b2bf7f3754a715b9becb647b0d613e14dfcf8dd0c5306318e76d1ad91643c866"
+    },
+    {
+      "kind": "boss",
+      "chapter": 7,
+      "file": "campaign-boss/hydreigon.mp3",
+      "encounter": "dragons/stand",
+      "sha256": "970442446bf73c0d6a0937c262cd70e2b774694d85c264e7662f37f514c6d188"
+    },
+    {
+      "kind": "boss",
+      "chapter": 7,
+      "file": "campaign-boss/garchomp.mp3",
+      "encounter": "dragons/last-bridge",
+      "sha256": "b2d971a74ab2622a3e8da74ef6682f4912c1c132eb5809c5a4f44d9ea69e6c94"
+    },
+    {
+      "kind": "boss",
+      "chapter": 8,
+      "file": "campaign-boss/maxie.mp3",
+      "encounter": "molten/maxie",
+      "sha256": "f9a443fc14a9251b087f8d86ebdf06127cd9c6b67b28fe33a476007a8523d8f4"
+    },
+    {
+      "kind": "boss",
+      "chapter": 8,
+      "file": "campaign-boss/groudon.mp3",
+      "encounter": "molten/groudon",
+      "sha256": "6c345181ffbec7a01a6d91bd17b5b32c97080015695acf2221ebf9d9c0bc1f9f"
+    },
+    {
+      "kind": "boss",
+      "chapter": 9,
+      "file": "campaign-boss/chandelure.mp3",
+      "encounter": "watchers/chandelure",
+      "sha256": "9441dcb77b57c1588dfc280ea10c9b6317461a5d941b0e59ed2d9a9b039c0ab1"
+    },
+    {
+      "kind": "boss",
+      "chapter": 9,
+      "file": "campaign-boss/durant.mp3",
+      "encounter": "watchers/durant",
+      "sha256": "cbe4ca4348a8e3c36cc59564da04c252003c8a8662312884a3e29c0f2cbc902e"
+    },
+    {
+      "kind": "boss",
+      "chapter": 10,
+      "file": "campaign-boss/zoroark1.mp3",
+      "encounter": "zoroark/welcome-king",
+      "sha256": "cb3d458c250887988d40a132de36f589897104c93691a62cc5fa53b9afb1c13c"
+    },
+    {
+      "kind": "boss",
+      "chapter": 10,
+      "file": "campaign-boss/zoroark2.mp3",
+      "encounter": "zoroark/hunter-king",
+      "sha256": "0378f7a401cb322cfce9501e5ab87cd7926bfa0677cf37c8dea593d818c0938f"
+    },
+    {
+      "kind": "boss",
+      "chapter": 10,
+      "file": "campaign-boss/zoroark3.mp3",
+      "encounter": "zoroark/faceless",
+      "sha256": "039296f6c31a2feb8a2398dacffb0dae8f05c986afafdb0e8582e47d8d63ec7f"
+    },
+    {
+      "kind": "boss",
+      "chapter": 11,
+      "file": "campaign-boss/eternatus.mp3",
+      "encounter": "darkest/eternatus",
+      "sha256": "d869cebfaef60a23224d84968478e1f2fd7b5f000ca7deed5f9d461a19f04d72"
+    },
+    {
+      "kind": "boss",
+      "chapter": 11,
+      "file": "campaign-boss/adp.mp3",
+      "encounter": "darkest/adp",
+      "sha256": "0c13ff4b3bc7d68933872d2a850d0b82742f78fc2f297c73a66266ea012fc78b"
+    },
+    {
+      "kind": "boss",
+      "chapter": 12,
+      "file": "campaign-boss/pikarom.mp3",
+      "encounter": "together/partner",
+      "sha256": "4e231da861d133f8b33b801fbd4c3c6dcf5c0201e191a9f0645b150e5481bb29"
+    },
+    {
+      "kind": "boss",
+      "chapter": 12,
+      "file": "campaign-boss/reshizard.mp3",
+      "encounter": "together/enough",
+      "sha256": "066b859d9860b0a72e5db41d428736aa31bbf1099bcb3a22167b1943bce56f19"
+    },
+    {
+      "kind": "boss",
+      "chapter": 12,
+      "file": "campaign-boss/mewtwo.mp3",
+      "encounter": "together/shared",
+      "sha256": "7a20ce0aa69bb6c28491ed0d6a5eb30ac5a305d7846cdb0d330a2ac2453a62bb"
+    },
+    {
+      "kind": "boss",
+      "chapter": 13,
+      "file": "campaign-boss/dialga.mp3",
+      "encounter": "finale/dialga",
+      "sha256": "df146772f064545069689c49fc50ecec02353820245650edddf9d18b27fd8208"
+    },
+    {
+      "kind": "boss",
+      "chapter": 13,
+      "file": "campaign-boss/dialga-push.mp3",
+      "encounter": null,
+      "sha256": "0dcfcd60f2a35a1d62f41f429e5c05ec82899ab94522bec62c97cd32508e4df4"
+    }
+  ]
+}

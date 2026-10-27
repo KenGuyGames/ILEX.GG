@@ -1,0 +1,96 @@
+{
+  "userProvided": true,
+  "tracks": [
+    {
+      "chapter": 1,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 1 Regular Battle.mp3",
+      "file": "battle-01.mp3",
+      "bytes": 2222739,
+      "sha256": "41cfd79cef5642bbe1b861366453427be4a014d026e033a4c4d35fd569c66134"
+    },
+    {
+      "chapter": 2,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 2 Regular Battle.mp3",
+      "file": "battle-02.mp3",
+      "bytes": 2415219,
+      "sha256": "5147b7fbdb77bc8589fe6ecc0225ea9269b920f07188fc2cc1be233d01b752c2"
+    },
+    {
+      "chapter": 3,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 3 Regular Battle.mp3",
+      "file": "battle-03.mp3",
+      "bytes": 2901171,
+      "sha256": "1f82dfa55718b1199ba83df460fcf643140ce09f473e91c985275defa520139c"
+    },
+    {
+      "chapter": 4,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 4 Regular Battle.mp3",
+      "file": "battle-04.mp3",
+      "bytes": 2865363,
+      "sha256": "b08e4bc492d92f4d53435698489e7a29964449aadfc584dd05e213f02b72eac5"
+    },
+    {
+      "chapter": 5,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 5 Regular Battle.mp3",
+      "file": "battle-05.mp3",
+      "bytes": 2518419,
+      "sha256": "6002e16367c0f1ae3f3cc09840c97bed31af1048d6ac17eb827714414464c3a7"
+    },
+    {
+      "chapter": 6,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 6 Regular Battle.mp3",
+      "file": "battle-06.mp3",
+      "bytes": 3177507,
+      "sha256": "58ad7fe28a8f03a8c9b9ca9c76b663d0c764cd4ae361b1386c69516fb573bd89"
+    },
+    {
+      "chapter": 7,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 7 Regular Battle.mp3",
+      "file": "battle-07.mp3",
+      "bytes": 2212563,
+      "sha256": "cd7ffea3284d8273c0ddb376b5dbb99b7761569c9ce6e57cce54114f1f6b4da4"
+    },
+    {
+      "chapter": 8,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 8 Regular Battle.mp3",
+      "file": "battle-08.mp3",
+      "bytes": 2556435,
+      "sha256": "5680c243ce6b1ae0d7f9985271477b2c577e832c584bad02d006a9efeadcbb6e"
+    },
+    {
+      "chapter": 9,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 9 Regular Battle.mp3",
+      "file": "battle-09.mp3",
+      "bytes": 4121235,
+      "sha256": "fe3ab0910065864419ce259b05e059f34404e9c37d514b09fab83f6da281c1c6"
+    },
+    {
+      "chapter": 10,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 10 Regular Battle.mp3",
+      "file": "battle-10.mp3",
+      "bytes": 2044275,
+      "sha256": "5d22e927a36abd5ffef0b6d36b860312d013551e6065f7352607f41ee7d29496"
+    },
+    {
+      "chapter": 11,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 11 Regular Battle.mp3",
+      "file": "battle-11.mp3",
+      "bytes": 4009395,
+      "sha256": "e2147998191d62c40ca69b7eba4ff1a4fdf373ea350645d84c09e7014ef3708d"
+    },
+    {
+      "chapter": 12,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 12 Regular Battle.mp3",
+      "file": "battle-12.mp3",
+      "bytes": 3405555,
+      "sha256": "9ff89f38c5b0794dd967c87d1e8ff16afeb81d5b1105b7322975d98626d8e233"
+    },
+    {
+      "chapter": 13,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Regular Battles\\Chapter 13 Regular Battle.mp3",
+      "file": "battle-13.mp3",
+      "bytes": 4239699,
+      "sha256": "57300c6c7028364d4751588d3d262244392c9865a2da59cdd77d9c4fdc2ab714"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 # ILEX.GG for Android
 
-Install `outputs/ILEX.GG-Android.apk` on Android 8.0 or newer with a current Android System WebView. This is a signed, universal APK with no CPU-specific libraries. It opens as an installed app and bundles the same rules engine, card index, formats, bot, deck builder, custom-card tools, audio and pack simulator as the current Windows release. Android online multiplayer remains deferred. Pocket and the forest interface are included; Story Mode is removed.
+Install `outputs/ILEX.GG-Android.apk` on Android 8.0 or newer with a current Android System WebView. This is a signed, universal APK with no CPU-specific libraries. It opens as an installed app and bundles the same rules engine, card index, formats, bot, deck builder, custom-card tools, audio and pack simulator as the current Windows release. Android online multiplayer remains deferred. Pocket and the forest interface are included; Campaign mode is included.
 
-Version `2.0.0-android.86` (versionCode 86) is an in-place update signed with the original key. Install over the existing app; do not uninstall if you want to keep its local workspace and image cache.
+Version `3.0.0-android.103` (versionCode 103) is an in-place update signed with the original key. Install over the existing app; do not uninstall if you want to keep its local workspace and image cache.
 
 ## Install and transfer a workspace
 

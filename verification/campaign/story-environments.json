@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "feature": "42 hand-painted scenic locations selected by chapter, path, mission and dialogue cue; story battles retain their environment; regular modes restore normal background.",
+  "chapters": 13,
+  "locations": 42,
+  "missionSettings": 128,
+  "checks": {
+    "desktop": 42,
+    "mobile": 42,
+    "native": 5,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "340056170353d527e8c307f7a119abea9164f5ae51f4a293729c437d097d6eb5",
+    "story.css": "644cfc4690a6f1b5f6481c7e6b71e7c082eac03c28a7edb67389f9427764f310",
+    "story-environments/atlas-1.png": "7d6aa5c00f685018729aaec5e2801b1fd45deb81e6e9e5a74c655931e2b7ae66",
+    "story-environments/atlas-2.png": "85fe6243c45ff5838209b2c2dd4f2d16ddf6ec099bb37018ac1df0a55fe32838",
+    "story-environments/atlas-3.png": "0cac75f6e84be9cfa3d05c511c86c2da767e2f2645525b0801da7b5b6f5ab42d",
+    "story-environments/atlas-4.png": "5a2645b7165fd9156b58c301f538d83069e4d642a95840d74ebb6fbf3132e9a4",
+    "story-environments/atlas-5.png": "f4d86de12adafedf39a84a6dc27650078c044bd15b472cecb496727e0eba83f2",
+    "story-environments/atlas-6.png": "12adc28f9dcaf1e0c7788b8987cab65854a97f1a9eda32d8d0e488b9e3d4e6c7",
+    "story-environments/atlas-7.png": "d46e9fcb060ce4aac263832f924a58e9cfc8595234dd9ad2775484dbf689952e",
+    "story-environments/sources.json": "f58b892932eb7ba6d3ee24518fc728e5850bf567c32462f99658f15fc5801673"
+  },
+  "savedProgress": "Existing checkpoint and battle journal preserved; no save schema changes or real profile modifications.",
+  "androidVersion": 94,
+  "physicalAndroidDeviceTested": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "27cf848b120d1db270a66f63e262d6067aab0b1093ec30c47fa6b52993f2da61",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "5a08d6f0e92998f69cbf890235e6b7b8e6ec114faeb0737e36dfa4ddf221d653",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "737c92b2ffee75cf5029a20817314c5eaebf59f5d1e27a53524201071b04cf16"
+}

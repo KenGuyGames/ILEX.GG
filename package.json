@@ -1,6 +1,6 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
@@ -26,7 +26,8 @@
     "test:x-attack": "node work/cube-x-attack-v2/tests.cjs",
     "test:formats": "node work/desktop-build/format-reprints-tests.cjs",
     "test:overeager": "node work/overeager/tests.cjs",
-    "test:pocket": "node work/pocket-research/tests.cjs && node work/pocket-research/interaction-tests.cjs"
+    "test:pocket": "node work/pocket-research/tests.cjs && node work/pocket-research/interaction-tests.cjs",
+    "test:campaign": "node work/campaign-release/tests.cjs"
   },
   "devDependencies": {
     "electron": "44.9.3"

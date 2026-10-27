@@ -1,0 +1,96 @@
+{
+  "userProvided": true,
+  "tracks": [
+    {
+      "chapter": 1,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 1 Dialogue.mp3",
+      "file": "dialogue-01.mp3",
+      "sha256": "d5666973d847bab952a2f4137a895673a5f0b9535ab072350528681f0a5ef595",
+      "bytes": 4050387
+    },
+    {
+      "chapter": 2,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 2 Dialogue.mp3",
+      "file": "dialogue-02.mp3",
+      "sha256": "561a4690ee2001d2a0b66fc50ceee2df08d2361e1ada59c79de01c81fe662364",
+      "bytes": 4744275
+    },
+    {
+      "chapter": 3,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 3 Dialogue.mp3",
+      "file": "dialogue-03.mp3",
+      "sha256": "74452226a0b7add5f25e69ce98ded85bd2c36bd941beb04a5539a83418555d9b",
+      "bytes": 2787891
+    },
+    {
+      "chapter": 4,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 4 Dialogue.mp3",
+      "file": "dialogue-04.mp3",
+      "sha256": "f731afbdcdbecbe00d74dc7e0c5fdccc324b7138232b5df89389de7e494ede2c",
+      "bytes": 4472499
+    },
+    {
+      "chapter": 5,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 5 Dialogue.mp3",
+      "file": "dialogue-05.mp3",
+      "sha256": "8021a3372f555b0567bf6e424c8136074ab32b2f0cbacec41dbcef4fd20ffffb",
+      "bytes": 4151091
+    },
+    {
+      "chapter": 6,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 6 Dialogue.mp3",
+      "file": "dialogue-06.mp3",
+      "sha256": "2700bfec28a83550c558a56b82a4e72eccdaae6de3be0589cb3e41172ec1db61",
+      "bytes": 4150035
+    },
+    {
+      "chapter": 7,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 7 Dialogue.mp3",
+      "file": "dialogue-07.mp3",
+      "sha256": "9f1f3aaf546aee93a5a41f2a866c756366df29c8a969426cc564a49ad4579238",
+      "bytes": 4493715
+    },
+    {
+      "chapter": 8,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 8 Dialogue.mp3",
+      "file": "dialogue-08.mp3",
+      "sha256": "e359240c0e58c4c8d21d47d1e4dc5b93569a6792b21810c0b70854513eec7925",
+      "bytes": 4088667
+    },
+    {
+      "chapter": 9,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 9 Dialogue.mp3",
+      "file": "dialogue-09.mp3",
+      "sha256": "aa0214311a8e4d29812090964caaf5c3fe781282adad05b75086699897c8790d",
+      "bytes": 4744851
+    },
+    {
+      "chapter": 10,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 10 Dialogue.mp3",
+      "file": "dialogue-10.mp3",
+      "sha256": "f5e86b4afb185eb702915d6583170c049006f246fed23524b7ec9e44f73e7192",
+      "bytes": 4376595
+    },
+    {
+      "chapter": 11,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 11 Dialogue.mp3",
+      "file": "dialogue-11.mp3",
+      "sha256": "1e8f71af75c2bcf138f12c36179fbf964f07ab6f597ce9b28bdd735f6add7974",
+      "bytes": 4760979
+    },
+    {
+      "chapter": 12,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 12 Dialogue.mp3",
+      "file": "dialogue-12.mp3",
+      "sha256": "68d1e8b66d3760799a4e1446190f86b8f4afb012dccd0e60bb59fce6a46ff020",
+      "bytes": 3208083
+    },
+    {
+      "chapter": 13,
+      "source": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Chapter 13 Dialogue.mp3",
+      "file": "dialogue-13.mp3",
+      "sha256": "7b36363330c03da47ce63ff8a86204b6edbc603c49214b1ef43755618fa5cda1",
+      "bytes": 2827155
+    }
+  ]
+}

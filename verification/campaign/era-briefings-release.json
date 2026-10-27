@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "fix": "13 era-entry briefings with actual profile-based opening turn comparisons, legal pools and mechanics; optional Era rules review; saved acknowledgements without dialogue advancement.",
+  "eraBriefingsVerified": true,
+  "viewports": [
+    "523x679 (reported screenshot)",
+    "390x844",
+    "800x360",
+    "1440x1000"
+  ],
+  "checks": {
+    "desktop": 98,
+    "mobile": 98,
+    "native": 4,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "abee8180b87d20dc7d3ea4cfe2a12b0aceb527ad6a8a995622adfec29fc573d8",
+    "story.css": "0221655df7d1d342cda0495f3d5ffa34b06084cd4e610fa9dfa18c1b4c5215b4"
+  },
+  "savedProgress": "Optional eraBriefings chapter-ID array records acknowledgement; existing cursors, completed missions, keepsakes and battle journals preserved. Mid-chapter saves uninterrupted; no game rules changed.",
+  "androidVersion": 98,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "cfa7038291ff97f5a2dd559867cd6d1078dff23b654423862ead76518e8f90e9",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "a964afc07759ff3d55455218007c3da08d31869652ff22d7b02848562bb3aeb2",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "41161edc37b70c5963274a8df3a732d28a26425a098b30f614342c239c53ba19"
+}

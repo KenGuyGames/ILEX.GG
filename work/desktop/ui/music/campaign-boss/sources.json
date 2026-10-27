@@ -1,0 +1,246 @@
+{
+  "userProvided": true,
+  "tracks": [
+    {
+      "id": "warden",
+      "chapter": 1,
+      "key": "forest/forest-machine",
+      "source": "Chapter 1 Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 1 Boss.mp3",
+      "file": "warden.mp3",
+      "bytes": 4308291,
+      "sha256": "2941cfefb65793aa8b6331aee2eca1708d2214192f2f3bef405fe067be52962e"
+    },
+    {
+      "id": "saturn",
+      "chapter": 2,
+      "key": "galactic/saturn",
+      "source": "Chapter 2 Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 2 Boss.mp3",
+      "file": "saturn.mp3",
+      "bytes": 2647203,
+      "sha256": "bcafe7c417b73a5699f2a4c86660ab7feaafb2e0f9d8ab96e15a6fceac581bdd"
+    },
+    {
+      "id": "slowking",
+      "chapter": 3,
+      "key": "mind-games/slowking",
+      "source": "Chapter 3 Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 3 Boss.mp3",
+      "file": "slowking.mp3",
+      "bytes": 2938419,
+      "sha256": "a71d3f0b075dd4af7d57187f8668f862941ff440f0f8ed0ab7bb5ab304ea6e88"
+    },
+    {
+      "id": "lysandre",
+      "chapter": 4,
+      "key": "recovery/lysandre",
+      "source": "Chapter 4 Lysandre Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 4 Lysandre Boss.mp3",
+      "file": "lysandre.mp3",
+      "bytes": 4093203,
+      "sha256": "d141a6ad043d7439c1fae653e0d10c8141c797135028090c609bdff3c86a29e4"
+    },
+    {
+      "id": "seismitoad",
+      "chapter": 4,
+      "key": "recovery/seismitoad",
+      "source": "Chapter 4 Seismitoad Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 4 Seismitoad Boss.mp3",
+      "file": "seismitoad.mp3",
+      "bytes": 3403587,
+      "sha256": "e985f48cf17f134254dd1c374e91bf811e76add26d6552a0fd6c014b0e68e6f4"
+    },
+    {
+      "id": "observatory",
+      "chapter": 5,
+      "key": "purge/connection",
+      "source": "Chapter 5 Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 5 Boss.mp3",
+      "file": "observatory.mp3",
+      "bytes": 3374019,
+      "sha256": "f44a8000d5a78b2df662bb593b23884b6ae161d6dee713fb72ee4854fde22a77"
+    },
+    {
+      "id": "delta",
+      "chapter": 6,
+      "key": "delta/wrong-sky",
+      "source": "Chapter 6 Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 6 Boss.mp3",
+      "file": "delta.mp3",
+      "bytes": 3513747,
+      "sha256": "7e766c576b4b8547ddc71030cd6854c7ffd157a97f9dba5ee5fbd430a56649bd"
+    },
+    {
+      "id": "rayquaza",
+      "chapter": 7,
+      "key": "dragons/second",
+      "source": "Chapter 7 Rayquaza Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 7 Rayquaza Boss.mp3",
+      "file": "rayquaza.mp3",
+      "bytes": 4124787,
+      "sha256": "b2bf7f3754a715b9becb647b0d613e14dfcf8dd0c5306318e76d1ad91643c866"
+    },
+    {
+      "id": "hydreigon",
+      "chapter": 7,
+      "key": "dragons/stand",
+      "source": "Chapter 7 Hydreigon Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 7 Hydreigon Boss.mp3",
+      "file": "hydreigon.mp3",
+      "bytes": 3462291,
+      "sha256": "970442446bf73c0d6a0937c262cd70e2b774694d85c264e7662f37f514c6d188"
+    },
+    {
+      "id": "garchomp",
+      "chapter": 7,
+      "key": "dragons/last-bridge",
+      "source": "Chapter 7 Garchomp Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 7 Garchomp Boss.mp3",
+      "file": "garchomp.mp3",
+      "bytes": 2497491,
+      "sha256": "b2d971a74ab2622a3e8da74ef6682f4912c1c132eb5809c5a4f44d9ea69e6c94"
+    },
+    {
+      "id": "maxie",
+      "chapter": 8,
+      "key": "molten/maxie",
+      "source": "Chapter 8 Maxie Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 8 Maxie Boss.mp3",
+      "file": "maxie.mp3",
+      "bytes": 2593395,
+      "sha256": "f9a443fc14a9251b087f8d86ebdf06127cd9c6b67b28fe33a476007a8523d8f4"
+    },
+    {
+      "id": "groudon",
+      "chapter": 8,
+      "key": "molten/groudon",
+      "source": "Chapter 8 Groudon Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 8 Groudon Boss.mp3",
+      "file": "groudon.mp3",
+      "bytes": 3783603,
+      "sha256": "6c345181ffbec7a01a6d91bd17b5b32c97080015695acf2221ebf9d9c0bc1f9f"
+    },
+    {
+      "id": "chandelure",
+      "chapter": 9,
+      "key": "watchers/chandelure",
+      "source": "Chapter 9 Chandelure Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 9 Chandelure Boss.mp3",
+      "file": "chandelure.mp3",
+      "bytes": 4191795,
+      "sha256": "9441dcb77b57c1588dfc280ea10c9b6317461a5d941b0e59ed2d9a9b039c0ab1"
+    },
+    {
+      "id": "durant",
+      "chapter": 9,
+      "key": "watchers/durant",
+      "source": "Chapter 9 Durant Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 9 Durant Boss.mp3",
+      "file": "durant.mp3",
+      "bytes": 2573043,
+      "sha256": "cbe4ca4348a8e3c36cc59564da04c252003c8a8662312884a3e29c0f2cbc902e"
+    },
+    {
+      "id": "zoroark1",
+      "chapter": 10,
+      "key": "zoroark/welcome-king",
+      "source": "Chapter 10 Boss Phase 1.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 10 Boss Phase 1.mp3",
+      "file": "zoroark1.mp3",
+      "bytes": 1739379,
+      "sha256": "cb3d458c250887988d40a132de36f589897104c93691a62cc5fa53b9afb1c13c"
+    },
+    {
+      "id": "zoroark2",
+      "chapter": 10,
+      "key": "zoroark/hunter-king",
+      "source": "Chapter 10 Boss Phase 2.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 10 Boss Phase 2.mp3",
+      "file": "zoroark2.mp3",
+      "bytes": 1681827,
+      "sha256": "0378f7a401cb322cfce9501e5ab87cd7926bfa0677cf37c8dea593d818c0938f"
+    },
+    {
+      "id": "zoroark3",
+      "chapter": 10,
+      "key": "zoroark/faceless",
+      "source": "Chapter 10 Boss Phase 3.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 10 Boss Phase 3.mp3",
+      "file": "zoroark3.mp3",
+      "bytes": 2829555,
+      "sha256": "039296f6c31a2feb8a2398dacffb0dae8f05c986afafdb0e8582e47d8d63ec7f"
+    },
+    {
+      "id": "eternatus",
+      "chapter": 11,
+      "key": "darkest/eternatus",
+      "source": "Chapter 11 Eternatus Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 11 Eternatus Boss.mp3",
+      "file": "eternatus.mp3",
+      "bytes": 3553683,
+      "sha256": "d869cebfaef60a23224d84968478e1f2fd7b5f000ca7deed5f9d461a19f04d72"
+    },
+    {
+      "id": "adp",
+      "chapter": 11,
+      "key": "darkest/adp",
+      "source": "Chapter 11 ADP Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 11 ADP Boss.mp3",
+      "file": "adp.mp3",
+      "bytes": 3673947,
+      "sha256": "0c13ff4b3bc7d68933872d2a850d0b82742f78fc2f297c73a66266ea012fc78b"
+    },
+    {
+      "id": "pikarom",
+      "chapter": 12,
+      "key": "together/partner",
+      "source": "Chapter 12 Pikarom Battle.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 12 Pikarom Battle.mp3",
+      "file": "pikarom.mp3",
+      "bytes": 4153539,
+      "sha256": "4e231da861d133f8b33b801fbd4c3c6dcf5c0201e191a9f0645b150e5481bb29"
+    },
+    {
+      "id": "reshizard",
+      "chapter": 12,
+      "key": "together/enough",
+      "source": "Chapter 12 ReshiZard Battle.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 12 ReshiZard Battle.mp3",
+      "file": "reshizard.mp3",
+      "bytes": 4800867,
+      "sha256": "066b859d9860b0a72e5db41d428736aa31bbf1099bcb3a22167b1943bce56f19"
+    },
+    {
+      "id": "mewtwo",
+      "chapter": 12,
+      "key": "together/shared",
+      "source": "Chapter 12 Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 12 Boss.mp3",
+      "file": "mewtwo.mp3",
+      "bytes": 2515155,
+      "sha256": "7a20ce0aa69bb6c28491ed0d6a5eb30ac5a305d7846cdb0d330a2ac2453a62bb"
+    },
+    {
+      "id": "dialga",
+      "chapter": 13,
+      "key": "finale/dialga",
+      "source": "Chapter 13 Primal Dialga Boss.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 13 Primal Dialga Boss.mp3",
+      "file": "dialga.mp3",
+      "bytes": 3557859,
+      "sha256": "df146772f064545069689c49fc50ecec02353820245650edddf9d18b27fd8208"
+    },
+    {
+      "id": "dialga-push",
+      "chapter": 13,
+      "key": null,
+      "source": "Chapter 13 Primal Dialga Final Push.mp3",
+      "sourcePath": "C:\\Users\\Kenneth\\OneDrive\\Desktop\\ILEX Campaign Audio\\Boss Battles\\Chapter 13 Primal Dialga Final Push.mp3",
+      "file": "dialga-push.mp3",
+      "bytes": 4455027,
+      "sha256": "0dcfcd60f2a35a1d62f41f429e5c05ec82899ab94522bec62c97cd32508e4df4"
+    }
+  ],
+  "finalPushTrigger": "Boss player2 uses Star Chronos during finale/dialga; derived from attack journal."
+}

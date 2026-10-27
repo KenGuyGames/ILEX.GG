@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "feature": "Attack portrait anchored to attacking Active on visible table instead of fixed viewport left edge",
+  "files": {
+    "presentation.js": "996dca0b8cb96949876258e12c60494fd9e2b4e3e5f228847bba8f19bacadc14",
+    "v2.css": "aa7724c9fde31d5e75bb5092cc3102c3cdd228df8a6d057c15aba307f77e4f5c"
+  },
+  "checks": {
+    "desktop": 50,
+    "mobile": 26,
+    "android": 44
+  },
+  "androidVersion": 101,
+  "physicalAndroidTested": false,
+  "realAppClosed": false,
+  "realProfileModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "4e8060f8084620aafdcfd096853adebf86faaf84fb6a19e76973679be582673b",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "506bb720447c7f60aa28ffa557dbe80e8214a42bdd8c75e129d87b1fe33e995d",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "269eac5405b5291246448f9bd645a638692ebd4d687b21426b45947cb26c8d6c"
+}

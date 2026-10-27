@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "feature": "13 user-provided regular battle MP3s mapped by actual story match chapter/path/mission;86 regular encounters use chapter music,42 boss/featured encounters retain existing fallback; dialogue and ordinary modes preserved.",
+  "tracks": 13,
+  "sourceFilesUnmodified": true,
+  "checks": {
+    "desktop": 79,
+    "mobile": 81,
+    "native": 4,
+    "android": 44
+  },
+  "hashes": {
+    "audio.js": "738cfc83ab47402d99f4636641016ed00aab8be93d4cb4df2e773fea4260f309",
+    "music/campaign-regular/battle-01.mp3": "41cfd79cef5642bbe1b861366453427be4a014d026e033a4c4d35fd569c66134",
+    "music/campaign-regular/battle-02.mp3": "5147b7fbdb77bc8589fe6ecc0225ea9269b920f07188fc2cc1be233d01b752c2",
+    "music/campaign-regular/battle-03.mp3": "1f82dfa55718b1199ba83df460fcf643140ce09f473e91c985275defa520139c",
+    "music/campaign-regular/battle-04.mp3": "b08e4bc492d92f4d53435698489e7a29964449aadfc584dd05e213f02b72eac5",
+    "music/campaign-regular/battle-05.mp3": "6002e16367c0f1ae3f3cc09840c97bed31af1048d6ac17eb827714414464c3a7",
+    "music/campaign-regular/battle-06.mp3": "58ad7fe28a8f03a8c9b9ca9c76b663d0c764cd4ae361b1386c69516fb573bd89",
+    "music/campaign-regular/battle-07.mp3": "cd7ffea3284d8273c0ddb376b5dbb99b7761569c9ce6e57cce54114f1f6b4da4",
+    "music/campaign-regular/battle-08.mp3": "5680c243ce6b1ae0d7f9985271477b2c577e832c584bad02d006a9efeadcbb6e",
+    "music/campaign-regular/battle-09.mp3": "fe3ab0910065864419ce259b05e059f34404e9c37d514b09fab83f6da281c1c6",
+    "music/campaign-regular/battle-10.mp3": "5d22e927a36abd5ffef0b6d36b860312d013551e6065f7352607f41ee7d29496",
+    "music/campaign-regular/battle-11.mp3": "e2147998191d62c40ca69b7eba4ff1a4fdf373ea350645d84c09e7014ef3708d",
+    "music/campaign-regular/battle-12.mp3": "9ff89f38c5b0794dd967c87d1e8ff16afeb81d5b1105b7322975d98626d8e233",
+    "music/campaign-regular/battle-13.mp3": "57300c6c7028364d4751588d3d262244392c9865a2da59cdd77d9c4fdc2ab714",
+    "music/campaign-regular/sources.json": "49c3312e23fb20e432b66a65efe82cd62a32ceab95dad32eb37c4d7ca8e4ef05"
+  },
+  "savedProgress": "No campaign, battle journal, deck, collection or save schema changes. Audio preferences, mute/volume/manual selection retained.",
+  "androidVersion": 99,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "571075e4466a033a32f3fbddc7b7fa0319d371b137aba88aa763365131cd0f04",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "e18155c164f66db4ec344d8c5ead0e53b7e5425fdb10dc83b0168b82f813b23b",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "a87f66eb3cf77bfdd773fdaf197de18063a378f6d2c4531eaa8e8127dc2c1424"
+}

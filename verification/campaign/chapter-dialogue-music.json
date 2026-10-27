@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "feature": "13 user-provided chapter dialogue MP3s; automatic chapter selection, looping, uninterrupted line changes, remembered playhead after battle; existing menu/battle music retained.",
+  "tracks": 13,
+  "sourceFilesUnmodified": true,
+  "checks": {
+    "desktop": 67,
+    "mobile": 69,
+    "native": 4,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "b643e3cfb10fcff1212e34995469d075098026721bf3b6fc113b99d7b00590b5",
+    "audio.js": "c2796cee8ed77d25b56087e119f1714421a5e8de0445dfca349704980e262105",
+    "music/campaign/dialogue-01.mp3": "d5666973d847bab952a2f4137a895673a5f0b9535ab072350528681f0a5ef595",
+    "music/campaign/dialogue-02.mp3": "561a4690ee2001d2a0b66fc50ceee2df08d2361e1ada59c79de01c81fe662364",
+    "music/campaign/dialogue-03.mp3": "74452226a0b7add5f25e69ce98ded85bd2c36bd941beb04a5539a83418555d9b",
+    "music/campaign/dialogue-04.mp3": "f731afbdcdbecbe00d74dc7e0c5fdccc324b7138232b5df89389de7e494ede2c",
+    "music/campaign/dialogue-05.mp3": "8021a3372f555b0567bf6e424c8136074ab32b2f0cbacec41dbcef4fd20ffffb",
+    "music/campaign/dialogue-06.mp3": "2700bfec28a83550c558a56b82a4e72eccdaae6de3be0589cb3e41172ec1db61",
+    "music/campaign/dialogue-07.mp3": "9f1f3aaf546aee93a5a41f2a866c756366df29c8a969426cc564a49ad4579238",
+    "music/campaign/dialogue-08.mp3": "e359240c0e58c4c8d21d47d1e4dc5b93569a6792b21810c0b70854513eec7925",
+    "music/campaign/dialogue-09.mp3": "aa0214311a8e4d29812090964caaf5c3fe781282adad05b75086699897c8790d",
+    "music/campaign/dialogue-10.mp3": "f5e86b4afb185eb702915d6583170c049006f246fed23524b7ec9e44f73e7192",
+    "music/campaign/dialogue-11.mp3": "1e8f71af75c2bcf138f12c36179fbf964f07ab6f597ce9b28bdd735f6add7974",
+    "music/campaign/dialogue-12.mp3": "68d1e8b66d3760799a4e1446190f86b8f4afb012dccd0e60bb59fce6a46ff020",
+    "music/campaign/dialogue-13.mp3": "7b36363330c03da47ce63ff8a86204b6edbc603c49214b1ef43755618fa5cda1",
+    "music/campaign/sources.json": "1b6c57c0308ef0484c48bcd8dd3e282f331d666f93fbf0ef0886d7ec808992b2"
+  },
+  "savedProgress": "Campaign, battle journals, decks and collection unchanged. Only existing audio preferences can be adjusted by the player.",
+  "androidVersion": 96,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "514fd7f58440ad0d66fed250518d744cf179c0d45c8581930769d8b7bc3a5acf",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "2a3ac844ddf3bfcab78333671f59a397ccf67e5d602df5870797274c446ba892",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "6e2338b391aee74aadad4c0dc0135842bbe1e577578315a4300ffc857de77fd3"
+}

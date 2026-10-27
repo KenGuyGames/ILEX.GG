@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "fix": "Lower-aligned character/dialogue stage; reading controls moved to shared Settings; keepsakes display removed while earned records remain saved.",
+  "lowerStageVerified": true,
+  "viewports": [
+    "523x679 (reported screenshot)",
+    "390x844",
+    "800x360",
+    "1440x1000"
+  ],
+  "checks": {
+    "desktop": 24,
+    "mobile": 24,
+    "native": 3,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "7052f4d8de4ff7ebb8bbdee73addbab54e277086b0ba1c5680b423904d888537",
+    "story.css": "7b15c743e97a4b9617469e574c963a3493d05077ad0a0c7a09a94b0857f4ae0b",
+    "settings.js": "34967243563b1f04068dd9c7b7d459ede6cb1f9121f153889a23bf26b7567800"
+  },
+  "savedProgress": "Exact campaign checkpoint and earned keepsakes preserved; existing storyPresentation preferences reused in Settings.",
+  "androidVersion": 97,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "3a59d18c9210df1077a018252cf7f83220e2f573cde71bf7204be43b0a2a9647",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "a0b70bc3e0b711b8f7d42dfc4d13ba91d2fb26da3036bd2a6c4d9ec470e8ddae",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "f2c3e9f5d9441d70ac4d1f28c42d695f31490f7e842d6c002c2102a8083f3180"
+}

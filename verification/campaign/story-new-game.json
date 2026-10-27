@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "fix": "Continue/New Game menu with confirmed campaign-only reset, saved battle support, failure rollback and preserved regular match.",
+  "campaignResetVerified": true,
+  "viewports": [
+    "523x679 (reported screenshot)",
+    "390x844",
+    "800x360",
+    "1440x1000"
+  ],
+  "checks": {
+    "desktop": 31,
+    "mobile": 31,
+    "native": 6,
+    "android": 44
+  },
+  "hashes": {
+    "story-mode.js": "3ec11f8fa78493400c6d80d54e6d4a57c28c4f7d4beaba0c9b6a727e518a5d79",
+    "story.css": "280341368f03a919afdc02899e976628338673729b190fa2ebd7ff032db13e2b"
+  },
+  "savedProgress": "No real saves reset. Confirmed New Game replaces only storyCampaign; decks, collection, settings, regular match and difficulty preserved.",
+  "androidVersion": 93,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "172e4cd5a549332f9c32c856e06af34fa7d127e0547ddeeef8473eff0107bf58",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "e21fed7e20a7003722c740db326dd904274f050b0c4a38d9b4714dc73121902a",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "808355683d57c1291b3f14faa890005f3bdc5c3c3f0ad400697e954f16a82a85"
+}

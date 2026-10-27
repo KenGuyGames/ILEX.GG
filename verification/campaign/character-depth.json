@@ -1,0 +1,246 @@
+{
+  "passed": true,
+  "dialogueRevision": 2,
+  "writing": {
+    "authoredScenes": 106,
+    "authoredLines": 684,
+    "oldUniqueLines": 684,
+    "totalUniqueLines": 1368,
+    "chapters": [
+      {
+        "id": "forest",
+        "intro": 18,
+        "outro": 13,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 73
+          },
+          {
+            "id": "b",
+            "lines": 76
+          }
+        ]
+      },
+      {
+        "id": "galactic",
+        "intro": 12,
+        "outro": 11,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 78
+          },
+          {
+            "id": "b",
+            "lines": 76
+          }
+        ]
+      },
+      {
+        "id": "mind-games",
+        "intro": 11,
+        "outro": 9,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 63
+          },
+          {
+            "id": "b",
+            "lines": 61
+          }
+        ]
+      },
+      {
+        "id": "recovery",
+        "intro": 12,
+        "outro": 10,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 62
+          },
+          {
+            "id": "b",
+            "lines": 63
+          }
+        ]
+      },
+      {
+        "id": "purge",
+        "intro": 11,
+        "outro": 9,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 59
+          },
+          {
+            "id": "b",
+            "lines": 59
+          }
+        ]
+      },
+      {
+        "id": "delta",
+        "intro": 12,
+        "outro": 9,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 58
+          },
+          {
+            "id": "b",
+            "lines": 59
+          }
+        ]
+      },
+      {
+        "id": "dragons",
+        "intro": 11,
+        "outro": 11,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 50
+          },
+          {
+            "id": "b",
+            "lines": 50
+          }
+        ]
+      },
+      {
+        "id": "molten",
+        "intro": 10,
+        "outro": 9,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 57
+          },
+          {
+            "id": "b",
+            "lines": 55
+          }
+        ]
+      },
+      {
+        "id": "watchers",
+        "intro": 11,
+        "outro": 8,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 50
+          },
+          {
+            "id": "b",
+            "lines": 50
+          }
+        ]
+      },
+      {
+        "id": "zoroark",
+        "intro": 9,
+        "outro": 7,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 59
+          },
+          {
+            "id": "b",
+            "lines": 61
+          }
+        ]
+      },
+      {
+        "id": "darkest",
+        "intro": 11,
+        "outro": 10,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 66
+          },
+          {
+            "id": "b",
+            "lines": 67
+          }
+        ]
+      },
+      {
+        "id": "together",
+        "intro": 11,
+        "outro": 14,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 70
+          },
+          {
+            "id": "b",
+            "lines": 70
+          }
+        ]
+      },
+      {
+        "id": "finale",
+        "intro": 15,
+        "outro": 19,
+        "pathLines": [
+          {
+            "id": "a",
+            "lines": 84
+          },
+          {
+            "id": "b",
+            "lines": 85
+          }
+        ]
+      }
+    ]
+  },
+  "dialogueLinesRenderedAcrossBothPaths": 1661,
+  "oldSaveAnchorsVerified": 684,
+  "recordingTakes": 999,
+  "scope": "Personal conversations and relationship callbacks across all13 chapters/both paths. Stable dialogue ids, canonical speakers, delivery notes and deduplicated voice take ids. No recorded or generated voice acting enabled.",
+  "saves": "Existing version2 campaign dialogue positions migrate by original line-id anchors. Existing completion, keepsakes, difficulty and active battle journal preserved; legacy version1 still archived. Already-complete campaigns remain complete. New scenes before an existing cursor are not replayed automatically.",
+  "checks": {
+    "writing": 7,
+    "desktop": 13,
+    "mobile": 13,
+    "native": 9,
+    "progression": 198,
+    "android": 44
+  },
+  "hashes": {
+    "story-content.js": "6dc48cf33019d79a6c2218d149e1d9b9e1c32404b0ee2f528d1ac59592219691",
+    "story-mode.js": "7d5ea2adb5c157d7e48d53a82c1832665585b636cef858c13cde6d6a85100f38",
+    "story-voice/lines.json": "49ac6a91ccb6e435f56c9e66c8b2900238e9db34346e938b99050f72efedc2ad",
+    "story-voice/README.txt": "5be1d47d7fbfd5fe9b6ae04122e3a64ec7e5dd7400fea3935a8582c2e944d869"
+  },
+  "androidVersion": 92,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "new3dsModified": false,
+  "remotePublished": false,
+  "unchanged": "Chronology, thirteen historical formats, twenty-six deck paths,64 matches per playthrough, decklists, original plot revelations, portraits, official Pokemon art, layout and Mega Man X dialogue sounds.",
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "20bd277d04e035292e6755489ed62ea78bf2b34fbd4db702afea46e78d2db229",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "556ba14df8affe9236fd9a8fbb2d4c19c24343783bd956a0f225ff8d4ed72472",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "80cabe8a1acdd2ffe9bbf67c9ce16965ce23771938e2d93fcd1c2914857336db"
+}

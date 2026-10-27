@@ -1,39 +1,44 @@
 # ILEX.GG
 
-Pokémon TCG simulator for **Windows and Android**, with rules automation, deck building, local/bot play, pack opening and **Cube Drafting**. **New 3DS Port Alpha** is now available as a separate starter-only homebrew download.
+Pokémon TCG simulator for **Windows and Android**, with rules automation, deck building, local/bot play, packs, Cube Drafting and the new **Campaign mode**.
 
-## New in 2.0.0
+## New in 3.0.0: Campaign — The Forest Keeps Growing
 
-- **The forest interface:** Enter the Arena for Play, Pocket, Cube Draft and Private Multiplayer; Enter the Vault for decks, gallery, formats, custom cards and packs. Refreshed settings, forest artwork, Poké Ball navigation icons and Celebi cursor.
-- **Pokémon TCG Pocket:** a separate 20-card rules model with Energy Zone, three-point games, local/bot battles, deck building, card gallery and pack opening. The bundled English pool contains **4,317 printings across 24 catalogs**, with **55 pack pools**. Paper TCG decks and Pocket decks stay separate; pack rates include simulation assumptions.
-- **Table and sound improvements:** artwork in effect choices, clearer stacks/Energy, repeat Energy shortcuts and Pokémon entry, evolution, action and Knock Out cries, including reviewed form mappings. Forecasts, rejected actions and replay stay quiet.
-- **Rules fixes:** reviewed Download, paired-Item recovery, Lysandre's Trump Card, Computer Search and Sableye's Overeager setup/first-player timing. Older saves keep their pinned policy; new matches use the corrected policy.
-- **New 3DS forest/audio Alpha 3:** dual-screen starter play, forest menus, offline card art, menu/battle music, 18 effects, 1,340 species/form cries, SELECT audio settings, autosave and replay recovery. Public packages include **only Ember Grove Fire and Tidal Grove Water starter decks**; no imported Windows deck lists, formats or personal saves.
-- **Runtime security update:** Windows and source use Electron **44.9.3**, including the certificate mitigation for GHSA-jr5w-w6x2-84p9. Game code and assets remain identical to the current 2.0.0 build. Locked build tools are updated and both dependency audits report zero known vulnerabilities at release preparation.
+Choose **Campaign** directly from the main menu, beside Enter the Arena and Enter the Vault. Start a New Game or Continue your saved journey through **13 chapters**, two paths per chapter and **64 battles per playthrough**.
 
-Existing WOTC/EX/DP/Platinum/HGSS/BW/XY/SM/SWSH/SV/Mega coverage, historical profiles, Unlimited, Cube Drafting, packs, cached artwork, music and saved workspaces remain available on desktop. Story Mode is removed/deferred and is not included.
+- **A story across TCG eras:** authored dialogue, companion choices and historical/campaign deck matchups, with 94 used decklists. Campaign variants are identified; these encounters are not claims of official tournament legality.
+- **Progress that stays with you:** saved dialogue, path choices, difficulty and active battle journals; Continue, loss/retry and win-gated progression. Campaign progress is separate from regular matches and decks. New Game asks before replacing existing campaign progress; export your workspace before experimenting.
+- **Characters and scenery:** 68 human character designs, official Pokémon portraits, 42 scenic environments and responsive dialogue presentation. The expanded script retains stable scene anchors for existing saves.
+- **A campaign soundtrack:** 13 chapter dialogue tracks, 13 regular battle tracks and 24 boss/featured tracks. Music follows the current chapter/encounter, with volume/mute and background-pause controls. Text speed and word sounds are in Settings; dialogue uses a text sound effect, not recorded voice acting.
+- **Era rules briefings:** explanations of opening-turn rules, evolution, Energy, Prize trades and era mechanics as you enter each chapter; reread Era rules without moving your save cursor.
+- **Table presentation fix:** attack portraits now follow the attacking Active and stay inside the visible table on ultrawide and narrow displays.
 
-## Download 2.0.0
+### Development update
+
+**3DS, Pocket and Multiplayer are still in progress. Hoping to have an update soon.** Existing experimental Pocket and Windows Multiplayer features remain in the app, with their current limitations. This release does not announce a new 3DS or Pocket update. Earlier starter-only 3DS Alpha downloads remain available in the [2.0.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v2.0.0-build-2026-10-23).
+
+![Campaign on the main menu](docs/screenshots/campaign-menu-3.0.0.png)
+
+## Download 3.0.0
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v2.0.0-build-2026-10-23/ILEX.GG-Windows.zip) | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
-| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v2.0.0-build-2026-10-23/ILEX.GG-Android.apk) | Android 8+ and current WebView; **2.0.0-android.86 / code86** |
-| New 3DS HOME Menu | [CIA + full SD bundle](https://github.com/KenGuyGames/ILEX.GG/releases/download/v2.0.0-build-2026-10-23/ILEX.GG-New3DS-CIA-SD.zip) | New 3DS / New 3DS XL / New 2DS XL with CFW and FBI; **Alpha 3** |
-| New 3DS Homebrew Launcher | [3DSX + full SD bundle](https://github.com/KenGuyGames/ILEX.GG/releases/download/v2.0.0-build-2026-10-23/ILEX.GG-New3DS-Playable-Alpha.zip) | Same New-family hardware; **Alpha 3** |
-| New 3DS source | [Public starter-only source](https://github.com/KenGuyGames/ILEX.GG/releases/download/v2.0.0-build-2026-10-23/ILEX.GG-New3DS-Source-Alpha.zip) | Separate devkitARM/libctru/QuickJS build prerequisites |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.0.0-build-2026-10-26/ILEX.GG-Windows.zip) | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
+| Android | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.0.0-build-2026-10-26/ILEX.GG-Android.apk) | Android 8+ and current WebView; **3.0.0-android.103 / code103** |
 
-Windows includes its runtime; the EXE is unsigned. Keep its folder together. Android retains the original signing certificate: install over the prior APK to keep workspace/cache; do not uninstall first. Physical Android acceptance remains pending. Images download as viewed; Download card images supports pause/resume. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace; there is no automatic cloud sync.
+Windows includes Electron44.9.3; the EXE is unsigned. Keep the extracted folder together. Android is signed with the original certificate: install over your existing APK to retain workspace/cache; do not uninstall first. Physical Android acceptance remains pending. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace; there is no automatic cloud sync. Rules, music and included artwork work offline; uncached paper card scans download as viewed with size/hash checks.
 
-**3DS installation:** extract the full matched SD ZIP to the SD root, keeping `3ds/ilex-gg`. For HOME Menu, also install `cias/ILEX.GG-New3DS-Playable-Alpha.cia` in FBI. Updating only the CIA does not supply the forest/audio assets. Preserve `match.json`, `match.json.bak` and `audio.cfg`. Imported-format saves from private builds require their original private bundle. See [3DS installation and controls](ports/3ds/CIA-INSTALL.md) and [port scope/build notes](ports/3ds/README.md).
+[Android installation](verification/ILEX.GG-Android-Install.md) · [Release notes/checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.0.0-build-2026-10-26) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
 
-The 3DS Alpha is a **starter-only playable slice**, with a lightweight bot. Full-pool gameplay, deck editing/import, packs, Pocket, cube drafting and networking are pending on 3DS. The full catalog browser does not imply full playable coverage. Prior CIA installation/play/save/resume was reported on New 3DS XL; the new forest/audio update still needs physical display, sound, sleep, SD durability, memory and performance acceptance. Emulator audio commands are not a listening test.
+## Multiplayer — still in progress
 
-[Android installation](verification/ILEX.GG-Android-Install.md) · [Release notes/checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v2.0.0-build-2026-10-23) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
+Windows Multiplayer remains experimental/beta. Both peers need the same **3.0.0** build. Real local two-renderer WebRTC/STUN transport was tested in earlier work; independent external two-PC/different-NAT and complete strategic-match acceptance remain pending. There is no TURN fallback; the trusted host can inspect full state. Android networking, Pocket networking, campaign co-op, cube networking and public matchmaking are unavailable.
 
-## Multiplayer remains in beta
+## Verification and limits
 
-Windows retains invite/response codes, deck/readiness checks, filtered guest views, opponent-approved Undo, reconnect and hosted-match recovery. Both peers need **2.0.0**. Real local two-renderer WebRTC/STUN transport was tested; **independent external two-PC/different-NAT and complete strategic-match acceptance remain pending**. Direct WebRTC has no TURN fallback. Use trusted friends because the host can inspect full state. Android/Pocket networking, cube networking and public matchmaking remain deferred.
+The current campaign reports record chapter/path/deck checks, finite opening-turn gameplay smoke tests, saved dialogue/battle recovery, desktop/native and mobile-emulation checks. The latest main-menu patch passed 56 desktop, 56 mobile and six native checks; earlier campaign soundtrack, art, rules-briefing and portrait-anchor reports retain their actual tested hashes. Progression fixtures that advance through reducer concessions do not establish a complete strategic playthrough. No physical Android acceptance or speaker-listening certification is claimed.
+
+Paper engine SHA-256 remains `61bc06c62c3fdcaaa07950a3b72667d4a035c304f741e8ff5e9900594d1689d0`. Canonical TypeScript is `work/cube-source/src`. Campaign is a separate layer using existing rules and deck data. See `verification/campaign/`, `verification/ILEX.GG-Android-verification.json`, `verification/desktop-verification-3.0.0.json` and the [3.0.0 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-3.0.0.yml). Source ZIP/tar.gz and README commands are checked before publication.
 
 ## Cube Drafting
 
@@ -44,14 +49,6 @@ Open Enter the Arena → Cube Draft. Draft a custom pool against local bots, res
 - **Cube gameplay:** mutant evolution, the two-Prize evolution barrier, unified Ability/EX/GX/V references and lowercase ex one-Prize rules. Each seat builds from its drafted pool plus Basic Energy; saved records retain their chosen rules.
 
 Cube drafting/matches are local/bot only. Bots use a simple type/setup heuristic; descriptive notes do not execute arbitrary rules.
-
-## Verification and limits
-
-The paper engine rebuild reproduces SHA-256 `61bc06c62c3fdcaaa07950a3b72667d4a035c304f741e8ff5e9900594d1689d0`. Windows runtime replacement preserves all **39,943 game files** byte-for-byte; Android86 retains the matching paper engine and original signing certificate. The Pocket suite checks 78 groups and 61,000 generated packs. Public 3DS checks run three complete starter matches and save/replay safety in V8 and 32-bit QuickJS with matching final-state/journal hashes under the 64 MiB JS cap. Public packages contain two starter decks, one format and zero private imports.
-
-The October 21 broad audit recorded 58 logic suites and ten focused native jobs; those reports retain their actual tested hashes and dates. They are ancestor evidence, not claims that every suite was rerun on every subsequent package. Fresh release-source install/start/rebuild and current focused checks are run by the [2.0.0 source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-2.0.0.yml). Finite tests do not establish all possible interactions, physical Android/3DS acceptance or external Internet acceptance.
-
-See `verification/source-manifest-2.0.0.json`, `verification/runtime-security-verification.json`, `verification/program-audit-README.md`, `work/overeager/tests.json`, `work/pocket-research/foundation-tests.json` and `ports/3ds/reports/public-release.json`.
 
 ## Earlier 1.19.0 changes (historical)
 
@@ -236,10 +233,10 @@ Earlier desktop and Android layouts (Android captures use Chromium touch emulati
 
 Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies and uncached artwork. Other desktop operating systems are not verified.
 
-Download Source code (zip) from the [2.0.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v2.0.0-build-2026-10-23), extract it, and open PowerShell in the folder containing package.json. Or clone:
+Download Source code (zip) from the [3.0.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.0.0-build-2026-10-26), extract it, and open PowerShell in the folder containing package.json. Or clone:
 
 ```powershell
-git clone --branch v2.0.0-build-2026-10-23 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+git clone --branch v3.0.0-build-2026-10-26 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
 cd ILEX.GG
 npm install
 npm start
@@ -255,11 +252,12 @@ npm run build:rules
 npm start
 ```
 
-The wrapper compiles the canonical corrected TypeScript in `work/cube-source/src`. The rebuilt engine must match the SHA-256 above and `verification/source-manifest-2.0.0.json`. Do not rerun initial card generators over this release. Pocket has a separate model/engine and frozen compiler inputs in `work/desktop/ui/pocket-source`.
+The wrapper compiles the canonical corrected TypeScript in `work/cube-source/src`. The rebuilt engine must match the SHA-256 above and `verification/source-manifest-3.0.0.json`. Do not rerun initial card generators over this release. Pocket has a separate model/engine and frozen compiler inputs in `work/desktop/ui/pocket-source`.
 
 Run current focused checks sequentially:
 
 ```powershell
+npm run test:campaign
 npm run test:cube
 npm run test:cube-import
 npm run test:overeager
@@ -269,13 +267,13 @@ npm run test:protocol
 node work/desktop-build/card-cache-tests.cjs
 ```
 
-The source workflow downloads the tag afresh, follows these install/start/rebuild/test commands, checks fresh/restored native UI and verifies every manifest file in both automatic ZIP/tar.gz downloads. Network protocol tests use simulated delivery; they do not establish external connectivity. Native tests use isolated profiles and environment-specific no-sandbox/disable-gpu flags; ordinary launches retain the Chromium sandbox.
+The source workflow downloads the tag afresh, follows these install/start/rebuild/test commands, checks fresh/restored native Campaign UI and verifies every manifest file in both automatic ZIP/tar.gz downloads. Network protocol tests use simulated delivery; they do not establish external connectivity. Native tests use isolated profiles and environment-specific no-sandbox/disable-gpu flags; ordinary launches retain the Chromium sandbox.
 
-### Android and 3DS source
+### Android and earlier 3DS source
 
 [Android source/build notes](work/android-build/README.md) require JDK17, official SDK tools and Python separately. The original signing key/password are excluded; another key cannot update an installed release in place. Current Android-specific UI source is included. Historical packaging scripts expect original staging/output folders and are not a clean-clone release pipeline; do not use legacy `build.cjs` to regenerate the current UI.
 
-[3DS source/build notes](ports/3ds/README.md) describe the separate native starter port. No SDK, emulator profile, personal deck library or save is included. Install art/media/catalog from the matched public SD bundle. Rebuilding native code requires devkitARM/libctru and matching QuickJS-NG0.17.0 32-bit bytecode tooling; CIA packaging also needs the documented tools.
+[3DS source/build notes](ports/3ds/README.md) describe the separate native starter port. No SDK, emulator profile, personal deck library or save is included. The 3DS source retained here is the earlier public starter-only Alpha; new development is in progress. Install art/media/catalog from its matched2.0.0 SD bundle. Rebuilding native code requires devkitARM/libctru and matching QuickJS-NG0.17.0 32-bit bytecode tooling; CIA packaging also needs the documented tools.
 
 ## Earlier release trailer
 

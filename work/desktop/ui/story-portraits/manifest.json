@@ -1,0 +1,899 @@
+{
+  "portraits": {
+    "Rowan": {
+      "file": "original-1.png",
+      "rect": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Mara": {
+      "file": "original-1.png",
+      "rect": [
+        516,
+        0,
+        508,
+        512
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Bram": {
+      "file": "original-1.png",
+      "rect": [
+        0,
+        512,
+        512,
+        468
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Nessa": {
+      "file": "original-1.png",
+      "rect": [
+        512,
+        512,
+        512,
+        468
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Mira": {
+      "file": "original-1.png",
+      "rect": [
+        0,
+        980,
+        500,
+        556
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Tess": {
+      "file": "original-1.png",
+      "rect": [
+        535,
+        980,
+        489,
+        556
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Ada": {
+      "file": "original-2.png",
+      "rect": [
+        0,
+        0,
+        574,
+        410
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Edda": {
+      "file": "original-2.png",
+      "rect": [
+        576,
+        0,
+        448,
+        410
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Oren": {
+      "file": "original-2.png",
+      "rect": [
+        0,
+        410,
+        512,
+        385
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Sela": {
+      "file": "original-2.png",
+      "rect": [
+        512,
+        410,
+        512,
+        385
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Ivo": {
+      "file": "original-2.png",
+      "rect": [
+        0,
+        795,
+        512,
+        365
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Maren": {
+      "file": "original-2.png",
+      "rect": [
+        512,
+        795,
+        512,
+        365
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Dr. Sen": {
+      "file": "original-2.png",
+      "rect": [
+        0,
+        1160,
+        590,
+        376
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Neri": {
+      "file": "original-3.png",
+      "rect": [
+        0,
+        0,
+        544,
+        410
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Sera": {
+      "file": "original-3.png",
+      "rect": [
+        548,
+        0,
+        476,
+        410
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Tarin": {
+      "file": "original-3.png",
+      "rect": [
+        0,
+        410,
+        512,
+        355
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Lio": {
+      "file": "original-3.png",
+      "rect": [
+        512,
+        410,
+        512,
+        355
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Rhea": {
+      "file": "original-3.png",
+      "rect": [
+        0,
+        765,
+        512,
+        363
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Dalen": {
+      "file": "original-3.png",
+      "rect": [
+        512,
+        765,
+        512,
+        363
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Anwen": {
+      "file": "original-3.png",
+      "rect": [
+        0,
+        1128,
+        590,
+        408
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Elian": {
+      "file": "original-4.png",
+      "rect": [
+        0,
+        0,
+        552,
+        568
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Bren": {
+      "file": "original-4.png",
+      "rect": [
+        560,
+        0,
+        464,
+        568
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Toma": {
+      "file": "original-4.png",
+      "rect": [
+        0,
+        568,
+        526,
+        472
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Vale": {
+      "file": "original-4.png",
+      "rect": [
+        530,
+        568,
+        494,
+        472
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Jun": {
+      "file": "original-4.png",
+      "rect": [
+        0,
+        1040,
+        572,
+        496
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Surveyor Venn": {
+      "file": "original-4.png",
+      "rect": [
+        576,
+        1040,
+        448,
+        496
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Saturn": {
+      "file": "support-1.png",
+      "rect": [
+        0,
+        0,
+        512,
+        392
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Lysandre": {
+      "file": "support-1.png",
+      "rect": [
+        512,
+        0,
+        512,
+        392
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Maxie": {
+      "file": "support-1.png",
+      "rect": [
+        0,
+        392,
+        512,
+        368
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Unknown Operator": {
+      "file": "support-1.png",
+      "rect": [
+        512,
+        392,
+        512,
+        368
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Relay Officer": {
+      "file": "support-1.png",
+      "rect": [
+        0,
+        760,
+        512,
+        382
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Recovery Agent": {
+      "file": "support-1.png",
+      "rect": [
+        512,
+        760,
+        512,
+        382
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Archive Custodian": {
+      "file": "support-1.png",
+      "rect": [
+        0,
+        1142,
+        680,
+        394
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Doctrine Officer": {
+      "file": "support-2.png",
+      "rect": [
+        0,
+        0,
+        512,
+        395
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Records Officer": {
+      "file": "support-2.png",
+      "rect": [
+        512,
+        0,
+        512,
+        395
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Site Custodian": {
+      "file": "support-2.png",
+      "rect": [
+        0,
+        395,
+        512,
+        400
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Systems Engineer": {
+      "file": "support-2.png",
+      "rect": [
+        512,
+        395,
+        512,
+        400
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Field Examiner": {
+      "file": "support-2.png",
+      "rect": [
+        0,
+        795,
+        512,
+        370
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Research Supervisor": {
+      "file": "support-2.png",
+      "rect": [
+        530,
+        795,
+        494,
+        370
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Regional Adjudicator": {
+      "file": "support-2.png",
+      "rect": [
+        0,
+        1165,
+        680,
+        371
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Expedition Captain": {
+      "file": "support-3.png",
+      "rect": [
+        0,
+        0,
+        512,
+        428
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Transit Marshal": {
+      "file": "support-3.png",
+      "rect": [
+        512,
+        0,
+        512,
+        428
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Power Supervisor": {
+      "file": "support-3.png",
+      "rect": [
+        0,
+        428,
+        512,
+        392
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Array Engineer": {
+      "file": "support-3.png",
+      "rect": [
+        512,
+        428,
+        512,
+        392
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Security Director": {
+      "file": "support-3.png",
+      "rect": [
+        0,
+        820,
+        512,
+        364
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Compliance Officer": {
+      "file": "support-3.png",
+      "rect": [
+        512,
+        820,
+        512,
+        364
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Holdout Commander": {
+      "file": "support-3.png",
+      "rect": [
+        0,
+        1184,
+        690,
+        352
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Royal Gatekeeper": {
+      "file": "support-4.png",
+      "rect": [
+        0,
+        0,
+        512,
+        405
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Royal Courier": {
+      "file": "support-4.png",
+      "rect": [
+        512,
+        0,
+        512,
+        405
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Royal Pursuer": {
+      "file": "support-4.png",
+      "rect": [
+        0,
+        405,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Waterworks Keeper": {
+      "file": "support-4.png",
+      "rect": [
+        512,
+        405,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Royal Archivist": {
+      "file": "support-4.png",
+      "rect": [
+        0,
+        785,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Palace Envoy": {
+      "file": "support-4.png",
+      "rect": [
+        520,
+        785,
+        504,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Royal Bailiff": {
+      "file": "support-4.png",
+      "rect": [
+        0,
+        1165,
+        610,
+        371
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Palace Huntmaster": {
+      "file": "support-5.png",
+      "rect": [
+        0,
+        0,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Lens Keeper": {
+      "file": "support-5.png",
+      "rect": [
+        512,
+        0,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Palace Conservator": {
+      "file": "support-5.png",
+      "rect": [
+        0,
+        380,
+        512,
+        393
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Floodgate Enforcer": {
+      "file": "support-5.png",
+      "rect": [
+        512,
+        380,
+        512,
+        393
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Reclamation Officer": {
+      "file": "support-5.png",
+      "rect": [
+        0,
+        773,
+        512,
+        365
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Reclamation Foreman": {
+      "file": "support-5.png",
+      "rect": [
+        512,
+        773,
+        512,
+        365
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Air Courier": {
+      "file": "support-5.png",
+      "rect": [
+        0,
+        1138,
+        610,
+        398
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Relay Superintendent": {
+      "file": "support-6.png",
+      "rect": [
+        0,
+        0,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Magma Checkpoint Captain": {
+      "file": "support-6.png",
+      "rect": [
+        512,
+        0,
+        512,
+        380
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Infrastructure Officer": {
+      "file": "support-6.png",
+      "rect": [
+        0,
+        380,
+        512,
+        377
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Survey Commander": {
+      "file": "support-6.png",
+      "rect": [
+        512,
+        380,
+        512,
+        377
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Logistics Commander": {
+      "file": "support-6.png",
+      "rect": [
+        0,
+        757,
+        512,
+        386
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Visiting Researcher": {
+      "file": "support-6.png",
+      "rect": [
+        512,
+        757,
+        512,
+        386
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "Station Defender": {
+      "file": "support-6.png",
+      "rect": [
+        0,
+        1143,
+        610,
+        393
+      ],
+      "size": [
+        1024,
+        1536
+      ]
+    }
+  },
+  "aliases": {
+    "Venn": "Surveyor Venn",
+    "Commander Saturn": "Saturn",
+    "False Rowan": "Rowan",
+    "Bram’s temporal echo": "Bram",
+    "Galactic Records Officer": "Records Officer",
+    "Galactic Custodian": "Site Custodian",
+    "Galactic Examiner": "Field Examiner",
+    "Galactic Adjudicator": "Regional Adjudicator",
+    "Galactic Holdout Commander": "Holdout Commander"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "changes": [
+    "Word-by-word dialogue with per-speaker voice blips and punctuation pauses",
+    "Click/Continue reveals full line before advancing; keyboard Space supported",
+    "Natural/Fast/Instant speed and word sound preferences saved separately",
+    "Larger human and Pokemon art outside the unboxed dialogue copy",
+    "Journey timeline contains discovered eras only",
+    "27 original official Pokemon illustrations bundled locally"
+  ],
+  "dialogueLinesChecked": 796,
+  "checks": {
+    "desktop": 88,
+    "mobile": 88,
+    "mobileLifecycle": 6,
+    "native": 10,
+    "art": 27,
+    "android": 44
+  },
+  "hashes": {
+    "audio.js": "37d3c10e601c2c437cbba1caa3a3ffcd70835553a706334d6adbf8723d069532",
+    "story-mode.js": "6af372bf23af12206e11c7d2e69ea079cd278cea01b9a983cba52b4d36643f7f",
+    "story.css": "071d893764a3e9b6d79a4027a1d610307a8b35bc6f91d61d7e833a9b538367d3",
+    "story-pokemon/alakazam.png": "8f1dfebe7855bf0838dc4110629b01a8862370373cabe527adf3f979bc4fa1e0",
+    "story-pokemon/arceus.png": "2c33a80a60316f3bb3aa611246543857e053a2728c94c0f67efa44b965d8bc31",
+    "story-pokemon/celebi.png": "31384fd45c2663c1e6ed94deeb8b16c7e2e0a5afb4eb8ea95fef175ab34308be",
+    "story-pokemon/chandelure.png": "c4dc9669beb0d42295e776a823aa6874e62bdecb83e1bc7b8cf28bfabdc91840",
+    "story-pokemon/charizard.png": "b6d5b8ee9fb05dc6f53294b2cae660dec770b92762cdb19d16bcbd679e1ba43a",
+    "story-pokemon/dialga.png": "34d234eef4714349ead88d0df85adcdb97195198f556a09e35dd7aac02d7918d",
+    "story-pokemon/dragonite.png": "4bd7549caa15eac43a8197ba53e843a95f2b56c71b1121829ea76764fbf26f9c",
+    "story-pokemon/durant.png": "6c5a3e9ec82139c5a620d86184d50485864733febe759e53bc09e51e0dace6eb",
+    "story-pokemon/eternatus.png": "d307b476c143719a43161ecd2af57ddf19cb21280f0e2a90011e8952f4ed458c",
+    "story-pokemon/garchomp.png": "c9122fe26666487f152bc299ce73257141d5e762d486ac49867c97b19342980f",
+    "story-pokemon/gengar.png": "b6549b80537676fcf4a589c8853b38cce42f42b5f707bbe2e63797666175cf06",
+    "story-pokemon/giratina.png": "a43e1563cf09e86f391a75b1de445b2eaef4773a956c39b8d9377048b02f82e2",
+    "story-pokemon/groudon.png": "bf6a4334d6a49af32396c9d155e867a1699439ff73c28bb6dad15dd4684b4461",
+    "story-pokemon/hydreigon.png": "74b0d31de02ec0c2350fccce401190f196037d51f17a5931a04ff9b2d67a2c3b",
+    "story-pokemon/lugia.png": "6977890cdd83d4b542961be5bbe965c8ca92ccff843094be4840939c4f0674d6",
+    "story-pokemon/mew.png": "9991aee5181178b604b99aec636533b0c5a52a321ce246dd3b9c33243a342a64",
+    "story-pokemon/mewtwo.png": "d99adeb9b4523073ca218a6f472ea5b602b047ccd8af8dea6fa7ae051f80366a",
+    "story-pokemon/muk.png": "bbc4d735100cbfdb1e2cb17669d82430d930abe4b3d779de6b679590a68c15f6",
+    "story-pokemon/palkia.png": "2c7827e8ecdf18194761404141b27ee6e50c6805b34d3cce2cabc9449e4b48e2",
+    "story-pokemon/pikachu.png": "759ceafdb4b8d637dfcfe673cf672bc3c472354a3b2e7e0835d9cdcacd8d195d",
+    "story-pokemon/rayquaza.png": "52fdacd461e20343dc7fd127b062c23429dc63dfe558c94b9aea0dc7a27be939",
+    "story-pokemon/reshiram.png": "a420e47a41e5b2b65f1ccd528cfc01e47d1c05eeef5bea7d06a7da26cd09f6fe",
+    "story-pokemon/seismitoad.png": "b59c85f0c4a26e3e97d37839bcf51666713cfde488ad7c6f36007ada8bfe04f2",
+    "story-pokemon/slowking.png": "ef4c791a9ea73ca822a8c52a1f728e1712d28e333ff477255574baf8d8fbcb61",
+    "story-pokemon/sources.json": "c9048c16699ac206714d05fb659e1b7ddc8193ad864a8885777e826dac9cf37c",
+    "story-pokemon/venusaur.png": "106d0040aa775f95871706c30ddd4abaef2c962215f5e8bd4141e0caef0ef8e4",
+    "story-pokemon/zekrom.png": "de9c3fa59c8bd6a7903598b4737fecb410c78d0ee59617b4bf454dbeebd3dfe4",
+    "story-pokemon/zoroark.png": "b9dc530c88c2baee1026f03eb4b57bd7db94289d9811bafbe961ae49150938cd"
+  },
+  "savedProgress": "Existing version2 campaign and battle journal schema unchanged; native resume verified. Reveal position is transient; saved lines reopen from the beginning.",
+  "audio": "Shares effects bus and volume/mute controls. Voices stopped on navigation, hiding, skip and disabling sound. No text-to-speech or recorded dialogue.",
+  "art": "Original Pokemon Pokedex PNGs from assets.pokemon.com, provenance and hashes in story-pokemon/sources.json. No generated Pokemon art. Dialga represented by official standard-form illustration.",
+  "androidVersion": 89,
+  "physicalAndroidDeviceTested": false,
+  "physicalAudioAcceptanceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "new3dsModified": false,
+  "remotePublished": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "a57be35dbcfe7004da56e4f2d0f5e1e69c7631659acd17b3d86b600bbbfa40dd",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "3f9d04b77dc8249965fe7fbede6239094a53e51e1a69d6887b80b1c7e4bf7b13",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "9816089c87ff769a4a524d037f139ee6c1f4ec314326601ee07544c866687394",
+  "androidAudioSha256": "73223679e52662f1b900e5984cea20e7ca3f19496bb41fa740bbe60f8a3e6525",
+  "mobileAudioLifecyclePreserved": true
+}

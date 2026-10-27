@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "sound": "Mega Man X (SNES) \u2014 Text Letter",
+  "source": {
+    "source": "https://sounds.spriters-resource.com/snes/mmx/asset/402441/",
+    "archiveEntry": "Mega Man X SNES SFX/114 - MMX - Text Letter.wav",
+    "sha256": "113de7fa62a0469ede86063bd34eb8c652a351a12ed56bc277f7be6fd4ad564d",
+    "bytes": 196940,
+    "channels": 2,
+    "rate": 44100,
+    "frames": 49152,
+    "seconds": 1.1145578231292517,
+    "sampleWidth": 2,
+    "method": "Original downloaded PCM WAV, bytes unchanged; no generated replacement or pitch shifting."
+  },
+  "behavior": "Original sample, unchanged WAV, original pitch for every speaker; one chirp per revealed word. Playback selects 0.35s offset/0.20s duration to omit recording silence. No new synth voice fallback. Cached local AudioBuffer; one active sample at a time.",
+  "volume": "Gain0.12 into existing effects bus. Existing effect volume, mute, word-sound preference, skip, navigation/background and Android host pause/resume retained.",
+  "checks": {
+    "desktop": 14,
+    "mobile": 16,
+    "native": 10,
+    "android": 44
+  },
+  "hashes": {
+    "audio.js": "5fd51b36da718cb404fb48042fd392e83686eefceeafac74b280b365f9cf5054",
+    "story-audio/mmx-text-letter.wav": "113de7fa62a0469ede86063bd34eb8c652a351a12ed56bc277f7be6fd4ad564d",
+    "story-audio/source.json": "e52297ae12e810bbc84bdb1d72439f4b05cc1f1c7d1ae1985a502ac5807c5bc6"
+  },
+  "androidAudioSha256": "d265dcf44d0408dfbc9cbde841568252c27fdcb6db4262ff637950b29ffbe17a",
+  "androidVersion": 91,
+  "physicalAudioAcceptanceTested": false,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "unchanged": "All story/deck content, visual layout, character/Pokemon assets, reveal timings and save schema.",
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "d77dcee3ce13a8c7173ff78c0aa866ec6669593aba9da4cd22209d63a2f945bc",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "ca3892a8e7554a2a482bbd0be4b0ed630d883d2f949fb085b2abc1a468308b1c",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "0086ea2b4af5924feeb404522eef00a8cc96e930977a6347b49d1db1b9a2348e"
+}

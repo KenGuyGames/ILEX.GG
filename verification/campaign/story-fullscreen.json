@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "fix": "Full-document scenic background covers dialogue options, expanded controls, scrolling content and footer; bottom shading reduced; human portrait lower edges blend into scenery and mobile height clipping removed.",
+  "fullDocumentCoverageVerified": true,
+  "viewports": [
+    "523x679 (reported screenshot)",
+    "390x844",
+    "800x360",
+    "1440x1000"
+  ],
+  "checks": {
+    "desktop": 25,
+    "mobile": 25,
+    "native": 3,
+    "android": 44
+  },
+  "hashes": {
+    "story.css": "1b21e4eee4517e70950a98ac01b62bbfd8d9f416aa0f9e42b07becea2c712427"
+  },
+  "savedProgress": "CSS-only presentation change. Existing campaign, battle journal, normal saves, audio and art untouched.",
+  "androidVersion": 95,
+  "physicalAndroidDeviceTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "new3dsModified": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows.zip",
+      "sha256": "e2275ab478edebbb9848d02c89a24ffc61a3140a15f3c59c7d273f8f710674ba",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-2.0.0-Windows-Offline.zip",
+      "sha256": "10015ee01d0e4ff840d3802af6cfd0a601b23b3d84ed5dcaa7dbe1c609184dfa",
+      "unrelatedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "1838e2e36c4133c7c216a9619ef9c13d5174c24d12e297640ba9c71d233ffe43"
+}
