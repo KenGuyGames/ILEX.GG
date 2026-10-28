@@ -1,0 +1,53 @@
+name: Fresh 3.2.0 Windows release download
+on:
+  push:
+    paths:
+      - .github/workflows/fresh-3.2.0-windows-package.yml
+permissions:
+  contents: read
+jobs:
+  windows_package:
+    runs-on: windows-2025
+    timeout-minutes: 20
+    steps:
+      - name: Download and verify the public Windows ZIP
+        shell: pwsh
+        run: |
+          $base = 'https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.2.0-build-2026-10-28'
+          $manifest = Invoke-RestMethod "$base/release-assets.json"
+          $expected = $manifest.assets | Where-Object name -eq 'ILEX.GG-Windows.zip'
+          if (!$expected) { throw 'Missing Windows checksum' }
+          Invoke-WebRequest "$base/ILEX.GG-Windows.zip" -OutFile "$env:RUNNER_TEMP/Windows.zip"
+          if ((Get-FileHash "$env:RUNNER_TEMP/Windows.zip").Hash.ToLower() -ne $expected.sha256) { throw 'Windows ZIP hash mismatch' }
+          if ((Get-Item "$env:RUNNER_TEMP/Windows.zip").Length -ne $expected.bytes) { throw 'Windows ZIP size mismatch' }
+          Expand-Archive "$env:RUNNER_TEMP/Windows.zip" "$env:RUNNER_TEMP/Windows"
+          Write-Output "PASS fresh public Windows ZIP size/SHA256 and extraction"
+      - name: Launch the packaged app with a fresh Windows workspace
+        shell: pwsh
+        run: |
+          $folder = "$env:RUNNER_TEMP/Windows/ILEX.GG-win32-x64"
+          $meta = Get-Content "$folder/resources/app/package.json" -Raw | ConvertFrom-Json
+          if ($meta.version -ne '3.2.0') { throw 'Wrong app version' }
+          if ((Get-FileHash "$folder/resources/app/ui/rules-engine.js").Hash.ToLower() -ne 'a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0') { throw 'Wrong engine' }
+          if (Test-Path "$env:APPDATA/TCG Lab") { throw 'Workspace is not fresh' }
+          $app = Start-Process -FilePath "$folder/ILEX.GG.exe" -WorkingDirectory $folder -WindowStyle Hidden -PassThru -RedirectStandardOutput "$env:RUNNER_TEMP/package-out.txt" -RedirectStandardError "$env:RUNNER_TEMP/package-error.txt"
+          $deadline = (Get-Date).AddSeconds(120)
+          while ((Get-Date) -lt $deadline) {
+            $app.Refresh()
+            if ($app.HasExited) { break }
+            if ($app.MainWindowHandle -ne 0 -and $app.MainWindowTitle -like '*ILEX.GG*') { break }
+            Start-Sleep -Milliseconds 500
+          }
+          if ($app.HasExited -or $app.MainWindowHandle -eq 0) { Get-Content "$env:RUNNER_TEMP/package-error.txt"; throw 'Packaged app did not open its window' }
+          Start-Sleep -Seconds 12
+          $app.Refresh()
+          if (!$app.Responding -or $app.HasExited) { throw 'Packaged app is not responding' }
+          $cache = @(Get-ChildItem "$env:APPDATA/TCG Lab/card-cache" -Recurse -File -ErrorAction SilentlyContinue)
+          if ($cache.Count -eq 0) { throw 'No artwork cached' }
+          Write-Output "PASS packaged3.2.0 window=$($app.MainWindowTitle), responding=$($app.Responding), artworkCache=$($cache.Count)"
+          $null = $app.CloseMainWindow()
+          if (!$app.WaitForExit(15000)) { throw 'Packaged app did not close normally' }
+          if ($app.ExitCode -ne 0) { throw 'Packaged app nonzero exit' }
+          $stderr = Get-Content "$env:RUNNER_TEMP/package-error.txt" -Raw -ErrorAction SilentlyContinue
+          if ($stderr -match 'Uncaught Exception|ReferenceError:|TypeError:') { throw $stderr }
+          Write-Output 'PASS packaged app clean close, exit0'
