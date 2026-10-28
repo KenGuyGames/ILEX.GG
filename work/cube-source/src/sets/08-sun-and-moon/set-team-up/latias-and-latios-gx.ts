@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   AttachEnergyPrompt,
   CardTag,
@@ -62,7 +63,7 @@ export class LatiasAndLatiosGx extends PokemonCard {
 
       const checkEnergy = new CheckProvidedEnergyEffect(player, player.active);
       store.reduceEffect(state, checkEnergy);
-      const totalEnergy = checkEnergy.energyMap.reduce((sum, em) => sum + em.provides.length, 0);
+      const totalEnergy = checkEnergy.energyMap.reduce((sum, em) => sum + EnergyUnitUtils.getProvidesUnitCount(em.provides, em), 0);
       const hasExtraEnergy = totalEnergy >= 2;
 
       const basicEnergyInDiscard = player.discard.cards.filter(c =>

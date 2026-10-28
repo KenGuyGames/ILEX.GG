@@ -1,3 +1,5 @@
+import { installSpecialEnergyAudit } from './tcg-lab-special-energy';
+import { printingSource } from './tcg-lab-printing-source';
 import { cubeEvolution } from './tcg-lab-cube';
 import {megaAction} from './tcg-lab-mega-actions';
 import {megaData} from './tcg-lab-mega-data';
@@ -868,6 +870,7 @@ for(const record of [...wotcData,...exData,...dpData,...hgssData,...bwData,...xy
  const d=record.d;
  // Base/Jungle/Fossil keep their already tested original instances.
  if(['base1','base2','base3'].includes(d.set.id)){const original:any=originals.get(record.reuse);if(original)addCopySupport(original.constructor.prototype,record);continue;}
+ record.reuse=printingSource(record);
  const original:any=record.reuse?originals.get(record.reuse):null;
  if(record.reuse&&!original)throw Error('Missing WOTC source '+record.reuse);
  const card:any=original?new original.constructor():d.supertype==='Energy'?new EnergyCard():d.supertype==='Trainer'?new TrainerCard():new PokemonCard();
@@ -1082,7 +1085,7 @@ for(const record of [...wotcData,...exData,...dpData,...hgssData,...bwData,...xy
  };}
  if(record.heldRules?.length){const ordinary=card.reduceEffect;card.reduceEffect=function(store:any,state:any,e:any){dpHeld(this,record.heldRules,store,state,e);return ordinary.call(this,store,state,e);};}
  if(record.dpEnergy){card.text=(d.rules||[]).join(' ');installDpEnergy(card,record.dpEnergy);}
- if(record.exEnergy){card.text=(d.rules||[]).join(' ');installExEnergy(card,record.exEnergy);}
+ const energyKind=record.exEnergy||({'Aqua Energy':'aquaFlexible','Magma Energy':'magmaFlexible','Boost Energy':'boost','Double Rainbow Energy':'doubleRainbow','Scramble Energy':'scramble','Multi Energy':'multi','δ Rainbow Energy':'deltaRainbow','Dark Metal Energy':'darkMetal','R Energy':'rocket','Holon Energy FF':'holonFF','Holon Energy GL':'holonGL','Holon Energy WP':'holonWP'} as any)[d.name];if(d.supertype==='Energy'&&energyKind){card.text=(d.rules||[]).join(' ');installExEnergy(card,energyKind);}
  if(bwPrinting){card._bwId=d.id;if(d.subtypes?.includes('Team Plasma')&&!card.tags.includes(CardTag.TEAM_PLASMA))card.tags.push(CardTag.TEAM_PLASMA);card.powers?.forEach((power:any,index:number)=>{if(d.abilities?.[index]?.type==='Ability')power.powerType=PowerType.ABILITY;});if(d.subtypes?.includes('Restored'))card.stage=Stage.RESTORED;installBwCard(card);}
  if(hgssPrinting){card._hgssId=d.id;if(d.subtypes?.includes('LEGEND')){card._hgssLegend=true;card._hgssLegendHalf=hgssData.filter((r:any)=>r.d.name===d.name&&r.d.set.id===d.set.id).every((r:any)=>Number(d.number)<=Number(r.d.number))?'top':'bottom';card._hgssLegendPrizes=(d.rules||[]).some((r:string)=>r.includes('2 Prize cards'))?2:1;card.stage=Stage.LEGEND;card.tags=card.tags.filter((t:any)=>t!==CardTag.DUAL_LEGEND);if(!card.tags.includes(CardTag.LEGEND))card.tags.push(CardTag.LEGEND);}if(d.rarity==='Rare Prime'&&!card.tags.includes(CardTag.PRIME))card.tags.push(CardTag.PRIME);if(record.trainerOps?.[0]?.kind==='stadium'){card.trainerType=TrainerType.STADIUM;card._hgssStadium=record.trainerOps[0].effect;}if(record.hgssEnergy)installHgssEnergy(card,record.hgssEnergy);}
  if(xyData.includes(record))installXyCard(card,record);
@@ -1090,7 +1093,12 @@ for(const record of [...wotcData,...exData,...dpData,...hgssData,...bwData,...xy
  if(swshData.includes(record))installSwshCard(card,record);
  if(svData.includes(record))installSvCard(card,record);
  if(megaData.includes(record))installMegaCard(card,record);
+ if(d.supertype==='Energy'&&d.subtypes?.includes('Special'))installSpecialEnergyAudit(card,record);
  supplemental.push(card);
+}
+for(const original of originals.values() as any)if(original.superType===SuperType.ENERGY&&original.energyType===EnergyType.SPECIAL){
+ const prototype=original.constructor.prototype;
+ if(!prototype.reduceEffect?._specialEnergyAudit)installSpecialEnergyAudit(prototype,{d:{rules:[original.text]}});
 }
 
 

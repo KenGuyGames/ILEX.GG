@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, SuperType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils, PowerType, PlayerType } from '../../../game';
@@ -66,7 +67,7 @@ export class EspeonVMAX extends PokemonCard {
         const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkProvidedEnergyEffect);
         checkProvidedEnergyEffect.energyMap.forEach((energy) => {
-          energies += energy.provides.length;
+          energies += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
         });
       });
 

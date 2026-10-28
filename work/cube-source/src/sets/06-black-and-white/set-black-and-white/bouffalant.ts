@@ -1,3 +1,4 @@
+import { COIN_FLIP_PROMPT } from '../../../game/store/prefabs/prefabs';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils } from '../../../game';
@@ -23,7 +24,7 @@ export class Bouffalant extends PokemonCard {
       name: 'Head Charge',
       cost: [C, C, C, C],
       damage: 80,
-      text: 'Bouffalant does 10 damage to itself.'
+      text: 'Flip a coin. If tails, this Pokémon does 20 damage to itself.'
     }
   ];
 
@@ -45,7 +46,9 @@ export class Bouffalant extends PokemonCard {
     }
 
     if (WAS_ATTACK_USED(effect, 1, this)) {
-      THIS_POKEMON_DOES_DAMAGE_TO_ITSELF(store, state, effect, 10);
+      return COIN_FLIP_PROMPT(store, state, effect.player, heads => {
+        if (!heads) THIS_POKEMON_DOES_DAMAGE_TO_ITSELF(store, state, effect, 20);
+      });
     }
 
     return state;

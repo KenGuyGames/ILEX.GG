@@ -9,6 +9,8 @@ export class RareCandyGE extends RareCandy {
   public text = 'Choose 1 of your Basic Pokémon in play. If you have a Stage 1 or Stage 2 card that evolves from that Pokémon in your hand, put that card on the Basic Pokémon. (This counts as evolving that Pokémon.)';
 }
 export class LeftoversGE extends Leftovers {
+  public healAmount = 10;
+  public text = 'If the Pokémon Leftovers is attached to is your Active Pokémon at the end of your turn, remove 1 damage counter from the Pokémon.';
   public setNumber = '99';
   public fullName: string = 'Leftovers GE';
   public set = 'GE';

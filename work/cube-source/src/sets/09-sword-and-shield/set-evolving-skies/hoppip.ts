@@ -32,7 +32,7 @@ export class Hoppip extends PokemonCard {
       const player = effect.player;
 
       return FLIP_UNTIL_TAILS_AND_COUNT_HEADS(store, state, player, heads => {
-      effect.damage = 10 * heads;
+      effect.damage = effect.attack.damage * heads;
     });
     }
     return state;

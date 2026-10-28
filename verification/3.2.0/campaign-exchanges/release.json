@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "feature": "Boss signature back-and-forth exchanges",
+  "exchanges": 58,
+  "addedDialogueLines": 232,
+  "uniqueAttackScenes": 32,
+  "totalStoredCues": 4298,
+  "unchangedMatchesPerPlaythrough": 64,
+  "checks": {
+    "content": 12,
+    "desktop": 26,
+    "mobile": 26,
+    "native": 25,
+    "android": 44
+  },
+  "priorCuesUnchanged": 4066,
+  "androidCode": 116,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3966,
+  "onlyPublicBattleStateObserved": true,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "1c65b9ec941b101bebf86f607b3439bc9a157a94edc75a21351e5220ea8f3ebf",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "07550d4c266f431590b8e7cce7f56e67b9c25301665402d72b66f28d56a8cffc",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

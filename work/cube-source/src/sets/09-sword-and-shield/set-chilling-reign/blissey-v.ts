@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   PokemonCard,
   Stage,
@@ -101,7 +102,7 @@ export class BlisseyV extends PokemonCard {
       const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, player.active);
       store.reduceEffect(state, checkProvidedEnergyEffect);
       checkProvidedEnergyEffect.energyMap.forEach((energy) => {
-        energies += energy.provides.length;
+        energies += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
       });
 
       effect.damage = 10 + 30 * energies;

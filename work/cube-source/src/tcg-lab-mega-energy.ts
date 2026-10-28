@@ -11,12 +11,15 @@ export function megaEnergy(card:any,store:any,state:any,e:any):boolean{
   if(e.type==='END_TURN_EFFECT'){const plan=card._xyBurningReturn;delete card._xyBurningAttack;delete card._xyBurningReturn;if(plan?.turn===state.turn){const p=state.players.find((p:any)=>p.id===plan.ownerId);if(p?.discard.cards.includes(card))MOVE_CARDS(store,state,p.discard,p.hand,{cards:[card],sourceCard:card,sourceEffect:e});}}
   return true;
  }
- const relevant=name==='Ignition Energy'&&(e instanceof CheckProvidedEnergyEffect||e.type==='END_TURN_EFFECT')||name==='Bubbly Water Energy'&&(e.type==='CHECK_TABLE_STATE_EFFECT'||e.type==='AFTER_ENERGY_ATTACHED_EFFECT'&&e.energyCard===card||e.target===holder&&Array.isArray(e.specialConditions))||name==='Rocky Fighting Energy'&&e instanceof AbstractAttackEffect&&e.target===holder||name==='Shadowy Darkness Energy'&&e.type==='PUT_DAMAGE_EFFECT'&&e.target===holder;
+ const relevant=['Rocky Fighting Energy','Shadowy Darkness Energy'].includes(name)&&e instanceof CheckProvidedEnergyEffect||name==='Ignition Energy'&&(e instanceof CheckProvidedEnergyEffect||e.type==='END_TURN_EFFECT')||name==='Bubbly Water Energy'&&(e.type==='CHECK_TABLE_STATE_EFFECT'||e.type==='AFTER_ENERGY_ATTACHED_EFFECT'&&e.energyCard===card||e.target===holder&&Array.isArray(e.specialConditions))||name==='Rocky Fighting Energy'&&e instanceof AbstractAttackEffect&&e.target===holder||name==='Shadowy Darkness Energy'&&e.type==='PUT_DAMAGE_EFFECT'&&e.target===holder;
  if(!relevant||!holder||IS_SPECIAL_ENERGY_BLOCKED(store,state,owner,card,holder))return true;
  if(name==='Ignition Energy'){
   if(e instanceof CheckProvidedEnergyEffect&&e.source===holder){const count=[Stage.BASIC,Stage.RESTORED].includes(holder.getPokemonCard()?.stage)?1:3,entry=e.energyMap.find((x:any)=>x.card===card),provides=Array(count).fill(CardType.COLORLESS);if(entry)entry.provides=provides;else e.energyMap.push({card,provides});}
   if(e.type==='END_TURN_EFFECT'&&e.player===owner)MOVE_CARDS(store,state,holder.cards.includes(card)?holder:holder.energies,owner.discard,{cards:[card],sourceCard:card,sourceEffect:e});
   return true;
+ }
+ if(e instanceof CheckProvidedEnergyEffect&&e.source===holder&&['Rocky Fighting Energy','Shadowy Darkness Energy'].includes(name)){
+  const provides=[name==='Rocky Fighting Energy'?CardType.FIGHTING:CardType.DARK],entry=e.energyMap.find((x:any)=>x.card===card);if(entry)entry.provides=provides;else e.energyMap.push({card,provides});return true;
  }
  const type=new CheckPokemonTypeEffect(holder);store.reduceEffect(state,type);
  if(name==='Bubbly Water Energy'&&type.cardTypes.includes(CardType.WATER)){

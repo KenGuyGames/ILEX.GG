@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   PokemonCard,
   Stage,
@@ -91,7 +92,7 @@ export class Wishiwashi extends PokemonCard {
       let energyCount = 0;
       checkProvidedEnergyEffect.energyMap.forEach((em) => {
         if (em.card.energyType === EnergyType.BASIC) {
-          energyCount += em.provides.length;
+          energyCount += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
         }
       });
 

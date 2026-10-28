@@ -58,7 +58,7 @@ export class Stoutland extends PokemonCard {
 
       return COIN_FLIP_PROMPT(store, state, player, result => {
         if (!result) {
-          const dealDamage = new DealDamageEffect(effect, 10);
+          const dealDamage = new DealDamageEffect(effect, 20);
           dealDamage.target = player.active;
           return store.reduceEffect(state, dealDamage);
         }

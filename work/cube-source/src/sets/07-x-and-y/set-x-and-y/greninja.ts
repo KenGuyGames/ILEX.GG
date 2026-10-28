@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { PlayPokemonEffect } from '../../../game/store/effects/play-card-effects';
 import { ChooseCardsPrompt } from '../../../game/store/prompts/choose-cards-prompt';
@@ -104,7 +105,7 @@ export class Greninja extends PokemonCard {
             ),
             (result) => {
               const target = result[0];
-              target.damage += 30;
+              placePowerCounters(store, state, this, target, 30);
               return state;
             },
           );

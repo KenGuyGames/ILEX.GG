@@ -26,7 +26,7 @@ export class Annihilape extends PokemonCard {
       name: 'Dynamite Punch',
       cost: [CardType.FIGHTING, CardType.FIGHTING],
       damage: 170,
-      text: 'This Pokemon also does 10 damage to itself.'
+      text: 'This Pokémon also does 50 damage to itself.'
     }
   ];
 

@@ -1,3 +1,8 @@
+import { PowerType, StoreLike, State, CardType } from '../../../game';
+import { Effect } from '../../../game/store/effects/effect';
+import { CheckProvidedEnergyEffect } from '../../../game/store/effects/check-effects';
+import { PowerEffect } from '../../../game/store/effects/game-effects';
+import { IS_ABILITY_BLOCKED } from '../../../game/store/prefabs/prefabs';
 import { EnergySwitchPK } from '../../03-ex-ruby-and-sapphire/set-ex-power-keepers/other-prints';
 import { GreatBall } from '../../03-ex-ruby-and-sapphire/set-ex-firered-leafgreen/great-ball';
 import { Potion } from '../../set-base-set/potion';
@@ -68,6 +73,18 @@ export class CharmeleonSF extends Charmeleon {
 }
 
 export class CharizardSF extends Charizard {
+  public powers = [{name: 'Energy Burn', powerType: PowerType.POKEBODY, text: 'All Energy attached to Charizard are Fire Energy instead of their usual type.'}];
+  public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
+    if (effect instanceof CheckProvidedEnergyEffect && effect.source.getPokemonCard() === this && !IS_ABILITY_BLOCKED(store, state, effect.player, this, this.powers[0])) {
+      for (const energy of [...effect.source.cards, ...effect.source.energies.cards]) {
+        if ((energy as any).provides && !effect.energyMap.some(entry => entry.card === energy)) effect.energyMap.push({card: energy as any, provides: (energy as any).provides});
+      }
+      effect.energyMap.forEach(entry => { entry.provides = entry.provides.map(() => CardType.FIRE); });
+    }
+    // Fire Spin is shared; the original activated Energy Burn is replaced by this Body.
+    if (!(effect instanceof PowerEffect)) return super.reduceEffect(store, state, effect);
+    return state;
+  }
   public setNumber = '103';
   public fullName: string = 'Charizard SF';
   public set = 'SF';

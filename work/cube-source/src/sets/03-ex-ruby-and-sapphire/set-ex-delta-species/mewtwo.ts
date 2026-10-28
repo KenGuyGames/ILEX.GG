@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { GameMessage } from '../../../game/game-message';
 import { Effect } from '../../../game/store/effects/effect';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -132,14 +133,10 @@ export class Mewtwo extends PokemonCard {
 
       let energies: number = 0;
       playerCheckProvidedEnergyEffect.energyMap.forEach((energy) => {
-        energy.provides.forEach((e) => {
-          energies++;
-        });
+        energies += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
       });
       opponentCheckProvidedEnergyEffect.energyMap.forEach((energy) => {
-        energy.provides.forEach((e) => {
-          energies++;
-        });
+        energies += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
       });
 
       effect.damage = 10 * energies;

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import {
@@ -56,7 +57,7 @@ export class Deoxys2 extends PokemonCard {
         const checkEnergy = new CheckProvidedEnergyEffect(player, player.active);
         store.reduceEffect(state, checkEnergy);
 
-        const totalEnergy = checkEnergy.energyMap.reduce((sum, em) => sum + em.provides.length, 0);
+        const totalEnergy = checkEnergy.energyMap.reduce((sum, em) => sum + EnergyUnitUtils.getProvidesUnitCount(em.provides, em), 0);
         const extraEnergy = totalEnergy - 3; // [P][P][P] cost
 
         if (extraEnergy >= 2) {

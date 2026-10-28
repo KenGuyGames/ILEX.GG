@@ -1,3 +1,4 @@
+import { CardTag } from '../card/card-types';
 import {CoinFlipEffect,ToolEffect} from '../effects/play-card-effects';
 import { getCardTarget } from "../../../simple-bot/simple-tactics/simple-tactics";
 import { GameError } from "../../game-error";
@@ -72,7 +73,7 @@ function applyPutDamage(store: StoreLike, state: State, effect: PutDamageEffect)
     }
 
     if(effect.player!==StateUtils.findOwner(state,target)&&!(effect.attackEffect as any)._wotcTrainer){if((target as any).wotcLastOpponentAttackDamageTurn!==state.turn)(target as any).wotcLastOpponentAttackDamage=0;(target as any).wotcLastOpponentAttackDamageTurn=state.turn;}
-    if((state.rules as any).exEraRules&&damage>0&&(effect.player!==StateUtils.findOwner(state,target)||(state.rules as any).dpEraRules)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard),abilityBlocked:(state.rules as any).dpEraRules&&IS_ABILITY_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
+    if(damage>0&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard),abilityBlocked:(state.rules as any).dpEraRules&&IS_ABILITY_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
     const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
     afterDamageEffect.target = effect.target;
     store.reduceEffect(state, afterDamageEffect);
@@ -110,6 +111,12 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
       throw new GameError(GameMessage.ILLEGAL_ACTION);
     }
 
+    // Lusamine Prism Star protects all of this player's Ultra Beasts, including
+    // ones that enter play later, for the opponent's next turn only.
+    if (!bypassDefender && state.phase === GamePhase.ATTACK &&
+      (StateUtils.findOwner(state, target) as any).lusaminePrismProtectionTurn === state.turn &&
+      targetCard.hasTag(CardTag.ULTRA_BEAST)) return state;
+
     // Defending Pokémon's attacks do N less (before W/R). Only for direct PutDamage
     // paths — DealDamageEffect already applied this before weakness.
     if (!effect.weaknessApplied && effect.source.attackDamageReductionNextTurn > 0) {
@@ -136,6 +143,14 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
       targetOwner.marker.addMarkerToState(targetOwner.DAMAGE_DEALT_MARKER);
     }
 
+    if (!(effect as any).specialEnergyAfterWeaknessApplied) {
+      (effect as any).specialEnergyAfterWeaknessApplied = true;
+      effect.damage = Math.max(0,effect.damage-((effect as any).specialEnergyAfterWeaknessReduction||0));
+    }
+    if (!(effect as any).strengthCharmApplied) {
+      (effect as any).strengthCharmApplied = true;
+      if (effect.damage > 0) effect.damage += 10 * ((effect as any).strengthCharmCards?.length || 0);
+    }
     if (!bypassDefender && state.phase === GamePhase.ATTACK && shouldPreventAttackDamage(target, effect.source, effect.damage)) {
       return state;
     }
@@ -372,7 +387,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
         GameStatsTracker.trackDamageDealt(effect.player, effect.source, damage);
       }
 
-      if((state.rules as any).exEraRules&&damage>0&&(effect.player!==StateUtils.findOwner(state,target)||(state.rules as any).dpEraRules)&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
+      if(damage>0&&!(effect.attackEffect as any)._wotcTrainer){const hp=new CheckHpEffect(StateUtils.findOwner(state,target),target);store.reduceEffect(state,hp);(target as any)._exLethalAttackDamage=target.damage>=hp.hp?{card:targetCard,turn:state.turn,attackId:(effect.attackEffect as any)._dpAttackId,attackerCard:effect.source.getPokemonCard(),wasActive:StateUtils.findOwner(state,target).active===target,powerBlocked:(state.rules as any).dpEraRules&&IS_POKEPOWER_BLOCKED(store,state,StateUtils.findOwner(state,target),targetCard)}:undefined;}
     const afterDamageEffect = new AfterDamageEffect(effect.attackEffect, damage);
       afterDamageEffect.target = effect.target;
       store.reduceEffect(state, afterDamageEffect);
@@ -441,7 +456,7 @@ export function attackReducer(store: StoreLike, state: State, effect: Effect): S
     const proposed = Math.max(0,effect.damage);
     const damage = (state as any).newRules ? ((globalThis as any).IlexNewRules?.finalDamage(store,state,effect,proposed) ?? proposed) : proposed;
     target.damage += damage;
-    if((state.rules as any).exEraRules&&damage>0)delete (target as any)._exLethalAttackDamage;
+    if(damage>0)delete (target as any)._exLethalAttackDamage;
 
     if (damage > 0) {
       store.log(state, GameLog.LOG_PLAYER_PLACES_DAMAGE_COUNTERS, {

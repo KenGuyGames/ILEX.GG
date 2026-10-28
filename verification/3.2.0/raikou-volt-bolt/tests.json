@@ -1,0 +1,213 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "test": "Reproduced old Volt Bolt damage",
+      "damage": 30,
+      "activeDamage": 30,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 active normal",
+      "damage": 100,
+      "activeDamage": 100,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 active weak",
+      "damage": 200,
+      "activeDamage": 200,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 active resist",
+      "damage": 80,
+      "activeDamage": 80,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 bench normal",
+      "damage": 100,
+      "activeDamage": 0,
+      "benchDamage": 100,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 bench weak",
+      "damage": 100,
+      "activeDamage": 0,
+      "benchDamage": 100,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 bench resist",
+      "damage": 100,
+      "activeDamage": 0,
+      "benchDamage": 100,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-105 active normal",
+      "damage": 100,
+      "activeDamage": 100,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-105 active weak",
+      "damage": 200,
+      "activeDamage": 200,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-105 active resist",
+      "damage": 80,
+      "activeDamage": 80,
+      "benchDamage": 0,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-105 bench normal",
+      "damage": 100,
+      "activeDamage": 0,
+      "benchDamage": 100,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-105 bench weak",
+      "damage": 100,
+      "activeDamage": 0,
+      "benchDamage": 100,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-105 bench resist",
+      "damage": 100,
+      "activeDamage": 0,
+      "benchDamage": 100,
+      "remaining": [
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": [
+        "Lightning Energy",
+        "Lightning Energy"
+      ]
+    },
+    {
+      "test": "bw5-38 Thunder Fang remains30",
+      "damage": 30,
+      "activeDamage": 30,
+      "benchDamage": 0,
+      "remaining": [
+        "Lightning Energy",
+        "Lightning Energy",
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": []
+    },
+    {
+      "test": "bw5-105 Thunder Fang remains30",
+      "damage": 30,
+      "activeDamage": 30,
+      "benchDamage": 0,
+      "remaining": [
+        "Lightning Energy",
+        "Lightning Energy",
+        "Fire Energy",
+        "Double Colorless Energy"
+      ],
+      "discard": []
+    }
+  ]
+}

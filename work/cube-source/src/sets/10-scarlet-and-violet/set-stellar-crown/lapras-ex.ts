@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   AttachEnergyPrompt,
   Card,
@@ -83,7 +84,7 @@ export class Laprasex extends PokemonCard {
 
           const damagePerEnergy = 40;
 
-          effect.damage = checkProvidedEnergy.energyMap.length * damagePerEnergy;
+          effect.damage = checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0) * damagePerEnergy;
         }
       });
 

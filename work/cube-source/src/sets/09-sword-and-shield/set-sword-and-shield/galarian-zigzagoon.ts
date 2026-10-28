@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { ChoosePokemonPrompt, PlayerType, PowerType, SlotType, State, StateUtils, StoreLike } from '../../../game';
 import { GameLog, GameMessage } from '../../../game/game-message';
 import { CardType, Stage } from '../../../game/store/card/card-types';
@@ -51,7 +52,7 @@ export class GalarianZigzagoon extends PokemonCard {
       ), selected => {
         const targets = selected || [];
         targets.forEach(target => {
-          target.damage += 10;
+          placePowerCounters(store, state, this, target, 10);
           store.log(state, GameLog.LOG_PLAYER_DISCARDS_CARD, { name: player.name, damage: 10, target: target.getPokemonCard()!.name, effect: this.powers[0].name });
         });
       });

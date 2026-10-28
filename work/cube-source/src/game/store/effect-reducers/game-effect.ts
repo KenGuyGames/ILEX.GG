@@ -911,7 +911,7 @@ export function gameReducer(store: StoreLike, state: State, effect: Effect): Sta
     state = store.reduceEffect(state, effect.effectOfAbility);
 
     // Then apply the damage if the effect wasn't prevented
-    if (effect.effectOfAbility.target) {
+    if (effect.effectOfAbility.target && !effect.effectOfAbility.preventDefault) {
       const damage = Math.max(0, effect.damage);
       effect.effectOfAbility.target.damage += damage;
 

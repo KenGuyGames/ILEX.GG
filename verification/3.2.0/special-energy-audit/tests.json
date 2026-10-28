@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "checks": [
+    {
+      "name": "sm12-209 origin=hand Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sm12-209 origin=hand Temple=true",
+      "passed": true
+    },
+    {
+      "name": "sm12-209 origin=deck Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sm12-209 origin=deck Temple=true",
+      "passed": true
+    },
+    {
+      "name": "sm12-209 origin=discard Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sm12-209 origin=discard Temple=true",
+      "passed": true
+    },
+    {
+      "name": "sv08-191 origin=hand Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sv08-191 origin=hand Temple=true",
+      "passed": true
+    },
+    {
+      "name": "sv08-191 origin=deck Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sv08-191 origin=deck Temple=true",
+      "passed": true
+    },
+    {
+      "name": "sv08-191 origin=discard Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sv08-191 origin=discard Temple=true",
+      "passed": true
+    },
+    {
+      "name": "swsh2-173 origin=hand Temple=false",
+      "passed": true
+    },
+    {
+      "name": "swsh2-173 origin=hand Temple=true",
+      "passed": true
+    },
+    {
+      "name": "swsh2-173 origin=deck Temple=false",
+      "passed": true
+    },
+    {
+      "name": "swsh2-173 origin=deck Temple=true",
+      "passed": true
+    },
+    {
+      "name": "swsh2-173 origin=discard Temple=false",
+      "passed": true
+    },
+    {
+      "name": "swsh2-173 origin=discard Temple=true",
+      "passed": true
+    },
+    {
+      "name": "base5-17 Rainbow hand",
+      "passed": true
+    },
+    {
+      "name": "base5-17 Rainbow discard",
+      "passed": true
+    },
+    {
+      "name": "ex1-95 Rainbow hand",
+      "passed": true
+    },
+    {
+      "name": "ex1-95 Rainbow discard",
+      "passed": true
+    },
+    {
+      "name": "xy1-131 Rainbow hand",
+      "passed": true
+    },
+    {
+      "name": "xy1-131 Rainbow discard",
+      "passed": true
+    },
+    {
+      "name": "xy8-152 Rainbow hand",
+      "passed": true
+    },
+    {
+      "name": "xy8-152 Rainbow discard",
+      "passed": true
+    },
+    {
+      "name": "base5-82 heal origin=hand",
+      "passed": true
+    },
+    {
+      "name": "base5-82 heal origin=discard",
+      "passed": true
+    },
+    {
+      "name": "sv04-182 heal origin=hand",
+      "passed": true
+    },
+    {
+      "name": "sv04-182 heal origin=discard",
+      "passed": true
+    },
+    {
+      "name": "xy3-103 heal origin=hand",
+      "passed": true
+    },
+    {
+      "name": "xy3-103 heal origin=discard",
+      "passed": true
+    },
+    {
+      "name": "base5-81 Full Heal hand",
+      "passed": true
+    },
+    {
+      "name": "base5-81 Full Heal discard",
+      "passed": true
+    },
+    {
+      "name": "lc-100 Full Heal hand",
+      "passed": true
+    },
+    {
+      "name": "lc-100 Full Heal discard",
+      "passed": true
+    },
+    {
+      "name": "Warp Energy hand",
+      "passed": true
+    },
+    {
+      "name": "Warp Energy discard",
+      "passed": true
+    },
+    {
+      "name": "Capture Energy hand",
+      "passed": true
+    },
+    {
+      "name": "Capture Energy discard",
+      "passed": true
+    },
+    {
+      "name": "me03-087 provides printed Energy",
+      "passed": true
+    },
+    {
+      "name": "me05-083 provides printed Energy",
+      "passed": true
+    },
+    {
+      "name": "ex7-94 provides printed Energy",
+      "passed": true
+    },
+    {
+      "name": "dc1-33 provides printed Energy",
+      "passed": true
+    },
+    {
+      "name": "dc1-34 provides printed Energy",
+      "passed": true
+    },
+    {
+      "name": "base1-96 provides printed Energy",
+      "passed": true
+    },
+    {
+      "name": "swsh5-140 two choices use one physical card",
+      "passed": true
+    },
+    {
+      "name": "sv10-182 two choices use one physical card",
+      "passed": true
+    },
+    {
+      "name": "Fusion shield fusion own=false",
+      "passed": true
+    },
+    {
+      "name": "Fusion shield fusion own=true",
+      "passed": true
+    },
+    {
+      "name": "Fusion shield power own=false",
+      "passed": true
+    },
+    {
+      "name": "Fusion shield body own=false",
+      "passed": true
+    },
+    {
+      "name": "Fusion under opponent",
+      "passed": true
+    },
+    {
+      "name": "Fusion under own",
+      "passed": true
+    },
+    {
+      "name": "Fusion under temple",
+      "passed": true
+    },
+    {
+      "name": "Lucky actual damage 50,false,false,false",
+      "passed": true
+    },
+    {
+      "name": "Lucky actual damage 0,false,false,false",
+      "passed": true
+    },
+    {
+      "name": "Lucky actual damage 50,true,false,false",
+      "passed": true
+    },
+    {
+      "name": "Lucky actual damage 50,false,true,false",
+      "passed": true
+    },
+    {
+      "name": "Lucky actual damage 50,false,false,true",
+      "passed": true
+    },
+    {
+      "name": "Spiky actual damage 50 prevented=false",
+      "passed": true
+    },
+    {
+      "name": "Spiky actual damage 0 prevented=false",
+      "passed": true
+    },
+    {
+      "name": "Spiky actual damage 50 prevented=true",
+      "passed": true
+    },
+    {
+      "name": "swsh11-171 counter KO cannot trigger attack-damage reward",
+      "passed": true
+    },
+    {
+      "name": "sv06-167 counter KO cannot trigger attack-damage reward",
+      "passed": true
+    },
+    {
+      "name": "xy9-113 counter KO cannot trigger attack-damage reward",
+      "passed": true
+    }
+  ]
+}

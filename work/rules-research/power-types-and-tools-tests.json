@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "ex7-2 suppression type 2",
+      "passed": true
+    },
+    {
+      "name": "ex7-2 suppression type 1",
+      "passed": true
+    },
+    {
+      "name": "ex7-2 suppression type 0",
+      "passed": true
+    },
+    {
+      "name": "ex15-21 suppression type 2",
+      "passed": true
+    },
+    {
+      "name": "ex15-21 suppression type 1",
+      "passed": true
+    },
+    {
+      "name": "ex15-21 suppression type 0",
+      "passed": true
+    },
+    {
+      "name": "ex10-57 suppression type 2",
+      "passed": true
+    },
+    {
+      "name": "ex10-57 suppression type 1",
+      "passed": true
+    },
+    {
+      "name": "ex10-57 suppression type 0",
+      "passed": true
+    },
+    {
+      "name": "ex9-95 suppression type 2",
+      "passed": true
+    },
+    {
+      "name": "ex9-95 suppression type 1",
+      "passed": true
+    },
+    {
+      "name": "ex9-95 suppression type 0",
+      "passed": true
+    },
+    {
+      "name": "dp7-103 suppression type 2",
+      "passed": true
+    },
+    {
+      "name": "dp7-103 suppression type 1",
+      "passed": true
+    },
+    {
+      "name": "dp7-103 suppression type 0",
+      "passed": true
+    },
+    {
+      "name": "Stealthy Hood respects Tool suppression false",
+      "passed": true
+    },
+    {
+      "name": "Stealthy Hood respects Tool suppression true",
+      "passed": true
+    },
+    {
+      "name": "Lusamine Prism protects Ultra Beasts during opponent turn",
+      "passed": true
+    },
+    {
+      "name": "Lusamine expiry/new-entry turn=6 new=true UltraBeast=true",
+      "passed": true
+    },
+    {
+      "name": "Lusamine expiry/new-entry turn=8 new=false UltraBeast=true",
+      "passed": true
+    },
+    {
+      "name": "Lusamine expiry/new-entry turn=6 new=true UltraBeast=false",
+      "passed": true
+    }
+  ]
+}

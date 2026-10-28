@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "checks": [
+    "All1368 prior spoken checkpoints migrate exactly",
+    "2344 story lines plus642 battle cues available",
+    "Unchanged mission starts with current engine",
+    "Opening remark fires once",
+    "Repeated table redraws do not repeat opening",
+    "One remaining player Prize triggers opponent-specific response",
+    "Battle remarks reveal words with reading preferences",
+    "Instant setting immediately reveals battle remark",
+    "Mara has her own authored one-Prize line",
+    "One-Prize event not repeated each turn",
+    "Opponent one-Prize line distinct",
+    "Battle remarks never issue game actions",
+    "In-flow battle remark fits1440",
+    "In-flow battle remark fits523",
+    "In-flow battle remark fits390",
+    "In-flow battle remark fits800",
+    "Real battle journal and controls exact after reload",
+    "Seen/collapsed battle dialogue persists without replay",
+    "Player can collapse remarks without blocking the match",
+    "Defeat has its own opponent response",
+    "Victory reaction takes priority",
+    "Dialogue observer never awards mission progress",
+    "New character aftermath renders",
+    "Normal games have no story remarks",
+    "No renderer errors "
+  ],
+  "migrated": 1368,
+  "content": {
+    "lines": 2344,
+    "cues": 642
+  },
+  "controlledObserverFixtures": true,
+  "realUserProfileModified": false
+}

@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, BoardEffect } from '../../../game/store/card/card-types';
 import {
@@ -118,7 +119,7 @@ export class DecidueyeGX extends PokemonCard {
           });
 
           targets.forEach((target) => {
-            target.damage += 20;
+            placePowerCounters(store, state, this, target, 20);
           });
         },
       );

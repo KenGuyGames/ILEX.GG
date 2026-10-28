@@ -1,0 +1,56 @@
+ILEX.GG — printed attack damage audit
+October 28, 2026
+
+The deeper audit confirmed additional gameplay defects that the earlier broad checks missed. The corrected engine passed the checks below. This is finite coverage, not proof that every card combination is bug-free.
+
+Confirmed corrections
+
+* Empoleon BRS Water Arrow: 30 -> 60 to the selected Pokemon.
+* Kyurem BW44/Legendary Treasures Glaciate: 80 -> 30 across the opposing field. Outrage now adds the actual damage already on Kyurem, rather than multiplying it by ten again.
+* Weavile PLF Hail: 20 -> 10 across the opposing field.
+* Archeops NVI/DEX Rock Slide: 30 -> 10 on each selected Bench target, preserving 60 on the Active.
+* Hoppip EVS, Combusken CES, Machop GRI and Dark Wartortle: corrected per-head multipliers. Earlier 20-per-head versions of Combusken and Machop remain 20.
+* Leafeon UD, Tapu Koko V BST, Bulbasaur SW and Zweilous WHT: moved damage/coin logic to the correct attack. Spiral Thunder now counts provided Energy units across the opponent's entire field, including Double Colorless and flexible Energy correctly.
+* Sableye SF Overconfident: uses remaining HP comparison and a base of 40 when eligible, rather than an unrelated empty-hand bonus.
+* Tangrowth MEG: uses the chosen attack's actual modified cost and the printed two-extra-Energy threshold; bonus is 140.
+* Miraidon ex ASC Hadron Spark: correct 120 bonus against Pokemon ex.
+* Qwilfish SSH: uses its own matching native implementation, preserving Poison Point and the printed 60 Venoshock bonus. Generator alias pinned; ability tested with and without a Knock Out.
+* Bouffalant BLW/Legendary Treasures, Stoutland BCR and Haxorus BRS: corrected recoil amounts/coin condition.
+* Galarian Zapdos V: discards exactly one Special Energy before its 170 attack; fixes the invalid selection and removes unrelated extra damage.
+* Dark Wartortle Mirror Shell now registers on the second attack and reflects an actual next-turn attack.
+* Haunter UNB, Bronzong BKT, Ting-Lu ex, Duosion SIT and Gengar V: place damage counters as effects rather than ordinary attack damage. Bench Barrier and Weakness checks distinguish the two correctly.
+
+Printed-card verification / false positives
+
+27 primary card scans were inspected directly. Primeape SVI's 20 recoil and Annihilape SVI's 50 recoil were ALREADY CORRECT and remain unchanged. Their catalog descriptions were also already correct; two native-class description strings were aligned with the printed cards. card-details.json is byte-identical to the prior installed catalog. No incorrect 10-damage recoil change was released.
+
+Coverage and results
+
+* Automated inspection covered 17,836 mapped Pokemon printings, 7,587 native attack-handler blocks and 6,780 explicit compiled damage operations (including copy plans). These are static checks, not execution of every possible branch.
+* 18,029 structured printed-source records compared against engine and catalog numeric attack descriptions: no remaining discrepancies in that comparison. Numbers embedded in card names such as E4 are treated as names, not damage.
+* 87 focused branch cases passed; 58 of those cases fail on the actual pre-audit engine.
+* 51 attack/compatibility cases across 43 printing variants passed, including preserved correct versions.
+* 15 Raikou Volt Bolt/Thunder Fang regression groups passed.
+* All 20 broader suites passed against the final engine. Coverage includes WOTC, EX, DP, HGSS, BW, XY, SM, SWSH, SV, Mega, reprints, Rare Candy, Undo, private-match logic, bots and New Rule matches.
+* 26 natural New Rule matches completed across 16 profiles and 10 mixed fixtures; winner and public rule state replay checked.
+* A natural Raikou match completed with 72 journal commands and reproduced gameplay state on replay. Display timestamps and transient instance identifiers were normalized for comparison. Mirror Shell was exercised in both printings.
+* 26 native desktop checks and 52 mobile Chromium checks passed, covering real target/payment UI flow, applied damage, Special Energy removal, counter placement and preserved printed recoil descriptions.
+* Exact pre-audit and fixed source rebuild parity passed. Source changes are backed up in backup/. Qwilfish generator outputs were checked without installing regenerated catalog data.
+
+Harness correction
+
+Early broad runs used mixed Windows path separators and could select an older engine. Those runs are superseded. The earlier EX Peal of Thunder failure was caused by this harness issue; it passes on both the current pre-audit baseline and fixed build. Every final broad suite records its actual engine reads and SHA-256 in audit-runtime/.
+Final engine: 8e0696254ee38c7df63aeb548a5d62f3b2f826cc32817b864a3c552fc92a0558
+
+Delivery
+
+Only rules-engine.js changes in the shipped UI. Latest campaign dialogue, key Pokemon/boss reactions and Celebi/companion party reactions are preserved. The Android candidate is rebased over the latest campaign package, version code 118, using the original signing certificate. Both local Windows apps and current Windows/Offline archives are refreshed after package integrity gates pass; release.json is the authoritative completed-delivery record. Public GitHub releases are unchanged.
+
+Limits
+
+Physical Android installation/lifecycle/audio and a real external two-PC session were not tested. This audit does not certify every cross-card/mode combination, every Ability/Trainer effect, or all histories of old games that used previously incorrect attacks. Synthetic high-HP fixtures and controlled coin results are identified in the test code; natural match runs are separate. No real user profile was edited and the real app was not closed.
+
+Rule reference for ordinary self-damage versus damage counters:
+https://asia.pokemon-card.com/sg/rules/search/?pageNo=6&tag=13
+
+Evidence: tests.json, baseline-checks.json, reprint-checks.json, scan-review.json, source-scan.json, per-attack-scan.json, compiled-ops-scan.json, printed-data-scan.json, final-regressions.json, runtime-verification.json, compile-parity.json, native/checks.json, mobile/checks.json, lifecycle.json, qwilfish-power.json, generator-check.json and release.json.

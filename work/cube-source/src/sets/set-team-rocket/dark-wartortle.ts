@@ -41,12 +41,12 @@ export class DarkWartortle extends PokemonCard {
         results.forEach(r => {
           if (r) heads++;
         });
-        effect.damage = 20 * heads;
+        effect.damage = 10 * heads;
       });
     }
 
     // Mirror Shell
-    if (WAS_ATTACK_USED(effect, 0, this)) {
+    if (WAS_ATTACK_USED(effect, 1, this)) {
       return THIS_POKEMON_RETALIATES_ON_DAMAGE_DURING_OPPONENTS_NEXT_TURN(store, state, effect, this, { reflect: true });
     }
 

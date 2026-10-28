@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
 import { State } from '../../../game/store/state/state';
@@ -58,7 +59,7 @@ export class SandyShocks extends PokemonCard {
         const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkProvidedEnergyEffect);
         checkProvidedEnergyEffect.energyMap.forEach((energy) => {
-          energyCount += energy.provides.length;
+          energyCount += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
         });
       });
 

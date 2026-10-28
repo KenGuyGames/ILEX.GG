@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { PowerType, StoreLike, State, StateUtils } from '../../../game';
@@ -57,7 +58,7 @@ export class Grimmsnarl extends PokemonCard {
       const checkEnergy = new CheckProvidedEnergyEffect(opponent, opponent.active);
       store.reduceEffect(state, checkEnergy);
 
-      const energyCount = checkEnergy.energyMap.reduce((sum, em) => sum + em.provides.length, 0);
+      const energyCount = checkEnergy.energyMap.reduce((sum, em) => sum + EnergyUnitUtils.getProvidesUnitCount(em.provides, em), 0);
       effect.damage += 30 * energyCount;
     }
 

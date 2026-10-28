@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../game';
 import { PokemonCard, Stage, CardType, StoreLike, State, StateUtils, ChooseEnergyPrompt, GameMessage, Card } from "../../game";
 import { DiscardCardsEffect } from "../../game/store/effects/attack-effects";
 import { CheckProvidedEnergyEffect } from "../../game/store/effects/check-effects";
@@ -58,7 +59,7 @@ export class ShiningMewtwo extends PokemonCard {
       const checkOpponentEnergy = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, checkOpponentEnergy);
       const energyCount = checkOpponentEnergy.energyMap.reduce(
-        (left, p) => left + p.provides.length,
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p),
         0,
       );
       effect.damage += energyCount * 10;

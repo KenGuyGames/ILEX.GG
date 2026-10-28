@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { CardTag, CardType, Stage } from '../../../game/store/card/card-types';
 import { StoreLike, State } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
@@ -58,7 +59,7 @@ export class MegaExcadrillex extends PokemonCard {
       state = store.reduceEffect(state, checkCost);
       const checkEnergy = new CheckProvidedEnergyEffect(player);
       state = store.reduceEffect(state, checkEnergy);
-      const totalEnergy = checkEnergy.energyMap.reduce((sum, em) => sum + em.provides.length, 0);
+      const totalEnergy = checkEnergy.energyMap.reduce((sum, em) => sum + EnergyUnitUtils.getProvidesUnitCount(em.provides, em), 0);
       const extraEnergy = totalEnergy - checkCost.cost.length;
       if (extraEnergy >= 2) {
         effect.damage += 130;

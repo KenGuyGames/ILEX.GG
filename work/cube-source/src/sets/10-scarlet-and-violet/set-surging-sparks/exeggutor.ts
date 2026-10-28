@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { State, StateUtils, StoreLike } from '../../../game';
 import { CardType, Stage } from '../../../game/store/card/card-types';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -36,13 +37,13 @@ export class Exeggutor extends PokemonCard {
       const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(opponent, opponent.active);
       store.reduceEffect(state, checkProvidedEnergyEffect);
       const opponentsEnergyCount = checkProvidedEnergyEffect.energyMap.reduce(
-        (left, p) => left + p.provides.length, 0
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0
       );
 
       const checkMyProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, player.active);
       store.reduceEffect(state, checkMyProvidedEnergyEffect);
       const myEnergyCount = checkMyProvidedEnergyEffect.energyMap.reduce(
-        (left, p) => left + p.provides.length, 0
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0
       );
 
       const coinCount = opponentsEnergyCount + myEnergyCount;

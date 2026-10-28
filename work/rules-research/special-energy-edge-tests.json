@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "checks": [
+    {
+      "name": "ex4-88 printed damage reduction timing",
+      "passed": true
+    },
+    {
+      "name": "ex9-87 printed damage reduction timing",
+      "passed": true
+    },
+    {
+      "name": "Aurora attachment cost hand Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Aurora attachment cost hand Temple=true",
+      "passed": true
+    },
+    {
+      "name": "Aurora attachment cost deck Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Aurora attachment cost deck Temple=true",
+      "passed": true
+    },
+    {
+      "name": "Aurora attachment cost discard Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Aurora attachment cost discard Temple=true",
+      "passed": true
+    },
+    {
+      "name": "Splash type changes discard only Energy Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Splash type changes discard only Energy Temple=true",
+      "passed": true
+    },
+    {
+      "name": "swsh2-174 conditional 2,,false,false",
+      "passed": true
+    },
+    {
+      "name": "swsh2-174 conditional 2,,false,true",
+      "passed": true
+    },
+    {
+      "name": "swsh2-174 conditional 2,V,false,false",
+      "passed": true
+    },
+    {
+      "name": "swsh2-174 conditional 2,V,false,true",
+      "passed": true
+    },
+    {
+      "name": "swsh2-174 conditional 2,GX,false,false",
+      "passed": true
+    },
+    {
+      "name": "swsh2-174 conditional 2,GX,false,true",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 3,,true,false",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 3,,true,true",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 2,,true,false",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 2,,true,true",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 3,ex,true,false",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 3,ex,true,true",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 3,,false,false",
+      "passed": true
+    },
+    {
+      "name": "sv02-192 conditional 3,,false,true",
+      "passed": true
+    }
+  ]
+}

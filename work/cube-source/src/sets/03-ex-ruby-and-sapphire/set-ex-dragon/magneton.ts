@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, SuperType, EnergyType } from '../../../game/store/card/card-types';
 import {
@@ -134,7 +135,7 @@ export class Magneton extends PokemonCard {
         store.reduceEffect(state, checkProvidedEnergyEffect);
 
         checkProvidedEnergyEffect.energyMap.forEach(em => {
-          energyCount += em.provides.length;
+          energyCount += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
         });
       });
 

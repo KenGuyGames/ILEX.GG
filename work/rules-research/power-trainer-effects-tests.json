@@ -1,0 +1,294 @@
+{
+  "passed": true,
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "checks": [
+    {
+      "name": "bw4-64 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "bw4-64 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "bw3-89 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "bw3-89 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "bw8-33 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "bw8-33 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "xy12-59 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "xy12-59 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "xy2-21 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "xy2-21 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "xy3-64 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "xy3-64 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "xy1-14 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "xy1-14 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "sm1-82 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "sm1-82 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "sm7.5-45 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "sm7.5-45 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh2-80 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh2-80 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh4-125 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh4-125 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh12-015 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh12-015 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "sm8-98 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "sm8-98 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh6-83 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh6-83 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh6-101 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh6-101 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh8-137 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh8-137 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "sv09-008 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "sv09-008 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh12-064 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh12-064 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "swsh2-72 retaliation normal",
+      "passed": true
+    },
+    {
+      "name": "swsh2-72 retaliation protected",
+      "passed": true
+    },
+    {
+      "name": "Chesnaught V three copies stack false",
+      "passed": true
+    },
+    {
+      "name": "Chesnaught V three copies stack true",
+      "passed": true
+    },
+    {
+      "name": "Detention Gas both checkups and Hood false",
+      "passed": true
+    },
+    {
+      "name": "Detention Gas both checkups and Hood true",
+      "passed": true
+    },
+    {
+      "name": "Commotion counters bypass attack damage reductions false",
+      "passed": true
+    },
+    {
+      "name": "Commotion counters bypass attack damage reductions true",
+      "passed": true
+    },
+    {
+      "name": "Hood EffectOfPower type=2 own=false",
+      "passed": true
+    },
+    {
+      "name": "Hood EffectOfPower type=2 own=true",
+      "passed": true
+    },
+    {
+      "name": "Hood EffectOfPower type=1 own=false",
+      "passed": true
+    },
+    {
+      "name": "Hood EffectOfPower type=1 own=true",
+      "passed": true
+    },
+    {
+      "name": "Hood EffectOfPower type=0 own=false",
+      "passed": true
+    },
+    {
+      "name": "Hood EffectOfPower type=0 own=true",
+      "passed": true
+    },
+    {
+      "name": "Hood placed counters provenance ability",
+      "passed": true
+    },
+    {
+      "name": "Hood placed counters provenance pokePower",
+      "passed": true
+    },
+    {
+      "name": "Hood placed counters provenance stadium",
+      "passed": true
+    },
+    {
+      "name": "Hood placed counters provenance ownAbility",
+      "passed": true
+    },
+    {
+      "name": "Baby Evolution cancellation preserves board",
+      "passed": true
+    },
+    {
+      "name": "Baby Evolution success heals",
+      "passed": true
+    },
+    {
+      "name": "sm9-7 between-turn counter amount false",
+      "passed": true
+    },
+    {
+      "name": "sm9-7 between-turn counter amount true",
+      "passed": true
+    },
+    {
+      "name": "sv10-096 between-turn counter amount false",
+      "passed": true
+    },
+    {
+      "name": "sv10-096 between-turn counter amount true",
+      "passed": true
+    },
+    {
+      "name": "Snorlax heals10 once per checkup, healing lock=false",
+      "passed": true
+    },
+    {
+      "name": "Snorlax heals10 once per checkup, healing lock=true",
+      "passed": true
+    },
+    {
+      "name": "Counter placement respects EffectOfAbility prevention flag",
+      "passed": true
+    },
+    {
+      "name": "ecard1-150 Strength Charm after Weakness false",
+      "passed": true
+    },
+    {
+      "name": "ecard1-150 Strength Charm after Weakness true",
+      "passed": true
+    },
+    {
+      "name": "ex4-74 Strength Charm after Weakness false",
+      "passed": true
+    },
+    {
+      "name": "ex4-74 Strength Charm after Weakness true",
+      "passed": true
+    },
+    {
+      "name": "ex15-81 Strength Charm after Weakness false",
+      "passed": true
+    },
+    {
+      "name": "ex15-81 Strength Charm after Weakness true",
+      "passed": true
+    },
+    {
+      "name": "Strength Charm conditional damage with resistance 0",
+      "passed": true
+    },
+    {
+      "name": "Strength Charm conditional damage with resistance -20",
+      "passed": true
+    },
+    {
+      "name": "Chesnaught V copies outside play do not stack",
+      "passed": true
+    }
+  ]
+}

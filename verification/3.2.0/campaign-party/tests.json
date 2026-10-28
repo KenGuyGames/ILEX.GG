@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    "Level game has no invented crisis",
+    "One Prize deficit not treated as crisis",
+    "Meaningful two-plus Prize deficit recognized",
+    "Making small progress while still behind is not a comeback",
+    "Catching up after a deficit is a comeback",
+    "Taking early lead without a deficit is not a comeback",
+    "Opponent final Prize while player still behind recognized",
+    "Confirmed key KO gives support",
+    "Rewinding history cannot invent a comeback",
+    "New branch can earn comeback after actual progress",
+    "Setup cannot trigger panic or establish a deficit",
+    "Setup does not seed tracker",
+    "Win receives party reaction",
+    "Final result is not a premature turnaround",
+    "Defeat receives support",
+    "Draw does not invent win or defeat",
+    "All prior3298 cues/story scenes/decks/opponents/order/checkpoint anchors exact",
+    "768 new cues including282 companion and486 Celebi reactions",
+    "Future recording export includes4066 cues",
+    "All recording IDs unique"
+  ],
+  "controlledPublicStateFixtures": true
+}

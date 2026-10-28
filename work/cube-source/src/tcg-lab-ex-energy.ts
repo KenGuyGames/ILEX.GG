@@ -2,8 +2,8 @@ import { CardType,CardTag,EnergyType,Stage,SuperType,StateUtils,GameError,GameMe
 import { AttackEffect } from './game/store/effects/game-effects';
 import { EndTurnEffect } from './game/store/effects/game-phase-effects';
 import { AttachEnergyEffect,AfterEnergyAttachedEffect } from './game/store/effects/play-card-effects';
-import { CheckProvidedEnergyEffect,CheckPokemonStatsEffect,CheckRetreatCostEffect,CheckTableStateEffect,AddSpecialConditionsPowerEffect } from './game/store/effects/check-effects';
-import { AbstractAttackEffect,PutDamageEffect,AddSpecialConditionsEffect } from './game/store/effects/attack-effects';
+import { CheckProvidedEnergyEffect,CheckPokemonTypeEffect,CheckPokemonStatsEffect,CheckRetreatCostEffect,CheckTableStateEffect,AddSpecialConditionsPowerEffect } from './game/store/effects/check-effects';
+import { AbstractAttackEffect,ApplyWeaknessEffect,PutDamageEffect,AddSpecialConditionsEffect } from './game/store/effects/attack-effects';
 import { IS_SPECIAL_ENERGY_BLOCKED,MOVE_CARDS } from './game/store/prefabs/prefabs';
 
 export function installExEnergy(card:any,kind:string){
@@ -15,6 +15,7 @@ export function installExEnergy(card:any,kind:string){
   const valid=(target:any)=>target.isEvolved()&&!(['doubleRainbow','scramble'].includes(kind)&&target.getPokemonCard().tags.includes(CardTag.POKEMON_ex));
   if(e instanceof AttachEnergyEffect&&e.energyCard===this){
    if(['boost','doubleRainbow','scramble'].includes(kind)&&!valid(e.target))throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
+   if(['aquaFlexible','magmaFlexible'].includes(kind)&&!e.target.getPokemonCard()?.tags.includes(kind==='aquaFlexible'?CardTag.TEAM_AQUA:CardTag.TEAM_MAGMA))throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
    if(kind==='rocket'&&!/^(Dark |Rocket's )/.test(e.target.getPokemonCard()?.name||''))throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
   }
   if(!owner||!list?.getPokemonCard?.())return state;
@@ -27,13 +28,24 @@ export function installExEnergy(card:any,kind:string){
    if(kind==='multi')provides=list.cards.some((c:any)=>c!==this&&c.superType===SuperType.ENERGY&&c.energyType===EnergyType.SPECIAL)?[CardType.COLORLESS]:[CardType.ANY];
    if(kind==='doubleRainbow')provides=[CardType.ANY,CardType.ANY];
    if(kind==='scramble'){const opponent=StateUtils.getOpponent(state,owner);provides=owner.prizes.filter((l:any)=>l.cards.length).length>opponent.prizes.filter((l:any)=>l.cards.length).length?[CardType.ANY,CardType.ANY,CardType.ANY]:[CardType.COLORLESS];}
+   if(['aquaFlexible','magmaFlexible'].includes(kind)){
+    const options=[kind==='aquaFlexible'?CardType.WATER:CardType.FIGHTING,CardType.DARK];
+    const entry=e.energyMap.find((x:any)=>x.card===this);
+    if(entry){entry.provides=options;entry.providedGroups=[options,options];}else e.energyMap.push({card:this,provides:options,providedGroups:[options,options]});
+    return state;
+   }
    const entry=e.energyMap.find((x:any)=>x.card===this);if(entry)entry.provides=provides;else e.energyMap.push({card:this,provides});
   }
   if(e instanceof CheckTableStateEffect&&['boost','doubleRainbow','scramble'].includes(kind)&&!valid(list))MOVE_CARDS(store,state,list,owner.discard,{cards:[this],sourceCard:this,sourceEffect:e});
-  if(e instanceof EndTurnEffect&&(e.player===owner||kind==='boost')&&['boost','rocket'].includes(kind))MOVE_CARDS(store,state,list,owner.discard,{cards:[this],sourceCard:this,sourceEffect:e});
+  if(e instanceof EndTurnEffect&&(e.player===owner||kind==='boost')&&['boost','rocket','aquaFlexible','magmaFlexible'].includes(kind))MOVE_CARDS(store,state,list,owner.discard,{cards:[this],sourceCard:this,sourceEffect:e});
   if(kind==='boost'&&e instanceof CheckRetreatCostEffect&&e.player===owner&&owner.active===list&&!(e as any)._exDamageQuery)e.cost=[...Array(100)].map(()=>CardType.COLORLESS);
-  if(kind==='rocket'&&e instanceof AttackEffect&&e.source===list)e.damage+=10;
-  if(kind==='doubleRainbow'&&e instanceof AttackEffect&&e.source===list)e.damage=Math.max(0,e.damage-10);
+  if(kind==='rocket'&&e instanceof ApplyWeaknessEffect&&e.source===list&&e.target===StateUtils.getOpponent(state,owner).active&&e.damage>0)e.damage+=10;
+  if(kind==='doubleRainbow'&&e.source===list){
+   const after=/after applying Weakness and Resistance/i.test(this.text);
+   if(after&&e instanceof PutDamageEffect&&StateUtils.findOwner(state,e.target)!==owner)(e as any).specialEnergyAfterWeaknessReduction=((e as any).specialEnergyAfterWeaknessReduction||0)+10;
+   if(!after&&e instanceof ApplyWeaknessEffect&&StateUtils.findOwner(state,e.target)!==owner)e.damage=Math.max(0,e.damage-10);
+   if(!after&&e instanceof PutDamageEffect&&!e.weaknessApplied&&e.target!==StateUtils.getOpponent(state,owner).active&&StateUtils.findOwner(state,e.target)!==owner)e.damage=Math.max(0,e.damage-10);
+  }
   const hasBasic=(type:any)=>list.cards.some((c:any)=>c.superType===SuperType.ENERGY&&c.energyType===EnergyType.BASIC&&c.provides.includes(type));
   if(kind==='metal'&&e instanceof PutDamageEffect&&e.target===list){const stats=new CheckPokemonStatsEffect(list);store.reduceEffect(state,stats);if(list.getPokemonCard().cardType.includes(CardType.METAL))e.damage=Math.max(0,e.damage-10);}
   if(!kind.startsWith('holon')||list.getPokemonCard().tags.includes(CardTag.POKEMON_ex))return state;
@@ -42,12 +54,13 @@ export function installExEnergy(card:any,kind:string){
    if(e instanceof AttackEffect&&e.source===list&&hasBasic(CardType.FIGHTING))e.ignoreResistance=true;
   }
   if(kind==='holonGL'){
+   if(e instanceof CheckTableStateEffect&&hasBasic(CardType.GRASS))list.clearAllSpecialConditions();
    if((e instanceof AddSpecialConditionsEffect||e instanceof AddSpecialConditionsPowerEffect)&&e.target===list&&hasBasic(CardType.GRASS))e.preventDefault=true;
    if(e instanceof PutDamageEffect&&e.target===list&&e.player!==owner&&hasBasic(CardType.LIGHTNING)&&e.source.getPokemonCard()?.tags.includes(CardTag.POKEMON_ex))e.damage=Math.max(0,e.damage-10);
   }
   if(kind==='holonWP'){
    if(e instanceof CheckRetreatCostEffect&&e.player===owner&&e.target===list&&hasBasic(CardType.PSYCHIC))e.cost=[];
-   if(e instanceof AbstractAttackEffect&&e.target===list&&e.player!==owner&&hasBasic(CardType.WATER)&&!e.attackEffect._wotcTrainer&&!['APPLY_WEAKNESS_EFFECT','AFTER_WEAKNESS_AND_RESISTANCE_EFFECT','DEAL_DAMAGE_EFFECT','PUT_DAMAGE_EFFECT','AFTER_DAMAGE_EFFECT'].includes(e.type))e.preventDefault=true;
+   if(e instanceof AbstractAttackEffect&&e.target===list&&e.player!==owner&&hasBasic(CardType.WATER)&&!e.attackEffect._wotcTrainer&&!e.attackEffect.wotcBypassDefender&&!['APPLY_WEAKNESS_EFFECT','AFTER_WEAKNESS_AND_RESISTANCE_EFFECT','DEAL_DAMAGE_EFFECT','PUT_DAMAGE_EFFECT','AFTER_DAMAGE_EFFECT'].includes(e.type))e.preventDefault=true;
   }
   return state;
  };

@@ -75,7 +75,7 @@ export class Archeops extends PokemonCard {
           return;
         }
         targets.forEach(target => {
-          const damageEffect = new PutDamageEffect(effect, 30);
+          const damageEffect = new PutDamageEffect(effect, 10);
           damageEffect.target = target;
           store.reduceEffect(state, damageEffect);
         });

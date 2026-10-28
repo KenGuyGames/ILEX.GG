@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { CardTag, CardType, PlayerType, PokemonCard, Stage, State, StoreLike, pokemonHasCardTypeOptional } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
 import {
@@ -70,7 +71,7 @@ export class EspeonDeoxysGX extends PokemonCard {
       state = store.reduceEffect(state, checkEnergy);
 
       // Count total attached energy
-      const totalEnergy = checkEnergy.energyMap.length;
+      const totalEnergy = checkEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
       const attackCost = checkCost.cost.length;
       const extraEnergy = totalEnergy - attackCost;
       if (extraEnergy >= 3) {

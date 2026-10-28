@@ -1,3 +1,4 @@
+import { IS_ABILITY_BLOCKED } from '../../../game/store/prefabs/prefabs';
 import {
   CONFIRMATION_PROMPT,
   JUST_EVOLVED,
@@ -27,7 +28,7 @@ export class Quagsire extends PokemonCard {
   public powers = [
     {
       name: 'Dig Up',
-      powerType: PowerType.ABILITY,
+      powerType: PowerType.POKEPOWER,
       text: 'Once during your turn, when you play Quagsire from your hand to evolve 1 of your Pokémon, you may search your discard pile for up to 2 Pokémon Tool cards, show them to your opponent, and put them into your hand.',
     },
   ];
@@ -51,6 +52,7 @@ export class Quagsire extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (JUST_EVOLVED(effect, this)) {
       const player = effect.player;
+      if (IS_ABILITY_BLOCKED(store, state, player, this, this.powers[0])) return state;
 
       const blocked: number[] = [];
       player.discard.cards.forEach((card, index) => {

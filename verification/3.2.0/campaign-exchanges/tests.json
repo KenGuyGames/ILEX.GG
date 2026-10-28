@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "New signature queues exchange",
+    "Starts at first line",
+    "Repeated signature does not repeat exchange",
+    "Second attack queues without interrupting current line",
+    "Reload/Undo observed signatures keep reading position",
+    "Old saves do not replay previously acknowledged signature",
+    "Other events cannot create signature exchange",
+    "New battle can hear signature anew",
+    "All4066 prior cues, story scenes, match order, decks and checkpoint anchors exact",
+    "Every signature has a five-line exchange;232 new replies",
+    "Recording manifest includes4298 cues",
+    "All recording cue IDs unique"
+  ],
+  "exchanges": 58,
+  "newLines": 232
+}

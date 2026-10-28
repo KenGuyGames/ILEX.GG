@@ -1,3 +1,4 @@
+import { PutCountersEffect } from '../../../game/store/effects/attack-effects';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, SpecialCondition } from '../../../game/store/card/card-types';
 import { StoreLike, State } from '../../../game';
@@ -60,7 +61,7 @@ export class GengarV extends PokemonCard {
     if (WAS_ATTACK_USED(effect, 1, this)) {
       const player = effect.player;
 
-      const dealDamage = new DealDamageEffect(effect, 30);
+      const dealDamage = new PutCountersEffect(effect, 30);
       dealDamage.target = player.active;
       return store.reduceEffect(state, dealDamage);
     }

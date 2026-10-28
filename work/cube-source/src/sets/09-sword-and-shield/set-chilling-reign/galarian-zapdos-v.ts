@@ -1,3 +1,4 @@
+import { DiscardCardsEffect } from '../../../game/store/effects/attack-effects';
 /* eslint-disable indent */
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, EnergyType, SuperType } from '../../../game/store/card/card-types';
@@ -133,36 +134,15 @@ export class GalarianZapdosV extends PokemonCard {
     if (WAS_ATTACK_USED(effect, 0, this)) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
-
-      const oppActive = opponent.active;
-
-      const checkEnergy = new CheckProvidedEnergyEffect(player, oppActive);
-      store.reduceEffect(state, checkEnergy);
-
-      checkEnergy.energyMap.forEach((em) => {
-        const energyCard = em.card;
-        if (energyCard instanceof EnergyCard && energyCard.energyType === EnergyType.SPECIAL) {
-          let cards: Card[] = [];
-          store.prompt(
-            state,
-            new ChooseCardsPrompt(
-              player,
-              GameMessage.CHOOSE_CARD_TO_DISCARD,
-              oppActive,
-              { superType: SuperType.ENERGY, energyType: EnergyType.SPECIAL },
-              { min: 1, max: 1, allowCancel: false },
-            ),
-            (selected) => {
-              cards = selected;
-            },
-          );
-          MOVE_CARDS(store, state, oppActive, opponent.discard, { cards: cards, sourceCard: this });
-
-          const damageEffect = new PutDamageEffect(effect, 20);
-          damageEffect.target = opponent.active;
-          store.reduceEffect(state, damageEffect);
-        }
-      });
+      const target = opponent.active;
+      if (!target.energies.cards.some(card => card instanceof EnergyCard && card.energyType === EnergyType.SPECIAL)) return state;
+      return store.prompt(state, new ChooseCardsPrompt(player, GameMessage.CHOOSE_CARD_TO_DISCARD,
+        target.energies, { superType: SuperType.ENERGY, energyType: EnergyType.SPECIAL },
+        { min: 1, max: 1, allowCancel: false }), selected => {
+          const discard = new DiscardCardsEffect(effect, selected || []);
+          discard.target = target;
+          store.reduceEffect(state, discard);
+        });
     }
     return state;
   }

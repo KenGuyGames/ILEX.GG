@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PowerType, State, StoreLike } from '../../../game';
 import { CardType, Stage } from '../../../game/store/card/card-types';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -56,7 +57,7 @@ export class Golisopod extends PokemonCard {
 
       let energyCount = 0;
       checkProvidedEnergyEffect.energyMap.forEach(em => {
-        energyCount += em.provides.length;
+        energyCount += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
       });
 
       if (energyCount <= 2) {

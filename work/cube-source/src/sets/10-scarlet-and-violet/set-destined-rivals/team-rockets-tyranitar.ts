@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, SuperType } from '../../../game/store/card/card-types';
 import {
@@ -63,7 +64,7 @@ export class TeamRocketsTyranitar extends PokemonCard {
 
       opponent.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card) => {
         if (card.stage === Stage.BASIC) {
-          cardList.damage += 20;
+          placePowerCounters(store, state, this, cardList, 20);
         }
       });
 

@@ -1,0 +1,24 @@
+ILEX.GG Abilities, Poké-Powers, Poké-Bodies and Trainer audit — October 28, 2026
+
+Completed locally. Windows apps, current Windows archives and signed Android 119 contain engine e14be7566d1fab2060b7bfc5ba65270b29dbcc4bb0d0364b330bd36e82a7c630.
+
+Coverage: inventory of 7067 mapped printings / 4412 distinct effect definitions; 7075 numeric/type comparisons. Eighteen local card scans inspected for key power-type, reprint and timing discrepancies. Inventory/static comparisons are screening tools, not execution of every possible interaction.
+
+Corrections:
+- Retaliation, activated, evolution/Bench-entry, Energy-attachment and checkup counter effects now carry their power's owner and source through Ability protection. Includes Lucario, Qwilfish, Sharpedo, Druddigon, Machamp, Hawlucha-EX, Chesnaught, Sigilyph, Pincurchin V, Golem, Mismagius, Maractus, Galarian Runerigus/Stunfisk, Decidueye-GX, Meowscarada ex, Orbeetle VMAX, Greninja, Ampharos, Alakazam-EX, Crobat, Volcarona-GX, Gengar, Jolteon, Galarian Zigzagoon, Weezing, Parasect and Team Rocket's Tyranitar families. Different attacks remain separate.
+- Stealthy Hood protects only against opposing Abilities; it permits your own effects, Poké-Powers/Bodies and Stadium counters, and respects Tool suppression.
+- Gyarados Commotion places counters, ignoring attack-damage reductions and attack-only shields.
+- Chesnaught XY retaliation now triggers; all in-play Chesnaught V copies stack while copies outside play do not.
+- Parasect and Snorlax resolve once per checkup; Snorlax healing respects healing prevention.
+- Dark Ampharos, Quagsire, Gligar and Medicham ex use their printed older power categories. Stormfront Charizard has passive Energy Burn, including under Special Conditions, while Base Set retains its activated Pokémon Power.
+- Cancelling Cleffa Baby Evolution no longer inserts an undefined card or heals without evolution.
+- Native Trainer implementations selected from printed effects: modern Potion (30), Great Ball (top seven to hand), Energy Retrieval (no discard cost), Revive (no damage), Super Potion (60), Lance (three Dragons to hand), Lysandre Prism Star (Lost Zone), Lusamine Prism Star (Ultra Beast protection). Older effects retained in historical fixtures.
+- Lusamine Prism Star protection persists after the card enters the Lost Zone, includes Ultra Beasts entering later and expires after the opponent's next turn.
+- Old Leftovers heals 10; modern Leftovers heals 20.
+- Strength Charm adds 10 after Weakness/Resistance only when damage remains, then discards at the end of a turn in which damage was dealt.
+
+Validation: 171 focused checks pass; 86 focused failures reproduced on the previous engine. The baseline files contain one fewer additional out-of-play-copy regression, which already passed prior behavior. 27 final cross-era, alternate-mode, protection/Trainer matrix and permanent regression suites pass. Each process records the actual engine path and hashes the bytes read. Twenty-six natural New Rule matches finish and replay winner/public rule state. 17 native desktop and 34 mobile Chromium UI checks pass; Android package verification and original signing certificate verified. Source rebuild is deterministic. Permanent tests saved in work/desktop-build/{power-trainer-effects-tests,printing-effects-tests,power-types-and-tools-tests}.cjs.
+
+Delivery preserves all unrelated campaign/UI files, 3969 unrelated Android UI entries and unchanged ZIP entries. Public GitHub unchanged. No real player profile writes, real app closing, subagents or New3DS changes. Physical Android hardware, external two-PC internet play, exhaustive card combinations and compatibility of every historical pre-fix journal are not certified.
+
+Evidence: tests.json, extra-tests.json, suppression.json, baseline-tests.json, baseline-extra-tests.json, metadata-comparison.json, primary-scans.json, release-regressions.json, runtime-verification.json, native/checks.json, mobile/checks.json, android-verification.json, compile-parity.json, changes.json, source-before/, release.json.

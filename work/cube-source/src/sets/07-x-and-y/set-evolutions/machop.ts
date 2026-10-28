@@ -35,7 +35,7 @@ export class Machop extends PokemonCard {
     if (WAS_ATTACK_USED(effect, 0, this)) {
       MULTIPLE_COIN_FLIPS_PROMPT(store, state, effect.player, 2, results => {
         const heads = results.filter(r => r).length;
-        effect.damage = 20 * heads;
+        effect.damage = effect.attack.damage * heads;
       });
     }
 

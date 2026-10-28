@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, SuperType, CardTag } from '../../../game/store/card/card-types';
 import {
@@ -64,14 +65,14 @@ export class YveltalEx extends PokemonCard {
       const playerProvidedEnergy = new CheckProvidedEnergyEffect(player);
       store.reduceEffect(state, playerProvidedEnergy);
       const playerEnergyCount = playerProvidedEnergy.energyMap.reduce(
-        (left, p) => left + p.provides.length,
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p),
         0,
       );
 
       const opponentProvidedEnergy = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, opponentProvidedEnergy);
       const opponentEnergyCount = opponentProvidedEnergy.energyMap.reduce(
-        (left, p) => left + p.provides.length,
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p),
         0,
       );
 

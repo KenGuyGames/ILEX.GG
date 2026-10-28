@@ -39,7 +39,7 @@ export class TreasureEnergy extends EnergyCard {
     const prizeCard = effect.prizes.find(cardList => cardList.cards.includes(this));
 
     // Only act when this card is drawn as a prize (face-down)
-    if (!prizeCard || !prizeCard.isSecret || effect.destination !== player.hand) {
+    if (!prizeCard || !prizeCard.isSecret || effect.destination !== player.hand || state.players[state.activePlayer] !== player) {
       return state;
     }
 
@@ -63,12 +63,7 @@ export class TreasureEnergy extends EnergyCard {
       return state;
     }
 
-    // Move the prize card to hand temporarily
-    const prizeIndex = player.prizes.findIndex(prize => prize.cards.includes(this));
-    if (prizeIndex !== -1) {
-      MOVE_CARDS(store, state, player.prizes[prizeIndex], player.hand, { cards: [this], sourceCard: this });
-    }
-
+    // Attach directly from the Prize zone; this is not an attachment from hand.
     // Player chooses a Pokemon to attach to
     let targets: PokemonCardList[] = [];
     yield store.prompt(state, new ChoosePokemonPrompt(
@@ -85,6 +80,8 @@ export class TreasureEnergy extends EnergyCard {
     if (targets.length > 0) {
       const target = targets[0];
       const attachEnergyEffect = new AttachEnergyEffect(player, this, target);
+      (attachEnergyEffect as any).source = prizeCard;
+      (attachEnergyEffect as any).origin = 'prize';
       store.reduceEffect(state, attachEnergyEffect);
     }
 

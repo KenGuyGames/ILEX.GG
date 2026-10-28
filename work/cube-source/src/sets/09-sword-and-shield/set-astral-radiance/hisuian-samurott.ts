@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, BoardEffect } from '../../../game/store/card/card-types';
 import {
@@ -99,7 +100,7 @@ export class HisuianSamurott extends PokemonCard {
         const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkProvidedEnergyEffect);
         checkProvidedEnergyEffect.energyMap.forEach(energy => {
-          energies += energy.provides.length;
+          energies += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
         });
       });
 

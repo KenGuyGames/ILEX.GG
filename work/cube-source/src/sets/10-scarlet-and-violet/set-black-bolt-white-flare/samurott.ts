@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard, Stage, CardType, StoreLike, State, PowerType, GameError, BoardEffect } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
 import { PowerEffect } from '../../../game/store/effects/game-effects';
@@ -120,7 +121,7 @@ export class Samurott extends PokemonCard {
       const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, cardList);
       store.reduceEffect(state, checkProvidedEnergy);
 
-      const energyCount = checkProvidedEnergy.energyMap.length;
+      const energyCount = checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
       effect.damage = 30 + (50 * energyCount);
     }
     return state;

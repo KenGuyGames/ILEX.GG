@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, SuperType } from '../../../game/store/card/card-types';
 import { PowerType } from '../../../game/store/card/pokemon-types';
@@ -102,12 +103,12 @@ export class Metagross extends PokemonCard {
       const playerProvidedEnergy = new CheckProvidedEnergyEffect(player, player.active);
       store.reduceEffect(state, playerProvidedEnergy);
       const playerEnergyCount = playerProvidedEnergy.energyMap
-        .reduce((left, p) => left + p.provides.length, 0);
+        .reduce((left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0);
 
       const opponentProvidedEnergy = new CheckProvidedEnergyEffect(opponent, opponent.active);
       store.reduceEffect(state, opponentProvidedEnergy);
       const opponentEnergyCount = opponentProvidedEnergy.energyMap
-        .reduce((left, p) => left + p.provides.length, 0);
+        .reduce((left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0);
 
       if (playerEnergyCount !== opponentEnergyCount) {
         effect.damage = 40;

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "3.2.0",
+  "electron": "44.9.3",
+  "sourceBuild": "current campaign dialogue and audited engine Android120/Windows snapshot, republished as3.2.0",
+  "unchangedGameFilesVerified": 35693,
+  "productChanges": [
+    "package.json version3.2.0",
+    "EXE product/file version3.2.0",
+    "README/start guide"
+  ],
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "zipCrc": "pass",
+  "sha256": "12390089ae67769718d27ba075d2ae5d2d83bcf5cee3ebd9bd3ffca60b6df6f3",
+  "bytes": 721196352
+}

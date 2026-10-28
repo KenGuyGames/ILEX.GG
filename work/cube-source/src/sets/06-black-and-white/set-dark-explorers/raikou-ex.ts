@@ -83,7 +83,7 @@ export class RaikouEx extends PokemonCard {
         ),
         (selected) => {
           const targets = selected || [];
-          DAMAGE_OPPONENT_POKEMON(store, state, effect, 30, targets);
+          DAMAGE_OPPONENT_POKEMON(store, state, effect, 100, targets);
         },
       );
     }

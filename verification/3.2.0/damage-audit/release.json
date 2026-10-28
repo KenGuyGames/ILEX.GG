@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "date": "2026-10-28",
+  "feature": "Printed attack damage deep audit and corrections",
+  "engineSha256": "8e0696254ee38c7df63aeb548a5d62f3b2f826cc32817b864a3c552fc92a0558",
+  "hashes": {
+    "rules-engine.js": "8e0696254ee38c7df63aeb548a5d62f3b2f826cc32817b864a3c552fc92a0558"
+  },
+  "staticMappedPokemonPrintings": 17836,
+  "printedSourceRecordsCompared": 18029,
+  "nativeAttackBlocksInspected": 7587,
+  "primaryCardScansInspected": 27,
+  "checks": {
+    "focused": 87,
+    "reprints": 51,
+    "lifecycle": 4,
+    "raikou": 15,
+    "compile": 0,
+    "generator": 0,
+    "permanent": 87,
+    "qwilfishAbility": 2,
+    "runtime": 0,
+    "regressions": 20,
+    "native": 26,
+    "mobile": 52,
+    "android": 44,
+    "natural": 26
+  },
+  "baselineFailingFocusedCases": 58,
+  "metadataCorrections": [],
+  "nativeDescriptionsAlignedWithoutChangingRecoil": [
+    "sv01-108",
+    "sv01-109"
+  ],
+  "reprintCases": 43,
+  "changedCanonicalSourceFiles": 27,
+  "androidCode": 118,
+  "unchangedAndroidUIFiles": 3969,
+  "physicalAndroidTested": false,
+  "externalTwoPCsTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "exhaustiveCardCombinationCertification": false,
+  "enginePathAndHashVerifiedForEveryBroadSuite": true,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "7a68ad8aa808d0ffd78a43cc717a28c60b93082608c99795996143cb918da404",
+      "unrelatedCompressedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "f5e17bb4dbbac8fc96e78b791dd1aab37062acec83eaa8efcc1fe77e61f9760b",
+      "unrelatedCompressedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "cf2ab57d8ef59841d1503306e5f329887b97ba1452b13b6003f2a0f3bd30beec"
+}

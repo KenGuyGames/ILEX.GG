@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "feature": "Confirmed key Pokemon Knock Out and boss signature dialogue",
+  "addedBattleCues": 312,
+  "keyKnockoutCues": 256,
+  "signatureAttackCues": 56,
+  "totalStoredCues": 3298,
+  "unchangedMatchesPerPlaythrough": 64,
+  "checks": {
+    "content": 327,
+    "desktop": 17,
+    "mobile": 17,
+    "native": 16,
+    "android": 44
+  },
+  "priorCuesUnchanged": 2986,
+  "androidCode": 114,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3967,
+  "onlyPublicBattleStateObserved": true,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "3d4a48daf71268a5036eb635652e4a3e933eedd2da890fc4512d97a71f444307",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "82bd40d6ce0d3115c3630e8840bb7d38ac609a62d602232dda7565f5c0050b5b",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

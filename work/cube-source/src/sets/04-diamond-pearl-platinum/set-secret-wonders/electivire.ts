@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { CardType, EnergyType, Stage, SuperType } from '../../../game/store/card/card-types';
 import { ChooseCardsPrompt, EnergyCard, PowerType, State, StateUtils, StoreLike } from '../../../game';
@@ -79,7 +80,7 @@ export class Electivire extends PokemonCard {
       const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, player.active);
       store.reduceEffect(state, checkProvidedEnergy);
       const energyCount = checkProvidedEnergy.energyMap.reduce(
-        (left, p) => left + p.provides.length, 0
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0
       );
       if (energyCount > 0) {
         MULTIPLE_COIN_FLIPS_PROMPT(store, state, player, energyCount, results => {

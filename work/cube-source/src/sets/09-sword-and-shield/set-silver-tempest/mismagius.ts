@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { GamePhase, PlayerType, PowerType, State, StateUtils, StoreLike } from '../../../game';
 import { CardType, Stage } from '../../../game/store/card/card-types';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -70,7 +71,7 @@ export class Mismagius extends PokemonCard {
       store.reduceEffect(state, checkHpEffect);
 
       if (effect.target.damage === 0 && effect.damage >= checkHpEffect.hp) {
-        effect.source.damage += 80;
+        placePowerCounters(store, state, this, effect.source, 80);
       }
     }
 

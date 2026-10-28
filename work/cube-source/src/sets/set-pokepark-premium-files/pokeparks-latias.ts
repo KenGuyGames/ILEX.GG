@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../game';
 import { Card, ChooseEnergyPrompt, GameMessage, State, StoreLike } from '../../game';
 import { CardType, Stage } from '../../game/store/card/card-types';
 import { PokemonCard } from '../../game/store/card/pokemon-card';
@@ -41,7 +42,7 @@ export class PokeParksLatias extends PokemonCard {
       const checkEnergy = new CheckProvidedEnergyEffect(opponent, opponent.active);
       store.reduceEffect(state, checkEnergy);
 
-      const energyCount = checkEnergy.energyMap.length;
+      const energyCount = checkEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
       effect.damage = 10 * energyCount;
     }
 

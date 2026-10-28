@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -65,7 +66,7 @@ export class Jellicentex extends PokemonCard {
 
       // Count total attached energy
       const totalEnergy = checkEnergy.energyMap.reduce(
-        (sum, energy) => sum + energy.provides.length,
+        (sum, energy) => sum + EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy),
         0,
       );
       const attackCost = checkCost.cost.length;

@@ -1,6 +1,6 @@
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
-import { StoreLike, State, StateUtils } from '../../../game';
+import { StoreLike, State, StateUtils, PlayerType } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
 
 import { CheckProvidedEnergyEffect } from '../../../game/store/effects/check-effects';
@@ -50,18 +50,18 @@ export class TapuKokoV extends PokemonCard {
   public fullName: string = 'Tapu Koko V BST';
 
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    if (WAS_ATTACK_USED(effect, 0, this)) {
+    if (WAS_ATTACK_USED(effect, 1, this)) {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 
-      const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(opponent);
-      store.reduceEffect(state, checkProvidedEnergyEffect);
-      const energyCount = checkProvidedEnergyEffect.energyMap.reduce(
-        (left, p) => left + p.provides.length,
-        0,
-      );
+      let energyCount = 0;
+      opponent.forEachPokemon(PlayerType.TOP_PLAYER, (list) => {
+        const check = new CheckProvidedEnergyEffect(opponent, list);
+        store.reduceEffect(state, check);
+        energyCount += check.energyMap.reduce((sum, entry) => sum + StateUtils.getProvidesUnitCount(entry.provides, entry), 0);
+      });
 
-      effect.damage = 20 + energyCount * 40;
+      effect.damage = effect.attack.damage + energyCount * 40;
     }
     return state;
   }

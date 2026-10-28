@@ -36,7 +36,7 @@ export class Bulbasaur extends PokemonCard {
       ADD_SLEEP_TO_PLAYER_ACTIVE(store, state, effect.opponent, this);
     }
 
-    if (WAS_ATTACK_USED(effect, 0, this)) {
+    if (WAS_ATTACK_USED(effect, 1, this)) {
       const player = effect.player;
       MULTIPLE_COIN_FLIPS_PROMPT(store, state, player, 4, results => {
         let heads: number = 0;

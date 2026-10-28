@@ -1,3 +1,4 @@
+import { PutCountersEffect } from '../../../game/store/effects/attack-effects';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -126,7 +127,7 @@ export class TingLuex extends PokemonCard {
           if (!targets || targets.length === 0) {
             return;
           }
-          const damageEffect = new PutDamageEffect(effect, 20);
+          const damageEffect = new PutCountersEffect(effect, 20);
           damageEffect.target = targets[0];
           store.reduceEffect(state, damageEffect);
         },

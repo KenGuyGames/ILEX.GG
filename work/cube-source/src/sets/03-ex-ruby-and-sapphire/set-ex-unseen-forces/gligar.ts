@@ -16,7 +16,7 @@ export class Gligar extends PokemonCard {
 
   public powers = [{
     name: 'Free Flight',
-    powerType: PowerType.ABILITY,
+    powerType: PowerType.POKEBODY,
     text: 'If Gligar has no Energy cards attached to it, Gligar\'s Retreat Cost is 0.'
   }];
 
@@ -44,7 +44,7 @@ export class Gligar extends PokemonCard {
       }
 
       // Try to reduce PowerEffect, to check if something is blocking our ability
-      if (IS_ABILITY_BLOCKED(store, state, player, this)) {
+      if (IS_ABILITY_BLOCKED(store, state, player, this, this.powers[0])) {
         return state;
       }
 

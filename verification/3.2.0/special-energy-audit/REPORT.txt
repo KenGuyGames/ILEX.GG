@@ -1,0 +1,39 @@
+ILEX.GG Special Energy and interactions deep audit — October 28, 2026
+
+Scope: all 211 mapped Special Energy printings / 150 effect definitions inventoried. Thirty-six local printed card images inspected. The inventory and controlled printing matrix are screening coverage; they do not certify every possible card pair.
+
+Corrections:
+- Hand-only attachment effects now distinguish hand, deck, discard and Prize origins. Includes Rainbow, Full Heal, Potion, Medical, Herbal, Heal, Warp, Cyclone, Jet, Speed Lightning, Capture, Draw and Enriching Energy. Old Full Heal retains its narrower condition list. Aurora's hand cost and Regenerative's hand-evolution trigger retain their origin requirements.
+- Aqua/Magma Energy provides two flexible units without guessing from the first attack. Double Aqua/Magma uses the actual Energy query event and no longer recursively probes its own suppression check or falls through to an incompatible inherited effect.
+- EX Energy reprints select the correct implementation, including Holon FF/GL/WP. Old Double Rainbow's after-Weakness reduction remains distinct from later before-Weakness wording. R Energy does not add damage to a zero-damage attack.
+- V Guard includes V, VMAX, VSTAR and V-UNION without stacking; Stone Fighting, Shield and Holon GL use their appropriate damage timing. Rocky Fighting and Shadowy Darkness provide their printed Energy types.
+- Fusion Strike Energy distinguishes opposing Abilities from your own effects, Poké-Powers and Poké-Bodies. Its opponent-Ability protection and Stadium suppression are checked separately.
+- Lucky and Spiky Energy trigger on actual positive opposing attack damage to the Active holder. Spiky places counters as an Energy effect, rather than falsely identifying them as an Ability.
+- Gift draws at the Knock Out; Gift, Legacy and Splash distinguish lethal attack damage from counter/Poison effects. Legacy suppression does not consume its once-per-game effect. Rescue retains its broader attack-damage wording. Splash returns Pokémon through the existing rescue flow and discards only itself when the holder loses Water typing.
+- Treasure attaches directly from a face-down Prize during the taking player's turn, rather than temporarily pretending to be in hand.
+- Boomerang tracks a discard caused by its holder's own attack, checks suppression at the discard, and returns to that original Pokémon if it remains in play.
+- Temple of Sinnoh collapses each physical Special Energy to one Colorless unit, including multi-entry providers.
+- Energy-scaled native attack readers count provided Energy units, not possible type alternatives or physical card counts. Includes one-unit Unit/Blend-style choices and two-unit Double Colorless/Rapid Strike-style providers. Corrected Celebrations Lugia's multiplier and Deoxys V's printed 30 extra damage per opposing Energy. Gumshoos-GX retains its correct printed 10 plus 50-per-unit calculation.
+
+Validation:
+288 focused checks pass (66 attachment/protection, 30 interactions, 24 edge/reprint/conditional and 168 attack-unit cases). Across the first three baseline comparison suites, 125 checks fail on the preceding engine and pass with these fixes. 422 controlled printing cases exercise query/attack/end-turn behavior with and without Temple. 31 cross-era, mode, matrix and permanent suites pass; each process records the actual engine bytes loaded. The initial natural runner completed its matches but retained its event loop until the runner timeout; it was superseded by a successful full rerun with explicit exit after the suite. All 26 natural New Rule matches replay their winner/public rule state. Four additional complete Special Energy deck games replay the same final zones, Pokémon, damage, conditions, turn and winner. Nineteen native desktop and 38 mobile Chromium DOM/action checks pass. Android 120 package/signature verification passes; source rebuild is deterministic.
+
+Permanent regression suites:
+work/desktop-build/special-energy-tests.cjs
+work/desktop-build/special-energy-interaction-tests.cjs
+work/desktop-build/special-energy-edge-tests.cjs
+work/desktop-build/energy-unit-tests.cjs
+Shared fixtures are in work/desktop-build/fixtures.
+
+Delivery: local Windows apps, current Windows archives and original-certificate Android 120. Only the engine and build metadata change; unrelated campaign/UI assets and unchanged archive entries are preserved. Engine SHA-256 a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0. Public GitHub remains unchanged.
+
+Limits: finite branch coverage, not exhaustive all-card-pair certification. Physical Android, external two-PC play, every historical journal and every old printed use of “Energy cards” are not certified. No real player profile was modified and the user's running app was not closed.
+
+Primary references used with the local card images:
+Official Temple text: https://asia.pokemon-card.com/hk-en/card-search/detail/2423/
+Official Temple FAQ (Boomerang, Legacy, Gift and suppression timing): https://www.pokemon-card.com/rules/faq/search.php?freeword=%E3%82%B7%E3%83%B3%E3%82%AA%E3%82%A6%E7%A5%9E%E6%AE%BF&regulation_faq_main_item1=all
+Official Fusion FAQ: https://www.pokemon-card.com/rules/faq/search.php?freeword=%E3%83%95%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%E3%83%BC&page=2&regulation=all&regulation_faq_main_item1=all
+Official Energy-unit example: https://www.pokemon-card.com/rules/faq/details.php?id=9475
+Official advanced manual (amount of Energy versus physical card movement): https://asia.pokemon-card.com/sg/wp-content/uploads/sites/6/2025/10/EN_advanced_manual-2025.pdf
+
+Evidence: inventory.json, printing-matrix.json, tests.json, interaction-tests.json, edge-tests.json, unit-tests.json, baseline-*-tests.json, natural-special-energy.json, release-regressions.json, runtime-verification.json, native/checks.json, mobile/checks.json, android-verification.json, compile-parity.json, changes.json, source-manifest.json, source-before/, release.json, final-delivery.json.

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../game';
 import { PokemonCard } from '../../game/store/card/pokemon-card';
 import { CardType, Stage } from '../../game/store/card/card-types';
 import { State, StateUtils, StoreLike } from '../../game';
@@ -40,7 +41,7 @@ export class Espeon extends PokemonCard {
       const opponent = StateUtils.getOpponent(state, player);
       const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, checkProvidedEnergyEffect);
-      const energyCount = checkProvidedEnergyEffect.energyMap.reduce((left, p) => left + p.provides.length, 0);
+      const energyCount = checkProvidedEnergyEffect.energyMap.reduce((left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0);
       effect.damage += energyCount * 10;
     }
 

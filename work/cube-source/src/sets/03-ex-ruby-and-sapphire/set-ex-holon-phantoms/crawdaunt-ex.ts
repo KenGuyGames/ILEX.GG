@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   ChoosePokemonPrompt,
   GameError,
@@ -115,7 +116,7 @@ export class CrawdauntEx extends PokemonCard {
       const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, cardList);
       store.reduceEffect(state, checkProvidedEnergy);
 
-      const energyCount = checkProvidedEnergy.energyMap.length;
+      const energyCount = checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
       effect.damage = 20 * energyCount;
     }
 

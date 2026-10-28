@@ -105,7 +105,7 @@ export class Empoleon extends PokemonCard {
         { min: 1, max: 1, allowCancel: false }
       ), selected => {
         const targets = selected || [];
-        DAMAGE_OPPONENT_POKEMON(store, state, effect, 30, targets);
+        DAMAGE_OPPONENT_POKEMON(store, state, effect, 60, targets);
       });
     }
     return state;

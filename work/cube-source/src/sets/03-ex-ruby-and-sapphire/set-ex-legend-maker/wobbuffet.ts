@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard, Stage, CardType, PowerType, StoreLike, State, StateUtils, PlayerType, Card } from '../../../game';
 import { CheckProvidedEnergyEffect, CheckRetreatCostEffect } from '../../../game/store/effects/check-effects';
 import { Effect } from '../../../game/store/effects/effect';
@@ -85,7 +86,7 @@ export class Wobbuffet extends PokemonCard {
           });
 
           const damagePerEnergy = 10;
-          effect.damage = checkProvidedEnergy.energyMap.length * damagePerEnergy;
+          effect.damage = checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0) * damagePerEnergy;
         }
       });
     }

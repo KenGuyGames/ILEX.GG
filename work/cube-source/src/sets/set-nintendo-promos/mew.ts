@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../game';
 import { PokemonCard } from '../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../game/store/card/card-types';
 import { COIN_FLIP_PROMPT, DEVOLVE_POKEMON, WAS_ATTACK_USED } from '../../game/store/prefabs/prefabs';
@@ -39,7 +40,7 @@ export class Mew extends PokemonCard {
       store.reduceEffect(state, checkProvidedEnergy);
 
       const damagePerEnergy = 10;
-      effect.damage = checkProvidedEnergy.energyMap.length * damagePerEnergy;
+      effect.damage = checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0) * damagePerEnergy;
     }
 
     if (WAS_ATTACK_USED(effect, 1, this)) {

@@ -25,7 +25,7 @@ export class DarkAmpharos extends PokemonCard {
   public powers = [
     {
       name: 'Darkest Impulse',
-      powerType: PowerType.ABILITY,
+      powerType: PowerType.POKEBODY,
       text: "As long as Dark Ampharos is in play, whenever your opponent plays an Evolution card from his or her hand to evolve 1 of his or her Pokémon, put 2 damage counters on that Pokémon. You can't use more than 1 Darkest Impulse Poké-Body each turn.",
     },
   ];
@@ -58,7 +58,7 @@ export class DarkAmpharos extends PokemonCard {
       const player = effect.player;
       const opponent = StateUtils.getOpponent(state, player);
 
-      if (IS_ABILITY_BLOCKED(store, state, opponent, this)) {
+      if (IS_ABILITY_BLOCKED(store, state, opponent, this, this.powers[0])) {
         return state;
       }
       if (effect.darkestImpulseSV) {

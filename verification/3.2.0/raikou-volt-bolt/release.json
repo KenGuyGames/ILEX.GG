@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "feature": "Raikou-EX Volt Bolt100damage instead of30",
+  "printings": [
+    "bw5-38",
+    "bw5-105"
+  ],
+  "engineSha256": "eb629fd6878338cc6fe4dfa469f09b42a74527c3e5dfd4ce9a96acec1008300a",
+  "checks": {
+    "rules": 15,
+    "compile": 0,
+    "native": 16,
+    "android": 44
+  },
+  "androidCode": 112,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3969,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "ea88b8b89b186137bbf08532c6d9404221bb5121e4b5587e22b122739d45f3af",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "808042515b3de029d55e4df075d80a6707c0877e0f8f41178572af67cd0fe069",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

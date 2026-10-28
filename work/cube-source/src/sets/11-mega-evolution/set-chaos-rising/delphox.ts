@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard, Stage, CardType, PowerType, StoreLike, State, GameError, GameMessage, EnergyCard, EnergyType, ChooseCardsPrompt, SuperType, StateUtils, PlayerType } from "../../../game";
 import { CheckProvidedEnergyEffect } from "../../../game/store/effects/check-effects";
 import { Effect } from "../../../game/store/effects/effect";
@@ -106,14 +107,14 @@ export class Delphox extends PokemonCard {
         const checkEnergy = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkEnergy);
         checkEnergy.energyMap.forEach((em) => {
-          totalEnergy += em.provides.length;
+          totalEnergy += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
         });
       });
       opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList) => {
         const checkEnergy = new CheckProvidedEnergyEffect(opponent, cardList);
         store.reduceEffect(state, checkEnergy);
         checkEnergy.energyMap.forEach((em) => {
-          totalEnergy += em.provides.length;
+          totalEnergy += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
         });
       });
       effect.damage = 30 * totalEnergy;

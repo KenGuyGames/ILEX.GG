@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "feature": "Campaign character depth and public-state battle dialogue",
+  "addedStoryLines": 976,
+  "battleCues": 642,
+  "totalStoredCues": 2986,
+  "unchangedMatchesPerPlaythrough": 64,
+  "checks": {
+    "content": 5,
+    "desktop": 25,
+    "mobile": 25,
+    "native": 3,
+    "android": 44
+  },
+  "migratedPriorCheckpoints": 1368,
+  "androidCode": 113,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3966,
+  "onlyPublicBattleStateObserved": true,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "dfe044e4dec42a7d9ff3e81dba4282693370261f08ca7ecf3167f473db020f51",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "ef5a0e0ab05f6e151e1edcdab3b928c66808007a7f59e3a75aa4877a09852ae9",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

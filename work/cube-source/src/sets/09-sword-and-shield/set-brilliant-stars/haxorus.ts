@@ -38,7 +38,7 @@ export class Haxorus extends PokemonCard {
     if (WAS_ATTACK_USED(effect, 1, this)) {
       const player = effect.player;
 
-      const dealDamage = new DealDamageEffect(effect, 60);
+      const dealDamage = new DealDamageEffect(effect, 30);
       dealDamage.target = player.active;
       return store.reduceEffect(state, dealDamage);
     }

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State } from '../../../game';
@@ -41,7 +42,7 @@ export class Wigglytuff2 extends PokemonCard {
       const checkEnergy = new CheckProvidedEnergyEffect(player);
       store.reduceEffect(state, checkEnergy);
 
-      const energyCount = checkEnergy.energyMap.reduce((sum, em) => sum + em.provides.length, 0);
+      const energyCount = checkEnergy.energyMap.reduce((sum, em) => sum + EnergyUnitUtils.getProvidesUnitCount(em.provides, em), 0);
       effect.damage = 20 * energyCount;
     }
 

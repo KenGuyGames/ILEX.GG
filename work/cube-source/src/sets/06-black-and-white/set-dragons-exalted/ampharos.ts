@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { PowerType, StoreLike, State, StateUtils } from '../../../game';
@@ -63,7 +64,7 @@ export class Ampharos extends PokemonCard {
       }
 
       // Put 3 damage counters on the Pokemon that energy is being attached to
-      effect.target.damage += 30;
+      placePowerCounters(store, state, this, effect.target, 30);
     }
 
     // Attack: Electrobullet - 70 to active, 20 to a benched

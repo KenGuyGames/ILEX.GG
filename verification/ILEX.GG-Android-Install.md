@@ -1,7 +1,3 @@
-# ILEX.GG3.1.0 for Android
+# Android 3.2.0-android.121
 
-Android8+ with current Android System WebView. Install over your current app to preserve ordinary workspace/cache. Original certificate retained; version3.1.0-android.111/code111. Do not uninstall first.
-
-Play → Alternate Mode selects Regular TCG, New Rule96 Cards or Ken Guy Rules. In landscape open Match controls for shared/Ken controls. Pocket has been removed; legacy retired-only data is migrated out. Campaign, regular TCG and Cube Drafting remain. Import replaces the destination workspace; export first.
-
-3DS and Multiplayer remain in progress; Android networking is unavailable. Physical-device/lifecycle/audio/performance acceptance remains pending.
+Android 8+ and current WebView. Install ILEX.GG-Android.apk over the existing original-certificate app to retain workspace and image cache; do not uninstall first. Export your workspace first. The original signing certificate is retained. This direct APK is not a Play Store release. Physical Android acceptance remains pending; desktop narrow-viewport captures do not establish device acceptance.

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PowerEffect } from '../../../game/store/effects/game-effects';
 import { Effect } from '../../../game/store/effects/effect';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -80,7 +81,7 @@ export class Tropius extends PokemonCard {
       store.reduceEffect(state, checkProvidedEnergyEffect);
 
       effect.damage =
-        10 * checkProvidedEnergyEffect.energyMap.reduce((left, p) => left + p.provides.length, 0);
+        10 * checkProvidedEnergyEffect.energyMap.reduce((left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0);
     }
 
     return state;

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard, Stage, CardType, StoreLike, State } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
 import { CheckProvidedEnergyEffect } from '../../../game/store/effects/check-effects';
@@ -35,7 +36,7 @@ export class Dewott extends PokemonCard {
       const checkProvidedEnergy = new CheckProvidedEnergyEffect(player, cardList);
       store.reduceEffect(state, checkProvidedEnergy);
 
-      const energyCount = checkProvidedEnergy.energyMap.length;
+      const energyCount = checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
       effect.damage = 30 * energyCount;
     }
     return state;

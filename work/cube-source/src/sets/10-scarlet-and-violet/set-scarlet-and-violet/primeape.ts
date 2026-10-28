@@ -19,7 +19,7 @@ export class Primeape extends PokemonCard {
       name: 'Raging Punch',
       cost: [CardType.FIGHTING],
       damage: 70,
-      text: 'This Pokemon also does 10 damage to itself.'
+      text: 'This Pokémon also does 20 damage to itself.'
     }
   ];
 

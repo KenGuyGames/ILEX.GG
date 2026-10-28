@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PowerType, State, StoreLike } from '../../../game';
 import { CardTag, CardType, Stage } from '../../../game/store/card/card-types';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
@@ -58,7 +59,7 @@ export class Kyogreex extends PokemonCard {
 
       let energyCount = 0;
       checkProvidedEnergyEffect.energyMap.forEach((em) => {
-        energyCount += em.provides.length;
+        energyCount += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
       });
 
       if (energyCount <= 1) {

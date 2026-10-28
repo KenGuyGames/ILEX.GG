@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils, PlayerType, SlotType, GameMessage, GamePhase } from '../../../game';
@@ -55,7 +56,7 @@ export class Lucario extends PokemonCard {
       }
 
       // Put 2 damage counters on attacker
-      effect.source.damage += 20;
+      placePowerCounters(store, state, this, effect.source, 20);
     }
 
     // Aura Sphere - damage a benched Pokémon

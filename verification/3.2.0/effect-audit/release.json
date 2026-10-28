@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "date": "2026-10-28",
+  "feature": "Abilities, Poke-Powers, Poke-Bodies and Trainer deep audit",
+  "engineSha256": "e14be7566d1fab2060b7bfc5ba65270b29dbcc4bb0d0364b330bd36e82a7c630",
+  "inventoryPrintings": 7067,
+  "inventoryDefinitions": 4412,
+  "metadataComparisons": 7075,
+  "primaryCardScans": 18,
+  "targetedChecks": 171,
+  "baselineFailures": 86,
+  "changedCanonicalSourceFiles": 53,
+  "broadSuites": 27,
+  "naturalMatches": 26,
+  "desktopChecks": 17,
+  "mobileChecks": 34,
+  "androidCode": 119,
+  "unchangedAndroidUIFiles": 3969,
+  "physicalAndroidTested": false,
+  "externalTwoPCsTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "exhaustiveCardCombinationCertification": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "a7a578c871c85e35e18be37d879771c6c87d3f8149c01ba4cb1b4d32df48d040",
+      "unrelatedCompressedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "913da0e269a0213910e5acfacbee40111868b4ca69a29bb901a412cdd35c3a9b",
+      "unrelatedCompressedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "38a38c114260176cdaa1cddafd6318d05ee9431f98d75f7af82d7a19d61c9520"
+}

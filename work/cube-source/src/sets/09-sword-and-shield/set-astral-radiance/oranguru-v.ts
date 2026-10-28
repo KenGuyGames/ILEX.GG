@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { PlayPokemonEffect } from '../../../game/store/effects/play-card-effects';
 import {
@@ -134,7 +135,7 @@ export class OranguruV extends PokemonCard {
       const opponentProvidedEnergy = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, opponentProvidedEnergy);
       const opponentEnergyCount = opponentProvidedEnergy.energyMap.reduce(
-        (left, p) => left + p.provides.length,
+        (left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p),
         0,
       );
 

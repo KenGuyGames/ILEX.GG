@@ -1,0 +1,2643 @@
+{
+  "passed": true,
+  "controlledCoinEffects": true,
+  "checks": [
+    {
+      "name": "swsh7-2 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "swsh7-2",
+        "index": 0,
+        "attack": "Continuous Spin",
+        "flips": 1,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "swsh7-2 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "swsh7-2",
+        "index": 0,
+        "attack": "Continuous Spin",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "swsh7-2 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "swsh7-2",
+        "index": 0,
+        "attack": "Continuous Spin",
+        "flips": 3,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm7-27 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "sm7-27",
+        "index": 0,
+        "attack": "Double Kick",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm7-27 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "sm7-27",
+        "index": 0,
+        "attack": "Double Kick",
+        "flips": 2,
+        "damage": 30,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm7-27 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "sm7-27",
+        "index": 0,
+        "attack": "Double Kick",
+        "flips": 2,
+        "damage": 60,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm2-62 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "sm2-62",
+        "index": 0,
+        "attack": "Dual Chop",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm2-62 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "sm2-62",
+        "index": 0,
+        "attack": "Dual Chop",
+        "flips": 2,
+        "damage": 30,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm2-62 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "sm2-62",
+        "index": 0,
+        "attack": "Dual Chop",
+        "flips": 2,
+        "damage": 60,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "lc-39 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "lc-39",
+        "index": 0,
+        "attack": "Doubleslap",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "lc-39 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "lc-39",
+        "index": 0,
+        "attack": "Doubleslap",
+        "flips": 2,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "lc-39 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "lc-39",
+        "index": 0,
+        "attack": "Doubleslap",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "base5-46 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "base5-46",
+        "index": 0,
+        "attack": "Doubleslap",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "base5-46 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "base5-46",
+        "index": 0,
+        "attack": "Doubleslap",
+        "flips": 2,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "base5-46 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "base5-46",
+        "index": 0,
+        "attack": "Doubleslap",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "ex5-70 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "ex5-70",
+        "index": 0,
+        "attack": "Double Stab",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "ex5-70 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "ex5-70",
+        "index": 0,
+        "attack": "Double Stab",
+        "flips": 2,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "ex5-70 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "ex5-70",
+        "index": 0,
+        "attack": "Double Stab",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw1-89 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "bw1-89",
+        "index": 0,
+        "attack": "Tail Slap",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw1-89 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "bw1-89",
+        "index": 0,
+        "attack": "Tail Slap",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw1-89 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "bw1-89",
+        "index": 0,
+        "attack": "Tail Slap",
+        "flips": 2,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "xy12-57 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "xy12-57",
+        "index": 0,
+        "attack": "Dual Chop",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "xy12-57 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "xy12-57",
+        "index": 0,
+        "attack": "Dual Chop",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "xy12-57 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "xy12-57",
+        "index": 0,
+        "attack": "Dual Chop",
+        "flips": 2,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw5-16 multiplier 0",
+      "passed": true,
+      "result": {
+        "id": "bw5-16",
+        "index": 0,
+        "attack": "Double Kick",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw5-16 multiplier 1",
+      "passed": true,
+      "result": {
+        "id": "bw5-16",
+        "index": 0,
+        "attack": "Double Kick",
+        "flips": 2,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw5-16 multiplier 2",
+      "passed": true,
+      "result": {
+        "id": "bw5-16",
+        "index": 0,
+        "attack": "Double Kick",
+        "flips": 2,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Empoleon active normal",
+      "passed": true,
+      "result": {
+        "id": "swsh9-037",
+        "index": 0,
+        "attack": "Water Arrow",
+        "flips": 0,
+        "damage": 60,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Empoleon active weak",
+      "passed": true,
+      "result": {
+        "id": "swsh9-037",
+        "index": 0,
+        "attack": "Water Arrow",
+        "flips": 0,
+        "damage": 120,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Empoleon active resist",
+      "passed": true,
+      "result": {
+        "id": "swsh9-037",
+        "index": 0,
+        "attack": "Water Arrow",
+        "flips": 0,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Empoleon bench normal",
+      "passed": true,
+      "result": {
+        "id": "swsh9-037",
+        "index": 0,
+        "attack": "Water Arrow",
+        "flips": 0,
+        "damage": 0,
+        "bench": [
+          60,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Empoleon bench weak",
+      "passed": true,
+      "result": {
+        "id": "swsh9-037",
+        "index": 0,
+        "attack": "Water Arrow",
+        "flips": 0,
+        "damage": 0,
+        "bench": [
+          60,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Empoleon bench resist",
+      "passed": true,
+      "result": {
+        "id": "swsh9-037",
+        "index": 0,
+        "attack": "Water Arrow",
+        "flips": 0,
+        "damage": 0,
+        "bench": [
+          60,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw11-43 spread",
+      "passed": true,
+      "result": {
+        "id": "bw11-43",
+        "index": 1,
+        "attack": "Glaciate",
+        "flips": 0,
+        "damage": 30,
+        "bench": [
+          30,
+          30,
+          30,
+          30,
+          30
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw9-66 spread",
+      "passed": true,
+      "result": {
+        "id": "bw9-66",
+        "index": 0,
+        "attack": "Hail",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Archeops Rock Slide",
+      "passed": true,
+      "result": {
+        "id": "bw3-67",
+        "index": 0,
+        "attack": "Rock Slide",
+        "flips": 0,
+        "damage": 60,
+        "bench": [
+          10,
+          10,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Kyurem Outrage 0",
+      "passed": true,
+      "result": {
+        "id": "bw11-43",
+        "index": 0,
+        "attack": "Outrage",
+        "flips": 0,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Kyurem Outrage 10",
+      "passed": true,
+      "result": {
+        "id": "bw11-43",
+        "index": 0,
+        "attack": "Outrage",
+        "flips": 0,
+        "damage": 30,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Kyurem Outrage 30",
+      "passed": true,
+      "result": {
+        "id": "bw11-43",
+        "index": 0,
+        "attack": "Outrage",
+        "flips": 0,
+        "damage": 50,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Sableye lower handfalse",
+      "passed": true,
+      "result": {
+        "id": "dp7-48",
+        "index": 1,
+        "attack": "Overconfident",
+        "flips": 0,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Sableye equal handfalse",
+      "passed": true,
+      "result": {
+        "id": "dp7-48",
+        "index": 1,
+        "attack": "Overconfident",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Sableye higher handfalse",
+      "passed": true,
+      "result": {
+        "id": "dp7-48",
+        "index": 1,
+        "attack": "Overconfident",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Sableye lower handtrue",
+      "passed": true,
+      "result": {
+        "id": "dp7-48",
+        "index": 1,
+        "attack": "Overconfident",
+        "flips": 0,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Sableye equal handtrue",
+      "passed": true,
+      "result": {
+        "id": "dp7-48",
+        "index": 1,
+        "attack": "Overconfident",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Sableye higher handtrue",
+      "passed": true,
+      "result": {
+        "id": "dp7-48",
+        "index": 1,
+        "attack": "Overconfident",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Leafeon Miasma 0",
+      "passed": true,
+      "result": {
+        "id": "hgss3-17",
+        "index": 0,
+        "attack": "Miasma Wind",
+        "flips": 0,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Leafeon Miasma 1",
+      "passed": true,
+      "result": {
+        "id": "hgss3-17",
+        "index": 0,
+        "attack": "Miasma Wind",
+        "flips": 0,
+        "damage": 50,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [
+          1
+        ],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Leafeon Miasma 2",
+      "passed": true,
+      "result": {
+        "id": "hgss3-17",
+        "index": 0,
+        "attack": "Miasma Wind",
+        "flips": 0,
+        "damage": 110,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [
+          1,
+          3
+        ],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Leafeon Soothing Scent",
+      "passed": true,
+      "result": {
+        "id": "hgss3-17",
+        "index": 1,
+        "attack": "Soothing Scent",
+        "flips": 1,
+        "damage": 30,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Tapu Koko Electro Ball unaffected by opponent Energy",
+      "passed": true,
+      "result": {
+        "id": "swsh5-50",
+        "index": 0,
+        "attack": "Electro Ball",
+        "flips": 0,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Spiral Thunder counts Active DCE and Bench basic",
+      "passed": true,
+      "result": {
+        "id": "swsh5-50",
+        "index": 1,
+        "attack": "Spiral Thunder",
+        "flips": 0,
+        "damage": 140,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Tangrowth cost plus bonus threshold 4",
+      "passed": true,
+      "result": {
+        "id": "me01-007",
+        "index": 1,
+        "attack": "Pumped-Up Whip",
+        "flips": 0,
+        "damage": 120,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Tangrowth cost plus bonus threshold 5",
+      "passed": true,
+      "result": {
+        "id": "me01-007",
+        "index": 1,
+        "attack": "Pumped-Up Whip",
+        "flips": 0,
+        "damage": 120,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Tangrowth cost plus bonus threshold 6",
+      "passed": true,
+      "result": {
+        "id": "me01-007",
+        "index": 1,
+        "attack": "Pumped-Up Whip",
+        "flips": 0,
+        "damage": 260,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Miraidon versus ex false",
+      "passed": true,
+      "result": {
+        "id": "me02.5-073",
+        "index": 1,
+        "attack": "Hadron Spark",
+        "flips": 0,
+        "damage": 120,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Miraidon versus ex true",
+      "passed": true,
+      "result": {
+        "id": "me02.5-073",
+        "index": 1,
+        "attack": "Hadron Spark",
+        "flips": 0,
+        "damage": 240,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Zweilous Double Hit 0",
+      "passed": true,
+      "result": {
+        "id": "sv10.5w-066",
+        "index": 0,
+        "attack": "Double Hit",
+        "flips": 2,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Zweilous PitchBlack flat 0",
+      "passed": true,
+      "result": {
+        "id": "sv10.5w-066",
+        "index": 1,
+        "attack": "Pitch-Black Fangs",
+        "flips": 0,
+        "damage": 100,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Zweilous Double Hit 1",
+      "passed": true,
+      "result": {
+        "id": "sv10.5w-066",
+        "index": 0,
+        "attack": "Double Hit",
+        "flips": 2,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Zweilous PitchBlack flat 1",
+      "passed": true,
+      "result": {
+        "id": "sv10.5w-066",
+        "index": 1,
+        "attack": "Pitch-Black Fangs",
+        "flips": 0,
+        "damage": 100,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Zweilous Double Hit 2",
+      "passed": true,
+      "result": {
+        "id": "sv10.5w-066",
+        "index": 0,
+        "attack": "Double Hit",
+        "flips": 2,
+        "damage": 80,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Zweilous PitchBlack flat 2",
+      "passed": true,
+      "result": {
+        "id": "sv10.5w-066",
+        "index": 1,
+        "attack": "Pitch-Black Fangs",
+        "flips": 0,
+        "damage": 100,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Bulbasaur Shake Vine no damage",
+      "passed": true,
+      "result": {
+        "id": "dp3-77",
+        "index": 0,
+        "attack": "Shake Vine",
+        "flips": 1,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Bulbasaur Bullet Seed 0",
+      "passed": true,
+      "result": {
+        "id": "dp3-77",
+        "index": 1,
+        "attack": "Bullet Seed",
+        "flips": 4,
+        "damage": 0,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Bulbasaur Bullet Seed 1",
+      "passed": true,
+      "result": {
+        "id": "dp3-77",
+        "index": 1,
+        "attack": "Bullet Seed",
+        "flips": 4,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Bulbasaur Bullet Seed 2",
+      "passed": true,
+      "result": {
+        "id": "dp3-77",
+        "index": 1,
+        "attack": "Bullet Seed",
+        "flips": 4,
+        "damage": 20,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Bulbasaur Bullet Seed 3",
+      "passed": true,
+      "result": {
+        "id": "dp3-77",
+        "index": 1,
+        "attack": "Bullet Seed",
+        "flips": 4,
+        "damage": 30,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Bulbasaur Bullet Seed 4",
+      "passed": true,
+      "result": {
+        "id": "dp3-77",
+        "index": 1,
+        "attack": "Bullet Seed",
+        "flips": 4,
+        "damage": 40,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw1-91 recoil coin 0",
+      "passed": true,
+      "result": {
+        "id": "bw1-91",
+        "index": 1,
+        "attack": "Head Charge",
+        "flips": 1,
+        "damage": 80,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 20,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw7-122 recoil coin 0",
+      "passed": true,
+      "result": {
+        "id": "bw7-122",
+        "index": 0,
+        "attack": "Wild Tackle",
+        "flips": 1,
+        "damage": 90,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 20,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw1-91 recoil coin 1",
+      "passed": true,
+      "result": {
+        "id": "bw1-91",
+        "index": 1,
+        "attack": "Head Charge",
+        "flips": 1,
+        "damage": 80,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "bw7-122 recoil coin 1",
+      "passed": true,
+      "result": {
+        "id": "bw7-122",
+        "index": 0,
+        "attack": "Wild Tackle",
+        "flips": 1,
+        "damage": 90,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "swsh9-112 recoil",
+      "passed": true,
+      "result": {
+        "id": "swsh9-112",
+        "index": 1,
+        "attack": "Wild Axe",
+        "flips": 0,
+        "damage": 160,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 30,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sv01-108 recoil",
+      "passed": true,
+      "result": {
+        "id": "sv01-108",
+        "index": 0,
+        "attack": "Raging Punch",
+        "flips": 0,
+        "damage": 70,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 20,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sv01-109 recoil",
+      "passed": true,
+      "result": {
+        "id": "sv01-109",
+        "index": 1,
+        "attack": "Dynamite Punch",
+        "flips": 0,
+        "damage": 170,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 50,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Galarian Zapdos special removal 0",
+      "passed": true,
+      "result": {
+        "id": "swsh6-80",
+        "index": 0,
+        "attack": "Thunderous Kick",
+        "flips": 0,
+        "damage": 170,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Fire Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Galarian Zapdos special removal 1",
+      "passed": true,
+      "result": {
+        "id": "swsh6-80",
+        "index": 0,
+        "attack": "Thunderous Kick",
+        "flips": 0,
+        "damage": 170,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Fire Energy"
+        ],
+        "discard": [
+          "Double Colorless Energy"
+        ],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose cards",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Galarian Zapdos special removal 2",
+      "passed": true,
+      "result": {
+        "id": "swsh6-80",
+        "index": 0,
+        "attack": "Thunderous Kick",
+        "flips": 0,
+        "damage": 170,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Fire Energy",
+          "Double Colorless Energy"
+        ],
+        "discard": [
+          "Double Colorless Energy"
+        ],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose cards",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sm10-69 counters bypass Bench Barrier",
+      "passed": true,
+      "result": {
+        "id": "sm10-69",
+        "index": 0,
+        "attack": "Sinister Fog",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [
+          3
+        ],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "xy8-96 counters bypass Bench Barrier",
+      "passed": true,
+      "result": {
+        "id": "xy8-96",
+        "index": 0,
+        "attack": "Pain Amplifier",
+        "flips": 0,
+        "damage": 30,
+        "bench": [
+          30,
+          0,
+          0,
+          0,
+          30
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "sv02-127 counters bypass Bench Barrier",
+      "passed": true,
+      "result": {
+        "id": "sv02-127",
+        "index": 0,
+        "attack": "Land Scoop",
+        "flips": 0,
+        "damage": 150,
+        "bench": [
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "swsh12-077 counters bypass Bench Barrier",
+      "passed": true,
+      "result": {
+        "id": "swsh12-077",
+        "index": 0,
+        "attack": "Cell Spear",
+        "flips": 0,
+        "damage": 20,
+        "bench": [
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "Choose pokemon",
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Qwilfish Venoshock 0",
+      "passed": true,
+      "result": {
+        "id": "swsh1-51",
+        "index": 0,
+        "attack": "Venoshock",
+        "flips": 0,
+        "damage": 10,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Qwilfish Venoshock 1",
+      "passed": true,
+      "result": {
+        "id": "swsh1-51",
+        "index": 0,
+        "attack": "Venoshock",
+        "flips": 0,
+        "damage": 80,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [
+          3
+        ],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Qwilfish Venoshock 2",
+      "passed": true,
+      "result": {
+        "id": "swsh1-51",
+        "index": 0,
+        "attack": "Venoshock",
+        "flips": 0,
+        "damage": 80,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [
+          3
+        ],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Spiral Thunder counts flexible Blend once",
+      "passed": true,
+      "result": {
+        "id": "swsh5-50",
+        "index": 1,
+        "attack": "Spiral Thunder",
+        "flips": 0,
+        "damage": 180,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    },
+    {
+      "name": "Tangrowth flexible Blend below bonus threshold",
+      "passed": true,
+      "result": {
+        "id": "me01-007",
+        "index": 1,
+        "attack": "Pumped-Up Whip",
+        "flips": 0,
+        "damage": 120,
+        "bench": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "self": 0,
+        "opponentEnergy": [
+          "Double Colorless Energy"
+        ],
+        "discard": [],
+        "ownStatuses": [],
+        "targetStatuses": [],
+        "prompts": [
+          "WaitPrompt",
+          "WaitPrompt",
+          "WaitPrompt"
+        ]
+      }
+    }
+  ]
+}

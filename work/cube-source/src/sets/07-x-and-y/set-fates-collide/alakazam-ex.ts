@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag, SuperType } from '../../../game/store/card/card-types';
 import {
@@ -62,7 +63,7 @@ export class AlakazamEx extends PokemonCard {
 
         CONFIRMATION_PROMPT(store, state, effect.player, (result) => {
           if (result) {
-            opponent.active.damage += 20;
+            placePowerCounters(store, state, this, opponent.active, 20);
 
             const hasBenched = opponent.bench.some((b) => b.cards.length > 0);
             if (!hasBenched) {
@@ -83,7 +84,7 @@ export class AlakazamEx extends PokemonCard {
                   return;
                 }
 
-                targets[0].damage += 30;
+                placePowerCounters(store, state, this, targets[0], 30);
               },
             );
           }

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   ADD_SLEEP_TO_PLAYER_ACTIVE,
   AFTER_ATTACK,
@@ -45,7 +46,7 @@ export class Vanilluxe extends PokemonCard {
       // Count energy attached
       const checkEnergy = new CheckProvidedEnergyEffect(player);
       store.reduceEffect(state, checkEnergy);
-      const energyCount = checkEnergy.energyMap.length;
+      const energyCount = checkEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
 
       if (energyCount === 0) {
         effect.damage = 0;

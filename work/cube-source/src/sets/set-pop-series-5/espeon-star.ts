@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../game';
 import { PokemonCard } from '../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../game/store/card/card-types';
 import { StoreLike, State, Card, PowerType, StateUtils, PlayerType } from '../../game';
@@ -69,7 +70,7 @@ export class EspeonStar extends PokemonCard {
           });
 
           const damagePerEnergy = 10;
-          effect.damage += checkProvidedEnergy.energyMap.length * damagePerEnergy;
+          effect.damage += checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0) * damagePerEnergy;
         }
       });
     }

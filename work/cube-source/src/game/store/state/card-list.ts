@@ -1,3 +1,4 @@
+import { recordSpecialEnergyDiscard } from '../../../tcg-lab-special-energy-movement';
 import { CardManager } from '../../cards/card-manager';
 import { GameError } from '../../game-error';
 import { GameMessage } from '../../game-message';
@@ -52,6 +53,7 @@ export function ecogymDestination(source:CardList,destination:CardList,card:Card
 
 export function recordDpEnergyDiscard(source:any,actualDestination:any,card:any){
         const context=(CardList as any).wotcMovementContext;
+        recordSpecialEnergyDiscard(source,actualDestination,card,context);
         const burning=card._xyBurningAttack;
         if(burning&&context?.state&&burning.turn===context.state.turn&&context.kind==='attack'&&!context.wholePokemon&&!context.knockout){const owner=context.state.players.find((p:any)=>p.active===source);if(owner?.id===context.actorId&&source.getPokemonCard()===burning.pokemon&&actualDestination===owner.discard)card._xyBurningReturn={turn:context.state.turn,pokemon:burning.pokemon,ownerId:owner.id};}
         if(context?.state?.rules?.dpEraRules&&context.kind==='attack'&&!context.wholePokemon&&!context.knockout&&card.superType===SuperType.ENERGY&&(card as any).energyType===EnergyType.BASIC){const owner=context.state.players.find((player:any)=>player.active===source||player.active.energies===source);if(owner&&owner.id===context.actorId&&actualDestination===owner.discard){owner._dpAttackEnergyDiscards??=[];owner._dpAttackEnergyDiscards=owner._dpAttackEnergyDiscards.filter((entry:any)=>entry.turn===context.state.turn);owner._dpAttackEnergyDiscards.push({turn:context.state.turn,card:card,pokemon:owner.active.getPokemonCard()});}}

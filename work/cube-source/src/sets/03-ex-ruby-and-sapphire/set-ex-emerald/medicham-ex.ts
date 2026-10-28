@@ -27,7 +27,7 @@ export class Medichamex extends PokemonCard {
   public powers = [
     {
       name: 'Wise Aura',
-      powerType: PowerType.ABILITY,
+      powerType: PowerType.POKEBODY,
       text: "As long as Medicham ex is your Active Pokémon, each Pokémon (excluding Pokémon-ex) (both yours and your opponent's) can't use any Poké-Powers.",
     },
   ];

@@ -43,11 +43,11 @@ export class Weavile extends PokemonCard {
       const opponent = effect.opponent;
       const benched = opponent.bench.filter((b) => b.cards.length > 0);
 
-      const activeDamageEffect = new DealDamageEffect(effect, 20);
+      const activeDamageEffect = new DealDamageEffect(effect, 10);
       store.reduceEffect(state, activeDamageEffect);
 
       benched.forEach((target) => {
-        const damageEffect = new PutDamageEffect(effect, 20);
+        const damageEffect = new PutDamageEffect(effect, 10);
         damageEffect.target = target;
         store.reduceEffect(state, damageEffect);
       });

@@ -8,6 +8,7 @@ import { HealEffect } from '../../../game/store/effects/game-effects';
 import { ToolEffect } from '../../../game/store/effects/play-card-effects';
 
 export class Leftovers extends TrainerCard {
+  public healAmount = 20;
   public regulationMark = 'G';
 
   protected _trainerType: TrainerType = TrainerType.TOOL;
@@ -37,7 +38,7 @@ export class Leftovers extends TrainerCard {
         return state;
       }
 
-      const healEffect = new HealEffect(player, player.active, 20);
+      const healEffect = new HealEffect(player, player.active, this.healAmount);
       store.reduceEffect(state, healEffect);
     }
 

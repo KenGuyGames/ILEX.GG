@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "date": "2026-10-28",
+  "feature": "Special Energy and interactions deep audit",
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "inventoryPrintings": 211,
+  "inventoryDefinitions": 150,
+  "primaryCardScans": 36,
+  "targetedChecks": 288,
+  "baselineFailures": 125,
+  "printingMatrixChecks": 422,
+  "changedCanonicalSourceFiles": 149,
+  "broadSuites": 31,
+  "naturalMatches": 30,
+  "desktopChecks": 19,
+  "mobileChecks": 38,
+  "androidCode": 120,
+  "unchangedAndroidUIFiles": 3969,
+  "physicalAndroidTested": false,
+  "externalTwoPCsTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "exhaustiveCardCombinationCertification": false,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "afe3ba8a7183bdf30d1ce927b572bc2c7389e991811f3e163a4b29f373c938e2",
+      "unrelatedCompressedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "c83cb5e78a3fca9ab5563f59960accaca946a05ac7fa734455c153bbf2215afd",
+      "unrelatedCompressedEntriesPreserved": true
+    }
+  ],
+  "androidSha256": "4bf9a318842981fc3433a36e2a707262a9beecca079f9ca9c39313aceac20dcf"
+}

@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, SuperType } from '../../../game/store/card/card-types';
 import { AttachEnergyPrompt, GameError, GameMessage, PlayerType, PowerType, SlotType, State, StateUtils, StoreLike } from '../../../game';
@@ -79,7 +80,7 @@ export class Gardevoir extends PokemonCard {
       store.reduceEffect(state, checkProvidedEnergyOpponent);
       store.reduceEffect(state, checkProvidedEnergyPlayer);
 
-      const totalEnergy = checkProvidedEnergyOpponent.energyMap.length + checkProvidedEnergyPlayer.energyMap.length;
+      const totalEnergy = checkProvidedEnergyOpponent.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0) + checkProvidedEnergyPlayer.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0);
 
       const damagePerEnergy = 10;
       effect.damage = totalEnergy * damagePerEnergy;

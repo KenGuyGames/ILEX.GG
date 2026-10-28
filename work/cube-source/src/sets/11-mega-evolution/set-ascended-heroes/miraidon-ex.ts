@@ -37,7 +37,7 @@ export class Miraidonex extends PokemonCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (WAS_ATTACK_USED(effect, 1, this)) {
       if (effect.opponent.active.getPokemonCard()?.hasTag(CardTag.POKEMON_ex)) {
-        effect.damage += 20;
+        effect.damage += 120;
       }
     }
 

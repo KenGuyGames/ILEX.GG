@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils } from '../../../game';
@@ -44,7 +45,7 @@ export class Druddigon extends PokemonCard {
         return state;
       }
 
-      effect.source.damage += 20;
+      placePowerCounters(store, state, this, effect.source, 20);
     }
 
     // Clutch - prevent retreat

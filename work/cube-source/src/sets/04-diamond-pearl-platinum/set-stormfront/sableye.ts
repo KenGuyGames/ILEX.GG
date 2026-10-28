@@ -1,3 +1,4 @@
+import { CheckHpEffect } from '../../../game/store/effects/check-effects';
 import { ChooseCardsPrompt, StateUtils, TrainerCard } from '../../../game';
 import { GameLog, GameMessage } from '../../../game/game-message';
 import { CardType, Stage, SuperType, TrainerType } from '../../../game/store/card/card-types';
@@ -100,8 +101,13 @@ export class Sableye extends PokemonCard {
     if (WAS_ATTACK_USED(effect, 1, this)) {
       const player = effect.player;
 
-      if (player.hand.cards.length === 0) {
-        effect.damage += 90;
+      const opponent = StateUtils.getOpponent(state, player);
+      const ownHp = new CheckHpEffect(player, player.active);
+      const defendingHp = new CheckHpEffect(opponent, opponent.active);
+      store.reduceEffect(state, ownHp);
+      store.reduceEffect(state, defendingHp);
+      if (defendingHp.hp - opponent.active.damage < ownHp.hp - player.active.damage) {
+        effect.damage = 40;
       }
     }
 

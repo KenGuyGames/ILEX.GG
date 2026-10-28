@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "feature": "Celebi and companion setback/comeback battle reactions",
+  "addedPartyCues": 768,
+  "celebiCues": 486,
+  "companionCues": 282,
+  "totalStoredCues": 4066,
+  "unchangedMatchesPerPlaythrough": 64,
+  "checks": {
+    "content": 20,
+    "desktop": 25,
+    "mobile": 25,
+    "native": 24,
+    "android": 44
+  },
+  "priorCuesUnchanged": 3298,
+  "androidCode": 115,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3966,
+  "onlyPublicBattleStateObserved": true,
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "6a9462e2abd686a5407b77c384a29594794eefbaade2f2548beffe171361809c",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "d6919ef154505c6c09a6bdecf839cb912e831645b932bccd91b2bf6bbc38fb22",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

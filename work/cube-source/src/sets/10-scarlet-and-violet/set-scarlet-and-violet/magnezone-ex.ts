@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
 import { StoreLike, State, PlayerType, StateUtils } from '../../../game';
@@ -60,7 +61,7 @@ export class Magnezoneex extends PokemonCard {
         const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(player, cardList);
         store.reduceEffect(state, checkProvidedEnergyEffect);
         checkProvidedEnergyEffect.energyMap.forEach((energy) => {
-          energies += energy.provides.length;
+          energies += EnergyUnitUtils.getProvidesUnitCount(energy.provides, energy);
         });
       });
 

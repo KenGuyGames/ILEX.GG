@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "checks": [
+    {
+      "name": "ex4-86 flexible two units independent of attack",
+      "passed": true
+    },
+    {
+      "name": "ex4-87 flexible two units independent of attack",
+      "passed": true
+    },
+    {
+      "name": "Jet hand Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Jet hand Temple=true",
+      "passed": true
+    },
+    {
+      "name": "Jet discard Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Jet discard Temple=true",
+      "passed": true
+    },
+    {
+      "name": "swsh11-171 actual lethal damage Temple=false",
+      "passed": true
+    },
+    {
+      "name": "swsh11-171 actual lethal damage Temple=true",
+      "passed": true
+    },
+    {
+      "name": "sv06-167 actual lethal damage Temple=false",
+      "passed": true
+    },
+    {
+      "name": "sv06-167 actual lethal damage Temple=true",
+      "passed": true
+    },
+    {
+      "name": "xy9-113 actual lethal damage Temple=false",
+      "passed": true
+    },
+    {
+      "name": "xy9-113 actual lethal damage Temple=true",
+      "passed": true
+    },
+    {
+      "name": "hgss4-90 actual lethal damage Temple=false",
+      "passed": true
+    },
+    {
+      "name": "hgss4-90 actual lethal damage Temple=true",
+      "passed": true
+    },
+    {
+      "name": "V Guard V count=1",
+      "passed": true
+    },
+    {
+      "name": "V Guard V count=2",
+      "passed": true
+    },
+    {
+      "name": "V Guard VMAX count=1",
+      "passed": true
+    },
+    {
+      "name": "V Guard VMAX count=2",
+      "passed": true
+    },
+    {
+      "name": "V Guard VSTAR count=1",
+      "passed": true
+    },
+    {
+      "name": "V Guard VSTAR count=2",
+      "passed": true
+    },
+    {
+      "name": "V Guard V-UNION count=1",
+      "passed": true
+    },
+    {
+      "name": "V Guard V-UNION count=2",
+      "passed": true
+    },
+    {
+      "name": "swsh4-164 reduction after weakness count=1",
+      "passed": true
+    },
+    {
+      "name": "swsh4-164 reduction after weakness count=2",
+      "passed": true
+    },
+    {
+      "name": "xy5-143 reduction after weakness count=1",
+      "passed": true
+    },
+    {
+      "name": "xy5-143 reduction after weakness count=2",
+      "passed": true
+    },
+    {
+      "name": "Boomerang movement return Temple=false",
+      "passed": true
+    },
+    {
+      "name": "Boomerang movement return Temple=true",
+      "passed": true
+    },
+    {
+      "name": "Treasure Prize attachment own turn=false",
+      "passed": true
+    },
+    {
+      "name": "Treasure Prize attachment own turn=true",
+      "passed": true
+    }
+  ]
+}

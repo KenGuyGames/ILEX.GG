@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { Effect } from '../../../game/store/effects/effect';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { PowerType, StoreLike, State, ChoosePokemonPrompt, PlayerType, SlotType, StateUtils } from '../../../game';
@@ -69,7 +70,7 @@ export class Crobat extends PokemonCard {
       ), selected => {
         const targets = selected || [];
         targets.forEach(target => {
-          target.damage += 30;
+          placePowerCounters(store, state, this, target, 30);
         });
       });
     }

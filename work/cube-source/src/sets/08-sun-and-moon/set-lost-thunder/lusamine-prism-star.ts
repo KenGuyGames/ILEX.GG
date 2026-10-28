@@ -22,64 +22,12 @@ export class LusaminePrismStar extends TrainerCard {
     'You can play this card only if your opponent has exactly 3 Prize cards remaining.\n\n' +
     "Prevent all damage done to your Ultra Beasts by attacks during your opponent's next turn.";
 
-  public readonly PREVENT_DAMAGE_MARKER = 'LUSAMINE_PRISM_PREVENT_DAMAGE';
-  public readonly CLEAR_PREVENT_DAMAGE_MARKER = 'LUSAMINE_PRISM_CLEAR_PREVENT_DAMAGE';
-
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
-    // Ref: set-dragons-majesty/altaria-gx.ts (Bright Tone - damage prevention with markers)
     if (WAS_TRAINER_USED(effect, this)) {
-      const player = effect.player;
-      const opponent = StateUtils.getOpponent(state, player);
-
-      // Check if opponent has exactly 3 prize cards remaining
-      if (opponent.getPrizeLeft() !== 3) {
-        throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
-      }
-
-      // Mark all Ultra Beasts for protection
-      player.forEachPokemon(PlayerType.BOTTOM_PLAYER, (cardList, card) => {
-        if (card.hasTag(CardTag.ULTRA_BEAST)) {
-          cardList.marker.addMarker(this.PREVENT_DAMAGE_MARKER, this);
-        }
-      });
-      opponent.marker.addMarker(this.CLEAR_PREVENT_DAMAGE_MARKER, this);
+      if (StateUtils.getOpponent(state, effect.player).getPrizeLeft() !== 3) throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
+      // The Supporter enters the Lost Zone. Protection must persist without it in play.
+      (effect.player as any).lusaminePrismProtectionTurn = state.turn + 1;
     }
-
-    // Prevent all damage to Ultra Beasts with marker (DealDamageEffect for active, PutDamageEffect for bench)
-    if (
-      effect instanceof DealDamageEffect &&
-      effect.target.marker.hasMarker(this.PREVENT_DAMAGE_MARKER, this)
-    ) {
-      const targetCard = effect.target.getPokemonCard();
-      if (targetCard && targetCard.hasTag(CardTag.ULTRA_BEAST)) {
-        effect.damage = 0;
-        return state;
-      }
-    }
-
-    if (
-      effect instanceof PutDamageEffect &&
-      effect.target.marker.hasMarker(this.PREVENT_DAMAGE_MARKER, this)
-    ) {
-      const targetCard = effect.target.getPokemonCard();
-      if (targetCard && targetCard.hasTag(CardTag.ULTRA_BEAST)) {
-        effect.preventDefault = true;
-        return state;
-      }
-    }
-
-    // Cleanup
-    if (
-      effect instanceof EndTurnEffect &&
-      effect.player.marker.hasMarker(this.CLEAR_PREVENT_DAMAGE_MARKER, this)
-    ) {
-      effect.player.marker.removeMarker(this.CLEAR_PREVENT_DAMAGE_MARKER, this);
-      const opponent = StateUtils.getOpponent(state, effect.player);
-      opponent.forEachPokemon(PlayerType.TOP_PLAYER, (cardList) => {
-        cardList.marker.removeMarker(this.PREVENT_DAMAGE_MARKER, this);
-      });
-    }
-
     return state;
   }
 }

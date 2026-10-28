@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State } from '../../../game';
@@ -51,7 +52,7 @@ export class Exeggutor extends PokemonCard {
       // Count total energy provided by all attached energy cards
       let energyCount = 0;
       checkProvidedEnergyEffect.energyMap.forEach(em => {
-        energyCount += em.provides.length;
+        energyCount += EnergyUnitUtils.getProvidesUnitCount(em.provides, em);
       });
 
       if (energyCount > 0) {

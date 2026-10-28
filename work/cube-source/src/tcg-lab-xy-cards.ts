@@ -13,11 +13,11 @@ export function installXyCard(card:any,record:any){
  card.reduceEffect=function(store:any,state:any,e:any){
   const card:any=this;
   const list=state.players.flatMap((p:any)=>[p.active,...p.bench]).find((l:any)=>l.cards.includes(card)||l.energies.cards.includes(card)),owner=list?StateUtils.findOwner(state,list):undefined;
-  if(record.xyEnergy){const tag=record.xyEnergy.team==='Aqua'?CardTag.TEAM_AQUA:CardTag.TEAM_MAGMA;
+  if(record.xyEnergy){if(!['ATTACH_ENERGY_EFFECT','AFTER_ENERGY_ATTACHED_EFFECT','CHECK_ENOUGH_ENERGY_EFFECT','CHECK_TABLE_STATE_EFFECT','END_TURN_EFFECT'].includes(e.type))return state;const tag=record.xyEnergy.team==='Aqua'?CardTag.TEAM_AQUA:CardTag.TEAM_MAGMA;
    if(e.type==='ATTACH_ENERGY_EFFECT'&&e.energyCard===card&&!e.target.getPokemonCard()?.tags.includes(tag))throw new GameError(GameMessage.CANNOT_PLAY_THIS_CARD);
    if(list&&e.type==='AFTER_ENERGY_ATTACHED_EFFECT'&&e.energyCard===card)card._xyAttachedTurn=state.turn;
    if(list&&!IS_SPECIAL_ENERGY_BLOCKED(store,state,owner,card,list)){
-    if(e.type==='CHECK_PROVIDED_ENERGY_EFFECT'&&e.source===list){const provides=list.getPokemonCard()?.tags.includes(tag)?card.provides:[],entry=e.energyMap.find((v:any)=>v.card===card);if(entry)entry.provides=provides;else e.energyMap.push({card,provides});}
+    if(e.type==='CHECK_ENOUGH_ENERGY_EFFECT'&&e.source===list){const provides=list.getPokemonCard()?.tags.includes(tag)?card.provides:[],entry=e.energyMap.find((v:any)=>v.card===card);if(entry)entry.provides=provides;else e.energyMap.push({card,provides});}
     if(e.type==='CHECK_TABLE_STATE_EFFECT'&&!list.getPokemonCard()?.tags.includes(tag)||e.type==='END_TURN_EFFECT'&&card._xyAttachedTurn===state.turn){const zone=list.cards.includes(card)?list:list.energies;MOVE_CARDS(store,state,zone,owner.discard,{cards:[card],sourceCard:card,sourceEffect:e});}
    }
   }

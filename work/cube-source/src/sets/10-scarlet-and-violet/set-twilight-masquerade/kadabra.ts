@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { CardType, Stage } from '../../../game/store/card/card-types';
 import { State, StateUtils, StoreLike } from '../../../game';
@@ -39,7 +40,7 @@ export class Kadabra extends PokemonCard {
       const opponentProvidedEnergy = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, opponentProvidedEnergy);
       const opponentEnergyCount = opponentProvidedEnergy.energyMap
-        .reduce((left, p) => left + p.provides.length, 0);
+        .reduce((left, p) => left + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0);
 
       effect.damage += opponentEnergyCount * 30;
     }

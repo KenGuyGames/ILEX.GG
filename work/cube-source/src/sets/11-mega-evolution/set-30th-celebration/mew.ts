@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType } from '../../../game/store/card/card-types';
 import { StoreLike, State, StateUtils } from '../../../game';
@@ -34,7 +35,7 @@ export class Mew extends PokemonCard {
       const opponent = StateUtils.getOpponent(state, effect.player);
       const checkProvidedEnergyEffect = new CheckProvidedEnergyEffect(opponent);
       store.reduceEffect(state, checkProvidedEnergyEffect);
-      const energyCount = checkProvidedEnergyEffect.energyMap.reduce((total, p) => total + p.provides.length, 0);
+      const energyCount = checkProvidedEnergyEffect.energyMap.reduce((total, p) => total + EnergyUnitUtils.getProvidesUnitCount(p.provides, p), 0);
       effect.damage += energyCount * 40;
     }
 

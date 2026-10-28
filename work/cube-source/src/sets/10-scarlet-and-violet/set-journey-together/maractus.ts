@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { CardType, GamePhase, PokemonCard, PowerType, Stage, State, StateUtils, StoreLike } from '../../../game';
 import { PutDamageEffect } from '../../../game/store/effects/attack-effects';
 import { CheckHpEffect } from '../../../game/store/effects/check-effects';
@@ -47,7 +48,7 @@ export class Maractus extends PokemonCard {
       const currentHp = checkHpEffect.hp - effect.target.damage;
 
       if (effect.damage >= currentHp) {
-        effect.source.damage += 60;
+        placePowerCounters(store, state, this, effect.source, 60);
       }
     }
     // Corner

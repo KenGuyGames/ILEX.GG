@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    "No exchange before actual signature",
+    "Existing party support works before exchange",
+    "Actual Mind Blast begins exchange",
+    "Existing boss remark opens exchange",
+    "Party support waits while exchange is read",
+    "Celebi replies to signature attack",
+    "Advancing dialogue dispatches no game action",
+    "Next reply first reveals an unfinished line without skipping",
+    "Collapsing and reopening preserves current reply",
+    "Table redraw does not advance conversation",
+    "Repeating signature leaves active exchange in place",
+    "Exchange layout fits 1440",
+    "Exchange layout fits 390",
+    "Original real battle restores exactly",
+    "Mid-conversation position survives reload/Undo",
+    "Exchange remains collapsible after reload",
+    "Resume returns to exact Celebi reply",
+    "Boss answers Celebi",
+    "Current companion joins exchange",
+    "Boss answers companion",
+    "Exchange ends cleanly",
+    "Finished exchange remains readable in history",
+    "Normal party support returns after exchange",
+    "Dialogue never awards campaign progress",
+    "Normal games have no exchange panel",
+    "No renderer errors: "
+  ],
+  "controlledEngineFixtures": true,
+  "realUserProfileModified": false
+}

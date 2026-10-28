@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import {
   ChoosePokemonPrompt,
   GameMessage,
@@ -71,7 +72,7 @@ export class RagingBolt extends PokemonCard {
           store.reduceEffect(state, checkProvidedEnergyEffect);
 
           const providedEnergy = checkProvidedEnergyEffect.energyMap.reduce(
-            (acc, curr) => acc + curr.provides.length,
+            (acc, curr) => acc + EnergyUnitUtils.getProvidesUnitCount(curr.provides, curr),
             0,
           );
           const damage = providedEnergy * 30;

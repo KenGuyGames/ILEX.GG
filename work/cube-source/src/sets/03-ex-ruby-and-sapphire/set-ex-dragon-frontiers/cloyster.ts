@@ -1,3 +1,4 @@
+import { StateUtils as EnergyUnitUtils } from '../../../game';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import { Stage, CardType, CardTag } from '../../../game/store/card/card-types';
 import { StoreLike } from '../../../game/store/store-like';
@@ -47,7 +48,7 @@ export class Cloyster extends PokemonCard {
       store.reduceEffect(state, checkProvidedEnergy);
 
       const damagePerEnergy = 10;
-      effect.damage += checkProvidedEnergy.energyMap.length * damagePerEnergy;
+      effect.damage += checkProvidedEnergy.energyMap.reduce((sum, entry) => sum + EnergyUnitUtils.getProvidesUnitCount(entry.provides, entry), 0) * damagePerEnergy;
     }
 
     if (effect instanceof PutDamageEffect || effect instanceof PutCountersEffect) {

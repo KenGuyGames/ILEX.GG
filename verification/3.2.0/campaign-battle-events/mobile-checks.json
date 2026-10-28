@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "Story starts with prior battle dialogue intact",
+    "Actual player key KnockOutEffect triggers authored reaction",
+    "Correct path Pokemon named",
+    "Actual opponent key KO triggers independent reaction",
+    "KO cues do not repeat during redraw",
+    "Original real battle restores exactly after fixture/reload",
+    "Both KO cues remain remembered on reload/Undo",
+    "New battle token resets prior event cues",
+    "Actual Slowking Mind Blast triggers boss signature",
+    "Slowking speaks its unique signature line",
+    "Boss signature once per battle",
+    "Battle event layout fits 1440",
+    "Battle event layout fits 390",
+    "Signature survives reloading old public board without replay",
+    "Event observer never awards story progress",
+    "No dialogue panel in normal games",
+    "No renderer errors: "
+  ],
+  "controlledEngineFixtures": true,
+  "realUserProfileModified": false
+}

@@ -1,0 +1,1182 @@
+{
+  "passed": true,
+  "families": 84,
+  "checks": [
+    {
+      "id": "sv04.5-006",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "sv04.5-006",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "ex1-7",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 10 damage times the total amount of Energy attached to Gardevoir and the Defending Pokemon."
+    },
+    {
+      "id": "ex1-7",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 10 damage times the total amount of Energy attached to Gardevoir and the Defending Pokemon."
+    },
+    {
+      "id": "swsh4-9",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4-9",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "ex11-12",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 10 damage times the total amount of Energy attached to Mewtwo and the Defending Pokemon."
+    },
+    {
+      "id": "ex11-12",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 10 damage times the total amount of Energy attached to Mewtwo and the Defending Pokemon."
+    },
+    {
+      "id": "sv08.5-012",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "sv08.5-012",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "xy10-13",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to all Pokemon in play."
+    },
+    {
+      "id": "xy10-13",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to all Pokemon in play."
+    },
+    {
+      "id": "tk-xy-w-14",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to this Pokemon."
+    },
+    {
+      "id": "tk-xy-w-14",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to this Pokemon."
+    },
+    {
+      "id": "ex16-16",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 10 damage times the amount of Energy attached to all of your Pokemon (including Magneton)."
+    },
+    {
+      "id": "ex16-16",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 10 damage times the amount of Energy attached to all of your Pokemon (including Magneton)."
+    },
+    {
+      "id": "swsh11-020",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh11-020",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4-20",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4-20",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy4-21",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy4-21",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4-21",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4-21",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh12.5-022",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh12.5-022",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "cel25-22",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "cel25-22",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "sv10.5w-022",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to this Pokemon."
+    },
+    {
+      "id": "sv10.5w-022",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to this Pokemon."
+    },
+    {
+      "id": "sv10.5w-023",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to this Pokemon."
+    },
+    {
+      "id": "sv10.5w-023",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to this Pokemon."
+    },
+    {
+      "id": "sv05-024",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv05-024",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh1-25",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "swsh1-25",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "swsh12-027",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "swsh12-027",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "swsh10-030",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "swsh10-030",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "sm4-31",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm4-31",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv07-032",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 40 damage for each Energy attached to this Pokemon."
+    },
+    {
+      "id": "sv07-032",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 40 damage for each Energy attached to this Pokemon."
+    },
+    {
+      "id": "xy3-34",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy3-34",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm3.5-39",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage times the amount of Energy attached to this Pokemon."
+    },
+    {
+      "id": "sm3.5-39",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage times the amount of Energy attached to this Pokemon."
+    },
+    {
+      "id": "swsh4.5-39",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 60 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4.5-39",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 60 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy2-43",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy2-43",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm6-45",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm6-45",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy12-51",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy12-51",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy5-51",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy5-51",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh9-051",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "swsh9-051",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "sv06-055",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv06-055",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh9-055",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh9-055",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4.5-56",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh4.5-56",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh12.5-058",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to all of your Pokemon."
+    },
+    {
+      "id": "swsh12.5-058",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to all of your Pokemon."
+    },
+    {
+      "id": "sm1-59",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 10 damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm1-59",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 10 damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm5-59",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm5-59",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm2-60",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to both Active Pokemon. This damage isn't affected by Weakness or Resistance."
+    },
+    {
+      "id": "sm2-60",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to both Active Pokemon. This damage isn't affected by Weakness or Resistance."
+    },
+    {
+      "id": "sm1-61",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm1-61",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv08-061",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv08-061",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy8-64",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to both Active Pokemon. This attack's damage isn't affected by Weakness."
+    },
+    {
+      "id": "xy8-64",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to both Active Pokemon. This attack's damage isn't affected by Weakness."
+    },
+    {
+      "id": "swsh12.5-064",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "swsh12.5-064",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "xy9-65",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy9-65",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh7-65",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 60 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "swsh7-65",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 60 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "sv01-065",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "sv01-065",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 damage for each Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "swsh9-066",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh9-066",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm7-67",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm7-67",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy7-68",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "xy7-68",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "swsh3-69",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "swsh3-69",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "swsh11-069",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh11-069",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm7-70",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm7-70",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh3-72",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh3-72",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh6-73",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh6-73",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh2-77",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh2-77",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy1-79",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "xy1-79",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "sv06-081",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv06-081",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv06-082",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv06-082",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh1-82",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh1-82",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh6-83",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh6-83",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy4-84",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "xy4-84",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv01-085",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sv01-085",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm8-89",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "sm8-89",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to all of your opponent's Pokemon."
+    },
+    {
+      "id": "sm3-93",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage times the amount of Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "sm3-93",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage times the amount of Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "sm5-94",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm5-94",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm8-98",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 60 damage times the amount of Energy attached to your opponent's Active Pokemon. (You can't use more than 1 GX attack in a game.)"
+    },
+    {
+      "id": "sm8-98",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 60 damage times the amount of Energy attached to your opponent's Active Pokemon. (You can't use more than 1 GX attack in a game.)"
+    },
+    {
+      "id": "swsh2-98",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh2-98",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh10-100",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to all of your Pokemon."
+    },
+    {
+      "id": "swsh10-100",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage for each Energy attached to all of your Pokemon."
+    },
+    {
+      "id": "sm11-106",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 damage times the amount of Energy attached to your opponent's Active Pokemon. (You can't use more than 1 GX attack in a game.)"
+    },
+    {
+      "id": "sm11-106",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 damage times the amount of Energy attached to your opponent's Active Pokemon. (You can't use more than 1 GX attack in a game.)"
+    },
+    {
+      "id": "sm1-110",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 damage times the amount of Energy attached to your opponent's Active Pokemon. (You can't use more than 1 GX attack in a game.)"
+    },
+    {
+      "id": "sm1-110",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 damage times the amount of Energy attached to your opponent's Active Pokemon. (You can't use more than 1 GX attack in a game.)"
+    },
+    {
+      "id": "swsh8-122",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh8-122",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh2-125",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh2-125",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm8-131",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm8-131",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 20 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh10-132",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh10-132",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh10-133",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh10-133",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 50 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm10-140",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to this Pokemon."
+    },
+    {
+      "id": "sm10-140",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to this Pokemon."
+    },
+    {
+      "id": "sm8-159",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "sm8-159",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage times the amount of Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh6-167",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh6-167",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "me02.5-172",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 80 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "me02.5-172",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 80 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh8-208",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh8-208",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swsh12.5gg-GG46",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 60 damage for each Energy attached to both Active Pokemon. (You can't use more than 1 VSTAR Power in a game.)"
+    },
+    {
+      "id": "swsh12.5gg-GG46",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 60 damage for each Energy attached to both Active Pokemon. (You can't use more than 1 VSTAR Power in a game.)"
+    },
+    {
+      "id": "g1-RC15",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "g1-RC15",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 10 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "np-40",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 10 damage times the amount of Energy attached to the Defending Pokemon."
+    },
+    {
+      "id": "np-40",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 10 damage times the amount of Energy attached to the Defending Pokemon."
+    },
+    {
+      "id": "pop5-16",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "Does 30 damage plus 10 more damage for each Energy attached to the Defending Pokemon."
+    },
+    {
+      "id": "pop5-16",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "Does 30 damage plus 10 more damage for each Energy attached to the Defending Pokemon."
+    },
+    {
+      "id": "swshp-SWSH266",
+      "index": 0,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "swshp-SWSH266",
+      "index": 0,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 more damage for each Energy attached to your opponent's Active Pokemon."
+    },
+    {
+      "id": "svp-004",
+      "index": 1,
+      "energy": "sm5-137",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to both Active Pokemon."
+    },
+    {
+      "id": "svp-004",
+      "index": 1,
+      "energy": "base1-96",
+      "passed": true,
+      "printed": "This attack does 30 damage for each Energy attached to both Active Pokemon."
+    }
+  ]
+}

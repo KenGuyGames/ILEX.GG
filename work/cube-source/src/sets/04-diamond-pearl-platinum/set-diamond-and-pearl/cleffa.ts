@@ -63,6 +63,7 @@ export class Cleffa extends PokemonCard {
         { min: 1, max: 1, allowCancel: true, blocked }
       ), selected => {
         selectedCards = selected || [];
+        if (!selectedCards.length) return state;
 
         const evolution = selectedCards[0] as PokemonCard;
 

@@ -1,3 +1,4 @@
+import { placePowerCounters } from '../../../tcg-lab-power-counters';
 import { PokemonCard } from '../../../game/store/card/pokemon-card';
 import {
   Stage,
@@ -145,7 +146,7 @@ export class Meowscaradaex extends PokemonCard {
               });
 
               targets.forEach((target) => {
-                target.damage += 30;
+                placePowerCounters(store, state, this, target, 30);
                 player.marker.addMarker(this.BOUQUET_MAGIC_MARKER, this);
               });
             },
