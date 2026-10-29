@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "checks": [
+    "A normal knockout preserves the GX allowance when both attacks take the same Prize",
+    "A redundant Starbirth is conserved when normal attack is ready",
+    "Starbirth is used when it supplies the missing Energy for a win",
+    "The Prize lead does not hide an immediate opposing final-Prize knockout",
+    "Prized final evolutions reduce the value of investing in their dead-end line",
+    "Every new decision is replanned instead of reusing an optimistic chain"
+  ],
+  "failures": [],
+  "loaded": [
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-engine.js",
+      "sha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-data.js",
+      "sha256": "309aab671142c032677488829465dde4c3b3381f724adfc887a4fa4ba94681e8"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-engine.js",
+      "sha256": "e99f41761955a8b6496461466530340fe18b135ae12f99846e12dd3c594b2cd2"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\ken-guy-engine.js",
+      "sha256": "e90d187882eff98ce520f040f730a8287beac2397d164356ee733ea44ef9ea5a"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-match.js",
+      "sha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\bot-ai.js",
+      "sha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "passed": true,
+  "count": 21,
+  "results": [
+    {
+      "passed": true,
+      "label": "unlimited",
+      "profile": "unlimited",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2528.2124000000003,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "mega",
+      "profile": "mega",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2537.3557,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "sv",
+      "profile": "sv",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2527.815499999997,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "swsh",
+      "profile": "swsh",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2536.4861999999994,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "wotc",
+      "profile": "wotc",
+      "decisions": 9,
+      "commands": 30,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2440.4291999999987,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "wotc2002",
+      "profile": "wotc2002",
+      "decisions": 9,
+      "commands": 30,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2396.924700000003,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "modern",
+      "profile": "modern",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2529.815499999997,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "sm",
+      "profile": "sm",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2566.0994000000064,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "xy",
+      "profile": "xy",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2514.2584999999963,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "expanded",
+      "profile": "expanded",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2580.00529999999,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "bw",
+      "profile": "bw",
+      "decisions": 9,
+      "commands": 31,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2378.021399999998,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "dp",
+      "profile": "dp",
+      "decisions": 9,
+      "commands": 31,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2431.95729999998,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "hgss",
+      "profile": "hgss",
+      "decisions": 9,
+      "commands": 30,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2859.6959999999963,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "dppl",
+      "profile": "dppl",
+      "decisions": 9,
+      "commands": 30,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2844.002299999993,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "exlate",
+      "profile": "exlate",
+      "decisions": 9,
+      "commands": 29,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2646.1300000000047,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "ex",
+      "profile": "ex",
+      "decisions": 9,
+      "commands": 29,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2594.665800000017,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "New Rule modern",
+      "profile": "modern",
+      "decisions": 10,
+      "commands": 37,
+      "turns": 5,
+      "winner": 1,
+      "maxDecisionMs": 2951.614499999996,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "New Rule Unlimited",
+      "profile": "unlimited",
+      "decisions": 15,
+      "commands": 44,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 5204.391400000022,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "Ken Guy modern",
+      "profile": "modern",
+      "decisions": 11,
+      "commands": 39,
+      "turns": 7,
+      "winner": 0,
+      "maxDecisionMs": 2318.231599999999,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "Cube 40",
+      "profile": "modern",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 1764.0286000000197,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "label": "Cube 60",
+      "profile": "unlimited",
+      "decisions": 10,
+      "commands": 32,
+      "turns": 5,
+      "winner": 0,
+      "maxDecisionMs": 2480.024399999995,
+      "replay": true
+    }
+  ],
+  "loaded": [
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-engine.js",
+      "sha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-data.js",
+      "sha256": "309aab671142c032677488829465dde4c3b3381f724adfc887a4fa4ba94681e8"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-engine.js",
+      "sha256": "e99f41761955a8b6496461466530340fe18b135ae12f99846e12dd3c594b2cd2"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\ken-guy-engine.js",
+      "sha256": "e90d187882eff98ce520f040f730a8287beac2397d164356ee733ea44ef9ea5a"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-match.js",
+      "sha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\bot-ai.js",
+      "sha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113"
+    }
+  ],
+  "limits": "Single-attacker readiness fixtures with a legal deterministic opening shuffle; targeted backup tests and bundled tournament-deck format cases cover wider boards; separate tournament-deck format and tactical cases cover strategic choices. Not a tournament-strength certification."
+}

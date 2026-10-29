@@ -1,0 +1,554 @@
+{
+  "passed": true,
+  "count": 37,
+  "results": [
+    {
+      "passed": true,
+      "format": "1999 (Base - Fossil)",
+      "profile": "wotc",
+      "deck": "Alakazam",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Hitmonchan",
+        "Electabuzz",
+        "Scyther"
+      ],
+      "action": "play",
+      "decisionMs": 9613.6305,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2000 (Base-Gym)",
+      "profile": "wotc",
+      "deck": "Aerodactyl",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Chansey",
+        "Rocket's Zapdos"
+      ],
+      "action": "play",
+      "decisionMs": 8402.2069,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2001 (Base - Neo)",
+      "profile": "wotc",
+      "deck": "Dark Crobat",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Sneasel",
+        "Dark Crobat",
+        "Cleffa"
+      ],
+      "action": "play",
+      "decisionMs": 10461.0154,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2002 (Rocket - LC)",
+      "profile": "wotc2002",
+      "deck": "Call Back",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Crobat"
+      ],
+      "action": "play",
+      "decisionMs": 4450.8838,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2003 (EX-SK)",
+      "profile": "wotc2002",
+      "deck": "Alakazam",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Alakazam"
+      ],
+      "action": "play",
+      "decisionMs": 5417.366500000004,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2004 Worlds (EX-HL)",
+      "profile": "ex",
+      "deck": "Blaziken",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Blaziken",
+        "Blaziken ex",
+        "Bellossom"
+      ],
+      "action": "play",
+      "decisionMs": 4821.377099999998,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2005 Worlds (RS-E)",
+      "profile": "ex",
+      "deck": "Delcatty Electrode",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Delcatty",
+        "Dunsparce",
+        "Electrode ex"
+      ],
+      "action": "play",
+      "decisionMs": 7060.7768,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2006 Worlds (HL-HP)",
+      "profile": "ex",
+      "deck": "Dragtrode",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Dark Dragonite",
+        "Rocket's Sneasel ex",
+        "Dark Electrode"
+      ],
+      "action": "play",
+      "decisionMs": 11005.515899999999,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2007 Worlds (DX-DP)",
+      "profile": "dp",
+      "deck": "Absolutions",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Jolteon ex",
+        "Absol ex",
+        "Rayquaza ex"
+      ],
+      "action": "play",
+      "decisionMs": 3942.220000000001,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2008 Worlds (HP-MD)",
+      "profile": "dp",
+      "deck": "Blissey Control",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Blissey",
+        "Chatot"
+      ],
+      "action": "play",
+      "decisionMs": 3850.70199999999,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2009 (DP-AR)",
+      "profile": "dp",
+      "deck": "AMU",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Mesprit"
+      ],
+      "action": "play",
+      "decisionMs": 3521.583700000003,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2010 (HS Block)",
+      "profile": "dp",
+      "deck": "DonChamp",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Machamp",
+        "Donphan"
+      ],
+      "action": "play",
+      "decisionMs": 4038.0676999999996,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2010 Worlds (DP-UL)",
+      "profile": "dp",
+      "deck": "Gardevoir",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Gardevoir",
+        "Machamp",
+        "Gallade"
+      ],
+      "action": "play",
+      "decisionMs": 2095.967199999999,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2011 (HGSS-NVI)",
+      "profile": "bw",
+      "deck": "6 Corners",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Reshiram",
+        "Zekrom",
+        "Terrakion"
+      ],
+      "action": "play",
+      "decisionMs": 6988.089300000007,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2011 (MD-BLW)",
+      "profile": "bw",
+      "deck": "Arceus",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Arceus"
+      ],
+      "action": "play",
+      "decisionMs": 9826.008099999992,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2012 Worlds (HGSS-DEX)",
+      "profile": "bw",
+      "deck": "Chandygor",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Darkrai-EX",
+        "Accelgor",
+        "Terrakion"
+      ],
+      "action": "play",
+      "decisionMs": 4654.9375,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2013 (BLW-DRX)",
+      "profile": "bw",
+      "deck": "Darkrai Garbodor",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Darkrai-EX"
+      ],
+      "action": "play",
+      "decisionMs": 5029.2255000000005,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2013 Worlds (BLW-PLF)",
+      "profile": "bw",
+      "deck": "Big Basics",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Landorus-EX",
+        "Cobalion-EX",
+        "Cobalion"
+      ],
+      "action": "play",
+      "decisionMs": 7415.670799999993,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2014 Worlds (NXD-FLF)",
+      "profile": "xy",
+      "deck": "Empoleon",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Miltank",
+        "Empoleon",
+        "Dusknoir"
+      ],
+      "action": "play",
+      "decisionMs": 4212.370299999995,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2015 (BCR-ROS Pre Trump Card Ban)",
+      "profile": "xy",
+      "deck": "Archiestoise",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Seismitoad-EX"
+      ],
+      "action": "play",
+      "decisionMs": 7681.824000000008,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2016 Worlds (XY-STS)",
+      "profile": "xy",
+      "deck": "Darktina",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Yveltal",
+        "Giratina-EX",
+        "Darkrai-EX"
+      ],
+      "action": "play",
+      "decisionMs": 7685.941599999991,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2017 (PRC-EVO)",
+      "profile": "xy",
+      "deck": "Gyarados",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Gyarados"
+      ],
+      "action": "play",
+      "decisionMs": 11422.734999999986,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2017 (PRC-GRI)",
+      "profile": "sm",
+      "deck": "Decidueye Ninetales",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Decidueye-GX",
+        "Alolan Ninetales-GX",
+        "Tapu Koko"
+      ],
+      "action": "play",
+      "decisionMs": 6160.436900000001,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2017 Worlds (PRC-BUS)",
+      "profile": "sm",
+      "deck": "Bulu Gang",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Tapu Bulu-GX",
+        "Vikavolt"
+      ],
+      "action": "play",
+      "decisionMs": 6090.895500000013,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2018 (SUM-LOT)",
+      "profile": "sm",
+      "deck": "Air Buds",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Lycanroc-GX"
+      ],
+      "action": "play",
+      "decisionMs": 5671.12519999998,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2018 Worlds (BKT-CST)",
+      "profile": "sm",
+      "deck": "BuzzCargo",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Buzzwole-GX"
+      ],
+      "action": "play",
+      "decisionMs": 4206.621199999994,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2019 NAIC (SM-UNB)",
+      "profile": "sm",
+      "deck": "Granbull",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Granbull"
+      ],
+      "action": "play",
+      "decisionMs": 5468.816999999981,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2019 Worlds (UPR-UNM)",
+      "profile": "sm",
+      "deck": "Baby Blowns",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Blacephalon",
+        "Pheromosa"
+      ],
+      "action": "play",
+      "decisionMs": 5880.436699999991,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2020 \"Worlds\"  (UPR-DAA)",
+      "profile": "modern",
+      "deck": "ADP Zacian",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Zacian V"
+      ],
+      "action": "play",
+      "decisionMs": 9702.11930000002,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2021 \"Worlds\" (SSH-EVS)",
+      "profile": "modern",
+      "deck": "Dragapult VMax",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Dragapult VMAX",
+        "Inteleon"
+      ],
+      "action": "play",
+      "decisionMs": 4824.9216000000015,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2022 (SSH-SIT)",
+      "profile": "modern",
+      "deck": "Arc Dura",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Duraludon VMAX",
+        "Arceus VSTAR"
+      ],
+      "action": "play",
+      "decisionMs": 6152.244699999981,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2023 Worlds (BST-PAL)",
+      "profile": "modern",
+      "deck": "Arc Dura",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Duraludon VMAX",
+        "Arceus VSTAR",
+        "Umbreon VMAX"
+      ],
+      "action": "play",
+      "decisionMs": 5194.853799999983,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2024 Worlds (BRS-SFA)",
+      "profile": "modern",
+      "deck": "Ancient Box",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Roaring Moon",
+        "Great Tusk",
+        "Koraidon"
+      ],
+      "action": "play",
+      "decisionMs": 7482.0783999999985,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2025 Worlds (SVI-BLK/WHT)",
+      "profile": "modern",
+      "deck": "Charizard ex",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Charizard ex",
+        "Pidgeot ex"
+      ],
+      "action": "play",
+      "decisionMs": 2287.267200000002,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2026 (SVI-ASC)",
+      "profile": "modern",
+      "deck": "Charizard ex",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Charizard ex",
+        "Terapagos ex",
+        "Pidgeot ex"
+      ],
+      "action": "play",
+      "decisionMs": 3344.024599999975,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2026 (TEF-DER)",
+      "profile": "modern",
+      "deck": "Constructed legal Iron Thorns readiness fixture",
+      "fixtureNote": "Bundled lists reference unmapped jpM6 printings; this test uses mapped Iron Thorns from the permitted set and allowed Basic Lightning Energy.",
+      "mainAttackers": [
+        "Iron Thorns ex"
+      ],
+      "action": "play",
+      "decisionMs": 1747.782199999987,
+      "replay": true
+    },
+    {
+      "passed": true,
+      "format": "2026 Worlds (TEF-PBL)",
+      "profile": "modern",
+      "deck": "Alakazam",
+      "fixtureNote": null,
+      "mainAttackers": [
+        "Dudunsparce",
+        "Genesect"
+      ],
+      "action": "play",
+      "decisionMs": 4627.787299999996,
+      "replay": true
+    }
+  ],
+  "loaded": [
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-engine.js",
+      "sha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-data.js",
+      "sha256": "309aab671142c032677488829465dde4c3b3381f724adfc887a4fa4ba94681e8"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-engine.js",
+      "sha256": "e99f41761955a8b6496461466530340fe18b135ae12f99846e12dd3c594b2cd2"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\ken-guy-engine.js",
+      "sha256": "e90d187882eff98ce520f040f730a8287beac2397d164356ee733ea44ef9ea5a"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-match.js",
+      "sha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\bot-ai.js",
+      "sha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113"
+    }
+  ]
+}

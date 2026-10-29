@@ -115,6 +115,7 @@ var RulesMatch=(()=>{
     for(let i=0;i<2;i++){
       const ids=Object.entries(spec.decks[i].cards).flatMap(([id,n])=>{if(!Number.isInteger(n)||n<1||n>200)throw Error('Invalid deck quantity');return Array(n).fill(id)});
       const names=ids.map(namesFor);
+      if(spec.opponent?.difficulty==='realistic'&&spec.opponent.botPlayer===i+1){store.state.botKnowledge??={};store.state.botKnowledge[i+1]={declared:names.reduce((out,n)=>(out[n]=(out[n]||0)+1,out),{}),prized:{},lastSearch:null};}
       if(spec.cubeRules&&spec.format?.markerRules?.draftId&&!spec.decks[i].cubePool)throw Error('Choose a deck owned by a seat in this draft');
       if(spec.cubeRules&&spec.decks[i].cubePool)for(const [id,n]of Object.entries(spec.decks[i].cards)){const c=prototypes.get(namesFor(id));if(c?.superType===R.SuperType.ENERGY&&c.energyType===R.EnergyType.BASIC)continue;if(n>(spec.decks[i].cubePool[id]||0))throw Error(id+': exceeds this seat’s drafted pool');}
 
@@ -178,6 +179,15 @@ var RulesMatch=(()=>{
     }
     return false;
   }
+  function observeBotSearch(m,q){
+    const s=m.store.state,k=s.botKnowledge?.[q.playerId],p=s.players.find(p=>p.id===q.playerId);if(!k||q.type!=='Choose cards'||q.cards!==p.deck)return null;
+    // Only a full deck-search interface is knowledge. Top-card windows and blind choices are not.
+    const origin=[...m.journal].reverse().find(a=>a.type!=='prompt'),source=origin?.type==='play'?p.supporter.cards.find(c=>c._labId)||p.hand.cards[origin.index]:[p.active,...p.bench].flatMap(l=>l.cards).find(c=>c.powers?.some(a=>a.name===origin?.name));
+    const text=source?.text||source?.powers?.find(a=>a.name===origin?.name)?.text||'';if((q.options.blocked||[]).some(i=>p.deck.cards[i]&&R.matchesPromptFilter(p.deck.cards[i],q.filter)))return null;
+    if(q.options.isBlindGuess||/look at (?:the )?top|top \d+ cards/i.test(text))return null;
+    const known=new Map(),seen=new Set();for(const l of [p.deck,p.hand,p.discard,p.lostzone,p.stadium,p.supporter,p.active,...p.bench,...p.prizes.filter(l=>l.isPublic||l.faceUpPrize)])for(const c of [...l.cards,...(l.tools||[])])if(!seen.has(c.id)){seen.add(c.id);known.set(c.fullName,(known.get(c.fullName)||0)+1);}
+    return {prized:Object.fromEntries(Object.entries(k.declared).map(([n,count])=>[n,Math.max(0,count-(known.get(n)||0))])),at:m.journal.length};
+  }
   function apply(m,a){
     const ken=m.store.state.kenGuy,previous=ken?.inFlight?JSON.parse(JSON.stringify(ken.inFlight)):null,random=m.randomState;
     try{return applyInternal(m,a);}catch(error){if(ken&&IlexKenGuy.correctedInteractions(m.store.state)){m.store.state.kenGuy.inFlight=previous;m.randomState=random;}throw error;}
@@ -224,9 +234,11 @@ var RulesMatch=(()=>{
 
       else throw Error('Unknown game action.');
     }
-    const originalRandom=Math.random;
+    const originalRandom=Math.random,botPrompt=action instanceof R.ResolvePromptAction?pending(m).find(p=>p.id===a.id):null,observation=botPrompt?observeBotSearch(m,botPrompt):null,botHandBefore=botPrompt?.type==='Choose prize'?new Set(s.players.find(p=>p.id===botPrompt.playerId).hand.cards.map(c=>c.id)):null;
     Math.random=()=>{m.randomState=(m.randomState+0x6D2B79F5)>>>0;let t=m.randomState;t=Math.imul(t^(t>>>15),t|1);t^=t+Math.imul(t^(t>>>7),t|61);return ((t^(t>>>14))>>>0)/4294967296;};
     try{if(a.type==='new-rule')IlexNewRules.activate(m,a);else if(a.type==='ken-gx')IlexKenGuy.interrupt(m,a.player);else m.store.dispatch(action);if(s.kenGuy)IlexKenGuy.afterAction(m,a,kenToken);}finally{Math.random=originalRandom}
+    if(observation){const k=m.store.state.botKnowledge[botPrompt.playerId];k.prized=observation.prized;k.lastSearch=observation.at;}
+    if(botPrompt?.type==='Choose prize'&&!botPrompt.options.useOpponentPrizes){const p=m.store.state.players.find(p=>p.id===botPrompt.playerId),k=m.store.state.botKnowledge?.[p.id];if(k)for(const c of p.hand.cards)if(k.prized[c.fullName]&&!botHandBefore.has(c.id))k.prized[c.fullName]=Math.max(0,k.prized[c.fullName]-1);}
     m.journal.push(JSON.parse(JSON.stringify(a)));return m;
   }
   function handEnergyAction(player,index){

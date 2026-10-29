@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": [
+    "Deck blueprint identifies Charizard and both evolution pieces",
+    "Final-Prize attack is secured without spending draw, flips or an unused GX",
+    "Strong hand evolves before discarding it for Research",
+    "An unnecessary draw Pokémon is kept off a strong Bench",
+    "Ultra Ball retains the only Basic and its evolution",
+    "Search prioritizes a playable evolution over a redundant Basic",
+    "Energy is sequenced after ordinary draw but can precede hand discard",
+    "Crushing Hammer precedes committing the turn attachment",
+    "Flip the Script is sequenced before Recon Directive",
+    "A ready attacker feeds its next attacker rather than stockpiling Energy",
+    "Gust takes the final Prizes instead of hitting an unreachable Active",
+    "Risk policy follows the Prize race without knowing the opponent hand",
+    "Using the turn GX to deny a final-Prize attack does not require normal GX allowance"
+  ],
+  "failures": [],
+  "timingsMs": [
+    51.0920000000001,
+    2958.1496,
+    6088.0455,
+    2897.8665999999994,
+    2320.6247000000003
+  ],
+  "maxDecisionMs": 6088.0455,
+  "loaded": [
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-engine.js",
+      "sha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-data.js",
+      "sha256": "309aab671142c032677488829465dde4c3b3381f724adfc887a4fa4ba94681e8"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\new-rule-engine.js",
+      "sha256": "e99f41761955a8b6496461466530340fe18b135ae12f99846e12dd3c594b2cd2"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\ken-guy-engine.js",
+      "sha256": "e90d187882eff98ce520f040f730a8287beac2397d164356ee733ea44ef9ea5a"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\rules-match.js",
+      "sha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\work\\v2-candidate\\ui\\bot-ai.js",
+      "sha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113"
+    }
+  ]
+}

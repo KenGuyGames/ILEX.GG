@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "3.3.0",
+  "electron": "44.9.3",
+  "sourceBuild": "current Realistic Player Windows snapshot; Android unchanged, republished as3.3.0",
+  "unchangedGameFilesVerified": 35693,
+  "productChanges": [
+    "package.json version3.3.0",
+    "EXE product/file version3.3.0",
+    "README/start guide"
+  ],
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "zipCrc": "pass",
+  "sha256": "af6b4c7be996d0324502e5a9086a7b4f5db423176b856f117b1b862533254237",
+  "bytes": 721218128
+}

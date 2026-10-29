@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "date": "2026-10-28",
+  "feature": "Realistic Player strategic planning",
+  "strategyVersion": 3,
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "botSha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113",
+  "adapterSha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014",
+  "checks": {
+    "behavior": 13,
+    "resource": 6,
+    "historical": 2,
+    "archetype": 2,
+    "knowledge": 7,
+    "formats": 37,
+    "matches": 21,
+    "legacy": 37,
+    "controls": 3,
+    "worker-fixture": 2,
+    "native": 10,
+    "restart": 3
+  },
+  "formatPresets": 37,
+  "completeReadinessMatches": 21,
+  "ruleProfiles": [
+    "bw",
+    "dp",
+    "dppl",
+    "ex",
+    "exlate",
+    "expanded",
+    "hgss",
+    "mega",
+    "modern",
+    "sm",
+    "sv",
+    "swsh",
+    "unlimited",
+    "wotc",
+    "wotc2002",
+    "xy"
+  ],
+  "formatFixtureLimits": [
+    {
+      "format": "2026 (TEF-DER)",
+      "note": "Bundled lists reference unmapped jpM6 printings; this test uses mapped Iron Thorns from the permitted set and allowed Basic Lightning Energy."
+    }
+  ],
+  "nativeWorkerMs": 2222.7000000178814,
+  "allReadHashesVerified": true,
+  "otherDifficultiesUnchanged": true,
+  "rulesEngineUnchanged": true,
+  "androidChanged": false,
+  "new3dsChanged": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "tournamentStrengthCertified": false,
+  "limits": "Finite tactical and format coverage; complete readiness games use a single attacker and deterministic legal opening shuffle. The bundled TEF-DER lists reference unmapped jpM6 cards, so that format uses a legal mapped Iron Thorns fixture. Not exhaustive card-pair or tournament-strength certification.",
+  "archives": [
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows.zip",
+      "sha256": "1f59090df8bd5579aec94f9713437834a545e5904be872ce096c9c02d4a6b5dc",
+      "unrelatedEntriesPreserved": true
+    },
+    {
+      "file": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-11\\b\\outputs\\ILEX.GG-Windows-Offline.zip",
+      "sha256": "a43c866add4615b663fa6b6e76bdcebc03994a873eeb57cb521480cc9c60b626",
+      "unrelatedEntriesPreserved": true
+    }
+  ]
+}

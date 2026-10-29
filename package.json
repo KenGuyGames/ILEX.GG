@@ -1,6 +1,6 @@
 {
   "name": "ilex-gg-workspace",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": true,
   "scripts": {
     "start": "electron work/desktop",
@@ -31,7 +31,8 @@
     "test:ken-guy": "node work/new-rule-audit/ken-check.cjs",
     "test:removal": "node work/new-rule-audit/pocket-removal.cjs",
     "test:energy": "node work/desktop-build/special-energy-tests.cjs && node work/desktop-build/special-energy-interaction-tests.cjs && node work/desktop-build/special-energy-edge-tests.cjs && node work/desktop-build/energy-unit-tests.cjs",
-    "test:effects": "node work/desktop-build/power-trainer-effects-tests.cjs && node work/desktop-build/printing-effects-tests.cjs && node work/desktop-build/power-types-and-tools-tests.cjs"
+    "test:effects": "node work/desktop-build/power-trainer-effects-tests.cjs && node work/desktop-build/printing-effects-tests.cjs && node work/desktop-build/power-types-and-tools-tests.cjs",
+    "test:strategy": "node work/desktop-build/realistic-strategy-tests.cjs"
   },
   "devDependencies": {
     "electron": "44.9.3"

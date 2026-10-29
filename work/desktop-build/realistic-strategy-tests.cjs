@@ -1,0 +1,1 @@
+const cp=require('child_process'),path=require('path'),root=path.resolve(__dirname,'../..');for(const file of ['behavior.cjs','resources.cjs','knowledge.cjs','historical.cjs','archetype.cjs','controls.cjs'])cp.execFileSync(process.execPath,[path.join(root,'work/realistic-strategy',file)],{cwd:root,stdio:'inherit',windowsHide:true});
