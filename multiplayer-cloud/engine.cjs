@@ -14,7 +14,7 @@ function loadEngine(root){
    const c='events=s.events;if(s.match)match=restore(s.match);',d='events=s.events;if(s.match)match=restore(s.match);if(options.serviceSnapshots&&s.serverState){connected=s.serverState.connected;undo=s.serverState.undo;seen=s.serverState.seen.map(x=>new Map(x));}';
    if(!source.includes(a)||!source.includes(c))throw Error('Private match snapshot adapter needs review.');source=source.replace(a,b).replace(c,d);
   }
-  vm.runInContext(source,context,{filename:f,timeout:60000});source=null;global.gc?.();
+  vm.runInContext(source,context,{filename:f,timeout:f==='rules-engine.js'?240000:60000});source=null;global.gc?.();
  }}
  parseData.clear();global.gc?.();const get=s=>vm.runInContext(s,context),M=get('RulesMatch'),P=get('PrivateMatch'),collection=get('LimitlessCollection');
  const metadata=Object.assign(JSON.parse(fs.readFileSync(path.join(root,'card-details.json'))),collection.metadata);

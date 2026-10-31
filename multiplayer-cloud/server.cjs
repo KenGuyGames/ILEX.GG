@@ -8,7 +8,7 @@ async function createServer({store:providedStore,databaseUrl,publicOrigin,public
  const localIP=ip=>['127.0.0.1','::1','::ffff:127.0.0.1'].includes(ip);
  const headers={'Content-Type':'application/json','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer'};
  const server=http.createServer(async(req,res)=>{
-  const send=(status,value)=>{res.writeHead(status,headers);res.end(JSON.stringify(value));};
+  const send=(status,value)=>{const body=JSON.stringify(value);if(body.length>2048&&/gzip/.test(req.headers['accept-encoding']||'')){res.writeHead(status,{...headers,'Content-Encoding':'gzip',Vary:req.headers.origin?'Origin, Accept-Encoding':'Accept-Encoding'});res.end(zlib.gzipSync(body,{level:4}));}else{res.writeHead(status,headers);res.end(body);}};
   try{
    const ip=req.socket.remoteAddress,origin=req.headers.origin;const hosted=!!publicOrigin;const expected=hosted?new URL(publicOrigin):null;if(hosted&&req.headers.host!==expected.host)return send(403,{error:'Unrecognized host.'});if(hosted&&req.headers['x-forwarded-proto']!=='https')return send(403,{error:'HTTPS required.'});
    const host=req.headers.host||'';const localHost=/^(localhost|127\.0\.0\.1|\[::1\])(:\d+)?$/.test(host);
