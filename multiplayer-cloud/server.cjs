@@ -1,8 +1,8 @@
 'use strict';
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path'),{Store}=require('./pg-store.cjs'),{Service}=require('./service.cjs'),{loadEngine,FILES}=require('./engine.cjs');
-const crypto=require('node:crypto');
+const crypto=require('node:crypto'),zlib=require('node:zlib');
 async function createServer({store:providedStore,databaseUrl,publicOrigin,publicOrigins=[],dataDir,engineRoot,gameRoot,scansRoot,clientRoot=path.join(__dirname,'client'),clock,maxRooms,allowRemoteHttp=false,origins=[],requestLimit=300}){
- const store=providedStore||await Store.open(databaseUrl||process.env.DATABASE_URL),engine=loadEngine(engineRoot),service=new Service(store,engine,{clock,maxRooms});let queue=Promise.resolve();const serial=fn=>{const p=queue.then(fn);queue=p.catch(()=>{});return p;};await store.claim();await store.transaction(async()=>{await store.assertOwner();await service.initialize();});
+ console.log('Startup: connecting to PostgreSQL.');const store=providedStore||await Store.open(databaseUrl||process.env.DATABASE_URL);console.log('Startup: loading game engine.');const engine=loadEngine(engineRoot),service=new Service(store,engine,{clock,maxRooms});let queue=Promise.resolve();const serial=fn=>{const p=queue.then(fn);queue=p.catch(()=>{});return p;};console.log('Startup: claiming deployment and recovering rooms.');await store.claim();await store.transaction(async()=>{await store.assertOwner();await service.initialize();});
  const rates=new Map();let authInFlight=0;
  const manifests=FILES.map(name=>({name,sha256:crypto.createHash('sha256').update(fs.readFileSync(path.join(engineRoot,name))).digest('hex')}));
  const localIP=ip=>['127.0.0.1','::1','::ffff:127.0.0.1'].includes(ip);
@@ -45,10 +45,10 @@ async function createServer({store:providedStore,databaseUrl,publicOrigin,public
     // Reject symlinks escaping the asset root.
     const relative=path.relative(fs.realpathSync(assetRoot),fs.realpathSync(file));if(relative.startsWith('..')||path.isAbsolute(relative))return send(404,{error:'Not found.'});
     if(name==='index.html'){
-     let html=fs.readFileSync(file,'utf8');html=html.replace('</body>','<link rel="stylesheet" href="multiplayer.css"><script src="multiplayer.js"></script></body>');
+     let html=fs.readFileSync(file,'utf8');html=html.replace('</body>','<script>window.ILEX_HOSTED_BROWSER=true;</script><link rel="stylesheet" href="multiplayer.css"><script src="multiplayer.js"></script></body>');
      res.writeHead(200,{'Content-Type':mime,'Cache-Control':'no-store','Content-Security-Policy':"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https: data: blob:; connect-src 'self' https://api.tcgdex.net; media-src 'self' blob:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"});return res.end(html);
     }
-    res.writeHead(200,{'Content-Type':mime,'X-Content-Type-Options':'nosniff'});return fs.createReadStream(file).pipe(res);
+    const gz=path.join(__dirname,'web-gzip',name+'.gz');if(!name.includes('/')&&/gzip/.test(req.headers['accept-encoding']||'')&&fs.existsSync(gz)){res.writeHead(200,{'Content-Type':mime,'Content-Encoding':'gzip','Vary':'Accept-Encoding','X-Content-Type-Options':'nosniff'});return fs.createReadStream(gz).pipe(res);}res.writeHead(200,{'Content-Type':mime,'X-Content-Type-Options':'nosniff'});return fs.createReadStream(file).pipe(res);
    }
    send(404,{error:'Not found.'});
   }catch(e){if(!res.headersSent)send(e.status||400,{error:e.status?e.message:'Request could not be completed. Refresh and try again.'});else res.end();}
@@ -59,7 +59,7 @@ async function createServer({store:providedStore,databaseUrl,publicOrigin,public
  return {server,service,store,engine};
 }
 if(require.main===module){(async()=>{const root=__dirname,port=Number(process.env.PORT||8787),host=process.env.RENDER?'0.0.0.0':process.env.HOST||'127.0.0.1';
- const app=await createServer({databaseUrl:process.env.DATABASE_URL,publicOrigin:process.env.RENDER_EXTERNAL_URL,origins:(process.env.ILEX_ORIGINS||'http://127.0.0.1:8788,http://localhost:8788').split(','),engineRoot:path.resolve(process.env.ILEX_ENGINE||path.join(root,'engine')),maxRooms:Number(process.env.ILEX_MAX_ROOMS||6),requestLimit:3000});
+ const app=await createServer({databaseUrl:process.env.DATABASE_URL,gameRoot:path.resolve(root,'../work/desktop/ui'),publicOrigin:process.env.RENDER_EXTERNAL_URL,origins:(process.env.ILEX_ORIGINS||'http://127.0.0.1:8788,http://localhost:8788').split(','),engineRoot:path.resolve(process.env.ILEX_ENGINE||path.join(root,'engine')),maxRooms:Number(process.env.ILEX_MAX_ROOMS||6),requestLimit:3000});
  app.server.listen(port,host,()=>console.log('ILEX.GG cloud multiplayer 0.2.0 · PostgreSQL · ranked disabled'));for(const sig of ['SIGINT','SIGTERM'])process.on(sig,()=>app.server.close(()=>process.exit(0)));
-})().catch(()=>{console.error('Server startup failed. Check database connectivity and deployment configuration.');process.exitCode=1;});}
+})().catch(e=>{console.error('Server startup failed: '+String(e.code||e.name||'UNKNOWN').replace(/[^A-Z_a-z0-9]/g,'').slice(0,60));process.exitCode=1;});}
 module.exports={createServer};
