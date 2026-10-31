@@ -10,8 +10,8 @@ Render configuration:
   Branch: multiplayer-cloud
   Root directory: multiplayer-cloud
   Runtime: Node.js 24
-  Build: npm ci --omit=dev
-  Start: node --max-old-space-size=320 server.cjs
+  Build: npm ci --omit=dev && node optimize-engine.cjs && node build-assets.cjs
+  Start: node --expose-gc --max-old-space-size=320 server.cjs
   Compute: Free ($0/month)
   Region: Ohio (matching the Neon project's region)
   Secret environment: DATABASE_URL = Neon PostgreSQL connection string
@@ -33,8 +33,10 @@ POST /api/register, /api/login, /api/recover: account lifecycle
 GET /api/state: authenticated player-specific lobby and match state
 POST /api/command: authenticated commands with durable request IDs
 
-The local multiplayer preview is the game client. Configure its server address
-to this service's HTTPS onrender.com URL. Do not enter a database URL there.
+The browser game is served at /game/ with compressed scripts and the original
+public game assets. Card artwork loads directly from its public image sources.
+Players can also use the separate local online preview pointed to this service's
+HTTPS onrender.com URL. Never enter a database URL in a game client.
 The installed Windows app and Android APK do not yet contain this hosted client.
 
 Ranked disabled; custom cards/Cube, clocks/series, spectators, and chat deferred.
@@ -46,3 +48,9 @@ Tests run against embedded PostgreSQL (PGlite) with actual ILEX.GG engine files,
 not a mock SQL implementation. Live Neon/Render acceptance is still required
 after provisioning. Do not claim Internet or external-PC acceptance from local
 tests alone.
+
+The initial Free beta is limited to two rooms. Cold startup on the free CPU
+can take several minutes. Static card literals are generated as separate JSON
+files at build time to keep initialization within the 512 MB limit. All
+34,737 registered card entries have matching printed fields and class names
+in the compact and original builds; no card data is removed.
