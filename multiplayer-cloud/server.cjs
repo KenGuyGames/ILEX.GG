@@ -59,7 +59,7 @@ async function createServer({store:providedStore,databaseUrl,publicOrigin,public
  return {server,service,store,engine};
 }
 if(require.main===module){(async()=>{const root=__dirname,port=Number(process.env.PORT||8787),host=process.env.RENDER?'0.0.0.0':process.env.HOST||'127.0.0.1';
- const app=await createServer({databaseUrl:process.env.DATABASE_URL,publicOrigin:process.env.RENDER_EXTERNAL_URL,engineRoot:path.resolve(process.env.ILEX_ENGINE||path.join(root,'engine')),maxRooms:Number(process.env.ILEX_MAX_ROOMS||6),requestLimit:3000});
+ const app=await createServer({databaseUrl:process.env.DATABASE_URL,publicOrigin:process.env.RENDER_EXTERNAL_URL,origins:(process.env.ILEX_ORIGINS||'http://127.0.0.1:8788,http://localhost:8788').split(','),engineRoot:path.resolve(process.env.ILEX_ENGINE||path.join(root,'engine')),maxRooms:Number(process.env.ILEX_MAX_ROOMS||6),requestLimit:3000});
  app.server.listen(port,host,()=>console.log('ILEX.GG cloud multiplayer 0.2.0 · PostgreSQL · ranked disabled'));for(const sig of ['SIGINT','SIGTERM'])process.on(sig,()=>app.server.close(()=>process.exit(0)));
 })().catch(()=>{console.error('Server startup failed. Check database connectivity and deployment configuration.');process.exitCode=1;});}
 module.exports={createServer};
