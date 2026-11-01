@@ -2,7 +2,20 @@
 
 Pokémon TCG simulator for **Windows and Android**, with rules automation, deck building, local/bot play, packs, Cube Drafting, Campaign and two new alternate play modes.
 
-## New in 3.3.0: Improved Realistic Player bot
+## New in 3.4.0: Windows Multiplayer
+
+**Public lobbies and friends are now inside the Windows app.** Open
+**Arena → Multiplayer**, sign in, add friends by username, and create or join
+a room. Existing browser multiplayer accounts use the same service.
+
+Free casual beta: two simultaneous rooms, with several-minute wake-up delays
+possible. Ranked is disabled; online custom cards/Cube and Android integration
+are not included. Sign-in lasts until app exit. Offline saves and the improved
+Realistic Player are retained. See [MULTIPLAYER.md](MULTIPLAYER.md).
+
+[Download Windows 3.4.0](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.4.0-build-2026-10-31/ILEX.GG-Windows.zip).
+
+## Retained from 3.3.0: Improved Realistic Player bot
 
 **The Windows Realistic Player now plans around its deck and the current board.** Choose **Realistic Player** as the bot difficulty in Play.
 
@@ -14,11 +27,9 @@ Pokémon TCG simulator for **Windows and Android**, with rules automation, deck 
 
 Easy, Normal and Hard retain their existing policies. This is deterministic, bounded local planning, **not a trained tournament player or a demonstrated win-rate improvement**. The reported 37 format-preset cases and 21 complete controlled readiness games are finite checks, not tournament certification. One TEF-DER preset uses a legal mapped Iron Thorns fixture because its bundled lists reference unmapped jpM6 printings. See [REALISTIC-PLAYER.md](REALISTIC-PLAYER.md) and `verification/3.3.0/`.
 
-### Multiplayer is the next development step
-
-**Multiplayer is the next priority in development.** The current Windows multiplayer remains experimental/beta; this release improves local Realistic Player planning and does not announce completed online play. External two-PC/different-NAT and full strategic-match acceptance remain pending. There is no TURN fallback or public matchmaking.
-
-**Windows update:** 3.3.0 includes the new bot. **Android remains the unchanged 3.2.0-android.121 build** and does not include these latest Windows bot changes. 3DS development remains in progress; Pocket remains removed. Expanded Campaign dialogue, saves, New Rule, Ken Guy Rules, Cube Drafting, eras, music and image caching are retained.
+Windows 3.4.0 adds hosted multiplayer and retains these bot improvements.
+Android remains the unchanged 3.2.0-android.121 build. Campaign dialogue,
+New Rule, Ken Guy Rules, Cube Drafting, eras, music and image caching remain.
 
 ## Campaign retained from 3.2.0: A deeper Campaign
 
@@ -159,7 +170,7 @@ Learn the opening-turn rules and mechanics before entering an era.
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.3.0-build-2026-10-28/ILEX.GG-Windows.zip) | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.4.0-build-2026-10-31/ILEX.GG-Windows.zip) | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
 | Android (unchanged 3.2.0) | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.2.0-build-2026-10-28/ILEX.GG-Android.apk) | Android 8+ and current WebView; **3.2.0-android.121 / code121** |
 
 Windows includes Electron 44.9.3; the EXE is unsigned. Keep the extracted folder together. Android is signed with the original certificate: install over your existing APK to retain workspace/cache; do not uninstall first. Physical Android acceptance remains pending. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace; there is no automatic cloud sync. Rules, music and included artwork work offline; uncached paper card scans download as viewed with size/hash checks.

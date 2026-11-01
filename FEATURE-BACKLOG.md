@@ -1,5 +1,7 @@
 # ILEX.GG feature backlog
 
+Windows hosted multiplayer added in 3.4.0: Arena > Multiplayer has public lobbies, mutual friends, private invitations and server-owned match tables. Free two-room casual beta; ranked, Android integration and external two-PC acceptance remain pending. See MULTIPLAYER.md.
+
 Requested by Kenneth on October 12, 2026. These are planned features, to implement when Kenneth is ready. Add subsequent feature ideas to this same list; retain existing items and record their status. This list does not authorize beginning implementation now.
 
 - [x] **Odds checker:** Implemented October 19, 2026 in source and local loose Windows app. Deck builder button opens exact hypergeometric opening-hand and unconditional Prize probabilities, at-least-one summaries and exact-copy tables. Uses actual deck size; supports same-name printing grouping and editable hand/Prize counts with format Prize defaults. Clearly labels pre-mulligan/setup assumptions. 56,635 mathematical checks pass. Native UI rendering/interaction acceptance remains unverified because Electron/browser launch failed in the task environment. Android APK and full Windows archives not rebuilt.

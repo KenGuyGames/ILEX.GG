@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "version": "3.4.0",
+  "date": "2026-10-31",
+  "hosted": {
+    "checks": [
+      "Exact hosted origin allowed by desktop CSP",
+      "Arena menu exposes Multiplayer",
+      "Official server is fixed and hidden",
+      "Two native accounts resume authenticated HTTPS sessions",
+      "All nine actual native rules files match the live server manifest",
+      "Durable mutual friend list renders in native Windows",
+      "Public room created and joined through native lobby UI",
+      "Both native players enter the authoritative match table",
+      "Opponent hand remains hidden in the native client",
+      "Opponent hand remains hidden in the native client",
+      "Server-owned action propagates to both native tables",
+      "Local card artwork loads in the hosted native table",
+      "Hosted friends and rooms leave offline state unchanged",
+      "Disposable match closed and free room slot released",
+      "Native reload resumes sign-in and durable friend list",
+      "No CSP, CORS or uncaught renderer errors"
+    ],
+    "sourceHashes": {
+      "index.html": "8858eedf11d568bf743537b5235c21438398d87602876d14649a8c56828d4759",
+      "multiplayer.js": "c917ddc3a2167a3db241b756098b7320f3279049dd68450371c715d6c78b3d90",
+      "multiplayer.css": "5e8f674449850f9b1a0bac798d0a16816ae1c054eb12d0d4b9049c321a8121c9",
+      "private-online.js": "ff1d690eb78a97d5dc157dbc372ae7399448e91fbf7433df415b695942150a09",
+      "menu-groups.js": "cd45cafe625a7e31b735788d0b31644236c15deb714d8997be5f244330acaf32",
+      "rules-engine.js": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+      "rules-match.js": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014",
+      "bot-ai.js": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113"
+    }
+  },
+  "directPrivate": {
+    "passed": true,
+    "checks": [
+      "Private menu and host controls render",
+      "Host generates a complete Internet-mode invite with free STUN",
+      "Guest produces the response code",
+      "Both Windows renderers authenticate over a real ordered WebRTC data channel",
+      "Both players finish setup with private choice interfaces",
+      "Guest wire view conceals host hand and both Prize identities",
+      "Guest receives no private journal or random state",
+      "Opponent hand DOM contains card backs only",
+      "Dragging a hand Energy commits exactly once through the host engine",
+      "Enlarged Pok\u00c3\u00a9mon has transparent printed-action regions",
+      "Guest/host action advances the shared turn",
+      "Requester sees withdrawal, never self-approval",
+      "Only opponent sees approval and denial",
+      "Pending Undo freezes gameplay",
+      "Denied Undo leaves both boards unchanged",
+      "Approved Undo restores exact hands, deck counts and board across peers",
+      "Disconnect pauses authoritative gameplay",
+      "Fresh invite reconnects to the exact same match",
+      "Saved host recovery replays exact state and reopens the guest seat",
+      "Both peers agree on completed match and winner",
+      "Real data channel survives a complete deck-exhaustion endurance match",
+      "No renderer errors in private-match flow"
+    ],
+    "actualRTCConnectionVerified": true
+  },
+  "limits": {
+    "roomCap": 2,
+    "ranked": false,
+    "separatePhysicalPCsTested": false,
+    "signIn": "until app exits"
+  },
+  "offlineEngineAndBotUnchanged": true
+}
