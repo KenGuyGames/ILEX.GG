@@ -1,3 +1,4 @@
+require('./sync-windows.cjs');
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),esbuild=require('esbuild'),crypto=require('node:crypto');
 const root=__dirname,source=process.env.ILEX_SOURCE_ENGINE||path.resolve(root,'../work/desktop/ui/rules-engine.js'),destination=path.join(root,'engine'),folder=path.join(destination,'static-data');fs.mkdirSync(folder,{recursive:true});

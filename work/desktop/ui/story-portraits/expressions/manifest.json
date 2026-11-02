@@ -1,0 +1,293 @@
+{
+  "source": "Built-in image_gen edits of existing human cast. Pokemon artwork unchanged.",
+  "files": [
+    {
+      "file": "original-1-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "original-1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "6bf9b2d2079dd54010e81f2ff40d4115421824e04730f14f279640ca9b40c7d7",
+      "transparentPixels": 588848,
+      "silhouetteOverlap": 0.946
+    },
+    {
+      "file": "original-1-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "original-1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "315b01e806ea6af68be4ce40eded9d0e0ccbdb2295407c5c85a78019d902a507",
+      "transparentPixels": 521373,
+      "silhouetteOverlap": 0.867
+    },
+    {
+      "file": "original-1-concerned.png",
+      "mood": "concerned",
+      "sourceAtlas": "original-1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "1ebc56136ea2ec4ba08c5d5abbf6c95e728a48bb70c06951d9ef54194f8dd0b7",
+      "transparentPixels": 514181,
+      "silhouetteOverlap": 0.884
+    },
+    {
+      "file": "original-2-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "original-2.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "d874fd3fb308ff6ae7cd659baf0040165524f4caa47202b0a39906a95790f36d",
+      "transparentPixels": 609432,
+      "silhouetteOverlap": 0.951
+    },
+    {
+      "file": "original-2-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "original-2.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "a9fd906476c3eea4a99a020fad39f2d860fb34bbe4b3d491a64a35d3404ddfb2",
+      "transparentPixels": 620858,
+      "silhouetteOverlap": 0.964
+    },
+    {
+      "file": "original-2-concerned.png",
+      "mood": "concerned",
+      "sourceAtlas": "original-2.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "2a2edd0546b27738addc3b104f85ca29bdb0a3cd02db6a4eae40dcf3c0d0e667",
+      "transparentPixels": 633031,
+      "silhouetteOverlap": 0.974
+    },
+    {
+      "file": "original-3-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "original-3.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "fc74d3be1db9c4a56e91519571304390950d901345e81a693dcced93d89e6294",
+      "transparentPixels": 626192,
+      "silhouetteOverlap": 0.965
+    },
+    {
+      "file": "original-3-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "original-3.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "b10a0e0254c06a09227e326e5d73037acc32868fee3d01f95640c4147ed1ebaf",
+      "transparentPixels": 596664,
+      "silhouetteOverlap": 0.937
+    },
+    {
+      "file": "original-3-concerned.png",
+      "mood": "concerned",
+      "sourceAtlas": "original-3.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "b80eda908ec3b35df7533d2d0533e4e72b238e1debb9262576dc526fab520a52",
+      "transparentPixels": 603706,
+      "silhouetteOverlap": 0.925
+    },
+    {
+      "file": "original-4-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "original-4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "ee45442127bd36d173289be242284b6abcca4d5b78b7666426862be0d8d3c7ab",
+      "transparentPixels": 485164,
+      "silhouetteOverlap": 0.942
+    },
+    {
+      "file": "original-4-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "original-4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "778d9cd6106f11b86081c50d856277a8e95f4ed734b95ec506f02bf046ab7901",
+      "transparentPixels": 459816,
+      "silhouetteOverlap": 0.81
+    },
+    {
+      "file": "original-4-concerned.png",
+      "mood": "concerned",
+      "sourceAtlas": "original-4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "324023c6cc15cd84f1ea7605f10b6ed98a7b54545f4506766c4f075e2be36308",
+      "transparentPixels": 523419,
+      "silhouetteOverlap": 0.973
+    },
+    {
+      "file": "support-1-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "support-1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "1fe6596dac87b61833452e64cce9caaa2e5f627999a4998d76606070c930d1e1",
+      "transparentPixels": 611891,
+      "silhouetteOverlap": 0.979
+    },
+    {
+      "file": "support-1-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "support-1.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "2b66f54982eee6abd60ba69bfefe2dbd77f7a3c5ef77635cb4f47b598ba755f2",
+      "transparentPixels": 588560,
+      "silhouetteOverlap": 0.942
+    },
+    {
+      "file": "support-2-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "support-2.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "2b488e74fac26a6fb66a3e2a9ac220573270f055a2c860793a920e5a483f6bf8",
+      "transparentPixels": 542502,
+      "silhouetteOverlap": 0.974
+    },
+    {
+      "file": "support-2-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "support-2.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "fc4cd0163d7bb24a05018e5f09b82f16c3afe0f4d800315af871ea4c04cb2b65",
+      "transparentPixels": 403974,
+      "silhouetteOverlap": 0.95
+    },
+    {
+      "file": "support-3-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "support-3.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "f04e41e27566be982be35c3be933488c6d89a43ac2b03b253a1e43dad00857ad",
+      "transparentPixels": 518042,
+      "silhouetteOverlap": 0.965
+    },
+    {
+      "file": "support-3-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "support-3.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "850b64bf3a8b7cfcd3540edbc7847d1fd68da8748327c45e306eec5c6f8ab6dd",
+      "transparentPixels": 524830,
+      "silhouetteOverlap": 0.969
+    },
+    {
+      "file": "support-4-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "support-4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "dcc2725a5f2e0e09757069823f03feca747d7a66c0ac3e7837ba30b23e88d030",
+      "transparentPixels": 532652,
+      "silhouetteOverlap": 0.971
+    },
+    {
+      "file": "support-4-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "support-4.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "482e26d6b8261dfe81a06affc78a9df1943def7f77749778b63f1cffed1cd6de",
+      "transparentPixels": 525615,
+      "silhouetteOverlap": 0.961
+    },
+    {
+      "file": "support-5-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "support-5.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "ff19c0d0f33ab4f405d9611474ad3371ddb9ec761a383d2837f6201062a470ef",
+      "transparentPixels": 599652,
+      "silhouetteOverlap": 0.974
+    },
+    {
+      "file": "support-5-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "support-5.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "cca2b377e8e1503ee356c20ae239818ce4adafd5bf5aa07d9473e8579b315007",
+      "transparentPixels": 603805,
+      "silhouetteOverlap": 0.968
+    },
+    {
+      "file": "support-6-angry.png",
+      "mood": "angry",
+      "sourceAtlas": "support-6.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "ea547b31f4428360c3d6f5095741722f615186440ecda11e896946d010363e3a",
+      "transparentPixels": 637066,
+      "silhouetteOverlap": 0.958
+    },
+    {
+      "file": "support-6-proud.png",
+      "mood": "proud",
+      "sourceAtlas": "support-6.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "sha256": "cd0fe7782d3b820b9c3f995eb15689f2d14565f4474bff7970eb69b60c2b4e56",
+      "transparentPixels": 627552,
+      "silhouetteOverlap": 0.966
+    }
+  ]
+}

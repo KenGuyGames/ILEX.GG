@@ -65,7 +65,7 @@ var StoryMode=(()=>{
  function migrateDialogue(){const old=progress();if(old.version!==2||(old.contentRevision||1)>=C.dialogueRevision)return;
   const next=structuredClone(old),lines=sceneFor(next);
   if(!Number.isInteger(next.line)||next.line<0)throw Error('The saved dialogue position is invalid. Your save has been kept.');
-  if(lines.length){const anchor=old.dialogueId||C.sceneAnchorsByRevision?.[old.contentRevision||1]?.[sceneKey(old)]?.[old.line]||C.legacySceneIds[sceneKey(old)]?.[old.line],index=lines.findIndex(x=>x.id===anchor);if(!anchor||index<0)throw Error('The saved dialogue could not be matched. Your save has been kept.');next.line=index;}
+  if(lines.length){const anchor=old.dialogueId||C.sceneAnchorsByRevision?.[old.contentRevision||1]?.[sceneKey(old)]?.[old.line]||C.legacySceneIds[sceneKey(old)]?.[old.line],index=lines.findIndex(x=>x.id===(C.dialogueRedirects?.[anchor]||anchor));if(!anchor||index<0)throw Error('The saved dialogue could not be matched. Your save has been kept.');next.line=index;}
   else if(!['choice','complete'].includes(next.phase))throw Error('The saved dialogue scene is invalid. Your save has been kept.');
   store(next);
  }
@@ -113,6 +113,7 @@ var StoryMode=(()=>{
    if(p.phase==='outro')area=chapterIndex===12?3:chapterIndex===0?0:Math.min(1,worlds[chapterIndex].length-1);
    if(chapterIndex===12&&(p.cleared||cue.startsWith('finale.ordinary-morning.')||cue==='finale.outro.original-007'))area=4;
   }
+  const authoredArea=!battle&&!p?.battle&&p?sceneFor(p)[p.line]?.locationArea:undefined;if(Number.isInteger(authoredArea)&&authoredArea>=0&&authoredArea<worlds[chapterIndex].length)area=authoredArea;
   const offset=worlds.slice(0,chapterIndex).reduce((n,x)=>n+x.length,0),index=offset+area;
   return {chapter:chapterIndex,area,index,name:worlds[chapterIndex][area],atlas:Math.floor(index/6)+1,panel:index%6};
  }
@@ -251,34 +252,7 @@ var StoryMode=(()=>{
   }
   return before!==JSON.stringify(e);
  }
- function advanceBossExchange(){
-  if(!inBattle()||tab!=='play'||!talkCache?.exchanges?.queue.length)return;
-  if(talkReveal&&talkReveal.index<talkReveal.total){revealBattleTalk();return;}
-  const m=mission(),e=talkCache.exchanges,item=e.queue[0],exchange=m.signatureExchanges?.[item.cue];if(!exchange)return;
-  item.line++;
-  if(item.line>=exchange.lines.length){e.completed.push(item.cue);e.queue.shift();}
-  stopBattleTalk();rememberBattleTalk();drawBattleTalk();
- }
- function drawExchangeHistory(t,m){
-  const e=t.exchanges;if(!e?.completed.length)return;
-  document.getElementById('story-battle-remark')?.insertAdjacentHTML('beforeend',`<details class="battle-story-history story-exchange-history"><summary>Earlier boss exchanges</summary>${e.completed.map(cue=>{const x=m.signatureExchanges[cue];return `<h4>${esc(x.attack)}</h4>${x.lines.map(line=>`<p><strong>${esc(line.speaker)}:</strong> ${esc(line.text)}</p>`).join('')}`}).join('')}</details>`);
- }
- function drawBossExchange(t,m){
-  const e=t.exchanges,item=e?.queue[0],exchange=m.signatureExchanges?.[item?.cue],line=exchange?.lines[item?.line];if(!line)return;
-  stopPartyTalk();const key=t.token+'/'+line.id,words=line.text.match(/\S+\s*/gu)||[];
-  if(talkReveal?.key!==key){stopBattleTalk();talkReveal={key,index:0,total:words.length,speaker:line.speaker};}
-  if(readingPreferences().speed==='instant'||matchMedia('(prefers-reduced-motion: reduce)').matches||t.collapsed)talkReveal.index=words.length;
-  document.getElementById('story-battle-remark')?.remove();document.getElementById('story-battle-banner')?.insertAdjacentHTML('afterend',`<details id="story-battle-remark" class="story-battle-remark" ${t.collapsed?'':'open'}><summary>${esc(exchange.attack)} · Battle exchange</summary><div class="story-exchange-progress">${esc(line.speaker)} · ${item.line+1} / ${exchange.lines.length}</div><div class="battle-story-stage">${characterPortrait(line.speaker,m.opponent)}<div><p class="battle-story-line" aria-label="${esc(line.text)}">${words.map((word,i)=>`<span class="battle-story-word ${i<talkReveal.index?'revealed':''}" aria-hidden="true">${esc(word)}</span>`).join('')}</p><div class="story-exchange-controls"><button type="button" onclick="StoryMode.advanceBossExchange()">${item.line+1<exchange.lines.length?'Next reply':e.queue.length>1?'Next exchange':'Finish exchange'}</button><small>Tap words to reveal. The match keeps playing.</small></div></div></div></details>`);
-  const box=document.getElementById('story-battle-remark');if(!box)return;box.querySelector('.battle-story-line').onclick=revealBattleTalk;box.ontoggle=()=>{if(box.open===!talkCache.collapsed)return;collapseBattleTalk(!box.open);drawBattleTalk();};drawExchangeHistory(t,m);
-  if(talkTimer||talkReveal.index>=words.length||t.collapsed)return;
-  const step=()=>{talkTimer=null;if(!inBattle()||tab!=='play'||document.hidden||talkReveal?.key!==key)return;
-   const node=document.querySelectorAll('#story-battle-remark .battle-story-word')[talkReveal.index];if(!node)return;
-   node.classList.add('revealed');if(readingPreferences().sounds)IlexAudio.storyWord(line.speaker,talkReveal.index,node.textContent);talkReveal.index++;
-   if(talkReveal.index<words.length){const pace=readingPreferences().speed==='fast'?.55:1;talkTimer=setTimeout(step,(85+Math.min(node.textContent.length,12)*10+(/[.!?…]/u.test(node.textContent)?160:0))*pace);}
-  };talkTimer=setTimeout(step,30);
- }
-
-
+ function advanceBossExchange(){dismissBattleCinematic();}
  // Only public Prize counts and already-confirmed event names enter this tracker.
  function planPartyEvents(party,view,publicEvents){
   const events=[];if(!view.ready&&!view.done)return events;
@@ -307,25 +281,111 @@ var StoryMode=(()=>{
   return before!==JSON.stringify(party);
  }
 
- let partyTimer=null,partyReveal=null;
- function stopPartyTalk(){clearTimeout(partyTimer);partyTimer=null;partyReveal=null;}
- function revealPartyTalk(){if(!partyReveal)return;clearTimeout(partyTimer);partyTimer=null;partyReveal.index=partyReveal.total;document.querySelectorAll('#story-party-reaction .party-story-word').forEach(n=>n.classList.add('revealed'));IlexAudio.stopStoryWords();}
- function drawPartyTalk(t,m){
-  const party=t.party,line=m.partyDialogue?.[party?.current];if(!line)return;
-  const key=t.token+'/'+line.id,words=line.text.match(/\S+\s*/gu)||[];
-  if(partyReveal?.key!==key){stopPartyTalk();partyReveal={key,index:0,total:words.length};}
-  if(readingPreferences().speed==='instant'||matchMedia('(prefers-reduced-motion: reduce)').matches||t.collapsed)partyReveal.index=words.length;
-  document.getElementById('story-battle-remark')?.insertAdjacentHTML('beforeend',`<section id="story-party-reaction" class="story-party-reaction" aria-label="Party reaction"><div class="party-speaker">${esc(line.speaker)} · At your side</div><div class="battle-story-stage">${characterPortrait(line.speaker)}<div><p class="party-story-line" aria-label="${esc(line.text)}">${words.map((word,i)=>`<span class="party-story-word ${i<partyReveal.index?'revealed':''}" aria-hidden="true">${esc(word)}</span>`).join('')}</p>${party.seen.length>1?`<details class="battle-story-history"><summary>Earlier party reactions</summary>${party.seen.filter(e=>e!==party.current).map(e=>`<p><strong>${esc(m.partyDialogue[e].speaker)}:</strong> ${esc(m.partyDialogue[e].text)}</p>`).join('')}</details>`:''}</div></div></section>`);
-  const box=document.getElementById('story-party-reaction');if(!box)return;box.querySelector('.party-story-line').onclick=revealPartyTalk;
-  if(partyTimer||partyReveal.index>=words.length||t.collapsed)return;
-  const step=()=>{partyTimer=null;if(!inBattle()||tab!=='play'||document.hidden||partyReveal?.key!==key)return;
-   // Let the opponent finish speaking before starting the party's word sounds.
-   if(talkTimer||(talkReveal&&talkReveal.index<talkReveal.total)){partyTimer=setTimeout(step,150);return;}
-   const node=document.querySelectorAll('#story-party-reaction .party-story-word')[partyReveal.index];if(!node)return;
-   node.classList.add('revealed');if(readingPreferences().sounds)IlexAudio.storyWord(line.speaker,partyReveal.index,node.textContent);partyReveal.index++;
-   if(partyReveal.index<words.length){const pace=readingPreferences().speed==='fast'?.55:1;partyTimer=setTimeout(step,(85+Math.min(node.textContent.length,12)*10+(/[.!?…]/u.test(node.textContent)?160:0))*pace);}
-  };partyTimer=setTimeout(step,80);
+ const cinematicExpressionFiles={"original-1.png":{"angry":"original-1-angry.png","proud":"original-1-proud.png","concerned":"original-1-concerned.png"},"original-2.png":{"angry":"original-2-angry.png","proud":"original-2-proud.png","concerned":"original-2-concerned.png"},"original-3.png":{"angry":"original-3-angry.png","proud":"original-3-proud.png","concerned":"original-3-concerned.png"},"original-4.png":{"angry":"original-4-angry.png","proud":"original-4-proud.png","concerned":"original-4-concerned.png"},"support-1.png":{"angry":"support-1-angry.png","proud":"support-1-proud.png"},"support-2.png":{"angry":"support-2-angry.png","proud":"support-2-proud.png"},"support-3.png":{"angry":"support-3-angry.png","proud":"support-3-proud.png"},"support-4.png":{"angry":"support-4-angry.png","proud":"support-4-proud.png"},"support-5.png":{"angry":"support-5-angry.png","proud":"support-5-proud.png"},"support-6.png":{"angry":"support-6-angry.png","proud":"support-6-proud.png"}};
+ // Presentation only: a bounded queue of public story cues, never game actions.
+ let cinematicTimer=null,cinematicPaintKey='';
+ const cinematicFriends=new Set(['Rowan','Mara','Bram','Nessa','Mira','Tess','Ada','Edda','Oren','Sela','Ivo','Maren','Dr. Sen','Neri','Sera','Tarin','Lio','Rhea','Dalen','Anwen','Elian','Bren','Toma','Vale','Jun']);
+ function cinematicLine(m,id){return Object.values(m.battleDialogue||{}).find(l=>l.id===id)||Object.values(m.partyDialogue||{}).find(l=>l.id===id)||Object.values(m.signatureExchanges||{}).flatMap(e=>e.lines).find(l=>l.id===id);}
+ function cinematicEmotion(line,cue,role){
+  const key=characterKey(line.speaker,mission()?.opponent),friendly=cinematicFriends.has(key)||(key==='Surveyor Venn'&&progress().chapter>=4),text=line.text.toLowerCase();
+  if(role==='party')return /Comeback|Victory/.test(cue)?'proud':'concerned';
+  if(role==='exchange'){
+   if(/afraid|fright|hurt|lost|trembl|lose you|loss|too late|alone|cannot remember|do not know/.test(text))return 'concerned';
+   if(/refuse|cruel|shame|not.*yours|never|angry|how dare/.test(text))return 'angry';
+   if(friendly&&['Fracture Warden','Commander Saturn','Slowking','Lysandre','Maxie','Zoroark','Arceus, Dialga & Palkia'].includes(mission()?.opponent))return 'angry';
+   return friendly?'neutral':'proud';
+  }
+  if(cue==='playerKeyKO'||cue==='opponentOne'||cue==='defeat')return friendly&&cue==='playerKeyKO'?'concerned':'proud';
+  if(cue==='opponentKeyKO'||cue==='playerOne'||cue==='victory')return friendly?(cue==='victory'?'proud':'concerned'):'angry';
+  return /^signature/.test(cue)?'proud':'neutral';
  }
+ function queueBattleCinematics(t,m,events,priorSeen,priorParty){
+  const before=JSON.stringify(t.cinematic),baseline=priorSeen.map(c=>m.battleDialogue[c]?.id).concat(priorParty.map(c=>m.partyDialogue?.[c]?.id)).filter(Boolean);
+  const c=t.cinematic||={version:1,seen:baseline,queue:[],active:null,history:[],sequence:0};
+  const additions=[];
+  const add=(line,role,cue,group,priority,force=false)=>{
+   if(!line)return;const known=c.seen.includes(line.id);if(known&&!force)return;
+   if(!known)c.seen.push(line.id);
+   const frame={id:line.id,role,cue,group,priority,emotion:cinematicEmotion(line,cue,role),sequence:c.sequence++,queuedAt:Date.now()};
+   if(!c.history.some(f=>f.id===frame.id))c.history.push(frame);
+   if(!c.queue.some(f=>f.id===frame.id)&&c.active?.id!==frame.id)additions.push(frame);
+  };
+  for(const item of t.exchanges?.queue||[]){
+   const exchange=m.signatureExchanges?.[item.cue];if(!exchange)continue;
+   exchange.lines.slice(item.line).forEach(l=>add(l,'exchange',item.cue,'exchange:'+item.cue,3,true));
+   if(!t.exchanges.completed.includes(item.cue))t.exchanges.completed.push(item.cue);
+  }
+  if(t.exchanges)t.exchanges.queue=[];
+  for(const cue of events)if(!priorSeen.includes(cue)&&!m.signatureExchanges?.[cue])add(m.battleDialogue[cue],'opponent',cue,'event:'+cue,/victory|defeat/.test(cue)?5:/KO|chronos|signature/.test(cue)?3:/One/.test(cue)?2:0);
+  const party=t.party,newParty=(party?.seen||[]).filter(cue=>!priorParty.includes(cue));
+  for(const cue of newParty){const line=m.partyDialogue?.[cue];if(!line)continue;
+   if(cue===party.current)add(line,'party',cue,'party:'+cue,/Victory|Defeat/.test(cue)?5:/Comeback|Danger/.test(cue)?3:2);
+   else if(!c.history.some(f=>f.id===line.id))c.history.push({id:line.id,role:'party',cue,emotion:cinematicEmotion(line,cue,'party')});
+  }
+  const urgent=additions.filter(f=>f.priority>=3);
+  if(urgent.length&&c.active){
+   const strongest=Math.max(...urgent.map(f=>f.priority)),newGroups=new Set(urgent.map(f=>f.group));
+   if(strongest>=c.active.priority&&!newGroups.has(c.active.group)){
+    c.queue=c.queue.filter(f=>f.priority>=strongest&&f.group!==c.active.group);
+    c.active.until=Math.min(c.active.until,Math.max(c.active.start+2200,Date.now()+650));
+   }
+  }
+  if(additions.some(f=>f.priority===5))c.queue=c.queue.filter(f=>f.priority===5);
+  c.queue.push(...additions);c.queue.sort((a,b)=>b.priority-a.priority||a.sequence-b.sequence);c.queue=c.queue.slice(0,12);
+  return before!==JSON.stringify(c);
+ }
+ function stopBattleCinematic(){clearTimeout(cinematicTimer);cinematicTimer=null;document.getElementById('story-battle-cinematic')?.remove();cinematicPaintKey='';IlexAudio.stopStoryWords();}
+ function battleCinematicState(){return talkCache?.cinematic?structuredClone(talkCache.cinematic):null;}
+ function dismissBattleCinematic(){if(!talkCache?.cinematic)return;talkCache.cinematic.active=null;talkCache.cinematic.queue=[];stopBattleCinematic();rememberBattleTalk();drawBattleTalk();}
+ function cinematicPortrait(line,frame,m){
+  const speaker=line.speaker==='Narrator'?m.opponent:line.speaker,key=characterKey(speaker,m.opponent),asset=characterArt.portraits[key];
+  let art=characterPortrait(speaker,m.opponent);const mood=frame.emotion,expression=asset&&cinematicExpressionFiles[asset.file]?.[mood];
+  if(expression)art=art.replace('story-portraits/'+asset.file,'story-portraits/expressions/'+expression);
+  return art.replace('data-character=',`data-expression="${expression?mood:'neutral'}" data-character=`);
+ }
+ function startCinematicFrame(c,m){
+  if(c.active&&Date.now()>=c.active.until)c.active=null;
+  if(c.active)return false;
+  let frame;while(c.queue.length){const candidate=c.queue.shift();if(Date.now()-candidate.queuedAt<45000&&cinematicLine(m,candidate.id)){frame=candidate;break;}}
+  if(!frame)return false;
+  const line=cinematicLine(m,frame.id),words=line.text.match(/\S+\s*/gu)||[],pace=readingPreferences().speed==='fast'?32:58;
+  const revealMs=readingPreferences().speed==='instant'||matchMedia('(prefers-reduced-motion: reduce)').matches?0:Math.min(3400,words.length*pace);
+  c.active={...frame,start:Date.now(),until:Date.now()+Math.min(9000,Math.max(3200,revealMs+Math.max(1800,words.length*130))),revealMs,shownWords:0};return true;
+ }
+ function drawCinematicFrame(t,m){
+  clearTimeout(cinematicTimer);cinematicTimer=null;document.getElementById('story-battle-remark')?.remove();
+  const c=t.cinematic,table=document.querySelector('.table-scene');if(!c||!table||t.collapsed){stopBattleCinematic();return;}
+  if(document.hidden||document.querySelector('dialog[open]')){stopBattleCinematic();return;}
+  const bounds=table.getBoundingClientRect(),topInset=Math.max(0,60-bounds.top),bottomInset=Math.max(0,bounds.bottom-innerHeight+12),visibleHeight=bounds.height-topInset-bottomInset;
+  if(visibleHeight<150){stopBattleCinematic();if(c.active||c.queue.length)cinematicTimer=setTimeout(()=>{if(tab==='play'&&inBattle())drawBattleTalk();},250);return;}
+  const oldActive=c.active?.id,started=startCinematicFrame(c,m);if(started||oldActive!==c.active?.id)rememberBattleTalk();
+  const frame=c.active;if(!frame){stopBattleCinematic();return;}
+  const line=cinematicLine(m,frame.id);if(!line){c.active=null;rememberBattleTalk();return;}
+  const key=t.token+'/'+frame.id,words=line.text.match(/\S+\s*/gu)||[],elapsed=Date.now()-frame.start;
+  const instant=readingPreferences().speed==='instant'||matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealed=instant||frame.revealMs===0?words.length:Math.min(words.length,Math.floor(elapsed/Math.max(20,frame.revealMs/Math.max(1,words.length))));
+  let box=document.getElementById('story-battle-cinematic');
+  if(!box||box.dataset.frameKey!==key){
+   box?.remove();const ally=frame.role==='party'||line.speaker==='Celebi'||line.speaker===route()?.companion;
+   table.insertAdjacentHTML('beforeend',`<div role="status" aria-live="polite" id="story-battle-cinematic" class="battle-cinematic ${ally?'cinematic-ally':'cinematic-opponent'}" data-frame-key="${esc(key)}" data-emotion="${esc(frame.emotion)}" aria-label="Battle dialogue"><div class="cinematic-streak" aria-hidden="true"></div>${cinematicPortrait(line,frame,m)}<div class="cinematic-words"><span class="cinematic-speaker">${esc(line.speaker)}</span><p aria-label="${esc(line.text)}">${words.map((w,i)=>`<span class="cinematic-word ${i<revealed?'revealed':''}" aria-hidden="true">${esc(w)}</span>`).join('')}</p></div></div>`);
+   box=document.getElementById('story-battle-cinematic');cinematicPaintKey=key;
+  }
+  box.classList.toggle('cinematic-fading',Date.now()>frame.until-350);box.style.setProperty('--cinematic-age',elapsed+'ms');box.style.top=topInset+'px';box.style.bottom=bottomInset+'px';box.style.setProperty('--cinematic-visible-height',visibleHeight+'px');
+  box.querySelectorAll('.cinematic-word').forEach((node,i)=>node.classList.toggle('revealed',i<revealed));
+  if(revealed>frame.shownWords&&readingPreferences().sounds)IlexAudio.storyWord(line.speaker,revealed-1,words[revealed-1]);frame.shownWords=revealed;
+  cinematicTimer=setTimeout(()=>{if(tab!=='play'||!inBattle()){stopBattleCinematic();return;}if(Date.now()>=frame.until){c.active=null;rememberBattleTalk();drawBattleTalk();}else drawCinematicFrame(t,m);},45);
+ }
+ function openBattleDialogueLog(){
+  if(!inBattle())return;const m=mission(),t=observeBattleTalk();if(!t)return;stopBattleCinematic();
+  let dialog=document.getElementById('story-battle-log');if(!dialog){dialog=document.createElement('dialog');dialog.id='story-battle-log';document.body.append(dialog);dialog.addEventListener('close',()=>drawBattleTalk());}
+  const ids=[...t.seen.map(cue=>m.battleDialogue[cue]?.id),...(t.party?.seen||[]).map(cue=>m.partyDialogue?.[cue]?.id),...(t.cinematic?.history||[]).map(f=>f.id),...(t.exchanges?.completed||[]).flatMap(cue=>(m.signatureExchanges?.[cue]?.lines||[]).map(l=>l.id))];
+  dialog.innerHTML=`<div class="row"><h2>Battle dialogue</h2><button onclick="document.getElementById('story-battle-log').close()">Close</button></div><p>${esc(m.tip)}</p><div class="cinematic-transcript">${[...new Set(ids)].map(id=>cinematicLine(m,id)).filter(Boolean).map(line=>`<p><strong>${esc(line.speaker)}</strong>${esc(line.text)}</p>`).join('')||'<p>No battle dialogue yet.</p>'}</div>`;dialog.showModal();
+ }
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)stopBattleCinematic();else if(tab==='play'&&inBattle())drawBattleTalk();});
+ document.addEventListener('close',()=>{if(tab==='play'&&inBattle())drawBattleTalk();},true);
+
+
+
 
  // Passive taps record only confirmed public logs. They never change reducer inputs/results.
  const battleEventStores=new WeakMap();
@@ -365,33 +425,25 @@ var StoryMode=(()=>{
  // Battle remarks observe public logs and Prize counts.
  let talkCache=null,talkTimer=null,talkReveal=null,talkSaveWarning=false;
  const talkPriority={opening:0,playerOne:2,opponentOne:2,chronos:3,victory:4,defeat:4};
- function stopBattleTalk(resetParty=true){if(resetParty)stopPartyTalk();clearTimeout(talkTimer);talkTimer=null;talkReveal=null;}
+ function stopBattleTalk(){stopBattleCinematic();clearTimeout(talkTimer);talkTimer=null;talkReveal=null;}
  function battleTalkState(){return talkCache?structuredClone(talkCache):null;}
  function rememberBattleTalk(){try{const snapshot=structuredClone(talkCache);update(p=>p.battleRemarks=snapshot);talkSaveWarning=false;}catch(e){if(!talkSaveWarning){toast('Battle dialogue could not be saved. Your match is still available.');talkSaveWarning=true;}}}
  function observeBattleTalk(){
   if(!inBattle()||tab!=='play')return null;const p=progress(),meta=rulesMatch.spec.storyCampaign,m=mission(),g=rulesMatch.store.state;
   if(!p?.battle||p.battle.spec.storyCampaign.token!==meta.token||!m?.battleDialogue)return null;
   if(talkCache?.token!==meta.token){stopBattleTalk();talkCache=p.battleRemarks?.token===meta.token?structuredClone(p.battleRemarks):{token:meta.token,seen:[],current:null,collapsed:false};}
-  const count=id=>g.players.find(x=>x.id===id)?.prizes.reduce((n,x)=>n+x.cards.length,0),done=g.phase===RulesMatch.R.GamePhase.FINISHED,winner=done?g.players[g.winner]?.id:null;
+  const priorSeen=[...talkCache.seen],priorParty=[...(talkCache.party?.seen||[])];const count=id=>g.players.find(x=>x.id===id)?.prizes.reduce((n,x)=>n+x.cards.length,0),done=g.phase===RulesMatch.R.GamePhase.FINISHED,winner=done?g.players[g.winner]?.id:null;
   const ready=g.turn>0&&![RulesMatch.R.GamePhase.SETUP,RulesMatch.R.GamePhase.WAITING_FOR_PLAYERS].includes(g.phase);
   const publicEvents=collectBattleEvents(rulesMatch,m);const events=done?[...publicEvents,...(winner===1?['victory']:winner===2?['defeat']:[])]:!ready?[]:['opening',...publicEvents,...(count(1)===1?['playerOne']:[]),...(count(2)===1?['opponentOne']:[]),...(m.battleDialogue.chronos&&rulesMatch.journal.some(a=>a.type==='attack'&&a.player===2&&a.name==='Star Chronos')?['chronos']:[])];let changed=false;
   changed=queueBossExchanges(talkCache,m,events)||changed;for(const event of events){if(!m.battleDialogue[event]||talkCache.seen.includes(event))continue;talkCache.seen.push(event);if(!talkCache.current||(talkPriority[event]??3)>=(talkPriority[talkCache.current]??3)){talkCache.current=event;talkCache.collapsed=false;}changed=true;}
-  changed=observePartyTalk(m,{own:count(1),opponent:count(2),ready,done,winner,journal:rulesMatch.journal.length},publicEvents)||changed;if(changed)rememberBattleTalk();return talkCache;
+  changed=observePartyTalk(m,{own:count(1),opponent:count(2),ready,done,winner,journal:rulesMatch.journal.length},publicEvents)||changed;changed=queueBattleCinematics(talkCache,m,events,priorSeen,priorParty)||changed;if(changed)rememberBattleTalk();return talkCache;
  }
- function collapseBattleTalk(value){if(!talkCache)return;talkCache.collapsed=!!value;rememberBattleTalk();if(value)stopBattleTalk();}
- function revealBattleTalk(){if(!talkReveal)return;clearTimeout(talkTimer);talkTimer=null;talkReveal.index=talkReveal.total;document.querySelectorAll('#story-battle-remark .battle-story-word').forEach(n=>n.classList.add('revealed'));IlexAudio.stopStoryWords();}
- function drawBattleTalk(){
-  const t=observeBattleTalk();if(t?.exchanges?.queue.length){drawBossExchange(t,mission());return;}if(!t?.current)return;const m=mission(),line=m.battleDialogue[t.current];if(!line)return;const key=t.token+'/'+line.id,words=line.text.match(/\S+\s*/gu)||[];
-  if(talkReveal?.key!==key){stopBattleTalk(false);talkReveal={key,index:0,total:words.length,speaker:line.speaker};}
-  if(readingPreferences().speed==='instant'||matchMedia('(prefers-reduced-motion: reduce)').matches||t.collapsed)talkReveal.index=words.length;
-  document.getElementById('story-battle-remark')?.remove();document.getElementById('story-battle-banner')?.insertAdjacentHTML('afterend',`<details id="story-battle-remark" class="story-battle-remark" ${t.collapsed?'':'open'}><summary>${esc(line.speaker)} · Battle dialogue</summary><div class="battle-story-stage">${characterPortrait(line.speaker,m.opponent)}<div><p class="battle-story-line" aria-label="${esc(line.text)}">${words.map((word,i)=>`<span class="battle-story-word ${i<talkReveal.index?'revealed':''}" aria-hidden="true">${esc(word)}</span>`).join('')}</p><small>Tap the words to reveal the full remark. The match keeps playing.</small>${t.seen.length>1?`<details class="battle-story-history"><summary>Earlier remarks</summary>${t.seen.filter(e=>e!==t.current).map(e=>`<p><strong>${esc(m.battleDialogue[e].speaker)}:</strong> ${esc(m.battleDialogue[e].text)}</p>`).join('')}</details>`:''}</div></div></details>`);
-  const box=document.getElementById('story-battle-remark');if(!box)return;drawPartyTalk(t,m);drawExchangeHistory(t,m);box.querySelector('.battle-story-line').onclick=revealBattleTalk;box.ontoggle=()=>{if(box.open===!talkCache.collapsed)return;collapseBattleTalk(!box.open);};
-  if(talkTimer||talkReveal.index>=words.length||t.collapsed)return;
-  const step=()=>{talkTimer=null;if(!inBattle()||tab!=='play'||document.hidden||talkReveal?.key!==key)return;const nodes=document.querySelectorAll('#story-battle-remark .battle-story-word'),node=nodes[talkReveal.index];if(!node)return;node.classList.add('revealed');if(readingPreferences().sounds)IlexAudio.storyWord(line.speaker,talkReveal.index,node.textContent);talkReveal.index++;if(talkReveal.index<words.length){const pace=readingPreferences().speed==='fast'?.55:1;talkTimer=setTimeout(step,(85+Math.min(node.textContent.length,12)*10+(/[.!?…]/u.test(node.textContent)?160:0))*pace);}};talkTimer=setTimeout(step,30);
- }
- document.addEventListener('visibilitychange',()=>{if(document.hidden){revealBattleTalk();revealPartyTalk();clearTimeout(talkTimer);talkTimer=null;}});
 
- function decorate(){if(!inBattle()||tab!=='play')return;applyEnvironment(true);const p=progress(),m=mission(),g=rulesMatch.store.state,finished=g.phase===RulesMatch.R.GamePhase.FINISHED,won=finished&&g.players[g.winner]?.id===1;document.querySelector('.match-settings')?.setAttribute('hidden','');document.querySelectorAll('#app>.heading button').forEach(el=>el.hidden=true);const chronos=rulesMatch.journal.some(a=>a.type==='attack'&&a.name==='Star Chronos');const notice=m.deck==='dialga'?(chronos?'“We are still here.” — Celebi':'“This is a different moment.” — Celebi'):m.tip;document.getElementById('story-battle-banner')?.remove();$('#app').insertAdjacentHTML('afterbegin',`<section id="story-battle-banner" class="panel story-battle-banner" aria-label="Story mission"><div><span class="eyebrow">CHAPTER ${p.chapter+1} · ${esc(chapter().format)}</span><h2>${esc(m.title)}</h2><p>${esc(notice)}</p></div><div class="row"><button onclick="StoryMode.open()">Return to story</button>${finished?(won?'<button class="primary" onclick="StoryMode.finish()">Continue story</button>':'<span>The path is still open.</span><button class="primary" onclick="StoryMode.retry()">Retry mission</button>'):''}</div></section>`);}
+ function collapseBattleTalk(value){if(!talkCache)return;talkCache.collapsed=!!value;rememberBattleTalk();if(value)stopBattleCinematic();else drawBattleTalk();}
+ function revealBattleTalk(){const f=talkCache?.cinematic?.active;if(f){f.revealMs=0;drawBattleTalk();}}
+ function revealPartyTalk(){revealBattleTalk();}
+ function drawBattleTalk(){const t=observeBattleTalk();if(!t){stopBattleCinematic();return;}drawCinematicFrame(t,mission());}
+ function decorate(){if(!inBattle()||tab!=='play')return;applyEnvironment(true);const p=progress(),m=mission(),g=rulesMatch.store.state,finished=g.phase===RulesMatch.R.GamePhase.FINISHED,won=finished&&g.players[g.winner]?.id===1;document.querySelector('.match-settings')?.setAttribute('hidden','');document.querySelectorAll('#app>.heading button').forEach(el=>el.hidden=true);const chronos=rulesMatch.journal.some(a=>a.type==='attack'&&a.name==='Star Chronos');const notice=m.deck==='dialga'?(chronos?'“We are still here.” — Celebi':'“This is a different moment.” — Celebi'):m.tip;document.getElementById('story-battle-banner')?.remove();$('#app').insertAdjacentHTML('afterbegin',`<section id="story-battle-banner" class="panel story-battle-banner" aria-label="Story mission"><div><span class="eyebrow">CHAPTER ${p.chapter+1} · ${esc(chapter().format)}</span><h2>${esc(m.title)}</h2><p>${esc(notice)}</p></div><div class="row"><button onclick="StoryMode.open()">Return to story</button><button onclick="StoryMode.openBattleDialogueLog()">Dialogue log</button><button onclick="StoryMode.dismissBattleCinematic()">Hide line</button>${finished?(won?'<button class="primary" onclick="StoryMode.finish()">Continue story</button>':'<span>The path is still open.</span><button class="primary" onclick="StoryMode.retry()">Retry mission</button>'):''}</div></section>`);}
  const oldSaveRules=saveRules;saveRules=function(){if(!inBattle())return oldSaveRules();const old=progress()?.battle;if(!old||old.spec.storyCampaign.token!==rulesMatch.spec.storyCampaign.token)throw Error('Story save does not match this battle.');update(p=>p.battle={spec:rulesMatch.spec,journal:rulesMatch.journal,undoHistory:RulesMatch.undoPoints(rulesMatch),paused:!!state.botPaused,error:state.botError||''});};
  const oldRender=render;render=function(){if(!(tab==='play'&&inBattle()))stopBattleTalk();if(tab!=='story'&&!(tab==='play'&&inBattle()))clearEnvironment();if(tab!=='story')cancelReveal();if(tab!=='play')leave();if(tab==='story')return screen();return oldRender();};
  function mobileControls(){if(typeof IlexMobile==='undefined'||!inBattle()||tab!=='play')return;document.querySelector('.story-mobile-controls')?.remove();const buttons=document.querySelector('#story-battle-banner>.row');if(buttons)document.querySelector('.rule-status')?.insertAdjacentHTML('beforeend','<div class="story-mobile-controls">'+buttons.innerHTML+'</div>');}
@@ -400,5 +452,5 @@ var StoryMode=(()=>{
  const oldPlay=play;play=function(){oldPlay();decorate();drawBattleTalk();mobileControls();};
  const nav=document.createElement('button');nav.dataset.tab='story';nav.innerHTML='<span class="menu-icon" aria-hidden="true">✧</span><span><strong>Story Mode</strong></span>';nav.onclick=menu;document.querySelector('#mainmenu nav').append(nav);
  window.addEventListener('beforeunload',()=>{if(inBattle()&&progress()?.battle)saveRules();});
- return {advanceBossExchange,battleTalkState,collapseBattleTalk,revealBattleTalk,needsEraBriefing,eraRows,showEraRules,enterEra,environment,menu,continueCampaign,newGame,characterKey,pokemonKey,revealAll,setReading,readingPreferences,open,screen,next,back,choose,start,resume,retry,finish,preview,deckIssues,progress,leave,inBattle};
+ return {openBattleDialogueLog,dismissBattleCinematic,battleCinematicState,advanceBossExchange,battleTalkState,collapseBattleTalk,revealBattleTalk,needsEraBriefing,eraRows,showEraRules,enterEra,environment,menu,continueCampaign,newGame,characterKey,pokemonKey,revealAll,setReading,readingPreferences,open,screen,next,back,choose,start,resume,retry,finish,preview,deckIssues,progress,leave,inBattle};
 })();
