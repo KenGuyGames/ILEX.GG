@@ -2,7 +2,41 @@
 
 Pokémon TCG simulator for **Windows and Android**, with rules automation, deck building, local/bot play, packs, Cube Drafting, Campaign and two new alternate play modes.
 
-## New in 3.4.0: Windows Multiplayer
+## New in 3.4.1: Tutorial and presentation updates
+
+**Learn at your own pace in Arena → Tutorial.** The new 38-lesson guided match
+uses the same play table as regular Play, two prepared 60-card teaching decks,
+and the actual rules engine. Practice setup, Energy, Trainers, evolution,
+Abilities, retreat, attacks and Prize choices through a complete match.
+Reading speed, replay-text and narrator-sound controls are included; your
+tutorial progress resumes separately from your regular games and Campaign.
+The narrator uses the existing Campaign text chirp, not recorded voice acting.
+Special Conditions, mulligans and some alternate win conditions are explained
+rather than all enacted in the prepared match.
+
+- **More accurate enlarged-card controls:** all 4,587 printings in the audited
+  full-art/ultra/promo inventory now have calibrated native action regions,
+  including BREAK and composed V-UNION layouts. This covers that audit pool,
+  not every printing in the catalog. Printed-name aliases affect display and
+  geometry; gameplay identifiers are retained.
+- **Revised Campaign conversations:** stronger character motives and more
+  distinct reactions across 166 revised scenes, with migration for older
+  checkpoints. The current script has 2,126 story lines and 4,080 recording
+  cues; recording cues are written material, not recorded voices.
+- **Battle-table dialogue:** automatic reading windows, expressive human
+  portraits and an optional transcript replace repeated manual reply clicks.
+  Acknowledged lines and reading progress persist. Gameplay and battle order
+  are unchanged.
+
+**Windows update:** download the complete 3.4.1 ZIP and extract it to a new
+folder. Your existing local profile stays in the same location. Hosted
+Multiplayer remains the free two-room casual beta introduced in 3.4.0;
+ranked, broad capacity and separate-PC/network acceptance are still pending.
+Android stays on the previously published 3.2.0 download; these new Windows
+features are not an Android update. 3DS development remains in progress and
+Pocket remains removed. Older releases are preserved.
+
+## Retained from 3.4.0: Windows Multiplayer
 
 **Public lobbies and friends are now inside the Windows app.** Open
 **Arena → Multiplayer**, sign in, add friends by username, and create or join
@@ -13,7 +47,7 @@ possible. Ranked is disabled; online custom cards/Cube and Android integration
 are not included. Sign-in lasts until app exit. Offline saves and the improved
 Realistic Player are retained. See [MULTIPLAYER.md](MULTIPLAYER.md).
 
-[Download Windows 3.4.0](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.4.0-build-2026-10-31/ILEX.GG-Windows.zip).
+[Download Windows 3.4.1](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.4.1-build-2026-11-01/ILEX.GG-Windows.zip).
 
 ## Retained from 3.3.0: Improved Realistic Player bot
 
@@ -33,14 +67,14 @@ New Rule, Ken Guy Rules, Cube Drafting, eras, music and image caching remain.
 
 ## Campaign retained from 3.2.0: A deeper Campaign
 
-**Spend more time with Celebi and your companions.** The Campaign now adds **976 story lines** across all 13 chapters and both paths, expanding character conversations, uncertainty, memories and relationships while keeping the same 64 battles per playthrough.
+**Spend more time with Celebi and your companions.** The Campaign now adds **2,126 current story lines** across all 13 chapters and both paths, expanding character conversations, uncertainty, memories and relationships while keeping the same 64 battles per playthrough.
 
 - **Reactions during battles:** opponents respond to key Pokémon being Knocked Out, signature attacks and the Prize race. Celebi and the current companion offer support during setbacks, danger, earned comebacks, victory and defeat.
 - **Boss conversations:** 58 five-line exchanges across 32 configured signature attack scenes let Celebi, the boss and your current companion answer one another. Use **Next reply** to read at your own pace; finished exchanges remain in history.
 - **A distinct victory response:** 128 encounter/path-specific Celebi victory lines replace the repeated response, so each battle in either path has its own line.
 - **Continue where you stopped:** expanded dialogue preserves existing checkpoint anchors; battle reactions, reading position and conversation history persist. Reading dialogue does not issue game actions or award campaign progress. Battle dialogue does not pause the AI.
 
-The recording script now contains **4,298 cues**. These are written dialogue and recording metadata, **not recorded voice acting**. Existing text-speed, word/chirp sound and collapse controls remain available. All 13 chapters, 26 paths, decks and match order are retained.
+The recording script now contains **4,080 cues**. These are written dialogue and recording metadata, **not recorded voice acting**. Existing text-speed, word/chirp sound and collapse controls remain available. All 13 chapters, 26 paths, decks and match order are retained.
 
 ### Deeper Campaign screenshots
 
@@ -166,20 +200,25 @@ Learn the opening-turn rules and mechanics before entering an era.
 
 </details>
 
-## Download 3.3.0 (Windows)
+## Download 3.4.1 (Windows)
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.4.0-build-2026-10-31/ILEX.GG-Windows.zip) | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
+| Windows | [ILEX.GG-Windows.zip](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.4.1-build-2026-11-01/ILEX.GG-Windows.zip) | Windows 10/11 64-bit; extract the entire ZIP and run ILEX.GG.exe |
 | Android (unchanged 3.2.0) | [ILEX.GG-Android.apk](https://github.com/KenGuyGames/ILEX.GG/releases/download/v3.2.0-build-2026-10-28/ILEX.GG-Android.apk) | Android 8+ and current WebView; **3.2.0-android.121 / code121** |
 
 Windows includes Electron 44.9.3; the EXE is unsigned. Keep the extracted folder together. Android is signed with the original certificate: install over your existing APK to retain workspace/cache; do not uninstall first. Physical Android acceptance remains pending. Windows retains `%APPDATA%\TCG Lab`. Export/import transfers workspace JSON and replaces the destination workspace; there is no automatic cloud sync. Rules, music and included artwork work offline; uncached paper card scans download as viewed with size/hash checks.
 
-[Android installation](verification/ILEX.GG-Android-Install.md) · [Release notes/checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.3.0-build-2026-10-28) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
+[Android installation](verification/ILEX.GG-Android-Install.md) · [Release notes/checksums](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.4.1-build-2026-11-01) · [Older releases](https://github.com/KenGuyGames/ILEX.GG/releases/)
 
-## Multiplayer — next in development
+## Multiplayer — Windows casual beta
 
-Windows Multiplayer remains experimental/beta. Both peers need the same **3.3.0** build. Real local two-renderer WebRTC/STUN transport was tested in earlier work; independent external two-PC/different-NAT and complete strategic-match acceptance remain pending. There is no TURN fallback; the trusted host can inspect full state. Android networking, campaign co-op, cube networking and public matchmaking are unavailable.
+Open **Arena → Multiplayer** for public lobbies and friends, or **Arena →
+Private Multiplayer** for direct invitations. The hosted service allows two
+simultaneous casual rooms. Free hosting can take several minutes to wake up;
+sign-in lasts until app exit. Ranked, online custom cards/Cube and Android
+integration are not available. See [MULTIPLAYER.md](MULTIPLAYER.md). Separate
+physical PCs/different-network acceptance remains pending.
 
 ## Verification and limits
 
@@ -191,7 +230,7 @@ Historical 3.1.0 evidence: the final New Rule interaction audit records66 setup/
 
 The current campaign reports record chapter/path/deck checks, finite opening-turn gameplay smoke tests, saved dialogue/battle recovery, desktop/native and mobile-emulation checks. The latest main-menu patch passed 56 desktop, 56 mobile and six native checks; earlier campaign soundtrack, art, rules-briefing and portrait-anchor reports retain their actual tested hashes. Progression fixtures that advance through reducer concessions do not establish a complete strategic playthrough. No physical Android acceptance or speaker-listening certification is claimed.
 
-Paper engine SHA-256 is `a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0`. Canonical TypeScript is `work/cube-source/src`. Campaign is a separate layer using existing rules and deck data. See `verification/campaign/`, `verification/ILEX.GG-Android-verification.json`, `verification/desktop-verification-3.3.0.json` and the [3.3.0 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-3.3.0.yml). Source ZIP/tar.gz and README commands are checked before publication.
+Paper engine SHA-256 is `a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0`. Canonical TypeScript is `work/cube-source/src`. Campaign is a separate layer using existing rules and deck data. See `verification/campaign/`, `verification/ILEX.GG-Android-verification.json`, `verification/desktop-verification-3.4.1.json` and the [3.4.1 fresh-source workflow](https://github.com/KenGuyGames/ILEX.GG/actions/workflows/test-release-3.4.1.yml). Source ZIP/tar.gz and README commands are checked before publication.
 
 ## Cube Drafting
 
@@ -250,7 +289,7 @@ New interaction validation is scoped to **Black & White onward through Scarlet &
 | SWSH baseline | 67 expected-result checks, 4,869 printed attacks, 1,484 branch cases, 24 bounded games / 2,785 decisions with replay/Undo |
 | SV baseline | 163 focused checks, 4,808 PokÃ©mon attacks plus six TM attacks, 7,312 branch cases, 24 bounded games / 2,161 decisions with replay/Undo |
 | Latest engine fixes | 24 Evosoda and 72 Psychic Embrace focused checks; genuine replay/Undo and native fresh/restored checks recorded |
-| Android (unchanged 3.2.0) | 128 mobile Chromium and 38 package checks recorded for Psychic Embrace; original certificate retained; physical-device acceptance pending |
+| Android (historical) | 128 mobile Chromium and 38 package checks recorded for Psychic Embrace; original certificate retained; physical-device acceptance pending |
 | Assets | 23,838 scan records and 209 verified finish-specific images retained |
 
 The broad SWSH/SV baseline reports retain their original engine hashes. The beta and Android use the publication encoding repair engine `d7bf35e686eb84cdb9746be6b9cbfbad5c65f4f96e5644b37e68fae465b524a7`; historical broad results have not been relabeled as new-hash passes. Finite fixtures and bounded games do not prove all possible interactions. See `verification/ILEX.GG-Private-verification.json`, `work/rules-research/private-preview-release.json`, `sv-source-validation.json`, `swsh-source-validation.json`, `evosoda-fix.json` and `psychic-embrace-fix.json`.
@@ -386,10 +425,10 @@ Earlier desktop and Android layouts (Android captures use Chromium touch emulati
 
 Requires 64-bit Windows and **Node.js 24 with npm**, plus internet for dependencies and uncached artwork. Other desktop operating systems are not verified.
 
-Download Source code (zip) from the [3.3.0 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.3.0-build-2026-10-28), extract it, and open PowerShell in the folder containing package.json. Or clone:
+Download Source code (zip) from the [3.4.1 release](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.4.1-build-2026-11-01), extract it, and open PowerShell in the folder containing package.json. Or clone:
 
 ```powershell
-git clone --branch v3.3.0-build-2026-10-28 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
+git clone --branch v3.4.1-build-2026-11-01 --depth 1 https://github.com/KenGuyGames/ILEX.GG.git
 cd ILEX.GG
 npm install
 npm start
@@ -405,11 +444,12 @@ npm run build:rules
 npm start
 ```
 
-The wrapper compiles the canonical corrected TypeScript in `work/cube-source/src`. The rebuilt engine must match the SHA-256 above and `verification/source-manifest-3.3.0.json`. Do not rerun initial card generators over this release. Pocket product code and build checks have been removed.
+The wrapper compiles the canonical corrected TypeScript in `work/cube-source/src`. The rebuilt engine must match the SHA-256 above and `verification/source-manifest-3.4.1.json`. Do not rerun initial card generators over this release. Pocket product code and build checks have been removed.
 
 Run current focused checks sequentially:
 
 ```powershell
+npm run test:tutorial
 npm run test:strategy
 npm run test:campaign
 npm run test:energy

@@ -31,10 +31,7 @@ Multiplayer**. Both players should use the same updated build.
 
 Download ILEX.GG-Windows.zip, extract the entire ZIP to a new folder and run
 ILEX.GG.exe. Windows 10/11 x64. Existing offline saves remain in the same
-profile. The app is unsigned. To update an existing 3.3.0 Windows folder,
-close that copy and extract the resources folder from the small Multiplayer
-Update ZIP into it, replacing the five UI files. Its application version
-metadata may remain 3.3.0; the full ZIP reports 3.4.0.
+profile. The app is unsigned. For 3.4.1, use the complete Windows ZIP in a new folder. Local saves remain in the existing profile.
 
 Android remains the unchanged 3.2.0-android.121 download and does not include
 this Windows multiplayer integration. Earlier releases remain available.

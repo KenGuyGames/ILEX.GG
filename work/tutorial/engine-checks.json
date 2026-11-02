@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "checks": [
+    "Both 60-card decks mapped, legal copy counts, all necessary Trainer categories",
+    "All 38 lessons lead to an engine-earned six-Prize victory",
+    "All lesson transitions and pending choices survive journal restoration"
+  ],
+  "results": [
+    {
+      "branch": 0,
+      "replays": 91,
+      "ownChoices": 8,
+      "opponentMoves": 19,
+      "actions": 104,
+      "turn": 15,
+      "milestones": [
+        "Modern first-player Supporter/attack limits",
+        "Opponent makes a paid, 10-damage attack",
+        "Potion heals and discards",
+        "Paid retreat moves Energy to discard",
+        "Switch returns the correct Pokémon and retains Tool",
+        "Stadium stays in the shared zone",
+        "Same-turn second evolution blocked",
+        "Combustion plus Vitality Band does 30",
+        "Evolution retains damage, Energy and Tool",
+        "Bench Ability draws five; second Energy attachment blocked",
+        "Battle Sense keeps one and discards two",
+        "First Knock Out awards exactly one Prize"
+      ]
+    },
+    {
+      "branch": 1,
+      "replays": 91,
+      "ownChoices": 8,
+      "opponentMoves": 19,
+      "actions": 104,
+      "turn": 15,
+      "milestones": [
+        "Modern first-player Supporter/attack limits",
+        "Opponent makes a paid, 10-damage attack",
+        "Potion heals and discards",
+        "Paid retreat moves Energy to discard",
+        "Switch returns the correct Pokémon and retains Tool",
+        "Stadium stays in the shared zone",
+        "Same-turn second evolution blocked",
+        "Combustion plus Vitality Band does 30",
+        "Evolution retains damage, Energy and Tool",
+        "Bench Ability draws five; second Energy attachment blocked",
+        "Battle Sense keeps one and discards two",
+        "First Knock Out awards exactly one Prize"
+      ]
+    },
+    {
+      "branch": 2,
+      "replays": 91,
+      "ownChoices": 8,
+      "opponentMoves": 19,
+      "actions": 104,
+      "turn": 15,
+      "milestones": [
+        "Modern first-player Supporter/attack limits",
+        "Opponent makes a paid, 10-damage attack",
+        "Potion heals and discards",
+        "Paid retreat moves Energy to discard",
+        "Switch returns the correct Pokémon and retains Tool",
+        "Stadium stays in the shared zone",
+        "Same-turn second evolution blocked",
+        "Combustion plus Vitality Band does 30",
+        "Evolution retains damage, Energy and Tool",
+        "Bench Ability draws five; second Energy attachment blocked",
+        "Battle Sense keeps one and discards two",
+        "First Knock Out awards exactly one Prize"
+      ]
+    },
+    {
+      "branch": 3,
+      "replays": 91,
+      "ownChoices": 8,
+      "opponentMoves": 19,
+      "actions": 104,
+      "turn": 15,
+      "milestones": [
+        "Modern first-player Supporter/attack limits",
+        "Opponent makes a paid, 10-damage attack",
+        "Potion heals and discards",
+        "Paid retreat moves Energy to discard",
+        "Switch returns the correct Pokémon and retains Tool",
+        "Stadium stays in the shared zone",
+        "Same-turn second evolution blocked",
+        "Combustion plus Vitality Band does 30",
+        "Evolution retains damage, Energy and Tool",
+        "Bench Ability draws five; second Energy attachment blocked",
+        "Battle Sense keeps one and discards two",
+        "First Knock Out awards exactly one Prize"
+      ]
+    },
+    {
+      "branch": 4,
+      "replays": 91,
+      "ownChoices": 8,
+      "opponentMoves": 19,
+      "actions": 104,
+      "turn": 15,
+      "milestones": [
+        "Modern first-player Supporter/attack limits",
+        "Opponent makes a paid, 10-damage attack",
+        "Potion heals and discards",
+        "Paid retreat moves Energy to discard",
+        "Switch returns the correct Pokémon and retains Tool",
+        "Stadium stays in the shared zone",
+        "Same-turn second evolution blocked",
+        "Combustion plus Vitality Band does 30",
+        "Evolution retains damage, Energy and Tool",
+        "Bench Ability draws five; second Energy attachment blocked",
+        "Battle Sense keeps one and discards two",
+        "First Knock Out awards exactly one Prize"
+      ]
+    },
+    {
+      "branch": 5,
+      "replays": 91,
+      "ownChoices": 8,
+      "opponentMoves": 19,
+      "actions": 104,
+      "turn": 15,
+      "milestones": [
+        "Modern first-player Supporter/attack limits",
+        "Opponent makes a paid, 10-damage attack",
+        "Potion heals and discards",
+        "Paid retreat moves Energy to discard",
+        "Switch returns the correct Pokémon and retains Tool",
+        "Stadium stays in the shared zone",
+        "Same-turn second evolution blocked",
+        "Combustion plus Vitality Band does 30",
+        "Evolution retains damage, Energy and Tool",
+        "Bench Ability draws five; second Energy attachment blocked",
+        "Battle Sense keeps one and discards two",
+        "First Knock Out awards exactly one Prize"
+      ]
+    }
+  ],
+  "loaded": [
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-3.4.1\\work\\desktop\\ui\\rules-engine.js",
+      "sha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-3.4.1\\work\\desktop\\ui\\new-rule-data.js",
+      "sha256": "309aab671142c032677488829465dde4c3b3381f724adfc887a4fa4ba94681e8"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-3.4.1\\work\\desktop\\ui\\new-rule-engine.js",
+      "sha256": "e99f41761955a8b6496461466530340fe18b135ae12f99846e12dd3c594b2cd2"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-3.4.1\\work\\desktop\\ui\\ken-guy-engine.js",
+      "sha256": "e90d187882eff98ce520f040f730a8287beac2397d164356ee733ea44ef9ea5a"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-3.4.1\\work\\desktop\\ui\\rules-match.js",
+      "sha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014"
+    },
+    {
+      "path": "C:\\Users\\Kenneth\\Documents\\Codex\\2026-10-13\\ta\\work\\source-3.4.1\\work\\desktop\\ui\\bot-ai.js",
+      "sha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113"
+    },
+    {
+      "path": "work/desktop/ui/tutorial-data.js",
+      "sha256": "55d78a4beb1698aa70b3af4804007acdfee5b629b3f07736b1583965ad870aac"
+    },
+    {
+      "path": "work/desktop/ui/tutorial-engine.js",
+      "sha256": "b39952c8780248f2cfcd7d22a99aed97b4923a6f73ef466fee7bfcf6a41c24e8"
+    }
+  ],
+  "limits": "Prepared learning match and six choice branches; not a general bot benchmark."
+}

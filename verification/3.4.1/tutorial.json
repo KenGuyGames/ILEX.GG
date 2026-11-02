@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "date": "2026-11-01",
+  "feature": "Scripted Pok\u00e9mon TCG Tutorial",
+  "location": "Enter the Arena > Tutorial",
+  "lessons": 38,
+  "decks": {
+    "players": 2,
+    "cardsEach": 60,
+    "prizesEach": 6,
+    "profile": "sv",
+    "preparedOrderDisclosed": true
+  },
+  "realEngineCompleteMatches": 6,
+  "journalRestoreChecks": 546,
+  "nativeChecks": 12,
+  "restartAudioChecks": 10,
+  "regularPlayRegressionGroups": 7,
+  "sharedPlayTable": true,
+  "separateSavedMatch": true,
+  "playerPacedNoAutoAdvance": true,
+  "readingSpeeds": [
+    "slow",
+    "normal",
+    "instant"
+  ],
+  "narratorSample": "Mega Man X SNES \u2014 Text Letter",
+  "audioHarnessOutputMuted": true,
+  "screenshotsReviewed": true,
+  "desktopSizesTested": [
+    "1440x960",
+    "1280x720"
+  ],
+  "normalMatchCampaignDecksFormatsPreserved": true,
+  "hashes": {
+    "index.html": "5450d2db6b29685e3f4a882992b5d550f722de2521d1fcb46f7dbe993c10ef6b",
+    "app.js": "0bcd32cfdce7b02bbe90758db29c31af686204f5f2cc30e0b4c4f7bf24ce76bc",
+    "menu-groups.js": "d105d41cc8d312b7dbe647a5071dca1b9ffbd5e074489e0d9c74f583b5231b60",
+    "tabletop.js": "9a87443364b87682d845a735b25308aa097dced1f3bb3f961d766a8af0a896ab",
+    "presentation.js": "222c726c9d6d8ecc6e292d504bd351f054677923f835d0c522be6bd182d3648a",
+    "tutorial-data.js": "55d78a4beb1698aa70b3af4804007acdfee5b629b3f07736b1583965ad870aac",
+    "tutorial-engine.js": "b39952c8780248f2cfcd7d22a99aed97b4923a6f73ef466fee7bfcf6a41c24e8",
+    "tutorial.js": "8b44baff46cf1445b4b8575eb8463c79eb3d566febde9e50386e98fcc48b9485",
+    "tutorial.css": "3948aba22c64fdded4aa0ac367ea935762c54561a90d846f21a9abee0c5a7952"
+  },
+  "unchangedHashes": {
+    "rules-engine.js": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+    "rules-match.js": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014",
+    "bot-ai.js": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113",
+    "card-actions.js": "e6c475780284bd6f5dc680477cd601a7b263ebece4448e51b2aaebcdead8c70d",
+    "private-online.js": "f0602d787df8cc0df2a4a97788d0cede0750a00d44afae15c42be28726fd6fd6",
+    "story-mode.js": "e74e34f50c856ec6e29e1062cf6086fb688c897bf5c70cc440c795d7a904c542",
+    "story-content.js": "8b9fb264e4f389237ca562985009e8b19aaa97046bddea078e0bbc60c55a9f8f",
+    "audio.js": "672c40d45af5d320aee27dbf1a6d147fd3a780ad2af44860c3fbddf7ec484f94"
+  },
+  "androidChanged": false,
+  "new3dsChanged": false,
+  "cloudChanged": false,
+  "publicReleaseChanged": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "limits": "Prepared beginner learning match with six card-choice branches and finite Windows UI checks. Special Conditions, mulligans and some alternate win rules are explained rather than all enacted. Audio sample and controls verified through WebAudio diagnostics; test window output was muted. Android APK and physical touch devices not validated."
+}

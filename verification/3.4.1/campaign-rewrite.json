@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "feature": "Campaign emotional depth and relationship rewrite",
+  "editedScenes": 166,
+  "rewrittenLines": 1273,
+  "storyLines": 2126,
+  "totalStoredCues": 4080,
+  "unchangedMatchesPerPlaythrough": 64,
+  "checks": {
+    "content": 4,
+    "desktop": 46,
+    "mobile": 46,
+    "native": 45,
+    "android": 44
+  },
+  "battleCuesUnchanged": 1954,
+  "oldCheckpointFixtures": 4396,
+  "redirectedRevision3Checkpoints": 276,
+  "androidCode": 122,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3967,
+  "onlyPublicBattleStateObserved": true
+}

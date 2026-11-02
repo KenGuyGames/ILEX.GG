@@ -1,0 +1,18 @@
+const fs=require('fs'),crypto=require('crypto'),root=require('path').resolve(__dirname,'../..'),w=root+'/work/tutorial';module.exports=async(win,dir)=>{
+ const run=s=>win.webContents.executeJavaScript(s,true),wait=ms=>new Promise(r=>setTimeout(r,ms)),checks=[],captures=[];win.show();win.setSize(1440,960);
+ async function ready(){for(let i=0;i<500;i++){if(await run('typeof IlexTutorial!=="undefined"&&rulesReady&&cards.length>20000'))return;await wait(100);}throw Error('Tutorial app readiness timeout');}
+ const install=()=>run(fs.readFileSync(w+'/ui-tests.js','utf8'));await ready();await install();const baseline=await run('TutorialQA.bootstrap()');await run('window.tutorialNormalBaseline='+JSON.stringify(baseline));
+ async function capture(name){await run('Promise.allSettled([...document.querySelectorAll("#app img")].map(i=>i.decode()))');await wait(150);fs.writeFileSync(dir+'/'+name+'.png',(await win.webContents.capturePage()).toPNG());captures.push(name);}
+ await capture('welcome-lesson');
+ for(let i=0;i<38;i++){
+  const result=await run('TutorialQA.mainMove()');if(result.step!==i)throw Error('Unexpected lesson '+JSON.stringify(result));
+  if([5,9,17,28,30,37].includes(i))await capture('lesson-'+i);
+  if(i===17||i===28){const before=await run('JSON.stringify(state.tutorial)');await win.webContents.reload();await ready();await install();await run('window.tutorialNormalBaseline='+JSON.stringify(baseline));const resumed=await run('TutorialQA.resume()');if(resumed.progress!==before||resumed.normal!==baseline)throw Error('Save isolation/reload '+i);checks.push('Exact native reload at '+(i===28?'pending Battle Sense':'Stadium lesson'));}
+  await run('TutorialQA.resolveAll()');
+  if(i===9){const desktop=await run('TutorialQA.stable()');if(desktop.handBottom>desktop.viewport+2||desktop.width>desktop.viewportWidth+2||!desktop.coachSeparate||!desktop.activeClickable)throw Error('Desktop table does not fit '+JSON.stringify(desktop));checks.push('1440x960 hand and table fit');win.setSize(1280,720);await wait(200);const wide=await run('TutorialQA.stable()');await capture('widescreen-720');if(wide.handBottom>wide.viewport+2||wide.width>wide.viewportWidth+2||!wide.coachSeparate||!wide.activeClickable)throw Error('720p hand/table overflow '+JSON.stringify(wide));checks.push('1280x720 hand and table fit');win.setSize(1440,960);await wait(100);}
+  if(i<37)await run('TutorialQA.advance()');
+ }
+ const result=await run('TutorialQA.complete()');if(!result.passed||result.normal!==baseline)throw Error('Completion/isolation');checks.push(...result.checks);
+ const before=await run('JSON.stringify(state.tutorial)');await win.webContents.reload();await ready();await install();await run('window.tutorialNormalBaseline='+JSON.stringify(baseline));const resumed=await run('TutorialQA.resume()');if(resumed.progress!==before||resumed.normal!==baseline)throw Error('Completion reload');checks.push('Finished tutorial survives native reload');
+ const hashes={};for(const n of ['index.html','app.js','menu-groups.js','tabletop.js','presentation.js','tutorial-data.js','tutorial-engine.js','tutorial.js','tutorial.css','rules-engine.js','rules-match.js','bot-ai.js'])hashes[n]=crypto.createHash('sha256').update(fs.readFileSync(root+'/work/desktop/ui/'+n)).digest('hex');fs.writeFileSync(dir+'/checks.json',JSON.stringify({passed:true,checks,captures,hashes,normalStateHash:crypto.createHash('sha256').update(baseline).digest('hex'),physicalAndroidTested:false,realProfileModified:false},null,2));fs.writeFileSync(dir+'/expected.json',JSON.stringify({tutorial:before,normal:baseline}));
+};

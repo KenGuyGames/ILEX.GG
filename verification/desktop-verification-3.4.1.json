@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "version": "3.4.1",
+  "electron": "44.9.3",
+  "currentUiFilesMatched": 2062,
+  "unrelatedCompressedEntriesPreserved": 35766,
+  "zipCrc": "pass",
+  "base": "public 3.4.0 plus all current game UI bytes and new version/docs",
+  "originalDeveloperPackagesModified": false,
+  "sha256": "a96b7bede80d7e135820d8c7008048f57cebcb6172ebbfcadec93a19fdfa5831",
+  "bytes": 816293907
+}

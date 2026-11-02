@@ -152,5 +152,5 @@ var IlexPresentation=(()=>{
  }
  function watchArena(){const scene=document.querySelector('.table-scene');if(scene!==observedScene){arenaObserver.disconnect();observedScene=scene;if(scene)arenaObserver.observe(scene);}scheduleFit();}
  const previousPlay=play;play=function(){previousPlay();watchArena();};watchArena();
- return {before,after,abort,noteCoin,manualCoin,cancel,settings,update,preferences:prefs,viewer,busy:()=>running,whenIdle:()=>running?new Promise(resolve=>waiters.push(resolve)):Promise.resolve(),diagnostics:()=>({busy:running,queued:queue.length,reduced:reduced(),events:history.slice(),errors:errors.slice()})};
+ return {fitTable:watchArena,before,after,abort,noteCoin,manualCoin,cancel,settings,update,preferences:prefs,viewer,busy:()=>running,whenIdle:()=>running?new Promise(resolve=>waiters.push(resolve)):Promise.resolve(),diagnostics:()=>({busy:running,queued:queue.length,reduced:reduced(),events:history.slice(),errors:errors.slice()})};
 })();

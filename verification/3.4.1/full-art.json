@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "date": "2026-11-01",
+  "feature": "Completed remaining full-art audit click-region calibration",
+  "auditPrintingCount": 4587,
+  "calibratedNativePrintings": 4587,
+  "automaticFallbacksInAudit": 0,
+  "newlyCalibratedNativePrintings": 631,
+  "newScanRecords": 621,
+  "individualReviewCompletions": 235,
+  "individualReviewBreakdown": {
+    "ordinaryRegions": 203,
+    "rotatedBreakScans": 8,
+    "composedVUnionPrintings": 24
+  },
+  "ancientTraitCoordinatesAdded": 9,
+  "printedNameAliases": {
+    "xy7-98": {
+      "\u0394 Evolution": "\u03a9 Max"
+    },
+    "ex6-111": {
+      "Magic Odds": "Magic Evens"
+    },
+    "xyp-XY70": {
+      "Dragon Fang": "Dragon Impact"
+    },
+    "mep-006": {
+      "Disruptive Wind": "Creepy Wind"
+    }
+  },
+  "aliasesOnlyAffectDisplayAndGeometry": true,
+  "nativeActionIdentifiersPreserved": true,
+  "liveInspectorFixtures": 15,
+  "regularNativeGroups": 7,
+  "syntheticLayoutChecks": 33,
+  "hashes": {
+    "card-actions.js": "e6c475780284bd6f5dc680477cd601a7b263ebece4448e51b2aaebcdead8c70d",
+    "private-online.js": "f0602d787df8cc0df2a4a97788d0cede0750a00d44afae15c42be28726fd6fd6"
+  },
+  "engineSha256": "a4972d154ecd695602fbc0dbdc56dd1a420d5d83c7b1ffc28a76a0c54b17b1d0",
+  "botSha256": "e9bf8a76a1cc910143e86e72f17398501b96b96111638a1dbc1a905e8b279113",
+  "adapterSha256": "8e372d7cb0700b4dc84f976185b69430b6252607ff29d13c761a19761c1d4014",
+  "engineBotAdapterUnchanged": true,
+  "realProfileModified": false,
+  "androidChanged": false,
+  "new3dsChanged": false,
+  "cloudChanged": false,
+  "publicReleaseChanged": false,
+  "limits": "Completes the 4,587-printing full-art/ultra/promo audit inventory from the preceding task, not all printings in the entire catalog. Coordinates combine local OCR, printed visual anchors, individually reviewed remaining scans, and existing composed V-UNION coordinates. Four display-name aliases retain original native gameplay identifiers. Finite geometry/UI checks do not certify every card interaction."
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "feature": "Automatic battle-table cinematic dialogue and expressive portraits",
+  "checks": {
+    "desktop": 37,
+    "mobile": 37,
+    "native": 36,
+    "android": 44,
+    "unit": 14,
+    "assets": 24
+  },
+  "expressionAtlases": 24,
+  "humanExpressionVariants": 162,
+  "autoDismissMilliseconds": [
+    3200,
+    9000
+  ],
+  "officialPokemonArtUnchanged": true,
+  "gameplayEngineUnchanged": true,
+  "androidCode": 123,
+  "physicalAndroidTested": false,
+  "realProfileModified": false,
+  "realAppClosed": false,
+  "remotePublished": false,
+  "unchangedAndroidUIFiles": 3968
+}

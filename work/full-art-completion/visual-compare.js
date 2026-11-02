@@ -1,0 +1,6 @@
+(async()=>{
+ for(const d of document.querySelectorAll('dialog[open]'))d.close();const ids=['xyp-XY182','swshp-SWSH287'],sections=[];
+ for(const id of ids){const proto=RulesMatch.prototypes.get(ruleMap[id]),c={...proto,_labId:id},entries=[...c.powers.filter(p=>!p._dpExtra&&p.powerType!==RulesMatch.R.PowerType.VUNION_ASSEMBLY).map(p=>({kind:'ability',name:p.name})),...c.attacks.map(a=>({kind:'attack',name:a.name}))],layout=cardActionLayout(c,entries,{joined:id.includes('SWSH287')});let src=ruleArt(c);if(id.includes('SWSH287'))src=await LegendDisplay.composeUnion(['swshp-SWSH287','swshp-SWSH288','swshp-SWSH289','swshp-SWSH290'].map(_labId=>ruleArt({_labId})),id);
+ sections.push('<section><h2>'+esc(c.name)+'</h2><div class="card-action-scan" style="width:340px"><img src="'+src+'">'+layout.map(r=>'<button class="card-action-hotspot scan-action" aria-label="'+esc(r.label||r.entry.name)+'" style="left:'+r.left*100+'%;width:'+r.width*100+'%;top:'+r.top*100+'%;height:'+(r.bottom-r.top)*100+'%"></button>').join('')+'</div></section>');}
+ const d=document.createElement('dialog');d.id='cardactions';d.style.maxWidth='95vw';d.innerHTML='<div style="display:flex;gap:24px">'+sections.join('')+'</div>';document.body.append(d);for(const img of d.querySelectorAll('img'))await img.decode();d.showModal();return true;
+})()
