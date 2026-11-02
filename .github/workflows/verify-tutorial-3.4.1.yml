@@ -1,0 +1,53 @@
+name: Verify 3.4.1 Tutorial restart and narrator readiness
+on:
+  push:
+    branches: [release/3.4.1]
+    paths: [.github/workflows/verify-tutorial-3.4.1.yml]
+permissions:
+  contents: read
+jobs:
+  tutorial:
+    runs-on: windows-2025
+    timeout-minutes: 15
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Fresh unchanged release source and install
+        shell: pwsh
+        run: |
+          Invoke-WebRequest 'https://github.com/KenGuyGames/ILEX.GG/archive/refs/tags/v3.4.1-build-2026-11-01.zip' -OutFile "$env:RUNNER_TEMP/source.zip"
+          Expand-Archive "$env:RUNNER_TEMP/source.zip" "$env:RUNNER_TEMP/extracted"
+          $source = Get-ChildItem "$env:RUNNER_TEMP/extracted" -Directory | Select-Object -First 1
+          $source.FullName | Out-File "$env:RUNNER_TEMP/source-path.txt"
+          Set-Location $source.FullName
+          npm install
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Wait for actual audio decoding before the repeat-text assertion
+        shell: pwsh
+        run: |
+          Set-Location (Get-Content "$env:RUNNER_TEMP/source-path.txt")
+          $file = 'work/tutorial/restart-test.cjs'
+          $text = Get-Content -Raw $file
+          $needle = 'await run("IlexTutorial.setSetting'
+          $index = $text.IndexOf($needle)
+          if ($index -lt 0) { throw 'Expected narrator assertion missing' }
+          $warmup = @'
+          console.log('NARRATOR before warmup',await run('IlexAudio.diagnostics()'));
+          for(let i=0;i<200;i++){const d=await run('IlexAudio.diagnostics()');if(d.storySampleReady&&d.unlocked)break;await wait(100);}
+          console.log('NARRATOR after warmup',await run('IlexAudio.diagnostics()'));
+          '@
+          $text = $text.Substring(0,$index)+$warmup+$text.Substring($index)
+          $text = $text.Replace("const audio=await run('IlexAudio.diagnostics()');check", "const audio=await run('IlexAudio.diagnostics()');console.log('NARRATOR repeat',audio);check")
+          [System.IO.File]::WriteAllText((Join-Path (Get-Location) $file),$text,[System.Text.UTF8Encoding]::new($false))
+          $electron = node -e "console.log(require('electron'))" | Select-Object -Last 1
+          $env:ELECTRON_RUN_AS_NODE = $null
+          $entry = (Resolve-Path work/tutorial/native-entry.cjs).Path
+          $report = "$env:RUNNER_TEMP/native-tutorial"
+          foreach ($launch in @('fresh','restored')) {
+            $p = Start-Process -FilePath $electron -ArgumentList @($entry,$report) -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput "$env:RUNNER_TEMP/tutorial-$launch-out.txt" -RedirectStandardError "$env:RUNNER_TEMP/tutorial-$launch-error.txt"
+            Get-Content "$env:RUNNER_TEMP/tutorial-$launch-out.txt"
+            if ($p.ExitCode -ne 0) { Get-Content "$env:RUNNER_TEMP/tutorial-$launch-error.txt"; Get-Content "$report/failure.txt" -ErrorAction SilentlyContinue; throw 'Native Tutorial failure' }
+            $result = Get-Content "$report/native-result.json" -Raw | ConvertFrom-Json
+            if (!$result.passed) { throw 'Native Tutorial check failed' }
+          }
