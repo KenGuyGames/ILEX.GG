@@ -36,7 +36,7 @@ async function createServer({store:providedStore,databaseUrl,publicOrigin,public
     if(url.pathname==='/api/command')return send(200,await atomic(async()=>{const u=await service.auth((req.headers.authorization||'').replace(/^Bearer /,''));return service.execute(u,b);}));
    }
    if(req.method==='GET'&&url.pathname==='/'){
-    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'"});return res.end('<!doctype html><title>ILEX.GG Multiplayer</title><style>body{background:#102b25;color:#eef6e4;font:20px system-ui;max-width:680px;margin:12vh auto;padding:24px}a{color:#b8e48d}</style><h1>ILEX.GG Multiplayer</h1><p>Free-hosting preview Â· casual matches Â· ranked remains disabled.</p>'+(gameRoot?'<p><a href="/game/">Open game preview</a></p>':'<p>Connect from the multiplayer preview in ILEX.GG.</p>'));
+    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8','Content-Security-Policy':"default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'"});return res.end('<!doctype html><title>ILEX.GG Multiplayer</title><style>body{background:#102b25;color:#eef6e4;font:20px system-ui;max-width:680px;margin:12vh auto;padding:24px}a{color:#b8e48d}</style><h1>ILEX.GG Multiplayer</h1><p>Free-hosting preview · casual matches · ranked remains disabled.</p>'+(gameRoot?'<p><a href="/game/">Open game preview</a></p>':'<p>Connect from the multiplayer preview in ILEX.GG.</p>'));
    }
    if(req.method==='GET'&&gameRoot&&url.pathname.startsWith('/game/')){
     let name=decodeURIComponent(url.pathname.slice(6))||'index.html';if(name.includes('..')||name.includes('\\')||name.includes(':')||name.startsWith('/')||name.split('/').some(p=>p.startsWith('.'))||/before-|\.bak|\.map$/.test(name))return send(404,{error:'Not found.'});
@@ -60,6 +60,6 @@ async function createServer({store:providedStore,databaseUrl,publicOrigin,public
 }
 if(require.main===module){(async()=>{const root=__dirname,port=Number(process.env.PORT||8787),host=process.env.RENDER?'0.0.0.0':process.env.HOST||'127.0.0.1';
  const app=await createServer({databaseUrl:process.env.DATABASE_URL,gameRoot:path.resolve(root,'../work/desktop/ui'),publicOrigin:process.env.RENDER_EXTERNAL_URL,origins:(process.env.ILEX_ORIGINS||'http://127.0.0.1:8788,http://localhost:8788').split(','),engineRoot:path.resolve(process.env.ILEX_ENGINE||path.join(root,'engine')),maxRooms:Number(process.env.ILEX_MAX_ROOMS||2),requestLimit:3000});
- app.server.listen(port,host,()=>console.log('ILEX.GG cloud multiplayer 0.2.0 Â· PostgreSQL Â· ranked disabled'));for(const sig of ['SIGINT','SIGTERM'])process.on(sig,()=>app.server.close(()=>process.exit(0)));
+ app.server.listen(port,host,()=>console.log('ILEX.GG cloud multiplayer 0.2.0 · PostgreSQL · ranked disabled'));for(const sig of ['SIGINT','SIGTERM'])process.on(sig,()=>app.server.close(()=>process.exit(0)));
 })().catch(e=>{console.error('Server startup failed: '+String(e.code||e.name||'UNKNOWN').replace(/[^A-Z_a-z0-9]/g,'').slice(0,60));process.exitCode=1;});}
 module.exports={createServer};
