@@ -340209,7 +340209,7 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
     // Ref: set-team-up/black-market.ts (Black Market - KnockOutEffect prize modification)
     reduceEffect(store, state, effect) {
       if (effect instanceof KnockOutEffect) {
-        const attachedTo = StateUtils.findCardList(state, this);
+        const attachedTo = StateUtils.findPokemonSlot(state, this);
         if (!attachedTo || !attachedTo.tools || !attachedTo.tools.includes(this)) {
           return state;
         }
@@ -340239,6 +340239,8 @@ Search your deck for up to 4 [R] Energy cards, reveal them, and put them into yo
         if (effect.target !== targetOwner.active) {
           return state;
         }
+        const lethal = effect.target._exLethalAttackDamage;
+        if (lethal?.turn !== state.turn || lethal.card !== targetCard2 || lethal.attackerCard !== attachedPokemon) return state;
         effect.prizeCount += 1;
       }
       return state;

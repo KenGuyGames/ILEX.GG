@@ -11,3 +11,8 @@
 
 .toolbar:has(#deckselect){flex-wrap:wrap}.toolbar #deckselect{min-width:0;max-width:100%;flex:1 1 240px;width:240px}.toolbar #deckname,.toolbar #deckformat{min-width:0;flex:1 1 180px;width:180px}.opponent-setting{min-width:0;max-width:100%}.opponent-setting select{max-width:100%;width:280px;min-width:0}
 
+
+.compact-deck-workspace > .panel{min-width:0}
+.compact-deck-workspace .deck-card-grid{grid-template-columns:repeat(auto-fill,minmax(max(48px,calc((100% - 42px)/8)),1fr));gap:6px}
+.compact-deck-workspace .deck-card-quantity button{padding:4px!important;min-width:0;flex:1}
+.compact-deck-workspace .deck-copy-badge{min-width:0;padding:2px 4px;font-size:11px;right:3px;bottom:3px}

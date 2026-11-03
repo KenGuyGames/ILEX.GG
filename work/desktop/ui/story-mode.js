@@ -1,7 +1,19 @@
 /* Campaign progression is awarded only from a finished, matching engine game. */
 var StoryMode=(()=>{
  'use strict';
- const C=IlexStoryContent,D=IlexStoryDecks;
+ let C=IlexStoryContent,D=IlexStoryDecks;
+ const unlocked=()=>{const p=state.storyCampaign;return state.storyFracturedHourCompleted===true||p?.version===2&&p.campaignId===IlexStoryContent.campaignId&&p.cleared===true&&p.phase==='complete'&&p.chapter===IlexStoryContent.chapters.length-1;};
+ const echoes=()=>C===IlexEchoes.content;
+ const saveKey=()=>echoes()?'storyEchoesCampaign':'storyCampaign';
+ function selectCampaign(which,action){if(busy||!['original','echoes'].includes(which)||which==='echoes'&&!unlocked())return;leave();C=which==='echoes'?IlexEchoes.content:IlexStoryContent;D=which==='echoes'?IlexEchoes.decks:IlexStoryDecks;if(action==='new')newGame();else continueCampaign();}
+ function echoesPortrait(speaker,mood='neutral'){
+  if(!echoes())return '';
+  const id=String(speaker||'').toLowerCase().replace(/^the /,'').replace(/^orchard /,'').replace(/^station /,'');
+  const expression=({concerned:'worried',calm:'neutral'})[mood]||mood;
+  const sheet=id==='curator'&&EchoesPortraits['curator-story'].expressions[expression]?'curator-story':id;
+  const a=EchoesPortraits[sheet],r=a?.expressions[expression]||a?.expressions.tense||a?.expressions.neutral;if(!r)return '';
+  return `<figure class="story-character" data-character="${esc(id)}" aria-hidden="true"><svg viewBox="${r.x} ${r.y} ${r.width} ${r.height}" width="${r.width}" height="${r.height}" focusable="false"><svg x="${r.x+3}" y="${r.y+3}" width="${r.width-6}" height="${r.height-6}" viewBox="${r.x+3} ${r.y+3} ${r.width-6} ${r.height-6}" overflow="hidden"><image href="story-portraits/echoes/${sheet}.png" width="${a.width}" height="${a.height}"/></svg></svg></figure>`;
+ }
  let normalRuntime=null,normalControls=null,busy=false;
 
  // Approved transparent atlases; SVG viewports select one human without altering source pixels.
@@ -20,11 +32,18 @@ var StoryMode=(()=>{
  function pokemonKey(speaker,opponent=''){const key=['Echo','Guardian','Warden'].includes(speaker)?opponent:speaker;return pokemonArt[key]?key:null;}
  function pokemonPortrait(speaker,opponent=''){const key=pokemonKey(speaker,opponent);if(!key)return '';const species=pokemonArt[key];return `<figure class="story-character story-pokemon ${species.length>1?'pokemon-group':''}" data-character="${esc(key)}" aria-hidden="true">${species.map(name=>`<img src="story-pokemon/${name.toLowerCase()}.png" alt="" width="475" height="475" onerror="this.remove()">`).join('')}</figure>`;}
 
- function characterPortrait(speaker,opponent=''){
+ function characterPortrait(speaker,opponent='',mood='neutral'){
+  const sequel=echoesPortrait(speaker,mood);if(sequel)return sequel;
   const pokemon=pokemonPortrait(speaker,opponent);if(pokemon)return pokemon;
   const key=characterKey(speaker,opponent),asset=characterArt.portraits[key];if(!asset)return '';
-  const [x,y,width,height]=asset.rect;
-  return `<figure class="story-character" data-character="${esc(key)}" aria-hidden="true"><svg viewBox="${x} ${y} ${width} ${height}" width="${width}" height="${height}" focusable="false"><svg x="${x}" y="${y}" width="${width}" height="${height}" viewBox="${x} ${y} ${width} ${height}" overflow="hidden"><image href="story-portraits/${asset.file}" width="${asset.size[0]}" height="${asset.size[1]}" onerror="this.closest('figure').remove()" /></svg></svg></figure>`;
+  const [left,top,w,h]=asset.rect,happy=mood==='happy'&&asset.file==='original-1.png';
+  const [x,y,width,height]=happy?[left<512?3:515,Math.floor(top/500)*512+3,506,506]:[left+3,top+3,w-6,h-6];
+  const files=cinematicExpressionFiles[asset.file]||{};
+  const expression=mood==='concerned'?'worried':mood;
+  const fallback={sad:'concerned',worried:'concerned',tense:'concerned',happy:'proud',relieved:'happy'};
+  const file=files[expression]||files[fallback[expression]];
+  const shown=file?file.slice(asset.file.length-3,-4):'neutral';
+  return `<figure class="story-character" data-expression="${esc(shown)}" data-character="${esc(key)}" aria-hidden="true"><svg viewBox="${x} ${y} ${width} ${height}" width="${width}" height="${height}" focusable="false"><svg x="${x}" y="${y}" width="${width}" height="${height}" viewBox="${x} ${y} ${width} ${height}" overflow="hidden"><image href="story-portraits/${file?'expressions/'+file:asset.file}" width="${asset.size[0]}" height="${asset.size[1]}" onerror="this.closest('figure').remove()" /></svg></svg></figure>`;
  }
 
  // A line is saved as a whole; revealing words never writes partial dialogue into the save.
@@ -56,7 +75,7 @@ var StoryMode=(()=>{
   step();
  }
  document.addEventListener('visibilitychange',()=>{if(document.hidden)revealAll();});
- document.addEventListener('keydown',e=>{if(tab==='story'&&e.code==='Space'&&!e.repeat&&!['BUTTON','INPUT','SELECT','TEXTAREA','SUMMARY'].includes(e.target.tagName)){e.preventDefault();if(!revealAll())next();}});
+ document.addEventListener('keydown',e=>{if(tab==='story'&&!document.querySelector('dialog[open]')&&e.code==='Space'&&!e.repeat&&!['BUTTON','INPUT','SELECT','TEXTAREA','SUMMARY'].includes(e.target.tagName)){e.preventDefault();if(!revealAll())next();}});
 
  // Keep existing saves on their original spoken line when authored scenes gain new dialogue.
  function sceneFor(p){const c=C.chapters[p.chapter],r=c?.paths.find(x=>x.id===p.path),m=r?.missions[p.mission];if(p.phase==='intro')return c?.intro||[];if(p.phase==='outro')return c?.outro||[];if(p.phase==='brief')return m?.before||[];if(p.phase==='after')return m?.after||[];return [];}
@@ -88,7 +107,13 @@ var StoryMode=(()=>{
  ];
  function environment(p=progress(),battle=false){
   let chapterIndex=Number.isInteger(p?.chapter)&&C.chapters[p.chapter]?p.chapter:0,area=0;
-  const ch=C.chapters[chapterIndex],r=ch.paths.find(r=>r.id===p?.path),m=r?.missions[p?.mission],id=m?.id||'',cue=p?.dialogueId||'';
+  const ch=C.chapters[chapterIndex];
+  if(echoes()){
+   const epilogue=chapterIndex===12&&(p?.cleared||p?.phase==='outro'&&sceneFor(p)[p.line]?.id?.match(/\.outro\.(?:[4-9]|[1-9]\d+)$/));
+   const index=epilogue?0:ch.backdrop;
+   return {chapter:chapterIndex,area:epilogue?0:1,index,name:epilogue?'Ilex Forest':ch.location,atlas:Math.floor(index/6)+1,panel:index%6,fullScene:epilogue};
+  }
+  const r=ch.paths.find(r=>r.id===p?.path),m=r?.missions[p?.mission],id=m?.id||'',cue=p?.dialogueId||'';
   const missionScene=battle||p?.battle||['brief','after'].includes(p?.phase);
   if(!atCampaignMenu&&p){
    if(chapterIndex===0){
@@ -123,13 +148,13 @@ var StoryMode=(()=>{
   const e=environment(progress(),battle),key=e.atlas+':'+e.panel;
   document.body.classList.add('story-world-active');document.body.classList.toggle('story-world-battle',battle);document.body.dataset.storyLocation=e.name;
   if(worldKey===key&&document.getElementById('story-world'))return e;
-  worldKey=key;const epoch=++worldEpoch,img=new Image();img.onload=()=>{
+  worldKey=key;const epoch=++worldEpoch,img=new Image();let fullScene=e.fullScene||e.chapter===0&&e.area===0;img.onload=()=>{
    if(epoch!==worldEpoch)return;
-   const width=img.naturalWidth,height=img.naturalHeight,pw=width/2,ph=height/3,x=(e.panel%2)*pw,y=Math.floor(e.panel/2)*ph;
+   const width=img.naturalWidth,height=img.naturalHeight,pw=fullScene?width:width/2,ph=fullScene?height:height/3,x=fullScene?0:(e.panel%2)*pw,y=fullScene?0:Math.floor(e.panel/2)*ph;
    let layer=document.getElementById('story-world');if(!layer){layer=document.createElement('div');layer.id='story-world';layer.setAttribute('aria-hidden','true');document.body.prepend(layer);}
-   layer.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${x+2} ${y+2} ${pw-4} ${ph-4}" preserveAspectRatio="xMidYMid slice"><image href="${img.src}" width="${width}" height="${height}"/></svg><div class="story-world-shade"></div>`;
-  };img.onerror=()=>{if(epoch===worldEpoch){worldKey='';document.body.classList.add('story-world-fallback');}};
-  document.body.classList.remove('story-world-fallback');img.src=`story-environments/atlas-${e.atlas}.png`;return e;
+   layer.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${fullScene?0:x+2} ${fullScene?0:y+2} ${fullScene?pw:pw-4} ${fullScene?ph:ph-4}" preserveAspectRatio="xMidYMid slice"><image href="${img.src}" width="${width}" height="${height}"/></svg><div class="story-world-shade"></div>`;document.dispatchEvent(new CustomEvent('ilex:environment-ready',{detail:{...e}}));
+  };img.onerror=()=>{if(epoch!==worldEpoch)return;if(fullScene){fullScene=false;img.src=`story-environments/atlas-${e.atlas}.png`;return;}worldKey='';document.body.classList.add('story-world-fallback');};
+  document.body.classList.remove('story-world-fallback');img.src=fullScene?'story-environments/forest-trail-v2.png':`story-environments/atlas-${e.atlas}.png`;return e;
  }
 
  const eraLessons=[
@@ -162,7 +187,7 @@ var StoryMode=(()=>{
   ];
  }
  function eraRulesMarkup(){
-  const p=progress(),ch=chapter(),lesson=eraLessons[p.chapter],f=D.formats[ch.year],rules=RulesMatch.profiles[f.ruleProfile],prior=p.chapter?C.chapters[p.chapter-1]:null;
+  const p=progress(),ch=chapter(),lesson=echoes()?ch.lesson:eraLessons[p.chapter],f=D.formats[ch.year],rules=RulesMatch.profiles[f.ruleProfile],prior=p.chapter?C.chapters[p.chapter-1]:null;
   const rows=eraRows(ch),old=prior?eraRows(prior):null,changed=old?rows.filter((r,i)=>r[1]!==old[i][1]):[];
   const difference=!prior?'Your first era: learn the opening turn before choosing a deck.':changed.length?`Changed since ${prior.displayYear}: ${changed.map(r=>r[0].toLowerCase()).join('; ')}.`:`The opening-turn permissions are the same as ${prior.displayYear}; the legal cards and mechanics below are different.`;
   const details=[...lesson.cards,['Normal evolution','Without a specific card effect, neither player evolves on their first turn, and a Pokémon cannot evolve on the turn it entered play or already evolved.'],['Battle basics','Use a 60-card deck, six Prizes, one Active and up to five Benched Pokémon unless a card changes that limit. Normally attach one Energy from hand per turn. Attacking ends your turn.'],['Retreat and mulligans',`${rules.unlimitedRetreat?'This ruleset allows repeated normal retreats if you pay each cost and no condition blocks retreat.':'Normally retreat only once per turn; switching effects are separate.'} An unmatched opponent mulligan offers up to ${rules.mulliganBonus||1} extra card${(rules.mulliganBonus||1)===1?'':'s'} per mulligan. Card effects may change the usual limits.`]];
@@ -178,7 +203,7 @@ var StoryMode=(()=>{
  function continueCampaign(){if(!progress())return;atCampaignMenu=false;open();}
  function newGame(){reviewEra=false;
   if(busy)return;
-  if(progress()&&!confirm('Start a new story campaign? This replaces your campaign progress and any saved story battle. Your decks, collection, settings and regular saved match will be kept.'))return;
+  if(progress()&&!confirm('Start '+C.title+' over? This replaces progress and any saved battle for this campaign. Your other campaign and regular matches are kept.'))return;
   try{
    const difficulty=progress()?.difficulty;
    leave();const next=fresh();if(BotAI.levels[difficulty])next.difficulty=difficulty;
@@ -186,24 +211,27 @@ var StoryMode=(()=>{
   }catch(e){toast('Could not start a new campaign: '+e.message);}
  }
  function campaignMenu(){
-  applyEnvironment();
-  cancelReveal();syncNavigation();document.getElementById('crumb').textContent='Story Mode';
-  let p=progress(),problem='';if(p){try{p=ensure();}catch(e){problem=e.message;}}
-  const c=p&&!problem?C.chapters[p.chapter]:null;
-  const summary=!p?'No campaign started yet.':problem?'Your existing save has been kept.':p.cleared?'Story complete. Continue to revisit the ending.':`Chapter ${p.chapter+1} · ${c.title}${p.battle?' · Battle saved':''}`;
-  $('#app').innerHTML=`<div class="story-shell story-start-menu">${title('STORY MODE',esc(C.title),'A journey with Celebi through fractured time.')}<section class="story-start-content"><figure class="story-start-art" aria-hidden="true"><img src="story-pokemon/celebi.png" alt="" width="475" height="475"></figure><div class="story-start-copy"><span class="eyebrow">YOUR CAMPAIGN</span><h2>${p?'Welcome back.':'Every journey begins in the forest.'}</h2><p class="story-save-summary">${esc(summary)}</p>${problem?`<p class="error">${esc(problem)}</p>`:''}<div class="story-start-actions"><button class="${p&&!problem?'primary':''}" onclick="StoryMode.continueCampaign()" ${!p||problem?'disabled':''}>Continue</button><button class="${!p?'primary':''}" onclick="StoryMode.newGame()">New Game</button></div><p class="story-new-game-note">New Game starts at Chapter One. Existing campaign progress is replaced only after confirmation. Your decks, collection and settings stay with you.</p></div></section></div>`;
+  clearEnvironment();cancelReveal();syncNavigation();document.getElementById('crumb').textContent='Story Mode';
+  const tile=(id,c,p,locked=false)=>{
+   const ch=p?.campaignId===c.campaignId?c.chapters[p.chapter]:null;
+   const status=locked?'Complete The Fractured Hour to unlock.':p?.cleared?'Story complete.':ch?`Chapter ${p.chapter+1} · ${ch.title}${p.battle?' · Battle saved':''}`:'Ready to begin.';
+   return `<article class="panel story-path"><span class="eyebrow">${id==='original'?'FIRST CAMPAIGN':'SEQUEL'}</span><h2>${esc(c.title)}</h2><p>${esc(status)}</p><div class="row">${locked?'<button disabled>Locked</button>':(p?`<button class="primary" onclick="StoryMode.selectCampaign('${id}','continue')">Continue</button>`:'')+`<button class="${p?'':'primary'}" onclick="StoryMode.selectCampaign('${id}','new')">New Game</button>`}</div></article>`;
+  };
+  $('#app').innerHTML=`<div class="story-shell story-start-menu">${title('STORY MODE','Campaigns','Two journeys with Celebi. Each campaign saves its own progress.')}<section class="story-paths">${tile('original',IlexStoryContent,state.storyCampaign)}${tile('echoes',IlexEchoes.content,state.storyEchoesCampaign,!unlocked())}</section></div>`;
  }
-
  const fresh=()=>({version:2,contentRevision:C.dialogueRevision,campaignId:C.campaignId,chapter:0,path:null,mission:0,phase:'intro',line:0,completed:[],keepsakes:[],battle:null,difficulty:'normal',cleared:false});
- const progress=()=>state.storyCampaign||null;
+ const progress=()=>state[saveKey()]||null;
  const chapter=()=>C.chapters[progress()?.chapter||0];
  const route=()=>chapter().paths.find(p=>p.id===progress()?.path);
  const mission=()=>route()?.missions[progress()?.mission||0];
  const inBattle=()=>!!rulesMatch?.spec?.storyCampaign;
- function store(next){stampDialogue(next);const old=state.storyCampaign;state.storyCampaign=next;try{save();}catch(e){state.storyCampaign=old;throw e;}}
+ function store(next){stampDialogue(next);const key=saveKey(),old=state[key],oldUnlock=state.storyFracturedHourCompleted;
+  if(!echoes()&&(unlocked()||next.cleared))state.storyFracturedHourCompleted=true;
+  state[key]=next;try{save();}catch(e){state[key]=old;state.storyFracturedHourCompleted=oldUnlock;throw e;}}
  function update(fn){const next=structuredClone(progress()||fresh());fn(next);store(next);}
  function ensure(){
-  if(progress()?.version===1){const old=state.storyCampaign,previous=state.storyCampaignLegacyV1;state.storyCampaignLegacyV1=structuredClone(old);try{store(fresh());}catch(e){state.storyCampaignLegacyV1=previous;throw e;}}
+  if(echoes()&&!unlocked())throw Error('Complete The Fractured Hour to unlock Echoes of Tomorrow.');
+  if(!echoes()&&progress()?.version===1){const old=state.storyCampaign,previous=state.storyCampaignLegacyV1;state.storyCampaignLegacyV1=structuredClone(old);try{store(fresh());}catch(e){state.storyCampaignLegacyV1=previous;throw e;}}
   if(!progress())store(fresh());migrateDialogue();const p=progress(),ch=C.chapters[p.chapter],r=ch?.paths.find(x=>x.id===p.path);
   if(p.version!==2||p.campaignId!==C.campaignId||!Number.isInteger(p.chapter)||!ch||!['intro','choice','brief','after','outro','complete'].includes(p.phase)||!Number.isInteger(p.mission)||p.mission<0||p.mission>=(r?.missions.length||Math.max(...ch.paths.map(x=>x.missions.length)))||!Number.isInteger(p.line)||p.line<0||!Array.isArray(p.completed)||!Array.isArray(p.keepsakes)||p.path&&!r||['brief','after'].includes(p.phase)&&!r||p.cleared!==(p.phase==='complete')||!BotAI.levels[p.difficulty]||p.phase==='complete'&&p.chapter!==C.chapters.length-1)throw Error('The saved story cannot be read. Your save has been kept.');
   const lines=scene();if(lines.length&&p.line>=lines.length)throw Error('The saved dialogue position is invalid. Your save has been kept.');return p;
@@ -214,33 +242,33 @@ var StoryMode=(()=>{
  function open(){atCampaignMenu=false;leave();tab='story';render();window.scrollTo(0,0);}
  function scene(){return sceneFor(progress());}
  function act(fn){if(busy)return;try{fn();screen();}catch(e){toast(e.message||String(e));}}
- function next(){if(needsEraBriefing()||reviewEra)return;if(revealAll())return;act(()=>{ensure();const p=progress(),lines=scene();if(!lines.length)return;if(p.line<lines.length-1){update(n=>n.line++);return;}update(n=>{n.line=0;if(n.phase==='intro')n.phase='choice';else if(n.phase==='brief')return;else if(n.phase==='after'){n.mission++;if(n.mission>=route().missions.length){n.mission=route().missions.length-1;n.phase='outro';if(!n.keepsakes.includes(chapter().keepsake))n.keepsakes.push(chapter().keepsake);}else n.phase='brief';}else if(n.phase==='outro'){if(n.chapter===C.chapters.length-1){n.phase='complete';n.cleared=true;}else{n.chapter++;n.path=null;n.mission=0;n.phase='intro';}}});});}
+ function next(){if(atCampaignMenu||needsEraBriefing()||reviewEra)return;if(revealAll())return;act(()=>{ensure();const p=progress(),lines=scene();if(!lines.length)return;if(p.line<lines.length-1){update(n=>n.line++);return;}update(n=>{n.line=0;if(n.phase==='intro')n.phase='choice';else if(n.phase==='brief')return;else if(n.phase==='after'){n.mission++;if(n.mission>=route().missions.length){n.mission=route().missions.length-1;n.phase='outro';if(!n.keepsakes.includes(chapter().keepsake))n.keepsakes.push(chapter().keepsake);}else n.phase='brief';}else if(n.phase==='outro'){if(n.chapter===C.chapters.length-1){n.phase='complete';n.cleared=true;}else{n.chapter++;n.path=null;n.mission=0;n.phase='intro';}}});});}
  function choose(id){act(()=>{ensure();if(progress().phase!=='choice'||!chapter().paths.some(p=>p.id===id))return;update(p=>{p.path=id;p.phase='brief';p.line=0;});});}
- function deckIssues(deck,year){const f=D.formats[year],issues=[],names={};let size=0,basic=false;for(const [id,n]of Object.entries(deck.cards)){const c=cardMetadata[id]||find(id);size+=n;if(!Number.isInteger(n)||n<1)issues.push('Invalid card quantity');if(!find(id)||!ruleMap[id])issues.push('Missing card: '+id);if(!c)continue;if(c.category!=='Energy'||!['Normal','Basic'].includes(c.energyType)){names[c.name]=(names[c.name]||0)+n;}if(['Pokemon','Pokémon'].includes(c.category)&&['Basic','BASIC',0].includes(c.stage))basic=true;if(!limitlessPrintingAllowed(id,c,f,f.sets.split(',').filter(Boolean)))issues.push(c.name+' is outside this historical format.');}if(size!==60)issues.push('A loaner must contain 60 cards.');for(const [name,n]of Object.entries(names))if(n>4)issues.push(name+' exceeds four copies.');const construction=RulesMatch.constructionIssues(deck.cards,ruleMap,f.ruleProfile);if(construction)issues.push(...construction);return [...new Set(issues)];}
+ function deckIssues(deck,year){const f=D.formats[year],issues=[],names={};let size=0,basic=false;for(const [id,n]of Object.entries(deck.cards)){const c=cardMetadata[id]||find(id);size+=n;if(!Number.isInteger(n)||n<1)issues.push('Invalid card quantity');if(!find(id)||!ruleMap[id])issues.push('Missing card: '+id);if(!c)continue;if(c.category!=='Energy'||!['Normal','Basic'].includes(c.energyType)){names[c.name]=(names[c.name]||0)+n;}if(['Pokemon','Pokémon'].includes(c.category)&&['Basic','BASIC',0].includes(c.stage))basic=true;if(String(f.banned||'').split(',').some(b=>b.trim().toLowerCase()===String(c.name).toLowerCase()||b.trim().toLowerCase()===id.toLowerCase()))issues.push(c.name+' is banned in this format.');if(!limitlessPrintingAllowed(id,c,f,f.sets.split(',').filter(Boolean)))issues.push(c.name+' is outside this historical format.');}if(size!==60)issues.push('A loaner must contain 60 cards.');for(const [name,n]of Object.entries(names))if(n>4)issues.push(name+' exceeds four copies.');const construction=RulesMatch.constructionIssues(deck.cards,ruleMap,f.ruleProfile);if(construction)issues.push(...construction);return [...new Set(issues)];}
  async function start(retry=false){if(revealAll())return;if(busy)return;busy=true;try{ensure();await rulesAssets;if(!cards.length)throw Error('The card library is still loading. Please try again.');const p=progress(),m=mission(),r=route();if(p.phase!=='brief'||!m||p.line!==m.before.length-1)return;if(p.battle&&!retry){resume();return;}const a=D.decks[r.deck],b=D.decks[m.deck],f=D.formats[chapter().year],issues=[...deckIssues(a,chapter().year),...deckIssues(b,chapter().year)];if(issues.length)throw Error(issues.join(' '));
-   const token=crypto.randomUUID(),spec={version:1,profile:f.ruleProfile,format:{id:f.id,name:f.name,markerRules:structuredClone(f)},opponent:{type:'bot',difficulty:p.difficulty,humanPlayer:1,botPlayer:2},storyCampaign:{version:1,chapter:chapter().id,path:r.id,mission:m.id,token},decks:[{name:'You · '+a.name,cards:a.cards},{name:m.opponent+' · '+b.name,cards:b.cards}],custom:[]};
+   const token=crypto.randomUUID(),spec={version:1,profile:f.ruleProfile,format:{id:f.id,name:f.name,markerRules:structuredClone(f)},opponent:{type:'bot',difficulty:p.difficulty,humanPlayer:1,botPlayer:2},storyCampaign:{version:1,campaignId:C.campaignId,chapter:chapter().id,path:r.id,mission:m.id,token},decks:[{name:'You · '+a.name,cards:a.cards},{name:m.opponent+' · '+b.name,cards:b.cards}],custom:[]};
    const candidate=RulesMatch.create(spec,ruleMap,[]),oldRuntime=rulesMatch,oldControls={paused:!!state.botPaused,error:state.botError||''};
    update(n=>{n.battle={spec:candidate.spec,journal:candidate.journal,undoHistory:[],paused:false,error:''};n.regularControls=oldControls;});normalRuntime=oldRuntime;normalControls=oldControls;stop();rulesMatch=candidate;state.botPaused=false;state.botError='';autoRules();saveRules();tableMode='rules';tab='play';render();
  }catch(e){toast('Could not start story mission: '+e.message);}finally{busy=false;}}
  function resume(){try{ensure();const b=progress().battle,m=mission();if(!b||b.spec.storyCampaign.chapter!==chapter().id||b.spec.storyCampaign.path!==route().id||b.spec.storyCampaign.mission!==m.id)throw Error('This saved battle does not match the current mission.');const candidate=RulesMatch.restore(b,ruleMap,[]);if(!inBattle()){normalRuntime=rulesMatch;normalControls=progress().regularControls||{paused:!!state.botPaused,error:state.botError||''};}stop();rulesMatch=candidate;state.botPaused=!!b.paused;state.botError=b.error||'';tableMode='rules';tab='play';render();}catch(e){toast('Could not resume story battle: '+e.message);}}
  function finish(){try{ensure();const p=progress(),s=rulesMatch?.spec.storyCampaign,g=rulesMatch?.store.state,b=p.battle;if(!s||!b||s.token!==b.spec.storyCampaign.token||s.chapter!==chapter().id||s.path!==route().id||s.mission!==mission().id||g.phase!==RulesMatch.R.GamePhase.FINISHED||g.players[g.winner]?.id!==1)throw Error('Win this mission to continue.');update(n=>{const key=s.chapter+'/'+s.path+'/'+s.mission;if(!n.completed.includes(key))n.completed.push(key);n.battle=null;n.phase='after';n.line=0;});open();}catch(e){toast(e.message);}}
  function retry(){try{if(!progress()?.battle)return;const b=progress().battle,candidate=RulesMatch.restore(b,ruleMap,[]);if(candidate.store.state.phase!==RulesMatch.R.GamePhase.FINISHED&&!confirm('Restart this story battle? Its current turns will be discarded.'))return;leave();update(p=>p.battle=null);start(true);}catch(e){toast(e.message);}}
- function preview(id){const d=D.decks[id];if(!d)return;const sections={Pokemon:[],Trainer:[],Energy:[]};for(const [key,n]of Object.entries(d.cards)){const c=cardMetadata[key]||find(key);const category=c?.category==='Energy'?'Energy':c?.category==='Trainer'?'Trainer':'Pokemon';sections[category].push(`<li><button class="story-card-link" onclick="inspect('${esc(key)}')">${n} × ${esc(c?.name||key)}</button><small>${esc(key)}</small></li>`);}modal(`<h2>${esc(d.name)}</h2><p>${esc(d.credit)}</p><p><a href="${esc(d.source||'https://my.limitlesstcg.com/')}" target="_blank" rel="noopener">Historical deck source</a></p><div class="story-decklist">${Object.entries(sections).map(([k,list])=>`<section><h3>${k==='Pokemon'?'Pokémon':k}</h3><ul>${list.join('')}</ul></section>`).join('')}</div>`);}
+ function preview(id){const d=D.decks[id];if(!d)return;const sections={Pokemon:[],Trainer:[],Energy:[]};for(const [key,n]of Object.entries(d.cards)){const c=cardMetadata[key]||find(key);const category=c?.category==='Energy'?'Energy':c?.category==='Trainer'?'Trainer':'Pokemon';sections[category].push(`<li><button class="story-card-link" onclick="inspect('${esc(key)}')">${n} × ${esc(c?.name||key)}</button><small>${esc(key)}</small></li>`);}modal(`<h2>${esc(d.name)}</h2><p>${esc(d.credit)}</p><p><a href="${esc(d.source||D.formats[d.year]?.sourceFolder||'https://my.limitlesstcg.com/')}" target="_blank" rel="noopener">Historical deck source</a></p><div class="story-decklist">${Object.entries(sections).map(([k,list])=>`<section><h3>${k==='Pokemon'?'Pokémon':k}</h3><ul>${list.join('')}</ul></section>`).join('')}</div>`);}
  function portrait(){const c=find(chapter().portrait);return c?`<img class="story-feature-card" src="${esc(image(c))}" alt="${esc(c.name)}">`:'';}
- function screen(){if(tab!=='story')return;if(atCampaignMenu)return campaignMenu();cancelReveal();try{ensure();syncNavigation();document.getElementById('crumb').textContent='Story Mode';const p=progress(),ch=chapter(),r=route(),m=mission(),lines=scene(),line=lines[Math.min(p.line,lines.length-1)],last=p.line>=lines.length-1;
+ function screen(){if(tab!=='story')return;if(atCampaignMenu||echoes()&&!unlocked())return campaignMenu();cancelReveal();try{ensure();syncNavigation();document.getElementById('crumb').textContent='Story Mode';const p=progress(),ch=chapter(),r=route(),m=mission(),lines=scene(),line=lines[Math.min(p.line,lines.length-1)],last=p.line>=lines.length-1;
    const location=applyEnvironment();
    const timeline=`<details class="story-journey"><summary>Journey so far · ${ch.displayYear}</summary><ol class="story-timeline" aria-label="Discovered eras">${C.chapters.slice(0,p.chapter+1).map((c,i)=>`<li class="${i===p.chapter?'current':'complete'}" ${i===p.chapter?'aria-current="step"':''}><span>${i+1}</span><div><strong>${c.displayYear}</strong><small>${esc(c.title)}</small></div></li>`).join('')}</ol></details>`;
    let body='';
    if(reviewEra||needsEraBriefing(p)){body=eraRulesMarkup();}
-   else if(p.cleared){body=`<section class="story-ending panel"><span class="eyebrow">STORY COMPLETE</span><h2>We are both here.</h2><p>Celebi is home. Dialga is free. The repaired passages preserve the communities you helped.</p><p>The river flows. The forest keeps growing.</p><div class="story-credits">${C.credits.map(x=>`<p>${esc(x)}</p>`).join('')}</div><button onclick="mainMenu()">Return to Ilex Forest</button></section>`;}
+   else if(p.cleared){body=`<section class="story-ending panel"><span class="eyebrow">STORY COMPLETE</span>${echoes()?'<h2>An unwritten tomorrow.</h2><p>The crossings belong to the people who use them. In Ilex Forest, there is a chair for whoever arrives next.</p>':'<h2>We are both here.</h2><p>Celebi is home. Dialga is free. The repaired passages preserve the communities you helped.</p><p>The river flows. The forest keeps growing.</p>'}<div class="story-credits">${C.credits.map(x=>`<p>${esc(x)}</p>`).join('')}</div><button onclick="mainMenu()">Return to Ilex Forest</button></section>`;}
    else if(p.phase==='choice'){body=`<h2>Choose your path through ${esc(ch.location)}</h2><p>Either path tells the complete story. Your loaner deck is ready to play.</p><div class="story-paths">${ch.paths.map(r=>`<article class="panel story-path">${characterPortrait(r.companion)}<span class="eyebrow">WITH ${esc(r.companion)}</span><h3>${esc(r.name)}</h3><strong>${esc(D.decks[r.deck].name)}</strong><p>${esc(r.description)}</p><div class="row"><button class="primary" onclick="StoryMode.choose('${r.id}')">Follow this path</button><button onclick="StoryMode.preview('${r.deck}')">View deck · 60 cards</button></div></article>`).join('')}</div>`;}
    else if(p.battle){body=`<section class="panel story-dialogue"><span class="eyebrow">MISSION ${p.mission+1} OF ${r.missions.length}</span><h2>${esc(m.title)}</h2><p>Your match against ${esc(m.opponent)} is saved.</p><div class="row"><button class="primary" onclick="StoryMode.resume()">Resume battle</button><button onclick="StoryMode.retry()">Restart battle</button></div></section>`;}
-   else{const label=p.phase==='brief'?'MISSION '+(p.mission+1)+' OF '+r.missions.length:p.phase==='outro'?'AT THE SHRINE':ch.travel;body=`<section class="story-scene" aria-label="Campaign dialogue">${characterPortrait(line?.speaker,m?.opponent)}<div class="story-dialogue-copy"><span class="eyebrow">${esc(label)}</span>${p.phase==='brief'?`<h2>${esc(m.title)}</h2>`:''}<h3 aria-live="polite">${esc(line?.speaker||'Narrator')}</h3><p class="story-line">${esc(line?.text||'')}</p><small>${Math.min(p.line+1,lines.length)} / ${lines.length}</small><div class="row story-dialogue-actions">${p.line>0?'<button onclick="StoryMode.back()">Previous</button>':''}${p.phase==='brief'&&last?'<button class="primary" onclick="StoryMode.start()">Begin battle</button>':`<button class="primary" onclick="StoryMode.next()">${last?(p.phase==='outro'?(p.chapter===C.chapters.length-1?'Finish story':'Enter the next shrine'):(p.phase==='intro'?'Choose your path':'Continue')):'Continue'}</button>`}</div></div></section>`;if(p.phase==='brief')body+=`<details class="story-match-card"><summary>Battle briefing · ${esc(m.opponent)}</summary><div class="story-briefing-content"><p><strong>You:</strong> ${esc(D.decks[r.deck].name)}<br><strong>${esc(m.opponent)}:</strong> ${esc(D.decks[m.deck].name)}</p><p>${esc(m.tip)}</p><div class="row"><button onclick="StoryMode.preview('${r.deck}')">Your deck</button><button onclick="StoryMode.preview('${m.deck}')">Opponent deck</button><label>Difficulty <select id="story-difficulty">${Object.entries(BotAI.levels).map(([k,v])=>`<option value="${k}" ${k===p.difficulty?'selected':''}>${esc(v.label)}</option>`).join('')}</select></label></div></div></details>`;}
-   $('#app').innerHTML=`<div class="story-shell"><div class="story-campaign-toolbar"><button onclick="StoryMode.showEraRules()">Era rules</button><button onclick="StoryMode.menu()">Campaign menu</button></div>${title('STORY MODE',esc(C.title),'Travel with Celebi through fractured time. Your journey saves automatically.')}<div class="story-chapter-heading"><div><span class="eyebrow">CHAPTER ${p.chapter+1} · ${esc(ch.location)}</span><h2>${esc(ch.title)}</h2><p>${esc(ch.format)} · ${esc(ch.range)}</p></div>${portrait()}</div>${timeline}<div class="story-location">${esc(location.name)}</div>${body}</div>`;
-   if(line&&!p.battle)beginDialogue(line);
+   else{const label=p.phase==='brief'?'MISSION '+(p.mission+1)+' OF '+r.missions.length:p.phase==='outro'?'AT THE SHRINE':ch.travel;body=`<section class="story-scene" aria-label="Campaign dialogue">${characterPortrait(line?.speaker,m?.opponent,line?.emotion||sceneEmotion(line))}<div class="story-dialogue-copy"><span class="eyebrow">${esc(label)}</span>${p.phase==='brief'?`<h2>${esc(m.title)}</h2>`:''}<h3 aria-live="polite">${esc(line?.speaker||'Narrator')}</h3><p class="story-line">${esc(line?.text||'')}</p><small>${Math.min(p.line+1,lines.length)} / ${lines.length}</small><div class="row story-dialogue-actions">${p.line>0?'<button onclick="StoryMode.back()">Previous</button>':''}${p.phase==='brief'&&last?'<button class="primary" onclick="StoryMode.start()">Begin battle</button>':`<button class="primary" onclick="StoryMode.next()">${last?(p.phase==='outro'?(p.chapter===C.chapters.length-1?'Finish story':'Enter the next shrine'):(p.phase==='intro'?'Choose your path':'Continue')):'Continue'}</button>`}</div></div></section>`;if(p.phase==='brief')body+=`<details class="story-match-card"><summary>Battle briefing · ${esc(m.opponent)}</summary><div class="story-briefing-content"><p><strong>You:</strong> ${esc(D.decks[r.deck].name)}<br><strong>${esc(m.opponent)}:</strong> ${esc(D.decks[m.deck].name)}</p><p>${esc(m.tip)}</p><div class="row"><button onclick="StoryMode.preview('${r.deck}')">Your deck</button><button onclick="StoryMode.preview('${m.deck}')">Opponent deck</button><label>Difficulty <select id="story-difficulty">${Object.entries(BotAI.levels).map(([k,v])=>`<option value="${k}" ${k===p.difficulty?'selected':''}>${esc(v.label)}</option>`).join('')}</select></label></div></div></details>`;}
+   $('#app').innerHTML=`<div class="story-shell"><div class="story-campaign-toolbar"><button onclick="StoryChronicle.open()">Journey journal</button><button onclick="StoryMode.showEraRules()">Era rules</button><button onclick="StoryMode.menu()">Campaign menu</button></div>${title('STORY MODE',esc(C.title),'Travel with Celebi through fractured time. Your journey saves automatically.')}<div class="story-chapter-heading"><div><span class="eyebrow">CHAPTER ${p.chapter+1} · ${esc(ch.location)}</span><h2>${esc(ch.title)}</h2><p>${esc(ch.format)} · ${esc(ch.range)}</p></div>${portrait()}</div>${timeline}<div class="story-location">${esc(location.name)}</div>${body}</div>`;
+   if(line&&!p.battle&&!reviewEra&&!needsEraBriefing(p))beginDialogue(line);
    const select=$('#story-difficulty');if(select)select.onchange=()=>{try{update(p=>p.difficulty=select.value);}catch(e){toast(e.message);}};
  }catch(e){syncNavigation();$('#app').innerHTML=`<section class="panel"><h1>Story Mode</h1><p>${esc(e.message)}</p><button onclick="mainMenu()">Main menu</button></section>`;}}
- const drawStoryScreen=screen;screen=function(){drawStoryScreen();if(typeof IlexAudio!=='undefined')IlexAudio.sync();};
+ const drawStoryScreen=screen;screen=function(){drawStoryScreen();document.dispatchEvent(new CustomEvent('ilex:story-rendered'));if(typeof IlexAudio!=='undefined')IlexAudio.sync();};
  function back(){act(()=>update(p=>p.line=Math.max(0,p.line-1)));}
  // Exchanges are optional reading queues; advancing never dispatches a game action.
  function queueBossExchanges(t,m,events){
@@ -281,11 +309,22 @@ var StoryMode=(()=>{
   return before!==JSON.stringify(party);
  }
 
- const cinematicExpressionFiles={"original-1.png":{"angry":"original-1-angry.png","proud":"original-1-proud.png","concerned":"original-1-concerned.png"},"original-2.png":{"angry":"original-2-angry.png","proud":"original-2-proud.png","concerned":"original-2-concerned.png"},"original-3.png":{"angry":"original-3-angry.png","proud":"original-3-proud.png","concerned":"original-3-concerned.png"},"original-4.png":{"angry":"original-4-angry.png","proud":"original-4-proud.png","concerned":"original-4-concerned.png"},"support-1.png":{"angry":"support-1-angry.png","proud":"support-1-proud.png"},"support-2.png":{"angry":"support-2-angry.png","proud":"support-2-proud.png"},"support-3.png":{"angry":"support-3-angry.png","proud":"support-3-proud.png"},"support-4.png":{"angry":"support-4-angry.png","proud":"support-4-proud.png"},"support-5.png":{"angry":"support-5-angry.png","proud":"support-5-proud.png"},"support-6.png":{"angry":"support-6-angry.png","proud":"support-6-proud.png"}};
+ const cinematicExpressionFiles={"original-1.png":{"angry":"original-1-angry.png","concerned":"original-1-concerned.png","happy":"original-1-happy.png","proud":"original-1-proud.png","relieved":"original-1-relieved.png","sad":"original-1-sad.png","startled":"original-1-startled.png","tense":"original-1-tense.png"},"original-2.png":{"angry":"original-2-angry.png","concerned":"original-2-concerned.png","happy":"original-2-happy.png","proud":"original-2-proud.png","relieved":"original-2-relieved.png","sad":"original-2-sad.png","startled":"original-2-startled.png","tense":"original-2-tense.png"},"original-3.png":{"angry":"original-3-angry.png","concerned":"original-3-concerned.png","happy":"original-3-happy.png","proud":"original-3-proud.png","relieved":"original-3-relieved.png","sad":"original-3-sad.png","startled":"original-3-startled.png","tense":"original-3-tense.png"},"original-4.png":{"angry":"original-4-angry.png","concerned":"original-4-concerned.png","happy":"original-4-happy.png","proud":"original-4-proud.png","relieved":"original-4-relieved.png","sad":"original-4-sad.png","startled":"original-4-startled.png","tense":"original-4-tense.png"},"support-1.png":{"angry":"support-1-angry.png","happy":"support-1-happy.png","proud":"support-1-proud.png","relieved":"support-1-relieved.png","sad":"support-1-sad.png","startled":"support-1-startled.png","tense":"support-1-tense.png","worried":"support-1-worried.png"},"support-2.png":{"angry":"support-2-angry.png","happy":"support-2-happy.png","proud":"support-2-proud.png","relieved":"support-2-relieved.png","sad":"support-2-sad.png","startled":"support-2-startled.png","tense":"support-2-tense.png","worried":"support-2-worried.png"},"support-3.png":{"angry":"support-3-angry.png","happy":"support-3-happy.png","proud":"support-3-proud.png","relieved":"support-3-relieved.png","sad":"support-3-sad.png","startled":"support-3-startled.png","tense":"support-3-tense.png","worried":"support-3-worried.png"},"support-4.png":{"angry":"support-4-angry.png","happy":"support-4-happy.png","proud":"support-4-proud.png","relieved":"support-4-relieved.png","sad":"support-4-sad.png","startled":"support-4-startled.png","tense":"support-4-tense.png","worried":"support-4-worried.png"},"support-5.png":{"angry":"support-5-angry.png","happy":"support-5-happy.png","proud":"support-5-proud.png","relieved":"support-5-relieved.png","sad":"support-5-sad.png","startled":"support-5-startled.png","tense":"support-5-tense.png","worried":"support-5-worried.png"},"support-6.png":{"angry":"support-6-angry.png","happy":"support-6-happy.png","proud":"support-6-proud.png","relieved":"support-6-relieved.png","sad":"support-6-sad.png","startled":"support-6-startled.png","tense":"support-6-tense.png","worried":"support-6-worried.png"}};
  // Presentation only: a bounded queue of public story cues, never game actions.
  let cinematicTimer=null,cinematicPaintKey='';
  const cinematicFriends=new Set(['Rowan','Mara','Bram','Nessa','Mira','Tess','Ada','Edda','Oren','Sela','Ivo','Maren','Dr. Sen','Neri','Sera','Tarin','Lio','Rhea','Dalen','Anwen','Elian','Bren','Toma','Vale','Jun']);
  function cinematicLine(m,id){return Object.values(m.battleDialogue||{}).find(l=>l.id===id)||Object.values(m.partyDialogue||{}).find(l=>l.id===id)||Object.values(m.signatureExchanges||{}).flatMap(e=>e.lines).find(l=>l.id===id);}
+ function sceneEmotion(line){
+  const t=line?.text||'';
+  if(/how dare|furious|i refuse|you had no right|unforgivable/i.test(t))return 'angry';
+  if(/i.m proud|thank you|glad you|you did it|well done/i.test(t))return 'happy';
+  if(/what was that|where did that come from|^what[!?]|^wait[!?]/i.test(t))return 'startled';
+  if(/what a relief|you.re safe|it.s over|made it back/i.test(t))return 'relieved';
+  if(/i.m sorry|i miss|i thought i.d lost/i.test(t))return 'sad';
+  if(/i was afraid|i.m scared|i can.t remember|i.m worried/i.test(t))return 'worried';
+  if(/hold steady|brace yourself|stay sharp|stand back/i.test(t))return 'tense';
+  return 'neutral';
+ }
  function cinematicEmotion(line,cue,role){
   const key=characterKey(line.speaker,mission()?.opponent),friendly=cinematicFriends.has(key)||(key==='Surveyor Venn'&&progress().chapter>=4),text=line.text.toLowerCase();
   if(role==='party')return /Comeback|Victory/.test(cue)?'proud':'concerned';
@@ -338,10 +377,8 @@ var StoryMode=(()=>{
  function battleCinematicState(){return talkCache?.cinematic?structuredClone(talkCache.cinematic):null;}
  function dismissBattleCinematic(){if(!talkCache?.cinematic)return;talkCache.cinematic.active=null;talkCache.cinematic.queue=[];stopBattleCinematic();rememberBattleTalk();drawBattleTalk();}
  function cinematicPortrait(line,frame,m){
-  const speaker=line.speaker==='Narrator'?m.opponent:line.speaker,key=characterKey(speaker,m.opponent),asset=characterArt.portraits[key];
-  let art=characterPortrait(speaker,m.opponent);const mood=frame.emotion,expression=asset&&cinematicExpressionFiles[asset.file]?.[mood];
-  if(expression)art=art.replace('story-portraits/'+asset.file,'story-portraits/expressions/'+expression);
-  return art.replace('data-character=',`data-expression="${expression?mood:'neutral'}" data-character=`);
+  const speaker=line.speaker==='Narrator'?m.opponent:line.speaker;
+  return characterPortrait(speaker,m.opponent,line.emotion||frame.emotion);
  }
  function startCinematicFrame(c,m){
   if(c.active&&Date.now()>=c.active.until)c.active=null;
@@ -415,7 +452,7 @@ var StoryMode=(()=>{
   const observed=watchBattleEvents(match),events=[];
   for(const publicEvent of observed.queue.splice(0))for(const trigger of m.battleTriggers||[]){
    if(trigger.event!==publicEvent.event||trigger.player!==publicEvent.player)continue;
-   if(trigger.event==='knockout'&&trigger.pokemon!==publicEvent.pokemon)continue;
+   if(trigger.event==='knockout'&&trigger.pokemon!==publicEvent.pokemon&&!trigger.pokemon?.includes?.(publicEvent.pokemon))continue;
    if(trigger.event==='attack'&&trigger.attack!==publicEvent.attack)continue;
    events.push(trigger.cue);
   }
@@ -452,5 +489,5 @@ var StoryMode=(()=>{
  const oldPlay=play;play=function(){oldPlay();decorate();drawBattleTalk();mobileControls();};
  const nav=document.createElement('button');nav.dataset.tab='story';nav.innerHTML='<span class="menu-icon" aria-hidden="true">✧</span><span><strong>Story Mode</strong></span>';nav.onclick=menu;document.querySelector('#mainmenu nav').append(nav);
  window.addEventListener('beforeunload',()=>{if(inBattle()&&progress()?.battle)saveRules();});
- return {openBattleDialogueLog,dismissBattleCinematic,battleCinematicState,advanceBossExchange,battleTalkState,collapseBattleTalk,revealBattleTalk,needsEraBriefing,eraRows,showEraRules,enterEra,environment,menu,continueCampaign,newGame,characterKey,pokemonKey,revealAll,setReading,readingPreferences,open,screen,next,back,choose,start,resume,retry,finish,preview,deckIssues,progress,leave,inBattle};
+ return {selectCampaign,content:()=>C,echoes,unlocked,openBattleDialogueLog,dismissBattleCinematic,battleCinematicState,advanceBossExchange,battleTalkState,collapseBattleTalk,revealBattleTalk,needsEraBriefing,eraRows,showEraRules,enterEra,environment,menu,continueCampaign,newGame,characterKey,pokemonKey,revealAll,setReading,readingPreferences,open,screen,next,back,choose,start,resume,retry,finish,preview,deckIssues,progress,leave,inBattle};
 })();

@@ -1,0 +1,31 @@
+/* A quiet layer of light and weather, behind every control and readable line. */
+#story-world { --scene-light: 169, 215, 143; --scene-mote: 220, 239, 172; }
+#story-world[data-experience-mood=astral] { --scene-light: 103, 175, 222; --scene-mote: 175, 226, 255; }
+#story-world[data-experience-mood=amber] { --scene-light: 224, 178, 98; --scene-mote: 250, 217, 155; }
+#story-world[data-experience-mood=rain] { --scene-light: 104, 192, 202; --scene-mote: 162, 220, 235; }
+#story-world[data-experience-mood=mist] { --scene-light: 104, 192, 202; --scene-mote: 162, 220, 235; }
+#story-world[data-experience-mood=storm] { --scene-light: 131, 157, 220; --scene-mote: 194, 212, 250; }
+#story-world[data-experience-mood=embers] { --scene-light: 222, 124, 74; --scene-mote: 247, 182, 116; }
+#story-world > svg { transform-origin: 45% 45%; }
+#story-world > .experience-departing-world { pointer-events: none; }
+.experience-atmosphere { position: absolute; inset: 0; overflow: hidden; pointer-events: none !important; contain: paint; mask-image: linear-gradient(#000 10%, #000 55%, transparent 92%); }
+.experience-light { position: absolute; inset: 0; background: radial-gradient(ellipse at 26% 15%, rgba(var(--scene-light), .14), transparent 45%), linear-gradient(116deg, transparent 15%, rgba(var(--scene-light), .05) 26%, transparent 38%); transform-origin: 30% 0; animation: experience-light 18s ease-in-out infinite alternate; }
+.experience-atmosphere > i { position: absolute; left: var(--x); top: var(--y); width: var(--size); height: var(--size); border-radius: 50%; background: rgba(var(--scene-mote), .72); box-shadow: 0 0 9px rgba(var(--scene-mote), .3); opacity: 0; animation: experience-mote var(--duration) linear var(--delay) infinite; }
+#story-world[data-experience-mood=rain] .experience-atmosphere > i { height: 24px; width: 1px; background: linear-gradient(transparent, rgba(var(--scene-mote), .18)); animation-name: experience-rain; }
+#story-world[data-experience-mood=storm] .experience-atmosphere > i { height: 18px; width: 1px; background: linear-gradient(transparent, rgba(var(--scene-mote), .2)); animation-name: experience-rain; }
+#story-world[data-experience-mood=embers] .experience-atmosphere > i { border-radius: 1px; animation-name: experience-ember; }
+.story-world-battle .experience-atmosphere { display: none; }
+.experience-still .experience-atmosphere { display: none; }
+.experience-still #story-world > svg { transform: none !important; }
+.experience-still .experience-atmosphere * { animation: none !important; }
+body.story-world-active .story-location { width: fit-content; max-width: 100%; border: 1px solid #e5d6a329; border-left-color: #d8c88b99; padding: 8px 14px; background: linear-gradient(100deg,#07181bc4,#07181b40); border-radius: 2px 20px 20px 2px; letter-spacing: .065em; font-size: .75rem; }
+body.story-world-active .story-location::before { width: 5px; height: 5px; transform: rotate(45deg); background: #d9dca0; box-shadow: 0 0 10px #c9e19a66; }
+body.story-world-active .story-dialogue-copy > h3 { width: fit-content; padding-bottom: 9px; border-bottom: 1px solid #e5d6a34a; }
+body.story-world-active .story-scene .story-line { text-wrap: pretty; }
+.story-dialogue-actions button:focus-visible { outline-offset: 5px !important; }
+@keyframes experience-mote { 0% { opacity: 0; transform: translate(0,24px); } 18% { opacity: .5; } 75% { opacity: .4; } 100% { opacity: 0; transform: translate(28px,-84px); } }
+@keyframes experience-ember { 0% { opacity: 0; transform: translate(0,40px) rotate(0); } 25% { opacity: .48; } 100% { opacity: 0; transform: translate(40px,-120px) rotate(100deg); } }
+@keyframes experience-rain { 0% { opacity: 0; transform: translate(40px,-50px) rotate(12deg); } 20% { opacity: .5; } 90% { opacity: .4; } 100% { opacity: 0; transform: translate(-20px,150px) rotate(12deg); } }
+@keyframes experience-light { from { opacity: .65; transform: scale(1); } to { opacity: 1; transform: scale(1.025); } }
+@media(max-width:700px) { .experience-atmosphere > i:nth-child(n+10) { display:none; } body.story-world-active .story-location { font-size:.68rem; padding:7px 10px; } }
+@media(prefers-reduced-motion:reduce) { .experience-atmosphere { display:none; } #story-world > svg { transform:none !important; } }

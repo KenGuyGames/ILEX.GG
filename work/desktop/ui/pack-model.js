@@ -17,7 +17,7 @@
   if(/^(ecard[1-3]|ex(?:[1-9]|1[0-6]))$/.test(id))return {era:/^ex/.test(id)?'EX':'e-Card',common:5,uncommon:2,reverse:1};
   if(/^(dp[1-7]|pl[1-4]|hgss[1-4]|col1|bw(?:[1-9]|10)|xy(?:[1-9]|1[0-2]))$/.test(id))return {era:/^(dp|pl)/.test(id)?'DP / Platinum':'HGSS / BW / XY',common:5,uncommon:3,reverse:1};
   if(/^(sm(?:[1-9]|1[0-2])|swsh(?:[1-9]|1[0-2]))$/.test(id))return {era:/^sm/.test(id)?'Sun & Moon':'Sword & Shield',common:5,uncommon:3,reverse:1,energy:1};
-  if(/^me(?:0[1-5]|02\.5)$/.test(id))return {era:'Mega Evolution',common:4,uncommon:3,reverse:2,energy:1,modern:true};
+  if(/^me(?:0[1-6]|02\.5)$/.test(id))return {era:'Mega Evolution',common:4,uncommon:3,reverse:2,energy:1,modern:true};
   if(/^sv(?:0[1-9]|10|03\.5|04\.5|06\.5|08\.5|10\.5[bw])$/.test(id))return {era:'Scarlet & Violet',common:4,uncommon:3,reverse:2,energy:1,modern:true};
   if(['sm3.5','sm7.5','sm115','swsh3.5','swsh4.5','swsh10.5','swsh12.5'].includes(id))return {era:id.startsWith('sm')?'Sun & Moon':'Sword & Shield',common:5,uncommon:3,reverse:1,energy:1};
   if(['bw11','g1'].includes(id))return {era:id==='bw11'?'HGSS / BW / XY':'XY special',common:3,uncommon:3,reverse:1,radiant:2};
@@ -32,6 +32,17 @@
   const profiles=[];const grouped=new Map();for(const c of cards){const id=c.id.slice(0,c.id.lastIndexOf('-'));if(c.boosterExcluded||/^sm/.test(id)&&/^\d+[ab]$/.test(c.id.slice(c.id.lastIndexOf('-')+1)))continue;if(!grouped.has(id))grouped.set(id,[]);grouped.get(id).push(c);}
   for(const set of sets){const layout=shape(set.id);if(!layout)continue;const own=grouped.get(set.id)||[],pools={common:[],uncommon:[],rare:[],holo:[],ultra:[],secret:[],bonus:[],subset:[],energy:[],reverse:[],double:[],full:[],illustration:[],special:[],hyper:[],ace:[],radiant:[],allHolo:[],celebration:[],classic:[],pikachu:[],allFoil:[],pokeball:[],masterball:[],friendball:[],loveball:[],quickball:[],duskball:[],'energy-symbols':[],'team-rocket':[]};
    for(const c of own){const d=details[c.id]||{},rc=/^RC/i.test(d.number||c.id.slice(c.id.lastIndexOf('-')+1));if(layout.radiant&&rc){pools.radiant.push(c.id);continue;}const t=layout.modern?({'Double Rare':'double','Ultra Rare':'full','Illustration Rare':'illustration','Special Illustration Rare':'special','Hyper Rare':'hyper','ACE SPEC Rare':'ace','Mega Hyper Rare':'hyper','Black White Rare':'hyper','MEGA_ATTACK_RARE':'special','Futuristic Rare':'hyper'}[d.rarity]||tier(d)):tier(d);if(t)pools[t].push(c.id);for(const kind of parallelFinishes.slice(1))if(finishes.special[c.id]?.[kind])pools[kind].push(c.id);if(set.id==='dv1')pools.allHolo.push(c.id);if(set.id==='cel25'&&['rare','holo'].includes(t))pools.celebration.push(c.id);if(d.rarity==='Pikachu Rare')pools.pikachu.push(c.id);if(set.id==='30th'&&['common','rare'].includes(t))pools.allFoil.push(c.id);if(t==='energy'&&!layout.energy&&d.rarity==='Common')pools.common.push(c.id);if(['common','uncommon','rare','holo'].includes(t)||t==='energy'&&reverseIds.has(c.id))pools.reverse.push(c.id);}
+   const dualGroups=new Map();
+   for(const id of pools.uncommon){
+    const {dualStadium,dualStadiumHalf}=details[id]||{};
+    if(!dualStadium)continue;
+    if(!dualGroups.has(dualStadium))dualGroups.set(dualStadium,{});
+    dualGroups.get(dualStadium)[dualStadiumHalf]=id;
+   }
+   const dualPairs=[...dualGroups.values()].filter(pair=>pair.left&&pair.right).map(pair=>[pair.left,pair.right]);
+   const stadiumHalves=new Set(own.filter(c=>details[c.id]?.dualStadium).map(c=>c.id));
+   pools.uncommon=pools.uncommon.filter(id=>!stadiumHalves.has(id));
+   pools.reverse=pools.reverse.filter(id=>!stadiumHalves.has(id));
    // Dedicated subsets occupy the parallel-foil slot, never the ordinary common/rare slot.
    const subsetId=Object.keys(subsetParents).find(id=>subsetParents[id]===set.id&&!['cel25cc','30th-c'].includes(id));
    if(subsetId)pools.subset.push(...(grouped.get(subsetId)||[]).map(c=>c.id));
@@ -58,7 +69,7 @@
      bonus('secret',.009);
     }}
    if(set.id==='me02.5'){for(const [slot,kinds]of [[0,ascendedPatterns],[1,['energy-symbols']]]){const upgrades=bonusOdds.filter(o=>o.slotIndex===slot),base=1-upgrades.reduce((n,o)=>n+o.base,0),boosted=1-upgrades.reduce((n,o)=>n+o.boosted,0),total=pools.reverse.length+kinds.reduce((n,k)=>n+pools[k].length,0);for(const kind of kinds)if(pools[kind].length)bonusOdds.push({kind,slotIndex:slot,base:base*pools[kind].length/total,boosted:boosted*pools[kind].length/total,cosmetic:true});}}
-   profiles.push({id:set.id,name:set.name,...layout,pools,rareOdds,bonusOdds,specials:specials.build(set.id,own,details,BOOST),count:layout.slots?.length||layout.common+layout.uncommon+(layout.reverse||0)+(layout.energy||0)+(layout.radiant||0)+1,rateLabel:set.id==='base1'?'Simulated pack collation':'Simulated pack collation',note:'Independent packs; no guaranteed box hits. Cards are uniform within each modeled tier. Unpublished chase odds and subset collation are estimates.'});
+   profiles.push({id:set.id,name:set.name,...layout,pools,dualPairs,rareOdds,bonusOdds,specials:specials.build(set.id,own,details,BOOST),count:layout.slots?.length||layout.common+layout.uncommon+(layout.reverse||0)+(layout.energy||0)+(layout.radiant||0)+1,rateLabel:set.id==='base1'?'Simulated pack collation':'Simulated pack collation',note:'Independent packs; no guaranteed box hits. Cards are uniform within each modeled tier. Unpublished chase odds and subset collation are estimates.'});
   }return profiles;
  }
  function pick(pool,rng,used){const available=pool.filter(id=>!used.has(id)),ids=available.length?available:pool;if(!ids.length)throw Error('Empty booster slot');const id=ids[Math.floor(rng()*ids.length)];used.add(id);return id;}
@@ -67,7 +78,19 @@
   if(!profile)throw Error('Choose a supported booster set');const result=[],used=new Set();
   const put=(pool,slot,finish)=>{const id=pick(profile.pools[pool],rng,used);result.push({id,slot,finish:finish||(profile.allFoil?'holo':undefined)||(['holo','ultra','secret','bonus','subset','double','full','illustration','special','hyper','ace'].includes(pool)||profile.modern&&pool==='rare'?'holo':'normal'),tier:pool,revealed:false});};
   if(profile.slots){for(const kind of profile.slots){if(kind==='rareHit'){const selected=weighted(profile.rareOdds,rng);put(selected,selected==='classic'?'Classic Collection':'Rare slot');}else if(kind==='classicOrMain'){const classic=profile.pools.classic.length&&rng()<.28;put(classic?'classic':'celebration',classic?'Classic Collection':'Holo');}else put(kind,kind==='energy'?'Basic Energy':kind==='pikachu'?'Pikachu rare':'Holo');}return result;}
-  for(let i=0;i<profile.common;i++)put('common','Common');for(let i=0;i<profile.uncommon;i++)put('uncommon','Uncommon');
+  for(let i=0;i<profile.common;i++)put('common','Common');let remainingUncommons=profile.uncommon;
+  const pairs=profile.dualPairs||[];
+  if(remainingUncommons>=2&&pairs.length){
+   const draw=Math.floor(rng()*(profile.pools.uncommon.length+pairs.length));
+   if(draw>=profile.pools.uncommon.length){
+    for(const id of pairs[draw-profile.pools.uncommon.length]){
+     used.add(id);
+     result.push({id,slot:'Uncommon',finish:'normal',tier:'uncommon',revealed:false});
+    }
+    remainingUncommons-=2;
+   }
+  }
+  for(let i=0;i<remainingUncommons;i++)put('uncommon','Uncommon');
   for(let i=0;i<(profile.energy||0);i++)put('energy','Basic Energy');
   for(let i=0;i<(profile.reverse||0);i++){let kind='reverse';const chance=rng();let sum=0;for(const o of profile.bonusOdds.filter(o=>o.slotIndex===i)){sum+=o.boosted;if(chance<sum){kind=o.kind;break;}}put(kind,kind==='reverse'?'Reverse foil':'Bonus slot',parallelFinishes.includes(kind)?kind:kind==='secret'&&/^ecard[23]$/.test(profile.id)?'reverse':undefined);}
   for(let i=0;i<(profile.radiant||0);i++)put('radiant','Radiant Collection','holo');

@@ -2,6 +2,8 @@ var IlexAudio=(()=>{
  const tracks={guardian:{name:'Forest Guardian',scene:'menu',file:'forest-guardian.mp3'},guardian2:{name:'Forest Guardian (1)',scene:'menu',file:'forest-guardian-1.mp3'},battle:{name:'Forest Battle',scene:'battle',file:'forest-battle.mp3'},battle2:{name:'Forest Battle (1)',scene:'battle',file:'forest-battle-1.mp3'}};
  const chapterOffsets=new Map();let musicStarted=0,musicOffset=0;
  for(let i=1;i<=13;i++)tracks['dialogue'+i]={name:'Chapter '+i+' Dialogue',scene:'story',chapter:i,file:'campaign/dialogue-'+String(i).padStart(2,'0')+'.mp3'};
+ for(let i=1;i<=13;i++)for(const [key,scene] of [['dialogue','story'],['battle','battle'],...(i<13?[['boss','battle']]:[['curator-boss','battle'],['final-boss','battle']])])tracks['echoes-'+key+'-'+i]={name:'Echoes · Chapter '+i+' '+key.replaceAll('-',' '),chapter:i,scene,file:'echoes/'+key+'-'+i+'.mp3'};
+ tracks['echoes-credits']={name:'Echoes · Epilogue and Credits',chapter:13,scene:'story',file:'echoes/credits.mp3'};
  function storyChapter(){if(tab!=='story'||typeof StoryMode==='undefined'||!document.querySelector('.story-shell:not(.story-start-menu)'))return 0;const p=StoryMode.progress();return Number.isInteger(p?.chapter)&&p.chapter>=0&&p.chapter<13?p.chapter+1:0;}
 
  const campaignBosses={forest:['forest-machine'],galactic:['saturn'],'mind-games':['slowking'],recovery:['lysandre','seismitoad'],purge:['connection'],delta:['wrong-sky'],dragons:['second','stand','last-bridge'],molten:['maxie','groudon'],watchers:['chandelure','durant'],zoroark:['welcome-king','hunter-king','faceless'],darkest:['eternatus','adp'],together:['partner','enough','shared'],finale:['dialga']};
@@ -9,8 +11,9 @@ var IlexAudio=(()=>{
  function campaignEncounter(spec){
   if(spec===undefined)spec=typeof rulesMatch!=='undefined'?rulesMatch?.spec:null;
   const meta=spec?.storyCampaign;if(!meta||typeof IlexStoryContent==='undefined')return null;
-  const index=IlexStoryContent.chapters.findIndex(c=>c.id===meta.chapter),ch=IlexStoryContent.chapters[index],route=ch?.paths.find(p=>p.id===meta.path);
-  if(!route?.missions.some(m=>m.id===meta.mission))return null;
+  const content=meta.campaignId===IlexEchoes.content.campaignId?IlexEchoes.content:IlexStoryContent;const index=content.chapters.findIndex(c=>c.id===meta.chapter),ch=content.chapters[index],route=ch?.paths.find(p=>p.id===meta.path);
+  const mission=route?.missions.find(m=>m.id===meta.mission);if(!mission)return null;
+  if(content===IlexEchoes.content)return {chapter:index+1,mission:meta.mission,kind:mission.music==='battle'?'regular':'boss',track:'echoes-'+mission.music+'-'+(index+1)};
   return {chapter:index+1,mission:meta.mission,kind:campaignBosses[meta.chapter]?.includes(meta.mission)?'boss':'regular'};
  }
  function campaignBattleChapter(){if(tab!=='play'||typeof StoryMode==='undefined'||!StoryMode.inBattle()||rulesMatch.store.state.phase===RulesMatch.R.GamePhase.FINISHED)return 0;const e=campaignEncounter();return e?.kind==='regular'?e.chapter:0;}
@@ -19,7 +22,7 @@ var IlexAudio=(()=>{
  const bossMusicByEncounter=Object.fromEntries(bossSoundtrack.filter(t=>t.key).map(t=>[t.key,'boss-'+t.id]));
  for(const t of bossSoundtrack)tracks['boss-'+t.id]={name:t.source.replace(/\.mp3$/i,''),scene:'battle',chapter:t.chapter,file:'campaign-boss/'+t.id+'.mp3'};
  function bossTrackFor(spec,journal=[]){
-  const encounter=campaignEncounter(spec),meta=spec?.storyCampaign;if(encounter?.kind!=='boss')return '';
+  const encounter=campaignEncounter(spec),meta=spec?.storyCampaign;if(encounter?.kind!=='boss')return '';if(encounter.track)return encounter.track;
   if(meta.chapter==='finale'&&meta.mission==='dialga'&&journal.some(a=>a.type==='attack'&&a.player===2&&a.name==='Star Chronos'))return 'boss-dialga-push';
   return bossMusicByEncounter[meta.chapter+'/'+meta.mission]||'';
  }
@@ -32,7 +35,7 @@ var IlexAudio=(()=>{
  function update(p){state.audioPreferences={...preferences(),...p};state.audioPreferences=preferences();save();sync();}
  async function unlock(){try{if(!ctx){ctx=new AudioContext();compressor=ctx.createDynamicsCompressor();compressor.threshold.value=-12;compressor.ratio.value=8;compressor.connect(ctx.destination);musicBus=ctx.createGain();effectBus=ctx.createGain();musicBus.connect(compressor);effectBus.connect(compressor);}await ctx.resume();void loadStorySample();unlocked=ctx.state==='running';error=unlocked?'':'Audio device is paused.';sync();}catch(e){error='Audio is unavailable on this device.';}return unlocked;}
  function scene(){if(storyChapter())return 'story';return tab==='online'&&typeof PrivateOnline!=='undefined'&&PrivateOnline.inMatch()||tab==='play'&&(tableMode==='rules'?rulesMatch&&rulesMatch.store.state.phase!==RulesMatch.R.GamePhase.FINISHED:state.game)?'battle':'menu';}
- function track(){const p=preferences();return p.track==='auto'?(storyChapter()?'dialogue'+storyChapter():campaignBossMusic()?campaignBossMusic():campaignBattleChapter()?'campaignBattle'+campaignBattleChapter():playlists[scene()][positions[scene()]]):p.track;}
+ function track(){const p=preferences();return p.track==='auto'?(storyChapter()?StoryMode.echoes()?(storyChapter()===13&&['outro','complete'].includes(StoryMode.progress()?.phase)?'echoes-credits':'echoes-dialogue-'+storyChapter()):'dialogue'+storyChapter():campaignBossMusic()|| (campaignBattleChapter()?campaignEncounter()?.track||'campaignBattle'+campaignBattleChapter():playlists[scene()][positions[scene()]])):p.track;}
  function stop(){if(source&&tracks[current]?.chapter&&ctx)chapterOffsets.set(current,(musicOffset+Math.max(0,ctx.currentTime-musicStarted))%source.buffer.duration);generation++;clearInterval(timer);timer=null;selection='';current='';if(source){source.onended=null;try{source.stop();}catch{}source.disconnect();source=null;}if(scoreBus&&ctx){scoreBus.disconnect();}scoreBus=null;}
  async function buffer(id){if(!buffers.has(id)){const pending=fetch('music/'+tracks[id].file).then(r=>{if(!r.ok)throw Error('Track unavailable');return r.arrayBuffer();}).then(bytes=>ctx.decodeAudioData(bytes));buffers.set(id,pending);if(tracks[id]?.chapter){const ids=[...buffers.keys()].filter(k=>tracks[k]?.chapter);while(ids.length>2)buffers.delete(ids.shift());}pending.catch(()=>buffers.delete(id));}return buffers.get(id);}
  async function startMusic(key,id){const token=generation;selection=key;current=id;try{const decoded=await buffer(id);if(token!==generation)return;const p=preferences();if(!p.music||p.muted||document.hidden){stop();return;}scoreBus=ctx.createGain();scoreBus.gain.setValueAtTime(0,ctx.currentTime);scoreBus.gain.linearRampToValueAtTime(.75,ctx.currentTime+.25);scoreBus.connect(musicBus);source=ctx.createBufferSource();source.buffer=decoded;source.loop=!!tracks[id].chapter;source.connect(scoreBus);source.onended=()=>{if(token!==generation)return;if(preferences().track==='auto'){const s=scene();positions[s]=(positions[s]+1)%playlists[s].length;}stop();sync();};musicOffset=tracks[id].chapter?(chapterOffsets.get(id)||0)%decoded.duration:0;musicStarted=ctx.currentTime;source.start(0,musicOffset);error='';}catch(e){if(token===generation){stop();error='Music playback stopped. Enable audio to retry.';}}}

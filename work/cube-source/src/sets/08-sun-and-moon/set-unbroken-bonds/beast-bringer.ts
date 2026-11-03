@@ -4,7 +4,7 @@
 
 import { TrainerCard } from '../../../game/store/card/trainer-card';
 import { TrainerType, CardTag } from '../../../game/store/card/card-types';
-import { StoreLike, State, StateUtils, PokemonCardList } from '../../../game';
+import { StoreLike, State, StateUtils } from '../../../game';
 import { Effect } from '../../../game/store/effects/effect';
 import { KnockOutEffect } from '../../../game/store/effects/game-effects';
 import { IS_TOOL_BLOCKED } from '../../../game/store/prefabs/prefabs';
@@ -23,7 +23,7 @@ export class BeastBringer extends TrainerCard {
   public reduceEffect(store: StoreLike, state: State, effect: Effect): State {
     if (effect instanceof KnockOutEffect) {
       // Find which Pokemon this tool is attached to
-      const attachedTo = StateUtils.findCardList(state, this) as PokemonCardList;
+      const attachedTo = StateUtils.findPokemonSlot(state, this);
       if (!attachedTo || !attachedTo.tools || !attachedTo.tools.includes(this)) {
         return state;
       }
@@ -66,6 +66,11 @@ export class BeastBringer extends TrainerCard {
       if (effect.target !== targetOwner.active) {
         return state;
       }
+
+      // The bonus belongs only to damage from this holder's own attack.
+      const lethal = (effect.target as any)._exLethalAttackDamage;
+      if (lethal?.turn !== state.turn || lethal.card !== targetCard ||
+        lethal.attackerCard !== attachedPokemon) return state;
 
       effect.prizeCount += 1;
     }
