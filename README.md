@@ -2,7 +2,14 @@
 
 Pokémon TCG simulator for **Windows and Android**, with rules automation, deck building, local/bot play, packs, Cube Drafting, Campaign and two new alternate play modes.
 
-## New in 3.4.1: Tutorial and presentation updates
+## New in 3.5.0 for Windows: Echoes of Tomorrow and Delta Reign
+
+- **Echoes of Tomorrow:** Complete **The Fractured Hour** to unlock a second Campaign with Celebi. Each campaign keeps its own save. The Journey Journal lets you revisit discovered eras, earned keepsakes, and dialogue you have already reached.
+- **Delta Reign:** Browse 141 catalog entries and open Delta Reign packs. Dual Stadium halves appear together when drawn in a pack, and matching halves are required to assemble them in play. Some card images use unofficial English edits.
+
+[Download ILEX.GG 3.5.0 for Windows](https://github.com/KenGuyGames/ILEX.GG/releases/tag/v3.5.0-build-2026-11-02). Extract the entire Windows ZIP and run `ILEX.GG.exe`. The source build instructions below still refer to 3.4.1.
+
+## Previously in 3.4.1: Tutorial and presentation updates
 
 **Learn at your own pace in Arena → Tutorial.** The new 38-lesson guided match
 uses the same play table as regular Play, two prepared 60-card teaching decks,
